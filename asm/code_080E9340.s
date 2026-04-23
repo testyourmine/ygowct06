@@ -358,7 +358,7 @@ _080E9606:
 _080E9618:
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl NNS_G2dGetAnimCtrlCurrentFrame
+	bl NNS_G2dSetAnimCtrlCurrentFrame
 	cmp r0, #0
 	beq _080E962A
 	adds r0, r4, #0
