@@ -912,8 +912,8 @@ _080E8F78:
 _080E8F80: .4byte gUnk_09E4A4A8
 _080E8F84: .4byte gUnk_09E4A4EC
 
-	thumb_func_start NNS_G2dGetAnimCtrlCurrentFrame
-NNS_G2dGetAnimCtrlCurrentFrame: @ 0x080E8F88
+	thumb_func_start NNS_G2dSetAnimCtrlCurrentFrame
+NNS_G2dSetAnimCtrlCurrentFrame: @ 0x080E8F88
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
