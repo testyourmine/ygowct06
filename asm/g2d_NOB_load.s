@@ -15,7 +15,7 @@ GetPtrOamArrayHead_: @ 0x080EB6DC
 	ldr r2, _080EB704 @ =gUnk_09E4E0FC
 	movs r1, #0xb
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EB6F0:
 	movs r0, #1
 	ldrh r1, [r4, #2]
@@ -49,7 +49,7 @@ UnPackExtendedData_: @ 0x080EB718
 	ldr r2, _080EB740 @ =gUnk_09E4E194
 	movs r1, #0x1c
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EB72C:
 	adds r0, r4, #0
 	adds r0, #8
@@ -72,7 +72,7 @@ NNS_G2dGetUnpackedCellBank: @ 0x080EB744
 	ldr r2, _080EB7C4 @ =gUnk_09E4E19C
 	movs r1, #0x29
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EB75A:
 	cmp r5, #0
 	bne _080EB76A
@@ -80,7 +80,7 @@ _080EB75A:
 	ldr r2, _080EB7C8 @ =gUnk_09E4E1A8
 	movs r1, #0x2a
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EB76A:
 	movs r2, #0
 	cmp r4, #0
@@ -97,7 +97,7 @@ _080EB77A:
 	ldr r2, _080EB7D0 @ =gUnk_09E4E1B4
 	movs r1, #0x2e
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EB78A:
 	movs r1, #0
 	cmp r4, #0
@@ -115,7 +115,7 @@ _080EB79C:
 	ldr r2, _080EB7D4 @ =gUnk_09E4E1F0
 	movs r1, #0x32
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EB7AC:
 	ldr r1, _080EB7D8 @ =0x4345424B
 	adds r0, r4, #0
@@ -158,7 +158,7 @@ NNS_G2dGetCellDataByIdx: @ 0x080EB7F0
 	ldr r2, _080EB818 @ =gUnk_09E4E23C
 	movs r1, #0x51
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EB80A:
 	ldrh r0, [r4]
 	cmp r5, r0
@@ -197,7 +197,7 @@ NNS_G2dUnpackNCE: @ 0x080EB838
 	ldr r2, _080EB864 @ =gUnk_09E4E23C
 	movs r1, #0x6e
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EB84C:
 	ldr r0, [r4, #4]
 	adds r0, r0, r4

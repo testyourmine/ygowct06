@@ -16,7 +16,7 @@ GetUnpackedAnimBankImpl_: @ 0x080EAF58
 	ldr r2, _080EAF94 @ =gUnk_09E4C760
 	movs r1, #0x26
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EAF6E:
 	cmp r5, #0
 	bne _080EAF7E
@@ -24,7 +24,7 @@ _080EAF6E:
 	ldr r2, _080EAF98 @ =gUnk_09E4C76C
 	movs r1, #0x27
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EAF7E:
 	ldr r1, _080EAF9C @ =0x41424E4B
 	adds r0, r4, #0
@@ -84,7 +84,7 @@ NNS_G2dGetUnpackedAnimBank: @ 0x080EAFD4
 	ldr r2, _080EB050 @ =gUnk_09E4C760
 	movs r1, #0x5c
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EAFEA:
 	cmp r5, #0
 	bne _080EAFFA
@@ -92,7 +92,7 @@ _080EAFEA:
 	ldr r2, _080EB054 @ =gUnk_09E4C76C
 	movs r1, #0x5d
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EAFFA:
 	movs r2, #0
 	cmp r4, #0
@@ -109,7 +109,7 @@ _080EB00A:
 	ldr r2, _080EB05C @ =gUnk_09E4C778
 	movs r1, #0x63
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EB01A:
 	movs r1, #0
 	cmp r4, #0
@@ -127,7 +127,7 @@ _080EB02C:
 	ldr r2, _080EB060 @ =gUnk_09E4C7B4
 	movs r1, #0x67
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EB03C:
 	adds r0, r4, #0
 	adds r1, r5, #0
@@ -154,7 +154,7 @@ NNS_G2dGetUnpackedMCAnimBank: @ 0x080EB064
 	ldr r2, _080EB0E0 @ =gUnk_09E4C760
 	movs r1, #0x6f
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EB07A:
 	cmp r5, #0
 	bne _080EB08A
@@ -162,7 +162,7 @@ _080EB07A:
 	ldr r2, _080EB0E4 @ =gUnk_09E4C76C
 	movs r1, #0x70
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EB08A:
 	movs r2, #0
 	cmp r4, #0
@@ -179,7 +179,7 @@ _080EB09A:
 	ldr r2, _080EB0EC @ =gUnk_09E4C800
 	movs r1, #0x74
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EB0AA:
 	movs r1, #0
 	cmp r4, #0
@@ -197,7 +197,7 @@ _080EB0BC:
 	ldr r2, _080EB0F0 @ =gUnk_09E4C7B4
 	movs r1, #0x78
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EB0CC:
 	adds r0, r4, #0
 	adds r1, r5, #0
@@ -227,7 +227,7 @@ NNS_G2dUnpackNAN: @ 0x080EB0F4
 	ldr r2, _080EB130 @ =gUnk_09E4C83C
 	movs r1, #0x82
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EB110:
 	ldr r2, [r5, #4]
 	adds r2, r2, r5
@@ -282,7 +282,7 @@ _080EB166:
 	movs r1, #0x9a
 	ldr r2, _080EB1F0 @ =gUnk_09E4C844
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EB17C:
 	mov r1, r8
 	lsls r0, r1, #0x10
@@ -362,12 +362,12 @@ NNS_G2dGetAnimSequenceByIdx: @ 0x080EB1F4
 	movs r1, #0xcb
 	adds r2, r4, #0
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 	ldr r0, _080EB22C @ =gUnk_09E4C714
 	movs r1, #0x15
 	adds r2, r4, #0
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EB21A:
 	ldrh r0, [r5]
 	cmp r0, r6

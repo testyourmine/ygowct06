@@ -15,7 +15,7 @@ DumpPalette_: @ 0x080EB4D4
 	ldr r2, _080EB538 @ =gUnk_09E4D90C
 	movs r1, #0x19
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EB4E8:
 	ldr r0, [r4, #0xc]
 	cmp r0, #0
@@ -24,11 +24,11 @@ _080EB4E8:
 	ldr r2, _080EB53C @ =gUnk_09E4D918
 	movs r1, #0x1a
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EB4FA:
 	ldr r5, [r4, #0xc]
 	ldr r0, _080EB540 @ =gUnk_09E4D92C
-	bl sub_080FA4CC
+	bl OS_Printf
 	movs r4, #0
 _080EB504:
 	movs r0, #0xf
@@ -36,20 +36,20 @@ _080EB504:
 	cmp r0, #0
 	bne _080EB512
 	ldr r0, _080EB544 @ =gUnk_09E4D95C
-	bl sub_080FA4CC
+	bl OS_Printf
 _080EB512:
 	lsls r0, r4, #1
 	adds r0, r0, r5
 	ldrh r1, [r0]
 	ldr r0, _080EB548 @ =gUnk_09E4D960
-	bl sub_080FA4CC
+	bl OS_Printf
 	adds r0, r4, #1
 	lsls r0, r0, #0x10
 	lsrs r4, r0, #0x10
 	cmp r4, #0xff
 	bls _080EB504
 	ldr r0, _080EB540 @ =gUnk_09E4D92C
-	bl sub_080FA4CC
+	bl OS_Printf
 	pop {r4, r5}
 	pop {r0}
 	bx r0
@@ -72,7 +72,7 @@ NNS_G2dGetUnpackedPaletteData: @ 0x080EB54C
 	ldr r2, _080EB5BC @ =gUnk_09E4D968
 	movs r1, #0x31
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EB562:
 	cmp r5, #0
 	bne _080EB572
@@ -80,7 +80,7 @@ _080EB562:
 	ldr r2, _080EB5C0 @ =gUnk_09E4D974
 	movs r1, #0x32
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EB572:
 	ldr r1, [r4]
 	ldr r0, _080EB5C4 @ =0x4E434C52
@@ -93,7 +93,7 @@ _080EB572:
 	ldr r2, _080EB5CC @ =gUnk_09E4D980
 	movs r1, #0x3a
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EB58C:
 	movs r0, #0
 	ldrh r1, [r4, #6]
@@ -107,7 +107,7 @@ _080EB596:
 	ldr r2, _080EB5D0 @ =gUnk_09E4D9CC
 	movs r1, #0x3f
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EB5A6:
 	ldr r1, _080EB5D4 @ =0x504C5454
 	adds r0, r4, #0
@@ -149,7 +149,7 @@ NNS_G2dGetUnpackedPaletteCompressInfo: @ 0x080EB5EC
 	ldr r2, _080EB65C @ =gUnk_09E4D968
 	movs r1, #0x5f
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EB602:
 	cmp r5, #0
 	bne _080EB612
@@ -157,7 +157,7 @@ _080EB602:
 	ldr r2, _080EB660 @ =gUnk_09E4DA20
 	movs r1, #0x60
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EB612:
 	ldr r1, [r4]
 	ldr r0, _080EB664 @ =0x4E434C52
@@ -170,7 +170,7 @@ _080EB612:
 	ldr r2, _080EB66C @ =gUnk_09E4D980
 	movs r1, #0x68
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EB62C:
 	movs r0, #0
 	ldrh r1, [r4, #6]
@@ -184,7 +184,7 @@ _080EB636:
 	ldr r2, _080EB670 @ =gUnk_09E4D9CC
 	movs r1, #0x6d
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EB646:
 	ldr r1, _080EB674 @ =0x50434D50
 	adds r0, r4, #0
@@ -225,7 +225,7 @@ NNSi_G2dUnpackNCLCmpInfo: @ 0x080EB68C
 	ldr r2, _080EB6B0 @ =gUnk_09E4DA30
 	movs r1, #0x8c
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EB6A0:
 	ldr r0, [r4, #4]
 	adds r0, r0, r4
@@ -247,7 +247,7 @@ NNS_G2dUnpackNCL: @ 0x080EB6B4
 	ldr r2, _080EB6D8 @ =gUnk_09E4D90C
 	movs r1, #0x97
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EB6C8:
 	ldr r0, [r4, #0xc]
 	adds r0, r0, r4

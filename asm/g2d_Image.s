@@ -117,7 +117,7 @@ NNS_G2dInitImageProxy: @ 0x080E9A94
 	ldr r1, _080E9AC4 @ =0x00000175
 	ldr r2, _080E9AC8 @ =gUnk_09E4B7CC
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E9AA8:
 	movs r1, #1
 	rsbs r1, r1, #0
@@ -149,7 +149,7 @@ NNS_G2dSetImageLocation: @ 0x080E9ACC
 	lsls r1, r1, #1
 	ldr r2, _080E9B30 @ =gUnk_09E4B7CC
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E9AE6:
 	cmp r4, #2
 	bls _080E9AF6
@@ -157,7 +157,7 @@ _080E9AE6:
 	ldr r1, _080E9B34 @ =0x00000189
 	ldr r2, _080E9B38 @ =gUnk_09E4B644
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E9AF6:
 	cmp r5, #0
 	bne _080E9B06
@@ -165,7 +165,7 @@ _080E9AF6:
 	ldr r2, _080E9B3C @ =gUnk_09E4B634
 	movs r1, #0x1f
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E9B06:
 	cmp r4, #2
 	bls _080E9B16
@@ -173,7 +173,7 @@ _080E9B06:
 	ldr r2, _080E9B38 @ =gUnk_09E4B644
 	movs r1, #0x20
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E9B16:
 	adds r0, r5, #0
 	adds r1, r4, #0
@@ -203,7 +203,7 @@ NNS_G2dGetImageLocation: @ 0x080E9B40
 	lsls r1, r1, #1
 	ldr r2, _080E9B98 @ =gUnk_09E4B7CC
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E9B58:
 	cmp r4, #2
 	bls _080E9B68
@@ -211,7 +211,7 @@ _080E9B58:
 	ldr r1, _080E9B9C @ =0x0000019D
 	ldr r2, _080E9BA0 @ =gUnk_09E4B644
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E9B68:
 	cmp r5, #0
 	bne _080E9B78
@@ -219,7 +219,7 @@ _080E9B68:
 	ldr r2, _080E9BA4 @ =gUnk_09E4B634
 	movs r1, #0x2c
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E9B78:
 	cmp r4, #2
 	bls _080E9B88
@@ -227,7 +227,7 @@ _080E9B78:
 	ldr r2, _080E9BA0 @ =gUnk_09E4B644
 	movs r1, #0x2d
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E9B88:
 	lsls r0, r4, #2
 	adds r0, r5, r0
@@ -253,7 +253,7 @@ NNS_G2dIsImageReadyToUse: @ 0x080E9BA8
 	ldr r1, _080E9C28 @ =0x000001AF
 	ldr r2, _080E9C2C @ =gUnk_09E4B7CC
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E9BBE:
 	cmp r4, #2
 	bls _080E9BD0
@@ -262,7 +262,7 @@ _080E9BBE:
 	lsls r1, r1, #1
 	ldr r2, _080E9C30 @ =gUnk_09E4B644
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E9BD0:
 	cmp r5, #0
 	bne _080E9BE0
@@ -270,7 +270,7 @@ _080E9BD0:
 	ldr r2, _080E9C34 @ =gUnk_09E4B634
 	movs r1, #0x35
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E9BE0:
 	cmp r4, #2
 	bls _080E9BF0
@@ -278,7 +278,7 @@ _080E9BE0:
 	ldr r2, _080E9C30 @ =gUnk_09E4B644
 	movs r1, #0x36
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E9BF0:
 	cmp r5, #0
 	bne _080E9C00
@@ -286,7 +286,7 @@ _080E9BF0:
 	ldr r2, _080E9C34 @ =gUnk_09E4B634
 	movs r1, #0x2c
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E9C00:
 	cmp r4, #2
 	bls _080E9C10
@@ -294,7 +294,7 @@ _080E9C00:
 	ldr r2, _080E9C30 @ =gUnk_09E4B644
 	movs r1, #0x2d
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E9C10:
 	lsls r0, r4, #2
 	adds r0, r5, r0
@@ -323,7 +323,7 @@ NNS_G2dInitImagePaletteProxy: @ 0x080E9C38
 	ldr r1, _080E9C6C @ =0x000001C1
 	ldr r2, _080E9C70 @ =gUnk_09E4B7CC
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E9C4C:
 	movs r2, #1
 	rsbs r2, r2, #0
@@ -357,7 +357,7 @@ NNS_G2dSetImagePaletteLocation: @ 0x080E9C74
 	lsls r1, r1, #1
 	ldr r2, _080E9CD8 @ =gUnk_09E4B7CC
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E9C8E:
 	cmp r5, #2
 	bls _080E9C9E
@@ -365,7 +365,7 @@ _080E9C8E:
 	ldr r1, _080E9CDC @ =0x000001D5
 	ldr r2, _080E9CE0 @ =gUnk_09E4B644
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E9C9E:
 	adds r4, #8
 	cmp r4, #0
@@ -374,7 +374,7 @@ _080E9C9E:
 	ldr r2, _080E9CE4 @ =gUnk_09E4B634
 	movs r1, #0x1f
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E9CB0:
 	cmp r5, #2
 	bls _080E9CC0
@@ -382,7 +382,7 @@ _080E9CB0:
 	ldr r2, _080E9CE0 @ =gUnk_09E4B644
 	movs r1, #0x20
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E9CC0:
 	adds r0, r4, #0
 	adds r1, r5, #0
@@ -412,7 +412,7 @@ NNS_G2dGetImagePaletteLocation: @ 0x080E9CE8
 	lsls r1, r1, #1
 	ldr r2, _080E9D44 @ =gUnk_09E4B7CC
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E9D00:
 	cmp r4, #2
 	bls _080E9D10
@@ -420,7 +420,7 @@ _080E9D00:
 	ldr r1, _080E9D48 @ =0x000001E9
 	ldr r2, _080E9D4C @ =gUnk_09E4B644
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E9D10:
 	adds r5, #8
 	cmp r5, #0
@@ -429,7 +429,7 @@ _080E9D10:
 	ldr r2, _080E9D50 @ =gUnk_09E4B634
 	movs r1, #0x2c
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E9D22:
 	cmp r4, #2
 	bls _080E9D32
@@ -437,7 +437,7 @@ _080E9D22:
 	ldr r2, _080E9D4C @ =gUnk_09E4B644
 	movs r1, #0x2d
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E9D32:
 	lsls r0, r4, #2
 	adds r0, r5, r0
@@ -463,7 +463,7 @@ NNS_G2dIsImagePaletteReadyToUse: @ 0x080E9D54
 	ldr r1, _080E9DD8 @ =0x000001FB
 	ldr r2, _080E9DDC @ =gUnk_09E4B7CC
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E9D6A:
 	cmp r5, #2
 	bls _080E9D7C
@@ -472,7 +472,7 @@ _080E9D6A:
 	lsls r1, r1, #1
 	ldr r2, _080E9DE0 @ =gUnk_09E4B644
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E9D7C:
 	adds r4, #8
 	cmp r4, #0
@@ -481,7 +481,7 @@ _080E9D7C:
 	ldr r2, _080E9DE4 @ =gUnk_09E4B634
 	movs r1, #0x35
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E9D8E:
 	cmp r5, #2
 	bls _080E9D9E
@@ -489,7 +489,7 @@ _080E9D8E:
 	ldr r2, _080E9DE0 @ =gUnk_09E4B644
 	movs r1, #0x36
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E9D9E:
 	cmp r4, #0
 	bne _080E9DAE
@@ -497,7 +497,7 @@ _080E9D9E:
 	ldr r2, _080E9DE4 @ =gUnk_09E4B634
 	movs r1, #0x2c
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E9DAE:
 	cmp r5, #2
 	bls _080E9DBE
@@ -505,7 +505,7 @@ _080E9DAE:
 	ldr r2, _080E9DE0 @ =gUnk_09E4B644
 	movs r1, #0x2d
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E9DBE:
 	lsls r0, r5, #2
 	adds r0, r4, r0
@@ -539,7 +539,7 @@ NNS_G2dLoadImage1DMapping: @ 0x080E9DE8
 	ldr r1, _080E9E88 @ =0x00000221
 	ldr r2, _080E9E8C @ =gUnk_09E4B790
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E9E06:
 	cmp r6, #0
 	bne _080E9E16
@@ -547,7 +547,7 @@ _080E9E06:
 	ldr r1, _080E9E90 @ =0x00000222
 	ldr r2, _080E9E94 @ =gUnk_09E4B610
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E9E16:
 	ldr r1, [r4, #8]
 	adds r0, r7, #0
@@ -559,7 +559,7 @@ _080E9E16:
 	lsls r1, r1, #2
 	ldr r2, _080E9E98 @ =gUnk_09E4B7D4
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E9E30:
 	adds r0, r4, #0
 	adds r1, r7, #0
@@ -570,7 +570,7 @@ _080E9E30:
 	ldr r1, _080E9E9C @ =0x00000226
 	ldr r2, _080E9EA0 @ =gUnk_09E4B808
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E9E48:
 	ldr r0, [r4, #0xc]
 	ldrb r5, [r4, #0xc]
@@ -583,7 +583,7 @@ _080E9E48:
 	ldr r2, _080E9EA4 @ =gUnk_09E4B720
 	movs r1, #0x88
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E9E62:
 	cmp r7, #1
 	bne _080E9EAC
@@ -593,7 +593,7 @@ _080E9E62:
 	ldr r2, _080E9EA8 @ =gUnk_09E4B760
 	movs r1, #0x9a
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E9E76:
 	ldr r0, [r4, #0x14]
 	ldr r2, [r4, #0x10]
@@ -616,7 +616,7 @@ _080E9EAC:
 	ldr r2, _080E9EFC @ =gUnk_09E4B788
 	movs r1, #0xa5
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E9EB8:
 	adds r5, r6, #0
 	adds r5, #0xc
@@ -626,7 +626,7 @@ _080E9EB8:
 	ldr r2, _080E9F00 @ =gUnk_09E4B6B8
 	movs r1, #0x5d
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E9ECC:
 	cmp r5, #0
 	bne _080E9EDC
@@ -634,7 +634,7 @@ _080E9ECC:
 	ldr r2, _080E9F04 @ =gUnk_09E4B6C0
 	movs r1, #0x5e
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E9EDC:
 	ldr r2, [r4, #8]
 	cmp r2, #0
@@ -782,7 +782,7 @@ _080EA056:
 	ldr r2, _080EA09C @ =gUnk_09E4B6C8
 	movs r1, #0x6d
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EA06C:
 	ldrh r0, [r4, #2]
 	str r0, [r6, #0xc]
@@ -825,7 +825,7 @@ NNS_G2dLoadImage2DMapping: @ 0x080EA0A0
 	ldr r1, _080EA138 @ =0x0000024D
 	ldr r2, _080EA13C @ =gUnk_09E4B790
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EA0BE:
 	cmp r6, #0
 	bne _080EA0CE
@@ -833,7 +833,7 @@ _080EA0BE:
 	ldr r1, _080EA140 @ =0x0000024E
 	ldr r2, _080EA144 @ =gUnk_09E4B610
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EA0CE:
 	ldr r0, [r4, #8]
 	cmp r0, #0
@@ -842,7 +842,7 @@ _080EA0CE:
 	ldr r1, _080EA148 @ =0x0000024F
 	ldr r2, _080EA14C @ =gUnk_09E4B82C
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EA0E0:
 	adds r0, r4, #0
 	adds r1, r7, #0
@@ -853,7 +853,7 @@ _080EA0E0:
 	ldr r1, _080EA150 @ =0x00000251
 	ldr r2, _080EA154 @ =gUnk_09E4B808
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EA0F8:
 	ldr r0, [r4, #0xc]
 	ldrb r5, [r4, #0xc]
@@ -866,7 +866,7 @@ _080EA0F8:
 	ldr r2, _080EA158 @ =gUnk_09E4B720
 	movs r1, #0x88
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EA112:
 	cmp r7, #1
 	bne _080EA160
@@ -876,7 +876,7 @@ _080EA112:
 	ldr r2, _080EA15C @ =gUnk_09E4B760
 	movs r1, #0x9a
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EA126:
 	ldr r0, [r4, #0x14]
 	ldr r2, [r4, #0x10]
@@ -900,7 +900,7 @@ _080EA160:
 	ldr r2, _080EA1B0 @ =gUnk_09E4B788
 	movs r1, #0xa5
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EA16C:
 	adds r5, r6, #0
 	adds r5, #0xc
@@ -910,7 +910,7 @@ _080EA16C:
 	ldr r2, _080EA1B4 @ =gUnk_09E4B6B8
 	movs r1, #0x5d
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EA180:
 	cmp r5, #0
 	bne _080EA190
@@ -918,7 +918,7 @@ _080EA180:
 	ldr r2, _080EA1B8 @ =gUnk_09E4B6C0
 	movs r1, #0x5e
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EA190:
 	ldr r2, [r4, #8]
 	cmp r2, #0
@@ -1066,7 +1066,7 @@ _080EA30A:
 	ldr r2, _080EA350 @ =gUnk_09E4B6C8
 	movs r1, #0x6d
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EA320:
 	ldrh r0, [r4, #2]
 	str r0, [r6, #0xc]
@@ -1114,7 +1114,7 @@ NNS_G2dLoadImageVramTransfer: @ 0x080EA354
 	lsls r1, r1, #2
 	ldr r2, _080EA3C0 @ =gUnk_09E4B85C
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EA37C:
 	adds r5, r6, #0
 	adds r5, #0xc
@@ -1124,7 +1124,7 @@ _080EA37C:
 	ldr r2, _080EA3C4 @ =gUnk_09E4B6B8
 	movs r1, #0x5d
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EA390:
 	cmp r5, #0
 	bne _080EA3A0
@@ -1132,7 +1132,7 @@ _080EA390:
 	ldr r2, _080EA3C8 @ =gUnk_09E4B6C0
 	movs r1, #0x5e
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EA3A0:
 	ldr r2, [r4, #8]
 	cmp r2, #0
@@ -1280,7 +1280,7 @@ _080EA51A:
 	ldr r2, _080EA560 @ =gUnk_09E4B6C8
 	movs r1, #0x6d
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EA530:
 	ldrh r0, [r4, #2]
 	str r0, [r6, #0xc]
@@ -1323,7 +1323,7 @@ NNS_G2dLoadPalette: @ 0x080EA564
 	ldr r1, _080EA5D0 @ =0x0000029F
 	ldr r2, _080EA5D4 @ =gUnk_09E4B790
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EA582:
 	cmp r7, #2
 	bls _080EA594
@@ -1332,7 +1332,7 @@ _080EA582:
 	lsls r1, r1, #2
 	ldr r2, _080EA5D8 @ =gUnk_09E4B644
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EA594:
 	cmp r5, #0
 	bne _080EA5A4
@@ -1340,7 +1340,7 @@ _080EA594:
 	ldr r1, _080EA5DC @ =0x000002A1
 	ldr r2, _080EA5E0 @ =gUnk_09E4B898
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EA5A4:
 	ldr r6, [r4, #8]
 	cmp r4, #0
@@ -1350,7 +1350,7 @@ _080EA5A4:
 	movs r1, #0x8e
 	lsls r1, r1, #1
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EA5B8:
 	ldr r0, [r4, #0xc]
 	cmp r7, #1
@@ -1375,7 +1375,7 @@ _080EA5E8:
 	movs r1, #0x94
 	lsls r1, r1, #1
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EA5F6:
 	ldr r0, [r4]
 	str r0, [r5]
@@ -1412,7 +1412,7 @@ NNS_G2dLoadPaletteEx: @ 0x080EA61C
 	ldr r1, _080EA6CC @ =0x000002C7
 	ldr r2, _080EA6D0 @ =gUnk_09E4B790
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EA640:
 	cmp r7, #0
 	bne _080EA652
@@ -1421,7 +1421,7 @@ _080EA640:
 	lsls r1, r1, #2
 	ldr r2, _080EA6D4 @ =gUnk_09E4B7C0
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EA652:
 	mov r0, sb
 	cmp r0, #2
@@ -1430,7 +1430,7 @@ _080EA652:
 	ldr r1, _080EA6D8 @ =0x000002C9
 	ldr r2, _080EA6DC @ =gUnk_09E4B644
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EA664:
 	ldr r1, [sp, #0x24]
 	cmp r1, #0
@@ -1439,7 +1439,7 @@ _080EA664:
 	ldr r1, _080EA6E0 @ =0x000002CA
 	ldr r2, _080EA6E4 @ =gUnk_09E4B898
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EA676:
 	cmp r6, #0
 	bne _080EA686
@@ -1447,7 +1447,7 @@ _080EA676:
 	ldr r2, _080EA6D0 @ =gUnk_09E4B790
 	ldr r1, _080EA6E8 @ =0x0000014F
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EA686:
 	cmp r7, #0
 	bne _080EA698
@@ -1456,7 +1456,7 @@ _080EA686:
 	movs r1, #0xa8
 	lsls r1, r1, #1
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EA698:
 	mov r2, sb
 	cmp r2, #2
@@ -1465,7 +1465,7 @@ _080EA698:
 	ldr r2, _080EA6DC @ =gUnk_09E4B644
 	ldr r1, _080EA6EC @ =0x00000151
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EA6AA:
 	cmp r6, #0
 	bne _080EA6BA
@@ -1473,7 +1473,7 @@ _080EA6AA:
 	ldr r2, _080EA6D0 @ =gUnk_09E4B790
 	ldr r1, _080EA6F0 @ =0x00000131
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EA6BA:
 	ldr r0, [r6]
 	cmp r0, #3
@@ -1501,7 +1501,7 @@ _080EA6F4:
 	movs r1, #0x9c
 	lsls r1, r1, #1
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EA706:
 	movs r0, #0x80
 	lsls r0, r0, #2
@@ -1522,7 +1522,7 @@ _080EA71A:
 	lsls r1, r1, #1
 	ldr r2, _080EA764 @ =gUnk_09E4B7C0
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EA72C:
 	ldr r1, [r7, #4]
 	lsls r0, r4, #1
@@ -1559,7 +1559,7 @@ _080EA770:
 	lsls r1, r1, #1
 	ldr r2, _080EA7B0 @ =gUnk_09E4B788
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EA77E:
 	adds r0, r4, #1
 	lsls r0, r0, #0x10
@@ -1614,7 +1614,7 @@ NNSi_G2dSetVramLocation: @ 0x080EA7C8
 	ldr r1, _080EA828 @ =0x000002E9
 	ldr r2, _080EA82C @ =gUnk_09E4B634
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EA7E0:
 	cmp r4, #2
 	bls _080EA7F0
@@ -1622,7 +1622,7 @@ _080EA7E0:
 	ldr r1, _080EA830 @ =0x000002EA
 	ldr r2, _080EA834 @ =gUnk_09E4B644
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EA7F0:
 	cmp r5, #0
 	bne _080EA800
@@ -1630,7 +1630,7 @@ _080EA7F0:
 	ldr r2, _080EA82C @ =gUnk_09E4B634
 	movs r1, #0x1f
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EA800:
 	cmp r4, #2
 	bls _080EA810
@@ -1638,7 +1638,7 @@ _080EA800:
 	ldr r2, _080EA834 @ =gUnk_09E4B644
 	movs r1, #0x20
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EA810:
 	adds r0, r5, #0
 	adds r1, r4, #0
@@ -1667,7 +1667,7 @@ NNSi_G2dGetVramLocation: @ 0x080EA838
 	ldr r1, _080EA890 @ =0x000002F1
 	ldr r2, _080EA894 @ =gUnk_09E4B634
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EA84E:
 	cmp r4, #2
 	bls _080EA85E
@@ -1675,7 +1675,7 @@ _080EA84E:
 	ldr r1, _080EA898 @ =0x000002F2
 	ldr r2, _080EA89C @ =gUnk_09E4B644
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EA85E:
 	cmp r5, #0
 	bne _080EA86E
@@ -1683,7 +1683,7 @@ _080EA85E:
 	ldr r2, _080EA894 @ =gUnk_09E4B634
 	movs r1, #0x2c
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EA86E:
 	cmp r4, #2
 	bls _080EA87E
@@ -1691,7 +1691,7 @@ _080EA86E:
 	ldr r2, _080EA89C @ =gUnk_09E4B644
 	movs r1, #0x2d
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EA87E:
 	lsls r0, r4, #2
 	adds r0, r5, r0
@@ -1717,7 +1717,7 @@ NNSi_G2dIsVramLocationReadyToUse: @ 0x080EA8A0
 	ldr r1, _080EA920 @ =0x000002FA
 	ldr r2, _080EA924 @ =gUnk_09E4B634
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EA8B6:
 	cmp r4, #2
 	bls _080EA8C6
@@ -1725,7 +1725,7 @@ _080EA8B6:
 	ldr r1, _080EA928 @ =0x000002FB
 	ldr r2, _080EA92C @ =gUnk_09E4B644
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EA8C6:
 	cmp r5, #0
 	bne _080EA8D6
@@ -1733,7 +1733,7 @@ _080EA8C6:
 	ldr r2, _080EA924 @ =gUnk_09E4B634
 	movs r1, #0x35
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EA8D6:
 	cmp r4, #2
 	bls _080EA8E6
@@ -1741,7 +1741,7 @@ _080EA8D6:
 	ldr r2, _080EA92C @ =gUnk_09E4B644
 	movs r1, #0x36
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EA8E6:
 	cmp r5, #0
 	bne _080EA8F6
@@ -1749,7 +1749,7 @@ _080EA8E6:
 	ldr r2, _080EA924 @ =gUnk_09E4B634
 	movs r1, #0x2c
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EA8F6:
 	cmp r4, #2
 	bls _080EA906
@@ -1757,7 +1757,7 @@ _080EA8F6:
 	ldr r2, _080EA92C @ =gUnk_09E4B644
 	movs r1, #0x2d
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EA906:
 	lsls r0, r4, #2
 	adds r0, r5, r0
@@ -1788,7 +1788,7 @@ NNSi_G2dDoImageLoadingToVram: @ 0x080EA930
 	ldr r1, _080EA998 @ =0x00000309
 	ldr r2, _080EA99C @ =gUnk_09E4B790
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EA948:
 	cmp r6, #2
 	bls _080EA958
@@ -1796,7 +1796,7 @@ _080EA948:
 	ldr r1, _080EA9A0 @ =0x0000030A
 	ldr r2, _080EA9A4 @ =gUnk_09E4B644
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EA958:
 	ldr r0, [r4, #0xc]
 	ldrb r5, [r4, #0xc]
@@ -1809,7 +1809,7 @@ _080EA958:
 	ldr r2, _080EA9A8 @ =gUnk_09E4B720
 	movs r1, #0x88
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EA972:
 	cmp r6, #1
 	bne _080EA9B0
@@ -1819,7 +1819,7 @@ _080EA972:
 	ldr r2, _080EA9AC @ =gUnk_09E4B760
 	movs r1, #0x9a
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EA986:
 	ldr r0, [r4, #0x14]
 	ldr r2, [r4, #0x10]
@@ -1839,7 +1839,7 @@ _080EA9B0:
 	ldr r2, _080EA9C8 @ =gUnk_09E4B788
 	movs r1, #0xa5
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EA9BC:
 	pop {r4, r5, r6, r7}
 	pop {r0}
@@ -1863,7 +1863,7 @@ NNSi_G2dSetupImageProxyPrams: @ 0x080EA9CC
 	ldr r1, _080EAA50 @ =0x0000031A
 	ldr r2, _080EAA54 @ =gUnk_09E4B790
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EA9EA:
 	cmp r7, #2
 	bls _080EA9FA
@@ -1871,7 +1871,7 @@ _080EA9EA:
 	ldr r1, _080EAA58 @ =0x0000031B
 	ldr r2, _080EAA5C @ =gUnk_09E4B644
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EA9FA:
 	cmp r6, #0
 	bne _080EAA0C
@@ -1880,7 +1880,7 @@ _080EA9FA:
 	lsls r1, r1, #2
 	ldr r2, _080EAA60 @ =gUnk_09E4B610
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EAA0C:
 	adds r4, r6, #0
 	adds r4, #0xc
@@ -1890,7 +1890,7 @@ _080EAA0C:
 	ldr r2, _080EAA64 @ =gUnk_09E4B6B8
 	movs r1, #0x5d
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EAA20:
 	cmp r4, #0
 	bne _080EAA30
@@ -1898,7 +1898,7 @@ _080EAA20:
 	ldr r2, _080EAA68 @ =gUnk_09E4B6C0
 	movs r1, #0x5e
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EAA30:
 	ldr r2, [r5, #8]
 	cmp r2, #0
@@ -2050,7 +2050,7 @@ _080EABBA:
 	ldr r2, _080EAC00 @ =gUnk_09E4B6C8
 	movs r1, #0x6d
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EABD0:
 	ldrh r0, [r5, #2]
 	str r0, [r6, #0xc]
@@ -2090,7 +2090,7 @@ NNSi_G2dDoLoadingPaletteToVram: @ 0x080EAC04
 	ldr r1, _080EAC58 @ =0x0000032A
 	ldr r2, _080EAC5C @ =gUnk_09E4B790
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EAC1C:
 	cmp r6, #2
 	bls _080EAC2C
@@ -2098,7 +2098,7 @@ _080EAC1C:
 	ldr r1, _080EAC60 @ =0x0000032B
 	ldr r2, _080EAC64 @ =gUnk_09E4B644
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EAC2C:
 	ldr r5, [r4, #8]
 	cmp r4, #0
@@ -2108,7 +2108,7 @@ _080EAC2C:
 	movs r1, #0x8e
 	lsls r1, r1, #1
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EAC40:
 	ldr r0, [r4, #0xc]
 	cmp r6, #1
@@ -2132,7 +2132,7 @@ _080EAC6C:
 	movs r1, #0x94
 	lsls r1, r1, #1
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EAC7A:
 	pop {r4, r5, r6, r7}
 	pop {r0}
@@ -2160,7 +2160,7 @@ NNSi_G2dDoLoadingPaletteToVramEx: @ 0x080EAC88
 	lsls r1, r1, #2
 	ldr r2, _080EAD28 @ =gUnk_09E4B790
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EACAE:
 	cmp r6, #0
 	bne _080EACBE
@@ -2168,7 +2168,7 @@ _080EACAE:
 	ldr r1, _080EAD2C @ =0x0000033D
 	ldr r2, _080EAD30 @ =gUnk_09E4B7C0
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EACBE:
 	mov r0, sl
 	cmp r0, #2
@@ -2177,7 +2177,7 @@ _080EACBE:
 	ldr r1, _080EAD34 @ =0x0000033E
 	ldr r2, _080EAD38 @ =gUnk_09E4B644
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EACD0:
 	mov r1, r8
 	cmp r1, #0
@@ -2186,7 +2186,7 @@ _080EACD0:
 	ldr r2, _080EAD28 @ =gUnk_09E4B790
 	ldr r1, _080EAD3C @ =0x0000014F
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EACE2:
 	cmp r6, #0
 	bne _080EACF4
@@ -2195,7 +2195,7 @@ _080EACE2:
 	movs r1, #0xa8
 	lsls r1, r1, #1
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EACF4:
 	mov r3, sl
 	cmp r3, #2
@@ -2204,7 +2204,7 @@ _080EACF4:
 	ldr r2, _080EAD38 @ =gUnk_09E4B644
 	ldr r1, _080EAD40 @ =0x00000151
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EAD06:
 	mov r0, r8
 	cmp r0, #0
@@ -2213,7 +2213,7 @@ _080EAD06:
 	ldr r2, _080EAD28 @ =gUnk_09E4B790
 	ldr r1, _080EAD44 @ =0x00000131
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EAD18:
 	mov r1, r8
 	ldr r0, [r1]
@@ -2239,7 +2239,7 @@ _080EAD48:
 	movs r1, #0x9c
 	lsls r1, r1, #1
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EAD5A:
 	movs r7, #0x80
 	lsls r7, r7, #2
@@ -2258,7 +2258,7 @@ _080EAD6A:
 	lsls r1, r1, #1
 	ldr r2, _080EADB4 @ =gUnk_09E4B7C0
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EAD7C:
 	ldr r1, [r6, #4]
 	lsls r0, r4, #1
@@ -2294,7 +2294,7 @@ _080EADC0:
 	lsls r1, r1, #1
 	ldr r2, _080EADEC @ =gUnk_09E4B788
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EADCE:
 	adds r0, r4, #1
 	lsls r0, r0, #0x10
@@ -2327,7 +2327,7 @@ NNSi_G2dSetupPaletteProxyPrams: @ 0x080EADF0
 	ldr r1, _080EAE48 @ =0x0000034E
 	ldr r2, _080EAE4C @ =gUnk_09E4B790
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EAE0A:
 	cmp r6, #2
 	bls _080EAE1A
@@ -2335,7 +2335,7 @@ _080EAE0A:
 	ldr r1, _080EAE50 @ =0x0000034F
 	ldr r2, _080EAE54 @ =gUnk_09E4B644
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EAE1A:
 	cmp r4, #0
 	bne _080EAE2C
@@ -2344,7 +2344,7 @@ _080EAE1A:
 	lsls r1, r1, #2
 	ldr r2, _080EAE58 @ =gUnk_09E4B898
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EAE2C:
 	ldr r0, [r5]
 	str r0, [r4]
@@ -2376,7 +2376,7 @@ SetVramLocation_: @ 0x080EAE5C
 	ldr r2, _080EAEBC @ =gUnk_09E4B634
 	movs r1, #0x35
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EAE72:
 	cmp r4, #2
 	bls _080EAE82
@@ -2384,7 +2384,7 @@ _080EAE72:
 	ldr r2, _080EAEC0 @ =gUnk_09E4B644
 	movs r1, #0x36
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EAE82:
 	cmp r5, #0
 	bne _080EAE92
@@ -2392,7 +2392,7 @@ _080EAE82:
 	ldr r2, _080EAEBC @ =gUnk_09E4B634
 	movs r1, #0x2c
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EAE92:
 	cmp r4, #2
 	bls _080EAEA2
@@ -2400,7 +2400,7 @@ _080EAE92:
 	ldr r2, _080EAEC0 @ =gUnk_09E4B644
 	movs r1, #0x2d
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EAEA2:
 	lsls r0, r4, #2
 	adds r0, r5, r0

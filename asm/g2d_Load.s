@@ -16,7 +16,7 @@ NNS_G2dFindBinaryBlock: @ 0x080EAEC4
 	ldr r2, _080EAEE8 @ =gUnk_09E4BFF4
 	movs r1, #0xa
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EAEDA:
 	ldrh r0, [r6, #0xc]
 	adds r4, r0, r6
@@ -32,7 +32,7 @@ _080EAEEC:
 	movs r1, #0x13
 	ldr r2, _080EAF0C @ =gUnk_09E4C004
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EAEFC:
 	ldr r0, [r4]
 	cmp r0, r7

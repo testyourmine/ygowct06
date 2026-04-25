@@ -15,7 +15,7 @@ ApplyCurrentAnimResult_: @ 0x080E9350
 	ldr r2, _080E93CC @ =gUnk_09E4AD64
 	movs r1, #0x16
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E9364:
 	ldr r0, [r5, #0x30]
 	cmp r0, #0
@@ -24,7 +24,7 @@ _080E9364:
 	ldr r2, _080E93D0 @ =gUnk_09E4AE80
 	movs r1, #0x17
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E9376:
 	ldr r0, [r5]
 	ldrh r0, [r0, #4]
@@ -43,7 +43,7 @@ _080E9376:
 	ldr r2, _080E93D4 @ =gUnk_09E4AE9C
 	movs r1, #0x2b
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E93A0:
 	ldr r0, [r5, #0x18]
 	ldrb r6, [r0, #4]
@@ -99,7 +99,7 @@ NNS_G2dInitCellAnimation: @ 0x080E9400
 	ldr r2, _080E9494 @ =gUnk_09E4AD64
 	movs r1, #0x87
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E9418:
 	cmp r6, #0
 	bne _080E9428
@@ -107,7 +107,7 @@ _080E9418:
 	ldr r2, _080E9498 @ =gUnk_09E4AEB4
 	movs r1, #0x88
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E9428:
 	cmp r5, #0
 	bne _080E9438
@@ -115,7 +115,7 @@ _080E9428:
 	ldr r2, _080E949C @ =gUnk_09E4AEC0
 	movs r1, #0x89
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E9438:
 	cmp r4, #0
 	bne _080E9448
@@ -123,7 +123,7 @@ _080E9438:
 	ldr r2, _080E9494 @ =gUnk_09E4AD64
 	movs r1, #0x64
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E9448:
 	cmp r6, #0
 	bne _080E9458
@@ -131,7 +131,7 @@ _080E9448:
 	ldr r2, _080E9498 @ =gUnk_09E4AEB4
 	movs r1, #0x65
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E9458:
 	cmp r5, #0
 	bne _080E9468
@@ -139,7 +139,7 @@ _080E9458:
 	ldr r2, _080E949C @ =gUnk_09E4AEC0
 	movs r1, #0x66
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E9468:
 	str r5, [r4, #0x30]
 	movs r0, #1
@@ -179,7 +179,7 @@ NNS_G2dSetCellAnimationSequence: @ 0x080E94A4
 	ldr r2, _080E94F4 @ =gUnk_09E4AD64
 	movs r1, #0xe5
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E94BA:
 	cmp r4, #0
 	bne _080E94CA
@@ -187,7 +187,7 @@ _080E94BA:
 	ldr r2, _080E94F8 @ =gUnk_09E4AEB4
 	movs r1, #0xe6
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E94CA:
 	ldrh r0, [r4, #6]
 	cmp r0, #1
@@ -196,7 +196,7 @@ _080E94CA:
 	ldr r2, _080E94FC @ =gUnk_09E4AED0
 	movs r1, #0xe8
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E94DC:
 	adds r0, r5, #0
 	adds r1, r4, #0
@@ -224,7 +224,7 @@ NNS_G2dSetCellAnimationSequenceNoReset: @ 0x080E9500
 	lsls r1, r1, #1
 	ldr r2, _080E9568 @ =gUnk_09E4AD64
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E9518:
 	cmp r5, #0
 	bne _080E9528
@@ -232,7 +232,7 @@ _080E9518:
 	ldr r1, _080E956C @ =0x00000101
 	ldr r2, _080E9570 @ =gUnk_09E4AEB4
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E9528:
 	ldrh r0, [r5, #6]
 	cmp r0, #1
@@ -241,7 +241,7 @@ _080E9528:
 	ldr r1, _080E9574 @ =0x00000103
 	ldr r2, _080E9578 @ =gUnk_09E4AED0
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E953A:
 	adds r0, r4, #0
 	bl NNS_G2dGetAnimCtrlCurrentFrame
@@ -281,7 +281,7 @@ NNS_G2dTickCellAnimation: @ 0x080E957C
 	lsls r1, r1, #1
 	ldr r2, _080E95D8 @ =gUnk_09E4AD64
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E9594:
 	ldr r0, [r4, #0x18]
 	cmp r0, #0
@@ -290,7 +290,7 @@ _080E9594:
 	ldr r1, _080E95DC @ =0x00000123
 	ldr r2, _080E95E0 @ =gUnk_09E4AF1C
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E95A6:
 	ldr r0, [r4, #0x18]
 	ldrh r0, [r0, #6]
@@ -300,7 +300,7 @@ _080E95A6:
 	ldr r1, _080E95E4 @ =0x00000125
 	ldr r2, _080E95E8 @ =gUnk_09E4AF40
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E95BA:
 	adds r0, r4, #0
 	adds r1, r5, #0
@@ -334,7 +334,7 @@ NNS_G2dSetCellAnimationCurrentFrame: @ 0x080E95EC
 	lsls r1, r1, #1
 	ldr r2, _080E9634 @ =gUnk_09E4AD64
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E9606:
 	ldr r0, [r4, #0x18]
 	cmp r0, #0
@@ -343,7 +343,7 @@ _080E9606:
 	ldr r1, _080E9638 @ =0x00000143
 	ldr r2, _080E963C @ =gUnk_09E4AF1C
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E9618:
 	adds r0, r4, #0
 	adds r1, r5, #0
@@ -373,7 +373,7 @@ NNS_G2dSetCellAnimationSpeed: @ 0x080E9640
 	ldr r1, _080E9688 @ =0x0000015F
 	ldr r2, _080E968C @ =gUnk_09E4AD64
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E9656:
 	ldr r0, [r4, #0x18]
 	cmp r0, #0
@@ -383,7 +383,7 @@ _080E9656:
 	lsls r1, r1, #1
 	ldr r2, _080E9690 @ =gUnk_09E4AF1C
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E966A:
 	cmp r4, #0
 	bne _080E967A
@@ -391,7 +391,7 @@ _080E966A:
 	ldr r2, _080E9698 @ =gUnk_09E4AD04
 	movs r1, #0x5e
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E967A:
 	str r5, [r4, #0x10]
 	pop {r4, r5}
@@ -451,7 +451,7 @@ _080E96DA:
 	ldr r1, _080E9774 @ =0x000002AB
 	ldr r2, _080E9778 @ =gUnk_09E4ACA4
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E96F2:
 	ldr r2, [sp, #0x1c]
 	lsls r0, r2, #1
@@ -670,7 +670,7 @@ _080E97DE:
 	ldr r1, _080E98F0 @ =0x000001D5
 	ldr r2, _080E98F4 @ =gUnk_09E4A6AC
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E98A6:
 	ldr r1, [sp, #0x18]
 	cmp r1, #0x1f
@@ -680,7 +680,7 @@ _080E98A6:
 	lsls r1, r1, #1
 	ldr r2, _080E98F8 @ =gUnk_09E4A7B0
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E98BA:
 	movs r0, #0x80
 	lsls r0, r0, #1

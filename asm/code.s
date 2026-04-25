@@ -5617,7 +5617,7 @@ sub_08013A68: @ 0x08013A68
 	ldr r1, _08013AB8 @ =0x0000014B
 	ldr r2, _08013ABC @ =gUnk_09E39808
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _08013A94:
 	adds r0, r7, #0
 	adds r0, #8
@@ -7206,7 +7206,7 @@ sub_080146FC: @ 0x080146FC
 	ldr r2, _08014748 @ =gUnk_09E398EC
 	movs r1, #0xea
 	movs r3, #0
-	bl nullsub_4
+	bl OSi_Panic
 _08014718:
 	strb r5, [r4, #1]
 	strb r5, [r4]
@@ -7250,7 +7250,7 @@ sub_08014754: @ 0x08014754
 	ldr r2, _080147C8 @ =gUnk_09E3990C
 	movs r1, #0xf8
 	movs r3, #0
-	bl nullsub_4
+	bl OSi_Panic
 _08014774:
 	cmp r6, #0x10
 	bls _08014784
@@ -7258,7 +7258,7 @@ _08014774:
 	ldr r2, _080147CC @ =gUnk_09E39928
 	movs r1, #0xf9
 	movs r3, #0
-	bl nullsub_4
+	bl OSi_Panic
 _08014784:
 	strb r5, [r4, #1]
 	strb r5, [r4]
@@ -7314,7 +7314,7 @@ sub_080147D8: @ 0x080147D8
 	lsls r1, r1, #1
 	ldr r2, _0801482C @ =gUnk_09E398EC
 	movs r3, #0
-	bl nullsub_4
+	bl OSi_Panic
 _080147F8:
 	ldr r0, _08014830 @ =0xFFFFFC03
 	ldrh r1, [r4, #8]
@@ -7362,7 +7362,7 @@ sub_08014838: @ 0x08014838
 	ldr r1, _080148BC @ =0x00000119
 	ldr r2, _080148C0 @ =gUnk_09E3990C
 	movs r3, #0
-	bl nullsub_4
+	bl OSi_Panic
 _0801485C:
 	cmp r7, #0x10
 	bls _0801486E
@@ -7371,7 +7371,7 @@ _0801485C:
 	lsls r1, r1, #1
 	ldr r2, _080148C4 @ =gUnk_09E39928
 	movs r3, #0
-	bl nullsub_4
+	bl OSi_Panic
 _0801486E:
 	ldrb r0, [r4, #1]
 	strb r0, [r4]
@@ -7911,7 +7911,7 @@ sub_08014C14: @ 0x08014C14
 	lsls r1, r1, #1
 	ldr r2, _08014C50 @ =gUnk_09E39944
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _08014C32:
 	bl sub_08014A10
 	adds r1, r0, #0
@@ -7941,7 +7941,7 @@ sub_08014C54: @ 0x08014C54
 	ldr r1, _08014C8C @ =0x000001E7
 	ldr r2, _08014C90 @ =gUnk_09E39944
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _08014C70:
 	bl sub_08014A30
 	adds r1, r0, #0
@@ -7973,7 +7973,7 @@ sub_08014C94: @ 0x08014C94
 	lsls r1, r1, #1
 	ldr r2, _08014CD0 @ =gUnk_09E39944
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _08014CB2:
 	bl sub_08014A50
 	adds r1, r0, #0
@@ -8003,7 +8003,7 @@ sub_08014CD4: @ 0x08014CD4
 	ldr r1, _08014D0C @ =0x000001F1
 	ldr r2, _08014D10 @ =gUnk_09E39944
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _08014CF0:
 	bl sub_08014A70
 	adds r1, r0, #0
@@ -8034,7 +8034,7 @@ sub_08014D14: @ 0x08014D14
 	ldr r1, _08014D4C @ =0x000001F7
 	ldr r2, _08014D50 @ =gUnk_09E39944
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _08014D30:
 	bl sub_08014B8C
 	adds r1, r0, #0
@@ -8066,7 +8066,7 @@ sub_08014D54: @ 0x08014D54
 	lsls r1, r1, #1
 	ldr r2, _08014D90 @ =gUnk_09E39944
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _08014D72:
 	bl sub_08014BAC
 	adds r1, r0, #0
@@ -8096,7 +8096,7 @@ sub_08014D94: @ 0x08014D94
 	ldr r1, _08014DCC @ =0x00000201
 	ldr r2, _08014DD0 @ =gUnk_09E39944
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _08014DB0:
 	bl sub_08014BCC
 	adds r1, r0, #0
@@ -8127,7 +8127,7 @@ sub_08014DD4: @ 0x08014DD4
 	ldr r1, _08014E0C @ =0x00000206
 	ldr r2, _08014E10 @ =gUnk_09E39944
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _08014DF0:
 	bl sub_08014BEC
 	adds r1, r0, #0
@@ -8159,7 +8159,7 @@ sub_08014E14: @ 0x08014E14
 	lsls r1, r1, #2
 	ldr r2, _08014E50 @ =gUnk_09E39944
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _08014E32:
 	bl sub_08014C0C
 	adds r1, r0, #0

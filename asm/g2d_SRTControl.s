@@ -28,7 +28,7 @@ _080EB8C8:
 	ldr r2, _080EB8E0 @ =gUnk_09E4E938
 	movs r1, #0x27
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EB8D4:
 	pop {r4}
 	pop {r0}
@@ -57,7 +57,7 @@ _080EB8FE:
 	ldr r2, _080EB914 @ =gUnk_09E4E938
 	movs r1, #0x45
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EB90A:
 	pop {r0}
 	bx r0
@@ -84,7 +84,7 @@ _080EB930:
 	ldr r2, _080EB948 @ =gUnk_09E4E938
 	movs r1, #0x62
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EB93C:
 	pop {r4}
 	pop {r0}
@@ -104,7 +104,7 @@ NNSi_G2dSrtcInitControl: @ 0x080EB94C
 	ldr r2, _080EB974 @ =gUnk_09E4E93C
 	movs r1, #0x77
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EB962:
 	str r5, [r4]
 	adds r0, r4, #0
@@ -127,7 +127,7 @@ NNSi_G2dSrtcSetInitialValue: @ 0x080EB978
 	ldr r2, _080EB9C4 @ =gUnk_09E4E93C
 	movs r1, #0x8f
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EB98E:
 	ldr r0, [r4]
 	cmp r0, #1
@@ -136,7 +136,7 @@ _080EB98E:
 	ldr r2, _080EB9C8 @ =gUnk_09E4E944
 	movs r1, #0x90
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EB9A0:
 	mov r1, sp
 	movs r0, #0
@@ -170,7 +170,7 @@ NNSi_G2dSrtcBuildMatrixFromSRT_2D: @ 0x080EB9D0
 	ldr r2, _080EBA64 @ =gUnk_09E4E93C
 	movs r1, #0xab
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EB9E6:
 	cmp r4, #0
 	bne _080EB9F6
@@ -178,7 +178,7 @@ _080EB9E6:
 	ldr r2, _080EBA68 @ =gUnk_09E4E974
 	movs r1, #0xac
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EB9F6:
 	ldr r0, [r5]
 	cmp r0, #1
@@ -187,7 +187,7 @@ _080EB9F6:
 	ldr r2, _080EBA6C @ =gUnk_09E4E944
 	movs r1, #0xad
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EBA08:
 	cmp r4, #0
 	bne _080EBA18
@@ -195,7 +195,7 @@ _080EBA08:
 	ldr r2, _080EBA74 @ =gUnk_09E4E8FC
 	movs r1, #0x30
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EBA18:
 	adds r0, r4, #0
 	bl MTX_Identity22_
@@ -216,7 +216,7 @@ _080EBA18:
 	ldr r2, _080EBA74 @ =gUnk_09E4E8FC
 	movs r1, #0x77
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EBA44:
 	adds r0, r4, #0
 	adds r1, r7, #0
@@ -250,7 +250,7 @@ NNSi_G2dSrtcBuildMatrixFromSRT_3D: @ 0x080EBA7C
 	ldr r2, _080EBAFC @ =gUnk_09E4E93C
 	movs r1, #0xca
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EBA92:
 	cmp r5, #0
 	bne _080EBAA2
@@ -258,7 +258,7 @@ _080EBA92:
 	ldr r2, _080EBB00 @ =gUnk_09E4E974
 	movs r1, #0xcb
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EBAA2:
 	ldr r0, [r4]
 	cmp r0, #1
@@ -267,7 +267,7 @@ _080EBAA2:
 	ldr r2, _080EBB04 @ =gUnk_09E4E944
 	movs r1, #0xcc
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EBAB4:
 	ldr r2, _080EBB08 @ =gUnk_09E399D0
 	ldrb r1, [r4, #0x10]
@@ -286,7 +286,7 @@ _080EBAB4:
 	ldr r2, _080EBB10 @ =gUnk_09E4E8FC
 	movs r1, #0x77
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EBADA:
 	adds r0, r5, #0
 	adds r1, r7, #0

@@ -16,7 +16,7 @@ NNS_G2dGetUnpackedCharacterData: @ 0x080EB23C
 	ldr r2, _080EB2BC @ =gUnk_09E4CFC0
 	movs r1, #0x34
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EB252:
 	cmp r5, #0
 	bne _080EB262
@@ -24,7 +24,7 @@ _080EB252:
 	ldr r2, _080EB2C0 @ =gUnk_09E4CFCC
 	movs r1, #0x35
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EB262:
 	movs r2, #0
 	cmp r4, #0
@@ -41,7 +41,7 @@ _080EB272:
 	ldr r2, _080EB2C8 @ =gUnk_09E4CFD8
 	movs r1, #0x39
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EB282:
 	movs r1, #0
 	cmp r4, #0
@@ -59,7 +59,7 @@ _080EB294:
 	ldr r2, _080EB2CC @ =gUnk_09E4D014
 	movs r1, #0x3d
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EB2A4:
 	ldr r1, _080EB2D0 @ =0x43484152
 	adds r0, r4, #0
@@ -99,7 +99,7 @@ NNS_G2dUnpackNCG: @ 0x080EB2E8
 	ldr r2, _080EB33C @ =gUnk_09E4D068
 	movs r1, #0x5c
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EB2FC:
 	ldr r0, [r4, #0x14]
 	adds r0, r0, r4
@@ -127,7 +127,7 @@ _080EB324:
 	ldr r2, _080EB340 @ =gUnk_09E4D074
 	movs r1, #0x77
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EB330:
 	pop {r4}
 	pop {r0}
@@ -148,7 +148,7 @@ NNS_G2dGetUnpackedBGCharacterData: @ 0x080EB344
 	ldr r2, _080EB3C4 @ =gUnk_09E4CFC0
 	movs r1, #0x84
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EB35A:
 	cmp r5, #0
 	bne _080EB36A
@@ -156,7 +156,7 @@ _080EB35A:
 	ldr r2, _080EB3C8 @ =gUnk_09E4CFCC
 	movs r1, #0x85
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EB36A:
 	movs r2, #0
 	cmp r4, #0
@@ -173,7 +173,7 @@ _080EB37A:
 	ldr r2, _080EB3D0 @ =gUnk_09E4CFD8
 	movs r1, #0x89
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EB38A:
 	movs r1, #0
 	cmp r4, #0
@@ -191,7 +191,7 @@ _080EB39C:
 	ldr r2, _080EB3D4 @ =gUnk_09E4D014
 	movs r1, #0x8d
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EB3AC:
 	ldr r1, _080EB3D8 @ =0x43484152
 	adds r0, r4, #0
@@ -232,7 +232,7 @@ NNS_G2dGetUnpackedCharacterPosInfo: @ 0x080EB3F0
 	ldr r2, _080EB46C @ =gUnk_09E4CFC0
 	movs r1, #0xc3
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EB406:
 	cmp r5, #0
 	bne _080EB416
@@ -240,7 +240,7 @@ _080EB406:
 	ldr r2, _080EB470 @ =gUnk_09E4D0FC
 	movs r1, #0xc4
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EB416:
 	movs r2, #0
 	cmp r4, #0
@@ -257,7 +257,7 @@ _080EB426:
 	ldr r2, _080EB478 @ =gUnk_09E4CFD8
 	movs r1, #0xc8
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EB436:
 	movs r1, #0
 	cmp r4, #0
@@ -274,7 +274,7 @@ _080EB446:
 	ldr r2, _080EB480 @ =gUnk_09E4D10C
 	movs r1, #0xcc
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EB456:
 	ldr r1, _080EB484 @ =0x43504F53
 	adds r0, r4, #0
@@ -312,7 +312,7 @@ NNS_G2dUnpackBGNCG: @ 0x080EB494
 	ldr r2, _080EB4CC @ =gUnk_09E4D068
 	movs r1, #0xe6
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EB4A8:
 	ldr r0, [r4, #0x14]
 	adds r0, r0, r4
@@ -324,7 +324,7 @@ _080EB4A8:
 	ldr r2, _080EB4D0 @ =gUnk_09E4D160
 	movs r1, #0xf6
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080EB4C0:
 	pop {r4}
 	pop {r0}

@@ -3213,7 +3213,7 @@ _080ED592:
 	ldr r2, _080ED5D0 @ =0x00000928
 	adds r1, r1, r2
 	ldrh r1, [r1]
-	bl sub_080FA4CC
+	bl OS_Printf
 	ldr r1, [r4]
 	adds r1, r1, r7
 	b _080ED60A
@@ -4160,7 +4160,7 @@ _080EDCEC:
 	bne _080EDD2E
 	ldr r0, _080EDD50 @ =gUnk_09E4E990
 	ldrh r1, [r1]
-	bl sub_080FA4CC
+	bl OS_Printf
 	bl sub_080FA4D8
 	ldr r0, [r4]
 	ldr r1, _080EDD4C @ =0x00000582
@@ -18417,7 +18417,7 @@ sub_080F4C14: @ 0x080F4C14
 	bl SetSramFastFunc
 	bl sub_080FA4C0
 	ldr r0, _080F4D44 @ =gUnk_09E4F484
-	bl sub_080FA4CC
+	bl OS_Printf
 	bl sub_080FA4D8
 	ldr r0, _080F4D48 @ =gUnk_03000000
 	str r4, [r0]
@@ -24345,7 +24345,7 @@ _080F777E:
 	ldr r0, _080F77B4 @ =gUnk_09E4F498
 	ldrh r1, [r6, #8]
 	mov r2, r8
-	bl sub_080FA4CC
+	bl OS_Printf
 	bl sub_080FA4D8
 	add sp, #4
 	pop {r3}
@@ -25232,7 +25232,7 @@ sub_080F7E0C: @ 0x080F7E0C
 	ldr r2, _080F7E44 @ =gUnk_09E4F4CC
 	movs r1, #0xbc
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080F7E30:
 	lsls r0, r5, #2
 	adds r0, r0, r6
@@ -25270,7 +25270,7 @@ sub_080F7E48: @ 0x080F7E48
 	ldr r2, _080F7EA8 @ =gUnk_09E4F500
 	movs r1, #0xcf
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080F7E78:
 	lsls r0, r6, #2
 	adds r0, r0, r7
@@ -25375,7 +25375,7 @@ _080F7F28:
 	ldr r2, _080F7F8C @ =gUnk_09E4F534
 	movs r1, #0xf1
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080F7F3A:
 	ldrb r0, [r4, #0xc]
 	subs r0, #1
@@ -25391,7 +25391,7 @@ _080F7F3A:
 	ldr r2, _080F7F90 @ =gUnk_09E4F548
 	movs r1, #0xf5
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080F7F5A:
 	ldrb r1, [r4, #0x13]
 	movs r0, #8
@@ -25674,7 +25674,7 @@ _080F8140:
 	lsls r1, r1, #1
 	ldr r2, _080F81E4 @ =gUnk_09E4F564
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080F814E:
 	ldr r7, [sp, #8]
 	ldrb r1, [r7, #0x12]
@@ -26253,7 +26253,7 @@ _080F8582:
 	lsls r1, r1, #1
 	ldr r2, _080F8630 @ =gUnk_09E4F564
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080F8590:
 	ldr r0, [sp, #8]
 	ldrb r1, [r0, #0x12]
@@ -26688,7 +26688,7 @@ _080F88B4:
 	ldr r1, _080F88FC @ =0x00000263
 	ldr r2, _080F8900 @ =gUnk_09E4F564
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080F88C0:
 	mov r4, sb
 	movs r5, #2
@@ -27072,7 +27072,7 @@ _080F8B74:
 	ldr r1, _080F8C14 @ =0x000002D3
 	ldr r2, _080F8C18 @ =gUnk_09E4F564
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080F8B80:
 	ldr r2, [sp, #8]
 	ldrb r1, [r2, #0x12]
@@ -27417,7 +27417,7 @@ _080F8DF8:
 	lsls r1, r1, #2
 	ldr r2, _080F8EEC @ =gUnk_09E4F564
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080F8E06:
 	movs r0, #1
 	ldr r2, [sp, #0xc]
@@ -30416,8 +30416,8 @@ nullsub_26: @ 0x080FA4C8
 	bx lr
 	.align 2, 0
 
-	thumb_func_start sub_080FA4CC
-sub_080FA4CC: @ 0x080FA4CC
+	thumb_func_start OS_Printf
+OS_Printf: @ 0x080FA4CC
 	push {r0, r1, r2, r3}
 	add sp, #0x10
 	bx lr
@@ -30433,8 +30433,8 @@ sub_080FA4D8: @ 0x080FA4D8
 	bx lr
 	.align 2, 0
 
-	thumb_func_start nullsub_4
-nullsub_4: @ 0x080FA4DC
+	thumb_func_start OSi_Panic
+OSi_Panic: @ 0x080FA4DC
 	bx lr
 	.align 2, 0
 
@@ -36464,7 +36464,7 @@ sub_080FD678: @ 0x080FD678
 	lsls r1, r1, #1
 	ldr r2, _080FD6EC @ =gUnk_09E5073C
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080FD6A6:
 	adds r0, r7, #0
 	adds r0, #8

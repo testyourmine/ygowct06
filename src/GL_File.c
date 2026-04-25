@@ -1,7 +1,7 @@
 #include "global.h"
 #include "GL_File.h"
 
-extern void nullsub_4(u8 *, s32, u8 *, s32);
+extern void OSi_Panic(u8 *, s32, u8 *, s32);
 extern void CpuCopy(void *src, void *dest, s32 size);
 
 struct Unk_02000000_6C2C {
@@ -44,12 +44,12 @@ static s32 GetSubstringIndex(u8 *pSrc, u8 *pKey)
 
     if (pSrc == NULL)
     {
-        nullsub_4("GL/GL_File.c", 0x26, "pSrc", 1);
+        OSi_Panic("GL/GL_File.c", 0x26, "pSrc", 1);
     }
 
     if (pKey == NULL)
     {
-        nullsub_4("GL/GL_File.c", 0x27, "pKey", 1);
+        OSi_Panic("GL/GL_File.c", 0x27, "pKey", 1);
     }
 
     keyLength = GetStringLength(pKey);    
@@ -185,7 +185,7 @@ void* GL_OpenFile(u8* filePathString, void *dest)
             {
                 if (((u8)*fileData >> 4) != 1)
                 {
-                    nullsub_4("GL/GL_File.c", 0x91, "pHead->compType == 1", 1);
+                    OSi_Panic("GL/GL_File.c", 0x91, "pHead->compType == 1", 1);
                 }
 
                 LZ77UnCompWram(fileData, uncompBuf);

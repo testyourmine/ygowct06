@@ -61,7 +61,7 @@ MTX_ScaleApply22: @ 0x080E850C
 	ldr r2, _080E85B8 @ =gUnk_09E49D1C
 	movs r1, #0x70
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E852C:
 	mov r0, r8
 	cmp r0, #0
@@ -70,7 +70,7 @@ _080E852C:
 	ldr r2, _080E85BC @ =gUnk_09E49D0C
 	movs r1, #0x71
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E853E:
 	adds r4, r7, #0
 	asrs r5, r7, #0x1f
@@ -146,7 +146,7 @@ MTX_Inverse22: @ 0x080E85C0
 	ldr r2, _080E8640 @ =gUnk_09E49D1C
 	movs r1, #0x8e
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E85DE:
 	mov r0, sb
 	cmp r0, #0
@@ -155,7 +155,7 @@ _080E85DE:
 	ldr r2, _080E8644 @ =gUnk_09E49D0C
 	movs r1, #0x8f
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E85F0:
 	mov r8, sb
 	cmp r7, sb
@@ -292,7 +292,7 @@ MTX_Concat22: @ 0x080E86EC
 	ldr r2, _080E885C @ =gUnk_09E49D44
 	movs r1, #0xcb
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E870E:
 	mov r0, sb
 	cmp r0, #0
@@ -301,7 +301,7 @@ _080E870E:
 	ldr r2, _080E8860 @ =gUnk_09E49D50
 	movs r1, #0xcc
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E8720:
 	ldr r1, [sp, #0x10]
 	cmp r1, #0
@@ -310,7 +310,7 @@ _080E8720:
 	ldr r2, _080E8864 @ =gUnk_09E49D5C
 	movs r1, #0xcd
 	movs r3, #1
-	bl nullsub_4
+	bl OSi_Panic
 _080E8732:
 	ldr r2, [sp, #0x10]
 	str r2, [sp, #0x14]
