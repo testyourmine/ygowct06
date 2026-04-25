@@ -50,7 +50,7 @@ _080E93A0:
 	adds r5, #0x38
 	adds r0, r5, #0
 	movs r1, #1
-	bl sub_080EB94C
+	bl NNSi_G2dSrtcInitControl
 	cmp r6, #0
 	beq _080E93F8
 	cmp r6, #2
@@ -60,7 +60,7 @@ _080E93A0:
 	movs r0, #6
 	ldrsh r2, [r4, r0]
 	adds r0, r5, #0
-	bl sub_080EB8A8
+	bl NNSi_G2dSrtcSetTrans
 	b _080E93F8
 	.align 2, 0
 _080E93C8: .4byte gUnk_09E4AE60
@@ -71,16 +71,16 @@ _080E93D8:
 	ldr r1, [r4, #4]
 	ldr r2, [r4, #8]
 	adds r0, r5, #0
-	bl sub_080EB918
+	bl NNSi_G2dSrtcSetSRTScale
 	ldrh r1, [r4, #2]
 	adds r0, r5, #0
-	bl sub_080EB8E4
+	bl NNSi_G2dSrtcSetSRTRotZ
 	movs r0, #0xc
 	ldrsh r1, [r4, r0]
 	movs r0, #0xe
 	ldrsh r2, [r4, r0]
 	adds r0, r5, #0
-	bl sub_080EB8A8
+	bl NNSi_G2dSrtcSetTrans
 _080E93F8:
 	pop {r4, r5, r6}
 	pop {r0}
@@ -148,7 +148,7 @@ _080E9468:
 	adds r0, r4, #0
 	adds r0, #0x38
 	movs r1, #1
-	bl sub_080EB94C
+	bl NNSi_G2dSrtcInitControl
 	adds r0, r4, #0
 	bl NNS_G2dInitAnimCtrl
 	adds r0, r4, #0

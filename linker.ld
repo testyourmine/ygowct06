@@ -260,7 +260,8 @@ SECTIONS {
         asm/g2d_NCG_load.o(.text);
         asm/g2d_NCL_load.o(.text);
         asm/g2d_NOB_load.o(.text);
-        asm/code_080E9340.o(.text);
+        asm/g2d_SRTControl.o(.text);
+        asm/code_080EBB14.o(.text);
         asm/libagbsyscall.o(.text);
         src/agb_sram.o(.text);
 
