@@ -41,7 +41,7 @@ MID_BUILDDIR = $(OBJ_DIR)/$(MID_SUBDIR)
 ASFLAGS := -mcpu=arm7tdmi --defsym REVISION=$(REVISION) --defsym $(GAME_LANGUAGE)=1
 
 CC1 := tools/agbcc/bin/agbcc
-override CFLAGS += -mthumb-interwork -Wimplicit -Wparentheses -Werror -O2 -g -fhex-asm -fprologue-bugfix -ffix-debug-line
+override CFLAGS += -mthumb-interwork -Wimplicit -Wparentheses -Werror -O2 -g -fhex-asm -ffix-debug-line
 
 CPPFLAGS := -I tools/agbcc -I tools/agbcc/include -iquote include -nostdinc -DREVISION=$(REVISION) -D$(GAME_LANGUAGE)
 
@@ -156,7 +156,7 @@ sound/songs/%.s: sound/songs/%.mid
 	cd $(@D) && ../../$(MID) $(<F)
 
 $(C_BUILDDIR)/agb_sram.o: CFLAGS = -mthumb-interwork -Wimplicit -Wparentheses -Werror -O1 -g -fhex-asm -ffix-debug-line
-$(C_BUILDDIR)/GL_File.o: CFLAGS = -mthumb-interwork -Wimplicit -Wparentheses -Werror -O2 -g -fhex-asm -ffix-debug-line
+$(C_BUILDDIR)/GL_Char.o: CC1 := tools/agbcc/bin/old_agbcc
 $(C_BUILDDIR)/GL_File.o: CC1 := tools/agbcc/bin/old_agbcc
 
 ifeq ($(NODEP),1)

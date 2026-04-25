@@ -2,10 +2,10 @@
 #include "GL_File.h"
 
 extern void OSi_Panic(u8 *, s32, u8 *, s32);
-extern void CpuCopy(void *src, void *dest, s32 size);
+extern void GL_CpuCopy(void *src, void *dest, s32 size);
 
 struct Unk_02000000_6C2C {
-    u8 unk_0_0:3;
+    u8 language:3; // 0: jp, 1: en, 2: de, 3: fr, 4: it, 5: es
 };
 struct Unk_02000000 {
     u8 pad_0[0x6C2C];
@@ -154,7 +154,7 @@ void* GL_OpenFile(u8* filePathString, void *dest)
     if (checkIndex != -1)
     {
         strcpy(buf, filePath);
-        buf[checkIndex] = *languageOptions[gUnk_02000000.unk_6C2C.unk_0_0];
+        buf[checkIndex] = *languageOptions[gUnk_02000000.unk_6C2C.language];
         filePath = buf;
     }
 
@@ -194,7 +194,7 @@ void* GL_OpenFile(u8* filePathString, void *dest)
                 {
                     if (dest != uncompBuf)
                     {
-                        CpuCopy(uncompFileData, dest, *fileData >> 8);
+                        GL_CpuCopy(uncompFileData, dest, *fileData >> 8);
                     }
                     file = dest;
                 }
@@ -206,7 +206,7 @@ void* GL_OpenFile(u8* filePathString, void *dest)
         }
         else if (dest != 0)
         {
-            CpuCopy(fileData, dest, fileSize);
+            GL_CpuCopy(fileData, dest, fileSize);
             file = dest;
         }
         else

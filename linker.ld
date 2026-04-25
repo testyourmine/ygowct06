@@ -249,6 +249,8 @@ SECTIONS {
     rom : ALIGN(4) {
         asm/crt0.o(.text);
         asm/code.o(.text);
+        src/GL_Char.o(.text);
+        asm/GL_Common.o(.text);
         src/GL_File.o(.text);
         asm/code_0801510C.o(.text);
         asm/fx_mtx22.o(.text);

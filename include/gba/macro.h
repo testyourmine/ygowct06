@@ -14,8 +14,8 @@
 
 #define CPU_COPY(src, dest, size, bit) CpuSet(src, dest, CPU_SET_##bit##BIT | ((size)/(bit/8) & 0x1FFFFF))
 
-#define CpuCopy16(src, dest, size) CPU_COPY(src, dest, size, 16)
-#define CpuCopy32(src, dest, size) CPU_COPY(src, dest, size, 32)
+#define GL_CpuCopy16(src, dest, size) CPU_COPY(src, dest, size, 16)
+#define GL_CpuCopy32(src, dest, size) CPU_COPY(src, dest, size, 32)
 
 #define CpuFastFill(value, dest, size)                               \
 {                                                                    \
