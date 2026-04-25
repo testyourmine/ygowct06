@@ -1,4 +1,5 @@
 #include "global.h"
+#include "GL_Char.h"
 
 struct Unk_02000000_6C2C {
     u8 language:3; // 0: jp, 1: en, 2: de, 3: fr, 4: it, 5: es
