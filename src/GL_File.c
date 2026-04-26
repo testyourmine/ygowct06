@@ -123,7 +123,7 @@ void* GL_OpenFile(u8* filePathString, void *dest)
     u8 *lzCheck = ".LZ";
     u8 *poundCheck = "#";
     u8 *bangCheck = "!";
-    u8* languageOptions[LANGAGUE_COUNT] = {
+    u8* languageOptions[LANGUAGE_COUNT] = {
         [LANGUAGE_JAPANESE] = "j",
         [LANGUAGE_ENGLISH] = "e",
         [LANGUAGE_GERMAN] = "g",
