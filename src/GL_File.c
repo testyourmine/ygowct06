@@ -1,11 +1,12 @@
 #include "global.h"
 #include "GL_File.h"
+#include "constants/languages.h"
 
 extern void OSi_Panic(u8 *, s32, u8 *, s32);
-extern void CpuCopy(void *src, void *dest, s32 size);
+extern void GL_CpuCopy(void *src, void *dest, s32 size);
 
 struct Unk_02000000_6C2C {
-    u8 unk_0_0:3;
+    u8 language:3;
 };
 struct Unk_02000000 {
     u8 pad_0[0x6C2C];
@@ -122,8 +123,13 @@ void* GL_OpenFile(u8* filePathString, void *dest)
     u8 *lzCheck = ".LZ";
     u8 *poundCheck = "#";
     u8 *bangCheck = "!";
-    u8* languageOptions[6] = {
-        "j", "e", "g", "f", "i", "s"
+    u8* languageOptions[LANGUAGE_COUNT] = {
+        [LANGUAGE_JAPANESE] = "j",
+        [LANGUAGE_ENGLISH] = "e",
+        [LANGUAGE_GERMAN] = "g",
+        [LANGUAGE_FRENCH] = "f",
+        [LANGUAGE_ITALIAN] = "i",
+        [LANGUAGE_SPANISH] = "s"
     };
     u8 buf[0x40];
     u8* filePath;
@@ -154,7 +160,7 @@ void* GL_OpenFile(u8* filePathString, void *dest)
     if (checkIndex != -1)
     {
         strcpy(buf, filePath);
-        buf[checkIndex] = *languageOptions[gUnk_02000000.unk_6C2C.unk_0_0];
+        buf[checkIndex] = *languageOptions[gUnk_02000000.unk_6C2C.language];
         filePath = buf;
     }
 
@@ -194,7 +200,7 @@ void* GL_OpenFile(u8* filePathString, void *dest)
                 {
                     if (dest != uncompBuf)
                     {
-                        CpuCopy(uncompFileData, dest, *fileData >> 8);
+                        GL_CpuCopy(uncompFileData, dest, *fileData >> 8);
                     }
                     file = dest;
                 }
@@ -206,7 +212,7 @@ void* GL_OpenFile(u8* filePathString, void *dest)
         }
         else if (dest != 0)
         {
-            CpuCopy(fileData, dest, fileSize);
+            GL_CpuCopy(fileData, dest, fileSize);
             file = dest;
         }
         else
