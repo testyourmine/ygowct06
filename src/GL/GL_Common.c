@@ -1,5 +1,6 @@
 #include "global.h"
 #include "GL/GL_Common.h"
+#include "structs/unk_03000040.h"
 
 struct Unk_02023480_8 {
     u32 bldCntEffect:2; // BLDCNT Color Effect
@@ -19,29 +20,6 @@ struct Unk_02023480 {
     struct Unk_02023480_8 unk_8;
 };
 extern struct Unk_02023480 gUnk_02023480;
-
-struct Unk_03000040 {
-    u8 pad_0[0x144 - 0x0];
-    volatile u16 unk_144;
-    u8 pad_146[0x174 - 0x146];
-    u16 unk_174;
-    u8 pad_176[0x1BC - 0x176];
-    struct Unk_03000040_1BC *unk_1BC;
-    u8 pad_1C0[0x1E0 - 0x1C0];
-    u16 unk_1E0[8];
-    void *unk_1F0;
-    void *unk_1F4;
-    void *unk_1F8;
-    u8 pad_1FC[0x20C - 0x1FC];
-    u16 unk_20C;
-    u16 unk_20E;
-    u32 unk_210_0:31;
-    u32 unk_210_31:1;
-    u32 unk_214_0:31;
-    u32 unk_214_31:1;
-    u8 pad_218[0x360 - 0x218];
-}; /* size = 0x360 */
-extern struct Unk_03000040 gUnk_03000040;
 
 extern void OSi_Panic(u8 *, s32, u8 *, s32);
 

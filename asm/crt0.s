@@ -11,6 +11,7 @@ __start: @ 0x08000000
 
 	.include "asm/rom_header.inc"
 
+	arm_func_start Init
 Init: @ 0x080000C0
 	mov r0, #PSR_IRQ_MODE
 	msr cpsr_fc, r0
@@ -21,7 +22,7 @@ Init: @ 0x080000C0
 	ldr r1, =INTR_VECTOR
 	adr r0, IntrMain
 	str r0, [r1]
-	ldr r1, =sub_080F4D90
+	ldr r1, =AgbMain
 	mov lr, pc
 	bx r1
 	b Init
@@ -30,7 +31,7 @@ Init: @ 0x080000C0
 sp_sys: .4byte IWRAM_END - 0x800
 sp_irq: .4byte IWRAM_END - 0x200
 
-    arm_func_start IntrMain
+	arm_func_start IntrMain
 IntrMain: @ 0x080000FC
 	mov r3, #REG_BASE
 	add r3, r3, #OFFSET_REG_IE
@@ -110,6 +111,10 @@ IntrMain_RetAddr:
 	bx lr
 
 	nop
+
+	arm_func_start IntrMain_End
+IntrMain_End: @ 0x08000228
+
 	nop
 
 	.pool

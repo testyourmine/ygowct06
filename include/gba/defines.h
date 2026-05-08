@@ -89,6 +89,8 @@
 #define RGB_CYAN RGB(0, 31, 31)
 #define RGB_WHITEALPHA (RGB_WHITE | 0x8000)
 
+#define SRAM 0x0E000000
+
 #define SYSTEM_CLOCK           (16 * 1024 * 1024)   // System Clock
 
 #endif // GUARD_GBA_DEFINES

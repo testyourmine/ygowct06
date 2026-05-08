@@ -193,10 +193,7 @@ SECTIONS {
     iwram (NOLOAD) : ALIGN(4) {
         . = 0x00000000; gIntrTable = .;
         . = 0x00000000; gUnk_03000000 = .;
-        . = 0x00000020; gUnk_03000020 = .;
         . = 0x00000040; gUnk_03000040 = .;
-        . = 0x00000044; gUnk_03000044 = .;
-        . = 0x00000184; gUnk_03000184 = .;
         . = 0x00000186; gUnk_03000186 = .;
         . = 0x00000193; gUnk_03000193 = .;
         . = 0x000001B6; gUnk_030001B6 = .;
@@ -266,6 +263,9 @@ SECTIONS {
         asm/nnsys/g2d/g2d_NOB_load.o(.text);
         asm/nnsys/g2d/g2d_SRTControl.o(.text);
         asm/code_080EBB14.o(.text);
+        src/input.o(.text);
+        src/main.o(.text);
+        asm/code_080F4E10.o(.text);
         asm/libagbsyscall.o(.text);
         src/agb_sram.o(.text);
 
@@ -331,12 +331,16 @@ SECTIONS {
         src/GL/GL_Sin.o(.rodata);
         src/GL/GL_Oam.o(.rodata);
         src/GL/GL_Scrollbar.o(.rodata);
-        data/data_09E399D0.o(.rodata);
+        data/data_09E39C7C.o(.rodata);
+        src/main.o(.rodata);
+        data/data_09E4F498.o(.rodata);
         src/agb_sram.o(.rodata);
         *libc.a:vfscanf.o(.rodata);
         data/data1.o(.rodata);
         *libc.a:*.o(.rodata);
         data/data2.o(.rodata);
+        src/input.o(.data);
+        data/data_09E5F8F0.o(.data);
         *libc.a:*.o(.data);
         data/data3.o(.rodata);
         rom_data_end = .;
