@@ -333,7 +333,7 @@ _080EBDD2:
 	movs r1, #0xc
 	bl sub_080F0BB4
 	movs r6, #0
-	ldr r3, _080EBE80 @ =0x08000F40
+	ldr r3, _080EBE80 @ =gUnk_08000F40
 	mov sl, r3
 	ldr r0, _080EBE84 @ =gUnk_02006C2C
 	mov sb, r0
@@ -401,7 +401,7 @@ _080EBDFC:
 	.align 2, 0
 _080EBE78: .4byte gUnk_09DCAD60
 _080EBE7C: .4byte 0x06010040
-_080EBE80: .4byte 0x08000F40
+_080EBE80: .4byte gUnk_08000F40
 _080EBE84: .4byte gUnk_02006C2C
 _080EBE88: .4byte gUnk_09DB9C10
 _080EBE8C: .4byte 0x06010A00
@@ -1346,7 +1346,7 @@ _080EC60E:
 	adds r0, r0, r4
 	ldrh r0, [r0]
 	bl sub_080F4E18
-	ldr r2, _080EC6D4 @ =0x08000F40
+	ldr r2, _080EC6D4 @ =gUnk_08000F40
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -1398,7 +1398,7 @@ _080EC6C4: .4byte gUnk_02000000
 _080EC6C8: .4byte 0x00006C2C
 _080EC6CC: .4byte gUnk_09E5EEAC
 _080EC6D0: .4byte 0x00006C3C
-_080EC6D4: .4byte 0x08000F40
+_080EC6D4: .4byte gUnk_08000F40
 _080EC6D8: .4byte gUnk_09DB9C10
 _080EC6DC: .4byte 0x00006C38
 _080EC6E0: .4byte 0x0000654C
@@ -6185,7 +6185,7 @@ sub_080EEC54: @ 0x080EEC54
 	bne _080EECA0
 	adds r0, r1, #0
 	bl sub_080F4E18
-	ldr r2, _080EEC90 @ =0x08000F40
+	ldr r2, _080EEC90 @ =gUnk_08000F40
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -6206,7 +6206,7 @@ sub_080EEC54: @ 0x080EEC54
 	b _080EECA2
 	.align 2, 0
 _080EEC8C: .4byte 0xFFFE0000
-_080EEC90: .4byte 0x08000F40
+_080EEC90: .4byte gUnk_08000F40
 _080EEC94: .4byte gUnk_02000000
 _080EEC98: .4byte 0x00006C2C
 _080EEC9C: .4byte gUnk_09DB9C10
@@ -6226,7 +6226,7 @@ sub_080EECA8: @ 0x080EECA8
 	lsls r1, r1, #1
 	adds r0, r0, r1
 	bl sub_080F4E18
-	ldr r2, _080EECE0 @ =0x08000F40
+	ldr r2, _080EECE0 @ =gUnk_08000F40
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -6246,7 +6246,7 @@ sub_080EECA8: @ 0x080EECA8
 	adds r0, r0, r1
 	b _080EECF2
 	.align 2, 0
-_080EECE0: .4byte 0x08000F40
+_080EECE0: .4byte gUnk_08000F40
 _080EECE4: .4byte gUnk_02000000
 _080EECE8: .4byte 0x00006C2C
 _080EECEC: .4byte gUnk_09DB9C10
@@ -6266,7 +6266,7 @@ sub_080EECFC: @ 0x080EECFC
 	ldr r1, _080EED30 @ =0x00000226
 	adds r0, r0, r1
 	bl sub_080F4E18
-	ldr r2, _080EED34 @ =0x08000F40
+	ldr r2, _080EED34 @ =gUnk_08000F40
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -6287,7 +6287,7 @@ sub_080EECFC: @ 0x080EECFC
 	b _080EED46
 	.align 2, 0
 _080EED30: .4byte 0x00000226
-_080EED34: .4byte 0x08000F40
+_080EED34: .4byte gUnk_08000F40
 _080EED38: .4byte gUnk_02000000
 _080EED3C: .4byte 0x00006C2C
 _080EED40: .4byte gUnk_09DB9C10
@@ -6307,7 +6307,7 @@ sub_080EED50: @ 0x080EED50
 	ldr r1, _080EED84 @ =0x00000212
 	adds r0, r0, r1
 	bl sub_080F4E18
-	ldr r2, _080EED88 @ =0x08000F40
+	ldr r2, _080EED88 @ =gUnk_08000F40
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -6328,7 +6328,7 @@ sub_080EED50: @ 0x080EED50
 	b _080EED9A
 	.align 2, 0
 _080EED84: .4byte 0x00000212
-_080EED88: .4byte 0x08000F40
+_080EED88: .4byte gUnk_08000F40
 _080EED8C: .4byte gUnk_02000000
 _080EED90: .4byte 0x00006C2C
 _080EED94: .4byte gUnk_09DB9C10
@@ -6348,7 +6348,7 @@ sub_080EEDA4: @ 0x080EEDA4
 	ldr r1, _080EEDD8 @ =0x0000023A
 	adds r0, r0, r1
 	bl sub_080F4E18
-	ldr r2, _080EEDDC @ =0x08000F40
+	ldr r2, _080EEDDC @ =gUnk_08000F40
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -6369,7 +6369,7 @@ sub_080EEDA4: @ 0x080EEDA4
 	b _080EEDEE
 	.align 2, 0
 _080EEDD8: .4byte 0x0000023A
-_080EEDDC: .4byte 0x08000F40
+_080EEDDC: .4byte gUnk_08000F40
 _080EEDE0: .4byte gUnk_02000000
 _080EEDE4: .4byte 0x00006C2C
 _080EEDE8: .4byte gUnk_09DB9C10
@@ -17441,7 +17441,7 @@ _080F4496:
 	strb r0, [r5, #0x17]
 	ldr r0, _080F454C @ =0x000005E6
 	bl sub_080F4E18
-	ldr r2, _080F4550 @ =0x08000F40
+	ldr r2, _080F4550 @ =gUnk_08000F40
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -17502,7 +17502,7 @@ _080F4540: .4byte gUnk_02000006
 _080F4544: .4byte gUnk_02001138
 _080F4548: .4byte 0x000059DC
 _080F454C: .4byte 0x000005E6
-_080F4550: .4byte 0x08000F40
+_080F4550: .4byte gUnk_08000F40
 _080F4554: .4byte gUnk_09DB9C10
 _080F4558: .4byte gUnk_09E5F884
 _080F455C: .4byte gUnk_02000000
