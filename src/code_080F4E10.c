@@ -355,7 +355,7 @@ extern u16 sub_080EE76C(u16);
 extern void *sub_080EE7AC(u32, u32);
 
 // F51AC, string copy, checks for %c, where c is card number/id
-void StringCopyFormat_C(u8 *dest, u8 *src)
+void StringCopyFormat_C(void *dest, void *src)
 {
     s32 var_r1;
     s32 nbr;

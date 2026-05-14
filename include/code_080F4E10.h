@@ -19,7 +19,7 @@ void AppendIntShiftJis(void *dest, s32 value);
 void AppendIntAscii(void *dest, s32 value);
 void StringCopyFormat_S(void *dest, void *src, void *substitute);
 UNUSED void sub_080F518C(void *dest, void *src);
-void StringCopyFormat_C(u8 *dest, u8 *src);
+void StringCopyFormat_C(void *dest, void *src);
 void StringCopyFormat_D(void *dest, void *src, s32 value);
 void StringCopyFormat_DWithAtDirective(void *dest, void *src, s32 value, s32 useAtDirective, s32 forceAscii);
 UNUSED void sub_080F5390(void *dest, void *src, void *substitute);
