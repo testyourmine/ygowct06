@@ -502,7 +502,7 @@ void StringCopyFormat_DWithAtDirective(void *dest, void *src, s32 value, s32 use
     *_dest = 0;
 }
 
-// F5390, string copy, handles '@' and %s, copies from two buffers, why?
+// F5390, string copy, handles '@' and %s, where %s is the substitute string
 UNUSED void sub_080F5390(void *dest, void *src, void *substitute)
 {
     u8 *_dest;
