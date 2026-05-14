@@ -266,7 +266,7 @@ SECTIONS {
         src/input.o(.text);
         src/main.o(.text);
         src/code_080F4E10.o(.text);
-        asm/code_080F4E10.o(.text);
+        asm/code_080F55A0.o(.text);
         asm/arm_0810DF38.o(.text);
         asm/libagbsyscall.o(.text);
         src/agb_sram.o(.text);

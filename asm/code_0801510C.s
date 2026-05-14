@@ -2782,8 +2782,8 @@ _08016B14:
 	ldrb r4, [r4]
 	ldr r3, _08016B54 @ =0x00001072 (Mabarrel (None))
 	adds r0, r4, r3
-	bl sub_080F4E18
-	ldr r2, _08016B58 @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _08016B58 @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -2799,7 +2799,7 @@ _08016B14:
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r0, [r1]
-	ldr r1, _08016B64 @ =gUnk_09DB9C10
+	ldr r1, _08016B64 @ =gInterfaceText
 	adds r0, r0, r1
 	pop {r4}
 	pop {r1}
@@ -2809,10 +2809,10 @@ _08016B48: .4byte 0x00000201
 _08016B4C: .4byte gUnk_09E3A770
 _08016B50: .4byte gUnk_09E3A780
 _08016B54: .4byte 0x00001072 @ Mabarrel (None)
-_08016B58: .4byte gUnk_08000F40
+_08016B58: .4byte gInterfaceTextOffsets
 _08016B5C: .4byte gUnk_02000000
 _08016B60: .4byte 0x00006C2C
-_08016B64: .4byte gUnk_09DB9C10
+_08016B64: .4byte gInterfaceText
 
 	thumb_func_start sub_08016B68
 sub_08016B68: @ 0x08016B68
@@ -4272,8 +4272,8 @@ sub_080178B4: @ 0x080178B4
 	push {r6}
 	ldr r5, _08017930 @ =gUnk_02029250
 	ldr r0, _08017934 @ =0x00001004 (Crawling Dragon (None))
-	bl sub_080F4E18
-	ldr r1, _08017938 @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r1, _08017938 @ =gInterfaceTextOffsets
 	mov r8, r1
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
@@ -4290,7 +4290,7 @@ sub_080178B4: @ 0x080178B4
 	lsls r1, r1, #2
 	add r1, r8
 	ldr r0, [r1]
-	ldr r6, _08017944 @ =gUnk_09DB9C10
+	ldr r6, _08017944 @ =gInterfaceText
 	adds r0, r0, r6
 	adds r5, #0x8d
 	adds r1, r5, #0
@@ -4299,7 +4299,7 @@ sub_080178B4: @ 0x080178B4
 	movs r1, #0xc
 	bl sub_0801785C
 	ldr r0, _08017948 @ =0x00001005 (Crass Clown)
-	bl sub_080F4E18
+	bl GetInterfaceTextIdIndex
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -4326,10 +4326,10 @@ sub_080178B4: @ 0x080178B4
 	.align 2, 0
 _08017930: .4byte gUnk_02029250
 _08017934: .4byte 0x00001004 @ Crawling Dragon (None)
-_08017938: .4byte gUnk_08000F40
+_08017938: .4byte gInterfaceTextOffsets
 _0801793C: .4byte gUnk_02000000
 _08017940: .4byte 0x00006C2C
-_08017944: .4byte gUnk_09DB9C10
+_08017944: .4byte gInterfaceText
 _08017948: .4byte 0x00001005 @ Crass Clown
 
 	thumb_func_start sub_0801794C
@@ -4337,8 +4337,8 @@ sub_0801794C: @ 0x0801794C
 	push {r4, lr}
 	ldr r4, _08017990 @ =gUnk_02029250
 	ldr r0, _08017994 @ =0x00001006 (Armored Zombie)
-	bl sub_080F4E18
-	ldr r2, _08017998 @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _08017998 @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -4354,7 +4354,7 @@ sub_0801794C: @ 0x0801794C
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r0, [r1]
-	ldr r1, _080179A4 @ =gUnk_09DB9C10
+	ldr r1, _080179A4 @ =gInterfaceText
 	adds r0, r0, r1
 	adds r4, #0x8d
 	adds r1, r4, #0
@@ -4368,10 +4368,10 @@ sub_0801794C: @ 0x0801794C
 	.align 2, 0
 _08017990: .4byte gUnk_02029250
 _08017994: .4byte 0x00001006 @ Armored Zombie
-_08017998: .4byte gUnk_08000F40
+_08017998: .4byte gInterfaceTextOffsets
 _0801799C: .4byte gUnk_02000000
 _080179A0: .4byte 0x00006C2C
-_080179A4: .4byte gUnk_09DB9C10
+_080179A4: .4byte gInterfaceText
 
 	thumb_func_start sub_080179A8
 sub_080179A8: @ 0x080179A8
@@ -4580,8 +4580,8 @@ sub_08017B44: @ 0x08017B44
 	ldr r0, _08017C54 @ =gUnk_02029250
 	mov r8, r0
 	ldr r0, _08017C58 @ =0x00001008 (Clown Zombie)
-	bl sub_080F4E18
-	ldr r7, _08017C5C @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r7, _08017C5C @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -4597,7 +4597,7 @@ sub_08017B44: @ 0x08017B44
 	lsls r1, r1, #2
 	adds r1, r1, r7
 	ldr r4, [r1]
-	ldr r0, _08017C68 @ =gUnk_09DB9C10
+	ldr r0, _08017C68 @ =gInterfaceText
 	mov sb, r0
 	add r4, sb
 	adds r0, r4, #0
@@ -4621,7 +4621,7 @@ sub_08017B44: @ 0x08017B44
 	movs r3, #2
 	bl sub_080183D0
 	ldr r0, _08017C70 @ =0x00001007 (Dragon Zombie)
-	bl sub_080F4E18
+	bl GetInterfaceTextIdIndex
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -4654,7 +4654,7 @@ sub_08017B44: @ 0x08017B44
 	movs r3, #2
 	bl sub_080183D0
 	ldr r0, _08017C74 @ =0x0000100C (Mask of Darkness)
-	bl sub_080F4E18
+	bl GetInterfaceTextIdIndex
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -4697,10 +4697,10 @@ sub_08017B44: @ 0x08017B44
 	.align 2, 0
 _08017C54: .4byte gUnk_02029250
 _08017C58: .4byte 0x00001008 @ Clown Zombie
-_08017C5C: .4byte gUnk_08000F40
+_08017C5C: .4byte gInterfaceTextOffsets
 _08017C60: .4byte gUnk_02000000
 _08017C64: .4byte 0x00006C2C
-_08017C68: .4byte gUnk_09DB9C10
+_08017C68: .4byte gInterfaceText
 _08017C6C: .4byte 0x00000321
 _08017C70: .4byte 0x00001007 @ Dragon Zombie
 _08017C74: .4byte 0x0000100C @ Mask of Darkness
@@ -7279,7 +7279,7 @@ _080190D8:
 	ldr r2, _08019224 @ =0x01000840
 	bl CpuFastSet
 	ldr r0, _08019228 @ =0x00001009 (Pumpking the King of Ghosts)
-	bl sub_080F4E18
+	bl GetInterfaceTextIdIndex
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -7293,10 +7293,10 @@ _080190D8:
 	lsrs r0, r0, #0x1d
 	adds r1, r1, r0
 	lsls r1, r1, #2
-	ldr r0, _08019234 @ =gUnk_08000F40
+	ldr r0, _08019234 @ =gInterfaceTextOffsets
 	adds r1, r1, r0
 	ldr r0, [r1]
-	ldr r1, _08019238 @ =gUnk_09DB9C10
+	ldr r1, _08019238 @ =gInterfaceText
 	mov sb, r1
 	add r0, sb
 	adds r4, r0, #0
@@ -7327,7 +7327,7 @@ _0801913C:
 	movs r3, #7
 	bl sub_080175F4
 	ldr r0, _0801923C @ =0x0000100A (Battle Warrior)
-	bl sub_080F4E18
+	bl GetInterfaceTextIdIndex
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -7338,7 +7338,7 @@ _0801913C:
 	lsrs r0, r0, #0x1d
 	adds r1, r1, r0
 	lsls r1, r1, #2
-	ldr r3, _08019234 @ =gUnk_08000F40
+	ldr r3, _08019234 @ =gInterfaceTextOffsets
 	adds r1, r1, r3
 	ldr r0, [r1]
 	mov r1, sb
@@ -7365,7 +7365,7 @@ _08019194:
 	movs r3, #7
 	bl sub_080175F4
 	ldr r0, _08019240 @ =0x0000100B (Wings of Wicked Flame)
-	bl sub_080F4E18
+	bl GetInterfaceTextIdIndex
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -7376,7 +7376,7 @@ _08019194:
 	lsrs r0, r0, #0x1d
 	adds r1, r1, r0
 	lsls r1, r1, #2
-	ldr r3, _08019234 @ =gUnk_08000F40
+	ldr r3, _08019234 @ =gInterfaceTextOffsets
 	adds r1, r1, r3
 	ldr r0, [r1]
 	mov r1, sb
@@ -7425,8 +7425,8 @@ _08019224: .4byte 0x01000840
 _08019228: .4byte 0x00001009 @ Pumpking the King of Ghosts
 _0801922C: .4byte gUnk_02000000
 _08019230: .4byte 0x00006C2C
-_08019234: .4byte gUnk_08000F40
-_08019238: .4byte gUnk_09DB9C10
+_08019234: .4byte gInterfaceTextOffsets
+_08019238: .4byte gInterfaceText
 _0801923C: .4byte 0x0000100A @ Battle Warrior
 _08019240: .4byte 0x0000100B @ Wings of Wicked Flame
 _08019244:
@@ -8332,8 +8332,8 @@ sub_08019964: @ 0x08019964
 	push {r6}
 	ldr r5, _080199E0 @ =gUnk_02029810
 	ldr r0, _080199E4 @ =0x00001036 (Djinn the Watcher of the Wind)
-	bl sub_080F4E18
-	ldr r1, _080199E8 @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r1, _080199E8 @ =gInterfaceTextOffsets
 	mov r8, r1
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
@@ -8350,7 +8350,7 @@ sub_08019964: @ 0x08019964
 	lsls r1, r1, #2
 	add r1, r8
 	ldr r0, [r1]
-	ldr r6, _080199F4 @ =gUnk_09DB9C10
+	ldr r6, _080199F4 @ =gInterfaceText
 	adds r0, r0, r6
 	adds r1, r5, #0
 	bl GL_Strcpy
@@ -8358,7 +8358,7 @@ sub_08019964: @ 0x08019964
 	movs r1, #0xf
 	bl sub_0801990C
 	ldr r0, _080199F8 @ =0x00001037 (The Bewitching Phantom Thief)
-	bl sub_080F4E18
+	bl GetInterfaceTextIdIndex
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -8385,10 +8385,10 @@ sub_08019964: @ 0x08019964
 	.align 2, 0
 _080199E0: .4byte gUnk_02029810
 _080199E4: .4byte 0x00001036 @ Djinn the Watcher of the Wind
-_080199E8: .4byte gUnk_08000F40
+_080199E8: .4byte gInterfaceTextOffsets
 _080199EC: .4byte gUnk_02000000
 _080199F0: .4byte 0x00006C2C
-_080199F4: .4byte gUnk_09DB9C10
+_080199F4: .4byte gInterfaceText
 _080199F8: .4byte 0x00001037 @ The Bewitching Phantom Thief
 
 	thumb_func_start sub_080199FC
@@ -8396,8 +8396,8 @@ sub_080199FC: @ 0x080199FC
 	push {r4, lr}
 	ldr r4, _08019A40 @ =gUnk_02029810
 	ldr r0, _08019A44 @ =0x00001038 (Temple of Skulls)
-	bl sub_080F4E18
-	ldr r2, _08019A48 @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _08019A48 @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -8413,7 +8413,7 @@ sub_080199FC: @ 0x080199FC
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r0, [r1]
-	ldr r1, _08019A54 @ =gUnk_09DB9C10
+	ldr r1, _08019A54 @ =gInterfaceText
 	adds r0, r0, r1
 	adds r1, r4, #0
 	bl GL_Strcpy
@@ -8426,10 +8426,10 @@ sub_080199FC: @ 0x080199FC
 	.align 2, 0
 _08019A40: .4byte gUnk_02029810
 _08019A44: .4byte 0x00001038 @ Temple of Skulls
-_08019A48: .4byte gUnk_08000F40
+_08019A48: .4byte gInterfaceTextOffsets
 _08019A4C: .4byte gUnk_02000000
 _08019A50: .4byte 0x00006C2C
-_08019A54: .4byte gUnk_09DB9C10
+_08019A54: .4byte gInterfaceText
 
 	thumb_func_start sub_08019A58
 sub_08019A58: @ 0x08019A58
@@ -8563,8 +8563,8 @@ sub_08019B4C: @ 0x08019B4C
 	ldr r1, _08019C20 @ =gUnk_0202348C
 	strb r0, [r1]
 	ldr r0, _08019C24 @ =0x00001038 (Temple of Skulls)
-	bl sub_080F4E18
-	ldr r7, _08019C28 @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r7, _08019C28 @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -8580,7 +8580,7 @@ sub_08019B4C: @ 0x08019B4C
 	lsls r1, r1, #2
 	adds r1, r1, r7
 	ldr r4, [r1]
-	ldr r0, _08019C34 @ =gUnk_09DB9C10
+	ldr r0, _08019C34 @ =gInterfaceText
 	mov sb, r0
 	add r4, sb
 	adds r0, r4, #0
@@ -8604,7 +8604,7 @@ sub_08019B4C: @ 0x08019B4C
 	movs r3, #2
 	bl sub_0801A6B4
 	ldr r0, _08019C3C @ =0x00001039 (Monster Egg)
-	bl sub_080F4E18
+	bl GetInterfaceTextIdIndex
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -8651,10 +8651,10 @@ sub_08019B4C: @ 0x08019B4C
 _08019C1C: .4byte gUnk_02029810
 _08019C20: .4byte gUnk_0202348C
 _08019C24: .4byte 0x00001038 @ Temple of Skulls
-_08019C28: .4byte gUnk_08000F40
+_08019C28: .4byte gInterfaceTextOffsets
 _08019C2C: .4byte gUnk_02000000
 _08019C30: .4byte 0x00006C2C
-_08019C34: .4byte gUnk_09DB9C10
+_08019C34: .4byte gInterfaceText
 _08019C38: .4byte 0x00000675
 _08019C3C: .4byte 0x00001039 @ Monster Egg
 _08019C40: .4byte 0x00000674
@@ -9417,8 +9417,8 @@ sub_0801A230: @ 0x0801A230
 	push {r7}
 	sub sp, #0x14
 	ldr r0, _0801A308 @ =0x00001037 (The Bewitching Phantom Thief)
-	bl sub_080F4E18
-	ldr r3, _0801A30C @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r3, _0801A30C @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -9434,7 +9434,7 @@ sub_0801A230: @ 0x0801A230
 	lsls r1, r1, #2
 	adds r1, r1, r3
 	ldr r1, [r1]
-	ldr r0, _0801A318 @ =gUnk_09DB9C10
+	ldr r0, _0801A318 @ =gInterfaceText
 	adds r7, r1, r0
 	movs r0, #7
 	mov r8, r0
@@ -9516,10 +9516,10 @@ _0801A270:
 	bx r0
 	.align 2, 0
 _0801A308: .4byte 0x00001037 @ The Bewitching Phantom Thief
-_0801A30C: .4byte gUnk_08000F40
+_0801A30C: .4byte gInterfaceTextOffsets
 _0801A310: .4byte gUnk_02000000
 _0801A314: .4byte 0x00006C2C
-_0801A318: .4byte gUnk_09DB9C10
+_0801A318: .4byte gInterfaceText
 _0801A31C: .4byte 0x06002280
 _0801A320: .4byte gUnk_02006ED0
 _0801A324: .4byte gUnk_09E5F854
@@ -11624,8 +11624,8 @@ _0801B3D4:
 	movs r1, #0x90
 	bl sub_0801A6E4
 	ldr r0, _0801B428 @ =0x0000103A (The Shadow Who Controls the Dark)
-	bl sub_080F4E18
-	ldr r3, _0801B42C @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r3, _0801B42C @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -11639,7 +11639,7 @@ _0801B3D4:
 	lsls r1, r1, #2
 	adds r1, r1, r3
 	ldr r1, [r1]
-	ldr r0, _0801B430 @ =gUnk_09DB9C10
+	ldr r0, _0801B430 @ =gInterfaceText
 	adds r5, r1, r0
 	adds r0, r7, #0
 	ands r0, r2
@@ -11659,8 +11659,8 @@ _0801B3D4:
 	b _0801B43A
 	.align 2, 0
 _0801B428: .4byte 0x0000103A @ The Shadow Who Controls the Dark
-_0801B42C: .4byte gUnk_08000F40
-_0801B430: .4byte gUnk_09DB9C10
+_0801B42C: .4byte gInterfaceTextOffsets
+_0801B430: .4byte gInterfaceText
 _0801B434:
 	lsls r0, r1, #1
 	adds r0, r0, r1
@@ -15258,7 +15258,7 @@ sub_0801D15C: @ 0x0801D15C
 	lsls r2, r2, #0x13
 	adds r0, r0, r2
 	movs r2, #0x20
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 	pop {r0}
 	bx r0
 
@@ -15493,7 +15493,7 @@ _0801D31A:
 	adds r1, r1, r2
 	adds r0, r4, #0
 	movs r2, #0x80
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 	ldr r4, _0801D420 @ =gUnk_095B5C00
 	mov r2, r8
 	movs r3, #0
@@ -15635,7 +15635,7 @@ sub_0801D448: @ 0x0801D448
 	push {lr}
 	ldr r0, _0801D458 @ =gUnk_0201AFB0
 	movs r1, #0x30
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -15657,12 +15657,12 @@ sub_0801D45C: @ 0x0801D45C
 	ldr r0, _0801D4E8 @ =0x06004000
 	movs r1, #0x80
 	lsls r1, r1, #8
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	movs r0, #0xc0
 	lsls r0, r0, #0x13
 	movs r1, #0xa0
 	lsls r1, r1, #6
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r4, _0801D4EC @ =gUnk_0201AFB0
 	ldr r0, [r4, #0x28]
 	bl sub_080F7674
@@ -15689,16 +15689,16 @@ sub_0801D45C: @ 0x0801D45C
 	ldr r4, _0801D500 @ =gUnk_09CCD290
 	adds r1, r4, #0
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _0801D504 @ =0x050003E0
 	adds r1, r4, #0
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _0801D508 @ =0x05000200
 	ldr r1, _0801D50C @ =gUnk_09E31614
 	movs r2, #0x80
 	lsls r2, r2, #1
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	pop {r4}
 	pop {r0}
 	bx r0
@@ -16151,7 +16151,7 @@ sub_0801D830: @ 0x0801D830
 	ldr r0, _0801D8A0 @ =gUnk_09E5F71E
 	adds r4, r4, r0
 	adds r0, r4, #0
-	bl sub_080F54E0
+	bl StringLength
 	adds r6, r0, #0
 	subs r0, r6, #1
 	adds r4, r4, r0
@@ -16197,7 +16197,7 @@ _0801D8C6:
 	ldr r0, _0801D8FC @ =gUnk_09E5F726
 	adds r4, r4, r0
 	adds r0, r4, #0
-	bl sub_080F54E0
+	bl StringLength
 	adds r6, r0, #0
 	subs r0, r6, #1
 	adds r4, r4, r0
@@ -16382,7 +16382,7 @@ _0801DA22:
 	adds r1, r0, #0
 	adds r0, r4, #0
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	adds r0, r5, #0
 	bl sub_0801D6B4
 	ldr r0, _0801DAA4 @ =0x050003A0
@@ -16392,18 +16392,18 @@ _0801DA22:
 	ldr r2, _0801DAA8 @ =gUnk_0984DD6C
 	adds r1, r1, r2
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _0801DAAC @ =0x06017440
 	lsls r4, r4, #7
 	ldr r1, _0801DAB0 @ =gUnk_0984D8EC
 	adds r4, r4, r1
 	adds r1, r4, #0
 	movs r2, #0x80
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _0801DAB4 @ =0x06010020
 	ldr r1, _0801DAB8 @ =gUnk_09CCD2D0
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	adds r0, r5, #0
 	bl sub_080EF3BC
 	cmp r0, #0
@@ -16447,23 +16447,23 @@ _0801DAC4:
 	adds r1, r0, #0
 	adds r0, r4, #0
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	adds r0, r5, #0
 	bl sub_0801D6B4
 	ldr r0, _0801DB18 @ =0x050003A0
 	ldr r1, _0801DB1C @ =gUnk_0984DE6C
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _0801DB20 @ =0x06017440
 	ldr r1, _0801DB24 @ =gUnk_0984DCEC
 	movs r2, #0x80
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	cmp r7, #0
 	beq _0801DBCA
 	ldr r0, _0801DB28 @ =0x050003C0
 	ldr r1, _0801DB2C @ =gUnk_0984F52C
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _0801DB30 @ =0x060174C0
 	subs r1, r7, #1
 	b _0801DB82
@@ -16489,24 +16489,24 @@ _0801DB34:
 	adds r1, r0, #0
 	adds r0, r4, #0
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	adds r0, r5, #0
 	bl sub_0801D6B4
 	ldr r0, _0801DB98 @ =0x050003A0
 	ldr r1, _0801DB9C @ =gUnk_0984DE4C
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _0801DBA0 @ =0x06017440
 	ldr r1, _0801DBA4 @ =gUnk_0984DC6C
 	movs r2, #0x80
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	mov r0, sb
 	cmp r0, #0
 	beq _0801DBCA
 	ldr r0, _0801DBA8 @ =0x050003C0
 	ldr r1, _0801DBAC @ =gUnk_0984F52C
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _0801DBB0 @ =0x060174C0
 	mov r1, sb
 	subs r1, #1
@@ -16515,7 +16515,7 @@ _0801DB82:
 	ldr r2, _0801DBB4 @ =gUnk_0984F46C
 	adds r1, r1, r2
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	b _0801DBCA
 	.align 2, 0
 _0801DB90: .4byte gUnk_0984B994
@@ -16924,7 +16924,7 @@ _0801DEDE:
 	movs r1, #0x80
 	lsls r1, r1, #5
 	adds r0, r4, #0
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	adds r0, r4, #0
 	movs r1, #0
 	bl sub_080F2E4C
@@ -17250,13 +17250,13 @@ _0801E156:
 	ldr r0, _0801E194 @ =0x05000380
 	ldr r1, _0801E198 @ =gUnk_0984F3AC
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _0801E19C @ =0x06017500
 	lsls r1, r6, #7
 	ldr r2, _0801E1A0 @ =gUnk_0984F0AC
 	adds r1, r1, r2
 	movs r2, #0x80
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	movs r0, #2
 	mov r3, r8
 	ldrb r3, [r3, #2]
@@ -17280,13 +17280,13 @@ _0801E1A4:
 	ldr r2, _0801E274 @ =gUnk_0984EE2C
 	adds r1, r1, r2
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _0801E278 @ =0x06017500
 	lsls r1, r5, #7
 	ldr r2, _0801E27C @ =gUnk_0984E42C
 	adds r1, r1, r2
 	movs r2, #0x80
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r1, _0801E280 @ =gUnk_0201AFB0
 	movs r0, #2
 	ldrb r2, [r1, #2]
@@ -17349,7 +17349,7 @@ _0801E220:
 	adds r1, r1, r2
 	movs r2, #0x80
 	lsls r2, r2, #1
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	mov r3, r8
 	ldrb r2, [r3, #2]
 	lsls r0, r2, #0x1a
@@ -17414,13 +17414,13 @@ sub_0801E294: @ 0x0801E294
 	lsls r2, r2, #0x13
 	adds r0, r0, r2
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	lsls r0, r4, #5
 	ldr r3, _0801E318 @ =0x06004000
 	adds r0, r0, r3
 	mov r1, sb
 	movs r2, #0x80
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	lsls r5, r5, #1
 	add r8, r5
 	adds r1, r4, #1
@@ -19679,8 +19679,8 @@ _0801F4D0:
 	lsls r0, r2, #5
 	adds r0, r0, r5
 	ldrh r0, [r0, #4]
-	bl sub_080F4E18
-	ldr r2, _0801F5D4 @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _0801F5D4 @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -19695,7 +19695,7 @@ _0801F4D0:
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r4, [r1]
-	ldr r0, _0801F5DC @ =gUnk_09DB9C10
+	ldr r0, _0801F5DC @ =gInterfaceText
 	adds r4, r4, r0
 	movs r5, #0x8f
 	lsls r5, r5, #2
@@ -19753,9 +19753,9 @@ _0801F5C4: .4byte 0x00006E57
 _0801F5C8: .4byte 0x00006E48
 _0801F5CC: .4byte 0x0000114F @ Thunder Dragon
 _0801F5D0: .4byte gUnk_09E58D0C
-_0801F5D4: .4byte gUnk_08000F40
+_0801F5D4: .4byte gInterfaceTextOffsets
 _0801F5D8: .4byte 0x00006C2C
-_0801F5DC: .4byte gUnk_09DB9C10
+_0801F5DC: .4byte gInterfaceText
 _0801F5E0: .4byte gUnk_02023360
 _0801F5E4: .4byte 0x00000203
 _0801F5E8: .4byte 0xFFFFC03F
@@ -20268,7 +20268,7 @@ _0801F9EA:
 	bl sub_080F9114
 	ldr r0, _0801FAE4 @ =gUnk_02029E90
 	movs r1, #0x10
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r1, _0801FAE8 @ =gUnk_03000040
 	mov sb, r1
 	ldr r1, _0801FAEC @ =0x0000023F
@@ -20565,8 +20565,8 @@ _0801FC28:
 	adds r6, r6, r2
 _0801FC88:
 	ldrh r0, [r5]
-	bl sub_080F4E18
-	ldr r2, _0801FCF0 @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _0801FCF0 @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -20581,7 +20581,7 @@ _0801FC88:
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r0, [r1]
-	ldr r5, _0801FCF8 @ =gUnk_09DB9C10
+	ldr r5, _0801FCF8 @ =gInterfaceText
 	adds r0, r0, r5
 	movs r1, #0
 	bl sub_0802B590
@@ -20609,9 +20609,9 @@ _0801FCE0: .4byte gUnk_0201E2A0
 _0801FCE4: .4byte gUnk_02000000
 _0801FCE8: .4byte 0x00006C3C
 _0801FCEC: .4byte 0x0000023D
-_0801FCF0: .4byte gUnk_08000F40
+_0801FCF0: .4byte gInterfaceTextOffsets
 _0801FCF4: .4byte 0x00006C2C
-_0801FCF8: .4byte gUnk_09DB9C10
+_0801FCF8: .4byte gInterfaceText
 _0801FCFC: .4byte 0x00004B4E
 _0801FD00: .4byte 0x0003F66A
 _0801FD04:
@@ -20876,7 +20876,7 @@ _0801FEF8: @ jump table
 _0801FF1C:
 	ldr r0, _0801FFEC @ =gUnk_02029E90
 	movs r1, #0x10
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r3, _0801FFF0 @ =gUnk_03000040
 	mov sb, r3
 	ldr r1, _0801FFF4 @ =0x0000023F
@@ -21078,8 +21078,8 @@ _0802008C:
 	adds r6, r6, r2
 _080200E0:
 	ldrh r0, [r7]
-	bl sub_080F4E18
-	ldr r2, _08020144 @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _08020144 @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -21094,7 +21094,7 @@ _080200E0:
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r0, [r1]
-	ldr r5, _0802014C @ =gUnk_09DB9C10
+	ldr r5, _0802014C @ =gInterfaceText
 	adds r0, r0, r5
 	movs r1, #0
 	bl sub_0802B590
@@ -21121,9 +21121,9 @@ _08020134: .4byte gUnk_0201E2A0
 _08020138: .4byte gUnk_02000000
 _0802013C: .4byte 0x00006C3C
 _08020140: .4byte 0x00001662 @ Precious Cards from Beyond
-_08020144: .4byte gUnk_08000F40
+_08020144: .4byte gInterfaceTextOffsets
 _08020148: .4byte 0x00006C2C
-_0802014C: .4byte gUnk_09DB9C10
+_0802014C: .4byte gInterfaceText
 _08020150: .4byte 0x00004B4E
 _08020154: .4byte 0x0003F66A
 _08020158:
@@ -21440,8 +21440,8 @@ _08020370:
 	lsls r0, r7, #5
 	adds r0, r0, r4
 	ldrh r0, [r0, #4]
-	bl sub_080F4E18
-	ldr r2, _08020450 @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _08020450 @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -21456,7 +21456,7 @@ _08020370:
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r3, [r1]
-	ldr r0, _08020458 @ =gUnk_09DB9C10
+	ldr r0, _08020458 @ =gInterfaceText
 	adds r3, r3, r0
 	mov r7, sl
 	ldrh r1, [r7]
@@ -21477,9 +21477,9 @@ _08020440: .4byte 0x0000114F @ Thunder Dragon
 _08020444: .4byte 0x00001138 @ Monster Eye
 _08020448: .4byte gUnk_02006E48
 _0802044C: .4byte gUnk_09E58D0C
-_08020450: .4byte gUnk_08000F40
+_08020450: .4byte gInterfaceTextOffsets
 _08020454: .4byte 0x00006C2C
-_08020458: .4byte gUnk_09DB9C10
+_08020458: .4byte gInterfaceText
 _0802045C:
 	mov r0, sb
 	ldrb r2, [r0]
@@ -22209,7 +22209,7 @@ _08020A1A:
 	bl sub_080F9114
 	ldr r0, _08020B14 @ =gUnk_02029E90
 	movs r1, #0x10
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r2, _08020B18 @ =gUnk_03000040
 	mov r8, r2
 	ldr r1, _08020B1C @ =0x0000023F
@@ -22525,7 +22525,7 @@ _08020CC6:
 	ldrh r2, [r0]
 	adds r2, #1
 	adds r0, r3, #0
-	bl sub_080F5228
+	bl StringCopyFormat_D
 	add r0, sp, #8
 	adds r1, r6, #0
 	bl sub_0802BC88
@@ -22872,7 +22872,7 @@ _08020F7A:
 	adds r2, r0, #0
 	adds r0, r6, #0
 	adds r1, r5, #0
-	bl sub_080F5148
+	bl StringCopyFormat_S
 	mov r0, sp
 	movs r1, #7
 	movs r2, #1
@@ -22991,7 +22991,7 @@ _08021062:
 	adds r2, r0, #0
 	adds r0, r6, #0
 	adds r1, r4, #0
-	bl sub_080F5148
+	bl StringCopyFormat_S
 	mov r0, sp
 	movs r1, #7
 	movs r2, #1
@@ -23131,8 +23131,8 @@ _080211B4:
 	lsls r1, r1, #2
 	adds r0, r2, r1
 	ldrh r0, [r0]
-	bl sub_080F4E18
-	ldr r2, _080211EC @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _080211EC @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -23148,23 +23148,23 @@ _080211B4:
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r0, [r1]
-	ldr r1, _080211F8 @ =gUnk_09DB9C10
+	ldr r1, _080211F8 @ =gInterfaceText
 	adds r0, r0, r1
 	movs r1, #0
 	bl sub_0802B590
 	b _0802123A
 	.align 2, 0
-_080211EC: .4byte gUnk_08000F40
+_080211EC: .4byte gInterfaceTextOffsets
 _080211F0: .4byte gUnk_02000000
 _080211F4: .4byte 0x00006C2C
-_080211F8: .4byte gUnk_09DB9C10
+_080211F8: .4byte gInterfaceText
 _080211FC:
 	movs r4, #0x8f
 	lsls r4, r4, #2
 	adds r0, r2, r4
 	ldrh r0, [r0]
-	bl sub_080F4E18
-	ldr r2, _08021260 @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _08021260 @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -23180,10 +23180,10 @@ _080211FC:
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r1, [r1]
-	ldr r0, _0802126C @ =gUnk_09DB9C10
+	ldr r0, _0802126C @ =gInterfaceText
 	adds r1, r1, r0
 	mov r0, sp
-	bl sub_080F51AC
+	bl StringCopyFormat_C
 	mov r0, sp
 	movs r1, #0
 	bl sub_0802B590
@@ -23206,10 +23206,10 @@ _08021254:
 	ldr r0, [r0]
 	mov pc, r0
 	.align 2, 0
-_08021260: .4byte gUnk_08000F40
+_08021260: .4byte gInterfaceTextOffsets
 _08021264: .4byte gUnk_02000000
 _08021268: .4byte 0x00006C2C
-_0802126C: .4byte gUnk_09DB9C10
+_0802126C: .4byte gInterfaceText
 _08021270: .4byte gUnk_03000040
 _08021274: .4byte 0xFFFFD8EF
 _08021278: .4byte _0802127C
@@ -24998,7 +24998,7 @@ _08022286:
 	adds r2, r0, #0
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_080F5148
+	bl StringCopyFormat_S
 	add r0, sp, #0x100
 	ldr r1, _080222B0 @ =gUnk_02023360
 	adds r1, #0x6d
@@ -25091,7 +25091,7 @@ _0802234E:
 	adds r2, r0, #0
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_080F5148
+	bl StringCopyFormat_S
 	add r0, sp, #0x200
 	ldr r1, _08022378 @ =gUnk_02023360
 	adds r1, #0x6d
@@ -25184,7 +25184,7 @@ _08022416:
 	adds r2, r0, #0
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_080F5148
+	bl StringCopyFormat_S
 	add r0, sp, #0x300
 	ldr r1, _0802243C @ =gUnk_02023360
 	adds r1, #0x6d
@@ -25717,7 +25717,7 @@ _08022846:
 	adds r2, r0, #0
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_080F5148
+	bl StringCopyFormat_S
 	movs r0, #0x80
 	lsls r0, r0, #3
 	add r0, sp
@@ -26539,8 +26539,8 @@ _08022EB8:
 	lsls r0, r1, #5
 	adds r0, r0, r5
 	ldrh r0, [r0, #4]
-	bl sub_080F4E18
-	ldr r2, _08022FC4 @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _08022FC4 @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -26555,7 +26555,7 @@ _08022EB8:
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r4, [r1]
-	ldr r0, _08022FCC @ =gUnk_09DB9C10
+	ldr r0, _08022FCC @ =gInterfaceText
 	adds r4, r4, r0
 	movs r5, #0x8f
 	lsls r5, r5, #2
@@ -26617,9 +26617,9 @@ _08022FB4: .4byte 0x00006E48
 _08022FB8: .4byte 0x0000114F @ Thunder Dragon
 _08022FBC: .4byte 0x00001138 @ Monster Eye
 _08022FC0: .4byte gUnk_09E58D0C
-_08022FC4: .4byte gUnk_08000F40
+_08022FC4: .4byte gInterfaceTextOffsets
 _08022FC8: .4byte 0x00006C2C
-_08022FCC: .4byte gUnk_09DB9C10
+_08022FCC: .4byte gInterfaceText
 _08022FD0: .4byte gUnk_02023360
 _08022FD4: .4byte 0x00000203
 _08022FD8: .4byte 0xFFFFC03F
@@ -27164,7 +27164,7 @@ _0802341A:
 	bl sub_080F9114
 	ldr r0, _08023520 @ =gUnk_02029E90
 	movs r1, #0x10
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r5, _08023524 @ =gUnk_03000040
 	mov r8, r5
 	ldr r1, _08023528 @ =0x0000023F
@@ -27706,7 +27706,7 @@ sub_0802387C: @ 0x0802387C
 	lsrs r1, r1, #0x18
 	mov r8, r1
 	adds r0, r7, #0
-	bl sub_080F54E0
+	bl StringLength
 	lsls r2, r6, #2
 	lsls r1, r0, #1
 	adds r1, r1, r0
@@ -27760,7 +27760,7 @@ _080238D4:
 	ldr r0, [r0]
 	str r0, [r3, #4]
 	adds r0, r7, #0
-	bl sub_080F54E0
+	bl StringLength
 	lsls r2, r6, #3
 	lsls r1, r0, #2
 	adds r1, r1, r0
@@ -27802,7 +27802,7 @@ _08023956:
 	ldr r2, _08023990 @ =0x06010000
 	adds r0, r0, r2
 	lsls r1, r6, #5
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	adds r4, #1
 	cmp r4, r8
 	blt _08023956
@@ -27848,7 +27848,7 @@ sub_08023994: @ 0x08023994
 	lsrs r2, r2, #0x18
 	mov sb, r2
 	ldr r0, [sp, #0x2c]
-	bl sub_080F54E0
+	bl StringLength
 	lsls r2, r5, #2
 	lsls r1, r0, #1
 	adds r1, r1, r0
@@ -27916,7 +27916,7 @@ _08023A30:
 	adds r1, r5, #0
 	muls r1, r0, r1
 	adds r0, r4, #0
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	adds r0, r4, #0
 	movs r1, #0
 	bl sub_080F2E4C
@@ -27928,7 +27928,7 @@ _08023A62:
 	ldr r1, _08023B20 @ =0x06000800
 	adds r0, r0, r1
 	movs r1, #0x80
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	adds r6, #2
 	mov r3, r8
 	ands r6, r3
@@ -28044,7 +28044,7 @@ sub_08023B24: @ 0x08023B24
 	ldr r2, _08023B64 @ =0x05000220
 	adds r0, r0, r2
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	lsls r4, r4, #5
 	ldr r0, _08023B68 @ =0x06010000
 	adds r4, r4, r0
@@ -28102,19 +28102,19 @@ sub_08023B6C: @ 0x08023B6C
 	movs r4, #0x80
 	lsls r4, r4, #8
 	adds r1, r4, #0
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	movs r0, #0xc0
 	lsls r0, r0, #0x13
 	movs r1, #0x80
 	lsls r1, r1, #6
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r0, _08023C98 @ =0x06010000
 	adds r1, r4, #0
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r0, _08023C9C @ =0x05000200
 	ldr r1, _08023CA0 @ =gUnk_09B97308
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _08023CA4 @ =0x06010200
 	ldr r1, _08023CA8 @ =gUnk_09B97328
 	movs r2, #0x10
@@ -28455,8 +28455,8 @@ _08023ED8:
 	movs r1, #0xbe
 	lsls r1, r1, #4
 	adds r0, r6, r1
-	bl sub_080F4E18
-	ldr r2, _08023FB0 @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _08023FB0 @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -28472,7 +28472,7 @@ _08023ED8:
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r5, [r1]
-	ldr r0, _08023FBC @ =gUnk_09DB9C10
+	ldr r0, _08023FBC @ =gInterfaceText
 	adds r5, r5, r0
 	lsls r4, r6, #1
 	adds r4, r4, r6
@@ -28559,10 +28559,10 @@ _08023FA0:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08023FB0: .4byte gUnk_08000F40
+_08023FB0: .4byte gInterfaceTextOffsets
 _08023FB4: .4byte gUnk_02000000
 _08023FB8: .4byte 0x00006C2C
-_08023FBC: .4byte gUnk_09DB9C10
+_08023FBC: .4byte gInterfaceText
 _08023FC0: .4byte 0x00000F09
 _08023FC4: .4byte gUnk_09B953B4
 _08023FC8: .4byte gUnk_02023360
@@ -30099,7 +30099,7 @@ _08024B88:
 	str r0, [r3, #4]
 _08024BEE:
 	mov r0, sb
-	bl sub_080F54E0
+	bl StringLength
 	lsls r1, r0, #1
 	adds r1, r1, r0
 	movs r0, #0x60
@@ -30115,7 +30115,7 @@ _08024BEE:
 	movs r1, #0xb0
 	lsls r1, r1, #3
 	adds r0, r4, #0
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	adds r0, r4, #0
 	movs r1, #0
 	bl sub_080F2E4C
@@ -33014,8 +33014,8 @@ _0802630A:
 	b _08026416
 _08026316:
 	ldr r0, _08026450 @ =0x00000BE5
-	bl sub_080F4E18
-	ldr r2, _08026454 @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _08026454 @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -33031,7 +33031,7 @@ _08026316:
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r1, [r1]
-	ldr r0, _08026460 @ =gUnk_09DB9C10
+	ldr r0, _08026460 @ =gInterfaceText
 	adds r1, r1, r0
 	ldr r0, _08026464 @ =0x000007C7
 	movs r2, #0x84
@@ -33136,10 +33136,10 @@ _080263DE:
 _08026406:
 	ldr r0, _08026484 @ =0x06001100
 	movs r1, #0x80
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r0, _0802647C @ =0x06000800
 	movs r1, #0x80
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 _08026416:
 	ldr r0, [sp, #8]
 	cmp r0, #0
@@ -33170,10 +33170,10 @@ _08026416:
 	.align 2, 0
 _0802644C: .4byte gUnk_02023360
 _08026450: .4byte 0x00000BE5
-_08026454: .4byte gUnk_08000F40
+_08026454: .4byte gInterfaceTextOffsets
 _08026458: .4byte gUnk_02000000
 _0802645C: .4byte 0x00006C2C
-_08026460: .4byte gUnk_09DB9C10
+_08026460: .4byte gInterfaceText
 _08026464: .4byte 0x000007C7
 _08026468: .4byte 0x00000F09
 _0802646C: .4byte 0x00000BC1
@@ -33201,8 +33201,8 @@ _08026488:
 	bne _080264FE
 	movs r0, #0xbe
 	lsls r0, r0, #4
-	bl sub_080F4E18
-	ldr r2, _08026564 @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _08026564 @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -33218,7 +33218,7 @@ _08026488:
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r1, [r1]
-	ldr r0, _08026570 @ =gUnk_09DB9C10
+	ldr r0, _08026570 @ =gInterfaceText
 	adds r1, r1, r0
 	ldr r0, _08026574 @ =0x00000407
 	movs r2, #0x84
@@ -33234,10 +33234,10 @@ _08026488:
 	bl sub_080EDF4C
 	ldr r0, _08026584 @ =0x06001780
 	movs r1, #0x80
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r0, _08026588 @ =0x06000F80
 	movs r1, #0x80
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 _080264FE:
 	ldr r4, _0802655C @ =gUnk_02023360
 	ldrh r5, [r4, #2]
@@ -33287,10 +33287,10 @@ _08026536:
 	.align 2, 0
 _0802655C: .4byte gUnk_02023360
 _08026560: .4byte 0x0000FFFF
-_08026564: .4byte gUnk_08000F40
+_08026564: .4byte gInterfaceTextOffsets
 _08026568: .4byte gUnk_02000000
 _0802656C: .4byte 0x00006C2C
-_08026570: .4byte gUnk_09DB9C10
+_08026570: .4byte gInterfaceText
 _08026574: .4byte 0x00000407
 _08026578: .4byte 0x00000F09
 _0802657C: .4byte 0x00000801
@@ -33511,7 +33511,7 @@ _08026748:
 	ldr r0, _08026808 @ =0x06001180
 	movs r1, #0x80
 	lsls r1, r1, #3
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	movs r0, #0x84
 	lsls r0, r0, #4
 	movs r2, #0xa4
@@ -33522,7 +33522,7 @@ _08026748:
 	ldr r0, _08026810 @ =0x06000800
 	movs r1, #0xc0
 	lsls r1, r1, #3
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	movs r4, #0
 _0802676E:
 	adds r0, r4, #0
@@ -33863,8 +33863,8 @@ _08026A2C:
 	movs r0, #1
 	bl sub_080F9AB4
 	ldr r0, _08026B34 @ =0x00000BE4
-	bl sub_080F4E18
-	ldr r4, _08026B38 @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r4, _08026B38 @ =gInterfaceTextOffsets
 	mov sb, r4
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
@@ -33881,7 +33881,7 @@ _08026A2C:
 	lsls r1, r1, #2
 	add r1, sb
 	ldr r1, [r1]
-	ldr r5, _08026B44 @ =gUnk_09DB9C10
+	ldr r5, _08026B44 @ =gInterfaceText
 	adds r1, r1, r5
 	ldr r0, _08026B48 @ =0x00000707
 	movs r6, #0x84
@@ -33899,7 +33899,7 @@ _08026A2C:
 	movs r2, #0xf6
 	bl sub_080EDF4C
 	ldr r0, _08026B58 @ =0x00000BE5
-	bl sub_080F4E18
+	bl GetInterfaceTextIdIndex
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -33927,10 +33927,10 @@ _08026A2C:
 	bl sub_080EDF4C
 	ldr r0, _08026B68 @ =0x06000D80
 	movs r1, #0x80
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r0, _08026B6C @ =0x06000900
 	movs r1, #0x80
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r2, _08026B70 @ =gUnk_02023360
 	ldr r0, [r2, #8]
 	ldr r1, _08026B74 @ =0xFF807FFF
@@ -33986,10 +33986,10 @@ _08026AF2:
 	b _08026BB0
 	.align 2, 0
 _08026B34: .4byte 0x00000BE4
-_08026B38: .4byte gUnk_08000F40
+_08026B38: .4byte gInterfaceTextOffsets
 _08026B3C: .4byte gUnk_02000000
 _08026B40: .4byte 0x00006C2C
-_08026B44: .4byte gUnk_09DB9C10
+_08026B44: .4byte gInterfaceText
 _08026B48: .4byte 0x00000707
 _08026B4C: .4byte 0x00000F09
 _08026B50: .4byte 0x00000B01
@@ -34042,7 +34042,7 @@ _08026BC8:
 	lsrs r0, r0, #0x1d
 	cmp r4, r0
 	bge _08026C44
-	ldr r1, _08026C60 @ =gUnk_08000F40
+	ldr r1, _08026C60 @ =gInterfaceTextOffsets
 	mov r8, r1
 	ldr r6, _08026C64 @ =gUnk_08C10000
 	ldr r5, _08026C68 @ =0x04C70000
@@ -34051,7 +34051,7 @@ _08026BE0:
 	movs r2, #0xbe
 	lsls r2, r2, #4
 	adds r0, r4, r2
-	bl sub_080F4E18
+	bl GetInterfaceTextIdIndex
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -34064,7 +34064,7 @@ _08026BE0:
 	lsls r1, r1, #2
 	add r1, r8
 	ldr r2, [r1]
-	ldr r0, _08026C70 @ =gUnk_09DB9C10
+	ldr r0, _08026C70 @ =gInterfaceText
 	adds r2, r2, r0
 	lsrs r0, r5, #0x10
 	lsls r1, r4, #0x15
@@ -34110,11 +34110,11 @@ _08026C56:
 	b _08026714
 	.align 2, 0
 _08026C5C: .4byte gUnk_02023360
-_08026C60: .4byte gUnk_08000F40
+_08026C60: .4byte gInterfaceTextOffsets
 _08026C64: .4byte gUnk_08C10000
 _08026C68: .4byte 0x04C70000
 _08026C6C: .4byte gUnk_02006C2C
-_08026C70: .4byte gUnk_09DB9C10
+_08026C70: .4byte gInterfaceText
 _08026C74: .4byte 0x00000F09
 _08026C78: .4byte gUnk_09B953B4
 _08026C7C: .4byte gUnk_03000040
@@ -34186,8 +34186,8 @@ _08026C88:
 	lsls r0, r7, #5
 	adds r0, r0, r4
 	ldrh r0, [r0, #4]
-	bl sub_080F4E18
-	ldr r2, _08026D74 @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _08026D74 @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -34202,7 +34202,7 @@ _08026C88:
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r3, [r1]
-	ldr r0, _08026D7C @ =gUnk_09DB9C10
+	ldr r0, _08026D7C @ =gInterfaceText
 	adds r3, r3, r0
 	mov r6, sl
 	ldrh r1, [r6]
@@ -34224,9 +34224,9 @@ _08026D64: .4byte 0x0000114F @ Thunder Dragon
 _08026D68: .4byte 0x00001138 @ Monster Eye
 _08026D6C: .4byte gUnk_02006E48
 _08026D70: .4byte gUnk_09E58D0C
-_08026D74: .4byte gUnk_08000F40
+_08026D74: .4byte gInterfaceTextOffsets
 _08026D78: .4byte 0x00006C2C
-_08026D7C: .4byte gUnk_09DB9C10
+_08026D7C: .4byte gInterfaceText
 _08026D80:
 	mov r0, sb
 	ldrb r2, [r0]
@@ -34977,8 +34977,8 @@ _08027378:
 	cmp r0, #5
 	bls _0802747E
 	ldr r0, _080274B8 @ =0x00000BE5
-	bl sub_080F4E18
-	ldr r2, _080274BC @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _080274BC @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -34991,7 +34991,7 @@ _08027378:
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r1, [r1]
-	ldr r0, _080274C0 @ =gUnk_09DB9C10
+	ldr r0, _080274C0 @ =gInterfaceText
 	adds r1, r1, r0
 	ldr r0, _080274C4 @ =0x000007C7
 	movs r2, #0x84
@@ -35097,10 +35097,10 @@ _08027446:
 _0802746E:
 	ldr r0, _080274E4 @ =0x06001100
 	movs r1, #0x80
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r0, _080274DC @ =0x06000800
 	movs r1, #0x80
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 _0802747E:
 	ldr r2, _080274B4 @ =gUnk_02023360
 	movs r0, #3
@@ -35127,8 +35127,8 @@ _080274AC: .4byte gUnk_02000000
 _080274B0: .4byte 0x00006C2C
 _080274B4: .4byte gUnk_02023360
 _080274B8: .4byte 0x00000BE5
-_080274BC: .4byte gUnk_08000F40
-_080274C0: .4byte gUnk_09DB9C10
+_080274BC: .4byte gInterfaceTextOffsets
+_080274C0: .4byte gInterfaceText
 _080274C4: .4byte 0x000007C7
 _080274C8: .4byte 0x00000F09
 _080274CC: .4byte 0x00000BC1
@@ -35179,7 +35179,7 @@ _08027538:
 	bl sub_080F9114
 	ldr r0, _080275FC @ =gUnk_02029E90
 	movs r1, #0x10
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r6, _08027600 @ =gUnk_03000040
 	mov r8, r6
 	ldr r1, _08027604 @ =0x0000023F
@@ -35861,8 +35861,8 @@ _08027AFC:
 	cmp r0, #5
 	bls _08027C02
 	ldr r0, _08027C3C @ =0x00000BE5
-	bl sub_080F4E18
-	ldr r2, _08027C40 @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _08027C40 @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -35875,7 +35875,7 @@ _08027AFC:
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r1, [r1]
-	ldr r0, _08027C44 @ =gUnk_09DB9C10
+	ldr r0, _08027C44 @ =gInterfaceText
 	adds r1, r1, r0
 	ldr r0, _08027C48 @ =0x000007C7
 	movs r2, #0x84
@@ -35981,10 +35981,10 @@ _08027BCA:
 _08027BF2:
 	ldr r0, _08027C68 @ =0x06001100
 	movs r1, #0x80
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r0, _08027C60 @ =0x06000800
 	movs r1, #0x80
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 _08027C02:
 	ldr r2, _08027C38 @ =gUnk_02023360
 	movs r0, #3
@@ -36012,8 +36012,8 @@ _08027C30: .4byte gUnk_02000000
 _08027C34: .4byte 0x00006C2C
 _08027C38: .4byte gUnk_02023360
 _08027C3C: .4byte 0x00000BE5
-_08027C40: .4byte gUnk_08000F40
-_08027C44: .4byte gUnk_09DB9C10
+_08027C40: .4byte gInterfaceTextOffsets
+_08027C44: .4byte gInterfaceText
 _08027C48: .4byte 0x000007C7
 _08027C4C: .4byte 0x00000F09
 _08027C50: .4byte 0x00000BC1
@@ -36170,7 +36170,7 @@ _08027D94:
 	ldr r1, _08027DB4 @ =gUnk_03000288
 	movs r2, #0x8c
 	lsls r2, r2, #1
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	movs r1, #0x8d
 	lsls r1, r1, #1
 	adds r0, r4, #0
@@ -36749,7 +36749,7 @@ _080281E8:
 	adds r1, r1, r2
 	movs r2, #0x8c
 	lsls r2, r2, #1
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	movs r1, #0x8f
 	lsls r1, r1, #1
 	adds r0, r6, #0
@@ -36778,7 +36778,7 @@ _0802826E:
 	ldr r1, _0802829C @ =gUnk_02001138
 	movs r2, #0x8c
 	lsls r2, r2, #1
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	movs r1, #0x8f
 	lsls r1, r1, #1
 	adds r0, r4, #0
@@ -36993,7 +36993,7 @@ sub_08028418: @ 0x08028418
 	lsrs r6, r0, #0x18
 	lsrs r7, r2, #0x18
 	ldr r0, [sp, #0x20]
-	bl sub_080F54E0
+	bl StringLength
 	lsls r2, r6, #2
 	lsls r1, r0, #1
 	adds r1, r1, r0
@@ -37056,7 +37056,7 @@ _080284A4:
 	adds r1, r6, #0
 	muls r1, r0, r1
 	adds r0, r4, #0
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	adds r0, r4, #0
 	movs r1, #0
 	bl sub_080F2E4C
@@ -37171,7 +37171,7 @@ sub_08028568: @ 0x08028568
 	cmp r4, #0
 	beq _080285B2
 	ldr r0, [sp, #0x28]
-	bl sub_080F54E0
+	bl StringLength
 	lsls r2, r6, #2
 	lsls r1, r0, #1
 	adds r1, r1, r0
@@ -37241,7 +37241,7 @@ _08028610:
 	adds r1, r6, #0
 	muls r1, r0, r1
 	adds r0, r4, #0
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	adds r0, r4, #0
 	movs r1, #0
 	bl sub_080F2E4C
@@ -37328,15 +37328,15 @@ sub_08028694: @ 0x08028694
 	movs r4, #0x80
 	lsls r4, r4, #8
 	adds r1, r4, #0
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	movs r0, #0xc0
 	lsls r0, r0, #0x13
 	movs r1, #0x80
 	lsls r1, r1, #6
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r0, _08028728 @ =0x06010000
 	adds r1, r4, #0
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	pop {r4}
 	pop {r0}
 	bx r0
@@ -37383,7 +37383,7 @@ _08028764:
 	ldr r0, _08028794 @ =0x05000220
 	ldr r1, _08028798 @ =gUnk_09B9E6C8
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _0802879C @ =0x06010000
 	ldr r1, _080287A0 @ =gUnk_09B9C6C8
 	movs r2, #0x20
@@ -38514,7 +38514,7 @@ _0802923A:
 	movs r2, #0x8c
 	lsls r2, r2, #1
 	adds r0, r4, #0
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080292AC @ =gUnk_0201EB00
 	movs r1, #0
 	bl sub_080EDD90
@@ -38668,7 +38668,7 @@ _080293CC: .4byte 0xFFFFC03F
 _080293D0:
 	ldr r0, _08029494 @ =gUnk_02029E90
 	movs r1, #0x10
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	bl sub_080CC83C
 	ldr r2, _08029498 @ =gUnk_02023130
 	movs r4, #0x88
@@ -39406,10 +39406,10 @@ _080299D0: .4byte gUnk_09DD64F2
 _080299D4:
 	ldr r1, _08029A18 @ =gUnk_09DCABF4
 _080299D6:
-	bl sub_080F5054
+	bl StringCopy
 	add r0, sp, #8
 	ldr r1, [sp, #0x4c]
-	bl sub_080F5054
+	bl StringCopy
 	movs r0, #0x8c
 	lsls r0, r0, #1
 	add r0, sb
@@ -39482,7 +39482,7 @@ _08029A3E:
 	add r3, sp, #8
 	bl sub_0802387C
 	add r0, sp, #8
-	bl sub_080F54E0
+	bl StringLength
 	lsls r1, r0, #1
 	adds r1, r1, r0
 	movs r2, #0x20
@@ -42699,7 +42699,7 @@ sub_0802B484: @ 0x0802B484
 	ldr r0, [r1]
 	str r0, [r5, #4]
 	adds r0, r4, #0
-	bl sub_080F54E0
+	bl StringLength
 	lsls r1, r0, #1
 	adds r1, r1, r0
 	movs r6, #0x30
@@ -42719,7 +42719,7 @@ sub_0802B484: @ 0x0802B484
 	str r0, [r5, #4]
 _0802B4FA:
 	adds r0, r4, #0
-	bl sub_080F54E0
+	bl StringLength
 	adds r1, r0, #0
 	lsls r0, r1, #1
 	adds r0, r0, r1
@@ -42735,7 +42735,7 @@ _0802B4FA:
 	adds r3, r4, #0
 	bl sub_080F2A7C
 	adds r0, r4, #0
-	bl sub_080F54E0
+	bl StringLength
 	adds r1, r0, #0
 	lsls r0, r1, #1
 	adds r0, r0, r1
@@ -42826,26 +42826,26 @@ sub_0802B590: @ 0x0802B590
 	ldr r0, _0802B6E4 @ =0x06004000
 	movs r1, #0xc0
 	lsls r1, r1, #8
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	movs r0, #0xc0
 	lsls r0, r0, #0x13
 	movs r1, #0xa0
 	lsls r1, r1, #6
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r4, _0802B6E8 @ =0x06010000
 	movs r1, #0x80
 	lsls r1, r1, #8
 	adds r0, r4, #0
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r0, _0802B6EC @ =0x05000220
 	ldr r1, _0802B6F0 @ =gUnk_09B8FB8C
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r1, _0802B6F4 @ =gUnk_09B8FBAC
 	movs r2, #0x80
 	lsls r2, r2, #4
 	adds r0, r4, #0
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r3, _0802B6F8 @ =gUnk_09B903AC
 	movs r0, #0
 	movs r1, #0x10
@@ -42867,7 +42867,7 @@ sub_0802B590: @ 0x0802B590
 	movs r1, #2
 	bl sub_080F0BB4
 	adds r0, r5, #0
-	bl sub_080F54E0
+	bl StringLength
 	lsls r1, r0, #1
 	adds r1, r1, r0
 	lsls r1, r1, #1
@@ -42899,7 +42899,7 @@ sub_0802B590: @ 0x0802B590
 	ldr r0, [r0]
 	str r0, [r2, #4]
 	adds r0, r5, #0
-	bl sub_080F54E0
+	bl StringLength
 	adds r1, r0, #0
 	lsls r0, r1, #2
 	adds r0, r0, r1
@@ -42913,7 +42913,7 @@ sub_0802B590: @ 0x0802B590
 	adds r3, r5, #0
 	bl sub_080F2A7C
 	adds r0, r5, #0
-	bl sub_080F54E0
+	bl StringLength
 	lsls r1, r0, #2
 	adds r1, r1, r0
 	subs r4, r4, r1
@@ -42977,7 +42977,7 @@ _0802B718:
 	ldr r0, [r1]
 	str r0, [r2, #4]
 	adds r0, r5, #0
-	bl sub_080F54E0
+	bl StringLength
 	adds r1, r0, #0
 	lsls r0, r1, #1
 	adds r0, r0, r1
@@ -42988,7 +42988,7 @@ _0802B718:
 	adds r3, r5, #0
 	bl sub_080F2A7C
 	adds r0, r5, #0
-	bl sub_080F54E0
+	bl StringLength
 	lsls r1, r0, #1
 	adds r1, r1, r0
 	subs r4, r4, r1
@@ -43189,7 +43189,7 @@ sub_0802B8BC: @ 0x0802B8BC
 	str r0, [r2, #4]
 	ldr r0, _0802B938 @ =0x050001E0
 	movs r1, #0x20
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r2, _0802B93C @ =gUnk_02023360
 	adds r1, r2, #0
 	adds r1, #0x62
@@ -43324,7 +43324,7 @@ _0802BA10:
 	ldr r1, _0802BA54 @ =gUnk_09DCAFAC
 _0802BA12:
 	adds r0, r1, #0
-	bl sub_080F54E0
+	bl StringLength
 	lsls r1, r0, #1
 	adds r1, r1, r0
 	lsls r1, r1, #1
@@ -43429,7 +43429,7 @@ _0802BAE4:
 	ldr r1, _0802BB28 @ =gUnk_09DCAFB8
 _0802BAE6:
 	adds r0, r1, #0
-	bl sub_080F54E0
+	bl StringLength
 	lsls r1, r0, #1
 	adds r1, r1, r0
 	lsls r1, r1, #1
@@ -43562,8 +43562,8 @@ _0802BB92:
 	ldrb r6, [r0]
 	ldr r2, _0802BC74 @ =0x00000BFA
 	adds r0, r7, r2
-	bl sub_080F4E18
-	ldr r2, _0802BC78 @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _0802BC78 @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -43571,7 +43571,7 @@ _0802BB92:
 	lsls r1, r1, #3
 	adds r1, r1, r2
 	ldr r3, [r1]
-	ldr r0, _0802BC7C @ =gUnk_09DB9C10
+	ldr r0, _0802BC7C @ =gInterfaceText
 	adds r3, r3, r0
 	mov r0, sb
 	mov r1, r8
@@ -43622,8 +43622,8 @@ _0802BC68: .4byte gUnk_09E59DA8
 _0802BC6C: .4byte gUnk_02006ED0
 _0802BC70: .4byte gUnk_09E5F854
 _0802BC74: .4byte 0x00000BFA
-_0802BC78: .4byte gUnk_08000F40
-_0802BC7C: .4byte gUnk_09DB9C10
+_0802BC78: .4byte gInterfaceTextOffsets
+_0802BC7C: .4byte gInterfaceText
 _0802BC80: .4byte gUnk_02000000
 _0802BC84: .4byte 0x00006C2C
 
@@ -43746,7 +43746,7 @@ sub_0802BD64: @ 0x0802BD64
 	movs r1, #0xfc
 	lsls r1, r1, #7
 	adds r0, r4, #0
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	adds r0, r4, #0
 	movs r1, #0
 	bl sub_080F2E4C
@@ -44393,8 +44393,8 @@ sub_0802C238: @ 0x0802C238
 	ldr r0, [sp, #0x58]
 	ldr r1, _0802C2F0 @ =0x00000C1C
 	adds r0, r0, r1
-	bl sub_080F4E18
-	ldr r2, _0802C2F4 @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _0802C2F4 @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -44410,13 +44410,13 @@ sub_0802C238: @ 0x0802C238
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r1, [r1]
-	ldr r0, _0802C300 @ =gUnk_09DB9C10
+	ldr r0, _0802C300 @ =gInterfaceText
 	adds r1, r1, r0
 	mov r0, sp
 	adds r2, r4, #0
-	bl sub_080F5228
+	bl StringCopyFormat_D
 	mov r0, sp
-	bl sub_080F54E0
+	bl StringLength
 	lsls r4, r0, #1
 	adds r4, r4, r0
 	lsls r4, r4, #1
@@ -44469,10 +44469,10 @@ _0802C2C0:
 	bx r1
 	.align 2, 0
 _0802C2F0: .4byte 0x00000C1C
-_0802C2F4: .4byte gUnk_08000F40
+_0802C2F4: .4byte gInterfaceTextOffsets
 _0802C2F8: .4byte gUnk_02000000
 _0802C2FC: .4byte 0x00006C2C
-_0802C300: .4byte gUnk_09DB9C10
+_0802C300: .4byte gInterfaceText
 _0802C304: .4byte 0x00008008
 _0802C308: .4byte gUnk_02006ED0
 
@@ -44488,7 +44488,7 @@ sub_0802C30C: @ 0x0802C30C
 	adds r2, r0, #0
 	mov r0, sp
 	adds r1, r4, #0
-	bl sub_080F5148
+	bl StringCopyFormat_S
 	ldr r2, _0802C350 @ =0x00008008
 	adds r0, r5, #0
 	adds r1, r6, #0
@@ -44528,8 +44528,8 @@ sub_0802C358: @ 0x0802C358
 	movs r0, #0xfa
 	lsls r0, r0, #2
 	add r0, sb
-	bl sub_080F4E18
-	ldr r2, _0802C3DC @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _0802C3DC @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -44545,10 +44545,10 @@ sub_0802C358: @ 0x0802C358
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r1, [r1]
-	ldr r0, _0802C3E8 @ =gUnk_09DB9C10
+	ldr r0, _0802C3E8 @ =gInterfaceText
 	adds r1, r1, r0
 	add r0, sp, #8
-	bl sub_080F51AC
+	bl StringCopyFormat_C
 	ldr r2, _0802C3EC @ =0x00008008
 	movs r0, #0
 	movs r1, #4
@@ -44576,10 +44576,10 @@ _0802C3D0:
 	ldr r0, [r0]
 	mov pc, r0
 	.align 2, 0
-_0802C3DC: .4byte gUnk_08000F40
+_0802C3DC: .4byte gInterfaceTextOffsets
 _0802C3E0: .4byte gUnk_02000000
 _0802C3E4: .4byte 0x00006C2C
-_0802C3E8: .4byte gUnk_09DB9C10
+_0802C3E8: .4byte gInterfaceText
 _0802C3EC: .4byte 0x00008008
 _0802C3F0: .4byte gUnk_02006ED0
 _0802C3F4: .4byte 0xFFFFD8EF
@@ -45073,8 +45073,8 @@ _0802C7DC:
 	movs r0, #0xfa
 	lsls r0, r0, #3
 	add r0, sb
-	bl sub_080F4E18
-	ldr r2, _0802C82C @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _0802C82C @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -45090,7 +45090,7 @@ _0802C7DC:
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r2, [r1]
-	ldr r0, _0802C838 @ =gUnk_09DB9C10
+	ldr r0, _0802C838 @ =gInterfaceText
 	adds r2, r2, r0
 	movs r0, #2
 	adds r1, r6, #0
@@ -45100,10 +45100,10 @@ _0802C7DC:
 	b _0802C83E
 	.align 2, 0
 _0802C828: .4byte 0x000015B1 @ XY-Dragon Cannon
-_0802C82C: .4byte gUnk_08000F40
+_0802C82C: .4byte gInterfaceTextOffsets
 _0802C830: .4byte gUnk_02000000
 _0802C834: .4byte 0x00006C2C
-_0802C838: .4byte gUnk_09DB9C10
+_0802C838: .4byte gInterfaceText
 _0802C83C:
 	movs r7, #0
 _0802C83E:
@@ -45116,8 +45116,8 @@ _0802C83E:
 	movs r0, #0xfa
 	lsls r0, r0, #3
 	add r0, sb
-	bl sub_080F4E18
-	ldr r2, _0802C88C @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _0802C88C @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -45133,7 +45133,7 @@ _0802C83E:
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r2, [r1]
-	ldr r0, _0802C898 @ =gUnk_09DB9C10
+	ldr r0, _0802C898 @ =gInterfaceText
 	adds r2, r2, r0
 	movs r0, #2
 	adds r1, r6, #0
@@ -45143,10 +45143,10 @@ _0802C83E:
 	b _0802C89E
 	.align 2, 0
 _0802C888: .4byte 0x000015F9 @ XZ-Tank Cannon
-_0802C88C: .4byte gUnk_08000F40
+_0802C88C: .4byte gInterfaceTextOffsets
 _0802C890: .4byte gUnk_02000000
 _0802C894: .4byte 0x00006C2C
-_0802C898: .4byte gUnk_09DB9C10
+_0802C898: .4byte gInterfaceText
 _0802C89C:
 	movs r7, #0
 _0802C89E:
@@ -45159,8 +45159,8 @@ _0802C89E:
 	movs r0, #0xfa
 	lsls r0, r0, #3
 	add r0, sb
-	bl sub_080F4E18
-	ldr r2, _0802C8EC @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _0802C8EC @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -45176,7 +45176,7 @@ _0802C89E:
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r2, [r1]
-	ldr r0, _0802C8F8 @ =gUnk_09DB9C10
+	ldr r0, _0802C8F8 @ =gInterfaceText
 	adds r2, r2, r0
 	movs r0, #2
 	adds r1, r6, #0
@@ -45186,10 +45186,10 @@ _0802C89E:
 	b _0802C8FE
 	.align 2, 0
 _0802C8E8: .4byte 0x000015FA @ YZ-Tank Dragon
-_0802C8EC: .4byte gUnk_08000F40
+_0802C8EC: .4byte gInterfaceTextOffsets
 _0802C8F0: .4byte gUnk_02000000
 _0802C8F4: .4byte 0x00006C2C
-_0802C8F8: .4byte gUnk_09DB9C10
+_0802C8F8: .4byte gInterfaceText
 _0802C8FC:
 	movs r7, #0
 _0802C8FE:
@@ -45202,8 +45202,8 @@ _0802C8FE:
 	movs r0, #0xfa
 	lsls r0, r0, #3
 	add r0, sb
-	bl sub_080F4E18
-	ldr r2, _0802C94C @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _0802C94C @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -45219,7 +45219,7 @@ _0802C8FE:
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r2, [r1]
-	ldr r0, _0802C958 @ =gUnk_09DB9C10
+	ldr r0, _0802C958 @ =gInterfaceText
 	adds r2, r2, r0
 	movs r0, #2
 	adds r1, r6, #0
@@ -45229,10 +45229,10 @@ _0802C8FE:
 	b _0802C9EE
 	.align 2, 0
 _0802C948: .4byte 0x000015B4 @ XYZ-Dragon Cannon
-_0802C94C: .4byte gUnk_08000F40
+_0802C94C: .4byte gInterfaceTextOffsets
 _0802C950: .4byte gUnk_02000000
 _0802C954: .4byte 0x00006C2C
-_0802C958: .4byte gUnk_09DB9C10
+_0802C958: .4byte gInterfaceText
 _0802C95C:
 	movs r7, #0
 	b _0802C9EE
@@ -45326,8 +45326,8 @@ _0802C9F4:
 	movs r0, #0xfa
 	lsls r0, r0, #3
 	add r0, sb
-	bl sub_080F4E18
-	ldr r2, _0802CA40 @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _0802CA40 @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -45343,7 +45343,7 @@ _0802C9F4:
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r1, [r1]
-	ldr r0, _0802CA4C @ =gUnk_09DB9C10
+	ldr r0, _0802CA4C @ =gInterfaceText
 	adds r1, r1, r0
 	mov r8, r1
 	ldr r4, _0802CA50 @ =gUnk_09E5E9CC
@@ -45360,10 +45360,10 @@ _0802C9F4:
 	movs r0, #6
 	b _0802CA56
 	.align 2, 0
-_0802CA40: .4byte gUnk_08000F40
+_0802CA40: .4byte gInterfaceTextOffsets
 _0802CA44: .4byte gUnk_02000000
 _0802CA48: .4byte 0x00006C2C
-_0802CA4C: .4byte gUnk_09DB9C10
+_0802CA4C: .4byte gInterfaceText
 _0802CA50: .4byte gUnk_09E5E9CC
 _0802CA54:
 	movs r0, #7
@@ -45382,8 +45382,8 @@ _0802CA66:
 	movs r0, #0xfa
 	lsls r0, r0, #3
 	add r0, sb
-	bl sub_080F4E18
-	ldr r2, _0802CB88 @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _0802CB88 @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -45399,7 +45399,7 @@ _0802CA66:
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r2, [r1]
-	ldr r0, _0802CB94 @ =gUnk_09DB9C10
+	ldr r0, _0802CB94 @ =gInterfaceText
 	adds r2, r2, r0
 	movs r0, #2
 	adds r1, r6, #0
@@ -45409,7 +45409,7 @@ _0802CAA4:
 	ldr r0, _0802CB98 @ =0x00000C02
 	subs r0, r0, r7
 	mov r8, r0
-	bl sub_080F4E18
+	bl GetInterfaceTextIdIndex
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -45424,20 +45424,20 @@ _0802CAA4:
 	lsrs r0, r0, #0x1d
 	adds r1, r1, r0
 	lsls r1, r1, #2
-	ldr r0, _0802CB88 @ =gUnk_08000F40
+	ldr r0, _0802CB88 @ =gInterfaceTextOffsets
 	adds r1, r1, r0
 	ldr r0, [r1]
-	ldr r1, _0802CB94 @ =gUnk_09DB9C10
+	ldr r1, _0802CB94 @ =gInterfaceText
 	mov sb, r1
 	add r0, sb
-	bl sub_080F54E0
+	bl StringLength
 	lsls r4, r0, #1
 	adds r4, r4, r0
 	movs r6, #0x68
 	subs r4, r6, r4
 	ldr r5, _0802CB9C @ =0x00008008
 	mov r0, r8
-	bl sub_080F4E18
+	bl GetInterfaceTextIdIndex
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -45449,7 +45449,7 @@ _0802CAA4:
 	lsrs r0, r0, #0x1d
 	adds r1, r1, r0
 	lsls r1, r1, #2
-	ldr r3, _0802CB88 @ =gUnk_08000F40
+	ldr r3, _0802CB88 @ =gInterfaceTextOffsets
 	adds r1, r1, r3
 	ldr r3, [r1]
 	add r3, sb
@@ -45458,7 +45458,7 @@ _0802CAA4:
 	adds r2, r5, #0
 	bl sub_080F2A7C
 	mov r0, r8
-	bl sub_080F4E18
+	bl GetInterfaceTextIdIndex
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -45470,11 +45470,11 @@ _0802CAA4:
 	lsrs r0, r0, #0x1d
 	adds r1, r1, r0
 	lsls r1, r1, #2
-	ldr r3, _0802CB88 @ =gUnk_08000F40
+	ldr r3, _0802CB88 @ =gInterfaceTextOffsets
 	adds r1, r1, r3
 	ldr r0, [r1]
 	add r0, sb
-	bl sub_080F54E0
+	bl StringLength
 	lsls r1, r0, #1
 	adds r1, r1, r0
 	subs r6, r6, r1
@@ -45484,7 +45484,7 @@ _0802CAA4:
 	movs r4, #6
 _0802CB48:
 	mov r0, r8
-	bl sub_080F4E18
+	bl GetInterfaceTextIdIndex
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -45496,7 +45496,7 @@ _0802CB48:
 	lsrs r0, r0, #0x1d
 	adds r1, r1, r0
 	lsls r1, r1, #2
-	ldr r3, _0802CB88 @ =gUnk_08000F40
+	ldr r3, _0802CB88 @ =gInterfaceTextOffsets
 	adds r1, r1, r3
 	ldr r3, [r1]
 	add r3, sb
@@ -45514,10 +45514,10 @@ _0802CB48:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0802CB88: .4byte gUnk_08000F40
+_0802CB88: .4byte gInterfaceTextOffsets
 _0802CB8C: .4byte gUnk_02000000
 _0802CB90: .4byte 0x00006C2C
-_0802CB94: .4byte gUnk_09DB9C10
+_0802CB94: .4byte gInterfaceText
 _0802CB98: .4byte 0x00000C02
 _0802CB9C: .4byte 0x00008008
 
@@ -45559,7 +45559,7 @@ sub_0802CBA0: @ 0x0802CBA0
 	str r0, [r2, #4]
 	ldr r0, _0802CC04 @ =0x050001E0
 	movs r1, #0x20
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -45578,7 +45578,7 @@ sub_0802CC08: @ 0x0802CC08
 	movs r1, #0x82
 	lsls r1, r1, #8
 	adds r0, r4, #0
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	adds r0, r4, #0
 	movs r1, #0
 	bl sub_080F2E4C
@@ -45669,26 +45669,26 @@ _0802CC7C:
 	ldr r0, _0802CD9C @ =0x06004000
 	movs r1, #0xc0
 	lsls r1, r1, #8
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	movs r0, #0xc0
 	lsls r0, r0, #0x13
 	movs r1, #0xa0
 	lsls r1, r1, #6
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r4, _0802CDA0 @ =0x06010000
 	movs r1, #0x80
 	lsls r1, r1, #8
 	adds r0, r4, #0
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r0, _0802CDA4 @ =0x05000220
 	ldr r1, _0802CDA8 @ =gUnk_09B921D4
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r1, _0802CDAC @ =gUnk_09B921F4
 	movs r2, #0x80
 	lsls r2, r2, #4
 	adds r0, r4, #0
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r3, _0802CDB0 @ =gUnk_09B929F4
 	movs r0, #0
 	movs r1, #0x10
@@ -45791,7 +45791,7 @@ _0802CDE8: .4byte gUnk_09DD69EC
 _0802CDEC:
 	ldr r0, _0802CE24 @ =gUnk_09DCB012
 _0802CDEE:
-	bl sub_080F54E0
+	bl StringLength
 	lsls r1, r0, #1
 	adds r1, r1, r0
 	movs r0, #0x60
@@ -45889,7 +45889,7 @@ _0802CEB0: .4byte gUnk_09DD69EC
 _0802CEB4:
 	ldr r0, _0802CEEC @ =gUnk_09DCB012
 _0802CEB6:
-	bl sub_080F54E0
+	bl StringLength
 	lsls r1, r0, #1
 	adds r1, r1, r0
 	movs r0, #0x60
@@ -46160,25 +46160,25 @@ sub_0802D074: @ 0x0802D074
 	movs r4, #0x80
 	lsls r4, r4, #8
 	adds r1, r4, #0
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	movs r0, #0xc0
 	lsls r0, r0, #0x13
 	movs r6, #0x80
 	lsls r6, r6, #6
 	adds r1, r6, #0
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r5, _0802D174 @ =0x06010000
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r0, _0802D178 @ =0x05000220
 	ldr r1, _0802D17C @ =gUnk_0994D6FC
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r1, _0802D180 @ =gUnk_0994D71C
 	adds r0, r5, #0
 	adds r2, r6, #0
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _0802D184 @ =gUnk_09A1A52C
 	movs r1, #9
 	bl sub_080EE43C
@@ -46199,7 +46199,7 @@ sub_0802D074: @ 0x0802D074
 	ldr r0, _0802D190 @ =0x050001E0
 	ldr r1, _0802D194 @ =gUnk_09CCD290
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _0802D198 @ =0x0000F210
 	ldr r3, _0802D19C @ =0x06001800
 	movs r2, #0x3f
@@ -46274,10 +46274,10 @@ sub_0802D1A0: @ 0x0802D1A0
 	movs r6, #0x80
 	lsls r6, r6, #4
 	adds r1, r6, #0
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r0, _0802D258 @ =0x06001000
 	adds r1, r6, #0
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	adds r0, r4, #0
 	movs r1, #8
 	bl sub_080EE43C
@@ -46347,10 +46347,10 @@ sub_0802D25C: @ 0x0802D25C
 	movs r4, #0x80
 	lsls r4, r4, #4
 	adds r1, r4, #0
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r0, _0802D2F8 @ =0x06001000
 	adds r1, r4, #0
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	adds r0, r6, #0
 	movs r1, #8
 	bl sub_080EE43C
@@ -46432,10 +46432,10 @@ sub_0802D2FC: @ 0x0802D2FC
 	movs r6, #0x80
 	lsls r6, r6, #4
 	adds r1, r6, #0
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r0, _0802D3C0 @ =0x06001000
 	adds r1, r6, #0
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	adds r0, r5, #0
 	movs r1, #8
 	bl sub_080EE43C
@@ -46520,10 +46520,10 @@ sub_0802D3C4: @ 0x0802D3C4
 	movs r6, #0x80
 	lsls r6, r6, #4
 	adds r1, r6, #0
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r0, _0802D488 @ =0x06001000
 	adds r1, r6, #0
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	adds r0, r5, #0
 	movs r1, #8
 	bl sub_080EE43C
@@ -46710,7 +46710,7 @@ sub_0802D58C: @ 0x0802D58C
 	movs r1, #0x80
 	lsls r1, r1, #4
 	adds r0, r6, #0
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	cmp r5, #0
 	beq _0802D61A
 	movs r0, #0x20
@@ -46745,7 +46745,7 @@ sub_0802D58C: @ 0x0802D58C
 	ldr r0, [r1]
 	str r0, [r2, #4]
 	adds r0, r5, #0
-	bl sub_080F54F4
+	bl StringLength_SkipAtDirective
 	adds r1, r0, #0
 	lsls r0, r1, #1
 	adds r0, r0, r1
@@ -46756,7 +46756,7 @@ sub_0802D58C: @ 0x0802D58C
 	adds r3, r5, #0
 	bl sub_080F2A7C
 	adds r0, r5, #0
-	bl sub_080F54F4
+	bl StringLength_SkipAtDirective
 	lsls r1, r0, #1
 	adds r1, r1, r0
 	subs r4, r4, r1
@@ -46804,7 +46804,7 @@ sub_0802D638: @ 0x0802D638
 	ldr r2, _0802D700 @ =gUnk_09896290
 	adds r1, r1, r2
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r1, [sp, #0x40]
 	lsls r0, r1, #7
 	ldr r2, _0802D704 @ =0x06011100
@@ -46853,11 +46853,11 @@ _0802D6B6:
 	orrs r2, r0
 	strb r2, [r4, #8]
 	adds r0, r6, #0
-	bl sub_080F54E0
+	bl StringLength
 	cmp r0, #0x26
 	ble _0802D744
 	adds r0, r6, #0
-	bl sub_080F54E0
+	bl StringLength
 	cmp r0, #0x2f
 	ble _0802D714
 	mov r0, sp
@@ -46883,7 +46883,7 @@ _0802D710: .4byte gUnk_09E5F854
 _0802D714:
 	mov r0, sp
 	adds r1, r6, #0
-	bl sub_080F5054
+	bl StringCopy
 _0802D71C:
 	ldr r1, _0802D73C @ =gUnk_02006ED0
 	movs r0, #3
@@ -46906,7 +46906,7 @@ _0802D740: .4byte gUnk_09E5F854
 _0802D744:
 	mov r0, sp
 	adds r1, r6, #0
-	bl sub_080F5054
+	bl StringCopy
 	ldrb r0, [r4, #8]
 	orrs r0, r7
 	strb r0, [r4, #8]
@@ -46922,7 +46922,7 @@ _0802D744:
 	str r0, [r4, #4]
 _0802D766:
 	mov r0, sp
-	bl sub_080F54E0
+	bl StringLength
 	muls r0, r5, r0
 	movs r4, #0xee
 	subs r0, r4, r0
@@ -46931,7 +46931,7 @@ _0802D766:
 	mov r3, sp
 	bl sub_080F2A7C
 	mov r0, sp
-	bl sub_080F54E0
+	bl StringLength
 	muls r0, r5, r0
 	subs r4, r4, r0
 	adds r0, r4, #0
@@ -46951,7 +46951,7 @@ _0802D766:
 	orrs r0, r1
 	strb r0, [r4, #8]
 	mov r0, sl
-	bl sub_080F54E0
+	bl StringLength
 	cmp r0, #0x26
 	ble _0802D7DC
 	movs r0, #3
@@ -46991,7 +46991,7 @@ _0802D7DC:
 	movs r5, #6
 _0802D7FC:
 	mov r0, sl
-	bl sub_080F54E0
+	bl StringLength
 	muls r0, r5, r0
 	movs r4, #0xee
 	subs r0, r4, r0
@@ -47000,7 +47000,7 @@ _0802D7FC:
 	mov r3, sl
 	bl sub_080F2A7C
 	mov r0, sl
-	bl sub_080F54E0
+	bl StringLength
 	muls r0, r5, r0
 	subs r4, r4, r0
 	adds r0, r4, #0
@@ -47023,7 +47023,7 @@ _0802D834:
 	orrs r2, r0
 	strb r2, [r4, #8]
 	mov r0, sl
-	bl sub_080F54E0
+	bl StringLength
 	cmp r0, #0x26
 	ble _0802D866
 	movs r0, #3
@@ -47063,7 +47063,7 @@ _0802D87E:
 	mov r3, sl
 	bl sub_080F2A7C
 	adds r0, r6, #0
-	bl sub_080F54E0
+	bl StringLength
 	cmp r0, #0x26
 	ble _0802D8CC
 	ldr r1, _0802D8C4 @ =gUnk_02006ED0
@@ -47211,7 +47211,7 @@ sub_0802D970: @ 0x0802D970
 	cmp r5, #0
 	beq _0802DA0C
 	adds r0, r5, #0
-	bl sub_080F54E0
+	bl StringLength
 	lsls r1, r0, #1
 	adds r1, r1, r0
 	movs r4, #0x20
@@ -47242,7 +47242,7 @@ _0802DA0C:
 	cmp r7, #0
 	beq _0802DA4E
 	adds r0, r7, #0
-	bl sub_080F54E0
+	bl StringLength
 	lsls r1, r0, #1
 	adds r1, r1, r0
 	movs r4, #0x20
@@ -47287,16 +47287,16 @@ _0802DA4E:
 	lsls r4, r4, #1
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r0, _0802DAC0 @ =0x06011400
 	adds r1, r4, #0
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r0, _0802DAC4 @ =0x06011800
 	adds r1, r4, #0
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r0, _0802DAC8 @ =0x06011C00
 	adds r1, r4, #0
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	adds r0, r5, #0
 	movs r1, #0
 	bl sub_080F37D4
@@ -47719,7 +47719,7 @@ _0802DE1E:
 	ldr r0, _0802DED4 @ =0x05000300
 	ldr r1, _0802DED8 @ =gUnk_098997F8
 	movs r2, #0x40
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r5, _0802DEDC @ =gUnk_020233AC
 	ldr r1, _0802DEE0 @ =gUnk_09899838
 	ldr r2, _0802DEE4 @ =gUnk_02000007
@@ -47864,7 +47864,7 @@ _0802DF5C:
 	ldr r5, _0802DFA8 @ =gUnk_09DC884C
 _0802DF5E:
 	adds r0, r5, #0
-	bl sub_080F54E0
+	bl StringLength
 	lsls r1, r0, #1
 	adds r1, r1, r0
 	movs r4, #0x20
@@ -47884,10 +47884,10 @@ _0802DF5E:
 	lsls r4, r4, #1
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r0, _0802DFB4 @ =0x06014600
 	adds r1, r4, #0
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	adds r0, r5, #0
 	movs r1, #0
 	bl sub_080F37D4
@@ -49183,7 +49183,7 @@ sub_0802E988: @ 0x0802E988
 	adds r1, r4, r2
 	adds r0, r0, r1
 	movs r1, #8
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	movs r5, #0
 	movs r0, #1
 	mov r8, r0
@@ -53935,7 +53935,7 @@ sub_08030BE4: @ 0x08030BE4
 	adds r4, r4, r5
 	adds r0, r4, #0
 	movs r1, #0x14
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	adds r0, r4, #0
 	ldr r1, [sp]
 	bl sub_08030B88
@@ -54043,7 +54043,7 @@ sub_08030CC0: @ 0x08030CC0
 	mov sl, r0
 	adds r0, r4, #0
 	movs r1, #0x14
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	adds r0, r4, #0
 	adds r1, r5, #0
 	bl sub_08030B88
@@ -56802,7 +56802,7 @@ sub_0803217C: @ 0x0803217C
 	bl sub_0802EB94
 	adds r0, r4, #0
 	movs r1, #0x14
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	pop {r4}
 	pop {r0}
 	bx r0
@@ -68054,7 +68054,7 @@ _0803772C:
 	lsls r1, r1, #2
 	adds r0, r0, r1
 	movs r1, #4
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	movs r0, #1
 	b _0803776A
 	.align 2, 0
@@ -78039,7 +78039,7 @@ _0803C33E:
 	adds r1, r0, r2
 	adds r0, r4, #0
 	movs r2, #8
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	movs r0, #1
 	str r0, [r5]
 	movs r0, #0x81
@@ -78147,7 +78147,7 @@ _0803C41C:
 	adds r0, r7, #0
 	adds r1, r6, #0
 	movs r2, #8
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, [r5]
 	subs r0, #1
 	str r0, [r5]
@@ -78161,7 +78161,7 @@ _0803C43C:
 	adds r0, r6, #0
 	adds r1, r5, #0
 	movs r2, #8
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	adds r6, #8
 	adds r5, #8
 	adds r4, #1
@@ -79138,7 +79138,7 @@ _0803CBFC:
 	mov sl, r1
 	mov r0, r8
 	movs r2, #0x14
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	movs r2, #0
 	adds r0, r4, #0
 	subs r0, #0xc4
@@ -79165,7 +79165,7 @@ _0803CC4C:
 	strb r0, [r1, #2]
 	mov r0, sl
 	movs r1, #0x14
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r2, _0803CC9C @ =gUnk_0201C510
 	ldr r3, _0803CCA0 @ =0x000010A4 (Embryonic Beast)
 	adds r1, r2, r3
@@ -80649,13 +80649,13 @@ _0803D82C:
 	mov r0, r8
 	adds r1, r4, #0
 	movs r2, #0x14
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	mov r0, r8
 	ldr r1, _0803D910 @ =gUnk_0201C4D8
 	bl sub_08030B88
 	adds r0, r4, #0
 	movs r1, #0x14
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r3, _0803D904 @ =gUnk_0201C510
 	ldr r4, _0803D914 @ =0x000010A4 (Embryonic Beast)
 	adds r2, r3, r4
@@ -80833,18 +80833,18 @@ _0803D9D4:
 	mov r0, sp
 	adds r1, r5, #0
 	movs r2, #0x14
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	adds r4, r4, r6
 	ldr r0, [sp, #0x1c]
 	adds r4, r4, r0
 	adds r0, r5, #0
 	adds r1, r4, #0
 	movs r2, #0x14
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	adds r0, r4, #0
 	mov r1, sp
 	movs r2, #0x14
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	adds r1, r6, #0
 	adds r1, #0x10
 	ldr r3, [sp, #0x20]
@@ -89006,7 +89006,7 @@ _08041A60:
 	adds r0, r2, r1
 	adds r1, r4, r1
 	movs r2, #0x14
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	subs r5, #1
 	cmp r5, #0
 	bne _08041A60
@@ -89040,7 +89040,7 @@ _08041A8E:
 	lsls r1, r1, #2
 	adds r1, r4, r1
 	movs r2, #0x14
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	adds r5, #1
 	cmp r5, r7
 	blt _08041A8E
@@ -112046,7 +112046,7 @@ _0804C820:
 _0804C832:
 	adds r0, r4, #0
 	movs r1, #0x18
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	strh r5, [r4]
 	lsrs r0, r5, #0x1f
 	movs r3, #2
@@ -113936,7 +113936,7 @@ _0804D760:
 	adds r1, r5, r2
 	adds r0, r6, #0
 	movs r2, #0x18
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	adds r6, #0x18
 	adds r5, #0x18
 	adds r4, #1
@@ -117031,7 +117031,7 @@ _0804F114:
 	adds r0, r5, #0
 	movs r2, #0x18
 	str r3, [sp]
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r3, [sp]
 	ldrh r0, [r3]
 	adds r0, #1
@@ -117073,7 +117073,7 @@ _0804F16E:
 	adds r0, r6, #0
 	adds r1, r4, #0
 	movs r2, #0x18
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	adds r4, #0x18
 	adds r6, #0x18
 	adds r5, #1
@@ -117172,7 +117172,7 @@ _0804F20A:
 	adds r1, r5, #0
 	movs r2, #0x18
 	str r3, [sp]
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	mov r1, sb
 	ldr r0, [r1]
 	subs r0, #1
@@ -117193,7 +117193,7 @@ _0804F25C:
 	adds r1, r4, r1
 	adds r0, r5, #0
 	movs r2, #0x18
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	adds r5, #0x18
 	adds r4, #0x18
 	adds r7, #1
@@ -142494,7 +142494,7 @@ _0805AF68:
 	add r0, r8
 	adds r0, r0, r6
 	movs r1, #0x14
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	adds r0, r5, #0
 	b _0805B024
 	.align 2, 0
@@ -258610,35 +258610,35 @@ sub_080935A4: @ 0x080935A4
 	ldr r4, _08093628 @ =gUnk_0201C4E0
 	ldr r1, _0809362C @ =0x00001DB8
 	adds r0, r4, #0
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r0, _08093630 @ =gUnk_0201E4F0
 	movs r1, #0xc2
 	lsls r1, r1, #3
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r0, _08093634 @ =gUnk_0201BCC0
 	ldr r1, _08093638 @ =0x0000081C
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r0, _0809363C @ =gUnk_0201E4D0
 	movs r1, #0x18
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r0, _08093640 @ =gUnk_0201B290
 	ldr r1, _08093644 @ =0x000005D4
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r0, _08093648 @ =gUnk_0201BB90
 	movs r1, #0x98
 	lsls r1, r1, #1
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r0, _0809364C @ =gUnk_0201B1B0
 	movs r1, #0xd8
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r0, _08093650 @ =gUnk_0201AFE0
 	movs r1, #0xe6
 	lsls r1, r1, #1
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r0, _08093654 @ =gUnk_0201B870
 	movs r1, #0xc5
 	lsls r1, r1, #2
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r1, _08093658 @ =gUnk_0201E2A0
 	ldr r0, [r1, #8]
 	cmp r0, #2
@@ -260072,14 +260072,14 @@ sub_080941C4: @ 0x080941C4
 	adds r0, #0x10
 	movs r1, #0x80
 	lsls r1, r1, #2
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	movs r0, #0x82
 	lsls r0, r0, #3
 	adds r4, r4, r0
 	movs r1, #0x80
 	lsls r1, r1, #1
 	adds r0, r4, #0
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	cmp r5, #5
 	ble _08094270
 	ldr r0, _08094224 @ =gUnk_0201E2A0
@@ -262535,7 +262535,7 @@ _080954BA:
 	add r0, sp
 	adds r1, r2, #0
 	adds r2, r4, #0
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	adds r0, r4, #1
 	lsrs r0, r0, #1
 	adds r5, r5, r0
@@ -262676,7 +262676,7 @@ _08095620:
 	ldr r0, _08095634 @ =gUnk_0201E4D0
 	ldr r1, _08095638 @ =gUnk_0201B872
 	movs r2, #0x18
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	bl sub_080ABB90
 _0809562E:
 	movs r0, #1
@@ -262977,7 +262977,7 @@ _080958AC:
 	ldr r4, _080958C8 @ =gUnk_0201B872
 	adds r1, r4, #0
 	movs r2, #0x10
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080958CC @ =0x000002FF
 	adds r4, r4, r0
 	movs r0, #2
@@ -263002,7 +263002,7 @@ _080958D0:
 	adds r0, r0, r1
 	adds r1, r4, #4
 	movs r2, #0x18
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r3, _0809590C @ =0x0000030D
 	adds r1, r4, r3
 	movs r0, #0
@@ -263056,7 +263056,7 @@ _08095948:
 	adds r0, r0, r1
 	adds r1, r4, #4
 	movs r2, #0x18
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r2, _08095984 @ =0x0000030E
 	adds r1, r4, r2
 	movs r0, #0
@@ -263098,7 +263098,7 @@ _080959AE:
 _080959B2:
 	movs r2, #0x18
 _080959B4:
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	b _0809562E
 	.align 2, 0
 _080959BC: .4byte gUnk_0201B870
@@ -263120,7 +263120,7 @@ _080959CC:
 	adds r1, #4
 	adds r0, r4, #0
 	movs r2, #0x18
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	movs r0, #2
 	ldrb r1, [r4, #4]
 	ands r0, r1
@@ -263218,7 +263218,7 @@ _08095AA4:
 	adds r0, r0, r1
 	ldr r1, _08095AC0 @ =gUnk_0201B872
 	movs r2, #0x18
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	b _0809562E
 	.align 2, 0
 _08095AC0: .4byte gUnk_0201B872
@@ -280100,7 +280100,7 @@ _0809E0A8:
 	ldr r0, _0809E0DC @ =gUnk_0201AFE0
 	movs r1, #0xe6
 	lsls r1, r1, #1
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 _0809E0CA:
 	ldr r0, [r6]
 	adds r0, #1
@@ -287435,7 +287435,7 @@ sub_080A1968: @ 0x080A1968
 	adds r3, #8
 	adds r1, r2, r3
 	movs r2, #0x10
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	movs r1, #1
 	rsbs r1, r1, #0
 	movs r0, #0x1e
@@ -287513,7 +287513,7 @@ _080A1A46:
 	adds r0, r0, r1
 	lsls r2, r3, #1
 	adds r1, r6, #0
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	bl sub_080A1968
 	pop {r4, r5, r6}
 	pop {r0}
@@ -318326,7 +318326,7 @@ _080B066C:
 	adds r0, r5, #0
 	add r1, sp, #4
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 _080B0676:
 	movs r0, #1
 	add r8, r0
@@ -318500,7 +318500,7 @@ _080B07CC:
 	ldr r0, _080B07DC @ =gUnk_0201B18C
 	adds r1, r6, #0
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	movs r0, #1
 	b _080B0B52
 	.align 2, 0
@@ -319004,14 +319004,14 @@ sub_080B0B64: @ 0x080B0B64
 	ldr r5, _080B0B88 @ =gUnk_0201C510
 	adds r1, r5, #0
 	movs r2, #0x64
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	adds r4, #0x64
 	ldr r0, _080B0B8C @ =0x00000868
 	adds r5, r5, r0
 	adds r0, r4, #0
 	adds r1, r5, #0
 	movs r2, #0x64
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	pop {r4, r5}
 	pop {r0}
 	bx r0
@@ -319027,14 +319027,14 @@ sub_080B0B90: @ 0x080B0B90
 	adds r0, r4, #0
 	adds r1, r5, #0
 	movs r2, #0x64
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080B0BBC @ =0x00000868
 	adds r4, r4, r0
 	adds r5, #0x64
 	adds r0, r4, #0
 	adds r1, r5, #0
 	movs r2, #0x64
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	pop {r4, r5}
 	pop {r0}
 	bx r0
@@ -319160,7 +319160,7 @@ _080B0C80:
 	lsls r1, r1, #2
 	adds r0, r0, r1
 	movs r1, #0x14
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	adds r6, #2
 	subs r7, #1
 	cmp r7, #0
@@ -344196,7 +344196,7 @@ sub_080BC794: @ 0x080BC794
 	ldr r4, _080BC7D4 @ =gUnk_0201FEC0
 	adds r0, r4, #0
 	movs r1, #0x6c
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	str r5, [r4, #4]
 	str r6, [r4, #8]
 	mov r0, r8
@@ -344433,7 +344433,7 @@ _080BC97E:
 	ldr r0, _080BCA44 @ =0x05000260
 	ldr r1, _080BCA48 @ =gUnk_0990CA5C
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r4, _080BCA4C @ =0x06013800
 	ldr r1, _080BCA50 @ =gUnk_0990CA7C
 	adds r0, r4, #0
@@ -344861,7 +344861,7 @@ _080BCD0C:
 	ldr r0, _080BCD80 @ =0x05000280
 	adds r1, r3, #0
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080BCD84 @ =0x06016000
 	adds r1, r4, #0
 	movs r2, #0x18
@@ -345357,7 +345357,7 @@ _080BD0F8:
 	ldr r0, _080BD13C @ =0x05000260
 	ldr r1, _080BD140 @ =gUnk_098D20A4
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080BD144 @ =gUnk_02000000
 	ldr r1, _080BD148 @ =0x00006C2C
 	adds r0, r0, r1
@@ -345755,7 +345755,7 @@ _080BD444:
 	ldr r0, _080BD488 @ =0x05000260
 	ldr r1, _080BD48C @ =gUnk_098DB0C4
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080BD490 @ =gUnk_02000000
 	ldr r1, _080BD494 @ =0x00006C2C
 	adds r0, r0, r1
@@ -346068,7 +346068,7 @@ _080BD6C8:
 	ldr r0, _080BD718 @ =0x05000260
 	ldr r1, _080BD71C @ =gUnk_098F60E4
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080BD720 @ =0x06014000
 	adds r1, r4, #0
 	movs r2, #0x18
@@ -346285,7 +346285,7 @@ _080BD8A8:
 	ldr r0, _080BD900 @ =0x05000260
 	ldr r1, _080BD904 @ =gUnk_098FF104
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080BD908 @ =0x06014000
 	ldr r1, _080BD90C @ =gUnk_02000000
 	ldr r3, _080BD910 @ =0x00006C2C
@@ -346536,7 +346536,7 @@ _080BDAB0:
 	ldr r0, _080BDB04 @ =0x05000260
 	ldr r1, _080BDB08 @ =gUnk_098CC084
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080BDB0C @ =0x06014000
 	adds r1, r4, #0
 	movs r2, #0x10
@@ -346683,7 +346683,7 @@ _080BDBE8:
 	ldr r0, _080BDC3C @ =0x05000260
 	ldr r1, _080BDC40 @ =gUnk_098C9064
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080BDC44 @ =0x06014000
 	adds r1, r4, #0
 	movs r2, #0x10
@@ -346849,7 +346849,7 @@ _080BDD3C:
 	ldr r0, _080BDDC4 @ =0x05000260
 	ldr r1, _080BDDC8 @ =gUnk_098AE044
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080BDDCC @ =0x06014000
 	adds r1, r4, #0
 	movs r2, #0x18
@@ -347162,7 +347162,7 @@ _080BDFF4:
 	ldr r0, _080BE06C @ =0x05000260
 	ldr r1, _080BE070 @ =gUnk_0992069C
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r1, _080BE074 @ =gUnk_02023360
 	adds r1, #0x36
 	movs r0, #0x40
@@ -347246,7 +347246,7 @@ _080BE0B4:
 	ldr r0, _080BE118 @ =0x05000280
 	ldr r1, _080BE11C @ =gUnk_098A5024
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080BE120 @ =0x06016000
 	ldr r1, _080BE10C @ =gUnk_02000000
 	ldr r2, _080BE110 @ =0x00006C2C
@@ -347939,7 +347939,7 @@ _080BE644:
 	ldr r0, _080BE6A4 @ =0x05000260
 	ldr r1, _080BE6A8 @ =gUnk_098A5024
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080BE6AC @ =0x06014000
 	adds r1, r4, #0
 	movs r2, #0x18
@@ -348416,7 +348416,7 @@ _080BEA38:
 _080BEA3C:
 	ldr r0, _080BEA84 @ =0x050002A0
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080BEA88 @ =0x06014000
 	adds r1, r4, #0
 	movs r2, #0x10
@@ -348917,7 +348917,7 @@ _080BEE44:
 	ldr r0, _080BEED4 @ =0x050002A0
 	ldr r1, _080BEED8 @ =gUnk_098A2FD8
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080BEEDC @ =0x06014000
 	ldr r1, _080BEEE0 @ =gUnk_098A17D8
 	movs r2, #0x10
@@ -349907,7 +349907,7 @@ _080BF634:
 	ldr r0, _080BF6B0 @ =0x05000260
 	adds r1, r2, #0
 	movs r2, #0x40
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r4, _080BF6B4 @ =gUnk_0201FEDC
 	ldr r1, _080BF6B8 @ =gUnk_0989DA88
 	ldr r2, _080BF6BC @ =gUnk_02000003
@@ -350163,7 +350163,7 @@ _080BF848:
 	ldr r0, _080BF8A0 @ =0x05000300
 	ldr r1, _080BF8A4 @ =gUnk_098997F8
 	movs r2, #0x40
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	movs r7, #0
 	cmp r7, sb
 	bge _080BF8F0
@@ -350834,7 +350834,7 @@ _080BFDA4:
 	ldr r1, _080BFDCC @ =gUnk_08510460
 	movs r2, #0x80
 	lsls r2, r2, #1
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	movs r2, #0x80
 	lsls r2, r2, #0x13
 	ldrh r1, [r2]
@@ -351127,7 +351127,7 @@ _080BFFEA:
 	adds r1, r1, r0
 	adds r0, r5, #0
 	movs r2, #0x80
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	movs r3, #1
 	lsls r0, r6, #0x18
 	lsrs r0, r0, #0x18
@@ -351616,7 +351616,7 @@ sub_080C0394: @ 0x080C0394
 	adds r0, r0, r7
 	adds r4, #8
 	adds r1, r4, #0
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	movs r7, #0
 	b _080C0598
 	.align 2, 0
@@ -351937,7 +351937,7 @@ _080C0624:
 	adds r1, r0, #0
 	adds r0, r4, #0
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	adds r0, r6, #0
 	bl sub_080C00F0
 	cmp r5, #0x16
@@ -351959,7 +351959,7 @@ _080C0654:
 	ldr r2, _080C0694 @ =gUnk_0984DD6C
 	adds r1, r1, r2
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080C0698 @ =0x00060006
 	movs r1, #0xeb
 	lsls r1, r1, #1
@@ -351988,7 +351988,7 @@ _080C06A0:
 	ldr r0, _080C06B8 @ =0x050003C0
 	ldr r1, _080C06BC @ =gUnk_0984DE6C
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080C06C0 @ =0x00060006
 	movs r1, #0xeb
 	lsls r1, r1, #1
@@ -352003,7 +352003,7 @@ _080C06C8:
 	ldr r0, _080C0708 @ =0x050003C0
 	ldr r1, _080C070C @ =gUnk_0984DE4C
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080C0710 @ =0x00060006
 	movs r1, #0xeb
 	lsls r1, r1, #1
@@ -352017,7 +352017,7 @@ _080C06DA:
 	ldr r0, _080C0718 @ =0x050003E0
 	ldr r1, _080C071C @ =gUnk_0984F52C
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080C0720 @ =0x00050050
 	movs r1, #0x81
 	lsls r1, r1, #2
@@ -352413,7 +352413,7 @@ _080C0A14:
 	ldr r1, _080C0A3C @ =gUnk_08510460
 	movs r2, #0x80
 	lsls r2, r2, #1
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	movs r2, #0x80
 	lsls r2, r2, #0x13
 	ldrh r1, [r2]
@@ -352652,7 +352652,7 @@ _080C0C0C:
 	ldr r1, _080C0C34 @ =gUnk_08510460
 	movs r2, #0x80
 	lsls r2, r2, #1
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	movs r2, #0x80
 	lsls r2, r2, #0x13
 	ldrh r1, [r2]
@@ -354492,7 +354492,7 @@ _080C1B16:
 	ldr r0, _080C1B78 @ =0x050002A0
 	ldr r1, _080C1B7C @ =gUnk_09909324
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080C1B80 @ =0x06014000
 	ldr r1, _080C1B84 @ =gUnk_09908324
 	movs r2, #0x10
@@ -354684,7 +354684,7 @@ _080C1CA0:
 	ldr r0, _080C1CF4 @ =0x05000260
 	ldr r1, _080C1CF8 @ =gUnk_0990940C
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r1, _080C1CFC @ =0x04000052
 	movs r3, #0x80
 	lsls r3, r3, #5
@@ -355004,7 +355004,7 @@ _080C1F54:
 	ldr r0, _080C1FA8 @ =0x05000260
 	ldr r1, _080C1FAC @ =gUnk_09912E3C
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080C1FB0 @ =0x06014000
 	ldr r1, _080C1FB4 @ =gUnk_02000000
 	ldr r2, _080C1FB8 @ =0x00006C2C
@@ -355354,7 +355354,7 @@ _080C2244:
 	ldr r0, _080C2280 @ =0x05000260
 	adds r1, r3, #0
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080C2284 @ =0x06014000
 	adds r1, r4, #0
 	movs r2, #0x18
@@ -356046,7 +356046,7 @@ _080C27D2:
 	movs r1, #0xa0
 	lsls r1, r1, #1
 	adds r0, r4, #0
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	subs r4, #4
 	add r4, sb
 	ldrh r1, [r4]
@@ -356104,7 +356104,7 @@ sub_080C2840: @ 0x080C2840
 	ldr r5, _080C287C @ =gUnk_0201FE60
 	adds r0, r5, #0
 	movs r1, #0x5c
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	lsls r4, r4, #0x10
 	lsrs r1, r4, #0x10
 	movs r0, #0x1f
@@ -357298,7 +357298,7 @@ _080C3144:
 	ldr r0, _080C31FC @ =0x05000260
 	ldr r1, _080C3200 @ =gUnk_098543DC
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080C3204 @ =0x06014200
 	ldr r1, _080C3208 @ =gUnk_098533DC
 	movs r2, #0x10
@@ -357680,7 +357680,7 @@ _080C347A:
 	adds r0, r5, #0
 	movs r1, #0x80
 	lsls r1, r1, #1
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	movs r1, #0x80
 	lsls r1, r1, #3
 	adds r5, r5, r1
@@ -358075,7 +358075,7 @@ _080C3762:
 	movs r2, #0x80
 	lsls r2, r2, #1
 	ldr r1, _080C378C @ =gUnk_08510460
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	pop {r3, r4, r5}
 	mov r8, r3
 	mov sb, r4
@@ -358236,7 +358236,7 @@ _080C38B6:
 	movs r1, #0x90
 	lsls r1, r1, #2
 	adds r0, r7, #0
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 _080C38C4:
 	pop {r4, r5, r6, r7}
 	pop {r0}
@@ -358806,7 +358806,7 @@ sub_080C3D00: @ 0x080C3D00
 	ldr r5, _080C3D1C @ =gUnk_02023110
 	adds r0, r5, #0
 	movs r1, #0x1c
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	str r4, [r5, #4]
 	str r6, [r5, #8]
 	pop {r4, r5, r6}
@@ -359312,7 +359312,7 @@ sub_080C40E0: @ 0x080C40E0
 	ldr r4, _080C4120 @ =gUnk_02023110
 	adds r0, r4, #0
 	movs r1, #0x1c
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	str r5, [r4, #4]
 	str r6, [r4, #8]
 	mov r0, r8
@@ -360986,7 +360986,7 @@ sub_080C4EA0: @ 0x080C4EA0
 	ldr r4, _080C4ED0 @ =gUnk_02023110
 	adds r0, r4, #0
 	movs r1, #0x1c
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	str r5, [r4, #4]
 	str r6, [r4, #8]
 	movs r0, #2
@@ -361915,7 +361915,7 @@ sub_080C55DC: @ 0x080C55DC
 	ldr r4, _080C5634 @ =gUnk_0201FF30
 	adds r0, r4, #0
 	movs r1, #0x2c
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	movs r0, #1
 	ldrb r1, [r4]
 	orrs r0, r1
@@ -363424,11 +363424,11 @@ sub_080C6184: @ 0x080C6184
 	ldr r0, _080C6224 @ =0x05000280
 	ldr r1, _080C6228 @ =gUnk_0985329C
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080C622C @ =0x050002A0
 	ldr r1, _080C6230 @ =gUnk_09850C5C
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	bl sub_080C5B78
 	ldr r1, _080C6234 @ =gUnk_02023130
 	ldr r0, _080C6238 @ =0x0000021E
@@ -366416,7 +366416,7 @@ sub_080C786C: @ 0x080C786C
 	ldr r0, _080C7888 @ =0x06014000
 	movs r1, #0x80
 	lsls r1, r1, #7
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r0, _080C788C @ =gUnk_0201F440
 	ldr r1, _080C7890 @ =0x00000A01
 	adds r0, r0, r1
@@ -366435,7 +366435,7 @@ sub_080C7894: @ 0x080C7894
 	ldr r0, _080C78B0 @ =0x06014000
 	movs r1, #0x80
 	lsls r1, r1, #7
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r0, _080C78B4 @ =gUnk_0201F440
 	ldr r1, _080C78B8 @ =0x00000A01
 	adds r0, r0, r1
@@ -366472,7 +366472,7 @@ sub_080C78BC: @ 0x080C78BC
 	ldr r0, _080C7930 @ =0x06014000
 	movs r1, #0x80
 	lsls r1, r1, #7
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r0, _080C7934 @ =0x06013400
 	ldr r1, _080C7938 @ =gUnk_099082A4
 	movs r2, #4
@@ -366486,7 +366486,7 @@ sub_080C78BC: @ 0x080C78BC
 	ldr r0, _080C7944 @ =0x05000260
 	ldr r1, _080C7948 @ =gUnk_09850C5C
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080C794C @ =0x00000A01
 	adds r4, r4, r0
 	movs r0, #0xd
@@ -366521,7 +366521,7 @@ sub_080C7950: @ 0x080C7950
 	movs r1, #0xa2
 	lsls r1, r1, #4
 	adds r0, r4, #0
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	adds r0, r6, #0
 	bl sub_080EEC54
 	cmp r0, #0
@@ -366531,7 +366531,7 @@ sub_080C7950: @ 0x080C7950
 	bl sub_080EEC54
 	adds r1, r0, #0
 	adds r0, r4, #0
-	bl sub_080F5054
+	bl StringCopy
 	b _080C798A
 	.align 2, 0
 _080C7984: .4byte gUnk_0201F440
@@ -366585,7 +366585,7 @@ _080C7A00:
 	ldr r0, _080C7A0C @ =0x06014000
 	movs r1, #0x80
 	lsls r1, r1, #7
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	b _080C7AEC
 	.align 2, 0
 _080C7A0C: .4byte 0x06014000
@@ -366715,7 +366715,7 @@ sub_080C7AF8: @ 0x080C7AF8
 	ldr r1, _080C7B20 @ =gUnk_09889FD8
 	movs r2, #0x90
 	lsls r2, r2, #1
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080C7B24 @ =gUnk_0201F440
 	ldr r1, _080C7B28 @ =0x00000A01
 	adds r0, r0, r1
@@ -367433,7 +367433,7 @@ _080C80B4:
 	ldr r0, _080C80C0 @ =0x06014000
 	movs r1, #0x80
 	lsls r1, r1, #7
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	b _080C8130
 	.align 2, 0
 _080C80C0: .4byte 0x06014000
@@ -369273,7 +369273,7 @@ sub_080C8F48: @ 0x080C8F48
 	ldr r5, _080C8FB4 @ =gUnk_020230C0
 	adds r0, r5, #0
 	movs r1, #0x4c
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	adds r0, r4, #0
 	bl sub_08032358
 	ldr r2, _080C8FB8 @ =gUnk_02023130
@@ -369473,7 +369473,7 @@ _080C90E4:
 	movs r2, #0xb4
 	lsls r2, r2, #5
 	ldr r0, _080C9118 @ =0x06009000
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r2, _080C911C @ =gUnk_02023130
 	ldr r3, _080C9120 @ =0x00000212
 	adds r0, r2, r3
@@ -369507,7 +369507,7 @@ _080C9130:
 	adds r1, r0, r1
 	ldr r0, _080C915C @ =0x05000140
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r1, _080C9160 @ =0x04000044
 	ldr r2, _080C9164 @ =0x00001878 (Gatling Dragon)
 	adds r0, r2, #0
@@ -370602,11 +370602,11 @@ sub_080C992C: @ 0x080C992C
 	ldr r7, _080C99F0 @ =gUnk_02023348
 	adds r0, r7, #0
 	movs r1, #4
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r0, _080C99F4 @ =gUnk_02039EB0
 	movs r1, #0xa0
 	lsls r1, r1, #7
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r0, _080C99F8 @ =0x06016400
 	movs r1, #0
 	movs r2, #0x20
@@ -372157,7 +372157,7 @@ _080CA58A:
 	adds r1, r3, r0
 	adds r0, r2, #0
 	movs r2, #0x40
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r1, _080CA5B8 @ =gUnk_0201E2A0
 	ldr r0, [r1, #4]
 	eors r0, r4
@@ -372171,7 +372171,7 @@ _080CA58A:
 	adds r1, r1, r2
 	movs r2, #0x90
 	lsls r2, r2, #1
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	b _080CA5E0
 	.align 2, 0
 _080CA5B8: .4byte gUnk_0201E2A0
@@ -372188,7 +372188,7 @@ _080CA5CC:
 	adds r1, r1, r2
 	movs r2, #0x90
 	lsls r2, r2, #1
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 _080CA5E0:
 	add sp, #8
 	pop {r3, r4, r5}
@@ -372275,7 +372275,7 @@ sub_080CA660: @ 0x080CA660
 	movs r7, #0
 	ldr r0, _080CA728 @ =gUnk_020232C0
 	movs r1, #0x80
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r0, _080CA72C @ =0x06008120
 	str r0, [sp, #8]
 	cmp r5, #0
@@ -372546,7 +372546,7 @@ _080CA87A:
 	bge _080CA87A
 	ldr r0, [sp, #8]
 	movs r1, #0x80
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	movs r7, #0
 _080CA89C:
 	adds r2, r7, #1
@@ -372739,7 +372739,7 @@ _080CA9CE:
 	adds r1, r1, r4
 	ldr r1, [r1]
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080CAAF8 @ =0x05000120
 	ldr r1, [r7]
 	lsls r1, r1, #0xe
@@ -372749,7 +372749,7 @@ _080CA9CE:
 	ldr r1, [r1]
 	adds r1, #0x20
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080CAAFC @ =0x06008220
 	ldr r2, _080CAB00 @ =gUnk_09855030
 	ldr r1, [r7]
@@ -372760,7 +372760,7 @@ _080CA9CE:
 	ldr r1, [r1]
 	movs r2, #0xde
 	lsls r2, r2, #4
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080CAB04 @ =0x0600F000
 	ldr r2, _080CAB08 @ =gUnk_09859548
 	ldr r1, [r7]
@@ -372871,7 +372871,7 @@ _080CAB40:
 	movs r2, #0xb4
 	lsls r2, r2, #5
 	ldr r0, _080CAB74 @ =0x06009000
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r2, _080CAB78 @ =gUnk_02023130
 	ldr r1, _080CAB7C @ =0x00000212
 	adds r0, r2, r1
@@ -372905,7 +372905,7 @@ _080CAB8C:
 	adds r1, r0, r1
 	ldr r0, _080CAC78 @ =0x05000140
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r4, _080CAC7C @ =0x0600E0D4
 	movs r6, #0x80
 	movs r5, #0
@@ -372940,30 +372940,30 @@ _080CABB0:
 	lsls r4, r4, #1
 	mov r1, r8
 	adds r2, r4, #0
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080CAC88 @ =0x0600B4C0
 	ldr r1, _080CAC8C @ =gUnk_09850C7C
 	movs r2, #0x88
 	lsls r2, r2, #2
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080CAC90 @ =0x0600B6E0
 	ldr r1, _080CAC94 @ =gUnk_09850E9C
 	adds r2, r4, #0
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080CAC98 @ =0x0600B820
 	ldr r1, _080CAC9C @ =gUnk_09850FDC
 	movs r2, #0xd0
 	lsls r2, r2, #1
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080CACA0 @ =0x05000200
 	ldr r1, _080CACA4 @ =gUnk_0985159C
 	movs r2, #0x60
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080CACA8 @ =0x05000300
 	ldr r1, _080CACAC @ =gUnk_08510460
 	movs r2, #0x80
 	lsls r2, r2, #1
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080CACB0 @ =0x06010280
 	ldr r1, _080CACB4 @ =gUnk_098519FC
 	movs r2, #0xc
@@ -373042,7 +373042,7 @@ sub_080CACE8: @ 0x080CACE8
 	ldr r0, _080CAD58 @ =0x0600A8E0
 	movs r1, #0x80
 	lsls r1, r1, #4
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r0, _080CAD5C @ =gUnk_02023130
 	ldrh r0, [r0, #8]
 	cmp r0, #0
@@ -373051,17 +373051,17 @@ sub_080CACE8: @ 0x080CACE8
 	movs r1, #0xc0
 	lsls r1, r1, #3
 	adds r0, r2, #0
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r2, _080CAD64 @ =0x06008120
 	movs r4, #0x80
 	lsls r4, r4, #1
 	adds r0, r2, #0
 	adds r1, r4, #0
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r2, _080CAD68 @ =0x06008020
 	adds r0, r2, #0
 	adds r1, r4, #0
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r2, _080CAD6C @ =0x0600F904
 	movs r0, #0
 	strh r0, [r2]
@@ -373079,11 +373079,11 @@ _080CAD30:
 	ldr r2, _080CAD64 @ =0x06008120
 	adds r0, r2, #0
 	movs r1, #4
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r2, _080CAD74 @ =0x060081A0
 	adds r0, r2, #0
 	movs r1, #4
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r0, _080CAD5C @ =gUnk_02023130
 	strh r4, [r0, #8]
 _080CAD52:
@@ -373112,7 +373112,7 @@ sub_080CAD78: @ 0x080CAD78
 	ldr r1, _080CAE64 @ =gUnk_0984F5CC
 	movs r2, #0xc0
 	lsls r2, r2, #3
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	movs r0, #0x20
 	movs r1, #2
 	movs r2, #1
@@ -373161,8 +373161,8 @@ sub_080CAD78: @ 0x080CAD78
 	lsls r3, r3, #2
 	mov r8, r3
 	mov r0, r8
-	bl sub_080F4E18
-	ldr r1, _080CAE78 @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r1, _080CAE78 @ =gInterfaceTextOffsets
 	mov sb, r1
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
@@ -373176,14 +373176,14 @@ sub_080CAD78: @ 0x080CAD78
 	lsls r1, r1, #2
 	add r1, sb
 	ldr r3, [r1]
-	ldr r6, _080CAE7C @ =gUnk_09DB9C10
+	ldr r6, _080CAE7C @ =gInterfaceText
 	adds r3, r3, r6
 	movs r0, #2
 	movs r1, #2
 	adds r2, r4, #0
 	bl sub_080F2A7C
 	mov r0, r8
-	bl sub_080F4E18
+	bl GetInterfaceTextIdIndex
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -373217,8 +373217,8 @@ _080CAE68: .4byte gUnk_02006ED0
 _080CAE6C: .4byte gUnk_02000000
 _080CAE70: .4byte 0x00006C2C
 _080CAE74: .4byte gUnk_09E5F854
-_080CAE78: .4byte gUnk_08000F40
-_080CAE7C: .4byte gUnk_09DB9C10
+_080CAE78: .4byte gInterfaceTextOffsets
+_080CAE7C: .4byte gInterfaceText
 _080CAE80: .4byte 0x0600A8E0
 
 	thumb_func_start sub_080CAE84
@@ -373395,7 +373395,7 @@ sub_080CAF68: @ 0x080CAF68
 	ldr r0, _080CB028 @ =0x0600A8E0
 	movs r1, #0x80
 	lsls r1, r1, #4
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	adds r0, r5, #0
 	bl sub_080F0274
 	adds r0, #3
@@ -373975,7 +373975,7 @@ _080CB48E:
 	ldr r0, _080CB4A0 @ =0x06006340
 	movs r1, #0xc0
 	lsls r1, r1, #3
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	bl sub_080CACE8
 	b _080CB962
 	.align 2, 0
@@ -374062,7 +374062,7 @@ _080CB53C:
 	lsls r5, r5, #3
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	bl sub_080CACE8
 	ldr r0, _080CB574 @ =gUnk_02023130
 	ldrh r0, [r0, #8]
@@ -374072,7 +374072,7 @@ _080CB53C:
 _080CB558:
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	b _080CB962
 	.align 2, 0
 _080CB564: .4byte gUnk_0201E2A0
@@ -374133,7 +374133,7 @@ _080CB5D8:
 	lsls r5, r5, #3
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 _080CB5E6:
 	bl sub_080CACE8
 _080CB5EA:
@@ -374147,7 +374147,7 @@ _080CB5F4:
 	ldr r0, _080CB608 @ =0x06006340
 	movs r1, #0xc0
 	lsls r1, r1, #3
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	b _080CB962
 	.align 2, 0
 _080CB600: .4byte gUnk_0201C4E0
@@ -374253,7 +374253,7 @@ _080CB6D2:
 	ldr r1, _080CB6F4 @ =gUnk_0984F5CC
 	movs r2, #0xc0
 	lsls r2, r2, #3
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	b _080CB962
 	.align 2, 0
 _080CB6E0: .4byte 0x00000868
@@ -374326,7 +374326,7 @@ _080CB752:
 	movs r2, #0xc0
 	lsls r2, r2, #3
 	ldr r0, _080CB7CC @ =0x06006340
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 _080CB770:
 	ldr r0, [sp, #0x28]
 	cmp r0, #1
@@ -374356,10 +374356,10 @@ _080CB784:
 	bl sub_080CA660
 	ldr r0, _080CB7D0 @ =0x06008020
 	movs r1, #0x80
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r0, _080CB7D4 @ =0x060080A0
 	movs r1, #0x80
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	b _080CB846
 	.align 2, 0
 _080CB7B4: .4byte gUnk_02023130
@@ -374376,7 +374376,7 @@ _080CB7D8:
 	movs r1, #0x80
 	lsls r1, r1, #1
 	adds r0, r2, #0
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r1, [sp, #0x30]
 	cmp r1, #0
 	beq _080CB81C
@@ -374386,11 +374386,11 @@ _080CB7D8:
 	ldr r2, _080CB810 @ =gUnk_0984F0AC
 	adds r1, r1, r2
 	movs r2, #0x80
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080CB814 @ =0x050001C0
 	ldr r1, _080CB818 @ =gUnk_0984F3AC
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	b _080CB824
 	.align 2, 0
 _080CB808: .4byte 0x06008120
@@ -374401,7 +374401,7 @@ _080CB818: .4byte gUnk_0984F3AC
 _080CB81C:
 	ldr r0, _080CB86C @ =0x06008020
 	movs r1, #0x80
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 _080CB824:
 	ldr r0, _080CB870 @ =0x060080A0
 	ldr r4, [sp, #0x28]
@@ -374410,14 +374410,14 @@ _080CB824:
 	ldr r2, _080CB874 @ =gUnk_0984DE8C
 	adds r1, r1, r2
 	movs r2, #0x80
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080CB878 @ =0x050001E0
 	lsls r4, r4, #5
 	ldr r1, _080CB87C @ =gUnk_0984E30C
 	adds r4, r4, r1
 	adds r1, r4, #0
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 _080CB846:
 	ldr r2, _080CB880 @ =0x0600F904
 	movs r0, #0
@@ -374535,25 +374535,25 @@ _080CB92A:
 	ldr r2, _080CB97C @ =gUnk_0984E42C
 	adds r1, r1, r2
 	movs r2, #0x80
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080CB980 @ =0x050001C0
 	lsls r1, r4, #5
 	ldr r2, _080CB984 @ =gUnk_0984EE2C
 	adds r1, r1, r2
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080CB988 @ =0x060080A0
 	lsls r1, r5, #7
 	ldr r2, _080CB98C @ =gUnk_0984DE8C
 	adds r1, r1, r2
 	movs r2, #0x80
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080CB990 @ =0x050001E0
 	lsls r1, r5, #5
 	ldr r2, _080CB994 @ =gUnk_0984E30C
 	adds r1, r1, r2
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 _080CB962:
 	add sp, #0x54
 	pop {r3, r4, r5}
@@ -374798,8 +374798,8 @@ _080CBB62:
 	movs r3, #0xfb
 	lsls r3, r3, #2
 	adds r0, r6, r3
-	bl sub_080F4E18
-	ldr r2, _080CBBB4 @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _080CBBB4 @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -374815,7 +374815,7 @@ _080CBB62:
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r1, [r1]
-	ldr r0, _080CBBC0 @ =gUnk_09DB9C10
+	ldr r0, _080CBBC0 @ =gInterfaceText
 	adds r1, r1, r0
 	str r1, [sp, #0xc]
 	ldr r2, _080CBBC4 @ =gUnk_0201C4E0
@@ -374836,17 +374836,17 @@ _080CBB62:
 	ldr r1, [r1]
 	b _080CBC8E
 	.align 2, 0
-_080CBBB4: .4byte gUnk_08000F40
+_080CBBB4: .4byte gInterfaceTextOffsets
 _080CBBB8: .4byte gUnk_02000000
 _080CBBBC: .4byte 0x00006C2C
-_080CBBC0: .4byte gUnk_09DB9C10
+_080CBBC0: .4byte gInterfaceText
 _080CBBC4: .4byte gUnk_0201C4E0
 _080CBBC8: .4byte 0x00000868
 _080CBBCC:
 	ldr r1, _080CBC1C @ =0x000003EE
 	adds r0, r6, r1
-	bl sub_080F4E18
-	ldr r2, _080CBC20 @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _080CBC20 @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -374862,7 +374862,7 @@ _080CBBCC:
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r1, [r1]
-	ldr r0, _080CBC2C @ =gUnk_09DB9C10
+	ldr r0, _080CBC2C @ =gInterfaceText
 	adds r1, r1, r0
 	str r1, [sp, #0xc]
 	ldr r2, _080CBC30 @ =gUnk_0201C4E0
@@ -374884,18 +374884,18 @@ _080CBBCC:
 	b _080CBC88
 	.align 2, 0
 _080CBC1C: .4byte 0x000003EE
-_080CBC20: .4byte gUnk_08000F40
+_080CBC20: .4byte gInterfaceTextOffsets
 _080CBC24: .4byte gUnk_02000000
 _080CBC28: .4byte 0x00006C2C
-_080CBC2C: .4byte gUnk_09DB9C10
+_080CBC2C: .4byte gInterfaceText
 _080CBC30: .4byte gUnk_0201C4E0
 _080CBC34: .4byte 0x00000868
 _080CBC38:
 	movs r2, #0xfc
 	lsls r2, r2, #2
 	adds r0, r6, r2
-	bl sub_080F4E18
-	ldr r2, _080CBCA4 @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _080CBCA4 @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -374911,7 +374911,7 @@ _080CBC38:
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r1, [r1]
-	ldr r0, _080CBCB0 @ =gUnk_09DB9C10
+	ldr r0, _080CBCB0 @ =gInterfaceText
 	adds r1, r1, r0
 	str r1, [sp, #0xc]
 	ldr r2, _080CBCB4 @ =gUnk_0201C4E0
@@ -374945,17 +374945,17 @@ _080CBC8E:
 	str r0, [sp, #4]
 	b _080CBCFC
 	.align 2, 0
-_080CBCA4: .4byte gUnk_08000F40
+_080CBCA4: .4byte gInterfaceTextOffsets
 _080CBCA8: .4byte gUnk_02000000
 _080CBCAC: .4byte 0x00006C2C
-_080CBCB0: .4byte gUnk_09DB9C10
+_080CBCB0: .4byte gInterfaceText
 _080CBCB4: .4byte gUnk_0201C4E0
 _080CBCB8: .4byte 0x00000868
 _080CBCBC:
 	ldr r2, _080CBD58 @ =0x000003EA
 	adds r0, r6, r2
-	bl sub_080F4E18
-	ldr r2, _080CBD5C @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _080CBD5C @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -374971,7 +374971,7 @@ _080CBCBC:
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r1, [r1]
-	ldr r0, _080CBD68 @ =gUnk_09DB9C10
+	ldr r0, _080CBD68 @ =gInterfaceText
 	adds r1, r1, r0
 	str r1, [sp, #0xc]
 	ldr r2, _080CBD6C @ =gUnk_0201C4E0
@@ -375024,14 +375024,14 @@ _080CBD2E:
 	ldr r0, _080CBD74 @ =0x0600A8E0
 	movs r1, #0x80
 	lsls r1, r1, #4
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	b _080CBD82
 	.align 2, 0
 _080CBD58: .4byte 0x000003EA
-_080CBD5C: .4byte gUnk_08000F40
+_080CBD5C: .4byte gInterfaceTextOffsets
 _080CBD60: .4byte gUnk_02000000
 _080CBD64: .4byte 0x00006C2C
-_080CBD68: .4byte gUnk_09DB9C10
+_080CBD68: .4byte gInterfaceText
 _080CBD6C: .4byte gUnk_0201C4E0
 _080CBD70: .4byte 0x00000868
 _080CBD74: .4byte 0x0600A8E0
@@ -375273,7 +375273,7 @@ sub_080CBF58: @ 0x080CBF58
 	ldr r5, _080CC088 @ =gUnk_02020160
 	ldr r1, _080CC08C @ =0x00002F5C
 	adds r0, r5, #0
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r0, _080CC090 @ =0x00002F50
 	adds r2, r5, r0
 	lsls r4, r4, #0x10
@@ -375563,7 +375563,7 @@ _080CC1B8:
 	subs r2, #0x27
 _080CC1CC:
 	mov r0, sp
-	bl sub_080F5228
+	bl StringCopyFormat_D
 	mov r4, sp
 	b _080CC1E4
 	.align 2, 0
@@ -375578,7 +375578,7 @@ _080CC1E4:
 	beq _080CC1F0
 	ldr r0, _080CC204 @ =gUnk_02022FAC
 	adds r1, r4, #0
-	bl sub_080F5054
+	bl StringCopy
 _080CC1F0:
 	add sp, #0x130
 	pop {r3, r4, r5}
@@ -375967,7 +375967,7 @@ _080CC4EC:
 	ldr r0, _080CC50C @ =0x050002E0
 	ldr r1, _080CC510 @ =gUnk_0985329C
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldrb r0, [r4]
 	adds r0, #1
 	strb r0, [r4]
@@ -376150,7 +376150,7 @@ _080CC660:
 	adds r0, r0, r1
 	adds r1, r5, #0
 	movs r2, #6
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	adds r5, #0xc
 	adds r4, #1
 	cmp r4, r6
@@ -376407,30 +376407,30 @@ sub_080CC83C: @ 0x080CC83C
 	ldr r0, _080CC8A0 @ =gUnk_0201FF60
 	movs r1, #0x80
 	lsls r1, r1, #2
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r0, _080CC8A4 @ =gUnk_02023130
 	movs r1, #0x8a
 	lsls r1, r1, #2
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r0, _080CC8A8 @ =gUnk_02023110
 	movs r1, #0x1c
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r0, _080CC8AC @ =gUnk_0201F440
 	movs r1, #0xa2
 	lsls r1, r1, #4
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r0, _080CC8B0 @ =gUnk_0201FF30
 	movs r1, #0x2c
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r0, _080CC8B4 @ =gUnk_02020160
 	ldr r1, _080CC8B8 @ =0x00002F5C
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r0, _080CC8BC @ =gUnk_0201FEC0
 	movs r1, #0x6c
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r0, _080CC8C0 @ =gUnk_0201FE60
 	movs r1, #0x5c
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	bl sub_080F9B40
 	ldr r1, _080CC8C4 @ =gUnk_03000040
 	movs r0, #0x85
@@ -376493,7 +376493,7 @@ sub_080CC904: @ 0x080CC904
 	lsls r0, r0, #0x13
 	movs r1, #0xc0
 	lsls r1, r1, #9
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r0, _080CC9E0 @ =gUnk_02029EB0
 	bl sub_080F42A0
 	ldr r0, _080CC9E4 @ =gUnk_0203EEB0
@@ -376544,7 +376544,7 @@ sub_080CC904: @ 0x080CC904
 	ldr r0, _080CCA10 @ =0x050002E0
 	ldr r1, _080CCA14 @ =gUnk_0985329C
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	bl sub_080C879C
 	ldr r4, _080CCA18 @ =gUnk_02023130
 	ldr r0, _080CCA1C @ =0x00000215
@@ -376567,7 +376567,7 @@ sub_080CC904: @ 0x080CC904
 	ldr r0, _080CCA30 @ =0x05000260
 	ldr r1, _080CCA34 @ =gUnk_09850C5C
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 _080CC9BE:
 	movs r0, #0
 	strh r0, [r4, #8]
@@ -377173,7 +377173,7 @@ sub_080CCEB8: @ 0x080CCEB8
 	ldr r0, _080CCF18 @ =0x06014000
 	movs r1, #0x80
 	lsls r1, r1, #7
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r0, _080CCF1C @ =0x06010C00
 	ldr r1, _080CCF20 @ =gUnk_0988AB18
 	movs r2, #1
@@ -377246,7 +377246,7 @@ _080CCF5C:
 	ldr r1, _080CCF90 @ =gUnk_09DC882A
 _080CCF5E:
 	adds r0, r3, #0
-	bl sub_080F5054
+	bl StringCopy
 	ldr r3, _080CCF94 @ =gUnk_0201F841
 	ldr r0, _080CCF98 @ =gUnk_02000000
 	ldr r1, _080CCF9C @ =0x00006C2C
@@ -377294,7 +377294,7 @@ _080CCFC0:
 	ldr r1, _080CCFD8 @ =gUnk_09DC8830
 _080CCFC2:
 	adds r0, r3, #0
-	bl sub_080F5054
+	bl StringCopy
 _080CCFC8:
 	ldr r0, _080CCFDC @ =gUnk_0201F440
 	ldr r1, _080CCFE0 @ =0x00000A01
@@ -377618,11 +377618,11 @@ sub_080CD250: @ 0x080CD250
 	ldr r0, _080CD2FC @ =0x06014000
 	movs r1, #0x80
 	lsls r1, r1, #7
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r0, _080CD300 @ =0x05000260
 	ldr r1, _080CD304 @ =gUnk_0988AAD8
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080CD308 @ =0x060153C0
 	ldr r1, _080CD30C @ =gUnk_0988A7D8
 	movs r2, #2
@@ -378513,7 +378513,7 @@ sub_080CD9A0: @ 0x080CD9A0
 	ldr r0, _080CDA34 @ =0x06014000
 	movs r1, #0x80
 	lsls r1, r1, #7
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r0, _080CDA38 @ =0x06013000
 	ldr r1, _080CDA3C @ =gUnk_0988A0F8
 	movs r2, #0x12
@@ -378522,7 +378522,7 @@ sub_080CD9A0: @ 0x080CD9A0
 	ldr r0, _080CDA40 @ =0x050002C0
 	ldr r1, _080CDA44 @ =gUnk_0988A7B8
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080CDA48 @ =0x06010C00
 	ldr r1, _080CDA4C @ =gUnk_0988AAF8
 	movs r2, #1
@@ -379369,7 +379369,7 @@ sub_080CE078: @ 0x080CE078
 	ldr r0, _080CE1C4 @ =0x06014000
 	movs r1, #0x80
 	lsls r1, r1, #7
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r3, _080CE1C8 @ =gUnk_0201F440
 	ldr r1, _080CE1CC @ =0x00000A17
 	adds r0, r3, r1
@@ -379419,7 +379419,7 @@ _080CE0E0:
 	ldr r0, _080CE1DC @ =0x05000260
 	ldr r1, _080CE1E0 @ =gUnk_09850C5C
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080CE1E4 @ =0x05000280
 	ldr r1, _080CE1C8 @ =gUnk_0201F440
 	ldr r3, _080CE1D4 @ =0x00000A14
@@ -379429,7 +379429,7 @@ _080CE0E0:
 	ldr r2, _080CE1E8 @ =gUnk_0984E30C
 	adds r1, r1, r2
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	movs r4, #0
 	ldr r5, _080CE1EC @ =0x06013000
 _080CE104:
@@ -379493,8 +379493,8 @@ _080CE104:
 	ldrh r0, [r0]
 	ldr r3, _080CE208 @ =0x00000213
 	adds r0, r0, r3
-	bl sub_080F4E18
-	ldr r2, _080CE20C @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _080CE20C @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -379507,7 +379507,7 @@ _080CE104:
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r3, [r1]
-	ldr r0, _080CE210 @ =gUnk_09DB9C10
+	ldr r0, _080CE210 @ =gInterfaceText
 	adds r3, r3, r0
 	movs r0, #2
 	movs r1, #2
@@ -379542,8 +379542,8 @@ _080CE1FC: .4byte gUnk_02000000
 _080CE200: .4byte 0x00006C2C
 _080CE204: .4byte gUnk_09E5F854
 _080CE208: .4byte 0x00000213
-_080CE20C: .4byte gUnk_08000F40
-_080CE210: .4byte gUnk_09DB9C10
+_080CE20C: .4byte gInterfaceTextOffsets
+_080CE210: .4byte gInterfaceText
 _080CE214: .4byte 0x00000A01
 
 	thumb_func_start sub_080CE218
@@ -379956,7 +379956,7 @@ _080CE524:
 	ldr r2, _080CE5E0 @ =gUnk_0984E30C
 	adds r1, r1, r2
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldrh r3, [r4]
 	lsls r0, r3, #0x14
 	lsrs r0, r0, #0x18
@@ -380138,8 +380138,8 @@ _080CE6E4:
 	ldrh r1, [r4]
 	ldr r2, _080CE748 @ =0x00000213
 	adds r0, r1, r2
-	bl sub_080F4E18
-	ldr r2, _080CE74C @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _080CE74C @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -380155,7 +380155,7 @@ _080CE6E4:
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r3, [r1]
-	ldr r0, _080CE758 @ =gUnk_09DB9C10
+	ldr r0, _080CE758 @ =gInterfaceText
 	adds r3, r3, r0
 	movs r0, #2
 	movs r1, #2
@@ -380170,7 +380170,7 @@ _080CE6E4:
 	ldr r2, _080CE764 @ =gUnk_0984E30C
 	adds r1, r1, r2
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, [r5]
 	ldr r1, _080CE768 @ =0xFFFE01FF
 	ands r0, r1
@@ -380179,10 +380179,10 @@ _080CE6E4:
 	.align 2, 0
 _080CE744: .4byte 0x00000A14
 _080CE748: .4byte 0x00000213
-_080CE74C: .4byte gUnk_08000F40
+_080CE74C: .4byte gInterfaceTextOffsets
 _080CE750: .4byte gUnk_02000000
 _080CE754: .4byte 0x00006C2C
-_080CE758: .4byte gUnk_09DB9C10
+_080CE758: .4byte gInterfaceText
 _080CE75C: .4byte 0x06013800
 _080CE760: .4byte 0x05000280
 _080CE764: .4byte gUnk_0984E30C
@@ -380269,7 +380269,7 @@ sub_080CE7F0: @ 0x080CE7F0
 	ldr r0, _080CE858 @ =0x06014000
 	movs r1, #0x80
 	lsls r1, r1, #7
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r1, _080CE85C @ =gUnk_0201F440
 	ldr r2, _080CE860 @ =0x00000A17
 	adds r0, r1, r2
@@ -380318,7 +380318,7 @@ _080CE86C:
 	ldr r1, _080CE9D0 @ =gUnk_0201F641
 	adds r0, r0, r1
 	adds r1, r2, #0
-	bl sub_080F5054
+	bl StringCopy
 	adds r0, r5, #1
 	lsls r0, r0, #0x10
 	lsrs r5, r0, #0x10
@@ -381564,7 +381564,7 @@ sub_080CF25C: @ 0x080CF25C
 	ldrh r0, [r0]
 	adds r2, r0, r2
 	adds r0, r4, #0
-	bl sub_080F5228
+	bl StringCopyFormat_D
 	movs r0, #0x19
 	movs r1, #2
 	movs r2, #1
@@ -381650,7 +381650,7 @@ sub_080CF330: @ 0x080CF330
 	ldr r0, _080CF390 @ =0x06014000
 	movs r1, #0x80
 	lsls r1, r1, #7
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r0, _080CF394 @ =0x06010C00
 	ldr r1, _080CF398 @ =gUnk_0988AB18
 	movs r2, #1
@@ -382245,7 +382245,7 @@ sub_080CF7D4: @ 0x080CF7D4
 	ldr r0, _080CF9A0 @ =0x06014000
 	movs r1, #0x80
 	lsls r1, r1, #7
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r3, _080CF9A4 @ =gUnk_0201F440
 	ldr r1, _080CF9A8 @ =0x00000A17
 	adds r0, r3, r1
@@ -382303,7 +382303,7 @@ _080CF852:
 	ldr r0, _080CF9B8 @ =0x05000260
 	ldr r1, _080CF9BC @ =gUnk_09850C5C
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080CF9C0 @ =0x05000280
 	ldr r1, _080CF9A4 @ =gUnk_0201F440
 	ldr r2, _080CF9B0 @ =0x00000A0E
@@ -382315,7 +382315,7 @@ _080CF852:
 	ldr r2, _080CF9C4 @ =gUnk_0984EE2C
 	adds r1, r1, r2
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	movs r5, #0
 _080CF878:
 	adds r0, r5, #0
@@ -382397,8 +382397,8 @@ _080CF878:
 	ldr r1, _080CF9E4 @ =0x000001F5
 	mov r8, r1
 	add r0, r8
-	bl sub_080F4E18
-	ldr r2, _080CF9E8 @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _080CF9E8 @ =gInterfaceTextOffsets
 	mov sl, r2
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
@@ -382412,7 +382412,7 @@ _080CF878:
 	lsls r1, r1, #2
 	add r1, sl
 	ldr r3, [r1]
-	ldr r6, _080CF9EC @ =gUnk_09DB9C10
+	ldr r6, _080CF9EC @ =gInterfaceText
 	adds r3, r3, r6
 	movs r0, #3
 	movs r1, #3
@@ -382423,7 +382423,7 @@ _080CF878:
 	lsls r0, r1, #0x14
 	lsrs r0, r0, #0x18
 	add r0, r8
-	bl sub_080F4E18
+	bl GetInterfaceTextIdIndex
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -382474,8 +382474,8 @@ _080CF9D8: .4byte 0x00006C2C
 _080CF9DC: .4byte gUnk_09E5F854
 _080CF9E0: .4byte 0x06012800
 _080CF9E4: .4byte 0x000001F5
-_080CF9E8: .4byte gUnk_08000F40
-_080CF9EC: .4byte gUnk_09DB9C10
+_080CF9E8: .4byte gInterfaceTextOffsets
+_080CF9EC: .4byte gInterfaceText
 _080CF9F0: .4byte 0x00000A01
 
 	thumb_func_start sub_080CF9F4
@@ -383008,8 +383008,8 @@ _080CFE48:
 	lsrs r0, r1, #0x18
 	ldr r2, _080CFEA8 @ =0x000001F5
 	adds r0, r0, r2
-	bl sub_080F4E18
-	ldr r2, _080CFEAC @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _080CFEAC @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -383025,7 +383025,7 @@ _080CFE48:
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r3, [r1]
-	ldr r0, _080CFEB8 @ =gUnk_09DB9C10
+	ldr r0, _080CFEB8 @ =gInterfaceText
 	adds r3, r3, r0
 	movs r0, #2
 	movs r1, #2
@@ -383042,7 +383042,7 @@ _080CFE48:
 	ldr r2, _080CFEC4 @ =gUnk_0984EE2C
 	adds r1, r1, r2
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, [r4]
 	ldr r1, _080CFEC8 @ =0xFFFE01FF
 	ands r0, r1
@@ -383050,10 +383050,10 @@ _080CFE48:
 	b _080CFF44
 	.align 2, 0
 _080CFEA8: .4byte 0x000001F5
-_080CFEAC: .4byte gUnk_08000F40
+_080CFEAC: .4byte gInterfaceTextOffsets
 _080CFEB0: .4byte gUnk_02000000
 _080CFEB4: .4byte 0x00006C2C
-_080CFEB8: .4byte gUnk_09DB9C10
+_080CFEB8: .4byte gInterfaceText
 _080CFEBC: .4byte 0x06012800
 _080CFEC0: .4byte 0x05000280
 _080CFEC4: .4byte gUnk_0984EE2C
@@ -383135,7 +383135,7 @@ sub_080CFF50: @ 0x080CFF50
 	ldr r0, _080CFFB0 @ =0x06014000
 	movs r1, #0x80
 	lsls r1, r1, #7
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r3, _080CFFB4 @ =gUnk_0201F440
 	ldr r1, _080CFFB8 @ =0x00000A17
 	adds r0, r3, r1
@@ -383665,7 +383665,7 @@ sub_080D03B0: @ 0x080D03B0
 	ldr r0, _080D0410 @ =0x06014000
 	movs r1, #0x80
 	lsls r1, r1, #7
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r0, _080D0414 @ =0x06010C00
 	ldr r1, _080D0418 @ =gUnk_0988AB18
 	movs r2, #1
@@ -383738,7 +383738,7 @@ _080D0454:
 	ldr r1, _080D0488 @ =gUnk_09DCAB1E
 _080D0456:
 	adds r0, r3, #0
-	bl sub_080F5054
+	bl StringCopy
 	ldr r3, _080D048C @ =gUnk_0201F841
 	ldr r0, _080D0490 @ =gUnk_02000000
 	ldr r1, _080D0494 @ =0x00006C2C
@@ -383786,7 +383786,7 @@ _080D04B8:
 	ldr r1, _080D04D0 @ =gUnk_09DCAB22
 _080D04BA:
 	adds r0, r3, #0
-	bl sub_080F5054
+	bl StringCopy
 _080D04C0:
 	ldr r0, _080D04D4 @ =gUnk_0201F440
 	ldr r1, _080D04D8 @ =0x00000A01
@@ -384297,11 +384297,11 @@ sub_080D08A4: @ 0x080D08A4
 	ldr r1, _080D0B5C @ =gUnk_0988AD78
 	movs r2, #0xf8
 	lsls r2, r2, #2
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080D0B60 @ =0x05000160
 	ldr r1, _080D0B64 @ =gUnk_0988B158
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	movs r0, #0x1b
 	movs r1, #2
 	movs r2, #1
@@ -384354,7 +384354,7 @@ sub_080D08A4: @ 0x080D08A4
 	movs r1, #0xd8
 	lsls r1, r1, #3
 	adds r0, r4, #0
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	adds r0, r4, #0
 	movs r1, #0
 	bl sub_080F2E4C
@@ -384424,8 +384424,8 @@ _080D0956:
 	ldr r2, _080D0B88 @ =0x000003E9
 	mov r8, r2
 	mov r0, r8
-	bl sub_080F4E18
-	ldr r3, _080D0B8C @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r3, _080D0B8C @ =gInterfaceTextOffsets
 	mov sb, r3
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
@@ -384439,7 +384439,7 @@ _080D0956:
 	lsls r1, r1, #2
 	add r1, sb
 	ldr r0, [r1]
-	ldr r5, _080D0B90 @ =gUnk_09DB9C10
+	ldr r5, _080D0B90 @ =gInterfaceText
 	adds r0, r0, r5
 	bl sub_080F0274
 	movs r4, #0xc8
@@ -384451,7 +384451,7 @@ _080D0956:
 	ldr r3, _080D0B78 @ =0x00008008
 	mov sl, r3
 	mov r0, r8
-	bl sub_080F4E18
+	bl GetInterfaceTextIdIndex
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -384470,7 +384470,7 @@ _080D0956:
 	mov r2, sl
 	bl sub_080F2A7C
 	mov r0, r8
-	bl sub_080F4E18
+	bl GetInterfaceTextIdIndex
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -384626,8 +384626,8 @@ _080D0B7C: .4byte gUnk_02022FAC
 _080D0B80: .4byte 0x0600BC00
 _080D0B84: .4byte 0x0600F00A
 _080D0B88: .4byte 0x000003E9
-_080D0B8C: .4byte gUnk_08000F40
-_080D0B90: .4byte gUnk_09DB9C10
+_080D0B8C: .4byte gInterfaceTextOffsets
+_080D0B90: .4byte gInterfaceText
 _080D0B94: .4byte 0x06012C00
 _080D0B98: .4byte 0x060157C0
 _080D0B9C: .4byte gUnk_0988C6F0
@@ -386683,7 +386683,7 @@ _080D1C50:
 	adds r0, r4, r2
 	movs r1, #0x80
 	lsls r1, r1, #2
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r3, _080D1D5C @ =0x00002F54
 	adds r2, r4, r3
 	ldr r0, [r2]
@@ -390384,7 +390384,7 @@ _080D3A30:
 	ldr r2, _080D3A70 @ =gUnk_0984E30C
 	adds r1, r1, r2
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r1, _080D3A74 @ =0x000001E1
 	adds r0, r7, r1
 	lsls r0, r0, #5
@@ -390412,7 +390412,7 @@ _080D3A7C:
 	ldr r2, _080D3AB0 @ =gUnk_0984E30C
 	adds r1, r1, r2
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	lsls r5, r5, #7
 	ldr r3, _080D3AB4 @ =0x06013C20
 	adds r5, r5, r3
@@ -390449,7 +390449,7 @@ _080D3ABC:
 	adds r0, r0, r5
 	ldr r1, _080D3B0C @ =gUnk_0984F3AC
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r1, _080D3B10 @ =0x000001E1
 	adds r0, r7, r1
 	lsls r0, r0, #5
@@ -390482,7 +390482,7 @@ _080D3B18:
 	ldr r2, _080D3B60 @ =gUnk_0984EE2C
 	adds r1, r1, r2
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	lsls r5, r5, #7
 	ldr r3, _080D3B64 @ =0x06013C20
 	adds r5, r5, r3
@@ -391970,7 +391970,7 @@ _080D466E:
 	ldr r1, _080D46A4 @ =gUnk_09CE824C
 	ldr r1, [r1]
 	movs r2, #0x20
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 	strh r7, [r4, #0x14]
 	movs r0, #0x28
 	strh r0, [r4, #0x16]
@@ -392441,18 +392441,18 @@ sub_080D49DC: @ 0x080D49DC
 	movs r0, #0xc0
 	lsls r0, r0, #0x13
 	movs r1, #0x20
-	bl sub_080F4E98
+	bl MemoryClearHalfWord_Duplicate
 	ldr r0, _080D4A50 @ =0x0600E000
 	movs r4, #0x80
 	lsls r4, r4, #4
 	adds r1, r4, #0
-	bl sub_080F4E98
+	bl MemoryClearHalfWord_Duplicate
 	ldr r0, _080D4A54 @ =0x06004000
 	movs r1, #0x40
-	bl sub_080F4E98
+	bl MemoryClearHalfWord_Duplicate
 	ldr r0, _080D4A58 @ =0x0600E800
 	adds r1, r4, #0
-	bl sub_080F4E98
+	bl MemoryClearHalfWord_Duplicate
 	pop {r4, r5}
 	pop {r0}
 	bx r0
@@ -392844,7 +392844,7 @@ sub_080D4D1C: @ 0x080D4D1C
 	ldr r1, _080D4D58 @ =gUnk_09CCE2C0
 	ldr r1, [r1, #0xc]
 	movs r2, #0x20
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -392881,7 +392881,7 @@ _080D4D88:
 	movs r1, #0xc0
 	lsls r1, r1, #3
 	adds r0, r2, #0
-	bl sub_080F4E98
+	bl MemoryClearHalfWord_Duplicate
 _080D4D92:
 	pop {r0}
 	bx r0
@@ -393270,7 +393270,7 @@ _080D506E:
 	adds r0, r5, #0
 	movs r1, #0x80
 	lsls r1, r1, #1
-	bl sub_080F4E98
+	bl MemoryClearHalfWord_Duplicate
 	movs r0, #0x80
 	lsls r0, r0, #3
 	adds r5, r5, r0
@@ -393317,7 +393317,7 @@ _080D50C6:
 	adds r0, r4, #0
 	movs r1, #0x80
 	lsls r1, r1, #1
-	bl sub_080F4E98
+	bl MemoryClearHalfWord_Duplicate
 	movs r0, #0x80
 	lsls r0, r0, #3
 	adds r4, r4, r0
@@ -394133,12 +394133,12 @@ _080D56F4:
 	lsls r5, r5, #1
 	adds r1, r4, #0
 	adds r2, r5, #0
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 	movs r0, #0xa0
 	lsls r0, r0, #0x13
 	adds r1, r4, #0
 	adds r2, r5, #0
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 	movs r5, #0xe3
 	lsls r5, r5, #3
 	add r5, r8
@@ -394211,7 +394211,7 @@ _080D56F4:
 	ldr r0, _080D5844 @ =0x050001E0
 	ldr r1, _080D5848 @ =gUnk_09CCD290
 	movs r2, #0x20
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 	ldr r0, _080D584C @ =0x05000140
 	bl sub_080DBE78
 	ldr r1, _080D5850 @ =0x0400000E
@@ -395553,8 +395553,8 @@ sub_080D6290: @ 0x080D6290
 	push {r4, lr}
 	ldr r4, _080D62E8 @ =0x000A001E
 	ldr r0, _080D62EC @ =0x000013F7 (Tornado Wall)
-	bl sub_080F4E18
-	ldr r2, _080D62F0 @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _080D62F0 @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -395570,7 +395570,7 @@ sub_080D6290: @ 0x080D6290
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r2, [r1]
-	ldr r0, _080D62FC @ =gUnk_09DB9C10
+	ldr r0, _080D62FC @ =gInterfaceText
 	adds r2, r2, r0
 	adds r0, r4, #0
 	movs r1, #0
@@ -395591,10 +395591,10 @@ sub_080D6290: @ 0x080D6290
 	.align 2, 0
 _080D62E8: .4byte 0x000A001E
 _080D62EC: .4byte 0x000013F7 @ Tornado Wall
-_080D62F0: .4byte gUnk_08000F40
+_080D62F0: .4byte gInterfaceTextOffsets
 _080D62F4: .4byte gUnk_02000000
 _080D62F8: .4byte 0x00006C2C
-_080D62FC: .4byte gUnk_09DB9C10
+_080D62FC: .4byte gInterfaceText
 _080D6300: .4byte gUnk_03005850
 
 	thumb_func_start sub_080D6304
@@ -396918,12 +396918,12 @@ _080D6DE4:
 	lsls r5, r5, #1
 	adds r1, r4, #0
 	adds r2, r5, #0
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 	movs r0, #0xa0
 	lsls r0, r0, #0x13
 	adds r1, r4, #0
 	adds r2, r5, #0
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 	movs r2, #0xde
 	lsls r2, r2, #3
 	add r2, sb
@@ -396992,7 +396992,7 @@ _080D6DE4:
 	ldr r0, _080D6F1C @ =0x050001E0
 	ldr r1, _080D6F20 @ =gUnk_09CCD290
 	movs r2, #0x20
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 	movs r0, #0xe8
 	lsls r0, r0, #1
 	movs r1, #0xa
@@ -397217,26 +397217,26 @@ sub_080D7064: @ 0x080D7064
 	lsls r0, r0, #0x13
 	movs r1, #0x80
 	lsls r1, r1, #7
-	bl sub_080F4E98
+	bl MemoryClearHalfWord_Duplicate
 	ldr r0, _080D70CC @ =0x0600E000
 	movs r4, #0x80
 	lsls r4, r4, #4
 	adds r1, r4, #0
-	bl sub_080F4E98
+	bl MemoryClearHalfWord_Duplicate
 	ldr r0, _080D70D0 @ =0x0600D000
 	movs r5, #0x80
 	lsls r5, r5, #5
 	adds r1, r5, #0
-	bl sub_080F4E98
+	bl MemoryClearHalfWord_Duplicate
 	ldr r0, _080D70D4 @ =0x0600E800
 	adds r1, r4, #0
-	bl sub_080F4E98
+	bl MemoryClearHalfWord_Duplicate
 	ldr r0, _080D70D8 @ =0x06008000
 	adds r1, r5, #0
-	bl sub_080F4E98
+	bl MemoryClearHalfWord_Duplicate
 	ldr r0, _080D70DC @ =0x0600F000
 	adds r1, r4, #0
-	bl sub_080F4E98
+	bl MemoryClearHalfWord_Duplicate
 	bl sub_080F5A88
 	pop {r4, r5}
 	pop {r0}
@@ -397272,7 +397272,7 @@ sub_080D70F0: @ 0x080D70F0
 	movs r1, #0x80
 	lsls r1, r1, #5
 	adds r0, r4, #0
-	bl sub_080F4E98
+	bl MemoryClearHalfWord_Duplicate
 	ldr r0, _080D7128 @ =gUnk_09CCE2B0
 	ldr r0, [r0, #8]
 	adds r1, r4, #0
@@ -397285,7 +397285,7 @@ sub_080D70F0: @ 0x080D70F0
 	ldr r1, _080D7138 @ =gUnk_09CCE2C0
 	ldr r1, [r1, #8]
 	movs r2, #0x20
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 	pop {r4}
 	pop {r0}
 	bx r0
@@ -397599,16 +397599,16 @@ sub_080D733C: @ 0x080D733C
 	lsls r0, r0, #0x13
 	movs r1, #0x80
 	lsls r1, r1, #7
-	bl sub_080F4E98
+	bl MemoryClearHalfWord_Duplicate
 	ldr r0, _080D7438 @ =0x0600E000
 	movs r6, #0x80
 	lsls r6, r6, #4
 	adds r1, r6, #0
-	bl sub_080F4E98
+	bl MemoryClearHalfWord_Duplicate
 	ldr r0, _080D743C @ =0x050001E0
 	ldr r1, _080D7440 @ =gUnk_09CCD290
 	movs r2, #0x20
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 	ldrh r0, [r7]
 	ldr r1, _080D7444 @ =0x06010000
 	movs r2, #0
@@ -397620,7 +397620,7 @@ sub_080D733C: @ 0x080D733C
 	lsls r5, r5, #1
 	adds r1, r4, #0
 	adds r2, r5, #0
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 	ldrh r0, [r7]
 	ldr r1, _080D7450 @ =0x06008040
 	movs r2, #0
@@ -397630,10 +397630,10 @@ sub_080D733C: @ 0x080D733C
 	lsls r0, r0, #0x13
 	adds r1, r4, #0
 	adds r2, r5, #0
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 	ldr r0, _080D7454 @ =0x0600F000
 	adds r1, r6, #0
-	bl sub_080F4E98
+	bl MemoryClearHalfWord_Duplicate
 	movs r5, #0
 _080D73DE:
 	adds r0, r5, #0
@@ -400165,8 +400165,8 @@ sub_080D8804: @ 0x080D8804
 	bl sub_080F5A88
 	ldr r4, _080D884C @ =0x0010001E
 	ldr r0, _080D8850 @ =0x000013F6 (Lightning Blade)
-	bl sub_080F4E18
-	ldr r2, _080D8854 @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _080D8854 @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -400182,7 +400182,7 @@ sub_080D8804: @ 0x080D8804
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r2, [r1]
-	ldr r0, _080D8860 @ =gUnk_09DB9C10
+	ldr r0, _080D8860 @ =gInterfaceText
 	adds r2, r2, r0
 	adds r0, r4, #0
 	movs r1, #0
@@ -400196,10 +400196,10 @@ sub_080D8804: @ 0x080D8804
 	.align 2, 0
 _080D884C: .4byte 0x0010001E
 _080D8850: .4byte 0x000013F6 @ Lightning Blade
-_080D8854: .4byte gUnk_08000F40
+_080D8854: .4byte gInterfaceTextOffsets
 _080D8858: .4byte gUnk_02000000
 _080D885C: .4byte 0x00006C2C
-_080D8860: .4byte gUnk_09DB9C10
+_080D8860: .4byte gInterfaceText
 _080D8864: .4byte gUnk_03005850
 
 	thumb_func_start sub_080D8868
@@ -400877,19 +400877,19 @@ sub_080D8D84: @ 0x080D8D84
 	lsls r0, r0, #0x13
 	movs r1, #0x80
 	lsls r1, r1, #7
-	bl sub_080F4E98
+	bl MemoryClearHalfWord_Duplicate
 	ldr r0, _080D8DD0 @ =0x0600E000
 	movs r4, #0x80
 	lsls r4, r4, #4
 	adds r1, r4, #0
-	bl sub_080F4E98
+	bl MemoryClearHalfWord_Duplicate
 	ldr r0, _080D8DD4 @ =0x0600D000
 	movs r1, #0x80
 	lsls r1, r1, #5
-	bl sub_080F4E98
+	bl MemoryClearHalfWord_Duplicate
 	ldr r0, _080D8DD8 @ =0x0600F000
 	adds r1, r4, #0
-	bl sub_080F4E98
+	bl MemoryClearHalfWord_Duplicate
 	bl sub_080F5A88
 	pop {r4}
 	pop {r0}
@@ -401034,7 +401034,7 @@ sub_080D8E98: @ 0x080D8E98
 	bl sub_080D8F48
 	adds r0, r4, #0
 	adds r1, r6, #0
-	bl sub_080F4E98
+	bl MemoryClearHalfWord_Duplicate
 	adds r0, r4, #0
 	adds r0, #8
 	ldrh r1, [r5]
@@ -401076,7 +401076,7 @@ sub_080D8F08: @ 0x080D8F08
 	ldr r1, _080D8F44 @ =gUnk_09CCE2C0
 	ldr r1, [r1, #4]
 	movs r2, #0x20
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -401150,7 +401150,7 @@ _080D8FA8:
 	ldr r0, _080D8FE4 @ =0x06000240
 	movs r2, #0xc0
 	lsls r2, r2, #4
-	bl sub_080F4ED0
+	bl MemoryCopyWord
 	strh r4, [r5, #0x12]
 	ldr r0, _080D8FE8 @ =0x0600E000
 	movs r1, #0x12
@@ -401240,7 +401240,7 @@ _080D905C:
 	ldr r0, _080D9094 @ =0x06000E40
 	movs r2, #0xd0
 	lsls r2, r2, #2
-	bl sub_080F4ED0
+	bl MemoryCopyWord
 	ldr r0, _080D9098 @ =0x0600E084
 	movs r1, #0x72
 	movs r2, #0xf
@@ -401281,7 +401281,7 @@ _080D90B8:
 	ldr r0, _080D90EC @ =0x00000F48
 	adds r1, r1, r0
 	ldr r0, _080D90F0 @ =0x06001180
-	bl sub_080F4ED0
+	bl MemoryCopyWord
 	ldr r0, _080D90F4 @ =0x0600E09E
 	movs r1, #0x8c
 	movs r2, #0xf
@@ -401361,12 +401361,12 @@ sub_080D912C: @ 0x080D912C
 	lsls r4, r4, #1
 	adds r0, r6, #0
 	adds r1, r4, #0
-	bl sub_080F4E98
+	bl MemoryClearHalfWord_Duplicate
 	movs r0, #0x80
 	lsls r0, r0, #3
 	adds r0, r6, r0
 	adds r1, r4, #0
-	bl sub_080F4E98
+	bl MemoryClearHalfWord_Duplicate
 	movs r4, #0
 	cmp r4, r7
 	bhs _080D91C6
@@ -402114,7 +402114,7 @@ _080D9758:
 	ldr r1, _080D97F0 @ =gUnk_08510440
 	movs r2, #0x90
 	lsls r2, r2, #1
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 	bl sub_080D912C
 	movs r0, #0xc3
 	lsls r0, r0, #2
@@ -402156,12 +402156,12 @@ _080D9758:
 	lsls r4, r4, #1
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_080F4E98
+	bl MemoryClearHalfWord_Duplicate
 	movs r0, #0x80
 	lsls r0, r0, #3
 	adds r0, r5, r0
 	adds r1, r4, #0
-	bl sub_080F4E98
+	bl MemoryClearHalfWord_Duplicate
 	ldr r0, _080D9804 @ =gUnk_02000000
 	ldr r1, _080D9808 @ =0x00006C2C
 	adds r4, r0, r1
@@ -402185,8 +402185,8 @@ _080D980C: .4byte 0x000013F8 @ Infinite Dismissal
 _080D9810:
 	ldr r0, _080D9888 @ =0x00000642
 _080D9812:
-	bl sub_080F4E18
-	ldr r2, _080D988C @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _080D988C @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -402199,7 +402199,7 @@ _080D9812:
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r1, [r1]
-	ldr r0, _080D9890 @ =gUnk_09DB9C10
+	ldr r0, _080D9890 @ =gInterfaceText
 	adds r4, r1, r0
 	movs r0, #0xa
 	movs r1, #2
@@ -402220,7 +402220,7 @@ _080D9812:
 	ldr r0, _080D9898 @ =0x050001E0
 	ldr r1, _080D989C @ =gUnk_09CCD290
 	movs r2, #0x20
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 	movs r0, #0xe3
 	lsls r0, r0, #3
 	adds r1, r6, r0
@@ -402240,8 +402240,8 @@ _080D987C:
 	bx r1
 	.align 2, 0
 _080D9888: .4byte 0x00000642
-_080D988C: .4byte gUnk_08000F40
-_080D9890: .4byte gUnk_09DB9C10
+_080D988C: .4byte gInterfaceTextOffsets
+_080D9890: .4byte gInterfaceText
 _080D9894: .4byte 0x00008008
 _080D9898: .4byte 0x050001E0
 _080D989C: .4byte gUnk_09CCD290
@@ -405586,7 +405586,7 @@ sub_080DB368: @ 0x080DB368
 	adds r4, #0xc
 	ldr r1, _080DB3A8 @ =0x0000071C
 	adds r0, r4, #0
-	bl sub_080F4E98
+	bl MemoryClearHalfWord_Duplicate
 	movs r2, #1
 	ldr r0, _080DB3AC @ =gUnk_095B7CCA
 	ldrh r0, [r0]
@@ -406193,8 +406193,8 @@ sub_080DB7C4: @ 0x080DB7C4
 	bls _080DB848
 	ldr r4, _080DB830 @ =0x0010001E
 	ldr r0, _080DB834 @ =0x000013F5 (Return of the Doomed)
-	bl sub_080F4E18
-	ldr r2, _080DB838 @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _080DB838 @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -406210,7 +406210,7 @@ sub_080DB7C4: @ 0x080DB7C4
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r2, [r1]
-	ldr r0, _080DB844 @ =gUnk_09DB9C10
+	ldr r0, _080DB844 @ =gInterfaceText
 	adds r2, r2, r0
 	adds r0, r4, #0
 	movs r1, #0
@@ -406223,10 +406223,10 @@ _080DB828: .4byte gUnk_09E5E2E8
 _080DB82C: .4byte 0x00005FFF
 _080DB830: .4byte 0x0010001E
 _080DB834: .4byte 0x000013F5 @ Return of the Doomed
-_080DB838: .4byte gUnk_08000F40
+_080DB838: .4byte gInterfaceTextOffsets
 _080DB83C: .4byte gUnk_02000000
 _080DB840: .4byte 0x00006C2C
-_080DB844: .4byte gUnk_09DB9C10
+_080DB844: .4byte gInterfaceText
 _080DB848:
 	movs r0, #1
 _080DB84A:
@@ -406268,7 +406268,7 @@ sub_080DB860: @ 0x080DB860
 	movs r2, #0x80
 	lsls r2, r2, #4
 	adds r0, r4, #0
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 	mov r0, r8
 	cmp r0, #0
 	beq _080DB904
@@ -406298,7 +406298,7 @@ _080DB8C0:
 	adds r1, r7, #0
 	movs r2, #0x80
 	lsls r2, r2, #1
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 	mov r1, r8
 	cmp r1, #0
 	beq _080DB8F0
@@ -406388,7 +406388,7 @@ _080DB94E:
 	movs r2, #0xc0
 	lsls r2, r2, #3
 	adds r0, r4, #0
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 	mov r0, r8
 	cmp r0, #0
 	beq _080DB9F0
@@ -406422,7 +406422,7 @@ _080DB9AC:
 	adds r1, r6, #0
 	movs r2, #0x80
 	lsls r2, r2, #1
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 	mov r1, r8
 	cmp r1, #0
 	beq _080DB9DC
@@ -406471,7 +406471,7 @@ sub_080DB9FC: @ 0x080DB9FC
 	strh r0, [r1]
 	ldr r0, _080DBA38 @ =0x0600C000
 	movs r1, #0x20
-	bl sub_080F4E98
+	bl MemoryClearHalfWord_Duplicate
 	ldr r0, _080DBA3C @ =gUnk_09CCE2B0
 	ldr r0, [r0]
 	ldr r1, _080DBA40 @ =0x0600C020
@@ -406484,7 +406484,7 @@ sub_080DB9FC: @ 0x080DB9FC
 	ldr r1, _080DBA50 @ =gUnk_09CCE2C0
 	ldr r1, [r1]
 	movs r2, #0x20
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -406503,7 +406503,7 @@ sub_080DBA54: @ 0x080DBA54
 	push {lr}
 	movs r1, #0x90
 	lsls r1, r1, #2
-	bl sub_080F4E98
+	bl MemoryClearHalfWord_Duplicate
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -406570,8 +406570,8 @@ _080DBA80:
 	bl sub_080F2C8C
 	ldr r6, _080DBB70 @ =0x0000138F (Sebek's Blessing)
 	adds r0, r6, #0
-	bl sub_080F4E18
-	ldr r2, _080DBB74 @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _080DBB74 @ =gInterfaceTextOffsets
 	mov r8, r2
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
@@ -406587,14 +406587,14 @@ _080DBA80:
 	lsls r1, r1, #2
 	add r1, r8
 	ldr r3, [r1]
-	ldr r4, _080DBB7C @ =gUnk_09DB9C10
+	ldr r4, _080DBB7C @ =gInterfaceText
 	adds r3, r3, r4
 	movs r0, #0x3a
 	movs r1, #3
 	mov r2, sb
 	bl sub_080F2C2C
 	adds r0, r6, #0
-	bl sub_080F4E18
+	bl GetInterfaceTextIdIndex
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -406631,9 +406631,9 @@ _080DBB64: .4byte gUnk_09E5F854
 _080DBB68: .4byte 0x00008108
 _080DBB6C: .4byte 0x00000107
 _080DBB70: .4byte 0x0000138F @ Sebek's Blessing
-_080DBB74: .4byte gUnk_08000F40
+_080DBB74: .4byte gInterfaceTextOffsets
 _080DBB78: .4byte 0x00006C2C
-_080DBB7C: .4byte gUnk_09DB9C10
+_080DBB7C: .4byte gInterfaceText
 
 	thumb_func_start sub_080DBB80
 sub_080DBB80: @ 0x080DBB80
@@ -406669,7 +406669,7 @@ sub_080DBBB0: @ 0x080DBBB0
 	push {lr}
 	movs r1, #0xc0
 	lsls r1, r1, #4
-	bl sub_080F4E98
+	bl MemoryClearHalfWord_Duplicate
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -406682,8 +406682,8 @@ sub_080DBBC0: @ 0x080DBBC0
 	lsls r1, r1, #4
 	adds r1, r1, r0
 	ldrh r0, [r1, #6]
-	bl sub_080F4E18
-	ldr r2, _080DBC68 @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _080DBC68 @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -406699,7 +406699,7 @@ sub_080DBBC0: @ 0x080DBBC0
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r5, [r1]
-	ldr r0, _080DBC74 @ =gUnk_09DB9C10
+	ldr r0, _080DBC74 @ =gInterfaceText
 	adds r5, r5, r0
 	movs r0, #0x30
 	movs r1, #2
@@ -406754,10 +406754,10 @@ sub_080DBBC0: @ 0x080DBBC0
 	bx r1
 	.align 2, 0
 _080DBC64: .4byte gUnk_09E5E2E8
-_080DBC68: .4byte gUnk_08000F40
+_080DBC68: .4byte gInterfaceTextOffsets
 _080DBC6C: .4byte gUnk_02000000
 _080DBC70: .4byte 0x00006C2C
-_080DBC74: .4byte gUnk_09DB9C10
+_080DBC74: .4byte gInterfaceText
 _080DBC78: .4byte gUnk_02006ED0
 _080DBC7C: .4byte gUnk_09E5F854
 _080DBC80: .4byte 0x00008108
@@ -406823,7 +406823,7 @@ sub_080DBCEC: @ 0x080DBCEC
 	push {lr}
 	movs r1, #0xc0
 	lsls r1, r1, #4
-	bl sub_080F4E98
+	bl MemoryClearHalfWord_Duplicate
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -407030,7 +407030,7 @@ sub_080DBE78: @ 0x080DBE78
 	adds r4, r0, #0
 	ldr r1, _080DBEB4 @ =gUnk_09CCD290
 	movs r2, #0x20
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 	adds r4, #0x12
 	movs r5, #9
 _080DBE88:
@@ -407120,7 +407120,7 @@ sub_080DBF30: @ 0x080DBF30
 	push {lr}
 	movs r1, #0xd0
 	lsls r1, r1, #2
-	bl sub_080F4E98
+	bl MemoryClearHalfWord_Duplicate
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -407134,8 +407134,8 @@ sub_080DBF40: @ 0x080DBF40
 	mov r8, r0
 	adds r4, r1, #0
 	ldr r0, _080DBF94 @ =0x000013F9 (Fairy Box)
-	bl sub_080F4E18
-	ldr r2, _080DBF98 @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _080DBF98 @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -407151,7 +407151,7 @@ sub_080DBF40: @ 0x080DBF40
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r1, [r1]
-	ldr r0, _080DBFA4 @ =gUnk_09DB9C10
+	ldr r0, _080DBFA4 @ =gInterfaceText
 	adds r1, r1, r0
 	ldr r0, _080DBFA8 @ =gUnk_09E5E2E8
 	lsls r4, r4, #4
@@ -407161,17 +407161,17 @@ sub_080DBF40: @ 0x080DBF40
 	str r0, [sp]
 	add r0, sp, #4
 	movs r3, #0
-	bl sub_080F528C
+	bl StringCopyFormat_DWithAtDirective
 	movs r6, #0
 	ldr r5, _080DBFAC @ =gUnk_02006ED0
 	ldr r7, _080DBFB0 @ =gUnk_09E5F854
 	b _080DBFB8
 	.align 2, 0
 _080DBF94: .4byte 0x000013F9 @ Fairy Box
-_080DBF98: .4byte gUnk_08000F40
+_080DBF98: .4byte gInterfaceTextOffsets
 _080DBF9C: .4byte gUnk_02000000
 _080DBFA0: .4byte 0x00006C2C
-_080DBFA4: .4byte gUnk_09DB9C10
+_080DBFA4: .4byte gInterfaceText
 _080DBFA8: .4byte gUnk_09E5E2E8
 _080DBFAC: .4byte gUnk_02006ED0
 _080DBFB0: .4byte gUnk_09E5F854
@@ -407291,7 +407291,7 @@ sub_080DC088: @ 0x080DC088
 	push {lr}
 	movs r1, #0xd0
 	lsls r1, r1, #2
-	bl sub_080F4E98
+	bl MemoryClearHalfWord_Duplicate
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -407306,8 +407306,8 @@ sub_080DC098: @ 0x080DC098
 	adds r4, r1, #0
 	adds r5, r2, #0
 	ldr r0, _080DC0E8 @ =0x000013EE (Mask of Weakness)
-	bl sub_080F4E18
-	ldr r2, _080DC0EC @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _080DC0EC @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -407323,7 +407323,7 @@ sub_080DC098: @ 0x080DC098
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r1, [r1]
-	ldr r0, _080DC0F8 @ =gUnk_09DB9C10
+	ldr r0, _080DC0F8 @ =gInterfaceText
 	adds r6, r1, r0
 	movs r7, #1
 	adds r0, r4, #0
@@ -407338,10 +407338,10 @@ sub_080DC098: @ 0x080DC098
 	b _080DC11A
 	.align 2, 0
 _080DC0E8: .4byte 0x000013EE @ Mask of Weakness
-_080DC0EC: .4byte gUnk_08000F40
+_080DC0EC: .4byte gInterfaceTextOffsets
 _080DC0F0: .4byte gUnk_02000000
 _080DC0F4: .4byte 0x00006C2C
-_080DC0F8: .4byte gUnk_09DB9C10
+_080DC0F8: .4byte gInterfaceText
 _080DC0FC:
 	cmp r1, #0
 	beq _080DC118
@@ -407365,7 +407365,7 @@ _080DC11A:
 	add r0, sp, #4
 	adds r1, r6, #0
 	movs r3, #0
-	bl sub_080F528C
+	bl StringCopyFormat_DWithAtDirective
 	movs r0, #0xd
 	movs r1, #2
 	bl sub_080F0BB4
@@ -407467,7 +407467,7 @@ sub_080DC1E8: @ 0x080DC1E8
 	push {lr}
 	movs r1, #0x88
 	lsls r1, r1, #3
-	bl sub_080F4E98
+	bl MemoryClearHalfWord_Duplicate
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -407484,8 +407484,8 @@ sub_080DC1F8: @ 0x080DC1F8
 	ldr r5, _080DC300 @ =gUnk_03005850
 	adds r5, #0xc
 	ldr r0, _080DC304 @ =0x000013EF (Curse of the Masked Beast)
-	bl sub_080F4E18
-	ldr r1, _080DC308 @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r1, _080DC308 @ =gInterfaceTextOffsets
 	mov sb, r1
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
@@ -407503,10 +407503,10 @@ sub_080DC1F8: @ 0x080DC1F8
 	add r1, sb
 	ldr r1, [r1]
 	mov r8, r1
-	ldr r6, _080DC314 @ =gUnk_09DB9C10
+	ldr r6, _080DC314 @ =gInterfaceText
 	add r8, r6
 	ldr r0, _080DC318 @ =0x0000138F (Sebek's Blessing)
-	bl sub_080F4E18
+	bl GetInterfaceTextIdIndex
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -407525,10 +407525,10 @@ sub_080DC1F8: @ 0x080DC1F8
 	strb r0, [r1]
 	ldr r1, [r5, #0xc]
 	mov r0, sp
-	bl sub_080F50F0
+	bl AppendIntAscii
 	mov r0, sp
 	adds r1, r4, #0
-	bl sub_080F506C
+	bl StringAppend
 	movs r0, #0x11
 	movs r1, #2
 	bl sub_080F0BB4
@@ -407598,10 +407598,10 @@ sub_080DC1F8: @ 0x080DC1F8
 	.align 2, 0
 _080DC300: .4byte gUnk_03005850
 _080DC304: .4byte 0x000013EF @ Curse of the Masked Beast
-_080DC308: .4byte gUnk_08000F40
+_080DC308: .4byte gInterfaceTextOffsets
 _080DC30C: .4byte gUnk_02000000
 _080DC310: .4byte 0x00006C2C
-_080DC314: .4byte gUnk_09DB9C10
+_080DC314: .4byte gInterfaceText
 _080DC318: .4byte 0x0000138F @ Sebek's Blessing
 _080DC31C: .4byte gUnk_02006ED0
 _080DC320: .4byte gUnk_09E5F854
@@ -407676,7 +407676,7 @@ sub_080DC378: @ 0x080DC378
 	ldr r1, _080DC3B4 @ =gUnk_09CE824C
 	ldr r1, [r1, #8]
 	movs r2, #0x20
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 _080DC3A2:
 	pop {r4}
 	pop {r0}
@@ -407707,7 +407707,7 @@ sub_080DC3B8: @ 0x080DC3B8
 	ldr r1, _080DC3F4 @ =gUnk_09CE824C
 	ldr r1, [r1, #0x10]
 	movs r2, #0x20
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 _080DC3E2:
 	pop {r4}
 	pop {r0}
@@ -407738,7 +407738,7 @@ sub_080DC3F8: @ 0x080DC3F8
 	ldr r1, _080DC434 @ =gUnk_09CE824C
 	ldr r1, [r1, #0xc]
 	movs r2, #0x20
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 _080DC422:
 	pop {r4}
 	pop {r0}
@@ -407779,7 +407779,7 @@ _080DC442:
 	ldr r1, _080DC488 @ =gUnk_09CE824C
 	ldr r1, [r1, #0x14]
 	movs r2, #0x20
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 _080DC474:
 	pop {r4, r5, r6, r7}
 	pop {r0}
@@ -407867,7 +407867,7 @@ sub_080DC4EC: @ 0x080DC4EC
 	ldr r1, _080DC530 @ =gUnk_09CE824C
 	ldr r1, [r1, #0x1c]
 	movs r2, #0x20
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 _080DC51C:
 	add sp, #4
 	pop {r4}
@@ -407909,7 +407909,7 @@ _080DC562:
 	adds r0, r4, #0
 	movs r1, #0xd0
 	lsls r1, r1, #1
-	bl sub_080F4E98
+	bl MemoryClearHalfWord_Duplicate
 	movs r0, #0x80
 	lsls r0, r0, #3
 	adds r4, r4, r0
@@ -407979,7 +407979,7 @@ sub_080DC5EC: @ 0x080DC5EC
 	adds r0, r0, r1
 	ldr r1, _080DC608 @ =gUnk_09CCD290
 	movs r2, #0x20
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 _080DC600:
 	pop {r0}
 	bx r0
@@ -407995,8 +407995,8 @@ sub_080DC60C: @ 0x080DC60C
 	ldr r0, _080DC64C @ =0x06010000
 	adds r4, r4, r0
 	ldr r0, _080DC650 @ =0x000013F8 (Infinite Dismissal)
-	bl sub_080F4E18
-	ldr r2, _080DC654 @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _080DC654 @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -408012,7 +408012,7 @@ sub_080DC60C: @ 0x080DC60C
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r1, [r1]
-	ldr r0, _080DC660 @ =gUnk_09DB9C10
+	ldr r0, _080DC660 @ =gInterfaceText
 	adds r1, r1, r0
 	adds r0, r4, #0
 	bl sub_080DC558
@@ -408022,10 +408022,10 @@ sub_080DC60C: @ 0x080DC60C
 	.align 2, 0
 _080DC64C: .4byte 0x06010000
 _080DC650: .4byte 0x000013F8 @ Infinite Dismissal
-_080DC654: .4byte gUnk_08000F40
+_080DC654: .4byte gInterfaceTextOffsets
 _080DC658: .4byte gUnk_02000000
 _080DC65C: .4byte 0x00006C2C
-_080DC660: .4byte gUnk_09DB9C10
+_080DC660: .4byte gInterfaceText
 
 	thumb_func_start sub_080DC664
 sub_080DC664: @ 0x080DC664
@@ -408035,8 +408035,8 @@ sub_080DC664: @ 0x080DC664
 	ldr r0, _080DC6A4 @ =0x06010000
 	adds r4, r4, r0
 	ldr r0, _080DC6A8 @ =0x000013F9 (Fairy Box)
-	bl sub_080F4E18
-	ldr r2, _080DC6AC @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _080DC6AC @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -408052,7 +408052,7 @@ sub_080DC664: @ 0x080DC664
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r1, [r1]
-	ldr r0, _080DC6B8 @ =gUnk_09DB9C10
+	ldr r0, _080DC6B8 @ =gInterfaceText
 	adds r1, r1, r0
 	adds r0, r4, #0
 	bl sub_080DC558
@@ -408062,10 +408062,10 @@ sub_080DC664: @ 0x080DC664
 	.align 2, 0
 _080DC6A4: .4byte 0x06010000
 _080DC6A8: .4byte 0x000013F9 @ Fairy Box
-_080DC6AC: .4byte gUnk_08000F40
+_080DC6AC: .4byte gInterfaceTextOffsets
 _080DC6B0: .4byte gUnk_02000000
 _080DC6B4: .4byte 0x00006C2C
-_080DC6B8: .4byte gUnk_09DB9C10
+_080DC6B8: .4byte gInterfaceText
 
 	thumb_func_start sub_080DC6BC
 sub_080DC6BC: @ 0x080DC6BC
@@ -408085,8 +408085,8 @@ sub_080DC6BC: @ 0x080DC6BC
 	cmp r0, #0
 	bne _080DC70C
 	ldr r0, _080DC6FC @ =0x000013F4 (Mask of Brutality)
-	bl sub_080F4E18
-	ldr r2, _080DC700 @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _080DC700 @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -408099,7 +408099,7 @@ sub_080DC6BC: @ 0x080DC6BC
 	.align 2, 0
 _080DC6F8: .4byte gUnk_03005850
 _080DC6FC: .4byte 0x000013F4 @ Mask of Brutality
-_080DC700: .4byte gUnk_08000F40
+_080DC700: .4byte gInterfaceTextOffsets
 _080DC704: .4byte gUnk_02000000
 _080DC708: .4byte 0x00006C2C
 _080DC70C:
@@ -408111,8 +408111,8 @@ _080DC70C:
 	cmp r1, r0
 	bhs _080DC75C
 	ldr r0, _080DC74C @ =0x000013F2 (Mask of Restrict)
-	bl sub_080F4E18
-	ldr r2, _080DC750 @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _080DC750 @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -408128,20 +408128,20 @@ _080DC730:
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r1, [r1]
-	ldr r0, _080DC758 @ =gUnk_09DB9C10
+	ldr r0, _080DC758 @ =gInterfaceText
 	adds r2, r1, r0
 	b _080DC786
 	.align 2, 0
 _080DC744: .4byte gUnk_02000000
 _080DC748: .4byte 0x00006C38
 _080DC74C: .4byte 0x000013F2 @ Mask of Restrict
-_080DC750: .4byte gUnk_08000F40
+_080DC750: .4byte gInterfaceTextOffsets
 _080DC754: .4byte 0x00006C2C
-_080DC758: .4byte gUnk_09DB9C10
+_080DC758: .4byte gInterfaceText
 _080DC75C:
 	ldr r0, _080DC808 @ =0x000013F3 (Mask of the Accursed)
-	bl sub_080F4E18
-	ldr r2, _080DC80C @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _080DC80C @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -408156,7 +408156,7 @@ _080DC75C:
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r1, [r1]
-	ldr r0, _080DC814 @ =gUnk_09DB9C10
+	ldr r0, _080DC814 @ =gInterfaceText
 	adds r2, r1, r0
 	movs r7, #1
 _080DC786:
@@ -408166,8 +408166,8 @@ _080DC786:
 	cmp r7, #1
 	bne _080DC7F8
 	ldr r0, _080DC81C @ =0x000007D2
-	bl sub_080F4E18
-	ldr r1, _080DC80C @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r1, _080DC80C @ =gInterfaceTextOffsets
 	mov r8, r1
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
@@ -408184,7 +408184,7 @@ _080DC786:
 	lsls r1, r1, #2
 	add r1, r8
 	ldr r0, [r1]
-	ldr r6, _080DC814 @ =gUnk_09DB9C10
+	ldr r6, _080DC814 @ =gInterfaceText
 	adds r2, r0, r6
 	mov r1, sb
 	lsls r0, r1, #5
@@ -408193,7 +408193,7 @@ _080DC786:
 	adds r1, r2, #0
 	bl sub_080DC558
 	ldr r0, _080DC828 @ =0x000007D3
-	bl sub_080F4E18
+	bl GetInterfaceTextIdIndex
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -408223,9 +408223,9 @@ _080DC7F8:
 	bx r1
 	.align 2, 0
 _080DC808: .4byte 0x000013F3 @ Mask of the Accursed
-_080DC80C: .4byte gUnk_08000F40
+_080DC80C: .4byte gInterfaceTextOffsets
 _080DC810: .4byte 0x00006C2C
-_080DC814: .4byte gUnk_09DB9C10
+_080DC814: .4byte gInterfaceText
 _080DC818: .4byte 0x0010001E
 _080DC81C: .4byte 0x000007D2
 _080DC820: .4byte gUnk_02000000
@@ -408239,8 +408239,8 @@ sub_080DC82C: @ 0x080DC82C
 	lsls r0, r0, #4
 	adds r0, r0, r1
 	ldrh r0, [r0, #8]
-	bl sub_080F4E18
-	ldr r2, _080DC870 @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _080DC870 @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -408256,7 +408256,7 @@ sub_080DC82C: @ 0x080DC82C
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r2, [r1]
-	ldr r0, _080DC87C @ =gUnk_09DB9C10
+	ldr r0, _080DC87C @ =gInterfaceText
 	adds r2, r2, r0
 	ldr r0, _080DC880 @ =0x0010001E
 	movs r1, #0
@@ -408265,10 +408265,10 @@ sub_080DC82C: @ 0x080DC82C
 	bx r0
 	.align 2, 0
 _080DC86C: .4byte gUnk_09E5E2E8
-_080DC870: .4byte gUnk_08000F40
+_080DC870: .4byte gInterfaceTextOffsets
 _080DC874: .4byte gUnk_02000000
 _080DC878: .4byte 0x00006C2C
-_080DC87C: .4byte gUnk_09DB9C10
+_080DC87C: .4byte gInterfaceText
 _080DC880: .4byte 0x0010001E
 
 	thumb_func_start sub_080DC884
@@ -408322,8 +408322,8 @@ sub_080DC8D0: @ 0x080DC8D0
 	ldr r0, _080DC910 @ =0x06010000
 	adds r4, r4, r0
 	ldr r0, _080DC914 @ =0x000013F1 (None)
-	bl sub_080F4E18
-	ldr r2, _080DC918 @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _080DC918 @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -408339,7 +408339,7 @@ sub_080DC8D0: @ 0x080DC8D0
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r1, [r1]
-	ldr r0, _080DC924 @ =gUnk_09DB9C10
+	ldr r0, _080DC924 @ =gInterfaceText
 	adds r1, r1, r0
 	adds r0, r4, #0
 	bl sub_080DC558
@@ -408349,10 +408349,10 @@ sub_080DC8D0: @ 0x080DC8D0
 	.align 2, 0
 _080DC910: .4byte 0x06010000
 _080DC914: .4byte 0x000013F1 @ None
-_080DC918: .4byte gUnk_08000F40
+_080DC918: .4byte gInterfaceTextOffsets
 _080DC91C: .4byte gUnk_02000000
 _080DC920: .4byte 0x00006C2C
-_080DC924: .4byte gUnk_09DB9C10
+_080DC924: .4byte gInterfaceText
 
 	thumb_func_start sub_080DC928
 sub_080DC928: @ 0x080DC928
@@ -408362,8 +408362,8 @@ sub_080DC928: @ 0x080DC928
 	ldr r0, _080DC968 @ =0x06010000
 	adds r4, r4, r0
 	ldr r0, _080DC96C @ =0x00001390 (Anti-Spell Fragrance)
-	bl sub_080F4E18
-	ldr r2, _080DC970 @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _080DC970 @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -408379,7 +408379,7 @@ sub_080DC928: @ 0x080DC928
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r1, [r1]
-	ldr r0, _080DC97C @ =gUnk_09DB9C10
+	ldr r0, _080DC97C @ =gInterfaceText
 	adds r1, r1, r0
 	adds r0, r4, #0
 	bl sub_080DC558
@@ -408389,10 +408389,10 @@ sub_080DC928: @ 0x080DC928
 	.align 2, 0
 _080DC968: .4byte 0x06010000
 _080DC96C: .4byte 0x00001390 @ Anti-Spell Fragrance
-_080DC970: .4byte gUnk_08000F40
+_080DC970: .4byte gInterfaceTextOffsets
 _080DC974: .4byte gUnk_02000000
 _080DC978: .4byte 0x00006C2C
-_080DC97C: .4byte gUnk_09DB9C10
+_080DC97C: .4byte gInterfaceText
 
 	thumb_func_start sub_080DC980
 sub_080DC980: @ 0x080DC980
@@ -408402,8 +408402,8 @@ sub_080DC980: @ 0x080DC980
 	ldr r0, _080DC9C0 @ =0x06010000
 	adds r4, r4, r0
 	ldr r0, _080DC9C4 @ =0x000013FA (Torrential Tribute)
-	bl sub_080F4E18
-	ldr r2, _080DC9C8 @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _080DC9C8 @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -408419,7 +408419,7 @@ sub_080DC980: @ 0x080DC980
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r1, [r1]
-	ldr r0, _080DC9D4 @ =gUnk_09DB9C10
+	ldr r0, _080DC9D4 @ =gInterfaceText
 	adds r1, r1, r0
 	adds r0, r4, #0
 	bl sub_080DC558
@@ -408429,10 +408429,10 @@ sub_080DC980: @ 0x080DC980
 	.align 2, 0
 _080DC9C0: .4byte 0x06010000
 _080DC9C4: .4byte 0x000013FA @ Torrential Tribute
-_080DC9C8: .4byte gUnk_08000F40
+_080DC9C8: .4byte gInterfaceTextOffsets
 _080DC9CC: .4byte gUnk_02000000
 _080DC9D0: .4byte 0x00006C2C
-_080DC9D4: .4byte gUnk_09DB9C10
+_080DC9D4: .4byte gInterfaceText
 
 	thumb_func_start sub_080DC9D8
 sub_080DC9D8: @ 0x080DC9D8
@@ -408442,8 +408442,8 @@ sub_080DC9D8: @ 0x080DC9D8
 	ldr r0, _080DCA18 @ =0x06010000
 	adds r4, r4, r0
 	ldr r0, _080DCA1C @ =0x000013FB (Insect Monster Token)
-	bl sub_080F4E18
-	ldr r2, _080DCA20 @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _080DCA20 @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -408459,7 +408459,7 @@ sub_080DC9D8: @ 0x080DC9D8
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r1, [r1]
-	ldr r0, _080DCA2C @ =gUnk_09DB9C10
+	ldr r0, _080DCA2C @ =gInterfaceText
 	adds r1, r1, r0
 	adds r0, r4, #0
 	bl sub_080DC558
@@ -408469,10 +408469,10 @@ sub_080DC9D8: @ 0x080DC9D8
 	.align 2, 0
 _080DCA18: .4byte 0x06010000
 _080DCA1C: .4byte 0x000013FB @ Insect Monster Token
-_080DCA20: .4byte gUnk_08000F40
+_080DCA20: .4byte gInterfaceTextOffsets
 _080DCA24: .4byte gUnk_02000000
 _080DCA28: .4byte 0x00006C2C
-_080DCA2C: .4byte gUnk_09DB9C10
+_080DCA2C: .4byte gInterfaceText
 
 	thumb_func_start sub_080DCA30
 sub_080DCA30: @ 0x080DCA30
@@ -408482,8 +408482,8 @@ sub_080DCA30: @ 0x080DCA30
 	ldr r0, _080DCA70 @ =0x06010000
 	adds r4, r4, r0
 	ldr r0, _080DCA74 @ =0x000007EE
-	bl sub_080F4E18
-	ldr r2, _080DCA78 @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _080DCA78 @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -408499,7 +408499,7 @@ sub_080DCA30: @ 0x080DCA30
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r1, [r1]
-	ldr r0, _080DCA84 @ =gUnk_09DB9C10
+	ldr r0, _080DCA84 @ =gInterfaceText
 	adds r1, r1, r0
 	adds r0, r4, #0
 	bl sub_080DC558
@@ -408509,10 +408509,10 @@ sub_080DCA30: @ 0x080DCA30
 	.align 2, 0
 _080DCA70: .4byte 0x06010000
 _080DCA74: .4byte 0x000007EE
-_080DCA78: .4byte gUnk_08000F40
+_080DCA78: .4byte gInterfaceTextOffsets
 _080DCA7C: .4byte gUnk_02000000
 _080DCA80: .4byte 0x00006C2C
-_080DCA84: .4byte gUnk_09DB9C10
+_080DCA84: .4byte gInterfaceText
 
 	thumb_func_start sub_080DCA88
 sub_080DCA88: @ 0x080DCA88
@@ -408522,8 +408522,8 @@ sub_080DCA88: @ 0x080DCA88
 	ldr r0, _080DCAC8 @ =0x06010000
 	adds r4, r4, r0
 	ldr r0, _080DCACC @ =0x000007EF
-	bl sub_080F4E18
-	ldr r2, _080DCAD0 @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _080DCAD0 @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -408539,7 +408539,7 @@ sub_080DCA88: @ 0x080DCA88
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r1, [r1]
-	ldr r0, _080DCADC @ =gUnk_09DB9C10
+	ldr r0, _080DCADC @ =gInterfaceText
 	adds r1, r1, r0
 	adds r0, r4, #0
 	bl sub_080DC558
@@ -408549,10 +408549,10 @@ sub_080DCA88: @ 0x080DCA88
 	.align 2, 0
 _080DCAC8: .4byte 0x06010000
 _080DCACC: .4byte 0x000007EF
-_080DCAD0: .4byte gUnk_08000F40
+_080DCAD0: .4byte gInterfaceTextOffsets
 _080DCAD4: .4byte gUnk_02000000
 _080DCAD8: .4byte 0x00006C2C
-_080DCADC: .4byte gUnk_09DB9C10
+_080DCADC: .4byte gInterfaceText
 
 	thumb_func_start sub_080DCAE0
 sub_080DCAE0: @ 0x080DCAE0
@@ -408690,7 +408690,7 @@ _080DCB74:
 	adds r1, #0x80
 	adds r0, r4, #0
 	movs r2, #0x20
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 	adds r0, r4, #0
 	adds r0, #0x20
 	lsls r2, r5, #0x10
@@ -408707,7 +408707,7 @@ _080DCB74:
 	subs r2, #1
 	lsls r2, r2, #5
 	adds r1, r4, #0
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 	lsls r5, r5, #5
 	adds r0, r6, #0
 	muls r0, r5, r0
@@ -408715,18 +408715,18 @@ _080DCB74:
 	adds r0, r4, #0
 	mov r1, r8
 	movs r2, #0x80
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 	movs r5, #0xa0
 	add r8, r5
 	adds r4, #0x80
 	adds r0, r4, #0
 	mov r1, r8
 	movs r2, #0x80
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 	adds r4, #0x80
 	adds r0, r4, #0
 	movs r1, #0x20
-	bl sub_080F4E98
+	bl MemoryClearHalfWord_Duplicate
 	mov r6, sl
 	ldrh r6, [r6, #2]
 	lsls r0, r6, #0x12
@@ -408934,14 +408934,14 @@ _080DCD98:
 	adds r0, r7, #0
 	adds r1, r6, #0
 	movs r2, #0x20
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 	adds r6, #0x20
 	ldr r1, _080DCEC8 @ =0x06010020
 	adds r7, r4, r1
 	adds r0, r7, #0
 	adds r1, r6, #0
 	movs r2, #0x20
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 	ldr r3, _080DCECC @ =0x06010040
 	adds r4, r4, r3
 	mov r0, sl
@@ -408955,7 +408955,7 @@ _080DCD98:
 	adds r0, r4, #0
 	adds r1, r7, #0
 	adds r2, r5, #0
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 	adds r6, #0x20
 	mov r4, r8
 	subs r4, #2
@@ -408964,7 +408964,7 @@ _080DCD98:
 	adds r0, r7, #0
 	adds r1, r6, #0
 	movs r2, #0x20
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 	adds r6, #0x20
 	movs r0, #0x21
 	mov r1, r8
@@ -408974,24 +408974,24 @@ _080DCD98:
 	adds r0, r7, #0
 	adds r1, r6, #0
 	movs r2, #0x20
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 	adds r6, #0x20
 	adds r7, #0x20
 	adds r0, r7, #0
 	adds r1, r6, #0
 	movs r2, #0x20
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 	adds r0, r7, #0
 	adds r0, #0x20
 	adds r1, r7, #0
 	adds r2, r5, #0
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 	adds r6, #0x20
 	adds r7, r7, r4
 	adds r0, r7, #0
 	adds r1, r6, #0
 	movs r2, #0x20
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 	mov r0, r8
 	subs r0, #1
 	lsls r0, r0, #5
@@ -409012,7 +409012,7 @@ _080DCE4E:
 	adds r1, r7, #0
 	mov r3, r8
 	lsls r2, r3, #5
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 	adds r7, r4, #0
 	adds r5, #1
 	cmp r5, sb
@@ -409025,13 +409025,13 @@ _080DCE68:
 	adds r0, r7, #0
 	adds r1, r6, #0
 	movs r2, #0x20
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 	adds r6, #0x20
 	adds r7, #0x20
 	adds r0, r7, #0
 	adds r1, r6, #0
 	movs r2, #0x20
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 	adds r0, r7, #0
 	adds r0, #0x20
 	mov r1, sl
@@ -409039,7 +409039,7 @@ _080DCE68:
 	subs r2, r4, #3
 	lsls r2, r2, #5
 	adds r1, r7, #0
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 	adds r6, #0x20
 	subs r4, #2
 	lsls r4, r4, #5
@@ -409047,7 +409047,7 @@ _080DCE68:
 	adds r0, r7, #0
 	adds r1, r6, #0
 	movs r2, #0x20
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 _080DCEAC:
 	pop {r3, r4, r5}
 	mov r8, r3
@@ -409679,12 +409679,12 @@ sub_080DD378: @ 0x080DD378
 	ldr r1, [r1]
 	adds r0, r4, #0
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	adds r4, #2
 	ldr r1, _080DD3A4 @ =gUnk_09CCD292
 	adds r0, r4, #0
 	movs r2, #0x10
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 	pop {r4}
 	pop {r0}
 	bx r0
@@ -409706,7 +409706,7 @@ sub_080DD3A8: @ 0x080DD3A8
 	str r5, [r0]
 	adds r0, r5, #0
 	movs r1, #0x28
-	bl sub_080F4E98
+	bl MemoryClearHalfWord_Duplicate
 	movs r0, #0x3f
 	ldrb r2, [r5, #3]
 	ands r0, r2
@@ -410183,7 +410183,7 @@ sub_080DD748: @ 0x080DD748
 	lsls r0, r0, #0x13
 	movs r1, #0xc0
 	lsls r1, r1, #9
-	bl sub_080F4E98
+	bl MemoryClearHalfWord_Duplicate
 	pop {r0}
 	bx r0
 
@@ -410914,7 +410914,7 @@ sub_080DDCC4: @ 0x080DDCC4
 	movs r1, #0xe5
 	lsls r1, r1, #3
 	adds r0, r4, #0
-	bl sub_080F4E98
+	bl MemoryClearHalfWord_Duplicate
 	ldr r0, _080DDD0C @ =gUnk_02035FB0
 	bl sub_080F7674
 	bl sub_080DD748
@@ -411078,7 +411078,7 @@ sub_080DDDF0: @ 0x080DDDF0
 	adds r4, #0xc
 	adds r0, r4, #0
 	movs r1, #8
-	bl sub_080F4E98
+	bl MemoryClearHalfWord_Duplicate
 	bl sub_080DD748
 	movs r0, #0
 	strh r0, [r4, #2]
@@ -411159,7 +411159,7 @@ _080DDE92:
 	lsls r0, r0, #0x13
 	ldr r1, _080DDED4 @ =gUnk_09CCD290
 	movs r2, #0x20
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 	bl sub_080F57D0
 	movs r0, #1
 	pop {r4}
@@ -411387,13 +411387,13 @@ _080DE02C:
 	adds r1, r1, r2
 	ldr r1, [r1]
 	movs r2, #0x20
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 	ldr r0, _080DE05C @ =0x05000202
 	adds r4, r4, r0
 	ldr r1, _080DE060 @ =gUnk_09CCD292
 	adds r0, r4, #0
 	movs r2, #0x10
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 	pop {r4}
 	pop {r0}
 	bx r0
@@ -411715,7 +411715,7 @@ sub_080DE27C: @ 0x080DE27C
 	ldr r1, _080DE2B8 @ =gUnk_09CEB934
 	ldr r1, [r1]
 	movs r2, #0x40
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -411792,8 +411792,8 @@ _080DE2D8:
 	adds r3, r4, #0
 	bl sub_080F2C8C
 	ldr r0, _080DE3D8 @ =0x0000138F (Sebek's Blessing)
-	bl sub_080F4E18
-	ldr r2, _080DE3DC @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _080DE3DC @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -411808,7 +411808,7 @@ _080DE2D8:
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r4, [r1]
-	ldr r0, _080DE3E4 @ =gUnk_09DB9C10
+	ldr r0, _080DE3E4 @ =gInterfaceText
 	adds r4, r4, r0
 	movs r0, #0x38
 	movs r1, #3
@@ -411823,7 +411823,7 @@ _080DE2D8:
 	movs r1, #0xa0
 	lsls r1, r1, #2
 	ldr r0, [sp]
-	bl sub_080F4E98
+	bl MemoryClearHalfWord_Duplicate
 	ldr r0, [sp]
 	movs r1, #0
 	bl sub_080F2E4C
@@ -411858,9 +411858,9 @@ _080DE3CC: .4byte gUnk_02006ED0
 _080DE3D0: .4byte gUnk_09E5F854
 _080DE3D4: .4byte 0x00008008
 _080DE3D8: .4byte 0x0000138F @ Sebek's Blessing
-_080DE3DC: .4byte gUnk_08000F40
+_080DE3DC: .4byte gInterfaceTextOffsets
 _080DE3E0: .4byte 0x00006C2C
-_080DE3E4: .4byte gUnk_09DB9C10
+_080DE3E4: .4byte gInterfaceText
 
 	thumb_func_start sub_080DE3E8
 sub_080DE3E8: @ 0x080DE3E8
@@ -411904,8 +411904,8 @@ sub_080DE3E8: @ 0x080DE3E8
 	movs r1, #2
 	bl sub_080F0BB4
 	ldr r0, _080DE72C @ =0x00001389 (Windstorm of Etaqua)
-	bl sub_080F4E18
-	ldr r2, _080DE730 @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _080DE730 @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -411921,7 +411921,7 @@ sub_080DE3E8: @ 0x080DE3E8
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r1, [r1]
-	ldr r0, _080DE73C @ =gUnk_09DB9C10
+	ldr r0, _080DE73C @ =gInterfaceText
 	adds r1, r1, r0
 	mov sb, r1
 	mov r0, sb
@@ -411945,7 +411945,7 @@ sub_080DE3E8: @ 0x080DE3E8
 	lsls r4, r4, #4
 	ldr r0, [sp]
 	adds r1, r4, #0
-	bl sub_080F4E98
+	bl MemoryClearHalfWord_Duplicate
 	ldr r0, [sp]
 	movs r1, #0
 	bl sub_080F2E4C
@@ -412003,7 +412003,7 @@ _080DE4CA:
 	bl sub_080F2C4C
 	ldr r0, [sp]
 	mov r1, sb
-	bl sub_080F4E98
+	bl MemoryClearHalfWord_Duplicate
 	ldr r0, [sp]
 	movs r1, #0
 	bl sub_080F2E4C
@@ -412063,8 +412063,8 @@ _080DE53E:
 	ldr r0, [r1]
 	str r0, [r2, #4]
 	ldr r0, _080DE74C @ =0x00001007 (Dragon Zombie)
-	bl sub_080F4E18
-	ldr r2, _080DE730 @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _080DE730 @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -412080,7 +412080,7 @@ _080DE53E:
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r1, [r1]
-	ldr r0, _080DE73C @ =gUnk_09DB9C10
+	ldr r0, _080DE73C @ =gInterfaceText
 	adds r1, r1, r0
 	mov sb, r1
 	mov r0, sb
@@ -412116,7 +412116,7 @@ _080DE53E:
 	lsls r5, r5, #2
 	ldr r0, [sp]
 	adds r1, r5, #0
-	bl sub_080F4E98
+	bl MemoryClearHalfWord_Duplicate
 	ldr r0, [sp]
 	movs r1, #0
 	bl sub_080F2E4C
@@ -412149,8 +412149,8 @@ _080DE62A:
 	cmp r6, #0
 	bge _080DE628
 	ldr r0, _080DE754 @ =0x00001008 (Clown Zombie)
-	bl sub_080F4E18
-	ldr r2, _080DE730 @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _080DE730 @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -412166,7 +412166,7 @@ _080DE62A:
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r1, [r1]
-	ldr r0, _080DE73C @ =gUnk_09DB9C10
+	ldr r0, _080DE73C @ =gInterfaceText
 	adds r1, r1, r0
 	mov sb, r1
 	mov r0, sb
@@ -412201,7 +412201,7 @@ _080DE62A:
 	movs r1, #0xa8
 	lsls r1, r1, #2
 	ldr r0, [sp]
-	bl sub_080F4E98
+	bl MemoryClearHalfWord_Duplicate
 	ldr r0, [sp]
 	movs r1, #0
 	bl sub_080F2E4C
@@ -412242,7 +412242,7 @@ _080DE6DC:
 	lsls r0, r0, #0x13
 	ldr r1, _080DE760 @ =gUnk_09CCD290
 	movs r2, #0x20
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 	add sp, #4
 	pop {r3, r4, r5}
 	mov r8, r3
@@ -412256,10 +412256,10 @@ _080DE720: .4byte 0x06000020
 _080DE724: .4byte gUnk_02006ED0
 _080DE728: .4byte gUnk_09E5F854
 _080DE72C: .4byte 0x00001389 @ Windstorm of Etaqua
-_080DE730: .4byte gUnk_08000F40
+_080DE730: .4byte gInterfaceTextOffsets
 _080DE734: .4byte gUnk_02000000
 _080DE738: .4byte 0x00006C2C
-_080DE73C: .4byte gUnk_09DB9C10
+_080DE73C: .4byte gInterfaceText
 _080DE740: .4byte 0x00000107
 _080DE744: .4byte 0x0600F800
 _080DE748: .4byte 0x0000810F
@@ -412299,7 +412299,7 @@ sub_080DE764: @ 0x080DE764
 	muls r1, r0, r1
 	lsls r1, r1, #3
 	ldr r0, _080DE918 @ =gUnk_0200AF20
-	bl sub_080F4E98
+	bl MemoryClearHalfWord_Duplicate
 	lsls r4, r4, #4
 	movs r2, #7
 	ldr r1, [sp, #4]
@@ -412573,7 +412573,7 @@ _080DE982:
 	bls _080DE982
 	adds r0, r5, #0
 	movs r1, #0x12
-	bl sub_080F4E98
+	bl MemoryClearHalfWord_Duplicate
 	adds r5, #0x12
 	cmp r4, #0x11
 	bls _080DE978
@@ -412582,7 +412582,7 @@ _080DE982:
 _080DE9AE:
 	adds r0, r5, #0
 	movs r1, #0x20
-	bl sub_080F4E98
+	bl MemoryClearHalfWord_Duplicate
 	adds r4, #1
 	cmp r4, #0x1f
 	bls _080DE9AE
@@ -412902,7 +412902,7 @@ _080DEC0E:
 	adds r1, r0, #0
 	adds r0, r4, #0
 	movs r2, #0x20
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 	b _080DF294
 	.align 2, 0
 _080DEC24: .4byte 0x050000A0
@@ -413052,7 +413052,7 @@ _080DED2A:
 	adds r1, r1, r2
 	ldr r0, _080DED6C @ =0x05000020
 	movs r2, #0x80
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 	ldr r3, _080DED70 @ =gUnk_0300585C
 	ldrh r0, [r3, #2]
 	adds r0, #1
@@ -413323,7 +413323,7 @@ _080DEF52:
 	adds r4, r4, r1
 	adds r1, r4, #0
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	movs r4, #0
 	cmp r4, r5
 	blt _080DEF8C
@@ -413376,7 +413376,7 @@ _080DEFE0:
 	ldr r1, _080DF034 @ =gUnk_0984DE6C
 _080DEFFA:
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	cmp r4, #0
 	bne _080DF006
 	b _080DF294
@@ -413392,7 +413392,7 @@ _080DF006:
 	ldr r0, _080DF044 @ =0x050000E0
 	ldr r1, _080DF048 @ =gUnk_0984F52C
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	b _080DF294
 	.align 2, 0
 _080DF024: .4byte gUnk_0984DCEC
@@ -413602,7 +413602,7 @@ _080DF1D8:
 	ldr r0, _080DF20C @ =gUnk_09E5F71E
 	adds r4, r4, r0
 	adds r0, r4, #0
-	bl sub_080F54E0
+	bl StringLength
 	adds r7, r0, #0
 	subs r0, r7, #1
 	adds r4, r4, r0
@@ -413647,7 +413647,7 @@ _080DF232:
 	ldr r0, _080DF268 @ =gUnk_09E5F726
 	adds r4, r4, r0
 	adds r0, r4, #0
-	bl sub_080F54E0
+	bl StringLength
 	adds r7, r0, #0
 	subs r0, r7, #1
 	adds r4, r4, r0
@@ -413912,8 +413912,8 @@ sub_080DF3F0: @ 0x080DF3F0
 	ldr r0, [r0]
 	str r0, [r4, #4]
 	ldr r0, _080DF518 @ =0x00001390 (Anti-Spell Fragrance)
-	bl sub_080F4E18
-	ldr r2, _080DF51C @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _080DF51C @ =gInterfaceTextOffsets
 	mov sl, r2
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
@@ -413932,7 +413932,7 @@ sub_080DF3F0: @ 0x080DF3F0
 	lsls r1, r1, #2
 	add r1, sl
 	ldr r0, [r1]
-	ldr r3, _080DF528 @ =gUnk_09DB9C10
+	ldr r3, _080DF528 @ =gInterfaceText
 	adds r7, r0, r3
 	movs r2, #0x84
 	lsls r2, r2, #1
@@ -413970,7 +413970,7 @@ sub_080DF3F0: @ 0x080DF3F0
 	mov sb, sl
 	mov sl, r8
 	ldr r6, _080DF534 @ =0x06012800
-	ldr r0, _080DF528 @ =gUnk_09DB9C10
+	ldr r0, _080DF528 @ =gInterfaceText
 	mov r8, r0
 _080DF4E2:
 	ldr r0, _080DF538 @ =gUnk_09CEBF78
@@ -413994,10 +413994,10 @@ _080DF50C: .4byte 0x06011200
 _080DF510: .4byte gUnk_02006ED0
 _080DF514: .4byte gUnk_09E5F854
 _080DF518: .4byte 0x00001390 @ Anti-Spell Fragrance
-_080DF51C: .4byte gUnk_08000F40
+_080DF51C: .4byte gInterfaceTextOffsets
 _080DF520: .4byte gUnk_02000000
 _080DF524: .4byte 0x00006C2C
-_080DF528: .4byte gUnk_09DB9C10
+_080DF528: .4byte gInterfaceText
 _080DF52C: .4byte 0x00000107
 _080DF530: .4byte 0x06011260
 _080DF534: .4byte 0x06012800
@@ -414015,7 +414015,7 @@ _080DF548: .4byte 0x000007D3
 _080DF54C:
 	ldr r0, _080DF5C0 @ =0x000007EE
 _080DF54E:
-	bl sub_080F4E18
+	bl GetInterfaceTextIdIndex
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -414787,7 +414787,7 @@ sub_080DFB50: @ 0x080DFB50
 	movs r1, #0x9c
 	lsls r1, r1, #1
 	adds r0, r6, #0
-	bl sub_080F4E98
+	bl MemoryClearHalfWord_Duplicate
 	bl sub_080DD748
 	movs r2, #0
 	adds r7, r4, #0
@@ -415975,8 +415975,8 @@ sub_080E049C: @ 0x080E049C
 	push {r4, lr}
 	ldr r4, _080E04F4 @ =gUnk_03005850
 	ldr r0, _080E04F8 @ =0x0000138A (Valkyrion the Magna Warrior)
-	bl sub_080F4E18
-	ldr r2, _080E04FC @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _080E04FC @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -415992,7 +415992,7 @@ sub_080E049C: @ 0x080E049C
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r2, [r1]
-	ldr r0, _080E0508 @ =gUnk_09DB9C10
+	ldr r0, _080E0508 @ =gInterfaceText
 	adds r2, r2, r0
 	ldr r0, _080E050C @ =0x0014001E
 	movs r1, #0
@@ -416016,10 +416016,10 @@ sub_080E049C: @ 0x080E049C
 	.align 2, 0
 _080E04F4: .4byte gUnk_03005850
 _080E04F8: .4byte 0x0000138A @ Valkyrion the Magna Warrior
-_080E04FC: .4byte gUnk_08000F40
+_080E04FC: .4byte gInterfaceTextOffsets
 _080E0500: .4byte gUnk_02000000
 _080E0504: .4byte 0x00006C2C
-_080E0508: .4byte gUnk_09DB9C10
+_080E0508: .4byte gInterfaceText
 _080E050C: .4byte 0x0014001E
 
 	thumb_func_start sub_080E0510
@@ -416332,8 +416332,8 @@ sub_080E0758: @ 0x080E0758
 	adds r7, r0, #0
 	adds r7, #0xc
 	ldr r0, _080E07C4 @ =0x0000138A (Valkyrion the Magna Warrior)
-	bl sub_080F4E18
-	ldr r6, _080E07C8 @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r6, _080E07C8 @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -416349,7 +416349,7 @@ sub_080E0758: @ 0x080E0758
 	lsls r1, r1, #2
 	adds r1, r1, r6
 	ldr r0, [r1]
-	ldr r5, _080E07D4 @ =gUnk_09DB9C10
+	ldr r5, _080E07D4 @ =gInterfaceText
 	adds r2, r0, r5
 	ldrh r1, [r7, #0x1a]
 	movs r0, #1
@@ -416358,7 +416358,7 @@ sub_080E0758: @ 0x080E0758
 	cmp r0, #0
 	beq _080E07DC
 	ldr r0, _080E07D8 @ =0x0000138B (Alligator's Sword Dragon)
-	bl sub_080F4E18
+	bl GetInterfaceTextIdIndex
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -416376,10 +416376,10 @@ sub_080E0758: @ 0x080E0758
 	.align 2, 0
 _080E07C0: .4byte gUnk_03005850
 _080E07C4: .4byte 0x0000138A @ Valkyrion the Magna Warrior
-_080E07C8: .4byte gUnk_08000F40
+_080E07C8: .4byte gInterfaceTextOffsets
 _080E07CC: .4byte gUnk_02000000
 _080E07D0: .4byte 0x00006C2C
-_080E07D4: .4byte gUnk_09DB9C10
+_080E07D4: .4byte gInterfaceText
 _080E07D8: .4byte 0x0000138B @ Alligator's Sword Dragon
 _080E07DC:
 	movs r0, #2
@@ -416387,7 +416387,7 @@ _080E07DC:
 	cmp r0, #0
 	beq _080E0816
 	ldr r0, _080E0848 @ =0x0000138D (Ring of Destruction)
-	bl sub_080F4E18
+	bl GetInterfaceTextIdIndex
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -416407,7 +416407,7 @@ _080E07DC:
 	str r0, [sp]
 	adds r0, r4, #0
 	movs r3, #0
-	bl sub_080F528C
+	bl StringCopyFormat_DWithAtDirective
 	adds r2, r4, #0
 _080E0816:
 	ldr r0, _080E0850 @ =0x0014001E
@@ -416485,8 +416485,8 @@ sub_080E08A4: @ 0x080E08A4
 	adds r5, r6, #0
 	adds r5, #0xc
 	ldr r0, _080E091C @ =0x0000138C (Vorse Raider)
-	bl sub_080F4E18
-	ldr r2, _080E0920 @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _080E0920 @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -416502,7 +416502,7 @@ sub_080E08A4: @ 0x080E08A4
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r1, [r1]
-	ldr r0, _080E092C @ =gUnk_09DB9C10
+	ldr r0, _080E092C @ =gInterfaceText
 	adds r1, r1, r0
 	ldr r4, _080E0930 @ =gUnk_02035EB0
 	ldr r2, [r5, #0x1c]
@@ -416510,7 +416510,7 @@ sub_080E08A4: @ 0x080E08A4
 	str r0, [sp]
 	adds r0, r4, #0
 	movs r3, #1
-	bl sub_080F528C
+	bl StringCopyFormat_DWithAtDirective
 	ldr r0, _080E0934 @ =0x0014001E
 	movs r1, #0
 	adds r2, r4, #0
@@ -416535,10 +416535,10 @@ sub_080E08A4: @ 0x080E08A4
 	.align 2, 0
 _080E0918: .4byte gUnk_03005850
 _080E091C: .4byte 0x0000138C @ Vorse Raider
-_080E0920: .4byte gUnk_08000F40
+_080E0920: .4byte gInterfaceTextOffsets
 _080E0924: .4byte gUnk_02000000
 _080E0928: .4byte 0x00006C2C
-_080E092C: .4byte gUnk_09DB9C10
+_080E092C: .4byte gInterfaceText
 _080E0930: .4byte gUnk_02035EB0
 _080E0934: .4byte 0x0014001E
 
@@ -417164,8 +417164,8 @@ _080E0DD4:
 	bl sub_080DE2BC
 	ldr r5, _080E0EF0 @ =gUnk_02035EB0
 	ldr r0, _080E0EF4 @ =0x0000138E (Aqua Chorus)
-	bl sub_080F4E18
-	ldr r3, _080E0EF8 @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r3, _080E0EF8 @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r2, r0, #1
@@ -417180,7 +417180,7 @@ _080E0DD4:
 	lsls r2, r2, #2
 	adds r2, r2, r3
 	ldr r4, [r2]
-	ldr r0, _080E0F00 @ =gUnk_09DB9C10
+	ldr r0, _080E0F00 @ =gInterfaceText
 	adds r4, r4, r0
 	mov r2, sb
 	ldrh r0, [r2, #0x18]
@@ -417189,7 +417189,7 @@ _080E0DD4:
 	adds r2, r0, #0
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_080F5148
+	bl StringCopyFormat_S
 	ldr r0, _080E0F04 @ =0x0014001E
 	movs r1, #0
 	adds r2, r5, #0
@@ -417240,9 +417240,9 @@ _080E0EE8: .4byte gUnk_02000006
 _080E0EEC: .4byte 0x00006C32
 _080E0EF0: .4byte gUnk_02035EB0
 _080E0EF4: .4byte 0x0000138E @ Aqua Chorus
-_080E0EF8: .4byte gUnk_08000F40
+_080E0EF8: .4byte gInterfaceTextOffsets
 _080E0EFC: .4byte 0x00006C26
-_080E0F00: .4byte gUnk_09DB9C10
+_080E0F00: .4byte gInterfaceText
 _080E0F04: .4byte 0x0014001E
 
 	thumb_func_start sub_080E0F08
@@ -419083,12 +419083,12 @@ sub_080E1E0C: @ 0x080E1E0C
 	adds r3, r6, #0
 	muls r3, r7, r3
 	adds r2, r3, #0
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	movs r0, #0xa0
 	lsls r0, r0, #0x13
 	adds r1, r4, #0
 	adds r2, r5, #0
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	pop {r4, r5, r6, r7}
 	pop {r0}
 	bx r0
@@ -419118,20 +419118,20 @@ sub_080E1E3C: @ 0x080E1E3C
 	movs r1, #0x80
 	lsls r1, r1, #7
 	adds r0, r4, #0
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r0, _080E1ED4 @ =0x05000200
 	ldr r1, _080E1ED8 @ =gUnk_09DB81AC
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r1, _080E1EDC @ =gUnk_09DB81CC
 	movs r2, #0x80
 	lsls r2, r2, #4
 	adds r0, r4, #0
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080E1EE0 @ =0x05000220
 	ldr r1, _080E1EE4 @ =gUnk_09DB89CC
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080E1EE8 @ =0x06016000
 	ldr r1, _080E1EEC @ =gUnk_09DB89EC
 	movs r2, #0x10
@@ -419140,7 +419140,7 @@ sub_080E1E3C: @ 0x080E1E3C
 	ldr r0, _080E1EF0 @ =0x05000240
 	ldr r1, _080E1EF4 @ =gUnk_09DB99EC
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080E1EF8 @ =0x06016200
 	ldr r1, _080E1EFC @ =gUnk_09DB9A0C
 	movs r2, #4
@@ -419190,7 +419190,7 @@ sub_080E1F00: @ 0x080E1F00
 	lsrs r0, r0, #0x18
 	str r0, [sp, #8]
 	ldr r0, [sp, #0x30]
-	bl sub_080F54E0
+	bl StringLength
 	adds r7, r0, #0
 	mov r0, r8
 	lsls r1, r0, #2
@@ -419436,7 +419436,7 @@ _080E2116:
 	adds r0, r4, r2
 	ldrh r2, [r0]
 	adds r0, r3, #0
-	bl sub_080F5228
+	bl StringCopyFormat_D
 	movs r0, #0x87
 	lsls r0, r0, #2
 	movs r1, #0x90
@@ -419668,7 +419668,7 @@ _080E22F2:
 	adds r0, r5, r2
 	ldrh r2, [r0]
 	adds r0, r3, #0
-	bl sub_080F5228
+	bl StringCopyFormat_D
 	movs r0, #0x87
 	lsls r0, r0, #2
 	movs r1, #0x90
@@ -419740,14 +419740,14 @@ _080E238E:
 	str r0, [sp]
 	adds r0, r4, #0
 	movs r3, #0
-	bl sub_080F528C
+	bl StringCopyFormat_DWithAtDirective
 	add r1, sp, #0x104
 	ldr r0, _080E23F0 @ =gUnk_02029590
 	ldr r2, _080E23F4 @ =0x0000024A
 	adds r0, r0, r2
 	ldrh r2, [r0]
 	add r0, sp, #4
-	bl sub_080F5228
+	bl StringCopyFormat_D
 	movs r0, #0x87
 	lsls r0, r0, #2
 	movs r1, #0xa0
@@ -420272,7 +420272,7 @@ sub_080E27D4: @ 0x080E27D4
 	ldr r2, _080E281C @ =gUnk_09896290
 	adds r1, r1, r2
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	lsls r4, r4, #5
 	ldr r0, _080E2820 @ =0x06010000
 	adds r4, r4, r0
@@ -421407,7 +421407,7 @@ _080E3156:
 	adds r4, r4, r0
 	ldrh r2, [r4]
 	adds r0, r3, #0
-	bl sub_080F5228
+	bl StringCopyFormat_D
 	movs r0, #0x64
 	ldrh r4, [r4]
 	adds r1, r4, #0
@@ -423046,7 +423046,7 @@ _080E3ECE:
 	adds r2, r0, #0
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_080F5148
+	bl StringCopyFormat_S
 _080E3EDE:
 	pop {r4, r5}
 	pop {r0}
@@ -425996,7 +425996,7 @@ sub_080E56A0: @ 0x080E56A0
 	ldr r2, _080E5730 @ =gUnk_09CF8894
 	adds r1, r1, r2
 	movs r2, #0x80
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 	ldrb r4, [r4, #0xb]
 	lsls r0, r4, #0x19
 	lsrs r0, r0, #0x1d
@@ -426013,7 +426013,7 @@ _080E56D0:
 	adds r0, r6, #0
 	adds r1, r4, #0
 	adds r2, r7, #0
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 	movs r0, #0x90
 	lsls r0, r0, #3
 	adds r4, r4, r0
@@ -426039,7 +426039,7 @@ _080E5704:
 	adds r0, r6, #0
 	adds r1, r4, #0
 	movs r2, #0x80
-	bl sub_080F4F08
+	bl MemoryCopyLarge
 	movs r0, #0x90
 	lsls r0, r0, #3
 	adds r4, r4, r0
@@ -426077,7 +426077,7 @@ sub_080E5740: @ 0x080E5740
 	movs r2, #0xc0
 	lsls r2, r2, #3
 	adds r0, r4, #0
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	movs r0, #0x18
 	movs r1, #2
 	bl sub_080F0BB4
@@ -426112,8 +426112,8 @@ sub_080E5740: @ 0x080E5740
 	ldr r0, _080E5830 @ =0x00008001
 	mov r8, r0
 	mov r0, sl
-	bl sub_080F4E18
-	ldr r1, _080E5834 @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r1, _080E5834 @ =gInterfaceTextOffsets
 	mov sb, r1
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
@@ -426127,14 +426127,14 @@ sub_080E5740: @ 0x080E5740
 	lsls r1, r1, #2
 	add r1, sb
 	ldr r3, [r1]
-	ldr r6, _080E5838 @ =gUnk_09DB9C10
+	ldr r6, _080E5838 @ =gInterfaceText
 	adds r3, r3, r6
 	movs r0, #3
 	movs r1, #1
 	mov r2, r8
 	bl sub_080F2A7C
 	mov r0, sl
-	bl sub_080F4E18
+	bl GetInterfaceTextIdIndex
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -426170,8 +426170,8 @@ _080E5824: .4byte gUnk_02000000
 _080E5828: .4byte 0x00006C2C
 _080E582C: .4byte gUnk_09E5F854
 _080E5830: .4byte 0x00008001
-_080E5834: .4byte gUnk_08000F40
-_080E5838: .4byte gUnk_09DB9C10
+_080E5834: .4byte gInterfaceTextOffsets
+_080E5838: .4byte gInterfaceText
 
 	thumb_func_start sub_080E583C
 sub_080E583C: @ 0x080E583C
@@ -426250,7 +426250,7 @@ sub_080E58A8: @ 0x080E58A8
 	movs r2, #0xc0
 	lsls r2, r2, #3
 	adds r0, r4, #0
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	movs r0, #0x18
 	movs r1, #2
 	bl sub_080F0BB4
@@ -426285,8 +426285,8 @@ sub_080E58A8: @ 0x080E58A8
 	ldr r0, _080E5998 @ =0x00008001
 	mov r8, r0
 	mov r0, sl
-	bl sub_080F4E18
-	ldr r1, _080E599C @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r1, _080E599C @ =gInterfaceTextOffsets
 	mov sb, r1
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
@@ -426300,14 +426300,14 @@ sub_080E58A8: @ 0x080E58A8
 	lsls r1, r1, #2
 	add r1, sb
 	ldr r3, [r1]
-	ldr r6, _080E59A0 @ =gUnk_09DB9C10
+	ldr r6, _080E59A0 @ =gInterfaceText
 	adds r3, r3, r6
 	movs r0, #0xe
 	movs r1, #1
 	mov r2, r8
 	bl sub_080F2A7C
 	mov r0, sl
-	bl sub_080F4E18
+	bl GetInterfaceTextIdIndex
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -426343,8 +426343,8 @@ _080E598C: .4byte gUnk_02000000
 _080E5990: .4byte 0x00006C2C
 _080E5994: .4byte gUnk_09E5F854
 _080E5998: .4byte 0x00008001
-_080E599C: .4byte gUnk_08000F40
-_080E59A0: .4byte gUnk_09DB9C10
+_080E599C: .4byte gInterfaceTextOffsets
+_080E59A0: .4byte gInterfaceText
 
 	thumb_func_start sub_080E59A4
 sub_080E59A4: @ 0x080E59A4
@@ -426445,7 +426445,7 @@ sub_080E5A10: @ 0x080E5A10
 	ldr r0, [r1]
 	str r0, [r4, #4]
 	adds r0, r5, #0
-	bl sub_080F54E0
+	bl StringLength
 	cmp r0, #0x21
 	ble _080E5A78
 	movs r0, #3
@@ -426476,7 +426476,7 @@ _080E5A78:
 	movs r1, #0xd0
 	lsls r1, r1, #3
 	adds r0, r4, #0
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	adds r0, r4, #0
 	movs r1, #0
 	bl sub_080F2E4C
@@ -426526,8 +426526,8 @@ _080E5AE2:
 	lsls r0, r0, #2
 	adds r0, r0, r1
 	ldrh r0, [r0]
-	bl sub_080F4E18
-	ldr r2, _080E5B7C @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _080E5B7C @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -426544,10 +426544,10 @@ _080E5AE2:
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r1, [r1]
-	ldr r6, _080E5B88 @ =gUnk_09DB9C10
+	ldr r6, _080E5B88 @ =gInterfaceText
 	adds r1, r1, r6
 	mov r0, sp
-	bl sub_080F51AC
+	bl StringCopyFormat_C
 	mov r0, sb
 	ldr r1, [r0, #0x20]
 	cmp r1, #0
@@ -426578,10 +426578,10 @@ _080E5AE2:
 	.align 2, 0
 _080E5B74: .4byte 0xFFFFFE00
 _080E5B78: .4byte gUnk_02029590
-_080E5B7C: .4byte gUnk_08000F40
+_080E5B7C: .4byte gInterfaceTextOffsets
 _080E5B80: .4byte gUnk_02000000
 _080E5B84: .4byte 0x00006C2C
-_080E5B88: .4byte gUnk_09DB9C10
+_080E5B88: .4byte gInterfaceText
 _080E5B8C: .4byte 0x00004774
 _080E5B90: .4byte 0x0003F244
 _080E5B94:
@@ -426606,7 +426606,7 @@ _080E5BB4:
 _080E5BB6:
 	adds r1, r6, r2
 _080E5BB8:
-	bl sub_080F5054
+	bl StringCopy
 _080E5BBC:
 	lsls r1, r5, #0x10
 	lsrs r1, r1, #0x10
@@ -426689,7 +426689,7 @@ _080E5C4A:
 	adds r0, r0, r6
 	movs r1, #0x80
 	lsls r1, r1, #2
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	adds r4, #1
 	cmp r4, #3
 	ble _080E5C4A
@@ -426790,7 +426790,7 @@ _080E5D20:
 _080E5D22:
 	mov r0, sp
 	adds r1, r4, #0
-	bl sub_080F5054
+	bl StringCopy
 	ldr r1, _080E5D4C @ =gUnk_02000000
 	ldr r0, _080E5D50 @ =0x00006C2C
 	adds r1, r1, r0
@@ -426817,13 +426817,13 @@ _080E5D54:
 	mov r0, sp
 	strb r2, [r0, #1]
 	adds r1, r4, #2
-	bl sub_080F506C
+	bl StringAppend
 	b _080E5EE4
 _080E5D68:
 	movs r0, #0xc2
 	lsls r0, r0, #4
-	bl sub_080F4E18
-	ldr r2, _080E5DAC @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _080E5DAC @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -426838,7 +426838,7 @@ _080E5D68:
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r1, [r1]
-	ldr r0, _080E5DB4 @ =gUnk_09DB9C10
+	ldr r0, _080E5DB4 @ =gInterfaceText
 	adds r1, r1, r0
 	ldrb r4, [r4]
 	adds r0, r4, r5
@@ -426849,12 +426849,12 @@ _080E5D68:
 	ldr r2, [r0]
 	lsrs r2, r2, #2
 	mov r0, sp
-	bl sub_080F5228
+	bl StringCopyFormat_D
 	b _080E5EE4
 	.align 2, 0
-_080E5DAC: .4byte gUnk_08000F40
+_080E5DAC: .4byte gInterfaceTextOffsets
 _080E5DB0: .4byte 0x00006C2C
-_080E5DB4: .4byte gUnk_09DB9C10
+_080E5DB4: .4byte gInterfaceText
 _080E5DB8: .4byte 0x00006C3C
 _080E5DBC:
 	ldr r1, _080E5E88 @ =gUnk_02000000
@@ -426960,8 +426960,8 @@ _080E5E94:
 	ldrh r0, [r0, #8]
 	ldr r1, _080E5F28 @ =0x00000C1C
 	adds r0, r0, r1
-	bl sub_080F4E18
-	ldr r3, _080E5F2C @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r3, _080E5F2C @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -426977,7 +426977,7 @@ _080E5E94:
 	lsls r1, r1, #2
 	adds r1, r1, r3
 	ldr r1, [r1]
-	ldr r0, _080E5F38 @ =gUnk_09DB9C10
+	ldr r0, _080E5F38 @ =gInterfaceText
 	adds r1, r1, r0
 	adds r4, #0x31
 	ldrb r4, [r4]
@@ -426989,10 +426989,10 @@ _080E5E94:
 	ldr r2, [r0]
 	lsrs r2, r2, #2
 	mov r0, sp
-	bl sub_080F5228
+	bl StringCopyFormat_D
 _080E5EE4:
 	mov r0, sp
-	bl sub_080F54E0
+	bl StringLength
 	lsls r1, r0, #1
 	adds r1, r1, r0
 	movs r0, #0x40
@@ -427023,10 +427023,10 @@ _080E5EE4:
 	.align 2, 0
 _080E5F24: .4byte gUnk_02029590
 _080E5F28: .4byte 0x00000C1C
-_080E5F2C: .4byte gUnk_08000F40
+_080E5F2C: .4byte gInterfaceTextOffsets
 _080E5F30: .4byte gUnk_02000000
 _080E5F34: .4byte 0x00006C2C
-_080E5F38: .4byte gUnk_09DB9C10
+_080E5F38: .4byte gInterfaceText
 _080E5F3C: .4byte 0x00006C3C
 _080E5F40: .4byte gUnk_09DC01E6
 _080E5F44: .4byte 0x0003AB8E
@@ -427177,7 +427177,7 @@ _080E6062:
 	adds r0, r0, r1
 	movs r1, #0xe0
 	lsls r1, r1, #2
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	adds r4, #1
 	cmp r4, #9
 	ble _080E6062
@@ -427242,8 +427242,8 @@ sub_080E609C: @ 0x080E609C
 	movs r1, #0xfa
 	lsls r1, r1, #2
 	adds r0, r0, r1
-	bl sub_080F4E18
-	ldr r2, _080E616C @ =gUnk_08000F40
+	bl GetInterfaceTextIdIndex
+	ldr r2, _080E616C @ =gInterfaceTextOffsets
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	lsls r1, r0, #1
@@ -427256,10 +427256,10 @@ sub_080E609C: @ 0x080E609C
 	lsls r1, r1, #2
 	adds r1, r1, r2
 	ldr r1, [r1]
-	ldr r5, _080E6170 @ =gUnk_09DB9C10
+	ldr r5, _080E6170 @ =gInterfaceText
 	adds r1, r1, r5
 	mov r0, sp
-	bl sub_080F51AC
+	bl StringCopyFormat_C
 	ldr r1, [r4, #0x20]
 	cmp r1, #0
 	beq _080E61A6
@@ -427292,8 +427292,8 @@ _080E615C: .4byte gUnk_02000000
 _080E6160: .4byte 0x00006C2C
 _080E6164: .4byte gUnk_09E5F854
 _080E6168: .4byte gUnk_02029590
-_080E616C: .4byte gUnk_08000F40
-_080E6170: .4byte gUnk_09DB9C10
+_080E616C: .4byte gInterfaceTextOffsets
+_080E6170: .4byte gInterfaceText
 _080E6174: .4byte 0x00004774
 _080E6178: .4byte 0x0003F244
 _080E617C:
@@ -427319,7 +427319,7 @@ _080E619E:
 	adds r2, r5, r1
 _080E61A0:
 	adds r1, r2, #0
-	bl sub_080F5054
+	bl StringCopy
 _080E61A6:
 	mov r0, sp
 	bl sub_080E600C
@@ -427378,7 +427378,7 @@ sub_080E61C0: @ 0x080E61C0
 	movs r3, #2
 	bl sub_080F0CC0
 	adds r0, r4, #0
-	bl sub_080F54E0
+	bl StringLength
 	lsls r1, r0, #1
 	adds r1, r1, r0
 	movs r0, #0x58
@@ -427485,7 +427485,7 @@ sub_080E6294: @ 0x080E6294
 	adds r4, r4, r1
 	adds r1, r4, #0
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 _080E62FE:
 	pop {r4, r5, r6, r7}
 	pop {r0}
@@ -427533,15 +427533,15 @@ sub_080E6310: @ 0x080E6310
 	movs r4, #0x80
 	lsls r4, r4, #8
 	adds r1, r4, #0
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	movs r0, #0xc0
 	lsls r0, r0, #0x13
 	movs r1, #0x80
 	lsls r1, r1, #6
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r0, _080E63AC @ =0x06010000
 	adds r1, r4, #0
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r1, _080E63B0 @ =gUnk_02029590
 	adds r1, #0x2a
 	movs r0, #2
@@ -427576,16 +427576,16 @@ sub_080E63B4: @ 0x080E63B4
 	ldr r0, _080E63EC @ =0x05000040
 	ldr r1, _080E63F0 @ =gUnk_09CF203C
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080E63F4 @ =0x050003E0
 	ldr r1, _080E63F8 @ =gUnk_09CF8074
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080E63FC @ =0x06010000
 	ldr r1, _080E6400 @ =gUnk_09CF8094
 	movs r2, #0x80
 	lsls r2, r2, #4
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -427604,7 +427604,7 @@ sub_080E6404: @ 0x080E6404
 	movs r1, #0x80
 	lsls r1, r1, #8
 	adds r0, r4, #0
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r3, _080E6530 @ =gUnk_09CF0B44
 	movs r0, #0
 	movs r1, #0x10
@@ -427619,25 +427619,25 @@ sub_080E6404: @ 0x080E6404
 	ldr r0, _080E6538 @ =0x050003E0
 	ldr r1, _080E653C @ =gUnk_09CF8074
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r1, _080E6540 @ =gUnk_09CF8094
 	movs r2, #0x80
 	lsls r2, r2, #4
 	adds r0, r4, #0
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080E6544 @ =0x050003C0
 	ldr r1, _080E6548 @ =gUnk_09CF325C
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080E654C @ =0x050003A0
 	ldr r1, _080E6550 @ =gUnk_09CF445C
 	movs r2, #0x20
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080E6554 @ =0x06010800
 	ldr r1, _080E6558 @ =gUnk_09CF345C
 	movs r2, #0x80
 	lsls r2, r2, #5
-	bl sub_080F4EA4
+	bl MemoryCopyHalfWord
 	ldr r0, _080E655C @ =gUnk_03000040
 	movs r1, #0xfa
 	lsls r1, r1, #1
@@ -427797,7 +427797,7 @@ _080E65C4:
 	adds r0, r0, r1
 	movs r1, #0x80
 	lsls r1, r1, #2
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	adds r4, #1
 	cmp r4, #3
 	ble _080E65C4
@@ -427848,7 +427848,7 @@ _080E6634: .4byte gUnk_09DD6790
 _080E6638:
 	ldr r0, _080E6670 @ =gUnk_09DCAE26
 _080E663A:
-	bl sub_080F54E0
+	bl StringLength
 	lsls r1, r0, #1
 	adds r1, r1, r0
 	movs r0, #0x40
@@ -427994,7 +427994,7 @@ _080E675C: .4byte gUnk_09DD63EE
 _080E6760:
 	ldr r0, _080E6798 @ =gUnk_09DCAB1E
 _080E6762:
-	bl sub_080F54E0
+	bl StringLength
 	lsls r1, r0, #1
 	adds r1, r1, r0
 	movs r0, #0x20
@@ -428140,7 +428140,7 @@ _080E6884: .4byte gUnk_09DD63F2
 _080E6888:
 	ldr r0, _080E68C0 @ =gUnk_09DCAB22
 _080E688A:
-	bl sub_080F54E0
+	bl StringLength
 	lsls r1, r0, #1
 	adds r1, r1, r0
 	movs r4, #0x60
@@ -429718,7 +429718,7 @@ _080E74FA:
 	movs r1, #0x80
 	lsls r1, r1, #1
 	adds r0, r4, #0
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	adds r0, r6, #0
 	adds r1, r4, #0
 	bl sub_080E3EE8
@@ -430905,7 +430905,7 @@ _080E7E90:
 	movs r1, #0x94
 	lsls r1, r1, #2
 	adds r0, r5, #0
-	bl sub_080F4E74
+	bl MemoryClearHalfWord
 	ldr r0, _080E7F04 @ =gUnk_09E5ED24
 	str r0, [r5]
 	movs r2, #6

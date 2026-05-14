@@ -126204,7 +126204,7 @@ gUnk_09DB99EC:: @ 09DB99EC
 gUnk_09DB9A0C:: @ 09DB9A0C
 	.incbin "baserom.gba", 0x1DB9A0C, 0x204
 
-gUnk_09DB9C10:: @ 09DB9C10
+gInterfaceText:: @ 09DB9C10
 	.incbin "baserom.gba", 0x1DB9C10, 0xB40
 
 gUnk_09DBA750:: @ 09DBA750

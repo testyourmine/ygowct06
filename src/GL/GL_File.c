@@ -25,6 +25,8 @@ struct Unk_09E61178 {
 };
 extern struct Unk_09E61178 gUnk_09E61178;
 
+#define GET_HEADER_REGION() (*(u16 *)0x080000AE >> 8)
+
 // 14EA0
 static s32 GetStringLength(u8 *s)
 {
@@ -169,7 +171,7 @@ void* GL_OpenFile(u8* filePathString, void *dest)
     if (checkIndex != -1)
     {
         strcpy(buf, filePath);
-        buf[checkIndex] = *(u16* )0x080000AE >> 8; // game region
+        buf[checkIndex] = GET_HEADER_REGION();
         filePath = buf;
     }
 
