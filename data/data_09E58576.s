@@ -1,0 +1,3 @@
+	.section .rodata
+
+    .byte 0x0, 0x0
