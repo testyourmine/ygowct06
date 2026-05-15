@@ -2,6 +2,7 @@
 #include "main.h"
 #include "agb_sram.h"
 #include "input.h"
+#include "code_080F4E10.h"
 #include "constants/languages.h"
 #include "structs/unk_03000040.h"
 
@@ -43,8 +44,6 @@ extern struct IntrTable gIntrTable;
 extern void IntrMain(void);
 extern void IntrMain_End(void);
 extern s32 sub_080E7E0C();
-extern void sub_080F4E74(u16*, u32);
-extern void sub_080F4FD0(void *dst, struct Unk_03000040_1BC *src, u32 size);
 extern void sub_080F5E98(u32, u32);
 extern void sub_080F5F28(void);
 extern void sub_080F8EF4();
@@ -238,7 +237,7 @@ void InitGame(void)
     DmaFill32(3, 0, EWRAM_START, EWRAM_END - EWRAM_START);
     DmaFill32(3, 0, IWRAM_START, IWRAM_END - IWRAM_START - 0xA00);
 
-    sub_080F4E74((void*)&gUnk_03000040, 0x360);
+    MemoryClearHalfWord(&gUnk_03000040, 0x360);
     SetSramFastFunc();
     sub_080FA4C0();
     OS_Printf("Start initialize\n");

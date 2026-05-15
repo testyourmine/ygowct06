@@ -7,14 +7,14 @@
 
 	.align 4, 0
 
-	.global gUnk_08000240
-gUnk_08000240: @ 0x08000240
+	.global gInterfaceTextEntryCount
+gInterfaceTextEntryCount: @ 0x08000240
 	.2byte 0x0673
 
 	.align 4, 0
 
-	.global gUnk_08000250
-gUnk_08000250: @ 0x08000250
+	.global gInterfaceTextIds
+gInterfaceTextIds: @ 0x08000250
 	.2byte 0x0000, 0x0001, 0x0002, 0x0003, 0x0004, 0x0005, 0x0006, 0x0007
 	.2byte 0x0008, 0x0009, 0x000A, 0x000B, 0x000C, 0x000D, 0x000E, 0x000F
 	.2byte 0x0010, 0x0011, 0x0012, 0x0013, 0x0014, 0x0015, 0x0016, 0x0017
@@ -225,10 +225,10 @@ gUnk_08000250: @ 0x08000250
 
 	.align 4, 0
 
-	@ text offsets into gUnk_09DB9C10, in the order of:
+	@ text offsets into gInterfaceText, in the order of:
 	@ japanese, english, german, french, italian, spanish
-	.global gUnk_08000F40
-gUnk_08000F40: @ 0x08000F40
+	.global gInterfaceTextOffsets
+gInterfaceTextOffsets: @ 0x08000F40
 	.4byte 0x00000000, 0x0000AA10, 0x00015874, 0x00021BE2, 0x0002E0BA, 0x0003A06A
 	.4byte 0x00000002, 0x0000AA12, 0x00015876, 0x00021BE4, 0x0002E0BC, 0x0003A06C
 	.4byte 0x0000004A, 0x0000AA5C, 0x000158D6, 0x00021C38, 0x0002E0FE, 0x0003A0B2
