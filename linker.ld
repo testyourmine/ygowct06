@@ -163,7 +163,7 @@ SECTIONS {
         . = 0x00029E90; gUnk_02029E90 = .;
         . = 0x00029EA0; ReadSramFast = .;
         . = 0x00029EA4; VerifySramFast = .;
-        . = 0x00029EA8; *libc.a:*.o(COMMON);
+        . = 0x00029EA8; *libc.a:sbrkr.o(COMMON);
         . = 0x00029EB0; gUnk_02029EB0 = .;
         . = 0x00029EB7; gUnk_02029EB7 = .;
         . = 0x00029EC0; gUnk_02029EC0 = .;
@@ -233,8 +233,9 @@ SECTIONS {
         . = 0x00005644; gUnk_03005644 = .;
         . = 0x00005648; gUnk_03005648 = .;
         . = 0x00005658; src/agb_sram.o(.bss);
-        . = 0x00005778; *libc.a:*.o(.bss);
-        . = 0x00005828; *libgcc.a:*.o(.bss);
+        . = 0x00005778; *libc.a:syscalls.o(.bss);
+        . = 0x00005828; *libgcc.a:dp-bit.o(.bss);
+        . = 0x00005840; *libgcc.a:fp-bit.o(.bss);
         . = 0x00005850; gUnk_03005850 = .;
         . = 0x0000585C; gUnk_0300585C = .;
         . = 0x00005F4A; gUnk_03005F4A = .;
@@ -291,8 +292,6 @@ SECTIONS {
         *libc.a:strncmp.o(.text);
         *libc.a:strncpy.o(.text);
         *libc.a:vfscanf.o(.text);
-
-        asm/code2.o(.text);
         *libc.a:atof.o(.text);
         *libc.a:fread.o(.text);
         *libc.a:refill.o(.text);
@@ -337,13 +336,21 @@ SECTIONS {
         src/main.o(.rodata);
         data/data_09E4F498.o(.rodata);
         src/agb_sram.o(.rodata);
+
         *libc.a:vfscanf.o(.rodata);
-        data/data1.o(.rodata);
-        *libc.a:*.o(.rodata);
+        data/data_09E58576.o(.rodata);
+        *libc.a:ctype_.o(.rodata);
+        data/data_09E58679.o(.rodata);
+        *libc.a:mprec.o(.rodata);
+        *libc.a:s_infconst.o(.rodata);
+        *libc.a:syscalls.o(.rodata);
+
         data/data2.o(.rodata);
         src/input.o(.data);
         data/data_09E5F8F0.o(.data);
-        *libc.a:*.o(.data);
+
+        *libc.a:mallocr.o(.data);
+
         data/data3.o(.rodata);
         rom_data_end = .;
     } >rom
