@@ -236778,8 +236778,9 @@ _08087196:
 	.align 2, 0
 _080871A4: .4byte 0x000019DA @ Samsara
 
-	thumb_func_start sub_080871A8
-sub_080871A8: @ 0x080871A8
+	@ Sangan
+	thumb_func_start gCardAISearchSendToGY_080871A8
+gCardAISearchSendToGY_080871A8: @ 0x080871A8
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -236858,8 +236859,10 @@ _08087240: .4byte gUnk_0201C740
 _08087244: .4byte 0x000005DC
 _08087248: .4byte 0x000012A1 @ Parasite Paracide
 
-	thumb_func_start sub_0808724C
-sub_0808724C: @ 0x0808724C
+	@ Aswan Apparition
+	@ Mask of Darkness
+	thumb_func_start gCardAIGraveyardSearch_0808724C
+gCardAIGraveyardSearch_0808724C: @ 0x0808724C
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	movs r5, #0
@@ -236905,8 +236908,9 @@ _08087296:
 _0808729C: .4byte gUnk_0201C4E0
 _080872A0: .4byte 0x00000868
 
-	thumb_func_start sub_080872A4
-sub_080872A4: @ 0x080872A4
+	@ Big Eye
+	thumb_func_start gCardAIFlip_080872A4
+gCardAIFlip_080872A4: @ 0x080872A4
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	movs r4, #0
@@ -236940,8 +236944,38 @@ _080872D6:
 _080872DC: .4byte gUnk_0201C4E0
 _080872E0: .4byte 0x00000868
 
-	thumb_func_start sub_080872E4
-sub_080872E4: @ 0x080872E4
+	@ A Deal with Dark Ruler
+	@ Armed Dragon LV3
+	@ Armed Dragon LV5
+	@ Attack Reflector Unit
+	@ Dark Flare Knight
+	@ Dark Mimic LV1
+	@ Des Frog
+	@ Elegant Egotist
+	@ Great Dezard
+	@ Hand of Nephthys
+	@ Horus the Black Flame Dragon LV4
+	@ Horus the Black Flame Dragon LV6
+	@ Level Up!
+	@ Mystic Swordsman LV2
+	@ Mystic Swordsman LV4
+	@ Paladin of White Dragon
+	@ Peten the Dark Clown
+	@ Release Restraint
+	@ Sage's Stone
+	@ Silent Magician LV4
+	@ Silent Swordsman LV3
+	@ Silent Swordsman LV5
+	@ The Agent of Creation - Venus
+	@ Theinen the Great Sphinx
+	@ Time Wizard
+	@ Transcendent Wings
+	@ Trial of the Princesses
+	@ Ultimate Insect LV1
+	@ Ultimate Insect LV3
+	@ Ultimate Insect LV5
+	thumb_func_start gCardAISpecialSummonGraveyard_080872E4
+gCardAISpecialSummonGraveyard_080872E4: @ 0x080872E4
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -237457,8 +237491,9 @@ _08087670: .4byte 0x00000868
 _08087674: .4byte gUnk_0201C600
 _08087678: .4byte gUnk_0201C740
 
-	thumb_func_start sub_0808767C
-sub_0808767C: @ 0x0808767C
+	@ Monster Eye
+	thumb_func_start gCardAIReturnToHandGraveyard_0808767C
+gCardAIReturnToHandGraveyard_0808767C: @ 0x0808767C
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	movs r5, #0
@@ -237506,8 +237541,10 @@ _080876D0: .4byte gUnk_0201C4E0
 _080876D4: .4byte 0x00000868
 _080876D8: .4byte 0x000012E5 @ Polymerization
 
-	thumb_func_start sub_080876DC
-sub_080876DC: @ 0x080876DC
+	@ Cyber-Stein
+	@ Summoner of Illusions
+	thumb_func_start gCardAISpecialSummonFusion_080876DC
+gCardAISpecialSummonFusion_080876DC: @ 0x080876DC
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -237569,8 +237606,9 @@ _0808774C: .4byte gUnk_0201C4E0
 _08087750: .4byte 0x00000868
 _08087754: .4byte gUnk_0201C880
 
-	thumb_func_start sub_08087758
-sub_08087758: @ 0x08087758
+	@ Gale Dogra
+	thumb_func_start gCardAISendToGYDamage_08087758
+gCardAISendToGYDamage_08087758: @ 0x08087758
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	movs r4, #0
@@ -237602,8 +237640,17 @@ _08087786:
 _0808778C: .4byte gUnk_0201C4E0
 _08087790: .4byte 0x00000868
 
-	thumb_func_start sub_08087794
-sub_08087794: @ 0x08087794
+	@ Berfomet
+	@ Birdface
+	@ Fusion Sage
+	@ Gather Your Mind
+	@ Green Gadget
+	@ Red Gadget
+	@ T.A.D.P.O.L.E.
+	@ Thunder Dragon
+	@ Yellow Gadget
+	thumb_func_start gCardAISearch_08087794
+gCardAISearch_08087794: @ 0x08087794
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -237721,8 +237768,13 @@ _0808785C:
 _08087868: .4byte gUnk_0201C4E0
 _0808786C: .4byte 0x00000868
 
-	thumb_func_start sub_08087870
-sub_08087870: @ 0x08087870
+	@ Dark Magician of Chaos
+	@ Excavation of Mage Stones
+	@ Hidden Book of Spell
+	@ Magician of Faith
+	@ Spell Reproduction
+	thumb_func_start gCardAIGraveyardSearch_08087870
+gCardAIGraveyardSearch_08087870: @ 0x08087870
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	movs r5, #0
@@ -237768,8 +237820,9 @@ _080878BA:
 _080878C0: .4byte gUnk_0201C4E0
 _080878C4: .4byte 0x00000868
 
-	thumb_func_start sub_080878C8
-sub_080878C8: @ 0x080878C8
+	@ Witch of the Black Forest
+	thumb_func_start gCardAISearchSendToGY_080878C8
+gCardAISearchSendToGY_080878C8: @ 0x080878C8
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -237848,8 +237901,10 @@ _08087960: .4byte gUnk_0201C740
 _08087964: .4byte 0x000005DC
 _08087968: .4byte 0x000012A1 @ Parasite Paracide
 
-	thumb_func_start sub_0808796C
-sub_0808796C: @ 0x0808796C
+	@ Chimera the Flying Mythical Beast
+	@ Miracle Restoring
+	thumb_func_start gCardAISpecialSummonChangePosition_0808796C
+gCardAISpecialSummonChangePosition_0808796C: @ 0x0808796C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -237943,8 +237998,10 @@ _08087A0E:
 	.align 2, 0
 _08087A1C: .4byte gUnk_0201C8F8
 
-	thumb_func_start sub_08087A20
-sub_08087A20: @ 0x08087A20
+	@ Pinch Hopper
+	@ The Thing in the Crater
+	thumb_func_start gCardAISpecialSummonSendToGY_08087A20
+gCardAISpecialSummonSendToGY_08087A20: @ 0x08087A20
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -237989,8 +238046,9 @@ _08087A6C:
 _08087A78: .4byte 0x00000868
 _08087A7C: .4byte gUnk_0201C600
 
-	thumb_func_start sub_08087A80
-sub_08087A80: @ 0x08087A80
+	@ Drill Bug
+	thumb_func_start gCardAIDamage_08087A80
+gCardAIDamage_08087A80: @ 0x08087A80
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	movs r4, #0
@@ -238054,8 +238112,10 @@ _08087AF4: .4byte 0x00000868
 _08087AF8: .4byte gUnk_0201C740
 _08087AFC: .4byte 0x000012A1 @ Parasite Paracide
 
-	thumb_func_start sub_08087B00
-sub_08087B00: @ 0x08087B00
+	@ Dark Magic Curtain
+	@ Magical Labyrinth
+	thumb_func_start gCardAISpecialSummonEquip_08087B00
+gCardAISpecialSummonEquip_08087B00: @ 0x08087B00
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -238142,8 +238202,10 @@ _08087B9C: .4byte gUnk_0201C4E0
 _08087BA0: .4byte 0x00000868
 _08087BA4: .4byte gUnk_0201C740
 
-	thumb_func_start sub_08087BA8
-sub_08087BA8: @ 0x08087BA8
+	@ King Dragun
+	@ The Flute of Summoning Dragon
+	thumb_func_start gCardAISpecialSummon_08087BA8
+gCardAISpecialSummon_08087BA8: @ 0x08087BA8
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	adds r6, r2, #0
@@ -238180,8 +238242,10 @@ _08087BE6:
 _08087BEC: .4byte 0x00000868
 _08087BF0: .4byte gUnk_0201C600
 
-	thumb_func_start sub_08087BF4
-sub_08087BF4: @ 0x08087BF4
+	@ Fusion Gate
+	@ Polymerization
+	thumb_func_start gCardAISpecialSummonSendToGY_08087BF4
+gCardAISpecialSummonSendToGY_08087BF4: @ 0x08087BF4
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	movs r5, #0
@@ -238227,8 +238291,9 @@ _08087C3E:
 _08087C44: .4byte gUnk_0201C4E0
 _08087C48: .4byte 0x00000868
 
-	thumb_func_start sub_08087C4C
-sub_08087C4C: @ 0x08087C4C
+	@ Monster Reborn
+	thumb_func_start gCardAISpecialSummonGraveyard_08087C4C
+gCardAISpecialSummonGraveyard_08087C4C: @ 0x08087C4C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -238311,8 +238376,9 @@ _08087CE4: .4byte gUnk_0201C4E0
 _08087CE8: .4byte 0x00000868
 _08087CEC: .4byte gUnk_0201C8F8
 
-	thumb_func_start sub_08087CF0
-sub_08087CF0: @ 0x08087CF0
+	@ Gravedigger Ghoul
+	thumb_func_start gCardAIBanishGraveyard_08087CF0
+gCardAIBanishGraveyard_08087CF0: @ 0x08087CF0
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -238366,8 +238432,9 @@ _08087D46:
 _08087D50: .4byte gUnk_0201C4E0
 _08087D54: .4byte 0x00000868
 
-	thumb_func_start sub_08087D58
-sub_08087D58: @ 0x08087D58
+	@ Ancient Telescope
+	thumb_func_start gCardAIUnknown_08087D58
+gCardAIUnknown_08087D58: @ 0x08087D58
 	push {r4, r5, r6, lr}
 	movs r4, #0
 	ldr r2, _08087D94 @ =gUnk_0201C4E0
@@ -238403,8 +238470,9 @@ _08087D8E:
 _08087D94: .4byte gUnk_0201C4E0
 _08087D98: .4byte 0x00000868
 
-	thumb_func_start sub_08087D9C
-sub_08087D9C: @ 0x08087D9C
+	@ Soul Release
+	thumb_func_start gCardAIBanishGraveyard_08087D9C
+gCardAIBanishGraveyard_08087D9C: @ 0x08087D9C
 	push {r4, r5, r6, r7, lr}
 	adds r7, r0, #0
 	movs r4, #0
@@ -238461,8 +238529,9 @@ _08087DFA:
 _08087E00: .4byte gUnk_0201C4E0
 _08087E04: .4byte 0x00000868
 
-	thumb_func_start sub_08087E08
-sub_08087E08: @ 0x08087E08
+	@ Last Will
+	thumb_func_start gCardAISpecialSummonSendToGY_08087E08
+gCardAISpecialSummonSendToGY_08087E08: @ 0x08087E08
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -238548,8 +238617,9 @@ _08087EB0: .4byte gUnk_0201C740
 _08087EB4: .4byte 0x000005DC
 _08087EB8: .4byte 0x000012A1 @ Parasite Paracide
 
-	thumb_func_start sub_08087EBC
-sub_08087EBC: @ 0x08087EBC
+	@ Painful Choice
+	thumb_func_start gCardAISearchDiscard_08087EBC
+gCardAISearchDiscard_08087EBC: @ 0x08087EBC
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -238677,8 +238747,9 @@ _08087FB4: .4byte gUnk_0201C4E0
 _08087FB8: .4byte 0x00000868
 _08087FBC: .4byte 0x000012A1 @ Parasite Paracide
 
-	thumb_func_start sub_08087FC0
-sub_08087FC0: @ 0x08087FC0
+	@ Magical Hats
+	thumb_func_start gCardAIDestroyChangePosition_08087FC0
+gCardAIDestroyChangePosition_08087FC0: @ 0x08087FC0
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -238753,8 +238824,9 @@ _0808804C: .4byte gUnk_0201C740
 _08088050: .4byte 0x00001497 @ Spirit Message \"I\"
 _08088054: .4byte 0x000017AE @ The Second Sarcophagus
 
-	thumb_func_start sub_08088058
-sub_08088058: @ 0x08088058
+	@ Graverobber
+	thumb_func_start gCardAIGraveyard_08088058
+gCardAIGraveyard_08088058: @ 0x08088058
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -238808,8 +238880,14 @@ _080880AE:
 _080880B8: .4byte gUnk_0201C4E0
 _080880BC: .4byte 0x00000868
 
-	thumb_func_start sub_080880C0
-sub_080880C0: @ 0x080880C0
+	@ Flying Kamakiri
+	@ Giant Rat
+	@ Mother Grizzly
+	@ Mystic Tomato
+	@ Shining Angel
+	@ UFO Turtle
+	thumb_func_start gCardAISpecialSummonSendToGY_080880C0
+gCardAISpecialSummonSendToGY_080880C0: @ 0x080880C0
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -238909,8 +238987,9 @@ _0808818C: .4byte 0x000005DC
 _08088190: .4byte 0x000012A1 @ Parasite Paracide
 _08088194: .4byte gUnk_0201C4F0
 
-	thumb_func_start sub_08088198
-sub_08088198: @ 0x08088198
+	@ Senju of the Thousand Hands
+	thumb_func_start gCardAISearchRitual_08088198
+gCardAISearchRitual_08088198: @ 0x08088198
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -238972,8 +239051,16 @@ _08088208: .4byte gUnk_0201C4E0
 _0808820C: .4byte 0x00000868
 _08088210: .4byte gUnk_0201C740
 
-	thumb_func_start sub_08088214
-sub_08088214: @ 0x08088214
+	@ Bubonic Vermin
+	@ Giant Germ
+	@ Hero Kid
+	@ Hydrogeddon
+	@ Hyena
+	@ King's Knight
+	@ Nimble Momonga
+	@ Troop Dragon
+	thumb_func_start gCardAISpecialSummonSendToGY_08088214
+gCardAISpecialSummonSendToGY_08088214: @ 0x08088214
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -239031,8 +239118,9 @@ _08088278: .4byte 0x000015B7 @ Jack's Knight
 _0808827C: .4byte gUnk_0201C4E0
 _08088280: .4byte 0x00000868
 
-	thumb_func_start sub_08088284
-sub_08088284: @ 0x08088284
+	@ Sonic Bird
+	thumb_func_start gCardAISearchRitual_08088284
+gCardAISearchRitual_08088284: @ 0x08088284
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -239095,8 +239183,9 @@ _080882F8: .4byte gUnk_0201C4E0
 _080882FC: .4byte 0x00000868
 _08088300: .4byte gUnk_0201C740
 
-	thumb_func_start sub_08088304
-sub_08088304: @ 0x08088304
+	@ Dust Tornado
+	thumb_func_start gCardAIDestroySpellTrap_08088304
+gCardAIDestroySpellTrap_08088304: @ 0x08088304
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	adds r6, r2, #0
@@ -239140,8 +239229,14 @@ _08088352:
 _08088358: .4byte 0x00000868
 _0808835C: .4byte gUnk_0201C600
 
-	thumb_func_start sub_08088360
-sub_08088360: @ 0x08088360
+	@ Call of the Haunted
+	@ Dark Ruler Vandalgyon
+	@ Gilasaurus
+	@ Premature Burial
+	@ The Creator
+	@ The Shallow Grave
+	thumb_func_start gCardAISpecialSummonGraveyard_08088360
+gCardAISpecialSummonGraveyard_08088360: @ 0x08088360
 	push {r4, r5, r6, r7, lr}
 	adds r4, r0, #0
 	movs r5, #0
@@ -239199,8 +239294,9 @@ _080883C8: .4byte gUnk_0201C4E0
 _080883CC: .4byte 0x00000868
 _080883D0: .4byte gUnk_0201C8F8
 
-	thumb_func_start sub_080883D4
-sub_080883D4: @ 0x080883D4
+	@ Spear Cretin
+	thumb_func_start gCardAISpecialSummonSendToGY_080883D4
+gCardAISpecialSummonSendToGY_080883D4: @ 0x080883D4
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -239275,8 +239371,9 @@ _08088460: .4byte gUnk_0201C4E0
 _08088464: .4byte 0x00000868
 _08088468: .4byte gUnk_0201C8F8
 
-	thumb_func_start sub_0808846C
-sub_0808846C: @ 0x0808846C
+	@ Backup Soldier
+	thumb_func_start gCardAISearchGraveyard_0808846C
+gCardAISearchGraveyard_0808846C: @ 0x0808846C
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -239344,8 +239441,9 @@ _080884EC: .4byte 0x00000868
 _080884F0: .4byte gUnk_0201C8F8
 _080884F4: .4byte 0x000005DC
 
-	thumb_func_start sub_080884F8
-sub_080884F8: @ 0x080884F8
+	@ Serpentine Princess
+	thumb_func_start gCardAISpecialSummon_080884F8
+gCardAISpecialSummon_080884F8: @ 0x080884F8
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -239429,8 +239527,9 @@ _0808859C: .4byte 0x00000868
 _080885A0: .4byte gUnk_0201C740
 _080885A4: .4byte 0x000012A1 @ Parasite Paracide
 
-	thumb_func_start sub_080885A8
-sub_080885A8: @ 0x080885A8
+	@ Chosen One
+	thumb_func_start gCardAISpecialSummonSendToGY_080885A8
+gCardAISpecialSummonSendToGY_080885A8: @ 0x080885A8
 	push {r4, r5, r6, r7, lr}
 	adds r5, r0, #0
 	movs r4, #0
@@ -239452,8 +239551,12 @@ _080885B2:
 	.align 2, 0
 _080885CC: .4byte gUnk_0201E278
 
-	thumb_func_start sub_080885D0
-sub_080885D0: @ 0x080885D0
+	@ Crimson Sentry
+	@ Lady Panther
+	@ Return of the Doomed
+	@ The Forgiving Maiden
+	thumb_func_start gCardAIDestroyTribute_080885D0
+gCardAIDestroyTribute_080885D0: @ 0x080885D0
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -239515,8 +239618,9 @@ _08088640: .4byte gUnk_0201C4E0
 _08088644: .4byte 0x00000868
 _08088648: .4byte gUnk_0201C8F8
 
-	thumb_func_start sub_0808864C
-sub_0808864C: @ 0x0808864C
+	@ De-Fusion
+	thumb_func_start gCardAISpecialSummonChangePosition_0808864C
+gCardAISpecialSummonChangePosition_0808864C: @ 0x0808864C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -239600,8 +239704,9 @@ _080886EC: .4byte 0x000010E2 @ Electro-Whip (None)
 _080886F0: .4byte 0x000012E5 @ Polymerization
 _080886F4: .4byte 0x00000868
 
-	thumb_func_start sub_080886F8
-sub_080886F8: @ 0x080886F8
+	@ Insect Imitation
+	thumb_func_start gCardAISpecialSummonChangePosition_080886F8
+gCardAISpecialSummonChangePosition_080886F8: @ 0x080886F8
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -239690,8 +239795,9 @@ _080887A4: .4byte 0x00000868
 _080887A8: .4byte gUnk_0201C740
 _080887AC: .4byte 0x000012A1 @ Parasite Paracide
 
-	thumb_func_start sub_080887B0
-sub_080887B0: @ 0x080887B0
+	@ Fairy Guardian
+	thumb_func_start gCardAISendToGYGraveyard_080887B0
+gCardAISendToGYGraveyard_080887B0: @ 0x080887B0
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -239753,8 +239859,16 @@ _08088820: .4byte gUnk_0201C4E0
 _08088824: .4byte 0x00000868
 _08088828: .4byte gUnk_0201C8F8
 
-	thumb_func_start sub_0808882C
-sub_0808882C: @ 0x0808882C
+	@ Ancient Lamp
+	@ Contract with Exodia
+	@ Decayed Commander
+	@ Don Turtle
+	@ Kaibaman
+	@ Red-Eyes B. Chick
+	@ The Creator Incarnate
+	@ Vampire Orchis
+	thumb_func_start gCardAISpecialSummon_0808882C
+gCardAISpecialSummon_0808882C: @ 0x0808882C
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	adds r3, r1, #0
@@ -239869,8 +239983,10 @@ _080888FA:
 	.align 2, 0
 _08088900: .4byte 0x00000FA7 @ Blue-Eyes White Dragon
 
-	thumb_func_start sub_08088904
-sub_08088904: @ 0x08088904
+	@ Dark Blade the Dragon Knight
+	@ Kycoo the Ghost Destroyer
+	thumb_func_start gCardAIBanishDamage_08088904
+gCardAIBanishDamage_08088904: @ 0x08088904
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -239924,8 +240040,9 @@ _0808895A:
 _08088964: .4byte gUnk_0201C4E0
 _08088968: .4byte 0x00000868
 
-	thumb_func_start sub_0808896C
-sub_0808896C: @ 0x0808896C
+	@ Bazoo the Soul-Eater
+	thumb_func_start gCardAIBanishBoostATK_0808896C
+gCardAIBanishBoostATK_0808896C: @ 0x0808896C
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	movs r5, #0
@@ -239971,8 +240088,11 @@ _080889B6:
 _080889BC: .4byte gUnk_0201C4E0
 _080889C0: .4byte 0x00000868
 
-	thumb_func_start sub_080889C4
-sub_080889C4: @ 0x080889C4
+	@ Dark Necrofear
+	@ Doom Dozer
+	@ Megarock Dragon
+	thumb_func_start gCardAISpecialSummonGraveyard_080889C4
+gCardAISpecialSummonGraveyard_080889C4: @ 0x080889C4
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -240029,8 +240149,9 @@ _08088A20:
 _08088A2C: .4byte gUnk_0201C4E0
 _08088A30: .4byte 0x00000868
 
-	thumb_func_start sub_08088A34
-sub_08088A34: @ 0x08088A34
+	@ Destiny Board
+	thumb_func_start gCardAISendToGYGraveyard_08088A34
+gCardAISendToGYGraveyard_08088A34: @ 0x08088A34
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -240115,8 +240236,9 @@ _08088AC2:
 _08088ACC: .4byte gUnk_0201C4E0
 _08088AD0: .4byte 0x00000868
 
-	thumb_func_start sub_08088AD4
-sub_08088AD4: @ 0x08088AD4
+	@ Dark Sage
+	thumb_func_start gCardAISearchSpecialSummon_08088AD4
+gCardAISearchSpecialSummon_08088AD4: @ 0x08088AD4
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	movs r5, #0
@@ -240162,8 +240284,9 @@ _08088B1E:
 _08088B24: .4byte gUnk_0201C4E0
 _08088B28: .4byte 0x00000868
 
-	thumb_func_start sub_08088B2C
-sub_08088B2C: @ 0x08088B2C
+	@ Cathedral of Nobles
+	thumb_func_start gCardAISearchSpecialSummon_08088B2C
+gCardAISearchSpecialSummon_08088B2C: @ 0x08088B2C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -240342,8 +240465,9 @@ _08088C90: .4byte gUnk_0201C740
 _08088C94: .4byte 0x000012A1 @ Parasite Paracide
 _08088C98: .4byte gUnk_0201C880
 
-	thumb_func_start sub_08088C9C
-sub_08088C9C: @ 0x08088C9C
+	@ Foolish Burial
+	thumb_func_start gCardAISendToGYGraveyard_08088C9C
+gCardAISendToGYGraveyard_08088C9C: @ 0x08088C9C
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -240414,8 +240538,21 @@ _08088D20: .4byte 0x00000868
 _08088D24: .4byte gUnk_0201C740
 _08088D28: .4byte 0x000012A1 @ Parasite Paracide
 
-	thumb_func_start sub_08088D2C
-sub_08088D2C: @ 0x08088D2C
+	@ Aqua Spirit
+	@ Fenrir
+	@ Freed the Brave Wanderer
+	@ Garuda the Wind Spirit
+	@ Gigantes
+	@ Infernal Flame Emperor
+	@ Inferno
+	@ Lekunga
+	@ Silpheed
+	@ Soul of Purity and Light
+	@ Spirit of Flames
+	@ Strike Ninja
+	@ The Rock Spirit
+	thumb_func_start gCardAIGraveyardSpecialSummon_08088D2C
+gCardAIGraveyardSpecialSummon_08088D2C: @ 0x08088D2C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -240483,8 +240620,9 @@ _08088DAC: .4byte gUnk_0201C4E0
 _08088DB0: .4byte 0x00000868
 _08088DB4: .4byte gUnk_0201C8F8
 
-	thumb_func_start sub_08088DB8
-sub_08088DB8: @ 0x08088DB8
+	@ Supply
+	thumb_func_start gCardAIFusionSummonReturnToHand_08088DB8
+gCardAIFusionSummonReturnToHand_08088DB8: @ 0x08088DB8
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	movs r5, #0
@@ -240529,8 +240667,9 @@ _08088DFE:
 _08088E04: .4byte gUnk_0201C4E0
 _08088E08: .4byte 0x00000868
 
-	thumb_func_start sub_08088E0C
-sub_08088E0C: @ 0x08088E0C
+	@ Skull Lair
+	thumb_func_start gCardAIBanishDestroy_08088E0C
+gCardAIBanishDestroy_08088E0C: @ 0x08088E0C
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	movs r5, #0
@@ -240576,8 +240715,9 @@ _08088E56:
 _08088E5C: .4byte gUnk_0201C4E0
 _08088E60: .4byte 0x00000868
 
-	thumb_func_start sub_08088E64
-sub_08088E64: @ 0x08088E64
+	@ Miracle Dig
+	thumb_func_start gCardAIBanishGraveyard_08088E64
+gCardAIBanishGraveyard_08088E64: @ 0x08088E64
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	movs r4, #0
@@ -240635,8 +240775,9 @@ _08088ECC: .4byte gUnk_0201C4E0
 _08088ED0: .4byte 0x00000868
 _08088ED4: .4byte gUnk_0201CAB0
 
-	thumb_func_start sub_08088ED8
-sub_08088ED8: @ 0x08088ED8
+	@ Rope of Life
+	thumb_func_start gCardAISpecialSummonDiscard_08088ED8
+gCardAISpecialSummonDiscard_08088ED8: @ 0x08088ED8
 	push {r4, r5, r6, r7, lr}
 	adds r5, r0, #0
 	movs r6, #0
@@ -240715,8 +240856,10 @@ _08088F70: .4byte 0x000004D4
 _08088F74: .4byte 0x00000868
 _08088F78: .4byte gUnk_0201C8F8
 
-	thumb_func_start sub_08088F7C
-sub_08088F7C: @ 0x08088F7C
+	@ Major Riot
+	@ Marauding Captain
+	thumb_func_start gCardAISpecialSummonReturnToHand_08088F7C
+gCardAISpecialSummonReturnToHand_08088F7C: @ 0x08088F7C
 	push {r4, r5, r6, r7, lr}
 	adds r5, r0, #0
 	adds r7, r2, #0
@@ -240764,8 +240907,10 @@ _08088FD2:
 _08088FD8: .4byte 0x00000868
 _08088FDC: .4byte gUnk_0201C600
 
-	thumb_func_start sub_08088FE0
-sub_08088FE0: @ 0x08088FE0
+	@ Freed the Matchless General
+	@ Reinforcement of the Army
+	thumb_func_start gCardAISearchNegate_08088FE0
+gCardAISearchNegate_08088FE0: @ 0x08088FE0
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -240831,8 +240976,9 @@ _0808905C: .4byte gUnk_0201C4E0
 _08089060: .4byte 0x00000868
 _08089064: .4byte gUnk_0201C740
 
-	thumb_func_start sub_08089068
-sub_08089068: @ 0x08089068
+	@ The Warrior Returning Alive
+	thumb_func_start gCardAISearchGraveyard_08089068
+gCardAISearchGraveyard_08089068: @ 0x08089068
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	movs r5, #0
@@ -240878,8 +241024,9 @@ _080890B2:
 _080890B8: .4byte gUnk_0201C4E0
 _080890BC: .4byte 0x00000868
 
-	thumb_func_start sub_080890C0
-sub_080890C0: @ 0x080890C0
+	@ Spirit Ryu
+	thumb_func_start gCardAIDiscardBoostATK_080890C0
+gCardAIDiscardBoostATK_080890C0: @ 0x080890C0
 	push {r4, r5, r6, r7, lr}
 	adds r5, r0, #0
 	adds r7, r1, #0
@@ -240918,8 +241065,9 @@ _08089104:
 _0808910C: .4byte 0x00000868
 _08089110: .4byte gUnk_0201C600
 
-	thumb_func_start sub_08089114
-sub_08089114: @ 0x08089114
+	@ Des Feral Imp
+	thumb_func_start gCardAIGraveyardFlip_08089114
+gCardAIGraveyardFlip_08089114: @ 0x08089114
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	movs r4, #0
@@ -240951,8 +241099,9 @@ _08089142:
 _08089148: .4byte gUnk_0201C4E0
 _0808914C: .4byte 0x00000868
 
-	thumb_func_start sub_08089150
-sub_08089150: @ 0x08089150
+	@ Agido
+	thumb_func_start gCardAISpecialSummonSendToGY_08089150
+gCardAISpecialSummonSendToGY_08089150: @ 0x08089150
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -241035,8 +241184,10 @@ _080891E8:
 	.align 2, 0
 _080891F4: .4byte 0x00000868
 
-	thumb_func_start sub_080891F8
-sub_080891F8: @ 0x080891F8
+	@ Silent Fiend
+	@ Soul Resurrection
+	thumb_func_start gCardAISpecialSummonChangePosition_080891F8
+gCardAISpecialSummonChangePosition_080891F8: @ 0x080891F8
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -241104,8 +241255,9 @@ _08089278: .4byte gUnk_0201C4E0
 _0808927C: .4byte 0x00000868
 _08089280: .4byte gUnk_0201C8F8
 
-	thumb_func_start sub_08089284
-sub_08089284: @ 0x08089284
+	@ Maharaghi
+	thumb_func_start gCardAIDrawSpecialSummon_08089284
+gCardAIDrawSpecialSummon_08089284: @ 0x08089284
 	push {lr}
 	adds r3, r0, #0
 	ldr r2, _080892AC @ =gUnk_0201C4E0
@@ -241129,8 +241281,10 @@ _080892A6:
 _080892AC: .4byte gUnk_0201C4E0
 _080892B0: .4byte 0x00000868
 
-	thumb_func_start sub_080892B4
-sub_080892B4: @ 0x080892B4
+	@ Super Robolady
+	@ Super Roboyarou
+	thumb_func_start gCardAISpecialSummonBoostATK_080892B4
+gCardAISpecialSummonBoostATK_080892B4: @ 0x080892B4
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -241198,8 +241352,12 @@ _08089324:
 _08089330: .4byte gUnk_0201C4E0
 _08089334: .4byte 0x00000868
 
-	thumb_func_start sub_08089338
-sub_08089338: @ 0x08089338
+	@ D.D. Guide
+	@ Dimension Jar
+	@ Disappear
+	@ Keldo
+	thumb_func_start gCardAIGraveyardBanish_08089338
+gCardAIGraveyardBanish_08089338: @ 0x08089338
 	push {r4, r5, r6, lr}
 	movs r4, #0
 	ldr r2, _08089370 @ =gUnk_0201C4E0
@@ -241233,8 +241391,9 @@ _0808936A:
 _08089370: .4byte gUnk_0201C4E0
 _08089374: .4byte 0x00000868
 
-	thumb_func_start sub_08089378
-sub_08089378: @ 0x08089378
+	@ Last Turn
+	thumb_func_start gCardAISpecialSummonSendToGY_08089378
+gCardAISpecialSummonSendToGY_08089378: @ 0x08089378
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -241314,8 +241473,10 @@ _08089410: .4byte 0x00000868
 _08089414: .4byte gUnk_0201C740
 _08089418: .4byte 0x000012A1 @ Parasite Paracide
 
-	thumb_func_start sub_0808941C
-sub_0808941C: @ 0x0808941C
+	@ Vampire Lady
+	@ Vampire Lord
+	thumb_func_start gCardAISendToGYDamage_0808941C
+gCardAISendToGYDamage_0808941C: @ 0x0808941C
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -241474,8 +241635,9 @@ _08089546:
 _08089550: .4byte gUnk_0201C4E0
 _08089554: .4byte 0x00000868
 
-	thumb_func_start sub_08089558
-sub_08089558: @ 0x08089558
+	@ Pyramid Turtle
+	thumb_func_start gCardAISpecialSummonSendToGY_08089558
+gCardAISpecialSummonSendToGY_08089558: @ 0x08089558
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -241575,8 +241737,10 @@ _08089620: .4byte gUnk_0201C740
 _08089624: .4byte 0x000012A1 @ Parasite Paracide
 _08089628: .4byte gUnk_0201C4F0
 
-	thumb_func_start sub_0808962C
-sub_0808962C: @ 0x0808962C
+	@ Dark Scorpion Burglars
+	@ De-Spell Germ Weapon
+	thumb_func_start gCardAISendToGYGraveyard_0808962C
+gCardAISendToGYGraveyard_0808962C: @ 0x0808962C
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	movs r5, #0
@@ -241622,8 +241786,9 @@ _08089676:
 _0808967C: .4byte gUnk_0201C4E0
 _08089680: .4byte 0x00000868
 
-	thumb_func_start sub_08089684
-sub_08089684: @ 0x08089684
+	@ Book of Life
+	thumb_func_start gCardAISpecialSummonBanish_08089684
+gCardAISpecialSummonBanish_08089684: @ 0x08089684
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -241732,8 +241897,9 @@ _0808974C:
 _08089758: .4byte gUnk_0201C4E0
 _0808975C: .4byte 0x00000868
 
-	thumb_func_start sub_08089760
-sub_08089760: @ 0x08089760
+	@ Call of the Mummy
+	thumb_func_start gCardAISpecialSummon_08089760
+gCardAISpecialSummon_08089760: @ 0x08089760
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	adds r6, r2, #0
@@ -241772,8 +241938,9 @@ _080897A4:
 _080897AC: .4byte 0x00000868
 _080897B0: .4byte gUnk_0201C600
 
-	thumb_func_start sub_080897B4
-sub_080897B4: @ 0x080897B4
+	@ Toon Table of Contents
+	thumb_func_start gCardAISearch_080897B4
+gCardAISearch_080897B4: @ 0x080897B4
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	movs r5, #0
@@ -241819,8 +241986,10 @@ _080897FE:
 _08089804: .4byte gUnk_0201C4E0
 _08089808: .4byte 0x00000868
 
-	thumb_func_start sub_0808980C
-sub_0808980C: @ 0x0808980C
+	@ Fushioh Richie
+	@ Puppet Master
+	thumb_func_start gCardAISpecialSummonPreventAttack_0808980C
+gCardAISpecialSummonPreventAttack_0808980C: @ 0x0808980C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -241889,8 +242058,9 @@ _0808988C: .4byte gUnk_0201C4E0
 _08089890: .4byte 0x00000868
 _08089894: .4byte gUnk_0201C8F8
 
-	thumb_func_start sub_08089898
-sub_08089898: @ 0x08089898
+	@ Lord Poison
+	thumb_func_start gCardAISpecialSummonSendToGY_08089898
+gCardAISpecialSummonSendToGY_08089898: @ 0x08089898
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -241961,8 +242131,9 @@ _0808991C: .4byte gUnk_0201C4E0
 _08089920: .4byte 0x00000868
 _08089924: .4byte gUnk_0201C8F8
 
-	thumb_func_start sub_08089928
-sub_08089928: @ 0x08089928
+	@ Hidden Soldier
+	thumb_func_start gCardAISpecialSummon_08089928
+gCardAISpecialSummon_08089928: @ 0x08089928
 	push {r4, r5, r6, r7, lr}
 	adds r5, r0, #0
 	adds r7, r2, #0
@@ -242011,8 +242182,10 @@ _08089980:
 _08089988: .4byte 0x00000868
 _0808998C: .4byte gUnk_0201C600
 
-	thumb_func_start sub_08089990
-sub_08089990: @ 0x08089990
+	@ Familiar Knight
+	@ Monster Relief
+	thumb_func_start gCardAISpecialSummonReturnToHand_08089990
+gCardAISpecialSummonReturnToHand_08089990: @ 0x08089990
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	adds r6, r2, #0
@@ -242055,8 +242228,10 @@ _080899DA:
 _080899E0: .4byte 0x00000868
 _080899E4: .4byte gUnk_0201C600
 
-	thumb_func_start sub_080899E8
-sub_080899E8: @ 0x080899E8
+	@ Machine Duplication
+	@ The League of Uniform Nomenclature
+	thumb_func_start gCardAISpecialSummon_080899E8
+gCardAISpecialSummon_080899E8: @ 0x080899E8
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -242144,8 +242319,9 @@ _08089A94: .4byte 0x00000868
 _08089A98: .4byte gUnk_0201C740
 _08089A9C: .4byte 0x000012A1 @ Parasite Paracide
 
-	thumb_func_start sub_08089AA0
-sub_08089AA0: @ 0x08089AA0
+	@ Gravekeeper's Spy
+	thumb_func_start gCardAISpecialSummonFlip_08089AA0
+gCardAISpecialSummonFlip_08089AA0: @ 0x08089AA0
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -242235,8 +242411,9 @@ _08089B54: .4byte gUnk_0201C740
 _08089B58: .4byte 0x000005DC
 _08089B5C: .4byte 0x000012A1 @ Parasite Paracide
 
-	thumb_func_start sub_08089B60
-sub_08089B60: @ 0x08089B60
+	@ A Cat of Ill Omen
+	thumb_func_start gCardAISearchFlip_08089B60
+gCardAISearchFlip_08089B60: @ 0x08089B60
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	movs r5, #0
@@ -242282,8 +242459,9 @@ _08089BAA:
 _08089BB0: .4byte gUnk_0201C4E0
 _08089BB4: .4byte 0x00000868
 
-	thumb_func_start sub_08089BB8
-sub_08089BB8: @ 0x08089BB8
+	@ Different Dimension Capsule
+	thumb_func_start gCardAISearchBanish_08089BB8
+gCardAISearchBanish_08089BB8: @ 0x08089BB8
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	movs r5, #0
@@ -242337,8 +242515,10 @@ _08089C18: .4byte gUnk_0201C4E0
 _08089C1C: .4byte 0x00000868
 _08089C20: .4byte 0x000012A1 @ Parasite Paracide
 
-	thumb_func_start sub_08089C24
-sub_08089C24: @ 0x08089C24
+	@ An Owl of Luck
+	@ Terraforming
+	thumb_func_start gCardAISearchFlip_08089C24
+gCardAISearchFlip_08089C24: @ 0x08089C24
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	movs r5, #0
@@ -242384,8 +242564,9 @@ _08089C6E:
 _08089C74: .4byte gUnk_0201C4E0
 _08089C78: .4byte 0x00000868
 
-	thumb_func_start sub_08089C7C
-sub_08089C7C: @ 0x08089C7C
+	@ Metamorphosis
+	thumb_func_start gCardAISpecialSummonFusion_08089C7C
+gCardAISpecialSummonFusion_08089C7C: @ 0x08089C7C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -242454,8 +242635,9 @@ _08089CFC: .4byte gUnk_0201C4E0
 _08089D00: .4byte 0x00000868
 _08089D04: .4byte gUnk_0201C880
 
-	thumb_func_start sub_08089D08
-sub_08089D08: @ 0x08089D08
+	@ Rite of Spirit
+	thumb_func_start gCardAISpecialSummonGraveyard_08089D08
+gCardAISpecialSummonGraveyard_08089D08: @ 0x08089D08
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -242523,8 +242705,9 @@ _08089D88: .4byte gUnk_0201C4E0
 _08089D8C: .4byte 0x00000868
 _08089D90: .4byte gUnk_0201C8F8
 
-	thumb_func_start sub_08089D94
-sub_08089D94: @ 0x08089D94
+	@ Rope of Spirit
+	thumb_func_start gCardAISpecialSummonSendToGY_08089D94
+gCardAISpecialSummonSendToGY_08089D94: @ 0x08089D94
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -242608,8 +242791,9 @@ _08089E38: .4byte 0x00000868
 _08089E3C: .4byte gUnk_0201C740
 _08089E40: .4byte 0x000012A1 @ Parasite Paracide
 
-	thumb_func_start sub_08089E44
-sub_08089E44: @ 0x08089E44
+	@ Goblin Zombie
+	thumb_func_start gCardAISearchSendToGY_08089E44
+gCardAISearchSendToGY_08089E44: @ 0x08089E44
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -242677,8 +242861,9 @@ _08089EC4: .4byte gUnk_0201C4E0
 _08089EC8: .4byte 0x00000868
 _08089ECC: .4byte gUnk_0201C740
 
-	thumb_func_start sub_08089ED0
-sub_08089ED0: @ 0x08089ED0
+	@ Frontline Base
+	thumb_func_start gCardAISpecialSummon_08089ED0
+gCardAISpecialSummon_08089ED0: @ 0x08089ED0
 	push {r4, r5, r6, r7, lr}
 	adds r5, r0, #0
 	adds r7, r2, #0
@@ -242726,8 +242911,9 @@ _08089F26:
 _08089F2C: .4byte 0x00000868
 _08089F30: .4byte gUnk_0201C600
 
-	thumb_func_start sub_08089F34
-sub_08089F34: @ 0x08089F34
+	@ Autonomous Action Unit
+	thumb_func_start gCardAISpecialSummonDestroy_08089F34
+gCardAISpecialSummonDestroy_08089F34: @ 0x08089F34
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -242792,8 +242978,9 @@ _08089FAC: .4byte gUnk_0201C4E0
 _08089FB0: .4byte 0x00000868
 _08089FB4: .4byte gUnk_0201C8F8
 
-	thumb_func_start sub_08089FB8
-sub_08089FB8: @ 0x08089FB8
+	@ Tribute Doll
+	thumb_func_start gCardAISpecialSummonPreventAttack_08089FB8
+gCardAISpecialSummonPreventAttack_08089FB8: @ 0x08089FB8
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	adds r6, r2, #0
@@ -242836,8 +243023,14 @@ _0808A002:
 _0808A008: .4byte 0x00000868
 _0808A00C: .4byte gUnk_0201C600
 
-	thumb_func_start sub_0808A010
-sub_0808A010: @ 0x0808A010
+	@ Bonding - H2O
+	@ Dedication through Light and Darkness
+	@ Knight's Title
+	@ Photon Generator Unit
+	@ Skilled Dark Magician
+	@ Skilled White Magician
+	thumb_func_start gCardAISpecialSummonGraveyard_0808A010
+gCardAISpecialSummonGraveyard_0808A010: @ 0x0808A010
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -243035,8 +243228,9 @@ _0808A184: .4byte gUnk_0201C4E0
 _0808A188: .4byte 0x00000868
 _0808A18C: .4byte 0x0000159D @ Necrovalley
 
-	thumb_func_start sub_0808A190
-sub_0808A190: @ 0x0808A190
+	@ Apprentice Magician
+	thumb_func_start gCardAISpecialSummonDestroy_0808A190
+gCardAISpecialSummonDestroy_0808A190: @ 0x0808A190
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -243108,8 +243302,9 @@ _0808A218: .4byte gUnk_0201C4E0
 _0808A21C: .4byte 0x00000868
 _0808A220: .4byte gUnk_0201C740
 
-	thumb_func_start sub_0808A224
-sub_0808A224: @ 0x0808A224
+	@ Magical Scientist
+	thumb_func_start gCardAISpecialSummonDamage_0808A224
+gCardAISpecialSummonDamage_0808A224: @ 0x0808A224
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -243175,8 +243370,9 @@ _0808A2A0: .4byte gUnk_0201C4E0
 _0808A2A4: .4byte 0x00000868
 _0808A2A8: .4byte gUnk_0201C880
 
-	thumb_func_start sub_0808A2AC
-sub_0808A2AC: @ 0x0808A2AC
+	@ Emblem of Dragon Destroyer
+	thumb_func_start gCardAISearchGraveyard_0808A2AC
+gCardAISearchGraveyard_0808A2AC: @ 0x0808A2AC
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -243277,8 +243473,10 @@ _0808A36C: .4byte gUnk_0201C4E0
 _0808A370: .4byte 0x00000868
 _0808A374: .4byte 0x0000159D @ Necrovalley
 
-	thumb_func_start sub_0808A378
-sub_0808A378: @ 0x0808A378
+	@ Fruits of Kozaky's Studies
+	@ Spellbook Organization
+	thumb_func_start gCardAIUnknown_0808A378
+gCardAIUnknown_0808A378: @ 0x0808A378
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	movs r4, #0
@@ -243312,8 +243510,10 @@ _0808A3AA:
 _0808A3B0: .4byte gUnk_0201C4E0
 _0808A3B4: .4byte 0x00000868
 
-	thumb_func_start sub_0808A3B8
-sub_0808A3B8: @ 0x0808A3B8
+	@ Dark Scorpion - Chick the Yellow
+	@ Senri Eye
+	thumb_func_start gCardAIDamageReturnToHand_0808A3B8
+gCardAIDamageReturnToHand_0808A3B8: @ 0x0808A3B8
 	push {lr}
 	ldr r2, _0808A3E0 @ =gUnk_0201C4E0
 	movs r1, #1
@@ -243338,8 +243538,9 @@ _0808A3DC:
 _0808A3E0: .4byte gUnk_0201C4E0
 _0808A3E4: .4byte 0x00000868
 
-	thumb_func_start sub_0808A3E8
-sub_0808A3E8: @ 0x0808A3E8
+	@ Fairy of the Spring
+	thumb_func_start gCardAISearchGraveyard_0808A3E8
+gCardAISearchGraveyard_0808A3E8: @ 0x0808A3E8
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	movs r5, #0
@@ -243385,8 +243586,9 @@ _0808A432:
 _0808A438: .4byte gUnk_0201C4E0
 _0808A43C: .4byte 0x00000868
 
-	thumb_func_start sub_0808A440
-sub_0808A440: @ 0x0808A440
+	@ Arsenal Robber
+	thumb_func_start gCardAISendToGYGraveyard_0808A440
+gCardAISendToGYGraveyard_0808A440: @ 0x0808A440
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	movs r5, #0
@@ -243432,8 +243634,9 @@ _0808A48A:
 _0808A490: .4byte gUnk_0201C4E0
 _0808A494: .4byte 0x00000868
 
-	thumb_func_start sub_0808A498
-sub_0808A498: @ 0x0808A498
+	@ Magical Dimension
+	thumb_func_start gCardAISpecialSummonDestroy_0808A498
+gCardAISpecialSummonDestroy_0808A498: @ 0x0808A498
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	adds r6, r2, #0
@@ -243474,8 +243677,9 @@ _0808A4E0:
 _0808A4E8: .4byte 0x00000868
 _0808A4EC: .4byte gUnk_0201C600
 
-	thumb_func_start sub_0808A4F0
-sub_0808A4F0: @ 0x0808A4F0
+	@ Dark Scorpion - Meanae the Thorn
+	thumb_func_start gCardAISearchDamage_0808A4F0
+gCardAISearchDamage_0808A4F0: @ 0x0808A4F0
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	cmp r2, #1
@@ -243561,8 +243765,9 @@ _0808A58A:
 _0808A590: .4byte gUnk_0201C4E0
 _0808A594: .4byte 0x00000868
 
-	thumb_func_start sub_0808A598
-sub_0808A598: @ 0x0808A598
+	@ Iron Blacksmith Kotetsu
+	thumb_func_start gCardAISearchEquip_0808A598
+gCardAISearchEquip_0808A598: @ 0x0808A598
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	movs r5, #0
@@ -243608,8 +243813,9 @@ _0808A5E2:
 _0808A5E8: .4byte gUnk_0201C4E0
 _0808A5EC: .4byte 0x00000868
 
-	thumb_func_start sub_0808A5F0
-sub_0808A5F0: @ 0x0808A5F0
+	@ Pandemonium
+	thumb_func_start gCardAISearchSendToGY_0808A5F0
+gCardAISearchSendToGY_0808A5F0: @ 0x0808A5F0
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -243678,8 +243884,9 @@ _0808A670: .4byte gUnk_0201C4E0
 _0808A674: .4byte 0x00000868
 _0808A678: .4byte gUnk_0201C740
 
-	thumb_func_start sub_0808A67C
-sub_0808A67C: @ 0x0808A67C
+	@ Archfiend's Roar
+	thumb_func_start gCardAISpecialSummonDestroy_0808A67C
+gCardAISpecialSummonDestroy_0808A67C: @ 0x0808A67C
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -243747,8 +243954,9 @@ _0808A6FC: .4byte gUnk_0201C4E0
 _0808A700: .4byte 0x00000868
 _0808A704: .4byte gUnk_0201C8F8
 
-	thumb_func_start sub_0808A708
-sub_0808A708: @ 0x0808A708
+	@ Ray of Hope
+	thumb_func_start gCardAIGraveyard_0808A708
+gCardAIGraveyard_0808A708: @ 0x0808A708
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -243811,8 +244019,9 @@ _0808A77C: .4byte gUnk_0201C4E0
 _0808A780: .4byte 0x00000868
 _0808A784: .4byte gUnk_0201C8F8
 
-	thumb_func_start sub_0808A788
-sub_0808A788: @ 0x0808A788
+	@ Witch Doctor of Chaos
+	thumb_func_start gCardAIBanishGraveyard_0808A788
+gCardAIBanishGraveyard_0808A788: @ 0x0808A788
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -243905,8 +244114,9 @@ _0808A828:
 _0808A834: .4byte gUnk_0201C4E0
 _0808A838: .4byte 0x00000868
 
-	thumb_func_start sub_0808A83C
-sub_0808A83C: @ 0x0808A83C
+	@ Chaosrider Gustaph
+	thumb_func_start gCardAIBanishBoostATK_0808A83C
+gCardAIBanishBoostATK_0808A83C: @ 0x0808A83C
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	movs r5, #0
@@ -243952,8 +244162,11 @@ _0808A886:
 _0808A88C: .4byte gUnk_0201C4E0
 _0808A890: .4byte 0x00000868
 
-	thumb_func_start sub_0808A894
-sub_0808A894: @ 0x0808A894
+	@ Black Luster Soldier - Envoy of the Beginning
+	@ Chaos Emperor Dragon - Envoy of the End
+	@ Chaos Sorcerer
+	thumb_func_start gCardAISpecialSummonRevive_0808A894
+gCardAISpecialSummonRevive_0808A894: @ 0x0808A894
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -244024,8 +244237,9 @@ _0808A914: .4byte gUnk_0201C4E0
 _0808A918: .4byte 0x00000868
 _0808A91C: .4byte gUnk_0201C8F8
 
-	thumb_func_start sub_0808A920
-sub_0808A920: @ 0x0808A920
+	@ Recycle
+	thumb_func_start gCardAIDamageGraveyard_0808A920
+gCardAIDamageGraveyard_0808A920: @ 0x0808A920
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	movs r5, #0
@@ -244071,8 +244285,9 @@ _0808A96A:
 _0808A970: .4byte gUnk_0201C4E0
 _0808A974: .4byte 0x00000868
 
-	thumb_func_start sub_0808A978
-sub_0808A978: @ 0x0808A978
+	@ Primal Seed
+	thumb_func_start gCardAISearchBanish_0808A978
+gCardAISearchBanish_0808A978: @ 0x0808A978
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	movs r4, #0
@@ -244104,8 +244319,12 @@ _0808A9A6:
 _0808A9AC: .4byte gUnk_0201C4E0
 _0808A9B0: .4byte 0x00000868
 
-	thumb_func_start sub_0808A9B4
-sub_0808A9B4: @ 0x0808A9B4
+	@ D.D.M. - Different Dimension Master
+	@ Dimension Distortion
+	@ Dimension Fusion
+	@ Return from the Different Dimension
+	thumb_func_start gCardAISpecialSummonBanish_0808A9B4
+gCardAISpecialSummonBanish_0808A9B4: @ 0x0808A9B4
 	push {r4, r5, r6, r7, lr}
 	adds r5, r0, #0
 	movs r4, #0
@@ -244169,8 +244388,9 @@ _0808AA2C: .4byte gUnk_0201C4E0
 _0808AA30: .4byte 0x00000868
 _0808AA34: .4byte gUnk_0201CAB0
 
-	thumb_func_start sub_0808AA38
-sub_0808AA38: @ 0x0808AA38
+	@ Manju of the Ten Thousand Hands
+	thumb_func_start gCardAISearchRitual_0808AA38
+gCardAISearchRitual_0808AA38: @ 0x0808AA38
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -244233,8 +244453,9 @@ _0808AAA8: .4byte gUnk_0201C4E0
 _0808AAAC: .4byte 0x00000868
 _0808AAB0: .4byte gUnk_0201C740
 
-	thumb_func_start sub_0808AAB4
-sub_0808AAB4: @ 0x0808AAB4
+	@ Salvage
+	thumb_func_start gCardAISearchGraveyard_0808AAB4
+gCardAISearchGraveyard_0808AAB4: @ 0x0808AAB4
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -244303,8 +244524,9 @@ _0808AB38: .4byte 0x00000868
 _0808AB3C: .4byte gUnk_0201C8F8
 _0808AB40: .4byte 0x000005DC
 
-	thumb_func_start sub_0808AB44
-sub_0808AB44: @ 0x0808AB44
+	@ Ultra Evolution Pill
+	thumb_func_start gCardAISpecialSummonTribute_0808AB44
+gCardAISpecialSummonTribute_0808AB44: @ 0x0808AB44
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	adds r6, r2, #0
@@ -244345,8 +244567,9 @@ _0808AB8C:
 _0808AB94: .4byte 0x00000868
 _0808AB98: .4byte gUnk_0201C600
 
-	thumb_func_start sub_0808AB9C
-sub_0808AB9C: @ 0x0808AB9C
+	@ Jade Insect Whistle
+	thumb_func_start gCardAIUnknown_0808AB9C
+gCardAIUnknown_0808AB9C: @ 0x0808AB9C
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	movs r5, #0
@@ -244392,8 +244615,10 @@ _0808ABE6:
 _0808ABEC: .4byte gUnk_0201C4E0
 _0808ABF0: .4byte 0x00000868
 
-	thumb_func_start sub_0808ABF4
-sub_0808ABF4: @ 0x0808ABF4
+	@ Abyss Soldier
+	@ Lady Ninja Yae
+	thumb_func_start gCardAIDiscardReturnToHand_0808ABF4
+gCardAIDiscardReturnToHand_0808ABF4: @ 0x0808ABF4
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -244432,8 +244657,9 @@ _0808AC38:
 _0808AC40: .4byte 0x00000868
 _0808AC44: .4byte gUnk_0201C600
 
-	thumb_func_start sub_0808AC48
-sub_0808AC48: @ 0x0808AC48
+	@ Arsenal Summoner
+	thumb_func_start gCardAISearchFlip_0808AC48
+gCardAISearchFlip_0808AC48: @ 0x0808AC48
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	movs r5, #0
@@ -244479,8 +244705,11 @@ _0808AC92:
 _0808AC98: .4byte gUnk_0201C4E0
 _0808AC9C: .4byte 0x00000868
 
-	thumb_func_start sub_0808ACA0
-sub_0808ACA0: @ 0x0808ACA0
+	@ Chopman the Desperate Outlaw
+	@ Guardian Elma
+	@ The Kick Man
+	thumb_func_start gCardAIGraveyardEquip_0808ACA0
+gCardAIGraveyardEquip_0808ACA0: @ 0x0808ACA0
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -244595,8 +244824,9 @@ _0808AD80: .4byte gUnk_0201C8F8
 _0808AD84: .4byte 0xFFFF803F
 _0808AD88: .4byte gUnk_0201C4F4
 
-	thumb_func_start sub_0808AD8C
-sub_0808AD8C: @ 0x0808AD8C
+	@ Avatar of The Pot
+	thumb_func_start gCardAIDrawSendToGY_0808AD8C
+gCardAIDrawSendToGY_0808AD8C: @ 0x0808AD8C
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r2, #0
@@ -244628,8 +244858,9 @@ _0808ADC4: .4byte 0x00000868
 _0808ADC8: .4byte gUnk_0201C600
 _0808ADCC: .4byte 0x000012EC @ Pot of Greed
 
-	thumb_func_start sub_0808ADD0
-sub_0808ADD0: @ 0x0808ADD0
+	@ Monster Gate
+	thumb_func_start gCardAISpecialSummonSendToGY_0808ADD0
+gCardAISpecialSummonSendToGY_0808ADD0: @ 0x0808ADD0
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -244691,8 +244922,10 @@ _0808AE40: .4byte gUnk_0201C4E0
 _0808AE44: .4byte 0x00000868
 _0808AE48: .4byte gUnk_0201C740
 
-	thumb_func_start sub_0808AE4C
-sub_0808AE4C: @ 0x0808AE4C
+	@ Archlord Zerato
+	@ Light of Judgment
+	thumb_func_start gCardAIDiscardGraveyard_0808AE4C
+gCardAIDiscardGraveyard_0808AE4C: @ 0x0808AE4C
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	adds r6, r2, #0
@@ -244728,8 +244961,9 @@ _0808AE88:
 _0808AE90: .4byte 0x00000868
 _0808AE94: .4byte gUnk_0201C600
 
-	thumb_func_start sub_0808AE98
-sub_0808AE98: @ 0x0808AE98
+	@ Ninjitsu Art of Transformation
+	thumb_func_start gCardAISpecialSummonDestroy_0808AE98
+gCardAISpecialSummonDestroy_0808AE98: @ 0x0808AE98
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -244901,8 +245135,9 @@ _0808AFF0: .4byte 0x000012A1 @ Parasite Paracide
 _0808AFF4: .4byte gUnk_0201C4EC
 _0808AFF8: .4byte gUnk_0201C740
 
-	thumb_func_start sub_0808AFFC
-sub_0808AFFC: @ 0x0808AFFC
+	@ Beckoning Light
+	thumb_func_start gCardAISearchDiscard_0808AFFC
+gCardAISearchDiscard_0808AFFC: @ 0x0808AFFC
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -244965,8 +245200,9 @@ _0808B070: .4byte gUnk_0201C4E0
 _0808B074: .4byte 0x00000868
 _0808B078: .4byte gUnk_0201C8F8
 
-	thumb_func_start sub_0808B07C
-sub_0808B07C: @ 0x0808B07C
+	@ Spirit of the Pharaoh
+	thumb_func_start gCardAISpecialSummonRevive_0808B07C
+gCardAISpecialSummonRevive_0808B07C: @ 0x0808B07C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -245050,8 +245286,9 @@ _0808B120: .4byte gUnk_0201C4E0
 _0808B124: .4byte 0x00000868
 _0808B128: .4byte gUnk_0201C8F8
 
-	thumb_func_start sub_0808B12C
-sub_0808B12C: @ 0x0808B12C
+	@ Nubian Guard
+	thumb_func_start gCardAIDamageGraveyard_0808B12C
+gCardAIDamageGraveyard_0808B12C: @ 0x0808B12C
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -245114,8 +245351,9 @@ _0808B1A0: .4byte gUnk_0201C4E0
 _0808B1A4: .4byte 0x00000868
 _0808B1A8: .4byte gUnk_0201C8F8
 
-	thumb_func_start sub_0808B1AC
-sub_0808B1AC: @ 0x0808B1AC
+	@ Spirit Caller
+	thumb_func_start gCardAISpecialSummonRevive_0808B1AC
+gCardAISpecialSummonRevive_0808B1AC: @ 0x0808B1AC
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -245187,8 +245425,9 @@ _0808B234: .4byte gUnk_0201C4E0
 _0808B238: .4byte 0x00000868
 _0808B23C: .4byte gUnk_0201C8F8
 
-	thumb_func_start sub_0808B240
-sub_0808B240: @ 0x0808B240
+	@ Emissary of the Afterlife
+	thumb_func_start gCardAISearchSendToGY_0808B240
+gCardAISearchSendToGY_0808B240: @ 0x0808B240
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -245254,8 +245493,9 @@ _0808B2BC: .4byte gUnk_0201C4E0
 _0808B2C0: .4byte 0x00000868
 _0808B2C4: .4byte gUnk_0201C740
 
-	thumb_func_start sub_0808B2C8
-sub_0808B2C8: @ 0x0808B2C8
+	@ Night Assailant
+	thumb_func_start gCardAIReturnToHandSendToGY_0808B2C8
+gCardAIReturnToHandSendToGY_0808B2C8: @ 0x0808B2C8
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -245324,8 +245564,9 @@ _0808B344: .4byte gUnk_0201C4E0
 _0808B348: .4byte 0x00000868
 _0808B34C: .4byte gUnk_0201C8F8
 
-	thumb_func_start sub_0808B350
-sub_0808B350: @ 0x0808B350
+	@ Soul Reversal
+	thumb_func_start gCardAIGraveyardFlip_0808B350
+gCardAIGraveyardFlip_0808B350: @ 0x0808B350
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	movs r5, #0
@@ -245371,8 +245612,9 @@ _0808B39A:
 _0808B3A0: .4byte gUnk_0201C4E0
 _0808B3A4: .4byte 0x00000868
 
-	thumb_func_start sub_0808B3A8
-sub_0808B3A8: @ 0x0808B3A8
+	@ Human-Wave Tactics
+	thumb_func_start gCardAISpecialSummonDestroy_0808B3A8
+gCardAISpecialSummonDestroy_0808B3A8: @ 0x0808B3A8
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -245444,23 +245686,27 @@ _0808B430: .4byte gUnk_0201C4E0
 _0808B434: .4byte 0x00000868
 _0808B438: .4byte gUnk_0201C740
 
-	thumb_func_start sub_0808B43C
-sub_0808B43C: @ 0x0808B43C
+	@ The First Sarcophagus
+	thumb_func_start gCardAISpecialSummonSendToGY_0808B43C
+gCardAISpecialSummonSendToGY_0808B43C: @ 0x0808B43C
 	push {lr}
 	cmp r2, #0
 	beq _0808B448
-	bl sub_08088A34
+	bl gCardAISendToGYGraveyard_08088A34
 	b _0808B44E
 _0808B448:
 	movs r2, #0
-	bl sub_080872E4
+	bl gCardAISpecialSummonGraveyard_080872E4
 _0808B44E:
 	pop {r0}
 	bx r0
 	.align 2, 0
 
-	thumb_func_start sub_0808B454
-sub_0808B454: @ 0x0808B454
+	@ Howling Insect
+	@ Masked Dragon
+	@ UFOroid
+	thumb_func_start gCardAISpecialSummonSendToGY_0808B454
+gCardAISpecialSummonSendToGY_0808B454: @ 0x0808B454
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -245560,8 +245806,9 @@ _0808B520: .4byte 0x000005DC
 _0808B524: .4byte 0x000012A1 @ Parasite Paracide
 _0808B528: .4byte gUnk_0201C4F0
 
-	thumb_func_start sub_0808B52C
-sub_0808B52C: @ 0x0808B52C
+	@ Dark Factory of Mass Production
+	thumb_func_start gCardAISearchGraveyard_0808B52C
+gCardAISearchGraveyard_0808B52C: @ 0x0808B52C
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	movs r5, #0
@@ -245607,8 +245854,9 @@ _0808B576:
 _0808B57C: .4byte gUnk_0201C4E0
 _0808B580: .4byte 0x00000868
 
-	thumb_func_start sub_0808B584
-sub_0808B584: @ 0x0808B584
+	@ Abyssal Designator
+	thumb_func_start gCardAISendToGYDamage_0808B584
+gCardAISendToGYDamage_0808B584: @ 0x0808B584
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -245736,8 +245984,9 @@ _0808B67C: .4byte gUnk_0201C600
 _0808B680: .4byte gUnk_0201C4EC
 _0808B684: .4byte gUnk_0201C740
 
-	thumb_func_start sub_0808B688
-sub_0808B688: @ 0x0808B688
+	@ The Graveyard in the Fourth Dimension
+	thumb_func_start gCardAIGraveyard_0808B688
+gCardAIGraveyard_0808B688: @ 0x0808B688
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	movs r5, #0
@@ -245783,8 +246032,9 @@ _0808B6D2:
 _0808B6D8: .4byte gUnk_0201C4E0
 _0808B6DC: .4byte 0x00000868
 
-	thumb_func_start sub_0808B6E0
-sub_0808B6E0: @ 0x0808B6E0
+	@ Two-Man Cell Battle
+	thumb_func_start gCardAISpecialSummonEndPhase_0808B6E0
+gCardAISpecialSummonEndPhase_0808B6E0: @ 0x0808B6E0
 	push {r4, r5, r6, r7, lr}
 	adds r5, r0, #0
 	adds r7, r2, #0
@@ -245836,8 +246086,9 @@ _0808B740:
 _0808B748: .4byte 0x00000868
 _0808B74C: .4byte gUnk_0201C600
 
-	thumb_func_start sub_0808B750
-sub_0808B750: @ 0x0808B750
+	@ Big Wave Small Wave
+	thumb_func_start gCardAISpecialSummonDestroyAll_0808B750
+gCardAISpecialSummonDestroyAll_0808B750: @ 0x0808B750
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -245906,8 +246157,9 @@ _0808B7D0: .4byte gUnk_0201C4E0
 _0808B7D4: .4byte 0x00000868
 _0808B7D8: .4byte gUnk_0201C600
 
-	thumb_func_start sub_0808B7DC
-sub_0808B7DC: @ 0x0808B7DC
+	@ Magician's Circle
+	thumb_func_start gCardAISpecialSummonChangePosition_0808B7DC
+gCardAISpecialSummonChangePosition_0808B7DC: @ 0x0808B7DC
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -245981,8 +246233,9 @@ _0808B868: .4byte gUnk_0201C4E0
 _0808B86C: .4byte 0x00000868
 _0808B870: .4byte gUnk_0201C740
 
-	thumb_func_start sub_0808B874
-sub_0808B874: @ 0x0808B874
+	@ Mokey Mokey King
+	thumb_func_start gCardAISpecialSummonRevive_0808B874
+gCardAISpecialSummonRevive_0808B874: @ 0x0808B874
 	push {r4, r5, r6, r7, lr}
 	adds r4, r0, #0
 	movs r5, #0
@@ -246040,8 +246293,9 @@ _0808B8DC: .4byte 0x00000868
 _0808B8E0: .4byte gUnk_0201C8F8
 _0808B8E4: .4byte 0xBC100000
 
-	thumb_func_start sub_0808B8E8
-sub_0808B8E8: @ 0x0808B8E8
+	@ Monster Reincarnation
+	thumb_func_start gCardAISearchDiscard_0808B8E8
+gCardAISearchDiscard_0808B8E8: @ 0x0808B8E8
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	movs r5, #0
@@ -246087,8 +246341,9 @@ _0808B932:
 _0808B938: .4byte gUnk_0201C4E0
 _0808B93C: .4byte 0x00000868
 
-	thumb_func_start sub_0808B940
-sub_0808B940: @ 0x0808B940
+	@ Lighten the Load
+	thumb_func_start gCardAIDraw_0808B940
+gCardAIDraw_0808B940: @ 0x0808B940
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r2, #0
@@ -246123,8 +246378,9 @@ _0808B978:
 _0808B980: .4byte 0x00000868
 _0808B984: .4byte gUnk_0201C600
 
-	thumb_func_start sub_0808B988
-sub_0808B988: @ 0x0808B988
+	@ Behemoth the King of All Animals
+	thumb_func_start gCardAIReturnToHandGraveyard_0808B988
+gCardAIReturnToHandGraveyard_0808B988: @ 0x0808B988
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	movs r5, #0
@@ -246170,8 +246426,11 @@ _0808B9D2:
 _0808B9D8: .4byte gUnk_0201C4E0
 _0808B9DC: .4byte 0x00000868
 
-	thumb_func_start sub_0808B9E0
-sub_0808B9E0: @ 0x0808B9E0
+	@ The Dark - Hex-Sealed Fusion
+	@ The Earth - Hex-Sealed Fusion
+	@ The Light - Hex-Sealed Fusion
+	thumb_func_start gCardAISpecialSummonFusion_0808B9E0
+gCardAISpecialSummonFusion_0808B9E0: @ 0x0808B9E0
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -246380,8 +246639,9 @@ _0808BB64:
 _0808BB74: .4byte gUnk_0201C4E0
 _0808BB78: .4byte 0x00000868
 
-	thumb_func_start sub_0808BB7C
-sub_0808BB7C: @ 0x0808BB7C
+	@ Rescue Cat
+	thumb_func_start gCardAISpecialSummonSendToGY_0808BB7C
+gCardAISpecialSummonSendToGY_0808BB7C: @ 0x0808BB7C
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -246453,8 +246713,9 @@ _0808BC04: .4byte gUnk_0201C4E0
 _0808BC08: .4byte 0x00000868
 _0808BC0C: .4byte gUnk_0201C740
 
-	thumb_func_start sub_0808BC10
-sub_0808BC10: @ 0x0808BC10
+	@ A Feather of the Phoenix
+	thumb_func_start gCardAIDiscardGraveyard_0808BC10
+gCardAIDiscardGraveyard_0808BC10: @ 0x0808BC10
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	movs r4, #0
@@ -246486,8 +246747,9 @@ _0808BC3E:
 _0808BC44: .4byte gUnk_0201C4E0
 _0808BC48: .4byte 0x00000868
 
-	thumb_func_start sub_0808BC4C
-sub_0808BC4C: @ 0x0808BC4C
+	@ Centrifugal Field
+	thumb_func_start gCardAISpecialSummonSendToGY_0808BC4C
+gCardAISpecialSummonSendToGY_0808BC4C: @ 0x0808BC4C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -246577,8 +246839,9 @@ _0808BCEC:
 _0808BCFC: .4byte 0x00000868
 _0808BD00: .4byte gUnk_0201C4F4
 
-	thumb_func_start sub_0808BD04
-sub_0808BD04: @ 0x0808BD04
+	@ Fulfillment of the Contract
+	thumb_func_start gCardAISpecialSummonBanish_0808BD04
+gCardAISpecialSummonBanish_0808BD04: @ 0x0808BD04
 	push {r4, r5, r6, r7, lr}
 	adds r4, r0, #0
 	movs r5, #0
@@ -246636,8 +246899,9 @@ _0808BD6C: .4byte gUnk_0201C4E0
 _0808BD70: .4byte 0x00000868
 _0808BD74: .4byte gUnk_0201C8F8
 
-	thumb_func_start sub_0808BD78
-sub_0808BD78: @ 0x0808BD78
+	@ Re-Fusion
+	thumb_func_start gCardAISpecialSummonBanish_0808BD78
+gCardAISpecialSummonBanish_0808BD78: @ 0x0808BD78
 	push {r4, r5, r6, r7, lr}
 	adds r4, r0, #0
 	movs r5, #0
@@ -246695,8 +246959,9 @@ _0808BDE0: .4byte gUnk_0201C4E0
 _0808BDE4: .4byte 0x00000868
 _0808BDE8: .4byte gUnk_0201C8F8
 
-	thumb_func_start sub_0808BDEC
-sub_0808BDEC: @ 0x0808BDEC
+	@ Beast Soul Swap
+	thumb_func_start gCardAISpecialSummonReturnToHand_0808BDEC
+gCardAISpecialSummonReturnToHand_0808BDEC: @ 0x0808BDEC
 	push {r4, r5, r6, r7, lr}
 	adds r5, r0, #0
 	adds r7, r2, #0
@@ -246755,8 +247020,9 @@ _0808BE60: .4byte gUnk_0201C600
 _0808BE64: .4byte gUnk_0201B290
 _0808BE68: .4byte 0x00000484
 
-	thumb_func_start sub_0808BE6C
-sub_0808BE6C: @ 0x0808BE6C
+	@ Vampire Genesis
+	thumb_func_start gCardAISpecialSummonDiscard_0808BE6C
+gCardAISpecialSummonDiscard_0808BE6C: @ 0x0808BE6C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -246921,8 +247187,9 @@ _0808BFC0: .4byte gUnk_0201C4E0
 _0808BFC4: .4byte 0x00000868
 _0808BFC8: .4byte gUnk_0201C8F8
 
-	thumb_func_start sub_0808BFCC
-sub_0808BFCC: @ 0x0808BFCC
+	@ King of the Skull Servants
+	thumb_func_start gCardAISpecialSummonBanish_0808BFCC
+gCardAISpecialSummonBanish_0808BFCC: @ 0x0808BFCC
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -246993,8 +247260,9 @@ _0808C04C: .4byte gUnk_0201C8F8
 _0808C050: .4byte 0x00000FBE @ Skull Servant
 _0808C054: .4byte 0x000018C5 @ King of the Skull Servants
 
-	thumb_func_start sub_0808C058
-sub_0808C058: @ 0x0808C058
+	@ Double Attack
+	thumb_func_start gCardAIDiscardGraveyard_0808C058
+gCardAIDiscardGraveyard_0808C058: @ 0x0808C058
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	adds r6, r2, #0
@@ -247045,8 +247313,9 @@ _0808C0BC: .4byte gUnk_0201C600
 _0808C0C0: .4byte gUnk_0201B290
 _0808C0C4: .4byte 0x00000484
 
-	thumb_func_start sub_0808C0C8
-sub_0808C0C8: @ 0x0808C0C8
+	@ Battery Charger
+	thumb_func_start gCardAISpecialSummonDamage_0808C0C8
+gCardAISpecialSummonDamage_0808C0C8: @ 0x0808C0C8
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -247114,8 +247383,9 @@ _0808C148: .4byte gUnk_0201C4E0
 _0808C14C: .4byte 0x00000868
 _0808C150: .4byte gUnk_0201C8F8
 
-	thumb_func_start sub_0808C154
-sub_0808C154: @ 0x0808C154
+	@ Hero Signal
+	thumb_func_start gCardAISpecialSummonSendToGY_0808C154
+gCardAISpecialSummonSendToGY_0808C154: @ 0x0808C154
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -247248,8 +247518,9 @@ _0808C258: .4byte 0x00000868
 _0808C25C: .4byte gUnk_0201C600
 _0808C260: .4byte gUnk_0201C740
 
-	thumb_func_start sub_0808C264
-sub_0808C264: @ 0x0808C264
+	@ Level Conversion Lab
+	thumb_func_start gCardAISendToGYGraveyard_0808C264
+gCardAISendToGYGraveyard_0808C264: @ 0x0808C264
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r2, #0
@@ -247279,8 +247550,9 @@ _0808C292:
 _0808C298: .4byte 0x00000868
 _0808C29C: .4byte gUnk_0201C600
 
-	thumb_func_start sub_0808C2A0
-sub_0808C2A0: @ 0x0808C2A0
+	@ Rock Bombardment
+	thumb_func_start gCardAISendToGYDamage_0808C2A0
+gCardAISendToGYDamage_0808C2A0: @ 0x0808C2A0
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	movs r5, #0
@@ -247326,8 +247598,9 @@ _0808C2EA:
 _0808C2F0: .4byte gUnk_0201C4E0
 _0808C2F4: .4byte 0x00000868
 
-	thumb_func_start sub_0808C2F8
-sub_0808C2F8: @ 0x0808C2F8
+	@ Wroughtweiler
+	thumb_func_start gCardAISearchSendToGY_0808C2F8
+gCardAISearchSendToGY_0808C2F8: @ 0x0808C2F8
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	movs r5, #0
@@ -247373,8 +247646,9 @@ _0808C342:
 _0808C348: .4byte gUnk_0201C4E0
 _0808C34C: .4byte 0x00000868
 
-	thumb_func_start sub_0808C350
-sub_0808C350: @ 0x0808C350
+	@ Power Bond
+	thumb_func_start gCardAISpecialSummonFusionSummon_0808C350
+gCardAISpecialSummonFusionSummon_0808C350: @ 0x0808C350
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -247437,8 +247711,9 @@ _0808C3C4: .4byte gUnk_0201C4E0
 _0808C3C8: .4byte 0x00000868
 _0808C3CC: .4byte gUnk_0201C880
 
-	thumb_func_start sub_0808C3D0
-sub_0808C3D0: @ 0x0808C3D0
+	@ Summon Priest
+	thumb_func_start gCardAISpecialSummonDiscard_0808C3D0
+gCardAISpecialSummonDiscard_0808C3D0: @ 0x0808C3D0
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -247506,8 +247781,9 @@ _0808C450: .4byte gUnk_0201C4E0
 _0808C454: .4byte 0x00000868
 _0808C458: .4byte gUnk_0201C740
 
-	thumb_func_start sub_0808C45C
-sub_0808C45C: @ 0x0808C45C
+	@ Bubble Shuffle
+	thumb_func_start gCardAISpecialSummonChangePosition_0808C45C
+gCardAISpecialSummonChangePosition_0808C45C: @ 0x0808C45C
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	adds r6, r2, #0
@@ -247544,8 +247820,9 @@ _0808C49A:
 _0808C4A0: .4byte 0x00000868
 _0808C4A4: .4byte gUnk_0201C600
 
-	thumb_func_start sub_0808C4A8
-sub_0808C4A8: @ 0x0808C4A8
+	@ Fusion Recovery
+	thumb_func_start gCardAISearchFusionSummon_0808C4A8
+gCardAISearchFusionSummon_0808C4A8: @ 0x0808C4A8
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	movs r5, #0
@@ -247590,8 +247867,9 @@ _0808C4EE:
 _0808C4F4: .4byte gUnk_0201C4E0
 _0808C4F8: .4byte 0x00000868
 
-	thumb_func_start sub_0808C4FC
-sub_0808C4FC: @ 0x0808C4FC
+	@ Miracle Fusion
+	thumb_func_start gCardAISpecialSummonFusionSummon_0808C4FC
+gCardAISpecialSummonFusionSummon_0808C4FC: @ 0x0808C4FC
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -247709,8 +247987,9 @@ _0808C5DA:
 _0808C5E4: .4byte gUnk_0201C4E0
 _0808C5E8: .4byte 0x00000868
 
-	thumb_func_start sub_0808C5EC
-sub_0808C5EC: @ 0x0808C5EC
+	@ Dragon's Mirror
+	thumb_func_start gCardAISpecialSummonFusionSummon_0808C5EC
+gCardAISpecialSummonFusionSummon_0808C5EC: @ 0x0808C5EC
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -247828,8 +248107,9 @@ _0808C6CA:
 _0808C6D4: .4byte gUnk_0201C4E0
 _0808C6D8: .4byte 0x00000868
 
-	thumb_func_start sub_0808C6DC
-sub_0808C6DC: @ 0x0808C6DC
+	@ Spiritual Earth Art - Kurogane
+	thumb_func_start gCardAISpecialSummonRevive_0808C6DC
+gCardAISpecialSummonRevive_0808C6DC: @ 0x0808C6DC
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -247916,8 +248196,9 @@ _0808C784: .4byte gUnk_0201C4E0
 _0808C788: .4byte 0x00000868
 _0808C78C: .4byte gUnk_0201C8F8
 
-	thumb_func_start sub_0808C790
-sub_0808C790: @ 0x0808C790
+	@ A Rival Appears!
+	thumb_func_start gCardAISpecialSummon_0808C790
+gCardAISpecialSummon_0808C790: @ 0x0808C790
 	push {r4, r5, r6, r7, lr}
 	adds r5, r0, #0
 	adds r7, r2, #0
@@ -247972,8 +248253,9 @@ _0808C7FC: .4byte gUnk_0201C600
 _0808C800: .4byte gUnk_0201B290
 _0808C804: .4byte 0x00000484
 
-	thumb_func_start sub_0808C808
-sub_0808C808: @ 0x0808C808
+	@ Gilford the Legend
+	thumb_func_start gCardAISpecialSummonRevive_0808C808
+gCardAISpecialSummonRevive_0808C808: @ 0x0808C808
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -248157,8 +248439,9 @@ _0808C962:
 _0808C974: .4byte 0x00000868
 _0808C978: .4byte gUnk_0201C4F4
 
-	thumb_func_start sub_0808C97C
-sub_0808C97C: @ 0x0808C97C
+	@ Warrior Lady of the Wasteland
+	thumb_func_start gCardAISpecialSummonSendToGY_0808C97C
+gCardAISpecialSummonSendToGY_0808C97C: @ 0x0808C97C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -248265,8 +248548,9 @@ _0808CA58: .4byte 0x000005DC
 _0808CA5C: .4byte 0x000012A1 @ Parasite Paracide
 _0808CA60: .4byte gUnk_0201C4F0
 
-	thumb_func_start sub_0808CA64
-sub_0808CA64: @ 0x0808CA64
+	@ Divine Sword - Phoenix Blade
+	thumb_func_start gCardAISearchBoostATK_0808CA64
+gCardAISearchBoostATK_0808CA64: @ 0x0808CA64
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	movs r5, #0
@@ -248312,8 +248596,9 @@ _0808CAAE:
 _0808CAB4: .4byte gUnk_0201C4E0
 _0808CAB8: .4byte 0x00000868
 
-	thumb_func_start sub_0808CABC
-sub_0808CABC: @ 0x0808CABC
+	@ Level Modulation
+	thumb_func_start gCardAISpecialSummonPreventAttack_0808CABC
+gCardAISpecialSummonPreventAttack_0808CABC: @ 0x0808CABC
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -248388,8 +248673,9 @@ _0808CB48: .4byte gUnk_0201C4E0
 _0808CB4C: .4byte 0x00000868
 _0808CB50: .4byte gUnk_0201C4F4
 
-	thumb_func_start sub_0808CB54
-sub_0808CB54: @ 0x0808CB54
+	@ Water Dragon
+	thumb_func_start gCardAISpecialSummonSendToGY_0808CB54
+gCardAISpecialSummonSendToGY_0808CB54: @ 0x0808CB54
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -248453,8 +248739,9 @@ _0808CBC8: .4byte gUnk_0201C4E0
 _0808CBCC: .4byte 0x00000868
 _0808CBD0: .4byte gUnk_0201C8F8
 
-	thumb_func_start sub_0808CBD4
-sub_0808CBD4: @ 0x0808CBD4
+	@ Scarr, Scout of Dark World
+	thumb_func_start gCardAISearchSendToGY_0808CBD4
+gCardAISearchSendToGY_0808CBD4: @ 0x0808CBD4
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -248520,8 +248807,9 @@ _0808CC50: .4byte gUnk_0201C4E0
 _0808CC54: .4byte 0x00000868
 _0808CC58: .4byte gUnk_0201C740
 
-	thumb_func_start sub_0808CC5C
-sub_0808CC5C: @ 0x0808CC5C
+	@ Pot of Avarice
+	thumb_func_start gCardAIDrawGraveyard_0808CC5C
+gCardAIDrawGraveyard_0808CC5C: @ 0x0808CC5C
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	movs r5, #0
@@ -248567,8 +248855,9 @@ _0808CCA6:
 _0808CCAC: .4byte gUnk_0201C4E0
 _0808CCB0: .4byte 0x00000868
 
-	thumb_func_start sub_0808CCB4
-sub_0808CCB4: @ 0x0808CCB4
+	@ Boss Rush
+	thumb_func_start gCardAISpecialSummonSendToGY_0808CCB4
+gCardAISpecialSummonSendToGY_0808CCB4: @ 0x0808CCB4
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -248632,8 +248921,9 @@ _0808CD28: .4byte gUnk_0201C4E0
 _0808CD2C: .4byte 0x00000868
 _0808CD30: .4byte gUnk_0201C740
 
-	thumb_func_start sub_0808CD34
-sub_0808CD34: @ 0x0808CD34
+	@ Gateway to Dark World
+	thumb_func_start gCardAISpecialSummonRevive_0808CD34
+gCardAISpecialSummonRevive_0808CD34: @ 0x0808CD34
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -248701,8 +248991,9 @@ _0808CDB4: .4byte gUnk_0201C4E0
 _0808CDB8: .4byte 0x00000868
 _0808CDBC: .4byte gUnk_0201C8F8
 
-	thumb_func_start sub_0808CDC0
-sub_0808CDC0: @ 0x0808CDC0
+	@ The Forces of Darkness
+	thumb_func_start gCardAIReturnToHandGraveyard_0808CDC0
+gCardAIReturnToHandGraveyard_0808CDC0: @ 0x0808CDC0
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -248764,8 +249055,9 @@ _0808CE30: .4byte gUnk_0201C4E0
 _0808CE34: .4byte 0x00000868
 _0808CE38: .4byte gUnk_0201C8F8
 
-	thumb_func_start sub_0808CE3C
-sub_0808CE3C: @ 0x0808CE3C
+	@ Roll Out!
+	thumb_func_start gCardAIGraveyardEquip_0808CE3C
+gCardAIGraveyardEquip_0808CE3C: @ 0x0808CE3C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -248931,8 +249223,9 @@ _0808CF6E:
 _0808CF80: .4byte 0x00000868
 _0808CF84: .4byte gUnk_0201C4F4
 
-	thumb_func_start sub_0808CF88
-sub_0808CF88: @ 0x0808CF88
+	@ Armed Changer
+	thumb_func_start gCardAISearchSendToGY_0808CF88
+gCardAISearchSendToGY_0808CF88: @ 0x0808CF88
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -249030,16 +249323,18 @@ _0808D03E:
 _0808D04C: .4byte 0x00000868
 _0808D050: .4byte gUnk_0201C600
 
-	thumb_func_start sub_0808D054
-sub_0808D054: @ 0x0808D054
+	@ Magical Mallet
+	thumb_func_start gCardAIDraw_0808D054
+gCardAIDraw_0808D054: @ 0x0808D054
 	push {lr}
 	movs r1, #0xb
 	bl sub_0808D88C
 	pop {r0}
 	bx r0
 
-	thumb_func_start sub_0808D060
-sub_0808D060: @ 0x0808D060
+	@ Inferno Reckless Summon
+	thumb_func_start gCardAISpecialSummonChangePosition_0808D060
+gCardAISpecialSummonChangePosition_0808D060: @ 0x0808D060
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -249209,8 +249504,9 @@ _0808D1B0: .4byte 0x0000159D @ Necrovalley
 _0808D1B4: .4byte gUnk_0201C8F8
 _0808D1B8: .4byte gUnk_0201C600
 
-	thumb_func_start sub_0808D1BC
-sub_0808D1BC: @ 0x0808D1BC
+	@ White Horns D.
+	thumb_func_start gCardAISpecialSummonBoostATK_0808D1BC
+gCardAISpecialSummonBoostATK_0808D1BC: @ 0x0808D1BC
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -249264,8 +249560,9 @@ _0808D212:
 _0808D21C: .4byte gUnk_0201C4E0
 _0808D220: .4byte 0x00000868
 
-	thumb_func_start sub_0808D224
-sub_0808D224: @ 0x0808D224
+	@ Magnet Circle LV2
+	thumb_func_start gCardAISpecialSummon_0808D224
+gCardAISpecialSummon_0808D224: @ 0x0808D224
 	push {r4, r5, r6, r7, lr}
 	adds r5, r0, #0
 	adds r7, r2, #0
@@ -249317,8 +249614,9 @@ _0808D284:
 _0808D28C: .4byte 0x00000868
 _0808D290: .4byte gUnk_0201C600
 
-	thumb_func_start sub_0808D294
-sub_0808D294: @ 0x0808D294
+	@ Ancient Gear Drill
+	thumb_func_start gCardAIDiscard_0808D294
+gCardAIDiscard_0808D294: @ 0x0808D294
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -249389,8 +249687,9 @@ _0808D318: .4byte gUnk_0201C4E0
 _0808D31C: .4byte 0x00000868
 _0808D320: .4byte gUnk_0201C740
 
-	thumb_func_start sub_0808D324
-sub_0808D324: @ 0x0808D324
+	@ Damage Condenser
+	thumb_func_start gCardAISpecialSummonDiscard_0808D324
+gCardAISpecialSummonDiscard_0808D324: @ 0x0808D324
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -249477,8 +249776,9 @@ _0808D3CC: .4byte 0x00000868
 _0808D3D0: .4byte gUnk_0201C740
 _0808D3D4: .4byte 0x000012A1 @ Parasite Paracide
 
-	thumb_func_start sub_0808D3D8
-sub_0808D3D8: @ 0x0808D3D8
+	@ Gokipon
+	thumb_func_start gCardAISearchSendToGY_0808D3D8
+gCardAISearchSendToGY_0808D3D8: @ 0x0808D3D8
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -249566,8 +249866,9 @@ _0808D488: .4byte 0x000005DC
 _0808D48C: .4byte 0x000012A1 @ Parasite Paracide
 _0808D490: .4byte gUnk_0201C4F0
 
-	thumb_func_start sub_0808D494
-sub_0808D494: @ 0x0808D494
+	@ Symbol of Heritage
+	thumb_func_start gCardAISpecialSummonDestroy_0808D494
+gCardAISpecialSummonDestroy_0808D494: @ 0x0808D494
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -249711,8 +250012,10 @@ _0808D5A4: .4byte 0x00000868
 _0808D5A8: .4byte gUnk_0201C8F8
 _0808D5AC: .4byte gUnk_0201C4F4
 
-	thumb_func_start sub_0808D5B0
-sub_0808D5B0: @ 0x0808D5B0
+	@ Generation Shift
+	@ Next to be Lost
+	thumb_func_start gCardAISearchSendToGY_0808D5B0
+gCardAISearchSendToGY_0808D5B0: @ 0x0808D5B0
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -249825,8 +250128,9 @@ _0808D688: .4byte 0x00000868
 _0808D68C: .4byte gUnk_0201C740
 _0808D690: .4byte 0x000012A1 @ Parasite Paracide
 
-	thumb_func_start sub_0808D694
-sub_0808D694: @ 0x0808D694
+	@ The Flute of Summoning Kuriboh
+	thumb_func_start gCardAISearchSpecialSummon_0808D694
+gCardAISearchSpecialSummon_0808D694: @ 0x0808D694
 	push {r4, r5, r6, r7, lr}
 	adds r7, r0, #0
 	movs r4, #0
@@ -316609,7 +316913,7 @@ _080ADDFA:
 	beq _080ADE20
 	adds r0, r6, #0
 	movs r1, #0
-	bl sub_080BADF4
+	bl gCardAISearchDamage_080BADF4
 	b _080ADE22
 	.align 2, 0
 _080ADE18: .4byte gUnk_0201C4E0
@@ -324352,8 +324656,9 @@ _080B18CA:
 	.align 2, 0
 _080B18DC: .4byte 0x00000868
 
-	thumb_func_start sub_080B18E0
-sub_080B18E0: @ 0x080B18E0
+	@ Mask of Restrict
+	thumb_func_start gCardAITribute_080B18E0
+gCardAITribute_080B18E0: @ 0x080B18E0
 	ldr r1, _080B18F8 @ =gUnk_0201C4E0
 	ldr r2, _080B18FC @ =0x00001CE8
 	adds r1, r1, r2
@@ -324370,8 +324675,11 @@ sub_080B18E0: @ 0x080B18E0
 _080B18F8: .4byte gUnk_0201C4E0
 _080B18FC: .4byte 0x00001CE8
 
-	thumb_func_start sub_080B1900
-sub_080B1900: @ 0x080B1900
+	@ Kazejin
+	@ Sanga of the Thunder
+	@ Suijin
+	thumb_func_start gCardAIUnknown_080B1900
+gCardAIUnknown_080B1900: @ 0x080B1900
 	push {r4, lr}
 	adds r3, r0, #0
 	ldrh r4, [r3, #0x16]
@@ -324403,8 +324711,9 @@ _080B1936:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B193C
-sub_080B193C: @ 0x080B193C
+	@ Injection Fairy Lily
+	thumb_func_start gCardAIBoostATKDamage_080B193C
+gCardAIBoostATKDamage_080B193C: @ 0x080B193C
 	push {r4, r5, r6, lr}
 	ldr r4, _080B1984 @ =gUnk_0201BB90
 	ldr r2, [r4]
@@ -324451,8 +324760,9 @@ _080B1992:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B1998
-sub_080B1998: @ 0x080B1998
+	@ Kuriboh
+	thumb_func_start gCardAIDiscardDamage_080B1998
+gCardAIDiscardDamage_080B1998: @ 0x080B1998
 	ldrh r3, [r0, #0x14]
 	ldr r2, _080B19B4 @ =gUnk_0201C4E0
 	ldrb r0, [r0, #2]
@@ -324482,8 +324792,9 @@ _080B19C8:
 	.align 2, 0
 _080B19CC: .4byte 0x000005DB
 
-	thumb_func_start sub_080B19D0
-sub_080B19D0: @ 0x080B19D0
+	@ Collected Power
+	thumb_func_start gCardAIDestroyEquip_080B19D0
+gCardAIDestroyEquip_080B19D0: @ 0x080B19D0
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -324570,8 +324881,9 @@ _080B1A60:
 _080B1A6C: .4byte 0x00000868
 _080B1A70: .4byte gUnk_0201C510
 
-	thumb_func_start sub_080B1A74
-sub_080B1A74: @ 0x080B1A74
+	@ Time Machine
+	thumb_func_start gCardAISpecialSummonSendToGY_080B1A74
+gCardAISpecialSummonSendToGY_080B1A74: @ 0x080B1A74
 	push {r4, r5, r6, r7, lr}
 	adds r7, r0, #0
 	movs r6, #0
@@ -324660,8 +324972,9 @@ _080B1B14:
 _080B1B1C: .4byte gUnk_0201B290
 _080B1B20: .4byte 0x000004CC
 
-	thumb_func_start sub_080B1B24
-sub_080B1B24: @ 0x080B1B24
+	@ Rope of Life
+	thumb_func_start gCardAISpecialSummonDiscard_080B1B24
+gCardAISpecialSummonDiscard_080B1B24: @ 0x080B1B24
 	push {r4, r5, r6, lr}
 	sub sp, #8
 	adds r4, r0, #0
@@ -324764,8 +325077,9 @@ _080B1BE8: .4byte 0x000004D4
 _080B1BEC: .4byte gUnk_0201B290
 _080B1BF0: .4byte 0x000004CC
 
-	thumb_func_start sub_080B1BF4
-sub_080B1BF4: @ 0x080B1BF4
+	@ Skill Drain
+	thumb_func_start gCardAINegateDamage_080B1BF4
+gCardAINegateDamage_080B1BF4: @ 0x080B1BF4
 	push {lr}
 	adds r1, r0, #0
 	ldr r0, _080B1C14 @ =gUnk_0201C4E0
@@ -324803,8 +325117,9 @@ _080B1C36:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B1C3C
-sub_080B1C3C: @ 0x080B1C3C
+	@ Magical Dimension
+	thumb_func_start gCardAISpecialSummonDestroy_080B1C3C
+gCardAISpecialSummonDestroy_080B1C3C: @ 0x080B1C3C
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r0, [r4, #2]
@@ -324839,8 +325154,9 @@ _080B1C78:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B1C80
-sub_080B1C80: @ 0x080B1C80
+	@ Earthshaker
+	thumb_func_start gCardAIDestroy_080B1C80
+gCardAIDestroy_080B1C80: @ 0x080B1C80
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -324923,8 +325239,9 @@ _080B1D12:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B1D24
-sub_080B1D24: @ 0x080B1D24
+	@ Sebek's Blessing
+	thumb_func_start gCardAIGainLPDamage_080B1D24
+gCardAIGainLPDamage_080B1D24: @ 0x080B1D24
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -324966,8 +325283,9 @@ _080B1D68: .4byte gUnk_0201C4E0
 _080B1D6C: .4byte 0x00000868
 _080B1D70: .4byte 0x000005DB
 
-	thumb_func_start sub_080B1D74
-sub_080B1D74: @ 0x080B1D74
+	@ The Regulation of Tribe
+	thumb_func_start gCardAIDestroyPreventAttack_080B1D74
+gCardAIDestroyPreventAttack_080B1D74: @ 0x080B1D74
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	ldr r3, _080B1DC0 @ =gUnk_0201C4E0
@@ -325015,8 +325333,9 @@ _080B1DCE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B1DD4
-sub_080B1DD4: @ 0x080B1DD4
+	@ Blind Destruction
+	thumb_func_start gCardAIDestroyAllStandbyPhase_080B1DD4
+gCardAIDestroyAllStandbyPhase_080B1DD4: @ 0x080B1DD4
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldrb r0, [r4, #2]
@@ -325041,8 +325360,9 @@ _080B1DFA:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B1E04
-sub_080B1E04: @ 0x080B1E04
+	@ Graverobber's Retribution
+	thumb_func_start gCardAIBanishDamage_080B1E04
+gCardAIBanishDamage_080B1E04: @ 0x080B1E04
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r1, r0, #0x1f
@@ -325053,8 +325373,9 @@ sub_080B1E04: @ 0x080B1E04
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B1E18
-sub_080B1E18: @ 0x080B1E18
+	@ Mystical Space Typhoon
+	thumb_func_start gCardAIDestroySpellTrap_080B1E18
+gCardAIDestroySpellTrap_080B1E18: @ 0x080B1E18
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -325108,8 +325429,10 @@ _080B1E7A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B1E80
-sub_080B1E80: @ 0x080B1E80
+	@ Dust Tornado
+	@ Mind Haxorz
+	thumb_func_start gCardAIDestroySpellTrapDamage_080B1E80
+gCardAIDestroySpellTrapDamage_080B1E80: @ 0x080B1E80
 	push {r4, r5, r6, r7, lr}
 	adds r2, r0, #0
 	ldr r1, _080B1ED4 @ =gUnk_0201C4E0
@@ -325168,8 +325491,9 @@ _080B1EEA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B1EF0
-sub_080B1EF0: @ 0x080B1EF0
+	@ Ring of Destruction
+	thumb_func_start gCardAIDestroyDamage_080B1EF0
+gCardAIDestroyDamage_080B1EF0: @ 0x080B1EF0
 	push {r4, r5, r6, r7, lr}
 	sub sp, #8
 	adds r6, r0, #0
@@ -325271,8 +325595,9 @@ _080B1FAE:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B1FB8
-sub_080B1FB8: @ 0x080B1FB8
+	@ Battle-Scarred
+	thumb_func_start gCardAIDestroyDamage_080B1FB8
+gCardAIDestroyDamage_080B1FB8: @ 0x080B1FB8
 	push {lr}
 	ldr r0, _080B1FD0 @ =0x0000169F (Pandemonium)
 	bl sub_0803412C
@@ -325287,8 +325612,9 @@ _080B1FC8:
 	.align 2, 0
 _080B1FD0: .4byte 0x0000169F @ Pandemonium
 
-	thumb_func_start sub_080B1FD4
-sub_080B1FD4: @ 0x080B1FD4
+	@ Destruction Ring
+	thumb_func_start gCardAIDestroyDamage_080B1FD4
+gCardAIDestroyDamage_080B1FD4: @ 0x080B1FD4
 	push {r4, r5, lr}
 	ldr r5, _080B1FF4 @ =gUnk_0201C4E0
 	ldrb r0, [r0, #2]
@@ -325334,8 +325660,9 @@ _080B2020:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B2028
-sub_080B2028: @ 0x080B2028
+	@ Just Desserts
+	thumb_func_start gCardAIDamage_080B2028
+gCardAIDamage_080B2028: @ 0x080B2028
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -325378,8 +325705,9 @@ _080B2076:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B207C
-sub_080B207C: @ 0x080B207C
+	@ Gift of The Mystical Elf
+	thumb_func_start gCardAIGainLP_080B207C
+gCardAIGainLP_080B207C: @ 0x080B207C
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldrb r0, [r5, #2]
@@ -325408,8 +325736,9 @@ _080B20AE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B20B4
-sub_080B20B4: @ 0x080B20B4
+	@ The Eye of Truth
+	thumb_func_start gCardAIGainLPStandbyPhase_080B20B4
+gCardAIGainLPStandbyPhase_080B20B4: @ 0x080B20B4
 	movs r1, #0
 	ldr r0, _080B20C8 @ =gUnk_0201C4E0
 	ldr r2, _080B20CC @ =0x00001CF4
@@ -325425,8 +325754,10 @@ _080B20C4:
 _080B20C8: .4byte gUnk_0201C4E0
 _080B20CC: .4byte 0x00001CF4
 
-	thumb_func_start sub_080B20D0
-sub_080B20D0: @ 0x080B20D0
+	@ Ceasefire
+	@ The Spell Absorbing Life
+	thumb_func_start gCardAIChangePositionBoostDEF_080B20D0
+gCardAIChangePositionBoostDEF_080B20D0: @ 0x080B20D0
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -325580,8 +325911,9 @@ _080B21E6:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B21F8
-sub_080B21F8: @ 0x080B21F8
+	@ Aqua Chorus
+	thumb_func_start gCardAIBoostATKBoostDEF_080B21F8
+gCardAIBoostATKBoostDEF_080B21F8: @ 0x080B21F8
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -325641,8 +325973,9 @@ _080B225E:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B226C
-sub_080B226C: @ 0x080B226C
+	@ Chain Destruction
+	thumb_func_start gCardAISpecialSummonDestroyAll_080B226C
+gCardAISpecialSummonDestroyAll_080B226C: @ 0x080B226C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -325759,8 +326092,10 @@ _080B234A:
 	.align 2, 0
 _080B2358: .4byte gUnk_0201B75C
 
-	thumb_func_start sub_080B235C
-sub_080B235C: @ 0x080B235C
+	@ Bottomless Trap Hole
+	@ Chain Disappearance
+	thumb_func_start gCardAISpecialSummonBanish_080B235C
+gCardAISpecialSummonBanish_080B235C: @ 0x080B235C
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	movs r2, #0
@@ -325808,11 +326143,12 @@ _080B23AE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B23B4
-sub_080B23B4: @ 0x080B23B4
+	@ Torrential Tribute
+	thumb_func_start gCardAISpecialSummonDestroyAll_080B23B4
+gCardAISpecialSummonDestroyAll_080B23B4: @ 0x080B23B4
 	push {r4, lr}
 	adds r4, r0, #0
-	bl sub_080B235C
+	bl gCardAISpecialSummonBanish_080B235C
 	cmp r0, #0
 	beq _080B23CE
 	ldrb r4, [r4, #2]
@@ -325829,8 +326165,9 @@ _080B23D0:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B23D8
-sub_080B23D8: @ 0x080B23D8
+	@ Two-Pronged Attack
+	thumb_func_start gCardAIDestroy_080B23D8
+gCardAIDestroy_080B23D8: @ 0x080B23D8
 	push {r4, r5, r6, r7, lr}
 	sub sp, #4
 	adds r5, r0, #0
@@ -325917,8 +326254,9 @@ _080B2476:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B2480
-sub_080B2480: @ 0x080B2480
+	@ Ultimate Offering
+	thumb_func_start gCardAIUnknown_080B2480
+gCardAIUnknown_080B2480: @ 0x080B2480
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -326091,8 +326429,9 @@ _080B25BE:
 _080B25CC: .4byte gUnk_0201C4E0
 _080B25D0: .4byte 0x00000868
 
-	thumb_func_start sub_080B25D4
-sub_080B25D4: @ 0x080B25D4
+	@ Curse of Fiend
+	thumb_func_start gCardAIChangePositionStandbyPhase_080B25D4
+gCardAIChangePositionStandbyPhase_080B25D4: @ 0x080B25D4
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
@@ -326108,8 +326447,9 @@ _080B25E8:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B25F0
-sub_080B25F0: @ 0x080B25F0
+	@ Solomon's Lawbook
+	thumb_func_start gCardAIStandbyPhase_080B25F0
+gCardAIStandbyPhase_080B25F0: @ 0x080B25F0
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -326197,8 +326537,9 @@ _080B2684:
 	.align 2, 0
 _080B2690: .4byte 0x00000868
 
-	thumb_func_start sub_080B2694
-sub_080B2694: @ 0x080B2694
+	@ Skull Lair
+	thumb_func_start gCardAIBanishDestroy_080B2694
+gCardAIBanishDestroy_080B2694: @ 0x080B2694
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -326280,8 +326621,9 @@ _080B2722:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B2734
-sub_080B2734: @ 0x080B2734
+	@ Time Seal
+	thumb_func_start gCardAIUnknown_080B2734
+gCardAIUnknown_080B2734: @ 0x080B2734
 	movs r2, #0
 	ldr r1, _080B2750 @ =gUnk_0201C4E0
 	ldr r3, _080B2754 @ =0x00001CE8
@@ -326374,8 +326716,9 @@ _080B27D4:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B27E4
-sub_080B27E4: @ 0x080B27E4
+	@ Reversal of Graves
+	thumb_func_start gCardAIDamageGraveyard_080B27E4
+gCardAIDamageGraveyard_080B27E4: @ 0x080B27E4
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -326477,8 +326820,9 @@ _080B28A2:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B28AC
-sub_080B28AC: @ 0x080B28AC
+	@ Fiend Comedian
+	thumb_func_start gCardAIBanishSendToGY_080B28AC
+gCardAIBanishSendToGY_080B28AC: @ 0x080B28AC
 	push {r4, r5, lr}
 	ldr r4, _080B28E0 @ =gUnk_0201C4E0
 	ldrb r0, [r0, #2]
@@ -326518,8 +326862,10 @@ _080B28F0:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B28F8
-sub_080B28F8: @ 0x080B28F8
+	@ Book of Moon
+	@ Ready for Intercepting
+	thumb_func_start gCardAIChangePosition_080B28F8
+gCardAIChangePosition_080B28F8: @ 0x080B28F8
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -326614,8 +326960,9 @@ _080B29A6:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B29B4
-sub_080B29B4: @ 0x080B29B4
+	@ Burst Breath
+	thumb_func_start gCardAIDestroyAllTribute_080B29B4
+gCardAIDestroyAllTribute_080B29B4: @ 0x080B29B4
 	push {r4, lr}
 	adds r4, r0, #0
 	bl sub_0809066C
@@ -326662,8 +327009,10 @@ _080B2A0A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B2A10
-sub_080B2A10: @ 0x080B2A10
+	@ Phoenix Wing Wind Blast
+	@ Raigeki Break
+	thumb_func_start gCardAIDiscardDestroy_080B2A10
+gCardAIDiscardDestroy_080B2A10: @ 0x080B2A10
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -326699,8 +327048,9 @@ _080B2A4C:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B2A54
-sub_080B2A54: @ 0x080B2A54
+	@ Karma Cut
+	thumb_func_start gCardAIBanishDiscard_080B2A54
+gCardAIBanishDiscard_080B2A54: @ 0x080B2A54
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -326736,8 +327086,9 @@ _080B2A90:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B2A98
-sub_080B2A98: @ 0x080B2A98
+	@ Thunder of Ruler
+	thumb_func_start gCardAIStandbyPhaseBattlePhase_080B2A98
+gCardAIStandbyPhaseBattlePhase_080B2A98: @ 0x080B2A98
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r0, [r4, #2]
@@ -326763,8 +327114,9 @@ _080B2AC2:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B2AC8
-sub_080B2AC8: @ 0x080B2AC8
+	@ Adhesion Trap Hole
+	thumb_func_start gCardAISpecialSummon_080B2AC8
+gCardAISpecialSummon_080B2AC8: @ 0x080B2AC8
 	push {lr}
 	ldr r1, _080B2AF4 @ =gUnk_0201C4E0
 	ldr r0, [r0, #0x14]
@@ -326791,8 +327143,9 @@ _080B2AEE:
 _080B2AF4: .4byte gUnk_0201C4E0
 _080B2AF8: .4byte 0x000004AF
 
-	thumb_func_start sub_080B2AFC
-sub_080B2AFC: @ 0x080B2AFC
+	@ Non Aggression Area
+	thumb_func_start gCardAISpecialSummonDiscard_080B2AFC
+gCardAISpecialSummonDiscard_080B2AFC: @ 0x080B2AFC
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -326831,8 +327184,9 @@ _080B2B3E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B2B44
-sub_080B2B44: @ 0x080B2B44
+	@ A Hero Emerges
+	thumb_func_start gCardAISpecialSummonSendToGY_080B2B44
+gCardAISpecialSummonSendToGY_080B2B44: @ 0x080B2B44
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -326862,8 +327216,9 @@ _080B2B6E:
 _080B2B78: .4byte gUnk_0201C4E0
 _080B2B7C: .4byte 0x00000868
 
-	thumb_func_start sub_080B2B80
-sub_080B2B80: @ 0x080B2B80
+	@ Taunt
+	thumb_func_start gCardAIUnknown_080B2B80
+gCardAIUnknown_080B2B80: @ 0x080B2B80
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -326890,8 +327245,11 @@ _080B2BAA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B2BB0
-sub_080B2BB0: @ 0x080B2BB0
+	@ Cemetary Bomb
+	@ Secret Barrel
+	@ Solar Ray
+	thumb_func_start gCardAIDamage_080B2BB0
+gCardAIDamage_080B2BB0: @ 0x080B2BB0
 	push {r4, lr}
 	sub sp, #8
 	adds r4, r0, #0
@@ -326939,8 +327297,10 @@ _080B2C06:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B2C10
-sub_080B2C10: @ 0x080B2C10
+	@ Malice Dispersion
+	@ Spell Purification
+	thumb_func_start gCardAIDiscardDestroyAll_080B2C10
+gCardAIDiscardDestroyAll_080B2C10: @ 0x080B2C10
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldrb r1, [r5, #2]
@@ -326974,8 +327334,9 @@ _080B2C4A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B2C50
-sub_080B2C50: @ 0x080B2C50
+	@ Xing Zhen Hu
+	thumb_func_start gCardAIUnknown_080B2C50
+gCardAIUnknown_080B2C50: @ 0x080B2C50
 	push {lr}
 	ldrb r1, [r0, #2]
 	lsls r2, r1, #0x1f
@@ -326993,8 +327354,9 @@ _080B2C68:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B2C70
-sub_080B2C70: @ 0x080B2C70
+	@ Assault on GHQ
+	thumb_func_start gCardAISendToGYDestroy_080B2C70
+gCardAISendToGYDestroy_080B2C70: @ 0x080B2C70
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -327053,8 +327415,10 @@ _080B2CD2:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B2CE0
-sub_080B2CE0: @ 0x080B2CE0
+	@ Next to be Lost
+	@ The League of Uniform Nomenclature
+	thumb_func_start gCardAISpecialSummonSendToGY_080B2CE0
+gCardAISpecialSummonSendToGY_080B2CE0: @ 0x080B2CE0
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	movs r5, #0
@@ -327100,8 +327464,10 @@ _080B2D32:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B2D38
-sub_080B2D38: @ 0x080B2D38
+	@ Gateway to Dark World
+	@ Skull Zoma
+	thumb_func_start gCardAISpecialSummonDestroy_080B2D38
+gCardAISpecialSummonDestroy_080B2D38: @ 0x080B2D38
 	push {r4, lr}
 	adds r2, r0, #0
 	ldr r3, _080B2D54 @ =gUnk_0201C4E0
@@ -327153,8 +327519,9 @@ _080B2D8C:
 	.align 2, 0
 _080B2D94: .4byte 0x00001CF4
 
-	thumb_func_start sub_080B2D98
-sub_080B2D98: @ 0x080B2D98
+	@ Threatening Roar
+	thumb_func_start gCardAIPreventAttack_080B2D98
+gCardAIPreventAttack_080B2D98: @ 0x080B2D98
 	push {lr}
 	adds r1, r0, #0
 	movs r0, #0xfc
@@ -327184,8 +327551,9 @@ _080B2DC8:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B2DCC
-sub_080B2DCC: @ 0x080B2DCC
+	@ Chthonian Blast
+	thumb_func_start gCardAISendToGYDestroy_080B2DCC
+gCardAISendToGYDestroy_080B2DCC: @ 0x080B2DCC
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -327266,8 +327634,9 @@ _080B2E56:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B2E64
-sub_080B2E64: @ 0x080B2E64
+	@ Option Hunter
+	thumb_func_start gCardAISendToGYDestroy_080B2E64
+gCardAISendToGYDestroy_080B2E64: @ 0x080B2E64
 	push {lr}
 	adds r2, r0, #0
 	movs r0, #0xfc
@@ -327308,8 +327677,9 @@ _080B2EAA:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B2EB0
-sub_080B2EB0: @ 0x080B2EB0
+	@ Inferno Reckless Summon
+	thumb_func_start gCardAISpecialSummonChangePosition_080B2EB0
+gCardAISpecialSummonChangePosition_080B2EB0: @ 0x080B2EB0
 	push {r4, lr}
 	ldr r1, _080B2EDC @ =gUnk_0201C4E0
 	ldr r0, [r0, #0x14]
@@ -327341,8 +327711,55 @@ _080B2EE6:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B2EEC
-sub_080B2EEC: @ 0x080B2EEC
+	@ Archfiend's Roar
+	@ Astral Barrier
+	@ Attack Reflector Unit
+	@ Begone, Knave!
+	@ Book of Moon
+	@ Calamity of the Wicked
+	@ Call of the Haunted
+	@ Compulsory Evacuation Device
+	@ Curse of Anubis
+	@ Dark Mirror Force
+	@ Dark Spirit of the Silent
+	@ De-Fusion
+	@ Des Counterblow
+	@ Dimension Wall
+	@ Draining Shield
+	@ Enchanted Javelin
+	@ Fairy Box
+	@ Gravity Bind
+	@ Hallowed Life Barrier
+	@ Hero Barrier
+	@ Hero Heyro
+	@ Jam Defender
+	@ Kunai with Chain
+	@ Magic Cylinder
+	@ Magic-Arm Shield
+	@ Magical Hats
+	@ Metal Reflect Slime
+	@ Mirror Force
+	@ Mirror Wall
+	@ Monster Recovery
+	@ Negate Attack
+	@ Nightmare Wheel
+	@ Ordeal of a Traveler
+	@ Sakuretsu Armor
+	@ Scapegoat
+	@ Shadow Spell
+	@ Shift
+	@ Soul Resurrection
+	@ Spellbinding Circle
+	@ Spirit Barrier
+	@ Staunch Defender
+	@ The Flute of Summoning Kuriboh
+	@ Toon Defense
+	@ Transcendent Wings
+	@ Waboku
+	@ Wall of Revealing Light
+	@ Widespread Ruin
+	thumb_func_start gCardAIChangePositionDestroy_080B2EEC
+gCardAIChangePositionDestroy_080B2EEC: @ 0x080B2EEC
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -328052,7 +328469,7 @@ _080B33FE:
 _080B3404:
 	mov r0, sl
 	ldr r1, [sp, #4]
-	bl sub_080B771C
+	bl gCardAISpecialSummonGraveyard_080B771C
 	cmp r0, #0
 	bne _080B3412
 	b _080B3978
@@ -328791,8 +329208,28 @@ _080B397A:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B398C
-sub_080B398C: @ 0x080B398C
+	@ Bark of Dark Ruler
+	@ Blast with Chain
+	@ Castle Walls
+	@ Collapse
+	@ Covering Fire
+	@ Deal of Phantom
+	@ Energy Drain
+	@ Graceful Dice
+	@ Limiter Removal
+	@ Mask of Weakness
+	@ Micro Ray
+	@ Pyramid Energy
+	@ Reinforcements
+	@ Rising Energy
+	@ Rush Recklessly
+	@ Skull Dice
+	@ Snake Fang
+	@ The Big March of Animals
+	@ The Reliable Guardian
+	@ Unity
+	thumb_func_start gCardAIBoostATKEndPhase_080B398C
+gCardAIBoostATKEndPhase_080B398C: @ 0x080B398C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -329614,8 +330051,9 @@ _080B3F90:
 _080B3FA0: .4byte gUnk_0201C4E0
 _080B3FA4: .4byte 0x00000868
 
-	thumb_func_start sub_080B3FA8
-sub_080B3FA8: @ 0x080B3FA8
+	@ Graverobber
+	thumb_func_start gCardAIGraveyard_080B3FA8
+gCardAIGraveyard_080B3FA8: @ 0x080B3FA8
 	push {r4, r5, r6, r7, lr}
 	adds r7, r0, #0
 	adds r5, r1, #0
@@ -329688,8 +330126,9 @@ _080B4024:
 	.align 2, 0
 _080B402C: .4byte gUnk_0201C4E0
 
-	thumb_func_start sub_080B4030
-sub_080B4030: @ 0x080B4030
+	@ Disappear
+	thumb_func_start gCardAIBanishGraveyard_080B4030
+gCardAIBanishGraveyard_080B4030: @ 0x080B4030
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r4, r1, #0
@@ -329748,8 +330187,13 @@ _080B4090:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B4098
-sub_080B4098: @ 0x080B4098
+	@ Blue-Eyes Shining Dragon
+	@ Dark Balter the Terrible
+	@ Horus the Black Flame Dragon LV8
+	@ Ryu Senshi
+	@ Sorcerer of Dark Magic
+	thumb_func_start gCardAINegateDestroy_080B4098
+gCardAINegateDestroy_080B4098: @ 0x080B4098
 	adds r3, r0, #0
 	adds r2, r1, #0
 	cmp r2, #0
@@ -329769,8 +330213,24 @@ _080B40B4:
 _080B40B6:
 	bx lr
 
-	thumb_func_start sub_080B40B8
-sub_080B40B8: @ 0x080B40B8
+	@ A-Team: Trap Disposal Unit
+	@ Armor Break
+	@ Curse of Royal
+	@ Cursed Seal of the Forbidden Spell
+	@ Feather Wind
+	@ Jar Robber
+	@ Judgment of Anubis
+	@ Magic Drain
+	@ Maryokutai
+	@ Riryoku Field
+	@ Royal Surrender
+	@ Spell Vanishing
+	@ Spell-Stopping Statute
+	@ Trap Jammer
+	@ Tutan Mask
+	@ World Suppression
+	thumb_func_start gCardAINegateDestroy_080B40B8
+gCardAINegateDestroy_080B40B8: @ 0x080B40B8
 	adds r3, r0, #0
 	adds r2, r1, #0
 	cmp r2, #0
@@ -329790,8 +330250,14 @@ _080B40D4:
 _080B40D6:
 	bx lr
 
-	thumb_func_start sub_080B40D8
-sub_080B40D8: @ 0x080B40D8
+	@ Alkana Knight Joker
+	@ Dark Paladin
+	@ Magic Jammer
+	@ Seven Tools of the Bandit
+	@ Spell Shield Type-8
+	@ The Dragon's Bead
+	thumb_func_start gCardAINegateDestroy_080B40D8
+gCardAINegateDestroy_080B40D8: @ 0x080B40D8
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -329901,8 +330367,9 @@ _080B41AC:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B41B4
-sub_080B41B4: @ 0x080B41B4
+	@ Imperial Order
+	thumb_func_start gCardAINegateDestroy_080B41B4
+gCardAINegateDestroy_080B41B4: @ 0x080B41B4
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
@@ -329914,7 +330381,7 @@ sub_080B41B4: @ 0x080B41B4
 	bne _080B41D2
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_080B40B8
+	bl gCardAINegateDestroy_080B40B8
 	b _080B41D4
 _080B41D2:
 	movs r0, #0
@@ -329924,8 +330391,9 @@ _080B41D4:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B41DC
-sub_080B41DC: @ 0x080B41DC
+	@ Royal Decree
+	thumb_func_start gCardAINegate_080B41DC
+gCardAINegate_080B41DC: @ 0x080B41DC
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
@@ -329937,7 +330405,7 @@ sub_080B41DC: @ 0x080B41DC
 	bne _080B41FA
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_080B40B8
+	bl gCardAINegateDestroy_080B40B8
 	b _080B41FC
 _080B41FA:
 	movs r0, #0
@@ -329947,8 +330415,9 @@ _080B41FC:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B4204
-sub_080B4204: @ 0x080B4204
+	@ Solemn Judgment
+	thumb_func_start gCardAISpecialSummonNegate_080B4204
+gCardAISpecialSummonNegate_080B4204: @ 0x080B4204
 	push {r4, lr}
 	adds r3, r0, #0
 	adds r4, r1, #0
@@ -329965,7 +330434,7 @@ sub_080B4204: @ 0x080B4204
 	bgt _080B4238
 	adds r0, r3, #0
 	adds r1, r4, #0
-	bl sub_080B40D8
+	bl gCardAINegateDestroy_080B40D8
 	b _080B423A
 	.align 2, 0
 _080B422C: .4byte gUnk_0201C4E0
@@ -329978,8 +330447,10 @@ _080B423A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B4240
-sub_080B4240: @ 0x080B4240
+	@ Goblin Out of the Frying Pan
+	@ Malfunction
+	thumb_func_start gCardAINegateDamage_080B4240
+gCardAINegateDamage_080B4240: @ 0x080B4240
 	push {r4, lr}
 	adds r3, r0, #0
 	ldr r2, _080B4268 @ =gUnk_0201B290
@@ -330007,14 +330478,15 @@ _080B426C: .4byte 0x000004CC
 _080B4270: .4byte 0x000004D4
 _080B4274:
 	adds r0, r3, #0
-	bl sub_080B40D8
+	bl gCardAINegateDestroy_080B40D8
 _080B427A:
 	pop {r4}
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B4280
-sub_080B4280: @ 0x080B4280
+	@ Dark Deal
+	thumb_func_start gCardAIDiscardDamage_080B4280
+gCardAIDiscardDamage_080B4280: @ 0x080B4280
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -330084,8 +330556,9 @@ _080B42F8:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B4304
-sub_080B4304: @ 0x080B4304
+	@ Rare Metalmorph
+	thumb_func_start gCardAINegateDestroy_080B4304
+gCardAINegateDestroy_080B4304: @ 0x080B4304
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
@@ -330143,8 +330616,9 @@ _080B4372:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B4378
-sub_080B4378: @ 0x080B4378
+	@ Emergency Provisions
+	thumb_func_start gCardAISendToGYGainLP_080B4378
+gCardAISendToGYGainLP_080B4378: @ 0x080B4378
 	push {r4, r5, r6, r7, lr}
 	adds r2, r0, #0
 	adds r7, r1, #0
@@ -330260,8 +330734,10 @@ _080B445E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B4464
-sub_080B4464: @ 0x080B4464
+	@ Book of Moon
+	@ Ready for Intercepting
+	thumb_func_start gCardAIChangePosition_080B4464
+gCardAIChangePosition_080B4464: @ 0x080B4464
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -330350,8 +330826,9 @@ _080B450A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B4518
-sub_080B4518: @ 0x080B4518
+	@ Formation Union
+	thumb_func_start gCardAISpecialSummonChangePosition_080B4518
+gCardAISpecialSummonChangePosition_080B4518: @ 0x080B4518
 	push {r4, r5, r6, r7, lr}
 	adds r4, r0, #0
 	adds r6, r1, #0
@@ -330472,8 +330949,9 @@ _080B4608:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B4610
-sub_080B4610: @ 0x080B4610
+	@ Ojama Trio
+	thumb_func_start gCardAISpecialSummonDestroy_080B4610
+gCardAISpecialSummonDestroy_080B4610: @ 0x080B4610
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -330527,8 +331005,9 @@ _080B4670:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B4678
-sub_080B4678: @ 0x080B4678
+	@ Serial Spell
+	thumb_func_start gCardAIDiscardGraveyard_080B4678
+gCardAIDiscardGraveyard_080B4678: @ 0x080B4678
 	push {r4, lr}
 	adds r3, r0, #0
 	cmp r1, #0
@@ -330574,8 +331053,17 @@ _080B46BC:
 _080B46C4: .4byte gUnk_0201C4E0
 _080B46C8: .4byte 0x00000868
 
-	thumb_func_start sub_080B46CC
-sub_080B46CC: @ 0x080B46CC
+	@ Corpse of Yata-Garasu
+	@ Graceful Dice
+	@ Hero Barrier
+	@ Jar of Greed
+	@ Reckless Greed
+	@ Scapegoat
+	@ Skull Dice
+	@ Time Seal
+	@ Waboku
+	thumb_func_start gCardAIDrawSpecialSummon_080B46CC
+gCardAIDrawSpecialSummon_080B46CC: @ 0x080B46CC
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	cmp r1, #0
@@ -330625,8 +331113,10 @@ _080B4722:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B4728
-sub_080B4728: @ 0x080B4728
+	@ Dust Tornado
+	@ Mystical Space Typhoon
+	thumb_func_start gCardAIDestroySpellTrap_080B4728
+gCardAIDestroySpellTrap_080B4728: @ 0x080B4728
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
@@ -330656,7 +331146,7 @@ sub_080B4728: @ 0x080B4728
 	beq _080B47DA
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_080B46CC
+	bl gCardAIDrawSpecialSummon_080B46CC
 	cmp r0, #0
 	bne _080B47EC
 _080B476C:
@@ -330727,8 +331217,12 @@ _080B47EE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B47F4
-sub_080B47F4: @ 0x080B47F4
+	@ Castle Walls
+	@ Reinforcements
+	@ Rush Recklessly
+	@ The Reliable Guardian
+	thumb_func_start gCardAIBoostATKBoostDEF_080B47F4
+gCardAIBoostATKBoostDEF_080B47F4: @ 0x080B47F4
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -330743,7 +331237,7 @@ sub_080B47F4: @ 0x080B47F4
 	beq _080B4818
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_080B46CC
+	bl gCardAIDrawSpecialSummon_080B46CC
 	b _080B481A
 _080B4818:
 	movs r0, #0
@@ -330752,8 +331246,9 @@ _080B481A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B4820
-sub_080B4820: @ 0x080B4820
+	@ Snake Fang
+	thumb_func_start gCardAIUnknown_080B4820
+gCardAIUnknown_080B4820: @ 0x080B4820
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -330770,7 +331265,7 @@ sub_080B4820: @ 0x080B4820
 	beq _080B4848
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_080B46CC
+	bl gCardAIDrawSpecialSummon_080B46CC
 	b _080B484A
 _080B4848:
 	movs r0, #0
@@ -330779,8 +331274,9 @@ _080B484A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B4850
-sub_080B4850: @ 0x080B4850
+	@ The Flute of Summoning Kuriboh
+	thumb_func_start gCardAISearchSpecialSummon_080B4850
+gCardAISearchSpecialSummon_080B4850: @ 0x080B4850
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
@@ -330788,12 +331284,12 @@ sub_080B4850: @ 0x080B4850
 	beq _080B4870
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_080B771C
+	bl gCardAISpecialSummonGraveyard_080B771C
 	cmp r0, #0
 	beq _080B4870
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_080B46CC
+	bl gCardAIDrawSpecialSummon_080B46CC
 	b _080B4872
 _080B4870:
 	movs r0, #0
@@ -330802,8 +331298,9 @@ _080B4872:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B4878
-sub_080B4878: @ 0x080B4878
+	@ Interdimensional Matter Transporter
+	thumb_func_start gCardAIBanishEndPhase_080B4878
+gCardAIBanishEndPhase_080B4878: @ 0x080B4878
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -330898,8 +331395,9 @@ _080B491A:
 _080B4928: .4byte 0x00000868
 _080B492C: .4byte gUnk_0201C510
 
-	thumb_func_start sub_080B4930
-sub_080B4930: @ 0x080B4930
+	@ Divine Wrath
+	thumb_func_start gCardAINegateDiscard_080B4930
+gCardAINegateDiscard_080B4930: @ 0x080B4930
 	push {r4, lr}
 	adds r2, r0, #0
 	cmp r1, #0
@@ -330933,8 +331431,10 @@ _080B496A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B4970
-sub_080B4970: @ 0x080B4970
+	@ Hallowed Life Barrier
+	@ Pikeru's Circle of Enchantment
+	thumb_func_start gCardAIDiscardEndPhase_080B4970
+gCardAIDiscardEndPhase_080B4970: @ 0x080B4970
 	push {r4, lr}
 	sub sp, #8
 	adds r4, r0, #0
@@ -337040,13 +337540,237 @@ _080B7690:
 	.align 2, 0
 _080B76A0: .4byte 0x00000868
 
-	thumb_func_start sub_080B76A4
-sub_080B76A4: @ 0x080B76A4
+	@ 7
+	@ 8-Claws Scorpion
+	@ A Rival Appears!
+	@ Abare Ushioni
+	@ Ancient Gear Castle
+	@ Anteatereatingant
+	@ Anti Raigeki
+	@ Anti-Spell Fragrance
+	@ Appropriate
+	@ Arsenal Robber
+	@ Attack and Receive
+	@ Avatar of The Pot
+	@ Backfire
+	@ Backup Soldier
+	@ Bad Reaction to Simochi
+	@ Barrel Dragon
+	@ Bazoo the Soul-Eater
+	@ Beastly Mirror Ritual
+	@ Big Burn
+	@ Black Luster Ritual
+	@ Blasting the Ruins
+	@ Blowback Dragon
+	@ Burst Stream of Destruction
+	@ Call of the Grave
+	@ Chain Energy
+	@ Chaosrider Gustaph
+	@ Chiron the Mage
+	@ Chthonian Polymer
+	@ Clay Charge
+	@ Cobraman Sakuzy
+	@ Combination Attack
+	@ Commencement Dance
+	@ Confiscation
+	@ Conscription
+	@ Contract with Exodia
+	@ Contract with the Abyss
+	@ Contract with the Dark Master
+	@ Corpse of Yata-Garasu
+	@ Cross Counter
+	@ Crush Card
+	@ Curse of the Masked Beast
+	@ D.D.M. - Different Dimension Master
+	@ DNA Surgery
+	@ Dark Factory of Mass Production
+	@ Dark Magic Attack
+	@ Dark Magic Ritual
+	@ Dark-Piercing Light
+	@ Deck Devastation Virus
+	@ Delinquent Duo
+	@ Des Croaking
+	@ Des Lacooda
+	@ Desrook Archfiend
+	@ Destiny Board
+	@ Destruction Punch
+	@ Doriado's Blessing
+	@ Dragon's Gunfire
+	@ Dragon's Mirror
+	@ Drop Off
+	@ Earth Chant
+	@ Eatgaboon
+	@ Elegant Egotist
+	@ Emblem of Dragon Destroyer
+	@ Embodiment of Apophis
+	@ Enchanted Arrow
+	@ Enchanting Fitting Room
+	@ End of the World
+	@ Enervating Mist
+	@ Fairy of the Spring
+	@ Fake Trap
+	@ Fatal Abacus
+	@ Fengsheng Mirror
+	@ Fiend's Sanctuary
+	@ Final Attack Orders
+	@ Final Ritual of the Ancients
+	@ Fire Darts
+	@ Fissure
+	@ Foolish Burial
+	@ Forced Requisition
+	@ Fortress Whale's Oath
+	@ Frozen Soul
+	@ Fusion Recovery
+	@ Fusion Sage
+	@ Gamble
+	@ Garma Sword Oath
+	@ Giant Axe Mummy
+	@ Golem Sentry
+	@ Graceful Charity
+	@ Gravekeeper's Servant
+	@ Great Spirit
+	@ Gryphon Wing
+	@ Guardian Sphinx
+	@ Guardian Statue
+	@ Hamburger Recipe
+	@ Heavy Slump
+	@ Hidden Book of Spell
+	@ Hidden Soldier
+	@ House of Adhesive Tape
+	@ Huge Revolution
+	@ Human-Wave Tactics
+	@ Incandescent Ordeal
+	@ Inferno Tempest
+	@ Jar of Greed
+	@ Javelin Beetle Pact
+	@ Kaibaman
+	@ King Dragun
+	@ Labyrinth of Nightmare
+	@ Life Absorbing Machine
+	@ Light of Intervention
+	@ Lightforce Sword
+	@ Magical Explosion
+	@ Magical Thorn
+	@ Medusa Worm
+	@ Mega Ton Magical Cannon
+	@ Meteor of Destruction
+	@ Mid Shield Gardna
+	@ Mind Wipe
+	@ Minor Goblin Official
+	@ Miracle Fusion
+	@ Miracle Restoring
+	@ Moai Interceptor Cannons
+	@ Multiply
+	@ Needle Wall
+	@ Novox's Prayer
+	@ Numinous Healer
+	@ Nutrient Z
+	@ Ojama Delta Hurricane!!
+	@ Ominous Fortunetelling
+	@ Orca Mega-Fortress of Darkness
+	@ Painful Choice
+	@ Patroid
+	@ Photon Generator Unit
+	@ Pikeru's Second Sight
+	@ Pineapple Blast
+	@ Polymerization
+	@ Power Bond
+	@ Pyramid of Light
+	@ Ray of Hope
+	@ Reasoning
+	@ Reckless Greed
+	@ Red-Eyes B. Chick
+	@ Relinquished
+	@ Respect Play
+	@ Resurrection of Chakra
+	@ Revival of Dokurorider
+	@ Rite of Spirit
+	@ Robbin' Goblin
+	@ Robbin' Zombie
+	@ Rope of Spirit
+	@ Royal Keeper
+	@ Royal Magical Library
+	@ Salvage
+	@ Self-Destruct Button
+	@ Shadow of Eyes
+	@ Shinato's Ark
+	@ Simultaneous Loss
+	@ Sixth Sense
+	@ Skull Invitation
+	@ Smashing Ground
+	@ Solemn Wishes
+	@ Soul Reversal
+	@ Spatial Collapse
+	@ Spirit Ryu
+	@ Spiritualism
+	@ Stealth Bird
+	@ Stray Lambs
+	@ Stronghold
+	@ Swarm of Locusts
+	@ Swarm of Scarabs
+	@ The Agent of Creation - Venus
+	@ The Creator Incarnate
+	@ The Dark - Hex-Sealed Fusion
+	@ The Earth - Hex-Sealed Fusion
+	@ The First Sarcophagus
+	@ The Flute of Summoning Dragon
+	@ The Forceful Sentry
+	@ The Forces of Darkness
+	@ The Graveyard in the Fourth Dimension
+	@ The Light - Hex-Sealed Fusion
+	@ The Warrior Returning Alive
+	@ Thousand Knives
+	@ Thousand-Eyes Restrict
+	@ Toll
+	@ Tornado Wall
+	@ Tower of Babel
+	@ Tragedy
+	@ Trap Dustshoot
+	@ Trap Hole
+	@ Turtle Oath
+	@ Upstart Goblin
+	@ Uria, Lord of Searing Flames
+	@ VWXYZ-Dragon Catapult Cannon
+	@ Vampire Genesis
+	@ Vengeful Bog Spirit
+	@ War-Lion Ritual
+	@ White Dragon Ritual
+	@ White Hole
+	@ Winged Kuriboh LV10
+	@ Zera Ritual
+	thumb_func_start gCardAIGraveyardDestroy_080B76A4
+gCardAIGraveyardDestroy_080B76A4: @ 0x080B76A4
 	movs r0, #1
 	bx lr
 
-	thumb_func_start sub_080B76A8
-sub_080B76A8: @ 0x080B76A8
+	@ Acid Trap Hole
+	@ B.E.S. Tetran
+	@ Bait Doll
+	@ Cyber Laser Dragon
+	@ Dark World Lightning
+	@ De-Spell
+	@ Driving Snow
+	@ Elemental Hero Thunder Giant
+	@ Exiled Force
+	@ Gust
+	@ Hannibal Necromancer
+	@ Mask of Dispel
+	@ Michizure
+	@ Nobleman of Crossout
+	@ Nobleman of Extermination
+	@ Offerings to the Doomed
+	@ Owner's Seal
+	@ Possessed Dark Soul
+	@ Remove Trap
+	@ Sand Gambler
+	@ Shield Crash
+	@ Soul Taker
+	@ Stamping Destruction
+	@ Token Feastevil
+	@ Token Thanksgiving
+	@ Tribute to The Doomed
+	thumb_func_start gCardAIDestroy_080B76A8
+gCardAIDestroy_080B76A8: @ 0x080B76A8
 	push {lr}
 	ldrb r1, [r0, #2]
 	lsls r2, r1, #0x1f
@@ -337064,8 +337788,10 @@ _080B76C0:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B76C8
-sub_080B76C8: @ 0x080B76C8
+	@ Cocoon of Evolution
+	@ Pitch-Black Power Stone
+	thumb_func_start gCardAIDestroyEquip_080B76C8
+gCardAIDestroyEquip_080B76C8: @ 0x080B76C8
 	push {lr}
 	ldrb r2, [r0, #2]
 	lsls r1, r2, #0x1f
@@ -337081,8 +337807,34 @@ _080B76DC:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B76E4
-sub_080B76E4: @ 0x080B76E4
+	@ Banner of Courage
+	@ Card of Safe Return
+	@ Continuous Destruction Punch
+	@ Convulsion of Nature
+	@ D. D. Borderline
+	@ Dangerous Machine TYPE-6
+	@ Dark Room of Nightmare
+	@ Dark Snake Syndrome
+	@ Ectoplasmer
+	@ Frontline Base
+	@ Heart of the Underdog
+	@ Jam Breeding Machine
+	@ Kishido Spirit
+	@ Poison Fangs
+	@ Precious Cards from Beyond
+	@ Samsara
+	@ Second Coin Toss
+	@ Senri Eye
+	@ Soul Absorption
+	@ Spell Absorption
+	@ Spell Economics
+	@ Stumbling
+	@ The A. Forces
+	@ Two-Man Cell Battle
+	@ Vengeful Bog Spirit
+	@ Yellow Luster Shield
+	thumb_func_start gCardAISpecialSummonDamage_080B76E4
+gCardAISpecialSummonDamage_080B76E4: @ 0x080B76E4
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -337114,8 +337866,29 @@ _080B7712:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B771C
-sub_080B771C: @ 0x080B771C
+	@ A Deal with Dark Ruler
+	@ Bonding - H2O
+	@ Damage Condenser
+	@ Dedication through Light and Darkness
+	@ Different Dimension Capsule
+	@ Fushioh Richie
+	@ Gather Your Mind
+	@ Great Dezard
+	@ Hero Signal
+	@ Magician's Circle
+	@ Paladin of White Dragon
+	@ Reinforcement of the Army
+	@ Release Restraint
+	@ Return of the Doomed
+	@ Rock Bombardment
+	@ Roll Out!
+	@ Sage's Stone
+	@ Skilled Dark Magician
+	@ Skilled White Magician
+	@ Summon Priest
+	@ Terraforming
+	thumb_func_start gCardAISpecialSummonGraveyard_080B771C
+gCardAISpecialSummonGraveyard_080B771C: @ 0x080B771C
 	push {r4, r5, lr}
 	ldrb r1, [r0, #2]
 	lsls r4, r1, #0x1f
@@ -337136,8 +337909,12 @@ _080B773C:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B7744
-sub_080B7744: @ 0x080B7744
+	@ The Creator
+	@ XY-Dragon Cannon
+	@ XZ-Tank Cannon
+	@ YZ-Tank Dragon
+	thumb_func_start gCardAISpecialSummonDiscard_080B7744
+gCardAISpecialSummonDiscard_080B7744: @ 0x080B7744
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
@@ -337154,8 +337931,20 @@ _080B775A:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B7760
-sub_080B7760: @ 0x080B7760
+	@ Acid Rain
+	@ Breath of Light
+	@ Disarmament
+	@ Eradicating Aerosol
+	@ Eternal Drought
+	@ Eternal Rest
+	@ Exile of the Wicked
+	@ Last Day of Witch
+	@ Mispolymerization
+	@ Really Eternal Rest
+	@ Warrior Elimination
+	@ Weed Out
+	thumb_func_start gCardAIDestroyAll_080B7760
+gCardAIDestroyAll_080B7760: @ 0x080B7760
 	push {lr}
 	ldrb r2, [r0, #2]
 	lsls r1, r2, #0x1f
@@ -337171,8 +337960,17 @@ _080B7774:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B777C
-sub_080B777C: @ 0x080B777C
+	@ Blue Medicine
+	@ Dian Keto the Cure Master
+	@ Goblin Thief
+	@ Goblin's Secret Remedy
+	@ Mooyan Curry
+	@ Poison of the Old Man
+	@ Rain of Mercy
+	@ Red Medicine
+	@ Soul of the Pure
+	thumb_func_start gCardAIGainLP_080B777C
+gCardAIGainLP_080B777C: @ 0x080B777C
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
@@ -337181,8 +337979,14 @@ sub_080B777C: @ 0x080B777C
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B778C
-sub_080B778C: @ 0x080B778C
+	@ Final Flame
+	@ Hinotama
+	@ Meteor of Destruction
+	@ Ookazi
+	@ Raimei
+	@ Sparks
+	thumb_func_start gCardAIDamage_080B778C
+gCardAIDamage_080B778C: @ 0x080B778C
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	ldrb r1, [r5, #2]
@@ -337223,8 +338027,9 @@ _080B77D4:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B77DC
-sub_080B77DC: @ 0x080B77DC
+	@ Cold Wave
+	thumb_func_start gCardAIUnknown_080B77DC
+gCardAIUnknown_080B77DC: @ 0x080B77DC
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
@@ -337240,8 +338045,9 @@ _080B77F0:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B77F8
-sub_080B77F8: @ 0x080B77F8
+	@ Tremendous Fire
+	thumb_func_start gCardAIDamage_080B77F8
+gCardAIDamage_080B77F8: @ 0x080B77F8
 	push {r4, r5, lr}
 	movs r5, #0
 	ldr r4, _080B7830 @ =gUnk_0201C4E0
@@ -337275,8 +338081,9 @@ _080B7828:
 _080B7830: .4byte gUnk_0201C4E0
 _080B7834: .4byte 0x00000868
 
-	thumb_func_start sub_080B7838
-sub_080B7838: @ 0x080B7838
+	@ Harpie's Feather Duster
+	thumb_func_start gCardAIDestroySpellTrap_080B7838
+gCardAIDestroySpellTrap_080B7838: @ 0x080B7838
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r1, r0, #0x1f
@@ -337294,8 +338101,10 @@ _080B7850:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B7858
-sub_080B7858: @ 0x080B7858
+	@ Dust Tornado
+	@ Mystical Space Typhoon
+	thumb_func_start gCardAIDestroySpellTrap_080B7858
+gCardAIDestroySpellTrap_080B7858: @ 0x080B7858
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r1, r0, #0x1f
@@ -337313,8 +338122,9 @@ _080B7870:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B7878
-sub_080B7878: @ 0x080B7878
+	@ Giant Trunade
+	thumb_func_start gCardAIReturnToHand_080B7878
+gCardAIReturnToHand_080B7878: @ 0x080B7878
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -337401,8 +338211,9 @@ _080B792E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B7934
-sub_080B7934: @ 0x080B7934
+	@ Heavy Storm
+	thumb_func_start gCardAIDestroySpellTrapDestroyAll_080B7934
+gCardAIDestroySpellTrapDestroyAll_080B7934: @ 0x080B7934
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	ldrb r1, [r5, #2]
@@ -337494,8 +338305,9 @@ _080B79F2:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B79F8
-sub_080B79F8: @ 0x080B79F8
+	@ Wild Nature's Release
+	thumb_func_start gCardAIDestroyBoostATK_080B79F8
+gCardAIDestroyBoostATK_080B79F8: @ 0x080B79F8
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	movs r4, #0
@@ -337537,8 +338349,10 @@ _080B7A42:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B7A48
-sub_080B7A48: @ 0x080B7A48
+	@ Dragon's Rage
+	@ Meteorain
+	thumb_func_start gCardAIDamageChangePosition_080B7A48
+gCardAIDamageChangePosition_080B7A48: @ 0x080B7A48
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r1, r0, #0x1f
@@ -337557,8 +338371,9 @@ _080B7A64:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B7A68
-sub_080B7A68: @ 0x080B7A68
+	@ Beast Soul Swap
+	thumb_func_start gCardAISpecialSummonReturnToHand_080B7A68
+gCardAISpecialSummonReturnToHand_080B7A68: @ 0x080B7A68
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -337648,8 +338463,9 @@ _080B7B0C: .4byte gUnk_0201C520
 _080B7B10: .4byte gUnk_0201C4E0
 _080B7B14: .4byte 0x00000868
 
-	thumb_func_start sub_080B7B18
-sub_080B7B18: @ 0x080B7B18
+	@ Spiritual Earth Art - Kurogane
+	thumb_func_start gCardAISpecialSummonRevive_080B7B18
+gCardAISpecialSummonRevive_080B7B18: @ 0x080B7B18
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -337730,8 +338546,9 @@ _080B7BAA:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B7BB8
-sub_080B7BB8: @ 0x080B7BB8
+	@ De-Fusion
+	thumb_func_start gCardAISpecialSummonChangePosition_080B7BB8
+gCardAISpecialSummonChangePosition_080B7BB8: @ 0x080B7BB8
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -337873,8 +338690,9 @@ _080B7CCC: .4byte 0x00000868
 _080B7CD0: .4byte gUnk_0201C510
 _080B7CD4: .4byte gUnk_0201E500
 
-	thumb_func_start sub_080B7CD8
-sub_080B7CD8: @ 0x080B7CD8
+	@ Soul Release
+	thumb_func_start gCardAIBanishGraveyard_080B7CD8
+gCardAIBanishGraveyard_080B7CD8: @ 0x080B7CD8
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -337949,8 +338767,9 @@ _080B7D5E:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B7D6C
-sub_080B7D6C: @ 0x080B7D6C
+	@ Windstorm of Etaqua
+	thumb_func_start gCardAIChangePosition_080B7D6C
+gCardAIChangePosition_080B7D6C: @ 0x080B7D6C
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -338049,14 +338868,15 @@ _080B7E20:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B7E2C
-sub_080B7E2C: @ 0x080B7E2C
+	@ Toon World
+	thumb_func_start gCardAIDamage_080B7E2C
+gCardAIDamage_080B7E2C: @ 0x080B7E2C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
 	push {r6, r7}
 	adds r5, r0, #0
-	bl sub_080B76E4
+	bl gCardAISpecialSummonDamage_080B76E4
 	cmp r0, #0
 	bne _080B7E44
 	b _080B7EA0
@@ -338123,8 +338943,9 @@ _080B7EA2:
 _080B7EB0: .4byte gUnk_0201C4E0
 _080B7EB4: .4byte 0x00000868
 
-	thumb_func_start sub_080B7EB8
-sub_080B7EB8: @ 0x080B7EB8
+	@ Mesmeric Control
+	thumb_func_start gCardAIUnknown_080B7EB8
+gCardAIUnknown_080B7EB8: @ 0x080B7EB8
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -338210,12 +339031,13 @@ _080B7F56:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B7F64
-sub_080B7F64: @ 0x080B7F64
+	@ The Dark Door
+	thumb_func_start gCardAIBattlePhase_080B7F64
+gCardAIBattlePhase_080B7F64: @ 0x080B7F64
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	movs r5, #0
-	bl sub_080B76E4
+	bl gCardAISpecialSummonDamage_080B76E4
 	cmp r0, #0
 	beq _080B7F8A
 	ldrb r4, [r4, #2]
@@ -338236,8 +339058,9 @@ _080B7F8A:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B7F94
-sub_080B7F94: @ 0x080B7F94
+	@ Ground Collapse
+	thumb_func_start gCardAIUnknown_080B7F94
+gCardAIUnknown_080B7F94: @ 0x080B7F94
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r1, r0, #0x1f
@@ -338255,8 +339078,9 @@ _080B7FAC:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B7FB4
-sub_080B7FB4: @ 0x080B7FB4
+	@ Burning Land
+	thumb_func_start gCardAIDestroyAllDamage_080B7FB4
+gCardAIDestroyAllDamage_080B7FB4: @ 0x080B7FB4
 	push {r4, r5, r6, lr}
 	ldr r6, _080B7FD8 @ =gUnk_0201C4E0
 	ldrb r0, [r0, #2]
@@ -338299,12 +339123,13 @@ _080B7FF8:
 	.align 2, 0
 _080B8000: .4byte 0x000005DC
 
-	thumb_func_start sub_080B8004
-sub_080B8004: @ 0x080B8004
+	@ Infinite Cards
+	thumb_func_start gCardAIUnknown_080B8004
+gCardAIUnknown_080B8004: @ 0x080B8004
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	movs r5, #0
-	bl sub_080B76E4
+	bl gCardAISpecialSummonDamage_080B76E4
 	cmp r0, #0
 	beq _080B802A
 	ldr r2, _080B8034 @ =gUnk_0201C4E0
@@ -338328,8 +339153,9 @@ _080B802A:
 _080B8034: .4byte gUnk_0201C4E0
 _080B8038: .4byte 0x00000868
 
-	thumb_func_start sub_080B803C
-sub_080B803C: @ 0x080B803C
+	@ Spiritual Energy Settle Machine
+	thumb_func_start gCardAIDiscardReturnToHand_080B803C
+gCardAIDiscardReturnToHand_080B803C: @ 0x080B803C
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -338360,8 +339186,9 @@ _080B806E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B8074
-sub_080B8074: @ 0x080B8074
+	@ Mirage of Nightmare
+	thumb_func_start gCardAIDrawDiscard_080B8074
+gCardAIDrawDiscard_080B8074: @ 0x080B8074
 	push {lr}
 	ldrb r2, [r0, #2]
 	lsls r1, r2, #0x1f
@@ -338377,8 +339204,9 @@ _080B8088:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B8090
-sub_080B8090: @ 0x080B8090
+	@ Mass Driver
+	thumb_func_start gCardAIDamageTribute_080B8090
+gCardAIDamageTribute_080B8090: @ 0x080B8090
 	push {lr}
 	adds r2, r0, #0
 	movs r0, #0x30
@@ -338396,14 +339224,18 @@ sub_080B8090: @ 0x080B8090
 	b _080B80B6
 _080B80B0:
 	adds r0, r2, #0
-	bl sub_080B76E4
+	bl gCardAISpecialSummonDamage_080B76E4
 _080B80B6:
 	pop {r1}
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B80BC
-sub_080B80BC: @ 0x080B80BC
+	@ Messenger of Peace
+	@ Nightmare's Steelcage
+	@ Swords of Concealing Light
+	@ Swords of Revealing Light
+	thumb_func_start gCardAIDestroyStandbyPhase_080B80BC
+gCardAIDestroyStandbyPhase_080B80BC: @ 0x080B80BC
 	push {r4, r5, r6, r7, lr}
 	adds r7, r0, #0
 	ldrb r1, [r7, #2]
@@ -338464,12 +339296,13 @@ _080B8130:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B8138
-sub_080B8138: @ 0x080B8138
+	@ Insect Barrier
+	thumb_func_start gCardAIPreventAttack_080B8138
+gCardAIPreventAttack_080B8138: @ 0x080B8138
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	movs r5, #0
-	bl sub_080B76E4
+	bl gCardAISpecialSummonDamage_080B76E4
 	cmp r0, #0
 	beq _080B815C
 	ldrb r4, [r4, #2]
@@ -338488,8 +339321,9 @@ _080B815C:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B8164
-sub_080B8164: @ 0x080B8164
+	@ Book of Taiyou
+	thumb_func_start gCardAIChangePosition_080B8164
+gCardAIChangePosition_080B8164: @ 0x080B8164
 	push {r4, r5, r6, r7, lr}
 	sub sp, #8
 	adds r5, r0, #0
@@ -338546,8 +339380,9 @@ _080B81C6:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B81D0
-sub_080B81D0: @ 0x080B81D0
+	@ Hieroglyph Lithograph
+	thumb_func_start gCardAIDamage_080B81D0
+gCardAIDamage_080B81D0: @ 0x080B81D0
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -338578,8 +339413,9 @@ _080B8200:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B8208
-sub_080B8208: @ 0x080B8208
+	@ Wave-Motion Cannon
+	thumb_func_start gCardAISendToGYDamage_080B8208
+gCardAISendToGYDamage_080B8208: @ 0x080B8208
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	movs r0, #0x30
@@ -338633,8 +339469,9 @@ _080B826A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B8270
-sub_080B8270: @ 0x080B8270
+	@ Gravedigger Ghoul
+	thumb_func_start gCardAIBanishGraveyard_080B8270
+gCardAIBanishGraveyard_080B8270: @ 0x080B8270
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r1, r0, #0x1f
@@ -338652,8 +339489,9 @@ _080B8288:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B8290
-sub_080B8290: @ 0x080B8290
+	@ Last Will
+	thumb_func_start gCardAISpecialSummonSendToGY_080B8290
+gCardAISpecialSummonSendToGY_080B8290: @ 0x080B8290
 	ldr r3, _080B82AC @ =gUnk_0201C4E0
 	ldrb r0, [r0, #2]
 	lsls r1, r0, #0x1f
@@ -338672,8 +339510,9 @@ sub_080B8290: @ 0x080B8290
 _080B82AC: .4byte gUnk_0201C4E0
 _080B82B0: .4byte 0x00000868
 
-	thumb_func_start sub_080B82B4
-sub_080B82B4: @ 0x080B82B4
+	@ Multiplication of Ants
+	thumb_func_start gCardAISpecialSummonTribute_080B82B4
+gCardAISpecialSummonTribute_080B82B4: @ 0x080B82B4
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -338700,8 +339539,9 @@ _080B82E2:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B82E8
-sub_080B82E8: @ 0x080B82E8
+	@ Insect Imitation
+	thumb_func_start gCardAISpecialSummonChangePosition_080B82E8
+gCardAISpecialSummonChangePosition_080B82E8: @ 0x080B82E8
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	movs r7, #0
@@ -338739,8 +339579,9 @@ _080B832A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B8330
-sub_080B8330: @ 0x080B8330
+	@ Creature Swap
+	thumb_func_start gCardAITakeControlChangePosition_080B8330
+gCardAITakeControlChangePosition_080B8330: @ 0x080B8330
 	push {r4, r5, r6, r7, lr}
 	adds r5, r0, #0
 	movs r4, #0
@@ -338795,8 +339636,9 @@ _080B8392:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B8398
-sub_080B8398: @ 0x080B8398
+	@ Cathedral of Nobles
+	thumb_func_start gCardAISearchSpecialSummon_080B8398
+gCardAISearchSpecialSummon_080B8398: @ 0x080B8398
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	movs r0, #0x30
@@ -338830,15 +339672,16 @@ _080B83D2:
 	b _080B83DC
 _080B83D6:
 	adds r0, r4, #0
-	bl sub_080B76E4
+	bl gCardAISpecialSummonDamage_080B76E4
 _080B83DC:
 	pop {r4, r5}
 	pop {r1}
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B83E4
-sub_080B83E4: @ 0x080B83E4
+	@ Mustering of the Dark Scorpions
+	thumb_func_start gCardAISpecialSummon_080B83E4
+gCardAISpecialSummon_080B83E4: @ 0x080B83E4
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -338920,8 +339763,9 @@ _080B846E:
 _080B847C: .4byte gUnk_0201C4E0
 _080B8480: .4byte 0x00000868
 
-	thumb_func_start sub_080B8484
-sub_080B8484: @ 0x080B8484
+	@ Monster Gate
+	thumb_func_start gCardAISpecialSummonSendToGY_080B8484
+gCardAISpecialSummonSendToGY_080B8484: @ 0x080B8484
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
@@ -338934,8 +339778,9 @@ sub_080B8484: @ 0x080B8484
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B849C
-sub_080B849C: @ 0x080B849C
+	@ Dust Barrier
+	thumb_func_start gCardAIDestroyStandbyPhase_080B849C
+gCardAIDestroyStandbyPhase_080B849C: @ 0x080B849C
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -338954,7 +339799,7 @@ sub_080B849C: @ 0x080B849C
 	ble _080B84D0
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_080B76E4
+	bl gCardAISpecialSummonDamage_080B76E4
 	b _080B84D2
 	.align 2, 0
 _080B84CC: .4byte sub_0804AD5C
@@ -338965,8 +339810,28 @@ _080B84D2:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B84D8
-sub_080B84D8: @ 0x080B84D8
+	@ Array of Revealing Light
+	@ Centrifugal Field
+	@ Chorus of Sanctuary
+	@ Fault Zone
+	@ Forest
+	@ Gaia Power
+	@ Luminous Spark
+	@ Molten Destruction
+	@ Mountain
+	@ Mystic Plasma Zone
+	@ Necrovalley
+	@ Pandemonium
+	@ Rising Air Current
+	@ Skyscraper
+	@ Sogen
+	@ The Sanctuary in the Sky
+	@ Umi
+	@ Umiiruka
+	@ Wasteland
+	@ Yami
+	thumb_func_start gCardAIBoostATKBoostDEF_080B84D8
+gCardAIBoostATKBoostDEF_080B84D8: @ 0x080B84D8
 	movs r2, #0
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
@@ -338987,8 +339852,9 @@ _080B84F2:
 _080B84F8: .4byte 0x00000868
 _080B84FC: .4byte gUnk_0201C5D8
 
-	thumb_func_start sub_080B8500
-sub_080B8500: @ 0x080B8500
+	@ Fusion Gate
+	thumb_func_start gCardAISpecialSummonFusionSummon_080B8500
+gCardAISpecialSummonFusionSummon_080B8500: @ 0x080B8500
 	push {lr}
 	adds r2, r0, #0
 	movs r0, #0x30
@@ -339000,13 +339866,14 @@ sub_080B8500: @ 0x080B8500
 	b _080B8518
 _080B8512:
 	adds r0, r2, #0
-	bl sub_080B84D8
+	bl gCardAIBoostATKBoostDEF_080B84D8
 _080B8518:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B851C
-sub_080B851C: @ 0x080B851C
+	@ A Legendary Ocean
+	thumb_func_start gCardAIBoostATKBoostDEF_080B851C
+gCardAIBoostATKBoostDEF_080B851C: @ 0x080B851C
 	push {r4, r5, lr}
 	ldrb r0, [r0, #2]
 	lsls r3, r0, #0x1f
@@ -339047,8 +339914,9 @@ _080B8560:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B8568
-sub_080B8568: @ 0x080B8568
+	@ Harpies' Hunting Ground
+	thumb_func_start gCardAISpecialSummonDestroySpellTrap_080B8568
+gCardAISpecialSummonDestroySpellTrap_080B8568: @ 0x080B8568
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -339087,8 +339955,9 @@ _080B85A2:
 _080B85A8: .4byte 0x00000868
 _080B85AC: .4byte gUnk_0201C5D8
 
-	thumb_func_start sub_080B85B0
-sub_080B85B0: @ 0x080B85B0
+	@ Black Illusion Ritual
+	thumb_func_start gCardAIRitualSummonTribute_080B85B0
+gCardAIRitualSummonTribute_080B85B0: @ 0x080B85B0
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r1, r0, #0x1f
@@ -339108,8 +339977,9 @@ _080B85CC:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B85D4
-sub_080B85D4: @ 0x080B85D4
+	@ Tribe-Infecting Virus
+	thumb_func_start gCardAIDiscardDestroyAll_080B85D4
+gCardAIDiscardDestroyAll_080B85D4: @ 0x080B85D4
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -339140,8 +340010,9 @@ _080B8606:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B860C
-sub_080B860C: @ 0x080B860C
+	@ Dark Hole
+	thumb_func_start gCardAIDestroyAll_080B860C
+gCardAIDestroyAll_080B860C: @ 0x080B860C
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -339165,17 +340036,18 @@ _080B8632:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B8638
-sub_080B8638: @ 0x080B8638
+	@ Special Hurricane
+	thumb_func_start gCardAISpecialSummonDiscard_080B8638
+gCardAISpecialSummonDiscard_080B8638: @ 0x080B8638
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
-	bl sub_080B7744
+	bl gCardAISpecialSummonDiscard_080B7744
 	cmp r0, #0
 	beq _080B8650
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_080B7760
+	bl gCardAIDestroyAll_080B7760
 	b _080B8652
 _080B8650:
 	movs r0, #0
@@ -339184,8 +340056,10 @@ _080B8652:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B8658
-sub_080B8658: @ 0x080B8658
+	@ Lightning Vortex
+	@ Raigeki
+	thumb_func_start gCardAIDestroyAllDiscard_080B8658
+gCardAIDestroyAllDiscard_080B8658: @ 0x080B8658
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -339218,8 +340092,9 @@ _080B8692:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B8698
-sub_080B8698: @ 0x080B8698
+	@ Hammer Shot
+	thumb_func_start gCardAIDestroyChangePosition_080B8698
+gCardAIDestroyChangePosition_080B8698: @ 0x080B8698
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -339282,8 +340157,9 @@ _080B86FE:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B870C
-sub_080B870C: @ 0x080B870C
+	@ Final Destiny
+	thumb_func_start gCardAIDiscardDestroyAll_080B870C
+gCardAIDiscardDestroyAll_080B870C: @ 0x080B870C
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
@@ -339294,8 +340170,11 @@ sub_080B870C: @ 0x080B870C
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B8720
-sub_080B8720: @ 0x080B8720
+	@ Brain Control
+	@ Change of Heart
+	@ Reshef the Dark Being
+	thumb_func_start gCardAITakeControlEndPhase_080B8720
+gCardAITakeControlEndPhase_080B8720: @ 0x080B8720
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -339452,8 +340331,9 @@ _080B8844:
 _080B8854: .4byte 0x00000868
 _080B8858: .4byte gUnk_0201C4EC
 
-	thumb_func_start sub_080B885C
-sub_080B885C: @ 0x080B885C
+	@ Soul Exchange
+	thumb_func_start gCardAITributeBattlePhase_080B885C
+gCardAITributeBattlePhase_080B885C: @ 0x080B885C
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -339496,7 +340376,7 @@ _080B88A4:
 	ble _080B886C
 	adds r0, r5, #0
 	mov r1, r8
-	bl sub_080B8720
+	bl gCardAITakeControlEndPhase_080B8720
 _080B88B4:
 	pop {r3}
 	mov r8, r3
@@ -339510,8 +340390,9 @@ sub_080B88C0: @ 0x080B88C0
 	movs r0, #1
 	bx lr
 
-	thumb_func_start sub_080B88C4
-sub_080B88C4: @ 0x080B88C4
+	@ Cost Down
+	thumb_func_start gCardAIDiscardEndPhase_080B88C4
+gCardAIDiscardEndPhase_080B88C4: @ 0x080B88C4
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -339686,8 +340567,9 @@ _080B8A0E:
 	.align 2, 0
 _080B8A20: .4byte gUnk_0201C4EC
 
-	thumb_func_start sub_080B8A24
-sub_080B8A24: @ 0x080B8A24
+	@ Share the Pain
+	thumb_func_start gCardAITribute_080B8A24
+gCardAITribute_080B8A24: @ 0x080B8A24
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldrb r0, [r4, #2]
@@ -339712,8 +340594,9 @@ _080B8A4A:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B8A54
-sub_080B8A54: @ 0x080B8A54
+	@ Mystic Box
+	thumb_func_start gCardAIDestroy_080B8A54
+gCardAIDestroy_080B8A54: @ 0x080B8A54
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -339740,8 +340623,9 @@ _080B8A7E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B8A84
-sub_080B8A84: @ 0x080B8A84
+	@ Snatch Steal
+	thumb_func_start gCardAITakeControlGainLP_080B8A84
+gCardAITakeControlGainLP_080B8A84: @ 0x080B8A84
 	push {r4, r5, r6, r7, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -339828,8 +340712,9 @@ _080B8B2C: .4byte 0x000013C3 @ Gearfried the Iron Knight
 _080B8B30: .4byte 0x00001596 @ Spirit Reaper
 _080B8B34: .4byte 0x00000707
 
-	thumb_func_start sub_080B8B38
-sub_080B8B38: @ 0x080B8B38
+	@ Falling Down
+	thumb_func_start gCardAITakeControlDestroy_080B8B38
+gCardAITakeControlDestroy_080B8B38: @ 0x080B8B38
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -339842,7 +340727,7 @@ sub_080B8B38: @ 0x080B8B38
 	beq _080B8B5C
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_080B8A84
+	bl gCardAITakeControlGainLP_080B8A84
 	b _080B8B5E
 	.align 2, 0
 _080B8B58: .4byte sub_0804AEA0
@@ -339853,8 +340738,9 @@ _080B8B5E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B8B64
-sub_080B8B64: @ 0x080B8B64
+	@ Mind Control
+	thumb_func_start gCardAISpecialSummonChangePosition_080B8B64
+gCardAISpecialSummonChangePosition_080B8B64: @ 0x080B8B64
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -339896,8 +340782,9 @@ _080B8BB2:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B8BB8
-sub_080B8BB8: @ 0x080B8BB8
+	@ Monster Reborn
+	thumb_func_start gCardAISpecialSummonGraveyard_080B8BB8
+gCardAISpecialSummonGraveyard_080B8BB8: @ 0x080B8BB8
 	push {r4, r5, r6, lr}
 	sub sp, #8
 	adds r5, r0, #0
@@ -339974,8 +340861,9 @@ _080B8C4A:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B8C54
-sub_080B8C54: @ 0x080B8C54
+	@ Silent Fiend
+	thumb_func_start gCardAISpecialSummonPreventAttack_080B8C54
+gCardAISpecialSummonPreventAttack_080B8C54: @ 0x080B8C54
 	push {lr}
 	adds r1, r0, #0
 	ldrb r2, [r1, #2]
@@ -340004,8 +340892,16 @@ _080B8C86:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B8C8C
-sub_080B8C8C: @ 0x080B8C8C
+	@ Autonomous Action Unit
+	@ Book of Life
+	@ Call of the Haunted
+	@ Fulfillment of the Contract
+	@ Premature Burial
+	@ Re-Fusion
+	@ Silent Fiend
+	@ Symbol of Heritage
+	thumb_func_start gCardAISpecialSummonGraveyard_080B8C8C
+gCardAISpecialSummonGraveyard_080B8C8C: @ 0x080B8C8C
 	push {r4, r5, r6, lr}
 	sub sp, #8
 	adds r6, r0, #0
@@ -340116,8 +341012,9 @@ _080B8D62:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B8D6C
-sub_080B8D6C: @ 0x080B8D6C
+	@ The Shallow Grave
+	thumb_func_start gCardAISpecialSummonChangePosition_080B8D6C
+gCardAISpecialSummonChangePosition_080B8D6C: @ 0x080B8D6C
 	push {r4, r5, r6, r7, lr}
 	sub sp, #8
 	adds r6, r0, #0
@@ -340211,8 +341108,9 @@ _080B8E22:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B8E2C
-sub_080B8E2C: @ 0x080B8E2C
+	@ Tribute Doll
+	thumb_func_start gCardAISpecialSummonPreventAttack_080B8E2C
+gCardAISpecialSummonPreventAttack_080B8E2C: @ 0x080B8E2C
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
@@ -340244,8 +341142,9 @@ _080B8E5E:
 	.align 2, 0
 _080B8E64: .4byte 0x0000095F
 
-	thumb_func_start sub_080B8E68
-sub_080B8E68: @ 0x080B8E68
+	@ Dark Magic Curtain
+	thumb_func_start gCardAISpecialSummon_080B8E68
+gCardAISpecialSummon_080B8E68: @ 0x080B8E68
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r2, _080B8E88 @ =gUnk_0201C4E0
@@ -340282,8 +341181,9 @@ _080B8EA4:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B8EAC
-sub_080B8EAC: @ 0x080B8EAC
+	@ Graverobber
+	thumb_func_start gCardAIGraveyard_080B8EAC
+gCardAIGraveyard_080B8EAC: @ 0x080B8EAC
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -340378,8 +341278,9 @@ _080B8F54:
 _080B8F60: .4byte gCardEffects7
 _080B8F64: .4byte 0x00001379 @ Graverobber
 
-	thumb_func_start sub_080B8F68
-sub_080B8F68: @ 0x080B8F68
+	@ Stop Defense
+	thumb_func_start gCardAIChangePosition_080B8F68
+gCardAIChangePosition_080B8F68: @ 0x080B8F68
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -340531,8 +341432,9 @@ _080B9078:
 _080B9088: .4byte gUnk_0201C510
 _080B908C: .4byte 0x00000868
 
-	thumb_func_start sub_080B9090
-sub_080B9090: @ 0x080B9090
+	@ Curse of Anubis
+	thumb_func_start gCardAIChangePosition_080B9090
+gCardAIChangePosition_080B9090: @ 0x080B9090
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	movs r6, #0
@@ -340567,8 +341469,10 @@ _080B90C8:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B90D0
-sub_080B90D0: @ 0x080B90D0
+	@ B.E.S. Crystal Core
+	@ Block Attack
+	thumb_func_start gCardAIChangePositionDestroy_080B90D0
+gCardAIChangePositionDestroy_080B90D0: @ 0x080B90D0
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -340720,8 +341624,9 @@ _080B91E0:
 _080B91F0: .4byte gUnk_0201C510
 _080B91F4: .4byte 0x00000868
 
-	thumb_func_start sub_080B91F8
-sub_080B91F8: @ 0x080B91F8
+	@ Enemy Controller
+	thumb_func_start gCardAITakeControlChangePosition_080B91F8
+gCardAITakeControlChangePosition_080B91F8: @ 0x080B91F8
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -340864,8 +341769,9 @@ _080B9300:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B9310
-sub_080B9310: @ 0x080B9310
+	@ Reverse Trap
+	thumb_func_start gCardAIBoostATKReduceATK_080B9310
+gCardAIBoostATKReduceATK_080B9310: @ 0x080B9310
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -340934,8 +341840,9 @@ _080B938E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B9398
-sub_080B9398: @ 0x080B9398
+	@ Shield & Sword
+	thumb_func_start gCardAIEndPhase_080B9398
+gCardAIEndPhase_080B9398: @ 0x080B9398
 	push {r4, lr}
 	sub sp, #0x10
 	adds r4, r0, #0
@@ -340984,8 +341891,9 @@ _080B93E6:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B93F0
-sub_080B93F0: @ 0x080B93F0
+	@ Card Destruction
+	thumb_func_start gCardAIDrawDiscard_080B93F0
+gCardAIDrawDiscard_080B93F0: @ 0x080B93F0
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -341120,8 +342028,9 @@ _080B94EE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B94FC
-sub_080B94FC: @ 0x080B94FC
+	@ Exchange
+	thumb_func_start gCardAISearchSendToGY_080B94FC
+gCardAISearchSendToGY_080B94FC: @ 0x080B94FC
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r1, r0, #0x1f
@@ -341134,8 +342043,9 @@ sub_080B94FC: @ 0x080B94FC
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B9514
-sub_080B9514: @ 0x080B9514
+	@ Megamorph
+	thumb_func_start gCardAIReduceATKEquip_080B9514
+gCardAIReduceATKEquip_080B9514: @ 0x080B9514
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	ldr r4, _080B958C @ =gUnk_0201C4E0
@@ -341205,8 +342115,9 @@ _080B959E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B95A4
-sub_080B95A4: @ 0x080B95A4
+	@ Metalmorph
+	thumb_func_start gCardAIBoostATKBoostDEF_080B95A4
+gCardAIBoostATKBoostDEF_080B95A4: @ 0x080B95A4
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
@@ -341226,8 +342137,10 @@ _080B95BE:
 	.align 2, 0
 _080B95C4: .4byte 0x00000FF8 @ Red-Eyes B. Dragon
 
-	thumb_func_start sub_080B95C8
-sub_080B95C8: @ 0x080B95C8
+	@ A Feather of the Phoenix
+	@ Spell Reproduction
+	thumb_func_start gCardAIGraveyardSearch_080B95C8
+gCardAIGraveyardSearch_080B95C8: @ 0x080B95C8
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -341356,8 +342269,9 @@ _080B96B4:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B96C4
-sub_080B96C4: @ 0x080B96C4
+	@ Blast with Chain
+	thumb_func_start gCardAIDestroyBoostATK_080B96C4
+gCardAIDestroyBoostATK_080B96C4: @ 0x080B96C4
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldrb r0, [r4, #2]
@@ -341414,8 +342328,58 @@ _080B9728:
 	.align 2, 0
 _080B9730: .4byte 0x00000707
 
-	thumb_func_start sub_080B9734
-sub_080B9734: @ 0x080B9734
+	@ 7 Completed
+	@ Amplifier
+	@ Axe of Despair
+	@ Beast Fangs
+	@ Black Pendant
+	@ Book of Secret Arts
+	@ Bright Castle
+	@ Burning Spear
+	@ Butterfly Dagger - Elma
+	@ Cestus of Dagla
+	@ Cyber Shield
+	@ Dark Energy
+	@ Dark Magician's Tome of Black Magic
+	@ Divine Sword - Phoenix Blade
+	@ Dragon Treasure
+	@ Dragonic Attack
+	@ Electro-Whip
+	@ Elf's Light
+	@ Follow Wind
+	@ Fusion Sword Murasame Blade
+	@ Fusion Weapon
+	@ Gravity Axe - Grarl
+	@ Gust Fan
+	@ Horn of Light
+	@ Horn of the Unicorn
+	@ Insect Armor with Laser Cannon
+	@ Invigoration
+	@ Laser Cannon Armor
+	@ Legendary Sword
+	@ Lightning Blade
+	@ Machine Conversion Factory
+	@ Mage Power
+	@ Malevolent Nuzzler
+	@ Mask of Brutality
+	@ Metalmorph
+	@ Mystical Moon
+	@ Power of Kaishin
+	@ Raise Body Heat
+	@ Ritual Weapon
+	@ Salamandra
+	@ Silver Bow and Arrow
+	@ Steel Shell
+	@ Stim-Pack
+	@ Sword of Dark Destruction
+	@ Sword of Deep-Seated
+	@ Sword of Dragon's Soul
+	@ Twin Swords of Flashing Light - Tryce
+	@ United We Stand
+	@ Vile Germs
+	@ Violet Crystal
+	thumb_func_start gCardAIEquipBoostATK_080B9734
+gCardAIEquipBoostATK_080B9734: @ 0x080B9734
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldrb r0, [r4, #2]
@@ -341446,8 +342410,12 @@ _080B9764:
 	.align 2, 0
 _080B976C: .4byte 0x00000513
 
-	thumb_func_start sub_080B9770
-sub_080B9770: @ 0x080B9770
+	@ Bubble Blaster
+	@ Cyclone Boomerang
+	@ Fuhma Shuriken
+	@ Necklace of Command
+	thumb_func_start gCardAIEquipSendToGY_080B9770
+gCardAIEquipSendToGY_080B9770: @ 0x080B9770
 	push {lr}
 	ldrb r2, [r0, #2]
 	lsls r1, r2, #0x1f
@@ -341462,18 +342430,29 @@ sub_080B9770: @ 0x080B9770
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B978C
-sub_080B978C: @ 0x080B978C
+	@ Armed Changer
+	@ Big Bang Shot
+	@ Cyclon Laser
+	@ Fairy Meteor Crush
+	@ Mistobody
+	@ Opti-Camouflage Armor
+	@ Ring of Magnetism
+	@ Rod of Silence - Kay'est
+	@ Scroll of Bewitchment
+	@ Shooting Star Bow - Ceal
+	@ Wicked-Breaking Flamberge - Baou
+	thumb_func_start gCardAIEquip_080B978C
+gCardAIEquip_080B978C: @ 0x080B978C
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
 	movs r6, #0
-	bl sub_080B76E4
+	bl gCardAISpecialSummonDamage_080B76E4
 	cmp r0, #0
 	beq _080B97AA
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_080B9734
+	bl gCardAIEquipBoostATK_080B9734
 	rsbs r1, r0, #0
 	orrs r1, r0
 	lsrs r6, r1, #0x1f
@@ -341484,8 +342463,10 @@ _080B97AA:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B97B4
-sub_080B97B4: @ 0x080B97B4
+	@ Magical Labyrinth
+	@ Trial of the Princesses
+	thumb_func_start gCardAISpecialSummonEquip_080B97B4
+gCardAISpecialSummonEquip_080B97B4: @ 0x080B97B4
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r4, r1, #0
@@ -341507,7 +342488,7 @@ sub_080B97B4: @ 0x080B97B4
 	blt _080B9812
 	adds r0, r6, #0
 	adds r1, r4, #0
-	bl sub_080B76E4
+	bl gCardAISpecialSummonDamage_080B76E4
 	rsbs r1, r0, #0
 	orrs r1, r0
 	lsrs r1, r1, #0x1f
@@ -341537,8 +342518,9 @@ _080B9812:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B981C
-sub_080B981C: @ 0x080B981C
+	@ Heart of Clear Water
+	thumb_func_start gCardAIDestroyEquip_080B981C
+gCardAIDestroyEquip_080B981C: @ 0x080B981C
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	adds r6, r1, #0
@@ -341563,7 +342545,7 @@ sub_080B981C: @ 0x080B981C
 	bgt _080B985A
 	adds r0, r4, #0
 	adds r1, r6, #0
-	bl sub_080B76E4
+	bl gCardAISpecialSummonDamage_080B76E4
 	rsbs r1, r0, #0
 	orrs r1, r0
 	lsrs r5, r1, #0x1f
@@ -341575,8 +342557,14 @@ _080B985A:
 	.align 2, 0
 _080B9864: .4byte 0x00000513
 
-	thumb_func_start sub_080B9868
-sub_080B9868: @ 0x080B9868
+	@ Ekibyo Drakmord
+	@ Flint
+	@ Germ Infection
+	@ Mask of the Accursed
+	@ Nitro Unit
+	@ Paralyzing Potion
+	thumb_func_start gCardAIEquipPreventAttack_080B9868
+gCardAIEquipPreventAttack_080B9868: @ 0x080B9868
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -341620,8 +342608,9 @@ _080B98B2:
 	.align 2, 0
 _080B98B8: .4byte 0x00000513
 
-	thumb_func_start sub_080B98BC
-sub_080B98BC: @ 0x080B98BC
+	@ Riryoku
+	thumb_func_start gCardAIBoostATKReduceATK_080B98BC
+gCardAIBoostATKReduceATK_080B98BC: @ 0x080B98BC
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -341650,8 +342639,10 @@ _080B98EA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B98F0
-sub_080B98F0: @ 0x080B98F0
+	@ Dragged Down into the Grave
+	@ Reload
+	thumb_func_start gCardAIDrawDiscard_080B98F0
+gCardAIDrawDiscard_080B98F0: @ 0x080B98F0
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -341749,8 +342740,9 @@ _080B99A0:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B99B0
-sub_080B99B0: @ 0x080B99B0
+	@ Magical Mallet
+	thumb_func_start gCardAIDraw_080B99B0
+gCardAIDraw_080B99B0: @ 0x080B99B0
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -341886,8 +342878,10 @@ _080B9AA6:
 	.align 2, 0
 _080B9AB8: .4byte gUnk_0201C4EC
 
-	thumb_func_start sub_080B9ABC
-sub_080B9ABC: @ 0x080B9ABC
+	@ Dimension Fusion
+	@ Return from the Different Dimension
+	thumb_func_start gCardAISpecialSummonBanish_080B9ABC
+gCardAISpecialSummonBanish_080B9ABC: @ 0x080B9ABC
 	push {r4, r5, r6, r7, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -341951,8 +342945,9 @@ _080B9B36:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B9B3C
-sub_080B9B3C: @ 0x080B9B3C
+	@ Level Limit - Area B
+	thumb_func_start gCardAIChangePosition_080B9B3C
+gCardAIChangePosition_080B9B3C: @ 0x080B9B3C
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -341973,7 +342968,7 @@ sub_080B9B3C: @ 0x080B9B3C
 	bgt _080B9B74
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_080B76E4
+	bl gCardAISpecialSummonDamage_080B76E4
 	b _080B9B76
 	.align 2, 0
 _080B9B70: .4byte 0x0000140E @ Gravity Bind
@@ -341984,8 +342979,9 @@ _080B9B76:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B9B7C
-sub_080B9B7C: @ 0x080B9B7C
+	@ Big Wave Small Wave
+	thumb_func_start gCardAISpecialSummonDestroyAll_080B9B7C
+gCardAISpecialSummonDestroyAll_080B9B7C: @ 0x080B9B7C
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldrb r1, [r5, #2]
@@ -342017,8 +343013,9 @@ _080B9BB2:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B9BB8
-sub_080B9BB8: @ 0x080B9BB8
+	@ Beckoning Light
+	thumb_func_start gCardAISearchDiscard_080B9BB8
+gCardAISearchDiscard_080B9BB8: @ 0x080B9BB8
 	push {lr}
 	ldr r1, _080B9BE0 @ =gUnk_0201C4E0
 	ldrb r0, [r0, #2]
@@ -342047,8 +343044,9 @@ _080B9BEA:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B9BF0
-sub_080B9BF0: @ 0x080B9BF0
+	@ Level Modulation
+	thumb_func_start gCardAISpecialSummonPreventAttack_080B9BF0
+gCardAISpecialSummonPreventAttack_080B9BF0: @ 0x080B9BF0
 	push {lr}
 	adds r1, r0, #0
 	ldrb r2, [r1, #2]
@@ -342078,8 +343076,10 @@ _080B9C22:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B9C28
-sub_080B9C28: @ 0x080B9C28
+	@ Pot of Avarice
+	@ Pot of Greed
+	thumb_func_start gCardAIDrawGraveyard_080B9C28
+gCardAIDrawGraveyard_080B9C28: @ 0x080B9C28
 	movs r3, #0
 	ldr r2, _080B9C48 @ =gUnk_0201C4E0
 	ldrb r0, [r0, #2]
@@ -342100,8 +343100,9 @@ _080B9C42:
 _080B9C48: .4byte gUnk_0201C4E0
 _080B9C4C: .4byte 0x00000868
 
-	thumb_func_start sub_080B9C50
-sub_080B9C50: @ 0x080B9C50
+	@ Makiu
+	thumb_func_start gCardAIDestroyBattlePhase_080B9C50
+gCardAIDestroyBattlePhase_080B9C50: @ 0x080B9C50
 	push {r4, r5, r6, r7, lr}
 	sub sp, #8
 	adds r7, r0, #0
@@ -342174,8 +343175,9 @@ _080B9CD0: .4byte 0x00000868
 _080B9CD4: .4byte gUnk_0201C510
 _080B9CD8: .4byte 0x000009C4
 
-	thumb_func_start sub_080B9CDC
-sub_080B9CDC: @ 0x080B9CDC
+	@ Knight's Title
+	thumb_func_start gCardAISpecialSummonRevive_080B9CDC
+gCardAISpecialSummonRevive_080B9CDC: @ 0x080B9CDC
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -342189,7 +343191,7 @@ sub_080B9CDC: @ 0x080B9CDC
 	beq _080B9CFE
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_080B771C
+	bl gCardAISpecialSummonGraveyard_080B771C
 	b _080B9D00
 _080B9CFE:
 	movs r0, #0
@@ -342199,8 +343201,9 @@ _080B9D00:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B9D08
-sub_080B9D08: @ 0x080B9D08
+	@ Inferno Fire Blast
+	thumb_func_start gCardAIDamagePreventAttack_080B9D08
+gCardAIDamagePreventAttack_080B9D08: @ 0x080B9D08
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r1, r0, #0x1f
@@ -342218,8 +343221,9 @@ _080B9D20:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B9D28
-sub_080B9D28: @ 0x080B9D28
+	@ Rescue Cat
+	thumb_func_start gCardAISpecialSummonSendToGY_080B9D28
+gCardAISpecialSummonSendToGY_080B9D28: @ 0x080B9D28
 	push {r4, r5, lr}
 	ldrb r1, [r0, #2]
 	lsls r4, r1, #0x1f
@@ -342240,8 +343244,12 @@ _080B9D48:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B9D50
-sub_080B9D50: @ 0x080B9D50
+	@ Final Countdown
+	@ Thousand Energy
+	@ Triangle Ecstasy Spark
+	@ Triangle Power
+	thumb_func_start gCardAIEndPhaseDestroyAll_080B9D50
+gCardAIEndPhaseDestroyAll_080B9D50: @ 0x080B9D50
 	push {lr}
 	adds r1, r0, #0
 	ldrb r2, [r1, #2]
@@ -342260,8 +343268,9 @@ _080B9D6C:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B9D70
-sub_080B9D70: @ 0x080B9D70
+	@ Call of the Mummy
+	thumb_func_start gCardAISpecialSummon_080B9D70
+gCardAISpecialSummon_080B9D70: @ 0x080B9D70
 	push {lr}
 	adds r2, r0, #0
 	movs r0, #0x30
@@ -342273,13 +343282,14 @@ sub_080B9D70: @ 0x080B9D70
 	b _080B9D88
 _080B9D82:
 	adds r0, r2, #0
-	bl sub_080B76E4
+	bl gCardAISpecialSummonDamage_080B76E4
 _080B9D88:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B9D8C
-sub_080B9D8C: @ 0x080B9D8C
+	@ Toon Table of Contents
+	thumb_func_start gCardAISearch_080B9D8C
+gCardAISearch_080B9D8C: @ 0x080B9D8C
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -342364,8 +343374,9 @@ _080B9E1E:
 _080B9E2C: .4byte 0x00000868
 _080B9E30: .4byte gUnk_0201C510
 
-	thumb_func_start sub_080B9E34
-sub_080B9E34: @ 0x080B9E34
+	@ Excavation of Mage Stones
+	thumb_func_start gCardAIDiscardReturnToHand_080B9E34
+gCardAIDiscardReturnToHand_080B9E34: @ 0x080B9E34
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -342395,8 +343406,9 @@ _080B9E66:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B9E6C
-sub_080B9E6C: @ 0x080B9E6C
+	@ Level Up!
+	thumb_func_start gCardAISpecialSummonSendToGY_080B9E6C
+gCardAISpecialSummonSendToGY_080B9E6C: @ 0x080B9E6C
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	movs r4, #0
@@ -342435,8 +343447,9 @@ _080B9EAE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B9EB4
-sub_080B9EB4: @ 0x080B9EB4
+	@ Jade Insect Whistle
+	thumb_func_start gCardAIUnknown_080B9EB4
+gCardAIUnknown_080B9EB4: @ 0x080B9EB4
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r1, r0, #0x1f
@@ -342451,8 +343464,9 @@ sub_080B9EB4: @ 0x080B9EB4
 	.align 2, 0
 _080B9ECC: .4byte 0x000012A1 @ Parasite Paracide
 
-	thumb_func_start sub_080B9ED0
-sub_080B9ED0: @ 0x080B9ED0
+	@ Earthquake
+	thumb_func_start gCardAIChangePosition_080B9ED0
+gCardAIChangePosition_080B9ED0: @ 0x080B9ED0
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
@@ -342470,8 +343484,9 @@ _080B9EE6:
 	.align 2, 0
 _080B9EEC: .4byte 0x000012D7 @ Tragedy
 
-	thumb_func_start sub_080B9EF0
-sub_080B9EF0: @ 0x080B9EF0
+	@ Metal Reflect Slime
+	thumb_func_start gCardAISpecialSummonPreventAttack_080B9EF0
+gCardAISpecialSummonPreventAttack_080B9EF0: @ 0x080B9EF0
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
@@ -342483,8 +343498,9 @@ sub_080B9EF0: @ 0x080B9EF0
 	.align 2, 0
 _080B9F04: .4byte 0x000015A3 @ Metamorphosis
 
-	thumb_func_start sub_080B9F08
-sub_080B9F08: @ 0x080B9F08
+	@ Metamorphosis
+	thumb_func_start gCardAISpecialSummonFusion_080B9F08
+gCardAISpecialSummonFusion_080B9F08: @ 0x080B9F08
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	movs r5, #0
@@ -342528,8 +343544,9 @@ _080B9F56:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B9F5C
-sub_080B9F5C: @ 0x080B9F5C
+	@ Monster Reincarnation
+	thumb_func_start gCardAISearchDiscard_080B9F5C
+gCardAISearchDiscard_080B9F5C: @ 0x080B9F5C
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -342579,8 +343596,9 @@ _080B9FBA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B9FC0
-sub_080B9FC0: @ 0x080B9FC0
+	@ Overpowering Eye
+	thumb_func_start gCardAIDirectAttack_080B9FC0
+gCardAIDirectAttack_080B9FC0: @ 0x080B9FC0
 	push {r4, lr}
 	sub sp, #4
 	adds r4, r0, #0
@@ -342627,8 +343645,10 @@ _080BA00C:
 	.align 2, 0
 _080BA014: .4byte 0x000003E7
 
-	thumb_func_start sub_080BA018
-sub_080BA018: @ 0x080BA018
+	@ Altar for Tribute
+	@ Gift of the Martyr
+	thumb_func_start gCardAISendToGYBoostATK_080BA018
+gCardAISendToGYBoostATK_080BA018: @ 0x080BA018
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -342690,8 +343710,9 @@ _080BA082:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080BA090
-sub_080BA090: @ 0x080BA090
+	@ Catapult Turtle
+	thumb_func_start gCardAIDamageTribute_080BA090
+gCardAIDamageTribute_080BA090: @ 0x080BA090
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -342775,8 +343796,11 @@ _080BA126:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080BA134
-sub_080BA134: @ 0x080BA134
+	@ Cannon Soldier
+	@ Mass Driver
+	@ Toon Cannon Soldier
+	thumb_func_start gCardAIDamageTribute_080BA134
+gCardAIDamageTribute_080BA134: @ 0x080BA134
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldr r3, _080BA184 @ =gUnk_0201C4E0
@@ -342825,8 +343849,9 @@ _080BA18E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080BA194
-sub_080BA194: @ 0x080BA194
+	@ Ultimate Baseball Kid
+	thumb_func_start gCardAISendToGYBoostATK_080BA194
+gCardAISendToGYBoostATK_080BA194: @ 0x080BA194
 	push {r4, lr}
 	ldr r3, _080BA1C4 @ =gUnk_0201C4E0
 	ldrb r2, [r0, #2]
@@ -342859,8 +343884,9 @@ _080BA1CE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080BA1D4
-sub_080BA1D4: @ 0x080BA1D4
+	@ Time Wizard
+	thumb_func_start gCardAIDestroyAllDamage_080BA1D4
+gCardAIDestroyAllDamage_080BA1D4: @ 0x080BA1D4
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
@@ -342876,8 +343902,9 @@ _080BA1E8:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080BA1F0
-sub_080BA1F0: @ 0x080BA1F0
+	@ Jowgen the Spiritualist
+	thumb_func_start gCardAISpecialSummonDiscard_080BA1F0
+gCardAISpecialSummonDiscard_080BA1F0: @ 0x080BA1F0
 	push {lr}
 	ldrb r2, [r0, #2]
 	lsls r1, r2, #0x1f
@@ -342893,8 +343920,9 @@ _080BA204:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080BA20C
-sub_080BA20C: @ 0x080BA20C
+	@ Amazon Archer
+	thumb_func_start gCardAIDamageTribute_080BA20C
+gCardAIDamageTribute_080BA20C: @ 0x080BA20C
 	push {lr}
 	ldr r2, _080BA230 @ =gUnk_0201C4E0
 	ldrb r0, [r0, #2]
@@ -342928,8 +343956,10 @@ _080BA248:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080BA24C
-sub_080BA24C: @ 0x080BA24C
+	@ Crimson Sentry
+	@ The Forgiving Maiden
+	thumb_func_start gCardAIDestroyTribute_080BA24C
+gCardAIDestroyTribute_080BA24C: @ 0x080BA24C
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	ldrb r1, [r5, #2]
@@ -342970,8 +344000,9 @@ _080BA296:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080BA29C
-sub_080BA29C: @ 0x080BA29C
+	@ Karate Man
+	thumb_func_start gCardAIDestroyEndPhase_080BA29C
+gCardAIDestroyEndPhase_080BA29C: @ 0x080BA29C
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -343067,8 +344098,9 @@ _080BA34A:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080BA358
-sub_080BA358: @ 0x080BA358
+	@ Valkyrion the Magna Warrior
+	thumb_func_start gCardAISpecialSummonRevive_080BA358
+gCardAISpecialSummonRevive_080BA358: @ 0x080BA358
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	movs r5, #0
@@ -343093,8 +344125,9 @@ _080BA380:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080BA388
-sub_080BA388: @ 0x080BA388
+	@ Cyber-Stein
+	thumb_func_start gCardAISpecialSummonDamage_080BA388
+gCardAISpecialSummonDamage_080BA388: @ 0x080BA388
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -343129,8 +344162,9 @@ _080BA3C6:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080BA3CC
-sub_080BA3CC: @ 0x080BA3CC
+	@ Goddess of Whim
+	thumb_func_start gCardAIRNG_080BA3CC
+gCardAIRNG_080BA3CC: @ 0x080BA3CC
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -343158,8 +344192,9 @@ _080BA3F8:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080BA400
-sub_080BA400: @ 0x080BA400
+	@ XYZ-Dragon Cannon
+	thumb_func_start gCardAISpecialSummonDiscard_080BA400
+gCardAISpecialSummonDiscard_080BA400: @ 0x080BA400
 	push {r4, r5, r6, r7, lr}
 	adds r4, r0, #0
 	adds r7, r1, #0
@@ -343186,7 +344221,7 @@ sub_080BA400: @ 0x080BA400
 	bne _080BA448
 	adds r0, r4, #0
 	adds r1, r7, #0
-	bl sub_080B7744
+	bl gCardAISpecialSummonDiscard_080B7744
 	b _080BA44A
 	.align 2, 0
 _080BA440: .4byte 0x00001614 @ Chaos Command Magician
@@ -343198,8 +344233,9 @@ _080BA44A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080BA450
-sub_080BA450: @ 0x080BA450
+	@ VW-Tiger Catapult
+	thumb_func_start gCardAISpecialSummonDiscard_080BA450
+gCardAISpecialSummonDiscard_080BA450: @ 0x080BA450
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -343229,8 +344265,11 @@ _080BA482:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080BA488
-sub_080BA488: @ 0x080BA488
+	@ Demise, King of Armageddon
+	@ Legendary Flame Lord
+	@ Levia-Dragon - Daedalus
+	thumb_func_start gCardAIDestroyAllRitualSummon_080BA488
+gCardAIDestroyAllRitualSummon_080BA488: @ 0x080BA488
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldrb r0, [r5, #2]
@@ -343300,8 +344339,9 @@ _080BA512:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080BA518
-sub_080BA518: @ 0x080BA518
+	@ Blast Magician
+	thumb_func_start gCardAIDestroyCounter_080BA518
+gCardAIDestroyCounter_080BA518: @ 0x080BA518
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -343314,13 +344354,14 @@ sub_080BA518: @ 0x080BA518
 	strh r0, [r4, #0xc]
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_080B76A8
+	bl gCardAIDestroy_080B76A8
 	pop {r4, r5}
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080BA53C
-sub_080BA53C: @ 0x080BA53C
+	@ Ocean Dragon Lord - Neo-Daedalus
+	thumb_func_start gCardAISpecialSummonSendToGY_080BA53C
+gCardAISpecialSummonSendToGY_080BA53C: @ 0x080BA53C
 	push {r4, r5, r6, r7, lr}
 	adds r5, r0, #0
 	ldrb r0, [r5, #2]
@@ -343387,8 +344428,10 @@ _080BA5BE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080BA5C4
-sub_080BA5C4: @ 0x080BA5C4
+	@ Swarm of Locusts
+	@ Swarm of Scarabs
+	thumb_func_start gCardAIDestroyChangePosition_080BA5C4
+gCardAIDestroyChangePosition_080BA5C4: @ 0x080BA5C4
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	ldr r3, _080BA618 @ =gUnk_0201C4E0
@@ -343440,8 +344483,23 @@ _080BA622:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080BA628
-sub_080BA628: @ 0x080BA628
+	@ Burning Beast
+	@ Des Dendle
+	@ Doitsu
+	@ Freezing Beast
+	@ Heavy Mech Support Platform
+	@ Kiryu
+	@ Koitsu
+	@ Metallizing Parasite - Lunatite
+	@ Pitch-Dark Dragon
+	@ Protective Soul Ailin
+	@ Second Goblin
+	@ W-Wing Catapult
+	@ Y-Dragon Head
+	@ Z-Metal Tank
+	@ Zombie Tiger
+	thumb_func_start gCardAISpecialSummonDestroy_080BA628
+gCardAISpecialSummonDestroy_080BA628: @ 0x080BA628
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldrb r2, [r5, #2]
@@ -343486,11 +344544,12 @@ _080BA672:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080BA678
-sub_080BA678: @ 0x080BA678
+	@ Breaker the Magical Warrior
+	thumb_func_start gCardAIDestroySpellTrapBoostATK_080BA678
+gCardAIDestroySpellTrapBoostATK_080BA678: @ 0x080BA678
 	push {r4, lr}
 	adds r4, r0, #0
-	bl sub_080B76A8
+	bl gCardAIDestroy_080B76A8
 	cmp r0, #0
 	bne _080BA688
 	movs r0, #0
@@ -343516,8 +344575,9 @@ _080BA6A6:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080BA6AC
-sub_080BA6AC: @ 0x080BA6AC
+	@ The Agent of Judgment - Saturn
+	thumb_func_start gCardAIDamageBattlePhase_080BA6AC
+gCardAIDamageBattlePhase_080BA6AC: @ 0x080BA6AC
 	push {r4, r5, r6, lr}
 	ldrb r0, [r0, #2]
 	lsls r3, r0, #0x1f
@@ -343566,8 +344626,9 @@ _080BA700:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080BA708
-sub_080BA708: @ 0x080BA708
+	@ Thunder Dragon
+	thumb_func_start gCardAISearchDiscard_080BA708
+gCardAISearchDiscard_080BA708: @ 0x080BA708
 	push {lr}
 	adds r1, r0, #0
 	ldrb r2, [r1, #2]
@@ -343578,8 +344639,9 @@ sub_080BA708: @ 0x080BA708
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080BA71C
-sub_080BA71C: @ 0x080BA71C
+	@ King of the Swamp
+	thumb_func_start gCardAISearchDiscard_080BA71C
+gCardAISearchDiscard_080BA71C: @ 0x080BA71C
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldrb r1, [r5, #2]
@@ -343624,8 +344686,9 @@ _080BA76E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080BA774
-sub_080BA774: @ 0x080BA774
+	@ Gear Golem the Moving Fortress
+	thumb_func_start gCardAIDamageDirectAttack_080BA774
+gCardAIDamageDirectAttack_080BA774: @ 0x080BA774
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldrb r1, [r5, #2]
@@ -343678,8 +344741,10 @@ _080BA7DA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080BA7E0
-sub_080BA7E0: @ 0x080BA7E0
+	@ Black Luster Soldier - Envoy of the Beginning
+	@ Chaos Sorcerer
+	thumb_func_start gCardAISpecialSummonBanish_080BA7E0
+gCardAISpecialSummonBanish_080BA7E0: @ 0x080BA7E0
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldrb r0, [r4, #2]
@@ -343732,8 +344797,9 @@ _080BA846:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080BA84C
-sub_080BA84C: @ 0x080BA84C
+	@ Diffusion Wave-Motion
+	thumb_func_start gCardAIDestroyDamage_080BA84C
+gCardAIDestroyDamage_080BA84C: @ 0x080BA84C
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -343770,8 +344836,9 @@ _080BA888:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080BA890
-sub_080BA890: @ 0x080BA890
+	@ Checkmate
+	thumb_func_start gCardAIDirectAttackTribute_080BA890
+gCardAIDirectAttackTribute_080BA890: @ 0x080BA890
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r2, _080BA8D0 @ =gUnk_0201C4E0
@@ -343812,8 +344879,9 @@ _080BA8DE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080BA8E4
-sub_080BA8E4: @ 0x080BA8E4
+	@ Dark Scorpion Combination
+	thumb_func_start gCardAIDirectAttack_080BA8E4
+gCardAIDirectAttack_080BA8E4: @ 0x080BA8E4
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r0, [r4, #2]
@@ -343839,8 +344907,11 @@ _080BA90E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080BA914
-sub_080BA914: @ 0x080BA914
+	@ Abyss Soldier
+	@ Back to Square One
+	@ Dark Core
+	thumb_func_start gCardAIDiscard_080BA914
+gCardAIDiscard_080BA914: @ 0x080BA914
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -343868,8 +344939,9 @@ _080BA942:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080BA948
-sub_080BA948: @ 0x080BA948
+	@ Battery Charger
+	thumb_func_start gCardAISpecialSummonDamage_080BA948
+gCardAISpecialSummonDamage_080BA948: @ 0x080BA948
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r0, [r4, #2]
@@ -343903,8 +344975,9 @@ _080BA97C:
 	.align 2, 0
 _080BA984: .4byte 0x0000198E @ Inferno Reckless Summon
 
-	thumb_func_start sub_080BA988
-sub_080BA988: @ 0x080BA988
+	@ Armed Dragon LV5
+	thumb_func_start gCardAISpecialSummonSendToGY_080BA988
+gCardAISpecialSummonSendToGY_080BA988: @ 0x080BA988
 	push {lr}
 	ldrb r1, [r0, #2]
 	lsls r2, r1, #0x1f
@@ -343923,8 +344996,9 @@ _080BA9A4:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080BA9A8
-sub_080BA9A8: @ 0x080BA9A8
+	@ Armed Dragon LV7
+	thumb_func_start gCardAISpecialSummonSendToGY_080BA9A8
+gCardAISpecialSummonSendToGY_080BA9A8: @ 0x080BA9A8
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -343964,8 +345038,9 @@ _080BA9EE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080BA9F4
-sub_080BA9F4: @ 0x080BA9F4
+	@ Armed Dragon LV10
+	thumb_func_start gCardAISpecialSummonSendToGY_080BA9F4
+gCardAISpecialSummonSendToGY_080BA9F4: @ 0x080BA9F4
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldrb r0, [r4, #2]
@@ -343995,8 +345070,9 @@ _080BAA26:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080BAA2C
-sub_080BAA2C: @ 0x080BAA2C
+	@ Gaia Soul the Combustible Collective
+	thumb_func_start gCardAIDestroyBoostATK_080BAA2C
+gCardAIDestroyBoostATK_080BAA2C: @ 0x080BAA2C
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldrb r1, [r5, #2]
@@ -344041,8 +345117,10 @@ _080BAA82:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080BAA88
-sub_080BAA88: @ 0x080BAA88
+	@ Dark Master - Zorc
+	@ Super Robolady
+	thumb_func_start gCardAISpecialSummonRitualSummon_080BAA88
+gCardAISpecialSummonRitualSummon_080BAA88: @ 0x080BAA88
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r1, r0, #0x1f
@@ -344060,8 +345138,9 @@ _080BAAA0:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080BAAA8
-sub_080BAAA8: @ 0x080BAAA8
+	@ Super Roboyarou
+	thumb_func_start gCardAISpecialSummonBoostATK_080BAAA8
+gCardAISpecialSummonBoostATK_080BAAA8: @ 0x080BAAA8
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r1, r0, #0x1f
@@ -344079,8 +345158,9 @@ _080BAAC0:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080BAAC8
-sub_080BAAC8: @ 0x080BAAC8
+	@ Gatling Dragon
+	thumb_func_start gCardAIDestroyRNG_080BAAC8
+gCardAIDestroyRNG_080BAAC8: @ 0x080BAAC8
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r1, r0, #0x1f
@@ -344098,8 +345178,9 @@ _080BAAE0:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080BAAE8
-sub_080BAAE8: @ 0x080BAAE8
+	@ Hand of Nephthys
+	thumb_func_start gCardAISpecialSummonTribute_080BAAE8
+gCardAISpecialSummonTribute_080BAAE8: @ 0x080BAAE8
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	adds r6, r1, #0
@@ -344116,7 +345197,7 @@ sub_080BAAE8: @ 0x080BAAE8
 	blt _080BAB12
 	adds r0, r5, #0
 	adds r1, r6, #0
-	bl sub_080B771C
+	bl gCardAISpecialSummonGraveyard_080B771C
 	b _080BAB14
 _080BAB12:
 	movs r0, #0
@@ -344126,8 +345207,9 @@ _080BAB14:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080BAB1C
-sub_080BAB1C: @ 0x080BAB1C
+	@ Elemental Hero Tempest
+	thumb_func_start gCardAISpecialSummonFusionSummon_080BAB1C
+gCardAISpecialSummonFusionSummon_080BAB1C: @ 0x080BAB1C
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
@@ -344145,8 +345227,9 @@ _080BAB36:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080BAB3C
-sub_080BAB3C: @ 0x080BAB3C
+	@ Raviel, Lord of Phantasms
+	thumb_func_start gCardAISpecialSummonBoostATK_080BAB3C
+gCardAISpecialSummonBoostATK_080BAB3C: @ 0x080BAB3C
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -344202,8 +345285,9 @@ _080BAB9E:
 	.align 2, 0
 _080BABA4: .4byte 0x0000195A @ Phantasm Token
 
-	thumb_func_start sub_080BABA8
-sub_080BABA8: @ 0x080BABA8
+	@ Archlord Zerato
+	thumb_func_start gCardAISpecialSummonDiscard_080BABA8
+gCardAISpecialSummonDiscard_080BABA8: @ 0x080BABA8
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
 	lsrs r0, r0, #0x1f
@@ -344227,8 +345311,9 @@ _080BABD0:
 _080BABD2:
 	bx lr
 
-	thumb_func_start sub_080BABD4
-sub_080BABD4: @ 0x080BABD4
+	@ Lekunga
+	thumb_func_start gCardAISpecialSummonChangePosition_080BABD4
+gCardAISpecialSummonChangePosition_080BABD4: @ 0x080BABD4
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -344354,8 +345439,9 @@ _080BACB8:
 	.align 2, 0
 _080BACC8: .4byte gUnk_0201C4EC
 
-	thumb_func_start sub_080BACCC
-sub_080BACCC: @ 0x080BACCC
+	@ The Blockman
+	thumb_func_start gCardAISpecialSummonPreventAttack_080BACCC
+gCardAISpecialSummonPreventAttack_080BACCC: @ 0x080BACCC
 	movs r3, #0
 	ldrb r0, [r0, #2]
 	lsls r2, r0, #0x1f
@@ -344381,8 +345467,9 @@ _080BACF0:
 _080BACF4: .4byte 0x00000868
 _080BACF8: .4byte gUnk_0201C510
 
-	thumb_func_start sub_080BACFC
-sub_080BACFC: @ 0x080BACFC
+	@ Obelisk the Tormentor
+	thumb_func_start gCardAISpecialSummonNegate_080BACFC
+gCardAISpecialSummonNegate_080BACFC: @ 0x080BACFC
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
@@ -344393,8 +345480,9 @@ sub_080BACFC: @ 0x080BACFC
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080BAD10
-sub_080BAD10: @ 0x080BAD10
+	@ Chaos Emperor Dragon - Envoy of the End
+	thumb_func_start gCardAISpecialSummonSendToGY_080BAD10
+gCardAISpecialSummonSendToGY_080BAD10: @ 0x080BAD10
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	movs r0, #0
@@ -344439,8 +345527,9 @@ _080BAD60: .4byte gUnk_0201C4E0
 _080BAD64: .4byte 0x00000874
 _080BAD68: .4byte 0x00000868
 
-	thumb_func_start sub_080BAD6C
-sub_080BAD6C: @ 0x080BAD6C
+	@ Shifting Shadows
+	thumb_func_start gCardAIDamageChangePosition_080BAD6C
+gCardAIDamageChangePosition_080BAD6C: @ 0x080BAD6C
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -344451,7 +345540,7 @@ sub_080BAD6C: @ 0x080BAD6C
 	cmp r0, #0
 	bne _080BAD8A
 	adds r0, r2, #0
-	bl sub_080B76E4
+	bl gCardAISpecialSummonDamage_080B76E4
 	b _080BADE2
 _080BAD86:
 	movs r0, #1
@@ -344513,8 +345602,9 @@ _080BADE2:
 _080BADEC: .4byte gUnk_0201C510
 _080BADF0: .4byte 0x00000868
 
-	thumb_func_start sub_080BADF4
-sub_080BADF4: @ 0x080BADF4
+	@ Magical Blast
+	thumb_func_start gCardAISearchDamage_080BADF4
+gCardAISearchDamage_080BADF4: @ 0x080BADF4
 	push {r4, r5, lr}
 	sub sp, #8
 	adds r5, r0, #0
