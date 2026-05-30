@@ -113841,7 +113841,7 @@ gUnk_095B4C42:: @ 095B4C42
 gUnk_095B5873:: @ 095B5873
 	.incbin "baserom.gba", 0x15B5873, 0x38D
 
-gUnk_095B5C00:: @ 095B5C00
+gCardArtIndexes:: @ 095B5C00
 	.incbin "baserom.gba", 0x15B5C00, 0xC82
 
 gUnk_095B6882:: @ 095B6882
@@ -117729,7 +117729,7 @@ gUnk_09814254:: @ 09814254
 gUnk_09815186:: @ 09815186
 	.incbin "baserom.gba", 0x1815186, 0x1832
 
-gUnk_098169B8:: @ 098169B8
+gCardStats:: @ 098169B8
 	.incbin "baserom.gba", 0x18169B8, 0x14E3
 
 gUnk_09817E9B:: @ 09817E9B
@@ -117786,7 +117786,7 @@ gUnk_09820A69:: @ 09820A69
 gUnk_09821320:: @ 09821320
 	.incbin "baserom.gba", 0x1821320, 0xAE4
 
-gUnk_09821E04:: @ 09821E04
+gCardStats2:: @ 09821E04
 	.incbin "baserom.gba", 0x1821E04, 0x4A4
 
 gUnk_098222A8:: @ 098222A8
@@ -117978,7 +117978,7 @@ gUnk_0984DC6C:: @ 0984DC6C
 gUnk_0984DCEC:: @ 0984DCEC
 	.incbin "baserom.gba", 0x184DCEC, 0x80
 
-gUnk_0984DD6C:: @ 0984DD6C
+gAttributePalettes:: @ 0984DD6C
 	.incbin "baserom.gba", 0x184DD6C, 0xE0
 
 gUnk_0984DE4C:: @ 0984DE4C
@@ -117999,7 +117999,7 @@ gUnk_0984E30C:: @ 0984E30C
 gUnk_0984E42C:: @ 0984E42C
 	.incbin "baserom.gba", 0x184E42C, 0xA00
 
-gUnk_0984EE2C:: @ 0984EE2C
+gRacePalettes:: @ 0984EE2C
 	.incbin "baserom.gba", 0x184EE2C, 0x280
 
 gUnk_0984F0AC:: @ 0984F0AC

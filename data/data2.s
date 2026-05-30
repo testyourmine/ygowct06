@@ -296,7 +296,7 @@ gUnk_09E5E0EB:: @ 09E5E0EB
 gUnk_09E5E0FF:: @ 09E5E0FF
 	.incbin "baserom.gba", 0x1E5E0FF, 0x1E9
 
-gUnk_09E5E2E8:: @ 09E5E2E8
+gPackInfo:: @ 09E5E2E8
 	.incbin "baserom.gba", 0x1E5E2E8, 0x11
 
 gUnk_09E5E2F9:: @ 09E5E2F9
@@ -383,34 +383,34 @@ gUnk_09E5EF10:: @ 09E5EF10
 gUnk_09E5EF20:: @ 09E5EF20
 	.incbin "baserom.gba", 0x1E5EF20, 0x10
 
-gUnk_09E5EF30:: @ 09E5EF30
+gBanlistMarch03:: @ 09E5EF30
 	.incbin "baserom.gba", 0x1E5EF30, 0xC
 
-gUnk_09E5EF3C:: @ 09E5EF3C
+gBanlistSeptember03:: @ 09E5EF3C
 	.incbin "baserom.gba", 0x1E5EF3C, 0x38
 
-gUnk_09E5EF74:: @ 09E5EF74
+gBanlistMarch04:: @ 09E5EF74
 	.incbin "baserom.gba", 0x1E5EF74, 0x6C
 
-gUnk_09E5EFE0:: @ 09E5EFE0
+gBanlistSeptember04:: @ 09E5EFE0
 	.incbin "baserom.gba", 0x1E5EFE0, 0x9C
 
-gUnk_09E5F07C:: @ 09E5F07C
+gBanlistMarch05:: @ 09E5F07C
 	.incbin "baserom.gba", 0x1E5F07C, 0xD4
 
-gUnk_09E5F150:: @ 09E5F150
+gBanlistSeptember05:: @ 09E5F150
 	.incbin "baserom.gba", 0x1E5F150, 0xE4
 
-gUnk_09E5F234:: @ 09E5F234
+gBanlistMarch06:: @ 09E5F234
 	.incbin "baserom.gba", 0x1E5F234, 0xF8
 
-gUnk_09E5F32C:: @ 09E5F32C
+gBanlistSeptember06:: @ 09E5F32C
 	.incbin "baserom.gba", 0x1E5F32C, 0x114
 
-gUnk_09E5F440:: @ 09E5F440
+gBanlistMarch07:: @ 09E5F440
 	.incbin "baserom.gba", 0x1E5F440, 0x140
 
-gUnk_09E5F580:: @ 09E5F580
+gBanlistSeptember07:: @ 09E5F580
 	.incbin "baserom.gba", 0x1E5F580, 0x14C
 
 gUnk_09E5F6CC:: @ 09E5F6CC
@@ -446,5 +446,5 @@ gUnk_09E5F864:: @ 09E5F864
 gUnk_09E5F874:: @ 09E5F874
 	.incbin "baserom.gba", 0x1E5F874, 0x10
 
-gUnk_09E5F884:: @ 09E5F884
+gStarterDeckTrunk:: @ 09E5F884
 	.incbin "baserom.gba", 0x1E5F884, 0x50

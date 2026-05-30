@@ -18,22 +18,22 @@ gUnk_09E5FA38:: @ 09E5FA38
 gUnk_09E5FA48:: @ 09E5FA48
 	.incbin "baserom.gba", 0x1E5FA48, 0x10
 
-gUnk_09E5FA58:: @ 09E5FA58
+gStarterDeckDragonsRoar:: @ 09E5FA58
 	.incbin "baserom.gba", 0x1E5FA58, 0x70
 
-gUnk_09E5FAC8:: @ 09E5FAC8
+gStarterDeckZombieMadness:: @ 09E5FAC8
 	.incbin "baserom.gba", 0x1E5FAC8, 0x70
 
-gUnk_09E5FB38:: @ 09E5FB38
+gStarterDeckMoltenDestruction:: @ 09E5FB38
 	.incbin "baserom.gba", 0x1E5FB38, 0x7C
 
-gUnk_09E5FBB4:: @ 09E5FBB4
+gStarterDeckFuryFromTheDeep:: @ 09E5FBB4
 	.incbin "baserom.gba", 0x1E5FBB4, 0x80
 
-gUnk_09E5FC34:: @ 09E5FC34
+gStarterDeckWarriorsTriumph:: @ 09E5FC34
 	.incbin "baserom.gba", 0x1E5FC34, 0x90
 
-gUnk_09E5FCC4:: @ 09E5FCC4
+gStarterDeckSpellcastersJudgement:: @ 09E5FCC4
 	.incbin "baserom.gba", 0x1E5FCC4, 0x90
 
 gUnk_09E5FD54:: @ 09E5FD54

@@ -8167,7 +8167,7 @@ sub_080F914C: @ 0x080F914C
 	adds r6, r1, #0
 	cmp r4, r0
 	bge _080F9184
-	ldr r7, _080F91F0 @ =gUnk_098169B8
+	ldr r7, _080F91F0 @ =gCardStats
 	mov ip, r7
 	ldr r1, _080F91F4 @ =0x00001154 (Water Magician)
 	adds r3, r6, r1
@@ -8193,7 +8193,7 @@ _080F9184:
 	ldrb r0, [r0]
 	cmp r0, #0
 	beq _080F91B2
-	ldr r2, _080F91F0 @ =gUnk_098169B8
+	ldr r2, _080F91F0 @ =gCardStats
 	mov ip, r2
 	ldr r7, _080F91FC @ =0x000011F4 (Beaked Snake)
 	adds r3, r6, r7
@@ -8219,7 +8219,7 @@ _080F91B2:
 	ldrb r0, [r0]
 	cmp r0, #0
 	beq _080F91DE
-	ldr r7, _080F91F0 @ =gUnk_098169B8
+	ldr r7, _080F91F0 @ =gCardStats
 	ldr r2, _080F9204 @ =0x00001212 (Snakeyashi)
 	adds r1, r6, r2
 	movs r3, #0x16
@@ -8246,7 +8246,7 @@ _080F91DE:
 	.align 2, 0
 _080F91E8: .4byte gUnk_02000000
 _080F91EC: .4byte 0x00001150 @ Stone Dragon (None)
-_080F91F0: .4byte gUnk_098169B8
+_080F91F0: .4byte gCardStats
 _080F91F4: .4byte 0x00001154 @ Water Magician
 _080F91F8: .4byte 0x00001151 @ Kaiser Dragon
 _080F91FC: .4byte 0x000011F4 @ Beaked Snake
@@ -8264,7 +8264,7 @@ sub_080F9208: @ 0x080F9208
 	ldrb r0, [r0]
 	cmp r4, r0
 	bge _080F923E
-	ldr r7, _080F927C @ =gUnk_098169B8
+	ldr r7, _080F927C @ =gCardStats
 	mov ip, r7
 	adds r2, #4
 	adds r3, r1, r2
@@ -8290,7 +8290,7 @@ _080F923E:
 	ldrb r0, [r0]
 	cmp r0, #0
 	beq _080F926A
-	ldr r6, _080F927C @ =gUnk_098169B8
+	ldr r6, _080F927C @ =gCardStats
 	ldr r7, _080F9284 @ =0x00001212 (Snakeyashi)
 	adds r1, r1, r7
 	movs r3, #0x16
@@ -8317,7 +8317,7 @@ _080F926A:
 	.align 2, 0
 _080F9274: .4byte gUnk_02000000
 _080F9278: .4byte 0x00001150 @ Stone Dragon (None)
-_080F927C: .4byte gUnk_098169B8
+_080F927C: .4byte gCardStats
 _080F9280: .4byte 0x00001152 @ Magician of Faith
 _080F9284: .4byte 0x00001212 @ Snakeyashi
 
@@ -9770,7 +9770,7 @@ _080F9D3A:
 	movs r2, #7
 	adds r3, r4, #0
 	bl sub_080F2C4C
-	ldr r1, _080F9DFC @ =gUnk_098169B8
+	ldr r1, _080F9DFC @ =gCardStats
 	movs r0, #0x16
 	muls r0, r4, r0
 	adds r0, r0, r1
@@ -9783,7 +9783,7 @@ _080F9D3A:
 	movs r1, #9
 	bl sub_080F2E4C
 	ldr r0, _080F9E04 @ =0x06008400
-	ldr r1, _080F9E08 @ =gUnk_095B5C00
+	ldr r1, _080F9E08 @ =gCardArtIndexes
 	mov sl, r1
 	lsls r5, r4, #1
 	lsls r4, r4, #2
@@ -9841,10 +9841,10 @@ _080F9DEC: .4byte gUnk_02006ED0
 _080F9DF0: .4byte gUnk_09E5F854
 _080F9DF4: .4byte gUnk_02000000
 _080F9DF8: .4byte 0x00006C2C
-_080F9DFC: .4byte gUnk_098169B8
+_080F9DFC: .4byte gCardStats
 _080F9E00: .4byte 0x06004200
 _080F9E04: .4byte 0x06008400
-_080F9E08: .4byte gUnk_095B5C00
+_080F9E08: .4byte gCardArtIndexes
 _080F9E0C: .4byte gCardIconsLarge
 _080F9E10: .4byte 0x06008A00
 _080F9E14: .4byte gCardIconsSmall
@@ -11794,7 +11794,7 @@ _080FAD9A:
 	movs r0, #0x80
 	movs r1, #0x42
 	bl sub_080FACD8
-	ldr r5, _080FAE20 @ =gUnk_098169B8
+	ldr r5, _080FAE20 @ =gCardStats
 	movs r2, #0x16
 	mov r8, r2
 	ldrh r1, [r4, #4]
@@ -11849,7 +11849,7 @@ _080FAD9A:
 	bx r0
 	.align 2, 0
 _080FAE1C: .4byte gUnk_02039EB0
-_080FAE20: .4byte gUnk_098169B8
+_080FAE20: .4byte gCardStats
 
 	thumb_func_start sub_080FAE24
 sub_080FAE24: @ 0x080FAE24
@@ -20809,7 +20809,7 @@ _080FF65C:
 	lsls r0, r4, #1
 	adds r1, r1, r0
 	ldr r3, _080FF6A4 @ =gUnk_09E4F1C4
-	ldr r2, _080FF6A8 @ =gUnk_098169B8
+	ldr r2, _080FF6A8 @ =gCardStats
 	ldr r0, [r1]
 	lsls r5, r0, #0x14
 	lsrs r1, r5, #0x14
@@ -20834,7 +20834,7 @@ _080FF65C:
 	b _080FF714
 	.align 2, 0
 _080FF6A4: .4byte gUnk_09E4F1C4
-_080FF6A8: .4byte gUnk_098169B8
+_080FF6A8: .4byte gCardStats
 _080FF6AC:
 	movs r0, #0x40
 	ldrb r2, [r7, #0x16]
@@ -22727,7 +22727,7 @@ _0810043E:
 	muls r1, r0, r1
 	adds r0, r1, #7
 	lsls r0, r0, #1
-	ldr r5, _08100550 @ =gUnk_098169B8
+	ldr r5, _08100550 @ =gCardStats
 	adds r0, r0, r5
 	ldrh r2, [r0]
 	adds r0, r1, #6
@@ -22787,7 +22787,7 @@ _08100540: .4byte gUnk_02000000
 _08100544: .4byte 0x00006C2C
 _08100548: .4byte gUnk_09E5F854
 _0810054C: .4byte 0x06008000
-_08100550: .4byte gUnk_098169B8
+_08100550: .4byte gCardStats
 _08100554: .4byte 0x06010000
 _08100558: .4byte gUnk_09E28DB4
 _0810055C: .4byte 0x06010200
@@ -22966,7 +22966,7 @@ _081006B6:
 	muls r4, r0, r4
 	adds r0, r4, #6
 	lsls r0, r0, #1
-	ldr r5, _081007C0 @ =gUnk_098169B8
+	ldr r5, _081007C0 @ =gCardStats
 	adds r0, r0, r5
 	ldrh r0, [r0]
 	mov r8, r0
@@ -22975,7 +22975,7 @@ _081006B6:
 	adds r3, r0, r5
 	ldr r5, _081007C4 @ =0x0000FFFF
 	movs r0, #0
-	ldr r1, _081007C0 @ =gUnk_098169B8
+	ldr r1, _081007C0 @ =gCardStats
 	ldrh r6, [r3]
 	cmp r6, r5
 	beq _081006DC
@@ -22994,7 +22994,7 @@ _081006EE:
 	str r0, [sp, #0xc]
 	ldrh r3, [r3]
 	str r3, [sp, #0x10]
-	ldr r1, _081007C0 @ =gUnk_098169B8
+	ldr r1, _081007C0 @ =gCardStats
 	adds r0, r2, r1
 	ldrh r0, [r0]
 	str r0, [sp, #0x14]
@@ -23085,7 +23085,7 @@ _081007B0: .4byte gUnk_02000006
 _081007B4: .4byte 0xFFFFA000
 _081007B8: .4byte 0x0000B22E
 _081007BC: .4byte 0x0000B22F
-_081007C0: .4byte gUnk_098169B8
+_081007C0: .4byte gCardStats
 _081007C4: .4byte 0x0000FFFF
 _081007C8: .4byte 0x0000A221
 _081007CC: .4byte 0x00000202
@@ -24338,7 +24338,7 @@ _081011F2:
 	lsls r0, r0, #6
 	ldr r6, _08101284 @ =0x06000040
 	adds r3, r0, r6
-	ldr r7, _08101288 @ =gUnk_095B5C00
+	ldr r7, _08101288 @ =gCardArtIndexes
 	mov ip, r7
 	lsrs r1, r1, #0x13
 	movs r2, #0
@@ -24384,7 +24384,7 @@ _08101278: .4byte gUnk_0202A4D0
 _0810127C: .4byte gUnk_02000000+0x6C2C
 _08101280: .4byte gUnk_0202F438
 _08101284: .4byte 0x06000040
-_08101288: .4byte gUnk_095B5C00
+_08101288: .4byte gCardArtIndexes
 _0810128C: .4byte 0x080000AE
 _08101290: .4byte gCardIconsSmall
 _08101294:
@@ -24407,7 +24407,7 @@ _0810129C:
 	ldr r0, [r0]
 	lsls r0, r0, #0x14
 	adds r3, r4, #0
-	ldr r7, _08101308 @ =gUnk_095B5C00
+	ldr r7, _08101308 @ =gCardArtIndexes
 	mov sl, r7
 	lsrs r1, r0, #0x13
 	movs r2, #0
@@ -24445,7 +24445,7 @@ _081012F8: .4byte gUnk_02000000+0x6C2C
 _081012FC: .4byte 0x06000040
 _08101300: .4byte gUnk_0202F438
 _08101304: .4byte gUnk_0202A4D0
-_08101308: .4byte gUnk_095B5C00
+_08101308: .4byte gCardArtIndexes
 _0810130C: .4byte 0x080000AE
 _08101310: .4byte gCardIconsSmall
 _08101314:
@@ -26819,7 +26819,7 @@ _0810258A:
 	adds r0, r0, r1
 	ldrh r0, [r0]
 	str r0, [sp]
-	ldr r1, _0810261C @ =gUnk_098169B8
+	ldr r1, _0810261C @ =gCardStats
 	movs r0, #0x16
 	muls r0, r3, r0
 	adds r0, r0, r1
@@ -26839,7 +26839,7 @@ _081025AC:
 	lsrs r0, r0, #0x14
 	movs r1, #0x16
 	muls r0, r1, r0
-	ldr r3, _0810261C @ =gUnk_098169B8
+	ldr r3, _0810261C @ =gCardStats
 	adds r0, r0, r3
 	ldrh r1, [r0]
 	mov r0, sl
@@ -26889,7 +26889,7 @@ _08102602:
 	.align 2, 0
 _08102614: .4byte 0x0000180C @ Yellow Gadget
 _08102618: .4byte 0x00001A0C
-_0810261C: .4byte gUnk_098169B8
+_0810261C: .4byte gCardStats
 
 	thumb_func_start sub_08102620
 sub_08102620: @ 0x08102620
@@ -29571,7 +29571,7 @@ _08103A1C:
 	muls r0, r1, r0
 	adds r0, #8
 	lsls r0, r0, #1
-	ldr r1, _08103A54 @ =gUnk_098169B8
+	ldr r1, _08103A54 @ =gCardStats
 	adds r0, r0, r1
 	ldrh r0, [r0]
 	lsls r0, r0, #2
@@ -29590,7 +29590,7 @@ _08103A1C:
 	.align 2, 0
 _08103A4C: .4byte 0x00000FFF @ Catapult Turtle
 _08103A50: .4byte 0xFFFFF000
-_08103A54: .4byte gUnk_098169B8
+_08103A54: .4byte gCardStats
 _08103A58: .4byte gUnk_09E4F1C4
 _08103A5C: .4byte _08103A60
 _08103A60: @ jump table
@@ -29644,7 +29644,7 @@ _08103AB6:
 	muls r0, r1, r0
 	adds r0, #5
 	lsls r0, r0, #1
-	ldr r3, _08103ADC @ =gUnk_098169B8
+	ldr r3, _08103ADC @ =gCardStats
 	adds r0, r0, r3
 	ldrh r0, [r0]
 	movs r3, #1
@@ -29655,7 +29655,7 @@ _08103AB6:
 	b _08103AF2
 	.align 2, 0
 _08103AD8: .4byte 0x00001A24
-_08103ADC: .4byte gUnk_098169B8
+_08103ADC: .4byte gCardStats
 _08103AE0:
 	cmp r0, #4
 	ble _08103AE8
@@ -29718,7 +29718,7 @@ sub_08103B3C: @ 0x08103B3C
 	sub sp, #4
 	adds r5, r0, #0
 	mov r8, r2
-	ldr r3, _08103C38 @ =gUnk_098169B8
+	ldr r3, _08103C38 @ =gCardStats
 	movs r0, #0x16
 	muls r0, r1, r0
 	adds r0, r0, r3
@@ -29764,7 +29764,7 @@ _08103B9A:
 	ldrb r1, [r5, #0x19]
 	cmp r6, r1
 	bge _08103BE0
-	ldr r0, _08103C38 @ =gUnk_098169B8
+	ldr r0, _08103C38 @ =gCardStats
 	mov sl, r0
 	lsls r0, r2, #2
 	mov r1, r8
@@ -29802,7 +29802,7 @@ _08103BE0:
 	ldrb r0, [r5, #0x1a]
 	cmp r6, r0
 	bge _08103C26
-	ldr r1, _08103C38 @ =gUnk_098169B8
+	ldr r1, _08103C38 @ =gCardStats
 	mov sl, r1
 	lsls r0, r2, #2
 	mov r1, r8
@@ -29846,7 +29846,7 @@ _08103C26:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08103C38: .4byte gUnk_098169B8
+_08103C38: .4byte gCardStats
 
 	thumb_func_start sub_08103C3C
 sub_08103C3C: @ 0x08103C3C
@@ -29962,7 +29962,7 @@ _08103D00:
 	cmp r0, #0
 	beq _08103D4C
 	ldr r3, _08103D44 @ =gUnk_09E4F1C4
-	ldr r2, _08103D48 @ =gUnk_098169B8
+	ldr r2, _08103D48 @ =gCardStats
 	movs r1, #0xb
 	adds r0, r6, #0
 	muls r0, r1, r0
@@ -29988,7 +29988,7 @@ _08103D00:
 	b _0810412A
 	.align 2, 0
 _08103D44: .4byte gUnk_09E4F1C4
-_08103D48: .4byte gUnk_098169B8
+_08103D48: .4byte gCardStats
 _08103D4C:
 	movs r0, #4
 	ldrh r1, [r7]
@@ -29996,7 +29996,7 @@ _08103D4C:
 	cmp r0, #0
 	beq _08103DDC
 	ldr r3, _08103D90 @ =gUnk_09E4F1C4
-	ldr r1, _08103D94 @ =gUnk_098169B8
+	ldr r1, _08103D94 @ =gCardStats
 	movs r2, #0xb
 	adds r0, r6, #0
 	muls r0, r2, r0
@@ -30026,7 +30026,7 @@ _08103D4C:
 	b _08103D9A
 	.align 2, 0
 _08103D90: .4byte gUnk_09E4F1C4
-_08103D94: .4byte gUnk_098169B8
+_08103D94: .4byte gCardStats
 _08103D98:
 	movs r1, #0xfe
 _08103D9A:
@@ -30073,7 +30073,7 @@ _08103DDC:
 	cmp r0, #0
 	beq _08103E6C
 	ldr r3, _08103E20 @ =gUnk_09E4F1C4
-	ldr r1, _08103E24 @ =gUnk_098169B8
+	ldr r1, _08103E24 @ =gCardStats
 	movs r2, #0xb
 	adds r0, r6, #0
 	muls r0, r2, r0
@@ -30103,7 +30103,7 @@ _08103DDC:
 	b _08103E2A
 	.align 2, 0
 _08103E20: .4byte gUnk_09E4F1C4
-_08103E24: .4byte gUnk_098169B8
+_08103E24: .4byte gCardStats
 _08103E28:
 	movs r1, #0xfe
 _08103E2A:
@@ -30149,7 +30149,7 @@ _08103E6C:
 	ands r0, r1
 	cmp r0, #0
 	beq _08103EB0
-	ldr r2, _08103EA8 @ =gUnk_098169B8
+	ldr r2, _08103EA8 @ =gCardStats
 	movs r1, #0xb
 	adds r0, r6, #0
 	muls r0, r1, r0
@@ -30174,7 +30174,7 @@ _08103E6C:
 	subs r0, r3, r0
 	b _0810412A
 	.align 2, 0
-_08103EA8: .4byte gUnk_098169B8
+_08103EA8: .4byte gCardStats
 _08103EAC: .4byte gUnk_09E4F284
 _08103EB0:
 	movs r0, #0x20
@@ -30182,7 +30182,7 @@ _08103EB0:
 	ands r0, r2
 	cmp r0, #0
 	beq _08103EF4
-	ldr r2, _08103EEC @ =gUnk_098169B8
+	ldr r2, _08103EEC @ =gCardStats
 	movs r1, #0xb
 	adds r0, r6, #0
 	muls r0, r1, r0
@@ -30207,7 +30207,7 @@ _08103EB0:
 	subs r0, r3, r0
 	b _0810412A
 	.align 2, 0
-_08103EEC: .4byte gUnk_098169B8
+_08103EEC: .4byte gCardStats
 _08103EF0: .4byte gUnk_09E4F2AC
 _08103EF4:
 	movs r0, #0x40
@@ -30215,7 +30215,7 @@ _08103EF4:
 	ands r0, r1
 	cmp r0, #0
 	beq _08103F28
-	ldr r2, _08103F24 @ =gUnk_098169B8
+	ldr r2, _08103F24 @ =gCardStats
 	movs r1, #0xb
 	adds r0, r6, #0
 	muls r0, r1, r0
@@ -30234,7 +30234,7 @@ _08103EF4:
 	subs r0, r0, r3
 	b _0810412A
 	.align 2, 0
-_08103F24: .4byte gUnk_098169B8
+_08103F24: .4byte gCardStats
 _08103F28:
 	movs r0, #0x80
 	ldrh r2, [r7]
@@ -30242,7 +30242,7 @@ _08103F28:
 	cmp r0, #0
 	beq _08104008
 	ldr r3, _08103F70 @ =gUnk_09E4F1C4
-	ldr r1, _08103F74 @ =gUnk_098169B8
+	ldr r1, _08103F74 @ =gCardStats
 	movs r2, #0xb
 	adds r0, r6, #0
 	muls r0, r2, r0
@@ -30273,7 +30273,7 @@ _08103F28:
 	b _08103F7C
 	.align 2, 0
 _08103F70: .4byte gUnk_09E4F1C4
-_08103F74: .4byte gUnk_098169B8
+_08103F74: .4byte gCardStats
 _08103F78:
 	movs r1, #2
 	rsbs r1, r1, #0
@@ -30429,7 +30429,7 @@ _08104094:
 	cmp r0, #0
 	beq _081040DC
 	ldr r3, _081040D4 @ =gUnk_09E4F1C4
-	ldr r2, _081040D8 @ =gUnk_098169B8
+	ldr r2, _081040D8 @ =gCardStats
 	movs r1, #0xb
 	adds r0, r6, #0
 	muls r0, r1, r0
@@ -30455,7 +30455,7 @@ _08104094:
 	b _0810412A
 	.align 2, 0
 _081040D4: .4byte gUnk_09E4F1C4
-_081040D8: .4byte gUnk_098169B8
+_081040D8: .4byte gCardStats
 _081040DC:
 	movs r0, #0x80
 	lsls r0, r0, #8
@@ -30539,7 +30539,7 @@ _08104168:
 	cmp r0, #0
 	beq _081041D4
 	ldr r2, _081041BC @ =gUnk_09E4F1C4
-	ldr r1, _081041C0 @ =gUnk_098169B8
+	ldr r1, _081041C0 @ =gCardStats
 	movs r0, #0xb
 	muls r0, r5, r0
 	adds r0, #8
@@ -30571,7 +30571,7 @@ _081041B0: .4byte gUnk_0202A4D0
 _081041B4: .4byte gUnk_0202F3C0
 _081041B8: .4byte gUnk_02000006
 _081041BC: .4byte gUnk_09E4F1C4
-_081041C0: .4byte gUnk_098169B8
+_081041C0: .4byte gCardStats
 _081041C4: .4byte 0x000002A6
 _081041C8:
 	cmp r2, #1
@@ -30587,7 +30587,7 @@ _081041D4:
 	ands r0, r2
 	cmp r0, #0
 	beq _0810422A
-	ldr r1, _0810420C @ =gUnk_098169B8
+	ldr r1, _0810420C @ =gCardStats
 	movs r0, #0xb
 	muls r0, r5, r0
 	adds r0, #5
@@ -30611,7 +30611,7 @@ _081041D4:
 	beq _08104216
 	b _0810422A
 	.align 2, 0
-_0810420C: .4byte gUnk_098169B8
+_0810420C: .4byte gCardStats
 _08104210:
 	cmp r0, #2
 	beq _08104226
@@ -30635,7 +30635,7 @@ _0810422A:
 	ands r0, r2
 	cmp r0, #0
 	beq _08104256
-	ldr r1, _08104308 @ =gUnk_098169B8
+	ldr r1, _08104308 @ =gCardStats
 	movs r0, #0xb
 	adds r2, r5, #0
 	muls r2, r0, r2
@@ -30658,7 +30658,7 @@ _08104256:
 	ands r0, r1
 	cmp r0, #0
 	beq _08104284
-	ldr r1, _08104308 @ =gUnk_098169B8
+	ldr r1, _08104308 @ =gCardStats
 	movs r0, #0xb
 	adds r2, r5, #0
 	muls r2, r0, r2
@@ -30683,7 +30683,7 @@ _08104284:
 	cmp r0, #0
 	beq _081042CE
 	ldr r3, _08104310 @ =gUnk_09E4F1C4
-	ldr r2, _08104308 @ =gUnk_098169B8
+	ldr r2, _08104308 @ =gCardStats
 	movs r0, #0xb
 	adds r1, r5, #0
 	muls r1, r0, r1
@@ -30721,7 +30721,7 @@ _081042CE:
 	ands r0, r6
 	cmp r0, #0
 	beq _081042FE
-	ldr r1, _08104308 @ =gUnk_098169B8
+	ldr r1, _08104308 @ =gCardStats
 	movs r0, #0x16
 	muls r0, r5, r0
 	adds r0, r0, r1
@@ -30746,7 +30746,7 @@ _08104300:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08104308: .4byte gUnk_098169B8
+_08104308: .4byte gCardStats
 _0810430C: .4byte 0x000002AA
 _08104310: .4byte gUnk_09E4F1C4
 _08104314: .4byte 0x000002AE
@@ -38488,7 +38488,7 @@ _08107EE0:
 	bgt _08107EFA
 	b _08108180
 _08107EFA:
-	ldr r2, _08107F40 @ =gUnk_098169B8
+	ldr r2, _08107F40 @ =gCardStats
 	movs r0, #0xb
 	mov r1, sl
 	muls r1, r0, r1
@@ -38521,7 +38521,7 @@ _08107F2C:
 	.align 2, 0
 _08107F38: .4byte gUnk_0202A4D0
 _08107F3C: .4byte gUnk_0202F3C0
-_08107F40: .4byte gUnk_098169B8
+_08107F40: .4byte gCardStats
 _08107F44: .4byte _08107F48
 _08107F48: @ jump table
 	.4byte _08107F6C @ case 0
@@ -38543,7 +38543,7 @@ _08107F6C:
 	movs r0, #0xf
 	b _0810817A
 _08107F7C:
-	ldr r1, _08107FAC @ =gUnk_098169B8
+	ldr r1, _08107FAC @ =gCardStats
 	movs r0, #0xb
 	mov r2, sl
 	muls r2, r0, r2
@@ -38569,7 +38569,7 @@ _08107F9C:
 	movs r0, #0xd
 	b _0810817A
 	.align 2, 0
-_08107FAC: .4byte gUnk_098169B8
+_08107FAC: .4byte gCardStats
 _08107FB0: .4byte 0x0000FFFF
 _08107FB4:
 	movs r5, #0xfa
@@ -38617,7 +38617,7 @@ _08107FFC:
 	movs r0, #0xf
 	b _0810817A
 _0810800C:
-	ldr r1, _0810803C @ =gUnk_098169B8
+	ldr r1, _0810803C @ =gCardStats
 	movs r0, #0xb
 	mov r2, sl
 	muls r2, r0, r2
@@ -38643,7 +38643,7 @@ _0810802C:
 	movs r0, #0xd
 	b _0810817A
 	.align 2, 0
-_0810803C: .4byte gUnk_098169B8
+_0810803C: .4byte gCardStats
 _08108040: .4byte 0x0000FFFF
 _08108044:
 	movs r5, #0xfa
@@ -38691,7 +38691,7 @@ _0810808C:
 	movs r0, #0xf
 	b _0810817A
 _0810809C:
-	ldr r1, _081080B4 @ =gUnk_098169B8
+	ldr r1, _081080B4 @ =gCardStats
 	movs r0, #0xb
 	mov r2, sl
 	muls r2, r0, r2
@@ -38704,7 +38704,7 @@ _0810809C:
 	adds r1, #0x5d
 	b _0810817A
 	.align 2, 0
-_081080B4: .4byte gUnk_098169B8
+_081080B4: .4byte gCardStats
 _081080B8:
 	mov r1, sl
 	lsls r0, r1, #1
@@ -43119,7 +43119,7 @@ _0810A2C4:
 	lsls r0, r0, #0x10
 	lsrs r5, r0, #0x10
 _0810A2D6:
-	ldr r2, _0810A320 @ =gUnk_098169B8
+	ldr r2, _0810A320 @ =gCardStats
 	mov r0, r8
 	adds r0, #0x50
 	movs r3, #0
@@ -43154,7 +43154,7 @@ _0810A2D6:
 	.align 2, 0
 _0810A318: .4byte gUnk_0202F3C0
 _0810A31C: .4byte gUnk_0202F414
-_0810A320: .4byte gUnk_098169B8
+_0810A320: .4byte gCardStats
 _0810A324: .4byte 0x000097C7
 _0810A328:
 	adds r6, r7, #0
@@ -43443,7 +43443,7 @@ sub_0810A52C: @ 0x0810A52C
 	str r0, [sp, #0x80]
 	ldr r0, _0810A660 @ =gUnk_0202F3C0
 	mov r8, r0
-	ldr r1, _0810A664 @ =gUnk_098169B8
+	ldr r1, _0810A664 @ =gCardStats
 	movs r0, #0x16
 	ldr r2, [sp, #0x80]
 	muls r0, r2, r0
@@ -43521,7 +43521,7 @@ _0810A5C6:
 	beq _0810A5D4
 	b _0810A708
 _0810A5D4:
-	ldr r1, _0810A664 @ =gUnk_098169B8
+	ldr r1, _0810A664 @ =gCardStats
 	movs r0, #0xb
 	ldr r2, [sp, #0x80]
 	muls r0, r2, r0
@@ -43596,7 +43596,7 @@ _0810A63A:
 	b _0810A6AE
 	.align 2, 0
 _0810A660: .4byte gUnk_0202F3C0
-_0810A664: .4byte gUnk_098169B8
+_0810A664: .4byte gCardStats
 _0810A668: .4byte gUnk_0202A4D0
 _0810A66C: .4byte gUnk_09E4F204
 _0810A670: .4byte 0x0000FFFF
@@ -43696,7 +43696,7 @@ _0810A716:
 	ands r0, r3
 	cmp r0, #9
 	bne _0810A808
-	ldr r2, _0810A7B0 @ =gUnk_098169B8
+	ldr r2, _0810A7B0 @ =gCardStats
 	movs r0, #0xb
 	ldr r3, [sp, #0x80]
 	adds r1, r3, #0
@@ -43759,7 +43759,7 @@ _0810A784:
 	b _0810A808
 	.align 2, 0
 _0810A7AC: .4byte gUnk_0202A4D0
-_0810A7B0: .4byte gUnk_098169B8
+_0810A7B0: .4byte gCardStats
 _0810A7B4: .4byte 0x06011000
 _0810A7B8:
 	movs r6, #7
