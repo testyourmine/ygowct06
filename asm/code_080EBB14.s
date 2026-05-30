@@ -5536,7 +5536,7 @@ sub_080EE76C: @ 0x080EE76C
 	ldr r0, _080EE798 @ =0x00001BA6
 	cmp r2, r0
 	bhi _080EE7A8
-	ldr r0, _080EE79C @ =gUnk_095B7CCC
+	ldr r0, _080EE79C @ =gCardIDs
 	ldr r2, _080EE7A0 @ =0xFFFFF059
 	adds r1, r1, r2
 	lsls r1, r1, #1
@@ -5550,7 +5550,7 @@ sub_080EE76C: @ 0x080EE76C
 	.align 2, 0
 _080EE794: .4byte 0x00000FA6
 _080EE798: .4byte 0x00001BA6
-_080EE79C: .4byte gUnk_095B7CCC
+_080EE79C: .4byte gCardIDs
 _080EE7A0: .4byte 0xFFFFF059
 _080EE7A4: .4byte 0x0000FFFF
 _080EE7A8:
@@ -5800,13 +5800,13 @@ _080EE968:
 	lsls r0, r0, #2
 	adds r0, r0, r1
 	ldr r0, [r0]
-	ldr r1, _080EE984 @ =gUnk_095BB594
+	ldr r1, _080EE984 @ =gCardNamesDescriptionsPointers
 	adds r0, r0, r1
 _080EE97C:
 	bx lr
 	.align 2, 0
 _080EE980: .4byte gUnk_095F3A5C
-_080EE984: .4byte gUnk_095BB594
+_080EE984: .4byte gCardNamesDescriptionsPointers
 
 	thumb_func_start sub_080EE988
 sub_080EE988: @ 0x080EE988
@@ -7128,7 +7128,7 @@ sub_080EF370: @ 0x080EF370
 	adds r1, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	ldr r2, _080EF388 @ =gUnk_095B94CC
+	ldr r2, _080EF388 @ =gCardPasswords
 	lsls r0, r1, #2
 	adds r0, r0, r2
 	ldr r0, [r0]
@@ -7136,7 +7136,7 @@ sub_080EF370: @ 0x080EF370
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080EF388: .4byte gUnk_095B94CC
+_080EF388: .4byte gCardPasswords
 
 	thumb_func_start sub_080EF38C
 sub_080EF38C: @ 0x080EF38C

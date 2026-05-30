@@ -29928,7 +29928,7 @@ sub_08103CA0: @ 0x08103CA0
 	ldrb r0, [r0]
 	lsls r1, r0, #0x1d
 	lsrs r1, r1, #0x1d
-	ldr r2, _08103CFC @ =gUnk_09832604
+	ldr r2, _08103CFC @ =gCardNamesAlphabeticalOffsets
 	lsls r0, r6, #1
 	adds r0, r0, r6
 	lsls r0, r0, #1
@@ -29951,7 +29951,7 @@ sub_08103CA0: @ 0x08103CA0
 _08103CF0: .4byte gUnk_0202F3C0
 _08103CF4: .4byte gUnk_02000000
 _08103CF8: .4byte 0x00006C2C
-_08103CFC: .4byte gUnk_09832604
+_08103CFC: .4byte gCardNamesAlphabeticalOffsets
 _08103D00:
 	adds r1, r4, #0
 	adds r1, #0x7c
@@ -30469,7 +30469,7 @@ _081040DC:
 	ldrb r0, [r0]
 	lsls r1, r0, #0x1d
 	lsrs r1, r1, #0x1d
-	ldr r2, _08104124 @ =gUnk_09832604
+	ldr r2, _08104124 @ =gCardNamesAlphabeticalOffsets
 	lsls r0, r6, #1
 	adds r0, r0, r6
 	lsls r0, r0, #1
@@ -30491,7 +30491,7 @@ _081040DC:
 	.align 2, 0
 _0810411C: .4byte gUnk_02000000
 _08104120: .4byte 0x00006C2C
-_08104124: .4byte gUnk_09832604
+_08104124: .4byte gCardNamesAlphabeticalOffsets
 _08104128:
 	subs r0, r6, r5
 _0810412A:

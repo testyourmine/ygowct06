@@ -1151,7 +1151,7 @@ gUnk_09E3F164:: @ 09E3F164
 gUnk_09E3F18C:: @ 09E3F18C
 	.incbin "baserom.gba", 0x1E3F18C, 0x10
 
-gUnk_09E3F19C:: @ 09E3F19C
+gCardEffects:: @ 09E3F19C
 	.incbin "baserom.gba", 0x1E3F19C, 0x5B
 
 gUnk_09E3F1F7:: @ 09E3F1F7
@@ -1319,7 +1319,7 @@ gUnk_09E41E06:: @ 09E41E06
 gUnk_09E428C1:: @ 09E428C1
 	.incbin "baserom.gba", 0x1E428C1, 0x83B
 
-gUnk_09E430FC:: @ 09E430FC
+gFlipCardEffects:: @ 09E430FC
 	.incbin "baserom.gba", 0x1E430FC, 0x373
 
 gUnk_09E4346F:: @ 09E4346F
@@ -1331,10 +1331,10 @@ gUnk_09E43803:: @ 09E43803
 gUnk_09E44E19:: @ 09E44E19
 	.incbin "baserom.gba", 0x1E44E19, 0x7A3
 
-gUnk_09E455BC:: @ 09E455BC
+gCardEffects2:: @ 09E455BC
 	.incbin "baserom.gba", 0x1E455BC, 0xD68
 
-gUnk_09E46324:: @ 09E46324
+gCardEffects3:: @ 09E46324
 	.incbin "baserom.gba", 0x1E46324, 0x983
 
 gUnk_09E46CA7:: @ 09E46CA7
@@ -1415,7 +1415,7 @@ gUnk_09E4754C:: @ 09E4754C
 gUnk_09E47554:: @ 09E47554
 	.incbin "baserom.gba", 0x1E47554, 0xC
 
-gUnk_09E47560:: @ 09E47560
+gSpecialSummonCardEffects:: @ 09E47560
 	.incbin "baserom.gba", 0x1E47560, 0x120
 
 gUnk_09E47680:: @ 09E47680
@@ -1457,31 +1457,31 @@ gUnk_09E478BC:: @ 09E478BC
 gUnk_09E478C8:: @ 09E478C8
 	.incbin "baserom.gba", 0x1E478C8, 0x8
 
-gUnk_09E478D0:: @ 09E478D0
+gCardEffects4:: @ 09E478D0
 	.incbin "baserom.gba", 0x1E478D0, 0x6F0
 
-gUnk_09E47FC0:: @ 09E47FC0
+gCardEffects5:: @ 09E47FC0
 	.incbin "baserom.gba", 0x1E47FC0, 0x228
 
-gUnk_09E481E8:: @ 09E481E8
+gCardEffects6:: @ 09E481E8
 	.incbin "baserom.gba", 0x1E481E8, 0x1C8
 
-gUnk_09E483B0:: @ 09E483B0
+gCardEffects7:: @ 09E483B0
 	.incbin "baserom.gba", 0x1E483B0, 0x528
 
-gUnk_09E488D8:: @ 09E488D8
+gCardEffects8:: @ 09E488D8
 	.incbin "baserom.gba", 0x1E488D8, 0x18
 
-gUnk_09E488F0:: @ 09E488F0
+gCardEffects9:: @ 09E488F0
 	.incbin "baserom.gba", 0x1E488F0, 0x28
 
-gUnk_09E48918:: @ 09E48918
+gCardEffects10:: @ 09E48918
 	.incbin "baserom.gba", 0x1E48918, 0x215
 
 gUnk_09E48B2D:: @ 09E48B2D
 	.incbin "baserom.gba", 0x1E48B2D, 0x463
 
-gUnk_09E48F90:: @ 09E48F90
+gCardEffects11:: @ 09E48F90
 	.incbin "baserom.gba", 0x1E48F90, 0x1E2
 
 gUnk_09E49172:: @ 09E49172

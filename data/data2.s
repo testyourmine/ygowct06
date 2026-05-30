@@ -89,13 +89,13 @@ gUnk_09E59DC4:: @ 09E59DC4
 gUnk_09E59DD4:: @ 09E59DD4
 	.incbin "baserom.gba", 0x1E59DD4, 0x40
 
-gUnk_09E59E14:: @ 09E59E14
+gFusion:: @ 09E59E14
 	.incbin "baserom.gba", 0x1E59E14, 0x2B0
 
-gUnk_09E5A0C4:: @ 09E5A0C4
+gRitual:: @ 09E5A0C4
 	.incbin "baserom.gba", 0x1E5A0C4, 0x64
 
-gUnk_09E5A128:: @ 09E5A128
+gSearcherCardEffects:: @ 09E5A128
 	.incbin "baserom.gba", 0x1E5A128, 0x1AE
 
 gUnk_09E5A2D6:: @ 09E5A2D6
