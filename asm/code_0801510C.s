@@ -117436,8 +117436,11 @@ _0804F438:
 	.align 2, 0
 _0804F43C: .4byte 0xFFFFFE01
 
-	thumb_func_start gCardEffectCrimsonNinjaReaperOfTheCardsTrapMaster_0804F440
-gCardEffectCrimsonNinjaReaperOfTheCardsTrapMaster_0804F440: @ 0x0804F440
+	@ Crimson Ninja
+	@ Reaper of the Cards
+	@ Trap Master
+	thumb_func_start gCardEffectDestroyFlip_0804F440
+gCardEffectDestroyFlip_0804F440: @ 0x0804F440
 	push {r4, r5, r6, r7, lr}
 	adds r7, r0, #0
 	adds r5, r1, #0
@@ -117525,8 +117528,16 @@ _0804F4E4:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectCrassClownDarkScorpionGorgTheStrongGaleLizardGolemSentryGravekeeperSGuardGuardianStatueSoulExchangeVwTigerCatapult_0804F4EC
-gCardEffectCrassClownDarkScorpionGorgTheStrongGaleLizardGolemSentryGravekeeperSGuardGuardianStatueSoulExchangeVwTigerCatapult_0804F4EC: @ 0x0804F4EC
+	@ Crass Clown
+	@ Dark Scorpion - Gorg the Strong
+	@ Gale Lizard
+	@ Golem Sentry
+	@ Gravekeeper's Guard
+	@ Guardian Statue
+	@ Soul Exchange
+	@ VW-Tiger Catapult
+	thumb_func_start gCardEffectReturnToHandChangePosition_0804F4EC
+gCardEffectReturnToHandChangePosition_0804F4EC: @ 0x0804F4EC
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -117576,8 +117587,18 @@ _0804F54A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectBarrelDragonBladeRabbitDreamClownGearfriedTheSwordmasterKryuelMedusaWormNightAssailantOldVindictiveMagicianSwarmOfScarabsThousandKnives_0804F550
-gCardEffectBarrelDragonBladeRabbitDreamClownGearfriedTheSwordmasterKryuelMedusaWormNightAssailantOldVindictiveMagicianSwarmOfScarabsThousandKnives_0804F550: @ 0x0804F550
+	@ Barrel Dragon
+	@ Blade Rabbit
+	@ Dream Clown
+	@ Gearfried the Swordmaster
+	@ Kryuel
+	@ Medusa Worm
+	@ Night Assailant
+	@ Old Vindictive Magician
+	@ Swarm of Scarabs
+	@ Thousand Knives
+	thumb_func_start gCardEffectDestroy_0804F550
+gCardEffectDestroy_0804F550: @ 0x0804F550
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -117634,8 +117655,12 @@ _0804F5BE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectInvitationToADarkSleepNightmareWheelSpellbindingCircleViserDes_0804F5C4
-gCardEffectInvitationToADarkSleepNightmareWheelSpellbindingCircleViserDes_0804F5C4: @ 0x0804F5C4
+	@ Invitation to a Dark Sleep
+	@ Nightmare Wheel
+	@ Spellbinding Circle
+	@ Viser Des
+	thumb_func_start gCardEffectDestroyPreventAttack_0804F5C4
+gCardEffectDestroyPreventAttack_0804F5C4: @ 0x0804F5C4
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
@@ -117679,8 +117704,15 @@ _0804F612:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectChangeOfHeartInvaderOfTheThroneJowlsOfDarkDemiseMindControlRelinquishedReshefTheDarkBeingThousandEyesRestrict_0804F618
-gCardEffectChangeOfHeartInvaderOfTheThroneJowlsOfDarkDemiseMindControlRelinquishedReshefTheDarkBeingThousandEyesRestrict_0804F618: @ 0x0804F618
+	@ Change of Heart
+	@ Invader of the Throne
+	@ Jowls of Dark Demise
+	@ Mind Control
+	@ Relinquished
+	@ Reshef the Dark Being
+	@ Thousand-Eyes Restrict
+	thumb_func_start gCardEffectTakeControlDestroy_0804F618
+gCardEffectTakeControlDestroy_0804F618: @ 0x0804F618
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -119153,8 +119185,119 @@ _0804FFFE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffect7CompletedAmplifierArchfiendOfGilferArmedChangerAxeOfDespairBallistaOfRampartSmashingBeastFangsBigBangShotBlackPendantBlastWithChainBookOfSecretArtsBrainJackerBrightCastleBubbleBlasterBurningBeastBurningSpearBusterRancherButterflyDaggerElmaCestusOfDaglaChthonianAllianceCocoonOfEvolutionCyberShieldCyclonLaserCycloneBoomerangDarkEnergyDarkMagicianSTomeOfBlackMagicDarkNecrofearDemotionDesDendleDivineSwordPhoenixBladeDoitsuDragonTreasureDragonicAttackEkibyoDrakmordElectroWhipElfSLightFairyMeteorCrushFallingDownFlintFollowWindFreezingBeastFuhmaShurikenFusionSwordMurasameBladeFusionWeaponGermInfectionGravityAxeGrarlGustFanHeartOfClearWaterHeavyMechSupportPlatformHeroHeyroHornOfLightHornOfTheUnicornInsectArmorWithLaserCannonInvigorationKiryuKoitsuKunaiWithChainLaserCannonArmorLegendaryBlackBeltLegendarySwordLightningBladeMachineConversionFactoryMagePowerMagicalLabyrinthMalevolentNuzzlerMaskOfBrutalityMaskOfTheAccursedMaskedBeastDesGardiusMegamorphMetallizingParasiteLunatiteMetalmorphMetalsilverArmorMistobodyMysticalMoonNecklaceOfCommandNitroUnitOptiCamouflageArmorParalyzingPotionPitchDarkDragonPowerOfKaishinProtectiveSoulAilinRaiseBodyHeatRaregoldArmorRingOfMagnetismRitualWeaponRodOfSilenceKayEstRodOfTheMindSEyeSalamandraScrollOfBewitchmentSecondGoblinShootingStarBowCealSilverBowAndArrowSmokeGrenadeOfTheThiefSnatchStealSparkBlasterSteelShellStimPackSwordOfDarkDestructionSwordOfDeepSeatedSwordOfDragonSSoulSwordOfTheSoulEaterTrialOfThePrincessesTwinSwordsOfFlashingLightTryceUnitedWeStandVileGermsVioletCrystalWWingCatapultWickedBreakingFlambergeBaouYDragonHeadZMetalTankZombieTiger_0805000C
-gCardEffect7CompletedAmplifierArchfiendOfGilferArmedChangerAxeOfDespairBallistaOfRampartSmashingBeastFangsBigBangShotBlackPendantBlastWithChainBookOfSecretArtsBrainJackerBrightCastleBubbleBlasterBurningBeastBurningSpearBusterRancherButterflyDaggerElmaCestusOfDaglaChthonianAllianceCocoonOfEvolutionCyberShieldCyclonLaserCycloneBoomerangDarkEnergyDarkMagicianSTomeOfBlackMagicDarkNecrofearDemotionDesDendleDivineSwordPhoenixBladeDoitsuDragonTreasureDragonicAttackEkibyoDrakmordElectroWhipElfSLightFairyMeteorCrushFallingDownFlintFollowWindFreezingBeastFuhmaShurikenFusionSwordMurasameBladeFusionWeaponGermInfectionGravityAxeGrarlGustFanHeartOfClearWaterHeavyMechSupportPlatformHeroHeyroHornOfLightHornOfTheUnicornInsectArmorWithLaserCannonInvigorationKiryuKoitsuKunaiWithChainLaserCannonArmorLegendaryBlackBeltLegendarySwordLightningBladeMachineConversionFactoryMagePowerMagicalLabyrinthMalevolentNuzzlerMaskOfBrutalityMaskOfTheAccursedMaskedBeastDesGardiusMegamorphMetallizingParasiteLunatiteMetalmorphMetalsilverArmorMistobodyMysticalMoonNecklaceOfCommandNitroUnitOptiCamouflageArmorParalyzingPotionPitchDarkDragonPowerOfKaishinProtectiveSoulAilinRaiseBodyHeatRaregoldArmorRingOfMagnetismRitualWeaponRodOfSilenceKayEstRodOfTheMindSEyeSalamandraScrollOfBewitchmentSecondGoblinShootingStarBowCealSilverBowAndArrowSmokeGrenadeOfTheThiefSnatchStealSparkBlasterSteelShellStimPackSwordOfDarkDestructionSwordOfDeepSeatedSwordOfDragonSSoulSwordOfTheSoulEaterTrialOfThePrincessesTwinSwordsOfFlashingLightTryceUnitedWeStandVileGermsVioletCrystalWWingCatapultWickedBreakingFlambergeBaouYDragonHeadZMetalTankZombieTiger_0805000C: @ 0x0805000C
+	@ 7 Completed
+	@ Amplifier
+	@ Archfiend of Gilfer
+	@ Armed Changer
+	@ Axe of Despair
+	@ Ballista of Rampart Smashing
+	@ Beast Fangs
+	@ Big Bang Shot
+	@ Black Pendant
+	@ Blast with Chain
+	@ Book of Secret Arts
+	@ Brain Jacker
+	@ Bright Castle
+	@ Bubble Blaster
+	@ Burning Beast
+	@ Burning Spear
+	@ Buster Rancher
+	@ Butterfly Dagger - Elma
+	@ Cestus of Dagla
+	@ Chthonian Alliance
+	@ Cocoon of Evolution
+	@ Cyber Shield
+	@ Cyclon Laser
+	@ Cyclone Boomerang
+	@ Dark Energy
+	@ Dark Magician's Tome of Black Magic
+	@ Dark Necrofear
+	@ Demotion
+	@ Des Dendle
+	@ Divine Sword - Phoenix Blade
+	@ Doitsu
+	@ Dragon Treasure
+	@ Dragonic Attack
+	@ Ekibyo Drakmord
+	@ Electro-Whip
+	@ Elf's Light
+	@ Fairy Meteor Crush
+	@ Falling Down
+	@ Flint
+	@ Follow Wind
+	@ Freezing Beast
+	@ Fuhma Shuriken
+	@ Fusion Sword Murasame Blade
+	@ Fusion Weapon
+	@ Germ Infection
+	@ Gravity Axe - Grarl
+	@ Gust Fan
+	@ Heart of Clear Water
+	@ Heavy Mech Support Platform
+	@ Hero Heyro
+	@ Horn of Light
+	@ Horn of the Unicorn
+	@ Insect Armor with Laser Cannon
+	@ Invigoration
+	@ Kiryu
+	@ Koitsu
+	@ Kunai with Chain
+	@ Laser Cannon Armor
+	@ Legendary Black Belt
+	@ Legendary Sword
+	@ Lightning Blade
+	@ Machine Conversion Factory
+	@ Mage Power
+	@ Magical Labyrinth
+	@ Malevolent Nuzzler
+	@ Mask of Brutality
+	@ Mask of the Accursed
+	@ Masked Beast Des Gardius
+	@ Megamorph
+	@ Metallizing Parasite - Lunatite
+	@ Metalmorph
+	@ Metalsilver Armor
+	@ Mistobody
+	@ Mystical Moon
+	@ Necklace of Command
+	@ Nitro Unit
+	@ Opti-Camouflage Armor
+	@ Paralyzing Potion
+	@ Pitch-Dark Dragon
+	@ Power of Kaishin
+	@ Protective Soul Ailin
+	@ Raise Body Heat
+	@ Raregold Armor
+	@ Ring of Magnetism
+	@ Ritual Weapon
+	@ Rod of Silence - Kay'est
+	@ Rod of the Mind's Eye
+	@ Salamandra
+	@ Scroll of Bewitchment
+	@ Second Goblin
+	@ Shooting Star Bow - Ceal
+	@ Silver Bow and Arrow
+	@ Smoke Grenade of the Thief
+	@ Snatch Steal
+	@ Spark Blaster
+	@ Steel Shell
+	@ Stim-Pack
+	@ Sword of Dark Destruction
+	@ Sword of Deep-Seated
+	@ Sword of Dragon's Soul
+	@ Sword of the Soul-Eater
+	@ Trial of the Princesses
+	@ Twin Swords of Flashing Light - Tryce
+	@ United We Stand
+	@ Vile Germs
+	@ Violet Crystal
+	@ W-Wing Catapult
+	@ Wicked-Breaking Flamberge - Baou
+	@ Y-Dragon Head
+	@ Z-Metal Tank
+	@ Zombie Tiger
+	thumb_func_start gCardEffectEquipBoostATK_0805000C
+gCardEffectEquipBoostATK_0805000C: @ 0x0805000C
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -119237,8 +119380,9 @@ _080500A6:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectCatapultTurtle_080500AC
-gCardEffectCatapultTurtle_080500AC: @ 0x080500AC
+	@ Catapult Turtle
+	thumb_func_start gCardEffectDamageTribute_080500AC
+gCardEffectDamageTribute_080500AC: @ 0x080500AC
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
@@ -119255,8 +119399,9 @@ _080500C2:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectStopDefense_080500C8
-gCardEffectStopDefense_080500C8: @ 0x080500C8
+	@ Stop Defense
+	thumb_func_start gCardEffectChangePosition_080500C8
+gCardEffectChangePosition_080500C8: @ 0x080500C8
 	push {r4, r5, r6, r7, lr}
 	adds r7, r0, #0
 	adds r6, r1, #0
@@ -119309,8 +119454,10 @@ _0805012A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDarkPiercingLightSwordsOfRevealingLight_08050130
-gCardEffectDarkPiercingLightSwordsOfRevealingLight_08050130: @ 0x08050130
+	@ Dark-Piercing Light
+	@ Swords of Revealing Light
+	thumb_func_start gCardEffectPreventAttack_08050130
+gCardEffectPreventAttack_08050130: @ 0x08050130
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
@@ -119357,8 +119504,9 @@ _08050186:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectBlastJuggler_0805018C
-gCardEffectBlastJuggler_0805018C: @ 0x0805018C
+	@ Blast Juggler
+	thumb_func_start gCardEffectDestroyTribute_0805018C
+gCardEffectDestroyTribute_0805018C: @ 0x0805018C
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -119425,8 +119573,10 @@ _0805020E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectArmedNinjaDeSpell_08050214
-gCardEffectArmedNinjaDeSpell_08050214: @ 0x08050214
+	@ Armed Ninja
+	@ De-Spell
+	thumb_func_start gCardEffectDestroySpellTrapFlip_08050214
+gCardEffectDestroySpellTrapFlip_08050214: @ 0x08050214
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -119505,8 +119655,21 @@ _080502AA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectBlastMagicianCombinationAttackCyberLaserDragonCyberneticMagicianDragonSeekerDragonSGunfireElementalHeroThunderGiantFreedTheBraveWandererGreatSpiritInfernalqueenArchfiendReadyForInterceptingWildNatureSReleaseWingedMinion_080502B0
-gCardEffectBlastMagicianCombinationAttackCyberLaserDragonCyberneticMagicianDragonSeekerDragonSGunfireElementalHeroThunderGiantFreedTheBraveWandererGreatSpiritInfernalqueenArchfiendReadyForInterceptingWildNatureSReleaseWingedMinion_080502B0: @ 0x080502B0
+	@ Blast Magician
+	@ Combination Attack
+	@ Cyber Laser Dragon
+	@ Cybernetic Magician
+	@ Dragon Seeker
+	@ Dragon's Gunfire
+	@ Elemental Hero Thunder Giant
+	@ Freed the Brave Wanderer
+	@ Great Spirit
+	@ Infernalqueen Archfiend
+	@ Ready for Intercepting
+	@ Wild Nature's Release
+	@ Winged Minion
+	thumb_func_start gCardEffectDestroyEndPhase_080502B0
+gCardEffectDestroyEndPhase_080502B0: @ 0x080502B0
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -120119,8 +120282,11 @@ _0805073E:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectChaosEndDarkHoleTorrentialTribute_08050750
-gCardEffectChaosEndDarkHoleTorrentialTribute_08050750: @ 0x08050750
+	@ Chaos End
+	@ Dark Hole
+	@ Torrential Tribute
+	thumb_func_start gCardEffectDestroyAll_08050750
+gCardEffectDestroyAll_08050750: @ 0x08050750
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -120166,8 +120332,16 @@ _080507A6:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectArchlordZeratoBurstStreamOfDestructionGilfordTheLightningNeedleWallObeliskTheTormentorRaigekiSandGamblerTimeWizard_080507AC
-gCardEffectArchlordZeratoBurstStreamOfDestructionGilfordTheLightningNeedleWallObeliskTheTormentorRaigekiSandGamblerTimeWizard_080507AC: @ 0x080507AC
+	@ Archlord Zerato
+	@ Burst Stream of Destruction
+	@ Gilford the Lightning
+	@ Needle Wall
+	@ Obelisk the Tormentor
+	@ Raigeki
+	@ Sand Gambler
+	@ Time Wizard
+	thumb_func_start gCardEffectDestroy_080507AC
+gCardEffectDestroy_080507AC: @ 0x080507AC
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -120218,8 +120392,9 @@ _0805080A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectTwoProngedAttack_08050810
-gCardEffectTwoProngedAttack_08050810: @ 0x08050810
+	@ Two-Pronged Attack
+	thumb_func_start gCardEffectDestroy_08050810
+gCardEffectDestroy_08050810: @ 0x08050810
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -120265,8 +120440,24 @@ _08050866:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectBiteShoesCastleWallsChaosSorcererCollapseDarkCoreDarkJeroidDealOfPhantomMicroRayReinforcementsRisingEnergyRushRecklesslyRyuKishinClownSnakeFangSparkBlasterTheReliableGuardianTheSecretOfTheBandit_0805086C
-gCardEffectBiteShoesCastleWallsChaosSorcererCollapseDarkCoreDarkJeroidDealOfPhantomMicroRayReinforcementsRisingEnergyRushRecklesslyRyuKishinClownSnakeFangSparkBlasterTheReliableGuardianTheSecretOfTheBandit_0805086C: @ 0x0805086C
+	@ Bite Shoes
+	@ Castle Walls
+	@ Chaos Sorcerer
+	@ Collapse
+	@ Dark Core
+	@ Dark Jeroid
+	@ Deal of Phantom
+	@ Micro Ray
+	@ Reinforcements
+	@ Rising Energy
+	@ Rush Recklessly
+	@ Ryu-Kishin Clown
+	@ Snake Fang
+	@ Spark Blaster
+	@ The Reliable Guardian
+	@ The Secret of the Bandit
+	thumb_func_start gCardEffectBoostATKSpecialSummon_0805086C
+gCardEffectBoostATKSpecialSummon_0805086C: @ 0x0805086C
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -120314,8 +120505,10 @@ _080508C6:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectCreatureSwapDummyGolem_080508CC
-gCardEffectCreatureSwapDummyGolem_080508CC: @ 0x080508CC
+	@ Creature Swap
+	@ Dummy Golem
+	thumb_func_start gCardEffectTakeControlChangePosition_080508CC
+gCardEffectTakeControlChangePosition_080508CC: @ 0x080508CC
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -120360,8 +120553,9 @@ _0805091E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectMysticBox_08050924
-gCardEffectMysticBox_08050924: @ 0x08050924
+	@ Mystic Box
+	thumb_func_start gCardEffectDestroy_08050924
+gCardEffectDestroy_08050924: @ 0x08050924
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -120420,8 +120614,16 @@ _0805098E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectMagicalMarionetteManEaterBugMichizureNewdoriaNoblemanEaterBugTheWingedDragonOfRaTributeToTheDoomedZaborgTheThunderMonarch_08050994
-gCardEffectMagicalMarionetteManEaterBugMichizureNewdoriaNoblemanEaterBugTheWingedDragonOfRaTributeToTheDoomedZaborgTheThunderMonarch_08050994: @ 0x08050994
+	@ Magical Marionette
+	@ Man-Eater Bug
+	@ Michizure
+	@ Newdoria
+	@ Nobleman-Eater Bug
+	@ The Winged Dragon of Ra
+	@ Tribute to The Doomed
+	@ Zaborg the Thunder Monarch
+	thumb_func_start gCardEffectDestroy_08050994
+gCardEffectDestroy_08050994: @ 0x08050994
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -120473,8 +120675,15 @@ _080509F6:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectBackToSquareOneBlackLusterSoldierEnvoyOfTheBeginningCompulsoryEvacuationDeviceHadeHaneHaneHaneKaiserGliderPenguinSoldier_080509FC
-gCardEffectBackToSquareOneBlackLusterSoldierEnvoyOfTheBeginningCompulsoryEvacuationDeviceHadeHaneHaneHaneKaiserGliderPenguinSoldier_080509FC: @ 0x080509FC
+	@ Back to Square One
+	@ Black Luster Soldier - Envoy of the Beginning
+	@ Compulsory Evacuation Device
+	@ Hade-Hane
+	@ Hane-Hane
+	@ Kaiser Glider
+	@ Penguin Soldier
+	thumb_func_start gCardEffectReturnToHandFlip_080509FC
+gCardEffectReturnToHandFlip_080509FC: @ 0x080509FC
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -120519,8 +120728,20 @@ _08050A4E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectAcidRainBreathOfLightEradicatingAerosolEternalDroughtEternalRestExileOfTheWickedLastDayOfWitchNeedleCeilingReallyEternalRestTribeInfectingVirusWarriorEliminationWeedOut_08050A54
-gCardEffectAcidRainBreathOfLightEradicatingAerosolEternalDroughtEternalRestExileOfTheWickedLastDayOfWitchNeedleCeilingReallyEternalRestTribeInfectingVirusWarriorEliminationWeedOut_08050A54: @ 0x08050A54
+	@ Acid Rain
+	@ Breath of Light
+	@ Eradicating Aerosol
+	@ Eternal Drought
+	@ Eternal Rest
+	@ Exile of the Wicked
+	@ Last Day of Witch
+	@ Needle Ceiling
+	@ Really Eternal Rest
+	@ Tribe-Infecting Virus
+	@ Warrior Elimination
+	@ Weed Out
+	thumb_func_start gCardEffectDestroyAll_08050A54
+gCardEffectDestroyAll_08050A54: @ 0x08050A54
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -120794,8 +121015,14 @@ _08050C4E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectBurstReturnCurseOfAnubisLabyrinthOfNightmareShieldSwordTriangleEcstasySparkZeroGravity_08050C58
-gCardEffectBurstReturnCurseOfAnubisLabyrinthOfNightmareShieldSwordTriangleEcstasySparkZeroGravity_08050C58: @ 0x08050C58
+	@ Burst Return
+	@ Curse of Anubis
+	@ Labyrinth of Nightmare
+	@ Shield & Sword
+	@ Triangle Ecstasy Spark
+	@ Zero Gravity
+	thumb_func_start gCardEffectChangePositionEndPhase_08050C58
+gCardEffectChangePositionEndPhase_08050C58: @ 0x08050C58
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -120949,8 +121176,10 @@ _08050D6E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectFreezingBeastGreenkappa_08050D78
-gCardEffectFreezingBeastGreenkappa_08050D78: @ 0x08050D78
+	@ Freezing Beast
+	@ Greenkappa
+	thumb_func_start gCardEffectDestroySpellTrapSpecialSummon_08050D78
+gCardEffectDestroySpellTrapSpecialSummon_08050D78: @ 0x08050D78
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -121005,8 +121234,9 @@ _08050DDE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectXingZhenHu_08050DE4
-gCardEffectXingZhenHu_08050DE4: @ 0x08050DE4
+	@ Xing Zhen Hu
+	thumb_func_start gCardEffectUnknown_08050DE4
+gCardEffectUnknown_08050DE4: @ 0x08050DE4
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -121054,8 +121284,9 @@ _08050E3A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectBurningBeast_08050E40
-gCardEffectBurningBeast_08050E40: @ 0x08050E40
+	@ Burning Beast
+	thumb_func_start gCardEffectSpecialSummonDestroySpellTrap_08050E40
+gCardEffectSpecialSummonDestroySpellTrap_08050E40: @ 0x08050E40
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -121110,8 +121341,16 @@ _08050EA6:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectBondingH2oCastleGateCrushCardDeSpellGermWeaponDeckDevastationVirusGaiaSoulTheCombustibleCollectiveSpiritualFireArtKurenaiSpiritualWaterArtAoi_08050EAC
-gCardEffectBondingH2oCastleGateCrushCardDeSpellGermWeaponDeckDevastationVirusGaiaSoulTheCombustibleCollectiveSpiritualFireArtKurenaiSpiritualWaterArtAoi_08050EAC: @ 0x08050EAC
+	@ Bonding - H2O
+	@ Castle Gate
+	@ Crush Card
+	@ De-Spell Germ Weapon
+	@ Deck Devastation Virus
+	@ Gaia Soul the Combustible Collective
+	@ Spiritual Fire Art - Kurenai
+	@ Spiritual Water Art - Aoi
+	thumb_func_start gCardEffectTributeDestroy_08050EAC
+gCardEffectTributeDestroy_08050EAC: @ 0x08050EAC
 	push {r4, r5, r6, lr}
 	sub sp, #0x24
 	adds r6, r0, #0
@@ -121276,7 +121515,7 @@ _08050FD0:
 	beq _08050FD8
 	b _080511A4
 _08050FD8:
-	ldr r1, _08050FF4 @ =gCardEffectBlastMagicianCombinationAttackCyberLaserDragonCyberneticMagicianDragonSeekerDragonSGunfireElementalHeroThunderGiantFreedTheBraveWandererGreatSpiritInfernalqueenArchfiendReadyForInterceptingWildNatureSReleaseWingedMinion_080502B0
+	ldr r1, _08050FF4 @ =gCardEffectDestroyEndPhase_080502B0
 	lsls r2, r4, #0x18
 	lsls r0, r5, #0x18
 	lsrs r2, r2, #8
@@ -121291,7 +121530,7 @@ _08050FD8:
 _08050FF2:
 	b _08051118
 	.align 2, 0
-_08050FF4: .4byte gCardEffectBlastMagicianCombinationAttackCyberLaserDragonCyberneticMagicianDragonSeekerDragonSGunfireElementalHeroThunderGiantFreedTheBraveWandererGreatSpiritInfernalqueenArchfiendReadyForInterceptingWildNatureSReleaseWingedMinion_080502B0
+_08050FF4: .4byte gCardEffectDestroyEndPhase_080502B0
 _08050FF8:
 	ldr r0, [sp, #4]
 	cmp r0, #1
@@ -121300,7 +121539,7 @@ _08050FF8:
 _08051000:
 	ldr r0, [sp, #0x14]
 	strh r0, [r6, #8]
-	ldr r1, _08051020 @ =gCardEffectAcidRainBreathOfLightEradicatingAerosolEternalDroughtEternalRestExileOfTheWickedLastDayOfWitchNeedleCeilingReallyEternalRestTribeInfectingVirusWarriorEliminationWeedOut_08050A54
+	ldr r1, _08051020 @ =gCardEffectDestroyAll_08050A54
 	lsls r2, r4, #0x18
 	lsls r0, r5, #0x18
 	lsrs r2, r2, #8
@@ -121315,7 +121554,7 @@ _08051000:
 _0805101E:
 	b _08051118
 	.align 2, 0
-_08051020: .4byte gCardEffectAcidRainBreathOfLightEradicatingAerosolEternalDroughtEternalRestExileOfTheWickedLastDayOfWitchNeedleCeilingReallyEternalRestTribeInfectingVirusWarriorEliminationWeedOut_08050A54
+_08051020: .4byte gCardEffectDestroyAll_08050A54
 _08051024:
 	ldr r0, [sp]
 	bl sub_0804ADF0
@@ -121330,7 +121569,7 @@ _08051032:
 	bne _0805103E
 	b _080511A4
 _0805103E:
-	ldr r1, _08051058 @ =gCardEffectBattleScarredBeastSoulSwapDiffusionWaveMotionDoubleAttackFeatherShotGradiusOptionHeroHeartInfernoFireBlastMagicianSUniteMakiuNextToBeLostNinjitsuArtOfDecoyOjamuscleOrderToChargeOrderToSmashOverpoweringEyeUnionAttack_08052AA8
+	ldr r1, _08051058 @ =gCardEffectDestroyDamage_08052AA8
 	lsls r2, r4, #0x18
 	lsls r0, r5, #0x18
 	lsrs r2, r2, #8
@@ -121343,13 +121582,13 @@ _0805103E:
 	ble _0805111A
 	b _08051118
 	.align 2, 0
-_08051058: .4byte gCardEffectBattleScarredBeastSoulSwapDiffusionWaveMotionDoubleAttackFeatherShotGradiusOptionHeroHeartInfernoFireBlastMagicianSUniteMakiuNextToBeLostNinjitsuArtOfDecoyOjamuscleOrderToChargeOrderToSmashOverpoweringEyeUnionAttack_08052AA8
+_08051058: .4byte gCardEffectDestroyDamage_08052AA8
 _0805105C:
 	ldr r1, [sp]
 	ldr r0, _08051080 @ =0x00001706 (Torpedo Fish)
 	cmp r1, r0
 	bne _08051088
-	ldr r1, _08051084 @ =gCardEffectMagicalMarionetteManEaterBugMichizureNewdoriaNoblemanEaterBugTheWingedDragonOfRaTributeToTheDoomedZaborgTheThunderMonarch_08050994
+	ldr r1, _08051084 @ =gCardEffectDestroy_08050994
 	lsls r2, r4, #0x18
 	lsls r0, r5, #0x18
 	lsrs r2, r2, #8
@@ -121363,14 +121602,14 @@ _0805105C:
 	b _08051118
 	.align 2, 0
 _08051080: .4byte 0x00001706 @ Torpedo Fish
-_08051084: .4byte gCardEffectMagicalMarionetteManEaterBugMichizureNewdoriaNoblemanEaterBugTheWingedDragonOfRaTributeToTheDoomedZaborgTheThunderMonarch_08050994
+_08051084: .4byte gCardEffectDestroy_08050994
 _08051088:
 	ldr r0, _080510A0 @ =0x00001709 (Cannonball Spear Shellfish)
 	cmp r1, r0
 	beq _08051090
 	b _080511A4
 _08051090:
-	ldr r1, _080510A4 @ =gCardEffectBESTetranBreakerTheMagicalWarriorCliffTheTrapRemoverDrivingSnowGustMobiusTheFrostMonarchMysticalSpaceTyphoonStampingDestruction_08051B20
+	ldr r1, _080510A4 @ =gCardEffectDestroySpellTrap_08051B20
 	adds r0, r6, #0
 	bl sub_0809077C
 	movs r1, #0
@@ -121379,14 +121618,14 @@ _08051090:
 	b _08051118
 	.align 2, 0
 _080510A0: .4byte 0x00001709 @ Cannonball Spear Shellfish
-_080510A4: .4byte gCardEffectBESTetranBreakerTheMagicalWarriorCliffTheTrapRemoverDrivingSnowGustMobiusTheFrostMonarchMysticalSpaceTyphoonStampingDestruction_08051B20
+_080510A4: .4byte gCardEffectDestroySpellTrap_08051B20
 _080510A8:
 	ldr r0, [sp, #4]
 	cmp r0, #0xd
 	beq _080510B0
 	b _080511A4
 _080510B0:
-	ldr r1, _080510CC @ =gCardEffectBESTetranBreakerTheMagicalWarriorCliffTheTrapRemoverDrivingSnowGustMobiusTheFrostMonarchMysticalSpaceTyphoonStampingDestruction_08051B20
+	ldr r1, _080510CC @ =gCardEffectDestroySpellTrap_08051B20
 	lsls r2, r4, #0x18
 	lsls r0, r5, #0x18
 	lsrs r2, r2, #8
@@ -121399,7 +121638,7 @@ _080510B0:
 	ble _0805111A
 	b _08051118
 	.align 2, 0
-_080510CC: .4byte gCardEffectBESTetranBreakerTheMagicalWarriorCliffTheTrapRemoverDrivingSnowGustMobiusTheFrostMonarchMysticalSpaceTyphoonStampingDestruction_08051B20
+_080510CC: .4byte gCardEffectDestroySpellTrap_08051B20
 _080510D0:
 	movs r2, #1
 	ands r2, r4
@@ -121523,8 +121762,9 @@ _080511A6:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectAcidTrapHole_080511B0
-gCardEffectAcidTrapHole_080511B0: @ 0x080511B0
+	@ Acid Trap Hole
+	thumb_func_start gCardEffectDestroyChangePosition_080511B0
+gCardEffectDestroyChangePosition_080511B0: @ 0x080511B0
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
@@ -121565,8 +121805,9 @@ _080511FA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectWidespreadRuin_08051200
-gCardEffectWidespreadRuin_08051200: @ 0x08051200
+	@ Widespread Ruin
+	thumb_func_start gCardEffectDestroyChangePosition_08051200
+gCardEffectDestroyChangePosition_08051200: @ 0x08051200
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
@@ -121628,8 +121869,9 @@ _0805126E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDarkEyesIllusionist_08051274
-gCardEffectDarkEyesIllusionist_08051274: @ 0x08051274
+	@ Dark-Eyes Illusionist
+	thumb_func_start gCardEffectPreventAttackFlip_08051274
+gCardEffectPreventAttackFlip_08051274: @ 0x08051274
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
@@ -121668,8 +121910,9 @@ _080512BA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectEctoplasmer_080512C0
-gCardEffectEctoplasmer_080512C0: @ 0x080512C0
+	@ Ectoplasmer
+	thumb_func_start gCardEffectDamageEndPhase_080512C0
+gCardEffectDamageEndPhase_080512C0: @ 0x080512C0
 	push {r4, r5, r6, r7, lr}
 	adds r7, r0, #0
 	adds r5, r1, #0
@@ -121754,8 +121997,11 @@ _0805135E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectBookOfMoonDarknessApproachesTsukuyomi_08051364
-gCardEffectBookOfMoonDarknessApproachesTsukuyomi_08051364: @ 0x08051364
+	@ Book of Moon
+	@ Darkness Approaches
+	@ Tsukuyomi
+	thumb_func_start gCardEffectChangePosition_08051364
+gCardEffectChangePosition_08051364: @ 0x08051364
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -121808,8 +122054,10 @@ _080513CA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectChainDestructionRareMetalmorph_080513D0
-gCardEffectChainDestructionRareMetalmorph_080513D0: @ 0x080513D0
+	@ Chain Destruction
+	@ Rare Metalmorph
+	thumb_func_start gCardEffectDestroySpecialSummon_080513D0
+gCardEffectDestroySpecialSummon_080513D0: @ 0x080513D0
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -121922,8 +122170,9 @@ _080514AE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectMagicArmShield_080514B4
-gCardEffectMagicArmShield_080514B4: @ 0x080514B4
+	@ Magic-Arm Shield
+	thumb_func_start gCardEffectUnknown_080514B4
+gCardEffectUnknown_080514B4: @ 0x080514B4
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -121991,8 +122240,9 @@ _08051536:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDarkSpiritOfTheSilent_0805153C
-gCardEffectDarkSpiritOfTheSilent_0805153C: @ 0x0805153C
+	@ Dark Spirit of the Silent
+	thumb_func_start gCardEffectNegateChangePosition_0805153C
+gCardEffectNegateChangePosition_0805153C: @ 0x0805153C
 	push {r4, r5, lr}
 	adds r3, r0, #0
 	adds r5, r1, #0
@@ -122048,8 +122298,9 @@ _080515A2:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectFissure_080515A8
-gCardEffectFissure_080515A8: @ 0x080515A8
+	@ Fissure
+	thumb_func_start gCardEffectDestroy_080515A8
+gCardEffectDestroy_080515A8: @ 0x080515A8
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
@@ -122108,8 +122359,9 @@ _0805160E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectShadowSpell_08051614
-gCardEffectShadowSpell_08051614: @ 0x08051614
+	@ Shadow Spell
+	thumb_func_start gCardEffectDestroyReduceATK_08051614
+gCardEffectDestroyReduceATK_08051614: @ 0x08051614
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
@@ -122156,8 +122408,9 @@ _0805166A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectCyberRaider_08051670
-gCardEffectCyberRaider_08051670: @ 0x08051670
+	@ Cyber Raider
+	thumb_func_start gCardEffectSpecialSummonDestroy_08051670
+gCardEffectSpecialSummonDestroy_08051670: @ 0x08051670
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -122258,7 +122511,7 @@ _0805172E:
 	mov r0, sl
 	mov r1, sb
 	mov r2, r8
-	bl gCardEffectDisarmament_08053AF8
+	bl gCardEffectDestroyAllEquip_08053AF8
 	b _0805173C
 _0805173A:
 	movs r0, #1
@@ -122272,8 +122525,18 @@ _0805173C:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectAmazonessBlowpiperAquaSpiritCatnippedKittyCopycatGarudaTheWindSpiritGravekeeperSAssailantKarmaCutMiracleKidsOtohimeSoulTaker_0805174C
-gCardEffectAmazonessBlowpiperAquaSpiritCatnippedKittyCopycatGarudaTheWindSpiritGravekeeperSAssailantKarmaCutMiracleKidsOtohimeSoulTaker_0805174C: @ 0x0805174C
+	@ Amazoness Blowpiper
+	@ Aqua Spirit
+	@ Catnipped Kitty
+	@ Copycat
+	@ Garuda the Wind Spirit
+	@ Gravekeeper's Assailant
+	@ Karma Cut
+	@ Miracle Kids
+	@ Otohime
+	@ Soul Taker
+	thumb_func_start gCardEffectSpecialSummonChangePosition_0805174C
+gCardEffectSpecialSummonChangePosition_0805174C: @ 0x0805174C
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -122326,8 +122589,11 @@ _080517AE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectEatgaboonHouseOfAdhesiveTapeTrapHole_080517B4
-gCardEffectEatgaboonHouseOfAdhesiveTapeTrapHole_080517B4: @ 0x080517B4
+	@ Eatgaboon
+	@ House of Adhesive Tape
+	@ Trap Hole
+	thumb_func_start gCardEffectDestroySpecialSummon_080517B4
+gCardEffectDestroySpecialSummon_080517B4: @ 0x080517B4
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r4, r1, #0
@@ -122444,8 +122710,10 @@ _08051890:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectHannibalNecromancerRemoveTrap_08051898
-gCardEffectHannibalNecromancerRemoveTrap_08051898: @ 0x08051898
+	@ Hannibal Necromancer
+	@ Remove Trap
+	thumb_func_start gCardEffectDestroyCounter_08051898
+gCardEffectDestroyCounter_08051898: @ 0x08051898
 	push {r4, r5, r6, r7, lr}
 	adds r7, r0, #0
 	adds r5, r1, #0
@@ -122515,8 +122783,9 @@ _0805191E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectBlockAttack_08051924
-gCardEffectBlockAttack_08051924: @ 0x08051924
+	@ Block Attack
+	thumb_func_start gCardEffectChangePosition_08051924
+gCardEffectChangePosition_08051924: @ 0x08051924
 	push {r4, r5, r6, r7, lr}
 	adds r7, r0, #0
 	adds r6, r1, #0
@@ -122577,8 +122846,13 @@ _08051990:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectCalamityOfTheWickedCycloneBoomerangGigantesHeavyStormSacredPhoenixOfNephthys_08051998
-gCardEffectCalamityOfTheWickedCycloneBoomerangGigantesHeavyStormSacredPhoenixOfNephthys_08051998: @ 0x08051998
+	@ Calamity of the Wicked
+	@ Cyclone Boomerang
+	@ Gigantes
+	@ Heavy Storm
+	@ Sacred Phoenix of Nephthys
+	thumb_func_start gCardEffectDestroySpellTrapDestroyAll_08051998
+gCardEffectDestroySpellTrapDestroyAll_08051998: @ 0x08051998
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -122635,8 +122909,9 @@ _08051A02:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectTailorOfTheFickle_08051A08
-gCardEffectTailorOfTheFickle_08051A08: @ 0x08051A08
+	@ Tailor of the Fickle
+	thumb_func_start gCardEffectEquip_08051A08
+gCardEffectEquip_08051A08: @ 0x08051A08
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -122730,8 +123005,12 @@ _08051AAA:
 	.align 2, 0
 _08051AB8: .4byte 0x0000FFFF
 
-	thumb_func_start gCardEffectDarkMagicAttackGryphonWingHarpieSFeatherDusterMoistureCreature_08051ABC
-gCardEffectDarkMagicAttackGryphonWingHarpieSFeatherDusterMoistureCreature_08051ABC: @ 0x08051ABC
+	@ Dark Magic Attack
+	@ Gryphon Wing
+	@ Harpie's Feather Duster
+	@ Moisture Creature
+	thumb_func_start gCardEffectDestroySpellTrapDestroyAll_08051ABC
+gCardEffectDestroySpellTrapDestroyAll_08051ABC: @ 0x08051ABC
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -122782,8 +123061,16 @@ _08051B1A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectBESTetranBreakerTheMagicalWarriorCliffTheTrapRemoverDrivingSnowGustMobiusTheFrostMonarchMysticalSpaceTyphoonStampingDestruction_08051B20
-gCardEffectBESTetranBreakerTheMagicalWarriorCliffTheTrapRemoverDrivingSnowGustMobiusTheFrostMonarchMysticalSpaceTyphoonStampingDestruction_08051B20: @ 0x08051B20
+	@ B.E.S. Tetran
+	@ Breaker the Magical Warrior
+	@ Cliff the Trap Remover
+	@ Driving Snow
+	@ Gust
+	@ Mobius the Frost Monarch
+	@ Mystical Space Typhoon
+	@ Stamping Destruction
+	thumb_func_start gCardEffectDestroySpellTrap_08051B20
+gCardEffectDestroySpellTrap_08051B20: @ 0x08051B20
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -122846,8 +123133,9 @@ _08051B96:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectGiantTrunade_08051B9C
-gCardEffectGiantTrunade_08051B9C: @ 0x08051B9C
+	@ Giant Trunade
+	thumb_func_start gCardEffectReturnToHand_08051B9C
+gCardEffectReturnToHand_08051B9C: @ 0x08051B9C
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -122897,8 +123185,10 @@ _08051BF6:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectBookOfTaiyouNoblemanOfCrossout_08051BFC
-gCardEffectBookOfTaiyouNoblemanOfCrossout_08051BFC: @ 0x08051BFC
+	@ Book of Taiyou
+	@ Nobleman of Crossout
+	thumb_func_start gCardEffectBanishDestroy_08051BFC
+gCardEffectBanishDestroy_08051BFC: @ 0x08051BFC
 	adds r3, r2, #0
 	cmp r3, #4
 	bgt _08051C1E
@@ -122934,8 +123224,9 @@ _08051C38:
 	bx lr
 	.align 2, 0
 
-	thumb_func_start gCardEffectNoblemanOfExtermination_08051C3C
-gCardEffectNoblemanOfExtermination_08051C3C: @ 0x08051C3C
+	@ Nobleman of Extermination
+	thumb_func_start gCardEffectBanishDestroySpellTrap_08051C3C
+gCardEffectBanishDestroySpellTrap_08051C3C: @ 0x08051C3C
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -123006,8 +123297,11 @@ _08051CBC:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectKnightSTitleMultiplyNinjitsuArtOfTransformation_08051CC4
-gCardEffectKnightSTitleMultiplyNinjitsuArtOfTransformation_08051CC4: @ 0x08051CC4
+	@ Knight's Title
+	@ Multiply
+	@ Ninjitsu Art of Transformation
+	thumb_func_start gCardEffectSpecialSummonTribute_08051CC4
+gCardEffectSpecialSummonTribute_08051CC4: @ 0x08051CC4
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	adds r4, r1, #0
@@ -123141,8 +123435,10 @@ _08051DD2:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectMirrorForceWingedKuribohLv10_08051DD8
-gCardEffectMirrorForceWingedKuribohLv10_08051DD8: @ 0x08051DD8
+	@ Mirror Force
+	@ Winged Kuriboh LV10
+	thumb_func_start gCardEffectDestroyAllChangePosition_08051DD8
+gCardEffectDestroyAllChangePosition_08051DD8: @ 0x08051DD8
 	push {r4, lr}
 	adds r4, r0, #0
 	adds r3, r1, #0
@@ -123183,8 +123479,9 @@ _08051E1E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectMagicalHats_08051E24
-gCardEffectMagicalHats_08051E24: @ 0x08051E24
+	@ Magical Hats
+	thumb_func_start gCardEffectDestroyChangePosition_08051E24
+gCardEffectDestroyChangePosition_08051E24: @ 0x08051E24
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -123239,8 +123536,12 @@ _08051E8E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectAnteatereatingantChironTheMageDustTornadoSwarmOfLocusts_08051E94
-gCardEffectAnteatereatingantChironTheMageDustTornadoSwarmOfLocusts_08051E94: @ 0x08051E94
+	@ Anteatereatingant
+	@ Chiron the Mage
+	@ Dust Tornado
+	@ Swarm of Locusts
+	thumb_func_start gCardEffectDestroySpellTrap_08051E94
+gCardEffectDestroySpellTrap_08051E94: @ 0x08051E94
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -123297,8 +123598,13 @@ _08051EFE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectArmedDragonLv10CurseOfAgingLightningVortexSkullDiceWindstormOfEtaqua_08051F04
-gCardEffectArmedDragonLv10CurseOfAgingLightningVortexSkullDiceWindstormOfEtaqua_08051F04: @ 0x08051F04
+	@ Armed Dragon LV10
+	@ Curse of Aging
+	@ Lightning Vortex
+	@ Skull Dice
+	@ Windstorm of Etaqua
+	thumb_func_start gCardEffectDiscardDestroyAll_08051F04
+gCardEffectDiscardDestroyAll_08051F04: @ 0x08051F04
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
@@ -123345,8 +123651,10 @@ _08051F5A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectOfferingsToTheDoomedRingOfDestruction_08051F60
-gCardEffectOfferingsToTheDoomedRingOfDestruction_08051F60: @ 0x08051F60
+	@ Offerings to the Doomed
+	@ Ring of Destruction
+	thumb_func_start gCardEffectDestroyDamage_08051F60
+gCardEffectDestroyDamage_08051F60: @ 0x08051F60
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -123401,8 +123709,10 @@ _08051FCA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectCollectedPowerRiryoku_08051FD0
-gCardEffectCollectedPowerRiryoku_08051FD0: @ 0x08051FD0
+	@ Collected Power
+	@ Riryoku
+	thumb_func_start gCardEffectDestroyBoostATK_08051FD0
+gCardEffectDestroyBoostATK_08051FD0: @ 0x08051FD0
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -123444,8 +123754,9 @@ _0805201A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectWoodlandSprite_08052020
-gCardEffectWoodlandSprite_08052020: @ 0x08052020
+	@ Woodland Sprite
+	thumb_func_start gCardEffectSendToGYDamage_08052020
+gCardEffectSendToGYDamage_08052020: @ 0x08052020
 	push {r4, r5, lr}
 	adds r3, r0, #0
 	adds r5, r1, #0
@@ -123493,8 +123804,13 @@ _0805207A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectBrainControlDragonManipulatorElectromagneticBagwormRafflesiaSeductionShadowTamer_08052080
-gCardEffectBrainControlDragonManipulatorElectromagneticBagwormRafflesiaSeductionShadowTamer_08052080: @ 0x08052080
+	@ Brain Control
+	@ Dragon Manipulator
+	@ Electromagnetic Bagworm
+	@ Rafflesia Seduction
+	@ Shadow Tamer
+	thumb_func_start gCardEffectTakeControlFlip_08052080
+gCardEffectTakeControlFlip_08052080: @ 0x08052080
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -123599,8 +123915,11 @@ _08052144:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectElectromagneticBagwormRigrasLeeverSlateWarrior_0805214C
-gCardEffectElectromagneticBagwormRigrasLeeverSlateWarrior_0805214C: @ 0x0805214C
+	@ Electromagnetic Bagworm
+	@ Rigras Leever
+	@ Slate Warrior
+	thumb_func_start gCardEffectDestroyFlip_0805214C
+gCardEffectDestroyFlip_0805214C: @ 0x0805214C
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
@@ -123643,8 +123962,9 @@ _0805219A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectGearfriedTheIronKnight_080521A0
-gCardEffectGearfriedTheIronKnight_080521A0: @ 0x080521A0
+	@ Gearfried the Iron Knight
+	thumb_func_start gCardEffectDestroyEquip_080521A0
+gCardEffectDestroyEquip_080521A0: @ 0x080521A0
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	adds r6, r1, #0
@@ -123710,8 +124030,17 @@ _0805221E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectAttackReflectorUnitDedicationThroughLightAndDarknessInsectImitationMetamorphosisMultiplicationOfAntsPhotonGeneratorUnitReleaseRestraintSpiritualEarthArtKuroganeUltraEvolutionPill_08052224
-gCardEffectAttackReflectorUnitDedicationThroughLightAndDarknessInsectImitationMetamorphosisMultiplicationOfAntsPhotonGeneratorUnitReleaseRestraintSpiritualEarthArtKuroganeUltraEvolutionPill_08052224: @ 0x08052224
+	@ Attack Reflector Unit
+	@ Dedication through Light and Darkness
+	@ Insect Imitation
+	@ Metamorphosis
+	@ Multiplication of Ants
+	@ Photon Generator Unit
+	@ Release Restraint
+	@ Spiritual Earth Art - Kurogane
+	@ Ultra Evolution Pill
+	thumb_func_start gCardEffectSpecialSummonTribute_08052224
+gCardEffectSpecialSummonTribute_08052224: @ 0x08052224
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -123897,8 +124226,19 @@ _0805238E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectBigWaveSmallWaveDTribeDarkScorpionCombinationGracefulDiceKaminoteBlowLimiterRemovalMinefieldEruptionPyramidEnergyTheBigMarchOfAnimalsThousandEnergyTrianglePower_08052398
-gCardEffectBigWaveSmallWaveDTribeDarkScorpionCombinationGracefulDiceKaminoteBlowLimiterRemovalMinefieldEruptionPyramidEnergyTheBigMarchOfAnimalsThousandEnergyTrianglePower_08052398: @ 0x08052398
+	@ Big Wave Small Wave
+	@ D. Tribe
+	@ Dark Scorpion Combination
+	@ Graceful Dice
+	@ Kaminote Blow
+	@ Limiter Removal
+	@ Minefield Eruption
+	@ Pyramid Energy
+	@ The Big March of Animals
+	@ Thousand Energy
+	@ Triangle Power
+	thumb_func_start gCardEffectDestroyEndPhase_08052398
+gCardEffectDestroyEndPhase_08052398: @ 0x08052398
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -124196,8 +124536,9 @@ _080525C2:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectMonsterRecovery_080525D0
-gCardEffectMonsterRecovery_080525D0: @ 0x080525D0
+	@ Monster Recovery
+	thumb_func_start gCardEffectDraw_080525D0
+gCardEffectDraw_080525D0: @ 0x080525D0
 	push {r4, r5, r6, r7, lr}
 	adds r4, r0, #0
 	adds r6, r1, #0
@@ -124280,8 +124621,9 @@ _0805266C:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectShift_08052674
-gCardEffectShift_08052674: @ 0x08052674
+	@ Shift
+	thumb_func_start gCardEffectUnknown_08052674
+gCardEffectUnknown_08052674: @ 0x08052674
 	push {r4, r5, lr}
 	sub sp, #4
 	adds r3, r0, #0
@@ -124327,8 +124669,9 @@ _080526C4:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectMaskOfDispel_080526CC
-gCardEffectMaskOfDispel_080526CC: @ 0x080526CC
+	@ Mask of Dispel
+	thumb_func_start gCardEffectDestroyStandbyPhase_080526CC
+gCardEffectDestroyStandbyPhase_080526CC: @ 0x080526CC
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r3, r2, #0
@@ -124381,8 +124724,9 @@ _0805272E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDeFusion_08052734
-gCardEffectDeFusion_08052734: @ 0x08052734
+	@ De-Fusion
+	thumb_func_start gCardEffectSpecialSummonChangePosition_08052734
+gCardEffectSpecialSummonChangePosition_08052734: @ 0x08052734
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -124429,8 +124773,9 @@ _0805278A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectJamDefender_08052790
-gCardEffectJamDefender_08052790: @ 0x08052790
+	@ Jam Defender
+	thumb_func_start gCardEffectUnknown_08052790
+gCardEffectUnknown_08052790: @ 0x08052790
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -124501,8 +124846,9 @@ _08052812:
 _08052818: .4byte 0x00000868
 _0805281C: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectDimensionhole_08052820
-gCardEffectDimensionhole_08052820: @ 0x08052820
+	@ Dimensionhole
+	thumb_func_start gCardEffectBanishStandbyPhase_08052820
+gCardEffectBanishStandbyPhase_08052820: @ 0x08052820
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -124553,8 +124899,10 @@ _0805287E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDDTrapHoleShadowOfEyes_08052884
-gCardEffectDDTrapHoleShadowOfEyes_08052884: @ 0x08052884
+	@ D.D. Trap Hole
+	@ Shadow of Eyes
+	thumb_func_start gCardEffectChangePositionBanish_08052884
+gCardEffectChangePositionBanish_08052884: @ 0x08052884
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -124660,8 +125008,9 @@ _08052948: .4byte 0x000004CC
 _0805294C: .4byte 0x000004D4
 _08052950: .4byte 0x000004F4
 
-	thumb_func_start gCardEffectBombardmentBeetle_08052954
-gCardEffectBombardmentBeetle_08052954: @ 0x08052954
+	@ Bombardment Beetle
+	thumb_func_start gCardEffectDestroyChangePosition_08052954
+gCardEffectDestroyChangePosition_08052954: @ 0x08052954
 	push {r4, r5, r6, lr}
 	adds r6, r2, #0
 	movs r5, #1
@@ -124706,8 +125055,9 @@ _080529A2:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffect4StarredLadybugOfDoom_080529A8
-gCardEffect4StarredLadybugOfDoom_080529A8: @ 0x080529A8
+	@ 4-Starred Ladybug of Doom
+	thumb_func_start gCardEffectDestroyAllFlip_080529A8
+gCardEffectDestroyAllFlip_080529A8: @ 0x080529A8
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -124768,8 +125118,10 @@ _08052A16:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectCathedralOfNoblesTranscendentWings_08052A20
-gCardEffectCathedralOfNoblesTranscendentWings_08052A20: @ 0x08052A20
+	@ Cathedral of Nobles
+	@ Transcendent Wings
+	thumb_func_start gCardEffectSpecialSummonSendToGY_08052A20
+gCardEffectSpecialSummonSendToGY_08052A20: @ 0x08052A20
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r3, [r4, #2]
@@ -124838,8 +125190,25 @@ _08052A9C: .4byte 0x00000868
 _08052AA0: .4byte gUnk_0201C510
 _08052AA4: .4byte 0xC5500000
 
-	thumb_func_start gCardEffectBattleScarredBeastSoulSwapDiffusionWaveMotionDoubleAttackFeatherShotGradiusOptionHeroHeartInfernoFireBlastMagicianSUniteMakiuNextToBeLostNinjitsuArtOfDecoyOjamuscleOrderToChargeOrderToSmashOverpoweringEyeUnionAttack_08052AA8
-gCardEffectBattleScarredBeastSoulSwapDiffusionWaveMotionDoubleAttackFeatherShotGradiusOptionHeroHeartInfernoFireBlastMagicianSUniteMakiuNextToBeLostNinjitsuArtOfDecoyOjamuscleOrderToChargeOrderToSmashOverpoweringEyeUnionAttack_08052AA8: @ 0x08052AA8
+	@ Battle-Scarred
+	@ Beast Soul Swap
+	@ Diffusion Wave-Motion
+	@ Double Attack
+	@ Feather Shot
+	@ Gradius' Option
+	@ Hero Heart
+	@ Inferno Fire Blast
+	@ Magician's Unite
+	@ Makiu
+	@ Next to be Lost
+	@ Ninjitsu Art of Decoy
+	@ Ojamuscle
+	@ Order to Charge
+	@ Order to Smash
+	@ Overpowering Eye
+	@ Union Attack
+	thumb_func_start gCardEffectDestroyDamage_08052AA8
+gCardEffectDestroyDamage_08052AA8: @ 0x08052AA8
 	push {r4, r5, r6, r7, lr}
 	adds r7, r0, #0
 	adds r4, r1, #0
@@ -125293,8 +125662,9 @@ _08052DF0:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectAncientLamp_08052DF8
-gCardEffectAncientLamp_08052DF8: @ 0x08052DF8
+	@ Ancient Lamp
+	thumb_func_start gCardEffectSpecialSummonChangePosition_08052DF8
+gCardEffectSpecialSummonChangePosition_08052DF8: @ 0x08052DF8
 	push {r4, r5, lr}
 	adds r3, r0, #0
 	adds r5, r1, #0
@@ -125347,8 +125717,9 @@ _08052E5A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectTornadoBird_08052E60
-gCardEffectTornadoBird_08052E60: @ 0x08052E60
+	@ Tornado Bird
+	thumb_func_start gCardEffectReturnToHandFlip_08052E60
+gCardEffectReturnToHandFlip_08052E60: @ 0x08052E60
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -125404,8 +125775,9 @@ _08052EC6:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDreamsprite_08052ECC
-gCardEffectDreamsprite_08052ECC: @ 0x08052ECC
+	@ Dreamsprite
+	thumb_func_start gCardEffectUnknown_08052ECC
+gCardEffectUnknown_08052ECC: @ 0x08052ECC
 	push {r4, r5, lr}
 	adds r3, r0, #0
 	adds r4, r1, #0
@@ -125442,8 +125814,9 @@ _08052F0A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectSkullLair_08052F10
-gCardEffectSkullLair_08052F10: @ 0x08052F10
+	@ Skull Lair
+	thumb_func_start gCardEffectBanishDestroy_08052F10
+gCardEffectBanishDestroy_08052F10: @ 0x08052F10
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -125492,8 +125865,9 @@ _08052F66:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectBlindDestruction_08052F6C
-gCardEffectBlindDestruction_08052F6C: @ 0x08052F6C
+	@ Blind Destruction
+	thumb_func_start gCardEffectDestroyAllStandbyPhase_08052F6C
+gCardEffectDestroyAllStandbyPhase_08052F6C: @ 0x08052F6C
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
@@ -125550,8 +125924,9 @@ _08052FCE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectSpiritualism_08052FD4
-gCardEffectSpiritualism_08052FD4: @ 0x08052FD4
+	@ Spiritualism
+	thumb_func_start gCardEffectNegateReturnToHand_08052FD4
+gCardEffectNegateReturnToHand_08052FD4: @ 0x08052FD4
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -125601,8 +125976,10 @@ _0805302E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectJowgenTheSpiritualistSpecialHurricane_08053034
-gCardEffectJowgenTheSpiritualistSpecialHurricane_08053034: @ 0x08053034
+	@ Jowgen the Spiritualist
+	@ Special Hurricane
+	thumb_func_start gCardEffectSpecialSummonDiscard_08053034
+gCardEffectSpecialSummonDiscard_08053034: @ 0x08053034
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -125654,8 +126031,9 @@ _0805308E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectBaitDoll_08053098
-gCardEffectBaitDoll_08053098: @ 0x08053098
+	@ Bait Doll
+	thumb_func_start gCardEffectNegateDestroy_08053098
+gCardEffectNegateDestroy_08053098: @ 0x08053098
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -125716,8 +126094,9 @@ _0805310A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectEnchantedArrow_08053110
-gCardEffectEnchantedArrow_08053110: @ 0x08053110
+	@ Enchanted Arrow
+	thumb_func_start gCardEffectDestroy_08053110
+gCardEffectDestroy_08053110: @ 0x08053110
 	push {r4, r5, r6, r7, lr}
 	adds r7, r0, #0
 	adds r5, r1, #0
@@ -125770,8 +126149,9 @@ _08053172:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectPossessedDarkSoul_08053178
-gCardEffectPossessedDarkSoul_08053178: @ 0x08053178
+	@ Possessed Dark Soul
+	thumb_func_start gCardEffectTakeControlTribute_08053178
+gCardEffectTakeControlTribute_08053178: @ 0x08053178
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -125833,8 +126213,9 @@ _080531EA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectBarkOfDarkRuler_080531F0
-gCardEffectBarkOfDarkRuler_080531F0: @ 0x080531F0
+	@ Bark of Dark Ruler
+	thumb_func_start gCardEffectReduceATKDamage_080531F0
+gCardEffectReduceATKDamage_080531F0: @ 0x080531F0
 	push {r4, r5, r6, lr}
 	sub sp, #0x24
 	adds r6, r0, #0
@@ -125917,8 +126298,9 @@ _0805328A:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectBurstBreath_08053294
-gCardEffectBurstBreath_08053294: @ 0x08053294
+	@ Burst Breath
+	thumb_func_start gCardEffectDestroyAllTribute_08053294
+gCardEffectDestroyAllTribute_08053294: @ 0x08053294
 	push {r4, lr}
 	adds r3, r0, #0
 	movs r0, #0x1c
@@ -125927,19 +126309,20 @@ gCardEffectBurstBreath_08053294: @ 0x08053294
 	cmp r0, #0
 	beq _080532AA
 	adds r0, r3, #0
-	bl gCardEffectAcidRainBreathOfLightEradicatingAerosolEternalDroughtEternalRestExileOfTheWickedLastDayOfWitchNeedleCeilingReallyEternalRestTribeInfectingVirusWarriorEliminationWeedOut_08050A54
+	bl gCardEffectDestroyAll_08050A54
 	b _080532B0
 _080532AA:
 	adds r0, r3, #0
-	bl gCardEffectBondingH2oCastleGateCrushCardDeSpellGermWeaponDeckDevastationVirusGaiaSoulTheCombustibleCollectiveSpiritualFireArtKurenaiSpiritualWaterArtAoi_08050EAC
+	bl gCardEffectTributeDestroy_08050EAC
 _080532B0:
 	pop {r4}
 	pop {r1}
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectBlastHeldByATribute_080532B8
-gCardEffectBlastHeldByATribute_080532B8: @ 0x080532B8
+	@ Blast Held by a Tribute
+	thumb_func_start gCardEffectDestroyAllDamage_080532B8
+gCardEffectDestroyAllDamage_080532B8: @ 0x080532B8
 	push {r4, lr}
 	adds r4, r0, #0
 	adds r3, r1, #0
@@ -126037,8 +126420,10 @@ _0805336E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectAdhesionTrapHoleBottomlessTrapHole_08053374
-gCardEffectAdhesionTrapHoleBottomlessTrapHole_08053374: @ 0x08053374
+	@ Adhesion Trap Hole
+	@ Bottomless Trap Hole
+	thumb_func_start gCardEffectSpecialSummonBanish_08053374
+gCardEffectSpecialSummonBanish_08053374: @ 0x08053374
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -126156,8 +126541,9 @@ _0805345A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectGuardianSphinx_08053460
-gCardEffectGuardianSphinx_08053460: @ 0x08053460
+	@ Guardian Sphinx
+	thumb_func_start gCardEffectReturnToHandChangePosition_08053460
+gCardEffectReturnToHandChangePosition_08053460: @ 0x08053460
 	push {r4, r5, lr}
 	adds r3, r0, #0
 	adds r5, r1, #0
@@ -126205,8 +126591,9 @@ _080534AA:
 _080534B0: .4byte 0x00000868
 _080534B4: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectCobramanSakuzy_080534B8
-gCardEffectCobramanSakuzy_080534B8: @ 0x080534B8
+	@ Cobraman Sakuzy
+	thumb_func_start gCardEffectChangePosition_080534B8
+gCardEffectChangePosition_080534B8: @ 0x080534B8
 	push {r4, r5, lr}
 	adds r3, r0, #0
 	adds r5, r1, #0
@@ -126263,8 +126650,10 @@ _0805351E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectUriaLordOfSearingFlamesXzTankCannon_08053524
-gCardEffectUriaLordOfSearingFlamesXzTankCannon_08053524: @ 0x08053524
+	@ Uria, Lord of Searing Flames
+	@ XZ-Tank Cannon
+	thumb_func_start gCardEffectSpecialSummonDestroySpellTrap_08053524
+gCardEffectSpecialSummonDestroySpellTrap_08053524: @ 0x08053524
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -126334,8 +126723,9 @@ _080535AA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectXyDragonCannon_080535B0
-gCardEffectXyDragonCannon_080535B0: @ 0x080535B0
+	@ XY-Dragon Cannon
+	thumb_func_start gCardEffectSpecialSummonDiscard_080535B0
+gCardEffectSpecialSummonDiscard_080535B0: @ 0x080535B0
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -126405,8 +126795,9 @@ _08053636:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectYzTankDragon_0805363C
-gCardEffectYzTankDragon_0805363C: @ 0x0805363C
+	@ YZ-Tank Dragon
+	thumb_func_start gCardEffectSpecialSummonDiscard_0805363C
+gCardEffectSpecialSummonDiscard_0805363C: @ 0x0805363C
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
@@ -126453,8 +126844,9 @@ _08053692:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectTheLastWarriorFromAnotherPlanet_08053698
-gCardEffectTheLastWarriorFromAnotherPlanet_08053698: @ 0x08053698
+	@ The Last Warrior from Another Planet
+	thumb_func_start gCardEffectSpecialSummonDestroyAll_08053698
+gCardEffectSpecialSummonDestroyAll_08053698: @ 0x08053698
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -126510,8 +126902,11 @@ _080536FE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectArcaneArcherOfTheForestCheckmateThrowstoneUnit_08053704
-gCardEffectArcaneArcherOfTheForestCheckmateThrowstoneUnit_08053704: @ 0x08053704
+	@ Arcane Archer of the Forest
+	@ Checkmate
+	@ Throwstone Unit
+	thumb_func_start gCardEffectDestroyTribute_08053704
+gCardEffectDestroyTribute_08053704: @ 0x08053704
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r0, #0x80
@@ -126541,26 +126936,27 @@ _08053730:
 _08053738: .4byte 0x00001753 @ Arcane Archer of the Forest
 _0805373C:
 	adds r0, r4, #0
-	bl gCardEffectBlastMagicianCombinationAttackCyberLaserDragonCyberneticMagicianDragonSeekerDragonSGunfireElementalHeroThunderGiantFreedTheBraveWandererGreatSpiritInfernalqueenArchfiendReadyForInterceptingWildNatureSReleaseWingedMinion_080502B0
+	bl gCardEffectDestroyEndPhase_080502B0
 	b _0805375A
 _08053744:
 	adds r0, r4, #0
-	bl gCardEffectBattleScarredBeastSoulSwapDiffusionWaveMotionDoubleAttackFeatherShotGradiusOptionHeroHeartInfernoFireBlastMagicianSUniteMakiuNextToBeLostNinjitsuArtOfDecoyOjamuscleOrderToChargeOrderToSmashOverpoweringEyeUnionAttack_08052AA8
+	bl gCardEffectDestroyDamage_08052AA8
 	b _0805375A
 _0805374C:
 	adds r0, r4, #0
-	bl gCardEffectBESTetranBreakerTheMagicalWarriorCliffTheTrapRemoverDrivingSnowGustMobiusTheFrostMonarchMysticalSpaceTyphoonStampingDestruction_08051B20
+	bl gCardEffectDestroySpellTrap_08051B20
 	b _0805375A
 _08053754:
 	adds r0, r4, #0
-	bl gCardEffectBondingH2oCastleGateCrushCardDeSpellGermWeaponDeckDevastationVirusGaiaSoulTheCombustibleCollectiveSpiritualFireArtKurenaiSpiritualWaterArtAoi_08050EAC
+	bl gCardEffectTributeDestroy_08050EAC
 _0805375A:
 	pop {r4}
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectExiledForce_08053760
-gCardEffectExiledForce_08053760: @ 0x08053760
+	@ Exiled Force
+	thumb_func_start gCardEffectDestroy_08053760
+gCardEffectDestroy_08053760: @ 0x08053760
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -126610,25 +127006,27 @@ _080537BA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectAWingbeatOfGiantDragon_080537C0
-gCardEffectAWingbeatOfGiantDragon_080537C0: @ 0x080537C0
+	@ A Wingbeat of Giant Dragon
+	thumb_func_start gCardEffectReturnToHandDestroySpellTrap_080537C0
+gCardEffectReturnToHandDestroySpellTrap_080537C0: @ 0x080537C0
 	push {lr}
 	adds r3, r0, #0
 	ldrh r0, [r3, #0xa]
 	cmp r0, #0
 	beq _080537D2
 	adds r0, r3, #0
-	bl gCardEffectCalamityOfTheWickedCycloneBoomerangGigantesHeavyStormSacredPhoenixOfNephthys_08051998
+	bl gCardEffectDestroySpellTrapDestroyAll_08051998
 	b _080537D8
 _080537D2:
 	adds r0, r3, #0
-	bl gCardEffectBigWaveSmallWaveDTribeDarkScorpionCombinationGracefulDiceKaminoteBlowLimiterRemovalMinefieldEruptionPyramidEnergyTheBigMarchOfAnimalsThousandEnergyTrianglePower_08052398
+	bl gCardEffectDestroyEndPhase_08052398
 _080537D8:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectEmergencyProvisions_080537DC
-gCardEffectEmergencyProvisions_080537DC: @ 0x080537DC
+	@ Emergency Provisions
+	thumb_func_start gCardEffectSendToGYGainLP_080537DC
+gCardEffectSendToGYGainLP_080537DC: @ 0x080537DC
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -126688,8 +127086,9 @@ _0805384A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDarkDustSpirit_08053850
-gCardEffectDarkDustSpirit_08053850: @ 0x08053850
+	@ Dark Dust Spirit
+	thumb_func_start gCardEffectSpecialSummonReturnToHand_08053850
+gCardEffectSpecialSummonReturnToHand_08053850: @ 0x08053850
 	push {r4, lr}
 	adds r4, r0, #0
 	adds r3, r2, #0
@@ -126735,8 +127134,9 @@ _080538A2:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectEnemyController_080538A8
-gCardEffectEnemyController_080538A8: @ 0x080538A8
+	@ Enemy Controller
+	thumb_func_start gCardEffectTakeControlChangePosition_080538A8
+gCardEffectTakeControlChangePosition_080538A8: @ 0x080538A8
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -126763,15 +127163,16 @@ _080538D6:
 	adds r0, r4, #0
 	adds r1, r5, #0
 	adds r2, r6, #0
-	bl gCardEffectAmazonessBlowpiperAquaSpiritCatnippedKittyCopycatGarudaTheWindSpiritGravekeeperSAssailantKarmaCutMiracleKidsOtohimeSoulTaker_0805174C
+	bl gCardEffectSpecialSummonChangePosition_0805174C
 _080538E0:
 	pop {r4, r5, r6}
 	pop {r1}
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectFormationUnion_080538E8
-gCardEffectFormationUnion_080538E8: @ 0x080538E8
+	@ Formation Union
+	thumb_func_start gCardEffectSpecialSummonChangePosition_080538E8
+gCardEffectSpecialSummonChangePosition_080538E8: @ 0x080538E8
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -126798,7 +127199,7 @@ _08053910:
 	adds r0, r5, #0
 	adds r1, r7, #0
 	adds r2, r6, #0
-	bl gCardEffectBattleScarredBeastSoulSwapDiffusionWaveMotionDoubleAttackFeatherShotGradiusOptionHeroHeartInfernoFireBlastMagicianSUniteMakiuNextToBeLostNinjitsuArtOfDecoyOjamuscleOrderToChargeOrderToSmashOverpoweringEyeUnionAttack_08052AA8
+	bl gCardEffectDestroyDamage_08052AA8
 	cmp r0, #0
 	bne _08053920
 	b _08053AE8
@@ -126864,7 +127265,7 @@ _08053990:
 	mov r0, sp
 	adds r1, r7, #0
 	adds r2, r5, #0
-	bl gCardEffect7CompletedAmplifierArchfiendOfGilferArmedChangerAxeOfDespairBallistaOfRampartSmashingBeastFangsBigBangShotBlackPendantBlastWithChainBookOfSecretArtsBrainJackerBrightCastleBubbleBlasterBurningBeastBurningSpearBusterRancherButterflyDaggerElmaCestusOfDaglaChthonianAllianceCocoonOfEvolutionCyberShieldCyclonLaserCycloneBoomerangDarkEnergyDarkMagicianSTomeOfBlackMagicDarkNecrofearDemotionDesDendleDivineSwordPhoenixBladeDoitsuDragonTreasureDragonicAttackEkibyoDrakmordElectroWhipElfSLightFairyMeteorCrushFallingDownFlintFollowWindFreezingBeastFuhmaShurikenFusionSwordMurasameBladeFusionWeaponGermInfectionGravityAxeGrarlGustFanHeartOfClearWaterHeavyMechSupportPlatformHeroHeyroHornOfLightHornOfTheUnicornInsectArmorWithLaserCannonInvigorationKiryuKoitsuKunaiWithChainLaserCannonArmorLegendaryBlackBeltLegendarySwordLightningBladeMachineConversionFactoryMagePowerMagicalLabyrinthMalevolentNuzzlerMaskOfBrutalityMaskOfTheAccursedMaskedBeastDesGardiusMegamorphMetallizingParasiteLunatiteMetalmorphMetalsilverArmorMistobodyMysticalMoonNecklaceOfCommandNitroUnitOptiCamouflageArmorParalyzingPotionPitchDarkDragonPowerOfKaishinProtectiveSoulAilinRaiseBodyHeatRaregoldArmorRingOfMagnetismRitualWeaponRodOfSilenceKayEstRodOfTheMindSEyeSalamandraScrollOfBewitchmentSecondGoblinShootingStarBowCealSilverBowAndArrowSmokeGrenadeOfTheThiefSnatchStealSparkBlasterSteelShellStimPackSwordOfDarkDestructionSwordOfDeepSeatedSwordOfDragonSSoulSwordOfTheSoulEaterTrialOfThePrincessesTwinSwordsOfFlashingLightTryceUnitedWeStandVileGermsVioletCrystalWWingCatapultWickedBreakingFlambergeBaouYDragonHeadZMetalTankZombieTiger_0805000C
+	bl gCardEffectEquipBoostATK_0805000C
 	cmp r0, #0
 	beq _080539A4
 	b _08053AE4
@@ -127020,7 +127421,7 @@ _08053A30:
 	adds r0, r4, #0
 	adds r1, r7, #0
 	adds r2, r6, #0
-	bl gCardEffect7CompletedAmplifierArchfiendOfGilferArmedChangerAxeOfDespairBallistaOfRampartSmashingBeastFangsBigBangShotBlackPendantBlastWithChainBookOfSecretArtsBrainJackerBrightCastleBubbleBlasterBurningBeastBurningSpearBusterRancherButterflyDaggerElmaCestusOfDaglaChthonianAllianceCocoonOfEvolutionCyberShieldCyclonLaserCycloneBoomerangDarkEnergyDarkMagicianSTomeOfBlackMagicDarkNecrofearDemotionDesDendleDivineSwordPhoenixBladeDoitsuDragonTreasureDragonicAttackEkibyoDrakmordElectroWhipElfSLightFairyMeteorCrushFallingDownFlintFollowWindFreezingBeastFuhmaShurikenFusionSwordMurasameBladeFusionWeaponGermInfectionGravityAxeGrarlGustFanHeartOfClearWaterHeavyMechSupportPlatformHeroHeyroHornOfLightHornOfTheUnicornInsectArmorWithLaserCannonInvigorationKiryuKoitsuKunaiWithChainLaserCannonArmorLegendaryBlackBeltLegendarySwordLightningBladeMachineConversionFactoryMagePowerMagicalLabyrinthMalevolentNuzzlerMaskOfBrutalityMaskOfTheAccursedMaskedBeastDesGardiusMegamorphMetallizingParasiteLunatiteMetalmorphMetalsilverArmorMistobodyMysticalMoonNecklaceOfCommandNitroUnitOptiCamouflageArmorParalyzingPotionPitchDarkDragonPowerOfKaishinProtectiveSoulAilinRaiseBodyHeatRaregoldArmorRingOfMagnetismRitualWeaponRodOfSilenceKayEstRodOfTheMindSEyeSalamandraScrollOfBewitchmentSecondGoblinShootingStarBowCealSilverBowAndArrowSmokeGrenadeOfTheThiefSnatchStealSparkBlasterSteelShellStimPackSwordOfDarkDestructionSwordOfDeepSeatedSwordOfDragonSSoulSwordOfTheSoulEaterTrialOfThePrincessesTwinSwordsOfFlashingLightTryceUnitedWeStandVileGermsVioletCrystalWWingCatapultWickedBreakingFlambergeBaouYDragonHeadZMetalTankZombieTiger_0805000C
+	bl gCardEffectEquipBoostATK_0805000C
 	b _08053AEA
 	.align 2, 0
 _08053AD8: .4byte 0x00000868
@@ -127040,8 +127441,9 @@ _08053AEA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDisarmament_08053AF8
-gCardEffectDisarmament_08053AF8: @ 0x08053AF8
+	@ Disarmament
+	thumb_func_start gCardEffectDestroyAllEquip_08053AF8
+gCardEffectDestroyAllEquip_08053AF8: @ 0x08053AF8
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -127116,8 +127518,9 @@ _08053B70:
 _08053B7C: .4byte 0x00000868
 _08053B80: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectSakuretsuArmor_08053B84
-gCardEffectSakuretsuArmor_08053B84: @ 0x08053B84
+	@ Sakuretsu Armor
+	thumb_func_start gCardEffectDestroy_08053B84
+gCardEffectDestroy_08053B84: @ 0x08053B84
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -127178,8 +127581,10 @@ _08053BFA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectShieldCrashWhiteNinja_08053C00
-gCardEffectShieldCrashWhiteNinja_08053C00: @ 0x08053C00
+	@ Shield Crash
+	@ White Ninja
+	thumb_func_start gCardEffectDestroyChangePosition_08053C00
+gCardEffectDestroyChangePosition_08053C00: @ 0x08053C00
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -127234,8 +127639,9 @@ _08053C6A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectCorpseOfYataGarasu_08053C70
-gCardEffectCorpseOfYataGarasu_08053C70: @ 0x08053C70
+	@ Corpse of Yata-Garasu
+	thumb_func_start gCardEffectUnknown_08053C70
+gCardEffectUnknown_08053C70: @ 0x08053C70
 	push {lr}
 	adds r3, r2, #0
 	ldrb r0, [r0, #2]
@@ -127279,8 +127685,9 @@ _08053CBE:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectGravekeeperSCannonholder_08053CC4
-gCardEffectGravekeeperSCannonholder_08053CC4: @ 0x08053CC4
+	@ Gravekeeper's Cannonholder
+	thumb_func_start gCardEffectDamageTribute_08053CC4
+gCardEffectDamageTribute_08053CC4: @ 0x08053CC4
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -127343,8 +127750,9 @@ _08053D36:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectTributeDoll_08053D40
-gCardEffectTributeDoll_08053D40: @ 0x08053D40
+	@ Tribute Doll
+	thumb_func_start gCardEffectSpecialSummonPreventAttack_08053D40
+gCardEffectSpecialSummonPreventAttack_08053D40: @ 0x08053D40
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -127382,8 +127790,9 @@ _08053D82:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectGuardianCeal_08053D88
-gCardEffectGuardianCeal_08053D88: @ 0x08053D88
+	@ Guardian Ceal
+	thumb_func_start gCardEffectSpecialSummonSendToGY_08053D88
+gCardEffectSpecialSummonSendToGY_08053D88: @ 0x08053D88
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -127392,7 +127801,7 @@ gCardEffectGuardianCeal_08053D88: @ 0x08053D88
 	cmp r0, #0
 	beq _08053D9E
 	adds r0, r6, #0
-	bl gCardEffectBarrelDragonBladeRabbitDreamClownGearfriedTheSwordmasterKryuelMedusaWormNightAssailantOldVindictiveMagicianSwarmOfScarabsThousandKnives_0804F550
+	bl gCardEffectDestroy_0804F550
 	b _08053E0E
 _08053D9E:
 	ldrb r7, [r6, #2]
@@ -127429,7 +127838,7 @@ _08053D9E:
 	bl sub_08036A10
 	cmp r0, #0
 	beq _08053E0C
-	ldr r1, _08053E08 @ =gCardEffectBarrelDragonBladeRabbitDreamClownGearfriedTheSwordmasterKryuelMedusaWormNightAssailantOldVindictiveMagicianSwarmOfScarabsThousandKnives_0804F550
+	ldr r1, _08053E08 @ =gCardEffectDestroy_0804F550
 	lsls r2, r5, #0x18
 	lsls r0, r4, #0x18
 	lsrs r2, r2, #8
@@ -127444,7 +127853,7 @@ _08053D9E:
 	.align 2, 0
 _08053E00: .4byte 0x00000868
 _08053E04: .4byte gUnk_0201C510
-_08053E08: .4byte gCardEffectBarrelDragonBladeRabbitDreamClownGearfriedTheSwordmasterKryuelMedusaWormNightAssailantOldVindictiveMagicianSwarmOfScarabsThousandKnives_0804F550
+_08053E08: .4byte gCardEffectDestroy_0804F550
 _08053E0C:
 	movs r0, #0
 _08053E0E:
@@ -127452,8 +127861,9 @@ _08053E0E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectMagicalDimension_08053E14
-gCardEffectMagicalDimension_08053E14: @ 0x08053E14
+	@ Magical Dimension
+	thumb_func_start gCardEffectSpecialSummonDestroy_08053E14
+gCardEffectSpecialSummonDestroy_08053E14: @ 0x08053E14
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -127498,8 +127908,9 @@ _08053E64:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectLegendaryFlameLord_08053E6C
-gCardEffectLegendaryFlameLord_08053E6C: @ 0x08053E6C
+	@ Legendary Flame Lord
+	thumb_func_start gCardEffectRitualSummonDestroyAll_08053E6C
+gCardEffectRitualSummonDestroyAll_08053E6C: @ 0x08053E6C
 	push {r4, lr}
 	adds r4, r0, #0
 	adds r3, r2, #0
@@ -127542,8 +127953,9 @@ _08053EB6:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectAltarForTribute_08053EBC
-gCardEffectAltarForTribute_08053EBC: @ 0x08053EBC
+	@ Altar for Tribute
+	thumb_func_start gCardEffectSendToGYBoostATK_08053EBC
+gCardEffectSendToGYBoostATK_08053EBC: @ 0x08053EBC
 	push {r4, r5, lr}
 	adds r4, r2, #0
 	ldrb r0, [r0, #2]
@@ -127587,8 +127999,10 @@ _08053F0A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectLastTurnThunderCrash_08053F10
-gCardEffectLastTurnThunderCrash_08053F10: @ 0x08053F10
+	@ Last Turn
+	@ Thunder Crash
+	thumb_func_start gCardEffectSpecialSummonSendToGY_08053F10
+gCardEffectSpecialSummonSendToGY_08053F10: @ 0x08053F10
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r3, [r4, #2]
@@ -127627,8 +128041,9 @@ _08053F56:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectChainDisappearance_08053F5C
-gCardEffectChainDisappearance_08053F5C: @ 0x08053F5C
+	@ Chain Disappearance
+	thumb_func_start gCardEffectSpecialSummonBanish_08053F5C
+gCardEffectSpecialSummonBanish_08053F5C: @ 0x08053F5C
 	push {r4, r5, r6, r7, lr}
 	adds r5, r0, #0
 	adds r6, r1, #0
@@ -127732,8 +128147,10 @@ _08054024:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectDarkMirrorForceTragedy_0805402C
-gCardEffectDarkMirrorForceTragedy_0805402C: @ 0x0805402C
+	@ Dark Mirror Force
+	@ Tragedy
+	thumb_func_start gCardEffectChangePositionBanish_0805402C
+gCardEffectChangePositionBanish_0805402C: @ 0x0805402C
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
@@ -127780,8 +128197,9 @@ _08054082:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectAntiAircraftFlower_08054088
-gCardEffectAntiAircraftFlower_08054088: @ 0x08054088
+	@ Anti-Aircraft Flower
+	thumb_func_start gCardEffectDamage_08054088
+gCardEffectDamage_08054088: @ 0x08054088
 	push {r4, r5, r6, r7, lr}
 	adds r7, r0, #0
 	adds r5, r1, #0
@@ -127833,8 +128251,10 @@ _080540E6:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectLeviaDragonDaedalusOceanDragonLordNeoDaedalus_080540EC
-gCardEffectLeviaDragonDaedalusOceanDragonLordNeoDaedalus_080540EC: @ 0x080540EC
+	@ Levia-Dragon - Daedalus
+	@ Ocean Dragon Lord - Neo-Daedalus
+	thumb_func_start gCardEffectSendToGYGraveyard_080540EC
+gCardEffectSendToGYGraveyard_080540EC: @ 0x080540EC
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -127858,8 +128278,9 @@ _08054112:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectOrcaMegaFortressOfDarkness_08054118
-gCardEffectOrcaMegaFortressOfDarkness_08054118: @ 0x08054118
+	@ Orca Mega-Fortress of Darkness
+	thumb_func_start gCardEffectDestroySpellTrap_08054118
+gCardEffectDestroySpellTrap_08054118: @ 0x08054118
 	push {r4, lr}
 	adds r3, r0, #0
 	adds r4, r2, #0
@@ -127872,26 +128293,27 @@ gCardEffectOrcaMegaFortressOfDarkness_08054118: @ 0x08054118
 	beq _08054146
 	adds r0, r3, #0
 	adds r2, r4, #0
-	bl gCardEffectBondingH2oCastleGateCrushCardDeSpellGermWeaponDeckDevastationVirusGaiaSoulTheCombustibleCollectiveSpiritualFireArtKurenaiSpiritualWaterArtAoi_08050EAC
+	bl gCardEffectTributeDestroy_08050EAC
 	b _0805414E
 	.align 2, 0
 _08054138: .4byte 0x00001706 @ Torpedo Fish
 _0805413C:
 	adds r0, r3, #0
 	adds r2, r4, #0
-	bl gCardEffectMagicalMarionetteManEaterBugMichizureNewdoriaNoblemanEaterBugTheWingedDragonOfRaTributeToTheDoomedZaborgTheThunderMonarch_08050994
+	bl gCardEffectDestroy_08050994
 	b _0805414E
 _08054146:
 	adds r0, r3, #0
 	adds r2, r4, #0
-	bl gCardEffectBESTetranBreakerTheMagicalWarriorCliffTheTrapRemoverDrivingSnowGustMobiusTheFrostMonarchMysticalSpaceTyphoonStampingDestruction_08051B20
+	bl gCardEffectDestroySpellTrap_08051B20
 _0805414E:
 	pop {r4}
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectGryphonSFeatherDuster_08054154
-gCardEffectGryphonSFeatherDuster_08054154: @ 0x08054154
+	@ Gryphon's Feather Duster
+	thumb_func_start gCardEffectDestroySpellTrapDestroyAll_08054154
+gCardEffectDestroySpellTrapDestroyAll_08054154: @ 0x08054154
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -127953,8 +128375,13 @@ _080541C6:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDestructionRingEnergyDrainGenerationShiftInterdimensionalMatterTransporterUnity_080541CC
-gCardEffectDestructionRingEnergyDrainGenerationShiftInterdimensionalMatterTransporterUnity_080541CC: @ 0x080541CC
+	@ Destruction Ring
+	@ Energy Drain
+	@ Generation Shift
+	@ Interdimensional Matter Transporter
+	@ Unity
+	thumb_func_start gCardEffectEndPhaseDestroy_080541CC
+gCardEffectEndPhaseDestroy_080541CC: @ 0x080541CC
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -128007,8 +128434,10 @@ _0805422E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectTokenFeastevilTokenThanksgiving_08054234
-gCardEffectTokenFeastevilTokenThanksgiving_08054234: @ 0x08054234
+	@ Token Feastevil
+	@ Token Thanksgiving
+	thumb_func_start gCardEffectDestroyAllSpecialSummon_08054234
+gCardEffectDestroyAllSpecialSummon_08054234: @ 0x08054234
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -128049,8 +128478,9 @@ _0805427E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectSmashingGround_08054284
-gCardEffectSmashingGround_08054284: @ 0x08054284
+	@ Smashing Ground
+	thumb_func_start gCardEffectDestroy_08054284
+gCardEffectDestroy_08054284: @ 0x08054284
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
@@ -128109,8 +128539,9 @@ _080542EA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectInfernoHammer_080542F0
-gCardEffectInfernoHammer_080542F0: @ 0x080542F0
+	@ Inferno Hammer
+	thumb_func_start gCardEffectSendToGYDestroy_080542F0
+gCardEffectSendToGYDestroy_080542F0: @ 0x080542F0
 	push {r4, r5, r6, r7, lr}
 	adds r7, r0, #0
 	adds r5, r1, #0
@@ -128168,8 +128599,9 @@ _0805435E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectLadyNinjaYae_08054364
-gCardEffectLadyNinjaYae_08054364: @ 0x08054364
+	@ Lady Ninja Yae
+	thumb_func_start gCardEffectDiscardReturnToHand_08054364
+gCardEffectDiscardReturnToHand_08054364: @ 0x08054364
 	push {r4, r5, lr}
 	adds r5, r1, #0
 	adds r4, r2, #0
@@ -128212,8 +128644,9 @@ _080543AE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectEarthquake_080543B4
-gCardEffectEarthquake_080543B4: @ 0x080543B4
+	@ Earthquake
+	thumb_func_start gCardEffectChangePosition_080543B4
+gCardEffectChangePosition_080543B4: @ 0x080543B4
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
@@ -128258,8 +128691,9 @@ _08054406:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDesertapir_0805440C
-gCardEffectDesertapir_0805440C: @ 0x0805440C
+	@ Desertapir
+	thumb_func_start gCardEffectChangePositionFlip_0805440C
+gCardEffectChangePositionFlip_0805440C: @ 0x0805440C
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -128307,8 +128741,9 @@ _08054462:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectManThroTro_08054468
-gCardEffectManThroTro_08054468: @ 0x08054468
+	@ Man-Thro' Tro
+	thumb_func_start gCardEffectUnknown_08054468
+gCardEffectUnknown_08054468: @ 0x08054468
 	push {r4, r5, r6, r7, lr}
 	adds r7, r0, #0
 	adds r5, r1, #0
@@ -128363,8 +128798,9 @@ _080544CE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffect7_080544D4
-gCardEffect7_080544D4: @ 0x080544D4
+	@ 7
+	thumb_func_start gCardEffectDrawSendToGY_080544D4
+gCardEffectDrawSendToGY_080544D4: @ 0x080544D4
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r3, #1
@@ -128401,8 +128837,9 @@ _08054512:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectTheLawOfTheNormal_08054518
-gCardEffectTheLawOfTheNormal_08054518: @ 0x08054518
+	@ The Law of the Normal
+	thumb_func_start gCardEffectDiscardDestroyAll_08054518
+gCardEffectDiscardDestroyAll_08054518: @ 0x08054518
 	push {r4, r5, lr}
 	adds r5, r1, #0
 	adds r4, r2, #0
@@ -128447,8 +128884,9 @@ _0805456A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDeltaAttacker_08054570
-gCardEffectDeltaAttacker_08054570: @ 0x08054570
+	@ Delta Attacker
+	thumb_func_start gCardEffectDirectAttack_08054570
+gCardEffectDirectAttack_08054570: @ 0x08054570
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -128533,8 +128971,9 @@ _08054606:
 	.align 2, 0
 _08054610: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectDesertSunlight_08054614
-gCardEffectDesertSunlight_08054614: @ 0x08054614
+	@ Desert Sunlight
+	thumb_func_start gCardEffectChangePosition_08054614
+gCardEffectChangePosition_08054614: @ 0x08054614
 	adds r3, r2, #0
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
@@ -128574,8 +129013,10 @@ _08054658:
 _0805465A:
 	bx lr
 
-	thumb_func_start gCardEffectBegoneKnaveDesCounterblow_0805465C
-gCardEffectBegoneKnaveDesCounterblow_0805465C: @ 0x0805465C
+	@ Begone, Knave!
+	@ Des Counterblow
+	thumb_func_start gCardEffectDamageReturnToHand_0805465C
+gCardEffectDamageReturnToHand_0805465C: @ 0x0805465C
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -128625,8 +129066,9 @@ _080546B6:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectArmedDragonLv5_080546BC
-gCardEffectArmedDragonLv5_080546BC: @ 0x080546BC
+	@ Armed Dragon LV5
+	thumb_func_start gCardEffectSpecialSummonSendToGY_080546BC
+gCardEffectSpecialSummonSendToGY_080546BC: @ 0x080546BC
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -128637,7 +129079,7 @@ gCardEffectArmedDragonLv5_080546BC: @ 0x080546BC
 	adds r0, r4, #0
 	adds r1, r5, #0
 	adds r2, r6, #0
-	bl gCardEffectArmedDragonLv7_080546E0
+	bl gCardEffectSpecialSummonSendToGY_080546E0
 	b _080546DA
 _080546D8:
 	movs r0, #0
@@ -128646,8 +129088,9 @@ _080546DA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectArmedDragonLv7_080546E0
-gCardEffectArmedDragonLv7_080546E0: @ 0x080546E0
+	@ Armed Dragon LV7
+	thumb_func_start gCardEffectSpecialSummonSendToGY_080546E0
+gCardEffectSpecialSummonSendToGY_080546E0: @ 0x080546E0
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -128701,8 +129144,9 @@ _08054746:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectHammerShot_0805474C
-gCardEffectHammerShot_0805474C: @ 0x0805474C
+	@ Hammer Shot
+	thumb_func_start gCardEffectDestroyChangePosition_0805474C
+gCardEffectDestroyChangePosition_0805474C: @ 0x0805474C
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
@@ -128759,8 +129203,9 @@ _080547AE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectLevelUp_080547B4
-gCardEffectLevelUp_080547B4: @ 0x080547B4
+	@ Level Up!
+	thumb_func_start gCardEffectSpecialSummonSendToGY_080547B4
+gCardEffectSpecialSummonSendToGY_080547B4: @ 0x080547B4
 	push {r4, r5, r6, r7, lr}
 	adds r7, r0, #0
 	adds r6, r1, #0
@@ -128823,8 +129268,10 @@ _0805482E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectAssaultOnGhqMonsterRelief_08054834
-gCardEffectAssaultOnGhqMonsterRelief_08054834: @ 0x08054834
+	@ Assault on GHQ
+	@ Monster Relief
+	thumb_func_start gCardEffectSpecialSummonReturnToHand_08054834
+gCardEffectSpecialSummonReturnToHand_08054834: @ 0x08054834
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -128874,8 +129321,10 @@ _08054892:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectImpenetrableFormationTaunt_08054898
-gCardEffectImpenetrableFormationTaunt_08054898: @ 0x08054898
+	@ Impenetrable Formation
+	@ Taunt
+	thumb_func_start gCardEffectDestroyBoostDEF_08054898
+gCardEffectDestroyBoostDEF_08054898: @ 0x08054898
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
@@ -128919,8 +129368,15 @@ _080548E6:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectChopmanTheDesperateOutlawGilfordTheLegendGuardianElmaRollOutTheKickManTrickySMagic4UltimateBaseballKid_080548EC
-gCardEffectChopmanTheDesperateOutlawGilfordTheLegendGuardianElmaRollOutTheKickManTrickySMagic4UltimateBaseballKid_080548EC: @ 0x080548EC
+	@ Chopman the Desperate Outlaw
+	@ Gilford the Legend
+	@ Guardian Elma
+	@ Roll Out!
+	@ The Kick Man
+	@ Tricky's Magic 4
+	@ Ultimate Baseball Kid
+	thumb_func_start gCardEffectGraveyardEquip_080548EC
+gCardEffectGraveyardEquip_080548EC: @ 0x080548EC
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -129161,8 +129617,9 @@ _08054ABE:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectMaliceDispersion_08054ACC
-gCardEffectMaliceDispersion_08054ACC: @ 0x08054ACC
+	@ Malice Dispersion
+	thumb_func_start gCardEffectDiscardDestroyAll_08054ACC
+gCardEffectDiscardDestroyAll_08054ACC: @ 0x08054ACC
 	push {r4, r5, lr}
 	movs r3, #1
 	ands r3, r1
@@ -129200,8 +129657,9 @@ _08054B12:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectHarpiesHuntingGround_08054B18
-gCardEffectHarpiesHuntingGround_08054B18: @ 0x08054B18
+	@ Harpies' Hunting Ground
+	thumb_func_start gCardEffectSpecialSummonDestroySpellTrap_08054B18
+gCardEffectSpecialSummonDestroySpellTrap_08054B18: @ 0x08054B18
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -129253,8 +129711,9 @@ _08054B7A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectSerialSpell_08054B80
-gCardEffectSerialSpell_08054B80: @ 0x08054B80
+	@ Serial Spell
+	thumb_func_start gCardEffectDiscardGraveyard_08054B80
+gCardEffectDiscardGraveyard_08054B80: @ 0x08054B80
 	push {r4, lr}
 	adds r4, r0, #0
 	subs r0, #0x18
@@ -129270,8 +129729,9 @@ gCardEffectSerialSpell_08054B80: @ 0x08054B80
 	.align 2, 0
 _08054B9C: .4byte 0x0000183E @ Serial Spell
 
-	thumb_func_start gCardEffectSpellPurification_08054BA0
-gCardEffectSpellPurification_08054BA0: @ 0x08054BA0
+	@ Spell Purification
+	thumb_func_start gCardEffectDiscardDestroyAll_08054BA0
+gCardEffectDiscardDestroyAll_08054BA0: @ 0x08054BA0
 	push {r4, r5, lr}
 	movs r3, #1
 	ands r3, r1
@@ -129309,8 +129769,9 @@ _08054BE6:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectCoveringFire_08054BEC
-gCardEffectCoveringFire_08054BEC: @ 0x08054BEC
+	@ Covering Fire
+	thumb_func_start gCardEffectBoostATK_08054BEC
+gCardEffectBoostATK_08054BEC: @ 0x08054BEC
 	push {r4, r5, lr}
 	adds r3, r0, #0
 	adds r5, r1, #0
@@ -129362,8 +129823,9 @@ _08054C4A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectOwnerSSeal_08054C50
-gCardEffectOwnerSSeal_08054C50: @ 0x08054C50
+	@ Owner's Seal
+	thumb_func_start gCardEffectUnknown_08054C50
+gCardEffectUnknown_08054C50: @ 0x08054C50
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -129412,8 +129874,11 @@ _08054CAA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectHandOfNephthysRavielLordOfPhantasmsSummonerOfIllusions_08054CB0
-gCardEffectHandOfNephthysRavielLordOfPhantasmsSummonerOfIllusions_08054CB0: @ 0x08054CB0
+	@ Hand of Nephthys
+	@ Raviel, Lord of Phantasms
+	@ Summoner of Illusions
+	thumb_func_start gCardEffectSpecialSummonTribute_08054CB0
+gCardEffectSpecialSummonTribute_08054CB0: @ 0x08054CB0
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -129459,13 +129924,17 @@ _08054D02:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectAussaTheEarthCharmerEriaTheWaterCharmerHiitaTheFireCharmerWynnTheWindCharmer_08054D08
-gCardEffectAussaTheEarthCharmerEriaTheWaterCharmerHiitaTheFireCharmerWynnTheWindCharmer_08054D08: @ 0x08054D08
+	@ Aussa the Earth Charmer
+	@ Eria the Water Charmer
+	@ Hiita the Fire Charmer
+	@ Wynn the Wind Charmer
+	thumb_func_start gCardEffectTakeControlFlip_08054D08
+gCardEffectTakeControlFlip_08054D08: @ 0x08054D08
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
 	adds r4, r2, #0
-	bl gCardEffectChangeOfHeartInvaderOfTheThroneJowlsOfDarkDemiseMindControlRelinquishedReshefTheDarkBeingThousandEyesRestrict_0804F618
+	bl gCardEffectTakeControlDestroy_0804F618
 	cmp r0, #0
 	beq _08054D54
 	movs r2, #1
@@ -129501,8 +129970,11 @@ _08054D56:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectTheDarkHexSealedFusionTheEarthHexSealedFusionTheLightHexSealedFusion_08054D5C
-gCardEffectTheDarkHexSealedFusionTheEarthHexSealedFusionTheLightHexSealedFusion_08054D5C: @ 0x08054D5C
+	@ The Dark - Hex-Sealed Fusion
+	@ The Earth - Hex-Sealed Fusion
+	@ The Light - Hex-Sealed Fusion
+	thumb_func_start gCardEffectSpecialSummonFusion_08054D5C
+gCardEffectSpecialSummonFusion_08054D5C: @ 0x08054D5C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -129580,8 +130052,9 @@ _08054DE8:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectSwordsOfConcealingLight_08054DF4
-gCardEffectSwordsOfConcealingLight_08054DF4: @ 0x08054DF4
+	@ Swords of Concealing Light
+	thumb_func_start gCardEffectDestroyChangePosition_08054DF4
+gCardEffectDestroyChangePosition_08054DF4: @ 0x08054DF4
 	push {r4, r5, r6, r7, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
@@ -129635,8 +130108,9 @@ _08054E56:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectGiftOfTheMartyr_08054E5C
-gCardEffectGiftOfTheMartyr_08054E5C: @ 0x08054E5C
+	@ Gift of the Martyr
+	thumb_func_start gCardEffectSendToGYBoostATK_08054E5C
+gCardEffectSendToGYBoostATK_08054E5C: @ 0x08054E5C
 	push {r4, r5, r6, r7, lr}
 	adds r5, r0, #0
 	adds r6, r1, #0
@@ -129645,7 +130119,7 @@ gCardEffectGiftOfTheMartyr_08054E5C: @ 0x08054E5C
 	cmp r0, #0
 	beq _08054E76
 	adds r0, r5, #0
-	bl gCardEffectDestructionRingEnergyDrainGenerationShiftInterdimensionalMatterTransporterUnity_080541CC
+	bl gCardEffectEndPhaseDestroy_080541CC
 	b _08054EA0
 _08054E72:
 	movs r0, #1
@@ -129654,7 +130128,7 @@ _08054E76:
 	adds r0, r5, #0
 	adds r1, r6, #0
 	adds r2, r7, #0
-	bl gCardEffectAltarForTribute_08053EBC
+	bl gCardEffectSendToGYBoostATK_08053EBC
 	cmp r0, #0
 	beq _08054E9E
 	movs r4, #0
@@ -129664,7 +130138,7 @@ _08054E86:
 	adds r0, r5, #0
 	adds r1, r6, #0
 	adds r2, r4, #0
-	bl gCardEffectDestructionRingEnergyDrainGenerationShiftInterdimensionalMatterTransporterUnity_080541CC
+	bl gCardEffectEndPhaseDestroy_080541CC
 	cmp r0, #0
 	bne _08054E72
 _08054E98:
@@ -129679,8 +130153,9 @@ _08054EA0:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectShiftingShadows_08054EA8
-gCardEffectShiftingShadows_08054EA8: @ 0x08054EA8
+	@ Shifting Shadows
+	thumb_func_start gCardEffectDamageChangePosition_08054EA8
+gCardEffectDamageChangePosition_08054EA8: @ 0x08054EA8
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
@@ -129730,8 +130205,9 @@ _08054F02:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectMispolymerization_08054F08
-gCardEffectMispolymerization_08054F08: @ 0x08054F08
+	@ Mispolymerization
+	thumb_func_start gCardEffectSpecialSummonFusion_08054F08
+gCardEffectSpecialSummonFusion_08054F08: @ 0x08054F08
 	push {r4, r5, r6, r7, lr}
 	adds r7, r0, #0
 	adds r6, r1, #0
@@ -129777,8 +130253,12 @@ _08054F5E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectAManWithWdjatPatroidPatrolRoboSealOfTheAncients_08054F64
-gCardEffectAManWithWdjatPatroidPatrolRoboSealOfTheAncients_08054F64: @ 0x08054F64
+	@ A Man with Wdjat
+	@ Patroid
+	@ Patrol Robo
+	@ Seal of the Ancients
+	thumb_func_start gCardEffectStandbyPhaseDamage_08054F64
+gCardEffectStandbyPhaseDamage_08054F64: @ 0x08054F64
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r3, r1, #0
@@ -129823,8 +130303,16 @@ _08054FB6:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectBlowbackDragonDarkRulerVandalgyonGolddWuLordOfDarkWorldNightmarePenguinPhoenixWingWindBlastSpiritualWindArtMiyabiVwxyzDragonCatapultCannonXyzDragonCannon_08054FBC
-gCardEffectBlowbackDragonDarkRulerVandalgyonGolddWuLordOfDarkWorldNightmarePenguinPhoenixWingWindBlastSpiritualWindArtMiyabiVwxyzDragonCatapultCannonXyzDragonCannon_08054FBC: @ 0x08054FBC
+	@ Blowback Dragon
+	@ Dark Ruler Vandalgyon
+	@ Goldd, Wu-Lord of Dark World
+	@ Nightmare Penguin
+	@ Phoenix Wing Wind Blast
+	@ Spiritual Wind Art - Miyabi
+	@ VWXYZ-Dragon Catapult Cannon
+	@ XYZ-Dragon Cannon
+	thumb_func_start gCardEffectSpecialSummonDestroy_08054FBC
+gCardEffectSpecialSummonDestroy_08054FBC: @ 0x08054FBC
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r4, r1, #0
@@ -129872,8 +130360,11 @@ _08055016:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectCrushDGandraDemiseKingOfArmageddonFinalDestiny_0805501C
-gCardEffectCrushDGandraDemiseKingOfArmageddonFinalDestiny_0805501C: @ 0x0805501C
+	@ Crush D. Gandra
+	@ Demise, King of Armageddon
+	@ Final Destiny
+	thumb_func_start gCardEffectDestroyAllDamage_0805501C
+gCardEffectDestroyAllDamage_0805501C: @ 0x0805501C
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -129921,8 +130412,9 @@ _08055072:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectRaigekiBreak_08055078
-gCardEffectRaigekiBreak_08055078: @ 0x08055078
+	@ Raigeki Break
+	thumb_func_start gCardEffectDiscardDestroy_08055078
+gCardEffectDiscardDestroy_08055078: @ 0x08055078
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	adds r7, r1, #0
@@ -129977,8 +130469,12 @@ _080550DE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectAbyssSoldierBlastWithChainDarkMagicianKnightDarkScorpionChickTheYellow_080550E4
-gCardEffectAbyssSoldierBlastWithChainDarkMagicianKnightDarkScorpionChickTheYellow_080550E4: @ 0x080550E4
+	@ Abyss Soldier
+	@ Blast with Chain
+	@ Dark Magician Knight
+	@ Dark Scorpion - Chick the Yellow
+	thumb_func_start gCardEffectReturnToHandDestroy_080550E4
+gCardEffectReturnToHandDestroy_080550E4: @ 0x080550E4
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -130021,8 +130517,14 @@ _08055132:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDesCroakingElementalBurstHugeRevolutionLightOfJudgmentMegaTonMagicalCannonOjamaDeltaHurricane_08055138
-gCardEffectDesCroakingElementalBurstHugeRevolutionLightOfJudgmentMegaTonMagicalCannonOjamaDeltaHurricane_08055138: @ 0x08055138
+	@ Des Croaking
+	@ Elemental Burst
+	@ Huge Revolution
+	@ Light of Judgment
+	@ Mega Ton Magical Cannon
+	@ Ojama Delta Hurricane!!
+	thumb_func_start gCardEffectDestroyAll_08055138
+gCardEffectDestroyAll_08055138: @ 0x08055138
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r3, r1, #0
@@ -130064,8 +130566,10 @@ _08055182:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectByserShockTheSternMystic_08055188
-gCardEffectByserShockTheSternMystic_08055188: @ 0x08055188
+	@ Byser Shock
+	@ The Stern Mystic
+	thumb_func_start gCardEffectSpecialSummonReturnToHand_08055188
+gCardEffectSpecialSummonReturnToHand_08055188: @ 0x08055188
 	movs r3, #1
 	ands r3, r1
 	lsls r0, r2, #2
@@ -130093,8 +130597,9 @@ _080551B8:
 _080551BA:
 	bx lr
 
-	thumb_func_start gCardEffectDoubleSnare_080551BC
-gCardEffectDoubleSnare_080551BC: @ 0x080551BC
+	@ Double Snare
+	thumb_func_start gCardEffectNegateDestroy_080551BC
+gCardEffectNegateDestroy_080551BC: @ 0x080551BC
 	push {r4, r5, r6, r7, lr}
 	adds r7, r0, #0
 	adds r6, r1, #0
@@ -130163,8 +130668,9 @@ _08055242:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectMagicalPlantMandragola_08055248
-gCardEffectMagicalPlantMandragola_08055248: @ 0x08055248
+	@ Magical Plant Mandragola
+	thumb_func_start gCardEffectFlipCounter_08055248
+gCardEffectFlipCounter_08055248: @ 0x08055248
 	push {r4, r5, lr}
 	adds r4, r1, #0
 	adds r3, r2, #0
@@ -130210,8 +130716,10 @@ _0805529A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectApprenticeMagicianPitchBlackPowerStone_080552A0
-gCardEffectApprenticeMagicianPitchBlackPowerStone_080552A0: @ 0x080552A0
+	@ Apprentice Magician
+	@ Pitch-Black Power Stone
+	thumb_func_start gCardEffectDestroyCounter_080552A0
+gCardEffectDestroyCounter_080552A0: @ 0x080552A0
 	push {r4, r5, r6, lr}
 	adds r3, r0, #0
 	adds r5, r1, #0
@@ -130271,8 +130779,9 @@ _08055312:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectMindHaxorz_08055318
-gCardEffectMindHaxorz_08055318: @ 0x08055318
+	@ Mind Haxorz
+	thumb_func_start gCardEffectDamage_08055318
+gCardEffectDamage_08055318: @ 0x08055318
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
@@ -130310,8 +130819,10 @@ _0805535A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDarkWorldLightningGranmargTheRockMonarch_08055360
-gCardEffectDarkWorldLightningGranmargTheRockMonarch_08055360: @ 0x08055360
+	@ Dark World Lightning
+	@ Granmarg the Rock Monarch
+	thumb_func_start gCardEffectDestroyDiscard_08055360
+gCardEffectDestroyDiscard_08055360: @ 0x08055360
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	adds r6, r1, #0
@@ -130369,8 +130880,9 @@ _080553CE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectInfernalFlameEmperor_080553D4
-gCardEffectInfernalFlameEmperor_080553D4: @ 0x080553D4
+	@ Infernal Flame Emperor
+	thumb_func_start gCardEffectSpecialSummonBanish_080553D4
+gCardEffectSpecialSummonBanish_080553D4: @ 0x080553D4
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -130480,8 +130992,9 @@ _0805549A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectBubbleShuffle_080554A0
-gCardEffectBubbleShuffle_080554A0: @ 0x080554A0
+	@ Bubble Shuffle
+	thumb_func_start gCardEffectSpecialSummonChangePosition_080554A0
+gCardEffectSpecialSummonChangePosition_080554A0: @ 0x080554A0
 	push {r4, lr}
 	adds r3, r0, #0
 	ldrb r4, [r3, #2]
@@ -130490,19 +131003,20 @@ gCardEffectBubbleShuffle_080554A0: @ 0x080554A0
 	cmp r1, r0
 	beq _080554B6
 	adds r0, r3, #0
-	bl gCardEffectBESCrystalCore_080554C4
+	bl gCardEffectDestroyChangePosition_080554C4
 	b _080554BC
 _080554B6:
 	adds r0, r3, #0
-	bl gCardEffectHeroKidMachineDuplicationStaunchDefenderTheLeagueOfUniformNomenclature_080557E0
+	bl gCardEffectSpecialSummon_080557E0
 _080554BC:
 	pop {r4}
 	pop {r1}
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectBESCrystalCore_080554C4
-gCardEffectBESCrystalCore_080554C4: @ 0x080554C4
+	@ B.E.S. Crystal Core
+	thumb_func_start gCardEffectDestroyChangePosition_080554C4
+gCardEffectDestroyChangePosition_080554C4: @ 0x080554C4
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
@@ -130552,8 +131066,9 @@ _0805551E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectSystemDown_08055524
-gCardEffectSystemDown_08055524: @ 0x08055524
+	@ System Down
+	thumb_func_start gCardEffectBanishDamage_08055524
+gCardEffectBanishDamage_08055524: @ 0x08055524
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -130607,8 +131122,9 @@ _0805558A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectShienSSpy_08055590
-gCardEffectShienSSpy_08055590: @ 0x08055590
+	@ Shien's Spy
+	thumb_func_start gCardEffectEndPhase_08055590
+gCardEffectEndPhase_08055590: @ 0x08055590
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -130681,8 +131197,9 @@ _0805561A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectARivalAppears_08055624
-gCardEffectARivalAppears_08055624: @ 0x08055624
+	@ A Rival Appears!
+	thumb_func_start gCardEffectSpecialSummon_08055624
+gCardEffectSpecialSummon_08055624: @ 0x08055624
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -130785,8 +131302,9 @@ _080556E2:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectElementalHeroTempest_080556F0
-gCardEffectElementalHeroTempest_080556F0: @ 0x080556F0
+	@ Elemental Hero Tempest
+	thumb_func_start gCardEffectSpecialSummonFusionSummon_080556F0
+gCardEffectSpecialSummonFusionSummon_080556F0: @ 0x080556F0
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r4, r1, #0
@@ -130795,7 +131313,7 @@ gCardEffectElementalHeroTempest_080556F0: @ 0x080556F0
 	cmp r0, #0
 	beq _08055706
 	adds r0, r6, #0
-	bl gCardEffectMonsterRecovery_080525D0
+	bl gCardEffectDraw_080525D0
 	b _08055776
 _08055706:
 	ldrb r1, [r6, #2]
@@ -130833,7 +131351,7 @@ _08055706:
 	bl sub_08036A10
 	cmp r0, #0
 	beq _08055774
-	ldr r1, _08055770 @ =gCardEffectMonsterRecovery_080525D0
+	ldr r1, _08055770 @ =gCardEffectDraw_080525D0
 	lsls r2, r4, #0x18
 	lsls r0, r5, #0x18
 	lsrs r2, r2, #8
@@ -130848,7 +131366,7 @@ _08055706:
 	.align 2, 0
 _08055768: .4byte 0x00000868
 _0805576C: .4byte gUnk_0201C510
-_08055770: .4byte gCardEffectMonsterRecovery_080525D0
+_08055770: .4byte gCardEffectDraw_080525D0
 _08055774:
 	movs r0, #0
 _08055776:
@@ -130856,8 +131374,10 @@ _08055776:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectBottomlessShiftingSandChthonianBlast_0805577C
-gCardEffectBottomlessShiftingSandChthonianBlast_0805577C: @ 0x0805577C
+	@ Bottomless Shifting Sand
+	@ Chthonian Blast
+	thumb_func_start gCardEffectDestroySendToGY_0805577C
+gCardEffectDestroySendToGY_0805577C: @ 0x0805577C
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
@@ -130911,8 +131431,12 @@ _080557DA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectHeroKidMachineDuplicationStaunchDefenderTheLeagueOfUniformNomenclature_080557E0
-gCardEffectHeroKidMachineDuplicationStaunchDefenderTheLeagueOfUniformNomenclature_080557E0: @ 0x080557E0
+	@ Hero Kid
+	@ Machine Duplication
+	@ Staunch Defender
+	@ The League of Uniform Nomenclature
+	thumb_func_start gCardEffectSpecialSummon_080557E0
+gCardEffectSpecialSummon_080557E0: @ 0x080557E0
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -132603,8 +133127,52 @@ _08056356:
 _0805635A:
 	bx lr
 
-	thumb_func_start gCardEffectAbyssalDesignatorArchfiendSRoarAutonomousActionUnitBatteryChargerBrainControlChaosEmperorDragonEnvoyOfTheEndConfiscationCrushDGandraCyberSteinDarkBalterTheTerribleDarkDealDarkMagicCurtainDelinquentDuoDemiseKingOfArmageddonDiffusionWaveMotionDimensionFusionEnchantingFittingRoomFinalCountdownFulfillmentOfTheContractGaleDograGoblinOutOfTheFryingPanHieroglyphLithographInspectionMagicalScientistMalfunctionMindHaxorzMonsterEyePrematureBurialReFusionRecycleReturnZombieReturnFromTheDifferentDimensionReversalOfGravesRopeOfSpiritRyuSenshiSealOfTheAncientsSevenToolsOfTheBanditSkillDrainSolemnJudgmentSystemDownTheAgentOfCreationVenusToonWorldTriageWeedOut_0805635C
-gCardEffectAbyssalDesignatorArchfiendSRoarAutonomousActionUnitBatteryChargerBrainControlChaosEmperorDragonEnvoyOfTheEndConfiscationCrushDGandraCyberSteinDarkBalterTheTerribleDarkDealDarkMagicCurtainDelinquentDuoDemiseKingOfArmageddonDiffusionWaveMotionDimensionFusionEnchantingFittingRoomFinalCountdownFulfillmentOfTheContractGaleDograGoblinOutOfTheFryingPanHieroglyphLithographInspectionMagicalScientistMalfunctionMindHaxorzMonsterEyePrematureBurialReFusionRecycleReturnZombieReturnFromTheDifferentDimensionReversalOfGravesRopeOfSpiritRyuSenshiSealOfTheAncientsSevenToolsOfTheBanditSkillDrainSolemnJudgmentSystemDownTheAgentOfCreationVenusToonWorldTriageWeedOut_0805635C: @ 0x0805635C
+	@ Abyssal Designator
+	@ Archfiend's Roar
+	@ Autonomous Action Unit
+	@ Battery Charger
+	@ Brain Control
+	@ Chaos Emperor Dragon - Envoy of the End
+	@ Confiscation
+	@ Crush D. Gandra
+	@ Cyber-Stein
+	@ Dark Balter the Terrible
+	@ Dark Deal
+	@ Dark Magic Curtain
+	@ Delinquent Duo
+	@ Demise, King of Armageddon
+	@ Diffusion Wave-Motion
+	@ Dimension Fusion
+	@ Enchanting Fitting Room
+	@ Final Countdown
+	@ Fulfillment of the Contract
+	@ Gale Dogra
+	@ Goblin Out of the Frying Pan
+	@ Hieroglyph Lithograph
+	@ Inspection
+	@ Magical Scientist
+	@ Malfunction
+	@ Mind Haxorz
+	@ Monster Eye
+	@ Premature Burial
+	@ Re-Fusion
+	@ Recycle
+	@ Return Zombie
+	@ Return from the Different Dimension
+	@ Reversal of Graves
+	@ Rope of Spirit
+	@ Ryu Senshi
+	@ Seal of the Ancients
+	@ Seven Tools of the Bandit
+	@ Skill Drain
+	@ Solemn Judgment
+	@ System Down
+	@ The Agent of Creation - Venus
+	@ Toon World
+	@ Triage
+	@ Weed Out
+	thumb_func_start gCardEffectDamage_0805635C
+gCardEffectDamage_0805635C: @ 0x0805635C
 	push {r4, lr}
 	ldrb r1, [r0, #2]
 	lsls r4, r1, #0x1f
@@ -132622,8 +133190,43 @@ gCardEffectAbyssalDesignatorArchfiendSRoarAutonomousActionUnitBatteryChargerBrai
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectAFeatherOfThePhoenixAncientGearDrillBackToSquareOneCostDownCurseOfAgingCyberneticMagicianDamageCondenserDarkCoreDarkPaladinDarknessApproachesDivineWrathExcavationOfMageStonesFinalDestinyForcedCeasefireHallowedLifeBarrierJudgmentOfAnubisKarmaCutLightningVortexMagicJammerMaliceDispersionMonsterReincarnationNonAggressionAreaPhoenixWingWindBlastRaigekiBreakRisingEnergySpecialHurricaneSpellPurificationSpellVanishingTribeInfectingVirusTributeToTheDoomedVwTigerCatapultXyDragonCannonXyzDragonCannonXzTankCannonYzTankDragon_08056380
-gCardEffectAFeatherOfThePhoenixAncientGearDrillBackToSquareOneCostDownCurseOfAgingCyberneticMagicianDamageCondenserDarkCoreDarkPaladinDarknessApproachesDivineWrathExcavationOfMageStonesFinalDestinyForcedCeasefireHallowedLifeBarrierJudgmentOfAnubisKarmaCutLightningVortexMagicJammerMaliceDispersionMonsterReincarnationNonAggressionAreaPhoenixWingWindBlastRaigekiBreakRisingEnergySpecialHurricaneSpellPurificationSpellVanishingTribeInfectingVirusTributeToTheDoomedVwTigerCatapultXyDragonCannonXyzDragonCannonXzTankCannonYzTankDragon_08056380: @ 0x08056380
+	@ A Feather of the Phoenix
+	@ Ancient Gear Drill
+	@ Back to Square One
+	@ Cost Down
+	@ Curse of Aging
+	@ Cybernetic Magician
+	@ Damage Condenser
+	@ Dark Core
+	@ Dark Paladin
+	@ Darkness Approaches
+	@ Divine Wrath
+	@ Excavation of Mage Stones
+	@ Final Destiny
+	@ Forced Ceasefire
+	@ Hallowed Life Barrier
+	@ Judgment of Anubis
+	@ Karma Cut
+	@ Lightning Vortex
+	@ Magic Jammer
+	@ Malice Dispersion
+	@ Monster Reincarnation
+	@ Non Aggression Area
+	@ Phoenix Wing Wind Blast
+	@ Raigeki Break
+	@ Rising Energy
+	@ Special Hurricane
+	@ Spell Purification
+	@ Spell Vanishing
+	@ Tribe-Infecting Virus
+	@ Tribute to The Doomed
+	@ VW-Tiger Catapult
+	@ XY-Dragon Cannon
+	@ XYZ-Dragon Cannon
+	@ XZ-Tank Cannon
+	@ YZ-Tank Dragon
+	thumb_func_start gCardEffectDiscard_08056380
+gCardEffectDiscard_08056380: @ 0x08056380
 	push {r4, lr}
 	adds r4, r0, #0
 	bl sub_08055CD0
@@ -132642,8 +133245,48 @@ _0805639C:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectAbareUshioniAnteatereatingantBESCrystalCoreBarrelDragonBlackLusterSoldierEnvoyOfTheBeginningBlowbackDragonBurningBeastCallOfTheMummyCatnippedKittyChaosSorcererChaosriderGustaphCyberLaserDragonDarkMasterZorcDesDendleDoitsuFreezingBeastFrontlineBaseGatlingDragonGoddessOfWhimHeavyMechSupportPlatformHomunculusTheAlchemicBeingKarateManKingDragunKoitsuLightenTheLoadMetallizingParasiteLunatitePatroidPitchDarkDragonRelinquishedRouletteBarrelSandGamblerTheCreatorThousandEyesRestrictTimeWizardUriaLordOfSearingFlamesVwxyzDragonCatapultCannonWWingCatapultYDragonHeadZMetalTankZombieTiger_080563A4
-gCardEffectAbareUshioniAnteatereatingantBESCrystalCoreBarrelDragonBlackLusterSoldierEnvoyOfTheBeginningBlowbackDragonBurningBeastCallOfTheMummyCatnippedKittyChaosSorcererChaosriderGustaphCyberLaserDragonDarkMasterZorcDesDendleDoitsuFreezingBeastFrontlineBaseGatlingDragonGoddessOfWhimHeavyMechSupportPlatformHomunculusTheAlchemicBeingKarateManKingDragunKoitsuLightenTheLoadMetallizingParasiteLunatitePatroidPitchDarkDragonRelinquishedRouletteBarrelSandGamblerTheCreatorThousandEyesRestrictTimeWizardUriaLordOfSearingFlamesVwxyzDragonCatapultCannonWWingCatapultYDragonHeadZMetalTankZombieTiger_080563A4: @ 0x080563A4
+	@ Abare Ushioni
+	@ Anteatereatingant
+	@ B.E.S. Crystal Core
+	@ Barrel Dragon
+	@ Black Luster Soldier - Envoy of the Beginning
+	@ Blowback Dragon
+	@ Burning Beast
+	@ Call of the Mummy
+	@ Catnipped Kitty
+	@ Chaos Sorcerer
+	@ Chaosrider Gustaph
+	@ Cyber Laser Dragon
+	@ Dark Master - Zorc
+	@ Des Dendle
+	@ Doitsu
+	@ Freezing Beast
+	@ Frontline Base
+	@ Gatling Dragon
+	@ Goddess of Whim
+	@ Heavy Mech Support Platform
+	@ Homunculus the Alchemic Being
+	@ Karate Man
+	@ King Dragun
+	@ Koitsu
+	@ Lighten the Load
+	@ Metallizing Parasite - Lunatite
+	@ Patroid
+	@ Pitch-Dark Dragon
+	@ Relinquished
+	@ Roulette Barrel
+	@ Sand Gambler
+	@ The Creator
+	@ Thousand-Eyes Restrict
+	@ Time Wizard
+	@ Uria, Lord of Searing Flames
+	@ VWXYZ-Dragon Catapult Cannon
+	@ W-Wing Catapult
+	@ Y-Dragon Head
+	@ Z-Metal Tank
+	@ Zombie Tiger
+	thumb_func_start gCardEffectDestroySpecialSummon_080563A4
+gCardEffectDestroySpecialSummon_080563A4: @ 0x080563A4
 	push {lr}
 	sub sp, #4
 	ldrb r1, [r0, #2]
@@ -132663,8 +133306,59 @@ gCardEffectAbareUshioniAnteatereatingantBESCrystalCoreBarrelDragonBlackLusterSol
 	.align 2, 0
 _080563C8: .4byte 0x00000FB6 @ Time Wizard
 
-	thumb_func_start gCardEffectAquaSpiritArmedChangerAswanApparitionBehemothTheKingOfAllAnimalsBerfometBossRushBrronMadKingOfDarkWorldButterflyDaggerElmaCardOfSafeReturnChimeraTheFlyingMythicalBeastChopmanTheDesperateOutlawDDWarriorLadyDarkBladeTheDragonKnightDesFrogDrillBugElementalHeroBubblemanExarionUniverseFreedTheMatchlessGeneralGarudaTheWindSpiritGhostKnightOfJackalGilfordTheLegendGravekeeperSAssailantGreatSpiritGreenGadgetGuardianElmaHeroKidHydrogeddonInfernoHammerKingSKnightKycooTheGhostDestroyerLittleWinguardMagicalBlastManjuOfTheTenThousandHandsMobiusTheFrostMonarchMysticalKnightOfJackalNubianGuardOrdealOfATravelerPandemoniumPatrolRoboPoisonDrawFrogRedGadgetSenjuOfTheThousandHandsSonicBirdSpiritCallerSpiritOfThePharaohTADPOLETheKickManVwxyzDragonCatapultCannonWataponWingedSageFalcosYellowGadget_080563CC
-gCardEffectAquaSpiritArmedChangerAswanApparitionBehemothTheKingOfAllAnimalsBerfometBossRushBrronMadKingOfDarkWorldButterflyDaggerElmaCardOfSafeReturnChimeraTheFlyingMythicalBeastChopmanTheDesperateOutlawDDWarriorLadyDarkBladeTheDragonKnightDesFrogDrillBugElementalHeroBubblemanExarionUniverseFreedTheMatchlessGeneralGarudaTheWindSpiritGhostKnightOfJackalGilfordTheLegendGravekeeperSAssailantGreatSpiritGreenGadgetGuardianElmaHeroKidHydrogeddonInfernoHammerKingSKnightKycooTheGhostDestroyerLittleWinguardMagicalBlastManjuOfTheTenThousandHandsMobiusTheFrostMonarchMysticalKnightOfJackalNubianGuardOrdealOfATravelerPandemoniumPatrolRoboPoisonDrawFrogRedGadgetSenjuOfTheThousandHandsSonicBirdSpiritCallerSpiritOfThePharaohTADPOLETheKickManVwxyzDragonCatapultCannonWataponWingedSageFalcosYellowGadget_080563CC: @ 0x080563CC
+	@ Aqua Spirit
+	@ Armed Changer
+	@ Aswan Apparition
+	@ Behemoth the King of All Animals
+	@ Berfomet
+	@ Boss Rush
+	@ Brron, Mad King of Dark World
+	@ Butterfly Dagger - Elma
+	@ Card of Safe Return
+	@ Chimera the Flying Mythical Beast
+	@ Chopman the Desperate Outlaw
+	@ D.D. Warrior Lady
+	@ Dark Blade the Dragon Knight
+	@ Des Frog
+	@ Drill Bug
+	@ Elemental Hero Bubbleman
+	@ Exarion Universe
+	@ Freed the Matchless General
+	@ Garuda the Wind Spirit
+	@ Ghost Knight of Jackal
+	@ Gilford the Legend
+	@ Gravekeeper's Assailant
+	@ Great Spirit
+	@ Green Gadget
+	@ Guardian Elma
+	@ Hero Kid
+	@ Hydrogeddon
+	@ Inferno Hammer
+	@ King's Knight
+	@ Kycoo the Ghost Destroyer
+	@ Little-Winguard
+	@ Magical Blast
+	@ Manju of the Ten Thousand Hands
+	@ Mobius the Frost Monarch
+	@ Mystical Knight of Jackal
+	@ Nubian Guard
+	@ Ordeal of a Traveler
+	@ Pandemonium
+	@ Patrol Robo
+	@ Poison Draw Frog
+	@ Red Gadget
+	@ Senju of the Thousand Hands
+	@ Sonic Bird
+	@ Spirit Caller
+	@ Spirit of the Pharaoh
+	@ T.A.D.P.O.L.E.
+	@ The Kick Man
+	@ VWXYZ-Dragon Catapult Cannon
+	@ Watapon
+	@ Winged Sage Falcos
+	@ Yellow Gadget
+	thumb_func_start gCardEffectGraveyardSpecialSummon_080563CC
+gCardEffectGraveyardSpecialSummon_080563CC: @ 0x080563CC
 	push {r4, r5, r6, lr}
 	sub sp, #0x100
 	adds r4, r0, #0
@@ -132841,8 +133535,12 @@ _08056522:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectCharmOfShabtiKingOfTheSwampKuribohThunderDragon_0805652C
-gCardEffectCharmOfShabtiKingOfTheSwampKuribohThunderDragon_0805652C: @ 0x0805652C
+	@ Charm of Shabti
+	@ King of the Swamp
+	@ Kuriboh
+	@ Thunder Dragon
+	thumb_func_start gCardEffectDiscardSearch_0805652C
+gCardEffectDiscardSearch_0805652C: @ 0x0805652C
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -132865,8 +133563,9 @@ _08056550:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectCocoonOfEvolution_08056558
-gCardEffectCocoonOfEvolution_08056558: @ 0x08056558
+	@ Cocoon of Evolution
+	thumb_func_start gCardEffectEquip_08056558
+gCardEffectEquip_08056558: @ 0x08056558
 	push {lr}
 	ldr r0, _08056570 @ =gUnk_0201C4E0
 	ldr r1, _08056574 @ =0x00001D68
@@ -132882,8 +133581,9 @@ gCardEffectCocoonOfEvolution_08056558: @ 0x08056558
 _08056570: .4byte gUnk_0201C4E0
 _08056574: .4byte 0x00001D68
 
-	thumb_func_start gCardEffectTheLittleSwordsmanOfAile_08056578
-gCardEffectTheLittleSwordsmanOfAile_08056578: @ 0x08056578
+	@ The Little Swordsman of Aile
+	thumb_func_start gCardEffectBoostATKTribute_08056578
+gCardEffectBoostATKTribute_08056578: @ 0x08056578
 	push {lr}
 	ldrb r2, [r0, #2]
 	lsls r1, r2, #0x1f
@@ -132900,8 +133600,9 @@ gCardEffectTheLittleSwordsmanOfAile_08056578: @ 0x08056578
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectAxeOfDespair_08056598
-gCardEffectAxeOfDespair_08056598: @ 0x08056598
+	@ Axe of Despair
+	thumb_func_start gCardEffectSendToGYBoostATK_08056598
+gCardEffectSendToGYBoostATK_08056598: @ 0x08056598
 	push {r4, lr}
 	adds r2, r0, #0
 	ldr r0, _080565BC @ =gUnk_0201B290
@@ -132913,7 +133614,7 @@ gCardEffectAxeOfDespair_08056598: @ 0x08056598
 	cmp r0, #0xb
 	beq _080565E0
 	adds r0, r2, #0
-	bl gCardEffectAquaSpiritArmedChangerAswanApparitionBehemothTheKingOfAllAnimalsBerfometBossRushBrronMadKingOfDarkWorldButterflyDaggerElmaCardOfSafeReturnChimeraTheFlyingMythicalBeastChopmanTheDesperateOutlawDDWarriorLadyDarkBladeTheDragonKnightDesFrogDrillBugElementalHeroBubblemanExarionUniverseFreedTheMatchlessGeneralGarudaTheWindSpiritGhostKnightOfJackalGilfordTheLegendGravekeeperSAssailantGreatSpiritGreenGadgetGuardianElmaHeroKidHydrogeddonInfernoHammerKingSKnightKycooTheGhostDestroyerLittleWinguardMagicalBlastManjuOfTheTenThousandHandsMobiusTheFrostMonarchMysticalKnightOfJackalNubianGuardOrdealOfATravelerPandemoniumPatrolRoboPoisonDrawFrogRedGadgetSenjuOfTheThousandHandsSonicBirdSpiritCallerSpiritOfThePharaohTADPOLETheKickManVwxyzDragonCatapultCannonWataponWingedSageFalcosYellowGadget_080563CC
+	bl gCardEffectGraveyardSpecialSummon_080563CC
 	cmp r0, #1
 	bne _080565E2
 	movs r0, #0xa
@@ -132943,11 +133644,17 @@ _080565E2:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectAmazonessChainMasterHornOfLightMalevolentNuzzlerPuppetMasterSenriEyeTheinenTheGreatSphinx_080565E8
-gCardEffectAmazonessChainMasterHornOfLightMalevolentNuzzlerPuppetMasterSenriEyeTheinenTheGreatSphinx_080565E8: @ 0x080565E8
+	@ Amazoness Chain Master
+	@ Horn of Light
+	@ Malevolent Nuzzler
+	@ Puppet Master
+	@ Senri Eye
+	@ Theinen the Great Sphinx
+	thumb_func_start gCardEffectDamageGraveyard_080565E8
+gCardEffectDamageGraveyard_080565E8: @ 0x080565E8
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
-	bl gCardEffectAquaSpiritArmedChangerAswanApparitionBehemothTheKingOfAllAnimalsBerfometBossRushBrronMadKingOfDarkWorldButterflyDaggerElmaCardOfSafeReturnChimeraTheFlyingMythicalBeastChopmanTheDesperateOutlawDDWarriorLadyDarkBladeTheDragonKnightDesFrogDrillBugElementalHeroBubblemanExarionUniverseFreedTheMatchlessGeneralGarudaTheWindSpiritGhostKnightOfJackalGilfordTheLegendGravekeeperSAssailantGreatSpiritGreenGadgetGuardianElmaHeroKidHydrogeddonInfernoHammerKingSKnightKycooTheGhostDestroyerLittleWinguardMagicalBlastManjuOfTheTenThousandHandsMobiusTheFrostMonarchMysticalKnightOfJackalNubianGuardOrdealOfATravelerPandemoniumPatrolRoboPoisonDrawFrogRedGadgetSenjuOfTheThousandHandsSonicBirdSpiritCallerSpiritOfThePharaohTADPOLETheKickManVwxyzDragonCatapultCannonWataponWingedSageFalcosYellowGadget_080563CC
+	bl gCardEffectGraveyardSpecialSummon_080563CC
 	adds r6, r0, #0
 	cmp r6, #1
 	bne _0805660A
@@ -132966,8 +133673,11 @@ _0805660A:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectKazejinSangaOfTheThunderSuijin_08056614
-gCardEffectKazejinSangaOfTheThunderSuijin_08056614: @ 0x08056614
+	@ Kazejin
+	@ Sanga of the Thunder
+	@ Suijin
+	thumb_func_start gCardEffectUnknown_08056614
+gCardEffectUnknown_08056614: @ 0x08056614
 	push {lr}
 	sub sp, #4
 	ldrb r1, [r0, #2]
@@ -132987,24 +133697,27 @@ gCardEffectKazejinSangaOfTheThunderSuijin_08056614: @ 0x08056614
 	.align 2, 0
 _08056638: .4byte 0x00001119 @ Sanga of the Thunder
 
-	thumb_func_start gCardEffectBlastJuggler_0805663C
-gCardEffectBlastJuggler_0805663C: @ 0x0805663C
+	@ Blast Juggler
+	thumb_func_start gCardEffectDestroyTribute_0805663C
+gCardEffectDestroyTribute_0805663C: @ 0x0805663C
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
-	bl gCardEffectAquaSpiritArmedChangerAswanApparitionBehemothTheKingOfAllAnimalsBerfometBossRushBrronMadKingOfDarkWorldButterflyDaggerElmaCardOfSafeReturnChimeraTheFlyingMythicalBeastChopmanTheDesperateOutlawDDWarriorLadyDarkBladeTheDragonKnightDesFrogDrillBugElementalHeroBubblemanExarionUniverseFreedTheMatchlessGeneralGarudaTheWindSpiritGhostKnightOfJackalGilfordTheLegendGravekeeperSAssailantGreatSpiritGreenGadgetGuardianElmaHeroKidHydrogeddonInfernoHammerKingSKnightKycooTheGhostDestroyerLittleWinguardMagicalBlastManjuOfTheTenThousandHandsMobiusTheFrostMonarchMysticalKnightOfJackalNubianGuardOrdealOfATravelerPandemoniumPatrolRoboPoisonDrawFrogRedGadgetSenjuOfTheThousandHandsSonicBirdSpiritCallerSpiritOfThePharaohTADPOLETheKickManVwxyzDragonCatapultCannonWataponWingedSageFalcosYellowGadget_080563CC
+	bl gCardEffectGraveyardSpecialSummon_080563CC
 	cmp r0, #1
 	bne _08056652
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectATeamTrapDisposalUnitAncientGearCannonExiledForceGreatDezardKaibamanMaryokutaiPaladinOfWhiteDragonPossessedDarkSoulSkilledDarkMagicianSkilledWhiteMagicianTheAgentOfJudgmentSaturnTheCreatorIncarnateValkyrionTheMagnaWarriorWingedKuribohLv10WingedMinion_08057344
+	bl gCardEffectTributeSpecialSummon_08057344
 _08056652:
 	pop {r4, r5}
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectSpearCretinTheImmortalOfThunder_08056658
-gCardEffectSpearCretinTheImmortalOfThunder_08056658: @ 0x08056658
+	@ Spear Cretin
+	@ The Immortal of Thunder
+	thumb_func_start gCardEffectSendToGYGraveyard_08056658
+gCardEffectSendToGYGraveyard_08056658: @ 0x08056658
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	movs r0, #0x30
@@ -133063,11 +133776,13 @@ _080566C4:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectSinisterSerpentTreebornFrog_080566CC
-gCardEffectSinisterSerpentTreebornFrog_080566CC: @ 0x080566CC
+	@ Sinister Serpent
+	@ Treeborn Frog
+	thumb_func_start gCardEffectGraveyardStandbyPhase_080566CC
+gCardEffectGraveyardStandbyPhase_080566CC: @ 0x080566CC
 	push {r4, r5, lr}
 	adds r4, r0, #0
-	bl gCardEffectAquaSpiritArmedChangerAswanApparitionBehemothTheKingOfAllAnimalsBerfometBossRushBrronMadKingOfDarkWorldButterflyDaggerElmaCardOfSafeReturnChimeraTheFlyingMythicalBeastChopmanTheDesperateOutlawDDWarriorLadyDarkBladeTheDragonKnightDesFrogDrillBugElementalHeroBubblemanExarionUniverseFreedTheMatchlessGeneralGarudaTheWindSpiritGhostKnightOfJackalGilfordTheLegendGravekeeperSAssailantGreatSpiritGreenGadgetGuardianElmaHeroKidHydrogeddonInfernoHammerKingSKnightKycooTheGhostDestroyerLittleWinguardMagicalBlastManjuOfTheTenThousandHandsMobiusTheFrostMonarchMysticalKnightOfJackalNubianGuardOrdealOfATravelerPandemoniumPatrolRoboPoisonDrawFrogRedGadgetSenjuOfTheThousandHandsSonicBirdSpiritCallerSpiritOfThePharaohTADPOLETheKickManVwxyzDragonCatapultCannonWataponWingedSageFalcosYellowGadget_080563CC
+	bl gCardEffectGraveyardSpecialSummon_080563CC
 	adds r5, r0, #0
 	cmp r5, #0
 	bge _080566EA
@@ -133085,8 +133800,9 @@ _080566EA:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectNeedleBall_080566F4
-gCardEffectNeedleBall_080566F4: @ 0x080566F4
+	@ Needle Ball
+	thumb_func_start gCardEffectDamageFlip_080566F4
+gCardEffectDamageFlip_080566F4: @ 0x080566F4
 	push {r4, r5, lr}
 	ldr r1, _08056738 @ =gUnk_0201E2A0
 	ldrb r0, [r0, #2]
@@ -133172,8 +133888,15 @@ _08056798:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectCannonSoldierChthonianPolymerMassDriverMonsterGateShareThePainToonCannonSoldierTributeDoll_080567A0
-gCardEffectCannonSoldierChthonianPolymerMassDriverMonsterGateShareThePainToonCannonSoldierTributeDoll_080567A0: @ 0x080567A0
+	@ Cannon Soldier
+	@ Chthonian Polymer
+	@ Mass Driver
+	@ Monster Gate
+	@ Share the Pain
+	@ Toon Cannon Soldier
+	@ Tribute Doll
+	thumb_func_start gCardEffectTribute_080567A0
+gCardEffectTribute_080567A0: @ 0x080567A0
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
@@ -133187,8 +133910,9 @@ gCardEffectCannonSoldierChthonianPolymerMassDriverMonsterGateShareThePainToonCan
 	.align 2, 0
 _080567B8: .4byte 0x0000FFFF
 
-	thumb_func_start gCardEffectMushroomMan_080567BC
-gCardEffectMushroomMan_080567BC: @ 0x080567BC
+	@ Mushroom Man
+	thumb_func_start gCardEffectUnknown_080567BC
+gCardEffectUnknown_080567BC: @ 0x080567BC
 	push {lr}
 	sub sp, #0x100
 	adds r2, r0, #0
@@ -133280,8 +134004,9 @@ _0805686C:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectInvaderOfTheThrone_08056874
-gCardEffectInvaderOfTheThrone_08056874: @ 0x08056874
+	@ Invader of the Throne
+	thumb_func_start gCardEffectTakeControlFlip_08056874
+gCardEffectTakeControlFlip_08056874: @ 0x08056874
 	push {r4, r5, r6, lr}
 	ldrb r0, [r0, #2]
 	lsls r5, r0, #0x1f
@@ -133329,8 +134054,10 @@ _080568C8:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectMagicalLabyrinthTrialOfThePrincesses_080568D0
-gCardEffectMagicalLabyrinthTrialOfThePrincesses_080568D0: @ 0x080568D0
+	@ Magical Labyrinth
+	@ Trial of the Princesses
+	thumb_func_start gCardEffectSpecialSummonEquip_080568D0
+gCardEffectSpecialSummonEquip_080568D0: @ 0x080568D0
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	ldrb r1, [r6, #2]
@@ -133375,8 +134102,35 @@ gCardEffectMagicalLabyrinthTrialOfThePrincesses_080568D0: @ 0x080568D0
 _08056928: .4byte 0x00000868
 _0805692C: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectAntiAircraftFlowerArcaneArcherOfTheForestAttackReflectorUnitBurstBreathCastleGateCatapultTurtleCheckmateCrushCardDeckDevastationVirusDedicationThroughLightAndDarknessGravekeeperSCannonholderInsectImitationKnightSTitleManThroTroMetamorphosisMultiplicationOfAntsMultiplyNinjitsuArtOfTransformationOrcaMegaFortressOfDarknessRavielLordOfPhantasmsReleaseRestraintSpiritualEarthArtKuroganeSpiritualFireArtKurenaiSpiritualWaterArtAoiSpiritualWindArtMiyabiThrowstoneUnitUltraEvolutionPill_08056930
-gCardEffectAntiAircraftFlowerArcaneArcherOfTheForestAttackReflectorUnitBurstBreathCastleGateCatapultTurtleCheckmateCrushCardDeckDevastationVirusDedicationThroughLightAndDarknessGravekeeperSCannonholderInsectImitationKnightSTitleManThroTroMetamorphosisMultiplicationOfAntsMultiplyNinjitsuArtOfTransformationOrcaMegaFortressOfDarknessRavielLordOfPhantasmsReleaseRestraintSpiritualEarthArtKuroganeSpiritualFireArtKurenaiSpiritualWaterArtAoiSpiritualWindArtMiyabiThrowstoneUnitUltraEvolutionPill_08056930: @ 0x08056930
+	@ Anti-Aircraft Flower
+	@ Arcane Archer of the Forest
+	@ Attack Reflector Unit
+	@ Burst Breath
+	@ Castle Gate
+	@ Catapult Turtle
+	@ Checkmate
+	@ Crush Card
+	@ Deck Devastation Virus
+	@ Dedication through Light and Darkness
+	@ Gravekeeper's Cannonholder
+	@ Insect Imitation
+	@ Knight's Title
+	@ Man-Thro' Tro
+	@ Metamorphosis
+	@ Multiplication of Ants
+	@ Multiply
+	@ Ninjitsu Art of Transformation
+	@ Orca Mega-Fortress of Darkness
+	@ Raviel, Lord of Phantasms
+	@ Release Restraint
+	@ Spiritual Earth Art - Kurogane
+	@ Spiritual Fire Art - Kurenai
+	@ Spiritual Water Art - Aoi
+	@ Spiritual Wind Art - Miyabi
+	@ Throwstone Unit
+	@ Ultra Evolution Pill
+	thumb_func_start gCardEffectTributeSpecialSummon_08056930
+gCardEffectTributeSpecialSummon_08056930: @ 0x08056930
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -133456,7 +134210,7 @@ _080569C0:
 	.align 2, 0
 _080569C4: .4byte 0x000018F6 @ Cyber Dragon
 _080569C8:
-	ldr r4, _080569EC @ =gCardEffectBondingH2oCastleGateCrushCardDeSpellGermWeaponDeckDevastationVirusGaiaSoulTheCombustibleCollectiveSpiritualFireArtKurenaiSpiritualWaterArtAoi_08050EAC
+	ldr r4, _080569EC @ =gCardEffectTributeDestroy_08050EAC
 _080569CA:
 	cmp r2, #0
 	beq _080569F0
@@ -133474,7 +134228,7 @@ _080569CE:
 	bl sub_08093390
 	b _080569FC
 	.align 2, 0
-_080569EC: .4byte gCardEffectBondingH2oCastleGateCrushCardDeSpellGermWeaponDeckDevastationVirusGaiaSoulTheCombustibleCollectiveSpiritualFireArtKurenaiSpiritualWaterArtAoi_08050EAC
+_080569EC: .4byte gCardEffectTributeDestroy_08050EAC
 _080569F0:
 	ldrb r1, [r5, #2]
 	lsls r0, r1, #0x1f
@@ -133665,7 +134419,7 @@ _08056B68:
 	strh r0, [r5, #8]
 	adds r0, r5, #0
 	mov r1, r8
-	bl gCardEffectAbareUshioniAnteatereatingantBESCrystalCoreBarrelDragonBlackLusterSoldierEnvoyOfTheBeginningBlowbackDragonBurningBeastCallOfTheMummyCatnippedKittyChaosSorcererChaosriderGustaphCyberLaserDragonDarkMasterZorcDesDendleDoitsuFreezingBeastFrontlineBaseGatlingDragonGoddessOfWhimHeavyMechSupportPlatformHomunculusTheAlchemicBeingKarateManKingDragunKoitsuLightenTheLoadMetallizingParasiteLunatitePatroidPitchDarkDragonRelinquishedRouletteBarrelSandGamblerTheCreatorThousandEyesRestrictTimeWizardUriaLordOfSearingFlamesVwxyzDragonCatapultCannonWWingCatapultYDragonHeadZMetalTankZombieTiger_080563A4
+	bl gCardEffectDestroySpecialSummon_080563A4
 _08056B7A:
 	adds r0, r7, #0
 	adds r1, r6, #0
@@ -133689,8 +134443,9 @@ _08056B8E:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectJigenBakudan_08056BA0
-gCardEffectJigenBakudan_08056BA0: @ 0x08056BA0
+	@ Jigen Bakudan
+	thumb_func_start gCardEffectDestroyAllDamage_08056BA0
+gCardEffectDestroyAllDamage_08056BA0: @ 0x08056BA0
 	push {lr}
 	adds r1, r0, #0
 	movs r0, #0xfc
@@ -133710,8 +134465,18 @@ _08056BBE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectCardShuffleCorpseOfYataGarasuCyberRaiderDragonSGunfireEnemyControllerFormationUnionJudgementOfPharaohNecklaceOfCommandPoisonOfTheOldManSpellShieldType8_08056BC4
-gCardEffectCardShuffleCorpseOfYataGarasuCyberRaiderDragonSGunfireEnemyControllerFormationUnionJudgementOfPharaohNecklaceOfCommandPoisonOfTheOldManSpellShieldType8_08056BC4: @ 0x08056BC4
+	@ Card Shuffle
+	@ Corpse of Yata-Garasu
+	@ Cyber Raider
+	@ Dragon's Gunfire
+	@ Enemy Controller
+	@ Formation Union
+	@ Judgement of Pharaoh
+	@ Necklace of Command
+	@ Poison of the Old Man
+	@ Spell Shield Type-8
+	thumb_func_start gCardEffectDestroyDamage_08056BC4
+gCardEffectDestroyDamage_08056BC4: @ 0x08056BC4
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -133899,7 +134664,7 @@ _08056D20: .4byte 0x00000117
 _08056D24:
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl gCardEffectBurningBeastDesDendleDoitsuFreezingBeastHeavyMechSupportPlatformKoitsuMetallizingParasiteLunatitePitchDarkDragonWWingCatapultYDragonHeadZMetalTankZombieTiger_0806019C
+	bl gCardEffectSpecialSummonDestroy_0806019C
 	cmp r0, #0
 	beq _08056D32
 	movs r6, #1
@@ -133927,7 +134692,7 @@ _08056D58: .4byte 0x000013F2 @ Mask of Restrict
 _08056D5C:
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl gCardEffectBurningBeastDesDendleDoitsuFreezingBeastHeavyMechSupportPlatformKoitsuMetallizingParasiteLunatitePitchDarkDragonWWingCatapultYDragonHeadZMetalTankZombieTiger_0806019C
+	bl gCardEffectSpecialSummonDestroy_0806019C
 	cmp r0, #0
 	beq _08056D6C
 	movs r0, #1
@@ -134308,10 +135073,10 @@ _08057054: .4byte 0x0000FFFF
 _08057058:
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl gCardEffectAbyssalDesignatorArchfiendSRoarAutonomousActionUnitBatteryChargerBrainControlChaosEmperorDragonEnvoyOfTheEndConfiscationCrushDGandraCyberSteinDarkBalterTheTerribleDarkDealDarkMagicCurtainDelinquentDuoDemiseKingOfArmageddonDiffusionWaveMotionDimensionFusionEnchantingFittingRoomFinalCountdownFulfillmentOfTheContractGaleDograGoblinOutOfTheFryingPanHieroglyphLithographInspectionMagicalScientistMalfunctionMindHaxorzMonsterEyePrematureBurialReFusionRecycleReturnZombieReturnFromTheDifferentDimensionReversalOfGravesRopeOfSpiritRyuSenshiSealOfTheAncientsSevenToolsOfTheBanditSkillDrainSolemnJudgmentSystemDownTheAgentOfCreationVenusToonWorldTriageWeedOut_0805635C
+	bl gCardEffectDamage_0805635C
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl gCardEffectAbareUshioniAnteatereatingantBESCrystalCoreBarrelDragonBlackLusterSoldierEnvoyOfTheBeginningBlowbackDragonBurningBeastCallOfTheMummyCatnippedKittyChaosSorcererChaosriderGustaphCyberLaserDragonDarkMasterZorcDesDendleDoitsuFreezingBeastFrontlineBaseGatlingDragonGoddessOfWhimHeavyMechSupportPlatformHomunculusTheAlchemicBeingKarateManKingDragunKoitsuLightenTheLoadMetallizingParasiteLunatitePatroidPitchDarkDragonRelinquishedRouletteBarrelSandGamblerTheCreatorThousandEyesRestrictTimeWizardUriaLordOfSearingFlamesVwxyzDragonCatapultCannonWWingCatapultYDragonHeadZMetalTankZombieTiger_080563A4
+	bl gCardEffectDestroySpecialSummon_080563A4
 	b _08057124
 _0805706A:
 	ldrh r1, [r5, #0xc]
@@ -134319,7 +135084,7 @@ _0805706A:
 	bne _08057078
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl gCardEffectAbareUshioniAnteatereatingantBESCrystalCoreBarrelDragonBlackLusterSoldierEnvoyOfTheBeginningBlowbackDragonBurningBeastCallOfTheMummyCatnippedKittyChaosSorcererChaosriderGustaphCyberLaserDragonDarkMasterZorcDesDendleDoitsuFreezingBeastFrontlineBaseGatlingDragonGoddessOfWhimHeavyMechSupportPlatformHomunculusTheAlchemicBeingKarateManKingDragunKoitsuLightenTheLoadMetallizingParasiteLunatitePatroidPitchDarkDragonRelinquishedRouletteBarrelSandGamblerTheCreatorThousandEyesRestrictTimeWizardUriaLordOfSearingFlamesVwxyzDragonCatapultCannonWWingCatapultYDragonHeadZMetalTankZombieTiger_080563A4
+	bl gCardEffectDestroySpecialSummon_080563A4
 _08057078:
 	ldrh r2, [r5, #0xc]
 	cmp r2, #2
@@ -134369,7 +135134,7 @@ _080570D4:
 	bne _080570E2
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl gCardEffectAbareUshioniAnteatereatingantBESCrystalCoreBarrelDragonBlackLusterSoldierEnvoyOfTheBeginningBlowbackDragonBurningBeastCallOfTheMummyCatnippedKittyChaosSorcererChaosriderGustaphCyberLaserDragonDarkMasterZorcDesDendleDoitsuFreezingBeastFrontlineBaseGatlingDragonGoddessOfWhimHeavyMechSupportPlatformHomunculusTheAlchemicBeingKarateManKingDragunKoitsuLightenTheLoadMetallizingParasiteLunatitePatroidPitchDarkDragonRelinquishedRouletteBarrelSandGamblerTheCreatorThousandEyesRestrictTimeWizardUriaLordOfSearingFlamesVwxyzDragonCatapultCannonWWingCatapultYDragonHeadZMetalTankZombieTiger_080563A4
+	bl gCardEffectDestroySpecialSummon_080563A4
 _080570E2:
 	ldrh r0, [r5, #0xc]
 	cmp r0, #2
@@ -134402,7 +135167,7 @@ _08057104:
 _0805711C:
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl gCardEffectAbyssalDesignatorArchfiendSRoarAutonomousActionUnitBatteryChargerBrainControlChaosEmperorDragonEnvoyOfTheEndConfiscationCrushDGandraCyberSteinDarkBalterTheTerribleDarkDealDarkMagicCurtainDelinquentDuoDemiseKingOfArmageddonDiffusionWaveMotionDimensionFusionEnchantingFittingRoomFinalCountdownFulfillmentOfTheContractGaleDograGoblinOutOfTheFryingPanHieroglyphLithographInspectionMagicalScientistMalfunctionMindHaxorzMonsterEyePrematureBurialReFusionRecycleReturnZombieReturnFromTheDifferentDimensionReversalOfGravesRopeOfSpiritRyuSenshiSealOfTheAncientsSevenToolsOfTheBanditSkillDrainSolemnJudgmentSystemDownTheAgentOfCreationVenusToonWorldTriageWeedOut_0805635C
+	bl gCardEffectDamage_0805635C
 _08057124:
 	movs r0, #1
 	b _0805712A
@@ -134417,8 +135182,9 @@ _0805712A:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectParasiteParacide_08057138
-gCardEffectParasiteParacide_08057138: @ 0x08057138
+	@ Parasite Paracide
+	thumb_func_start gCardEffectSpecialSummonDamage_08057138
+gCardEffectSpecialSummonDamage_08057138: @ 0x08057138
 	push {lr}
 	adds r1, r0, #0
 	ldrb r2, [r1, #2]
@@ -134436,8 +135202,10 @@ gCardEffectParasiteParacide_08057138: @ 0x08057138
 	.align 2, 0
 _08057158: .4byte 0x000012A1 @ Parasite Paracide
 
-	thumb_func_start gCardEffectTheDragonSBeadUltimateOffering_0805715C
-gCardEffectTheDragonSBeadUltimateOffering_0805715C: @ 0x0805715C
+	@ The Dragon's Bead
+	@ Ultimate Offering
+	thumb_func_start gCardEffectNegateDiscard_0805715C
+gCardEffectNegateDiscard_0805715C: @ 0x0805715C
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	adds r2, r1, #0
@@ -134557,17 +135325,17 @@ _08057244: .4byte 0x00001624 @ Pitch-Black Power Stone
 _08057248:
 	adds r0, r4, #0
 	adds r1, r2, #0
-	bl gCardEffectAbyssalDesignatorArchfiendSRoarAutonomousActionUnitBatteryChargerBrainControlChaosEmperorDragonEnvoyOfTheEndConfiscationCrushDGandraCyberSteinDarkBalterTheTerribleDarkDealDarkMagicCurtainDelinquentDuoDemiseKingOfArmageddonDiffusionWaveMotionDimensionFusionEnchantingFittingRoomFinalCountdownFulfillmentOfTheContractGaleDograGoblinOutOfTheFryingPanHieroglyphLithographInspectionMagicalScientistMalfunctionMindHaxorzMonsterEyePrematureBurialReFusionRecycleReturnZombieReturnFromTheDifferentDimensionReversalOfGravesRopeOfSpiritRyuSenshiSealOfTheAncientsSevenToolsOfTheBanditSkillDrainSolemnJudgmentSystemDownTheAgentOfCreationVenusToonWorldTriageWeedOut_0805635C
+	bl gCardEffectDamage_0805635C
 	b _08057268
 _08057252:
 	adds r0, r4, #0
 	adds r1, r2, #0
-	bl gCardEffectAFeatherOfThePhoenixAncientGearDrillBackToSquareOneCostDownCurseOfAgingCyberneticMagicianDamageCondenserDarkCoreDarkPaladinDarknessApproachesDivineWrathExcavationOfMageStonesFinalDestinyForcedCeasefireHallowedLifeBarrierJudgmentOfAnubisKarmaCutLightningVortexMagicJammerMaliceDispersionMonsterReincarnationNonAggressionAreaPhoenixWingWindBlastRaigekiBreakRisingEnergySpecialHurricaneSpellPurificationSpellVanishingTribeInfectingVirusTributeToTheDoomedVwTigerCatapultXyDragonCannonXyzDragonCannonXzTankCannonYzTankDragon_08056380
+	bl gCardEffectDiscard_08056380
 	b _08057268
 _0805725C:
 	adds r0, r4, #0
 	adds r1, r2, #0
-	bl gCardEffectAbareUshioniAnteatereatingantBESCrystalCoreBarrelDragonBlackLusterSoldierEnvoyOfTheBeginningBlowbackDragonBurningBeastCallOfTheMummyCatnippedKittyChaosSorcererChaosriderGustaphCyberLaserDragonDarkMasterZorcDesDendleDoitsuFreezingBeastFrontlineBaseGatlingDragonGoddessOfWhimHeavyMechSupportPlatformHomunculusTheAlchemicBeingKarateManKingDragunKoitsuLightenTheLoadMetallizingParasiteLunatitePatroidPitchDarkDragonRelinquishedRouletteBarrelSandGamblerTheCreatorThousandEyesRestrictTimeWizardUriaLordOfSearingFlamesVwxyzDragonCatapultCannonWWingCatapultYDragonHeadZMetalTankZombieTiger_080563A4
+	bl gCardEffectDestroySpecialSummon_080563A4
 	b _08057268
 _08057266:
 	movs r0, #1
@@ -134577,8 +135345,9 @@ _08057268:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectHornOfHeaven_08057270
-gCardEffectHornOfHeaven_08057270: @ 0x08057270
+	@ Horn of Heaven
+	thumb_func_start gCardEffectSpecialSummonNegate_08057270
+gCardEffectSpecialSummonNegate_08057270: @ 0x08057270
 	push {lr}
 	ldrb r1, [r0, #2]
 	lsls r2, r1, #0x1f
@@ -134597,17 +135366,34 @@ gCardEffectHornOfHeaven_08057270: @ 0x08057270
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectApprenticeMagicianBirdfaceBubonicVerminFlyingKamakiriGiantRatGokiponHowlingInsectHyenaMaskedDragonMokeyMokeyKingMotherGrizzlyMysticTomatoPyramidTurtleShiningAngelUfoTurtleUforoidWarriorLadyOfTheWasteland_08057294
-gCardEffectApprenticeMagicianBirdfaceBubonicVerminFlyingKamakiriGiantRatGokiponHowlingInsectHyenaMaskedDragonMokeyMokeyKingMotherGrizzlyMysticTomatoPyramidTurtleShiningAngelUfoTurtleUforoidWarriorLadyOfTheWasteland_08057294: @ 0x08057294
+	@ Apprentice Magician
+	@ Birdface
+	@ Bubonic Vermin
+	@ Flying Kamakiri
+	@ Giant Rat
+	@ Gokipon
+	@ Howling Insect
+	@ Hyena
+	@ Masked Dragon
+	@ Mokey Mokey King
+	@ Mother Grizzly
+	@ Mystic Tomato
+	@ Pyramid Turtle
+	@ Shining Angel
+	@ UFO Turtle
+	@ UFOroid
+	@ Warrior Lady of the Wasteland
+	thumb_func_start gCardEffectSpecialSummonGraveyard_08057294
+gCardEffectSpecialSummonGraveyard_08057294: @ 0x08057294
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	cmp r0, #0
 	beq _080572AC
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectAquaSpiritArmedChangerAswanApparitionBehemothTheKingOfAllAnimalsBerfometBossRushBrronMadKingOfDarkWorldButterflyDaggerElmaCardOfSafeReturnChimeraTheFlyingMythicalBeastChopmanTheDesperateOutlawDDWarriorLadyDarkBladeTheDragonKnightDesFrogDrillBugElementalHeroBubblemanExarionUniverseFreedTheMatchlessGeneralGarudaTheWindSpiritGhostKnightOfJackalGilfordTheLegendGravekeeperSAssailantGreatSpiritGreenGadgetGuardianElmaHeroKidHydrogeddonInfernoHammerKingSKnightKycooTheGhostDestroyerLittleWinguardMagicalBlastManjuOfTheTenThousandHandsMobiusTheFrostMonarchMysticalKnightOfJackalNubianGuardOrdealOfATravelerPandemoniumPatrolRoboPoisonDrawFrogRedGadgetSenjuOfTheThousandHandsSonicBirdSpiritCallerSpiritOfThePharaohTADPOLETheKickManVwxyzDragonCatapultCannonWataponWingedSageFalcosYellowGadget_080563CC
+	bl gCardEffectGraveyardSpecialSummon_080563CC
 	b _080572B0
 _080572AC:
 	movs r0, #1
@@ -134618,8 +135404,9 @@ _080572B0:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectTheWingedDragonOfRa_080572B8
-gCardEffectTheWingedDragonOfRa_080572B8: @ 0x080572B8
+	@ The Winged Dragon of Ra
+	thumb_func_start gCardEffectSpecialSummonNegate_080572B8
+gCardEffectSpecialSummonNegate_080572B8: @ 0x080572B8
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
@@ -134648,7 +135435,7 @@ _080572F0: .4byte 0x00000107
 _080572F4:
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl gCardEffectCliffTheTrapRemoverDarkScorpionChickTheYellowDarkScorpionGorgTheStrongDarkScorpionMeanaeTheThornDonZaloog_08057FF4
+	bl gCardEffectDamageGraveyard_08057FF4
 	adds r6, r0, #0
 	cmp r6, #1
 	bne _08057334
@@ -134686,8 +135473,23 @@ _08057336:
 _0805733C: .4byte gUnk_0201C4E0
 _08057340: .4byte 0x00000868
 
-	thumb_func_start gCardEffectATeamTrapDisposalUnitAncientGearCannonExiledForceGreatDezardKaibamanMaryokutaiPaladinOfWhiteDragonPossessedDarkSoulSkilledDarkMagicianSkilledWhiteMagicianTheAgentOfJudgmentSaturnTheCreatorIncarnateValkyrionTheMagnaWarriorWingedKuribohLv10WingedMinion_08057344
-gCardEffectATeamTrapDisposalUnitAncientGearCannonExiledForceGreatDezardKaibamanMaryokutaiPaladinOfWhiteDragonPossessedDarkSoulSkilledDarkMagicianSkilledWhiteMagicianTheAgentOfJudgmentSaturnTheCreatorIncarnateValkyrionTheMagnaWarriorWingedKuribohLv10WingedMinion_08057344: @ 0x08057344
+	@ A-Team: Trap Disposal Unit
+	@ Ancient Gear Cannon
+	@ Exiled Force
+	@ Great Dezard
+	@ Kaibaman
+	@ Maryokutai
+	@ Paladin of White Dragon
+	@ Possessed Dark Soul
+	@ Skilled Dark Magician
+	@ Skilled White Magician
+	@ The Agent of Judgment - Saturn
+	@ The Creator Incarnate
+	@ Valkyrion the Magna Warrior
+	@ Winged Kuriboh LV10
+	@ Winged Minion
+	thumb_func_start gCardEffectTributeSpecialSummon_08057344
+gCardEffectTributeSpecialSummon_08057344: @ 0x08057344
 	push {lr}
 	ldrb r1, [r0, #2]
 	lsls r0, r1, #0x1f
@@ -134700,8 +135502,9 @@ gCardEffectATeamTrapDisposalUnitAncientGearCannonExiledForceGreatDezardKaibamanM
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectInjectionFairyLily_0805735C
-gCardEffectInjectionFairyLily_0805735C: @ 0x0805735C
+	@ Injection Fairy Lily
+	thumb_func_start gCardEffectBoostATKDamage_0805735C
+gCardEffectBoostATKDamage_0805735C: @ 0x0805735C
 	push {r4, r5, lr}
 	sub sp, #4
 	adds r4, r0, #0
@@ -134718,15 +135521,23 @@ gCardEffectInjectionFairyLily_0805735C: @ 0x0805735C
 	bl sub_08043054
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectAbyssalDesignatorArchfiendSRoarAutonomousActionUnitBatteryChargerBrainControlChaosEmperorDragonEnvoyOfTheEndConfiscationCrushDGandraCyberSteinDarkBalterTheTerribleDarkDealDarkMagicCurtainDelinquentDuoDemiseKingOfArmageddonDiffusionWaveMotionDimensionFusionEnchantingFittingRoomFinalCountdownFulfillmentOfTheContractGaleDograGoblinOutOfTheFryingPanHieroglyphLithographInspectionMagicalScientistMalfunctionMindHaxorzMonsterEyePrematureBurialReFusionRecycleReturnZombieReturnFromTheDifferentDimensionReversalOfGravesRopeOfSpiritRyuSenshiSealOfTheAncientsSevenToolsOfTheBanditSkillDrainSolemnJudgmentSystemDownTheAgentOfCreationVenusToonWorldTriageWeedOut_0805635C
+	bl gCardEffectDamage_0805635C
 	add sp, #4
 	pop {r4, r5}
 	pop {r1}
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectAltarForTributeElementalHeroTempestGiftOfTheMartyrGuardianCealLevelUpTrickySMagic4UltimateBaseballKidWoodlandSprite_0805738C
-gCardEffectAltarForTributeElementalHeroTempestGiftOfTheMartyrGuardianCealLevelUpTrickySMagic4UltimateBaseballKidWoodlandSprite_0805738C: @ 0x0805738C
+	@ Altar for Tribute
+	@ Elemental Hero Tempest
+	@ Gift of the Martyr
+	@ Guardian Ceal
+	@ Level Up!
+	@ Tricky's Magic 4
+	@ Ultimate Baseball Kid
+	@ Woodland Sprite
+	thumb_func_start gCardEffectSendToGYGraveyard_0805738C
+gCardEffectSendToGYGraveyard_0805738C: @ 0x0805738C
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	ldr r0, _080573A4 @ =gUnk_0201B290
@@ -134807,8 +135618,10 @@ _08057428:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectCurseOfVampireRevivalJam_08057430
-gCardEffectCurseOfVampireRevivalJam_08057430: @ 0x08057430
+	@ Curse of Vampire
+	@ Revival Jam
+	thumb_func_start gCardEffectSpecialSummonSendToGY_08057430
+gCardEffectSpecialSummonSendToGY_08057430: @ 0x08057430
 	push {lr}
 	adds r2, r0, #0
 	adds r3, r1, #0
@@ -134825,14 +135638,15 @@ gCardEffectCurseOfVampireRevivalJam_08057430: @ 0x08057430
 _0805744A:
 	adds r0, r2, #0
 	adds r1, r3, #0
-	bl gCardEffectAmazonessChainMasterHornOfLightMalevolentNuzzlerPuppetMasterSenriEyeTheinenTheGreatSphinx_080565E8
+	bl gCardEffectDamageGraveyard_080565E8
 _08057452:
 	pop {r1}
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectReturnOfTheDoomed_08057458
-gCardEffectReturnOfTheDoomed_08057458: @ 0x08057458
+	@ Return of the Doomed
+	thumb_func_start gCardEffectDiscardReturnToHand_08057458
+gCardEffectDiscardReturnToHand_08057458: @ 0x08057458
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
@@ -134845,8 +135659,9 @@ gCardEffectReturnOfTheDoomed_08057458: @ 0x08057458
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectTypeZeroMagicCrusher_08057470
-gCardEffectTypeZeroMagicCrusher_08057470: @ 0x08057470
+	@ Type Zero Magic Crusher
+	thumb_func_start gCardEffectDiscardDamage_08057470
+gCardEffectDiscardDamage_08057470: @ 0x08057470
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldr r0, _08057488 @ =gUnk_0201B290
@@ -134879,7 +135694,7 @@ _08057490:
 _080574A8: .4byte gUnk_0201C4E0
 _080574AC:
 	adds r0, r4, #0
-	bl gCardEffectTypeZeroMagicCrusher_0805EBC4
+	bl gCardEffectDiscardDamage_0805EBC4
 	cmp r0, #2
 	bne _080574E6
 	ldr r0, _080574D4 @ =gUnk_0201E2A0
@@ -134950,8 +135765,12 @@ _0805752E:
 	.align 2, 0
 _08057534: .4byte gUnk_0201C4E0
 
-	thumb_func_start gCardEffectCrimsonSentryFairyGuardianLadyPantherTheForgivingMaiden_08057538
-gCardEffectCrimsonSentryFairyGuardianLadyPantherTheForgivingMaiden_08057538: @ 0x08057538
+	@ Crimson Sentry
+	@ Fairy Guardian
+	@ Lady Panther
+	@ The Forgiving Maiden
+	thumb_func_start gCardEffectTributeDestroy_08057538
+gCardEffectTributeDestroy_08057538: @ 0x08057538
 	push {lr}
 	adds r1, r0, #0
 	movs r0, #0x30
@@ -134979,8 +135798,11 @@ _08057566:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectAmazonArcherHystericFairyObeliskTheTormentor_0805756C
-gCardEffectAmazonArcherHystericFairyObeliskTheTormentor_0805756C: @ 0x0805756C
+	@ Amazon Archer
+	@ Hysteric Fairy
+	@ Obelisk the Tormentor
+	thumb_func_start gCardEffectTribute_0805756C
+gCardEffectTribute_0805756C: @ 0x0805756C
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
@@ -134994,8 +135816,9 @@ gCardEffectAmazonArcherHystericFairyObeliskTheTormentor_0805756C: @ 0x0805756C
 	.align 2, 0
 _08057584: .4byte 0x0000FFFF
 
-	thumb_func_start gCardEffectLadyAssailantOfFlames_08057588
-gCardEffectLadyAssailantOfFlames_08057588: @ 0x08057588
+	@ Lady Assailant of Flames
+	thumb_func_start gCardEffectBanishDamage_08057588
+gCardEffectBanishDamage_08057588: @ 0x08057588
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
@@ -135006,8 +135829,9 @@ gCardEffectLadyAssailantOfFlames_08057588: @ 0x08057588
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectFireSorcerer_0805759C
-gCardEffectFireSorcerer_0805759C: @ 0x0805759C
+	@ Fire Sorcerer
+	thumb_func_start gCardEffectBanishDamage_0805759C
+gCardEffectBanishDamage_0805759C: @ 0x0805759C
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
@@ -135018,8 +135842,9 @@ gCardEffectFireSorcerer_0805759C: @ 0x0805759C
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectCathedralOfNobles_080575B0
-gCardEffectCathedralOfNobles_080575B0: @ 0x080575B0
+	@ Cathedral of Nobles
+	thumb_func_start gCardEffectSearchSpecialSummon_080575B0
+gCardEffectSearchSpecialSummon_080575B0: @ 0x080575B0
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	ldr r0, _080575CC @ =gUnk_0201B290
@@ -135106,8 +135931,9 @@ _08057652:
 _08057658: .4byte gUnk_0201C4E0
 _0805765C: .4byte 0x00001D68
 
-	thumb_func_start gCardEffectJowgenTheSpiritualist_08057660
-gCardEffectJowgenTheSpiritualist_08057660: @ 0x08057660
+	@ Jowgen the Spiritualist
+	thumb_func_start gCardEffectSpecialSummonDiscard_08057660
+gCardEffectSpecialSummonDiscard_08057660: @ 0x08057660
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
@@ -135151,8 +135977,9 @@ _080576AC:
 _080576AE:
 	bx lr
 
-	thumb_func_start gCardEffectBazooTheSoulEater_080576B0
-gCardEffectBazooTheSoulEater_080576B0: @ 0x080576B0
+	@ Bazoo the Soul-Eater
+	thumb_func_start gCardEffectBanishBoostATK_080576B0
+gCardEffectBanishBoostATK_080576B0: @ 0x080576B0
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -135172,7 +135999,7 @@ gCardEffectBazooTheSoulEater_080576B0: @ 0x080576B0
 	bne _08057710
 	adds r0, r6, #0
 	adds r1, r5, #0
-	bl gCardEffectAbareUshioniAnteatereatingantBESCrystalCoreBarrelDragonBlackLusterSoldierEnvoyOfTheBeginningBlowbackDragonBurningBeastCallOfTheMummyCatnippedKittyChaosSorcererChaosriderGustaphCyberLaserDragonDarkMasterZorcDesDendleDoitsuFreezingBeastFrontlineBaseGatlingDragonGoddessOfWhimHeavyMechSupportPlatformHomunculusTheAlchemicBeingKarateManKingDragunKoitsuLightenTheLoadMetallizingParasiteLunatitePatroidPitchDarkDragonRelinquishedRouletteBarrelSandGamblerTheCreatorThousandEyesRestrictTimeWizardUriaLordOfSearingFlamesVwxyzDragonCatapultCannonWWingCatapultYDragonHeadZMetalTankZombieTiger_080563A4
+	bl gCardEffectDestroySpecialSummon_080563A4
 	strh r4, [r6, #8]
 	ldrb r3, [r6, #2]
 	lsls r0, r3, #0x1f
@@ -135377,8 +136204,9 @@ _0805786E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectSkullLair_08057874
-gCardEffectSkullLair_08057874: @ 0x08057874
+	@ Skull Lair
+	thumb_func_start gCardEffectBanishDestroy_08057874
+gCardEffectBanishDestroy_08057874: @ 0x08057874
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -135432,7 +136260,7 @@ _080578BC:
 _080578D4: .4byte gUnk_0201C4E0
 _080578D8:
 	adds r0, r6, #0
-	bl gCardEffectSkullLair_0805F0D8
+	bl gCardEffectBanishDestroy_0805F0D8
 	cmp r0, #2
 	bne _08057916
 	ldr r1, _08057904 @ =gUnk_0201E2A0
@@ -135860,8 +136688,9 @@ _08057C16:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectRopeOfLife_08057C28
-gCardEffectRopeOfLife_08057C28: @ 0x08057C28
+	@ Rope of Life
+	thumb_func_start gCardEffectSpecialSummonDiscard_08057C28
+gCardEffectSpecialSummonDiscard_08057C28: @ 0x08057C28
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	ldr r0, _08057C44 @ =gUnk_0201B290
@@ -135964,10 +136793,13 @@ _08057CEE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectAgidoDarkFlareKnightTroopDragon_08057CF4
-gCardEffectAgidoDarkFlareKnightTroopDragon_08057CF4: @ 0x08057CF4
+	@ Agido
+	@ Dark Flare Knight
+	@ Troop Dragon
+	thumb_func_start gCardEffectSpecialSummonSendToGY_08057CF4
+gCardEffectSpecialSummonSendToGY_08057CF4: @ 0x08057CF4
 	push {lr}
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	cmp r0, #0
 	beq _08057D02
 	movs r0, #1
@@ -135980,8 +136812,9 @@ _08057D06:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectEmergencyProvisions_08057D0C
-gCardEffectEmergencyProvisions_08057D0C: @ 0x08057D0C
+	@ Emergency Provisions
+	thumb_func_start gCardEffectSendToGYGainLP_08057D0C
+gCardEffectSendToGYGainLP_08057D0C: @ 0x08057D0C
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -136167,8 +137000,9 @@ _08057EA2:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectSpellReproduction_08057EA8
-gCardEffectSpellReproduction_08057EA8: @ 0x08057EA8
+	@ Spell Reproduction
+	thumb_func_start gCardEffectSearchSendToGY_08057EA8
+gCardEffectSearchSendToGY_08057EA8: @ 0x08057EA8
 	push {r4, lr}
 	adds r4, r0, #0
 	bl sub_08055E60
@@ -136187,8 +137021,9 @@ _08057EC4:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDeSpellGermWeapon_08057ECC
-gCardEffectDeSpellGermWeapon_08057ECC: @ 0x08057ECC
+	@ De-Spell Germ Weapon
+	thumb_func_start gCardEffectSendToGYGraveyard_08057ECC
+gCardEffectSendToGYGraveyard_08057ECC: @ 0x08057ECC
 	push {r4, r5, r6, r7, lr}
 	sub sp, #4
 	adds r5, r0, #0
@@ -136293,8 +137128,9 @@ _08057F90:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectOtohime_08057F98
-gCardEffectOtohime_08057F98: @ 0x08057F98
+	@ Otohime
+	thumb_func_start gCardEffectSpecialSummonReturnToHand_08057F98
+gCardEffectSpecialSummonReturnToHand_08057F98: @ 0x08057F98
 	push {lr}
 	adds r2, r0, #0
 	adds r3, r1, #0
@@ -136318,13 +137154,30 @@ _08057FBC: .4byte 0x00001503 @ Otohime
 _08057FC0:
 	adds r0, r2, #0
 	adds r1, r3, #0
-	bl gCardEffectAquaSpiritArmedChangerAswanApparitionBehemothTheKingOfAllAnimalsBerfometBossRushBrronMadKingOfDarkWorldButterflyDaggerElmaCardOfSafeReturnChimeraTheFlyingMythicalBeastChopmanTheDesperateOutlawDDWarriorLadyDarkBladeTheDragonKnightDesFrogDrillBugElementalHeroBubblemanExarionUniverseFreedTheMatchlessGeneralGarudaTheWindSpiritGhostKnightOfJackalGilfordTheLegendGravekeeperSAssailantGreatSpiritGreenGadgetGuardianElmaHeroKidHydrogeddonInfernoHammerKingSKnightKycooTheGhostDestroyerLittleWinguardMagicalBlastManjuOfTheTenThousandHandsMobiusTheFrostMonarchMysticalKnightOfJackalNubianGuardOrdealOfATravelerPandemoniumPatrolRoboPoisonDrawFrogRedGadgetSenjuOfTheThousandHandsSonicBirdSpiritCallerSpiritOfThePharaohTADPOLETheKickManVwxyzDragonCatapultCannonWataponWingedSageFalcosYellowGadget_080563CC
+	bl gCardEffectGraveyardSpecialSummon_080563CC
 _08057FC8:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffect8ClawsScorpionCobramanSakuzyDesLacoodaFushiohRichieGiantAxeMummyGolemSentryGreatSpiritGuardianSphinxGuardianStatueMedusaWormMidShieldGardnaMoaiInterceptorCannonsRoyalKeeperStealthBirdSwarmOfLocustsSwarmOfScarabsWanderingMummy_08057FCC
-gCardEffect8ClawsScorpionCobramanSakuzyDesLacoodaFushiohRichieGiantAxeMummyGolemSentryGreatSpiritGuardianSphinxGuardianStatueMedusaWormMidShieldGardnaMoaiInterceptorCannonsRoyalKeeperStealthBirdSwarmOfLocustsSwarmOfScarabsWanderingMummy_08057FCC: @ 0x08057FCC
+	@ 8-Claws Scorpion
+	@ Cobraman Sakuzy
+	@ Des Lacooda
+	@ Fushioh Richie
+	@ Giant Axe Mummy
+	@ Golem Sentry
+	@ Great Spirit
+	@ Guardian Sphinx
+	@ Guardian Statue
+	@ Medusa Worm
+	@ Mid Shield Gardna
+	@ Moai Interceptor Cannons
+	@ Royal Keeper
+	@ Stealth Bird
+	@ Swarm of Locusts
+	@ Swarm of Scarabs
+	@ Wandering Mummy
+	thumb_func_start gCardEffectChangePosition_08057FCC
+gCardEffectChangePosition_08057FCC: @ 0x08057FCC
 	push {lr}
 	sub sp, #4
 	ldrb r1, [r0, #2]
@@ -136344,8 +137197,13 @@ gCardEffect8ClawsScorpionCobramanSakuzyDesLacoodaFushiohRichieGiantAxeMummyGolem
 	.align 2, 0
 _08057FF0: .4byte 0x0000152A @ Swarm of Scarabs
 
-	thumb_func_start gCardEffectCliffTheTrapRemoverDarkScorpionChickTheYellowDarkScorpionGorgTheStrongDarkScorpionMeanaeTheThornDonZaloog_08057FF4
-gCardEffectCliffTheTrapRemoverDarkScorpionChickTheYellowDarkScorpionGorgTheStrongDarkScorpionMeanaeTheThornDonZaloog_08057FF4: @ 0x08057FF4
+	@ Cliff the Trap Remover
+	@ Dark Scorpion - Chick the Yellow
+	@ Dark Scorpion - Gorg the Strong
+	@ Dark Scorpion - Meanae the Thorn
+	@ Don Zaloog
+	thumb_func_start gCardEffectDamageGraveyard_08057FF4
+gCardEffectDamageGraveyard_08057FF4: @ 0x08057FF4
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -136838,8 +137696,9 @@ _080583AE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectCardOfSanctity_080583BC
-gCardEffectCardOfSanctity_080583BC: @ 0x080583BC
+	@ Card of Sanctity
+	thumb_func_start gCardEffectDrawBanish_080583BC
+gCardEffectDrawBanish_080583BC: @ 0x080583BC
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldr r0, _080583D4 @ =gUnk_0201B290
@@ -136909,10 +137768,11 @@ _0805843E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectLordPoison_08058444
-gCardEffectLordPoison_08058444: @ 0x08058444
+	@ Lord Poison
+	thumb_func_start gCardEffectSpecialSummonSendToGY_08058444
+gCardEffectSpecialSummonSendToGY_08058444: @ 0x08058444
 	push {lr}
-	bl gCardEffectArchfiendSRoarAutonomousActionUnitBatteryChargerCallOfTheHauntedCentrifugalFieldChimeraTheFlyingMythicalBeastCyberSteinFulfillmentOfTheContractFushiohRichieMagicalScientistPrematureBurialReFusionReturnFromTheDifferentDimensionRiteOfSpiritSilentFiendSoulResurrectionSpiritCallerSpiritOfThePharaohSymbolOfHeritage_0805C248
+	bl gCardEffectSpecialSummonGraveyard_0805C248
 	cmp r0, #0
 	beq _08058452
 	movs r0, #1
@@ -136925,8 +137785,10 @@ _08058456:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectDDScoutPlaneHelpoemer_0805845C
-gCardEffectDDScoutPlaneHelpoemer_0805845C: @ 0x0805845C
+	@ D. D. Scout Plane
+	@ Helpoemer
+	thumb_func_start gCardEffectSpecialSummonBanish_0805845C
+gCardEffectSpecialSummonBanish_0805845C: @ 0x0805845C
 	push {lr}
 	ldrb r1, [r0, #2]
 	lsls r2, r1, #0x1f
@@ -136943,8 +137805,9 @@ gCardEffectDDScoutPlaneHelpoemer_0805845C: @ 0x0805845C
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectDarkRoomOfNightmare_0805847C
-gCardEffectDarkRoomOfNightmare_0805847C: @ 0x0805847C
+	@ Dark Room of Nightmare
+	thumb_func_start gCardEffectDamage_0805847C
+gCardEffectDamage_0805847C: @ 0x0805847C
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -136982,8 +137845,9 @@ gCardEffectDarkRoomOfNightmare_0805847C: @ 0x0805847C
 _080584C4: .4byte 0x00000868
 _080584C8: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectReversalQuiz_080584CC
-gCardEffectReversalQuiz_080584CC: @ 0x080584CC
+	@ Reversal Quiz
+	thumb_func_start gCardEffectSendToGYGraveyard_080584CC
+gCardEffectSendToGYGraveyard_080584CC: @ 0x080584CC
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldr r0, _080584E4 @ =gUnk_0201B290
@@ -137052,8 +137916,9 @@ _0805854A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDecayedCommander_08058550
-gCardEffectDecayedCommander_08058550: @ 0x08058550
+	@ Decayed Commander
+	thumb_func_start gCardEffectSpecialSummonDiscard_08058550
+gCardEffectSpecialSummonDiscard_08058550: @ 0x08058550
 	push {lr}
 	adds r2, r0, #0
 	adds r3, r1, #0
@@ -137067,7 +137932,7 @@ gCardEffectDecayedCommander_08058550: @ 0x08058550
 	beq _08058570
 	adds r0, r2, #0
 	adds r1, r3, #0
-	bl gCardEffectDonTurtleMaraudingCaptainPinchHopperTheThingInTheCraterTwoManCellBattleVampireOrchis_08059448
+	bl gCardEffectSpecialSummon_08059448
 	b _08058572
 _08058570:
 	movs r0, #1
@@ -137076,8 +137941,11 @@ _08058572:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectKiryuProtectiveSoulAilinSecondGoblin_08058578
-gCardEffectKiryuProtectiveSoulAilinSecondGoblin_08058578: @ 0x08058578
+	@ Kiryu
+	@ Protective Soul Ailin
+	@ Second Goblin
+	thumb_func_start gCardEffectSpecialSummonDestroy_08058578
+gCardEffectSpecialSummonDestroy_08058578: @ 0x08058578
 	push {lr}
 	adds r2, r0, #0
 	ldrb r3, [r2, #2]
@@ -137086,17 +137954,18 @@ gCardEffectKiryuProtectiveSoulAilinSecondGoblin_08058578: @ 0x08058578
 	cmp r0, #4
 	bls _0805858E
 	adds r0, r2, #0
-	bl gCardEffectCardShuffleCorpseOfYataGarasuCyberRaiderDragonSGunfireEnemyControllerFormationUnionJudgementOfPharaohNecklaceOfCommandPoisonOfTheOldManSpellShieldType8_08056BC4
+	bl gCardEffectDestroyDamage_08056BC4
 	b _08058594
 _0805858E:
 	adds r0, r2, #0
-	bl gCardEffectAbareUshioniAnteatereatingantBESCrystalCoreBarrelDragonBlackLusterSoldierEnvoyOfTheBeginningBlowbackDragonBurningBeastCallOfTheMummyCatnippedKittyChaosSorcererChaosriderGustaphCyberLaserDragonDarkMasterZorcDesDendleDoitsuFreezingBeastFrontlineBaseGatlingDragonGoddessOfWhimHeavyMechSupportPlatformHomunculusTheAlchemicBeingKarateManKingDragunKoitsuLightenTheLoadMetallizingParasiteLunatitePatroidPitchDarkDragonRelinquishedRouletteBarrelSandGamblerTheCreatorThousandEyesRestrictTimeWizardUriaLordOfSearingFlamesVwxyzDragonCatapultCannonWWingCatapultYDragonHeadZMetalTankZombieTiger_080563A4
+	bl gCardEffectDestroySpecialSummon_080563A4
 _08058594:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectWaveMotionCannon_08058598
-gCardEffectWaveMotionCannon_08058598: @ 0x08058598
+	@ Wave-Motion Cannon
+	thumb_func_start gCardEffectSendToGYDamage_08058598
+gCardEffectSendToGYDamage_08058598: @ 0x08058598
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -137118,8 +137987,13 @@ gCardEffectWaveMotionCannon_08058598: @ 0x08058598
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectBreakerTheMagicalWarriorHannibalNecromancerLegendaryFlameLordMagicalMarionetteRoyalMagicalLibrary_080585C4
-gCardEffectBreakerTheMagicalWarriorHannibalNecromancerLegendaryFlameLordMagicalMarionetteRoyalMagicalLibrary_080585C4: @ 0x080585C4
+	@ Breaker the Magical Warrior
+	@ Hannibal Necromancer
+	@ Legendary Flame Lord
+	@ Magical Marionette
+	@ Royal Magical Library
+	thumb_func_start gCardEffectCounterDestroy_080585C4
+gCardEffectCounterDestroy_080585C4: @ 0x080585C4
 	push {r4, r5, lr}
 	ldrb r4, [r0, #2]
 	lsls r5, r4, #0x1f
@@ -137137,11 +138011,12 @@ gCardEffectBreakerTheMagicalWarriorHannibalNecromancerLegendaryFlameLordMagicalM
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectPitchBlackPowerStone_080585E8
-gCardEffectPitchBlackPowerStone_080585E8: @ 0x080585E8
+	@ Pitch-Black Power Stone
+	thumb_func_start gCardEffectDestroyCounter_080585E8
+gCardEffectDestroyCounter_080585E8: @ 0x080585E8
 	push {r4, lr}
 	adds r4, r0, #0
-	bl gCardEffectTheDragonSBeadUltimateOffering_0805715C
+	bl gCardEffectNegateDiscard_0805715C
 	cmp r0, #0
 	beq _08058612
 	movs r0, #0x30
@@ -137167,8 +138042,9 @@ _08058614:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectGatherYourMind_0805861C
-gCardEffectGatherYourMind_0805861C: @ 0x0805861C
+	@ Gather Your Mind
+	thumb_func_start gCardEffectSearch_0805861C
+gCardEffectSearch_0805861C: @ 0x0805861C
 	push {lr}
 	ldrb r1, [r0, #2]
 	lsls r2, r1, #0x1f
@@ -137223,8 +138099,11 @@ _0805867E:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectAntiSpellMegaTonMagicalCannonMiracleRestoring_08058684
-gCardEffectAntiSpellMegaTonMagicalCannonMiracleRestoring_08058684: @ 0x08058684
+	@ Anti-Spell
+	@ Mega Ton Magical Cannon
+	@ Miracle Restoring
+	thumb_func_start gCardEffectCounterDestroy_08058684
+gCardEffectCounterDestroy_08058684: @ 0x08058684
 	push {r4, r5, r6, lr}
 	sub sp, #0x100
 	adds r5, r0, #0
@@ -137325,8 +138204,11 @@ _08058742:
 _0805874C: .4byte gUnk_0201B290
 _08058750: .4byte 0x000004AC
 
-	thumb_func_start gCardEffectArmedDragonLv10TwinSwordsOfFlashingLightTryceWickedBreakingFlambergeBaou_08058754
-gCardEffectArmedDragonLv10TwinSwordsOfFlashingLightTryceWickedBreakingFlambergeBaou_08058754: @ 0x08058754
+	@ Armed Dragon LV10
+	@ Twin Swords of Flashing Light - Tryce
+	@ Wicked-Breaking Flamberge - Baou
+	thumb_func_start gCardEffectSendToGYGraveyard_08058754
+gCardEffectSendToGYGraveyard_08058754: @ 0x08058754
 	push {r4, lr}
 	adds r4, r0, #0
 	bl sub_08055E60
@@ -137345,23 +138227,28 @@ _08058770:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectArchfiendSOathGearGolemTheMovingFortressSasukeSamuraiShiftingShadows_08058778
-gCardEffectArchfiendSOathGearGolemTheMovingFortressSasukeSamuraiShiftingShadows_08058778: @ 0x08058778
+	@ Archfiend's Oath
+	@ Gear Golem the Moving Fortress
+	@ Sasuke Samurai
+	@ Shifting Shadows
+	thumb_func_start gCardEffectDamageChangePosition_08058778
+gCardEffectDamageChangePosition_08058778: @ 0x08058778
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
-	bl gCardEffectAbyssalDesignatorArchfiendSRoarAutonomousActionUnitBatteryChargerBrainControlChaosEmperorDragonEnvoyOfTheEndConfiscationCrushDGandraCyberSteinDarkBalterTheTerribleDarkDealDarkMagicCurtainDelinquentDuoDemiseKingOfArmageddonDiffusionWaveMotionDimensionFusionEnchantingFittingRoomFinalCountdownFulfillmentOfTheContractGaleDograGoblinOutOfTheFryingPanHieroglyphLithographInspectionMagicalScientistMalfunctionMindHaxorzMonsterEyePrematureBurialReFusionRecycleReturnZombieReturnFromTheDifferentDimensionReversalOfGravesRopeOfSpiritRyuSenshiSealOfTheAncientsSevenToolsOfTheBanditSkillDrainSolemnJudgmentSystemDownTheAgentOfCreationVenusToonWorldTriageWeedOut_0805635C
+	bl gCardEffectDamage_0805635C
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectAbareUshioniAnteatereatingantBESCrystalCoreBarrelDragonBlackLusterSoldierEnvoyOfTheBeginningBlowbackDragonBurningBeastCallOfTheMummyCatnippedKittyChaosSorcererChaosriderGustaphCyberLaserDragonDarkMasterZorcDesDendleDoitsuFreezingBeastFrontlineBaseGatlingDragonGoddessOfWhimHeavyMechSupportPlatformHomunculusTheAlchemicBeingKarateManKingDragunKoitsuLightenTheLoadMetallizingParasiteLunatitePatroidPitchDarkDragonRelinquishedRouletteBarrelSandGamblerTheCreatorThousandEyesRestrictTimeWizardUriaLordOfSearingFlamesVwxyzDragonCatapultCannonWWingCatapultYDragonHeadZMetalTankZombieTiger_080563A4
+	bl gCardEffectDestroySpecialSummon_080563A4
 	movs r0, #1
 	pop {r4, r5}
 	pop {r1}
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectDesrookArchfiend_08058794
-gCardEffectDesrookArchfiend_08058794: @ 0x08058794
+	@ Desrook Archfiend
+	thumb_func_start gCardEffectSpecialSummonNegate_08058794
+gCardEffectSpecialSummonNegate_08058794: @ 0x08058794
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -137384,11 +138271,15 @@ _080587B8:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectChironTheMageDDMDifferentDimensionMasterReshefTheDarkBeingSummonPriest_080587C0
-gCardEffectChironTheMageDDMDifferentDimensionMasterReshefTheDarkBeingSummonPriest_080587C0: @ 0x080587C0
+	@ Chiron the Mage
+	@ D.D.M. - Different Dimension Master
+	@ Reshef the Dark Being
+	@ Summon Priest
+	thumb_func_start gCardEffectDiscardSpecialSummon_080587C0
+gCardEffectDiscardSpecialSummon_080587C0: @ 0x080587C0
 	push {r4, lr}
 	adds r4, r0, #0
-	bl gCardEffectAbareUshioniAnteatereatingantBESCrystalCoreBarrelDragonBlackLusterSoldierEnvoyOfTheBeginningBlowbackDragonBurningBeastCallOfTheMummyCatnippedKittyChaosSorcererChaosriderGustaphCyberLaserDragonDarkMasterZorcDesDendleDoitsuFreezingBeastFrontlineBaseGatlingDragonGoddessOfWhimHeavyMechSupportPlatformHomunculusTheAlchemicBeingKarateManKingDragunKoitsuLightenTheLoadMetallizingParasiteLunatitePatroidPitchDarkDragonRelinquishedRouletteBarrelSandGamblerTheCreatorThousandEyesRestrictTimeWizardUriaLordOfSearingFlamesVwxyzDragonCatapultCannonWWingCatapultYDragonHeadZMetalTankZombieTiger_080563A4
+	bl gCardEffectDestroySpecialSummon_080563A4
 	ldrb r4, [r4, #2]
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
@@ -137401,8 +138292,9 @@ gCardEffectChironTheMageDDMDifferentDimensionMasterReshefTheDarkBeingSummonPries
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectStrikeNinja_080587E0
-gCardEffectStrikeNinja_080587E0: @ 0x080587E0
+	@ Strike Ninja
+	thumb_func_start gCardEffectBanishGraveyard_080587E0
+gCardEffectBanishGraveyard_080587E0: @ 0x080587E0
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -137423,11 +138315,11 @@ gCardEffectStrikeNinja_080587E0: @ 0x080587E0
 	bl sub_0804A484
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectAbareUshioniAnteatereatingantBESCrystalCoreBarrelDragonBlackLusterSoldierEnvoyOfTheBeginningBlowbackDragonBurningBeastCallOfTheMummyCatnippedKittyChaosSorcererChaosriderGustaphCyberLaserDragonDarkMasterZorcDesDendleDoitsuFreezingBeastFrontlineBaseGatlingDragonGoddessOfWhimHeavyMechSupportPlatformHomunculusTheAlchemicBeingKarateManKingDragunKoitsuLightenTheLoadMetallizingParasiteLunatitePatroidPitchDarkDragonRelinquishedRouletteBarrelSandGamblerTheCreatorThousandEyesRestrictTimeWizardUriaLordOfSearingFlamesVwxyzDragonCatapultCannonWWingCatapultYDragonHeadZMetalTankZombieTiger_080563A4
+	bl gCardEffectDestroySpecialSummon_080563A4
 _0805880E:
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectDivineSwordPhoenixBladeLekunga_08059F2C
+	bl gCardEffectGraveyardSearch_08059F2C
 	pop {r4, r5}
 	pop {r1}
 	bx r1
@@ -137436,8 +138328,9 @@ _0805881C: .4byte gUnk_0201B290
 _08058820: .4byte 0x000004AC
 _08058824: .4byte 0x000016B8 @ Crimson Ninja
 
-	thumb_func_start gCardEffectFreedTheBraveWanderer_08058828
-gCardEffectFreedTheBraveWanderer_08058828: @ 0x08058828
+	@ Freed the Brave Wanderer
+	thumb_func_start gCardEffectDestroyGraveyard_08058828
+gCardEffectDestroyGraveyard_08058828: @ 0x08058828
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -137449,11 +138342,11 @@ gCardEffectFreedTheBraveWanderer_08058828: @ 0x08058828
 	bne _08058842
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectAbareUshioniAnteatereatingantBESCrystalCoreBarrelDragonBlackLusterSoldierEnvoyOfTheBeginningBlowbackDragonBurningBeastCallOfTheMummyCatnippedKittyChaosSorcererChaosriderGustaphCyberLaserDragonDarkMasterZorcDesDendleDoitsuFreezingBeastFrontlineBaseGatlingDragonGoddessOfWhimHeavyMechSupportPlatformHomunculusTheAlchemicBeingKarateManKingDragunKoitsuLightenTheLoadMetallizingParasiteLunatitePatroidPitchDarkDragonRelinquishedRouletteBarrelSandGamblerTheCreatorThousandEyesRestrictTimeWizardUriaLordOfSearingFlamesVwxyzDragonCatapultCannonWWingCatapultYDragonHeadZMetalTankZombieTiger_080563A4
+	bl gCardEffectDestroySpecialSummon_080563A4
 _08058842:
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectDivineSwordPhoenixBladeLekunga_08059F2C
+	bl gCardEffectGraveyardSearch_08059F2C
 	pop {r4, r5}
 	pop {r1}
 	bx r1
@@ -137461,12 +138354,17 @@ _08058842:
 _08058850: .4byte gUnk_0201B290
 _08058854: .4byte 0x000004AC
 
-	thumb_func_start gCardEffectBlackLusterSoldierEnvoyOfTheBeginningElementDoomElementDragonElementMagicianRuinQueenOfOblivion_08058858
-gCardEffectBlackLusterSoldierEnvoyOfTheBeginningElementDoomElementDragonElementMagicianRuinQueenOfOblivion_08058858: @ 0x08058858
+	@ Black Luster Soldier - Envoy of the Beginning
+	@ Element Doom
+	@ Element Dragon
+	@ Element Magician
+	@ Ruin, Queen of Oblivion
+	thumb_func_start gCardEffectDestroy_08058858
+gCardEffectDestroy_08058858: @ 0x08058858
 	push {r4, r5, lr}
 	sub sp, #4
 	adds r4, r0, #0
-	bl gCardEffectAquaSpiritArmedChangerAswanApparitionBehemothTheKingOfAllAnimalsBerfometBossRushBrronMadKingOfDarkWorldButterflyDaggerElmaCardOfSafeReturnChimeraTheFlyingMythicalBeastChopmanTheDesperateOutlawDDWarriorLadyDarkBladeTheDragonKnightDesFrogDrillBugElementalHeroBubblemanExarionUniverseFreedTheMatchlessGeneralGarudaTheWindSpiritGhostKnightOfJackalGilfordTheLegendGravekeeperSAssailantGreatSpiritGreenGadgetGuardianElmaHeroKidHydrogeddonInfernoHammerKingSKnightKycooTheGhostDestroyerLittleWinguardMagicalBlastManjuOfTheTenThousandHandsMobiusTheFrostMonarchMysticalKnightOfJackalNubianGuardOrdealOfATravelerPandemoniumPatrolRoboPoisonDrawFrogRedGadgetSenjuOfTheThousandHandsSonicBirdSpiritCallerSpiritOfThePharaohTADPOLETheKickManVwxyzDragonCatapultCannonWataponWingedSageFalcosYellowGadget_080563CC
+	bl gCardEffectGraveyardSpecialSummon_080563CC
 	adds r5, r0, #0
 	cmp r5, #1
 	bne _0805887E
@@ -137489,8 +138387,9 @@ _0805887E:
 	.align 2, 0
 _08058888: .4byte 0x000016CB @ Black Luster Soldier - Envoy of the Beginning
 
-	thumb_func_start gCardEffectHeartOfTheUnderdog_0805888C
-gCardEffectHeartOfTheUnderdog_0805888C: @ 0x0805888C
+	@ Heart of the Underdog
+	thumb_func_start gCardEffectDraw_0805888C
+gCardEffectDraw_0805888C: @ 0x0805888C
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -137677,8 +138576,9 @@ _080589F6:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectCursedSealOfTheForbiddenSpell_08058A04
-gCardEffectCursedSealOfTheForbiddenSpell_08058A04: @ 0x08058A04
+	@ Cursed Seal of the Forbidden Spell
+	thumb_func_start gCardEffectNegateDiscard_08058A04
+gCardEffectNegateDiscard_08058A04: @ 0x08058A04
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
@@ -137691,17 +138591,18 @@ gCardEffectCursedSealOfTheForbiddenSpell_08058A04: @ 0x08058A04
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDarkMagicianOfChaos_08058A1C
-gCardEffectDarkMagicianOfChaos_08058A1C: @ 0x08058A1C
+	@ Dark Magician of Chaos
+	thumb_func_start gCardEffectSearchSpecialSummon_08058A1C
+gCardEffectSearchSpecialSummon_08058A1C: @ 0x08058A1C
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
-	bl gCardEffectArmedChangerAswanApparitionDesFeralImpDrillBugFairyOfTheSpringMaskOfDarknessMonsterEyeNubianGuardRecycleReturnOfTheDoomedSoulReversalTheWarriorReturningAlive_0805C2F0
+	bl gCardEffectGraveyard_0805C2F0
 	cmp r0, #0
 	beq _08058A34
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectAquaSpiritArmedChangerAswanApparitionBehemothTheKingOfAllAnimalsBerfometBossRushBrronMadKingOfDarkWorldButterflyDaggerElmaCardOfSafeReturnChimeraTheFlyingMythicalBeastChopmanTheDesperateOutlawDDWarriorLadyDarkBladeTheDragonKnightDesFrogDrillBugElementalHeroBubblemanExarionUniverseFreedTheMatchlessGeneralGarudaTheWindSpiritGhostKnightOfJackalGilfordTheLegendGravekeeperSAssailantGreatSpiritGreenGadgetGuardianElmaHeroKidHydrogeddonInfernoHammerKingSKnightKycooTheGhostDestroyerLittleWinguardMagicalBlastManjuOfTheTenThousandHandsMobiusTheFrostMonarchMysticalKnightOfJackalNubianGuardOrdealOfATravelerPandemoniumPatrolRoboPoisonDrawFrogRedGadgetSenjuOfTheThousandHandsSonicBirdSpiritCallerSpiritOfThePharaohTADPOLETheKickManVwxyzDragonCatapultCannonWataponWingedSageFalcosYellowGadget_080563CC
+	bl gCardEffectGraveyardSpecialSummon_080563CC
 	b _08058A38
 _08058A34:
 	movs r0, #1
@@ -137758,8 +138659,9 @@ _08058A92:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectManticoreOfDarkness_08058A98
-gCardEffectManticoreOfDarkness_08058A98: @ 0x08058A98
+	@ Manticore of Darkness
+	thumb_func_start gCardEffectSpecialSummonSendToGY_08058A98
+gCardEffectSpecialSummonSendToGY_08058A98: @ 0x08058A98
 	push {r4, r5, r6, lr}
 	sub sp, #0x100
 	adds r5, r0, #0
@@ -137955,8 +138857,10 @@ _08058C24:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectLeviaDragonDaedalusOceanDragonLordNeoDaedalus_08058C2C
-gCardEffectLeviaDragonDaedalusOceanDragonLordNeoDaedalus_08058C2C: @ 0x08058C2C
+	@ Levia-Dragon - Daedalus
+	@ Ocean Dragon Lord - Neo-Daedalus
+	thumb_func_start gCardEffectSendToGYGraveyard_08058C2C
+gCardEffectSendToGYGraveyard_08058C2C: @ 0x08058C2C
 	push {lr}
 	ldrb r2, [r0, #2]
 	lsls r1, r2, #0x1f
@@ -137967,8 +138871,10 @@ gCardEffectLeviaDragonDaedalusOceanDragonLordNeoDaedalus_08058C2C: @ 0x08058C2C
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectArmedChangerAvatarOfThePot_08058C40
-gCardEffectArmedChangerAvatarOfThePot_08058C40: @ 0x08058C40
+	@ Armed Changer
+	@ Avatar of The Pot
+	thumb_func_start gCardEffectSendToGYGraveyard_08058C40
+gCardEffectSendToGYGraveyard_08058C40: @ 0x08058C40
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldr r0, _08058C58 @ =gUnk_0201B290
@@ -138051,8 +138957,9 @@ _08058CE4:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectMystikWok_08058CEC
-gCardEffectMystikWok_08058CEC: @ 0x08058CEC
+	@ Mystik Wok
+	thumb_func_start gCardEffectBoostATKBoostDEF_08058CEC
+gCardEffectBoostATKBoostDEF_08058CEC: @ 0x08058CEC
 	push {r4, r5, lr}
 	sub sp, #0x2c
 	adds r4, r0, #0
@@ -138226,8 +139133,15 @@ _08058E3A:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectAbyssSoldierArchlordZeratoDoubleAttackLadyNinjaYaeLightOfJudgmentSpiritRyuVampireGenesis_08058E44
-gCardEffectAbyssSoldierArchlordZeratoDoubleAttackLadyNinjaYaeLightOfJudgmentSpiritRyuVampireGenesis_08058E44: @ 0x08058E44
+	@ Abyss Soldier
+	@ Archlord Zerato
+	@ Double Attack
+	@ Lady Ninja Yae
+	@ Light of Judgment
+	@ Spirit Ryu
+	@ Vampire Genesis
+	thumb_func_start gCardEffectDiscardGraveyard_08058E44
+gCardEffectDiscardGraveyard_08058E44: @ 0x08058E44
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -138326,7 +139240,7 @@ _08058F10: .4byte 0x000018CB @ Double Attack
 _08058F14:
 	adds r0, r7, #0
 	mov r1, sb
-	bl gCardEffectAbareUshioniAnteatereatingantBESCrystalCoreBarrelDragonBlackLusterSoldierEnvoyOfTheBeginningBlowbackDragonBurningBeastCallOfTheMummyCatnippedKittyChaosSorcererChaosriderGustaphCyberLaserDragonDarkMasterZorcDesDendleDoitsuFreezingBeastFrontlineBaseGatlingDragonGoddessOfWhimHeavyMechSupportPlatformHomunculusTheAlchemicBeingKarateManKingDragunKoitsuLightenTheLoadMetallizingParasiteLunatitePatroidPitchDarkDragonRelinquishedRouletteBarrelSandGamblerTheCreatorThousandEyesRestrictTimeWizardUriaLordOfSearingFlamesVwxyzDragonCatapultCannonWWingCatapultYDragonHeadZMetalTankZombieTiger_080563A4
+	bl gCardEffectDestroySpecialSummon_080563A4
 	b _08058F72
 _08058F1E:
 	ands r5, r6
@@ -138353,7 +139267,7 @@ _08058F48: .4byte 0x00000868
 _08058F4C:
 	adds r0, r7, #0
 	mov r1, sb
-	bl gCardEffectAbareUshioniAnteatereatingantBESCrystalCoreBarrelDragonBlackLusterSoldierEnvoyOfTheBeginningBlowbackDragonBurningBeastCallOfTheMummyCatnippedKittyChaosSorcererChaosriderGustaphCyberLaserDragonDarkMasterZorcDesDendleDoitsuFreezingBeastFrontlineBaseGatlingDragonGoddessOfWhimHeavyMechSupportPlatformHomunculusTheAlchemicBeingKarateManKingDragunKoitsuLightenTheLoadMetallizingParasiteLunatitePatroidPitchDarkDragonRelinquishedRouletteBarrelSandGamblerTheCreatorThousandEyesRestrictTimeWizardUriaLordOfSearingFlamesVwxyzDragonCatapultCannonWWingCatapultYDragonHeadZMetalTankZombieTiger_080563A4
+	bl gCardEffectDestroySpecialSummon_080563A4
 	ands r6, r5
 	lsls r0, r4, #2
 	ldr r1, _08058F78 @ =0x00000868
@@ -138388,8 +139302,9 @@ _08058F84:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectWallOfRevealingLight_08058F90
-gCardEffectWallOfRevealingLight_08058F90: @ 0x08058F90
+	@ Wall of Revealing Light
+	thumb_func_start gCardEffectDamage_08058F90
+gCardEffectDamage_08058F90: @ 0x08058F90
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldr r0, _08058FA8 @ =gUnk_0201B290
@@ -138448,8 +139363,9 @@ _08058FF8:
 _08059000: .4byte gUnk_0201C4E0
 _08059004: .4byte 0x00001DA8
 
-	thumb_func_start gCardEffectSkullDescoveryKnight_08059008
-gCardEffectSkullDescoveryKnight_08059008: @ 0x08059008
+	@ Skull Descovery Knight
+	thumb_func_start gCardEffectSpecialSummonDestroy_08059008
+gCardEffectSpecialSummonDestroy_08059008: @ 0x08059008
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldrh r1, [r4, #4]
@@ -138498,8 +139414,9 @@ _0805905E:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectTheFirstSarcophagus_08059068
-gCardEffectTheFirstSarcophagus_08059068: @ 0x08059068
+	@ The First Sarcophagus
+	thumb_func_start gCardEffectSpecialSummonSendToGY_08059068
+gCardEffectSpecialSummonSendToGY_08059068: @ 0x08059068
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -138583,8 +139500,9 @@ _08059104: .4byte 0x00000868
 _08059108: .4byte 0x000017AF @ The First Sarcophagus
 _0805910C: .4byte 0x00001332 @ Banisher of the Light
 
-	thumb_func_start gCardEffectPetenTheDarkClown_08059110
-gCardEffectPetenTheDarkClown_08059110: @ 0x08059110
+	@ Peten the Dark Clown
+	thumb_func_start gCardEffectSpecialSummonSendToGY_08059110
+gCardEffectSpecialSummonSendToGY_08059110: @ 0x08059110
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -138597,7 +139515,7 @@ gCardEffectPetenTheDarkClown_08059110: @ 0x08059110
 _08059124:
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectAquaSpiritArmedChangerAswanApparitionBehemothTheKingOfAllAnimalsBerfometBossRushBrronMadKingOfDarkWorldButterflyDaggerElmaCardOfSafeReturnChimeraTheFlyingMythicalBeastChopmanTheDesperateOutlawDDWarriorLadyDarkBladeTheDragonKnightDesFrogDrillBugElementalHeroBubblemanExarionUniverseFreedTheMatchlessGeneralGarudaTheWindSpiritGhostKnightOfJackalGilfordTheLegendGravekeeperSAssailantGreatSpiritGreenGadgetGuardianElmaHeroKidHydrogeddonInfernoHammerKingSKnightKycooTheGhostDestroyerLittleWinguardMagicalBlastManjuOfTheTenThousandHandsMobiusTheFrostMonarchMysticalKnightOfJackalNubianGuardOrdealOfATravelerPandemoniumPatrolRoboPoisonDrawFrogRedGadgetSenjuOfTheThousandHandsSonicBirdSpiritCallerSpiritOfThePharaohTADPOLETheKickManVwxyzDragonCatapultCannonWataponWingedSageFalcosYellowGadget_080563CC
+	bl gCardEffectGraveyardSpecialSummon_080563CC
 	adds r5, r0, #0
 	cmp r5, #1
 	bne _08059162
@@ -138633,8 +139551,17 @@ _08059164:
 _0805916C: .4byte 0x00000868
 _08059170: .4byte gUnk_0201C8F8
 
-	thumb_func_start gCardEffectArmedDragonLv3ArmedDragonLv5HorusTheBlackFlameDragonLv4HorusTheBlackFlameDragonLv6SilentSwordsmanLv3SilentSwordsmanLv5UltimateInsectLv1UltimateInsectLv3UltimateInsectLv5_08059174
-gCardEffectArmedDragonLv3ArmedDragonLv5HorusTheBlackFlameDragonLv4HorusTheBlackFlameDragonLv6SilentSwordsmanLv3SilentSwordsmanLv5UltimateInsectLv1UltimateInsectLv3UltimateInsectLv5_08059174: @ 0x08059174
+	@ Armed Dragon LV3
+	@ Armed Dragon LV5
+	@ Horus the Black Flame Dragon LV4
+	@ Horus the Black Flame Dragon LV6
+	@ Silent Swordsman LV3
+	@ Silent Swordsman LV5
+	@ Ultimate Insect LV1
+	@ Ultimate Insect LV3
+	@ Ultimate Insect LV5
+	thumb_func_start gCardEffectSpecialSummonSendToGY_08059174
+gCardEffectSpecialSummonSendToGY_08059174: @ 0x08059174
 	push {r4, r5, r6, r7, lr}
 	sub sp, #0x100
 	adds r5, r0, #0
@@ -138799,8 +139726,11 @@ _080592BA:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectDarkMimicLv1MysticSwordsmanLv2MysticSwordsmanLv4_080592C4
-gCardEffectDarkMimicLv1MysticSwordsmanLv2MysticSwordsmanLv4_080592C4: @ 0x080592C4
+	@ Dark Mimic LV1
+	@ Mystic Swordsman LV2
+	@ Mystic Swordsman LV4
+	thumb_func_start gCardEffectSpecialSummonSendToGY_080592C4
+gCardEffectSpecialSummonSendToGY_080592C4: @ 0x080592C4
 	push {lr}
 	adds r2, r0, #0
 	ldrh r3, [r2, #2]
@@ -138812,7 +139742,7 @@ gCardEffectDarkMimicLv1MysticSwordsmanLv2MysticSwordsmanLv4_080592C4: @ 0x080592
 	bne _080592DE
 _080592D6:
 	adds r0, r2, #0
-	bl gCardEffectArmedDragonLv3ArmedDragonLv5HorusTheBlackFlameDragonLv4HorusTheBlackFlameDragonLv6SilentSwordsmanLv3SilentSwordsmanLv5UltimateInsectLv1UltimateInsectLv3UltimateInsectLv5_08059174
+	bl gCardEffectSpecialSummonSendToGY_08059174
 	b _080592E0
 _080592DE:
 	movs r0, #1
@@ -138871,8 +139801,10 @@ _08059346:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectArmedDragonLv5ArmedDragonLv7_0805934C
-gCardEffectArmedDragonLv5ArmedDragonLv7_0805934C: @ 0x0805934C
+	@ Armed Dragon LV5
+	@ Armed Dragon LV7
+	thumb_func_start gCardEffectSpecialSummonSendToGY_0805934C
+gCardEffectSpecialSummonSendToGY_0805934C: @ 0x0805934C
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -138980,8 +139912,10 @@ _08059424:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectRedEyesBChickRescueCat_08059430
-gCardEffectRedEyesBChickRescueCat_08059430: @ 0x08059430
+	@ Red-Eyes B. Chick
+	@ Rescue Cat
+	thumb_func_start gCardEffectSpecialSummonSendToGY_08059430
+gCardEffectSpecialSummonSendToGY_08059430: @ 0x08059430
 	push {lr}
 	ldrb r2, [r0, #2]
 	lsls r1, r2, #0x1f
@@ -138994,8 +139928,14 @@ gCardEffectRedEyesBChickRescueCat_08059430: @ 0x08059430
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectDonTurtleMaraudingCaptainPinchHopperTheThingInTheCraterTwoManCellBattleVampireOrchis_08059448
-gCardEffectDonTurtleMaraudingCaptainPinchHopperTheThingInTheCraterTwoManCellBattleVampireOrchis_08059448: @ 0x08059448
+	@ Don Turtle
+	@ Marauding Captain
+	@ Pinch Hopper
+	@ The Thing in the Crater
+	@ Two-Man Cell Battle
+	@ Vampire Orchis
+	thumb_func_start gCardEffectSpecialSummon_08059448
+gCardEffectSpecialSummon_08059448: @ 0x08059448
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -139010,7 +139950,7 @@ gCardEffectDonTurtleMaraudingCaptainPinchHopperTheThingInTheCraterTwoManCellBatt
 	eors r5, r0
 	adds r0, r6, #0
 	mov r1, r8
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	cmp r0, #0
 	beq _080594DE
 	movs r4, #0
@@ -139062,7 +140002,7 @@ _080594B8:
 _080594CC:
 	adds r0, r6, #0
 	mov r1, r8
-	bl gCardEffectAquaSpiritArmedChangerAswanApparitionBehemothTheKingOfAllAnimalsBerfometBossRushBrronMadKingOfDarkWorldButterflyDaggerElmaCardOfSafeReturnChimeraTheFlyingMythicalBeastChopmanTheDesperateOutlawDDWarriorLadyDarkBladeTheDragonKnightDesFrogDrillBugElementalHeroBubblemanExarionUniverseFreedTheMatchlessGeneralGarudaTheWindSpiritGhostKnightOfJackalGilfordTheLegendGravekeeperSAssailantGreatSpiritGreenGadgetGuardianElmaHeroKidHydrogeddonInfernoHammerKingSKnightKycooTheGhostDestroyerLittleWinguardMagicalBlastManjuOfTheTenThousandHandsMobiusTheFrostMonarchMysticalKnightOfJackalNubianGuardOrdealOfATravelerPandemoniumPatrolRoboPoisonDrawFrogRedGadgetSenjuOfTheThousandHandsSonicBirdSpiritCallerSpiritOfThePharaohTADPOLETheKickManVwxyzDragonCatapultCannonWataponWingedSageFalcosYellowGadget_080563CC
+	bl gCardEffectGraveyardSpecialSummon_080563CC
 	b _080594E2
 _080594D6:
 	subs r0, r0, r5
@@ -139080,8 +140020,9 @@ _080594E2:
 	.align 2, 0
 _080594EC: .4byte 0x000010D6 @ Axe of Despair
 
-	thumb_func_start gCardEffectTheBlockman_080594F0
-gCardEffectTheBlockman_080594F0: @ 0x080594F0
+	@ The Blockman
+	thumb_func_start gCardEffectSpecialSummonPreventAttack_080594F0
+gCardEffectSpecialSummonPreventAttack_080594F0: @ 0x080594F0
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -139103,8 +140044,9 @@ gCardEffectTheBlockman_080594F0: @ 0x080594F0
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectSilentMagicianLv4_0805951C
-gCardEffectSilentMagicianLv4_0805951C: @ 0x0805951C
+	@ Silent Magician LV4
+	thumb_func_start gCardEffectSpecialSummonSendToGY_0805951C
+gCardEffectSpecialSummonSendToGY_0805951C: @ 0x0805951C
 	push {lr}
 	adds r2, r0, #0
 	movs r0, #0xfc
@@ -139114,7 +140056,7 @@ gCardEffectSilentMagicianLv4_0805951C: @ 0x0805951C
 	cmp r0, #0x80
 	bne _08059534
 	adds r0, r2, #0
-	bl gCardEffectArmedDragonLv3ArmedDragonLv5HorusTheBlackFlameDragonLv4HorusTheBlackFlameDragonLv6SilentSwordsmanLv3SilentSwordsmanLv5UltimateInsectLv1UltimateInsectLv3UltimateInsectLv5_08059174
+	bl gCardEffectSpecialSummonSendToGY_08059174
 	b _08059536
 _08059534:
 	movs r0, #1
@@ -139123,8 +140065,9 @@ _08059536:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectGaiaSoulTheCombustibleCollective_0805953C
-gCardEffectGaiaSoulTheCombustibleCollective_0805953C: @ 0x0805953C
+	@ Gaia Soul the Combustible Collective
+	thumb_func_start gCardEffectDestroyBoostATK_0805953C
+gCardEffectDestroyBoostATK_0805953C: @ 0x0805953C
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -139311,7 +140254,7 @@ _080596D4:
 	bl sub_0804A870
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectAbareUshioniAnteatereatingantBESCrystalCoreBarrelDragonBlackLusterSoldierEnvoyOfTheBeginningBlowbackDragonBurningBeastCallOfTheMummyCatnippedKittyChaosSorcererChaosriderGustaphCyberLaserDragonDarkMasterZorcDesDendleDoitsuFreezingBeastFrontlineBaseGatlingDragonGoddessOfWhimHeavyMechSupportPlatformHomunculusTheAlchemicBeingKarateManKingDragunKoitsuLightenTheLoadMetallizingParasiteLunatitePatroidPitchDarkDragonRelinquishedRouletteBarrelSandGamblerTheCreatorThousandEyesRestrictTimeWizardUriaLordOfSearingFlamesVwxyzDragonCatapultCannonWWingCatapultYDragonHeadZMetalTankZombieTiger_080563A4
+	bl gCardEffectDestroySpecialSummon_080563A4
 	movs r0, #1
 	b _080596E6
 _080596E4:
@@ -139321,8 +140264,9 @@ _080596E6:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectSerialSpell_080596EC
-gCardEffectSerialSpell_080596EC: @ 0x080596EC
+	@ Serial Spell
+	thumb_func_start gCardEffectDiscardGraveyard_080596EC
+gCardEffectDiscardGraveyard_080596EC: @ 0x080596EC
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -139382,8 +140326,9 @@ _0805975A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectHandOfNephthys_08059760
-gCardEffectHandOfNephthys_08059760: @ 0x08059760
+	@ Hand of Nephthys
+	thumb_func_start gCardEffectSpecialSummonTribute_08059760
+gCardEffectSpecialSummonTribute_08059760: @ 0x08059760
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	ldr r0, _0805977C @ =gUnk_0201B290
@@ -139472,8 +140417,9 @@ _0805980C:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectBlastMagician_08059814
-gCardEffectBlastMagician_08059814: @ 0x08059814
+	@ Blast Magician
+	thumb_func_start gCardEffectDestroyCounter_08059814
+gCardEffectDestroyCounter_08059814: @ 0x08059814
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	ldr r0, _0805982C @ =gUnk_0201B290
@@ -139571,8 +140517,11 @@ _080598CE:
 	.align 2, 0
 _080598D4: .4byte gUnk_0201C4E0
 
-	thumb_func_start gCardEffectTheDarkHexSealedFusionTheEarthHexSealedFusionTheLightHexSealedFusion_080598D8
-gCardEffectTheDarkHexSealedFusionTheEarthHexSealedFusionTheLightHexSealedFusion_080598D8: @ 0x080598D8
+	@ The Dark - Hex-Sealed Fusion
+	@ The Earth - Hex-Sealed Fusion
+	@ The Light - Hex-Sealed Fusion
+	thumb_func_start gCardEffectSpecialSummonFusion_080598D8
+gCardEffectSpecialSummonFusion_080598D8: @ 0x080598D8
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -139769,8 +140718,9 @@ _08059A6A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectElementalBurst_08059A78
-gCardEffectElementalBurst_08059A78: @ 0x08059A78
+	@ Elemental Burst
+	thumb_func_start gCardEffectDestroyAllTribute_08059A78
+gCardEffectDestroyAllTribute_08059A78: @ 0x08059A78
 	push {r4, r5, r6, r7, lr}
 	adds r5, r0, #0
 	ldr r0, _08059A94 @ =gUnk_0201B290
@@ -139809,11 +140759,11 @@ _08059ABA:
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r5]
-	ldr r2, _08059ACC @ =gCardEffectBondingH2oCastleGateCrushCardDeSpellGermWeaponDeckDevastationVirusGaiaSoulTheCombustibleCollectiveSpiritualFireArtKurenaiSpiritualWaterArtAoi_08050EAC
+	ldr r2, _08059ACC @ =gCardEffectTributeDestroy_08050EAC
 	bl sub_08096A4C
 	b _08059AB2
 	.align 2, 0
-_08059ACC: .4byte gCardEffectBondingH2oCastleGateCrushCardDeSpellGermWeaponDeckDevastationVirusGaiaSoulTheCombustibleCollectiveSpiritualFireArtKurenaiSpiritualWaterArtAoi_08050EAC
+_08059ACC: .4byte gCardEffectTributeDestroy_08050EAC
 _08059AD0:
 	bl sub_08096B14
 	cmp r0, #0
@@ -139876,8 +140826,9 @@ _08059B3E:
 _08059B44: .4byte gUnk_0201B290
 _08059B48: .4byte 0x000004AC
 
-	thumb_func_start gCardEffectKingOfTheSkullServants_08059B4C
-gCardEffectKingOfTheSkullServants_08059B4C: @ 0x08059B4C
+	@ King of the Skull Servants
+	thumb_func_start gCardEffectSpecialSummonBanish_08059B4C
+gCardEffectSpecialSummonBanish_08059B4C: @ 0x08059B4C
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	adds r6, r1, #0
@@ -139908,7 +140859,7 @@ _08059B76:
 	beq _08059B90
 	adds r0, r4, #0
 	adds r1, r6, #0
-	bl gCardEffectArchfiendSRoarAutonomousActionUnitBatteryChargerCallOfTheHauntedCentrifugalFieldChimeraTheFlyingMythicalBeastCyberSteinFulfillmentOfTheContractFushiohRichieMagicalScientistPrematureBurialReFusionReturnFromTheDifferentDimensionRiteOfSpiritSilentFiendSoulResurrectionSpiritCallerSpiritOfThePharaohSymbolOfHeritage_0805C248
+	bl gCardEffectSpecialSummonGraveyard_0805C248
 	cmp r0, #0
 	bne _08059B96
 _08059B90:
@@ -139955,17 +140906,19 @@ _08059BDA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectElementalHeroThunderGiantGrayWing_08059BE0
-gCardEffectElementalHeroThunderGiantGrayWing_08059BE0: @ 0x08059BE0
+	@ Elemental Hero Thunder Giant
+	@ Gray Wing
+	thumb_func_start gCardEffectDiscardSpecialSummon_08059BE0
+gCardEffectDiscardSpecialSummon_08059BE0: @ 0x08059BE0
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
-	bl gCardEffectAbareUshioniAnteatereatingantBESCrystalCoreBarrelDragonBlackLusterSoldierEnvoyOfTheBeginningBlowbackDragonBurningBeastCallOfTheMummyCatnippedKittyChaosSorcererChaosriderGustaphCyberLaserDragonDarkMasterZorcDesDendleDoitsuFreezingBeastFrontlineBaseGatlingDragonGoddessOfWhimHeavyMechSupportPlatformHomunculusTheAlchemicBeingKarateManKingDragunKoitsuLightenTheLoadMetallizingParasiteLunatitePatroidPitchDarkDragonRelinquishedRouletteBarrelSandGamblerTheCreatorThousandEyesRestrictTimeWizardUriaLordOfSearingFlamesVwxyzDragonCatapultCannonWWingCatapultYDragonHeadZMetalTankZombieTiger_080563A4
+	bl gCardEffectDestroySpecialSummon_080563A4
 	cmp r0, #0
 	beq _08059BFE
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectAFeatherOfThePhoenixAncientGearDrillBackToSquareOneCostDownCurseOfAgingCyberneticMagicianDamageCondenserDarkCoreDarkPaladinDarknessApproachesDivineWrathExcavationOfMageStonesFinalDestinyForcedCeasefireHallowedLifeBarrierJudgmentOfAnubisKarmaCutLightningVortexMagicJammerMaliceDispersionMonsterReincarnationNonAggressionAreaPhoenixWingWindBlastRaigekiBreakRisingEnergySpecialHurricaneSpellPurificationSpellVanishingTribeInfectingVirusTributeToTheDoomedVwTigerCatapultXyDragonCannonXyzDragonCannonXzTankCannonYzTankDragon_08056380
+	bl gCardEffectDiscard_08056380
 	cmp r0, #0
 	beq _08059BFE
 	movs r0, #1
@@ -139978,8 +140931,9 @@ _08059C00:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectRockBombardment_08059C08
-gCardEffectRockBombardment_08059C08: @ 0x08059C08
+	@ Rock Bombardment
+	thumb_func_start gCardEffectSendToGYDamage_08059C08
+gCardEffectSendToGYDamage_08059C08: @ 0x08059C08
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	ldr r0, _08059C24 @ =gUnk_0201B290
@@ -140077,8 +141031,9 @@ _08059CC2:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectInfernalFlameEmperor_08059CC8
-gCardEffectInfernalFlameEmperor_08059CC8: @ 0x08059CC8
+	@ Infernal Flame Emperor
+	thumb_func_start gCardEffectSpecialSummonBanish_08059CC8
+gCardEffectSpecialSummonBanish_08059CC8: @ 0x08059CC8
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	adds r2, r1, #0
@@ -140111,7 +141066,7 @@ _08059CF4: @ jump table
 _08059D14:
 	adds r0, r6, #0
 	adds r1, r2, #0
-	bl gCardEffectAquaSpiritArmedChangerAswanApparitionBehemothTheKingOfAllAnimalsBerfometBossRushBrronMadKingOfDarkWorldButterflyDaggerElmaCardOfSafeReturnChimeraTheFlyingMythicalBeastChopmanTheDesperateOutlawDDWarriorLadyDarkBladeTheDragonKnightDesFrogDrillBugElementalHeroBubblemanExarionUniverseFreedTheMatchlessGeneralGarudaTheWindSpiritGhostKnightOfJackalGilfordTheLegendGravekeeperSAssailantGreatSpiritGreenGadgetGuardianElmaHeroKidHydrogeddonInfernoHammerKingSKnightKycooTheGhostDestroyerLittleWinguardMagicalBlastManjuOfTheTenThousandHandsMobiusTheFrostMonarchMysticalKnightOfJackalNubianGuardOrdealOfATravelerPandemoniumPatrolRoboPoisonDrawFrogRedGadgetSenjuOfTheThousandHandsSonicBirdSpiritCallerSpiritOfThePharaohTADPOLETheKickManVwxyzDragonCatapultCannonWataponWingedSageFalcosYellowGadget_080563CC
+	bl gCardEffectGraveyardSpecialSummon_080563CC
 	cmp r0, #1
 	bne _08059DD6
 	ldr r0, _08059D30 @ =gUnk_0201B290
@@ -140209,8 +141164,9 @@ _08059DD6:
 	.align 2, 0
 _08059DDC: .4byte gUnk_0201C4E0
 
-	thumb_func_start gCardEffectTranscendentWings_08059DE0
-gCardEffectTranscendentWings_08059DE0: @ 0x08059DE0
+	@ Transcendent Wings
+	thumb_func_start gCardEffectSpecialSummonSendToGY_08059DE0
+gCardEffectSpecialSummonSendToGY_08059DE0: @ 0x08059DE0
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldr r0, _08059DFC @ =gUnk_0201B290
@@ -140298,8 +141254,9 @@ _08059E8C:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectDarkRulerVandalgyon_08059E94
-gCardEffectDarkRulerVandalgyon_08059E94: @ 0x08059E94
+	@ Dark Ruler Vandalgyon
+	thumb_func_start gCardEffectSpecialSummonDestroySpellTrap_08059E94
+gCardEffectSpecialSummonDestroySpellTrap_08059E94: @ 0x08059E94
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -140321,8 +141278,9 @@ gCardEffectDarkRulerVandalgyon_08059E94: @ 0x08059E94
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectAlkanaKnightJoker_08059EC0
-gCardEffectAlkanaKnightJoker_08059EC0: @ 0x08059EC0
+	@ Alkana Knight Joker
+	thumb_func_start gCardEffectFusionSummonDiscard_08059EC0
+gCardEffectFusionSummonDiscard_08059EC0: @ 0x08059EC0
 	push {r4, r5, r6, r7, lr}
 	adds r7, r0, #0
 	adds r4, r1, #0
@@ -140366,7 +141324,7 @@ _08059F04:
 _08059F14:
 	adds r0, r7, #0
 	adds r1, r4, #0
-	bl gCardEffectAbareUshioniAnteatereatingantBESCrystalCoreBarrelDragonBlackLusterSoldierEnvoyOfTheBeginningBlowbackDragonBurningBeastCallOfTheMummyCatnippedKittyChaosSorcererChaosriderGustaphCyberLaserDragonDarkMasterZorcDesDendleDoitsuFreezingBeastFrontlineBaseGatlingDragonGoddessOfWhimHeavyMechSupportPlatformHomunculusTheAlchemicBeingKarateManKingDragunKoitsuLightenTheLoadMetallizingParasiteLunatitePatroidPitchDarkDragonRelinquishedRouletteBarrelSandGamblerTheCreatorThousandEyesRestrictTimeWizardUriaLordOfSearingFlamesVwxyzDragonCatapultCannonWWingCatapultYDragonHeadZMetalTankZombieTiger_080563A4
+	bl gCardEffectDestroySpecialSummon_080563A4
 _08059F1C:
 	ldr r0, [r5]
 	adds r0, #1
@@ -140378,8 +141336,10 @@ _08059F24:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectDivineSwordPhoenixBladeLekunga_08059F2C
-gCardEffectDivineSwordPhoenixBladeLekunga_08059F2C: @ 0x08059F2C
+	@ Divine Sword - Phoenix Blade
+	@ Lekunga
+	thumb_func_start gCardEffectGraveyardSearch_08059F2C
+gCardEffectGraveyardSearch_08059F2C: @ 0x08059F2C
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	ldr r0, _08059F48 @ =gUnk_0201B290
@@ -140457,8 +141417,10 @@ _08059FB8:
 	.align 2, 0
 _08059FC0: .4byte gUnk_0201C4E0
 
-	thumb_func_start gCardEffectDarkRulerVandalgyonWaterDragon_08059FC4
-gCardEffectDarkRulerVandalgyonWaterDragon_08059FC4: @ 0x08059FC4
+	@ Dark Ruler Vandalgyon
+	@ Water Dragon
+	thumb_func_start gCardEffectSpecialSummonDestroy_08059FC4
+gCardEffectSpecialSummonDestroy_08059FC4: @ 0x08059FC4
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -140475,7 +141437,7 @@ _08059FDC: .4byte 0x0000190A @ Dark Ruler Vandalgyon
 _08059FE0:
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectDarkRulerVandalgyon_080636CC
+	bl gCardEffectSpecialSummonDestroySpellTrap_080636CC
 	b _08059FF2
 _08059FEA:
 	adds r0, r4, #0
@@ -140490,18 +141452,19 @@ _08059FF2:
 _08059FFC:
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectAquaSpiritArmedChangerAswanApparitionBehemothTheKingOfAllAnimalsBerfometBossRushBrronMadKingOfDarkWorldButterflyDaggerElmaCardOfSafeReturnChimeraTheFlyingMythicalBeastChopmanTheDesperateOutlawDDWarriorLadyDarkBladeTheDragonKnightDesFrogDrillBugElementalHeroBubblemanExarionUniverseFreedTheMatchlessGeneralGarudaTheWindSpiritGhostKnightOfJackalGilfordTheLegendGravekeeperSAssailantGreatSpiritGreenGadgetGuardianElmaHeroKidHydrogeddonInfernoHammerKingSKnightKycooTheGhostDestroyerLittleWinguardMagicalBlastManjuOfTheTenThousandHandsMobiusTheFrostMonarchMysticalKnightOfJackalNubianGuardOrdealOfATravelerPandemoniumPatrolRoboPoisonDrawFrogRedGadgetSenjuOfTheThousandHandsSonicBirdSpiritCallerSpiritOfThePharaohTADPOLETheKickManVwxyzDragonCatapultCannonWataponWingedSageFalcosYellowGadget_080563CC
+	bl gCardEffectGraveyardSpecialSummon_080563CC
 _0805A004:
 	pop {r4, r5}
 	pop {r1}
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectBESTetran_0805A00C
-gCardEffectBESTetran_0805A00C: @ 0x0805A00C
+	@ B.E.S. Tetran
+	thumb_func_start gCardEffectDestroySpellTrapCounter_0805A00C
+gCardEffectDestroySpellTrapCounter_0805A00C: @ 0x0805A00C
 	push {r4, lr}
 	adds r4, r0, #0
-	bl gCardEffectAbareUshioniAnteatereatingantBESCrystalCoreBarrelDragonBlackLusterSoldierEnvoyOfTheBeginningBlowbackDragonBurningBeastCallOfTheMummyCatnippedKittyChaosSorcererChaosriderGustaphCyberLaserDragonDarkMasterZorcDesDendleDoitsuFreezingBeastFrontlineBaseGatlingDragonGoddessOfWhimHeavyMechSupportPlatformHomunculusTheAlchemicBeingKarateManKingDragunKoitsuLightenTheLoadMetallizingParasiteLunatitePatroidPitchDarkDragonRelinquishedRouletteBarrelSandGamblerTheCreatorThousandEyesRestrictTimeWizardUriaLordOfSearingFlamesVwxyzDragonCatapultCannonWWingCatapultYDragonHeadZMetalTankZombieTiger_080563A4
+	bl gCardEffectDestroySpecialSummon_080563A4
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
@@ -140516,8 +141479,9 @@ gCardEffectBESTetran_0805A00C: @ 0x0805A00C
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectPhantasmalMartyrs_0805A030
-gCardEffectPhantasmalMartyrs_0805A030: @ 0x0805A030
+	@ Phantasmal Martyrs
+	thumb_func_start gCardEffectSpecialSummonSendToGY_0805A030
+gCardEffectSpecialSummonSendToGY_0805A030: @ 0x0805A030
 	push {r4, r5, lr}
 	adds r1, r0, #0
 	ldr r0, _0805A048 @ =gUnk_0201B290
@@ -140581,8 +141545,10 @@ _0805A0A4:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectBondingH2oPhotonGeneratorUnit_0805A0AC
-gCardEffectBondingH2oPhotonGeneratorUnit_0805A0AC: @ 0x0805A0AC
+	@ Bonding - H2O
+	@ Photon Generator Unit
+	thumb_func_start gCardEffectSpecialSummonRevive_0805A0AC
+gCardEffectSpecialSummonRevive_0805A0AC: @ 0x0805A0AC
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	movs r5, #2
@@ -140725,8 +141691,9 @@ _0805A1D6:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDivineDragonExcelion_0805A1DC
-gCardEffectDivineDragonExcelion_0805A1DC: @ 0x0805A1DC
+	@ Divine Dragon - Excelion
+	thumb_func_start gCardEffectSendToGYDestroy_0805A1DC
+gCardEffectSendToGYDestroy_0805A1DC: @ 0x0805A1DC
 	push {lr}
 	adds r2, r0, #0
 	adds r3, r1, #0
@@ -140743,14 +141710,15 @@ gCardEffectDivineDragonExcelion_0805A1DC: @ 0x0805A1DC
 _0805A1F6:
 	adds r0, r2, #0
 	adds r1, r3, #0
-	bl gCardEffectBlackLusterSoldierEnvoyOfTheBeginningElementDoomElementDragonElementMagicianRuinQueenOfOblivion_08058858
+	bl gCardEffectDestroy_08058858
 _0805A1FE:
 	pop {r1}
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectDandylion_0805A204
-gCardEffectDandylion_0805A204: @ 0x0805A204
+	@ Dandylion
+	thumb_func_start gCardEffectSpecialSummonSendToGY_0805A204
+gCardEffectSpecialSummonSendToGY_0805A204: @ 0x0805A204
 	push {r4, lr}
 	ldrb r2, [r0, #2]
 	lsls r1, r2, #0x1f
@@ -144711,8 +145679,29 @@ _0805C1B0:
 _0805C1B8: .4byte gUnk_0201C4E0
 _0805C1BC: .4byte 0x00000868
 
-	thumb_func_start gCardEffectAbareUshioniArchfiendSOathBESCrystalCoreBarrelDragonBlowbackDragonCatnippedKittyCyberLaserDragonDarkMasterZorcGaiaSoulTheCombustibleCollectiveGatlingDragonGoddessOfWhimHomunculusTheAlchemicBeingKarateManPatroidRavielLordOfPhantasmsRouletteBarrelSandGamblerSasukeSamuraiTimeWizardUriaLordOfSearingFlamesVwxyzDragonCatapultCannon_0805C1C0
-gCardEffectAbareUshioniArchfiendSOathBESCrystalCoreBarrelDragonBlowbackDragonCatnippedKittyCyberLaserDragonDarkMasterZorcGaiaSoulTheCombustibleCollectiveGatlingDragonGoddessOfWhimHomunculusTheAlchemicBeingKarateManPatroidRavielLordOfPhantasmsRouletteBarrelSandGamblerSasukeSamuraiTimeWizardUriaLordOfSearingFlamesVwxyzDragonCatapultCannon_0805C1C0: @ 0x0805C1C0
+	@ Abare Ushioni
+	@ Archfiend's Oath
+	@ B.E.S. Crystal Core
+	@ Barrel Dragon
+	@ Blowback Dragon
+	@ Catnipped Kitty
+	@ Cyber Laser Dragon
+	@ Dark Master - Zorc
+	@ Gaia Soul the Combustible Collective
+	@ Gatling Dragon
+	@ Goddess of Whim
+	@ Homunculus the Alchemic Being
+	@ Karate Man
+	@ Patroid
+	@ Raviel, Lord of Phantasms
+	@ Roulette Barrel
+	@ Sand Gambler
+	@ Sasuke Samurai
+	@ Time Wizard
+	@ Uria, Lord of Searing Flames
+	@ VWXYZ-Dragon Catapult Cannon
+	thumb_func_start gCardEffectDestroyRNG_0805C1C0
+gCardEffectDestroyRNG_0805C1C0: @ 0x0805C1C0
 	push {lr}
 	ldrb r1, [r0, #2]
 	lsls r0, r1, #0x1f
@@ -144732,8 +145721,29 @@ _0805C1DA:
 	.align 2, 0
 _0805C1E0: .4byte 0x00000FB6 @ Time Wizard
 
-	thumb_func_start gCardEffectBackToSquareOneCostDownCurseOfAgingCyberneticMagicianDarkCoreForcedCeasefireHallowedLifeBarrierKarmaCutLightningVortexMaliceDispersionPhoenixWingWindBlastRaigekiBreakRisingEnergySpecialHurricaneSpellPurificationTributeToTheDoomedVwTigerCatapultXyDragonCannonXyzDragonCannonXzTankCannonYzTankDragon_0805C1E4
-gCardEffectBackToSquareOneCostDownCurseOfAgingCyberneticMagicianDarkCoreForcedCeasefireHallowedLifeBarrierKarmaCutLightningVortexMaliceDispersionPhoenixWingWindBlastRaigekiBreakRisingEnergySpecialHurricaneSpellPurificationTributeToTheDoomedVwTigerCatapultXyDragonCannonXyzDragonCannonXzTankCannonYzTankDragon_0805C1E4: @ 0x0805C1E4
+	@ Back to Square One
+	@ Cost Down
+	@ Curse of Aging
+	@ Cybernetic Magician
+	@ Dark Core
+	@ Forced Ceasefire
+	@ Hallowed Life Barrier
+	@ Karma Cut
+	@ Lightning Vortex
+	@ Malice Dispersion
+	@ Phoenix Wing Wind Blast
+	@ Raigeki Break
+	@ Rising Energy
+	@ Special Hurricane
+	@ Spell Purification
+	@ Tribute to The Doomed
+	@ VW-Tiger Catapult
+	@ XY-Dragon Cannon
+	@ XYZ-Dragon Cannon
+	@ XZ-Tank Cannon
+	@ YZ-Tank Dragon
+	thumb_func_start gCardEffectDiscard_0805C1E4
+gCardEffectDiscard_0805C1E4: @ 0x0805C1E4
 	push {r4, lr}
 	sub sp, #4
 	adds r4, r0, #0
@@ -144761,8 +145771,21 @@ _0805C20E:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
-gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218: @ 0x0805C218
+	@ A Rival Appears!
+	@ Beiige, Vanguard of Dark World
+	@ Cobra Jar
+	@ Des Dendle
+	@ Fiend's Sanctuary
+	@ Gravekeeper's Spy
+	@ Guardian Tryce
+	@ Hydrogeddon
+	@ Multiplication of Ants
+	@ Raviel, Lord of Phantasms
+	@ Sillva, Warlord of Dark World
+	@ Theinen the Great Sphinx
+	@ Watapon
+	thumb_func_start gCardEffectSpecialSummon_0805C218
+gCardEffectSpecialSummon_0805C218: @ 0x0805C218
 	push {r4, lr}
 	ldrb r2, [r0, #2]
 	lsls r1, r2, #0x1f
@@ -144788,8 +145811,27 @@ _0805C242:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectArchfiendSRoarAutonomousActionUnitBatteryChargerCallOfTheHauntedCentrifugalFieldChimeraTheFlyingMythicalBeastCyberSteinFulfillmentOfTheContractFushiohRichieMagicalScientistPrematureBurialReFusionReturnFromTheDifferentDimensionRiteOfSpiritSilentFiendSoulResurrectionSpiritCallerSpiritOfThePharaohSymbolOfHeritage_0805C248
-gCardEffectArchfiendSRoarAutonomousActionUnitBatteryChargerCallOfTheHauntedCentrifugalFieldChimeraTheFlyingMythicalBeastCyberSteinFulfillmentOfTheContractFushiohRichieMagicalScientistPrematureBurialReFusionReturnFromTheDifferentDimensionRiteOfSpiritSilentFiendSoulResurrectionSpiritCallerSpiritOfThePharaohSymbolOfHeritage_0805C248: @ 0x0805C248
+	@ Archfiend's Roar
+	@ Autonomous Action Unit
+	@ Battery Charger
+	@ Call of the Haunted
+	@ Centrifugal Field
+	@ Chimera the Flying Mythical Beast
+	@ Cyber-Stein
+	@ Fulfillment of the Contract
+	@ Fushioh Richie
+	@ Magical Scientist
+	@ Premature Burial
+	@ Re-Fusion
+	@ Return from the Different Dimension
+	@ Rite of Spirit
+	@ Silent Fiend
+	@ Soul Resurrection
+	@ Spirit Caller
+	@ Spirit of the Pharaoh
+	@ Symbol of Heritage
+	thumb_func_start gCardEffectSpecialSummonGraveyard_0805C248
+gCardEffectSpecialSummonGraveyard_0805C248: @ 0x0805C248
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	ldrb r1, [r6, #2]
@@ -144827,8 +145869,10 @@ _0805C28C:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectAncientLampMagnetCircleLv2_0805C294
-gCardEffectAncientLampMagnetCircleLv2_0805C294: @ 0x0805C294
+	@ Ancient Lamp
+	@ Magnet Circle LV2
+	thumb_func_start gCardEffectSpecialSummonChangePosition_0805C294
+gCardEffectSpecialSummonChangePosition_0805C294: @ 0x0805C294
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	ldrb r2, [r6, #2]
@@ -144839,7 +145883,7 @@ gCardEffectAncientLampMagnetCircleLv2_0805C294: @ 0x0805C294
 	lsrs r0, r0, #0x1f
 	eors r5, r0
 	adds r0, r6, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	cmp r0, #0
 	bne _0805C2B6
 	b _0805C2E0
@@ -144878,8 +145922,20 @@ _0805C2E2:
 _0805C2E8: .4byte gUnk_0201C4E0
 _0805C2EC: .4byte 0x00000868
 
-	thumb_func_start gCardEffectArmedChangerAswanApparitionDesFeralImpDrillBugFairyOfTheSpringMaskOfDarknessMonsterEyeNubianGuardRecycleReturnOfTheDoomedSoulReversalTheWarriorReturningAlive_0805C2F0
-gCardEffectArmedChangerAswanApparitionDesFeralImpDrillBugFairyOfTheSpringMaskOfDarknessMonsterEyeNubianGuardRecycleReturnOfTheDoomedSoulReversalTheWarriorReturningAlive_0805C2F0: @ 0x0805C2F0
+	@ Armed Changer
+	@ Aswan Apparition
+	@ Des Feral Imp
+	@ Drill Bug
+	@ Fairy of the Spring
+	@ Mask of Darkness
+	@ Monster Eye
+	@ Nubian Guard
+	@ Recycle
+	@ Return of the Doomed
+	@ Soul Reversal
+	@ The Warrior Returning Alive
+	thumb_func_start gCardEffectGraveyard_0805C2F0
+gCardEffectGraveyard_0805C2F0: @ 0x0805C2F0
 	push {r4, r5, lr}
 	ldrb r1, [r0, #2]
 	lsls r4, r1, #0x1f
@@ -144901,8 +145957,11 @@ _0805C312:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectGiftOfTheMysticalElfJustDessertsMagicalBlast_0805C318
-gCardEffectGiftOfTheMysticalElfJustDessertsMagicalBlast_0805C318: @ 0x0805C318
+	@ Gift of The Mystical Elf
+	@ Just Desserts
+	@ Magical Blast
+	thumb_func_start gCardEffectDamageSearch_0805C318
+gCardEffectDamageSearch_0805C318: @ 0x0805C318
 	push {lr}
 	sub sp, #8
 	mov r1, sp
@@ -144923,8 +145982,9 @@ _0805C332:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectKuriboh_0805C33C
-gCardEffectKuriboh_0805C33C: @ 0x0805C33C
+	@ Kuriboh
+	thumb_func_start gCardEffectDiscardDamage_0805C33C
+gCardEffectDiscardDamage_0805C33C: @ 0x0805C33C
 	push {r4, r5, lr}
 	adds r2, r0, #0
 	cmp r1, #0
@@ -144970,8 +146030,9 @@ _0805C38E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectCocoonOfEvolution_0805C394
-gCardEffectCocoonOfEvolution_0805C394: @ 0x0805C394
+	@ Cocoon of Evolution
+	thumb_func_start gCardEffectEquip_0805C394
+gCardEffectEquip_0805C394: @ 0x0805C394
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldr r1, _0805C3DC @ =gUnk_0201C4E0
@@ -145017,8 +146078,12 @@ _0805C3E6:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectCannonSoldierMassDriverMystikWokToonCannonSoldier_0805C3EC
-gCardEffectCannonSoldierMassDriverMystikWokToonCannonSoldier_0805C3EC: @ 0x0805C3EC
+	@ Cannon Soldier
+	@ Mass Driver
+	@ Mystik Wok
+	@ Toon Cannon Soldier
+	thumb_func_start gCardEffectTributeDamage_0805C3EC
+gCardEffectTributeDamage_0805C3EC: @ 0x0805C3EC
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
@@ -145036,8 +146101,12 @@ _0805C404:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectBladeRabbitDreamClownTaintedWisdomYadoKaru_0805C40C
-gCardEffectBladeRabbitDreamClownTaintedWisdomYadoKaru_0805C40C: @ 0x0805C40C
+	@ Blade Rabbit
+	@ Dream Clown
+	@ Tainted Wisdom
+	@ Yado Karu
+	thumb_func_start gCardEffectChangePositionDestroy_0805C40C
+gCardEffectChangePositionDestroy_0805C40C: @ 0x0805C40C
 	ldrb r0, [r0, #2]
 	lsls r2, r0, #0x1f
 	lsrs r2, r2, #0x1f
@@ -145064,8 +146133,29 @@ _0805C438:
 _0805C43A:
 	bx lr
 
-	thumb_func_start gCardEffectBigEyeCardOfSafeReturnDifferentDimensionCapsuleFoolishBurialFreedTheMatchlessGeneralFruitsOfKozakySStudiesFusionSageGenerationShiftHeartOfTheUnderdogMagicalMerchantNextToBeLostPandemoniumReinforcementOfTheArmyRockBombardmentSixthSenseSpellbookOrganizationTADPOLETerraformingTheFluteOfSummoningKuribohThunderDragonToonTableOfContents_0805C43C
-gCardEffectBigEyeCardOfSafeReturnDifferentDimensionCapsuleFoolishBurialFreedTheMatchlessGeneralFruitsOfKozakySStudiesFusionSageGenerationShiftHeartOfTheUnderdogMagicalMerchantNextToBeLostPandemoniumReinforcementOfTheArmyRockBombardmentSixthSenseSpellbookOrganizationTADPOLETerraformingTheFluteOfSummoningKuribohThunderDragonToonTableOfContents_0805C43C: @ 0x0805C43C
+	@ Big Eye
+	@ Card of Safe Return
+	@ Different Dimension Capsule
+	@ Foolish Burial
+	@ Freed the Matchless General
+	@ Fruits of Kozaky's Studies
+	@ Fusion Sage
+	@ Generation Shift
+	@ Heart of the Underdog
+	@ Magical Merchant
+	@ Next to be Lost
+	@ Pandemonium
+	@ Reinforcement of the Army
+	@ Rock Bombardment
+	@ Sixth Sense
+	@ Spellbook Organization
+	@ T.A.D.P.O.L.E.
+	@ Terraforming
+	@ The Flute of Summoning Kuriboh
+	@ Thunder Dragon
+	@ Toon Table of Contents
+	thumb_func_start gCardEffectSearchGraveyard_0805C43C
+gCardEffectSearchGraveyard_0805C43C: @ 0x0805C43C
 	ldr r2, _0805C460 @ =gUnk_0201C4E0
 	ldrb r3, [r0, #2]
 	lsls r1, r3, #0x1f
@@ -145088,8 +146178,9 @@ _0805C45C:
 _0805C460: .4byte gUnk_0201C4E0
 _0805C464: .4byte 0x00000868
 
-	thumb_func_start gCardEffectTheLittleSwordsmanOfAile_0805C468
-gCardEffectTheLittleSwordsmanOfAile_0805C468: @ 0x0805C468
+	@ The Little Swordsman of Aile
+	thumb_func_start gCardEffectBoostATKTribute_0805C468
+gCardEffectBoostATKTribute_0805C468: @ 0x0805C468
 	push {lr}
 	ldrb r2, [r0, #2]
 	lsls r1, r2, #0x1f
@@ -145109,8 +146200,9 @@ _0805C486:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectAxeOfDespair_0805C48C
-gCardEffectAxeOfDespair_0805C48C: @ 0x0805C48C
+	@ Axe of Despair
+	thumb_func_start gCardEffectSendToGYBoostATK_0805C48C
+gCardEffectSendToGYBoostATK_0805C48C: @ 0x0805C48C
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
@@ -145153,11 +146245,12 @@ _0805C4D0:
 _0805C4D2:
 	bx lr
 
-	thumb_func_start gCardEffectElegantEgotist_0805C4D4
-gCardEffectElegantEgotist_0805C4D4: @ 0x0805C4D4
+	@ Elegant Egotist
+	thumb_func_start gCardEffectSpecialSummon_0805C4D4
+gCardEffectSpecialSummon_0805C4D4: @ 0x0805C4D4
 	push {r4, lr}
 	adds r4, r0, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	cmp r0, #0
 	beq _0805C50E
 	ldr r0, _0805C514 @ =0x00000FE4 (Harpie Lady)
@@ -145195,8 +146288,11 @@ _0805C522:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectKazejinSangaOfTheThunderSuijin_0805C528
-gCardEffectKazejinSangaOfTheThunderSuijin_0805C528: @ 0x0805C528
+	@ Kazejin
+	@ Sanga of the Thunder
+	@ Suijin
+	thumb_func_start gCardEffectUnknown_0805C528
+gCardEffectUnknown_0805C528: @ 0x0805C528
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	movs r0, #0xfc
@@ -145252,8 +146348,9 @@ _0805C592:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectBlastJuggler_0805C598
-gCardEffectBlastJuggler_0805C598: @ 0x0805C598
+	@ Blast Juggler
+	thumb_func_start gCardEffectDestroyTribute_0805C598
+gCardEffectDestroyTribute_0805C598: @ 0x0805C598
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	ldrb r5, [r6, #2]
@@ -145309,8 +146406,9 @@ _0805C602:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectGaleDogra_0805C608
-gCardEffectGaleDogra_0805C608: @ 0x0805C608
+	@ Gale Dogra
+	thumb_func_start gCardEffectSendToGYDamage_0805C608
+gCardEffectSendToGYDamage_0805C608: @ 0x0805C608
 	ldr r2, _0805C624 @ =gUnk_0201C4E0
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
@@ -145332,8 +146430,9 @@ _0805C62C:
 _0805C62E:
 	bx lr
 
-	thumb_func_start gCardEffectMushroomMan_0805C630
-gCardEffectMushroomMan_0805C630: @ 0x0805C630
+	@ Mushroom Man
+	thumb_func_start gCardEffectUnknown_0805C630
+gCardEffectUnknown_0805C630: @ 0x0805C630
 	push {lr}
 	adds r2, r0, #0
 	movs r0, #0xfc
@@ -145361,8 +146460,9 @@ _0805C65A:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectWeatherReport_0805C660
-gCardEffectWeatherReport_0805C660: @ 0x0805C660
+	@ Weather Report
+	thumb_func_start gCardEffectDestroyFlip_0805C660
+gCardEffectDestroyFlip_0805C660: @ 0x0805C660
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r1, r0, #0x1f
@@ -145378,8 +146478,12 @@ gCardEffectWeatherReport_0805C660: @ 0x0805C660
 	.align 2, 0
 _0805C67C: .4byte 0x00001102 @ Swords of Revealing Light
 
-	thumb_func_start gCardEffectGreenkappaNoblemanEaterBugRiryokuTornadoBird_0805C680
-gCardEffectGreenkappaNoblemanEaterBugRiryokuTornadoBird_0805C680: @ 0x0805C680
+	@ Greenkappa
+	@ Nobleman-Eater Bug
+	@ Riryoku
+	@ Tornado Bird
+	thumb_func_start gCardEffectFlipDestroy_0805C680
+gCardEffectFlipDestroy_0805C680: @ 0x0805C680
 	push {lr}
 	bl sub_08090714
 	cmp r0, #1
@@ -145392,8 +146496,9 @@ _0805C690:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectInvaderOfTheThrone_0805C694
-gCardEffectInvaderOfTheThrone_0805C694: @ 0x0805C694
+	@ Invader of the Throne
+	thumb_func_start gCardEffectTakeControlFlip_0805C694
+gCardEffectTakeControlFlip_0805C694: @ 0x0805C694
 	ldr r0, _0805C6A8 @ =gUnk_0201C4E0
 	ldr r1, _0805C6AC @ =0x00001CF4
 	adds r0, r0, r1
@@ -145408,8 +146513,9 @@ gCardEffectInvaderOfTheThrone_0805C694: @ 0x0805C694
 _0805C6A8: .4byte gUnk_0201C4E0
 _0805C6AC: .4byte 0x00001CF4
 
-	thumb_func_start gCardEffectKunaiWithChain_0805C6B0
-gCardEffectKunaiWithChain_0805C6B0: @ 0x0805C6B0
+	@ Kunai with Chain
+	thumb_func_start gCardEffectBoostATKBoostDEF_0805C6B0
+gCardEffectBoostATKBoostDEF_0805C6B0: @ 0x0805C6B0
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	movs r1, #0xfc
@@ -145468,8 +146574,9 @@ _0805C71E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectMagicalLabyrinth_0805C724
-gCardEffectMagicalLabyrinth_0805C724: @ 0x0805C724
+	@ Magical Labyrinth
+	thumb_func_start gCardEffectSpecialSummonEquip_0805C724
+gCardEffectSpecialSummonEquip_0805C724: @ 0x0805C724
 	push {r4, r5, r6, lr}
 	adds r2, r0, #0
 	ldrb r1, [r2, #2]
@@ -145530,8 +146637,10 @@ _0805C79E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectScapegoatStrayLambs_0805C7A4
-gCardEffectScapegoatStrayLambs_0805C7A4: @ 0x0805C7A4
+	@ Scapegoat
+	@ Stray Lambs
+	thumb_func_start gCardEffectSpecialSummonChangePosition_0805C7A4
+gCardEffectSpecialSummonChangePosition_0805C7A4: @ 0x0805C7A4
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	movs r6, #0
@@ -145590,8 +146699,9 @@ _0805C812:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectFakeTrap_0805C818
-gCardEffectFakeTrap_0805C818: @ 0x0805C818
+	@ Fake Trap
+	thumb_func_start gCardEffectDestroySpellTrap_0805C818
+gCardEffectDestroySpellTrap_0805C818: @ 0x0805C818
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -145885,8 +146995,10 @@ _0805CA42:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectRelinquishedThousandEyesRestrict_0805CA50
-gCardEffectRelinquishedThousandEyesRestrict_0805CA50: @ 0x0805CA50
+	@ Relinquished
+	@ Thousand-Eyes Restrict
+	thumb_func_start gCardEffectDestroyEquip_0805CA50
+gCardEffectDestroyEquip_0805CA50: @ 0x0805CA50
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	adds r6, r1, #0
@@ -145909,7 +147021,7 @@ gCardEffectRelinquishedThousandEyesRestrict_0805CA50: @ 0x0805CA50
 	beq _0805CA8C
 	adds r0, r5, #0
 	adds r1, r6, #0
-	bl gCardEffectAbareUshioniArchfiendSOathBESCrystalCoreBarrelDragonBlowbackDragonCatnippedKittyCyberLaserDragonDarkMasterZorcGaiaSoulTheCombustibleCollectiveGatlingDragonGoddessOfWhimHomunculusTheAlchemicBeingKarateManPatroidRavielLordOfPhantasmsRouletteBarrelSandGamblerSasukeSamuraiTimeWizardUriaLordOfSearingFlamesVwxyzDragonCatapultCannon_0805C1C0
+	bl gCardEffectDestroyRNG_0805C1C0
 	b _0805CA8E
 	.align 2, 0
 _0805CA88: .4byte 0xFFFF0000
@@ -145920,8 +147032,9 @@ _0805CA8E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectJigenBakudan_0805CA94
-gCardEffectJigenBakudan_0805CA94: @ 0x0805CA94
+	@ Jigen Bakudan
+	thumb_func_start gCardEffectDestroyAllDamage_0805CA94
+gCardEffectDestroyAllDamage_0805CA94: @ 0x0805CA94
 	push {r4, r5, r6, lr}
 	adds r1, r0, #0
 	movs r0, #0xfc
@@ -145969,8 +147082,10 @@ _0805CAEA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectAdhesiveExplosiveBlastSphere_0805CAF0
-gCardEffectAdhesiveExplosiveBlastSphere_0805CAF0: @ 0x0805CAF0
+	@ Adhesive Explosive
+	@ Blast Sphere
+	thumb_func_start gCardEffectDestroyChangePosition_0805CAF0
+gCardEffectDestroyChangePosition_0805CAF0: @ 0x0805CAF0
 	push {lr}
 	adds r2, r0, #0
 	movs r0, #0xfc
@@ -145980,7 +147095,7 @@ gCardEffectAdhesiveExplosiveBlastSphere_0805CAF0: @ 0x0805CAF0
 	cmp r0, #0x80
 	beq _0805CB08
 	adds r0, r2, #0
-	bl gCardEffectAncientLampKiseitai_0805E09C
+	bl gCardEffectChangePositionSpecialSummon_0805E09C
 	b _0805CB18
 _0805CB08:
 	ldrb r1, [r2, #2]
@@ -145994,8 +147109,9 @@ _0805CB18:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectGearGolemTheMovingFortress_0805CB1C
-gCardEffectGearGolemTheMovingFortress_0805CB1C: @ 0x0805CB1C
+	@ Gear Golem the Moving Fortress
+	thumb_func_start gCardEffectDamageDirectAttack_0805CB1C
+gCardEffectDamageDirectAttack_0805CB1C: @ 0x0805CB1C
 	push {lr}
 	adds r2, r0, #0
 	ldr r0, _0805CB34 @ =gUnk_0201C4E0
@@ -146005,7 +147121,7 @@ gCardEffectGearGolemTheMovingFortress_0805CB1C: @ 0x0805CB1C
 	cmp r0, #2
 	bne _0805CB3C
 	adds r0, r2, #0
-	bl gCardEffectAbareUshioniArchfiendSOathBESCrystalCoreBarrelDragonBlowbackDragonCatnippedKittyCyberLaserDragonDarkMasterZorcGaiaSoulTheCombustibleCollectiveGatlingDragonGoddessOfWhimHomunculusTheAlchemicBeingKarateManPatroidRavielLordOfPhantasmsRouletteBarrelSandGamblerSasukeSamuraiTimeWizardUriaLordOfSearingFlamesVwxyzDragonCatapultCannon_0805C1C0
+	bl gCardEffectDestroyRNG_0805C1C0
 	b _0805CB3E
 	.align 2, 0
 _0805CB34: .4byte gUnk_0201C4E0
@@ -146017,8 +147133,9 @@ _0805CB3E:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectParasiteParacide_0805CB44
-gCardEffectParasiteParacide_0805CB44: @ 0x0805CB44
+	@ Parasite Paracide
+	thumb_func_start gCardEffectSpecialSummonDamage_0805CB44
+gCardEffectSpecialSummonDamage_0805CB44: @ 0x0805CB44
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -146088,8 +147205,14 @@ _0805CBC2:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDonTurtleMaraudingCaptainPinchHopperTheThingInTheCraterTwoManCellBattleVampireOrchis_0805CBCC
-gCardEffectDonTurtleMaraudingCaptainPinchHopperTheThingInTheCraterTwoManCellBattleVampireOrchis_0805CBCC: @ 0x0805CBCC
+	@ Don Turtle
+	@ Marauding Captain
+	@ Pinch Hopper
+	@ The Thing in the Crater
+	@ Two-Man Cell Battle
+	@ Vampire Orchis
+	thumb_func_start gCardEffectSpecialSummon_0805CBCC
+gCardEffectSpecialSummon_0805CBCC: @ 0x0805CBCC
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -146121,8 +147244,9 @@ _0805CC02:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectTimeMachine_0805CC08
-gCardEffectTimeMachine_0805CC08: @ 0x0805CC08
+	@ Time Machine
+	thumb_func_start gCardEffectSpecialSummonSendToGY_0805CC08
+gCardEffectSpecialSummonSendToGY_0805CC08: @ 0x0805CC08
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -146258,8 +147382,9 @@ _0805CD16:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectNegateAttack_0805CD20
-gCardEffectNegateAttack_0805CD20: @ 0x0805CD20
+	@ Negate Attack
+	thumb_func_start gCardEffectNegateBattlePhase_0805CD20
+gCardEffectNegateBattlePhase_0805CD20: @ 0x0805CD20
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r0, #0xfc
@@ -146299,8 +147424,11 @@ _0805CD66:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectLevelUpMultiplySandMoth_0805CD6C
-gCardEffectLevelUpMultiplySandMoth_0805CD6C: @ 0x0805CD6C
+	@ Level Up!
+	@ Multiply
+	@ Sand Moth
+	thumb_func_start gCardEffectSpecialSummonSendToGY_0805CD6C
+gCardEffectSpecialSummonSendToGY_0805CD6C: @ 0x0805CD6C
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
@@ -146317,8 +147445,23 @@ _0805CD82:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectAmazonessChainMasterConfiscationDelinquentDuoDesKoalaDisturbanceStrategyEnergyDrainFengshengMirrorGreatPhantomThiefLightforceSwordOminousFortunetellingRestructerRevolutionSpiritualWaterArtAoiTheForcefulSentryTheInexperiencedSpyThestalosTheFirestormMonarch_0805CD88
-gCardEffectAmazonessChainMasterConfiscationDelinquentDuoDesKoalaDisturbanceStrategyEnergyDrainFengshengMirrorGreatPhantomThiefLightforceSwordOminousFortunetellingRestructerRevolutionSpiritualWaterArtAoiTheForcefulSentryTheInexperiencedSpyThestalosTheFirestormMonarch_0805CD88: @ 0x0805CD88
+	@ Amazoness Chain Master
+	@ Confiscation
+	@ Delinquent Duo
+	@ Des Koala
+	@ Disturbance Strategy
+	@ Energy Drain
+	@ Fengsheng Mirror
+	@ Great Phantom Thief
+	@ Lightforce Sword
+	@ Ominous Fortunetelling
+	@ Restructer Revolution
+	@ Spiritual Water Art - Aoi
+	@ The Forceful Sentry
+	@ The Inexperienced Spy
+	@ Thestalos the Firestorm Monarch
+	thumb_func_start gCardEffectDamageDiscard_0805CD88
+gCardEffectDamageDiscard_0805CD88: @ 0x0805CD88
 	ldr r2, _0805CDA8 @ =gUnk_0201C4E0
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
@@ -146339,8 +147482,9 @@ _0805CDA4:
 _0805CDA8: .4byte gUnk_0201C4E0
 _0805CDAC: .4byte 0x00000868
 
-	thumb_func_start gCardEffectTheFluteOfSummoningDragon_0805CDB0
-gCardEffectTheFluteOfSummoningDragon_0805CDB0: @ 0x0805CDB0
+	@ The Flute of Summoning Dragon
+	thumb_func_start gCardEffectSpecialSummon_0805CDB0
+gCardEffectSpecialSummon_0805CDB0: @ 0x0805CDB0
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -146350,7 +147494,7 @@ gCardEffectTheFluteOfSummoningDragon_0805CDB0: @ 0x0805CDB0
 	beq _0805CDD0
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectAncientLampMagnetCircleLv2_0805C294
+	bl gCardEffectSpecialSummonChangePosition_0805C294
 	b _0805CDD2
 	.align 2, 0
 _0805CDCC: .4byte 0x0000128B @ Lord of D.
@@ -146361,8 +147505,9 @@ _0805CDD2:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectCardDestruction_0805CDD8
-gCardEffectCardDestruction_0805CDD8: @ 0x0805CDD8
+	@ Card Destruction
+	thumb_func_start gCardEffectDrawDiscard_0805CDD8
+gCardEffectDrawDiscard_0805CDD8: @ 0x0805CDD8
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	ldrb r0, [r4, #2]
@@ -146409,8 +147554,9 @@ _0805CE2A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectTragedy_0805CE30
-gCardEffectTragedy_0805CE30: @ 0x0805CE30
+	@ Tragedy
+	thumb_func_start gCardEffectDestroyAllChangePosition_0805CE30
+gCardEffectDestroyAllChangePosition_0805CE30: @ 0x0805CE30
 	push {r4, lr}
 	adds r3, r0, #0
 	movs r0, #0xfc
@@ -146446,11 +147592,12 @@ _0805CE6A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDarkMagicCurtain_0805CE70
-gCardEffectDarkMagicCurtain_0805CE70: @ 0x0805CE70
+	@ Dark Magic Curtain
+	thumb_func_start gCardEffectSpecialSummon_0805CE70
+gCardEffectSpecialSummon_0805CE70: @ 0x0805CE70
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	cmp r0, #0
 	beq _0805CEC0
 	ldr r5, _0805CEB8 @ =gUnk_0201C4E0
@@ -146492,8 +147639,9 @@ _0805CEC2:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectMagicArmShield_0805CEC8
-gCardEffectMagicArmShield_0805CEC8: @ 0x0805CEC8
+	@ Magic-Arm Shield
+	thumb_func_start gCardEffectUnknown_0805CEC8
+gCardEffectUnknown_0805CEC8: @ 0x0805CEC8
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r0, #0xfc
@@ -146536,8 +147684,11 @@ _0805CF16:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectEatgaboonHouseOfAdhesiveTapeTrapHole_0805CF1C
-gCardEffectEatgaboonHouseOfAdhesiveTapeTrapHole_0805CF1C: @ 0x0805CF1C
+	@ Eatgaboon
+	@ House of Adhesive Tape
+	@ Trap Hole
+	thumb_func_start gCardEffectDestroySpecialSummon_0805CF1C
+gCardEffectDestroySpecialSummon_0805CF1C: @ 0x0805CF1C
 	movs r1, #0xfc
 	lsls r1, r1, #4
 	ldrh r0, [r0, #2]
@@ -146557,8 +147708,9 @@ _0805CF38:
 	bx lr
 	.align 2, 0
 
-	thumb_func_start gCardEffectTwoProngedAttack_0805CF3C
-gCardEffectTwoProngedAttack_0805CF3C: @ 0x0805CF3C
+	@ Two-Pronged Attack
+	thumb_func_start gCardEffectDestroy_0805CF3C
+gCardEffectDestroy_0805CF3C: @ 0x0805CF3C
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r0, [r4, #2]
@@ -146586,8 +147738,9 @@ _0805CF6A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectMonsterReborn_0805CF70
-gCardEffectMonsterReborn_0805CF70: @ 0x0805CF70
+	@ Monster Reborn
+	thumb_func_start gCardEffectSpecialSummonGraveyard_0805CF70
+gCardEffectSpecialSummonGraveyard_0805CF70: @ 0x0805CF70
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -146597,7 +147750,7 @@ gCardEffectMonsterReborn_0805CF70: @ 0x0805CF70
 	bgt _0805CF90
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectArchfiendSRoarAutonomousActionUnitBatteryChargerCallOfTheHauntedCentrifugalFieldChimeraTheFlyingMythicalBeastCyberSteinFulfillmentOfTheContractFushiohRichieMagicalScientistPrematureBurialReFusionReturnFromTheDifferentDimensionRiteOfSpiritSilentFiendSoulResurrectionSpiritCallerSpiritOfThePharaohSymbolOfHeritage_0805C248
+	bl gCardEffectSpecialSummonGraveyard_0805C248
 	b _0805CF92
 	.align 2, 0
 _0805CF8C: .4byte 0x000012FB @ Call of Darkness (None)
@@ -146608,8 +147761,12 @@ _0805CF92:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectGracefulCharityJarOfGreedPotOfGreedUpstartGoblin_0805CF98
-gCardEffectGracefulCharityJarOfGreedPotOfGreedUpstartGoblin_0805CF98: @ 0x0805CF98
+	@ Graceful Charity
+	@ Jar of Greed
+	@ Pot of Greed
+	@ Upstart Goblin
+	thumb_func_start gCardEffectDraw_0805CF98
+gCardEffectDraw_0805CF98: @ 0x0805CF98
 	push {r4, r5, lr}
 	adds r3, r0, #0
 	ldrh r1, [r3]
@@ -146655,8 +147812,14 @@ _0805CFDC:
 _0805CFE4: .4byte gUnk_0201C4E0
 _0805CFE8: .4byte 0x00000868
 
-	thumb_func_start gCardEffectDarkBladeTheDragonKnightDisappearGravediggerGhoulKycooTheGhostDestroyerWhiteHornsDWitchDoctorOfChaos_0805CFEC
-gCardEffectDarkBladeTheDragonKnightDisappearGravediggerGhoulKycooTheGhostDestroyerWhiteHornsDWitchDoctorOfChaos_0805CFEC: @ 0x0805CFEC
+	@ Dark Blade the Dragon Knight
+	@ Disappear
+	@ Gravedigger Ghoul
+	@ Kycoo the Ghost Destroyer
+	@ White Horns D.
+	@ Witch Doctor of Chaos
+	thumb_func_start gCardEffectGraveyardBanish_0805CFEC
+gCardEffectGraveyardBanish_0805CFEC: @ 0x0805CFEC
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -146685,8 +147848,9 @@ _0805D01A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectUltimateOffering_0805D020
-gCardEffectUltimateOffering_0805D020: @ 0x0805D020
+	@ Ultimate Offering
+	thumb_func_start gCardEffectUnknown_0805D020
+gCardEffectUnknown_0805D020: @ 0x0805D020
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -146814,8 +147978,39 @@ _0805D10A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectATeamTrapDisposalUnitAntiRaigekiAntiSpellArmorBreakCallOfTheGraveCurseOfRoyalCursedSealOfTheForbiddenSpellDarkBalterTheTerribleDarkPaladinFeatherWindGoblinOutOfTheFryingPanGryphonWingHorusTheBlackFlameDragonLv8JarRobberJudgmentOfAnubisMagicDrainMagicJammerMalfunctionMaryokutaiMysticalRefpanelRiryokuFieldRoyalSurrenderRyuSenshiSevenToolsOfTheBanditSorcererOfDarkMagicSpellShieldType8SpellVanishingSpellStoppingStatuteTrapJammerTutanMaskWhiteHole_0805D118
-gCardEffectATeamTrapDisposalUnitAntiRaigekiAntiSpellArmorBreakCallOfTheGraveCurseOfRoyalCursedSealOfTheForbiddenSpellDarkBalterTheTerribleDarkPaladinFeatherWindGoblinOutOfTheFryingPanGryphonWingHorusTheBlackFlameDragonLv8JarRobberJudgmentOfAnubisMagicDrainMagicJammerMalfunctionMaryokutaiMysticalRefpanelRiryokuFieldRoyalSurrenderRyuSenshiSevenToolsOfTheBanditSorcererOfDarkMagicSpellShieldType8SpellVanishingSpellStoppingStatuteTrapJammerTutanMaskWhiteHole_0805D118: @ 0x0805D118
+	@ A-Team: Trap Disposal Unit
+	@ Anti Raigeki
+	@ Anti-Spell
+	@ Armor Break
+	@ Call of the Grave
+	@ Curse of Royal
+	@ Cursed Seal of the Forbidden Spell
+	@ Dark Balter the Terrible
+	@ Dark Paladin
+	@ Feather Wind
+	@ Goblin Out of the Frying Pan
+	@ Gryphon Wing
+	@ Horus the Black Flame Dragon LV8
+	@ Jar Robber
+	@ Judgment of Anubis
+	@ Magic Drain
+	@ Magic Jammer
+	@ Malfunction
+	@ Maryokutai
+	@ Mystical Refpanel
+	@ Riryoku Field
+	@ Royal Surrender
+	@ Ryu Senshi
+	@ Seven Tools of the Bandit
+	@ Sorcerer of Dark Magic
+	@ Spell Shield Type-8
+	@ Spell Vanishing
+	@ Spell-Stopping Statute
+	@ Trap Jammer
+	@ Tutan Mask
+	@ White Hole
+	thumb_func_start gCardEffectNegateDestroy_0805D118
+gCardEffectNegateDestroy_0805D118: @ 0x0805D118
 	push {r4, r5, r6, lr}
 	sub sp, #4
 	adds r5, r0, #0
@@ -147253,7 +148448,7 @@ _0805D40E:
 _0805D41A:
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl gCardEffectBackToSquareOneCostDownCurseOfAgingCyberneticMagicianDarkCoreForcedCeasefireHallowedLifeBarrierKarmaCutLightningVortexMaliceDispersionPhoenixWingWindBlastRaigekiBreakRisingEnergySpecialHurricaneSpellPurificationTributeToTheDoomedVwTigerCatapultXyDragonCannonXyzDragonCannonXzTankCannonYzTankDragon_0805C1E4
+	bl gCardEffectDiscard_0805C1E4
 	b _0805D738
 _0805D424:
 	ldrh r0, [r4]
@@ -147667,8 +148862,9 @@ _0805D738:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectSoulRelease_0805D740
-gCardEffectSoulRelease_0805D740: @ 0x0805D740
+	@ Soul Release
+	thumb_func_start gCardEffectBanishGraveyard_0805D740
+gCardEffectBanishGraveyard_0805D740: @ 0x0805D740
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -147720,8 +148916,9 @@ _0805D79E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectTheCheerfulCoffin_0805D7A4
-gCardEffectTheCheerfulCoffin_0805D7A4: @ 0x0805D7A4
+	@ The Cheerful Coffin
+	thumb_func_start gCardEffectDiscardGraveyard_0805D7A4
+gCardEffectDiscardGraveyard_0805D7A4: @ 0x0805D7A4
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -147789,8 +148986,17 @@ _0805D818:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectBrainControlChangeOfHeartDragonManipulatorElectromagneticBagwormJowlsOfDarkDemiseMindControlRafflesiaSeductionShadowTamerSnatchSteal_0805D824
-gCardEffectBrainControlChangeOfHeartDragonManipulatorElectromagneticBagwormJowlsOfDarkDemiseMindControlRafflesiaSeductionShadowTamerSnatchSteal_0805D824: @ 0x0805D824
+	@ Brain Control
+	@ Change of Heart
+	@ Dragon Manipulator
+	@ Electromagnetic Bagworm
+	@ Jowls of Dark Demise
+	@ Mind Control
+	@ Rafflesia Seduction
+	@ Shadow Tamer
+	@ Snatch Steal
+	thumb_func_start gCardEffectTakeControlFlip_0805D824
+gCardEffectTakeControlFlip_0805D824: @ 0x0805D824
 	push {lr}
 	ldrb r2, [r0, #2]
 	lsls r1, r2, #0x1f
@@ -147807,8 +149013,9 @@ _0805D83A:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectSolemnJudgment_0805D840
-gCardEffectSolemnJudgment_0805D840: @ 0x0805D840
+	@ Solemn Judgment
+	thumb_func_start gCardEffectSpecialSummonNegate_0805D840
+gCardEffectSpecialSummonNegate_0805D840: @ 0x0805D840
 	push {r4, lr}
 	adds r2, r0, #0
 	adds r4, r1, #0
@@ -147872,8 +149079,9 @@ _0805D8B6:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectHornOfHeaven_0805D8BC
-gCardEffectHornOfHeaven_0805D8BC: @ 0x0805D8BC
+	@ Horn of Heaven
+	thumb_func_start gCardEffectSpecialSummonNegate_0805D8BC
+gCardEffectSpecialSummonNegate_0805D8BC: @ 0x0805D8BC
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrh r1, [r4, #2]
@@ -147921,8 +149129,9 @@ _0805D912:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectLastWill_0805D918
-gCardEffectLastWill_0805D918: @ 0x0805D918
+	@ Last Will
+	thumb_func_start gCardEffectSpecialSummonSendToGY_0805D918
+gCardEffectSpecialSummonSendToGY_0805D918: @ 0x0805D918
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	cmp r1, #0
@@ -147945,7 +149154,7 @@ gCardEffectLastWill_0805D918: @ 0x0805D918
 	bne _0805D990
 	adds r0, r4, #0
 	movs r1, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	cmp r0, #0
 	beq _0805D990
 	ldrb r0, [r4, #2]
@@ -147984,8 +149193,15 @@ _0805D992:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectCalamityOfTheWickedDarkMirrorForceDimensionWallMirrorForceSakuretsuArmorStaunchDefenderWidespreadRuin_0805D998
-gCardEffectCalamityOfTheWickedDarkMirrorForceDimensionWallMirrorForceSakuretsuArmorStaunchDefenderWidespreadRuin_0805D998: @ 0x0805D998
+	@ Calamity of the Wicked
+	@ Dark Mirror Force
+	@ Dimension Wall
+	@ Mirror Force
+	@ Sakuretsu Armor
+	@ Staunch Defender
+	@ Widespread Ruin
+	thumb_func_start gCardEffectDestroyChangePosition_0805D998
+gCardEffectDestroyChangePosition_0805D998: @ 0x0805D998
 	adds r2, r0, #0
 	movs r0, #0xfc
 	lsls r0, r0, #4
@@ -148014,8 +149230,9 @@ _0805D9C8:
 _0805D9CA:
 	bx lr
 
-	thumb_func_start gCardEffectShareThePain_0805D9CC
-gCardEffectShareThePain_0805D9CC: @ 0x0805D9CC
+	@ Share the Pain
+	thumb_func_start gCardEffectTribute_0805D9CC
+gCardEffectTribute_0805D9CC: @ 0x0805D9CC
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -148045,8 +149262,9 @@ _0805D9FE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectCurseOfFiend_0805DA04
-gCardEffectCurseOfFiend_0805DA04: @ 0x0805DA04
+	@ Curse of Fiend
+	thumb_func_start gCardEffectChangePositionStandbyPhase_0805DA04
+gCardEffectChangePositionStandbyPhase_0805DA04: @ 0x0805DA04
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldr r1, _0805DA60 @ =gUnk_0201C4E0
@@ -148102,8 +149320,9 @@ _0805DA6E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectFinalDestiny_0805DA74
-gCardEffectFinalDestiny_0805DA74: @ 0x0805DA74
+	@ Final Destiny
+	thumb_func_start gCardEffectDiscardDestroyAll_0805DA74
+gCardEffectDiscardDestroyAll_0805DA74: @ 0x0805DA74
 	push {lr}
 	sub sp, #4
 	adds r1, r0, #0
@@ -148130,8 +149349,9 @@ _0805DA9C:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectDarknessApproaches_0805DAA4
-gCardEffectDarknessApproaches_0805DAA4: @ 0x0805DAA4
+	@ Darkness Approaches
+	thumb_func_start gCardEffectDiscardChangePosition_0805DAA4
+gCardEffectDiscardChangePosition_0805DAA4: @ 0x0805DAA4
 	push {r4, lr}
 	sub sp, #4
 	adds r4, r0, #0
@@ -148227,8 +149447,9 @@ _0805DB56:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectFairySHandMirror_0805DB60
-gCardEffectFairySHandMirror_0805DB60: @ 0x0805DB60
+	@ Fairy's Hand Mirror
+	thumb_func_start gCardEffectUnknown_0805DB60
+gCardEffectUnknown_0805DB60: @ 0x0805DB60
 	push {r4, r5, r6, r7, lr}
 	adds r7, r0, #0
 	adds r6, r1, #0
@@ -148297,8 +149518,9 @@ _0805DBD8:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectPainfulChoice_0805DBE0
-gCardEffectPainfulChoice_0805DBE0: @ 0x0805DBE0
+	@ Painful Choice
+	thumb_func_start gCardEffectSearchDiscard_0805DBE0
+gCardEffectSearchDiscard_0805DBE0: @ 0x0805DBE0
 	push {lr}
 	adds r1, r0, #0
 	ldrb r2, [r1, #2]
@@ -148316,8 +149538,9 @@ _0805DBFA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectMichizure_0805DC00
-gCardEffectMichizure_0805DC00: @ 0x0805DC00
+	@ Michizure
+	thumb_func_start gCardEffectSendToGYDestroy_0805DC00
+gCardEffectSendToGYDestroy_0805DC00: @ 0x0805DC00
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrh r1, [r4, #2]
@@ -148373,8 +149596,11 @@ _0805DC64:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectDrivingSnowGustMajorRiot_0805DC6C
-gCardEffectDrivingSnowGustMajorRiot_0805DC6C: @ 0x0805DC6C
+	@ Driving Snow
+	@ Gust
+	@ Major Riot
+	thumb_func_start gCardEffectSendToGYDestroySpellTrap_0805DC6C
+gCardEffectSendToGYDestroySpellTrap_0805DC6C: @ 0x0805DC6C
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r4, #0
@@ -148487,8 +149713,9 @@ _0805DD38:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectArmoredGlass_0805DD40
-gCardEffectArmoredGlass_0805DD40: @ 0x0805DD40
+	@ Armored Glass
+	thumb_func_start gCardEffectNegateEquip_0805DD40
+gCardEffectNegateEquip_0805DD40: @ 0x0805DD40
 	movs r2, #0
 	movs r1, #0xfc
 	lsls r1, r1, #4
@@ -148503,8 +149730,11 @@ _0805DD54:
 	adds r0, r2, #0
 	bx lr
 
-	thumb_func_start gCardEffectMetalDetectorMysticProbeWorldSuppression_0805DD58
-gCardEffectMetalDetectorMysticProbeWorldSuppression_0805DD58: @ 0x0805DD58
+	@ Metal Detector
+	@ Mystic Probe
+	@ World Suppression
+	thumb_func_start gCardEffectNegate_0805DD58
+gCardEffectNegate_0805DD58: @ 0x0805DD58
 	push {r4, r5, lr}
 	adds r2, r0, #0
 	adds r4, r1, #0
@@ -148576,8 +149806,10 @@ _0805DDD4:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectAttackAndReceiveNuminousHealer_0805DDDC
-gCardEffectAttackAndReceiveNuminousHealer_0805DDDC: @ 0x0805DDDC
+	@ Attack and Receive
+	@ Numinous Healer
+	thumb_func_start gCardEffectDamageGraveyard_0805DDDC
+gCardEffectDamageGraveyard_0805DDDC: @ 0x0805DDDC
 	adds r2, r0, #0
 	ldrh r1, [r2, #2]
 	lsls r0, r1, #0x14
@@ -148610,8 +149842,9 @@ _0805DE0C:
 	bx lr
 	.align 2, 0
 
-	thumb_func_start gCardEffectAppropriate_0805DE10
-gCardEffectAppropriate_0805DE10: @ 0x0805DE10
+	@ Appropriate
+	thumb_func_start gCardEffectDraw_0805DE10
+gCardEffectDraw_0805DE10: @ 0x0805DE10
 	adds r2, r0, #0
 	movs r0, #0xfc
 	lsls r0, r0, #4
@@ -148645,8 +149878,9 @@ _0805DE4C:
 _0805DE4E:
 	bx lr
 
-	thumb_func_start gCardEffectForcedRequisition_0805DE50
-gCardEffectForcedRequisition_0805DE50: @ 0x0805DE50
+	@ Forced Requisition
+	thumb_func_start gCardEffectDiscard_0805DE50
+gCardEffectDiscard_0805DE50: @ 0x0805DE50
 	adds r2, r0, #0
 	movs r0, #0xfc
 	lsls r0, r0, #4
@@ -148672,8 +149906,9 @@ _0805DE78:
 	bx lr
 	.align 2, 0
 
-	thumb_func_start gCardEffectMinorGoblinOfficial_0805DE7C
-gCardEffectMinorGoblinOfficial_0805DE7C: @ 0x0805DE7C
+	@ Minor Goblin Official
+	thumb_func_start gCardEffectDamageStandbyPhase_0805DE7C
+gCardEffectDamageStandbyPhase_0805DE7C: @ 0x0805DE7C
 	movs r3, #0
 	ldr r2, _0805DEA0 @ =gUnk_0201C4E0
 	ldrb r0, [r0, #2]
@@ -148697,8 +149932,9 @@ _0805DEA0: .4byte gUnk_0201C4E0
 _0805DEA4: .4byte 0x00000868
 _0805DEA8: .4byte 0x00000BB8
 
-	thumb_func_start gCardEffectGamble_0805DEAC
-gCardEffectGamble_0805DEAC: @ 0x0805DEAC
+	@ Gamble
+	thumb_func_start gCardEffectDrawRNG_0805DEAC
+gCardEffectDrawRNG_0805DEAC: @ 0x0805DEAC
 	push {r4, r5, r6, r7, lr}
 	adds r5, r0, #0
 	ldr r7, _0805DF04 @ =gUnk_0201C4E0
@@ -148751,8 +149987,10 @@ _0805DF0E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectBackupSoldierPotOfAvarice_0805DF14
-gCardEffectBackupSoldierPotOfAvarice_0805DF14: @ 0x0805DF14
+	@ Backup Soldier
+	@ Pot of Avarice
+	thumb_func_start gCardEffectGraveyardDraw_0805DF14
+gCardEffectGraveyardDraw_0805DF14: @ 0x0805DF14
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -148778,8 +150016,10 @@ _0805DF3E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectCeasefireTheSpellAbsorbingLife_0805DF44
-gCardEffectCeasefireTheSpellAbsorbingLife_0805DF44: @ 0x0805DF44
+	@ Ceasefire
+	@ The Spell Absorbing Life
+	thumb_func_start gCardEffectChangePositionBoostDEF_0805DF44
+gCardEffectChangePositionBoostDEF_0805DF44: @ 0x0805DF44
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	movs r3, #0
@@ -148829,8 +150069,9 @@ _0805DF9A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectMagicalHats_0805DFA0
-gCardEffectMagicalHats_0805DFA0: @ 0x0805DFA0
+	@ Magical Hats
+	thumb_func_start gCardEffectDestroyChangePosition_0805DFA0
+gCardEffectDestroyChangePosition_0805DFA0: @ 0x0805DFA0
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldr r5, _0805DFF0 @ =gUnk_0201C4E0
@@ -148881,8 +150122,9 @@ _0805E002:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectTheShallowGrave_0805E008
-gCardEffectTheShallowGrave_0805E008: @ 0x0805E008
+	@ The Shallow Grave
+	thumb_func_start gCardEffectSpecialSummonChangePosition_0805E008
+gCardEffectSpecialSummonChangePosition_0805E008: @ 0x0805E008
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldrb r1, [r5, #2]
@@ -148917,8 +150159,9 @@ _0805E042:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectInspection_0805E048
-gCardEffectInspection_0805E048: @ 0x0805E048
+	@ Inspection
+	thumb_func_start gCardEffectDamageStandbyPhase_0805E048
+gCardEffectDamageStandbyPhase_0805E048: @ 0x0805E048
 	push {r4, r5, lr}
 	adds r1, r0, #0
 	ldr r4, _0805E084 @ =gUnk_0201C4E0
@@ -148960,8 +150203,10 @@ _0805E096:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectAncientLampKiseitai_0805E09C
-gCardEffectAncientLampKiseitai_0805E09C: @ 0x0805E09C
+	@ Ancient Lamp
+	@ Kiseitai
+	thumb_func_start gCardEffectChangePositionSpecialSummon_0805E09C
+gCardEffectChangePositionSpecialSummon_0805E09C: @ 0x0805E09C
 	adds r2, r0, #0
 	movs r0, #0xfc
 	lsls r0, r0, #4
@@ -149003,8 +150248,9 @@ _0805E0E8:
 _0805E0EA:
 	bx lr
 
-	thumb_func_start gCardEffectGraverobber_0805E0EC
-gCardEffectGraverobber_0805E0EC: @ 0x0805E0EC
+	@ Graverobber
+	thumb_func_start gCardEffectGraveyard_0805E0EC
+gCardEffectGraveyard_0805E0EC: @ 0x0805E0EC
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -149074,8 +150320,9 @@ _0805E164:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectTheEyeOfTruth_0805E170
-gCardEffectTheEyeOfTruth_0805E170: @ 0x0805E170
+	@ The Eye of Truth
+	thumb_func_start gCardEffectGainLPStandbyPhase_0805E170
+gCardEffectGainLPStandbyPhase_0805E170: @ 0x0805E170
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r1, r0, #0x1f
@@ -149088,8 +150335,9 @@ gCardEffectTheEyeOfTruth_0805E170: @ 0x0805E170
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectEarthshaker_0805E188
-gCardEffectEarthshaker_0805E188: @ 0x0805E188
+	@ Earthshaker
+	thumb_func_start gCardEffectDestroy_0805E188
+gCardEffectDestroy_0805E188: @ 0x0805E188
 	push {r4, lr}
 	movs r0, #0
 	movs r1, #1
@@ -149111,8 +150359,12 @@ _0805E1AA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDarkSpiritOfTheSilentDrainingShieldEnchantedJavelinMagicCylinder_0805E1B0
-gCardEffectDarkSpiritOfTheSilentDrainingShieldEnchantedJavelinMagicCylinder_0805E1B0: @ 0x0805E1B0
+	@ Dark Spirit of the Silent
+	@ Draining Shield
+	@ Enchanted Javelin
+	@ Magic Cylinder
+	thumb_func_start gCardEffectNegateBoostATK_0805E1B0
+gCardEffectNegateBoostATK_0805E1B0: @ 0x0805E1B0
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	movs r1, #0xfc
@@ -149159,8 +150411,9 @@ _0805E202:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectSliferTheSkyDragon_0805E208
-gCardEffectSliferTheSkyDragon_0805E208: @ 0x0805E208
+	@ Slifer the Sky Dragon
+	thumb_func_start gCardEffectSpecialSummonNegate_0805E208
+gCardEffectSpecialSummonNegate_0805E208: @ 0x0805E208
 	push {lr}
 	ldr r2, [r0, #0x14]
 	lsls r1, r2, #0x16
@@ -149206,8 +150459,9 @@ _0805E25A:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectTheWingedDragonOfRa_0805E260
-gCardEffectTheWingedDragonOfRa_0805E260: @ 0x0805E260
+	@ The Winged Dragon of Ra
+	thumb_func_start gCardEffectSpecialSummonNegate_0805E260
+gCardEffectSpecialSummonNegate_0805E260: @ 0x0805E260
 	ldr r2, _0805E278 @ =gUnk_0201C4E0
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
@@ -149228,8 +150482,9 @@ _0805E280:
 _0805E282:
 	bx lr
 
-	thumb_func_start gCardEffectValkyrionTheMagnaWarrior_0805E284
-gCardEffectValkyrionTheMagnaWarrior_0805E284: @ 0x0805E284
+	@ Valkyrion the Magna Warrior
+	thumb_func_start gCardEffectSpecialSummonRevive_0805E284
+gCardEffectSpecialSummonRevive_0805E284: @ 0x0805E284
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldrb r2, [r5, #2]
@@ -149294,8 +150549,9 @@ _0805E306:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectSebekSBlessing_0805E30C
-gCardEffectSebekSBlessing_0805E30C: @ 0x0805E30C
+	@ Sebek's Blessing
+	thumb_func_start gCardEffectGainLPDamage_0805E30C
+gCardEffectGainLPDamage_0805E30C: @ 0x0805E30C
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r0, #0xfc
@@ -149335,8 +150591,9 @@ _0805E352:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectKingTigerWanghu_0805E358
-gCardEffectKingTigerWanghu_0805E358: @ 0x0805E358
+	@ King Tiger Wanghu
+	thumb_func_start gCardEffectSpecialSummonDestroyAll_0805E358
+gCardEffectSpecialSummonDestroyAll_0805E358: @ 0x0805E358
 	push {lr}
 	ldr r0, [r0, #0x14]
 	lsls r1, r0, #0x16
@@ -149377,8 +150634,9 @@ _0805E3A2:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectTwinHeadedBehemoth_0805E3A8
-gCardEffectTwinHeadedBehemoth_0805E3A8: @ 0x0805E3A8
+	@ Twin-Headed Behemoth
+	thumb_func_start gCardEffectSpecialSummonSendToGY_0805E3A8
+gCardEffectSpecialSummonSendToGY_0805E3A8: @ 0x0805E3A8
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -149391,7 +150649,7 @@ gCardEffectTwinHeadedBehemoth_0805E3A8: @ 0x0805E3A8
 	bne _0805E3E2
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	cmp r0, #0
 	beq _0805E3E2
 	ldrb r1, [r4, #2]
@@ -149413,8 +150671,9 @@ _0805E3E4:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectInjectionFairyLily_0805E3EC
-gCardEffectInjectionFairyLily_0805E3EC: @ 0x0805E3EC
+	@ Injection Fairy Lily
+	thumb_func_start gCardEffectBoostATKDamage_0805E3EC
+gCardEffectBoostATKDamage_0805E3EC: @ 0x0805E3EC
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	movs r0, #0xfc
@@ -149469,8 +150728,9 @@ _0805E44A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectKineticSoldier_0805E450
-gCardEffectKineticSoldier_0805E450: @ 0x0805E450
+	@ Kinetic Soldier
+	thumb_func_start gCardEffectBoostATKBoostDEF_0805E450
+gCardEffectBoostATKBoostDEF_0805E450: @ 0x0805E450
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldr r0, _0805E474 @ =gUnk_0201BB90
@@ -149524,8 +150784,10 @@ _0805E4A8:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectRoyalKeeperSlateWarrior_0805E4B0
-gCardEffectRoyalKeeperSlateWarrior_0805E4B0: @ 0x0805E4B0
+	@ Royal Keeper
+	@ Slate Warrior
+	thumb_func_start gCardEffectBoostATKBoostDEF_0805E4B0
+gCardEffectBoostATKBoostDEF_0805E4B0: @ 0x0805E4B0
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -149579,8 +150841,10 @@ _0805E504:
 _0805E510: .4byte 0x00000868
 _0805E514: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectCurseOfVampireRevivalJam_0805E518
-gCardEffectCurseOfVampireRevivalJam_0805E518: @ 0x0805E518
+	@ Curse of Vampire
+	@ Revival Jam
+	thumb_func_start gCardEffectSpecialSummonSendToGY_0805E518
+gCardEffectSpecialSummonSendToGY_0805E518: @ 0x0805E518
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r2, #0xfc
@@ -149598,7 +150862,7 @@ _0805E530:
 	cmp r2, #0x80
 	bne _0805E552
 	adds r0, r4, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	cmp r0, #0
 	beq _0805E552
 	ldrb r1, [r4, #2]
@@ -149618,8 +150882,15 @@ _0805E554:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectAfterTheStruggleCheckmateFeatherShotHeroHeartSoulExchangeTheSecretOfTheBanditUnionAttack_0805E55C
-gCardEffectAfterTheStruggleCheckmateFeatherShotHeroHeartSoulExchangeTheSecretOfTheBanditUnionAttack_0805E55C: @ 0x0805E55C
+	@ After the Struggle
+	@ Checkmate
+	@ Feather Shot
+	@ Hero Heart
+	@ Soul Exchange
+	@ The Secret of the Bandit
+	@ Union Attack
+	thumb_func_start gCardEffectBattlePhaseDamage_0805E55C
+gCardEffectBattlePhaseDamage_0805E55C: @ 0x0805E55C
 	ldr r0, _0805E56C @ =gUnk_0201C4E0
 	ldr r1, _0805E570 @ =0x00001CF4
 	adds r0, r0, r1
@@ -149636,8 +150907,9 @@ _0805E574:
 _0805E576:
 	bx lr
 
-	thumb_func_start gCardEffectChosenOne_0805E578
-gCardEffectChosenOne_0805E578: @ 0x0805E578
+	@ Chosen One
+	thumb_func_start gCardEffectSpecialSummonSendToGY_0805E578
+gCardEffectSpecialSummonSendToGY_0805E578: @ 0x0805E578
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -149650,7 +150922,7 @@ gCardEffectChosenOne_0805E578: @ 0x0805E578
 	movs r2, #0
 	str r2, [sp]
 	adds r0, r5, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	cmp r0, #0
 	beq _0805E680
 	movs r7, #0
@@ -149781,8 +151053,9 @@ _0805E682:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectMaskOfWeakness_0805E694
-gCardEffectMaskOfWeakness_0805E694: @ 0x0805E694
+	@ Mask of Weakness
+	thumb_func_start gCardEffectReduceATK_0805E694
+gCardEffectReduceATK_0805E694: @ 0x0805E694
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldr r0, _0805E6E0 @ =gUnk_0201BB90
@@ -149831,8 +151104,9 @@ _0805E6EE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectReturnOfTheDoomed_0805E6F4
-gCardEffectReturnOfTheDoomed_0805E6F4: @ 0x0805E6F4
+	@ Return of the Doomed
+	thumb_func_start gCardEffectDiscardReturnToHand_0805E6F4
+gCardEffectDiscardReturnToHand_0805E6F4: @ 0x0805E6F4
 	push {r4, lr}
 	sub sp, #4
 	adds r4, r0, #0
@@ -149866,8 +151140,9 @@ _0805E72A:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectTornadoWall_0805E734
-gCardEffectTornadoWall_0805E734: @ 0x0805E734
+	@ Tornado Wall
+	thumb_func_start gCardEffectDestroyDamage_0805E734
+gCardEffectDestroyDamage_0805E734: @ 0x0805E734
 	push {lr}
 	ldr r0, _0805E740 @ =0x000010F4 (Umi)
 	bl sub_0803412C
@@ -149876,8 +151151,9 @@ gCardEffectTornadoWall_0805E734: @ 0x0805E734
 	.align 2, 0
 _0805E740: .4byte 0x000010F4 @ Umi
 
-	thumb_func_start gCardEffectFairyBox_0805E744
-gCardEffectFairyBox_0805E744: @ 0x0805E744
+	@ Fairy Box
+	thumb_func_start gCardEffectDestroyDamage_0805E744
+gCardEffectDestroyDamage_0805E744: @ 0x0805E744
 	adds r2, r0, #0
 	movs r0, #0xfc
 	lsls r0, r0, #4
@@ -149906,8 +151182,9 @@ _0805E774:
 _0805E776:
 	bx lr
 
-	thumb_func_start gCardEffectTorrentialTribute_0805E778
-gCardEffectTorrentialTribute_0805E778: @ 0x0805E778
+	@ Torrential Tribute
+	thumb_func_start gCardEffectSpecialSummonDestroyAll_0805E778
+gCardEffectSpecialSummonDestroyAll_0805E778: @ 0x0805E778
 	ldrh r0, [r0, #2]
 	lsls r0, r0, #0x14
 	lsrs r0, r0, #0x1a
@@ -149923,8 +151200,9 @@ _0805E78C:
 	bx lr
 	.align 2, 0
 
-	thumb_func_start gCardEffectJamDefender_0805E790
-gCardEffectJamDefender_0805E790: @ 0x0805E790
+	@ Jam Defender
+	thumb_func_start gCardEffectUnknown_0805E790
+gCardEffectUnknown_0805E790: @ 0x0805E790
 	push {r4, r5, lr}
 	adds r2, r0, #0
 	cmp r1, #0
@@ -149996,8 +151274,9 @@ _0805E816:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectColdWave_0805E81C
-gCardEffectColdWave_0805E81C: @ 0x0805E81C
+	@ Cold Wave
+	thumb_func_start gCardEffectUnknown_0805E81C
+gCardEffectUnknown_0805E81C: @ 0x0805E81C
 	push {r4, lr}
 	adds r1, r0, #0
 	ldr r3, _0805E850 @ =gUnk_0201C4E0
@@ -150034,8 +151313,9 @@ _0805E85E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectShift_0805E864
-gCardEffectShift_0805E864: @ 0x0805E864
+	@ Shift
+	thumb_func_start gCardEffectUnknown_0805E864
+gCardEffectUnknown_0805E864: @ 0x0805E864
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -150136,8 +151416,10 @@ _0805E926:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectInsectImitationMetamorphosis_0805E92C
-gCardEffectInsectImitationMetamorphosis_0805E92C: @ 0x0805E92C
+	@ Insect Imitation
+	@ Metamorphosis
+	thumb_func_start gCardEffectSpecialSummonTribute_0805E92C
+gCardEffectSpecialSummonTribute_0805E92C: @ 0x0805E92C
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _0805E94C @ =0x000013F2 (Mask of Restrict)
@@ -150161,8 +151443,9 @@ _0805E952:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDimensionhole_0805E958
-gCardEffectDimensionhole_0805E958: @ 0x0805E958
+	@ Dimensionhole
+	thumb_func_start gCardEffectBanishStandbyPhase_0805E958
+gCardEffectBanishStandbyPhase_0805E958: @ 0x0805E958
 	push {r4, lr}
 	adds r1, r0, #0
 	movs r0, #0x30
@@ -150213,8 +151496,9 @@ _0805E9B6:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectShadowOfEyes_0805E9BC
-gCardEffectShadowOfEyes_0805E9BC: @ 0x0805E9BC
+	@ Shadow of Eyes
+	thumb_func_start gCardEffectChangePositionFlip_0805E9BC
+gCardEffectChangePositionFlip_0805E9BC: @ 0x0805E9BC
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	movs r1, #0xfc
@@ -150280,8 +151564,9 @@ _0805EA36:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectRedMoonBaby_0805EA3C
-gCardEffectRedMoonBaby_0805EA3C: @ 0x0805EA3C
+	@ Red-Moon Baby
+	thumb_func_start gCardEffectSpecialSummonSendToGY_0805EA3C
+gCardEffectSpecialSummonSendToGY_0805EA3C: @ 0x0805EA3C
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -150296,7 +151581,7 @@ gCardEffectRedMoonBaby_0805EA3C: @ 0x0805EA3C
 	adds r5, r0, #0
 	adds r0, r6, #0
 	adds r1, r4, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	cmp r0, #0
 	beq _0805EADC
 	cmp r5, #0
@@ -150362,8 +151647,9 @@ _0805EADE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectMonsterRecovery_0805EAE8
-gCardEffectMonsterRecovery_0805EAE8: @ 0x0805EAE8
+	@ Monster Recovery
+	thumb_func_start gCardEffectDraw_0805EAE8
+gCardEffectDraw_0805EAE8: @ 0x0805EAE8
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -150476,8 +151762,9 @@ _0805EBB8: .4byte gUnk_0201C4E0
 _0805EBBC: .4byte 0x00000868
 _0805EBC0: .4byte gUnk_0201C4EC
 
-	thumb_func_start gCardEffectTypeZeroMagicCrusher_0805EBC4
-gCardEffectTypeZeroMagicCrusher_0805EBC4: @ 0x0805EBC4
+	@ Type Zero Magic Crusher
+	thumb_func_start gCardEffectDiscardDamage_0805EBC4
+gCardEffectDiscardDamage_0805EBC4: @ 0x0805EBC4
 	push {r4, lr}
 	sub sp, #4
 	adds r4, r0, #0
@@ -150511,8 +151798,10 @@ _0805EBF8:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDarkMagicAttackThousandKnives_0805EC00
-gCardEffectDarkMagicAttackThousandKnives_0805EC00: @ 0x0805EC00
+	@ Dark Magic Attack
+	@ Thousand Knives
+	thumb_func_start gCardEffectDestroy_0805EC00
+gCardEffectDestroy_0805EC00: @ 0x0805EC00
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -150545,8 +151834,10 @@ _0805EC3A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectCreatureSwapMysticBox_0805EC40
-gCardEffectCreatureSwapMysticBox_0805EC40: @ 0x0805EC40
+	@ Creature Swap
+	@ Mystic Box
+	thumb_func_start gCardEffectTakeControlDestroy_0805EC40
+gCardEffectTakeControlDestroy_0805EC40: @ 0x0805EC40
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -150574,8 +151865,9 @@ _0805EC6E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectGroundCollapse_0805EC74
-gCardEffectGroundCollapse_0805EC74: @ 0x0805EC74
+	@ Ground Collapse
+	thumb_func_start gCardEffectUnknown_0805EC74
+gCardEffectUnknown_0805EC74: @ 0x0805EC74
 	push {r4, r5, r6, r7, lr}
 	movs r7, #0
 	movs r5, #0
@@ -150606,8 +151898,12 @@ _0805ECA0:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectCrimsonSentryFairyGuardianLadyPantherTheForgivingMaiden_0805ECA8
-gCardEffectCrimsonSentryFairyGuardianLadyPantherTheForgivingMaiden_0805ECA8: @ 0x0805ECA8
+	@ Crimson Sentry
+	@ Fairy Guardian
+	@ Lady Panther
+	@ The Forgiving Maiden
+	thumb_func_start gCardEffectTributeDestroy_0805ECA8
+gCardEffectTributeDestroy_0805ECA8: @ 0x0805ECA8
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r3, [r4, #3]
@@ -150674,8 +151970,11 @@ _0805ED26:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectAmazonArcherHystericFairyObeliskTheTormentor_0805ED2C
-gCardEffectAmazonArcherHystericFairyObeliskTheTormentor_0805ED2C: @ 0x0805ED2C
+	@ Amazon Archer
+	@ Hysteric Fairy
+	@ Obelisk the Tormentor
+	thumb_func_start gCardEffectTribute_0805ED2C
+gCardEffectTribute_0805ED2C: @ 0x0805ED2C
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
@@ -150694,8 +151993,9 @@ _0805ED46:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectLadyAssailantOfFlames_0805ED4C
-gCardEffectLadyAssailantOfFlames_0805ED4C: @ 0x0805ED4C
+	@ Lady Assailant of Flames
+	thumb_func_start gCardEffectBanishDamage_0805ED4C
+gCardEffectBanishDamage_0805ED4C: @ 0x0805ED4C
 	ldr r2, _0805ED68 @ =gUnk_0201C4E0
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
@@ -150717,8 +152017,9 @@ _0805ED70:
 _0805ED72:
 	bx lr
 
-	thumb_func_start gCardEffectFireSorcerer_0805ED74
-gCardEffectFireSorcerer_0805ED74: @ 0x0805ED74
+	@ Fire Sorcerer
+	thumb_func_start gCardEffectBanishDamage_0805ED74
+gCardEffectBanishDamage_0805ED74: @ 0x0805ED74
 	push {lr}
 	ldrb r2, [r0, #2]
 	lsls r1, r2, #0x1f
@@ -150735,8 +152036,10 @@ _0805ED8A:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectCastleGateSpiritOfTheBreeze_0805ED90
-gCardEffectCastleGateSpiritOfTheBreeze_0805ED90: @ 0x0805ED90
+	@ Castle Gate
+	@ Spirit of the Breeze
+	thumb_func_start gCardEffectChangePositionDestroy_0805ED90
+gCardEffectChangePositionDestroy_0805ED90: @ 0x0805ED90
 	ldrb r0, [r0, #2]
 	lsls r2, r0, #0x1f
 	lsrs r2, r2, #0x1f
@@ -150763,8 +152066,9 @@ _0805EDBC:
 _0805EDBE:
 	bx lr
 
-	thumb_func_start gCardEffectDancingFairy_0805EDC0
-gCardEffectDancingFairy_0805EDC0: @ 0x0805EDC0
+	@ Dancing Fairy
+	thumb_func_start gCardEffectBoostDEFGainLP_0805EDC0
+gCardEffectBoostDEFGainLP_0805EDC0: @ 0x0805EDC0
 	ldrb r0, [r0, #2]
 	lsls r2, r0, #0x1f
 	lsrs r2, r2, #0x1f
@@ -150791,8 +152095,9 @@ _0805EDEC:
 _0805EDEE:
 	bx lr
 
-	thumb_func_start gCardEffectMeteorOfDestruction_0805EDF0
-gCardEffectMeteorOfDestruction_0805EDF0: @ 0x0805EDF0
+	@ Meteor of Destruction
+	thumb_func_start gCardEffectDamage_0805EDF0
+gCardEffectDamage_0805EDF0: @ 0x0805EDF0
 	movs r3, #0
 	ldr r2, _0805EE14 @ =gUnk_0201C4E0
 	ldrb r0, [r0, #2]
@@ -150816,8 +152121,11 @@ _0805EE14: .4byte gUnk_0201C4E0
 _0805EE18: .4byte 0x00000868
 _0805EE1C: .4byte 0x00000BB8
 
-	thumb_func_start gCardEffectDDDesignatorExchangeMindCrush_0805EE20
-gCardEffectDDDesignatorExchangeMindCrush_0805EE20: @ 0x0805EE20
+	@ D.D. Designator
+	@ Exchange
+	@ Mind Crush
+	thumb_func_start gCardEffectSearchBanish_0805EE20
+gCardEffectSearchBanish_0805EE20: @ 0x0805EE20
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r2, _0805EE50 @ =gUnk_0201C4E0
@@ -150850,8 +152158,9 @@ _0805EE5A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDarkNecrofear_0805EE60
-gCardEffectDarkNecrofear_0805EE60: @ 0x0805EE60
+	@ Dark Necrofear
+	thumb_func_start gCardEffectSpecialSummonDestroy_0805EE60
+gCardEffectSpecialSummonDestroy_0805EE60: @ 0x0805EE60
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r0, #0x30
@@ -150883,8 +152192,9 @@ _0805EE96:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDestinyBoard_0805EE9C
-gCardEffectDestinyBoard_0805EE9C: @ 0x0805EE9C
+	@ Destiny Board
+	thumb_func_start gCardEffectSendToGYGraveyard_0805EE9C
+gCardEffectSendToGYGraveyard_0805EE9C: @ 0x0805EE9C
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
@@ -150901,8 +152211,9 @@ _0805EEB2:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectCathedralOfNobles_0805EEB8
-gCardEffectCathedralOfNobles_0805EEB8: @ 0x0805EEB8
+	@ Cathedral of Nobles
+	thumb_func_start gCardEffectSearchSpecialSummon_0805EEB8
+gCardEffectSearchSpecialSummon_0805EEB8: @ 0x0805EEB8
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
@@ -150925,8 +152236,9 @@ _0805EEDE:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectEmbodimentOfApophis_0805EEE4
-gCardEffectEmbodimentOfApophis_0805EEE4: @ 0x0805EEE4
+	@ Embodiment of Apophis
+	thumb_func_start gCardEffectSpecialSummon_0805EEE4
+gCardEffectSpecialSummon_0805EEE4: @ 0x0805EEE4
 	push {lr}
 	adds r2, r0, #0
 	ldr r0, _0805EEFC @ =gUnk_0201C4E0
@@ -150944,14 +152256,15 @@ _0805EEFC: .4byte gUnk_0201C4E0
 _0805EF00: .4byte 0x00001CF4
 _0805EF04:
 	adds r0, r2, #0
-	bl gCardEffectMetalReflectSlimeSkullZomaStronghold_080609A4
+	bl gCardEffectSpecialSummonChangePosition_080609A4
 _0805EF0A:
 	pop {r1}
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectMakiu_0805EF10
-gCardEffectMakiu_0805EF10: @ 0x0805EF10
+	@ Makiu
+	thumb_func_start gCardEffectDestroyBattlePhase_0805EF10
+gCardEffectDestroyBattlePhase_0805EF10: @ 0x0805EF10
 	push {lr}
 	adds r1, r0, #0
 	ldr r0, _0805EF24 @ =gUnk_0201C4E0
@@ -150984,8 +152297,9 @@ _0805EF48:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectJowgenTheSpiritualist_0805EF4C
-gCardEffectJowgenTheSpiritualist_0805EF4C: @ 0x0805EF4C
+	@ Jowgen the Spiritualist
+	thumb_func_start gCardEffectSpecialSummonDiscard_0805EF4C
+gCardEffectSpecialSummonDiscard_0805EF4C: @ 0x0805EF4C
 	push {lr}
 	ldr r2, _0805EF74 @ =gUnk_0201C4E0
 	ldrb r0, [r0, #2]
@@ -151015,8 +152329,10 @@ _0805EF82:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectSpiritualEarthArtKuroganeSummonerOfIllusions_0805EF88
-gCardEffectSpiritualEarthArtKuroganeSummonerOfIllusions_0805EF88: @ 0x0805EF88
+	@ Spiritual Earth Art - Kurogane
+	@ Summoner of Illusions
+	thumb_func_start gCardEffectSpecialSummonTribute_0805EF88
+gCardEffectSpecialSummonTribute_0805EF88: @ 0x0805EF88
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -151042,8 +152358,9 @@ _0805EFB2:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectBazooTheSoulEater_0805EFB8
-gCardEffectBazooTheSoulEater_0805EFB8: @ 0x0805EFB8
+	@ Bazoo the Soul-Eater
+	thumb_func_start gCardEffectBanishBoostATK_0805EFB8
+gCardEffectBanishBoostATK_0805EFB8: @ 0x0805EFB8
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -151055,7 +152372,7 @@ gCardEffectBazooTheSoulEater_0805EFB8: @ 0x0805EFB8
 	beq _0805EFD8
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectAbareUshioniArchfiendSOathBESCrystalCoreBarrelDragonBlowbackDragonCatnippedKittyCyberLaserDragonDarkMasterZorcGaiaSoulTheCombustibleCollectiveGatlingDragonGoddessOfWhimHomunculusTheAlchemicBeingKarateManPatroidRavielLordOfPhantasmsRouletteBarrelSandGamblerSasukeSamuraiTimeWizardUriaLordOfSearingFlamesVwxyzDragonCatapultCannon_0805C1C0
+	bl gCardEffectDestroyRNG_0805C1C0
 	cmp r0, #0
 	bne _0805EFDC
 _0805EFD8:
@@ -151098,8 +152415,9 @@ _0805F01A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectGilasaurus_0805F020
-gCardEffectGilasaurus_0805F020: @ 0x0805F020
+	@ Gilasaurus
+	thumb_func_start gCardEffectSpecialSummonRevive_0805F020
+gCardEffectSpecialSummonRevive_0805F020: @ 0x0805F020
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -151136,8 +152454,13 @@ _0805F062:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDarkFactoryOfMassProductionKeldoSalvageSupplyTheForcesOfDarkness_0805F068
-gCardEffectDarkFactoryOfMassProductionKeldoSalvageSupplyTheForcesOfDarkness_0805F068: @ 0x0805F068
+	@ Dark Factory of Mass Production
+	@ Keldo
+	@ Salvage
+	@ Supply
+	@ The Forces of Darkness
+	thumb_func_start gCardEffectGraveyard_0805F068
+gCardEffectGraveyard_0805F068: @ 0x0805F068
 	push {lr}
 	adds r1, r0, #0
 	ldrb r2, [r1, #2]
@@ -151155,8 +152478,9 @@ _0805F082:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectCollectedPower_0805F088
-gCardEffectCollectedPower_0805F088: @ 0x0805F088
+	@ Collected Power
+	thumb_func_start gCardEffectDestroyEquip_0805F088
+gCardEffectDestroyEquip_0805F088: @ 0x0805F088
 	push {r4, r5, r6, r7, lr}
 	movs r6, #0
 	movs r7, #1
@@ -151199,8 +152523,9 @@ _0805F0D0:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectSkullLair_0805F0D8
-gCardEffectSkullLair_0805F0D8: @ 0x0805F0D8
+	@ Skull Lair
+	thumb_func_start gCardEffectBanishDestroy_0805F0D8
+gCardEffectBanishDestroy_0805F0D8: @ 0x0805F0D8
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -151312,8 +152637,9 @@ _0805F19E:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectDealOfPhantom_0805F1B0
-gCardEffectDealOfPhantom_0805F1B0: @ 0x0805F1B0
+	@ Deal of Phantom
+	thumb_func_start gCardEffectBoostATKGraveyard_0805F1B0
+gCardEffectBoostATKGraveyard_0805F1B0: @ 0x0805F1B0
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
@@ -151329,8 +152655,10 @@ _0805F1C4:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectCrossCounterDestructionPunch_0805F1CC
-gCardEffectCrossCounterDestructionPunch_0805F1CC: @ 0x0805F1CC
+	@ Cross Counter
+	@ Destruction Punch
+	thumb_func_start gCardEffectDestroyChangePosition_0805F1CC
+gCardEffectDestroyChangePosition_0805F1CC: @ 0x0805F1CC
 	push {r4, r5, r6, lr}
 	adds r3, r0, #0
 	adds r5, r3, #0
@@ -151387,8 +152715,9 @@ _0805F236:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectMiracleDig_0805F23C
-gCardEffectMiracleDig_0805F23C: @ 0x0805F23C
+	@ Miracle Dig
+	thumb_func_start gCardEffectBanishGraveyard_0805F23C
+gCardEffectBanishGraveyard_0805F23C: @ 0x0805F23C
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _0805F260 @ =0x00001332 (Banisher of the Light)
@@ -151414,8 +152743,9 @@ _0805F266:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectAmazonessArchers_0805F26C
-gCardEffectAmazonessArchers_0805F26C: @ 0x0805F26C
+	@ Amazoness Archers
+	thumb_func_start gCardEffectReduceATKChangePosition_0805F26C
+gCardEffectReduceATKChangePosition_0805F26C: @ 0x0805F26C
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -151428,7 +152758,7 @@ gCardEffectAmazonessArchers_0805F26C: @ 0x0805F26C
 	beq _0805F290
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectCalamityOfTheWickedDarkMirrorForceDimensionWallMirrorForceSakuretsuArmorStaunchDefenderWidespreadRuin_0805D998
+	bl gCardEffectDestroyChangePosition_0805D998
 	b _0805F292
 	.align 2, 0
 _0805F28C: .4byte sub_0804B048
@@ -151439,17 +152769,18 @@ _0805F292:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectRopeOfLife_0805F298
-gCardEffectRopeOfLife_0805F298: @ 0x0805F298
+	@ Rope of Life
+	thumb_func_start gCardEffectSpecialSummonDiscard_0805F298
+gCardEffectSpecialSummonDiscard_0805F298: @ 0x0805F298
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
-	bl gCardEffectArchfiendSRoarAutonomousActionUnitBatteryChargerCallOfTheHauntedCentrifugalFieldChimeraTheFlyingMythicalBeastCyberSteinFulfillmentOfTheContractFushiohRichieMagicalScientistPrematureBurialReFusionReturnFromTheDifferentDimensionRiteOfSpiritSilentFiendSoulResurrectionSpiritCallerSpiritOfThePharaohSymbolOfHeritage_0805C248
+	bl gCardEffectSpecialSummonGraveyard_0805C248
 	cmp r0, #0
 	beq _0805F2B6
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectBackToSquareOneCostDownCurseOfAgingCyberneticMagicianDarkCoreForcedCeasefireHallowedLifeBarrierKarmaCutLightningVortexMaliceDispersionPhoenixWingWindBlastRaigekiBreakRisingEnergySpecialHurricaneSpellPurificationTributeToTheDoomedVwTigerCatapultXyDragonCannonXyzDragonCannonXzTankCannonYzTankDragon_0805C1E4
+	bl gCardEffectDiscard_0805C1E4
 	cmp r0, #0
 	beq _0805F2B6
 	movs r0, #1
@@ -151462,8 +152793,11 @@ _0805F2B8:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectMaskOfDispelMaskOfTheAccursedNightmareWheel_0805F2C0
-gCardEffectMaskOfDispelMaskOfTheAccursedNightmareWheel_0805F2C0: @ 0x0805F2C0
+	@ Mask of Dispel
+	@ Mask of the Accursed
+	@ Nightmare Wheel
+	thumb_func_start gCardEffectStandbyPhaseDestroy_0805F2C0
+gCardEffectStandbyPhaseDestroy_0805F2C0: @ 0x0805F2C0
 	push {r4, r5, r6, r7, lr}
 	ldrb r1, [r0, #2]
 	lsls r6, r1, #0x1f
@@ -151525,8 +152859,9 @@ _0805F336:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectBarkOfDarkRuler_0805F33C
-gCardEffectBarkOfDarkRuler_0805F33C: @ 0x0805F33C
+	@ Bark of Dark Ruler
+	thumb_func_start gCardEffectReduceATKDamage_0805F33C
+gCardEffectReduceATKDamage_0805F33C: @ 0x0805F33C
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r0, #0xfc
@@ -151581,8 +152916,9 @@ _0805F39E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectLifeAbsorbingMachine_0805F3A4
-gCardEffectLifeAbsorbingMachine_0805F3A4: @ 0x0805F3A4
+	@ Life Absorbing Machine
+	thumb_func_start gCardEffectGainLP_0805F3A4
+gCardEffectGainLP_0805F3A4: @ 0x0805F3A4
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
@@ -151595,8 +152931,12 @@ gCardEffectLifeAbsorbingMachine_0805F3A4: @ 0x0805F3A4
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectAncientGearCannonExiledForcePossessedDarkSoulWingedMinion_0805F3BC
-gCardEffectAncientGearCannonExiledForcePossessedDarkSoulWingedMinion_0805F3BC: @ 0x0805F3BC
+	@ Ancient Gear Cannon
+	@ Exiled Force
+	@ Possessed Dark Soul
+	@ Winged Minion
+	thumb_func_start gCardEffectTributeTakeControl_0805F3BC
+gCardEffectTributeTakeControl_0805F3BC: @ 0x0805F3BC
 	push {lr}
 	adds r3, r0, #0
 	ldrb r2, [r3, #2]
@@ -151621,8 +152961,9 @@ _0805F3E2:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectTheHunterWith7Weapons_0805F3E8
-gCardEffectTheHunterWith7Weapons_0805F3E8: @ 0x0805F3E8
+	@ The Hunter with 7 Weapons
+	thumb_func_start gCardEffectBoostATK_0805F3E8
+gCardEffectBoostATK_0805F3E8: @ 0x0805F3E8
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	ldrb r0, [r4, #2]
@@ -151703,8 +153044,9 @@ _0805F478:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectAFeintPlan_0805F480
-gCardEffectAFeintPlan_0805F480: @ 0x0805F480
+	@ A Feint Plan
+	thumb_func_start gCardEffectPreventAttack_0805F480
+gCardEffectPreventAttack_0805F480: @ 0x0805F480
 	movs r1, #0
 	ldr r0, _0805F494 @ =gUnk_0201C4E0
 	ldr r2, _0805F498 @ =0x00001CF4
@@ -151720,8 +153062,9 @@ _0805F490:
 _0805F494: .4byte gUnk_0201C4E0
 _0805F498: .4byte 0x00001CF4
 
-	thumb_func_start gCardEffectSpiritRyu_0805F49C
-gCardEffectSpiritRyu_0805F49C: @ 0x0805F49C
+	@ Spirit Ryu
+	thumb_func_start gCardEffectDiscardBoostATK_0805F49C
+gCardEffectDiscardBoostATK_0805F49C: @ 0x0805F49C
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	adds r6, r1, #0
@@ -151769,7 +153112,7 @@ _0805F4DE:
 _0805F4F0:
 	adds r0, r5, #0
 	adds r1, r6, #0
-	bl gCardEffectArchlordZeratoArmedChangerLadyNinjaYae_080619F0
+	bl gCardEffectGraveyardDiscard_080619F0
 	b _0805F50A
 	.align 2, 0
 _0805F4FC: .4byte gUnk_0201C4E0
@@ -151782,8 +153125,9 @@ _0805F50A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectGrayWing_0805F510
-gCardEffectGrayWing_0805F510: @ 0x0805F510
+	@ Gray Wing
+	thumb_func_start gCardEffectDiscardBattlePhase_0805F510
+gCardEffectDiscardBattlePhase_0805F510: @ 0x0805F510
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -151795,12 +153139,12 @@ gCardEffectGrayWing_0805F510: @ 0x0805F510
 	bne _0805F548
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectAbareUshioniArchfiendSOathBESCrystalCoreBarrelDragonBlowbackDragonCatnippedKittyCyberLaserDragonDarkMasterZorcGaiaSoulTheCombustibleCollectiveGatlingDragonGoddessOfWhimHomunculusTheAlchemicBeingKarateManPatroidRavielLordOfPhantasmsRouletteBarrelSandGamblerSasukeSamuraiTimeWizardUriaLordOfSearingFlamesVwxyzDragonCatapultCannon_0805C1C0
+	bl gCardEffectDestroyRNG_0805C1C0
 	cmp r0, #0
 	beq _0805F548
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectBackToSquareOneCostDownCurseOfAgingCyberneticMagicianDarkCoreForcedCeasefireHallowedLifeBarrierKarmaCutLightningVortexMaliceDispersionPhoenixWingWindBlastRaigekiBreakRisingEnergySpecialHurricaneSpellPurificationTributeToTheDoomedVwTigerCatapultXyDragonCannonXyzDragonCannonXzTankCannonYzTankDragon_0805C1E4
+	bl gCardEffectDiscard_0805C1E4
 	cmp r0, #0
 	beq _0805F548
 	movs r0, #1
@@ -151815,12 +153159,13 @@ _0805F54A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectTheDragonSBead_0805F550
-gCardEffectTheDragonSBead_0805F550: @ 0x0805F550
+	@ The Dragon's Bead
+	thumb_func_start gCardEffectNegateDiscard_0805F550
+gCardEffectNegateDiscard_0805F550: @ 0x0805F550
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
-	bl gCardEffectBackToSquareOneCostDownCurseOfAgingCyberneticMagicianDarkCoreForcedCeasefireHallowedLifeBarrierKarmaCutLightningVortexMaliceDispersionPhoenixWingWindBlastRaigekiBreakRisingEnergySpecialHurricaneSpellPurificationTributeToTheDoomedVwTigerCatapultXyDragonCannonXyzDragonCannonXzTankCannonYzTankDragon_0805C1E4
+	bl gCardEffectDiscard_0805C1E4
 	cmp r0, #0
 	beq _0805F5D0
 	cmp r4, #0
@@ -151891,8 +153236,9 @@ _0805F5E0:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectAWingbeatOfGiantDragon_0805F5E8
-gCardEffectAWingbeatOfGiantDragon_0805F5E8: @ 0x0805F5E8
+	@ A Wingbeat of Giant Dragon
+	thumb_func_start gCardEffectReturnToHandDestroySpellTrap_0805F5E8
+gCardEffectReturnToHandDestroySpellTrap_0805F5E8: @ 0x0805F5E8
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r0, #1
@@ -151916,10 +153262,11 @@ _0805F60E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDragonSGunfire_0805F614
-gCardEffectDragonSGunfire_0805F614: @ 0x0805F614
+	@ Dragon's Gunfire
+	thumb_func_start gCardEffectDestroyDamage_0805F614
+gCardEffectDestroyDamage_0805F614: @ 0x0805F614
 	push {lr}
-	bl gCardEffectStampingDestruction_0805F628
+	bl gCardEffectDestroySpellTrapDamage_0805F628
 	cmp r0, #0
 	bne _0805F622
 	movs r0, #0
@@ -151930,8 +153277,9 @@ _0805F624:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectStampingDestruction_0805F628
-gCardEffectStampingDestruction_0805F628: @ 0x0805F628
+	@ Stamping Destruction
+	thumb_func_start gCardEffectDestroySpellTrapDamage_0805F628
+gCardEffectDestroySpellTrapDamage_0805F628: @ 0x0805F628
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
@@ -151947,8 +153295,9 @@ _0805F63E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDraggedDownIntoTheGrave_0805F644
-gCardEffectDraggedDownIntoTheGrave_0805F644: @ 0x0805F644
+	@ Dragged Down into the Grave
+	thumb_func_start gCardEffectDrawDiscard_0805F644
+gCardEffectDrawDiscard_0805F644: @ 0x0805F644
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	ldr r6, _0805F688 @ =gUnk_0201C4E0
@@ -151991,8 +153340,9 @@ _0805F692:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectSpellReproduction_0805F698
-gCardEffectSpellReproduction_0805F698: @ 0x0805F698
+	@ Spell Reproduction
+	thumb_func_start gCardEffectSearchSendToGY_0805F698
+gCardEffectSearchSendToGY_0805F698: @ 0x0805F698
 	push {r4, lr}
 	sub sp, #4
 	adds r4, r0, #0
@@ -152032,8 +153382,9 @@ _0805F6DA:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectBlastHeldByATribute_0805F6E4
-gCardEffectBlastHeldByATribute_0805F6E4: @ 0x0805F6E4
+	@ Blast Held by a Tribute
+	thumb_func_start gCardEffectDestroyAllDamage_0805F6E4
+gCardEffectDestroyAllDamage_0805F6E4: @ 0x0805F6E4
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -152112,8 +153463,12 @@ _0805F77A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDarkDustSpiritFushiNoToriOtohimeTsukuyomi_0805F784
-gCardEffectDarkDustSpiritFushiNoToriOtohimeTsukuyomi_0805F784: @ 0x0805F784
+	@ Dark Dust Spirit
+	@ Fushi No Tori
+	@ Otohime
+	@ Tsukuyomi
+	thumb_func_start gCardEffectSpecialSummonReturnToHand_0805F784
+gCardEffectSpecialSummonReturnToHand_0805F784: @ 0x0805F784
 	push {lr}
 	adds r2, r0, #0
 	adds r3, r1, #0
@@ -152148,7 +153503,7 @@ _0805F7B8:
 _0805F7C2:
 	adds r0, r2, #0
 	adds r1, r3, #0
-	bl gCardEffectBookOfMoonReadyForIntercepting_0805FAD0
+	bl gCardEffectChangePosition_0805FAD0
 _0805F7CA:
 	pop {r1}
 	bx r1
@@ -152179,8 +153534,10 @@ _0805F7F4:
 	bx lr
 	.align 2, 0
 
-	thumb_func_start gCardEffectSuperRoboladySuperRoboyarou_0805F7F8
-gCardEffectSuperRoboladySuperRoboyarou_0805F7F8: @ 0x0805F7F8
+	@ Super Robolady
+	@ Super Roboyarou
+	thumb_func_start gCardEffectSpecialSummonBoostATK_0805F7F8
+gCardEffectSpecialSummonBoostATK_0805F7F8: @ 0x0805F7F8
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	ldrb r1, [r5, #2]
@@ -152232,8 +153589,9 @@ _0805F854:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectNutrientZ_0805F85C
-gCardEffectNutrientZ_0805F85C: @ 0x0805F85C
+	@ Nutrient Z
+	thumb_func_start gCardEffectGainLPDamage_0805F85C
+gCardEffectGainLPDamage_0805F85C: @ 0x0805F85C
 	push {r4, r5, lr}
 	adds r3, r0, #0
 	cmp r1, #0
@@ -152281,8 +153639,9 @@ _0805F8AE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDropOff_0805F8B4
-gCardEffectDropOff_0805F8B4: @ 0x0805F8B4
+	@ Drop Off
+	thumb_func_start gCardEffectDrawDiscard_0805F8B4
+gCardEffectDrawDiscard_0805F8B4: @ 0x0805F8B4
 	adds r3, r0, #0
 	ldr r2, _0805F8E8 @ =gUnk_0201C4E0
 	ldr r0, _0805F8EC @ =0x00001CE8
@@ -152317,8 +153676,9 @@ _0805F8F0:
 _0805F8F2:
 	bx lr
 
-	thumb_func_start gCardEffectFiendComedian_0805F8F4
-gCardEffectFiendComedian_0805F8F4: @ 0x0805F8F4
+	@ Fiend Comedian
+	thumb_func_start gCardEffectBanishSendToGY_0805F8F4
+gCardEffectBanishSendToGY_0805F8F4: @ 0x0805F8F4
 	push {lr}
 	ldr r2, _0805F920 @ =gUnk_0201C4E0
 	ldrb r0, [r0, #2]
@@ -152349,8 +153709,9 @@ _0805F92A:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectLastTurn_0805F930
-gCardEffectLastTurn_0805F930: @ 0x0805F930
+	@ Last Turn
+	thumb_func_start gCardEffectSpecialSummonSendToGY_0805F930
+gCardEffectSpecialSummonSendToGY_0805F930: @ 0x0805F930
 	ldr r3, _0805F958 @ =gUnk_0201C4E0
 	ldrb r0, [r0, #2]
 	lsls r2, r0, #0x1f
@@ -152380,8 +153741,10 @@ _0805F964:
 _0805F966:
 	bx lr
 
-	thumb_func_start gCardEffectSacredPhoenixOfNephthysVampireLord_0805F968
-gCardEffectSacredPhoenixOfNephthysVampireLord_0805F968: @ 0x0805F968
+	@ Sacred Phoenix of Nephthys
+	@ Vampire Lord
+	thumb_func_start gCardEffectSpecialSummonDestroySpellTrap_0805F968
+gCardEffectSpecialSummonDestroySpellTrap_0805F968: @ 0x0805F968
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r0, #0xfc
@@ -152391,7 +153754,7 @@ gCardEffectSacredPhoenixOfNephthysVampireLord_0805F968: @ 0x0805F968
 	cmp r0, #0x80
 	bne _0805F99A
 	adds r0, r4, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	cmp r0, #0
 	beq _0805F99A
 	ldrb r1, [r4, #2]
@@ -152413,8 +153776,11 @@ _0805F99C:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectMysticSwordsmanLv6PaladinOfWhiteDragonSasukeSamurai_0805F9A4
-gCardEffectMysticSwordsmanLv6PaladinOfWhiteDragonSasukeSamurai_0805F9A4: @ 0x0805F9A4
+	@ Mystic Swordsman LV6
+	@ Paladin of White Dragon
+	@ Sasuke Samurai
+	thumb_func_start gCardEffectDestroyChangePosition_0805F9A4
+gCardEffectDestroyChangePosition_0805F9A4: @ 0x0805F9A4
 	ldr r1, _0805F9D4 @ =gUnk_0201BB90
 	ldr r0, [r1, #8]
 	cmp r0, #0
@@ -152448,8 +153814,9 @@ _0805F9E0:
 _0805F9E2:
 	bx lr
 
-	thumb_func_start gCardEffectGreatDezard_0805F9E4
-gCardEffectGreatDezard_0805F9E4: @ 0x0805F9E4
+	@ Great Dezard
+	thumb_func_start gCardEffectSpecialSummonNegate_0805F9E4
+gCardEffectSpecialSummonNegate_0805F9E4: @ 0x0805F9E4
 	push {r4, lr}
 	adds r3, r0, #0
 	adds r4, r1, #0
@@ -152471,7 +153838,7 @@ gCardEffectGreatDezard_0805F9E4: @ 0x0805F9E4
 	bls _0805FA1C
 	adds r0, r3, #0
 	adds r1, r4, #0
-	bl gCardEffectPaladinOfWhiteDragon_080603B8
+	bl gCardEffectSpecialSummonRitualSummon_080603B8
 	b _0805FA1E
 	.align 2, 0
 _0805FA14: .4byte 0x00000868
@@ -152483,8 +153850,25 @@ _0805FA1E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffect8ClawsScorpionCobramanSakuzyDesLacoodaFushiohRichieGiantAxeMummyGolemSentryGreatSpiritGuardianSphinxGuardianStatueMedusaWormMidShieldGardnaMoaiInterceptorCannonsRoyalKeeperStealthBirdSwarmOfLocustsSwarmOfScarabsWanderingMummy_0805FA24
-gCardEffect8ClawsScorpionCobramanSakuzyDesLacoodaFushiohRichieGiantAxeMummyGolemSentryGreatSpiritGuardianSphinxGuardianStatueMedusaWormMidShieldGardnaMoaiInterceptorCannonsRoyalKeeperStealthBirdSwarmOfLocustsSwarmOfScarabsWanderingMummy_0805FA24: @ 0x0805FA24
+	@ 8-Claws Scorpion
+	@ Cobraman Sakuzy
+	@ Des Lacooda
+	@ Fushioh Richie
+	@ Giant Axe Mummy
+	@ Golem Sentry
+	@ Great Spirit
+	@ Guardian Sphinx
+	@ Guardian Statue
+	@ Medusa Worm
+	@ Mid Shield Gardna
+	@ Moai Interceptor Cannons
+	@ Royal Keeper
+	@ Stealth Bird
+	@ Swarm of Locusts
+	@ Swarm of Scarabs
+	@ Wandering Mummy
+	thumb_func_start gCardEffectChangePosition_0805FA24
+gCardEffectChangePosition_0805FA24: @ 0x0805FA24
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _0805FA4C @ =0x0000135D (Light of Intervention)
@@ -152512,8 +153896,22 @@ _0805FA56:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectAncientTelescopeArsenalRobberBloodSuckerDarkDesignatorDarkScorpionBurglarsDeSpellGermWeaponDoomDozerJadeInsectWhistleNeedleWormRobbinZombieSenriEyeSoulAbsorbingBoneTowerVampireLadyVampireLord_0805FA5C
-gCardEffectAncientTelescopeArsenalRobberBloodSuckerDarkDesignatorDarkScorpionBurglarsDeSpellGermWeaponDoomDozerJadeInsectWhistleNeedleWormRobbinZombieSenriEyeSoulAbsorbingBoneTowerVampireLadyVampireLord_0805FA5C: @ 0x0805FA5C
+	@ Ancient Telescope
+	@ Arsenal Robber
+	@ Blood Sucker
+	@ Dark Designator
+	@ Dark Scorpion Burglars
+	@ De-Spell Germ Weapon
+	@ Doom Dozer
+	@ Jade Insect Whistle
+	@ Needle Worm
+	@ Robbin' Zombie
+	@ Senri Eye
+	@ Soul-Absorbing Bone Tower
+	@ Vampire Lady
+	@ Vampire Lord
+	thumb_func_start gCardEffectGraveyardSendToGY_0805FA5C
+gCardEffectGraveyardSendToGY_0805FA5C: @ 0x0805FA5C
 	ldr r2, _0805FA7C @ =gUnk_0201C4E0
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
@@ -152534,8 +153932,9 @@ _0805FA78:
 _0805FA7C: .4byte gUnk_0201C4E0
 _0805FA80: .4byte 0x00000868
 
-	thumb_func_start gCardEffectBookOfLife_0805FA84
-gCardEffectBookOfLife_0805FA84: @ 0x0805FA84
+	@ Book of Life
+	thumb_func_start gCardEffectSpecialSummonBanish_0805FA84
+gCardEffectSpecialSummonBanish_0805FA84: @ 0x0805FA84
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -152563,7 +153962,7 @@ gCardEffectBookOfLife_0805FA84: @ 0x0805FA84
 	beq _0805FAC6
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	b _0805FAC8
 _0805FAC6:
 	movs r0, #0
@@ -152573,8 +153972,10 @@ _0805FAC8:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectBookOfMoonReadyForIntercepting_0805FAD0
-gCardEffectBookOfMoonReadyForIntercepting_0805FAD0: @ 0x0805FAD0
+	@ Book of Moon
+	@ Ready for Intercepting
+	thumb_func_start gCardEffectChangePosition_0805FAD0
+gCardEffectChangePosition_0805FAD0: @ 0x0805FAD0
 	push {lr}
 	ldr r0, _0805FAE0 @ =0x0000135D (Light of Intervention)
 	bl sub_0803279C
@@ -152591,8 +153992,9 @@ _0805FAE6:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectMirageOfNightmare_0805FAEC
-gCardEffectMirageOfNightmare_0805FAEC: @ 0x0805FAEC
+	@ Mirage of Nightmare
+	thumb_func_start gCardEffectDrawDiscard_0805FAEC
+gCardEffectDrawDiscard_0805FAEC: @ 0x0805FAEC
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldr r5, _0805FB1C @ =gUnk_0201C4E0
@@ -152633,12 +154035,13 @@ _0805FB34:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectCallOfTheMummy_0805FB3C
-gCardEffectCallOfTheMummy_0805FB3C: @ 0x0805FB3C
+	@ Call of the Mummy
+	thumb_func_start gCardEffectSpecialSummon_0805FB3C
+gCardEffectSpecialSummon_0805FB3C: @ 0x0805FB3C
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	cmp r0, #0
 	beq _0805FBA8
 	ldrb r1, [r4, #2]
@@ -152649,7 +154052,7 @@ gCardEffectCallOfTheMummy_0805FB3C: @ 0x0805FB3C
 	bne _0805FBA8
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectAbareUshioniArchfiendSOathBESCrystalCoreBarrelDragonBlowbackDragonCatnippedKittyCyberLaserDragonDarkMasterZorcGaiaSoulTheCombustibleCollectiveGatlingDragonGoddessOfWhimHomunculusTheAlchemicBeingKarateManPatroidRavielLordOfPhantasmsRouletteBarrelSandGamblerSasukeSamuraiTimeWizardUriaLordOfSearingFlamesVwxyzDragonCatapultCannon_0805C1C0
+	bl gCardEffectDestroyRNG_0805C1C0
 	cmp r0, #0
 	bne _0805FB6A
 	b _0805FBA8
@@ -152698,8 +154101,9 @@ _0805FBAA:
 _0805FBB0: .4byte gUnk_0201C4E0
 _0805FBB4: .4byte 0x00000868
 
-	thumb_func_start gCardEffectOrdealOfATraveler_0805FBB8
-gCardEffectOrdealOfATraveler_0805FBB8: @ 0x0805FBB8
+	@ Ordeal of a Traveler
+	thumb_func_start gCardEffectReturnToHand_0805FBB8
+gCardEffectReturnToHand_0805FBB8: @ 0x0805FBB8
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -152712,7 +154116,7 @@ gCardEffectOrdealOfATraveler_0805FBB8: @ 0x0805FBB8
 	beq _0805FBD8
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectCalamityOfTheWickedDarkMirrorForceDimensionWallMirrorForceSakuretsuArmorStaunchDefenderWidespreadRuin_0805D998
+	bl gCardEffectDestroyChangePosition_0805D998
 	b _0805FBDA
 _0805FBD8:
 	movs r0, #0
@@ -152721,8 +154125,9 @@ _0805FBDA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectNeedleCeiling_0805FBE0
-gCardEffectNeedleCeiling_0805FBE0: @ 0x0805FBE0
+	@ Needle Ceiling
+	thumb_func_start gCardEffectDestroyAll_0805FBE0
+gCardEffectDestroyAll_0805FBE0: @ 0x0805FBE0
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldrb r0, [r5, #2]
@@ -152747,8 +154152,9 @@ _0805FC08:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectTrapDustshoot_0805FC10
-gCardEffectTrapDustshoot_0805FC10: @ 0x0805FC10
+	@ Trap Dustshoot
+	thumb_func_start gCardEffectUnknown_0805FC10
+gCardEffectUnknown_0805FC10: @ 0x0805FC10
 	movs r3, #0
 	ldr r2, _0805FC34 @ =gUnk_0201C4E0
 	ldrb r0, [r0, #2]
@@ -152771,8 +154177,9 @@ _0805FC2E:
 _0805FC34: .4byte gUnk_0201C4E0
 _0805FC38: .4byte 0x00000868
 
-	thumb_func_start gCardEffectExarionUniverse_0805FC3C
-gCardEffectExarionUniverse_0805FC3C: @ 0x0805FC3C
+	@ Exarion Universe
+	thumb_func_start gCardEffectReduceATKDamage_0805FC3C
+gCardEffectReduceATKDamage_0805FC3C: @ 0x0805FC3C
 	push {lr}
 	adds r2, r0, #0
 	ldrb r1, [r2, #2]
@@ -152816,8 +154223,9 @@ _0805FC8E:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectToonDefense_0805FC94
-gCardEffectToonDefense_0805FC94: @ 0x0805FC94
+	@ Toon Defense
+	thumb_func_start gCardEffectDirectAttack_0805FC94
+gCardEffectDirectAttack_0805FC94: @ 0x0805FC94
 	push {r4, r5, r6, r7, lr}
 	adds r7, r0, #0
 	cmp r1, #0
@@ -152902,8 +154310,9 @@ _0805FD34:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectCardOfSanctity_0805FD3C
-gCardEffectCardOfSanctity_0805FD3C: @ 0x0805FD3C
+	@ Card of Sanctity
+	thumb_func_start gCardEffectDrawBanish_0805FD3C
+gCardEffectDrawBanish_0805FD3C: @ 0x0805FD3C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -153000,8 +154409,9 @@ _0805FDE6:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectPuppetMaster_0805FDF4
-gCardEffectPuppetMaster_0805FDF4: @ 0x0805FDF4
+	@ Puppet Master
+	thumb_func_start gCardEffectSpecialSummonDamage_0805FDF4
+gCardEffectSpecialSummonDamage_0805FDF4: @ 0x0805FDF4
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -153038,8 +154448,9 @@ _0805FE30:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectHelpoemer_0805FE38
-gCardEffectHelpoemer_0805FE38: @ 0x0805FE38
+	@ Helpoemer
+	thumb_func_start gCardEffectSpecialSummonDiscard_0805FE38
+gCardEffectSpecialSummonDiscard_0805FE38: @ 0x0805FE38
 	push {r4, r5, r6, r7, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -153101,8 +154512,9 @@ _0805FEA6:
 	.align 2, 0
 _0805FEAC: .4byte 0xFFFFFBF4
 
-	thumb_func_start gCardEffectHiddenSoldier_0805FEB0
-gCardEffectHiddenSoldier_0805FEB0: @ 0x0805FEB0
+	@ Hidden Soldier
+	thumb_func_start gCardEffectSpecialSummon_0805FEB0
+gCardEffectSpecialSummon_0805FEB0: @ 0x0805FEB0
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	adds r2, r1, #0
@@ -153128,7 +154540,7 @@ _0805FECC:
 	beq _0805FF2C
 	adds r0, r4, #0
 	adds r1, r2, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	cmp r0, #0
 	bne _0805FEEE
 	b _0805FF2C
@@ -153177,17 +154589,18 @@ _0805FF2E:
 _0805FF34: .4byte gUnk_0201C4E0
 _0805FF38: .4byte 0x00000868
 
-	thumb_func_start gCardEffectMonsterRelief_0805FF3C
-gCardEffectMonsterRelief_0805FF3C: @ 0x0805FF3C
+	@ Monster Relief
+	thumb_func_start gCardEffectSpecialSummonReturnToHand_0805FF3C
+gCardEffectSpecialSummonReturnToHand_0805FF3C: @ 0x0805FF3C
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
-	bl gCardEffectCalamityOfTheWickedDarkMirrorForceDimensionWallMirrorForceSakuretsuArmorStaunchDefenderWidespreadRuin_0805D998
+	bl gCardEffectDestroyChangePosition_0805D998
 	cmp r0, #0
 	beq _0805FF5A
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectAncientLampMagnetCircleLv2_0805C294
+	bl gCardEffectSpecialSummonChangePosition_0805C294
 	cmp r0, #0
 	beq _0805FF5A
 	movs r0, #1
@@ -153200,8 +154613,11 @@ _0805FF5C:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectHeroKidMachineDuplicationTheLeagueOfUniformNomenclature_0805FF64
-gCardEffectHeroKidMachineDuplicationTheLeagueOfUniformNomenclature_0805FF64: @ 0x0805FF64
+	@ Hero Kid
+	@ Machine Duplication
+	@ The League of Uniform Nomenclature
+	thumb_func_start gCardEffectSpecialSummon_0805FF64
+gCardEffectSpecialSummon_0805FF64: @ 0x0805FF64
 	push {r4, lr}
 	adds r3, r0, #0
 	adds r4, r1, #0
@@ -153218,7 +154634,7 @@ gCardEffectHeroKidMachineDuplicationTheLeagueOfUniformNomenclature_0805FF64: @ 0
 	beq _0805FF94
 	adds r0, r3, #0
 	adds r1, r4, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	b _0805FF96
 	.align 2, 0
 _0805FF8C: .4byte gUnk_0201C4E0
@@ -153230,8 +154646,9 @@ _0805FF96:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectGravekeeperSAssailant_0805FF9C
-gCardEffectGravekeeperSAssailant_0805FF9C: @ 0x0805FF9C
+	@ Gravekeeper's Assailant
+	thumb_func_start gCardEffectPreventAttackChangePosition_0805FF9C
+gCardEffectPreventAttackChangePosition_0805FF9C: @ 0x0805FF9C
 	push {lr}
 	ldr r0, _0805FFAC @ =0x0000159D (Necrovalley)
 	bl sub_08032CA4
@@ -153248,8 +154665,10 @@ _0805FFB2:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectMillenniumScorpionMysticalKnightOfJackal_0805FFB8
-gCardEffectMillenniumScorpionMysticalKnightOfJackal_0805FFB8: @ 0x0805FFB8
+	@ Millennium Scorpion
+	@ Mystical Knight of Jackal
+	thumb_func_start gCardEffectSendToGYDestroy_0805FFB8
+gCardEffectSendToGYDestroy_0805FFB8: @ 0x0805FFB8
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	movs r0, #0xfc
@@ -153301,11 +154720,12 @@ _08060016:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectWingedSageFalcos_0806001C
-gCardEffectWingedSageFalcos_0806001C: @ 0x0806001C
+	@ Winged Sage Falcos
+	thumb_func_start gCardEffectSendToGYChangePosition_0806001C
+gCardEffectSendToGYChangePosition_0806001C: @ 0x0806001C
 	push {r4, lr}
 	adds r4, r0, #0
-	bl gCardEffectMillenniumScorpionMysticalKnightOfJackal_0805FFB8
+	bl gCardEffectSendToGYDestroy_0805FFB8
 	cmp r0, #0
 	beq _0806003A
 	ldr r1, [r4, #0x14]
@@ -153325,11 +154745,12 @@ _0806003C:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectCardShuffle_08060044
-gCardEffectCardShuffle_08060044: @ 0x08060044
+	@ Card Shuffle
+	thumb_func_start gCardEffectDamage_08060044
+gCardEffectDamage_08060044: @ 0x08060044
 	push {r4, lr}
 	adds r4, r0, #0
-	bl gCardEffectAbareUshioniArchfiendSOathBESCrystalCoreBarrelDragonBlowbackDragonCatnippedKittyCyberLaserDragonDarkMasterZorcGaiaSoulTheCombustibleCollectiveGatlingDragonGoddessOfWhimHomunculusTheAlchemicBeingKarateManPatroidRavielLordOfPhantasmsRouletteBarrelSandGamblerSasukeSamuraiTimeWizardUriaLordOfSearingFlamesVwxyzDragonCatapultCannon_0805C1C0
+	bl gCardEffectDestroyRNG_0805C1C0
 	cmp r0, #0
 	beq _08060078
 	ldr r1, _0806007C @ =gUnk_0201C4E0
@@ -153365,8 +154786,9 @@ _08060086:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectReasoning_0806008C
-gCardEffectReasoning_0806008C: @ 0x0806008C
+	@ Reasoning
+	thumb_func_start gCardEffectSpecialSummonSendToGY_0806008C
+gCardEffectSpecialSummonSendToGY_0806008C: @ 0x0806008C
 	ldr r2, _080600A8 @ =gUnk_0201C4E0
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
@@ -153388,8 +154810,9 @@ _080600B0:
 _080600B2:
 	bx lr
 
-	thumb_func_start gCardEffectRoyalTribute_080600B4
-gCardEffectRoyalTribute_080600B4: @ 0x080600B4
+	@ Royal Tribute
+	thumb_func_start gCardEffectDiscardGraveyard_080600B4
+gCardEffectDiscardGraveyard_080600B4: @ 0x080600B4
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -153430,8 +154853,9 @@ _080600FE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectReversalQuiz_08060104
-gCardEffectReversalQuiz_08060104: @ 0x08060104
+	@ Reversal Quiz
+	thumb_func_start gCardEffectSendToGYGraveyard_08060104
+gCardEffectSendToGYGraveyard_08060104: @ 0x08060104
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r1, _08060148 @ =gUnk_0201C4E0
@@ -153475,8 +154899,9 @@ _08060156:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectNonAggressionArea_0806015C
-gCardEffectNonAggressionArea_0806015C: @ 0x0806015C
+	@ Non Aggression Area
+	thumb_func_start gCardEffectSpecialSummonDiscard_0806015C
+gCardEffectSpecialSummonDiscard_0806015C: @ 0x0806015C
 	push {r4, r5, lr}
 	adds r2, r0, #0
 	adds r4, r1, #0
@@ -153496,7 +154921,7 @@ gCardEffectNonAggressionArea_0806015C: @ 0x0806015C
 	bne _08060194
 	adds r0, r2, #0
 	adds r1, r4, #0
-	bl gCardEffectBackToSquareOneCostDownCurseOfAgingCyberneticMagicianDarkCoreForcedCeasefireHallowedLifeBarrierKarmaCutLightningVortexMaliceDispersionPhoenixWingWindBlastRaigekiBreakRisingEnergySpecialHurricaneSpellPurificationTributeToTheDoomedVwTigerCatapultXyDragonCannonXyzDragonCannonXzTankCannonYzTankDragon_0805C1E4
+	bl gCardEffectDiscard_0805C1E4
 	b _08060196
 	.align 2, 0
 _08060188: .4byte gUnk_0201C4E0
@@ -153509,12 +154934,24 @@ _08060196:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectBurningBeastDesDendleDoitsuFreezingBeastHeavyMechSupportPlatformKoitsuMetallizingParasiteLunatitePitchDarkDragonWWingCatapultYDragonHeadZMetalTankZombieTiger_0806019C
-gCardEffectBurningBeastDesDendleDoitsuFreezingBeastHeavyMechSupportPlatformKoitsuMetallizingParasiteLunatitePitchDarkDragonWWingCatapultYDragonHeadZMetalTankZombieTiger_0806019C: @ 0x0806019C
+	@ Burning Beast
+	@ Des Dendle
+	@ Doitsu
+	@ Freezing Beast
+	@ Heavy Mech Support Platform
+	@ Koitsu
+	@ Metallizing Parasite - Lunatite
+	@ Pitch-Dark Dragon
+	@ W-Wing Catapult
+	@ Y-Dragon Head
+	@ Z-Metal Tank
+	@ Zombie Tiger
+	thumb_func_start gCardEffectSpecialSummonDestroy_0806019C
+gCardEffectSpecialSummonDestroy_0806019C: @ 0x0806019C
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
-	bl gCardEffectAbareUshioniArchfiendSOathBESCrystalCoreBarrelDragonBlowbackDragonCatnippedKittyCyberLaserDragonDarkMasterZorcGaiaSoulTheCombustibleCollectiveGatlingDragonGoddessOfWhimHomunculusTheAlchemicBeingKarateManPatroidRavielLordOfPhantasmsRouletteBarrelSandGamblerSasukeSamuraiTimeWizardUriaLordOfSearingFlamesVwxyzDragonCatapultCannon_0805C1C0
+	bl gCardEffectDestroyRNG_0805C1C0
 	cmp r0, #0
 	beq _080601D4
 	ldrb r1, [r4, #2]
@@ -153532,7 +154969,7 @@ gCardEffectBurningBeastDesDendleDoitsuFreezingBeastHeavyMechSupportPlatformKoits
 _080601C4:
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	cmp r0, #0
 	beq _080601D4
 	movs r0, #2
@@ -153544,11 +154981,12 @@ _080601D6:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectRopeOfSpirit_080601DC
-gCardEffectRopeOfSpirit_080601DC: @ 0x080601DC
+	@ Rope of Spirit
+	thumb_func_start gCardEffectSpecialSummonSendToGY_080601DC
+gCardEffectSpecialSummonSendToGY_080601DC: @ 0x080601DC
 	push {r4, r5, lr}
 	adds r4, r0, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	cmp r0, #0
 	beq _08060268
 	ldr r5, _0806025C @ =gUnk_0201C4E0
@@ -153617,8 +155055,10 @@ _0806026A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectInterdimensionalMatterTransporterStrikeNinja_08060270
-gCardEffectInterdimensionalMatterTransporterStrikeNinja_08060270: @ 0x08060270
+	@ Interdimensional Matter Transporter
+	@ Strike Ninja
+	thumb_func_start gCardEffectBanishEndPhase_08060270
+gCardEffectBanishEndPhase_08060270: @ 0x08060270
 	push {lr}
 	adds r1, r0, #0
 	movs r0, #0x30
@@ -153648,8 +155088,9 @@ _080602A4:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectLekunga_080602A8
-gCardEffectLekunga_080602A8: @ 0x080602A8
+	@ Lekunga
+	thumb_func_start gCardEffectSpecialSummonChangePosition_080602A8
+gCardEffectSpecialSummonChangePosition_080602A8: @ 0x080602A8
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -153669,7 +155110,7 @@ gCardEffectLekunga_080602A8: @ 0x080602A8
 	ble _080602D8
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	b _080602DA
 _080602D8:
 	movs r0, #0
@@ -153678,8 +155119,9 @@ _080602DA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectKiryu_080602E0
-gCardEffectKiryu_080602E0: @ 0x080602E0
+	@ Kiryu
+	thumb_func_start gCardEffectSpecialSummonDestroy_080602E0
+gCardEffectSpecialSummonDestroy_080602E0: @ 0x080602E0
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -153707,15 +155149,16 @@ _08060314: .4byte 0x000013F2 @ Mask of Restrict
 _08060318:
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectBurningBeastDesDendleDoitsuFreezingBeastHeavyMechSupportPlatformKoitsuMetallizingParasiteLunatitePitchDarkDragonWWingCatapultYDragonHeadZMetalTankZombieTiger_0806019C
+	bl gCardEffectSpecialSummonDestroy_0806019C
 _08060320:
 	pop {r4, r5}
 	pop {r1}
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectDecayedCommander_08060328
-gCardEffectDecayedCommander_08060328: @ 0x08060328
+	@ Decayed Commander
+	thumb_func_start gCardEffectSpecialSummonDiscard_08060328
+gCardEffectSpecialSummonDiscard_08060328: @ 0x08060328
 	push {lr}
 	adds r2, r0, #0
 	adds r3, r1, #0
@@ -153729,7 +155172,7 @@ gCardEffectDecayedCommander_08060328: @ 0x08060328
 	beq _08060348
 	adds r0, r2, #0
 	adds r1, r3, #0
-	bl gCardEffectDonTurtleMaraudingCaptainPinchHopperTheThingInTheCraterTwoManCellBattleVampireOrchis_0805CBCC
+	bl gCardEffectSpecialSummon_0805CBCC
 	b _0806034A
 _08060348:
 	movs r0, #1
@@ -153738,8 +155181,10 @@ _0806034A:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectProtectiveSoulAilinSecondGoblin_08060350
-gCardEffectProtectiveSoulAilinSecondGoblin_08060350: @ 0x08060350
+	@ Protective Soul Ailin
+	@ Second Goblin
+	thumb_func_start gCardEffectSpecialSummonDestroy_08060350
+gCardEffectSpecialSummonDestroy_08060350: @ 0x08060350
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -153762,15 +155207,16 @@ _08060374: .4byte 0x000015D3 @ Second Goblin
 _08060378:
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectBurningBeastDesDendleDoitsuFreezingBeastHeavyMechSupportPlatformKoitsuMetallizingParasiteLunatitePitchDarkDragonWWingCatapultYDragonHeadZMetalTankZombieTiger_0806019C
+	bl gCardEffectSpecialSummonDestroy_0806019C
 _08060380:
 	pop {r4, r5}
 	pop {r1}
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectHelpingRoboForCombat_08060388
-gCardEffectHelpingRoboForCombat_08060388: @ 0x08060388
+	@ Helping Robo For Combat
+	thumb_func_start gCardEffectDrawDestroy_08060388
+gCardEffectDrawDestroy_08060388: @ 0x08060388
 	adds r3, r0, #0
 	movs r0, #0xfc
 	lsls r0, r0, #4
@@ -153798,8 +155244,9 @@ _080603B4:
 	bx lr
 	.align 2, 0
 
-	thumb_func_start gCardEffectPaladinOfWhiteDragon_080603B8
-gCardEffectPaladinOfWhiteDragon_080603B8: @ 0x080603B8
+	@ Paladin of White Dragon
+	thumb_func_start gCardEffectSpecialSummonRitualSummon_080603B8
+gCardEffectSpecialSummonRitualSummon_080603B8: @ 0x080603B8
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	ldrb r1, [r6, #2]
@@ -153881,17 +155328,18 @@ _0806045E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectFrontlineBase_08060464
-gCardEffectFrontlineBase_08060464: @ 0x08060464
+	@ Frontline Base
+	thumb_func_start gCardEffectSpecialSummon_08060464
+gCardEffectSpecialSummon_08060464: @ 0x08060464
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
-	bl gCardEffectAbareUshioniArchfiendSOathBESCrystalCoreBarrelDragonBlowbackDragonCatnippedKittyCyberLaserDragonDarkMasterZorcGaiaSoulTheCombustibleCollectiveGatlingDragonGoddessOfWhimHomunculusTheAlchemicBeingKarateManPatroidRavielLordOfPhantasmsRouletteBarrelSandGamblerSasukeSamuraiTimeWizardUriaLordOfSearingFlamesVwxyzDragonCatapultCannon_0805C1C0
+	bl gCardEffectDestroyRNG_0805C1C0
 	cmp r0, #0
 	beq _0806047C
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectAncientLampMagnetCircleLv2_0805C294
+	bl gCardEffectSpecialSummonChangePosition_0805C294
 	b _0806047E
 _0806047C:
 	movs r0, #0
@@ -153900,8 +155348,9 @@ _0806047E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectCombinationAttack_08060484
-gCardEffectCombinationAttack_08060484: @ 0x08060484
+	@ Combination Attack
+	thumb_func_start gCardEffectChangePositionEquip_08060484
+gCardEffectChangePositionEquip_08060484: @ 0x08060484
 	push {lr}
 	adds r2, r0, #0
 	ldr r0, _0806049C @ =gUnk_0201C4E0
@@ -153911,7 +155360,7 @@ gCardEffectCombinationAttack_08060484: @ 0x08060484
 	cmp r0, #3
 	bne _080604A4
 	adds r0, r2, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	b _080604A6
 	.align 2, 0
 _0806049C: .4byte gUnk_0201C4E0
@@ -153923,8 +155372,10 @@ _080604A6:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectTributeDollUltraEvolutionPill_080604AC
-gCardEffectTributeDollUltraEvolutionPill_080604AC: @ 0x080604AC
+	@ Tribute Doll
+	@ Ultra Evolution Pill
+	thumb_func_start gCardEffectSpecialSummonTribute_080604AC
+gCardEffectSpecialSummonTribute_080604AC: @ 0x080604AC
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	ldrb r1, [r5, #2]
@@ -153979,8 +155430,9 @@ _08060504:
 _0806050C: .4byte gUnk_0201C4E0
 _08060510: .4byte 0x00000868
 
-	thumb_func_start gCardEffectHugeRevolution_08060514
-gCardEffectHugeRevolution_08060514: @ 0x08060514
+	@ Huge Revolution
+	thumb_func_start gCardEffectSendToGYDestroyAll_08060514
+gCardEffectSendToGYDestroyAll_08060514: @ 0x08060514
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -154037,8 +155489,9 @@ _08060582:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectThunderOfRuler_08060588
-gCardEffectThunderOfRuler_08060588: @ 0x08060588
+	@ Thunder of Ruler
+	thumb_func_start gCardEffectStandbyPhaseBattlePhase_08060588
+gCardEffectStandbyPhaseBattlePhase_08060588: @ 0x08060588
 	ldr r2, _080605A8 @ =gUnk_0201C4E0
 	ldr r3, _080605AC @ =0x00001CE8
 	adds r1, r2, r3
@@ -154064,8 +155517,9 @@ _080605B4:
 _080605B6:
 	bx lr
 
-	thumb_func_start gCardEffectMeteorain_080605B8
-gCardEffectMeteorain_080605B8: @ 0x080605B8
+	@ Meteorain
+	thumb_func_start gCardEffectDamageChangePosition_080605B8
+gCardEffectDamageChangePosition_080605B8: @ 0x080605B8
 	ldr r2, _080605D0 @ =gUnk_0201C4E0
 	ldr r3, _080605D4 @ =0x00001CE8
 	adds r1, r2, r3
@@ -154095,8 +155549,9 @@ _080605E8:
 	.align 2, 0
 _080605EC: .4byte 0x00001CF4
 
-	thumb_func_start gCardEffectPineappleBlast_080605F0
-gCardEffectPineappleBlast_080605F0: @ 0x080605F0
+	@ Pineapple Blast
+	thumb_func_start gCardEffectDestroy_080605F0
+gCardEffectDestroy_080605F0: @ 0x080605F0
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldrb r0, [r5, #2]
@@ -154138,8 +155593,9 @@ _08060638:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectSecretBarrel_08060640
-gCardEffectSecretBarrel_08060640: @ 0x08060640
+	@ Secret Barrel
+	thumb_func_start gCardEffectDamage_08060640
+gCardEffectDamage_08060640: @ 0x08060640
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldrb r1, [r5, #2]
@@ -154173,8 +155629,9 @@ _08060672:
 _0806067C: .4byte gUnk_0201C4E0
 _08060680: .4byte 0x00000868
 
-	thumb_func_start gCardEffectFormationUnion_08060684
-gCardEffectFormationUnion_08060684: @ 0x08060684
+	@ Formation Union
+	thumb_func_start gCardEffectSpecialSummonChangePosition_08060684
+gCardEffectSpecialSummonChangePosition_08060684: @ 0x08060684
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -154195,7 +155652,7 @@ _080606A6:
 	strh r0, [r4, #0xc]
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	cmp r0, #0
 	beq _080606C4
 	adds r0, r4, #0
@@ -154212,8 +155669,9 @@ _080606C6:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDiffusionWaveMotion_080606CC
-gCardEffectDiffusionWaveMotion_080606CC: @ 0x080606CC
+	@ Diffusion Wave-Motion
+	thumb_func_start gCardEffectDestroyDamage_080606CC
+gCardEffectDestroyDamage_080606CC: @ 0x080606CC
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r0, [r4, #2]
@@ -154248,8 +155706,10 @@ _0806070A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectSkilledDarkMagicianSkilledWhiteMagician_08060710
-gCardEffectSkilledDarkMagicianSkilledWhiteMagician_08060710: @ 0x08060710
+	@ Skilled Dark Magician
+	@ Skilled White Magician
+	thumb_func_start gCardEffectSpecialSummonRevive_08060710
+gCardEffectSpecialSummonRevive_08060710: @ 0x08060710
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	ldrb r1, [r5, #2]
@@ -154308,8 +155768,12 @@ _08060782:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectBreakerTheMagicalWarriorHannibalNecromancerLegendaryFlameLordMagicalMarionette_08060788
-gCardEffectBreakerTheMagicalWarriorHannibalNecromancerLegendaryFlameLordMagicalMarionette_08060788: @ 0x08060788
+	@ Breaker the Magical Warrior
+	@ Hannibal Necromancer
+	@ Legendary Flame Lord
+	@ Magical Marionette
+	thumb_func_start gCardEffectDestroyCounter_08060788
+gCardEffectDestroyCounter_08060788: @ 0x08060788
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldrb r1, [r5, #2]
@@ -154332,8 +155796,9 @@ _080607AA:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectRoyalMagicalLibrary_080607B4
-gCardEffectRoyalMagicalLibrary_080607B4: @ 0x080607B4
+	@ Royal Magical Library
+	thumb_func_start gCardEffectDrawCounter_080607B4
+gCardEffectDrawCounter_080607B4: @ 0x080607B4
 	push {r4, lr}
 	adds r3, r0, #0
 	adds r4, r1, #0
@@ -154350,7 +155815,7 @@ gCardEffectRoyalMagicalLibrary_080607B4: @ 0x080607B4
 	beq _080607E4
 	adds r0, r3, #0
 	adds r1, r4, #0
-	bl gCardEffectBreakerTheMagicalWarriorHannibalNecromancerLegendaryFlameLordMagicalMarionette_08060788
+	bl gCardEffectDestroyCounter_08060788
 	b _080607E6
 	.align 2, 0
 _080607DC: .4byte gUnk_0201C4E0
@@ -154362,10 +155827,11 @@ _080607E6:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectTribeInfectingVirus_080607EC
-gCardEffectTribeInfectingVirus_080607EC: @ 0x080607EC
+	@ Tribe-Infecting Virus
+	thumb_func_start gCardEffectDiscardDestroyAll_080607EC
+gCardEffectDiscardDestroyAll_080607EC: @ 0x080607EC
 	push {lr}
-	bl gCardEffectBackToSquareOneCostDownCurseOfAgingCyberneticMagicianDarkCoreForcedCeasefireHallowedLifeBarrierKarmaCutLightningVortexMaliceDispersionPhoenixWingWindBlastRaigekiBreakRisingEnergySpecialHurricaneSpellPurificationTributeToTheDoomedVwTigerCatapultXyDragonCannonXyzDragonCannonXzTankCannonYzTankDragon_0805C1E4
+	bl gCardEffectDiscard_0805C1E4
 	cmp r0, #0
 	beq _080607FA
 	movs r0, #2
@@ -154376,8 +155842,9 @@ _080607FC:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectPitchBlackPowerStone_08060800
-gCardEffectPitchBlackPowerStone_08060800: @ 0x08060800
+	@ Pitch-Black Power Stone
+	thumb_func_start gCardEffectDestroyCounter_08060800
+gCardEffectDestroyCounter_08060800: @ 0x08060800
 	push {r4, lr}
 	adds r4, r0, #0
 	adds r2, r1, #0
@@ -154392,7 +155859,7 @@ gCardEffectPitchBlackPowerStone_08060800: @ 0x08060800
 	bne _0806083C
 	adds r0, r4, #0
 	adds r1, r2, #0
-	bl gCardEffectAbareUshioniArchfiendSOathBESCrystalCoreBarrelDragonBlowbackDragonCatnippedKittyCyberLaserDragonDarkMasterZorcGaiaSoulTheCombustibleCollectiveGatlingDragonGoddessOfWhimHomunculusTheAlchemicBeingKarateManPatroidRavielLordOfPhantasmsRouletteBarrelSandGamblerSasukeSamuraiTimeWizardUriaLordOfSearingFlamesVwxyzDragonCatapultCannon_0805C1C0
+	bl gCardEffectDestroyRNG_0805C1C0
 	cmp r0, #0
 	beq _0806083C
 	adds r0, r4, #0
@@ -154420,8 +155887,9 @@ _0806084C:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectGatherYourMind_08060854
-gCardEffectGatherYourMind_08060854: @ 0x08060854
+	@ Gather Your Mind
+	thumb_func_start gCardEffectSearch_08060854
+gCardEffectSearch_08060854: @ 0x08060854
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r1, _08060874 @ =gUnk_0201C4E0
@@ -154457,8 +155925,9 @@ _08060890:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectEmblemOfDragonDestroyer_08060898
-gCardEffectEmblemOfDragonDestroyer_08060898: @ 0x08060898
+	@ Emblem of Dragon Destroyer
+	thumb_func_start gCardEffectSearchGraveyard_08060898
+gCardEffectSearchGraveyard_08060898: @ 0x08060898
 	push {r4, r5, lr}
 	adds r3, r0, #0
 	ldr r1, _080608D0 @ =gUnk_0201C4E0
@@ -154494,8 +155963,9 @@ _080608DA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectMegaTonMagicalCannon_080608E0
-gCardEffectMegaTonMagicalCannon_080608E0: @ 0x080608E0
+	@ Mega Ton Magical Cannon
+	thumb_func_start gCardEffectDestroyAllCounter_080608E0
+gCardEffectDestroyAllCounter_080608E0: @ 0x080608E0
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -154516,8 +155986,9 @@ _080608FE:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectExhaustingSpell_08060908
-gCardEffectExhaustingSpell_08060908: @ 0x08060908
+	@ Exhausting Spell
+	thumb_func_start gCardEffectCounter_08060908
+gCardEffectCounter_08060908: @ 0x08060908
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldrb r1, [r5, #2]
@@ -154542,8 +156013,9 @@ _08060930:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectHiddenBookOfSpell_08060938
-gCardEffectHiddenBookOfSpell_08060938: @ 0x08060938
+	@ Hidden Book of Spell
+	thumb_func_start gCardEffectGraveyard_08060938
+gCardEffectGraveyard_08060938: @ 0x08060938
 	push {lr}
 	adds r3, r0, #0
 	ldr r0, _08060954 @ =gUnk_0201C4E0
@@ -154575,8 +156047,9 @@ _08060970:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectMiracleRestoring_08060974
-gCardEffectMiracleRestoring_08060974: @ 0x08060974
+	@ Miracle Restoring
+	thumb_func_start gCardEffectSpecialSummonChangePosition_08060974
+gCardEffectSpecialSummonChangePosition_08060974: @ 0x08060974
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	adds r6, r1, #0
@@ -154591,7 +156064,7 @@ gCardEffectMiracleRestoring_08060974: @ 0x08060974
 	blt _0806099A
 	adds r0, r5, #0
 	adds r1, r6, #0
-	bl gCardEffectArchfiendSRoarAutonomousActionUnitBatteryChargerCallOfTheHauntedCentrifugalFieldChimeraTheFlyingMythicalBeastCyberSteinFulfillmentOfTheContractFushiohRichieMagicalScientistPrematureBurialReFusionReturnFromTheDifferentDimensionRiteOfSpiritSilentFiendSoulResurrectionSpiritCallerSpiritOfThePharaohSymbolOfHeritage_0805C248
+	bl gCardEffectSpecialSummonGraveyard_0805C248
 	b _0806099C
 _0806099A:
 	movs r0, #0
@@ -154601,8 +156074,11 @@ _0806099C:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectMetalReflectSlimeSkullZomaStronghold_080609A4
-gCardEffectMetalReflectSlimeSkullZomaStronghold_080609A4: @ 0x080609A4
+	@ Metal Reflect Slime
+	@ Skull Zoma
+	@ Stronghold
+	thumb_func_start gCardEffectSpecialSummonChangePosition_080609A4
+gCardEffectSpecialSummonChangePosition_080609A4: @ 0x080609A4
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -154626,11 +156102,14 @@ _080609CA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectAFeatherOfThePhoenixExcavationOfMageStonesMonsterReincarnation_080609D0
-gCardEffectAFeatherOfThePhoenixExcavationOfMageStonesMonsterReincarnation_080609D0: @ 0x080609D0
+	@ A Feather of the Phoenix
+	@ Excavation of Mage Stones
+	@ Monster Reincarnation
+	thumb_func_start gCardEffectDiscardGraveyard_080609D0
+gCardEffectDiscardGraveyard_080609D0: @ 0x080609D0
 	push {r4, lr}
 	adds r4, r0, #0
-	bl gCardEffectBackToSquareOneCostDownCurseOfAgingCyberneticMagicianDarkCoreForcedCeasefireHallowedLifeBarrierKarmaCutLightningVortexMaliceDispersionPhoenixWingWindBlastRaigekiBreakRisingEnergySpecialHurricaneSpellPurificationTributeToTheDoomedVwTigerCatapultXyDragonCannonXyzDragonCannonXzTankCannonYzTankDragon_0805C1E4
+	bl gCardEffectDiscard_0805C1E4
 	cmp r0, #0
 	beq _080609F2
 	ldrb r1, [r4, #2]
@@ -154651,8 +156130,9 @@ _080609F4:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectShinatoKingOfAHigherPlane_080609FC
-gCardEffectShinatoKingOfAHigherPlane_080609FC: @ 0x080609FC
+	@ Shinato, King of a Higher Plane
+	thumb_func_start gCardEffectRitualSummonSendToGY_080609FC
+gCardEffectRitualSummonSendToGY_080609FC: @ 0x080609FC
 	push {lr}
 	adds r2, r0, #0
 	movs r0, #0xfc
@@ -154702,8 +156182,9 @@ _08060A56:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectADealWithDarkRuler_08060A5C
-gCardEffectADealWithDarkRuler_08060A5C: @ 0x08060A5C
+	@ A Deal with Dark Ruler
+	thumb_func_start gCardEffectSpecialSummonSendToGY_08060A5C
+gCardEffectSpecialSummonSendToGY_08060A5C: @ 0x08060A5C
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -154717,7 +156198,7 @@ gCardEffectADealWithDarkRuler_08060A5C: @ 0x08060A5C
 	beq _08060A7E
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	b _08060A80
 _08060A7E:
 	movs r0, #0
@@ -154727,11 +156208,12 @@ _08060A80:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectContractWithExodia_08060A88
-gCardEffectContractWithExodia_08060A88: @ 0x08060A88
+	@ Contract with Exodia
+	thumb_func_start gCardEffectSpecialSummonGraveyard_08060A88
+gCardEffectSpecialSummonGraveyard_08060A88: @ 0x08060A88
 	push {r4, lr}
 	adds r4, r0, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	cmp r0, #0
 	beq _08060B10
 	ldrb r1, [r4, #2]
@@ -154792,8 +156274,11 @@ _08060B12:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectArmedDragonLv10TwinSwordsOfFlashingLightTryceWickedBreakingFlambergeBaou_08060B18
-gCardEffectArmedDragonLv10TwinSwordsOfFlashingLightTryceWickedBreakingFlambergeBaou_08060B18: @ 0x08060B18
+	@ Armed Dragon LV10
+	@ Twin Swords of Flashing Light - Tryce
+	@ Wicked-Breaking Flamberge - Baou
+	thumb_func_start gCardEffectSendToGYGraveyard_08060B18
+gCardEffectSendToGYGraveyard_08060B18: @ 0x08060B18
 	push {r4, lr}
 	sub sp, #4
 	adds r4, r0, #0
@@ -154821,8 +156306,9 @@ _08060B42:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectOjamaTrio_08060B4C
-gCardEffectOjamaTrio_08060B4C: @ 0x08060B4C
+	@ Ojama Trio
+	thumb_func_start gCardEffectSpecialSummonDestroy_08060B4C
+gCardEffectSpecialSummonDestroy_08060B4C: @ 0x08060B4C
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -154850,8 +156336,9 @@ _08060B78:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectMagicalDimension_08060B80
-gCardEffectMagicalDimension_08060B80: @ 0x08060B80
+	@ Magical Dimension
+	thumb_func_start gCardEffectSpecialSummonDestroy_08060B80
+gCardEffectSpecialSummonDestroy_08060B80: @ 0x08060B80
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -154913,8 +156400,9 @@ _08060BE8:
 _08060BF0: .4byte gUnk_0201C4E0
 _08060BF4: .4byte 0x00000868
 
-	thumb_func_start gCardEffectJudgementOfPharaoh_08060BF8
-gCardEffectJudgementOfPharaoh_08060BF8: @ 0x08060BF8
+	@ Judgement of Pharaoh
+	thumb_func_start gCardEffectSpecialSummonDamage_08060BF8
+gCardEffectSpecialSummonDamage_08060BF8: @ 0x08060BF8
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -154943,11 +156431,14 @@ _08060C2A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectKingSKnightMusteringOfTheDarkScorpionsSageSStone_08060C30
-gCardEffectKingSKnightMusteringOfTheDarkScorpionsSageSStone_08060C30: @ 0x08060C30
+	@ King's Knight
+	@ Mustering of the Dark Scorpions
+	@ Sage's Stone
+	thumb_func_start gCardEffectSpecialSummon_08060C30
+gCardEffectSpecialSummon_08060C30: @ 0x08060C30
 	push {r4, r5, lr}
 	adds r4, r0, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	cmp r0, #0
 	beq _08060C8C
 	ldrh r1, [r4]
@@ -155000,8 +156491,9 @@ _08060C8E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDesrookArchfiend_08060C94
-gCardEffectDesrookArchfiend_08060C94: @ 0x08060C94
+	@ Desrook Archfiend
+	thumb_func_start gCardEffectSpecialSummonNegate_08060C94
+gCardEffectSpecialSummonNegate_08060C94: @ 0x08060C94
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _08060CF0 @ =0x00001332 (Banisher of the Light)
@@ -155059,8 +156551,9 @@ _08060D02:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectFrozenSoul_08060D08
-gCardEffectFrozenSoul_08060D08: @ 0x08060D08
+	@ Frozen Soul
+	thumb_func_start gCardEffectBattlePhase_08060D08
+gCardEffectBattlePhase_08060D08: @ 0x08060D08
 	push {r4, r5, lr}
 	movs r5, #0
 	ldr r4, _08060D40 @ =gUnk_0201C4E0
@@ -155093,8 +156586,9 @@ _08060D36:
 _08060D40: .4byte gUnk_0201C4E0
 _08060D44: .4byte 0x00000868
 
-	thumb_func_start gCardEffectDarkScorpionCombination_08060D48
-gCardEffectDarkScorpionCombination_08060D48: @ 0x08060D48
+	@ Dark Scorpion Combination
+	thumb_func_start gCardEffectDirectAttack_08060D48
+gCardEffectDirectAttack_08060D48: @ 0x08060D48
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r3, _08060DB8 @ =gUnk_0201C4E0
@@ -155162,8 +156656,9 @@ _08060DDA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDiceReRoll_08060DE0
-gCardEffectDiceReRoll_08060DE0: @ 0x08060DE0
+	@ Dice Re-Roll
+	thumb_func_start gCardEffectNegate_08060DE0
+gCardEffectNegate_08060DE0: @ 0x08060DE0
 	push {lr}
 	adds r1, r0, #0
 	ldrb r2, [r1, #2]
@@ -155184,8 +156679,10 @@ _08060DFE:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectRayOfHopeTheGraveyardInTheFourthDimension_08060E04
-gCardEffectRayOfHopeTheGraveyardInTheFourthDimension_08060E04: @ 0x08060E04
+	@ Ray of Hope
+	@ The Graveyard in the Fourth Dimension
+	thumb_func_start gCardEffectGraveyard_08060E04
+gCardEffectGraveyard_08060E04: @ 0x08060E04
 	push {lr}
 	adds r1, r0, #0
 	ldrb r2, [r1, #2]
@@ -155203,8 +156700,9 @@ _08060E1E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectChironTheMage_08060E24
-gCardEffectChironTheMage_08060E24: @ 0x08060E24
+	@ Chiron the Mage
+	thumb_func_start gCardEffectDiscardDestroySpellTrap_08060E24
+gCardEffectDiscardDestroySpellTrap_08060E24: @ 0x08060E24
 	push {r4, r5, lr}
 	sub sp, #4
 	adds r4, r0, #0
@@ -155223,7 +156721,7 @@ gCardEffectChironTheMage_08060E24: @ 0x08060E24
 	beq _08060E50
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectAbareUshioniArchfiendSOathBESCrystalCoreBarrelDragonBlowbackDragonCatnippedKittyCyberLaserDragonDarkMasterZorcGaiaSoulTheCombustibleCollectiveGatlingDragonGoddessOfWhimHomunculusTheAlchemicBeingKarateManPatroidRavielLordOfPhantasmsRouletteBarrelSandGamblerSasukeSamuraiTimeWizardUriaLordOfSearingFlamesVwxyzDragonCatapultCannon_0805C1C0
+	bl gCardEffectDestroyRNG_0805C1C0
 	b _08060E52
 _08060E50:
 	movs r0, #0
@@ -155234,8 +156732,9 @@ _08060E52:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectStrikeNinja_08060E5C
-gCardEffectStrikeNinja_08060E5C: @ 0x08060E5C
+	@ Strike Ninja
+	thumb_func_start gCardEffectBanishGraveyard_08060E5C
+gCardEffectBanishGraveyard_08060E5C: @ 0x08060E5C
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -155274,11 +156773,12 @@ _08060EA2:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectFreedTheBraveWanderer_08060EA8
-gCardEffectFreedTheBraveWanderer_08060EA8: @ 0x08060EA8
+	@ Freed the Brave Wanderer
+	thumb_func_start gCardEffectDestroyGraveyard_08060EA8
+gCardEffectDestroyGraveyard_08060EA8: @ 0x08060EA8
 	push {r4, lr}
 	adds r4, r0, #0
-	bl gCardEffectAbareUshioniArchfiendSOathBESCrystalCoreBarrelDragonBlowbackDragonCatnippedKittyCyberLaserDragonDarkMasterZorcGaiaSoulTheCombustibleCollectiveGatlingDragonGoddessOfWhimHomunculusTheAlchemicBeingKarateManPatroidRavielLordOfPhantasmsRouletteBarrelSandGamblerSasukeSamuraiTimeWizardUriaLordOfSearingFlamesVwxyzDragonCatapultCannon_0805C1C0
+	bl gCardEffectDestroyRNG_0805C1C0
 	cmp r0, #0
 	beq _08060ED8
 	ldrb r1, [r4, #2]
@@ -155304,8 +156804,9 @@ _08060EDA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDDScoutPlane_08060EE0
-gCardEffectDDScoutPlane_08060EE0: @ 0x08060EE0
+	@ D. D. Scout Plane
+	thumb_func_start gCardEffectSpecialSummonBanish_08060EE0
+gCardEffectSpecialSummonBanish_08060EE0: @ 0x08060EE0
 	push {lr}
 	ldrb r2, [r0, #2]
 	lsls r1, r2, #0x1f
@@ -155445,12 +156946,13 @@ _08060FDE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectChaosriderGustaph_08060FE8
-gCardEffectChaosriderGustaph_08060FE8: @ 0x08060FE8
+	@ Chaosrider Gustaph
+	thumb_func_start gCardEffectBanishBoostATK_08060FE8
+gCardEffectBanishBoostATK_08060FE8: @ 0x08060FE8
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
-	bl gCardEffectAbareUshioniArchfiendSOathBESCrystalCoreBarrelDragonBlowbackDragonCatnippedKittyCyberLaserDragonDarkMasterZorcGaiaSoulTheCombustibleCollectiveGatlingDragonGoddessOfWhimHomunculusTheAlchemicBeingKarateManPatroidRavielLordOfPhantasmsRouletteBarrelSandGamblerSasukeSamuraiTimeWizardUriaLordOfSearingFlamesVwxyzDragonCatapultCannon_0805C1C0
+	bl gCardEffectDestroyRNG_0805C1C0
 	cmp r0, #0
 	beq _0806100E
 	ldrb r1, [r4, #2]
@@ -155461,7 +156963,7 @@ gCardEffectChaosriderGustaph_08060FE8: @ 0x08060FE8
 	beq _0806100E
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectArmedChangerAswanApparitionDesFeralImpDrillBugFairyOfTheSpringMaskOfDarknessMonsterEyeNubianGuardRecycleReturnOfTheDoomedSoulReversalTheWarriorReturningAlive_0805C2F0
+	bl gCardEffectGraveyard_0805C2F0
 	b _08061010
 _0806100E:
 	movs r0, #0
@@ -155471,8 +156973,14 @@ _08061010:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectDesVolstgalphEmesTheInfinityGuardianBaouHamonLordOfStrikingThunderInfernoInfernoHammer_08061018
-gCardEffectDesVolstgalphEmesTheInfinityGuardianBaouHamonLordOfStrikingThunderInfernoInfernoHammer_08061018: @ 0x08061018
+	@ Des Volstgalph
+	@ Emes the Infinity
+	@ Guardian Baou
+	@ Hamon, Lord of Striking Thunder
+	@ Inferno
+	@ Inferno Hammer
+	thumb_func_start gCardEffectSendToGYDestroy_08061018
+gCardEffectSendToGYDestroy_08061018: @ 0x08061018
 	push {lr}
 	adds r2, r0, #0
 	movs r0, #0xfc
@@ -155519,8 +157027,9 @@ _0806106A:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectFenrir_08061070
-gCardEffectFenrir_08061070: @ 0x08061070
+	@ Fenrir
+	thumb_func_start gCardEffectSpecialSummonDestroy_08061070
+gCardEffectSpecialSummonDestroy_08061070: @ 0x08061070
 	adds r2, r0, #0
 	movs r0, #0xfc
 	lsls r0, r0, #4
@@ -155546,8 +157055,11 @@ _08061098:
 	bx lr
 	.align 2, 0
 
-	thumb_func_start gCardEffectAnteatereatingantBlackLusterSoldierEnvoyOfTheBeginningChaosSorcerer_0806109C
-gCardEffectAnteatereatingantBlackLusterSoldierEnvoyOfTheBeginningChaosSorcerer_0806109C: @ 0x0806109C
+	@ Anteatereatingant
+	@ Black Luster Soldier - Envoy of the Beginning
+	@ Chaos Sorcerer
+	thumb_func_start gCardEffectSpecialSummonPreventAttack_0806109C
+gCardEffectSpecialSummonPreventAttack_0806109C: @ 0x0806109C
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -155593,7 +157105,7 @@ gCardEffectAnteatereatingantBlackLusterSoldierEnvoyOfTheBeginningChaosSorcerer_0
 	bne _08061104
 	adds r0, r7, #0
 	mov r1, ip
-	bl gCardEffectAbareUshioniArchfiendSOathBESCrystalCoreBarrelDragonBlowbackDragonCatnippedKittyCyberLaserDragonDarkMasterZorcGaiaSoulTheCombustibleCollectiveGatlingDragonGoddessOfWhimHomunculusTheAlchemicBeingKarateManPatroidRavielLordOfPhantasmsRouletteBarrelSandGamblerSasukeSamuraiTimeWizardUriaLordOfSearingFlamesVwxyzDragonCatapultCannon_0805C1C0
+	bl gCardEffectDestroyRNG_0805C1C0
 	b _08061106
 	.align 2, 0
 _080610FC: .4byte gUnk_0201C4E0
@@ -155607,8 +157119,10 @@ _08061106:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectBlackLusterSoldierEnvoyOfTheBeginningRuinQueenOfOblivion_08061110
-gCardEffectBlackLusterSoldierEnvoyOfTheBeginningRuinQueenOfOblivion_08061110: @ 0x08061110
+	@ Black Luster Soldier - Envoy of the Beginning
+	@ Ruin, Queen of Oblivion
+	thumb_func_start gCardEffectDestroySpecialSummon_08061110
+gCardEffectDestroySpecialSummon_08061110: @ 0x08061110
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -155687,7 +157201,7 @@ gCardEffectBlackLusterSoldierEnvoyOfTheBeginningRuinQueenOfOblivion_08061110: @ 
 	bne _080611C0
 	adds r0, r6, #0
 	mov r1, sl
-	bl gCardEffectAbareUshioniArchfiendSOathBESCrystalCoreBarrelDragonBlowbackDragonCatnippedKittyCyberLaserDragonDarkMasterZorcGaiaSoulTheCombustibleCollectiveGatlingDragonGoddessOfWhimHomunculusTheAlchemicBeingKarateManPatroidRavielLordOfPhantasmsRouletteBarrelSandGamblerSasukeSamuraiTimeWizardUriaLordOfSearingFlamesVwxyzDragonCatapultCannon_0805C1C0
+	bl gCardEffectDestroyRNG_0805C1C0
 	b _080611C2
 	.align 2, 0
 _080611B4: .4byte 0x00000868
@@ -155704,8 +157218,9 @@ _080611C2:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectOjamaDeltaHurricane_080611D0
-gCardEffectOjamaDeltaHurricane_080611D0: @ 0x080611D0
+	@ Ojama Delta Hurricane!!
+	thumb_func_start gCardEffectDestroyAll_080611D0
+gCardEffectDestroyAll_080611D0: @ 0x080611D0
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -155742,8 +157257,9 @@ _08061216:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectChaosEnd_0806121C
-gCardEffectChaosEnd_0806121C: @ 0x0806121C
+	@ Chaos End
+	thumb_func_start gCardEffectBanishDestroyAll_0806121C
+gCardEffectBanishDestroyAll_0806121C: @ 0x0806121C
 	movs r3, #0
 	ldr r2, _0806123C @ =gUnk_0201C4E0
 	ldrb r0, [r0, #2]
@@ -155764,8 +157280,9 @@ _08061236:
 _0806123C: .4byte gUnk_0201C4E0
 _08061240: .4byte 0x00000868
 
-	thumb_func_start gCardEffectChaosGreed_08061244
-gCardEffectChaosGreed_08061244: @ 0x08061244
+	@ Chaos Greed
+	thumb_func_start gCardEffectDrawBanish_08061244
+gCardEffectDrawBanish_08061244: @ 0x08061244
 	push {r4, r5, lr}
 	movs r5, #0
 	ldr r1, _08061294 @ =gUnk_0201C4E0
@@ -155810,8 +157327,9 @@ _0806128A:
 _08061294: .4byte gUnk_0201C4E0
 _08061298: .4byte 0x00000868
 
-	thumb_func_start gCardEffectPrimalSeed_0806129C
-gCardEffectPrimalSeed_0806129C: @ 0x0806129C
+	@ Primal Seed
+	thumb_func_start gCardEffectSearchBanish_0806129C
+gCardEffectSearchBanish_0806129C: @ 0x0806129C
 	push {lr}
 	ldr r2, _080612CC @ =gUnk_0201C4E0
 	ldrb r0, [r0, #2]
@@ -155847,8 +157365,9 @@ _080612DE:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectDimensionDistortion_080612E4
-gCardEffectDimensionDistortion_080612E4: @ 0x080612E4
+	@ Dimension Distortion
+	thumb_func_start gCardEffectSpecialSummonBanish_080612E4
+gCardEffectSpecialSummonBanish_080612E4: @ 0x080612E4
 	push {r4, lr}
 	adds r3, r0, #0
 	adds r4, r1, #0
@@ -155865,7 +157384,7 @@ gCardEffectDimensionDistortion_080612E4: @ 0x080612E4
 	bne _08061314
 	adds r0, r3, #0
 	adds r1, r4, #0
-	bl gCardEffectArchfiendSRoarAutonomousActionUnitBatteryChargerCallOfTheHauntedCentrifugalFieldChimeraTheFlyingMythicalBeastCyberSteinFulfillmentOfTheContractFushiohRichieMagicalScientistPrematureBurialReFusionReturnFromTheDifferentDimensionRiteOfSpiritSilentFiendSoulResurrectionSpiritCallerSpiritOfThePharaohSymbolOfHeritage_0805C248
+	bl gCardEffectSpecialSummonGraveyard_0805C248
 	b _08061316
 	.align 2, 0
 _0806130C: .4byte gUnk_0201C4E0
@@ -155877,8 +157396,13 @@ _08061316:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectBrronMadKingOfDarkWorldDarkWorldLightningFullSalvoMagicalMalletReload_0806131C
-gCardEffectBrronMadKingOfDarkWorldDarkWorldLightningFullSalvoMagicalMalletReload_0806131C: @ 0x0806131C
+	@ Brron, Mad King of Dark World
+	@ Dark World Lightning
+	@ Full Salvo
+	@ Magical Mallet
+	@ Reload
+	thumb_func_start gCardEffectGraveyardDraw_0806131C
+gCardEffectGraveyardDraw_0806131C: @ 0x0806131C
 	push {lr}
 	ldrb r2, [r0, #2]
 	lsls r1, r2, #0x1f
@@ -155894,8 +157418,9 @@ _08061330:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectBigBurn_08061338
-gCardEffectBigBurn_08061338: @ 0x08061338
+	@ Big Burn
+	thumb_func_start gCardEffectBanishGraveyard_08061338
+gCardEffectBanishGraveyard_08061338: @ 0x08061338
 	push {r4, r5, lr}
 	adds r3, r0, #0
 	adds r4, r1, #0
@@ -155962,8 +157487,10 @@ _080613A8:
 	.align 2, 0
 _080613B0: .4byte gUnk_0201C4E0
 
-	thumb_func_start gCardEffectBlastingTheRuinsReversalOfGraves_080613B4
-gCardEffectBlastingTheRuinsReversalOfGraves_080613B4: @ 0x080613B4
+	@ Blasting the Ruins
+	@ Reversal of Graves
+	thumb_func_start gCardEffectDamageGraveyard_080613B4
+gCardEffectDamageGraveyard_080613B4: @ 0x080613B4
 	push {r4, r5, lr}
 	adds r3, r0, #0
 	movs r4, #1
@@ -156006,8 +157533,9 @@ _080613F4:
 _080613FC: .4byte gUnk_0201C4E0
 _08061400: .4byte 0x00000868
 
-	thumb_func_start gCardEffectSpatialCollapse_08061404
-gCardEffectSpatialCollapse_08061404: @ 0x08061404
+	@ Spatial Collapse
+	thumb_func_start gCardEffectUnknown_08061404
+gCardEffectUnknown_08061404: @ 0x08061404
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r0, [r4, #2]
@@ -156033,8 +157561,9 @@ _0806142E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectManticoreOfDarkness_08061434
-gCardEffectManticoreOfDarkness_08061434: @ 0x08061434
+	@ Manticore of Darkness
+	thumb_func_start gCardEffectSpecialSummonSendToGY_08061434
+gCardEffectSpecialSummonSendToGY_08061434: @ 0x08061434
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -156163,8 +157692,9 @@ _0806152C:
 	.align 2, 0
 _08061538: .4byte 0x00000868
 
-	thumb_func_start gCardEffectInsectPrincess_0806153C
-gCardEffectInsectPrincess_0806153C: @ 0x0806153C
+	@ Insect Princess
+	thumb_func_start gCardEffectDestroyBoostATK_0806153C
+gCardEffectDestroyBoostATK_0806153C: @ 0x0806153C
 	push {r4, lr}
 	adds r2, r0, #0
 	movs r0, #0xfc
@@ -156205,8 +157735,9 @@ _0806157E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectLeviaDragonDaedalus_08061584
-gCardEffectLeviaDragonDaedalus_08061584: @ 0x08061584
+	@ Levia-Dragon - Daedalus
+	thumb_func_start gCardEffectSendToGYDestroyAll_08061584
+gCardEffectSendToGYDestroyAll_08061584: @ 0x08061584
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _080615C0 @ =0x00001332 (Banisher of the Light)
@@ -156247,8 +157778,16 @@ _080615D2:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectAbsorbingKidFromTheSkyElementalHeroFlameWingmanElementalHeroShiningFlareWingmanElementalHeroSteamHealerGuardianAngelJoanKa2DesScissorsLegendaryBlackBeltNeedleBurrower_080615D8
-gCardEffectAbsorbingKidFromTheSkyElementalHeroFlameWingmanElementalHeroShiningFlareWingmanElementalHeroSteamHealerGuardianAngelJoanKa2DesScissorsLegendaryBlackBeltNeedleBurrower_080615D8: @ 0x080615D8
+	@ Absorbing Kid from the Sky
+	@ Elemental Hero Flame Wingman
+	@ Elemental Hero Shining Flare Wingman
+	@ Elemental Hero Steam Healer
+	@ Guardian Angel Joan
+	@ KA-2 Des Scissors
+	@ Legendary Black Belt
+	@ Needle Burrower
+	thumb_func_start gCardEffectSendToGYDestroy_080615D8
+gCardEffectSendToGYDestroy_080615D8: @ 0x080615D8
 	push {lr}
 	adds r2, r0, #0
 	movs r0, #0xfc
@@ -156288,8 +157827,9 @@ _0806161E:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectDimensionFusion_08061624
-gCardEffectDimensionFusion_08061624: @ 0x08061624
+	@ Dimension Fusion
+	thumb_func_start gCardEffectSpecialSummonBanish_08061624
+gCardEffectSpecialSummonBanish_08061624: @ 0x08061624
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	movs r4, #0
@@ -156321,8 +157861,12 @@ _0806165A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectAttackReflectorUnitDedicationThroughLightAndDarknessKnightSTitleReleaseRestraint_08061660
-gCardEffectAttackReflectorUnitDedicationThroughLightAndDarknessKnightSTitleReleaseRestraint_08061660: @ 0x08061660
+	@ Attack Reflector Unit
+	@ Dedication through Light and Darkness
+	@ Knight's Title
+	@ Release Restraint
+	thumb_func_start gCardEffectSpecialSummonTribute_08061660
+gCardEffectSpecialSummonTribute_08061660: @ 0x08061660
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -156334,7 +157878,7 @@ gCardEffectAttackReflectorUnitDedicationThroughLightAndDarknessKnightSTitleRelea
 	beq _0806167E
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectEmblemOfDragonDestroyer_08060898
+	bl gCardEffectSearchGraveyard_08060898
 	b _08061680
 _0806167E:
 	movs r0, #0
@@ -156344,8 +157888,9 @@ _08061680:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectFiendSHandMirror_08061688
-gCardEffectFiendSHandMirror_08061688: @ 0x08061688
+	@ Fiend's Hand Mirror
+	thumb_func_start gCardEffectUnknown_08061688
+gCardEffectUnknown_08061688: @ 0x08061688
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -156494,8 +158039,9 @@ _08061798:
 _080617A4: .4byte 0x00000868
 _080617A8: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectAHeroEmerges_080617AC
-gCardEffectAHeroEmerges_080617AC: @ 0x080617AC
+	@ A Hero Emerges
+	thumb_func_start gCardEffectSpecialSummonSendToGY_080617AC
+gCardEffectSpecialSummonSendToGY_080617AC: @ 0x080617AC
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -156521,7 +158067,7 @@ gCardEffectAHeroEmerges_080617AC: @ 0x080617AC
 	beq _0806185C
 	adds r0, r5, #0
 	adds r1, r2, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	cmp r0, #0
 	bne _080617F0
 	b _0806185C
@@ -156598,8 +158144,9 @@ _08061868: .4byte gUnk_0201C4E0
 _0806186C: .4byte 0x00000868
 _08061870: .4byte gUnk_0201C600
 
-	thumb_func_start gCardEffectSelfDestructButton_08061874
-gCardEffectSelfDestructButton_08061874: @ 0x08061874
+	@ Self-Destruct Button
+	thumb_func_start gCardEffectUnknown_08061874
+gCardEffectUnknown_08061874: @ 0x08061874
 	push {r4, r5, lr}
 	movs r5, #0
 	ldr r4, _080618A8 @ =gUnk_0201C4E0
@@ -156632,17 +158179,18 @@ _080618A8: .4byte gUnk_0201C4E0
 _080618AC: .4byte 0x00000868
 _080618B0: .4byte 0x00001B58
 
-	thumb_func_start gCardEffectAbyssSoldier_080618B4
-gCardEffectAbyssSoldier_080618B4: @ 0x080618B4
+	@ Abyss Soldier
+	thumb_func_start gCardEffectDiscardReturnToHand_080618B4
+gCardEffectDiscardReturnToHand_080618B4: @ 0x080618B4
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
-	bl gCardEffectAbareUshioniArchfiendSOathBESCrystalCoreBarrelDragonBlowbackDragonCatnippedKittyCyberLaserDragonDarkMasterZorcGaiaSoulTheCombustibleCollectiveGatlingDragonGoddessOfWhimHomunculusTheAlchemicBeingKarateManPatroidRavielLordOfPhantasmsRouletteBarrelSandGamblerSasukeSamuraiTimeWizardUriaLordOfSearingFlamesVwxyzDragonCatapultCannon_0805C1C0
+	bl gCardEffectDestroyRNG_0805C1C0
 	cmp r0, #0
 	beq _080618CC
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectArchlordZeratoArmedChangerLadyNinjaYae_080619F0
+	bl gCardEffectGraveyardDiscard_080619F0
 	b _080618CE
 _080618CC:
 	movs r0, #0
@@ -156651,8 +158199,9 @@ _080618CE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectTheAgentOfJudgmentSaturn_080618D4
-gCardEffectTheAgentOfJudgmentSaturn_080618D4: @ 0x080618D4
+	@ The Agent of Judgment - Saturn
+	thumb_func_start gCardEffectDamageBattlePhase_080618D4
+gCardEffectDamageBattlePhase_080618D4: @ 0x080618D4
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	ldr r5, _080618FC @ =gUnk_0201C4E0
@@ -156705,11 +158254,12 @@ _0806192C:
 	.align 2, 0
 _08061934: .4byte 0x00000868
 
-	thumb_func_start gCardEffectTheAgentOfCreationVenus_08061938
-gCardEffectTheAgentOfCreationVenus_08061938: @ 0x08061938
+	@ The Agent of Creation - Venus
+	thumb_func_start gCardEffectSpecialSummonDamage_08061938
+gCardEffectSpecialSummonDamage_08061938: @ 0x08061938
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	cmp r0, #0
 	beq _08061972
 	ldr r1, _08061978 @ =gUnk_0201C4E0
@@ -156746,8 +158296,9 @@ _08061982:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectAvatarOfThePot_08061988
-gCardEffectAvatarOfThePot_08061988: @ 0x08061988
+	@ Avatar of The Pot
+	thumb_func_start gCardEffectDrawSendToGY_08061988
+gCardEffectDrawSendToGY_08061988: @ 0x08061988
 	push {r4, lr}
 	adds r3, r0, #0
 	adds r4, r1, #0
@@ -156764,7 +158315,7 @@ gCardEffectAvatarOfThePot_08061988: @ 0x08061988
 	bls _080619B8
 	adds r0, r3, #0
 	adds r1, r4, #0
-	bl gCardEffectArchlordZeratoArmedChangerLadyNinjaYae_080619F0
+	bl gCardEffectGraveyardDiscard_080619F0
 	b _080619BA
 	.align 2, 0
 _080619B0: .4byte gUnk_0201C4E0
@@ -156776,10 +158327,11 @@ _080619BA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDiscFighter_080619C0
-gCardEffectDiscFighter_080619C0: @ 0x080619C0
+	@ Disc Fighter
+	thumb_func_start gCardEffectDestroyChangePosition_080619C0
+gCardEffectDestroyChangePosition_080619C0: @ 0x080619C0
 	push {lr}
-	bl gCardEffectDrillroidNinjaGrandmasterSasuke_080622DC
+	bl gCardEffectDestroyChangePosition_080622DC
 	cmp r0, #0
 	beq _080619E8
 	ldr r1, _080619E0 @ =gUnk_0201BB90
@@ -156801,8 +158353,11 @@ _080619EA:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectArchlordZeratoArmedChangerLadyNinjaYae_080619F0
-gCardEffectArchlordZeratoArmedChangerLadyNinjaYae_080619F0: @ 0x080619F0
+	@ Archlord Zerato
+	@ Armed Changer
+	@ Lady Ninja Yae
+	thumb_func_start gCardEffectGraveyardDiscard_080619F0
+gCardEffectGraveyardDiscard_080619F0: @ 0x080619F0
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -156910,8 +158465,10 @@ _08061AB4: .4byte gUnk_0201C4E0
 _08061AB8: .4byte 0x00000868
 _08061ABC: .4byte gUnk_0201C4EC
 
-	thumb_func_start gCardEffectBurstStreamOfDestructionInfernoFireBlast_08061AC0
-gCardEffectBurstStreamOfDestructionInfernoFireBlast_08061AC0: @ 0x08061AC0
+	@ Burst Stream of Destruction
+	@ Inferno Fire Blast
+	thumb_func_start gCardEffectDestroyAllDamage_08061AC0
+gCardEffectDestroyAllDamage_08061AC0: @ 0x08061AC0
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldrh r1, [r4]
@@ -156958,8 +158515,9 @@ _08061B0E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectMonsterGate_08061B14
-gCardEffectMonsterGate_08061B14: @ 0x08061B14
+	@ Monster Gate
+	thumb_func_start gCardEffectSpecialSummonSendToGY_08061B14
+gCardEffectSpecialSummonSendToGY_08061B14: @ 0x08061B14
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -156993,8 +158551,9 @@ _08061B4E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectLightOfJudgment_08061B54
-gCardEffectLightOfJudgment_08061B54: @ 0x08061B54
+	@ Light of Judgment
+	thumb_func_start gCardEffectDiscardSendToGY_08061B54
+gCardEffectDiscardSendToGY_08061B54: @ 0x08061B54
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
@@ -157004,7 +158563,7 @@ gCardEffectLightOfJudgment_08061B54: @ 0x08061B54
 	beq _08061BA0
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl gCardEffectArchlordZeratoArmedChangerLadyNinjaYae_080619F0
+	bl gCardEffectGraveyardDiscard_080619F0
 	cmp r0, #0
 	beq _08061BA0
 	ldr r2, _08061B94 @ =gUnk_0201C4E0
@@ -157036,8 +158595,9 @@ _08061BA2:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectSolarRay_08061BA8
-gCardEffectSolarRay_08061BA8: @ 0x08061BA8
+	@ Solar Ray
+	thumb_func_start gCardEffectDamage_08061BA8
+gCardEffectDamage_08061BA8: @ 0x08061BA8
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
@@ -157053,8 +158613,9 @@ _08061BBE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectNinjitsuArtOfTransformation_08061BC4
-gCardEffectNinjitsuArtOfTransformation_08061BC4: @ 0x08061BC4
+	@ Ninjitsu Art of Transformation
+	thumb_func_start gCardEffectSpecialSummonDestroy_08061BC4
+gCardEffectSpecialSummonDestroy_08061BC4: @ 0x08061BC4
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -157092,8 +158653,9 @@ _08061C00:
 _08061C08: .4byte gUnk_0201C4E0
 _08061C0C: .4byte 0x00000868
 
-	thumb_func_start gCardEffectBeckoningLight_08061C10
-gCardEffectBeckoningLight_08061C10: @ 0x08061C10
+	@ Beckoning Light
+	thumb_func_start gCardEffectSearchDiscard_08061C10
+gCardEffectSearchDiscard_08061C10: @ 0x08061C10
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldrb r0, [r4, #2]
@@ -157127,8 +158689,9 @@ _08061C44:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectSkullDescoveryKnight_08061C4C
-gCardEffectSkullDescoveryKnight_08061C4C: @ 0x08061C4C
+	@ Skull Descovery Knight
+	thumb_func_start gCardEffectSpecialSummonDestroy_08061C4C
+gCardEffectSpecialSummonDestroy_08061C4C: @ 0x08061C4C
 	push {lr}
 	ldr r0, _08061C5C @ =0x000013F2 (Mask of Restrict)
 	bl sub_0803279C
@@ -157145,8 +158708,9 @@ _08061C62:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectCorpseOfYataGarasu_08061C68
-gCardEffectCorpseOfYataGarasu_08061C68: @ 0x08061C68
+	@ Corpse of Yata-Garasu
+	thumb_func_start gCardEffectUnknown_08061C68
+gCardEffectUnknown_08061C68: @ 0x08061C68
 	ldr r2, _08061C84 @ =gUnk_0201C4E0
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
@@ -157168,10 +158732,11 @@ _08061C8C:
 _08061C8E:
 	bx lr
 
-	thumb_func_start gCardEffectEarthboundSpiritSInvitation_08061C90
-gCardEffectEarthboundSpiritSInvitation_08061C90: @ 0x08061C90
+	@ Earthbound Spirit's Invitation
+	thumb_func_start gCardEffectUnknown_08061C90
+gCardEffectUnknown_08061C90: @ 0x08061C90
 	push {r4, lr}
-	bl gCardEffectCalamityOfTheWickedDarkMirrorForceDimensionWallMirrorForceSakuretsuArmorStaunchDefenderWidespreadRuin_0805D998
+	bl gCardEffectDestroyChangePosition_0805D998
 	cmp r0, #0
 	beq _08061CC0
 	ldr r4, _08061CBC @ =gUnk_0201BB90
@@ -157199,8 +158764,9 @@ _08061CC2:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectGhostKnightOfJackal_08061CC8
-gCardEffectGhostKnightOfJackal_08061CC8: @ 0x08061CC8
+	@ Ghost Knight of Jackal
+	thumb_func_start gCardEffectSpecialSummonSendToGY_08061CC8
+gCardEffectSpecialSummonSendToGY_08061CC8: @ 0x08061CC8
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	adds r6, r1, #0
@@ -157251,7 +158817,7 @@ gCardEffectGhostKnightOfJackal_08061CC8: @ 0x08061CC8
 	bne _08061D38
 	adds r0, r4, #0
 	adds r1, r6, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	b _08061D3A
 	.align 2, 0
 _08061D34: .4byte gUnk_0201C4E0
@@ -157262,8 +158828,16 @@ _08061D3A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectAltarForTributeElementalHeroTempestEmergencyProvisionsGiftOfTheMartyrGuardianCealKingOfTheSwampUltimateBaseballKidWoodlandSprite_08061D40
-gCardEffectAltarForTributeElementalHeroTempestEmergencyProvisionsGiftOfTheMartyrGuardianCealKingOfTheSwampUltimateBaseballKidWoodlandSprite_08061D40: @ 0x08061D40
+	@ Altar for Tribute
+	@ Elemental Hero Tempest
+	@ Emergency Provisions
+	@ Gift of the Martyr
+	@ Guardian Ceal
+	@ King of the Swamp
+	@ Ultimate Baseball Kid
+	@ Woodland Sprite
+	thumb_func_start gCardEffectGraveyardSendToGY_08061D40
+gCardEffectGraveyardSendToGY_08061D40: @ 0x08061D40
 	push {lr}
 	ldr r0, _08061D50 @ =0x00001332 (Banisher of the Light)
 	bl sub_0803279C
@@ -157280,10 +158854,11 @@ _08061D56:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectOrderToCharge_08061D5C
-gCardEffectOrderToCharge_08061D5C: @ 0x08061D5C
+	@ Order to Charge
+	thumb_func_start gCardEffectDestroyTribute_08061D5C
+gCardEffectDestroyTribute_08061D5C: @ 0x08061D5C
 	push {lr}
-	ldr r1, _08061D74 @ =gCardEffectArchlordZeratoBurstStreamOfDestructionGilfordTheLightningNeedleWallObeliskTheTormentorRaigekiSandGamblerTimeWizard_080507AC
+	ldr r1, _08061D74 @ =gCardEffectDestroy_080507AC
 	bl sub_0809077C
 	movs r1, #0
 	cmp r0, #0
@@ -157294,10 +158869,11 @@ _08061D6C:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08061D74: .4byte gCardEffectArchlordZeratoBurstStreamOfDestructionGilfordTheLightningNeedleWallObeliskTheTormentorRaigekiSandGamblerTimeWizard_080507AC
+_08061D74: .4byte gCardEffectDestroy_080507AC
 
-	thumb_func_start gCardEffect7_08061D78
-gCardEffect7_08061D78: @ 0x08061D78
+	@ 7
+	thumb_func_start gCardEffectDrawSendToGY_08061D78
+gCardEffectDrawSendToGY_08061D78: @ 0x08061D78
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r2, [r4, #2]
@@ -157339,8 +158915,9 @@ _08061DC6:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectEnchantingFittingRoom_08061DCC
-gCardEffectEnchantingFittingRoom_08061DCC: @ 0x08061DCC
+	@ Enchanting Fitting Room
+	thumb_func_start gCardEffectSpecialSummonDamage_08061DCC
+gCardEffectSpecialSummonDamage_08061DCC: @ 0x08061DCC
 	push {r4, lr}
 	adds r3, r0, #0
 	adds r4, r1, #0
@@ -157357,7 +158934,7 @@ gCardEffectEnchantingFittingRoom_08061DCC: @ 0x08061DCC
 	bls _08061DFC
 	adds r0, r3, #0
 	adds r1, r4, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	b _08061DFE
 	.align 2, 0
 _08061DF4: .4byte gUnk_0201C4E0
@@ -157369,8 +158946,9 @@ _08061DFE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectTheLawOfTheNormal_08061E04
-gCardEffectTheLawOfTheNormal_08061E04: @ 0x08061E04
+	@ The Law of the Normal
+	thumb_func_start gCardEffectDiscardDestroyAll_08061E04
+gCardEffectDiscardDestroyAll_08061E04: @ 0x08061E04
 	push {lr}
 	ldrb r2, [r0, #2]
 	lsls r1, r2, #0x1f
@@ -157387,8 +158965,9 @@ _08061E1A:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectTheFirstSarcophagus_08061E20
-gCardEffectTheFirstSarcophagus_08061E20: @ 0x08061E20
+	@ The First Sarcophagus
+	thumb_func_start gCardEffectSpecialSummonSendToGY_08061E20
+gCardEffectSpecialSummonSendToGY_08061E20: @ 0x08061E20
 	push {lr}
 	adds r2, r0, #0
 	movs r0, #0xfc
@@ -157416,8 +158995,9 @@ _08061E4C:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectHumanWaveTactics_08061E50
-gCardEffectHumanWaveTactics_08061E50: @ 0x08061E50
+	@ Human-Wave Tactics
+	thumb_func_start gCardEffectSpecialSummonDestroy_08061E50
+gCardEffectSpecialSummonDestroy_08061E50: @ 0x08061E50
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -157442,7 +159022,7 @@ gCardEffectHumanWaveTactics_08061E50: @ 0x08061E50
 	beq _08061E90
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	b _08061E92
 	.align 2, 0
 _08061E88: .4byte gUnk_0201C4E0
@@ -157454,10 +159034,11 @@ _08061E92:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectOrderToSmash_08061E98
-gCardEffectOrderToSmash_08061E98: @ 0x08061E98
+	@ Order to Smash
+	thumb_func_start gCardEffectDestroySpellTrapTribute_08061E98
+gCardEffectDestroySpellTrapTribute_08061E98: @ 0x08061E98
 	push {lr}
-	ldr r1, _08061EB0 @ =gCardEffectAnteatereatingantChironTheMageDustTornadoSwarmOfLocusts_08051E94
+	ldr r1, _08061EB0 @ =gCardEffectDestroySpellTrap_08051E94
 	bl sub_0809077C
 	movs r1, #0
 	cmp r0, #0
@@ -157468,10 +159049,11 @@ _08061EA8:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08061EB0: .4byte gCardEffectAnteatereatingantChironTheMageDustTornadoSwarmOfLocusts_08051E94
+_08061EB0: .4byte gCardEffectDestroySpellTrap_08051E94
 
-	thumb_func_start gCardEffectCrushDGandra_08061EB4
-gCardEffectCrushDGandra_08061EB4: @ 0x08061EB4
+	@ Crush D. Gandra
+	thumb_func_start gCardEffectSpecialSummonSendToGY_08061EB4
+gCardEffectSpecialSummonSendToGY_08061EB4: @ 0x08061EB4
 	push {r4, r5, r6, lr}
 	ldr r3, _08061F00 @ =gUnk_0201C4E0
 	ldrb r2, [r0, #2]
@@ -157521,8 +159103,9 @@ _08061F0A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectBlueEyesShiningDragon_08061F10
-gCardEffectBlueEyesShiningDragon_08061F10: @ 0x08061F10
+	@ Blue-Eyes Shining Dragon
+	thumb_func_start gCardEffectSpecialSummonNegate_08061F10
+gCardEffectSpecialSummonNegate_08061F10: @ 0x08061F10
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r4, r1, #0
@@ -157643,8 +159226,10 @@ _08061FF2:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectAndroSphinxSphinxTeleia_08061FF8
-gCardEffectAndroSphinxSphinxTeleia_08061FF8: @ 0x08061FF8
+	@ Andro Sphinx
+	@ Sphinx Teleia
+	thumb_func_start gCardEffectSpecialSummonDestroy_08061FF8
+gCardEffectSpecialSummonDestroy_08061FF8: @ 0x08061FF8
 	push {lr}
 	adds r2, r0, #0
 	movs r0, #0xfc
@@ -157687,8 +159272,9 @@ _08062042:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectInfernoTempest_08062048
-gCardEffectInfernoTempest_08062048: @ 0x08062048
+	@ Inferno Tempest
+	thumb_func_start gCardEffectBanishGraveyard_08062048
+gCardEffectBanishGraveyard_08062048: @ 0x08062048
 	push {lr}
 	adds r2, r0, #0
 	movs r0, #0xfc
@@ -157726,8 +159312,11 @@ _0806208A:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectArmedDragonLv5HorusTheBlackFlameDragonLv4HorusTheBlackFlameDragonLv6_08062090
-gCardEffectArmedDragonLv5HorusTheBlackFlameDragonLv4HorusTheBlackFlameDragonLv6_08062090: @ 0x08062090
+	@ Armed Dragon LV5
+	@ Horus the Black Flame Dragon LV4
+	@ Horus the Black Flame Dragon LV6
+	thumb_func_start gCardEffectSpecialSummonSendToGY_08062090
+gCardEffectSpecialSummonSendToGY_08062090: @ 0x08062090
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -157742,7 +159331,7 @@ gCardEffectArmedDragonLv5HorusTheBlackFlameDragonLv4HorusTheBlackFlameDragonLv6_
 	beq _080620B8
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectArmedDragonLv3_0806210C
+	bl gCardEffectSpecialSummonSendToGY_0806210C
 	b _080620BA
 	.align 2, 0
 _080620B4: .4byte 0x000017D2 @ Horus the Black Flame Dragon LV4
@@ -157753,8 +159342,9 @@ _080620BA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDarkMimicLv1_080620C0
-gCardEffectDarkMimicLv1_080620C0: @ 0x080620C0
+	@ Dark Mimic LV1
+	thumb_func_start gCardEffectDrawSpecialSummon_080620C0
+gCardEffectDrawSpecialSummon_080620C0: @ 0x080620C0
 	push {lr}
 	adds r2, r0, #0
 	movs r0, #0xfc
@@ -157767,14 +159357,16 @@ gCardEffectDarkMimicLv1_080620C0: @ 0x080620C0
 	b _080620DA
 _080620D4:
 	adds r0, r2, #0
-	bl gCardEffectArmedDragonLv3_0806210C
+	bl gCardEffectSpecialSummonSendToGY_0806210C
 _080620DA:
 	pop {r1}
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectMysticSwordsmanLv2MysticSwordsmanLv4_080620E0
-gCardEffectMysticSwordsmanLv2MysticSwordsmanLv4_080620E0: @ 0x080620E0
+	@ Mystic Swordsman LV2
+	@ Mystic Swordsman LV4
+	thumb_func_start gCardEffectSpecialSummonSendToGY_080620E0
+gCardEffectSpecialSummonSendToGY_080620E0: @ 0x080620E0
 	push {lr}
 	adds r2, r0, #0
 	adds r3, r1, #0
@@ -157788,18 +159380,19 @@ gCardEffectMysticSwordsmanLv2MysticSwordsmanLv4_080620E0: @ 0x080620E0
 	beq _08062100
 	adds r0, r2, #0
 	adds r1, r3, #0
-	bl gCardEffectMysticSwordsmanLv6PaladinOfWhiteDragonSasukeSamurai_0805F9A4
+	bl gCardEffectDestroyChangePosition_0805F9A4
 	b _08062108
 _08062100:
 	adds r0, r2, #0
 	adds r1, r3, #0
-	bl gCardEffectArmedDragonLv5HorusTheBlackFlameDragonLv4HorusTheBlackFlameDragonLv6_08062090
+	bl gCardEffectSpecialSummonSendToGY_08062090
 _08062108:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectArmedDragonLv3_0806210C
-gCardEffectArmedDragonLv3_0806210C: @ 0x0806210C
+	@ Armed Dragon LV3
+	thumb_func_start gCardEffectSpecialSummonSendToGY_0806210C
+gCardEffectSpecialSummonSendToGY_0806210C: @ 0x0806210C
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	ldr r0, _0806215C @ =0x00001332 (Banisher of the Light)
@@ -157847,8 +159440,10 @@ _0806216A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectArmedDragonLv5ArmedDragonLv7_08062170
-gCardEffectArmedDragonLv5ArmedDragonLv7_08062170: @ 0x08062170
+	@ Armed Dragon LV5
+	@ Armed Dragon LV7
+	thumb_func_start gCardEffectSpecialSummonSendToGY_08062170
+gCardEffectSpecialSummonSendToGY_08062170: @ 0x08062170
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -157955,8 +159550,9 @@ _08062238:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectRedEyesBChick_08062244
-gCardEffectRedEyesBChick_08062244: @ 0x08062244
+	@ Red-Eyes B. Chick
+	thumb_func_start gCardEffectSpecialSummonSendToGY_08062244
+gCardEffectSpecialSummonSendToGY_08062244: @ 0x08062244
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	ldr r0, _08062284 @ =0x00001332 (Banisher of the Light)
@@ -158033,8 +159629,10 @@ _080622CC:
 _080622D4: .4byte gUnk_0201C4E0
 _080622D8: .4byte 0x00000868
 
-	thumb_func_start gCardEffectDrillroidNinjaGrandmasterSasuke_080622DC
-gCardEffectDrillroidNinjaGrandmasterSasuke_080622DC: @ 0x080622DC
+	@ Drillroid
+	@ Ninja Grandmaster Sasuke
+	thumb_func_start gCardEffectDestroyChangePosition_080622DC
+gCardEffectDestroyChangePosition_080622DC: @ 0x080622DC
 	ldr r1, _0806230C @ =gUnk_0201BB90
 	ldr r0, [r1, #8]
 	cmp r0, #0
@@ -158068,8 +159666,11 @@ _08062318:
 _0806231A:
 	bx lr
 
-	thumb_func_start gCardEffectElementDoomElementDragonElementMagician_0806231C
-gCardEffectElementDoomElementDragonElementMagician_0806231C: @ 0x0806231C
+	@ Element Doom
+	@ Element Dragon
+	@ Element Magician
+	thumb_func_start gCardEffectDestroy_0806231C
+gCardEffectDestroy_0806231C: @ 0x0806231C
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -158086,7 +159687,7 @@ gCardEffectElementDoomElementDragonElementMagician_0806231C: @ 0x0806231C
 _0806233A:
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectBlackLusterSoldierEnvoyOfTheBeginningRuinQueenOfOblivion_08061110
+	bl gCardEffectDestroySpecialSummon_08061110
 	b _08062346
 _08062344:
 	movs r0, #0
@@ -158095,8 +159696,9 @@ _08062346:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectOjamaKing_0806234C
-gCardEffectOjamaKing_0806234C: @ 0x0806234C
+	@ Ojama King
+	thumb_func_start gCardEffectUnknown_0806234C
+gCardEffectUnknown_0806234C: @ 0x0806234C
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	movs r4, #0
@@ -158122,8 +159724,9 @@ _08062372:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectMindWipe_08062378
-gCardEffectMindWipe_08062378: @ 0x08062378
+	@ Mind Wipe
+	thumb_func_start gCardEffectUnknown_08062378
+gCardEffectUnknown_08062378: @ 0x08062378
 	movs r3, #0
 	ldr r2, _0806239C @ =gUnk_0201C4E0
 	ldrb r0, [r0, #2]
@@ -158147,8 +159750,9 @@ _08062398:
 _0806239C: .4byte gUnk_0201C4E0
 _080623A0: .4byte 0x00000868
 
-	thumb_func_start gCardEffectAbyssalDesignator_080623A4
-gCardEffectAbyssalDesignator_080623A4: @ 0x080623A4
+	@ Abyssal Designator
+	thumb_func_start gCardEffectSendToGYDamage_080623A4
+gCardEffectSendToGYDamage_080623A4: @ 0x080623A4
 	push {r4, r5, r6, lr}
 	movs r6, #0
 	ldr r5, _080623E4 @ =gUnk_0201C4E0
@@ -158186,8 +159790,9 @@ _080623DA:
 _080623E4: .4byte gUnk_0201C4E0
 _080623E8: .4byte 0x00000868
 
-	thumb_func_start gCardEffectTaunt_080623EC
-gCardEffectTaunt_080623EC: @ 0x080623EC
+	@ Taunt
+	thumb_func_start gCardEffectUnknown_080623EC
+gCardEffectUnknown_080623EC: @ 0x080623EC
 	ldr r3, _08062410 @ =gUnk_0201C4E0
 	ldr r1, _08062414 @ =0x00001CE8
 	adds r2, r3, r1
@@ -158215,8 +159820,9 @@ _0806241C:
 _0806241E:
 	bx lr
 
-	thumb_func_start gCardEffectHeavySlump_08062420
-gCardEffectHeavySlump_08062420: @ 0x08062420
+	@ Heavy Slump
+	thumb_func_start gCardEffectUnknown_08062420
+gCardEffectUnknown_08062420: @ 0x08062420
 	movs r3, #0
 	ldr r2, _08062444 @ =gUnk_0201C4E0
 	ldrb r0, [r0, #2]
@@ -158239,8 +159845,12 @@ _0806243E:
 _08062444: .4byte gUnk_0201C4E0
 _08062448: .4byte 0x00000868
 
-	thumb_func_start gCardEffectGreedInsectQueenMirageKnightTheAgentOfWisdomMercury_0806244C
-gCardEffectGreedInsectQueenMirageKnightTheAgentOfWisdomMercury_0806244C: @ 0x0806244C
+	@ Greed
+	@ Insect Queen
+	@ Mirage Knight
+	@ The Agent of Wisdom - Mercury
+	thumb_func_start gCardEffectEndPhaseSpecialSummon_0806244C
+gCardEffectEndPhaseSpecialSummon_0806244C: @ 0x0806244C
 	push {lr}
 	adds r2, r0, #0
 	ldrb r1, [r2, #2]
@@ -158261,8 +159871,9 @@ _0806246A:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectCemetaryBomb_08062470
-gCardEffectCemetaryBomb_08062470: @ 0x08062470
+	@ Cemetary Bomb
+	thumb_func_start gCardEffectDamageGraveyard_08062470
+gCardEffectDamageGraveyard_08062470: @ 0x08062470
 	ldr r2, _08062490 @ =gUnk_0201C4E0
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
@@ -158283,8 +159894,9 @@ _0806248C:
 _08062490: .4byte gUnk_0201C4E0
 _08062494: .4byte 0x00000868
 
-	thumb_func_start gCardEffectTrickySMagic4_08062498
-gCardEffectTrickySMagic4_08062498: @ 0x08062498
+	@ Tricky's Magic 4
+	thumb_func_start gCardEffectSpecialSummonSendToGY_08062498
+gCardEffectSpecialSummonSendToGY_08062498: @ 0x08062498
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldr r0, _080624CC @ =0x00001332 (Banisher of the Light)
@@ -158334,8 +159946,9 @@ _080624F4:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectTheBlockman_080624FC
-gCardEffectTheBlockman_080624FC: @ 0x080624FC
+	@ The Blockman
+	thumb_func_start gCardEffectSpecialSummonPreventAttack_080624FC
+gCardEffectSpecialSummonPreventAttack_080624FC: @ 0x080624FC
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	ldrb r1, [r5, #2]
@@ -158386,8 +159999,12 @@ _0806255E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectSilentSwordsmanLv3UltimateInsectLv1UltimateInsectLv3UltimateInsectLv5_08062564
-gCardEffectSilentSwordsmanLv3UltimateInsectLv1UltimateInsectLv3UltimateInsectLv5_08062564: @ 0x08062564
+	@ Silent Swordsman LV3
+	@ Ultimate Insect LV1
+	@ Ultimate Insect LV3
+	@ Ultimate Insect LV5
+	thumb_func_start gCardEffectSpecialSummonSendToGY_08062564
+gCardEffectSpecialSummonSendToGY_08062564: @ 0x08062564
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -158460,7 +160077,7 @@ gCardEffectSilentSwordsmanLv3UltimateInsectLv1UltimateInsectLv3UltimateInsectLv5
 	bne _08062604
 	mov r0, ip
 	mov r1, r8
-	bl gCardEffectArmedDragonLv3_0806210C
+	bl gCardEffectSpecialSummonSendToGY_0806210C
 	b _08062606
 	.align 2, 0
 _080625FC: .4byte gUnk_0201C4E0
@@ -158474,8 +160091,9 @@ _08062606:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectSilentSwordsmanLv5_08062610
-gCardEffectSilentSwordsmanLv5_08062610: @ 0x08062610
+	@ Silent Swordsman LV5
+	thumb_func_start gCardEffectSpecialSummonSendToGY_08062610
+gCardEffectSpecialSummonSendToGY_08062610: @ 0x08062610
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -158490,7 +160108,7 @@ gCardEffectSilentSwordsmanLv5_08062610: @ 0x08062610
 	beq _08062638
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectArmedDragonLv3_0806210C
+	bl gCardEffectSpecialSummonSendToGY_0806210C
 	b _0806263A
 	.align 2, 0
 _08062634: .4byte 0x00001814 @ Silent Swordsman LV5
@@ -158501,8 +160119,9 @@ _0806263A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectSilentMagicianLv4_08062640
-gCardEffectSilentMagicianLv4_08062640: @ 0x08062640
+	@ Silent Magician LV4
+	thumb_func_start gCardEffectSpecialSummonSendToGY_08062640
+gCardEffectSpecialSummonSendToGY_08062640: @ 0x08062640
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -158586,7 +160205,7 @@ _080626C4:
 	ble _080626F4
 	mov r0, r8
 	mov r1, sb
-	bl gCardEffectArmedDragonLv3_0806210C
+	bl gCardEffectSpecialSummonSendToGY_0806210C
 	b _080626F6
 	.align 2, 0
 _080626F0: .4byte 0x0000181A @ Silent Magician LV8
@@ -158601,8 +160220,9 @@ _080626F6:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectMagicianSCircle_08062704
-gCardEffectMagicianSCircle_08062704: @ 0x08062704
+	@ Magician's Circle
+	thumb_func_start gCardEffectSpecialSummonChangePosition_08062704
+gCardEffectSpecialSummonChangePosition_08062704: @ 0x08062704
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -158627,7 +160247,7 @@ gCardEffectMagicianSCircle_08062704: @ 0x08062704
 	bne _08062764
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	cmp r0, #0
 	beq _08062764
 	ldr r2, _0806275C @ =gUnk_0201C4E0
@@ -158654,8 +160274,9 @@ _08062766:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectMagicianSUnite_0806276C
-gCardEffectMagicianSUnite_0806276C: @ 0x0806276C
+	@ Magician's Unite
+	thumb_func_start gCardEffectPreventAttackChangePosition_0806276C
+gCardEffectPreventAttackChangePosition_0806276C: @ 0x0806276C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -158744,17 +160365,18 @@ _08062804:
 	.align 2, 0
 _08062814: .4byte 0x00000868
 
-	thumb_func_start gCardEffectTheCreator_08062818
-gCardEffectTheCreator_08062818: @ 0x08062818
+	@ The Creator
+	thumb_func_start gCardEffectSpecialSummonSendToGY_08062818
+gCardEffectSpecialSummonSendToGY_08062818: @ 0x08062818
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
-	bl gCardEffectArchfiendSRoarAutonomousActionUnitBatteryChargerCallOfTheHauntedCentrifugalFieldChimeraTheFlyingMythicalBeastCyberSteinFulfillmentOfTheContractFushiohRichieMagicalScientistPrematureBurialReFusionReturnFromTheDifferentDimensionRiteOfSpiritSilentFiendSoulResurrectionSpiritCallerSpiritOfThePharaohSymbolOfHeritage_0805C248
+	bl gCardEffectSpecialSummonGraveyard_0805C248
 	cmp r0, #0
 	beq _08062854
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectAbareUshioniArchfiendSOathBESCrystalCoreBarrelDragonBlowbackDragonCatnippedKittyCyberLaserDragonDarkMasterZorcGaiaSoulTheCombustibleCollectiveGatlingDragonGoddessOfWhimHomunculusTheAlchemicBeingKarateManPatroidRavielLordOfPhantasmsRouletteBarrelSandGamblerSasukeSamuraiTimeWizardUriaLordOfSearingFlamesVwxyzDragonCatapultCannon_0805C1C0
+	bl gCardEffectDestroyRNG_0805C1C0
 	cmp r0, #0
 	beq _08062854
 	ldr r2, _0806284C @ =gUnk_0201C4E0
@@ -158780,11 +160402,14 @@ _08062856:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectFoxFireHeliosDuoMegisteHeliosTrisMegiste_0806285C
-gCardEffectFoxFireHeliosDuoMegisteHeliosTrisMegiste_0806285C: @ 0x0806285C
+	@ Fox Fire
+	@ Helios Duo Megiste
+	@ Helios Tris Megiste
+	thumb_func_start gCardEffectSpecialSummonDestroy_0806285C
+gCardEffectSpecialSummonDestroy_0806285C: @ 0x0806285C
 	push {r4, lr}
 	adds r4, r0, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	cmp r0, #0
 	beq _08062880
 	ldrb r1, [r4, #2]
@@ -158805,8 +160430,9 @@ _08062882:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectSerialSpell_08062888
-gCardEffectSerialSpell_08062888: @ 0x08062888
+	@ Serial Spell
+	thumb_func_start gCardEffectDiscardGraveyard_08062888
+gCardEffectDiscardGraveyard_08062888: @ 0x08062888
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
@@ -158843,7 +160469,7 @@ gCardEffectSerialSpell_08062888: @ 0x08062888
 	bgt _080628E8
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl gCardEffectBackToSquareOneCostDownCurseOfAgingCyberneticMagicianDarkCoreForcedCeasefireHallowedLifeBarrierKarmaCutLightningVortexMaliceDispersionPhoenixWingWindBlastRaigekiBreakRisingEnergySpecialHurricaneSpellPurificationTributeToTheDoomedVwTigerCatapultXyDragonCannonXyzDragonCannonXzTankCannonYzTankDragon_0805C1E4
+	bl gCardEffectDiscard_0805C1E4
 	cmp r0, #0
 	beq _080628E8
 	movs r0, #2
@@ -158857,8 +160483,9 @@ _080628EA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectNecklaceOfCommand_080628F0
-gCardEffectNecklaceOfCommand_080628F0: @ 0x080628F0
+	@ Necklace of Command
+	thumb_func_start gCardEffectDiscardSendToGY_080628F0
+gCardEffectDiscardSendToGY_080628F0: @ 0x080628F0
 	push {r4, r5, lr}
 	ldr r5, _08062924 @ =gUnk_0201C4E0
 	ldrb r0, [r0, #2]
@@ -158894,11 +160521,12 @@ _0806292E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectLightenTheLoad_08062934
-gCardEffectLightenTheLoad_08062934: @ 0x08062934
+	@ Lighten the Load
+	thumb_func_start gCardEffectDraw_08062934
+gCardEffectDraw_08062934: @ 0x08062934
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
-	bl gCardEffectAbareUshioniArchfiendSOathBESCrystalCoreBarrelDragonBlowbackDragonCatnippedKittyCyberLaserDragonDarkMasterZorcGaiaSoulTheCombustibleCollectiveGatlingDragonGoddessOfWhimHomunculusTheAlchemicBeingKarateManPatroidRavielLordOfPhantasmsRouletteBarrelSandGamblerSasukeSamuraiTimeWizardUriaLordOfSearingFlamesVwxyzDragonCatapultCannon_0805C1C0
+	bl gCardEffectDestroyRNG_0805C1C0
 	cmp r0, #0
 	beq _080629B6
 	ldr r0, _08062968 @ =gUnk_0201C4E0
@@ -158968,8 +160596,9 @@ _080629B8:
 _080629C0: .4byte gUnk_0201C4E0
 _080629C4: .4byte 0x00000868
 
-	thumb_func_start gCardEffectDivineWrath_080629C8
-gCardEffectDivineWrath_080629C8: @ 0x080629C8
+	@ Divine Wrath
+	thumb_func_start gCardEffectNegateDiscard_080629C8
+gCardEffectNegateDiscard_080629C8: @ 0x080629C8
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
@@ -158994,7 +160623,7 @@ gCardEffectDivineWrath_080629C8: @ 0x080629C8
 	beq _08062A04
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl gCardEffectBackToSquareOneCostDownCurseOfAgingCyberneticMagicianDarkCoreForcedCeasefireHallowedLifeBarrierKarmaCutLightningVortexMaliceDispersionPhoenixWingWindBlastRaigekiBreakRisingEnergySpecialHurricaneSpellPurificationTributeToTheDoomedVwTigerCatapultXyDragonCannonXyzDragonCannonXzTankCannonYzTankDragon_0805C1E4
+	bl gCardEffectDiscard_0805C1E4
 	b _08062A06
 _08062A04:
 	movs r0, #0
@@ -159003,8 +160632,9 @@ _08062A06:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectXingZhenHu_08062A0C
-gCardEffectXingZhenHu_08062A0C: @ 0x08062A0C
+	@ Xing Zhen Hu
+	thumb_func_start gCardEffectUnknown_08062A0C
+gCardEffectUnknown_08062A0C: @ 0x08062A0C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -159079,8 +160709,9 @@ _08062A82:
 _08062A94: .4byte 0x00000868
 _08062A98: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectMindHaxorz_08062A9C
-gCardEffectMindHaxorz_08062A9C: @ 0x08062A9C
+	@ Mind Haxorz
+	thumb_func_start gCardEffectDamage_08062A9C
+gCardEffectDamage_08062A9C: @ 0x08062A9C
 	ldr r2, _08062ABC @ =gUnk_0201C4E0
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
@@ -159104,8 +160735,9 @@ _08062AC4:
 _08062AC6:
 	bx lr
 
-	thumb_func_start gCardEffectFuhRinKaZan_08062AC8
-gCardEffectFuhRinKaZan_08062AC8: @ 0x08062AC8
+	@ Fuh-Rin-Ka-Zan
+	thumb_func_start gCardEffectDiscardDestroySpellTrap_08062AC8
+gCardEffectDiscardDestroySpellTrap_08062AC8: @ 0x08062AC8
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -159176,12 +160808,12 @@ _08062B38:
 	cmp r0, #0
 	beq _08062BE0
 _08062B5C:
-	ldr r1, _08062BC8 @ =gCardEffectArchlordZeratoBurstStreamOfDestructionGilfordTheLightningNeedleWallObeliskTheTormentorRaigekiSandGamblerTimeWizard_080507AC
+	ldr r1, _08062BC8 @ =gCardEffectDestroy_080507AC
 	adds r0, r4, #0
 	bl sub_0809077C
 	cmp r0, #0
 	bne _08062BC2
-	ldr r1, _08062BCC @ =gCardEffectDarkMagicAttackGryphonWingHarpieSFeatherDusterMoistureCreature_08051ABC
+	ldr r1, _08062BCC @ =gCardEffectDestroySpellTrapDestroyAll_08051ABC
 	adds r0, r4, #0
 	bl sub_0809077C
 	cmp r0, #0
@@ -159228,8 +160860,8 @@ _08062BC2:
 	movs r0, #1
 	b _08062BE2
 	.align 2, 0
-_08062BC8: .4byte gCardEffectArchlordZeratoBurstStreamOfDestructionGilfordTheLightningNeedleWallObeliskTheTormentorRaigekiSandGamblerTimeWizard_080507AC
-_08062BCC: .4byte gCardEffectDarkMagicAttackGryphonWingHarpieSFeatherDusterMoistureCreature_08051ABC
+_08062BC8: .4byte gCardEffectDestroy_080507AC
+_08062BCC: .4byte gCardEffectDestroySpellTrapDestroyAll_08051ABC
 _08062BD0: .4byte gUnk_0201C4E0
 _08062BD4: .4byte 0x00000868
 _08062BD8: .4byte 0x00001CF4
@@ -159241,8 +160873,9 @@ _08062BE2:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectAstralBarrier_08062BE8
-gCardEffectAstralBarrier_08062BE8: @ 0x08062BE8
+	@ Astral Barrier
+	thumb_func_start gCardEffectDirectAttack_08062BE8
+gCardEffectDirectAttack_08062BE8: @ 0x08062BE8
 	push {r4, lr}
 	adds r4, r0, #0
 	cmp r1, #0
@@ -159301,8 +160934,9 @@ _08062C4C:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectCoveringFire_08062C54
-gCardEffectCoveringFire_08062C54: @ 0x08062C54
+	@ Covering Fire
+	thumb_func_start gCardEffectBoostATK_08062C54
+gCardEffectBoostATK_08062C54: @ 0x08062C54
 	adds r1, r0, #0
 	ldrh r2, [r1, #2]
 	lsls r0, r2, #0x14
@@ -159355,8 +160989,9 @@ _08062CB4:
 _08062CB6:
 	bx lr
 
-	thumb_func_start gCardEffectHandOfNephthys_08062CB8
-gCardEffectHandOfNephthys_08062CB8: @ 0x08062CB8
+	@ Hand of Nephthys
+	thumb_func_start gCardEffectSpecialSummonTribute_08062CB8
+gCardEffectSpecialSummonTribute_08062CB8: @ 0x08062CB8
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -159384,8 +161019,9 @@ _08062CE4:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectBehemothTheKingOfAllAnimals_08062CEC
-gCardEffectBehemothTheKingOfAllAnimals_08062CEC: @ 0x08062CEC
+	@ Behemoth the King of All Animals
+	thumb_func_start gCardEffectReturnToHandGraveyard_08062CEC
+gCardEffectReturnToHandGraveyard_08062CEC: @ 0x08062CEC
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r0, #0xfc
@@ -159419,8 +161055,9 @@ _08062D22:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectBlastMagician_08062D28
-gCardEffectBlastMagician_08062D28: @ 0x08062D28
+	@ Blast Magician
+	thumb_func_start gCardEffectDestroyCounter_08062D28
+gCardEffectDestroyCounter_08062D28: @ 0x08062D28
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -159440,8 +161077,11 @@ _08062D44:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectTheDarkHexSealedFusionTheEarthHexSealedFusionTheLightHexSealedFusion_08062D4C
-gCardEffectTheDarkHexSealedFusionTheEarthHexSealedFusionTheLightHexSealedFusion_08062D4C: @ 0x08062D4C
+	@ The Dark - Hex-Sealed Fusion
+	@ The Earth - Hex-Sealed Fusion
+	@ The Light - Hex-Sealed Fusion
+	thumb_func_start gCardEffectSpecialSummonFusion_08062D4C
+gCardEffectSpecialSummonFusion_08062D4C: @ 0x08062D4C
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -159476,8 +161116,9 @@ _08062D8A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectRescueCat_08062D90
-gCardEffectRescueCat_08062D90: @ 0x08062D90
+	@ Rescue Cat
+	thumb_func_start gCardEffectSpecialSummonSendToGY_08062D90
+gCardEffectSpecialSummonSendToGY_08062D90: @ 0x08062D90
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldr r0, _08062DE8 @ =0x00001332 (Banisher of the Light)
@@ -159529,8 +161170,9 @@ _08062DF6:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectBrainJacker_08062DFC
-gCardEffectBrainJacker_08062DFC: @ 0x08062DFC
+	@ Brain Jacker
+	thumb_func_start gCardEffectTakeControlGainLP_08062DFC
+gCardEffectTakeControlGainLP_08062DFC: @ 0x08062DFC
 	push {lr}
 	adds r2, r0, #0
 	movs r0, #0xfc
@@ -159540,7 +161182,7 @@ gCardEffectBrainJacker_08062DFC: @ 0x08062DFC
 	cmp r0, #0x80
 	beq _08062E14
 	adds r0, r2, #0
-	bl gCardEffectParasiteParacide_0805CB44
+	bl gCardEffectSpecialSummonDamage_0805CB44
 	b _08062E16
 _08062E14:
 	movs r0, #2
@@ -159549,17 +161191,18 @@ _08062E16:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectKingDragun_08062E1C
-gCardEffectKingDragun_08062E1C: @ 0x08062E1C
+	@ King Dragun
+	thumb_func_start gCardEffectSpecialSummon_08062E1C
+gCardEffectSpecialSummon_08062E1C: @ 0x08062E1C
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	cmp r0, #0
 	beq _08062E7A
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectAbareUshioniArchfiendSOathBESCrystalCoreBarrelDragonBlowbackDragonCatnippedKittyCyberLaserDragonDarkMasterZorcGaiaSoulTheCombustibleCollectiveGatlingDragonGoddessOfWhimHomunculusTheAlchemicBeingKarateManPatroidRavielLordOfPhantasmsRouletteBarrelSandGamblerSasukeSamuraiTimeWizardUriaLordOfSearingFlamesVwxyzDragonCatapultCannon_0805C1C0
+	bl gCardEffectDestroyRNG_0805C1C0
 	cmp r0, #0
 	bne _08062E3C
 	b _08062E7A
@@ -159608,22 +161251,23 @@ _08062E7C:
 _08062E84: .4byte gUnk_0201C4E0
 _08062E88: .4byte 0x00000868
 
-	thumb_func_start gCardEffectVampireGenesis_08062E8C
-gCardEffectVampireGenesis_08062E8C: @ 0x08062E8C
+	@ Vampire Genesis
+	thumb_func_start gCardEffectSpecialSummonDiscard_08062E8C
+gCardEffectSpecialSummonDiscard_08062E8C: @ 0x08062E8C
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	cmp r0, #0
 	beq _08062EB6
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectAbareUshioniArchfiendSOathBESCrystalCoreBarrelDragonBlowbackDragonCatnippedKittyCyberLaserDragonDarkMasterZorcGaiaSoulTheCombustibleCollectiveGatlingDragonGoddessOfWhimHomunculusTheAlchemicBeingKarateManPatroidRavielLordOfPhantasmsRouletteBarrelSandGamblerSasukeSamuraiTimeWizardUriaLordOfSearingFlamesVwxyzDragonCatapultCannon_0805C1C0
+	bl gCardEffectDestroyRNG_0805C1C0
 	cmp r0, #0
 	beq _08062EB6
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectArchlordZeratoArmedChangerLadyNinjaYae_080619F0
+	bl gCardEffectGraveyardDiscard_080619F0
 	cmp r0, #0
 	beq _08062EB6
 	movs r0, #1
@@ -159636,8 +161280,11 @@ _08062EB8:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectAbsoluteEndHeroBarrierThreateningRoar_08062EC0
-gCardEffectAbsoluteEndHeroBarrierThreateningRoar_08062EC0: @ 0x08062EC0
+	@ Absolute End
+	@ Hero Barrier
+	@ Threatening Roar
+	thumb_func_start gCardEffectNegatePreventAttack_08062EC0
+gCardEffectNegatePreventAttack_08062EC0: @ 0x08062EC0
 	ldr r3, _08062EDC @ =gUnk_0201C4E0
 	ldr r1, _08062EE0 @ =0x00001CE8
 	adds r2, r3, r1
@@ -159669,8 +161316,9 @@ _08062EF4:
 	.align 2, 0
 _08062EF8: .4byte 0x00001CF4
 
-	thumb_func_start gCardEffectGoodGoblinHousekeeping_08062EFC
-gCardEffectGoodGoblinHousekeeping_08062EFC: @ 0x08062EFC
+	@ Good Goblin Housekeeping
+	thumb_func_start gCardEffectDrawGraveyard_08062EFC
+gCardEffectDrawGraveyard_08062EFC: @ 0x08062EFC
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -159701,8 +161349,9 @@ _08062F28:
 _08062F30: .4byte gUnk_0201C4E0
 _08062F34: .4byte 0x00000868
 
-	thumb_func_start gCardEffectDDDynamite_08062F38
-gCardEffectDDDynamite_08062F38: @ 0x08062F38
+	@ D.D. Dynamite
+	thumb_func_start gCardEffectBanishDamage_08062F38
+gCardEffectBanishDamage_08062F38: @ 0x08062F38
 	ldr r2, _08062F58 @ =gUnk_0201C4E0
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
@@ -159723,8 +161372,9 @@ _08062F54:
 _08062F58: .4byte gUnk_0201C4E0
 _08062F5C: .4byte 0x00000868
 
-	thumb_func_start gCardEffectElementalBurst_08062F60
-gCardEffectElementalBurst_08062F60: @ 0x08062F60
+	@ Elemental Burst
+	thumb_func_start gCardEffectDestroyAllTribute_08062F60
+gCardEffectDestroyAllTribute_08062F60: @ 0x08062F60
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -159822,8 +161472,9 @@ _0806300E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectOverpoweringEye_08063020
-gCardEffectOverpoweringEye_08063020: @ 0x08063020
+	@ Overpowering Eye
+	thumb_func_start gCardEffectDirectAttack_08063020
+gCardEffectDirectAttack_08063020: @ 0x08063020
 	push {lr}
 	adds r1, r0, #0
 	ldr r0, _08063048 @ =gUnk_0201C4E0
@@ -159854,8 +161505,10 @@ _08063056:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectKaibamanTheCreatorIncarnate_0806305C
-gCardEffectKaibamanTheCreatorIncarnate_0806305C: @ 0x0806305C
+	@ Kaibaman
+	@ The Creator Incarnate
+	thumb_func_start gCardEffectSpecialSummonTribute_0806305C
+gCardEffectSpecialSummonTribute_0806305C: @ 0x0806305C
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	ldrb r2, [r5, #2]
@@ -159935,8 +161588,9 @@ _080630EA:
 _080630F0: .4byte gUnk_0201C4E0
 _080630F4: .4byte 0x00000868
 
-	thumb_func_start gCardEffectDummyGolem_080630F8
-gCardEffectDummyGolem_080630F8: @ 0x080630F8
+	@ Dummy Golem
+	thumb_func_start gCardEffectTakeControlFlip_080630F8
+gCardEffectTakeControlFlip_080630F8: @ 0x080630F8
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -160015,11 +161669,12 @@ _0806318A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDDSurvivor_08063194
-gCardEffectDDSurvivor_08063194: @ 0x08063194
+	@ D.D. Survivor
+	thumb_func_start gCardEffectSpecialSummonBanish_08063194
+gCardEffectSpecialSummonBanish_08063194: @ 0x08063194
 	push {r4, lr}
 	adds r4, r0, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	cmp r0, #0
 	beq _080631B6
 	ldrh r4, [r4, #4]
@@ -160040,8 +161695,12 @@ _080631B8:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectAussaTheEarthCharmerEriaTheWaterCharmerHiitaTheFireCharmerWynnTheWindCharmer_080631C0
-gCardEffectAussaTheEarthCharmerEriaTheWaterCharmerHiitaTheFireCharmerWynnTheWindCharmer_080631C0: @ 0x080631C0
+	@ Aussa the Earth Charmer
+	@ Eria the Water Charmer
+	@ Hiita the Fire Charmer
+	@ Wynn the Wind Charmer
+	thumb_func_start gCardEffectTakeControlFlip_080631C0
+gCardEffectTakeControlFlip_080631C0: @ 0x080631C0
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -160117,8 +161776,10 @@ _0806324A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectInfernalFlameEmperorKingOfTheSkullServants_08063254
-gCardEffectInfernalFlameEmperorKingOfTheSkullServants_08063254: @ 0x08063254
+	@ Infernal Flame Emperor
+	@ King of the Skull Servants
+	thumb_func_start gCardEffectSpecialSummonBanish_08063254
+gCardEffectSpecialSummonBanish_08063254: @ 0x08063254
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -160130,7 +161791,7 @@ gCardEffectInfernalFlameEmperorKingOfTheSkullServants_08063254: @ 0x08063254
 	beq _08063272
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectArmedChangerAswanApparitionDesFeralImpDrillBugFairyOfTheSpringMaskOfDarknessMonsterEyeNubianGuardRecycleReturnOfTheDoomedSoulReversalTheWarriorReturningAlive_0805C2F0
+	bl gCardEffectGraveyard_0805C2F0
 	b _08063274
 _08063272:
 	movs r0, #0
@@ -160140,8 +161801,9 @@ _08063274:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectReshefTheDarkBeing_0806327C
-gCardEffectReshefTheDarkBeing_0806327C: @ 0x0806327C
+	@ Reshef the Dark Being
+	thumb_func_start gCardEffectRitualSummonTakeControl_0806327C
+gCardEffectRitualSummonTakeControl_0806327C: @ 0x0806327C
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -160153,7 +161815,7 @@ gCardEffectReshefTheDarkBeing_0806327C: @ 0x0806327C
 	beq _0806329A
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectChironTheMage_08060E24
+	bl gCardEffectDiscardDestroySpellTrap_08060E24
 	b _0806329C
 _0806329A:
 	movs r0, #0
@@ -160163,17 +161825,18 @@ _0806329C:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectElementalHeroThunderGiant_080632A4
-gCardEffectElementalHeroThunderGiant_080632A4: @ 0x080632A4
+	@ Elemental Hero Thunder Giant
+	thumb_func_start gCardEffectSpecialSummonFusionSummon_080632A4
+gCardEffectSpecialSummonFusionSummon_080632A4: @ 0x080632A4
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
-	bl gCardEffectAbareUshioniArchfiendSOathBESCrystalCoreBarrelDragonBlowbackDragonCatnippedKittyCyberLaserDragonDarkMasterZorcGaiaSoulTheCombustibleCollectiveGatlingDragonGoddessOfWhimHomunculusTheAlchemicBeingKarateManPatroidRavielLordOfPhantasmsRouletteBarrelSandGamblerSasukeSamuraiTimeWizardUriaLordOfSearingFlamesVwxyzDragonCatapultCannon_0805C1C0
+	bl gCardEffectDestroyRNG_0805C1C0
 	cmp r0, #0
 	beq _080632C2
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectBackToSquareOneCostDownCurseOfAgingCyberneticMagicianDarkCoreForcedCeasefireHallowedLifeBarrierKarmaCutLightningVortexMaliceDispersionPhoenixWingWindBlastRaigekiBreakRisingEnergySpecialHurricaneSpellPurificationTributeToTheDoomedVwTigerCatapultXyDragonCannonXyzDragonCannonXzTankCannonYzTankDragon_0805C1E4
+	bl gCardEffectDiscard_0805C1E4
 	cmp r0, #0
 	beq _080632C2
 	movs r0, #1
@@ -160186,8 +161849,9 @@ _080632C4:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectDoubleAttack_080632CC
-gCardEffectDoubleAttack_080632CC: @ 0x080632CC
+	@ Double Attack
+	thumb_func_start gCardEffectDiscardGraveyard_080632CC
+gCardEffectDiscardGraveyard_080632CC: @ 0x080632CC
 	push {lr}
 	adds r2, r0, #0
 	ldr r0, _080632EC @ =gUnk_0201C4E0
@@ -160197,7 +161861,7 @@ gCardEffectDoubleAttack_080632CC: @ 0x080632CC
 	cmp r0, #2
 	bne _080632E6
 	adds r0, r2, #0
-	bl gCardEffectArchlordZeratoArmedChangerLadyNinjaYae_080619F0
+	bl gCardEffectGraveyardDiscard_080619F0
 	cmp r0, #0
 	bne _080632F4
 _080632E6:
@@ -160213,11 +161877,12 @@ _080632F6:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectShiftingShadows_080632FC
-gCardEffectShiftingShadows_080632FC: @ 0x080632FC
+	@ Shifting Shadows
+	thumb_func_start gCardEffectDamageChangePosition_080632FC
+gCardEffectDamageChangePosition_080632FC: @ 0x080632FC
 	push {r4, lr}
 	adds r4, r0, #0
-	bl gCardEffectAbareUshioniArchfiendSOathBESCrystalCoreBarrelDragonBlowbackDragonCatnippedKittyCyberLaserDragonDarkMasterZorcGaiaSoulTheCombustibleCollectiveGatlingDragonGoddessOfWhimHomunculusTheAlchemicBeingKarateManPatroidRavielLordOfPhantasmsRouletteBarrelSandGamblerSasukeSamuraiTimeWizardUriaLordOfSearingFlamesVwxyzDragonCatapultCannon_0805C1C0
+	bl gCardEffectDestroyRNG_0805C1C0
 	cmp r0, #0
 	beq _08063312
 	adds r0, r4, #0
@@ -160235,8 +161900,9 @@ _08063318:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectHeroSignal_08063320
-gCardEffectHeroSignal_08063320: @ 0x08063320
+	@ Hero Signal
+	thumb_func_start gCardEffectSpecialSummonSendToGY_08063320
+gCardEffectSpecialSummonSendToGY_08063320: @ 0x08063320
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	ldrb r1, [r6, #2]
@@ -160306,8 +161972,9 @@ _080633A6:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectMispolymerization_080633AC
-gCardEffectMispolymerization_080633AC: @ 0x080633AC
+	@ Mispolymerization
+	thumb_func_start gCardEffectSpecialSummonFusion_080633AC
+gCardEffectSpecialSummonFusion_080633AC: @ 0x080633AC
 	push {lr}
 	adds r2, r0, #0
 	movs r0, #0xfc
@@ -160339,8 +162006,9 @@ _080633DE:
 	.align 2, 0
 _080633E4: .4byte gUnk_0201C4E0
 
-	thumb_func_start gCardEffectLevelConversionLab_080633E8
-gCardEffectLevelConversionLab_080633E8: @ 0x080633E8
+	@ Level Conversion Lab
+	thumb_func_start gCardEffectSendToGYGraveyard_080633E8
+gCardEffectSendToGYGraveyard_080633E8: @ 0x080633E8
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
@@ -160356,8 +162024,9 @@ _080633FC:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectTokenFeastevil_08063404
-gCardEffectTokenFeastevil_08063404: @ 0x08063404
+	@ Token Feastevil
+	thumb_func_start gCardEffectSpecialSummonDestroyAll_08063404
+gCardEffectSpecialSummonDestroyAll_08063404: @ 0x08063404
 	push {lr}
 	adds r2, r0, #0
 	movs r0, #0xfc
@@ -160389,11 +162058,12 @@ _08063436:
 	.align 2, 0
 _0806343C: .4byte gUnk_0201C4E0
 
-	thumb_func_start gCardEffectOceanDragonLordNeoDaedalus_08063440
-gCardEffectOceanDragonLordNeoDaedalus_08063440: @ 0x08063440
+	@ Ocean Dragon Lord - Neo-Daedalus
+	thumb_func_start gCardEffectSpecialSummonSendToGY_08063440
+gCardEffectSpecialSummonSendToGY_08063440: @ 0x08063440
 	push {r4, lr}
 	adds r4, r0, #0
-	bl gCardEffectLeviaDragonDaedalus_08061584
+	bl gCardEffectSendToGYDestroyAll_08061584
 	cmp r0, #0
 	bne _08063450
 	movs r0, #0
@@ -160431,8 +162101,9 @@ _08063486:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectElementalHeroBubbleman_0806348C
-gCardEffectElementalHeroBubbleman_0806348C: @ 0x0806348C
+	@ Elemental Hero Bubbleman
+	thumb_func_start gCardEffectDrawSpecialSummon_0806348C
+gCardEffectDrawSpecialSummon_0806348C: @ 0x0806348C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -160554,8 +162225,9 @@ _0806356C:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectSummonPriest_0806357C
-gCardEffectSummonPriest_0806357C: @ 0x0806357C
+	@ Summon Priest
+	thumb_func_start gCardEffectSpecialSummonDiscard_0806357C
+gCardEffectSpecialSummonDiscard_0806357C: @ 0x0806357C
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -160572,12 +162244,12 @@ gCardEffectSummonPriest_0806357C: @ 0x0806357C
 	beq _080635B8
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	cmp r0, #0
 	beq _080635B8
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectChironTheMage_08060E24
+	bl gCardEffectDiscardDestroySpellTrap_08060E24
 	b _080635BA
 	.align 2, 0
 _080635B0: .4byte gUnk_0201C4E0
@@ -160589,8 +162261,9 @@ _080635BA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectWingedKuribohLv10_080635C0
-gCardEffectWingedKuribohLv10_080635C0: @ 0x080635C0
+	@ Winged Kuriboh LV10
+	thumb_func_start gCardEffectSpecialSummonDestroyAll_080635C0
+gCardEffectSpecialSummonDestroyAll_080635C0: @ 0x080635C0
 	push {r4, r5, lr}
 	ldr r5, _080635EC @ =gUnk_0201C4E0
 	ldr r1, _080635F0 @ =0x00001CE8
@@ -160623,8 +162296,9 @@ _080635FA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectTranscendentWings_08063600
-gCardEffectTranscendentWings_08063600: @ 0x08063600
+	@ Transcendent Wings
+	thumb_func_start gCardEffectSpecialSummonSendToGY_08063600
+gCardEffectSpecialSummonSendToGY_08063600: @ 0x08063600
 	push {r4, r5, lr}
 	sub sp, #4
 	adds r4, r0, #0
@@ -160644,7 +162318,7 @@ gCardEffectTranscendentWings_08063600: @ 0x08063600
 	beq _08063630
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectArmedDragonLv3_0806210C
+	bl gCardEffectSpecialSummonSendToGY_0806210C
 	b _08063632
 _08063630:
 	movs r0, #0
@@ -160655,8 +162329,9 @@ _08063632:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectBubbleShuffle_0806363C
-gCardEffectBubbleShuffle_0806363C: @ 0x0806363C
+	@ Bubble Shuffle
+	thumb_func_start gCardEffectSpecialSummonChangePosition_0806363C
+gCardEffectSpecialSummonChangePosition_0806363C: @ 0x0806363C
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	ldrb r0, [r4, #2]
@@ -160729,8 +162404,9 @@ _080636BC:
 _080636C4: .4byte gUnk_0201C4E0
 _080636C8: .4byte 0x00000868
 
-	thumb_func_start gCardEffectDarkRulerVandalgyon_080636CC
-gCardEffectDarkRulerVandalgyon_080636CC: @ 0x080636CC
+	@ Dark Ruler Vandalgyon
+	thumb_func_start gCardEffectSpecialSummonDestroySpellTrap_080636CC
+gCardEffectSpecialSummonDestroySpellTrap_080636CC: @ 0x080636CC
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -160743,7 +162419,7 @@ gCardEffectDarkRulerVandalgyon_080636CC: @ 0x080636CC
 	beq _080636F0
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	b _080636F2
 	.align 2, 0
 _080636EC: .4byte 0x0000190A @ Dark Ruler Vandalgyon
@@ -160754,8 +162430,9 @@ _080636F2:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectCyberArchfiend_080636F8
-gCardEffectCyberArchfiend_080636F8: @ 0x080636F8
+	@ Cyber Archfiend
+	thumb_func_start gCardEffectDrawSearch_080636F8
+gCardEffectDrawSearch_080636F8: @ 0x080636F8
 	adds r3, r0, #0
 	movs r0, #0xfc
 	lsls r0, r0, #4
@@ -160786,11 +162463,12 @@ _0806372C:
 _0806372E:
 	bx lr
 
-	thumb_func_start gCardEffectDesFrog_08063730
-gCardEffectDesFrog_08063730: @ 0x08063730
+	@ Des Frog
+	thumb_func_start gCardEffectSpecialSummonRevive_08063730
+gCardEffectSpecialSummonRevive_08063730: @ 0x08063730
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	cmp r0, #0
 	beq _0806378C
 	ldr r1, _08063780 @ =gUnk_0201C4E0
@@ -160835,8 +162513,9 @@ _0806378E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectFusionRecovery_08063794
-gCardEffectFusionRecovery_08063794: @ 0x08063794
+	@ Fusion Recovery
+	thumb_func_start gCardEffectSearchFusionSummon_08063794
+gCardEffectSearchFusionSummon_08063794: @ 0x08063794
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -160849,7 +162528,7 @@ gCardEffectFusionRecovery_08063794: @ 0x08063794
 	blt _080637B8
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectArmedChangerAswanApparitionDesFeralImpDrillBugFairyOfTheSpringMaskOfDarknessMonsterEyeNubianGuardRecycleReturnOfTheDoomedSoulReversalTheWarriorReturningAlive_0805C2F0
+	bl gCardEffectGraveyard_0805C2F0
 	b _080637BA
 	.align 2, 0
 _080637B4: .4byte 0x000012E5 @ Polymerization
@@ -160860,8 +162539,9 @@ _080637BA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectSystemDown_080637C0
-gCardEffectSystemDown_080637C0: @ 0x080637C0
+	@ System Down
+	thumb_func_start gCardEffectBanishDamage_080637C0
+gCardEffectBanishDamage_080637C0: @ 0x080637C0
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -160889,8 +162569,9 @@ _080637EC:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectDesCroaking_080637F4
-gCardEffectDesCroaking_080637F4: @ 0x080637F4
+	@ Des Croaking
+	thumb_func_start gCardEffectDestroyAll_080637F4
+gCardEffectDestroyAll_080637F4: @ 0x080637F4
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
@@ -160908,8 +162589,9 @@ _0806380A:
 	.align 2, 0
 _08063810: .4byte 0x00001918 @ Des Frog
 
-	thumb_func_start gCardEffectPotOfGenerosity_08063814
-gCardEffectPotOfGenerosity_08063814: @ 0x08063814
+	@ Pot of Generosity
+	thumb_func_start gCardEffectUnknown_08063814
+gCardEffectUnknown_08063814: @ 0x08063814
 	push {lr}
 	ldrb r2, [r0, #2]
 	lsls r1, r2, #0x1f
@@ -160926,8 +162608,9 @@ _0806382A:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectShienSSpy_08063830
-gCardEffectShienSSpy_08063830: @ 0x08063830
+	@ Shien's Spy
+	thumb_func_start gCardEffectEndPhase_08063830
+gCardEffectEndPhase_08063830: @ 0x08063830
 	push {lr}
 	ldrb r1, [r0, #2]
 	lsls r2, r1, #0x1f
@@ -160946,8 +162629,10 @@ _0806384A:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectFireDartsReturnZombie_08063850
-gCardEffectFireDartsReturnZombie_08063850: @ 0x08063850
+	@ Fire Darts
+	@ Return Zombie
+	thumb_func_start gCardEffectDamageSearch_08063850
+gCardEffectDamageSearch_08063850: @ 0x08063850
 	movs r3, #0
 	ldr r2, _08063870 @ =gUnk_0201C4E0
 	ldrb r0, [r0, #2]
@@ -160968,10 +162653,11 @@ _0806386A:
 _08063870: .4byte gUnk_0201C4E0
 _08063874: .4byte 0x00000868
 
-	thumb_func_start gCardEffectSpiritualWindArtMiyabi_08063878
-gCardEffectSpiritualWindArtMiyabi_08063878: @ 0x08063878
+	@ Spiritual Wind Art - Miyabi
+	thumb_func_start gCardEffectTribute_08063878
+gCardEffectTribute_08063878: @ 0x08063878
 	push {lr}
-	ldr r1, _08063890 @ =gCardEffectBondingH2oCastleGateCrushCardDeSpellGermWeaponDeckDevastationVirusGaiaSoulTheCombustibleCollectiveSpiritualFireArtKurenaiSpiritualWaterArtAoi_08050EAC
+	ldr r1, _08063890 @ =gCardEffectTributeDestroy_08050EAC
 	bl sub_0809077C
 	movs r1, #0
 	cmp r0, #0
@@ -160982,10 +162668,11 @@ _08063888:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08063890: .4byte gCardEffectBondingH2oCastleGateCrushCardDeSpellGermWeaponDeckDevastationVirusGaiaSoulTheCombustibleCollectiveSpiritualFireArtKurenaiSpiritualWaterArtAoi_08050EAC
+_08063890: .4byte gCardEffectTributeDestroy_08050EAC
 
-	thumb_func_start gCardEffectMagicalExplosion_08063894
-gCardEffectMagicalExplosion_08063894: @ 0x08063894
+	@ Magical Explosion
+	thumb_func_start gCardEffectDamageGraveyard_08063894
+gCardEffectDamageGraveyard_08063894: @ 0x08063894
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -161021,8 +162708,9 @@ _080638C8:
 _080638D0: .4byte gUnk_0201C4E0
 _080638D4: .4byte 0x00000868
 
-	thumb_func_start gCardEffectDDTrapHole_080638D8
-gCardEffectDDTrapHole_080638D8: @ 0x080638D8
+	@ D.D. Trap Hole
+	thumb_func_start gCardEffectBanishDestroy_080638D8
+gCardEffectBanishDestroy_080638D8: @ 0x080638D8
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r1, #0xfc
@@ -161041,7 +162729,7 @@ _080638F2:
 	bl sub_08090714
 	cmp r0, #1
 	bne _08063910
-	ldr r1, _0806390C @ =gCardEffectImpenetrableFormationTaunt_08054898
+	ldr r1, _0806390C @ =gCardEffectDestroyBoostDEF_08054898
 	adds r0, r4, #0
 	bl sub_0809077C
 	cmp r0, #0
@@ -161049,7 +162737,7 @@ _080638F2:
 	movs r0, #2
 	b _08063912
 	.align 2, 0
-_0806390C: .4byte gCardEffectImpenetrableFormationTaunt_08054898
+_0806390C: .4byte gCardEffectDestroyBoostDEF_08054898
 _08063910:
 	movs r0, #0
 _08063912:
@@ -161057,8 +162745,9 @@ _08063912:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectConscription_08063918
-gCardEffectConscription_08063918: @ 0x08063918
+	@ Conscription
+	thumb_func_start gCardEffectSearchSpecialSummon_08063918
+gCardEffectSearchSpecialSummon_08063918: @ 0x08063918
 	push {lr}
 	ldr r2, _08063944 @ =gUnk_0201C4E0
 	ldrb r0, [r0, #2]
@@ -161089,8 +162778,9 @@ _0806394E:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectPrepareToStrikeBack_08063954
-gCardEffectPrepareToStrikeBack_08063954: @ 0x08063954
+	@ Prepare to Strike Back
+	thumb_func_start gCardEffectChangePositionRNG_08063954
+gCardEffectChangePositionRNG_08063954: @ 0x08063954
 	push {r4, lr}
 	adds r2, r0, #0
 	movs r0, #0xfc
@@ -161149,8 +162839,9 @@ _080639C2:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectTriage_080639C8
-gCardEffectTriage_080639C8: @ 0x080639C8
+	@ Triage
+	thumb_func_start gCardEffectSpecialSummonDestroyAll_080639C8
+gCardEffectSpecialSummonDestroyAll_080639C8: @ 0x080639C8
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	adds r6, r4, #0
@@ -161236,8 +162927,9 @@ _08063A64:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectDDMDifferentDimensionMaster_08063A6C
-gCardEffectDDMDifferentDimensionMaster_08063A6C: @ 0x08063A6C
+	@ D.D.M. - Different Dimension Master
+	thumb_func_start gCardEffectSpecialSummonBanish_08063A6C
+gCardEffectSpecialSummonBanish_08063A6C: @ 0x08063A6C
 	push {r4, r5, lr}
 	sub sp, #4
 	adds r4, r0, #0
@@ -161256,12 +162948,12 @@ gCardEffectDDMDifferentDimensionMaster_08063A6C: @ 0x08063A6C
 	beq _08063AA4
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectAbareUshioniArchfiendSOathBESCrystalCoreBarrelDragonBlowbackDragonCatnippedKittyCyberLaserDragonDarkMasterZorcGaiaSoulTheCombustibleCollectiveGatlingDragonGoddessOfWhimHomunculusTheAlchemicBeingKarateManPatroidRavielLordOfPhantasmsRouletteBarrelSandGamblerSasukeSamuraiTimeWizardUriaLordOfSearingFlamesVwxyzDragonCatapultCannon_0805C1C0
+	bl gCardEffectDestroyRNG_0805C1C0
 	cmp r0, #0
 	beq _08063AA4
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectArchfiendSRoarAutonomousActionUnitBatteryChargerCallOfTheHauntedCentrifugalFieldChimeraTheFlyingMythicalBeastCyberSteinFulfillmentOfTheContractFushiohRichieMagicalScientistPrematureBurialReFusionReturnFromTheDifferentDimensionRiteOfSpiritSilentFiendSoulResurrectionSpiritCallerSpiritOfThePharaohSymbolOfHeritage_0805C248
+	bl gCardEffectSpecialSummonGraveyard_0805C248
 	b _08063AA6
 _08063AA4:
 	movs r0, #0
@@ -161272,8 +162964,9 @@ _08063AA6:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectAlkanaKnightJoker_08063AB0
-gCardEffectAlkanaKnightJoker_08063AB0: @ 0x08063AB0
+	@ Alkana Knight Joker
+	thumb_func_start gCardEffectFusionSummonDiscard_08063AB0
+gCardEffectFusionSummonDiscard_08063AB0: @ 0x08063AB0
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r4, r1, #0
@@ -161285,7 +162978,7 @@ gCardEffectAlkanaKnightJoker_08063AB0: @ 0x08063AB0
 	bne _08063B5E
 	adds r0, r6, #0
 	adds r1, r4, #0
-	bl gCardEffectAbareUshioniArchfiendSOathBESCrystalCoreBarrelDragonBlowbackDragonCatnippedKittyCyberLaserDragonDarkMasterZorcGaiaSoulTheCombustibleCollectiveGatlingDragonGoddessOfWhimHomunculusTheAlchemicBeingKarateManPatroidRavielLordOfPhantasmsRouletteBarrelSandGamblerSasukeSamuraiTimeWizardUriaLordOfSearingFlamesVwxyzDragonCatapultCannon_0805C1C0
+	bl gCardEffectDestroyRNG_0805C1C0
 	cmp r0, #0
 	beq _08063B5E
 	ldrh r0, [r4]
@@ -161369,8 +163062,13 @@ _08063B60:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectChopmanTheDesperateOutlawGilfordTheLegendGuardianElmaRollOutTheKickMan_08063B68
-gCardEffectChopmanTheDesperateOutlawGilfordTheLegendGuardianElmaRollOutTheKickMan_08063B68: @ 0x08063B68
+	@ Chopman the Desperate Outlaw
+	@ Gilford the Legend
+	@ Guardian Elma
+	@ Roll Out!
+	@ The Kick Man
+	thumb_func_start gCardEffectGraveyardEquip_08063B68
+gCardEffectGraveyardEquip_08063B68: @ 0x08063B68
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	ldrb r1, [r6, #2]
@@ -161401,8 +163099,9 @@ _08063B9C:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectDivineSwordPhoenixBlade_08063BA4
-gCardEffectDivineSwordPhoenixBlade_08063BA4: @ 0x08063BA4
+	@ Divine Sword - Phoenix Blade
+	thumb_func_start gCardEffectSearchBoostATK_08063BA4
+gCardEffectSearchBoostATK_08063BA4: @ 0x08063BA4
 	push {r4, lr}
 	adds r4, r0, #0
 	cmp r1, #0
@@ -161457,8 +163156,9 @@ _08063C0E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectLevelModulation_08063C14
-gCardEffectLevelModulation_08063C14: @ 0x08063C14
+	@ Level Modulation
+	thumb_func_start gCardEffectSpecialSummonPreventAttack_08063C14
+gCardEffectSpecialSummonPreventAttack_08063C14: @ 0x08063C14
 	push {r4, lr}
 	adds r3, r0, #0
 	adds r4, r1, #0
@@ -161477,7 +163177,7 @@ gCardEffectLevelModulation_08063C14: @ 0x08063C14
 	bls _08063C48
 	adds r0, r3, #0
 	adds r1, r4, #0
-	bl gCardEffectArchfiendSRoarAutonomousActionUnitBatteryChargerCallOfTheHauntedCentrifugalFieldChimeraTheFlyingMythicalBeastCyberSteinFulfillmentOfTheContractFushiohRichieMagicalScientistPrematureBurialReFusionReturnFromTheDifferentDimensionRiteOfSpiritSilentFiendSoulResurrectionSpiritCallerSpiritOfThePharaohSymbolOfHeritage_0805C248
+	bl gCardEffectSpecialSummonGraveyard_0805C248
 	b _08063C4A
 	.align 2, 0
 _08063C40: .4byte gUnk_0201C4E0
@@ -161489,17 +163189,18 @@ _08063C4A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectOjamuscle_08063C50
-gCardEffectOjamuscle_08063C50: @ 0x08063C50
+	@ Ojamuscle
+	thumb_func_start gCardEffectDestroyAllBoostATK_08063C50
+gCardEffectDestroyAllBoostATK_08063C50: @ 0x08063C50
 	push {lr}
-	ldr r1, _08063C60 @ =gCardEffectAcidRainBreathOfLightEradicatingAerosolEternalDroughtEternalRestExileOfTheWickedLastDayOfWitchNeedleCeilingReallyEternalRestTribeInfectingVirusWarriorEliminationWeedOut_08050A54
+	ldr r1, _08063C60 @ =gCardEffectDestroyAll_08050A54
 	bl sub_0809077C
 	cmp r0, #1
 	ble _08063C64
 	movs r0, #1
 	b _08063C66
 	.align 2, 0
-_08063C60: .4byte gCardEffectAcidRainBreathOfLightEradicatingAerosolEternalDroughtEternalRestExileOfTheWickedLastDayOfWitchNeedleCeilingReallyEternalRestTribeInfectingVirusWarriorEliminationWeedOut_08050A54
+_08063C60: .4byte gCardEffectDestroyAll_08050A54
 _08063C64:
 	movs r0, #0
 _08063C66:
@@ -161507,8 +163208,9 @@ _08063C66:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectOxygeddon_08063C6C
-gCardEffectOxygeddon_08063C6C: @ 0x08063C6C
+	@ Oxygeddon
+	thumb_func_start gCardEffectSendToGYDestroy_08063C6C
+gCardEffectSendToGYDestroy_08063C6C: @ 0x08063C6C
 	push {lr}
 	ldrb r2, [r0, #2]
 	lsls r1, r2, #0x1f
@@ -161576,8 +163278,9 @@ _08063CEA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectVwxyzDragonCatapultCannon_08063CF0
-gCardEffectVwxyzDragonCatapultCannon_08063CF0: @ 0x08063CF0
+	@ VWXYZ-Dragon Catapult Cannon
+	thumb_func_start gCardEffectSpecialSummonBanish_08063CF0
+gCardEffectSpecialSummonBanish_08063CF0: @ 0x08063CF0
 	ldr r0, _08063CFC @ =gUnk_0201BB90
 	ldr r0, [r0, #8]
 	cmp r0, #0
@@ -161591,11 +163294,12 @@ _08063D00:
 _08063D02:
 	bx lr
 
-	thumb_func_start gCardEffectBondingH2o_08063D04
-gCardEffectBondingH2o_08063D04: @ 0x08063D04
+	@ Bonding - H2O
+	thumb_func_start gCardEffectSpecialSummonRevive_08063D04
+gCardEffectSpecialSummonRevive_08063D04: @ 0x08063D04
 	push {r4, lr}
 	adds r4, r0, #0
-	bl gCardEffectAttackReflectorUnitDedicationThroughLightAndDarknessKnightSTitleReleaseRestraint_08061660
+	bl gCardEffectSpecialSummonTribute_08061660
 	cmp r0, #0
 	beq _08063D30
 	movs r0, #0
@@ -161619,8 +163323,9 @@ _08063D32:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectChthonianPolymer_08063D38
-gCardEffectChthonianPolymer_08063D38: @ 0x08063D38
+	@ Chthonian Polymer
+	thumb_func_start gCardEffectFusionSummonTakeControl_08063D38
+gCardEffectFusionSummonTakeControl_08063D38: @ 0x08063D38
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -161682,8 +163387,9 @@ _08063DAE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectChthonianBlast_08063DB4
-gCardEffectChthonianBlast_08063DB4: @ 0x08063DB4
+	@ Chthonian Blast
+	thumb_func_start gCardEffectSendToGYDestroy_08063DB4
+gCardEffectSendToGYDestroy_08063DB4: @ 0x08063DB4
 	adds r3, r0, #0
 	ldrh r1, [r3, #2]
 	lsls r0, r1, #0x14
@@ -161720,11 +163426,12 @@ _08063DF0:
 _08063DF2:
 	bx lr
 
-	thumb_func_start gCardEffectBESTetran_08063DF4
-gCardEffectBESTetran_08063DF4: @ 0x08063DF4
+	@ B.E.S. Tetran
+	thumb_func_start gCardEffectDestroySpellTrapCounter_08063DF4
+gCardEffectDestroySpellTrapCounter_08063DF4: @ 0x08063DF4
 	push {r4, lr}
 	adds r4, r0, #0
-	bl gCardEffectAbareUshioniArchfiendSOathBESCrystalCoreBarrelDragonBlowbackDragonCatnippedKittyCyberLaserDragonDarkMasterZorcGaiaSoulTheCombustibleCollectiveGatlingDragonGoddessOfWhimHomunculusTheAlchemicBeingKarateManPatroidRavielLordOfPhantasmsRouletteBarrelSandGamblerSasukeSamuraiTimeWizardUriaLordOfSearingFlamesVwxyzDragonCatapultCannon_0805C1C0
+	bl gCardEffectDestroyRNG_0805C1C0
 	cmp r0, #0
 	bne _08063E04
 	movs r0, #0
@@ -161755,8 +163462,9 @@ _08063E26:
 _08063E2C: .4byte 0x00000868
 _08063E30: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectNanobreaker_08063E34
-gCardEffectNanobreaker_08063E34: @ 0x08063E34
+	@ Nanobreaker
+	thumb_func_start gCardEffectDestroy_08063E34
+gCardEffectDestroy_08063E34: @ 0x08063E34
 	push {r4, lr}
 	ldr r1, _08063E6C @ =gUnk_0201BB90
 	ldr r0, [r1, #8]
@@ -161795,10 +163503,11 @@ _08063E7A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectGolddWuLordOfDarkWorld_08063E80
-gCardEffectGolddWuLordOfDarkWorld_08063E80: @ 0x08063E80
+	@ Goldd, Wu-Lord of Dark World
+	thumb_func_start gCardEffectSpecialSummonDiscard_08063E80
+gCardEffectSpecialSummonDiscard_08063E80: @ 0x08063E80
 	push {lr}
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	cmp r0, #0
 	beq _08063E8E
 	movs r0, #2
@@ -161809,8 +163518,9 @@ _08063E90:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectBossRush_08063E94
-gCardEffectBossRush_08063E94: @ 0x08063E94
+	@ Boss Rush
+	thumb_func_start gCardEffectSpecialSummonSendToGY_08063E94
+gCardEffectSpecialSummonSendToGY_08063E94: @ 0x08063E94
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -161870,7 +163580,7 @@ _08063EE4:
 	beq _08063F20
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	b _08063F22
 	.align 2, 0
 _08063F18: .4byte gUnk_0201C4E0
@@ -161882,8 +163592,9 @@ _08063F22:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectGatewayToDarkWorld_08063F28
-gCardEffectGatewayToDarkWorld_08063F28: @ 0x08063F28
+	@ Gateway to Dark World
+	thumb_func_start gCardEffectSpecialSummonRevive_08063F28
+gCardEffectSpecialSummonRevive_08063F28: @ 0x08063F28
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -161904,7 +163615,7 @@ gCardEffectGatewayToDarkWorld_08063F28: @ 0x08063F28
 	bne _08063F60
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectArchfiendSRoarAutonomousActionUnitBatteryChargerCallOfTheHauntedCentrifugalFieldChimeraTheFlyingMythicalBeastCyberSteinFulfillmentOfTheContractFushiohRichieMagicalScientistPrematureBurialReFusionReturnFromTheDifferentDimensionRiteOfSpiritSilentFiendSoulResurrectionSpiritCallerSpiritOfThePharaohSymbolOfHeritage_0805C248
+	bl gCardEffectSpecialSummonGraveyard_0805C248
 	b _08063F62
 	.align 2, 0
 _08063F58: .4byte gUnk_0201C4E0
@@ -161916,8 +163627,9 @@ _08063F62:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDarkDeal_08063F68
-gCardEffectDarkDeal_08063F68: @ 0x08063F68
+	@ Dark Deal
+	thumb_func_start gCardEffectDiscardDamage_08063F68
+gCardEffectDiscardDamage_08063F68: @ 0x08063F68
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
@@ -161964,8 +163676,9 @@ _08063FBE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectSimultaneousLoss_08063FC4
-gCardEffectSimultaneousLoss_08063FC4: @ 0x08063FC4
+	@ Simultaneous Loss
+	thumb_func_start gCardEffectSendToGYGraveyard_08063FC4
+gCardEffectSendToGYGraveyard_08063FC4: @ 0x08063FC4
 	ldr r1, _08063FDC @ =gUnk_0201C4E0
 	ldr r0, [r1, #0x10]
 	cmp r0, #0
@@ -161985,8 +163698,10 @@ _08063FE4:
 _08063FE6:
 	bx lr
 
-	thumb_func_start gCardEffectBubbleIllusionBurstReturn_08063FE8
-gCardEffectBubbleIllusionBurstReturn_08063FE8: @ 0x08063FE8
+	@ Bubble Illusion
+	@ Burst Return
+	thumb_func_start gCardEffectReturnToHand_08063FE8
+gCardEffectReturnToHand_08063FE8: @ 0x08063FE8
 	push {lr}
 	adds r3, r0, #0
 	ldrh r2, [r3]
@@ -162024,8 +163739,9 @@ _08064022:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectClayCharge_08064028
-gCardEffectClayCharge_08064028: @ 0x08064028
+	@ Clay Charge
+	thumb_func_start gCardEffectDestroyDamage_08064028
+gCardEffectDestroyDamage_08064028: @ 0x08064028
 	push {lr}
 	adds r2, r0, #0
 	movs r0, #0xfc
@@ -162064,8 +163780,9 @@ _0806406E:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectInfernoRecklessSummon_08064074
-gCardEffectInfernoRecklessSummon_08064074: @ 0x08064074
+	@ Inferno Reckless Summon
+	thumb_func_start gCardEffectSpecialSummonChangePosition_08064074
+gCardEffectSpecialSummonChangePosition_08064074: @ 0x08064074
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -162087,7 +163804,7 @@ gCardEffectInfernoRecklessSummon_08064074: @ 0x08064074
 _0806409A:
 	adds r0, r6, #0
 	adds r1, r4, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	cmp r0, #0
 	bne _080640A8
 	b _080641A8
@@ -162225,8 +163942,9 @@ _080641AA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectAncientGearDrill_080641B8
-gCardEffectAncientGearDrill_080641B8: @ 0x080641B8
+	@ Ancient Gear Drill
+	thumb_func_start gCardEffectDiscard_080641B8
+gCardEffectDiscard_080641B8: @ 0x080641B8
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -162250,7 +163968,7 @@ gCardEffectAncientGearDrill_080641B8: @ 0x080641B8
 	beq _080641FC
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectBackToSquareOneCostDownCurseOfAgingCyberneticMagicianDarkCoreForcedCeasefireHallowedLifeBarrierKarmaCutLightningVortexMaliceDispersionPhoenixWingWindBlastRaigekiBreakRisingEnergySpecialHurricaneSpellPurificationTributeToTheDoomedVwTigerCatapultXyDragonCannonXyzDragonCannonXzTankCannonYzTankDragon_0805C1E4
+	bl gCardEffectDiscard_0805C1E4
 	b _080641FE
 	.align 2, 0
 _080641F0: .4byte sub_0804B30C
@@ -162263,11 +163981,12 @@ _080641FE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectPhantasmalMartyrs_08064204
-gCardEffectPhantasmalMartyrs_08064204: @ 0x08064204
+	@ Phantasmal Martyrs
+	thumb_func_start gCardEffectSpecialSummonSendToGY_08064204
+gCardEffectSpecialSummonSendToGY_08064204: @ 0x08064204
 	push {r4, lr}
 	adds r4, r0, #0
-	bl gCardEffectArmedDragonLv10TwinSwordsOfFlashingLightTryceWickedBreakingFlambergeBaou_08060B18
+	bl gCardEffectSendToGYGraveyard_08060B18
 	cmp r0, #0
 	beq _08064258
 	ldrb r1, [r4, #2]
@@ -162309,11 +164028,12 @@ _0806425A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectPhotonGeneratorUnit_08064260
-gCardEffectPhotonGeneratorUnit_08064260: @ 0x08064260
+	@ Photon Generator Unit
+	thumb_func_start gCardEffectSpecialSummonRevive_08064260
+gCardEffectSpecialSummonRevive_08064260: @ 0x08064260
 	push {r4, lr}
 	adds r4, r0, #0
-	bl gCardEffectAttackReflectorUnitDedicationThroughLightAndDarknessKnightSTitleReleaseRestraint_08061660
+	bl gCardEffectSpecialSummonTribute_08061660
 	cmp r0, #0
 	bne _08064270
 	movs r0, #0
@@ -162333,8 +164053,9 @@ _08064280:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectMiracleKids_08064288
-gCardEffectMiracleKids_08064288: @ 0x08064288
+	@ Miracle Kids
+	thumb_func_start gCardEffectReduceATKGraveyard_08064288
+gCardEffectReduceATKGraveyard_08064288: @ 0x08064288
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
@@ -162354,8 +164075,9 @@ _080642A6:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectDamageCondenser_080642AC
-gCardEffectDamageCondenser_080642AC: @ 0x080642AC
+	@ Damage Condenser
+	thumb_func_start gCardEffectSpecialSummonDiscard_080642AC
+gCardEffectSpecialSummonDiscard_080642AC: @ 0x080642AC
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -162377,12 +164099,12 @@ gCardEffectDamageCondenser_080642AC: @ 0x080642AC
 	bne _0806430C
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	cmp r0, #0
 	beq _0806430C
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectBackToSquareOneCostDownCurseOfAgingCyberneticMagicianDarkCoreForcedCeasefireHallowedLifeBarrierKarmaCutLightningVortexMaliceDispersionPhoenixWingWindBlastRaigekiBreakRisingEnergySpecialHurricaneSpellPurificationTributeToTheDoomedVwTigerCatapultXyDragonCannonXyzDragonCannonXzTankCannonYzTankDragon_0805C1E4
+	bl gCardEffectDiscard_0805C1E4
 	cmp r0, #0
 	beq _0806430C
 	ldr r2, _08064304 @ =gUnk_0201C4E0
@@ -162408,8 +164130,9 @@ _0806430E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDDGuide_08064314
-gCardEffectDDGuide_08064314: @ 0x08064314
+	@ D.D. Guide
+	thumb_func_start gCardEffectBanishGraveyard_08064314
+gCardEffectBanishGraveyard_08064314: @ 0x08064314
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r0, #0xfc
@@ -162450,8 +164173,9 @@ _0806435A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDiscipleOfTheForbiddenSpell_08064360
-gCardEffectDiscipleOfTheForbiddenSpell_08064360: @ 0x08064360
+	@ Disciple of the Forbidden Spell
+	thumb_func_start gCardEffectSpecialSummonDestroy_08064360
+gCardEffectSpecialSummonDestroy_08064360: @ 0x08064360
 	push {r4, r5, r6, r7, lr}
 	adds r4, r0, #0
 	movs r0, #0xfc
@@ -162517,8 +164241,9 @@ _080643DA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectTreebornFrog_080643E0
-gCardEffectTreebornFrog_080643E0: @ 0x080643E0
+	@ Treeborn Frog
+	thumb_func_start gCardEffectSpecialSummonGraveyard_080643E0
+gCardEffectSpecialSummonGraveyard_080643E0: @ 0x080643E0
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -162537,7 +164262,7 @@ gCardEffectTreebornFrog_080643E0: @ 0x080643E0
 	bne _0806440E
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	b _08064410
 _0806440E:
 	movs r0, #0
@@ -162547,8 +164272,9 @@ _08064410:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectDivineDragonExcelion_08064418
-gCardEffectDivineDragonExcelion_08064418: @ 0x08064418
+	@ Divine Dragon - Excelion
+	thumb_func_start gCardEffectSendToGYDestroy_08064418
+gCardEffectSendToGYDestroy_08064418: @ 0x08064418
 	push {r4, lr}
 	adds r3, r0, #0
 	adds r4, r1, #0
@@ -162590,7 +164316,7 @@ _0806443C:
 	beq _080644AC
 	adds r0, r3, #0
 	adds r1, r4, #0
-	bl gCardEffectBlackLusterSoldierEnvoyOfTheBeginningRuinQueenOfOblivion_08061110
+	bl gCardEffectDestroySpecialSummon_08061110
 	b _080644AE
 	.align 2, 0
 _0806446C: .4byte 0x00000868
@@ -162616,7 +164342,7 @@ _08064474:
 	beq _080644AC
 	adds r0, r3, #0
 	adds r1, r4, #0
-	bl gCardEffectAbsorbingKidFromTheSkyElementalHeroFlameWingmanElementalHeroShiningFlareWingmanElementalHeroSteamHealerGuardianAngelJoanKa2DesScissorsLegendaryBlackBeltNeedleBurrower_080615D8
+	bl gCardEffectSendToGYDestroy_080615D8
 	b _080644AE
 	.align 2, 0
 _080644A4: .4byte 0x00000868
@@ -162628,8 +164354,9 @@ _080644AE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectTrialOfThePrincesses_080644B4
-gCardEffectTrialOfThePrincesses_080644B4: @ 0x080644B4
+	@ Trial of the Princesses
+	thumb_func_start gCardEffectSpecialSummonDestroy_080644B4
+gCardEffectSpecialSummonDestroy_080644B4: @ 0x080644B4
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	ldrb r1, [r6, #2]
@@ -162717,8 +164444,9 @@ _08064566:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectSuccessProbability0_0806456C
-gCardEffectSuccessProbability0_0806456C: @ 0x0806456C
+	@ Success Probability 0%
+	thumb_func_start gCardEffectSendToGYGraveyard_0806456C
+gCardEffectSendToGYGraveyard_0806456C: @ 0x0806456C
 	ldr r2, _0806458C @ =gUnk_0201C4E0
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
@@ -162742,8 +164470,9 @@ _08064594:
 _08064596:
 	bx lr
 
-	thumb_func_start gCardEffectOptionHunter_08064598
-gCardEffectOptionHunter_08064598: @ 0x08064598
+	@ Option Hunter
+	thumb_func_start gCardEffectSendToGYDestroy_08064598
+gCardEffectSendToGYDestroy_08064598: @ 0x08064598
 	push {lr}
 	adds r2, r0, #0
 	movs r0, #0xfc
@@ -162790,8 +164519,9 @@ _080645EA:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectElementalHeroErikshieler_080645F0
-gCardEffectElementalHeroErikshieler_080645F0: @ 0x080645F0
+	@ Elemental Hero Erikshieler
+	thumb_func_start gCardEffectSpecialSummonFusionSummon_080645F0
+gCardEffectSpecialSummonFusionSummon_080645F0: @ 0x080645F0
 	ldr r0, _08064604 @ =gUnk_0201C4E0
 	ldr r2, _08064608 @ =0x00000884
 	adds r1, r0, r2
@@ -162845,16 +164575,118 @@ _0806464A:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectAnteatereatingantArcaneArcherOfTheForestArmedDragonLv5BESTetranBladeRabbitBlastMagicianBlastWithChainBreakerTheMagicalWarriorBurningBeastChironTheMageCyberLaserDragonDarkMagicianKnightDoubleSnareDragonSeekerDreamClownDrivingSnowEatgaboonElementalHeroThunderGiantExiledForceFreedTheBraveWandererFreezingBeastGearfriedTheSwordmasterGranmargTheRockMonarchGuardianCealGustHannibalNecromancerHarpiesHuntingGroundHouseOfAdhesiveTapeMagicalMarionetteManEaterBugMedusaWormMichizureMysticalSpaceTyphoonNewdoriaNightAssailantOldVindictiveMagicianOrcaMegaFortressOfDarknessRaigekiBreakRemoveTrapSakuretsuArmorShieldCrashSwarmOfLocustsSwarmOfScarabsThousandKnivesThrowstoneUnitTrapHoleTributeToTheDoomedUriaLordOfSearingFlamesWhiteNinjaXyDragonCannonXyzDragonCannonXzTankCannonYzTankDragonZaborgTheThunderMonarch_08064654
-gCardEffectAnteatereatingantArcaneArcherOfTheForestArmedDragonLv5BESTetranBladeRabbitBlastMagicianBlastWithChainBreakerTheMagicalWarriorBurningBeastChironTheMageCyberLaserDragonDarkMagicianKnightDoubleSnareDragonSeekerDreamClownDrivingSnowEatgaboonElementalHeroThunderGiantExiledForceFreedTheBraveWandererFreezingBeastGearfriedTheSwordmasterGranmargTheRockMonarchGuardianCealGustHannibalNecromancerHarpiesHuntingGroundHouseOfAdhesiveTapeMagicalMarionetteManEaterBugMedusaWormMichizureMysticalSpaceTyphoonNewdoriaNightAssailantOldVindictiveMagicianOrcaMegaFortressOfDarknessRaigekiBreakRemoveTrapSakuretsuArmorShieldCrashSwarmOfLocustsSwarmOfScarabsThousandKnivesThrowstoneUnitTrapHoleTributeToTheDoomedUriaLordOfSearingFlamesWhiteNinjaXyDragonCannonXyzDragonCannonXzTankCannonYzTankDragonZaborgTheThunderMonarch_08064654: @ 0x08064654
+	@ Anteatereatingant
+	@ Arcane Archer of the Forest
+	@ Armed Dragon LV5
+	@ B.E.S. Tetran
+	@ Blade Rabbit
+	@ Blast Magician
+	@ Blast with Chain
+	@ Breaker the Magical Warrior
+	@ Burning Beast
+	@ Chiron the Mage
+	@ Cyber Laser Dragon
+	@ Dark Magician Knight
+	@ Double Snare
+	@ Dragon Seeker
+	@ Dream Clown
+	@ Driving Snow
+	@ Eatgaboon
+	@ Elemental Hero Thunder Giant
+	@ Exiled Force
+	@ Freed the Brave Wanderer
+	@ Freezing Beast
+	@ Gearfried the Swordmaster
+	@ Granmarg the Rock Monarch
+	@ Guardian Ceal
+	@ Gust
+	@ Hannibal Necromancer
+	@ Harpies' Hunting Ground
+	@ House of Adhesive Tape
+	@ Magical Marionette
+	@ Man-Eater Bug
+	@ Medusa Worm
+	@ Michizure
+	@ Mystical Space Typhoon
+	@ Newdoria
+	@ Night Assailant
+	@ Old Vindictive Magician
+	@ Orca Mega-Fortress of Darkness
+	@ Raigeki Break
+	@ Remove Trap
+	@ Sakuretsu Armor
+	@ Shield Crash
+	@ Swarm of Locusts
+	@ Swarm of Scarabs
+	@ Thousand Knives
+	@ Throwstone Unit
+	@ Trap Hole
+	@ Tribute to The Doomed
+	@ Uria, Lord of Searing Flames
+	@ White Ninja
+	@ XY-Dragon Cannon
+	@ XYZ-Dragon Cannon
+	@ XZ-Tank Cannon
+	@ YZ-Tank Dragon
+	@ Zaborg the Thunder Monarch
+	thumb_func_start gCardEffectDestroy_08064654
+gCardEffectDestroy_08064654: @ 0x08064654
 	push {lr}
 	bl sub_0806460C
 	movs r0, #0
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffect4StarredLadybugOfDoomAcidRainArmedDragonLv10ArmedDragonLv7BreathOfLightBurstBreathCalamityOfTheWickedChaosEndDarkHoleDarkMagicAttackDemiseKingOfArmageddonDesCounterblowDesCroakingDisarmamentElementalBurstEradicatingAerosolEternalDroughtEternalRestExileOfTheWickedFinalDestinyGearfriedTheIronKnightGigantesGilfordTheLightningHarpieSFeatherDusterHeavyStormJowgenTheSpiritualistLastDayOfWitchLegendaryFlameLordLeviaDragonDaedalusLightningVortexMaliceDispersionMegaTonMagicalCannonMirrorForceMoistureCreatureNeedleCeilingObeliskTheTormentorOjamaDeltaHurricaneRaigekiReallyEternalRestSacredPhoenixOfNephthysSpecialHurricaneSpellPurificationTheLastWarriorFromAnotherPlanetTorrentialTributeTragedyTribeInfectingVirusWarriorEliminationWeedOut_08064660
-gCardEffect4StarredLadybugOfDoomAcidRainArmedDragonLv10ArmedDragonLv7BreathOfLightBurstBreathCalamityOfTheWickedChaosEndDarkHoleDarkMagicAttackDemiseKingOfArmageddonDesCounterblowDesCroakingDisarmamentElementalBurstEradicatingAerosolEternalDroughtEternalRestExileOfTheWickedFinalDestinyGearfriedTheIronKnightGigantesGilfordTheLightningHarpieSFeatherDusterHeavyStormJowgenTheSpiritualistLastDayOfWitchLegendaryFlameLordLeviaDragonDaedalusLightningVortexMaliceDispersionMegaTonMagicalCannonMirrorForceMoistureCreatureNeedleCeilingObeliskTheTormentorOjamaDeltaHurricaneRaigekiReallyEternalRestSacredPhoenixOfNephthysSpecialHurricaneSpellPurificationTheLastWarriorFromAnotherPlanetTorrentialTributeTragedyTribeInfectingVirusWarriorEliminationWeedOut_08064660: @ 0x08064660
+	@ 4-Starred Ladybug of Doom
+	@ Acid Rain
+	@ Armed Dragon LV10
+	@ Armed Dragon LV7
+	@ Breath of Light
+	@ Burst Breath
+	@ Calamity of the Wicked
+	@ Chaos End
+	@ Dark Hole
+	@ Dark Magic Attack
+	@ Demise, King of Armageddon
+	@ Des Counterblow
+	@ Des Croaking
+	@ Disarmament
+	@ Elemental Burst
+	@ Eradicating Aerosol
+	@ Eternal Drought
+	@ Eternal Rest
+	@ Exile of the Wicked
+	@ Final Destiny
+	@ Gearfried the Iron Knight
+	@ Gigantes
+	@ Gilford the Lightning
+	@ Harpie's Feather Duster
+	@ Heavy Storm
+	@ Jowgen the Spiritualist
+	@ Last Day of Witch
+	@ Legendary Flame Lord
+	@ Levia-Dragon - Daedalus
+	@ Lightning Vortex
+	@ Malice Dispersion
+	@ Mega Ton Magical Cannon
+	@ Mirror Force
+	@ Moisture Creature
+	@ Needle Ceiling
+	@ Obelisk the Tormentor
+	@ Ojama Delta Hurricane!!
+	@ Raigeki
+	@ Really Eternal Rest
+	@ Sacred Phoenix of Nephthys
+	@ Special Hurricane
+	@ Spell Purification
+	@ The Last Warrior from Another Planet
+	@ Torrential Tribute
+	@ Tragedy
+	@ Tribe-Infecting Virus
+	@ Warrior Elimination
+	@ Weed Out
+	thumb_func_start gCardEffectDestroy_08064660
+gCardEffectDestroy_08064660: @ 0x08064660
 	push {r4, lr}
 	adds r4, r0, #0
 	bl sub_08090690
@@ -162866,8 +164698,98 @@ gCardEffect4StarredLadybugOfDoomAcidRainArmedDragonLv10ArmedDragonLv7BreathOfLig
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffect7CompletedAmplifierArmedChangerAxeOfDespairBallistaOfRampartSmashingBeastFangsBigBangShotBlackPendantBookOfSecretArtsBrightCastleBubbleBlasterBurningSpearBusterRancherButterflyDaggerElmaCestusOfDaglaChthonianAllianceCocoonOfEvolutionCyberShieldCyclonLaserCycloneBoomerangDarkEnergyDarkMagicianSTomeOfBlackMagicDemotionDivineSwordPhoenixBladeDragonTreasureDragonicAttackEkibyoDrakmordElectroWhipElfSLightFairyMeteorCrushFallingDownFlintFollowWindFuhmaShurikenFusionSwordMurasameBladeFusionWeaponGermInfectionGravityAxeGrarlGustFanHeartOfClearWaterHeroHeyroHornOfLightHornOfTheUnicornInsectArmorWithLaserCannonInvigorationLaserCannonArmorLegendaryBlackBeltLegendarySwordLightningBladeMachineConversionFactoryMagePowerMagicalLabyrinthMalevolentNuzzlerMaskOfBrutalityMaskOfTheAccursedMegamorphMetalmorphMetalsilverArmorMistobodyMysticalMoonNecklaceOfCommandNitroUnitOptiCamouflageArmorParalyzingPotionPowerOfKaishinRaiseBodyHeatRaregoldArmorRingOfMagnetismRitualWeaponRodOfSilenceKayEstRodOfTheMindSEyeSalamandraScrollOfBewitchmentShootingStarBowCealSilverBowAndArrowSmokeGrenadeOfTheThiefSnatchStealSparkBlasterSteelShellStimPackSwordOfDarkDestructionSwordOfDeepSeatedSwordOfDragonSSoulSwordOfTheSoulEaterTrialOfThePrincessesTwinSwordsOfFlashingLightTryceUnitedWeStandVileGermsVioletCrystalWickedBreakingFlambergeBaou_08064678
-gCardEffect7CompletedAmplifierArmedChangerAxeOfDespairBallistaOfRampartSmashingBeastFangsBigBangShotBlackPendantBookOfSecretArtsBrightCastleBubbleBlasterBurningSpearBusterRancherButterflyDaggerElmaCestusOfDaglaChthonianAllianceCocoonOfEvolutionCyberShieldCyclonLaserCycloneBoomerangDarkEnergyDarkMagicianSTomeOfBlackMagicDemotionDivineSwordPhoenixBladeDragonTreasureDragonicAttackEkibyoDrakmordElectroWhipElfSLightFairyMeteorCrushFallingDownFlintFollowWindFuhmaShurikenFusionSwordMurasameBladeFusionWeaponGermInfectionGravityAxeGrarlGustFanHeartOfClearWaterHeroHeyroHornOfLightHornOfTheUnicornInsectArmorWithLaserCannonInvigorationLaserCannonArmorLegendaryBlackBeltLegendarySwordLightningBladeMachineConversionFactoryMagePowerMagicalLabyrinthMalevolentNuzzlerMaskOfBrutalityMaskOfTheAccursedMegamorphMetalmorphMetalsilverArmorMistobodyMysticalMoonNecklaceOfCommandNitroUnitOptiCamouflageArmorParalyzingPotionPowerOfKaishinRaiseBodyHeatRaregoldArmorRingOfMagnetismRitualWeaponRodOfSilenceKayEstRodOfTheMindSEyeSalamandraScrollOfBewitchmentShootingStarBowCealSilverBowAndArrowSmokeGrenadeOfTheThiefSnatchStealSparkBlasterSteelShellStimPackSwordOfDarkDestructionSwordOfDeepSeatedSwordOfDragonSSoulSwordOfTheSoulEaterTrialOfThePrincessesTwinSwordsOfFlashingLightTryceUnitedWeStandVileGermsVioletCrystalWickedBreakingFlambergeBaou_08064678: @ 0x08064678
+	@ 7 Completed
+	@ Amplifier
+	@ Armed Changer
+	@ Axe of Despair
+	@ Ballista of Rampart Smashing
+	@ Beast Fangs
+	@ Big Bang Shot
+	@ Black Pendant
+	@ Book of Secret Arts
+	@ Bright Castle
+	@ Bubble Blaster
+	@ Burning Spear
+	@ Buster Rancher
+	@ Butterfly Dagger - Elma
+	@ Cestus of Dagla
+	@ Chthonian Alliance
+	@ Cocoon of Evolution
+	@ Cyber Shield
+	@ Cyclon Laser
+	@ Cyclone Boomerang
+	@ Dark Energy
+	@ Dark Magician's Tome of Black Magic
+	@ Demotion
+	@ Divine Sword - Phoenix Blade
+	@ Dragon Treasure
+	@ Dragonic Attack
+	@ Ekibyo Drakmord
+	@ Electro-Whip
+	@ Elf's Light
+	@ Fairy Meteor Crush
+	@ Falling Down
+	@ Flint
+	@ Follow Wind
+	@ Fuhma Shuriken
+	@ Fusion Sword Murasame Blade
+	@ Fusion Weapon
+	@ Germ Infection
+	@ Gravity Axe - Grarl
+	@ Gust Fan
+	@ Heart of Clear Water
+	@ Hero Heyro
+	@ Horn of Light
+	@ Horn of the Unicorn
+	@ Insect Armor with Laser Cannon
+	@ Invigoration
+	@ Laser Cannon Armor
+	@ Legendary Black Belt
+	@ Legendary Sword
+	@ Lightning Blade
+	@ Machine Conversion Factory
+	@ Mage Power
+	@ Magical Labyrinth
+	@ Malevolent Nuzzler
+	@ Mask of Brutality
+	@ Mask of the Accursed
+	@ Megamorph
+	@ Metalmorph
+	@ Metalsilver Armor
+	@ Mistobody
+	@ Mystical Moon
+	@ Necklace of Command
+	@ Nitro Unit
+	@ Opti-Camouflage Armor
+	@ Paralyzing Potion
+	@ Power of Kaishin
+	@ Raise Body Heat
+	@ Raregold Armor
+	@ Ring of Magnetism
+	@ Ritual Weapon
+	@ Rod of Silence - Kay'est
+	@ Rod of the Mind's Eye
+	@ Salamandra
+	@ Scroll of Bewitchment
+	@ Shooting Star Bow - Ceal
+	@ Silver Bow and Arrow
+	@ Smoke Grenade of the Thief
+	@ Snatch Steal
+	@ Spark Blaster
+	@ Steel Shell
+	@ Stim-Pack
+	@ Sword of Dark Destruction
+	@ Sword of Deep-Seated
+	@ Sword of Dragon's Soul
+	@ Sword of the Soul-Eater
+	@ Trial of the Princesses
+	@ Twin Swords of Flashing Light - Tryce
+	@ United We Stand
+	@ Vile Germs
+	@ Violet Crystal
+	@ Wicked-Breaking Flamberge - Baou
+	thumb_func_start gCardEffectEquipBoostATK_08064678
+gCardEffectEquipBoostATK_08064678: @ 0x08064678
 	push {r4, r5, r6, r7, lr}
 	sub sp, #4
 	adds r7, r0, #0
@@ -162982,8 +164904,31 @@ _0806474C:
 _08064758: .4byte 0x000012C6 @ 7 Completed (None)
 _0806475C: .4byte 0x0000145B @ Scroll of Bewitchment
 
-	thumb_func_start gCardEffectALegendaryOceanArrayOfRevealingLightCentrifugalFieldChorusOfSanctuaryFaultZoneForestFusionGateGaiaPowerHarpiesHuntingGroundLuminousSparkMoltenDestructionMountainMysticPlasmaZoneNecrovalleyPandemoniumRisingAirCurrentSkyscraperSogenTheSanctuaryInTheSkyUmiUmiirukaWastelandYami_08064760
-gCardEffectALegendaryOceanArrayOfRevealingLightCentrifugalFieldChorusOfSanctuaryFaultZoneForestFusionGateGaiaPowerHarpiesHuntingGroundLuminousSparkMoltenDestructionMountainMysticPlasmaZoneNecrovalleyPandemoniumRisingAirCurrentSkyscraperSogenTheSanctuaryInTheSkyUmiUmiirukaWastelandYami_08064760: @ 0x08064760
+	@ A Legendary Ocean
+	@ Array of Revealing Light
+	@ Centrifugal Field
+	@ Chorus of Sanctuary
+	@ Fault Zone
+	@ Forest
+	@ Fusion Gate
+	@ Gaia Power
+	@ Harpies' Hunting Ground
+	@ Luminous Spark
+	@ Molten Destruction
+	@ Mountain
+	@ Mystic Plasma Zone
+	@ Necrovalley
+	@ Pandemonium
+	@ Rising Air Current
+	@ Skyscraper
+	@ Sogen
+	@ The Sanctuary in the Sky
+	@ Umi
+	@ Umiiruka
+	@ Wasteland
+	@ Yami
+	thumb_func_start gCardEffectBoostATKBoostDEF_08064760
+gCardEffectBoostATKBoostDEF_08064760: @ 0x08064760
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -165049,8 +166994,120 @@ _080655DA:
 _080655E4: .4byte gUnk_0201C4E0
 _080655E8: .4byte 0x00000868
 
-	thumb_func_start gCardEffect7AbsorbingKidFromTheSkyAltarForTributeAmazonArcherAmebaAndroSphinxAntiAircraftFlowerAtomicFireflyBackfireBlackPendantBlastingTheRuinsBlueMedicineBowganianBurningAlgaeCannonSoldierCastleGateCatapultTurtleCemetaryBombCestusOfDaglaDDDynamiteDarkMagicianSTomeOfBlackMagicDarkRoomOfNightmareDesKoalaDesVolstgalphDianKetoTheCureMasterEbonMagicianCurranElementalHeroFlameWingmanElementalHeroShiningFlareWingmanElementalHeroSteamHealerElephantStatueOfBlessingElephantStatueOfDisasterEmergencyProvisionsFallingDownFinalFlameFireSorcererFuhmaShurikenGiantKozakyGiftOfTheMysticalElfGoblinThiefGoblinSSecretRemedyGranadoraGraveOhjaGravekeeperSCannonholderGravekeeperSCurseGriggleGuardianAngelJoanHamonLordOfStrikingThunderHinotamaHystericFairyInfernoJustDessertsKa2DesScissorsKozakySSelfDestructButtonLadyAssailantOfFlamesLavaGolemLegendaryBlackBeltMagicalBlastMagicalExplosionManThroTroMarshmallonMaskOfDispelMaskOfTheAccursedMassDriverMechaDogMarronMemoryCrusherMeteorOfDestructionMinarMineGolemMinorGoblinOfficialMooyanCurryMysteriousPuppeteerMystikWokNeedleBallNeedleBurrowerNightmareWheelNitroUnitNutrientZOokaziOptionHunterOxygeddonPoisonFangsPoisonMummyPoisonOfTheOldManPrincessCurranPrincessPikeruPrincessOfTsurugiRaimeiRainOfMercyRedMedicineReflectBounderRestructerRevolutionRockBombardmentSecretBarrelShinatoKingOfAHigherPlaneSkullMarkLadybugSnatchStealSolarFlareDragonSolarRaySoulAbsorptionSoulOfThePureSparksSphinxTeleiaSpiritualFireArtKurenaiStealthBirdTheEyeOfTruthToonCannonSoldierTremendousFireUltimateBaseballKidWaveMotionCannonWhiteMagicianPikeruWoodlandSpriteZolga_080655EC
-gCardEffect7AbsorbingKidFromTheSkyAltarForTributeAmazonArcherAmebaAndroSphinxAntiAircraftFlowerAtomicFireflyBackfireBlackPendantBlastingTheRuinsBlueMedicineBowganianBurningAlgaeCannonSoldierCastleGateCatapultTurtleCemetaryBombCestusOfDaglaDDDynamiteDarkMagicianSTomeOfBlackMagicDarkRoomOfNightmareDesKoalaDesVolstgalphDianKetoTheCureMasterEbonMagicianCurranElementalHeroFlameWingmanElementalHeroShiningFlareWingmanElementalHeroSteamHealerElephantStatueOfBlessingElephantStatueOfDisasterEmergencyProvisionsFallingDownFinalFlameFireSorcererFuhmaShurikenGiantKozakyGiftOfTheMysticalElfGoblinThiefGoblinSSecretRemedyGranadoraGraveOhjaGravekeeperSCannonholderGravekeeperSCurseGriggleGuardianAngelJoanHamonLordOfStrikingThunderHinotamaHystericFairyInfernoJustDessertsKa2DesScissorsKozakySSelfDestructButtonLadyAssailantOfFlamesLavaGolemLegendaryBlackBeltMagicalBlastMagicalExplosionManThroTroMarshmallonMaskOfDispelMaskOfTheAccursedMassDriverMechaDogMarronMemoryCrusherMeteorOfDestructionMinarMineGolemMinorGoblinOfficialMooyanCurryMysteriousPuppeteerMystikWokNeedleBallNeedleBurrowerNightmareWheelNitroUnitNutrientZOokaziOptionHunterOxygeddonPoisonFangsPoisonMummyPoisonOfTheOldManPrincessCurranPrincessPikeruPrincessOfTsurugiRaimeiRainOfMercyRedMedicineReflectBounderRestructerRevolutionRockBombardmentSecretBarrelShinatoKingOfAHigherPlaneSkullMarkLadybugSnatchStealSolarFlareDragonSolarRaySoulAbsorptionSoulOfThePureSparksSphinxTeleiaSpiritualFireArtKurenaiStealthBirdTheEyeOfTruthToonCannonSoldierTremendousFireUltimateBaseballKidWaveMotionCannonWhiteMagicianPikeruWoodlandSpriteZolga_080655EC: @ 0x080655EC
+	@ 7
+	@ Absorbing Kid from the Sky
+	@ Altar for Tribute
+	@ Amazon Archer
+	@ Ameba
+	@ Andro Sphinx
+	@ Anti-Aircraft Flower
+	@ Atomic Firefly
+	@ Backfire
+	@ Black Pendant
+	@ Blasting the Ruins
+	@ Blue Medicine
+	@ Bowganian
+	@ Burning Algae
+	@ Cannon Soldier
+	@ Castle Gate
+	@ Catapult Turtle
+	@ Cemetary Bomb
+	@ Cestus of Dagla
+	@ D.D. Dynamite
+	@ Dark Magician's Tome of Black Magic
+	@ Dark Room of Nightmare
+	@ Des Koala
+	@ Des Volstgalph
+	@ Dian Keto the Cure Master
+	@ Ebon Magician Curran
+	@ Elemental Hero Flame Wingman
+	@ Elemental Hero Shining Flare Wingman
+	@ Elemental Hero Steam Healer
+	@ Elephant Statue of Blessing
+	@ Elephant Statue of Disaster
+	@ Emergency Provisions
+	@ Falling Down
+	@ Final Flame
+	@ Fire Sorcerer
+	@ Fuhma Shuriken
+	@ Giant Kozaky
+	@ Gift of The Mystical Elf
+	@ Goblin Thief
+	@ Goblin's Secret Remedy
+	@ Granadora
+	@ Grave Ohja
+	@ Gravekeeper's Cannonholder
+	@ Gravekeeper's Curse
+	@ Griggle
+	@ Guardian Angel Joan
+	@ Hamon, Lord of Striking Thunder
+	@ Hinotama
+	@ Hysteric Fairy
+	@ Inferno
+	@ Just Desserts
+	@ KA-2 Des Scissors
+	@ Kozaky's Self-Destruct Button
+	@ Lady Assailant of Flames
+	@ Lava Golem
+	@ Legendary Black Belt
+	@ Magical Blast
+	@ Magical Explosion
+	@ Man-Thro' Tro
+	@ Marshmallon
+	@ Mask of Dispel
+	@ Mask of the Accursed
+	@ Mass Driver
+	@ Mecha-Dog Marron
+	@ Memory Crusher
+	@ Meteor of Destruction
+	@ Minar
+	@ Mine Golem
+	@ Minor Goblin Official
+	@ Mooyan Curry
+	@ Mysterious Puppeteer
+	@ Mystik Wok
+	@ Needle Ball
+	@ Needle Burrower
+	@ Nightmare Wheel
+	@ Nitro Unit
+	@ Nutrient Z
+	@ Ookazi
+	@ Option Hunter
+	@ Oxygeddon
+	@ Poison Fangs
+	@ Poison Mummy
+	@ Poison of the Old Man
+	@ Princess Curran
+	@ Princess Pikeru
+	@ Princess of Tsurugi
+	@ Raimei
+	@ Rain of Mercy
+	@ Red Medicine
+	@ Reflect Bounder
+	@ Restructer Revolution
+	@ Rock Bombardment
+	@ Secret Barrel
+	@ Shinato, King of a Higher Plane
+	@ Skull-Mark Ladybug
+	@ Snatch Steal
+	@ Solar Flare Dragon
+	@ Solar Ray
+	@ Soul Absorption
+	@ Soul of the Pure
+	@ Sparks
+	@ Sphinx Teleia
+	@ Spiritual Fire Art - Kurenai
+	@ Stealth Bird
+	@ The Eye of Truth
+	@ Toon Cannon Soldier
+	@ Tremendous Fire
+	@ Ultimate Baseball Kid
+	@ Wave-Motion Cannon
+	@ White Magician Pikeru
+	@ Woodland Sprite
+	@ Zolga
+	thumb_func_start gCardEffectDamageGraveyard_080655EC
+gCardEffectDamageGraveyard_080655EC: @ 0x080655EC
 	push {r4, r5, lr}
 	sub sp, #8
 	adds r4, r0, #0
@@ -165135,8 +167192,23 @@ _0806568A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectATeamTrapDisposalUnitAntiSpellArmorBreakCurseOfRoyalDarkPaladinFeatherWindMagicJammerMaryokutaiRiryokuFieldRoyalSurrenderSevenToolsOfTheBanditSpellShieldType8SpellStoppingStatuteTrapJammerTutanMask_08065698
-gCardEffectATeamTrapDisposalUnitAntiSpellArmorBreakCurseOfRoyalDarkPaladinFeatherWindMagicJammerMaryokutaiRiryokuFieldRoyalSurrenderSevenToolsOfTheBanditSpellShieldType8SpellStoppingStatuteTrapJammerTutanMask_08065698: @ 0x08065698
+	@ A-Team: Trap Disposal Unit
+	@ Anti-Spell
+	@ Armor Break
+	@ Curse of Royal
+	@ Dark Paladin
+	@ Feather Wind
+	@ Magic Jammer
+	@ Maryokutai
+	@ Riryoku Field
+	@ Royal Surrender
+	@ Seven Tools of the Bandit
+	@ Spell Shield Type-8
+	@ Spell-Stopping Statute
+	@ Trap Jammer
+	@ Tutan Mask
+	thumb_func_start gCardEffectNegateDestroy_08065698
+gCardEffectNegateDestroy_08065698: @ 0x08065698
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
@@ -165173,8 +167245,33 @@ _080656D6:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectAirknightParshathAppropriateAvatarOfThePotBrowwHuntsmanOfDarkWorldCardOfSafeReturnCardOfSanctityChainsawInsectChaosGreedCorpseOfYataGarasuDarkMimicLv3DesLacoodaElectricSnakeElementalHeroBubblemanHeartOfTheUnderdogJarOfGreedMaskedSorcererMoltenZombiePoisonDrawFrogPotOfGreedPreciousCardsFromBeyondRoyalMagicalLibrarySacredCraneSkelengelTheAgentOfWisdomMercuryToonMaskedSorcerer_080656E0
-gCardEffectAirknightParshathAppropriateAvatarOfThePotBrowwHuntsmanOfDarkWorldCardOfSafeReturnCardOfSanctityChainsawInsectChaosGreedCorpseOfYataGarasuDarkMimicLv3DesLacoodaElectricSnakeElementalHeroBubblemanHeartOfTheUnderdogJarOfGreedMaskedSorcererMoltenZombiePoisonDrawFrogPotOfGreedPreciousCardsFromBeyondRoyalMagicalLibrarySacredCraneSkelengelTheAgentOfWisdomMercuryToonMaskedSorcerer_080656E0: @ 0x080656E0
+	@ Airknight Parshath
+	@ Appropriate
+	@ Avatar of The Pot
+	@ Broww, Huntsman of Dark World
+	@ Card of Safe Return
+	@ Card of Sanctity
+	@ Chainsaw Insect
+	@ Chaos Greed
+	@ Corpse of Yata-Garasu
+	@ Dark Mimic LV3
+	@ Des Lacooda
+	@ Electric Snake
+	@ Elemental Hero Bubbleman
+	@ Heart of the Underdog
+	@ Jar of Greed
+	@ Masked Sorcerer
+	@ Molten Zombie
+	@ Poison Draw Frog
+	@ Pot of Greed
+	@ Precious Cards from Beyond
+	@ Royal Magical Library
+	@ Sacred Crane
+	@ Skelengel
+	@ The Agent of Wisdom - Mercury
+	@ Toon Masked Sorcerer
+	thumb_func_start gCardEffectDraw_080656E0
+gCardEffectDraw_080656E0: @ 0x080656E0
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -165599,8 +167696,25 @@ _080659E2:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectAncientLampContractWithExodiaDonTurtleFrontlineBaseHiddenSoldierKaibamanKingDragunMagnetCircleLv2MaraudingCaptainPinchHopperRedEyesBChickTheCreatorIncarnateTheThingInTheCraterTributeDollTwoManCellBattleUltraEvolutionPillVampireOrchis_080659E8
-gCardEffectAncientLampContractWithExodiaDonTurtleFrontlineBaseHiddenSoldierKaibamanKingDragunMagnetCircleLv2MaraudingCaptainPinchHopperRedEyesBChickTheCreatorIncarnateTheThingInTheCraterTributeDollTwoManCellBattleUltraEvolutionPillVampireOrchis_080659E8: @ 0x080659E8
+	@ Ancient Lamp
+	@ Contract with Exodia
+	@ Don Turtle
+	@ Frontline Base
+	@ Hidden Soldier
+	@ Kaibaman
+	@ King Dragun
+	@ Magnet Circle LV2
+	@ Marauding Captain
+	@ Pinch Hopper
+	@ Red-Eyes B. Chick
+	@ The Creator Incarnate
+	@ The Thing in the Crater
+	@ Tribute Doll
+	@ Two-Man Cell Battle
+	@ Ultra Evolution Pill
+	@ Vampire Orchis
+	thumb_func_start gCardEffectSpecialSummon_080659E8
+gCardEffectSpecialSummon_080659E8: @ 0x080659E8
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -165686,7 +167800,7 @@ _08065A50: @ jump table
 _08065AC4:
 	adds r0, r4, #0
 	adds r1, r2, #0
-	bl gCardEffectAncientLampMagnetCircleLv2_0805C294
+	bl gCardEffectSpecialSummonChangePosition_0805C294
 	cmp r0, #0
 	bne _08065AD2
 	b _08065CD4
@@ -165706,7 +167820,7 @@ _08065AE8: .4byte 0x000004A4
 _08065AEC:
 	adds r0, r4, #0
 	adds r1, r2, #0
-	bl gCardEffectAncientLampMagnetCircleLv2_0805C294
+	bl gCardEffectSpecialSummonChangePosition_0805C294
 	cmp r0, #0
 	bne _08065AFA
 	b _08065CB2
@@ -166028,8 +168142,9 @@ _08065D72:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectTimeWizard_08065D78
-gCardEffectTimeWizard_08065D78: @ 0x08065D78
+	@ Time Wizard
+	thumb_func_start gCardEffectDestroyAllDamage_08065D78
+gCardEffectDestroyAllDamage_08065D78: @ 0x08065D78
 	push {r4, r5, r6, r7, lr}
 	ldr r4, _08065DA8 @ =0xFFFFFD00
 	add sp, r4
@@ -166411,8 +168526,9 @@ _080660CA:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectDragonPiper_080660D8
-gCardEffectDragonPiper_080660D8: @ 0x080660D8
+	@ Dragon Piper
+	thumb_func_start gCardEffectDestroyAllChangePosition_080660D8
+gCardEffectDestroyAllChangePosition_080660D8: @ 0x080660D8
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -166560,8 +168676,20 @@ _080661EA:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectArsenalSummonerGatherYourMindGoblinZombieGokiponIronBlacksmithKotetsuPandemoniumReinforcementOfTheArmySanganScarrScoutOfDarkWorldTerraformingToonTableOfContentsWitchOfTheBlackForest_080661FC
-gCardEffectArsenalSummonerGatherYourMindGoblinZombieGokiponIronBlacksmithKotetsuPandemoniumReinforcementOfTheArmySanganScarrScoutOfDarkWorldTerraformingToonTableOfContentsWitchOfTheBlackForest_080661FC: @ 0x080661FC
+	@ Arsenal Summoner
+	@ Gather Your Mind
+	@ Goblin Zombie
+	@ Gokipon
+	@ Iron Blacksmith Kotetsu
+	@ Pandemonium
+	@ Reinforcement of the Army
+	@ Sangan
+	@ Scarr, Scout of Dark World
+	@ Terraforming
+	@ Toon Table of Contents
+	@ Witch of the Black Forest
+	thumb_func_start gCardEffectSearchSendToGY_080661FC
+gCardEffectSearchSendToGY_080661FC: @ 0x080661FC
 	push {r4, r5, lr}
 	adds r2, r0, #0
 	ldrb r1, [r2, #2]
@@ -166672,8 +168800,9 @@ _0806630E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectKuriboh_08066314
-gCardEffectKuriboh_08066314: @ 0x08066314
+	@ Kuriboh
+	thumb_func_start gCardEffectDiscardDamage_08066314
+gCardEffectDiscardDamage_08066314: @ 0x08066314
 	push {lr}
 	movs r1, #1
 	ldrb r0, [r0, #2]
@@ -166693,8 +168822,9 @@ _08066324:
 	.align 2, 0
 _08066334: .4byte 0x00008027
 
-	thumb_func_start gCardEffectCastleOfDarkIllusions_08066338
-gCardEffectCastleOfDarkIllusions_08066338: @ 0x08066338
+	@ Castle of Dark Illusions
+	thumb_func_start gCardEffectBoostATKBoostDEF_08066338
+gCardEffectBoostATKBoostDEF_08066338: @ 0x08066338
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -166832,8 +168962,13 @@ _0806642E:
 _08066440: .4byte 0x00000868
 _08066444: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectArmedNinjaCrimsonNinjaDeSpellReaperOfTheCardsTrapMaster_08066448
-gCardEffectArmedNinjaCrimsonNinjaDeSpellReaperOfTheCardsTrapMaster_08066448: @ 0x08066448
+	@ Armed Ninja
+	@ Crimson Ninja
+	@ De-Spell
+	@ Reaper of the Cards
+	@ Trap Master
+	thumb_func_start gCardEffectDestroyFlip_08066448
+gCardEffectDestroyFlip_08066448: @ 0x08066448
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -166947,8 +169082,25 @@ _08066522:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectArmedChangerBackupSoldierBehemothTheKingOfAllAnimalsDarkFactoryOfMassProductionDarkMagicianOfChaosExcavationOfMageStonesFusionRecoveryMagicianOfFaithMaskOfDarknessMonsterReincarnationNightAssailantSalvageSpellReproductionSupplyTheForcesOfDarknessTheWarriorReturningAliveWroughtweiler_08066530
-gCardEffectArmedChangerBackupSoldierBehemothTheKingOfAllAnimalsDarkFactoryOfMassProductionDarkMagicianOfChaosExcavationOfMageStonesFusionRecoveryMagicianOfFaithMaskOfDarknessMonsterReincarnationNightAssailantSalvageSpellReproductionSupplyTheForcesOfDarknessTheWarriorReturningAliveWroughtweiler_08066530: @ 0x08066530
+	@ Armed Changer
+	@ Backup Soldier
+	@ Behemoth the King of All Animals
+	@ Dark Factory of Mass Production
+	@ Dark Magician of Chaos
+	@ Excavation of Mage Stones
+	@ Fusion Recovery
+	@ Magician of Faith
+	@ Mask of Darkness
+	@ Monster Reincarnation
+	@ Night Assailant
+	@ Salvage
+	@ Spell Reproduction
+	@ Supply
+	@ The Forces of Darkness
+	@ The Warrior Returning Alive
+	@ Wroughtweiler
+	thumb_func_start gCardEffectGraveyardSearch_08066530
+gCardEffectGraveyardSearch_08066530: @ 0x08066530
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #6]
@@ -167006,8 +169158,17 @@ _0806659E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectMefistTheInfernalGeneralReaperOnTheNightmareRobbinGoblinSilpheedSpiritReaperTheSecretOfTheBanditToonGeminiElfWhiteMagicalHatZombieTiger_080665A4
-gCardEffectMefistTheInfernalGeneralReaperOnTheNightmareRobbinGoblinSilpheedSpiritReaperTheSecretOfTheBanditToonGeminiElfWhiteMagicalHatZombieTiger_080665A4: @ 0x080665A4
+	@ Mefist the Infernal General
+	@ Reaper on the Nightmare
+	@ Robbin' Goblin
+	@ Silpheed
+	@ Spirit Reaper
+	@ The Secret of the Bandit
+	@ Toon Gemini Elf
+	@ White Magical Hat
+	@ Zombie Tiger
+	thumb_func_start gCardEffectDiscardDestroy_080665A4
+gCardEffectDiscardDestroy_080665A4: @ 0x080665A4
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r1, r0, #0x1f
@@ -167022,8 +169183,9 @@ gCardEffectMefistTheInfernalGeneralReaperOnTheNightmareRobbinGoblinSilpheedSpiri
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectTaintedWisdom_080665C0
-gCardEffectTaintedWisdom_080665C0: @ 0x080665C0
+	@ Tainted Wisdom
+	thumb_func_start gCardEffectChangePosition_080665C0
+gCardEffectChangePosition_080665C0: @ 0x080665C0
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
@@ -167034,8 +169196,11 @@ gCardEffectTaintedWisdom_080665C0: @ 0x080665C0
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectBigEyeFruitsOfKozakySStudiesSpellbookOrganization_080665D4
-gCardEffectBigEyeFruitsOfKozakySStudiesSpellbookOrganization_080665D4: @ 0x080665D4
+	@ Big Eye
+	@ Fruits of Kozaky's Studies
+	@ Spellbook Organization
+	thumb_func_start gCardEffectFlip_080665D4
+gCardEffectFlip_080665D4: @ 0x080665D4
 	push {lr}
 	adds r2, r0, #0
 	movs r1, #0
@@ -167136,8 +169301,9 @@ _08066692:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectPenguinKnight_08066698
-gCardEffectPenguinKnight_08066698: @ 0x08066698
+	@ Penguin Knight
+	thumb_func_start gCardEffectSendToGYGraveyard_08066698
+gCardEffectSendToGYGraveyard_08066698: @ 0x08066698
 	push {lr}
 	adds r1, r0, #0
 	ldr r0, _080666B4 @ =gUnk_0201B290
@@ -167188,8 +169354,11 @@ _080666F0:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDDAssailantDDWarriorLadyDimensionalWarrior_080666F4
-gCardEffectDDAssailantDDWarriorLadyDimensionalWarrior_080666F4: @ 0x080666F4
+	@ D. D. Assailant
+	@ D.D. Warrior Lady
+	@ Dimensional Warrior
+	thumb_func_start gCardEffectBanish_080666F4
+gCardEffectBanish_080666F4: @ 0x080666F4
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -167264,8 +169433,17 @@ _08066772:
 	.align 2, 0
 _08066788: .4byte 0x00000868
 
-	thumb_func_start gCardEffectExarionUniverseGearGolemTheMovingFortressGrayWingKarateManRavielLordOfPhantasmsRoyalKeeperSpiritRyuTheLittleSwordsmanOfAileTheinenTheGreatSphinx_0806678C
-gCardEffectExarionUniverseGearGolemTheMovingFortressGrayWingKarateManRavielLordOfPhantasmsRoyalKeeperSpiritRyuTheLittleSwordsmanOfAileTheinenTheGreatSphinx_0806678C: @ 0x0806678C
+	@ Exarion Universe
+	@ Gear Golem the Moving Fortress
+	@ Gray Wing
+	@ Karate Man
+	@ Raviel, Lord of Phantasms
+	@ Royal Keeper
+	@ Spirit Ryu
+	@ The Little Swordsman of Aile
+	@ Theinen the Great Sphinx
+	thumb_func_start gCardEffectBoostATKBoostDEF_0806678C
+gCardEffectBoostATKBoostDEF_0806678C: @ 0x0806678C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -167353,8 +169531,14 @@ _08066830: .4byte 0x00000868
 _08066834: .4byte gUnk_0201C510
 _08066838: .4byte 0x000019A5 @ Raviel, Lord of Phantasms
 
-	thumb_func_start gCardEffectAxeOfDespairCockroachKnightHornOfLightHornOfTheUnicornMalevolentNuzzlerSwordOfDeepSeated_0806683C
-gCardEffectAxeOfDespairCockroachKnightHornOfLightHornOfTheUnicornMalevolentNuzzlerSwordOfDeepSeated_0806683C: @ 0x0806683C
+	@ Axe of Despair
+	@ Cockroach Knight
+	@ Horn of Light
+	@ Horn of the Unicorn
+	@ Malevolent Nuzzler
+	@ Sword of Deep-Seated
+	thumb_func_start gCardEffectSendToGYGraveyard_0806683C
+gCardEffectSendToGYGraveyard_0806683C: @ 0x0806683C
 	push {lr}
 	adds r1, r0, #0
 	ldrb r2, [r1, #2]
@@ -167369,8 +169553,38 @@ gCardEffectAxeOfDespairCockroachKnightHornOfLightHornOfTheUnicornMalevolentNuzzl
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectADealWithDarkRulerArmedDragonLv3ArmedDragonLv5AttackReflectorUnitBondingH2oDarkFlareKnightDedicationThroughLightAndDarknessElegantEgotistGreatDezardHandOfNephthysHeroSignalHorusTheBlackFlameDragonLv4HorusTheBlackFlameDragonLv6KnightSTitleLevelUpPetenTheDarkClownPhotonGeneratorUnitReleaseRestraintSageSStoneSilentSwordsmanLv3SilentSwordsmanLv5SkilledDarkMagicianSkilledWhiteMagicianTheAgentOfCreationVenusTheinenTheGreatSphinxTranscendentWingsTrialOfThePrincessesUltimateInsectLv1UltimateInsectLv3UltimateInsectLv5_08066858
-gCardEffectADealWithDarkRulerArmedDragonLv3ArmedDragonLv5AttackReflectorUnitBondingH2oDarkFlareKnightDedicationThroughLightAndDarknessElegantEgotistGreatDezardHandOfNephthysHeroSignalHorusTheBlackFlameDragonLv4HorusTheBlackFlameDragonLv6KnightSTitleLevelUpPetenTheDarkClownPhotonGeneratorUnitReleaseRestraintSageSStoneSilentSwordsmanLv3SilentSwordsmanLv5SkilledDarkMagicianSkilledWhiteMagicianTheAgentOfCreationVenusTheinenTheGreatSphinxTranscendentWingsTrialOfThePrincessesUltimateInsectLv1UltimateInsectLv3UltimateInsectLv5_08066858: @ 0x08066858
+	@ A Deal with Dark Ruler
+	@ Armed Dragon LV3
+	@ Armed Dragon LV5
+	@ Attack Reflector Unit
+	@ Bonding - H2O
+	@ Dark Flare Knight
+	@ Dedication through Light and Darkness
+	@ Elegant Egotist
+	@ Great Dezard
+	@ Hand of Nephthys
+	@ Hero Signal
+	@ Horus the Black Flame Dragon LV4
+	@ Horus the Black Flame Dragon LV6
+	@ Knight's Title
+	@ Level Up!
+	@ Peten the Dark Clown
+	@ Photon Generator Unit
+	@ Release Restraint
+	@ Sage's Stone
+	@ Silent Swordsman LV3
+	@ Silent Swordsman LV5
+	@ Skilled Dark Magician
+	@ Skilled White Magician
+	@ The Agent of Creation - Venus
+	@ Theinen the Great Sphinx
+	@ Transcendent Wings
+	@ Trial of the Princesses
+	@ Ultimate Insect LV1
+	@ Ultimate Insect LV3
+	@ Ultimate Insect LV5
+	thumb_func_start gCardEffectSpecialSummonGraveyard_08066858
+gCardEffectSpecialSummonGraveyard_08066858: @ 0x08066858
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r2, r1, #0
@@ -167415,7 +169629,7 @@ _08066890: @ jump table
 _080668C0:
 	adds r0, r6, #0
 	adds r1, r2, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	cmp r0, #0
 	bne _080668CE
 	b _08066A8C
@@ -167638,8 +169852,9 @@ _08066A8E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectStopDefense_08066A94
-gCardEffectStopDefense_08066A94: @ 0x08066A94
+	@ Stop Defense
+	thumb_func_start gCardEffectChangePosition_08066A94
+gCardEffectChangePosition_08066A94: @ 0x08066A94
 	push {r4, r5, r6, lr}
 	sub sp, #8
 	adds r5, r0, #0
@@ -167700,8 +169915,9 @@ _08066B06:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDragonCaptureJar_08066B10
-gCardEffectDragonCaptureJar_08066B10: @ 0x08066B10
+	@ Dragon Capture Jar
+	thumb_func_start gCardEffectChangePosition_08066B10
+gCardEffectChangePosition_08066B10: @ 0x08066B10
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -167816,8 +170032,10 @@ _08066BD6:
 _08066BE8: .4byte 0x00000868
 _08066BEC: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectDarkPiercingLightSwordsOfRevealingLight_08066BF0
-gCardEffectDarkPiercingLightSwordsOfRevealingLight_08066BF0: @ 0x08066BF0
+	@ Dark-Piercing Light
+	@ Swords of Revealing Light
+	thumb_func_start gCardEffectPreventAttack_08066BF0
+gCardEffectPreventAttack_08066BF0: @ 0x08066BF0
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -167859,8 +170077,15 @@ _08066C22:
 	.align 2, 0
 _08066C3C: .4byte gUnk_0201E1C8
 
-	thumb_func_start gCardEffectBattleScarredImpenetrableFormationNightmareWheelNinjitsuArtOfDecoyRareMetalmorphShadowSpellSpellbindingCircle_08066C40
-gCardEffectBattleScarredImpenetrableFormationNightmareWheelNinjitsuArtOfDecoyRareMetalmorphShadowSpellSpellbindingCircle_08066C40: @ 0x08066C40
+	@ Battle-Scarred
+	@ Impenetrable Formation
+	@ Nightmare Wheel
+	@ Ninjitsu Art of Decoy
+	@ Rare Metalmorph
+	@ Shadow Spell
+	@ Spellbinding Circle
+	thumb_func_start gCardEffectDestroyChangePosition_08066C40
+gCardEffectDestroyChangePosition_08066C40: @ 0x08066C40
 	push {r4, r5, r6, r7, lr}
 	sub sp, #8
 	adds r7, r0, #0
@@ -167959,8 +170184,11 @@ _08066CF6:
 	.align 2, 0
 _08066D00: .4byte 0x000017FF @ Ninjitsu Art of Decoy
 
-	thumb_func_start gCardEffectKazejinSangaOfTheThunderSuijin_08066D04
-gCardEffectKazejinSangaOfTheThunderSuijin_08066D04: @ 0x08066D04
+	@ Kazejin
+	@ Sanga of the Thunder
+	@ Suijin
+	thumb_func_start gCardEffectUnknown_08066D04
+gCardEffectUnknown_08066D04: @ 0x08066D04
 	push {r4, lr}
 	sub sp, #4
 	adds r4, r0, #0
@@ -168007,8 +170235,9 @@ _08066D5C: .4byte 0x00000868
 _08066D60: .4byte gUnk_0201C510
 _08066D64: .4byte 0x00001119 @ Sanga of the Thunder
 
-	thumb_func_start gCardEffectMonsterEye_08066D68
-gCardEffectMonsterEye_08066D68: @ 0x08066D68
+	@ Monster Eye
+	thumb_func_start gCardEffectReturnToHandGraveyard_08066D68
+gCardEffectReturnToHandGraveyard_08066D68: @ 0x08066D68
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -168041,8 +170270,9 @@ _08066DA0: .4byte 0x000012E5 @ Polymerization
 _08066DA4: .4byte 0x00000868
 _08066DA8: .4byte gUnk_0201C8F8
 
-	thumb_func_start gCardEffectBlastJuggler_08066DAC
-gCardEffectBlastJuggler_08066DAC: @ 0x08066DAC
+	@ Blast Juggler
+	thumb_func_start gCardEffectDestroyTribute_08066DAC
+gCardEffectDestroyTribute_08066DAC: @ 0x08066DAC
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -168091,8 +170321,10 @@ _08066DF0:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectCyberSteinMetamorphosis_08066E0C
-gCardEffectCyberSteinMetamorphosis_08066E0C: @ 0x08066E0C
+	@ Cyber-Stein
+	@ Metamorphosis
+	thumb_func_start gCardEffectSpecialSummonFusion_08066E0C
+gCardEffectSpecialSummonFusion_08066E0C: @ 0x08066E0C
 	push {r4, r5, r6, lr}
 	sub sp, #4
 	adds r6, r0, #0
@@ -168194,8 +170426,10 @@ _08066ED8:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectTADPOLEThunderDragon_08066EE0
-gCardEffectTADPOLEThunderDragon_08066EE0: @ 0x08066EE0
+	@ T.A.D.P.O.L.E.
+	@ Thunder Dragon
+	thumb_func_start gCardEffectSearchGraveyard_08066EE0
+gCardEffectSearchGraveyard_08066EE0: @ 0x08066EE0
 	push {r4, lr}
 	sub sp, #0x100
 	adds r4, r0, #0
@@ -168392,8 +170626,9 @@ _08067098:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectGoddessOfWhim_080670A0
-gCardEffectGoddessOfWhim_080670A0: @ 0x080670A0
+	@ Goddess of Whim
+	thumb_func_start gCardEffectRNG_080670A0
+gCardEffectRNG_080670A0: @ 0x080670A0
 	push {r4, lr}
 	sub sp, #4
 	adds r2, r0, #0
@@ -168491,8 +170726,9 @@ _08067156:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectTheImmortalOfThunder_08067160
-gCardEffectTheImmortalOfThunder_08067160: @ 0x08067160
+	@ The Immortal of Thunder
+	thumb_func_start gCardEffectSendToGYGainLP_08067160
+gCardEffectSendToGYGainLP_08067160: @ 0x08067160
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r0, #4
@@ -168563,8 +170799,9 @@ _080671E4:
 _080671E6:
 	bx lr
 
-	thumb_func_start gCardEffectYadoKaru_080671E8
-gCardEffectYadoKaru_080671E8: @ 0x080671E8
+	@ Yado Karu
+	thumb_func_start gCardEffectChangePosition_080671E8
+gCardEffectChangePosition_080671E8: @ 0x080671E8
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r0, #4
@@ -168657,8 +170894,9 @@ _0806729E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectGaleDogra_080672A4
-gCardEffectGaleDogra_080672A4: @ 0x080672A4
+	@ Gale Dogra
+	thumb_func_start gCardEffectSendToGYDamage_080672A4
+gCardEffectSendToGYDamage_080672A4: @ 0x080672A4
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r0, #4
@@ -168730,8 +170968,9 @@ _0806732E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectTheBistroButcher_08067334
-gCardEffectTheBistroButcher_08067334: @ 0x08067334
+	@ The Bistro Butcher
+	thumb_func_start gCardEffectDamage_08067334
+gCardEffectDamage_08067334: @ 0x08067334
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r1, r0, #0x1f
@@ -168744,8 +170983,19 @@ gCardEffectTheBistroButcher_08067334: @ 0x08067334
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectAbyssSoldierCompulsoryEvacuationDeviceCrassClownGaleLizardGolemSentryGravekeeperSGuardGuardianStatueHaneHaneKaiserGliderNightmarePenguinSpiritualism_0806734C
-gCardEffectAbyssSoldierCompulsoryEvacuationDeviceCrassClownGaleLizardGolemSentryGravekeeperSGuardGuardianStatueHaneHaneKaiserGliderNightmarePenguinSpiritualism_0806734C: @ 0x0806734C
+	@ Abyss Soldier
+	@ Compulsory Evacuation Device
+	@ Crass Clown
+	@ Gale Lizard
+	@ Golem Sentry
+	@ Gravekeeper's Guard
+	@ Guardian Statue
+	@ Hane-Hane
+	@ Kaiser Glider
+	@ Nightmare Penguin
+	@ Spiritualism
+	thumb_func_start gCardEffectReturnToHand_0806734C
+gCardEffectReturnToHand_0806734C: @ 0x0806734C
 	push {r4, r5, r6, lr}
 	sub sp, #4
 	adds r4, r0, #0
@@ -168777,8 +171027,9 @@ _08067380:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectMushroomMan_0806738C
-gCardEffectMushroomMan_0806738C: @ 0x0806738C
+	@ Mushroom Man
+	thumb_func_start gCardEffectUnknown_0806738C
+gCardEffectUnknown_0806738C: @ 0x0806738C
 	push {r4, r5, lr}
 	sub sp, #4
 	adds r5, r0, #0
@@ -168814,15 +171065,20 @@ gCardEffectMushroomMan_0806738C: @ 0x0806738C
 	b _080673D8
 _080673D2:
 	adds r0, r5, #0
-	bl gCardEffect7AbsorbingKidFromTheSkyAltarForTributeAmazonArcherAmebaAndroSphinxAntiAircraftFlowerAtomicFireflyBackfireBlackPendantBlastingTheRuinsBlueMedicineBowganianBurningAlgaeCannonSoldierCastleGateCatapultTurtleCemetaryBombCestusOfDaglaDDDynamiteDarkMagicianSTomeOfBlackMagicDarkRoomOfNightmareDesKoalaDesVolstgalphDianKetoTheCureMasterEbonMagicianCurranElementalHeroFlameWingmanElementalHeroShiningFlareWingmanElementalHeroSteamHealerElephantStatueOfBlessingElephantStatueOfDisasterEmergencyProvisionsFallingDownFinalFlameFireSorcererFuhmaShurikenGiantKozakyGiftOfTheMysticalElfGoblinThiefGoblinSSecretRemedyGranadoraGraveOhjaGravekeeperSCannonholderGravekeeperSCurseGriggleGuardianAngelJoanHamonLordOfStrikingThunderHinotamaHystericFairyInfernoJustDessertsKa2DesScissorsKozakySSelfDestructButtonLadyAssailantOfFlamesLavaGolemLegendaryBlackBeltMagicalBlastMagicalExplosionManThroTroMarshmallonMaskOfDispelMaskOfTheAccursedMassDriverMechaDogMarronMemoryCrusherMeteorOfDestructionMinarMineGolemMinorGoblinOfficialMooyanCurryMysteriousPuppeteerMystikWokNeedleBallNeedleBurrowerNightmareWheelNitroUnitNutrientZOokaziOptionHunterOxygeddonPoisonFangsPoisonMummyPoisonOfTheOldManPrincessCurranPrincessPikeruPrincessOfTsurugiRaimeiRainOfMercyRedMedicineReflectBounderRestructerRevolutionRockBombardmentSecretBarrelShinatoKingOfAHigherPlaneSkullMarkLadybugSnatchStealSolarFlareDragonSolarRaySoulAbsorptionSoulOfThePureSparksSphinxTeleiaSpiritualFireArtKurenaiStealthBirdTheEyeOfTruthToonCannonSoldierTremendousFireUltimateBaseballKidWaveMotionCannonWhiteMagicianPikeruWoodlandSpriteZolga_080655EC
+	bl gCardEffectDamageGraveyard_080655EC
 _080673D8:
 	add sp, #4
 	pop {r4, r5}
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectBloodSuckerDoomDozerNeedleWormRobbinZombieSoulAbsorbingBoneTower_080673E0
-gCardEffectBloodSuckerDoomDozerNeedleWormRobbinZombieSoulAbsorbingBoneTower_080673E0: @ 0x080673E0
+	@ Blood Sucker
+	@ Doom Dozer
+	@ Needle Worm
+	@ Robbin' Zombie
+	@ Soul-Absorbing Bone Tower
+	thumb_func_start gCardEffectGraveyardSendToGY_080673E0
+gCardEffectGraveyardSendToGY_080673E0: @ 0x080673E0
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r2, #1
@@ -168873,8 +171129,11 @@ _08067424:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectAManWithWdjatPatroidPatrolRobo_08067440
-gCardEffectAManWithWdjatPatroidPatrolRobo_08067440: @ 0x08067440
+	@ A Man with Wdjat
+	@ Patroid
+	@ Patrol Robo
+	thumb_func_start gCardEffectStandbyPhase_08067440
+gCardEffectStandbyPhase_08067440: @ 0x08067440
 	push {r4, r5, r6, lr}
 	sub sp, #4
 	adds r6, r0, #0
@@ -168929,8 +171188,9 @@ _080674A4:
 _080674B0: .4byte 0x00000868
 _080674B4: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectWeatherReport_080674B8
-gCardEffectWeatherReport_080674B8: @ 0x080674B8
+	@ Weather Report
+	thumb_func_start gCardEffectDestroyFlip_080674B8
+gCardEffectDestroyFlip_080674B8: @ 0x080674B8
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -169039,8 +171299,11 @@ _08067588: .4byte gUnk_0201C4E0
 _0806758C: .4byte 0x00001CE8
 _08067590: .4byte 0x00001CF4
 
-	thumb_func_start gCardEffectGreenkappaMobiusTheFrostMonarchNoblemanEaterBug_08067594
-gCardEffectGreenkappaMobiusTheFrostMonarchNoblemanEaterBug_08067594: @ 0x08067594
+	@ Greenkappa
+	@ Mobius the Frost Monarch
+	@ Nobleman-Eater Bug
+	thumb_func_start gCardEffectDestroyFlip_08067594
+gCardEffectDestroyFlip_08067594: @ 0x08067594
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -169105,8 +171368,9 @@ _080675FE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectMorphingJar_08067614
-gCardEffectMorphingJar_08067614: @ 0x08067614
+	@ Morphing Jar
+	thumb_func_start gCardEffectDrawDiscard_08067614
+gCardEffectDrawDiscard_08067614: @ 0x08067614
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r0, #4
@@ -169209,8 +171473,10 @@ _080676DA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectHadeHanePenguinSoldier_080676E0
-gCardEffectHadeHanePenguinSoldier_080676E0: @ 0x080676E0
+	@ Hade-Hane
+	@ Penguin Soldier
+	thumb_func_start gCardEffectReturnToHandFlip_080676E0
+gCardEffectReturnToHandFlip_080676E0: @ 0x080676E0
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -169268,8 +171534,9 @@ _0806773A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectHiroSShadowScout_08067750
-gCardEffectHiroSShadowScout_08067750: @ 0x08067750
+	@ Hiro's Shadow Scout
+	thumb_func_start gCardEffectDiscardGraveyard_08067750
+gCardEffectDiscardGraveyard_08067750: @ 0x08067750
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	ldr r0, _0806776C @ =gUnk_0201B290
@@ -169359,8 +171626,9 @@ _080677FE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectHourglassOfCourage_08067804
-gCardEffectHourglassOfCourage_08067804: @ 0x08067804
+	@ Hourglass of Courage
+	thumb_func_start gCardEffectReduceATKEndPhase_08067804
+gCardEffectReduceATKEndPhase_08067804: @ 0x08067804
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -169458,8 +171726,9 @@ _080678B8:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectInvaderOfTheThrone_080678C8
-gCardEffectInvaderOfTheThrone_080678C8: @ 0x080678C8
+	@ Invader of the Throne
+	thumb_func_start gCardEffectTakeControlFlip_080678C8
+gCardEffectTakeControlFlip_080678C8: @ 0x080678C8
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -169589,8 +171858,9 @@ _080679C2:
 _080679D0: .4byte 0x00000868
 _080679D4: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectKunaiWithChain_080679D8
-gCardEffectKunaiWithChain_080679D8: @ 0x080679D8
+	@ Kunai with Chain
+	thumb_func_start gCardEffectBoostATKBoostDEF_080679D8
+gCardEffectBoostATKBoostDEF_080679D8: @ 0x080679D8
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -169785,8 +172055,9 @@ _08067B4E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectMagicalLabyrinth_08067B5C
-gCardEffectMagicalLabyrinth_08067B5C: @ 0x08067B5C
+	@ Magical Labyrinth
+	thumb_func_start gCardEffectSpecialSummonEquip_08067B5C
+gCardEffectSpecialSummonEquip_08067B5C: @ 0x08067B5C
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldrb r0, [r4, #2]
@@ -169872,8 +172143,10 @@ _08067C04:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectCrushCardDeckDevastationVirus_08067C0C
-gCardEffectCrushCardDeckDevastationVirus_08067C0C: @ 0x08067C0C
+	@ Crush Card
+	@ Deck Devastation Virus
+	thumb_func_start gCardEffectDestroyAllTribute_08067C0C
+gCardEffectDestroyAllTribute_08067C0C: @ 0x08067C0C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -170196,8 +172469,9 @@ _08067E8A:
 _08067E98: .4byte gUnk_0201C4E0
 _08067E9C: .4byte 0x00001CE8
 
-	thumb_func_start gCardEffectAcidTrapHole_08067EA0
-gCardEffectAcidTrapHole_08067EA0: @ 0x08067EA0
+	@ Acid Trap Hole
+	thumb_func_start gCardEffectDestroyChangePosition_08067EA0
+gCardEffectDestroyChangePosition_08067EA0: @ 0x08067EA0
 	push {r4, r5, r6, r7, lr}
 	adds r7, r0, #0
 	movs r0, #4
@@ -170313,8 +172587,9 @@ _08067F8A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectReverseTrap_08067F90
-gCardEffectReverseTrap_08067F90: @ 0x08067F90
+	@ Reverse Trap
+	thumb_func_start gCardEffectBoostATKReduceATK_08067F90
+gCardEffectBoostATKReduceATK_08067F90: @ 0x08067F90
 	push {lr}
 	ldrh r1, [r0]
 	movs r0, #0
@@ -170325,8 +172600,9 @@ gCardEffectReverseTrap_08067F90: @ 0x08067F90
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectFakeTrap_08067FA4
-gCardEffectFakeTrap_08067FA4: @ 0x08067FA4
+	@ Fake Trap
+	thumb_func_start gCardEffectDestroySpellTrap_08067FA4
+gCardEffectDestroySpellTrap_08067FA4: @ 0x08067FA4
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -170711,8 +172987,12 @@ _08068292:
 _080682A4: .4byte 0x00000868
 _080682A8: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectDarkEyesIllusionistGradiusOptionInvitationToADarkSleepViserDes_080682AC
-gCardEffectDarkEyesIllusionistGradiusOptionInvitationToADarkSleepViserDes_080682AC: @ 0x080682AC
+	@ Dark-Eyes Illusionist
+	@ Gradius' Option
+	@ Invitation to a Dark Sleep
+	@ Viser Des
+	thumb_func_start gCardEffectSpecialSummonDestroy_080682AC
+gCardEffectSpecialSummonDestroy_080682AC: @ 0x080682AC
 	push {r4, r5, r6, r7, lr}
 	sub sp, #8
 	adds r7, r0, #0
@@ -170793,8 +173073,10 @@ _0806833E:
 _08068348: .4byte 0x00000868
 _0806834C: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectRelinquishedThousandEyesRestrict_08068350
-gCardEffectRelinquishedThousandEyesRestrict_08068350: @ 0x08068350
+	@ Relinquished
+	@ Thousand-Eyes Restrict
+	thumb_func_start gCardEffectDestroyEquip_08068350
+gCardEffectDestroyEquip_08068350: @ 0x08068350
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -170909,8 +173191,9 @@ _0806842A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectJigenBakudan_0806843C
-gCardEffectJigenBakudan_0806843C: @ 0x0806843C
+	@ Jigen Bakudan
+	thumb_func_start gCardEffectDestroyAllDamage_0806843C
+gCardEffectDestroyAllDamage_0806843C: @ 0x0806843C
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -170992,8 +173275,10 @@ _080684D2:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectAdhesiveExplosiveBlastSphere_080684E0
-gCardEffectAdhesiveExplosiveBlastSphere_080684E0: @ 0x080684E0
+	@ Adhesive Explosive
+	@ Blast Sphere
+	thumb_func_start gCardEffectDestroyChangePosition_080684E0
+gCardEffectDestroyChangePosition_080684E0: @ 0x080684E0
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -171136,7 +173421,7 @@ _080685F6:
 _08068600: .4byte 0x00001286 @ Blast Sphere
 _08068604:
 	adds r0, r7, #0
-	bl gCardEffectKiseitai_0806C6D8
+	bl gCardEffectBoostATKBoostDEF_0806C6D8
 _0806860A:
 	add sp, #4
 	pop {r3}
@@ -171146,8 +173431,10 @@ _0806860A:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectBarrelDragonBlowbackDragon_08068618
-gCardEffectBarrelDragonBlowbackDragon_08068618: @ 0x08068618
+	@ Barrel Dragon
+	@ Blowback Dragon
+	thumb_func_start gCardEffectDestroyRNG_08068618
+gCardEffectDestroyRNG_08068618: @ 0x08068618
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r0, #4
@@ -171201,8 +173488,13 @@ _08068674:
 _0806867C: .4byte gUnk_0201C4E0
 _08068680: .4byte 0x00001DAA
 
-	thumb_func_start gCardEffectBerfometBirdfaceGreenGadgetRedGadgetYellowGadget_08068684
-gCardEffectBerfometBirdfaceGreenGadgetRedGadgetYellowGadget_08068684: @ 0x08068684
+	@ Berfomet
+	@ Birdface
+	@ Green Gadget
+	@ Red Gadget
+	@ Yellow Gadget
+	thumb_func_start gCardEffectSearchSpecialSummon_08068684
+gCardEffectSearchSpecialSummon_08068684: @ 0x08068684
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _080686A4 @ =gUnk_0201B290
@@ -171324,8 +173616,19 @@ _080687A2:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectArchfiendSRoarBatteryChargerCentrifugalFieldChimeraTheFlyingMythicalBeastFushiohRichieLordPoisonMiracleRestoringRiteOfSpiritSpiritCallerSpiritualEarthArtKuroganeVampireGenesis_080687A8
-gCardEffectArchfiendSRoarBatteryChargerCentrifugalFieldChimeraTheFlyingMythicalBeastFushiohRichieLordPoisonMiracleRestoringRiteOfSpiritSpiritCallerSpiritualEarthArtKuroganeVampireGenesis_080687A8: @ 0x080687A8
+	@ Archfiend's Roar
+	@ Battery Charger
+	@ Centrifugal Field
+	@ Chimera the Flying Mythical Beast
+	@ Fushioh Richie
+	@ Lord Poison
+	@ Miracle Restoring
+	@ Rite of Spirit
+	@ Spirit Caller
+	@ Spiritual Earth Art - Kurogane
+	@ Vampire Genesis
+	thumb_func_start gCardEffectSpecialSummonGraveyard_080687A8
+gCardEffectSpecialSummonGraveyard_080687A8: @ 0x080687A8
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	ldrb r1, [r6, #2]
@@ -171384,13 +173687,17 @@ _08068816:
 _08068820: .4byte 0x00000868
 _08068824: .4byte gUnk_0201C8F8
 
-	thumb_func_start gCardEffectImperialOrderRoyalDecreeTheEmperorSHoliday_08068828
-gCardEffectImperialOrderRoyalDecreeTheEmperorSHoliday_08068828: @ 0x08068828
+	@ Imperial Order
+	@ Royal Decree
+	@ The Emperor's Holiday
+	thumb_func_start gCardEffectNegate_08068828
+gCardEffectNegate_08068828: @ 0x08068828
 	movs r0, #0
 	bx lr
 
-	thumb_func_start gCardEffectCyberRaider_0806882C
-gCardEffectCyberRaider_0806882C: @ 0x0806882C
+	@ Cyber Raider
+	thumb_func_start gCardEffectSpecialSummonDestroy_0806882C
+gCardEffectSpecialSummonDestroy_0806882C: @ 0x0806882C
 	push {r4, r5, r6, r7, lr}
 	adds r7, r0, #0
 	ldrh r0, [r7, #0xc]
@@ -171401,7 +173708,7 @@ gCardEffectCyberRaider_0806882C: @ 0x0806882C
 	b _080688CC
 _0806883C:
 	adds r0, r7, #0
-	bl gCardEffectAnteatereatingantArcaneArcherOfTheForestArmedDragonLv5BESTetranBladeRabbitBlastMagicianBlastWithChainBreakerTheMagicalWarriorBurningBeastChironTheMageCyberLaserDragonDarkMagicianKnightDoubleSnareDragonSeekerDreamClownDrivingSnowEatgaboonElementalHeroThunderGiantExiledForceFreedTheBraveWandererFreezingBeastGearfriedTheSwordmasterGranmargTheRockMonarchGuardianCealGustHannibalNecromancerHarpiesHuntingGroundHouseOfAdhesiveTapeMagicalMarionetteManEaterBugMedusaWormMichizureMysticalSpaceTyphoonNewdoriaNightAssailantOldVindictiveMagicianOrcaMegaFortressOfDarknessRaigekiBreakRemoveTrapSakuretsuArmorShieldCrashSwarmOfLocustsSwarmOfScarabsThousandKnivesThrowstoneUnitTrapHoleTributeToTheDoomedUriaLordOfSearingFlamesWhiteNinjaXyDragonCannonXyzDragonCannonXzTankCannonYzTankDragonZaborgTheThunderMonarch_08064654
+	bl gCardEffectDestroy_08064654
 	b _080688CE
 _08068844:
 	ldrb r3, [r7, #2]
@@ -171478,8 +173785,9 @@ _080688CE:
 _080688D4: .4byte 0x00000868
 _080688D8: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectBigShieldGardna_080688DC
-gCardEffectBigShieldGardna_080688DC: @ 0x080688DC
+	@ Big Shield Gardna
+	thumb_func_start gCardEffectNegateChangePosition_080688DC
+gCardEffectNegateChangePosition_080688DC: @ 0x080688DC
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -171570,8 +173878,9 @@ _0806897A:
 _08068988: .4byte 0x00000868
 _0806898C: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectParasiteParacide_08068990
-gCardEffectParasiteParacide_08068990: @ 0x08068990
+	@ Parasite Paracide
+	thumb_func_start gCardEffectSpecialSummonDamage_08068990
+gCardEffectSpecialSummonDamage_08068990: @ 0x08068990
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -171793,8 +174102,9 @@ _08068B4C:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectLittleWinguard_08068B58
-gCardEffectLittleWinguard_08068B58: @ 0x08068B58
+	@ Little-Winguard
+	thumb_func_start gCardEffectChangePositionEndPhase_08068B58
+gCardEffectChangePositionEndPhase_08068B58: @ 0x08068B58
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -171872,8 +174182,9 @@ _08068BDC:
 _08068BEC: .4byte 0x00000868
 _08068BF0: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectDrillBug_08068BF4
-gCardEffectDrillBug_08068BF4: @ 0x08068BF4
+	@ Drill Bug
+	thumb_func_start gCardEffectDamage_08068BF4
+gCardEffectDamage_08068BF4: @ 0x08068BF4
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r0, #4
@@ -171955,8 +174266,9 @@ _08068C94:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectBiteShoes_08068C9C
-gCardEffectBiteShoes_08068C9C: @ 0x08068C9C
+	@ Bite Shoes
+	thumb_func_start gCardEffectChangePositionFlip_08068C9C
+gCardEffectChangePositionFlip_08068C9C: @ 0x08068C9C
 	push {r4, lr}
 	sub sp, #4
 	adds r4, r0, #0
@@ -171986,8 +174298,11 @@ _08068CCC:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectSilentInsectSummonPriestTotalDefenseShogun_08068CD8
-gCardEffectSilentInsectSummonPriestTotalDefenseShogun_08068CD8: @ 0x08068CD8
+	@ Silent Insect
+	@ Summon Priest
+	@ Total Defense Shogun
+	thumb_func_start gCardEffectChangePosition_08068CD8
+gCardEffectChangePosition_08068CD8: @ 0x08068CD8
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -172078,8 +174393,9 @@ _08068D76:
 _08068D84: .4byte 0x00000868
 _08068D88: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectTimeMachine_08068D8C
-gCardEffectTimeMachine_08068D8C: @ 0x08068D8C
+	@ Time Machine
+	thumb_func_start gCardEffectSpecialSummonSendToGY_08068D8C
+gCardEffectSpecialSummonSendToGY_08068D8C: @ 0x08068D8C
 	push {r4, r5, r6, lr}
 	sub sp, #4
 	adds r4, r0, #0
@@ -172140,8 +174456,9 @@ _08068E02:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectCopycat_08068E0C
-gCardEffectCopycat_08068E0C: @ 0x08068E0C
+	@ Copycat
+	thumb_func_start gCardEffectSpecialSummon_08068E0C
+gCardEffectSpecialSummon_08068E0C: @ 0x08068E0C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -172268,8 +174585,9 @@ _08068F00: .4byte 0x00000868
 _08068F04: .4byte gUnk_0201C510
 _08068F08: .4byte 0x0000FFFF
 
-	thumb_func_start gCardEffectNegateAttack_08068F0C
-gCardEffectNegateAttack_08068F0C: @ 0x08068F0C
+	@ Negate Attack
+	thumb_func_start gCardEffectNegateBattlePhase_08068F0C
+gCardEffectNegateBattlePhase_08068F0C: @ 0x08068F0C
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	movs r1, #0
@@ -172321,8 +174639,9 @@ _08068F66:
 _08068F70: .4byte 0x0000801B
 _08068F74: .4byte 0x0000801C
 
-	thumb_func_start gCardEffectMultiply_08068F78
-gCardEffectMultiply_08068F78: @ 0x08068F78
+	@ Multiply
+	thumb_func_start gCardEffectChangePositionTribute_08068F78
+gCardEffectChangePositionTribute_08068F78: @ 0x08068F78
 	push {r4, lr}
 	sub sp, #8
 	adds r4, r0, #0
@@ -172395,8 +174714,9 @@ _08068FFE:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectLightforceSword_08069008
-gCardEffectLightforceSword_08069008: @ 0x08069008
+	@ Lightforce Sword
+	thumb_func_start gCardEffectBanishReturnToHand_08069008
+gCardEffectBanishReturnToHand_08069008: @ 0x08069008
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -172498,8 +174818,9 @@ _080690D0: .4byte gUnk_0201C4E0
 _080690D4: .4byte 0x00001DA8
 _080690D8: .4byte 0x00001CE8
 
-	thumb_func_start gCardEffectTheFluteOfSummoningDragon_080690DC
-gCardEffectTheFluteOfSummoningDragon_080690DC: @ 0x080690DC
+	@ The Flute of Summoning Dragon
+	thumb_func_start gCardEffectSpecialSummon_080690DC
+gCardEffectSpecialSummon_080690DC: @ 0x080690DC
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -172509,7 +174830,7 @@ gCardEffectTheFluteOfSummoningDragon_080690DC: @ 0x080690DC
 	beq _080690FC
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectAncientLampContractWithExodiaDonTurtleFrontlineBaseHiddenSoldierKaibamanKingDragunMagnetCircleLv2MaraudingCaptainPinchHopperRedEyesBChickTheCreatorIncarnateTheThingInTheCraterTributeDollTwoManCellBattleUltraEvolutionPillVampireOrchis_080659E8
+	bl gCardEffectSpecialSummon_080659E8
 	b _080690FE
 	.align 2, 0
 _080690F8: .4byte 0x0000128B @ Lord of D.
@@ -172520,8 +174841,13 @@ _080690FE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectCurseOfAgingDarkScorpionCombinationDeltaAttackerKaminoteBlowShieldSword_08069104
-gCardEffectCurseOfAgingDarkScorpionCombinationDeltaAttackerKaminoteBlowShieldSword_08069104: @ 0x08069104
+	@ Curse of Aging
+	@ Dark Scorpion Combination
+	@ Delta Attacker
+	@ Kaminote Blow
+	@ Shield & Sword
+	thumb_func_start gCardEffectDirectAttackDiscard_08069104
+gCardEffectDirectAttackDiscard_08069104: @ 0x08069104
 	push {r4, r5, r6, r7, lr}
 	sub sp, #8
 	adds r5, r0, #0
@@ -172558,8 +174884,10 @@ _08069132:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectGracefulCharitySpiralSpearStrike_08069148
-gCardEffectGracefulCharitySpiralSpearStrike_08069148: @ 0x08069148
+	@ Graceful Charity
+	@ Spiral Spear Strike
+	thumb_func_start gCardEffectDrawDiscard_08069148
+gCardEffectDrawDiscard_08069148: @ 0x08069148
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -172700,8 +175028,9 @@ _08069252:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectChainDestruction_08069260
-gCardEffectChainDestruction_08069260: @ 0x08069260
+	@ Chain Destruction
+	thumb_func_start gCardEffectSpecialSummonDestroyAll_08069260
+gCardEffectSpecialSummonDestroyAll_08069260: @ 0x08069260
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -172898,8 +175227,9 @@ _080693D8:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectMesmericControl_080693E4
-gCardEffectMesmericControl_080693E4: @ 0x080693E4
+	@ Mesmeric Control
+	thumb_func_start gCardEffectUnknown_080693E4
+gCardEffectUnknown_080693E4: @ 0x080693E4
 	push {lr}
 	adds r1, r0, #0
 	movs r3, #1
@@ -172931,8 +175261,10 @@ _08069412:
 _08069418: .4byte gUnk_0201C4E0
 _0806941C: .4byte 0x00001CE8
 
-	thumb_func_start gCardEffectGracefulDiceSkullDice_08069420
-gCardEffectGracefulDiceSkullDice_08069420: @ 0x08069420
+	@ Graceful Dice
+	@ Skull Dice
+	thumb_func_start gCardEffectUnknown_08069420
+gCardEffectUnknown_08069420: @ 0x08069420
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -173004,8 +175336,10 @@ _08069498:
 	.align 2, 0
 _080694A4: .4byte gUnk_0201E288
 
-	thumb_func_start gCardEffectScapegoatStrayLambs_080694A8
-gCardEffectScapegoatStrayLambs_080694A8: @ 0x080694A8
+	@ Scapegoat
+	@ Stray Lambs
+	thumb_func_start gCardEffectSpecialSummonChangePosition_080694A8
+gCardEffectSpecialSummonChangePosition_080694A8: @ 0x080694A8
 	push {r4, r5, r6, r7, lr}
 	sub sp, #8
 	adds r4, r0, #0
@@ -173152,8 +175486,9 @@ _080695CA:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectCardDestruction_080695D4
-gCardEffectCardDestruction_080695D4: @ 0x080695D4
+	@ Card Destruction
+	thumb_func_start gCardEffectDrawDiscard_080695D4
+gCardEffectDrawDiscard_080695D4: @ 0x080695D4
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -173281,8 +175616,9 @@ _080696CA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectMysticalRefpanel_080696D8
-gCardEffectMysticalRefpanel_080696D8: @ 0x080696D8
+	@ Mystical Refpanel
+	thumb_func_start gCardEffectUnknown_080696D8
+gCardEffectUnknown_080696D8: @ 0x080696D8
 	adds r2, r1, #0
 	movs r1, #4
 	ldrb r0, [r0, #4]
@@ -173300,8 +175636,9 @@ _080696F0:
 	movs r0, #0
 	bx lr
 
-	thumb_func_start gCardEffectEctoplasmer_080696F4
-gCardEffectEctoplasmer_080696F4: @ 0x080696F4
+	@ Ectoplasmer
+	thumb_func_start gCardEffectDamageEndPhase_080696F4
+gCardEffectDamageEndPhase_080696F4: @ 0x080696F4
 	push {r4, r5, r6, r7, lr}
 	adds r7, r0, #0
 	ldr r0, _0806972C @ =gUnk_0201B290
@@ -173367,8 +175704,9 @@ _08069774: .4byte gUnk_0201C4E0
 _08069778: .4byte 0x00001DA8
 _0806977C: .4byte 0x00001CE8
 
-	thumb_func_start gCardEffectDarkMagicCurtain_08069780
-gCardEffectDarkMagicCurtain_08069780: @ 0x08069780
+	@ Dark Magic Curtain
+	thumb_func_start gCardEffectSpecialSummon_08069780
+gCardEffectSpecialSummon_08069780: @ 0x08069780
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	movs r0, #4
@@ -173489,8 +175827,9 @@ _0806986E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectMagicArmShield_08069874
-gCardEffectMagicArmShield_08069874: @ 0x08069874
+	@ Magic-Arm Shield
+	thumb_func_start gCardEffectUnknown_08069874
+gCardEffectUnknown_08069874: @ 0x08069874
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -173523,7 +175862,7 @@ gCardEffectMagicArmShield_08069874: @ 0x08069874
 	bne _08069972
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl gCardEffectCalamityOfTheWickedDarkMirrorForceDimensionWallMirrorForceSakuretsuArmorStaunchDefenderWidespreadRuin_0805D998
+	bl gCardEffectDestroyChangePosition_0805D998
 	cmp r0, #0
 	beq _08069972
 	ldr r0, _0806995C @ =gUnk_0201C4E0
@@ -173617,8 +175956,13 @@ _08069974:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectBottomlessShiftingSandFissureHammerShotSmashingGroundWidespreadRuin_08069984
-gCardEffectBottomlessShiftingSandFissureHammerShotSmashingGroundWidespreadRuin_08069984: @ 0x08069984
+	@ Bottomless Shifting Sand
+	@ Fissure
+	@ Hammer Shot
+	@ Smashing Ground
+	@ Widespread Ruin
+	thumb_func_start gCardEffectDestroy_08069984
+gCardEffectDestroy_08069984: @ 0x08069984
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -173867,8 +176211,9 @@ _08069B4E:
 	.align 2, 0
 _08069B58: .4byte 0x000004A4
 
-	thumb_func_start gCardEffectTwoProngedAttack_08069B5C
-gCardEffectTwoProngedAttack_08069B5C: @ 0x08069B5C
+	@ Two-Pronged Attack
+	thumb_func_start gCardEffectDestroy_08069B5C
+gCardEffectDestroy_08069B5C: @ 0x08069B5C
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -173936,8 +176281,9 @@ _08069BD0:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectMonsterReborn_08069BE0
-gCardEffectMonsterReborn_08069BE0: @ 0x08069BE0
+	@ Monster Reborn
+	thumb_func_start gCardEffectSpecialSummonGraveyard_08069BE0
+gCardEffectSpecialSummonGraveyard_08069BE0: @ 0x08069BE0
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
@@ -173947,7 +176293,7 @@ gCardEffectMonsterReborn_08069BE0: @ 0x08069BE0
 	bgt _08069C52
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	cmp r0, #0
 	beq _08069C52
 	movs r0, #0x1c
@@ -173999,8 +176345,14 @@ _08069C5C: .4byte 0x000012FB @ Call of Darkness (None)
 _08069C60: .4byte 0x00000868
 _08069C64: .4byte gUnk_0201C8F8
 
-	thumb_func_start gCardEffectDarkBladeTheDragonKnightDisappearGravediggerGhoulKycooTheGhostDestroyerSoulReleaseWitchDoctorOfChaos_08069C68
-gCardEffectDarkBladeTheDragonKnightDisappearGravediggerGhoulKycooTheGhostDestroyerSoulReleaseWitchDoctorOfChaos_08069C68: @ 0x08069C68
+	@ Dark Blade the Dragon Knight
+	@ Disappear
+	@ Gravedigger Ghoul
+	@ Kycoo the Ghost Destroyer
+	@ Soul Release
+	@ Witch Doctor of Chaos
+	thumb_func_start gCardEffectBanishGraveyard_08069C68
+gCardEffectBanishGraveyard_08069C68: @ 0x08069C68
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldrb r1, [r5, #2]
@@ -174082,8 +176434,9 @@ _08069D04:
 _08069D06:
 	bx lr
 
-	thumb_func_start gCardEffectTheInexperiencedSpy_08069D08
-gCardEffectTheInexperiencedSpy_08069D08: @ 0x08069D08
+	@ The Inexperienced Spy
+	thumb_func_start gCardEffectUnknown_08069D08
+gCardEffectUnknown_08069D08: @ 0x08069D08
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -174198,8 +176551,24 @@ _08069DE6:
 _08069DF0: .4byte 0x00001D68
 _08069DF4: .4byte 0x00001D70
 
-	thumb_func_start gCardEffectAmazonessBlowpiperCastleWallsCatnippedKittyCheckmateCollapseCyberneticMagicianDoubleAttackGreatSpiritInfernalqueenArchfiendMicroRayOverpoweringEyeReinforcementsRisingEnergyRushRecklesslySnakeFangTheReliableGuardian_08069DF8
-gCardEffectAmazonessBlowpiperCastleWallsCatnippedKittyCheckmateCollapseCyberneticMagicianDoubleAttackGreatSpiritInfernalqueenArchfiendMicroRayOverpoweringEyeReinforcementsRisingEnergyRushRecklesslySnakeFangTheReliableGuardian_08069DF8: @ 0x08069DF8
+	@ Amazoness Blowpiper
+	@ Castle Walls
+	@ Catnipped Kitty
+	@ Checkmate
+	@ Collapse
+	@ Cybernetic Magician
+	@ Double Attack
+	@ Great Spirit
+	@ Infernalqueen Archfiend
+	@ Micro Ray
+	@ Overpowering Eye
+	@ Reinforcements
+	@ Rising Energy
+	@ Rush Recklessly
+	@ Snake Fang
+	@ The Reliable Guardian
+	thumb_func_start gCardEffectEndPhaseBoostATK_08069DF8
+gCardEffectEndPhaseBoostATK_08069DF8: @ 0x08069DF8
 	push {r4, r5, r6, lr}
 	sub sp, #0xc
 	adds r4, r0, #0
@@ -174235,8 +176604,9 @@ _08069E36:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectUltimateOffering_08069E40
-gCardEffectUltimateOffering_08069E40: @ 0x08069E40
+	@ Ultimate Offering
+	thumb_func_start gCardEffectUnknown_08069E40
+gCardEffectUnknown_08069E40: @ 0x08069E40
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -174340,7 +176710,7 @@ _08069EF0: @ jump table
 _08069F18:
 	adds r0, r7, #0
 	mov r1, sb
-	bl gCardEffectUltimateOffering_0805D020
+	bl gCardEffectUnknown_0805D020
 	cmp r0, #2
 	beq _08069F28
 	movs r0, #0x78
@@ -174459,8 +176829,9 @@ _08069FF6:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectAncientTelescope_0806A004
-gCardEffectAncientTelescope_0806A004: @ 0x0806A004
+	@ Ancient Telescope
+	thumb_func_start gCardEffectUnknown_0806A004
+gCardEffectUnknown_0806A004: @ 0x0806A004
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r2, _0806A048 @ =gUnk_0201C4E0
@@ -174499,8 +176870,13 @@ _0806A048: .4byte gUnk_0201C4E0
 _0806A04C: .4byte 0x00000868
 _0806A050: .4byte gUnk_0201E2A0
 
-	thumb_func_start gCardEffectAntiRaigekiCallOfTheGraveGryphonWingJarRobberWhiteHole_0806A054
-gCardEffectAntiRaigekiCallOfTheGraveGryphonWingJarRobberWhiteHole_0806A054: @ 0x0806A054
+	@ Anti Raigeki
+	@ Call of the Grave
+	@ Gryphon Wing
+	@ Jar Robber
+	@ White Hole
+	thumb_func_start gCardEffectNegateDestroy_0806A054
+gCardEffectNegateDestroy_0806A054: @ 0x0806A054
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r2, r1, #0
@@ -174601,8 +176977,9 @@ _0806A110:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectTheCheerfulCoffin_0806A118
-gCardEffectTheCheerfulCoffin_0806A118: @ 0x0806A118
+	@ The Cheerful Coffin
+	thumb_func_start gCardEffectDiscardGraveyard_0806A118
+gCardEffectDiscardGraveyard_0806A118: @ 0x0806A118
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -174654,7 +177031,7 @@ _0806A16C:
 	cmp r0, #0
 	beq _0806A234
 	adds r0, r2, #0
-	bl gCardEffectTheCheerfulCoffin_0805D7A4
+	bl gCardEffectDiscardGraveyard_0805D7A4
 	cmp r0, #0
 	beq _0806A234
 	ldr r0, _0806A1E8 @ =gUnk_0201E2A0
@@ -174754,8 +177131,9 @@ _0806A236:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectCallOfDarkness_0806A240
-gCardEffectCallOfDarkness_0806A240: @ 0x0806A240
+	@ Call of Darkness
+	thumb_func_start gCardEffectSendToGYGraveyard_0806A240
+gCardEffectSendToGYGraveyard_0806A240: @ 0x0806A240
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -174842,8 +177220,15 @@ _0806A2E0: .4byte gUnk_0201C510
 _0806A2E4: .4byte 0x00001CB8
 _0806A2E8: .4byte 0x000012EA @ Monster Reborn
 
-	thumb_func_start gCardEffectBrainControlChangeOfHeartJowlsOfDarkDemiseMindControlRafflesiaSeductionReshefTheDarkBeingShienSSpy_0806A2EC
-gCardEffectBrainControlChangeOfHeartJowlsOfDarkDemiseMindControlRafflesiaSeductionReshefTheDarkBeingShienSSpy_0806A2EC: @ 0x0806A2EC
+	@ Brain Control
+	@ Change of Heart
+	@ Jowls of Dark Demise
+	@ Mind Control
+	@ Rafflesia Seduction
+	@ Reshef the Dark Being
+	@ Shien's Spy
+	thumb_func_start gCardEffectTakeControlEndPhase_0806A2EC
+gCardEffectTakeControlEndPhase_0806A2EC: @ 0x0806A2EC
 	push {r4, r5, r6, lr}
 	sub sp, #8
 	adds r4, r0, #0
@@ -174879,8 +177264,9 @@ _0806A32A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectSolemnJudgment_0806A334
-gCardEffectSolemnJudgment_0806A334: @ 0x0806A334
+	@ Solemn Judgment
+	thumb_func_start gCardEffectSpecialSummonNegate_0806A334
+gCardEffectSpecialSummonNegate_0806A334: @ 0x0806A334
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
@@ -174970,8 +177356,10 @@ _0806A3DC:
 _0806A3E4: .4byte 0x00000868
 _0806A3E8: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectHornOfHeavenTriage_0806A3EC
-gCardEffectHornOfHeavenTriage_0806A3EC: @ 0x0806A3EC
+	@ Horn of Heaven
+	@ Triage
+	thumb_func_start gCardEffectSpecialSummonDestroy_0806A3EC
+gCardEffectSpecialSummonDestroy_0806A3EC: @ 0x0806A3EC
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r0, #4
@@ -175000,8 +177388,10 @@ _0806A41C:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectFusionSageKingOfTheSwamp_0806A424
-gCardEffectFusionSageKingOfTheSwamp_0806A424: @ 0x0806A424
+	@ Fusion Sage
+	@ King of the Swamp
+	thumb_func_start gCardEffectSearchDiscard_0806A424
+gCardEffectSearchDiscard_0806A424: @ 0x0806A424
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _0806A440 @ =gUnk_0201B290
@@ -175077,8 +177467,9 @@ _0806A4B6:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectBlockAttack_0806A4BC
-gCardEffectBlockAttack_0806A4BC: @ 0x0806A4BC
+	@ Block Attack
+	thumb_func_start gCardEffectChangePosition_0806A4BC
+gCardEffectChangePosition_0806A4BC: @ 0x0806A4BC
 	push {r4, r5, lr}
 	sub sp, #8
 	adds r4, r0, #0
@@ -175127,8 +177518,9 @@ _0806A50C:
 _0806A518: .4byte 0x00000868
 _0806A51C: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectTheUnhappyMaiden_0806A520
-gCardEffectTheUnhappyMaiden_0806A520: @ 0x0806A520
+	@ The Unhappy Maiden
+	thumb_func_start gCardEffectSendToGYGraveyard_0806A520
+gCardEffectSendToGYGraveyard_0806A520: @ 0x0806A520
 	push {lr}
 	movs r1, #1
 	ldrb r0, [r0, #2]
@@ -175153,8 +177545,12 @@ sub_0806A544: @ 0x0806A544
 	movs r0, #0
 	bx lr
 
-	thumb_func_start gCardEffectCobramanSakuzyMindHaxorzSealOfTheAncientsTheSternMystic_0806A548
-gCardEffectCobramanSakuzyMindHaxorzSealOfTheAncientsTheSternMystic_0806A548: @ 0x0806A548
+	@ Cobraman Sakuzy
+	@ Mind Haxorz
+	@ Seal of the Ancients
+	@ The Stern Mystic
+	thumb_func_start gCardEffectDamageChangePosition_0806A548
+gCardEffectDamageChangePosition_0806A548: @ 0x0806A548
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -175319,8 +177715,10 @@ _0806A680:
 	.align 2, 0
 _0806A690: .4byte 0x0000184D @ Mind Haxorz
 
-	thumb_func_start gCardEffectKelbekWallOfIllusion_0806A694
-gCardEffectKelbekWallOfIllusion_0806A694: @ 0x0806A694
+	@ Kelbek
+	@ Wall of Illusion
+	thumb_func_start gCardEffectReturnToHand_0806A694
+gCardEffectReturnToHand_0806A694: @ 0x0806A694
 	push {r4, r5, r6, r7, lr}
 	adds r7, r0, #0
 	ldr r6, _0806A6F0 @ =gUnk_0201C4E0
@@ -175373,8 +177771,9 @@ _0806A6F4: .4byte 0x00001CE8
 _0806A6F8: .4byte gUnk_0201BBBC
 _0806A6FC: .4byte 0x00000868
 
-	thumb_func_start gCardEffectLastWill_0806A700
-gCardEffectLastWill_0806A700: @ 0x0806A700
+	@ Last Will
+	thumb_func_start gCardEffectSpecialSummonSendToGY_0806A700
+gCardEffectSpecialSummonSendToGY_0806A700: @ 0x0806A700
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -175415,7 +177814,7 @@ _0806A730:
 _0806A74E:
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectBossRushInsectImitationRopeOfSpiritSerpentinePrincess_0806E898
+	bl gCardEffectSpecialSummonSendToGY_0806E898
 _0806A756:
 	pop {r4, r5}
 	pop {r1}
@@ -175423,8 +177822,9 @@ _0806A756:
 	.align 2, 0
 _0806A75C: .4byte gUnk_0201B290
 
-	thumb_func_start gCardEffectWaboku_0806A760
-gCardEffectWaboku_0806A760: @ 0x0806A760
+	@ Waboku
+	thumb_func_start gCardEffectUnknown_0806A760
+gCardEffectUnknown_0806A760: @ 0x0806A760
 	push {lr}
 	adds r1, r0, #0
 	movs r0, #4
@@ -175444,8 +177844,9 @@ _0806A77C:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectShareThePain_0806A784
-gCardEffectShareThePain_0806A784: @ 0x0806A784
+	@ Share the Pain
+	thumb_func_start gCardEffectTribute_0806A784
+gCardEffectTribute_0806A784: @ 0x0806A784
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	movs r0, #4
@@ -175478,8 +177879,9 @@ _0806A7B8:
 	.align 2, 0
 _0806A7C0: .4byte 0x0000FFFF
 
-	thumb_func_start gCardEffectCurseOfFiend_0806A7C4
-gCardEffectCurseOfFiend_0806A7C4: @ 0x0806A7C4
+	@ Curse of Fiend
+	thumb_func_start gCardEffectChangePositionStandbyPhase_0806A7C4
+gCardEffectChangePositionStandbyPhase_0806A7C4: @ 0x0806A7C4
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -175579,8 +177981,9 @@ _0806A868:
 _0806A87C: .4byte 0x00000868
 _0806A880: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectUpstartGoblin_0806A884
-gCardEffectUpstartGoblin_0806A884: @ 0x0806A884
+	@ Upstart Goblin
+	thumb_func_start gCardEffectDrawGainLP_0806A884
+gCardEffectDrawGainLP_0806A884: @ 0x0806A884
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r0, #4
@@ -175609,8 +178012,10 @@ _0806A8B4:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectConfiscationSmokeGrenadeOfTheThief_0806A8BC
-gCardEffectConfiscationSmokeGrenadeOfTheThief_0806A8BC: @ 0x0806A8BC
+	@ Confiscation
+	@ Smoke Grenade of the Thief
+	thumb_func_start gCardEffectDiscardGraveyard_0806A8BC
+gCardEffectDiscardGraveyard_0806A8BC: @ 0x0806A8BC
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	movs r5, #1
@@ -175686,8 +178091,9 @@ _0806A944:
 _0806A94C: .4byte gUnk_0201C4E0
 _0806A950: .4byte 0x00001DA8
 
-	thumb_func_start gCardEffectDelinquentDuo_0806A954
-gCardEffectDelinquentDuo_0806A954: @ 0x0806A954
+	@ Delinquent Duo
+	thumb_func_start gCardEffectDiscardDamage_0806A954
+gCardEffectDiscardDamage_0806A954: @ 0x0806A954
 	push {lr}
 	movs r2, #1
 	ldrh r1, [r0, #8]
@@ -175729,8 +178135,9 @@ _0806A99E:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectDarknessApproaches_0806A9A4
-gCardEffectDarknessApproaches_0806A9A4: @ 0x0806A9A4
+	@ Darkness Approaches
+	thumb_func_start gCardEffectDiscardChangePosition_0806A9A4
+gCardEffectDiscardChangePosition_0806A9A4: @ 0x0806A9A4
 	push {r4, r5, lr}
 	sub sp, #4
 	adds r4, r0, #0
@@ -175783,8 +178190,10 @@ _0806AA08: .4byte 0x0000135D @ Light of Intervention
 _0806AA0C: .4byte 0x00000868
 _0806AA10: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectFairySHandMirrorFiendSHandMirror_0806AA14
-gCardEffectFairySHandMirrorFiendSHandMirror_0806AA14: @ 0x0806AA14
+	@ Fairy's Hand Mirror
+	@ Fiend's Hand Mirror
+	thumb_func_start gCardEffectUnknown_0806AA14
+gCardEffectUnknown_0806AA14: @ 0x0806AA14
 	push {r4, r5, lr}
 	sub sp, #4
 	adds r4, r0, #0
@@ -175825,8 +178234,9 @@ _0806AA52:
 _0806AA5C: .4byte 0x00000868
 _0806AA60: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectTailorOfTheFickle_0806AA64
-gCardEffectTailorOfTheFickle_0806AA64: @ 0x0806AA64
+	@ Tailor of the Fickle
+	thumb_func_start gCardEffectEquip_0806AA64
+gCardEffectEquip_0806AA64: @ 0x0806AA64
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -175906,8 +178316,9 @@ _0806AAFA:
 	.align 2, 0
 _0806AB08: .4byte 0xFFFF0000
 
-	thumb_func_start gCardEffectTheForcefulSentry_0806AB0C
-gCardEffectTheForcefulSentry_0806AB0C: @ 0x0806AB0C
+	@ The Forceful Sentry
+	thumb_func_start gCardEffectUnknown_0806AB0C
+gCardEffectUnknown_0806AB0C: @ 0x0806AB0C
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	movs r5, #1
@@ -176004,8 +178415,14 @@ _0806ABCE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectBegoneKnaveBurstReturnByserShockGiantTrunadeLadyNinjaYaeMispolymerization_0806ABD4
-gCardEffectBegoneKnaveBurstReturnByserShockGiantTrunadeLadyNinjaYaeMispolymerization_0806ABD4: @ 0x0806ABD4
+	@ Begone, Knave!
+	@ Burst Return
+	@ Byser Shock
+	@ Giant Trunade
+	@ Lady Ninja Yae
+	@ Mispolymerization
+	thumb_func_start gCardEffectReturnToHand_0806ABD4
+gCardEffectReturnToHand_0806ABD4: @ 0x0806ABD4
 	push {r4, lr}
 	adds r4, r0, #0
 	bl sub_08090690
@@ -176017,8 +178434,9 @@ gCardEffectBegoneKnaveBurstReturnByserShockGiantTrunadeLadyNinjaYaeMispolymeriza
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectPainfulChoice_0806ABEC
-gCardEffectPainfulChoice_0806ABEC: @ 0x0806ABEC
+	@ Painful Choice
+	thumb_func_start gCardEffectSearchDiscard_0806ABEC
+gCardEffectSearchDiscard_0806ABEC: @ 0x0806ABEC
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -176083,7 +178501,7 @@ _0806AC28: @ jump table
 _0806AC9C:
 	adds r0, r6, #0
 	adds r1, r2, #0
-	bl gCardEffectPainfulChoice_0805DBE0
+	bl gCardEffectSearchDiscard_0805DBE0
 	cmp r0, #0
 	bne _0806ACAA
 	b _0806ADA8
@@ -176219,8 +178637,9 @@ _0806ADAA:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectCyberJar_0806ADB8
-gCardEffectCyberJar_0806ADB8: @ 0x0806ADB8
+	@ Cyber Jar
+	thumb_func_start gCardEffectSpecialSummonDestroyAll_0806ADB8
+gCardEffectSpecialSummonDestroyAll_0806ADB8: @ 0x0806ADB8
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -176515,8 +178934,27 @@ _0806B01E:
 	.align 2, 0
 _0806B02C: .4byte gUnk_0201E1C8
 
-	thumb_func_start gCardEffectApprenticeMagicianBubonicVerminDamageCondenserFlyingKamakiriGiantRatGravekeeperSSpyHowlingInsectHydrogeddonKingSKnightMaskedDragonMotherGrizzlyMysticTomatoPyramidTurtleShiningAngelSummonPriestTroopDragonUfoTurtleUforoidWarriorLadyOfTheWasteland_0806B030
-gCardEffectApprenticeMagicianBubonicVerminDamageCondenserFlyingKamakiriGiantRatGravekeeperSSpyHowlingInsectHydrogeddonKingSKnightMaskedDragonMotherGrizzlyMysticTomatoPyramidTurtleShiningAngelSummonPriestTroopDragonUfoTurtleUforoidWarriorLadyOfTheWasteland_0806B030: @ 0x0806B030
+	@ Apprentice Magician
+	@ Bubonic Vermin
+	@ Damage Condenser
+	@ Flying Kamakiri
+	@ Giant Rat
+	@ Gravekeeper's Spy
+	@ Howling Insect
+	@ Hydrogeddon
+	@ King's Knight
+	@ Masked Dragon
+	@ Mother Grizzly
+	@ Mystic Tomato
+	@ Pyramid Turtle
+	@ Shining Angel
+	@ Summon Priest
+	@ Troop Dragon
+	@ UFO Turtle
+	@ UFOroid
+	@ Warrior Lady of the Wasteland
+	thumb_func_start gCardEffectSpecialSummonSendToGY_0806B030
+gCardEffectSpecialSummonSendToGY_0806B030: @ 0x0806B030
 	push {r4, r5, r6, lr}
 	sub sp, #4
 	adds r5, r0, #0
@@ -176740,8 +179178,11 @@ _0806B1F6:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectManjuOfTheTenThousandHandsSenjuOfTheThousandHandsSonicBird_0806B200
-gCardEffectManjuOfTheTenThousandHandsSenjuOfTheThousandHandsSonicBird_0806B200: @ 0x0806B200
+	@ Manju of the Ten Thousand Hands
+	@ Senju of the Thousand Hands
+	@ Sonic Bird
+	thumb_func_start gCardEffectSearchRitual_0806B200
+gCardEffectSearchRitual_0806B200: @ 0x0806B200
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r0, #4
@@ -176857,8 +179298,10 @@ _0806B316:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectGiantGermNimbleMomonga_0806B31C
-gCardEffectGiantGermNimbleMomonga_0806B31C: @ 0x0806B31C
+	@ Giant Germ
+	@ Nimble Momonga
+	thumb_func_start gCardEffectSpecialSummonSendToGY_0806B31C
+gCardEffectSpecialSummonSendToGY_0806B31C: @ 0x0806B31C
 	push {r4, r5, r6, lr}
 	sub sp, #0x104
 	adds r4, r0, #0
@@ -177127,8 +179570,9 @@ _0806B52E:
 	.align 2, 0
 _0806B538: .4byte 0x000004A4
 
-	thumb_func_start gCardEffectSpearCretin_0806B53C
-gCardEffectSpearCretin_0806B53C: @ 0x0806B53C
+	@ Spear Cretin
+	thumb_func_start gCardEffectSpecialSummonSendToGY_0806B53C
+gCardEffectSpecialSummonSendToGY_0806B53C: @ 0x0806B53C
 	push {lr}
 	adds r2, r0, #0
 	movs r0, #0x30
@@ -177137,7 +179581,7 @@ gCardEffectSpearCretin_0806B53C: @ 0x0806B53C
 	cmp r0, #0x20
 	bne _0806B552
 	adds r0, r2, #0
-	bl gCardEffectTheShallowGrave_0806C0CC
+	bl gCardEffectSpecialSummonChangePosition_0806C0CC
 	b _0806B554
 _0806B552:
 	movs r0, #0
@@ -177145,8 +179589,15 @@ _0806B554:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectArmoredGlassForcedCeasefireGorgonSEyeMetalDetectorMysticProbeSasukeSamuraiWorldSuppression_0806B558
-gCardEffectArmoredGlassForcedCeasefireGorgonSEyeMetalDetectorMysticProbeSasukeSamuraiWorldSuppression_0806B558: @ 0x0806B558
+	@ Armored Glass
+	@ Forced Ceasefire
+	@ Gorgon's Eye
+	@ Metal Detector
+	@ Mystic Probe
+	@ Sasuke Samurai
+	@ World Suppression
+	thumb_func_start gCardEffectNegate_0806B558
+gCardEffectNegate_0806B558: @ 0x0806B558
 	push {lr}
 	ldrh r1, [r0]
 	movs r0, #0
@@ -177157,8 +179608,10 @@ gCardEffectArmoredGlassForcedCeasefireGorgonSEyeMetalDetectorMysticProbeSasukeSa
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectAttackAndReceiveNuminousHealer_0806B56C
-gCardEffectAttackAndReceiveNuminousHealer_0806B56C: @ 0x0806B56C
+	@ Attack and Receive
+	@ Numinous Healer
+	thumb_func_start gCardEffectDamageGraveyard_0806B56C
+gCardEffectDamageGraveyard_0806B56C: @ 0x0806B56C
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	movs r0, #4
@@ -177240,8 +179693,9 @@ _0806B602:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectForcedRequisition_0806B60C
-gCardEffectForcedRequisition_0806B60C: @ 0x0806B60C
+	@ Forced Requisition
+	thumb_func_start gCardEffectDiscard_0806B60C
+gCardEffectDiscard_0806B60C: @ 0x0806B60C
 	push {r4, r5, lr}
 	adds r1, r0, #0
 	ldr r0, _0806B638 @ =gUnk_0201B290
@@ -177311,8 +179765,9 @@ _0806B684:
 _0806B68C: .4byte 0x00000868
 _0806B690: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectGamble_0806B694
-gCardEffectGamble_0806B694: @ 0x0806B694
+	@ Gamble
+	thumb_func_start gCardEffectDrawRNG_0806B694
+gCardEffectDrawRNG_0806B694: @ 0x0806B694
 	push {r4, lr}
 	adds r1, r0, #0
 	movs r0, #4
@@ -177432,8 +179887,9 @@ _0806B77E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectMajorRiot_0806B784
-gCardEffectMajorRiot_0806B784: @ 0x0806B784
+	@ Major Riot
+	thumb_func_start gCardEffectSpecialSummonReturnToHand_0806B784
+gCardEffectSpecialSummonReturnToHand_0806B784: @ 0x0806B784
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -177797,8 +180253,10 @@ _0806BA66:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectCeasefireTheSpellAbsorbingLife_0806BA78
-gCardEffectCeasefireTheSpellAbsorbingLife_0806BA78: @ 0x0806BA78
+	@ Ceasefire
+	@ The Spell Absorbing Life
+	thumb_func_start gCardEffectChangePositionBoostDEF_0806BA78
+gCardEffectChangePositionBoostDEF_0806BA78: @ 0x0806BA78
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -177923,8 +180381,9 @@ _0806BB66:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectMagicalHats_0806BB74
-gCardEffectMagicalHats_0806BB74: @ 0x0806BB74
+	@ Magical Hats
+	thumb_func_start gCardEffectDestroyChangePosition_0806BB74
+gCardEffectDestroyChangePosition_0806BB74: @ 0x0806BB74
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -177992,7 +180451,7 @@ _0806BBB8: @ jump table
 _0806BC2C:
 	adds r0, r6, #0
 	adds r1, r3, #0
-	bl gCardEffectMagicalHats_0805DFA0
+	bl gCardEffectDestroyChangePosition_0805DFA0
 	cmp r0, #0
 	bne _0806BC3A
 	b _0806BF56
@@ -178392,8 +180851,10 @@ _0806BF58:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectNoblemanOfCrossoutNoblemanOfExtermination_0806BF68
-gCardEffectNoblemanOfCrossoutNoblemanOfExtermination_0806BF68: @ 0x0806BF68
+	@ Nobleman of Crossout
+	@ Nobleman of Extermination
+	thumb_func_start gCardEffectBanishDestroy_0806BF68
+gCardEffectBanishDestroy_0806BF68: @ 0x0806BF68
 	push {r4, r5, r6, r7, lr}
 	sub sp, #4
 	adds r4, r0, #0
@@ -178563,8 +181024,9 @@ _0806C0C2:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectTheShallowGrave_0806C0CC
-gCardEffectTheShallowGrave_0806C0CC: @ 0x0806C0CC
+	@ The Shallow Grave
+	thumb_func_start gCardEffectSpecialSummonChangePosition_0806C0CC
+gCardEffectSpecialSummonChangePosition_0806C0CC: @ 0x0806C0CC
 	push {r4, r5, r6, r7, lr}
 	sub sp, #4
 	adds r6, r0, #0
@@ -178717,8 +181179,9 @@ _0806C1FC:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectInspection_0806C204
-gCardEffectInspection_0806C204: @ 0x0806C204
+	@ Inspection
+	thumb_func_start gCardEffectDamageStandbyPhase_0806C204
+gCardEffectDamageStandbyPhase_0806C204: @ 0x0806C204
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -178892,8 +181355,9 @@ _0806C35C: .4byte 0x00000868
 _0806C360: .4byte gUnk_0201C510
 _0806C364: .4byte 0x00008052
 
-	thumb_func_start gCardEffectProhibition_0806C368
-gCardEffectProhibition_0806C368: @ 0x0806C368
+	@ Prohibition
+	thumb_func_start gCardEffectUnknown_0806C368
+gCardEffectUnknown_0806C368: @ 0x0806C368
 	push {r4, r5, r6, r7, lr}
 	adds r5, r0, #0
 	movs r0, #4
@@ -178950,8 +181414,9 @@ _0806C3C8:
 _0806C3D0: .4byte 0x00000868
 _0806C3D4: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectMorphingJar_0806C3D8
-gCardEffectMorphingJar_0806C3D8: @ 0x0806C3D8
+	@ Morphing Jar
+	thumb_func_start gCardEffectDrawDiscard_0806C3D8
+gCardEffectDrawDiscard_0806C3D8: @ 0x0806C3D8
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -179312,8 +181777,9 @@ _0806C6C2:
 	.align 2, 0
 _0806C6D4: .4byte gUnk_0201E1C8
 
-	thumb_func_start gCardEffectKiseitai_0806C6D8
-gCardEffectKiseitai_0806C6D8: @ 0x0806C6D8
+	@ Kiseitai
+	thumb_func_start gCardEffectBoostATKBoostDEF_0806C6D8
+gCardEffectBoostATKBoostDEF_0806C6D8: @ 0x0806C6D8
 	push {r4, r5, r6, r7, lr}
 	sub sp, #4
 	adds r6, r0, #0
@@ -179380,8 +181846,10 @@ _0806C74E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectFenrirTimeSeal_0806C764
-gCardEffectFenrirTimeSeal_0806C764: @ 0x0806C764
+	@ Fenrir
+	@ Time Seal
+	thumb_func_start gCardEffectSpecialSummonDestroy_0806C764
+gCardEffectSpecialSummonDestroy_0806C764: @ 0x0806C764
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r1, r0, #0x1f
@@ -179396,8 +181864,9 @@ gCardEffectFenrirTimeSeal_0806C764: @ 0x0806C764
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectGraverobber_0806C780
-gCardEffectGraverobber_0806C780: @ 0x0806C780
+	@ Graverobber
+	thumb_func_start gCardEffectGraveyard_0806C780
+gCardEffectGraveyard_0806C780: @ 0x0806C780
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	movs r0, #4
@@ -179462,8 +181931,9 @@ _0806C7F6:
 _0806C800: .4byte 0x00000868
 _0806C804: .4byte gUnk_0201C8F8
 
-	thumb_func_start gCardEffectTheEyeOfTruth_0806C808
-gCardEffectTheEyeOfTruth_0806C808: @ 0x0806C808
+	@ The Eye of Truth
+	thumb_func_start gCardEffectGainLPStandbyPhase_0806C808
+gCardEffectGainLPStandbyPhase_0806C808: @ 0x0806C808
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r1, r0, #0x1f
@@ -179479,8 +181949,9 @@ gCardEffectTheEyeOfTruth_0806C808: @ 0x0806C808
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectDustTornado_0806C828
-gCardEffectDustTornado_0806C828: @ 0x0806C828
+	@ Dust Tornado
+	thumb_func_start gCardEffectDestroySpellTrap_0806C828
+gCardEffectDestroySpellTrap_0806C828: @ 0x0806C828
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -179653,8 +182124,15 @@ _0806C962:
 _0806C970: .4byte gUnk_0201C4E0
 _0806C974: .4byte 0x00001DA8
 
-	thumb_func_start gCardEffectAutonomousActionUnitCallOfTheHauntedFulfillmentOfTheContractPrematureBurialReFusionSoulResurrectionSymbolOfHeritage_0806C978
-gCardEffectAutonomousActionUnitCallOfTheHauntedFulfillmentOfTheContractPrematureBurialReFusionSoulResurrectionSymbolOfHeritage_0806C978: @ 0x0806C978
+	@ Autonomous Action Unit
+	@ Call of the Haunted
+	@ Fulfillment of the Contract
+	@ Premature Burial
+	@ Re-Fusion
+	@ Soul Resurrection
+	@ Symbol of Heritage
+	thumb_func_start gCardEffectSpecialSummonDestroy_0806C978
+gCardEffectSpecialSummonDestroy_0806C978: @ 0x0806C978
 	push {r4, r5, r6, r7, lr}
 	sub sp, #4
 	adds r7, r0, #0
@@ -179727,7 +182205,7 @@ _0806C9F6:
 	bne _0806CA94
 	adds r0, r7, #0
 	mov r1, ip
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	cmp r0, #0
 	beq _0806CA94
 	movs r0, #0x1c
@@ -179896,8 +182374,9 @@ _0806CB4A:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectSolomonSLawbook_0806CB54
-gCardEffectSolomonSLawbook_0806CB54: @ 0x0806CB54
+	@ Solomon's Lawbook
+	thumb_func_start gCardEffectStandbyPhase_0806CB54
+gCardEffectStandbyPhase_0806CB54: @ 0x0806CB54
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldrh r1, [r4]
@@ -179971,8 +182450,9 @@ _0806CBBE:
 _0806CBE0: .4byte gUnk_0201C4E0
 _0806CBE4: .4byte 0x00001CE8
 
-	thumb_func_start gCardEffectEarthshaker_0806CBE8
-gCardEffectEarthshaker_0806CBE8: @ 0x0806CBE8
+	@ Earthshaker
+	thumb_func_start gCardEffectDestroy_0806CBE8
+gCardEffectDestroy_0806CBE8: @ 0x0806CBE8
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -180147,8 +182627,11 @@ _0806CD26:
 _0806CD38: .4byte 0x00000868
 _0806CD3C: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectDrainingShieldEnchantedJavelinMagicCylinder_0806CD40
-gCardEffectDrainingShieldEnchantedJavelinMagicCylinder_0806CD40: @ 0x0806CD40
+	@ Draining Shield
+	@ Enchanted Javelin
+	@ Magic Cylinder
+	thumb_func_start gCardEffectNegateBoostATK_0806CD40
+gCardEffectNegateBoostATK_0806CD40: @ 0x0806CD40
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -180290,8 +182773,9 @@ _0806CE58:
 	.align 2, 0
 _0806CE64: .4byte 0x00008020
 
-	thumb_func_start gCardEffectMirrorWall_0806CE68
-gCardEffectMirrorWall_0806CE68: @ 0x0806CE68
+	@ Mirror Wall
+	thumb_func_start gCardEffectDestroyReduceATK_0806CE68
+gCardEffectDestroyReduceATK_0806CE68: @ 0x0806CE68
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -180398,8 +182882,10 @@ _0806CF34: .4byte gUnk_0201BB90
 _0806CF38: .4byte 0x00000868
 _0806CF3C: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectKingTigerWanghuSliferTheSkyDragon_0806CF40
-gCardEffectKingTigerWanghuSliferTheSkyDragon_0806CF40: @ 0x0806CF40
+	@ King Tiger Wanghu
+	@ Slifer the Sky Dragon
+	thumb_func_start gCardEffectSpecialSummonDestroy_0806CF40
+gCardEffectSpecialSummonDestroy_0806CF40: @ 0x0806CF40
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -180482,8 +182968,9 @@ _0806CFD0:
 _0806CFE0: .4byte 0x00000868
 _0806CFE4: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectTheWingedDragonOfRa_0806CFE8
-gCardEffectTheWingedDragonOfRa_0806CFE8: @ 0x0806CFE8
+	@ The Winged Dragon of Ra
+	thumb_func_start gCardEffectSpecialSummonNegate_0806CFE8
+gCardEffectSpecialSummonNegate_0806CFE8: @ 0x0806CFE8
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -180595,8 +183082,11 @@ _0806D0B8:
 _0806D0C4: .4byte 0x00000868
 _0806D0C8: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectLabyrinthOfNightmareWindstormOfEtaquaZeroGravity_0806D0CC
-gCardEffectLabyrinthOfNightmareWindstormOfEtaquaZeroGravity_0806D0CC: @ 0x0806D0CC
+	@ Labyrinth of Nightmare
+	@ Windstorm of Etaqua
+	@ Zero Gravity
+	thumb_func_start gCardEffectChangePosition_0806D0CC
+gCardEffectChangePosition_0806D0CC: @ 0x0806D0CC
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -180642,8 +183132,10 @@ _0806D104:
 	.align 2, 0
 _0806D120: .4byte gUnk_0201E1C8
 
-	thumb_func_start gCardEffectPuppetMasterValkyrionTheMagnaWarrior_0806D124
-gCardEffectPuppetMasterValkyrionTheMagnaWarrior_0806D124: @ 0x0806D124
+	@ Puppet Master
+	@ Valkyrion the Magna Warrior
+	thumb_func_start gCardEffectSpecialSummonRevive_0806D124
+gCardEffectSpecialSummonRevive_0806D124: @ 0x0806D124
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	ldrh r1, [r6]
@@ -180770,8 +183262,10 @@ _0806D21E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDestructionRingRingOfDestruction_0806D224
-gCardEffectDestructionRingRingOfDestruction_0806D224: @ 0x0806D224
+	@ Destruction Ring
+	@ Ring of Destruction
+	thumb_func_start gCardEffectDestroyDamage_0806D224
+gCardEffectDestroyDamage_0806D224: @ 0x0806D224
 	push {r4, r5, lr}
 	sub sp, #4
 	adds r4, r0, #0
@@ -180853,8 +183347,9 @@ _0806D2C6:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectSebekSBlessing_0806D2D0
-gCardEffectSebekSBlessing_0806D2D0: @ 0x0806D2D0
+	@ Sebek's Blessing
+	thumb_func_start gCardEffectGainLPDamage_0806D2D0
+gCardEffectGainLPDamage_0806D2D0: @ 0x0806D2D0
 	push {lr}
 	adds r1, r0, #0
 	movs r0, #4
@@ -180872,8 +183367,9 @@ _0806D2EA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectRiryoku_0806D2F0
-gCardEffectRiryoku_0806D2F0: @ 0x0806D2F0
+	@ Riryoku
+	thumb_func_start gCardEffectBoostATKReduceATK_0806D2F0
+gCardEffectBoostATKReduceATK_0806D2F0: @ 0x0806D2F0
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -180984,8 +183480,9 @@ _0806D3BC:
 _0806D3D0: .4byte 0x00000868
 _0806D3D4: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectKryuel_0806D3D8
-gCardEffectKryuel_0806D3D8: @ 0x0806D3D8
+	@ Kryuel
+	thumb_func_start gCardEffectSendToGYDestroy_0806D3D8
+gCardEffectSendToGYDestroy_0806D3D8: @ 0x0806D3D8
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _0806D3F4 @ =gUnk_0201B290
@@ -181075,7 +183572,7 @@ _0806D480:
 	cmp r0, #0
 	beq _0806D49C
 	adds r0, r4, #0
-	bl gCardEffectAnteatereatingantArcaneArcherOfTheForestArmedDragonLv5BESTetranBladeRabbitBlastMagicianBlastWithChainBreakerTheMagicalWarriorBurningBeastChironTheMageCyberLaserDragonDarkMagicianKnightDoubleSnareDragonSeekerDreamClownDrivingSnowEatgaboonElementalHeroThunderGiantExiledForceFreedTheBraveWandererFreezingBeastGearfriedTheSwordmasterGranmargTheRockMonarchGuardianCealGustHannibalNecromancerHarpiesHuntingGroundHouseOfAdhesiveTapeMagicalMarionetteManEaterBugMedusaWormMichizureMysticalSpaceTyphoonNewdoriaNightAssailantOldVindictiveMagicianOrcaMegaFortressOfDarknessRaigekiBreakRemoveTrapSakuretsuArmorShieldCrashSwarmOfLocustsSwarmOfScarabsThousandKnivesThrowstoneUnitTrapHoleTributeToTheDoomedUriaLordOfSearingFlamesWhiteNinjaXyDragonCannonXyzDragonCannonXzTankCannonYzTankDragonZaborgTheThunderMonarch_08064654
+	bl gCardEffectDestroy_08064654
 	b _0806D49E
 	.align 2, 0
 _0806D494: .4byte gUnk_0201C4E0
@@ -181087,11 +183584,12 @@ _0806D49E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectTwinHeadedBehemoth_0806D4A4
-gCardEffectTwinHeadedBehemoth_0806D4A4: @ 0x0806D4A4
+	@ Twin-Headed Behemoth
+	thumb_func_start gCardEffectSpecialSummonSendToGY_0806D4A4
+gCardEffectSpecialSummonSendToGY_0806D4A4: @ 0x0806D4A4
 	push {r4, r5, lr}
 	adds r4, r0, #0
-	bl gCardEffectTwinHeadedBehemoth_0805E3A8
+	bl gCardEffectSpecialSummonSendToGY_0805E3A8
 	cmp r0, #0
 	beq _0806D504
 	ldrh r1, [r4, #4]
@@ -181141,8 +183639,10 @@ _0806D504:
 _0806D50C: .4byte 0x00000868
 _0806D510: .4byte gUnk_0201C8F8
 
-	thumb_func_start gCardEffectInjectionFairyLilyKineticSoldier_0806D514
-gCardEffectInjectionFairyLilyKineticSoldier_0806D514: @ 0x0806D514
+	@ Injection Fairy Lily
+	@ Kinetic Soldier
+	thumb_func_start gCardEffectBoostATKBoostDEF_0806D514
+gCardEffectBoostATKBoostDEF_0806D514: @ 0x0806D514
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -181220,8 +183720,9 @@ _0806D598:
 _0806D5A8: .4byte 0x00000868
 _0806D5AC: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectSlateWarrior_0806D5B0
-gCardEffectSlateWarrior_0806D5B0: @ 0x0806D5B0
+	@ Slate Warrior
+	thumb_func_start gCardEffectDestroyBoostATK_0806D5B0
+gCardEffectDestroyBoostATK_0806D5B0: @ 0x0806D5B0
 	push {r4, r5, r6, r7, lr}
 	ldrb r1, [r0, #2]
 	lsls r6, r1, #0x1f
@@ -181274,8 +183775,11 @@ _0806D608:
 _0806D610: .4byte 0x00000868
 _0806D614: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectDragonManipulatorElectromagneticBagwormShadowTamer_0806D618
-gCardEffectDragonManipulatorElectromagneticBagwormShadowTamer_0806D618: @ 0x0806D618
+	@ Dragon Manipulator
+	@ Electromagnetic Bagworm
+	@ Shadow Tamer
+	thumb_func_start gCardEffectTakeControlFlip_0806D618
+gCardEffectTakeControlFlip_0806D618: @ 0x0806D618
 	push {r4, r5, r6, r7, lr}
 	sub sp, #8
 	adds r5, r0, #0
@@ -181325,8 +183829,10 @@ _0806D66C:
 _0806D678: .4byte gUnk_0201C4E0
 _0806D67C: .4byte 0x00001CE8
 
-	thumb_func_start gCardEffectTevaTimeater_0806D680
-gCardEffectTevaTimeater_0806D680: @ 0x0806D680
+	@ Teva
+	@ Timeater
+	thumb_func_start gCardEffectDestroyPreventAttack_0806D680
+gCardEffectDestroyPreventAttack_0806D680: @ 0x0806D680
 	push {r4, r5, lr}
 	ldrb r2, [r0, #2]
 	lsls r1, r2, #0x1f
@@ -181358,8 +183864,9 @@ _0806D6A2:
 _0806D6B8: .4byte gUnk_0201C4E0
 _0806D6BC: .4byte 0x00001CE8
 
-	thumb_func_start gCardEffectMucusYolk_0806D6C0
-gCardEffectMucusYolk_0806D6C0: @ 0x0806D6C0
+	@ Mucus Yolk
+	thumb_func_start gCardEffectBoostATKDamage_0806D6C0
+gCardEffectBoostATKDamage_0806D6C0: @ 0x0806D6C0
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -181447,8 +183954,9 @@ _0806D764: .4byte 0x00000868
 _0806D768: .4byte gUnk_0201C510
 _0806D76C: .4byte 0x00001CB8
 
-	thumb_func_start gCardEffectRigrasLeever_0806D770
-gCardEffectRigrasLeever_0806D770: @ 0x0806D770
+	@ Rigras Leever
+	thumb_func_start gCardEffectDiscardDestroy_0806D770
+gCardEffectDiscardDestroy_0806D770: @ 0x0806D770
 	push {r4, lr}
 	adds r3, r0, #0
 	ldr r0, _0806D78C @ =gUnk_0201B290
@@ -181531,8 +184039,9 @@ _0806D80A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectRevivalJam_0806D810
-gCardEffectRevivalJam_0806D810: @ 0x0806D810
+	@ Revival Jam
+	thumb_func_start gCardEffectSpecialSummonSendToGY_0806D810
+gCardEffectSpecialSummonSendToGY_0806D810: @ 0x0806D810
 	push {r4, r5, r6, lr}
 	sub sp, #4
 	adds r4, r0, #0
@@ -181568,7 +184077,7 @@ _0806D84C: .4byte gUnk_0201C4E0
 _0806D850: .4byte 0x00001CE8
 _0806D854:
 	adds r0, r4, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	cmp r0, #0
 	beq _0806D8AC
 	ldrb r1, [r4, #2]
@@ -181617,8 +184126,10 @@ _0806D8AC:
 _0806D8B8: .4byte 0x00000868
 _0806D8BC: .4byte gUnk_0201C8F8
 
-	thumb_func_start gCardEffectArchfiendOfGilferFlint_0806D8C0
-gCardEffectArchfiendOfGilferFlint_0806D8C0: @ 0x0806D8C0
+	@ Archfiend of Gilfer
+	@ Flint
+	thumb_func_start gCardEffectReduceATKEquip_0806D8C0
+gCardEffectReduceATKEquip_0806D8C0: @ 0x0806D8C0
 	push {r4, r5, r6, r7, lr}
 	sub sp, #0x10
 	adds r5, r0, #0
@@ -181694,8 +184205,9 @@ _0806D954:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectMaskedBeastDesGardius_0806D960
-gCardEffectMaskedBeastDesGardius_0806D960: @ 0x0806D960
+	@ Masked Beast Des Gardius
+	thumb_func_start gCardEffectSpecialSummonSendToGY_0806D960
+gCardEffectSpecialSummonSendToGY_0806D960: @ 0x0806D960
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	movs r1, #0
@@ -181837,8 +184349,9 @@ _0806DA7E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectTheMaskOfRemnants_0806DA84
-gCardEffectTheMaskOfRemnants_0806DA84: @ 0x0806DA84
+	@ The Mask of Remnants
+	thumb_func_start gCardEffectEquip_0806DA84
+gCardEffectEquip_0806DA84: @ 0x0806DA84
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r0, #4
@@ -181863,8 +184376,9 @@ _0806DAAC:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectSoulExchange_0806DAB4
-gCardEffectSoulExchange_0806DAB4: @ 0x0806DAB4
+	@ Soul Exchange
+	thumb_func_start gCardEffectTributeBattlePhase_0806DAB4
+gCardEffectTributeBattlePhase_0806DAB4: @ 0x0806DAB4
 	push {r4, r5, lr}
 	sub sp, #8
 	adds r4, r0, #0
@@ -182006,8 +184520,9 @@ _0806DBC2:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectChosenOne_0806DBCC
-gCardEffectChosenOne_0806DBCC: @ 0x0806DBCC
+	@ Chosen One
+	thumb_func_start gCardEffectSpecialSummonSendToGY_0806DBCC
+gCardEffectSpecialSummonSendToGY_0806DBCC: @ 0x0806DBCC
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -182057,7 +184572,7 @@ _0806DC10: @ jump table
 _0806DC3C:
 	adds r0, r7, #0
 	adds r1, r2, #0
-	bl gCardEffectChosenOne_0805E578
+	bl gCardEffectSpecialSummonSendToGY_0805E578
 	cmp r0, #0
 	bne _0806DC4A
 	b _0806DFFA
@@ -182523,8 +185038,9 @@ _0806DFFC:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectMaskOfWeakness_0806E00C
-gCardEffectMaskOfWeakness_0806E00C: @ 0x0806E00C
+	@ Mask of Weakness
+	thumb_func_start gCardEffectReduceATK_0806E00C
+gCardEffectReduceATK_0806E00C: @ 0x0806E00C
 	push {r4, r5, r6, lr}
 	sub sp, #8
 	adds r5, r0, #0
@@ -182573,8 +185089,9 @@ _0806E05E:
 _0806E068: .4byte 0x00000868
 _0806E06C: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectMaskOfDispel_0806E070
-gCardEffectMaskOfDispel_0806E070: @ 0x0806E070
+	@ Mask of Dispel
+	thumb_func_start gCardEffectDestroyStandbyPhase_0806E070
+gCardEffectDestroyStandbyPhase_0806E070: @ 0x0806E070
 	push {r4, r5, r6, r7, lr}
 	sub sp, #4
 	adds r7, r0, #0
@@ -182656,8 +185173,9 @@ _0806E106:
 _0806E110: .4byte 0x00000868
 _0806E114: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectReturnOfTheDoomed_0806E118
-gCardEffectReturnOfTheDoomed_0806E118: @ 0x0806E118
+	@ Return of the Doomed
+	thumb_func_start gCardEffectDiscardReturnToHand_0806E118
+gCardEffectDiscardReturnToHand_0806E118: @ 0x0806E118
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldr r0, _0806E144 @ =gUnk_0201C4E0
@@ -182744,8 +185262,9 @@ _0806E1BC:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectFairyBox_0806E1C4
-gCardEffectFairyBox_0806E1C4: @ 0x0806E1C4
+	@ Fairy Box
+	thumb_func_start gCardEffectDestroyDamage_0806E1C4
+gCardEffectDestroyDamage_0806E1C4: @ 0x0806E1C4
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -182905,8 +185424,12 @@ _0806E2FA:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectDandylionMultiplicationOfAntsPhantasmalMartyrsTheBlockman_0806E308
-gCardEffectDandylionMultiplicationOfAntsPhantasmalMartyrsTheBlockman_0806E308: @ 0x0806E308
+	@ Dandylion
+	@ Multiplication of Ants
+	@ Phantasmal Martyrs
+	@ The Blockman
+	thumb_func_start gCardEffectSpecialSummonTribute_0806E308
+gCardEffectSpecialSummonTribute_0806E308: @ 0x0806E308
 	push {r4, r5, r6, r7, lr}
 	sub sp, #8
 	adds r4, r0, #0
@@ -183029,8 +185552,9 @@ _0806E3F2:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectDeFusion_0806E3FC
-gCardEffectDeFusion_0806E3FC: @ 0x0806E3FC
+	@ De-Fusion
+	thumb_func_start gCardEffectSpecialSummonChangePosition_0806E3FC
+gCardEffectSpecialSummonChangePosition_0806E3FC: @ 0x0806E3FC
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -183297,8 +185821,9 @@ _0806E61E:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectJamDefender_0806E62C
-gCardEffectJamDefender_0806E62C: @ 0x0806E62C
+	@ Jam Defender
+	thumb_func_start gCardEffectUnknown_0806E62C
+gCardEffectUnknown_0806E62C: @ 0x0806E62C
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -183395,8 +185920,9 @@ _0806E6EC:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectBurningLand_0806E6F8
-gCardEffectBurningLand_0806E6F8: @ 0x0806E6F8
+	@ Burning Land
+	thumb_func_start gCardEffectDestroyAllDamage_0806E6F8
+gCardEffectDestroyAllDamage_0806E6F8: @ 0x0806E6F8
 	push {r4, r5, r6, r7, lr}
 	adds r7, r0, #0
 	movs r0, #4
@@ -183453,8 +185979,9 @@ _0806E760: .4byte 0x00000868
 _0806E764: .4byte gUnk_0201C510
 _0806E768: .4byte 0x04000400
 
-	thumb_func_start gCardEffectColdWave_0806E76C
-gCardEffectColdWave_0806E76C: @ 0x0806E76C
+	@ Cold Wave
+	thumb_func_start gCardEffectUnknown_0806E76C
+gCardEffectUnknown_0806E76C: @ 0x0806E76C
 	push {lr}
 	ldrh r1, [r0]
 	movs r0, #0
@@ -183465,8 +185992,12 @@ gCardEffectColdWave_0806E76C: @ 0x0806E76C
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDTribeLimiterRemovalPyramidEnergyTheBigMarchOfAnimals_0806E780
-gCardEffectDTribeLimiterRemovalPyramidEnergyTheBigMarchOfAnimals_0806E780: @ 0x0806E780
+	@ D. Tribe
+	@ Limiter Removal
+	@ Pyramid Energy
+	@ The Big March of Animals
+	thumb_func_start gCardEffectEndPhaseBoostATK_0806E780
+gCardEffectEndPhaseBoostATK_0806E780: @ 0x0806E780
 	push {r4, r5, lr}
 	sub sp, #8
 	adds r4, r0, #0
@@ -183563,8 +186094,9 @@ _0806E830:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectShift_0806E840
-gCardEffectShift_0806E840: @ 0x0806E840
+	@ Shift
+	thumb_func_start gCardEffectUnknown_0806E840
+gCardEffectUnknown_0806E840: @ 0x0806E840
 	push {r4, lr}
 	adds r3, r0, #0
 	adds r4, r1, #0
@@ -183584,7 +186116,7 @@ _0806E85A:
 _0806E85E:
 	adds r0, r3, #0
 	adds r1, r4, #0
-	bl gCardEffectFairySHandMirrorFiendSHandMirror_0806AA14
+	bl gCardEffectUnknown_0806AA14
 	b _0806E88A
 _0806E868:
 	ldr r0, _0806E890 @ =gUnk_0201C4E0
@@ -183602,7 +186134,7 @@ _0806E868:
 	beq _0806E85A
 	adds r0, r3, #0
 	adds r1, r4, #0
-	bl gCardEffectAncientLampDreamsprite_080706F4
+	bl gCardEffectSpecialSummonChangePosition_080706F4
 _0806E88A:
 	pop {r4}
 	pop {r1}
@@ -183611,8 +186143,12 @@ _0806E88A:
 _0806E890: .4byte gUnk_0201C4E0
 _0806E894: .4byte 0x000010D0 @ Wicked Dragon with the Ersatz Head
 
-	thumb_func_start gCardEffectBossRushInsectImitationRopeOfSpiritSerpentinePrincess_0806E898
-gCardEffectBossRushInsectImitationRopeOfSpiritSerpentinePrincess_0806E898: @ 0x0806E898
+	@ Boss Rush
+	@ Insect Imitation
+	@ Rope of Spirit
+	@ Serpentine Princess
+	thumb_func_start gCardEffectSpecialSummonSendToGY_0806E898
+gCardEffectSpecialSummonSendToGY_0806E898: @ 0x0806E898
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	ldr r0, _0806E8B8 @ =gUnk_0201B290
@@ -183761,8 +186297,9 @@ _0806E9FA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDimensionhole_0806EA00
-gCardEffectDimensionhole_0806EA00: @ 0x0806EA00
+	@ Dimensionhole
+	thumb_func_start gCardEffectBanishStandbyPhase_0806EA00
+gCardEffectBanishStandbyPhase_0806EA00: @ 0x0806EA00
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -183990,8 +186527,9 @@ _0806EBC2:
 	.align 2, 0
 _0806EBD0: .4byte 0x00000868
 
-	thumb_func_start gCardEffectMagicDrain_0806EBD4
-gCardEffectMagicDrain_0806EBD4: @ 0x0806EBD4
+	@ Magic Drain
+	thumb_func_start gCardEffectNegateDiscard_0806EBD4
+gCardEffectNegateDiscard_0806EBD4: @ 0x0806EBD4
 	push {r4, r5, lr}
 	sub sp, #4
 	adds r5, r0, #0
@@ -184101,8 +186639,9 @@ _0806ECA8:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectShadowOfEyes_0806ECB0
-gCardEffectShadowOfEyes_0806ECB0: @ 0x0806ECB0
+	@ Shadow of Eyes
+	thumb_func_start gCardEffectChangePositionFlip_0806ECB0
+gCardEffectChangePositionFlip_0806ECB0: @ 0x0806ECB0
 	push {r4, r5, lr}
 	sub sp, #4
 	adds r4, r0, #0
@@ -184157,8 +186696,9 @@ _0806ED0E:
 _0806ED18: .4byte 0x00000868
 _0806ED1C: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectBombardmentBeetle_0806ED20
-gCardEffectBombardmentBeetle_0806ED20: @ 0x0806ED20
+	@ Bombardment Beetle
+	thumb_func_start gCardEffectDestroyChangePosition_0806ED20
+gCardEffectDestroyChangePosition_0806ED20: @ 0x0806ED20
 	push {r4, r5, r6, r7, lr}
 	adds r5, r0, #0
 	movs r1, #0
@@ -184246,8 +186786,9 @@ _0806EDCC:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectRedMoonBaby_0806EDD4
-gCardEffectRedMoonBaby_0806EDD4: @ 0x0806EDD4
+	@ Red-Moon Baby
+	thumb_func_start gCardEffectSpecialSummonSendToGY_0806EDD4
+gCardEffectSpecialSummonSendToGY_0806EDD4: @ 0x0806EDD4
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -184307,8 +186848,9 @@ _0806EE42:
 _0806EE4C: .4byte 0x00000868
 _0806EE50: .4byte gUnk_0201C8F8
 
-	thumb_func_start gCardEffectMonsterRecovery_0806EE54
-gCardEffectMonsterRecovery_0806EE54: @ 0x0806EE54
+	@ Monster Recovery
+	thumb_func_start gCardEffectDraw_0806EE54
+gCardEffectDraw_0806EE54: @ 0x0806EE54
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	movs r0, #4
@@ -184463,8 +187005,9 @@ _0806EF82:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectTypeZeroMagicCrusher_0806EF88
-gCardEffectTypeZeroMagicCrusher_0806EF88: @ 0x0806EF88
+	@ Type Zero Magic Crusher
+	thumb_func_start gCardEffectDiscardDamage_0806EF88
+gCardEffectDiscardDamage_0806EF88: @ 0x0806EF88
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	movs r0, #4
@@ -184528,8 +187071,9 @@ _0806EFF6:
 _0806F000: .4byte 0x00000868
 _0806F004: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectCreatureSwap_0806F008
-gCardEffectCreatureSwap_0806F008: @ 0x0806F008
+	@ Creature Swap
+	thumb_func_start gCardEffectTakeControlChangePosition_0806F008
+gCardEffectTakeControlChangePosition_0806F008: @ 0x0806F008
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -184740,8 +187284,9 @@ _0806F1B8:
 	.align 2, 0
 _0806F1C4: .4byte 0x000004A4
 
-	thumb_func_start gCardEffectMysticBox_0806F1C8
-gCardEffectMysticBox_0806F1C8: @ 0x0806F1C8
+	@ Mystic Box
+	thumb_func_start gCardEffectDestroy_0806F1C8
+gCardEffectDestroy_0806F1C8: @ 0x0806F1C8
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -184866,8 +187411,10 @@ _0806F2B6:
 _0806F2C4: .4byte 0x00000868
 _0806F2C8: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectGroundCollapseOjamaKing_0806F2CC
-gCardEffectGroundCollapseOjamaKing_0806F2CC: @ 0x0806F2CC
+	@ Ground Collapse
+	@ Ojama King
+	thumb_func_start gCardEffectUnknown_0806F2CC
+gCardEffectUnknown_0806F2CC: @ 0x0806F2CC
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -184966,8 +187513,12 @@ _0806F37A:
 _0806F388: .4byte 0x00000868
 _0806F38C: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectCrimsonSentryFairyGuardianLadyPantherTheForgivingMaiden_0806F390
-gCardEffectCrimsonSentryFairyGuardianLadyPantherTheForgivingMaiden_0806F390: @ 0x0806F390
+	@ Crimson Sentry
+	@ Fairy Guardian
+	@ Lady Panther
+	@ The Forgiving Maiden
+	thumb_func_start gCardEffectTributeDestroy_0806F390
+gCardEffectTributeDestroy_0806F390: @ 0x0806F390
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldrb r1, [r5, #3]
@@ -185152,8 +187703,11 @@ _0806F4FA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectCureMermaidDancingFairySpiritOfTheBreeze_0806F500
-gCardEffectCureMermaidDancingFairySpiritOfTheBreeze_0806F500: @ 0x0806F500
+	@ Cure Mermaid
+	@ Dancing Fairy
+	@ Spirit of the Breeze
+	thumb_func_start gCardEffectGainLPStandbyPhase_0806F500
+gCardEffectGainLPStandbyPhase_0806F500: @ 0x0806F500
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -185219,7 +187773,7 @@ gCardEffectCureMermaidDancingFairySpiritOfTheBreeze_0806F500: @ 0x0806F500
 	beq _0806F594
 	adds r0, r7, #0
 	mov r1, sb
-	bl gCardEffect7AbsorbingKidFromTheSkyAltarForTributeAmazonArcherAmebaAndroSphinxAntiAircraftFlowerAtomicFireflyBackfireBlackPendantBlastingTheRuinsBlueMedicineBowganianBurningAlgaeCannonSoldierCastleGateCatapultTurtleCemetaryBombCestusOfDaglaDDDynamiteDarkMagicianSTomeOfBlackMagicDarkRoomOfNightmareDesKoalaDesVolstgalphDianKetoTheCureMasterEbonMagicianCurranElementalHeroFlameWingmanElementalHeroShiningFlareWingmanElementalHeroSteamHealerElephantStatueOfBlessingElephantStatueOfDisasterEmergencyProvisionsFallingDownFinalFlameFireSorcererFuhmaShurikenGiantKozakyGiftOfTheMysticalElfGoblinThiefGoblinSSecretRemedyGranadoraGraveOhjaGravekeeperSCannonholderGravekeeperSCurseGriggleGuardianAngelJoanHamonLordOfStrikingThunderHinotamaHystericFairyInfernoJustDessertsKa2DesScissorsKozakySSelfDestructButtonLadyAssailantOfFlamesLavaGolemLegendaryBlackBeltMagicalBlastMagicalExplosionManThroTroMarshmallonMaskOfDispelMaskOfTheAccursedMassDriverMechaDogMarronMemoryCrusherMeteorOfDestructionMinarMineGolemMinorGoblinOfficialMooyanCurryMysteriousPuppeteerMystikWokNeedleBallNeedleBurrowerNightmareWheelNitroUnitNutrientZOokaziOptionHunterOxygeddonPoisonFangsPoisonMummyPoisonOfTheOldManPrincessCurranPrincessPikeruPrincessOfTsurugiRaimeiRainOfMercyRedMedicineReflectBounderRestructerRevolutionRockBombardmentSecretBarrelShinatoKingOfAHigherPlaneSkullMarkLadybugSnatchStealSolarFlareDragonSolarRaySoulAbsorptionSoulOfThePureSparksSphinxTeleiaSpiritualFireArtKurenaiStealthBirdTheEyeOfTruthToonCannonSoldierTremendousFireUltimateBaseballKidWaveMotionCannonWhiteMagicianPikeruWoodlandSpriteZolga_080655EC
+	bl gCardEffectDamageGraveyard_080655EC
 	b _0806F596
 	.align 2, 0
 _0806F58C: .4byte 0x00000868
@@ -185235,8 +187789,9 @@ _0806F596:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectMarieTheFallenOne_0806F5A4
-gCardEffectMarieTheFallenOne_0806F5A4: @ 0x0806F5A4
+	@ Marie the Fallen One
+	thumb_func_start gCardEffectGainLPGraveyard_0806F5A4
+gCardEffectGainLPGraveyard_0806F5A4: @ 0x0806F5A4
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -185251,7 +187806,7 @@ gCardEffectMarieTheFallenOne_0806F5A4: @ 0x0806F5A4
 	blt _0806F5C8
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffect7AbsorbingKidFromTheSkyAltarForTributeAmazonArcherAmebaAndroSphinxAntiAircraftFlowerAtomicFireflyBackfireBlackPendantBlastingTheRuinsBlueMedicineBowganianBurningAlgaeCannonSoldierCastleGateCatapultTurtleCemetaryBombCestusOfDaglaDDDynamiteDarkMagicianSTomeOfBlackMagicDarkRoomOfNightmareDesKoalaDesVolstgalphDianKetoTheCureMasterEbonMagicianCurranElementalHeroFlameWingmanElementalHeroShiningFlareWingmanElementalHeroSteamHealerElephantStatueOfBlessingElephantStatueOfDisasterEmergencyProvisionsFallingDownFinalFlameFireSorcererFuhmaShurikenGiantKozakyGiftOfTheMysticalElfGoblinThiefGoblinSSecretRemedyGranadoraGraveOhjaGravekeeperSCannonholderGravekeeperSCurseGriggleGuardianAngelJoanHamonLordOfStrikingThunderHinotamaHystericFairyInfernoJustDessertsKa2DesScissorsKozakySSelfDestructButtonLadyAssailantOfFlamesLavaGolemLegendaryBlackBeltMagicalBlastMagicalExplosionManThroTroMarshmallonMaskOfDispelMaskOfTheAccursedMassDriverMechaDogMarronMemoryCrusherMeteorOfDestructionMinarMineGolemMinorGoblinOfficialMooyanCurryMysteriousPuppeteerMystikWokNeedleBallNeedleBurrowerNightmareWheelNitroUnitNutrientZOokaziOptionHunterOxygeddonPoisonFangsPoisonMummyPoisonOfTheOldManPrincessCurranPrincessPikeruPrincessOfTsurugiRaimeiRainOfMercyRedMedicineReflectBounderRestructerRevolutionRockBombardmentSecretBarrelShinatoKingOfAHigherPlaneSkullMarkLadybugSnatchStealSolarFlareDragonSolarRaySoulAbsorptionSoulOfThePureSparksSphinxTeleiaSpiritualFireArtKurenaiStealthBirdTheEyeOfTruthToonCannonSoldierTremendousFireUltimateBaseballKidWaveMotionCannonWhiteMagicianPikeruWoodlandSpriteZolga_080655EC
+	bl gCardEffectDamageGraveyard_080655EC
 	b _0806F5CA
 _0806F5C8:
 	movs r0, #0
@@ -185260,8 +187815,9 @@ _0806F5CA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectOfferingsToTheDoomed_0806F5D0
-gCardEffectOfferingsToTheDoomed_0806F5D0: @ 0x0806F5D0
+	@ Offerings to the Doomed
+	thumb_func_start gCardEffectDestroy_0806F5D0
+gCardEffectDestroy_0806F5D0: @ 0x0806F5D0
 	push {r4, lr}
 	adds r4, r0, #0
 	bl sub_0806460C
@@ -185277,8 +187833,9 @@ gCardEffectOfferingsToTheDoomed_0806F5D0: @ 0x0806F5D0
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectExchange_0806F5F0
-gCardEffectExchange_0806F5F0: @ 0x0806F5F0
+	@ Exchange
+	thumb_func_start gCardEffectSearchSendToGY_0806F5F0
+gCardEffectSearchSendToGY_0806F5F0: @ 0x0806F5F0
 	push {r4, r5, r6, r7, lr}
 	adds r7, r0, #0
 	movs r0, #4
@@ -185482,8 +188039,9 @@ _0806F77A:
 _0806F780: .4byte gUnk_0201C4E0
 _0806F784: .4byte 0x00000868
 
-	thumb_func_start gCardEffectDarkNecrofear_0806F788
-gCardEffectDarkNecrofear_0806F788: @ 0x0806F788
+	@ Dark Necrofear
+	thumb_func_start gCardEffectSpecialSummonDestroy_0806F788
+gCardEffectSpecialSummonDestroy_0806F788: @ 0x0806F788
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -185583,8 +188141,9 @@ _0806F844:
 _0806F854: .4byte 0x00000868
 _0806F858: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectDestinyBoard_0806F85C
-gCardEffectDestinyBoard_0806F85C: @ 0x0806F85C
+	@ Destiny Board
+	thumb_func_start gCardEffectSendToGYGraveyard_0806F85C
+gCardEffectSendToGYGraveyard_0806F85C: @ 0x0806F85C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -185959,8 +188518,9 @@ _0806FB78:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDarkSpiritOfTheSilent_0806FB88
-gCardEffectDarkSpiritOfTheSilent_0806FB88: @ 0x0806FB88
+	@ Dark Spirit of the Silent
+	thumb_func_start gCardEffectNegateChangePosition_0806FB88
+gCardEffectNegateChangePosition_0806FB88: @ 0x0806FB88
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -186266,8 +188826,9 @@ _0806FDE0:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectCathedralOfNobles_0806FDEC
-gCardEffectCathedralOfNobles_0806FDEC: @ 0x0806FDEC
+	@ Cathedral of Nobles
+	thumb_func_start gCardEffectSearchSpecialSummon_0806FDEC
+gCardEffectSearchSpecialSummon_0806FDEC: @ 0x0806FDEC
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _0806FE0C @ =gUnk_0201B290
@@ -186416,8 +188977,9 @@ _0806FF48:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectJudgmentOfAnubis_0806FF50
-gCardEffectJudgmentOfAnubis_0806FF50: @ 0x0806FF50
+	@ Judgment of Anubis
+	thumb_func_start gCardEffectNegateDiscard_0806FF50
+gCardEffectNegateDiscard_0806FF50: @ 0x0806FF50
 	push {r4, r5, r6, r7, lr}
 	adds r7, r0, #0
 	ldr r0, _0806FF6C @ =gUnk_0201B290
@@ -186440,12 +189002,12 @@ _0806FF70:
 	cmp r0, #0x80
 	bne _0807003C
 	adds r0, r7, #0
-	bl gCardEffectATeamTrapDisposalUnitAntiSpellArmorBreakCurseOfRoyalDarkPaladinFeatherWindMagicJammerMaryokutaiRiryokuFieldRoyalSurrenderSevenToolsOfTheBanditSpellShieldType8SpellStoppingStatuteTrapJammerTutanMask_08065698
+	bl gCardEffectNegateDestroy_08065698
 _0806FF7E:
 	movs r0, #0x7f
 	b _0807003E
 _0806FF82:
-	ldr r1, _0806FFB0 @ =gCardEffectArmedDragonLv10CurseOfAgingLightningVortexSkullDiceWindstormOfEtaqua_08051F04
+	ldr r1, _0806FFB0 @ =gCardEffectDiscardDestroyAll_08051F04
 	adds r0, r7, #0
 	bl sub_0809077C
 	cmp r0, #0
@@ -186467,7 +189029,7 @@ _0806FF82:
 	str r1, [r0]
 	b _0806FFC2
 	.align 2, 0
-_0806FFB0: .4byte gCardEffectArmedDragonLv10CurseOfAgingLightningVortexSkullDiceWindstormOfEtaqua_08051F04
+_0806FFB0: .4byte gCardEffectDiscardDestroyAll_08051F04
 _0806FFB4: .4byte gUnk_0201E2A0
 _0806FFB8: .4byte gUnk_0201C4E0
 _0806FFBC:
@@ -186488,13 +189050,13 @@ _0806FFC6:
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r7]
-	ldr r2, _0806FFEC @ =gCardEffectArmedDragonLv10CurseOfAgingLightningVortexSkullDiceWindstormOfEtaqua_08051F04
+	ldr r2, _0806FFEC @ =gCardEffectDiscardDestroyAll_08051F04
 	bl sub_08096AB0
 	movs r0, #0x7d
 	b _0807003E
 	.align 2, 0
 _0806FFE8: .4byte gUnk_0201C4E0
-_0806FFEC: .4byte gCardEffectArmedDragonLv10CurseOfAgingLightningVortexSkullDiceWindstormOfEtaqua_08051F04
+_0806FFEC: .4byte gCardEffectDiscardDestroyAll_08051F04
 _0806FFF0:
 	bl sub_08096B14
 	cmp r0, #0
@@ -186538,8 +189100,9 @@ _0807003E:
 _08070044: .4byte gUnk_0201C4E0
 _08070048: .4byte 0x00001D68
 
-	thumb_func_start gCardEffectEmbodimentOfApophis_0807004C
-gCardEffectEmbodimentOfApophis_0807004C: @ 0x0807004C
+	@ Embodiment of Apophis
+	thumb_func_start gCardEffectSpecialSummon_0807004C
+gCardEffectSpecialSummon_0807004C: @ 0x0807004C
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -186621,8 +189184,9 @@ _080700DE:
 _080700EC: .4byte 0x00000868
 _080700F0: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectFoolishBurial_080700F4
-gCardEffectFoolishBurial_080700F4: @ 0x080700F4
+	@ Foolish Burial
+	thumb_func_start gCardEffectSendToGYGraveyard_080700F4
+gCardEffectSendToGYGraveyard_080700F4: @ 0x080700F4
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldr r0, _08070110 @ =gUnk_0201B290
@@ -186711,8 +189275,9 @@ _0807019C:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectMakiu_080701A4
-gCardEffectMakiu_080701A4: @ 0x080701A4
+	@ Makiu
+	thumb_func_start gCardEffectDestroyBattlePhase_080701A4
+gCardEffectDestroyBattlePhase_080701A4: @ 0x080701A4
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -186813,8 +189378,21 @@ _08070258:
 _0807026C: .4byte 0x00000868
 _08070270: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectBerserkDragonEmesTheInfinityExodiaNecrossFirebirdGaiaSoulTheCombustibleCollectiveGuardianBaouInsectPrincessLegendaryFiendMajiGirePandaMillenniumScorpionMysticalBeastSerketRagingFlameSpriteSatelliteCannon_08070274
-gCardEffectBerserkDragonEmesTheInfinityExodiaNecrossFirebirdGaiaSoulTheCombustibleCollectiveGuardianBaouInsectPrincessLegendaryFiendMajiGirePandaMillenniumScorpionMysticalBeastSerketRagingFlameSpriteSatelliteCannon_08070274: @ 0x08070274
+	@ Berserk Dragon
+	@ Emes the Infinity
+	@ Exodia Necross
+	@ Firebird
+	@ Gaia Soul the Combustible Collective
+	@ Guardian Baou
+	@ Insect Princess
+	@ Legendary Fiend
+	@ Maji-Gire Panda
+	@ Millennium Scorpion
+	@ Mystical Beast Serket
+	@ Raging Flame Sprite
+	@ Satellite Cannon
+	thumb_func_start gCardEffectDestroyBoostATK_08070274
+gCardEffectDestroyBoostATK_08070274: @ 0x08070274
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -186965,8 +189543,10 @@ _0807038C:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectMagicalScientistSummonerOfIllusions_0807039C
-gCardEffectMagicalScientistSummonerOfIllusions_0807039C: @ 0x0807039C
+	@ Magical Scientist
+	@ Summoner of Illusions
+	thumb_func_start gCardEffectSpecialSummonFusion_0807039C
+gCardEffectSpecialSummonFusion_0807039C: @ 0x0807039C
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldr r0, _080703B8 @ =gUnk_0201B290
@@ -187075,8 +189655,9 @@ _08070470:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectBazooTheSoulEater_08070478
-gCardEffectBazooTheSoulEater_08070478: @ 0x08070478
+	@ Bazoo the Soul-Eater
+	thumb_func_start gCardEffectBanishBoostATK_08070478
+gCardEffectBanishBoostATK_08070478: @ 0x08070478
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -187159,8 +189740,13 @@ _08070506:
 _08070514: .4byte 0x00000868
 _08070518: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectAquaSpiritBESCrystalCoreGarudaTheWindSpiritGravekeeperSAssailantRyuKishinClown_0807051C
-gCardEffectAquaSpiritBESCrystalCoreGarudaTheWindSpiritGravekeeperSAssailantRyuKishinClown_0807051C: @ 0x0807051C
+	@ Aqua Spirit
+	@ B.E.S. Crystal Core
+	@ Garuda the Wind Spirit
+	@ Gravekeeper's Assailant
+	@ Ryu-Kishin Clown
+	thumb_func_start gCardEffectChangePositionSpecialSummon_0807051C
+gCardEffectChangePositionSpecialSummon_0807051C: @ 0x0807051C
 	push {r4, r5, r6, lr}
 	sub sp, #4
 	adds r5, r0, #0
@@ -187208,8 +189794,9 @@ _08070570:
 	.align 2, 0
 _0807057C: .4byte 0x00001485 @ Aqua Spirit
 
-	thumb_func_start gCardEffectGilasaurus_08070580
-gCardEffectGilasaurus_08070580: @ 0x08070580
+	@ Gilasaurus
+	thumb_func_start gCardEffectSpecialSummonRevive_08070580
+gCardEffectSpecialSummonRevive_08070580: @ 0x08070580
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	movs r0, #4
@@ -187329,8 +189916,9 @@ _08070676:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectTornadoBird_0807067C
-gCardEffectTornadoBird_0807067C: @ 0x0807067C
+	@ Tornado Bird
+	thumb_func_start gCardEffectReturnToHandFlip_0807067C
+gCardEffectReturnToHandFlip_0807067C: @ 0x0807067C
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -187393,8 +189981,10 @@ _080706E6:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectAncientLampDreamsprite_080706F4
-gCardEffectAncientLampDreamsprite_080706F4: @ 0x080706F4
+	@ Ancient Lamp
+	@ Dreamsprite
+	thumb_func_start gCardEffectSpecialSummonChangePosition_080706F4
+gCardEffectSpecialSummonChangePosition_080706F4: @ 0x080706F4
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _08070750 @ =gUnk_0201B290
@@ -187453,8 +190043,9 @@ _08070764:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectCollectedPower_0807076C
-gCardEffectCollectedPower_0807076C: @ 0x0807076C
+	@ Collected Power
+	thumb_func_start gCardEffectDestroyEquip_0807076C
+gCardEffectDestroyEquip_0807076C: @ 0x0807076C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -187658,8 +190249,9 @@ _080708EE:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectRoyalCommand_08070900
-gCardEffectRoyalCommand_08070900: @ 0x08070900
+	@ Royal Command
+	thumb_func_start gCardEffectNegateFlip_08070900
+gCardEffectNegateFlip_08070900: @ 0x08070900
 	push {r4, r5, r6, r7, lr}
 	adds r7, r0, #0
 	mov ip, r1
@@ -187721,8 +190313,9 @@ _0807096A:
 _08070974: .4byte 0x00000868
 _08070978: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectSkullLair_0807097C
-gCardEffectSkullLair_0807097C: @ 0x0807097C
+	@ Skull Lair
+	thumb_func_start gCardEffectBanishDestroy_0807097C
+gCardEffectBanishDestroy_0807097C: @ 0x0807097C
 	push {r4, r5, r6, r7, lr}
 	adds r7, r0, #0
 	movs r0, #4
@@ -187873,8 +190466,12 @@ _08070A9C:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectCrossCounterDestructionPunchDimensionWallEarthboundSpiritSInvitation_08070AA4
-gCardEffectCrossCounterDestructionPunchDimensionWallEarthboundSpiritSInvitation_08070AA4: @ 0x08070AA4
+	@ Cross Counter
+	@ Destruction Punch
+	@ Dimension Wall
+	@ Earthbound Spirit's Invitation
+	thumb_func_start gCardEffectDestroyChangePosition_08070AA4
+gCardEffectDestroyChangePosition_08070AA4: @ 0x08070AA4
 	push {lr}
 	ldrb r1, [r0, #2]
 	lsls r2, r1, #0x1f
@@ -187889,8 +190486,9 @@ gCardEffectCrossCounterDestructionPunchDimensionWallEarthboundSpiritSInvitation_
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectBlindDestruction_08070AC0
-gCardEffectBlindDestruction_08070AC0: @ 0x08070AC0
+	@ Blind Destruction
+	thumb_func_start gCardEffectDestroyAllStandbyPhase_08070AC0
+gCardEffectDestroyAllStandbyPhase_08070AC0: @ 0x08070AC0
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _08070AE8 @ =gUnk_0201B290
@@ -187933,8 +190531,9 @@ _08070B06:
 _08070B0C: .4byte gUnk_0201C4E0
 _08070B10: .4byte 0x00001DA8
 
-	thumb_func_start gCardEffectBaitDoll_08070B14
-gCardEffectBaitDoll_08070B14: @ 0x08070B14
+	@ Bait Doll
+	thumb_func_start gCardEffectNegateDestroy_08070B14
+gCardEffectNegateDestroy_08070B14: @ 0x08070B14
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -188127,8 +190726,9 @@ _08070C90:
 _08070C9C: .4byte 0x00000868
 _08070CA0: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectMiracleDig_08070CA4
-gCardEffectMiracleDig_08070CA4: @ 0x08070CA4
+	@ Miracle Dig
+	thumb_func_start gCardEffectBanishGraveyard_08070CA4
+gCardEffectBanishGraveyard_08070CA4: @ 0x08070CA4
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #6]
@@ -188176,8 +190776,19 @@ _08070CFA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectAfterTheStruggleBubbleIllusionCharmOfShabtiCostDownDiceReRollHallowedLifeBarrierMeteorainPikeruSCircleOfEnchantmentSpiritEliminationSuperRejuvenationWingedKuriboh_08070D00
-gCardEffectAfterTheStruggleBubbleIllusionCharmOfShabtiCostDownDiceReRollHallowedLifeBarrierMeteorainPikeruSCircleOfEnchantmentSpiritEliminationSuperRejuvenationWingedKuriboh_08070D00: @ 0x08070D00
+	@ After the Struggle
+	@ Bubble Illusion
+	@ Charm of Shabti
+	@ Cost Down
+	@ Dice Re-Roll
+	@ Hallowed Life Barrier
+	@ Meteorain
+	@ Pikeru's Circle of Enchantment
+	@ Spirit Elimination
+	@ Super Rejuvenation
+	@ Winged Kuriboh
+	thumb_func_start gCardEffectDiscardEndPhase_08070D00
+gCardEffectDiscardEndPhase_08070D00: @ 0x08070D00
 	push {lr}
 	adds r2, r0, #0
 	movs r3, #0
@@ -188200,8 +190811,9 @@ _08070D14:
 	.align 2, 0
 _08070D28: .4byte 0x000014E2 @ Super Rejuvenation
 
-	thumb_func_start gCardEffectAmazonessArchers_08070D2C
-gCardEffectAmazonessArchers_08070D2C: @ 0x08070D2C
+	@ Amazoness Archers
+	thumb_func_start gCardEffectReduceATKChangePosition_08070D2C
+gCardEffectReduceATKChangePosition_08070D2C: @ 0x08070D2C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -188321,8 +190933,9 @@ _08070DEC:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectRopeOfLife_08070E18
-gCardEffectRopeOfLife_08070E18: @ 0x08070E18
+	@ Rope of Life
+	thumb_func_start gCardEffectSpecialSummonDiscard_08070E18
+gCardEffectSpecialSummonDiscard_08070E18: @ 0x08070E18
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldr r5, _08070E34 @ =gUnk_0201B290
@@ -188343,7 +190956,7 @@ _08070E38:
 	cmp r0, #0x80
 	bne _08070EEC
 	adds r0, r4, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	cmp r0, #0
 	beq _08070EEC
 	bl sub_0804A76C
@@ -188430,8 +191043,14 @@ _08070EEE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectCycloneBoomerangEnchantedArrowGryphonSFeatherDusterThunderCrashTokenFeastevilTokenThanksgiving_08070EF4
-gCardEffectCycloneBoomerangEnchantedArrowGryphonSFeatherDusterThunderCrashTokenFeastevilTokenThanksgiving_08070EF4: @ 0x08070EF4
+	@ Cyclone Boomerang
+	@ Enchanted Arrow
+	@ Gryphon's Feather Duster
+	@ Thunder Crash
+	@ Token Feastevil
+	@ Token Thanksgiving
+	thumb_func_start gCardEffectDestroyGainLP_08070EF4
+gCardEffectDestroyGainLP_08070EF4: @ 0x08070EF4
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	movs r0, #4
@@ -188601,8 +191220,9 @@ _08071040:
 	.align 2, 0
 _08071048: .4byte 0x000004A4
 
-	thumb_func_start gCardEffectAmazonessChainMaster_0807104C
-gCardEffectAmazonessChainMaster_0807104C: @ 0x0807104C
+	@ Amazoness Chain Master
+	thumb_func_start gCardEffectSearchSendToGY_0807104C
+gCardEffectSearchSendToGY_0807104C: @ 0x0807104C
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -188747,8 +191367,11 @@ _08071166:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectAlkanaKnightJokerBlueEyesShiningDragonDarkBalterTheTerrible_08071170
-gCardEffectAlkanaKnightJokerBlueEyesShiningDragonDarkBalterTheTerrible_08071170: @ 0x08071170
+	@ Alkana Knight Joker
+	@ Blue-Eyes Shining Dragon
+	@ Dark Balter the Terrible
+	thumb_func_start gCardEffectFusionSummonNegate_08071170
+gCardEffectFusionSummonNegate_08071170: @ 0x08071170
 	push {r4, r5, r6, r7, lr}
 	sub sp, #4
 	adds r6, r1, #0
@@ -188826,8 +191449,9 @@ _08071204: .4byte 0x00000868
 _08071208: .4byte gUnk_0201C510
 _0807120C: .4byte 0x000017C2 @ Blue-Eyes Shining Dragon
 
-	thumb_func_start gCardEffectPossessedDarkSoul_08071210
-gCardEffectPossessedDarkSoul_08071210: @ 0x08071210
+	@ Possessed Dark Soul
+	thumb_func_start gCardEffectTakeControlTribute_08071210
+gCardEffectTakeControlTribute_08071210: @ 0x08071210
 	push {r4, r5, r6, r7, lr}
 	sub sp, #8
 	adds r4, r0, #0
@@ -188891,8 +191515,9 @@ _0807127A:
 	.align 2, 0
 _08071280: .4byte 0x00F0FFFF
 
-	thumb_func_start gCardEffectLifeAbsorbingMachine_08071284
-gCardEffectLifeAbsorbingMachine_08071284: @ 0x08071284
+	@ Life Absorbing Machine
+	thumb_func_start gCardEffectGainLP_08071284
+gCardEffectGainLP_08071284: @ 0x08071284
 	push {lr}
 	adds r3, r0, #0
 	ldrb r1, [r3, #2]
@@ -188907,8 +191532,9 @@ gCardEffectLifeAbsorbingMachine_08071284: @ 0x08071284
 	.align 2, 0
 _0807129C: .4byte sub_08071258
 
-	thumb_func_start gCardEffectFreedTheMatchlessGeneral_080712A0
-gCardEffectFreedTheMatchlessGeneral_080712A0: @ 0x080712A0
+	@ Freed the Matchless General
+	thumb_func_start gCardEffectSearchNegate_080712A0
+gCardEffectSearchNegate_080712A0: @ 0x080712A0
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -189000,7 +191626,7 @@ _08071348:
 _08071358:
 	adds r0, r7, #0
 	mov r1, sb
-	bl gCardEffectArsenalSummonerGatherYourMindGoblinZombieGokiponIronBlacksmithKotetsuPandemoniumReinforcementOfTheArmySanganScarrScoutOfDarkWorldTerraformingToonTableOfContentsWitchOfTheBlackForest_080661FC
+	bl gCardEffectSearchSendToGY_080661FC
 _08071360:
 	pop {r3, r4}
 	mov r8, r3
@@ -189009,8 +191635,9 @@ _08071360:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectRyuSenshi_0807136C
-gCardEffectRyuSenshi_0807136C: @ 0x0807136C
+	@ Ryu Senshi
+	thumb_func_start gCardEffectFusionSummonNegate_0807136C
+gCardEffectFusionSummonNegate_0807136C: @ 0x0807136C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -189071,7 +191698,7 @@ gCardEffectRyuSenshi_0807136C: @ 0x0807136C
 	beq _080713F4
 	adds r0, r7, #0
 	mov r1, sb
-	bl gCardEffectAlkanaKnightJokerBlueEyesShiningDragonDarkBalterTheTerrible_08071170
+	bl gCardEffectFusionSummonNegate_08071170
 	b _080713F6
 	.align 2, 0
 _080713EC: .4byte 0x00000868
@@ -189087,8 +191714,9 @@ _080713F6:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectTheHunterWith7Weapons_08071404
-gCardEffectTheHunterWith7Weapons_08071404: @ 0x08071404
+	@ The Hunter with 7 Weapons
+	thumb_func_start gCardEffectBoostATK_08071404
+gCardEffectBoostATK_08071404: @ 0x08071404
 	push {lr}
 	adds r2, r0, #0
 	adds r3, r1, #0
@@ -189105,14 +191733,18 @@ gCardEffectTheHunterWith7Weapons_08071404: @ 0x08071404
 _0807141E:
 	adds r0, r2, #0
 	adds r1, r3, #0
-	bl gCardEffectInjectionFairyLilyKineticSoldier_0806D514
+	bl gCardEffectBoostATKBoostDEF_0806D514
 _08071426:
 	pop {r1}
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectBookOfMoonDesertapirInfernoHammerReadyForIntercepting_0807142C
-gCardEffectBookOfMoonDesertapirInfernoHammerReadyForIntercepting_0807142C: @ 0x0807142C
+	@ Book of Moon
+	@ Desertapir
+	@ Inferno Hammer
+	@ Ready for Intercepting
+	thumb_func_start gCardEffectChangePosition_0807142C
+gCardEffectChangePosition_0807142C: @ 0x0807142C
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	movs r0, #4
@@ -189157,8 +191789,12 @@ _0807147E:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectAFeintPlanAbsoluteEndThreateningRoarThunderOfRuler_08071488
-gCardEffectAFeintPlanAbsoluteEndThreateningRoarThunderOfRuler_08071488: @ 0x08071488
+	@ A Feint Plan
+	@ Absolute End
+	@ Threatening Roar
+	@ Thunder of Ruler
+	thumb_func_start gCardEffectPreventAttackDirectAttack_08071488
+gCardEffectPreventAttackDirectAttack_08071488: @ 0x08071488
 	push {lr}
 	adds r1, r0, #0
 	ldr r0, _080714A4 @ =gUnk_0201C4E0
@@ -189176,8 +191812,9 @@ gCardEffectAFeintPlanAbsoluteEndThreateningRoarThunderOfRuler_08071488: @ 0x0807
 _080714A4: .4byte gUnk_0201C4E0
 _080714A8: .4byte 0x00001CE8
 
-	thumb_func_start gCardEffectTheDragonSBead_080714AC
-gCardEffectTheDragonSBead_080714AC: @ 0x080714AC
+	@ The Dragon's Bead
+	thumb_func_start gCardEffectNegateDiscard_080714AC
+gCardEffectNegateDiscard_080714AC: @ 0x080714AC
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
@@ -189210,8 +191847,9 @@ _080714E4:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectAWingbeatOfGiantDragon_080714EC
-gCardEffectAWingbeatOfGiantDragon_080714EC: @ 0x080714EC
+	@ A Wingbeat of Giant Dragon
+	thumb_func_start gCardEffectReturnToHandDestroySpellTrap_080714EC
+gCardEffectReturnToHandDestroySpellTrap_080714EC: @ 0x080714EC
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _08071508 @ =gUnk_0201B290
@@ -189282,7 +191920,7 @@ _08071578:
 	movs r0, #1
 	strh r0, [r4, #0xa]
 	adds r0, r4, #0
-	bl gCardEffect4StarredLadybugOfDoomAcidRainArmedDragonLv10ArmedDragonLv7BreathOfLightBurstBreathCalamityOfTheWickedChaosEndDarkHoleDarkMagicAttackDemiseKingOfArmageddonDesCounterblowDesCroakingDisarmamentElementalBurstEradicatingAerosolEternalDroughtEternalRestExileOfTheWickedFinalDestinyGearfriedTheIronKnightGigantesGilfordTheLightningHarpieSFeatherDusterHeavyStormJowgenTheSpiritualistLastDayOfWitchLegendaryFlameLordLeviaDragonDaedalusLightningVortexMaliceDispersionMegaTonMagicalCannonMirrorForceMoistureCreatureNeedleCeilingObeliskTheTormentorOjamaDeltaHurricaneRaigekiReallyEternalRestSacredPhoenixOfNephthysSpecialHurricaneSpellPurificationTheLastWarriorFromAnotherPlanetTorrentialTributeTragedyTribeInfectingVirusWarriorEliminationWeedOut_08064660
+	bl gCardEffectDestroy_08064660
 _08071582:
 	movs r0, #0
 _08071584:
@@ -189291,8 +191929,9 @@ _08071584:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectDragonSGunfire_0807158C
-gCardEffectDragonSGunfire_0807158C: @ 0x0807158C
+	@ Dragon's Gunfire
+	thumb_func_start gCardEffectDestroyDamage_0807158C
+gCardEffectDestroyDamage_0807158C: @ 0x0807158C
 	push {lr}
 	ldrh r2, [r0, #0xc]
 	cmp r2, #1
@@ -189302,17 +191941,18 @@ gCardEffectDragonSGunfire_0807158C: @ 0x0807158C
 	movs r0, #0
 	b _080715A6
 _0807159C:
-	bl gCardEffect7AbsorbingKidFromTheSkyAltarForTributeAmazonArcherAmebaAndroSphinxAntiAircraftFlowerAtomicFireflyBackfireBlackPendantBlastingTheRuinsBlueMedicineBowganianBurningAlgaeCannonSoldierCastleGateCatapultTurtleCemetaryBombCestusOfDaglaDDDynamiteDarkMagicianSTomeOfBlackMagicDarkRoomOfNightmareDesKoalaDesVolstgalphDianKetoTheCureMasterEbonMagicianCurranElementalHeroFlameWingmanElementalHeroShiningFlareWingmanElementalHeroSteamHealerElephantStatueOfBlessingElephantStatueOfDisasterEmergencyProvisionsFallingDownFinalFlameFireSorcererFuhmaShurikenGiantKozakyGiftOfTheMysticalElfGoblinThiefGoblinSSecretRemedyGranadoraGraveOhjaGravekeeperSCannonholderGravekeeperSCurseGriggleGuardianAngelJoanHamonLordOfStrikingThunderHinotamaHystericFairyInfernoJustDessertsKa2DesScissorsKozakySSelfDestructButtonLadyAssailantOfFlamesLavaGolemLegendaryBlackBeltMagicalBlastMagicalExplosionManThroTroMarshmallonMaskOfDispelMaskOfTheAccursedMassDriverMechaDogMarronMemoryCrusherMeteorOfDestructionMinarMineGolemMinorGoblinOfficialMooyanCurryMysteriousPuppeteerMystikWokNeedleBallNeedleBurrowerNightmareWheelNitroUnitNutrientZOokaziOptionHunterOxygeddonPoisonFangsPoisonMummyPoisonOfTheOldManPrincessCurranPrincessPikeruPrincessOfTsurugiRaimeiRainOfMercyRedMedicineReflectBounderRestructerRevolutionRockBombardmentSecretBarrelShinatoKingOfAHigherPlaneSkullMarkLadybugSnatchStealSolarFlareDragonSolarRaySoulAbsorptionSoulOfThePureSparksSphinxTeleiaSpiritualFireArtKurenaiStealthBirdTheEyeOfTruthToonCannonSoldierTremendousFireUltimateBaseballKidWaveMotionCannonWhiteMagicianPikeruWoodlandSpriteZolga_080655EC
+	bl gCardEffectDamageGraveyard_080655EC
 	b _080715A6
 _080715A2:
-	bl gCardEffectAnteatereatingantArcaneArcherOfTheForestArmedDragonLv5BESTetranBladeRabbitBlastMagicianBlastWithChainBreakerTheMagicalWarriorBurningBeastChironTheMageCyberLaserDragonDarkMagicianKnightDoubleSnareDragonSeekerDreamClownDrivingSnowEatgaboonElementalHeroThunderGiantExiledForceFreedTheBraveWandererFreezingBeastGearfriedTheSwordmasterGranmargTheRockMonarchGuardianCealGustHannibalNecromancerHarpiesHuntingGroundHouseOfAdhesiveTapeMagicalMarionetteManEaterBugMedusaWormMichizureMysticalSpaceTyphoonNewdoriaNightAssailantOldVindictiveMagicianOrcaMegaFortressOfDarknessRaigekiBreakRemoveTrapSakuretsuArmorShieldCrashSwarmOfLocustsSwarmOfScarabsThousandKnivesThrowstoneUnitTrapHoleTributeToTheDoomedUriaLordOfSearingFlamesWhiteNinjaXyDragonCannonXyzDragonCannonXzTankCannonYzTankDragonZaborgTheThunderMonarch_08064654
+	bl gCardEffectDestroy_08064654
 _080715A6:
 	pop {r1}
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectStampingDestruction_080715AC
-gCardEffectStampingDestruction_080715AC: @ 0x080715AC
+	@ Stamping Destruction
+	thumb_func_start gCardEffectDestroySpellTrapDamage_080715AC
+gCardEffectDestroySpellTrapDamage_080715AC: @ 0x080715AC
 	push {r4, r5, r6, lr}
 	sub sp, #4
 	adds r5, r0, #0
@@ -189354,8 +191994,9 @@ _080715F8:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectSuperRejuvenation_08071604
-gCardEffectSuperRejuvenation_08071604: @ 0x08071604
+	@ Super Rejuvenation
+	thumb_func_start gCardEffectDrawDiscard_08071604
+gCardEffectDrawDiscard_08071604: @ 0x08071604
 	push {r4, lr}
 	adds r3, r0, #0
 	ldr r2, _08071644 @ =gUnk_0201B290
@@ -189397,8 +192038,9 @@ _0807164E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectKeldo_08071654
-gCardEffectKeldo_08071654: @ 0x08071654
+	@ Keldo
+	thumb_func_start gCardEffectSendToGYDestroy_08071654
+gCardEffectSendToGYDestroy_08071654: @ 0x08071654
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	ldrb r1, [r6, #6]
@@ -189482,8 +192124,9 @@ _080716F4:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectDraggedDownIntoTheGrave_080716FC
-gCardEffectDraggedDownIntoTheGrave_080716FC: @ 0x080716FC
+	@ Dragged Down into the Grave
+	thumb_func_start gCardEffectDrawDiscard_080716FC
+gCardEffectDrawDiscard_080716FC: @ 0x080716FC
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldr r3, _0807172C @ =gUnk_0201C4E0
@@ -189595,8 +192238,9 @@ _080717EA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDeSpellGermWeapon_080717F0
-gCardEffectDeSpellGermWeapon_080717F0: @ 0x080717F0
+	@ De-Spell Germ Weapon
+	thumb_func_start gCardEffectSendToGYGraveyard_080717F0
+gCardEffectSendToGYGraveyard_080717F0: @ 0x080717F0
 	push {r4, r5, r6, r7, lr}
 	adds r5, r0, #0
 	ldrh r7, [r5, #0xc]
@@ -189706,16 +192350,18 @@ _080718BC:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectReversalOfGraves_080718C4
-gCardEffectReversalOfGraves_080718C4: @ 0x080718C4
+	@ Reversal of Graves
+	thumb_func_start gCardEffectDamageGraveyard_080718C4
+gCardEffectDamageGraveyard_080718C4: @ 0x080718C4
 	push {lr}
 	bl sub_0804A5B8
 	movs r0, #0
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectBlastHeldByATribute_080718D0
-gCardEffectBlastHeldByATribute_080718D0: @ 0x080718D0
+	@ Blast Held by a Tribute
+	thumb_func_start gCardEffectDestroyAllDamage_080718D0
+gCardEffectDestroyAllDamage_080718D0: @ 0x080718D0
 	push {r4, lr}
 	adds r4, r0, #0
 	bl sub_0804A76C
@@ -189743,8 +192389,9 @@ _080718FE:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectAgido_0807190C
-gCardEffectAgido_0807190C: @ 0x0807190C
+	@ Agido
+	thumb_func_start gCardEffectSpecialSummonSendToGY_0807190C
+gCardEffectSpecialSummonSendToGY_0807190C: @ 0x0807190C
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldr r0, _08071928 @ =gUnk_0201B290
@@ -189863,8 +192510,9 @@ _080719F4:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectSilentFiend_080719FC
-gCardEffectSilentFiend_080719FC: @ 0x080719FC
+	@ Silent Fiend
+	thumb_func_start gCardEffectSpecialSummonPreventAttack_080719FC
+gCardEffectSpecialSummonPreventAttack_080719FC: @ 0x080719FC
 	push {r4, r5, r6, lr}
 	sub sp, #4
 	adds r4, r0, #0
@@ -189937,8 +192585,9 @@ _08071A8A:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectFiberJar_08071A94
-gCardEffectFiberJar_08071A94: @ 0x08071A94
+	@ Fiber Jar
+	thumb_func_start gCardEffectDrawGraveyard_08071A94
+gCardEffectDrawGraveyard_08071A94: @ 0x08071A94
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldr r0, _08071AB4 @ =gUnk_0201B290
@@ -190099,8 +192748,9 @@ _08071BD2:
 	.align 2, 0
 _08071BD8: .4byte gUnk_0201E1C8
 
-	thumb_func_start gCardEffectMaharaghi_08071BDC
-gCardEffectMaharaghi_08071BDC: @ 0x08071BDC
+	@ Maharaghi
+	thumb_func_start gCardEffectDrawSpecialSummon_08071BDC
+gCardEffectDrawSpecialSummon_08071BDC: @ 0x08071BDC
 	push {r4, r5, r6, lr}
 	sub sp, #8
 	adds r4, r0, #0
@@ -190297,8 +192947,20 @@ _08071D58: .4byte 0x00008056
 _08071D5C: .4byte 0x00000868
 _08071D60: .4byte gUnk_0201C740
 
-	thumb_func_start gCardEffectAsuraPriestDarkDustSpiritFushiNoToriGreatLongNoseHinoKaguTsuchiInabaWhiteRabbitMaharaghiOtohimeSusaSoldierTsukuyomiYamataDragonYataGarasu_08071D64
-gCardEffectAsuraPriestDarkDustSpiritFushiNoToriGreatLongNoseHinoKaguTsuchiInabaWhiteRabbitMaharaghiOtohimeSusaSoldierTsukuyomiYamataDragonYataGarasu_08071D64: @ 0x08071D64
+	@ Asura Priest
+	@ Dark Dust Spirit
+	@ Fushi No Tori
+	@ Great Long Nose
+	@ Hino-Kagu-Tsuchi
+	@ Inaba White Rabbit
+	@ Maharaghi
+	@ Otohime
+	@ Susa Soldier
+	@ Tsukuyomi
+	@ Yamata Dragon
+	@ Yata-Garasu
+	thumb_func_start gCardEffectSpecialSummonReturnToHand_08071D64
+gCardEffectSpecialSummonReturnToHand_08071D64: @ 0x08071D64
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	adds r2, r1, #0
@@ -190409,42 +193071,42 @@ _08071E3C: .4byte 0x00001694 @ Tsukuyomi
 _08071E40:
 	adds r0, r6, #0
 	adds r1, r2, #0
-	bl gCardEffectSolomonSLawbook_0806CB54
+	bl gCardEffectStandbyPhase_0806CB54
 	b _08071E92
 _08071E4A:
 	adds r0, r6, #0
 	adds r1, r2, #0
-	bl gCardEffectAirknightParshathAppropriateAvatarOfThePotBrowwHuntsmanOfDarkWorldCardOfSafeReturnCardOfSanctityChainsawInsectChaosGreedCorpseOfYataGarasuDarkMimicLv3DesLacoodaElectricSnakeElementalHeroBubblemanHeartOfTheUnderdogJarOfGreedMaskedSorcererMoltenZombiePoisonDrawFrogPotOfGreedPreciousCardsFromBeyondRoyalMagicalLibrarySacredCraneSkelengelTheAgentOfWisdomMercuryToonMaskedSorcerer_080656E0
+	bl gCardEffectDraw_080656E0
 	b _08071E92
 _08071E54:
 	adds r0, r6, #0
 	adds r1, r2, #0
-	bl gCardEffectTevaTimeater_0806D680
+	bl gCardEffectDestroyPreventAttack_0806D680
 	b _08071E92
 _08071E5E:
 	adds r0, r6, #0
 	adds r1, r2, #0
-	bl gCardEffectAquaSpiritBESCrystalCoreGarudaTheWindSpiritGravekeeperSAssailantRyuKishinClown_0807051C
+	bl gCardEffectChangePositionSpecialSummon_0807051C
 	b _08071E92
 _08071E68:
 	adds r0, r6, #0
 	adds r1, r2, #0
-	bl gCardEffectNonAggressionAreaSonicJammer_08074318
+	bl gCardEffectSpecialSummonDiscard_08074318
 	b _08071E92
 _08071E72:
 	adds r0, r6, #0
 	adds r1, r2, #0
-	bl gCardEffect7AbsorbingKidFromTheSkyAltarForTributeAmazonArcherAmebaAndroSphinxAntiAircraftFlowerAtomicFireflyBackfireBlackPendantBlastingTheRuinsBlueMedicineBowganianBurningAlgaeCannonSoldierCastleGateCatapultTurtleCemetaryBombCestusOfDaglaDDDynamiteDarkMagicianSTomeOfBlackMagicDarkRoomOfNightmareDesKoalaDesVolstgalphDianKetoTheCureMasterEbonMagicianCurranElementalHeroFlameWingmanElementalHeroShiningFlareWingmanElementalHeroSteamHealerElephantStatueOfBlessingElephantStatueOfDisasterEmergencyProvisionsFallingDownFinalFlameFireSorcererFuhmaShurikenGiantKozakyGiftOfTheMysticalElfGoblinThiefGoblinSSecretRemedyGranadoraGraveOhjaGravekeeperSCannonholderGravekeeperSCurseGriggleGuardianAngelJoanHamonLordOfStrikingThunderHinotamaHystericFairyInfernoJustDessertsKa2DesScissorsKozakySSelfDestructButtonLadyAssailantOfFlamesLavaGolemLegendaryBlackBeltMagicalBlastMagicalExplosionManThroTroMarshmallonMaskOfDispelMaskOfTheAccursedMassDriverMechaDogMarronMemoryCrusherMeteorOfDestructionMinarMineGolemMinorGoblinOfficialMooyanCurryMysteriousPuppeteerMystikWokNeedleBallNeedleBurrowerNightmareWheelNitroUnitNutrientZOokaziOptionHunterOxygeddonPoisonFangsPoisonMummyPoisonOfTheOldManPrincessCurranPrincessPikeruPrincessOfTsurugiRaimeiRainOfMercyRedMedicineReflectBounderRestructerRevolutionRockBombardmentSecretBarrelShinatoKingOfAHigherPlaneSkullMarkLadybugSnatchStealSolarFlareDragonSolarRaySoulAbsorptionSoulOfThePureSparksSphinxTeleiaSpiritualFireArtKurenaiStealthBirdTheEyeOfTruthToonCannonSoldierTremendousFireUltimateBaseballKidWaveMotionCannonWhiteMagicianPikeruWoodlandSpriteZolga_080655EC
+	bl gCardEffectDamageGraveyard_080655EC
 	b _08071E92
 _08071E7C:
 	adds r0, r6, #0
 	adds r1, r2, #0
-	bl gCardEffect4StarredLadybugOfDoomAcidRainArmedDragonLv10ArmedDragonLv7BreathOfLightBurstBreathCalamityOfTheWickedChaosEndDarkHoleDarkMagicAttackDemiseKingOfArmageddonDesCounterblowDesCroakingDisarmamentElementalBurstEradicatingAerosolEternalDroughtEternalRestExileOfTheWickedFinalDestinyGearfriedTheIronKnightGigantesGilfordTheLightningHarpieSFeatherDusterHeavyStormJowgenTheSpiritualistLastDayOfWitchLegendaryFlameLordLeviaDragonDaedalusLightningVortexMaliceDispersionMegaTonMagicalCannonMirrorForceMoistureCreatureNeedleCeilingObeliskTheTormentorOjamaDeltaHurricaneRaigekiReallyEternalRestSacredPhoenixOfNephthysSpecialHurricaneSpellPurificationTheLastWarriorFromAnotherPlanetTorrentialTributeTragedyTribeInfectingVirusWarriorEliminationWeedOut_08064660
+	bl gCardEffectDestroy_08064660
 	b _08071E92
 _08071E86:
 	adds r0, r6, #0
 	adds r1, r2, #0
-	bl gCardEffectBookOfMoonDesertapirInfernoHammerReadyForIntercepting_0807142C
+	bl gCardEffectChangePosition_0807142C
 	b _08071E92
 _08071E90:
 	movs r0, #0
@@ -190453,8 +193115,10 @@ _08071E92:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectSuperRoboladySuperRoboyarou_08071E98
-gCardEffectSuperRoboladySuperRoboyarou_08071E98: @ 0x08071E98
+	@ Super Robolady
+	@ Super Roboyarou
+	thumb_func_start gCardEffectSpecialSummonBoostATK_08071E98
+gCardEffectSpecialSummonBoostATK_08071E98: @ 0x08071E98
 	push {r4, r5, r6, r7, lr}
 	adds r7, r0, #0
 	mov ip, r1
@@ -190547,8 +193211,9 @@ _08071F50:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectFengshengMirror_08071F58
-gCardEffectFengshengMirror_08071F58: @ 0x08071F58
+	@ Fengsheng Mirror
+	thumb_func_start gCardEffectDiscardGraveyard_08071F58
+gCardEffectDiscardGraveyard_08071F58: @ 0x08071F58
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -190773,8 +193438,9 @@ _08072148:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectBlastWithChain_08072154
-gCardEffectBlastWithChain_08072154: @ 0x08072154
+	@ Blast with Chain
+	thumb_func_start gCardEffectDestroyBoostATK_08072154
+gCardEffectDestroyBoostATK_08072154: @ 0x08072154
 	push {r4, r5, r6, r7, lr}
 	adds r7, r0, #0
 	ldrb r3, [r7, #2]
@@ -190866,8 +193532,9 @@ _08072204:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectBottomlessTrapHole_0807220C
-gCardEffectBottomlessTrapHole_0807220C: @ 0x0807220C
+	@ Bottomless Trap Hole
+	thumb_func_start gCardEffectSpecialSummonBanish_0807220C
+gCardEffectSpecialSummonBanish_0807220C: @ 0x0807220C
 	push {r4, lr}
 	adds r4, r0, #0
 	bl sub_08090690
@@ -190881,8 +193548,9 @@ gCardEffectBottomlessTrapHole_0807220C: @ 0x0807220C
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectOminousFortunetelling_08072228
-gCardEffectOminousFortunetelling_08072228: @ 0x08072228
+	@ Ominous Fortunetelling
+	thumb_func_start gCardEffectDamageStandbyPhase_08072228
+gCardEffectDamageStandbyPhase_08072228: @ 0x08072228
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -191097,8 +193765,9 @@ _080723C0:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectDropOff_080723D0
-gCardEffectDropOff_080723D0: @ 0x080723D0
+	@ Drop Off
+	thumb_func_start gCardEffectDrawDiscard_080723D0
+gCardEffectDrawDiscard_080723D0: @ 0x080723D0
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -191125,8 +193794,9 @@ _080723FC:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectFiendComedian_08072404
-gCardEffectFiendComedian_08072404: @ 0x08072404
+	@ Fiend Comedian
+	thumb_func_start gCardEffectBanishSendToGY_08072404
+gCardEffectBanishSendToGY_08072404: @ 0x08072404
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	adds r2, r1, #0
@@ -191279,8 +193949,9 @@ _0807253A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectLastTurn_08072540
-gCardEffectLastTurn_08072540: @ 0x08072540
+	@ Last Turn
+	thumb_func_start gCardEffectSpecialSummonSendToGY_08072540
+gCardEffectSpecialSummonSendToGY_08072540: @ 0x08072540
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -191491,8 +194162,10 @@ _080726E8:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectVampireLadyVampireLord_080726F4
-gCardEffectVampireLadyVampireLord_080726F4: @ 0x080726F4
+	@ Vampire Lady
+	@ Vampire Lord
+	thumb_func_start gCardEffectSendToGYDamage_080726F4
+gCardEffectSendToGYDamage_080726F4: @ 0x080726F4
 	push {r4, lr}
 	sub sp, #8
 	adds r3, r0, #0
@@ -191503,7 +194176,7 @@ gCardEffectVampireLadyVampireLord_080726F4: @ 0x080726F4
 	cmp r0, #0x80
 	bne _0807270E
 	adds r0, r3, #0
-	bl gCardEffectBeiigeVanguardOfDarkWorldDespairFromTheDarkFearFromTheDarkFoxFireHeliosDuoMegisteHeliosTrisMegisteKingOfTheSkullServantsManticoreOfDarknessSacredPhoenixOfNephthysSandMothTreebornFrog_08075874
+	bl gCardEffectSpecialSummonGraveyard_08075874
 	b _08072866
 _0807270E:
 	ldr r0, _0807272C @ =gUnk_0201B290
@@ -191675,8 +194348,12 @@ _08072866:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectNanobreakerNinjaGrandmasterSasukePaladinOfWhiteDragonSasukeSamurai_08072870
-gCardEffectNanobreakerNinjaGrandmasterSasukePaladinOfWhiteDragonSasukeSamurai_08072870: @ 0x08072870
+	@ Nanobreaker
+	@ Ninja Grandmaster Sasuke
+	@ Paladin of White Dragon
+	@ Sasuke Samurai
+	thumb_func_start gCardEffectDestroyChangePosition_08072870
+gCardEffectDestroyChangePosition_08072870: @ 0x08072870
 	push {lr}
 	adds r3, r0, #0
 	ldr r2, _0807288C @ =gUnk_0201BB90
@@ -191694,8 +194371,9 @@ _08072886:
 	.align 2, 0
 _0807288C: .4byte gUnk_0201BB90
 
-	thumb_func_start gCardEffectWanderingMummy_08072890
-gCardEffectWanderingMummy_08072890: @ 0x08072890
+	@ Wandering Mummy
+	thumb_func_start gCardEffectChangePosition_08072890
+gCardEffectChangePosition_08072890: @ 0x08072890
 	push {lr}
 	adds r2, r0, #0
 	ldr r0, _080728BC @ =gUnk_0201B290
@@ -191732,8 +194410,24 @@ _080728CE:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffect8ClawsScorpionCobramanSakuzyDesLacoodaFushiohRichieGiantAxeMummyGolemSentryGreatSpiritGuardianSphinxGuardianStatueMedusaWormMidShieldGardnaMoaiInterceptorCannonsRoyalKeeperStealthBirdSwarmOfLocustsSwarmOfScarabs_080728D4
-gCardEffect8ClawsScorpionCobramanSakuzyDesLacoodaFushiohRichieGiantAxeMummyGolemSentryGreatSpiritGuardianSphinxGuardianStatueMedusaWormMidShieldGardnaMoaiInterceptorCannonsRoyalKeeperStealthBirdSwarmOfLocustsSwarmOfScarabs_080728D4: @ 0x080728D4
+	@ 8-Claws Scorpion
+	@ Cobraman Sakuzy
+	@ Des Lacooda
+	@ Fushioh Richie
+	@ Giant Axe Mummy
+	@ Golem Sentry
+	@ Great Spirit
+	@ Guardian Sphinx
+	@ Guardian Statue
+	@ Medusa Worm
+	@ Mid Shield Gardna
+	@ Moai Interceptor Cannons
+	@ Royal Keeper
+	@ Stealth Bird
+	@ Swarm of Locusts
+	@ Swarm of Scarabs
+	thumb_func_start gCardEffectChangePosition_080728D4
+gCardEffectChangePosition_080728D4: @ 0x080728D4
 	push {lr}
 	adds r2, r0, #0
 	ldrb r1, [r2, #2]
@@ -191748,8 +194442,9 @@ gCardEffect8ClawsScorpionCobramanSakuzyDesLacoodaFushiohRichieGiantAxeMummyGolem
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectGuardianSphinx_080728F0
-gCardEffectGuardianSphinx_080728F0: @ 0x080728F0
+	@ Guardian Sphinx
+	thumb_func_start gCardEffectReturnToHandChangePosition_080728F0
+gCardEffectReturnToHandChangePosition_080728F0: @ 0x080728F0
 	push {lr}
 	ldrb r2, [r0, #2]
 	lsls r1, r2, #0x1f
@@ -191764,8 +194459,9 @@ gCardEffectGuardianSphinx_080728F0: @ 0x080728F0
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDiceJar_0807290C
-gCardEffectDiceJar_0807290C: @ 0x0807290C
+	@ Dice Jar
+	thumb_func_start gCardEffectDamageFlip_0807290C
+gCardEffectDamageFlip_0807290C: @ 0x0807290C
 	push {r4, r5, r6, r7, lr}
 	adds r4, r0, #0
 	ldr r7, _08072938 @ =gUnk_0201C4E0
@@ -191876,8 +194572,10 @@ _080729D0:
 	.align 2, 0
 _080729D8: .4byte 0x00001770 @ Marshmallon
 
-	thumb_func_start gCardEffectArsenalRobberDarkScorpionBurglars_080729DC
-gCardEffectArsenalRobberDarkScorpionBurglars_080729DC: @ 0x080729DC
+	@ Arsenal Robber
+	@ Dark Scorpion Burglars
+	thumb_func_start gCardEffectSendToGYGraveyard_080729DC
+gCardEffectSendToGYGraveyard_080729DC: @ 0x080729DC
 	push {lr}
 	adds r2, r0, #0
 	ldr r0, _080729F8 @ =gUnk_0201B290
@@ -191956,8 +194654,9 @@ _08072A6E:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectDonZaloog_08072A74
-gCardEffectDonZaloog_08072A74: @ 0x08072A74
+	@ Don Zaloog
+	thumb_func_start gCardEffectDiscardSendToGY_08072A74
+gCardEffectDiscardSendToGY_08072A74: @ 0x08072A74
 	push {lr}
 	ldrh r1, [r0, #0xc]
 	cmp r1, #1
@@ -191988,8 +194687,9 @@ _08072AA6:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectBookOfLife_08072AAC
-gCardEffectBookOfLife_08072AAC: @ 0x08072AAC
+	@ Book of Life
+	thumb_func_start gCardEffectSpecialSummonBanish_08072AAC
+gCardEffectSpecialSummonBanish_08072AAC: @ 0x08072AAC
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	ldr r0, _08072B10 @ =gUnk_0201B290
@@ -192088,8 +194788,9 @@ _08072B76:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectBookOfTaiyou_08072B7C
-gCardEffectBookOfTaiyou_08072B7C: @ 0x08072B7C
+	@ Book of Taiyou
+	thumb_func_start gCardEffectChangePosition_08072B7C
+gCardEffectChangePosition_08072B7C: @ 0x08072B7C
 	push {r4, r5, r6, lr}
 	sub sp, #4
 	adds r5, r0, #0
@@ -192152,8 +194853,9 @@ _08072BF0:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectMirageOfNightmare_08072BFC
-gCardEffectMirageOfNightmare_08072BFC: @ 0x08072BFC
+	@ Mirage of Nightmare
+	thumb_func_start gCardEffectDrawDiscard_08072BFC
+gCardEffectDrawDiscard_08072BFC: @ 0x08072BFC
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -192267,8 +194969,9 @@ _08072CD4:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectCallOfTheMummy_08072CE4
-gCardEffectCallOfTheMummy_08072CE4: @ 0x08072CE4
+	@ Call of the Mummy
+	thumb_func_start gCardEffectSpecialSummon_08072CE4
+gCardEffectSpecialSummon_08072CE4: @ 0x08072CE4
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -192292,15 +194995,16 @@ _08072D0C: .4byte gUnk_0201B290
 _08072D10:
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectAncientLampContractWithExodiaDonTurtleFrontlineBaseHiddenSoldierKaibamanKingDragunMagnetCircleLv2MaraudingCaptainPinchHopperRedEyesBChickTheCreatorIncarnateTheThingInTheCraterTributeDollTwoManCellBattleUltraEvolutionPillVampireOrchis_080659E8
+	bl gCardEffectSpecialSummon_080659E8
 _08072D18:
 	pop {r4, r5}
 	pop {r1}
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectTimidity_08072D20
-gCardEffectTimidity_08072D20: @ 0x08072D20
+	@ Timidity
+	thumb_func_start gCardEffectDestroySpellTrapEndPhase_08072D20
+gCardEffectDestroySpellTrapEndPhase_08072D20: @ 0x08072D20
 	push {lr}
 	ldrh r1, [r0]
 	movs r0, #0
@@ -192311,8 +195015,9 @@ gCardEffectTimidity_08072D20: @ 0x08072D20
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectOrdealOfATraveler_08072D34
-gCardEffectOrdealOfATraveler_08072D34: @ 0x08072D34
+	@ Ordeal of a Traveler
+	thumb_func_start gCardEffectReturnToHand_08072D34
+gCardEffectReturnToHand_08072D34: @ 0x08072D34
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -192499,8 +195204,16 @@ _08072EA2:
 	.align 2, 0
 _08072EB0: .4byte gUnk_0201BB90
 
-	thumb_func_start gCardEffectCobraJarDesDendleFiendSSanctuaryInsectQueenJamBreedingMachineLekungaRavielLordOfPhantasmsStatueOfTheWicked_08072EB4
-gCardEffectCobraJarDesDendleFiendSSanctuaryInsectQueenJamBreedingMachineLekungaRavielLordOfPhantasmsStatueOfTheWicked_08072EB4: @ 0x08072EB4
+	@ Cobra Jar
+	@ Des Dendle
+	@ Fiend's Sanctuary
+	@ Insect Queen
+	@ Jam Breeding Machine
+	@ Lekunga
+	@ Raviel, Lord of Phantasms
+	@ Statue of the Wicked
+	thumb_func_start gCardEffectSpecialSummonDestroy_08072EB4
+gCardEffectSpecialSummonDestroy_08072EB4: @ 0x08072EB4
 	push {r4, r5, r6, lr}
 	sub sp, #8
 	adds r4, r0, #0
@@ -192656,8 +195369,9 @@ _08072FC2:
 _08072FCC: .4byte 0x0000195A @ Phantasm Token
 _08072FD0: .4byte 0xFFFFDFFF
 
-	thumb_func_start gCardEffectDarkCoffin_08072FD4
-gCardEffectDarkCoffin_08072FD4: @ 0x08072FD4
+	@ Dark Coffin
+	thumb_func_start gCardEffectDiscardSendToGY_08072FD4
+gCardEffectDiscardSendToGY_08072FD4: @ 0x08072FD4
 	push {r4, r5, lr}
 	sub sp, #0x100
 	adds r5, r0, #0
@@ -192788,8 +195502,9 @@ _080730D0:
 _080730D8: .4byte gUnk_0201C4E0
 _080730DC: .4byte 0x00001DA8
 
-	thumb_func_start gCardEffectNeedleWall_080730E0
-gCardEffectNeedleWall_080730E0: @ 0x080730E0
+	@ Needle Wall
+	thumb_func_start gCardEffectDestroyStandbyPhase_080730E0
+gCardEffectDestroyStandbyPhase_080730E0: @ 0x080730E0
 	push {lr}
 	adds r3, r0, #0
 	ldr r0, _08073108 @ =gUnk_0201B290
@@ -192840,8 +195555,9 @@ _0807313A:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectTrapDustshoot_08073140
-gCardEffectTrapDustshoot_08073140: @ 0x08073140
+	@ Trap Dustshoot
+	thumb_func_start gCardEffectUnknown_08073140
+gCardEffectUnknown_08073140: @ 0x08073140
 	push {r4, r5, r6, r7, lr}
 	adds r7, r0, #0
 	ldr r0, _08073160 @ =gUnk_0201B290
@@ -192991,8 +195707,9 @@ _080732A2:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectRecklessGreed_080732A8
-gCardEffectRecklessGreed_080732A8: @ 0x080732A8
+	@ Reckless Greed
+	thumb_func_start gCardEffectDraw_080732A8
+gCardEffectDraw_080732A8: @ 0x080732A8
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r0, #4
@@ -193034,8 +195751,10 @@ _080732EA:
 _080732F4: .4byte gUnk_0201C4E0
 _080732F8: .4byte 0x00001CE8
 
-	thumb_func_start gCardEffectAstralBarrierToonDefense_080732FC
-gCardEffectAstralBarrierToonDefense_080732FC: @ 0x080732FC
+	@ Astral Barrier
+	@ Toon Defense
+	thumb_func_start gCardEffectDirectAttack_080732FC
+gCardEffectDirectAttack_080732FC: @ 0x080732FC
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -193105,8 +195824,9 @@ _08073380: .4byte 0x000010D0 @ Wicked Dragon with the Ersatz Head
 _08073384: .4byte gUnk_0201BB90
 _08073388: .4byte 0x00000868
 
-	thumb_func_start gCardEffectDarkDesignator_0807338C
-gCardEffectDarkDesignator_0807338C: @ 0x0807338C
+	@ Dark Designator
+	thumb_func_start gCardEffectSearch_0807338C
+gCardEffectSearch_0807338C: @ 0x0807338C
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldrh r1, [r4, #8]
@@ -193184,8 +195904,9 @@ _08073422:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectHelpoemer_08073428
-gCardEffectHelpoemer_08073428: @ 0x08073428
+	@ Helpoemer
+	thumb_func_start gCardEffectSpecialSummonDiscard_08073428
+gCardEffectSpecialSummonDiscard_08073428: @ 0x08073428
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -193200,7 +195921,7 @@ gCardEffectHelpoemer_08073428: @ 0x08073428
 	blt _0807344C
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectMefistTheInfernalGeneralReaperOnTheNightmareRobbinGoblinSilpheedSpiritReaperTheSecretOfTheBanditToonGeminiElfWhiteMagicalHatZombieTiger_080665A4
+	bl gCardEffectDiscardDestroy_080665A4
 	b _0807344E
 _0807344C:
 	movs r0, #0
@@ -193209,8 +195930,9 @@ _0807344E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectMonsterRelief_08073454
-gCardEffectMonsterRelief_08073454: @ 0x08073454
+	@ Monster Relief
+	thumb_func_start gCardEffectSpecialSummonReturnToHand_08073454
+gCardEffectSpecialSummonReturnToHand_08073454: @ 0x08073454
 	push {r4, r5, r6, r7, lr}
 	adds r5, r0, #0
 	adds r2, r1, #0
@@ -193297,7 +196019,7 @@ _080734E4:
 	strb r0, [r5, #3]
 	adds r0, r5, #0
 	adds r1, r2, #0
-	bl gCardEffectAncientLampMagnetCircleLv2_0805C294
+	bl gCardEffectSpecialSummonChangePosition_0805C294
 	ldrb r1, [r5, #3]
 	ands r4, r1
 	strb r4, [r5, #3]
@@ -193341,8 +196063,10 @@ _08073560: .4byte 0x00000868
 _08073564: .4byte gUnk_0201C600
 _08073568: .4byte 0x00001C88
 
-	thumb_func_start gCardEffectMachineDuplicationTheLeagueOfUniformNomenclature_0807356C
-gCardEffectMachineDuplicationTheLeagueOfUniformNomenclature_0807356C: @ 0x0807356C
+	@ Machine Duplication
+	@ The League of Uniform Nomenclature
+	thumb_func_start gCardEffectSpecialSummon_0807356C
+gCardEffectSpecialSummon_0807356C: @ 0x0807356C
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r3, r1, #0
@@ -193411,7 +196135,7 @@ _080735B4: @ jump table
 _08073628:
 	adds r0, r5, #0
 	adds r1, r3, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	cmp r0, #0
 	bne _08073636
 	b _08073756
@@ -193571,8 +196295,10 @@ _08073758:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectDarkJeroidWingedMinion_08073760
-gCardEffectDarkJeroidWingedMinion_08073760: @ 0x08073760
+	@ Dark Jeroid
+	@ Winged Minion
+	thumb_func_start gCardEffectSpecialSummonBoostATK_08073760
+gCardEffectSpecialSummonBoostATK_08073760: @ 0x08073760
 	push {r4, r5, r6, lr}
 	sub sp, #4
 	adds r4, r0, #0
@@ -193609,8 +196335,9 @@ _080737A0:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectEnemyController_080737AC
-gCardEffectEnemyController_080737AC: @ 0x080737AC
+	@ Enemy Controller
+	thumb_func_start gCardEffectTakeControlChangePosition_080737AC
+gCardEffectTakeControlChangePosition_080737AC: @ 0x080737AC
 	push {r4, r5, r6, lr}
 	sub sp, #8
 	adds r4, r0, #0
@@ -193666,8 +196393,10 @@ _08073810:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectMysticalKnightOfJackalWingedSageFalcos_0807381C
-gCardEffectMysticalKnightOfJackalWingedSageFalcos_0807381C: @ 0x0807381C
+	@ Mystical Knight of Jackal
+	@ Winged Sage Falcos
+	thumb_func_start gCardEffectSendToGYGraveyard_0807381C
+gCardEffectSendToGYGraveyard_0807381C: @ 0x0807381C
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	movs r0, #0xfc
@@ -193704,8 +196433,10 @@ _0807385C:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectACatOfIllOmenAnOwlOfLuck_08073864
-gCardEffectACatOfIllOmenAnOwlOfLuck_08073864: @ 0x08073864
+	@ A Cat of Ill Omen
+	@ An Owl of Luck
+	thumb_func_start gCardEffectSearchFlip_08073864
+gCardEffectSearchFlip_08073864: @ 0x08073864
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	ldr r0, _08073884 @ =gUnk_0201B290
@@ -193923,8 +196654,9 @@ _08073A56:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectYomiShip_08073A5C
-gCardEffectYomiShip_08073A5C: @ 0x08073A5C
+	@ Yomi Ship
+	thumb_func_start gCardEffectSendToGYDestroy_08073A5C
+gCardEffectSendToGYDestroy_08073A5C: @ 0x08073A5C
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r0, #0xfc
@@ -193967,8 +196699,9 @@ _08073AA2:
 	.align 2, 0
 _08073AAC: .4byte gUnk_0201BB90
 
-	thumb_func_start gCardEffectCardShuffle_08073AB0
-gCardEffectCardShuffle_08073AB0: @ 0x08073AB0
+	@ Card Shuffle
+	thumb_func_start gCardEffectDamage_08073AB0
+gCardEffectDamage_08073AB0: @ 0x08073AB0
 	push {r4, lr}
 	ldrh r2, [r0, #0xc]
 	cmp r2, #1
@@ -194022,8 +196755,9 @@ _08073B0C:
 _08073B14: .4byte gUnk_0201C4E0
 _08073B18: .4byte 0x00000868
 
-	thumb_func_start gCardEffectReasoning_08073B1C
-gCardEffectReasoning_08073B1C: @ 0x08073B1C
+	@ Reasoning
+	thumb_func_start gCardEffectSpecialSummonSendToGY_08073B1C
+gCardEffectSpecialSummonSendToGY_08073B1C: @ 0x08073B1C
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -194288,8 +197022,9 @@ _08073D76:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectDifferentDimensionCapsule_08073D84
-gCardEffectDifferentDimensionCapsule_08073D84: @ 0x08073D84
+	@ Different Dimension Capsule
+	thumb_func_start gCardEffectSearchBanish_08073D84
+gCardEffectSearchBanish_08073D84: @ 0x08073D84
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -194424,8 +197159,9 @@ _08073E80:
 _08073E8C: .4byte 0x00000868
 _08073E90: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectHieroglyphLithograph_08073E94
-gCardEffectHieroglyphLithograph_08073E94: @ 0x08073E94
+	@ Hieroglyph Lithograph
+	thumb_func_start gCardEffectDamage_08073E94
+gCardEffectDamage_08073E94: @ 0x08073E94
 	push {lr}
 	ldrb r1, [r0, #2]
 	lsls r2, r1, #0x1f
@@ -194440,8 +197176,9 @@ gCardEffectHieroglyphLithograph_08073E94: @ 0x08073E94
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectRoyalTribute_08073EB0
-gCardEffectRoyalTribute_08073EB0: @ 0x08073EB0
+	@ Royal Tribute
+	thumb_func_start gCardEffectDiscardGraveyard_08073EB0
+gCardEffectDiscardGraveyard_08073EB0: @ 0x08073EB0
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -194592,8 +197329,9 @@ _08073FCE:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectReversalQuiz_08073FE0
-gCardEffectReversalQuiz_08073FE0: @ 0x08073FE0
+	@ Reversal Quiz
+	thumb_func_start gCardEffectSendToGYGraveyard_08073FE0
+gCardEffectSendToGYGraveyard_08073FE0: @ 0x08073FE0
 	push {r4, r5, r6, r7, lr}
 	sub sp, #8
 	adds r7, r0, #0
@@ -194832,8 +197570,11 @@ _080741F0:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDisturbanceStrategyMindWipeReload_080741F8
-gCardEffectDisturbanceStrategyMindWipeReload_080741F8: @ 0x080741F8
+	@ Disturbance Strategy
+	@ Mind Wipe
+	@ Reload
+	thumb_func_start gCardEffectDraw_080741F8
+gCardEffectDraw_080741F8: @ 0x080741F8
 	push {r4, r5, r6, r7, lr}
 	adds r3, r0, #0
 	ldrh r1, [r3]
@@ -194983,8 +197724,10 @@ _08074312:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectNonAggressionAreaSonicJammer_08074318
-gCardEffectNonAggressionAreaSonicJammer_08074318: @ 0x08074318
+	@ Non Aggression Area
+	@ Sonic Jammer
+	thumb_func_start gCardEffectSpecialSummonDiscard_08074318
+gCardEffectSpecialSummonDiscard_08074318: @ 0x08074318
 	push {lr}
 	adds r2, r0, #0
 	ldrb r0, [r2, #2]
@@ -195001,8 +197744,20 @@ gCardEffectNonAggressionAreaSonicJammer_08074318: @ 0x08074318
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectBurningBeastDesDendleDoitsuFreezingBeastHeavyMechSupportPlatformKoitsuMetallizingParasiteLunatitePitchDarkDragonWWingCatapultYDragonHeadZMetalTankZombieTiger_08074338
-gCardEffectBurningBeastDesDendleDoitsuFreezingBeastHeavyMechSupportPlatformKoitsuMetallizingParasiteLunatitePitchDarkDragonWWingCatapultYDragonHeadZMetalTankZombieTiger_08074338: @ 0x08074338
+	@ Burning Beast
+	@ Des Dendle
+	@ Doitsu
+	@ Freezing Beast
+	@ Heavy Mech Support Platform
+	@ Koitsu
+	@ Metallizing Parasite - Lunatite
+	@ Pitch-Dark Dragon
+	@ W-Wing Catapult
+	@ Y-Dragon Head
+	@ Z-Metal Tank
+	@ Zombie Tiger
+	thumb_func_start gCardEffectSpecialSummonDestroy_08074338
+gCardEffectSpecialSummonDestroy_08074338: @ 0x08074338
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -195219,8 +197974,10 @@ _080744EC: .4byte 0x000004A4
 _080744F0: .4byte 0x00000FB6 @ Time Wizard
 _080744F4: .4byte gUnk_0201E2A0
 
-	thumb_func_start gCardEffectInterdimensionalMatterTransporterStrikeNinja_080744F8
-gCardEffectInterdimensionalMatterTransporterStrikeNinja_080744F8: @ 0x080744F8
+	@ Interdimensional Matter Transporter
+	@ Strike Ninja
+	thumb_func_start gCardEffectBanishEndPhase_080744F8
+gCardEffectBanishEndPhase_080744F8: @ 0x080744F8
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -195462,8 +198219,9 @@ _080746E0: .4byte 0x000004A4
 _080746E4: .4byte 0x00000868
 _080746E8: .4byte gUnk_0201C4E0
 
-	thumb_func_start gCardEffectGoblinZombie_080746EC
-gCardEffectGoblinZombie_080746EC: @ 0x080746EC
+	@ Goblin Zombie
+	thumb_func_start gCardEffectSearchSendToGY_080746EC
+gCardEffectSearchSendToGY_080746EC: @ 0x080746EC
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r1, r0, #0x1f
@@ -195478,8 +198236,9 @@ gCardEffectGoblinZombie_080746EC: @ 0x080746EC
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectKiryu_08074708
-gCardEffectKiryu_08074708: @ 0x08074708
+	@ Kiryu
+	thumb_func_start gCardEffectSpecialSummonDestroy_08074708
+gCardEffectSpecialSummonDestroy_08074708: @ 0x08074708
 	push {r4, r5, lr}
 	sub sp, #4
 	adds r5, r0, #0
@@ -195523,7 +198282,7 @@ _08074758: .4byte 0x00000868
 _0807475C: .4byte gUnk_0201C510
 _08074760:
 	adds r0, r5, #0
-	bl gCardEffectBurningBeastDesDendleDoitsuFreezingBeastHeavyMechSupportPlatformKoitsuMetallizingParasiteLunatitePitchDarkDragonWWingCatapultYDragonHeadZMetalTankZombieTiger_08074338
+	bl gCardEffectSpecialSummonDestroy_08074338
 _08074766:
 	add sp, #4
 	pop {r4, r5}
@@ -195531,8 +198290,9 @@ _08074766:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectDecayedCommander_08074770
-gCardEffectDecayedCommander_08074770: @ 0x08074770
+	@ Decayed Commander
+	thumb_func_start gCardEffectSpecialSummonDiscard_08074770
+gCardEffectSpecialSummonDiscard_08074770: @ 0x08074770
 	push {lr}
 	adds r2, r0, #0
 	adds r3, r1, #0
@@ -195546,18 +198306,20 @@ gCardEffectDecayedCommander_08074770: @ 0x08074770
 	beq _08074790
 	adds r0, r2, #0
 	adds r1, r3, #0
-	bl gCardEffectAncientLampContractWithExodiaDonTurtleFrontlineBaseHiddenSoldierKaibamanKingDragunMagnetCircleLv2MaraudingCaptainPinchHopperRedEyesBChickTheCreatorIncarnateTheThingInTheCraterTributeDollTwoManCellBattleUltraEvolutionPillVampireOrchis_080659E8
+	bl gCardEffectSpecialSummon_080659E8
 	b _08074798
 _08074790:
 	adds r0, r2, #0
 	adds r1, r3, #0
-	bl gCardEffectMefistTheInfernalGeneralReaperOnTheNightmareRobbinGoblinSilpheedSpiritReaperTheSecretOfTheBanditToonGeminiElfWhiteMagicalHatZombieTiger_080665A4
+	bl gCardEffectDiscardDestroy_080665A4
 _08074798:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectProtectiveSoulAilinSecondGoblin_0807479C
-gCardEffectProtectiveSoulAilinSecondGoblin_0807479C: @ 0x0807479C
+	@ Protective Soul Ailin
+	@ Second Goblin
+	thumb_func_start gCardEffectSpecialSummonDestroy_0807479C
+gCardEffectSpecialSummonDestroy_0807479C: @ 0x0807479C
 	push {r4, r5, r6, r7, lr}
 	sub sp, #4
 	adds r5, r0, #0
@@ -195625,7 +198387,7 @@ _08074800:
 	b _0807482A
 _08074824:
 	adds r0, r5, #0
-	bl gCardEffectBurningBeastDesDendleDoitsuFreezingBeastHeavyMechSupportPlatformKoitsuMetallizingParasiteLunatitePitchDarkDragonWWingCatapultYDragonHeadZMetalTankZombieTiger_08074338
+	bl gCardEffectSpecialSummonDestroy_08074338
 _0807482A:
 	add sp, #4
 	pop {r4, r5, r6, r7}
@@ -195633,8 +198395,10 @@ _0807482A:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectDDCrazyBeastHolyKnightIshzark_08074834
-gCardEffectDDCrazyBeastHolyKnightIshzark_08074834: @ 0x08074834
+	@ D.D. Crazy Beast
+	@ Holy Knight Ishzark
+	thumb_func_start gCardEffectBanishDestroy_08074834
+gCardEffectBanishDestroy_08074834: @ 0x08074834
 	push {lr}
 	ldrb r1, [r0, #2]
 	lsls r2, r1, #0x1f
@@ -195651,8 +198415,9 @@ gCardEffectDDCrazyBeastHolyKnightIshzark_08074834: @ 0x08074834
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectDimensionJar_08074854
-gCardEffectDimensionJar_08074854: @ 0x08074854
+	@ Dimension Jar
+	thumb_func_start gCardEffectBanishGraveyard_08074854
+gCardEffectBanishGraveyard_08074854: @ 0x08074854
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -195819,8 +198584,9 @@ _080749D6:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectRouletteBarrel_080749E0
-gCardEffectRouletteBarrel_080749E0: @ 0x080749E0
+	@ Roulette Barrel
+	thumb_func_start gCardEffectDestroy_080749E0
+gCardEffectDestroy_080749E0: @ 0x080749E0
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldr r0, _080749FC @ =gUnk_0201B290
@@ -195888,7 +198654,7 @@ _08074A54:
 	b _08074AE8
 _08074A64:
 	movs r1, #1
-	ldr r5, _08074AAC @ =gCardEffectBurstReturnCurseOfAnubisLabyrinthOfNightmareShieldSwordTriangleEcstasySparkZeroGravity_08050C58
+	ldr r5, _08074AAC @ =gCardEffectChangePositionEndPhase_08050C58
 	ldr r0, _08074AB0 @ =gUnk_0201E220
 	movs r3, #1
 	ldr r2, [r0]
@@ -195922,7 +198688,7 @@ _08074A7A:
 	movs r0, #0x7d
 	b _08074AEE
 	.align 2, 0
-_08074AAC: .4byte gCardEffectBurstReturnCurseOfAnubisLabyrinthOfNightmareShieldSwordTriangleEcstasySparkZeroGravity_08050C58
+_08074AAC: .4byte gCardEffectChangePositionEndPhase_08050C58
 _08074AB0: .4byte gUnk_0201E220
 _08074AB4:
 	bl sub_08096B14
@@ -195956,8 +198722,9 @@ _08074AEE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectPaladinOfWhiteDragon_08074AF4
-gCardEffectPaladinOfWhiteDragon_08074AF4: @ 0x08074AF4
+	@ Paladin of White Dragon
+	thumb_func_start gCardEffectSpecialSummonRitualSummon_08074AF4
+gCardEffectSpecialSummonRitualSummon_08074AF4: @ 0x08074AF4
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -195978,15 +198745,16 @@ gCardEffectPaladinOfWhiteDragon_08074AF4: @ 0x08074AF4
 _08074B18:
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectADealWithDarkRulerArmedDragonLv3ArmedDragonLv5AttackReflectorUnitBondingH2oDarkFlareKnightDedicationThroughLightAndDarknessElegantEgotistGreatDezardHandOfNephthysHeroSignalHorusTheBlackFlameDragonLv4HorusTheBlackFlameDragonLv6KnightSTitleLevelUpPetenTheDarkClownPhotonGeneratorUnitReleaseRestraintSageSStoneSilentSwordsmanLv3SilentSwordsmanLv5SkilledDarkMagicianSkilledWhiteMagicianTheAgentOfCreationVenusTheinenTheGreatSphinxTranscendentWingsTrialOfThePrincessesUltimateInsectLv1UltimateInsectLv3UltimateInsectLv5_08066858
+	bl gCardEffectSpecialSummonGraveyard_08066858
 	pop {r4, r5}
 	pop {r1}
 	bx r1
 	.align 2, 0
 _08074B28: .4byte gUnk_0201B290
 
-	thumb_func_start gCardEffectCombinationAttack_08074B2C
-gCardEffectCombinationAttack_08074B2C: @ 0x08074B2C
+	@ Combination Attack
+	thumb_func_start gCardEffectChangePositionEquip_08074B2C
+gCardEffectChangePositionEquip_08074B2C: @ 0x08074B2C
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -196050,7 +198818,7 @@ _08074B88:
 	lsrs r5, r0, #8
 	adds r0, r4, #0
 	mov r1, r8
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	cmp r0, #0
 	beq _08074C0C
 	ldr r2, _08074BFC @ =0x00000FB6 (Time Wizard)
@@ -196154,8 +198922,9 @@ _08074C80: .4byte 0x00000868
 _08074C84: .4byte gUnk_0201C510
 _08074C88: .4byte 0x0000801B
 
-	thumb_func_start gCardEffectHugeRevolution_08074C8C
-gCardEffectHugeRevolution_08074C8C: @ 0x08074C8C
+	@ Huge Revolution
+	thumb_func_start gCardEffectSendToGYDestroyAll_08074C8C
+gCardEffectSendToGYDestroyAll_08074C8C: @ 0x08074C8C
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldr r2, _08074CDC @ =gUnk_0201C4E0
@@ -196198,8 +198967,9 @@ _08074CC4:
 _08074CDC: .4byte gUnk_0201C4E0
 _08074CE0: .4byte 0x00000868
 
-	thumb_func_start gCardEffectPineappleBlast_08074CE4
-gCardEffectPineappleBlast_08074CE4: @ 0x08074CE4
+	@ Pineapple Blast
+	thumb_func_start gCardEffectDestroy_08074CE4
+gCardEffectDestroy_08074CE4: @ 0x08074CE4
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	ldrb r1, [r5, #2]
@@ -196235,7 +199005,7 @@ _08074D24:
 	movs r0, #0x7f
 	b _08074D72
 _08074D2C:
-	ldr r1, _08074D4C @ =gCardEffectArchlordZeratoBurstStreamOfDestructionGilfordTheLightningNeedleWallObeliskTheTormentorRaigekiSandGamblerTimeWizard_080507AC
+	ldr r1, _08074D4C @ =gCardEffectDestroy_080507AC
 	adds r0, r5, #0
 	bl sub_0809077C
 	cmp r0, #0
@@ -196250,7 +199020,7 @@ _08074D2C:
 	movs r0, #0x7e
 	b _08074D72
 	.align 2, 0
-_08074D4C: .4byte gCardEffectArchlordZeratoBurstStreamOfDestructionGilfordTheLightningNeedleWallObeliskTheTormentorRaigekiSandGamblerTimeWizard_080507AC
+_08074D4C: .4byte gCardEffectDestroy_080507AC
 _08074D50:
 	ldr r0, _08074D68 @ =gUnk_0201C4E0
 	ldr r1, _08074D6C @ =0x00001DA8
@@ -196272,8 +199042,9 @@ _08074D72:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectFormationUnion_08074D78
-gCardEffectFormationUnion_08074D78: @ 0x08074D78
+	@ Formation Union
+	thumb_func_start gCardEffectSpecialSummonChangePosition_08074D78
+gCardEffectSpecialSummonChangePosition_08074D78: @ 0x08074D78
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -196517,8 +199288,12 @@ _08074F5E:
 _08074F6C: .4byte 0x000004A4
 _08074F70: .4byte 0x00000FB6 @ Time Wizard
 
-	thumb_func_start gCardEffectAdhesionTrapHoleElectromagneticBagwormRigrasLeeverSlateWarrior_08074F74
-gCardEffectAdhesionTrapHoleElectromagneticBagwormRigrasLeeverSlateWarrior_08074F74: @ 0x08074F74
+	@ Adhesion Trap Hole
+	@ Electromagnetic Bagworm
+	@ Rigras Leever
+	@ Slate Warrior
+	thumb_func_start gCardEffectDestroyFlip_08074F74
+gCardEffectDestroyFlip_08074F74: @ 0x08074F74
 	push {r4, r5, r6, r7, lr}
 	sub sp, #8
 	adds r5, r0, #0
@@ -196555,8 +199330,9 @@ _08074FA2:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDiffusionWaveMotion_08074FB8
-gCardEffectDiffusionWaveMotion_08074FB8: @ 0x08074FB8
+	@ Diffusion Wave-Motion
+	thumb_func_start gCardEffectDestroyDamage_08074FB8
+gCardEffectDestroyDamage_08074FB8: @ 0x08074FB8
 	push {r4, r5, r6, lr}
 	sub sp, #0xc
 	adds r4, r0, #0
@@ -196597,8 +199373,10 @@ _08075002:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectBreakerTheMagicalWarriorHannibalNecromancer_0807500C
-gCardEffectBreakerTheMagicalWarriorHannibalNecromancer_0807500C: @ 0x0807500C
+	@ Breaker the Magical Warrior
+	@ Hannibal Necromancer
+	thumb_func_start gCardEffectDestroyCounter_0807500C
+gCardEffectDestroyCounter_0807500C: @ 0x0807500C
 	push {r4, r5, r6, r7, lr}
 	ldrb r1, [r0, #2]
 	lsls r6, r1, #0x1f
@@ -196650,8 +199428,9 @@ _08075062:
 _0807506C: .4byte 0x00000868
 _08075070: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectMagicalPlantMandragola_08075074
-gCardEffectMagicalPlantMandragola_08075074: @ 0x08075074
+	@ Magical Plant Mandragola
+	thumb_func_start gCardEffectFlipCounter_08075074
+gCardEffectFlipCounter_08075074: @ 0x08075074
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -196692,8 +199471,9 @@ _080750A4:
 	.align 2, 0
 _080750BC: .4byte gUnk_0201E1C8
 
-	thumb_func_start gCardEffectCliffTheTrapRemover_080750C0
-gCardEffectCliffTheTrapRemover_080750C0: @ 0x080750C0
+	@ Cliff the Trap Remover
+	thumb_func_start gCardEffectSendToGYDestroySpellTrap_080750C0
+gCardEffectSendToGYDestroySpellTrap_080750C0: @ 0x080750C0
 	push {lr}
 	ldrh r1, [r0, #0xc]
 	cmp r1, #1
@@ -196718,8 +199498,9 @@ _080750E6:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectApprenticeMagician_080750EC
-gCardEffectApprenticeMagician_080750EC: @ 0x080750EC
+	@ Apprentice Magician
+	thumb_func_start gCardEffectSpecialSummonDestroy_080750EC
+gCardEffectSpecialSummonDestroy_080750EC: @ 0x080750EC
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	movs r1, #0
@@ -196750,8 +199531,9 @@ _08075124:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectMagicalMerchant_0807512C
-gCardEffectMagicalMerchant_0807512C: @ 0x0807512C
+	@ Magical Merchant
+	thumb_func_start gCardEffectSearchSendToGY_0807512C
+gCardEffectSearchSendToGY_0807512C: @ 0x0807512C
 	push {r4, r5, r6, lr}
 	adds r2, r0, #0
 	ldr r0, _0807514C @ =gUnk_0201B290
@@ -196928,8 +199710,9 @@ _080752C6:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectPitchBlackPowerStone_080752CC
-gCardEffectPitchBlackPowerStone_080752CC: @ 0x080752CC
+	@ Pitch-Black Power Stone
+	thumb_func_start gCardEffectDestroyCounter_080752CC
+gCardEffectDestroyCounter_080752CC: @ 0x080752CC
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	ldrh r0, [r4, #0xc]
@@ -196973,8 +199756,9 @@ _0807531E:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectSenriEye_08075328
-gCardEffectSenriEye_08075328: @ 0x08075328
+	@ Senri Eye
+	thumb_func_start gCardEffectDamageStandbyPhase_08075328
+gCardEffectDamageStandbyPhase_08075328: @ 0x08075328
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r2, _0807536C @ =gUnk_0201C4E0
@@ -197013,8 +199797,9 @@ _0807536C: .4byte gUnk_0201C4E0
 _08075370: .4byte 0x00000868
 _08075374: .4byte gUnk_0201E2A0
 
-	thumb_func_start gCardEffectEmblemOfDragonDestroyer_08075378
-gCardEffectEmblemOfDragonDestroyer_08075378: @ 0x08075378
+	@ Emblem of Dragon Destroyer
+	thumb_func_start gCardEffectSearchGraveyard_08075378
+gCardEffectSearchGraveyard_08075378: @ 0x08075378
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldr r0, _08075398 @ =gUnk_0201B290
@@ -197148,8 +199933,9 @@ _080754B0:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectExhaustingSpell_080754B8
-gCardEffectExhaustingSpell_080754B8: @ 0x080754B8
+	@ Exhausting Spell
+	thumb_func_start gCardEffectCounter_080754B8
+gCardEffectCounter_080754B8: @ 0x080754B8
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -197210,8 +199996,11 @@ _08075524: .4byte 0x00000868
 _08075528: .4byte gUnk_0201E1C8
 _0807552C: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectMetalReflectSlimeSkullZomaStronghold_08075530
-gCardEffectMetalReflectSlimeSkullZomaStronghold_08075530: @ 0x08075530
+	@ Metal Reflect Slime
+	@ Skull Zoma
+	@ Stronghold
+	thumb_func_start gCardEffectSpecialSummonChangePosition_08075530
+gCardEffectSpecialSummonChangePosition_08075530: @ 0x08075530
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -197295,8 +200084,9 @@ _080755C4:
 _080755D4: .4byte 0x00000868
 _080755D8: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectMirageKnight_080755DC
-gCardEffectMirageKnight_080755DC: @ 0x080755DC
+	@ Mirage Knight
+	thumb_func_start gCardEffectSpecialSummonBanish_080755DC
+gCardEffectSpecialSummonBanish_080755DC: @ 0x080755DC
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -197367,8 +200157,11 @@ _08075654:
 _08075660: .4byte 0x00000868
 _08075664: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectChopmanTheDesperateOutlawGuardianElmaTheKickMan_08075668
-gCardEffectChopmanTheDesperateOutlawGuardianElmaTheKickMan_08075668: @ 0x08075668
+	@ Chopman the Desperate Outlaw
+	@ Guardian Elma
+	@ The Kick Man
+	thumb_func_start gCardEffectGraveyardEquip_08075668
+gCardEffectGraveyardEquip_08075668: @ 0x08075668
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -197558,11 +200351,12 @@ _080757E4: .4byte gUnk_0201C510
 _080757E8: .4byte 0x000001FF
 _080757EC: .4byte 0xFFFF803F
 
-	thumb_func_start gCardEffectGuardianTryce_080757F0
-gCardEffectGuardianTryce_080757F0: @ 0x080757F0
+	@ Guardian Tryce
+	thumb_func_start gCardEffectSpecialSummonSendToGY_080757F0
+gCardEffectSpecialSummonSendToGY_080757F0: @ 0x080757F0
 	push {r4, r5, r6, r7, lr}
 	adds r4, r0, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	cmp r0, #0
 	beq _08075862
 	ldr r0, [r4, #0x14]
@@ -197621,8 +200415,19 @@ _08075862:
 _0807586C: .4byte gUnk_0201C4E0
 _08075870: .4byte 0x00000868
 
-	thumb_func_start gCardEffectBeiigeVanguardOfDarkWorldDespairFromTheDarkFearFromTheDarkFoxFireHeliosDuoMegisteHeliosTrisMegisteKingOfTheSkullServantsManticoreOfDarknessSacredPhoenixOfNephthysSandMothTreebornFrog_08075874
-gCardEffectBeiigeVanguardOfDarkWorldDespairFromTheDarkFearFromTheDarkFoxFireHeliosDuoMegisteHeliosTrisMegisteKingOfTheSkullServantsManticoreOfDarknessSacredPhoenixOfNephthysSandMothTreebornFrog_08075874: @ 0x08075874
+	@ Beiige, Vanguard of Dark World
+	@ Despair from the Dark
+	@ Fear from the Dark
+	@ Fox Fire
+	@ Helios Duo Megiste
+	@ Helios Tris Megiste
+	@ King of the Skull Servants
+	@ Manticore of Darkness
+	@ Sacred Phoenix of Nephthys
+	@ Sand Moth
+	@ Treeborn Frog
+	thumb_func_start gCardEffectSpecialSummonGraveyard_08075874
+gCardEffectSpecialSummonGraveyard_08075874: @ 0x08075874
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -197680,8 +200485,9 @@ _080758DE:
 _080758E8: .4byte 0x00000868
 _080758EC: .4byte gUnk_0201C8F8
 
-	thumb_func_start gCardEffectDarkScorpionChickTheYellow_080758F0
-gCardEffectDarkScorpionChickTheYellow_080758F0: @ 0x080758F0
+	@ Dark Scorpion - Chick the Yellow
+	thumb_func_start gCardEffectReturnToHandDamage_080758F0
+gCardEffectReturnToHandDamage_080758F0: @ 0x080758F0
 	push {r4, r5, r6, lr}
 	sub sp, #8
 	adds r3, r0, #0
@@ -197693,7 +200499,7 @@ gCardEffectDarkScorpionChickTheYellow_080758F0: @ 0x080758F0
 	b _08075A60
 _08075902:
 	adds r0, r3, #0
-	bl gCardEffectAbyssSoldierCompulsoryEvacuationDeviceCrassClownGaleLizardGolemSentryGravekeeperSGuardGuardianStatueHaneHaneKaiserGliderNightmarePenguinSpiritualism_0806734C
+	bl gCardEffectReturnToHand_0806734C
 	b _08075A62
 _0807590A:
 	ldr r1, _08075924 @ =gUnk_0201B290
@@ -197877,8 +200683,12 @@ _08075A70: .4byte 0x00008056
 _08075A74: .4byte 0x00000868
 _08075A78: .4byte gUnk_0201C740
 
-	thumb_func_start gCardEffectButterflyDaggerElmaDivineSwordPhoenixBladeReturnZombieSinisterSerpent_08075A7C
-gCardEffectButterflyDaggerElmaDivineSwordPhoenixBladeReturnZombieSinisterSerpent_08075A7C: @ 0x08075A7C
+	@ Butterfly Dagger - Elma
+	@ Divine Sword - Phoenix Blade
+	@ Return Zombie
+	@ Sinister Serpent
+	thumb_func_start gCardEffectGraveyardSearch_08075A7C
+gCardEffectGraveyardSearch_08075A7C: @ 0x08075A7C
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -197912,8 +200722,9 @@ _08075AB0:
 _08075AB8: .4byte 0x00000868
 _08075ABC: .4byte gUnk_0201C8F8
 
-	thumb_func_start gCardEffectFairyOfTheSpring_08075AC0
-gCardEffectFairyOfTheSpring_08075AC0: @ 0x08075AC0
+	@ Fairy of the Spring
+	thumb_func_start gCardEffectSearchGraveyard_08075AC0
+gCardEffectSearchGraveyard_08075AC0: @ 0x08075AC0
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	ldr r0, _08075B10 @ =gUnk_0201B290
@@ -197976,8 +200787,9 @@ _08075B3E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectStaunchDefender_08075B44
-gCardEffectStaunchDefender_08075B44: @ 0x08075B44
+	@ Staunch Defender
+	thumb_func_start gCardEffectUnknown_08075B44
+gCardEffectUnknown_08075B44: @ 0x08075B44
 	push {r4, r5, r6, lr}
 	sub sp, #4
 	adds r4, r0, #0
@@ -198023,8 +200835,9 @@ _08075B98:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectOjamaTrio_08075BA4
-gCardEffectOjamaTrio_08075BA4: @ 0x08075BA4
+	@ Ojama Trio
+	thumb_func_start gCardEffectSpecialSummonDestroy_08075BA4
+gCardEffectSpecialSummonDestroy_08075BA4: @ 0x08075BA4
 	push {r4, lr}
 	sub sp, #8
 	adds r2, r0, #0
@@ -198102,8 +200915,9 @@ _08075C36:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectSkillDrain_08075C40
-gCardEffectSkillDrain_08075C40: @ 0x08075C40
+	@ Skill Drain
+	thumb_func_start gCardEffectNegateDamage_08075C40
+gCardEffectNegateDamage_08075C40: @ 0x08075C40
 	push {r4, r5, r6, r7, lr}
 	mov ip, r0
 	ldrb r0, [r0, #2]
@@ -198160,8 +200974,9 @@ _08075CA0:
 _08075CA8: .4byte 0x00000868
 _08075CAC: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectSoulTaker_08075CB0
-gCardEffectSoulTaker_08075CB0: @ 0x08075CB0
+	@ Soul Taker
+	thumb_func_start gCardEffectDestroy_08075CB0
+gCardEffectDestroy_08075CB0: @ 0x08075CB0
 	push {r4, r5, r6, lr}
 	sub sp, #4
 	adds r4, r0, #0
@@ -198205,8 +201020,9 @@ _08075D02:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectMagicalDimension_08075D0C
-gCardEffectMagicalDimension_08075D0C: @ 0x08075D0C
+	@ Magical Dimension
+	thumb_func_start gCardEffectSpecialSummonDestroy_08075D0C
+gCardEffectSpecialSummonDestroy_08075D0C: @ 0x08075D0C
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	ldr r0, _08075D30 @ =gUnk_0201B290
@@ -198301,13 +201117,13 @@ _08075DC4:
 	ldrb r4, [r4, #2]
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
-	ldr r2, _08075DE4 @ =gCardEffectMagicalDimension_08053E14
+	ldr r2, _08075DE4 @ =gCardEffectSpecialSummonDestroy_08053E14
 	movs r1, #1
 	bl sub_08096AB0
 	movs r0, #0x7e
 	b _08075F6A
 	.align 2, 0
-_08075DE4: .4byte gCardEffectMagicalDimension_08053E14
+_08075DE4: .4byte gCardEffectSpecialSummonDestroy_08053E14
 _08075DE8:
 	bl sub_08096B14
 	cmp r0, #0
@@ -198410,7 +201226,7 @@ _08075EB4: .4byte 0x00000868
 _08075EB8: .4byte gUnk_0201C600
 _08075EBC: .4byte 0x000004A4
 _08075EC0:
-	ldr r1, _08075EEC @ =gCardEffectChaosEndDarkHoleTorrentialTribute_08050750
+	ldr r1, _08075EEC @ =gCardEffectDestroyAll_08050750
 	adds r0, r4, #0
 	bl sub_0809077C
 	cmp r0, #0
@@ -198432,7 +201248,7 @@ _08075EC0:
 	str r1, [r0]
 	b _08075EFE
 	.align 2, 0
-_08075EEC: .4byte gCardEffectChaosEndDarkHoleTorrentialTribute_08050750
+_08075EEC: .4byte gCardEffectDestroyAll_08050750
 _08075EF0: .4byte gUnk_0201E2A0
 _08075EF4: .4byte gUnk_0201C4E0
 _08075EF8:
@@ -198453,13 +201269,13 @@ _08075F02:
 	lsls r0, r5, #0x1f
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r4]
-	ldr r2, _08075F28 @ =gCardEffectChaosEndDarkHoleTorrentialTribute_08050750
+	ldr r2, _08075F28 @ =gCardEffectDestroyAll_08050750
 	bl sub_08096AB0
 	movs r0, #0x78
 	b _08075F6A
 	.align 2, 0
 _08075F24: .4byte gUnk_0201C4E0
-_08075F28: .4byte gCardEffectChaosEndDarkHoleTorrentialTribute_08050750
+_08075F28: .4byte gCardEffectDestroyAll_08050750
 _08075F2C:
 	bl sub_08096B14
 	cmp r0, #0
@@ -198493,8 +201309,9 @@ _08075F6A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectJudgementOfPharaoh_08075F70
-gCardEffectJudgementOfPharaoh_08075F70: @ 0x08075F70
+	@ Judgement of Pharaoh
+	thumb_func_start gCardEffectSpecialSummonDamage_08075F70
+gCardEffectSpecialSummonDamage_08075F70: @ 0x08075F70
 	push {lr}
 	adds r2, r0, #0
 	ldrb r0, [r2, #2]
@@ -198511,8 +201328,9 @@ gCardEffectJudgementOfPharaoh_08075F70: @ 0x08075F70
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectFriendship_08075F90
-gCardEffectFriendship_08075F90: @ 0x08075F90
+	@ Friendship
+	thumb_func_start gCardEffectUnknown_08075F90
+gCardEffectUnknown_08075F90: @ 0x08075F90
 	push {r4, r5, r6, r7, lr}
 	sub sp, #0x100
 	adds r5, r0, #0
@@ -198726,8 +201544,9 @@ _08076150: .4byte 0x0000805D
 _08076154: .4byte gUnk_0201C4E0
 _08076158: .4byte 0x00000868
 
-	thumb_func_start gCardEffectUnity_0807615C
-gCardEffectUnity_0807615C: @ 0x0807615C
+	@ Unity
+	thumb_func_start gCardEffectEndPhase_0807615C
+gCardEffectEndPhase_0807615C: @ 0x0807615C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -198796,8 +201615,9 @@ _080761CE:
 _080761E0: .4byte 0x00000868
 _080761E4: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectDarkScorpionGorgTheStrong_080761E8
-gCardEffectDarkScorpionGorgTheStrong_080761E8: @ 0x080761E8
+	@ Dark Scorpion - Gorg the Strong
+	thumb_func_start gCardEffectSendToGYDamage_080761E8
+gCardEffectSendToGYDamage_080761E8: @ 0x080761E8
 	push {lr}
 	ldrh r2, [r0, #0xc]
 	cmp r2, #1
@@ -198806,7 +201626,7 @@ gCardEffectDarkScorpionGorgTheStrong_080761E8: @ 0x080761E8
 	beq _080761FC
 	b _0807620E
 _080761F6:
-	bl gCardEffectPhoenixWingWindBlast_0807BB8C
+	bl gCardEffectDiscard_0807BB8C
 	b _08076210
 _080761FC:
 	ldrb r0, [r0, #2]
@@ -198823,8 +201643,9 @@ _08076210:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDarkScorpionMeanaeTheThorn_08076214
-gCardEffectDarkScorpionMeanaeTheThorn_08076214: @ 0x08076214
+	@ Dark Scorpion - Meanae the Thorn
+	thumb_func_start gCardEffectSearchDamage_08076214
+gCardEffectSearchDamage_08076214: @ 0x08076214
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldrh r4, [r5, #0xc]
@@ -198892,8 +201713,10 @@ _08076296:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectOutstandingDogMarronRocFromTheValleyOfHaze_0807629C
-gCardEffectOutstandingDogMarronRocFromTheValleyOfHaze_0807629C: @ 0x0807629C
+	@ Outstanding Dog Marron
+	@ Roc from the Valley of Haze
+	thumb_func_start gCardEffectSendToGYGraveyard_0807629C
+gCardEffectSendToGYGraveyard_0807629C: @ 0x0807629C
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -198916,11 +201739,12 @@ _080762C0:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDesrookArchfiend_080762C8
-gCardEffectDesrookArchfiend_080762C8: @ 0x080762C8
+	@ Desrook Archfiend
+	thumb_func_start gCardEffectSpecialSummonNegate_080762C8
+gCardEffectSpecialSummonNegate_080762C8: @ 0x080762C8
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	cmp r0, #0
 	beq _0807632A
 	movs r0, #0x1c
@@ -198971,8 +201795,9 @@ _0807632A:
 _08076334: .4byte 0x00000868
 _08076338: .4byte gUnk_0201C8F8
 
-	thumb_func_start gCardEffectDarkMasterZorc_0807633C
-gCardEffectDarkMasterZorc_0807633C: @ 0x0807633C
+	@ Dark Master - Zorc
+	thumb_func_start gCardEffectRitualSummonDestroyAll_0807633C
+gCardEffectRitualSummonDestroyAll_0807633C: @ 0x0807633C
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _08076358 @ =gUnk_0201B290
@@ -199027,7 +201852,7 @@ _0807639C: @ jump table
 	.4byte _080763CC @ case 4
 	.4byte _080763E0 @ case 5
 _080763B4:
-	ldr r1, _080763C8 @ =gCardEffectArchlordZeratoBurstStreamOfDestructionGilfordTheLightningNeedleWallObeliskTheTormentorRaigekiSandGamblerTimeWizard_080507AC
+	ldr r1, _080763C8 @ =gCardEffectDestroy_080507AC
 	adds r0, r4, #0
 	bl sub_080906CC
 	adds r1, r0, #0
@@ -199035,9 +201860,9 @@ _080763B4:
 	bl sub_080478FC
 	b _08076440
 	.align 2, 0
-_080763C8: .4byte gCardEffectArchlordZeratoBurstStreamOfDestructionGilfordTheLightningNeedleWallObeliskTheTormentorRaigekiSandGamblerTimeWizard_080507AC
+_080763C8: .4byte gCardEffectDestroy_080507AC
 _080763CC:
-	ldr r1, _080763DC @ =gCardEffectArchlordZeratoBurstStreamOfDestructionGilfordTheLightningNeedleWallObeliskTheTormentorRaigekiSandGamblerTimeWizard_080507AC
+	ldr r1, _080763DC @ =gCardEffectDestroy_080507AC
 	adds r0, r4, #0
 	bl sub_0809077C
 	cmp r0, #0
@@ -199046,9 +201871,9 @@ _080763D8:
 	movs r0, #0x7e
 	b _08076442
 	.align 2, 0
-_080763DC: .4byte gCardEffectArchlordZeratoBurstStreamOfDestructionGilfordTheLightningNeedleWallObeliskTheTormentorRaigekiSandGamblerTimeWizard_080507AC
+_080763DC: .4byte gCardEffectDestroy_080507AC
 _080763E0:
-	ldr r1, _080763F4 @ =gCardEffectLastTurnThunderCrash_08053F10
+	ldr r1, _080763F4 @ =gCardEffectSpecialSummonSendToGY_08053F10
 	adds r0, r4, #0
 	bl sub_080906CC
 	adds r1, r0, #0
@@ -199056,7 +201881,7 @@ _080763E0:
 	bl sub_080478FC
 	b _08076440
 	.align 2, 0
-_080763F4: .4byte gCardEffectLastTurnThunderCrash_08053F10
+_080763F4: .4byte gCardEffectSpecialSummonSendToGY_08053F10
 _080763F8:
 	ldrb r3, [r4, #2]
 	lsls r0, r3, #0x1f
@@ -199067,12 +201892,12 @@ _080763F8:
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r4]
-	ldr r2, _08076418 @ =gCardEffectArchlordZeratoBurstStreamOfDestructionGilfordTheLightningNeedleWallObeliskTheTormentorRaigekiSandGamblerTimeWizard_080507AC
+	ldr r2, _08076418 @ =gCardEffectDestroy_080507AC
 	bl sub_08096A4C
 	movs r0, #0x7d
 	b _08076442
 	.align 2, 0
-_08076418: .4byte gCardEffectArchlordZeratoBurstStreamOfDestructionGilfordTheLightningNeedleWallObeliskTheTormentorRaigekiSandGamblerTimeWizard_080507AC
+_08076418: .4byte gCardEffectDestroy_080507AC
 _0807641C:
 	bl sub_08096B14
 	cmp r0, #0
@@ -199101,8 +201926,9 @@ _08076448: .4byte gUnk_0201C4E0
 _0807644C: .4byte 0x00001D68
 _08076450: .4byte 0x00001D6C
 
-	thumb_func_start gCardEffectFinalCountdown_08076454
-gCardEffectFinalCountdown_08076454: @ 0x08076454
+	@ Final Countdown
+	thumb_func_start gCardEffectDamage_08076454
+gCardEffectDamage_08076454: @ 0x08076454
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -199132,8 +201958,9 @@ _08076480:
 _08076488: .4byte gUnk_0201C4E0
 _0807648C: .4byte 0x00001CEC
 
-	thumb_func_start gCardEffectArchfiendSOath_08076490
-gCardEffectArchfiendSOath_08076490: @ 0x08076490
+	@ Archfiend's Oath
+	thumb_func_start gCardEffectSearchSendToGY_08076490
+gCardEffectSearchSendToGY_08076490: @ 0x08076490
 	push {r4, r5, r6, r7, lr}
 	adds r4, r0, #0
 	ldr r0, _080764EC @ =gUnk_0201B290
@@ -199279,8 +202106,9 @@ _080765AA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectMusteringOfTheDarkScorpions_080765B0
-gCardEffectMusteringOfTheDarkScorpions_080765B0: @ 0x080765B0
+	@ Mustering of the Dark Scorpions
+	thumb_func_start gCardEffectSpecialSummon_080765B0
+gCardEffectSpecialSummon_080765B0: @ 0x080765B0
 	push {r4, r5, r6, r7, lr}
 	adds r4, r0, #0
 	ldr r0, _080765D4 @ =gUnk_0201B290
@@ -199514,8 +202342,9 @@ _08076786:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectFrozenSoul_0807678C
-gCardEffectFrozenSoul_0807678C: @ 0x0807678C
+	@ Frozen Soul
+	thumb_func_start gCardEffectBattlePhase_0807678C
+gCardEffectBattlePhase_0807678C: @ 0x0807678C
 	push {lr}
 	adds r2, r0, #0
 	ldrb r0, [r2, #2]
@@ -199532,8 +202361,9 @@ gCardEffectFrozenSoul_0807678C: @ 0x0807678C
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectSpellVanishing_080767AC
-gCardEffectSpellVanishing_080767AC: @ 0x080767AC
+	@ Spell Vanishing
+	thumb_func_start gCardEffectNegateDiscard_080767AC
+gCardEffectNegateDiscard_080767AC: @ 0x080767AC
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -199569,7 +202399,7 @@ _080767DC: @ jump table
 _080767F8:
 	adds r0, r2, #0
 	mov r1, ip
-	bl gCardEffectATeamTrapDisposalUnitAntiSpellArmorBreakCurseOfRoyalDarkPaladinFeatherWindMagicJammerMaryokutaiRiryokuFieldRoyalSurrenderSevenToolsOfTheBanditSpellShieldType8SpellStoppingStatuteTrapJammerTutanMask_08065698
+	bl gCardEffectNegateDestroy_08065698
 	movs r0, #0x7f
 	b _080768FC
 _08076804:
@@ -199706,8 +202536,12 @@ _080768FC:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDesFeralImpHiddenBookOfSpellRayOfHopeTheGraveyardInTheFourthDimension_08076908
-gCardEffectDesFeralImpHiddenBookOfSpellRayOfHopeTheGraveyardInTheFourthDimension_08076908: @ 0x08076908
+	@ Des Feral Imp
+	@ Hidden Book of Spell
+	@ Ray of Hope
+	@ The Graveyard in the Fourth Dimension
+	thumb_func_start gCardEffectGraveyard_08076908
+gCardEffectGraveyard_08076908: @ 0x08076908
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -199828,8 +202662,9 @@ _080769EE:
 	.align 2, 0
 _080769F8: .4byte 0x000004A4
 
-	thumb_func_start gCardEffectStrikeNinja_080769FC
-gCardEffectStrikeNinja_080769FC: @ 0x080769FC
+	@ Strike Ninja
+	thumb_func_start gCardEffectBanishGraveyard_080769FC
+gCardEffectBanishGraveyard_080769FC: @ 0x080769FC
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -199946,8 +202781,9 @@ _08076AD2:
 _08076AE0: .4byte 0x00000868
 _08076AE4: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectSasukeSamurai_08076AE8
-gCardEffectSasukeSamurai_08076AE8: @ 0x08076AE8
+	@ Sasuke Samurai
+	thumb_func_start gCardEffectDestroyChangePosition_08076AE8
+gCardEffectDestroyChangePosition_08076AE8: @ 0x08076AE8
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r1, r0, #0x1f
@@ -199973,8 +202809,10 @@ gCardEffectSasukeSamurai_08076AE8: @ 0x08076AE8
 _08076B14: .4byte gUnk_0201C4E0
 _08076B18: .4byte 0x00000868
 
-	thumb_func_start gCardEffectDDScoutPlaneDDSurvivor_08076B1C
-gCardEffectDDScoutPlaneDDSurvivor_08076B1C: @ 0x08076B1C
+	@ D. D. Scout Plane
+	@ D.D. Survivor
+	thumb_func_start gCardEffectSpecialSummonBanish_08076B1C
+gCardEffectSpecialSummonBanish_08076B1C: @ 0x08076B1C
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -200155,8 +202993,9 @@ _08076C82:
 	.align 2, 0
 _08076C8C: .4byte gUnk_0201BB90
 
-	thumb_func_start gCardEffectChaosriderGustaph_08076C90
-gCardEffectChaosriderGustaph_08076C90: @ 0x08076C90
+	@ Chaosrider Gustaph
+	thumb_func_start gCardEffectBanishBoostATK_08076C90
+gCardEffectBanishBoostATK_08076C90: @ 0x08076C90
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -200320,8 +203159,12 @@ _08076DCA:
 _08076DD8: .4byte 0x00001D10
 _08076DDC: .4byte gUnk_0201C4E0
 
-	thumb_func_start gCardEffectBlackLusterSoldierEnvoyOfTheBeginningChaosSorcererDarkCoreVwxyzDragonCatapultCannon_08076DE0
-gCardEffectBlackLusterSoldierEnvoyOfTheBeginningChaosSorcererDarkCoreVwxyzDragonCatapultCannon_08076DE0: @ 0x08076DE0
+	@ Black Luster Soldier - Envoy of the Beginning
+	@ Chaos Sorcerer
+	@ Dark Core
+	@ VWXYZ-Dragon Catapult Cannon
+	thumb_func_start gCardEffectBanishSpecialSummon_08076DE0
+gCardEffectBanishSpecialSummon_08076DE0: @ 0x08076DE0
 	push {r4, r5, r6, lr}
 	sub sp, #4
 	adds r4, r0, #0
@@ -200353,8 +203196,13 @@ _08076E16:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectBlackLusterSoldierEnvoyOfTheBeginningElementDoomElementDragonElementMagicianRuinQueenOfOblivion_08076E20
-gCardEffectBlackLusterSoldierEnvoyOfTheBeginningElementDoomElementDragonElementMagicianRuinQueenOfOblivion_08076E20: @ 0x08076E20
+	@ Black Luster Soldier - Envoy of the Beginning
+	@ Element Doom
+	@ Element Dragon
+	@ Element Magician
+	@ Ruin, Queen of Oblivion
+	thumb_func_start gCardEffectDestroy_08076E20
+gCardEffectDestroy_08076E20: @ 0x08076E20
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -200431,8 +203279,17 @@ _08076EB0: .4byte 0x00000868
 _08076EB4: .4byte gUnk_0201C510
 _08076EB8: .4byte 0x000016CB @ Black Luster Soldier - Envoy of the Beginning
 
-	thumb_func_start gCardEffectBarkOfDarkRulerDealOfPhantomEnergyDrainGiftOfTheMartyrHeroHeartMiracleKidsTheSecretOfTheBanditUnionAttackWildNatureSRelease_08076EBC
-gCardEffectBarkOfDarkRulerDealOfPhantomEnergyDrainGiftOfTheMartyrHeroHeartMiracleKidsTheSecretOfTheBanditUnionAttackWildNatureSRelease_08076EBC: @ 0x08076EBC
+	@ Bark of Dark Ruler
+	@ Deal of Phantom
+	@ Energy Drain
+	@ Gift of the Martyr
+	@ Hero Heart
+	@ Miracle Kids
+	@ The Secret of the Bandit
+	@ Union Attack
+	@ Wild Nature's Release
+	thumb_func_start gCardEffectBoostATKEndPhase_08076EBC
+gCardEffectBoostATKEndPhase_08076EBC: @ 0x08076EBC
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -200689,8 +203546,9 @@ _0807709C:
 	.align 2, 0
 _080770B0: .4byte 0x000019A7 @ Hero Kid
 
-	thumb_func_start gCardEffectStumbling_080770B4
-gCardEffectStumbling_080770B4: @ 0x080770B4
+	@ Stumbling
+	thumb_func_start gCardEffectSpecialSummonChangePosition_080770B4
+gCardEffectSpecialSummonChangePosition_080770B4: @ 0x080770B4
 	push {r4, r5, r6, lr}
 	sub sp, #4
 	adds r6, r0, #0
@@ -200740,8 +203598,9 @@ _08077104:
 _08077110: .4byte 0x00000868
 _08077114: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectDDDesignator_08077118
-gCardEffectDDDesignator_08077118: @ 0x08077118
+	@ D.D. Designator
+	thumb_func_start gCardEffectBanish_08077118
+gCardEffectBanish_08077118: @ 0x08077118
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -200969,8 +203828,9 @@ _0807730A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectPrimalSeed_08077318
-gCardEffectPrimalSeed_08077318: @ 0x08077318
+	@ Primal Seed
+	thumb_func_start gCardEffectSearchBanish_08077318
+gCardEffectSearchBanish_08077318: @ 0x08077318
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #6]
@@ -201028,8 +203888,10 @@ _08077386:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDDMDifferentDimensionMasterDimensionDistortion_0807738C
-gCardEffectDDMDifferentDimensionMasterDimensionDistortion_0807738C: @ 0x0807738C
+	@ D.D.M. - Different Dimension Master
+	@ Dimension Distortion
+	thumb_func_start gCardEffectSpecialSummonBanish_0807738C
+gCardEffectSpecialSummonBanish_0807738C: @ 0x0807738C
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	ldrb r1, [r5, #2]
@@ -201092,8 +203954,9 @@ _08077402:
 _0807740C: .4byte 0x00000868
 _08077410: .4byte gUnk_0201CAB0
 
-	thumb_func_start gCardEffectBigBurn_08077414
-gCardEffectBigBurn_08077414: @ 0x08077414
+	@ Big Burn
+	thumb_func_start gCardEffectBanishGraveyard_08077414
+gCardEffectBanishGraveyard_08077414: @ 0x08077414
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -201211,8 +204074,9 @@ _080774E4:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectCursedSealOfTheForbiddenSpell_080774F4
-gCardEffectCursedSealOfTheForbiddenSpell_080774F4: @ 0x080774F4
+	@ Cursed Seal of the Forbidden Spell
+	thumb_func_start gCardEffectNegateDiscard_080774F4
+gCardEffectNegateDiscard_080774F4: @ 0x080774F4
 	push {lr}
 	adds r2, r0, #0
 	adds r3, r1, #0
@@ -201241,7 +204105,7 @@ _08077524: .4byte gUnk_0201B290
 _08077528:
 	adds r0, r2, #0
 	adds r1, r3, #0
-	bl gCardEffectATeamTrapDisposalUnitAntiSpellArmorBreakCurseOfRoyalDarkPaladinFeatherWindMagicJammerMaryokutaiRiryokuFieldRoyalSurrenderSevenToolsOfTheBanditSpellShieldType8SpellStoppingStatuteTrapJammerTutanMask_08065698
+	bl gCardEffectNegateDestroy_08065698
 _08077530:
 	movs r0, #0
 _08077532:
@@ -201249,8 +204113,9 @@ _08077532:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectTowerOfBabel_08077538
-gCardEffectTowerOfBabel_08077538: @ 0x08077538
+	@ Tower of Babel
+	thumb_func_start gCardEffectDestroyDamage_08077538
+gCardEffectDestroyDamage_08077538: @ 0x08077538
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -201283,8 +204148,9 @@ _0807756E:
 	.align 2, 0
 _08077578: .4byte 0x00000BB8
 
-	thumb_func_start gCardEffectSpatialCollapse_0807757C
-gCardEffectSpatialCollapse_0807757C: @ 0x0807757C
+	@ Spatial Collapse
+	thumb_func_start gCardEffectUnknown_0807757C
+gCardEffectUnknown_0807757C: @ 0x0807757C
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldr r1, _080775A0 @ =gUnk_0201B290
@@ -201401,8 +204267,9 @@ _08077672:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectChainDisappearance_08077678
-gCardEffectChainDisappearance_08077678: @ 0x08077678
+	@ Chain Disappearance
+	thumb_func_start gCardEffectSpecialSummonBanish_08077678
+gCardEffectSpecialSummonBanish_08077678: @ 0x08077678
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -201551,8 +204418,9 @@ _080777A4: .4byte 0x00000868
 _080777A8: .4byte gUnk_0201C4EC
 _080777AC: .4byte gUnk_0201C600
 
-	thumb_func_start gCardEffectDarkMirrorForce_080777B0
-gCardEffectDarkMirrorForce_080777B0: @ 0x080777B0
+	@ Dark Mirror Force
+	thumb_func_start gCardEffectBanishChangePosition_080777B0
+gCardEffectBanishChangePosition_080777B0: @ 0x080777B0
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r0, #4
@@ -201573,8 +204441,9 @@ _080777CE:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectChaosEmperorDragonEnvoyOfTheEnd_080777D8
-gCardEffectChaosEmperorDragonEnvoyOfTheEnd_080777D8: @ 0x080777D8
+	@ Chaos Emperor Dragon - Envoy of the End
+	thumb_func_start gCardEffectSpecialSummonSendToGY_080777D8
+gCardEffectSpecialSummonSendToGY_080777D8: @ 0x080777D8
 	push {r4, r5, r6, r7, lr}
 	sub sp, #4
 	adds r3, r0, #0
@@ -201741,8 +204610,12 @@ _08077912:
 	.align 2, 0
 _0807791C: .4byte 0x000004A4
 
-	thumb_func_start gCardEffectHyperHammerheadKangarooChampLegendaryJujitsuMasterPrickleFairy_08077920
-gCardEffectHyperHammerheadKangarooChampLegendaryJujitsuMasterPrickleFairy_08077920: @ 0x08077920
+	@ Hyper Hammerhead
+	@ Kangaroo Champ
+	@ Legendary Jujitsu Master
+	@ Prickle Fairy
+	thumb_func_start gCardEffectChangePosition_08077920
+gCardEffectChangePosition_08077920: @ 0x08077920
 	push {r4, r5, r6, lr}
 	sub sp, #4
 	adds r4, r0, #0
@@ -201820,8 +204693,11 @@ _080779AA:
 _080779B4: .4byte 0x00000868
 _080779B8: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectElementalHeroNeoBubblemanGetsuFuhmaRyuKokki_080779BC
-gCardEffectElementalHeroNeoBubblemanGetsuFuhmaRyuKokki_080779BC: @ 0x080779BC
+	@ Elemental Hero Neo Bubbleman
+	@ Getsu Fuhma
+	@ Ryu Kokki
+	thumb_func_start gCardEffectDestroy_080779BC
+gCardEffectDestroy_080779BC: @ 0x080779BC
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	ldrb r6, [r4, #0x14]
@@ -201842,8 +204718,9 @@ _080779DC:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDimensionFusion_080779E4
-gCardEffectDimensionFusion_080779E4: @ 0x080779E4
+	@ Dimension Fusion
+	thumb_func_start gCardEffectSpecialSummonBanish_080779E4
+gCardEffectSpecialSummonBanish_080779E4: @ 0x080779E4
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	ldr r1, _08077A0C @ =gUnk_0201B290
@@ -201997,8 +204874,9 @@ _08077B2E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectJadeInsectWhistle_08077B34
-gCardEffectJadeInsectWhistle_08077B34: @ 0x08077B34
+	@ Jade Insect Whistle
+	thumb_func_start gCardEffectUnknown_08077B34
+gCardEffectUnknown_08077B34: @ 0x08077B34
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldr r0, _08077B54 @ =gUnk_0201B290
@@ -202128,8 +205006,9 @@ _08077C4A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectAHeroEmerges_08077C50
-gCardEffectAHeroEmerges_08077C50: @ 0x08077C50
+	@ A Hero Emerges
+	thumb_func_start gCardEffectSpecialSummonSendToGY_08077C50
+gCardEffectSpecialSummonSendToGY_08077C50: @ 0x08077C50
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -202254,8 +205133,9 @@ _08077D48:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectSelfDestructButton_08077D58
-gCardEffectSelfDestructButton_08077D58: @ 0x08077D58
+	@ Self-Destruct Button
+	thumb_func_start gCardEffectUnknown_08077D58
+gCardEffectUnknown_08077D58: @ 0x08077D58
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -202275,8 +205155,9 @@ gCardEffectSelfDestructButton_08077D58: @ 0x08077D58
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectSkullZoma_08077D80
-gCardEffectSkullZoma_08077D80: @ 0x08077D80
+	@ Skull Zoma
+	thumb_func_start gCardEffectSpecialSummonDestroy_08077D80
+gCardEffectSpecialSummonDestroy_08077D80: @ 0x08077D80
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	movs r0, #0xfc
@@ -202342,8 +205223,9 @@ _08077DF4:
 	.align 2, 0
 _08077DFC: .4byte gUnk_0201C4E0
 
-	thumb_func_start gCardEffectMaximumSix_08077E00
-gCardEffectMaximumSix_08077E00: @ 0x08077E00
+	@ Maximum Six
+	thumb_func_start gCardEffectBoostATKTribute_08077E00
+gCardEffectBoostATKTribute_08077E00: @ 0x08077E00
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -202445,8 +205327,9 @@ _08077EBA:
 	.align 2, 0
 _08077EC8: .4byte 0x00001D78
 
-	thumb_func_start gCardEffectDangerousMachineType6_08077ECC
-gCardEffectDangerousMachineType6_08077ECC: @ 0x08077ECC
+	@ Dangerous Machine TYPE-6
+	thumb_func_start gCardEffectDrawDiscard_08077ECC
+gCardEffectDrawDiscard_08077ECC: @ 0x08077ECC
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _08077EE8 @ =gUnk_0201B290
@@ -202538,7 +205421,7 @@ _08077F7A:
 	subs r0, r0, r1
 	b _08077F72
 _08077F86:
-	ldr r1, _08077F98 @ =gCardEffectArchlordZeratoBurstStreamOfDestructionGilfordTheLightningNeedleWallObeliskTheTormentorRaigekiSandGamblerTimeWizard_080507AC
+	ldr r1, _08077F98 @ =gCardEffectDestroy_080507AC
 	adds r0, r4, #0
 	bl sub_0809077C
 	cmp r0, #0
@@ -202547,7 +205430,7 @@ _08077F92:
 	movs r0, #0x7e
 	b _08077FFE
 	.align 2, 0
-_08077F98: .4byte gCardEffectArchlordZeratoBurstStreamOfDestructionGilfordTheLightningNeedleWallObeliskTheTormentorRaigekiSandGamblerTimeWizard_080507AC
+_08077F98: .4byte gCardEffectDestroy_080507AC
 _08077F9C:
 	ldrb r2, [r4, #2]
 	lsls r1, r2, #0x1f
@@ -202568,12 +205451,12 @@ _08077FAE:
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r4]
-	ldr r2, _08077FCC @ =gCardEffectArchlordZeratoBurstStreamOfDestructionGilfordTheLightningNeedleWallObeliskTheTormentorRaigekiSandGamblerTimeWizard_080507AC
+	ldr r2, _08077FCC @ =gCardEffectDestroy_080507AC
 	bl sub_08096A4C
 	movs r0, #0x7d
 	b _08077FFE
 	.align 2, 0
-_08077FCC: .4byte gCardEffectArchlordZeratoBurstStreamOfDestructionGilfordTheLightningNeedleWallObeliskTheTormentorRaigekiSandGamblerTimeWizard_080507AC
+_08077FCC: .4byte gCardEffectDestroy_080507AC
 _08077FD0:
 	bl sub_08096B14
 	cmp r0, #0
@@ -202601,8 +205484,9 @@ _08077FFE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectSixthSense_08078004
-gCardEffectSixthSense_08078004: @ 0x08078004
+	@ Sixth Sense
+	thumb_func_start gCardEffectDrawSendToGY_08078004
+gCardEffectDrawSendToGY_08078004: @ 0x08078004
 	push {lr}
 	adds r3, r0, #0
 	ldr r1, _08078020 @ =gUnk_0201B290
@@ -202720,8 +205604,9 @@ _080780EC:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectTheAgentOfJudgmentSaturn_080780F0
-gCardEffectTheAgentOfJudgmentSaturn_080780F0: @ 0x080780F0
+	@ The Agent of Judgment - Saturn
+	thumb_func_start gCardEffectDamageBattlePhase_080780F0
+gCardEffectDamageBattlePhase_080780F0: @ 0x080780F0
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	adds r6, r1, #0
@@ -202760,7 +205645,7 @@ gCardEffectTheAgentOfJudgmentSaturn_080780F0: @ 0x080780F0
 	bne _08078150
 	adds r0, r4, #0
 	adds r1, r6, #0
-	bl gCardEffect7AbsorbingKidFromTheSkyAltarForTributeAmazonArcherAmebaAndroSphinxAntiAircraftFlowerAtomicFireflyBackfireBlackPendantBlastingTheRuinsBlueMedicineBowganianBurningAlgaeCannonSoldierCastleGateCatapultTurtleCemetaryBombCestusOfDaglaDDDynamiteDarkMagicianSTomeOfBlackMagicDarkRoomOfNightmareDesKoalaDesVolstgalphDianKetoTheCureMasterEbonMagicianCurranElementalHeroFlameWingmanElementalHeroShiningFlareWingmanElementalHeroSteamHealerElephantStatueOfBlessingElephantStatueOfDisasterEmergencyProvisionsFallingDownFinalFlameFireSorcererFuhmaShurikenGiantKozakyGiftOfTheMysticalElfGoblinThiefGoblinSSecretRemedyGranadoraGraveOhjaGravekeeperSCannonholderGravekeeperSCurseGriggleGuardianAngelJoanHamonLordOfStrikingThunderHinotamaHystericFairyInfernoJustDessertsKa2DesScissorsKozakySSelfDestructButtonLadyAssailantOfFlamesLavaGolemLegendaryBlackBeltMagicalBlastMagicalExplosionManThroTroMarshmallonMaskOfDispelMaskOfTheAccursedMassDriverMechaDogMarronMemoryCrusherMeteorOfDestructionMinarMineGolemMinorGoblinOfficialMooyanCurryMysteriousPuppeteerMystikWokNeedleBallNeedleBurrowerNightmareWheelNitroUnitNutrientZOokaziOptionHunterOxygeddonPoisonFangsPoisonMummyPoisonOfTheOldManPrincessCurranPrincessPikeruPrincessOfTsurugiRaimeiRainOfMercyRedMedicineReflectBounderRestructerRevolutionRockBombardmentSecretBarrelShinatoKingOfAHigherPlaneSkullMarkLadybugSnatchStealSolarFlareDragonSolarRaySoulAbsorptionSoulOfThePureSparksSphinxTeleiaSpiritualFireArtKurenaiStealthBirdTheEyeOfTruthToonCannonSoldierTremendousFireUltimateBaseballKidWaveMotionCannonWhiteMagicianPikeruWoodlandSpriteZolga_080655EC
+	bl gCardEffectDamageGraveyard_080655EC
 	b _08078152
 	.align 2, 0
 _08078144: .4byte 0x00000868
@@ -202773,8 +205658,10 @@ _08078152:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDiscFighterDrillroid_08078158
-gCardEffectDiscFighterDrillroid_08078158: @ 0x08078158
+	@ Disc Fighter
+	@ Drillroid
+	thumb_func_start gCardEffectDestroyChangePosition_08078158
+gCardEffectDestroyChangePosition_08078158: @ 0x08078158
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -202840,8 +205727,9 @@ _080781CE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectArchlordZerato_080781DC
-gCardEffectArchlordZerato_080781DC: @ 0x080781DC
+	@ Archlord Zerato
+	thumb_func_start gCardEffectSpecialSummonDiscard_080781DC
+gCardEffectSpecialSummonDiscard_080781DC: @ 0x080781DC
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	adds r6, r1, #0
@@ -202868,7 +205756,7 @@ gCardEffectArchlordZerato_080781DC: @ 0x080781DC
 	bne _08078224
 	adds r0, r5, #0
 	adds r1, r6, #0
-	bl gCardEffect4StarredLadybugOfDoomAcidRainArmedDragonLv10ArmedDragonLv7BreathOfLightBurstBreathCalamityOfTheWickedChaosEndDarkHoleDarkMagicAttackDemiseKingOfArmageddonDesCounterblowDesCroakingDisarmamentElementalBurstEradicatingAerosolEternalDroughtEternalRestExileOfTheWickedFinalDestinyGearfriedTheIronKnightGigantesGilfordTheLightningHarpieSFeatherDusterHeavyStormJowgenTheSpiritualistLastDayOfWitchLegendaryFlameLordLeviaDragonDaedalusLightningVortexMaliceDispersionMegaTonMagicalCannonMirrorForceMoistureCreatureNeedleCeilingObeliskTheTormentorOjamaDeltaHurricaneRaigekiReallyEternalRestSacredPhoenixOfNephthysSpecialHurricaneSpellPurificationTheLastWarriorFromAnotherPlanetTorrentialTributeTragedyTribeInfectingVirusWarriorEliminationWeedOut_08064660
+	bl gCardEffectDestroy_08064660
 	b _08078226
 	.align 2, 0
 _08078218: .4byte 0x00000868
@@ -202881,8 +205769,9 @@ _08078226:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectBurstStreamOfDestruction_0807822C
-gCardEffectBurstStreamOfDestruction_0807822C: @ 0x0807822C
+	@ Burst Stream of Destruction
+	thumb_func_start gCardEffectDestroyAll_0807822C
+gCardEffectDestroyAll_0807822C: @ 0x0807822C
 	push {r4, r5, r6, r7, lr}
 	sub sp, #4
 	adds r4, r0, #0
@@ -202944,7 +205833,7 @@ _0807828C:
 	bl sub_0804A484
 	adds r0, r4, #0
 	adds r1, r7, #0
-	bl gCardEffect4StarredLadybugOfDoomAcidRainArmedDragonLv10ArmedDragonLv7BreathOfLightBurstBreathCalamityOfTheWickedChaosEndDarkHoleDarkMagicAttackDemiseKingOfArmageddonDesCounterblowDesCroakingDisarmamentElementalBurstEradicatingAerosolEternalDroughtEternalRestExileOfTheWickedFinalDestinyGearfriedTheIronKnightGigantesGilfordTheLightningHarpieSFeatherDusterHeavyStormJowgenTheSpiritualistLastDayOfWitchLegendaryFlameLordLeviaDragonDaedalusLightningVortexMaliceDispersionMegaTonMagicalCannonMirrorForceMoistureCreatureNeedleCeilingObeliskTheTormentorOjamaDeltaHurricaneRaigekiReallyEternalRestSacredPhoenixOfNephthysSpecialHurricaneSpellPurificationTheLastWarriorFromAnotherPlanetTorrentialTributeTragedyTribeInfectingVirusWarriorEliminationWeedOut_08064660
+	bl gCardEffectDestroy_08064660
 _080782AC:
 	add sp, #4
 	pop {r4, r5, r6, r7}
@@ -202955,8 +205844,9 @@ _080782B4: .4byte 0x00000868
 _080782B8: .4byte gUnk_0201C510
 _080782BC: .4byte 0x00000FA7 @ Blue-Eyes White Dragon
 
-	thumb_func_start gCardEffectMonsterGate_080782C0
-gCardEffectMonsterGate_080782C0: @ 0x080782C0
+	@ Monster Gate
+	thumb_func_start gCardEffectSpecialSummonSendToGY_080782C0
+gCardEffectSpecialSummonSendToGY_080782C0: @ 0x080782C0
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -203172,8 +206062,9 @@ _080784AA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectEarthquake_080784B4
-gCardEffectEarthquake_080784B4: @ 0x080784B4
+	@ Earthquake
+	thumb_func_start gCardEffectChangePosition_080784B4
+gCardEffectChangePosition_080784B4: @ 0x080784B4
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -203256,8 +206147,9 @@ _0807854A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectLightOfJudgment_08078550
-gCardEffectLightOfJudgment_08078550: @ 0x08078550
+	@ Light of Judgment
+	thumb_func_start gCardEffectDiscardSendToGY_08078550
+gCardEffectDiscardSendToGY_08078550: @ 0x08078550
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldr r0, _080785AC @ =gUnk_0201B290
@@ -203380,8 +206272,9 @@ _08078652:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectNinjitsuArtOfTransformation_08078658
-gCardEffectNinjitsuArtOfTransformation_08078658: @ 0x08078658
+	@ Ninjitsu Art of Transformation
+	thumb_func_start gCardEffectSpecialSummonDestroy_08078658
+gCardEffectSpecialSummonDestroy_08078658: @ 0x08078658
 	push {r4, r5, lr}
 	sub sp, #4
 	adds r2, r0, #0
@@ -203414,7 +206307,7 @@ _08078690: .4byte gUnk_0201B290
 _08078694: .4byte 0x000004A4
 _08078698:
 	adds r0, r2, #0
-	bl gCardEffectADealWithDarkRulerArmedDragonLv3ArmedDragonLv5AttackReflectorUnitBondingH2oDarkFlareKnightDedicationThroughLightAndDarknessElegantEgotistGreatDezardHandOfNephthysHeroSignalHorusTheBlackFlameDragonLv4HorusTheBlackFlameDragonLv6KnightSTitleLevelUpPetenTheDarkClownPhotonGeneratorUnitReleaseRestraintSageSStoneSilentSwordsmanLv3SilentSwordsmanLv5SkilledDarkMagicianSkilledWhiteMagicianTheAgentOfCreationVenusTheinenTheGreatSphinxTranscendentWingsTrialOfThePrincessesUltimateInsectLv1UltimateInsectLv3UltimateInsectLv5_08066858
+	bl gCardEffectSpecialSummonGraveyard_08066858
 _0807869E:
 	add sp, #4
 	pop {r4, r5}
@@ -203422,8 +206315,9 @@ _0807869E:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectBeckoningLight_080786A8
-gCardEffectBeckoningLight_080786A8: @ 0x080786A8
+	@ Beckoning Light
+	thumb_func_start gCardEffectSearchDiscard_080786A8
+gCardEffectSearchDiscard_080786A8: @ 0x080786A8
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	ldr r3, _080786C4 @ =gUnk_0201B290
@@ -203543,8 +206437,9 @@ _0807878E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectMazeraDeville_08078794
-gCardEffectMazeraDeville_08078794: @ 0x08078794
+	@ Mazera DeVille
+	thumb_func_start gCardEffectSpecialSummonDiscard_08078794
+gCardEffectSpecialSummonDiscard_08078794: @ 0x08078794
 	push {r4, r5, lr}
 	ldrb r0, [r0, #2]
 	lsls r2, r0, #0x1f
@@ -203582,8 +206477,9 @@ _080787D4: .4byte 0x00000868
 _080787D8: .4byte gUnk_0201C5D8
 _080787DC: .4byte 0xB4F80000
 
-	thumb_func_start gCardEffectSkullDescoveryKnight_080787E0
-gCardEffectSkullDescoveryKnight_080787E0: @ 0x080787E0
+	@ Skull Descovery Knight
+	thumb_func_start gCardEffectSpecialSummonDestroy_080787E0
+gCardEffectSpecialSummonDestroy_080787E0: @ 0x080787E0
 	push {lr}
 	adds r2, r0, #0
 	ldr r0, [r2, #0x14]
@@ -203601,13 +206497,15 @@ _080787F2:
 	str r0, [r2, #0x14]
 _080787FC:
 	adds r0, r2, #0
-	bl gCardEffectDivineWrath_0807B0C8
+	bl gCardEffectNegateDiscard_0807B0C8
 	pop {r1}
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectSpiritOfThePharaohWaterDragon_08078808
-gCardEffectSpiritOfThePharaohWaterDragon_08078808: @ 0x08078808
+	@ Spirit of the Pharaoh
+	@ Water Dragon
+	thumb_func_start gCardEffectSpecialSummonRevive_08078808
+gCardEffectSpecialSummonRevive_08078808: @ 0x08078808
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	adds r2, r1, #0
@@ -203634,7 +206532,7 @@ _0807882C:
 _08078832:
 	adds r0, r4, #0
 	adds r1, r2, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	cmp r0, #0
 	bne _08078840
 	b _0807894C
@@ -203771,8 +206669,13 @@ _0807894E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectAFeatherOfThePhoenixAswanApparitionNubianGuardRecycleSoulReversal_08078954
-gCardEffectAFeatherOfThePhoenixAswanApparitionNubianGuardRecycleSoulReversal_08078954: @ 0x08078954
+	@ A Feather of the Phoenix
+	@ Aswan Apparition
+	@ Nubian Guard
+	@ Recycle
+	@ Soul Reversal
+	thumb_func_start gCardEffectGraveyardDamage_08078954
+gCardEffectGraveyardDamage_08078954: @ 0x08078954
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	movs r0, #0x1c
@@ -203818,8 +206721,9 @@ _080789A6:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectSandGambler_080789B0
-gCardEffectSandGambler_080789B0: @ 0x080789B0
+	@ Sand Gambler
+	thumb_func_start gCardEffectDestroyAllRNG_080789B0
+gCardEffectDestroyAllRNG_080789B0: @ 0x080789B0
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _080789DC @ =gUnk_0201B290
@@ -203862,7 +206766,7 @@ _08078A00: .4byte 0x00001DAA
 _08078A04:
 	cmp r0, #0
 	bne _08078A18
-	ldr r1, _08078A20 @ =gCardEffectLastTurnThunderCrash_08053F10
+	ldr r1, _08078A20 @ =gCardEffectSpecialSummonSendToGY_08053F10
 	adds r0, r4, #0
 	bl sub_080906CC
 	adds r1, r0, #0
@@ -203875,14 +206779,15 @@ _08078A1A:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08078A20: .4byte gCardEffectLastTurnThunderCrash_08053F10
+_08078A20: .4byte gCardEffectSpecialSummonSendToGY_08053F10
 
-	thumb_func_start gCardEffectGhostKnightOfJackal_08078A24
-gCardEffectGhostKnightOfJackal_08078A24: @ 0x08078A24
+	@ Ghost Knight of Jackal
+	thumb_func_start gCardEffectSpecialSummonSendToGY_08078A24
+gCardEffectSpecialSummonSendToGY_08078A24: @ 0x08078A24
 	push {r4, r5, r6, lr}
 	sub sp, #4
 	adds r4, r0, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	cmp r0, #0
 	beq _08078A7E
 	ldr r0, [r4, #0x14]
@@ -203930,8 +206835,9 @@ _08078A7E:
 _08078A88: .4byte 0x00000868
 _08078A8C: .4byte gUnk_0201C8F8
 
-	thumb_func_start gCardEffectEmissaryOfTheAfterlife_08078A90
-gCardEffectEmissaryOfTheAfterlife_08078A90: @ 0x08078A90
+	@ Emissary of the Afterlife
+	thumb_func_start gCardEffectSearchSendToGY_08078A90
+gCardEffectSearchSendToGY_08078A90: @ 0x08078A90
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldr r3, _08078AC4 @ =gUnk_0201C4E0
@@ -204094,8 +207000,9 @@ _08078BEE:
 	.align 2, 0
 _08078BF4: .4byte 0x00001CE8
 
-	thumb_func_start gCardEffectRegeneratingMummy_08078BF8
-gCardEffectRegeneratingMummy_08078BF8: @ 0x08078BF8
+	@ Regenerating Mummy
+	thumb_func_start gCardEffectReturnToHandSendToGY_08078BF8
+gCardEffectReturnToHandSendToGY_08078BF8: @ 0x08078BF8
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -204129,8 +207036,9 @@ _08078C2C:
 _08078C34: .4byte 0x00000868
 _08078C38: .4byte gUnk_0201C8F8
 
-	thumb_func_start gCardEffect7_08078C3C
-gCardEffect7_08078C3C: @ 0x08078C3C
+	@ 7
+	thumb_func_start gCardEffectDrawSendToGY_08078C3C
+gCardEffectDrawSendToGY_08078C3C: @ 0x08078C3C
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r0, #0x30
@@ -204139,7 +207047,7 @@ gCardEffect7_08078C3C: @ 0x08078C3C
 	cmp r0, #0x20
 	bne _08078C52
 	adds r0, r4, #0
-	bl gCardEffect7AbsorbingKidFromTheSkyAltarForTributeAmazonArcherAmebaAndroSphinxAntiAircraftFlowerAtomicFireflyBackfireBlackPendantBlastingTheRuinsBlueMedicineBowganianBurningAlgaeCannonSoldierCastleGateCatapultTurtleCemetaryBombCestusOfDaglaDDDynamiteDarkMagicianSTomeOfBlackMagicDarkRoomOfNightmareDesKoalaDesVolstgalphDianKetoTheCureMasterEbonMagicianCurranElementalHeroFlameWingmanElementalHeroShiningFlareWingmanElementalHeroSteamHealerElephantStatueOfBlessingElephantStatueOfDisasterEmergencyProvisionsFallingDownFinalFlameFireSorcererFuhmaShurikenGiantKozakyGiftOfTheMysticalElfGoblinThiefGoblinSSecretRemedyGranadoraGraveOhjaGravekeeperSCannonholderGravekeeperSCurseGriggleGuardianAngelJoanHamonLordOfStrikingThunderHinotamaHystericFairyInfernoJustDessertsKa2DesScissorsKozakySSelfDestructButtonLadyAssailantOfFlamesLavaGolemLegendaryBlackBeltMagicalBlastMagicalExplosionManThroTroMarshmallonMaskOfDispelMaskOfTheAccursedMassDriverMechaDogMarronMemoryCrusherMeteorOfDestructionMinarMineGolemMinorGoblinOfficialMooyanCurryMysteriousPuppeteerMystikWokNeedleBallNeedleBurrowerNightmareWheelNitroUnitNutrientZOokaziOptionHunterOxygeddonPoisonFangsPoisonMummyPoisonOfTheOldManPrincessCurranPrincessPikeruPrincessOfTsurugiRaimeiRainOfMercyRedMedicineReflectBounderRestructerRevolutionRockBombardmentSecretBarrelShinatoKingOfAHigherPlaneSkullMarkLadybugSnatchStealSolarFlareDragonSolarRaySoulAbsorptionSoulOfThePureSparksSphinxTeleiaSpiritualFireArtKurenaiStealthBirdTheEyeOfTruthToonCannonSoldierTremendousFireUltimateBaseballKidWaveMotionCannonWhiteMagicianPikeruWoodlandSpriteZolga_080655EC
+	bl gCardEffectDamageGraveyard_080655EC
 	b _08078C8C
 _08078C52:
 	movs r0, #4
@@ -204174,8 +207082,9 @@ _08078C8C:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectEnchantingFittingRoom_08078C94
-gCardEffectEnchantingFittingRoom_08078C94: @ 0x08078C94
+	@ Enchanting Fitting Room
+	thumb_func_start gCardEffectSpecialSummonDamage_08078C94
+gCardEffectSpecialSummonDamage_08078C94: @ 0x08078C94
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -204451,8 +207360,9 @@ _08078EBC:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectTheLawOfTheNormal_08078EC8
-gCardEffectTheLawOfTheNormal_08078EC8: @ 0x08078EC8
+	@ The Law of the Normal
+	thumb_func_start gCardEffectDiscardDestroyAll_08078EC8
+gCardEffectDiscardDestroyAll_08078EC8: @ 0x08078EC8
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _08078EE4 @ =gUnk_0201B290
@@ -204545,8 +207455,10 @@ _08078F76:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectThousandEnergyTrianglePower_08078F7C
-gCardEffectThousandEnergyTrianglePower_08078F7C: @ 0x08078F7C
+	@ Thousand Energy
+	@ Triangle Power
+	thumb_func_start gCardEffectDestroyAllBoostATK_08078F7C
+gCardEffectDestroyAllBoostATK_08078F7C: @ 0x08078F7C
 	push {r4, r5, r6, r7, lr}
 	sub sp, #8
 	adds r5, r0, #0
@@ -204597,8 +207509,9 @@ _08078FB8:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectTheFirstSarcophagus_08078FE0
-gCardEffectTheFirstSarcophagus_08078FE0: @ 0x08078FE0
+	@ The First Sarcophagus
+	thumb_func_start gCardEffectSpecialSummonSendToGY_08078FE0
+gCardEffectSpecialSummonSendToGY_08078FE0: @ 0x08078FE0
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -204940,7 +207853,7 @@ _080792D4:
 	beq _080792E4
 	adds r0, r6, #0
 	adds r1, r2, #0
-	bl gCardEffectADealWithDarkRulerArmedDragonLv3ArmedDragonLv5AttackReflectorUnitBondingH2oDarkFlareKnightDedicationThroughLightAndDarknessElegantEgotistGreatDezardHandOfNephthysHeroSignalHorusTheBlackFlameDragonLv4HorusTheBlackFlameDragonLv6KnightSTitleLevelUpPetenTheDarkClownPhotonGeneratorUnitReleaseRestraintSageSStoneSilentSwordsmanLv3SilentSwordsmanLv5SkilledDarkMagicianSkilledWhiteMagicianTheAgentOfCreationVenusTheinenTheGreatSphinxTranscendentWingsTrialOfThePrincessesUltimateInsectLv1UltimateInsectLv3UltimateInsectLv5_08066858
+	bl gCardEffectSpecialSummonGraveyard_08066858
 	b _080792E6
 _080792E4:
 	movs r0, #0
@@ -204955,8 +207868,9 @@ _080792E6:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectHumanWaveTactics_080792F8
-gCardEffectHumanWaveTactics_080792F8: @ 0x080792F8
+	@ Human-Wave Tactics
+	thumb_func_start gCardEffectSpecialSummonDestroy_080792F8
+gCardEffectSpecialSummonDestroy_080792F8: @ 0x080792F8
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -205019,7 +207933,7 @@ _08079334: @ jump table
 _080793AC:
 	adds r0, r6, #0
 	adds r1, r5, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	cmp r0, #0
 	bne _080793BA
 	b _080794F6
@@ -205181,8 +208095,9 @@ _080794F8:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectCurseOfAnubis_08079500
-gCardEffectCurseOfAnubis_08079500: @ 0x08079500
+	@ Curse of Anubis
+	thumb_func_start gCardEffectChangePosition_08079500
+gCardEffectChangePosition_08079500: @ 0x08079500
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -205238,7 +208153,7 @@ _0807955C:
 	ble _08079516
 	adds r0, r7, #0
 	mov r1, sl
-	bl gCardEffectCurseOfAgingDarkScorpionCombinationDeltaAttackerKaminoteBlowShieldSword_08069104
+	bl gCardEffectDirectAttackDiscard_08069104
 	bl sub_0804A870
 	movs r0, #0
 	add sp, #4
@@ -205254,8 +208169,9 @@ _08079588: .4byte gUnk_0201E1C8
 _0807958C: .4byte 0x00000868
 _08079590: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectDesertSunlight_08079594
-gCardEffectDesertSunlight_08079594: @ 0x08079594
+	@ Desert Sunlight
+	thumb_func_start gCardEffectChangePosition_08079594
+gCardEffectChangePosition_08079594: @ 0x08079594
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -205358,8 +208274,10 @@ _0807964E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectOrderToChargeOrderToSmash_0807965C
-gCardEffectOrderToChargeOrderToSmash_0807965C: @ 0x0807965C
+	@ Order to Charge
+	@ Order to Smash
+	thumb_func_start gCardEffectDestroyTribute_0807965C
+gCardEffectDestroyTribute_0807965C: @ 0x0807965C
 	push {r4, r5, r6, r7, lr}
 	adds r4, r0, #0
 	ldrh r1, [r4]
@@ -205373,14 +208291,14 @@ gCardEffectOrderToChargeOrderToSmash_0807965C: @ 0x0807965C
 	.align 2, 0
 _08079670: .4byte 0x0000179F @ Order to Charge
 _08079674:
-	ldr r7, _0807967C @ =gCardEffectArchlordZeratoBurstStreamOfDestructionGilfordTheLightningNeedleWallObeliskTheTormentorRaigekiSandGamblerTimeWizard_080507AC
+	ldr r7, _0807967C @ =gCardEffectDestroy_080507AC
 	movs r3, #0x62
 	movs r5, #1
 	b _08079686
 	.align 2, 0
-_0807967C: .4byte gCardEffectArchlordZeratoBurstStreamOfDestructionGilfordTheLightningNeedleWallObeliskTheTormentorRaigekiSandGamblerTimeWizard_080507AC
+_0807967C: .4byte gCardEffectDestroy_080507AC
 _08079680:
-	ldr r7, _080796A4 @ =gCardEffectAnteatereatingantChironTheMageDustTornadoSwarmOfLocusts_08051E94
+	ldr r7, _080796A4 @ =gCardEffectDestroySpellTrap_08051E94
 	movs r3, #0x8e
 	movs r5, #2
 _08079686:
@@ -205401,7 +208319,7 @@ _0807969A:
 	ldr r0, [r0]
 	mov pc, r0
 	.align 2, 0
-_080796A4: .4byte gCardEffectAnteatereatingantChironTheMageDustTornadoSwarmOfLocusts_08051E94
+_080796A4: .4byte gCardEffectDestroySpellTrap_08051E94
 _080796A8: .4byte gUnk_0201B290
 _080796AC: .4byte _080796B0
 _080796B0: @ jump table
@@ -205538,8 +208456,9 @@ _080797CA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectCrushDGandra_080797D0
-gCardEffectCrushDGandra_080797D0: @ 0x080797D0
+	@ Crush D. Gandra
+	thumb_func_start gCardEffectSpecialSummonSendToGY_080797D0
+gCardEffectSpecialSummonSendToGY_080797D0: @ 0x080797D0
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -205721,8 +208640,10 @@ _08079938: .4byte 0x00000868
 _0807993C: .4byte gUnk_0201C510
 _08079940: .4byte 0x000004A4
 
-	thumb_func_start gCardEffectMokeyMokeyKingReturnFromTheDifferentDimension_08079944
-gCardEffectMokeyMokeyKingReturnFromTheDifferentDimension_08079944: @ 0x08079944
+	@ Mokey Mokey King
+	@ Return from the Different Dimension
+	thumb_func_start gCardEffectSpecialSummonBanish_08079944
+gCardEffectSpecialSummonBanish_08079944: @ 0x08079944
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	ldrb r2, [r5, #2]
@@ -205750,7 +208671,7 @@ _08079974:
 	cmp r0, #0x80
 	bne _08079A14
 	adds r0, r5, #0
-	bl gCardEffectArchfiendSRoarAutonomousActionUnitBatteryChargerCallOfTheHauntedCentrifugalFieldChimeraTheFlyingMythicalBeastCyberSteinFulfillmentOfTheContractFushiohRichieMagicalScientistPrematureBurialReFusionReturnFromTheDifferentDimensionRiteOfSpiritSilentFiendSoulResurrectionSpiritCallerSpiritOfThePharaohSymbolOfHeritage_0805C248
+	bl gCardEffectSpecialSummonGraveyard_0805C248
 	cmp r0, #0
 	beq _08079A14
 	adds r0, r6, #0
@@ -205829,8 +208750,9 @@ _08079A16:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectFamiliarKnight_08079A1C
-gCardEffectFamiliarKnight_08079A1C: @ 0x08079A1C
+	@ Familiar Knight
+	thumb_func_start gCardEffectSpecialSummonSendToGY_08079A1C
+gCardEffectSpecialSummonSendToGY_08079A1C: @ 0x08079A1C
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -205925,7 +208847,7 @@ _08079AF8:
 	strb r0, [r1, #2]
 	mov r0, r8
 	mov r1, ip
-	bl gCardEffectAncientLampMagnetCircleLv2_0805C294
+	bl gCardEffectSpecialSummonChangePosition_0805C294
 	ands r5, r6
 	mov r2, r8
 	ldrb r2, [r2, #2]
@@ -206022,8 +208944,9 @@ _08079BD2:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectInfernoTempest_08079BDC
-gCardEffectInfernoTempest_08079BDC: @ 0x08079BDC
+	@ Inferno Tempest
+	thumb_func_start gCardEffectBanishGraveyard_08079BDC
+gCardEffectBanishGraveyard_08079BDC: @ 0x08079BDC
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -206309,8 +209232,9 @@ _08079E50:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectWatapon_08079E60
-gCardEffectWatapon_08079E60: @ 0x08079E60
+	@ Watapon
+	thumb_func_start gCardEffectSearchSpecialSummon_08079E60
+gCardEffectSearchSpecialSummon_08079E60: @ 0x08079E60
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -206358,8 +209282,10 @@ _08079EB4:
 _08079EBC: .4byte 0x00000868
 _08079EC0: .4byte gUnk_0201C600
 
-	thumb_func_start gCardEffectHorusTheBlackFlameDragonLv8SorcererOfDarkMagic_08079EC4
-gCardEffectHorusTheBlackFlameDragonLv8SorcererOfDarkMagic_08079EC4: @ 0x08079EC4
+	@ Horus the Black Flame Dragon LV8
+	@ Sorcerer of Dark Magic
+	thumb_func_start gCardEffectSpecialSummonNegate_08079EC4
+gCardEffectSpecialSummonNegate_08079EC4: @ 0x08079EC4
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -206420,7 +209346,7 @@ gCardEffectHorusTheBlackFlameDragonLv8SorcererOfDarkMagic_08079EC4: @ 0x08079EC4
 	beq _08079F4C
 	adds r0, r7, #0
 	mov r1, sb
-	bl gCardEffectATeamTrapDisposalUnitAntiSpellArmorBreakCurseOfRoyalDarkPaladinFeatherWindMagicJammerMaryokutaiRiryokuFieldRoyalSurrenderSevenToolsOfTheBanditSpellShieldType8SpellStoppingStatuteTrapJammerTutanMask_08065698
+	bl gCardEffectNegateDestroy_08065698
 	b _08079F4E
 	.align 2, 0
 _08079F44: .4byte 0x00000868
@@ -206436,8 +209362,9 @@ _08079F4E:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectDarkMimicLv1_08079F5C
-gCardEffectDarkMimicLv1_08079F5C: @ 0x08079F5C
+	@ Dark Mimic LV1
+	thumb_func_start gCardEffectDrawSpecialSummon_08079F5C
+gCardEffectDrawSpecialSummon_08079F5C: @ 0x08079F5C
 	push {lr}
 	adds r2, r0, #0
 	movs r0, #0xfc
@@ -206447,18 +209374,20 @@ gCardEffectDarkMimicLv1_08079F5C: @ 0x08079F5C
 	cmp r0, #0x80
 	beq _08079F74
 	adds r0, r2, #0
-	bl gCardEffectAirknightParshathAppropriateAvatarOfThePotBrowwHuntsmanOfDarkWorldCardOfSafeReturnCardOfSanctityChainsawInsectChaosGreedCorpseOfYataGarasuDarkMimicLv3DesLacoodaElectricSnakeElementalHeroBubblemanHeartOfTheUnderdogJarOfGreedMaskedSorcererMoltenZombiePoisonDrawFrogPotOfGreedPreciousCardsFromBeyondRoyalMagicalLibrarySacredCraneSkelengelTheAgentOfWisdomMercuryToonMaskedSorcerer_080656E0
+	bl gCardEffectDraw_080656E0
 	b _08079F7A
 _08079F74:
 	adds r0, r2, #0
-	bl gCardEffectADealWithDarkRulerArmedDragonLv3ArmedDragonLv5AttackReflectorUnitBondingH2oDarkFlareKnightDedicationThroughLightAndDarknessElegantEgotistGreatDezardHandOfNephthysHeroSignalHorusTheBlackFlameDragonLv4HorusTheBlackFlameDragonLv6KnightSTitleLevelUpPetenTheDarkClownPhotonGeneratorUnitReleaseRestraintSageSStoneSilentSwordsmanLv3SilentSwordsmanLv5SkilledDarkMagicianSkilledWhiteMagicianTheAgentOfCreationVenusTheinenTheGreatSphinxTranscendentWingsTrialOfThePrincessesUltimateInsectLv1UltimateInsectLv3UltimateInsectLv5_08066858
+	bl gCardEffectSpecialSummonGraveyard_08066858
 _08079F7A:
 	pop {r1}
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectMysticSwordsmanLv2MysticSwordsmanLv4_08079F80
-gCardEffectMysticSwordsmanLv2MysticSwordsmanLv4_08079F80: @ 0x08079F80
+	@ Mystic Swordsman LV2
+	@ Mystic Swordsman LV4
+	thumb_func_start gCardEffectSpecialSummonSendToGY_08079F80
+gCardEffectSpecialSummonSendToGY_08079F80: @ 0x08079F80
 	push {lr}
 	adds r2, r0, #0
 	adds r3, r1, #0
@@ -206472,18 +209401,19 @@ gCardEffectMysticSwordsmanLv2MysticSwordsmanLv4_08079F80: @ 0x08079F80
 	beq _08079FA0
 	adds r0, r2, #0
 	adds r1, r3, #0
-	bl gCardEffectNanobreakerNinjaGrandmasterSasukePaladinOfWhiteDragonSasukeSamurai_08072870
+	bl gCardEffectDestroyChangePosition_08072870
 	b _08079FA8
 _08079FA0:
 	adds r0, r2, #0
 	adds r1, r3, #0
-	bl gCardEffectADealWithDarkRulerArmedDragonLv3ArmedDragonLv5AttackReflectorUnitBondingH2oDarkFlareKnightDedicationThroughLightAndDarknessElegantEgotistGreatDezardHandOfNephthysHeroSignalHorusTheBlackFlameDragonLv4HorusTheBlackFlameDragonLv6KnightSTitleLevelUpPetenTheDarkClownPhotonGeneratorUnitReleaseRestraintSageSStoneSilentSwordsmanLv3SilentSwordsmanLv5SkilledDarkMagicianSkilledWhiteMagicianTheAgentOfCreationVenusTheinenTheGreatSphinxTranscendentWingsTrialOfThePrincessesUltimateInsectLv1UltimateInsectLv3UltimateInsectLv5_08066858
+	bl gCardEffectSpecialSummonGraveyard_08066858
 _08079FA8:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectAbyssalDesignator_08079FAC
-gCardEffectAbyssalDesignator_08079FAC: @ 0x08079FAC
+	@ Abyssal Designator
+	thumb_func_start gCardEffectSendToGYDamage_08079FAC
+gCardEffectSendToGYDamage_08079FAC: @ 0x08079FAC
 	push {r4, r5, r6, r7, lr}
 	adds r4, r0, #0
 	ldrb r0, [r4, #0xa]
@@ -206637,8 +209567,9 @@ _0807A0EC:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectInfernoFireBlast_0807A0F4
-gCardEffectInfernoFireBlast_0807A0F4: @ 0x0807A0F4
+	@ Inferno Fire Blast
+	thumb_func_start gCardEffectDamagePreventAttack_0807A0F4
+gCardEffectDamagePreventAttack_0807A0F4: @ 0x0807A0F4
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldrb r1, [r5, #2]
@@ -206672,8 +209603,9 @@ _0807A12C:
 	.align 2, 0
 _0807A134: .4byte 0x00000FF8 @ Red-Eyes B. Dragon
 
-	thumb_func_start gCardEffectBigWaveSmallWave_0807A138
-gCardEffectBigWaveSmallWave_0807A138: @ 0x0807A138
+	@ Big Wave Small Wave
+	thumb_func_start gCardEffectSpecialSummonDestroyAll_0807A138
+gCardEffectSpecialSummonDestroyAll_0807A138: @ 0x0807A138
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldr r0, _0807A158 @ =gUnk_0201B290
@@ -206867,8 +209799,9 @@ _0807A2BE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectTaunt_0807A2C4
-gCardEffectTaunt_0807A2C4: @ 0x0807A2C4
+	@ Taunt
+	thumb_func_start gCardEffectUnknown_0807A2C4
+gCardEffectUnknown_0807A2C4: @ 0x0807A2C4
 	push {r4, r5, r6, lr}
 	sub sp, #8
 	adds r4, r0, #0
@@ -206902,8 +209835,9 @@ _0807A2FE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectHeavySlump_0807A308
-gCardEffectHeavySlump_0807A308: @ 0x0807A308
+	@ Heavy Slump
+	thumb_func_start gCardEffectUnknown_0807A308
+gCardEffectUnknown_0807A308: @ 0x0807A308
 	push {r4, r5, r6, lr}
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
@@ -206997,8 +209931,10 @@ _0807A3B2:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectGreatPhantomThiefMindCrush_0807A3B8
-gCardEffectGreatPhantomThiefMindCrush_0807A3B8: @ 0x0807A3B8
+	@ Great Phantom Thief
+	@ Mind Crush
+	thumb_func_start gCardEffectDiscardDamage_0807A3B8
+gCardEffectDiscardDamage_0807A3B8: @ 0x0807A3B8
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -207199,11 +210135,12 @@ _0807A572:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectGreed_0807A580
-gCardEffectGreed_0807A580: @ 0x0807A580
+	@ Greed
+	thumb_func_start gCardEffectEndPhase_0807A580
+gCardEffectEndPhase_0807A580: @ 0x0807A580
 	push {r4, lr}
 	adds r4, r0, #0
-	bl gCardEffect7AbsorbingKidFromTheSkyAltarForTributeAmazonArcherAmebaAndroSphinxAntiAircraftFlowerAtomicFireflyBackfireBlackPendantBlastingTheRuinsBlueMedicineBowganianBurningAlgaeCannonSoldierCastleGateCatapultTurtleCemetaryBombCestusOfDaglaDDDynamiteDarkMagicianSTomeOfBlackMagicDarkRoomOfNightmareDesKoalaDesVolstgalphDianKetoTheCureMasterEbonMagicianCurranElementalHeroFlameWingmanElementalHeroShiningFlareWingmanElementalHeroSteamHealerElephantStatueOfBlessingElephantStatueOfDisasterEmergencyProvisionsFallingDownFinalFlameFireSorcererFuhmaShurikenGiantKozakyGiftOfTheMysticalElfGoblinThiefGoblinSSecretRemedyGranadoraGraveOhjaGravekeeperSCannonholderGravekeeperSCurseGriggleGuardianAngelJoanHamonLordOfStrikingThunderHinotamaHystericFairyInfernoJustDessertsKa2DesScissorsKozakySSelfDestructButtonLadyAssailantOfFlamesLavaGolemLegendaryBlackBeltMagicalBlastMagicalExplosionManThroTroMarshmallonMaskOfDispelMaskOfTheAccursedMassDriverMechaDogMarronMemoryCrusherMeteorOfDestructionMinarMineGolemMinorGoblinOfficialMooyanCurryMysteriousPuppeteerMystikWokNeedleBallNeedleBurrowerNightmareWheelNitroUnitNutrientZOokaziOptionHunterOxygeddonPoisonFangsPoisonMummyPoisonOfTheOldManPrincessCurranPrincessPikeruPrincessOfTsurugiRaimeiRainOfMercyRedMedicineReflectBounderRestructerRevolutionRockBombardmentSecretBarrelShinatoKingOfAHigherPlaneSkullMarkLadybugSnatchStealSolarFlareDragonSolarRaySoulAbsorptionSoulOfThePureSparksSphinxTeleiaSpiritualFireArtKurenaiStealthBirdTheEyeOfTruthToonCannonSoldierTremendousFireUltimateBaseballKidWaveMotionCannonWhiteMagicianPikeruWoodlandSpriteZolga_080655EC
+	bl gCardEffectDamageGraveyard_080655EC
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
@@ -207218,8 +210155,9 @@ gCardEffectGreed_0807A580: @ 0x0807A580
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectTrickySMagic4_0807A5A4
-gCardEffectTrickySMagic4_0807A5A4: @ 0x0807A5A4
+	@ Tricky's Magic 4
+	thumb_func_start gCardEffectSpecialSummonSendToGY_0807A5A4
+gCardEffectSpecialSummonSendToGY_0807A5A4: @ 0x0807A5A4
 	push {r4, r5, r6, r7, lr}
 	sub sp, #8
 	adds r4, r0, #0
@@ -207310,8 +210248,9 @@ _0807A652:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectSilentMagicianLv4_0807A65C
-gCardEffectSilentMagicianLv4_0807A65C: @ 0x0807A65C
+	@ Silent Magician LV4
+	thumb_func_start gCardEffectSpecialSummonSendToGY_0807A65C
+gCardEffectSpecialSummonSendToGY_0807A65C: @ 0x0807A65C
 	push {lr}
 	adds r2, r0, #0
 	adds r3, r1, #0
@@ -207325,18 +210264,19 @@ gCardEffectSilentMagicianLv4_0807A65C: @ 0x0807A65C
 	beq _0807A67C
 	adds r0, r2, #0
 	adds r1, r3, #0
-	bl gCardEffectADealWithDarkRulerArmedDragonLv3ArmedDragonLv5AttackReflectorUnitBondingH2oDarkFlareKnightDedicationThroughLightAndDarknessElegantEgotistGreatDezardHandOfNephthysHeroSignalHorusTheBlackFlameDragonLv4HorusTheBlackFlameDragonLv6KnightSTitleLevelUpPetenTheDarkClownPhotonGeneratorUnitReleaseRestraintSageSStoneSilentSwordsmanLv3SilentSwordsmanLv5SkilledDarkMagicianSkilledWhiteMagicianTheAgentOfCreationVenusTheinenTheGreatSphinxTranscendentWingsTrialOfThePrincessesUltimateInsectLv1UltimateInsectLv3UltimateInsectLv5_08066858
+	bl gCardEffectSpecialSummonGraveyard_08066858
 	b _0807A684
 _0807A67C:
 	adds r0, r2, #0
 	adds r1, r3, #0
-	bl gCardEffectBreakerTheMagicalWarriorHannibalNecromancer_0807500C
+	bl gCardEffectDestroyCounter_0807500C
 _0807A684:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectMagicianSCircle_0807A688
-gCardEffectMagicianSCircle_0807A688: @ 0x0807A688
+	@ Magician's Circle
+	thumb_func_start gCardEffectSpecialSummonChangePosition_0807A688
+gCardEffectSpecialSummonChangePosition_0807A688: @ 0x0807A688
 	push {r4, r5, lr}
 	sub sp, #4
 	adds r5, r0, #0
@@ -207516,8 +210456,9 @@ _0807A806:
 	.align 2, 0
 _0807A810: .4byte 0x00001CE8
 
-	thumb_func_start gCardEffectMagicianSUnite_0807A814
-gCardEffectMagicianSUnite_0807A814: @ 0x0807A814
+	@ Magician's Unite
+	thumb_func_start gCardEffectPreventAttackChangePosition_0807A814
+gCardEffectPreventAttackChangePosition_0807A814: @ 0x0807A814
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -207625,8 +210566,9 @@ _0807A8D8:
 _0807A8E8: .4byte 0x00000868
 _0807A8EC: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectTheCreator_0807A8F0
-gCardEffectTheCreator_0807A8F0: @ 0x0807A8F0
+	@ The Creator
+	thumb_func_start gCardEffectSpecialSummonSendToGY_0807A8F0
+gCardEffectSpecialSummonSendToGY_0807A8F0: @ 0x0807A8F0
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -207712,7 +210654,7 @@ _0807A994: .4byte 0x00000868
 _0807A998: .4byte 0x000012A1 @ Parasite Paracide
 _0807A99C:
 	adds r0, r6, #0
-	bl gCardEffectArchfiendSRoarBatteryChargerCentrifugalFieldChimeraTheFlyingMythicalBeastFushiohRichieLordPoisonMiracleRestoringRiteOfSpiritSpiritCallerSpiritualEarthArtKuroganeVampireGenesis_080687A8
+	bl gCardEffectSpecialSummonGraveyard_080687A8
 	b _0807A9BA
 _0807A9A4:
 	ldrb r6, [r6, #2]
@@ -207735,8 +210677,9 @@ _0807A9BA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectMysticSwordsmanLv6_0807A9C8
-gCardEffectMysticSwordsmanLv6_0807A9C8: @ 0x0807A9C8
+	@ Mystic Swordsman LV6
+	thumb_func_start gCardEffectSendToGYDestroy_0807A9C8
+gCardEffectSendToGYDestroy_0807A9C8: @ 0x0807A9C8
 	push {r4, r5, lr}
 	adds r3, r0, #0
 	ldr r0, _0807AA14 @ =gUnk_0201B290
@@ -207838,8 +210781,9 @@ _0807AA8E:
 	.align 2, 0
 _0807AA94: .4byte gUnk_0201BB90
 
-	thumb_func_start gCardEffectSasukeSamurai_0807AA98
-gCardEffectSasukeSamurai_0807AA98: @ 0x0807AA98
+	@ Sasuke Samurai
+	thumb_func_start gCardEffectDestroyChangePosition_0807AA98
+gCardEffectDestroyChangePosition_0807AA98: @ 0x0807AA98
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldr r0, _0807AAB4 @ =gUnk_0201B290
@@ -207945,8 +210889,9 @@ _0807AB64:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectThestalosTheFirestormMonarch_0807AB6C
-gCardEffectThestalosTheFirestormMonarch_0807AB6C: @ 0x0807AB6C
+	@ Thestalos the Firestorm Monarch
+	thumb_func_start gCardEffectDiscardDamage_0807AB6C
+gCardEffectDiscardDamage_0807AB6C: @ 0x0807AB6C
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	ldr r0, _0807ABB0 @ =gUnk_0201B290
@@ -208028,8 +210973,9 @@ _0807AC10: .4byte 0x00001332 @ Banisher of the Light
 _0807AC14: .4byte gUnk_0201C4E0
 _0807AC18: .4byte 0x00001DA8
 
-	thumb_func_start gCardEffectGaiaSoulTheCombustibleCollective_0807AC1C
-gCardEffectGaiaSoulTheCombustibleCollective_0807AC1C: @ 0x0807AC1C
+	@ Gaia Soul the Combustible Collective
+	thumb_func_start gCardEffectDestroyBoostATK_0807AC1C
+gCardEffectDestroyBoostATK_0807AC1C: @ 0x0807AC1C
 	push {r4, r5, r6, r7, lr}
 	ldrb r1, [r0, #2]
 	lsls r6, r1, #0x1f
@@ -208082,8 +211028,11 @@ _0807AC74:
 _0807AC7C: .4byte 0x00000868
 _0807AC80: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectBESCrystalCoreBESTetranBigCore_0807AC84
-gCardEffectBESCrystalCoreBESTetranBigCore_0807AC84: @ 0x0807AC84
+	@ B.E.S. Crystal Core
+	@ B.E.S. Tetran
+	@ Big Core
+	thumb_func_start gCardEffectDestroyCounter_0807AC84
+gCardEffectDestroyCounter_0807AC84: @ 0x0807AC84
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -208155,8 +211104,9 @@ _0807ACFE:
 _0807AD0C: .4byte 0x00000868
 _0807AD10: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectDekoichiTheBattlechantedLocomotive_0807AD14
-gCardEffectDekoichiTheBattlechantedLocomotive_0807AD14: @ 0x0807AD14
+	@ Dekoichi the Battlechanted Locomotive
+	thumb_func_start gCardEffectDrawFlip_0807AD14
+gCardEffectDrawFlip_0807AD14: @ 0x0807AD14
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldr r5, _0807AD4C @ =gUnk_0201B290
@@ -208212,8 +211162,9 @@ _0807AD7E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectHomunculusTheAlchemicBeing_0807AD84
-gCardEffectHomunculusTheAlchemicBeing_0807AD84: @ 0x0807AD84
+	@ Homunculus the Alchemic Being
+	thumb_func_start gCardEffectUnknown_0807AD84
+gCardEffectUnknown_0807AD84: @ 0x0807AD84
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -208336,8 +211287,9 @@ _0807AE78: .4byte gUnk_0201C4E0
 _0807AE7C: .4byte 0x00001DAA
 _0807AE80: .4byte 0x00001CE4
 
-	thumb_func_start gCardEffectSerialSpell_0807AE84
-gCardEffectSerialSpell_0807AE84: @ 0x0807AE84
+	@ Serial Spell
+	thumb_func_start gCardEffectDiscardGraveyard_0807AE84
+gCardEffectDiscardGraveyard_0807AE84: @ 0x0807AE84
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrh r0, [r1]
@@ -208352,8 +211304,9 @@ gCardEffectSerialSpell_0807AE84: @ 0x0807AE84
 	.align 2, 0
 _0807AE9C: .4byte 0x0000183E @ Serial Spell
 
-	thumb_func_start gCardEffectTriangleEcstasySpark_0807AEA0
-gCardEffectTriangleEcstasySpark_0807AEA0: @ 0x0807AEA0
+	@ Triangle Ecstasy Spark
+	thumb_func_start gCardEffectNegateEndPhase_0807AEA0
+gCardEffectNegateEndPhase_0807AEA0: @ 0x0807AEA0
 	push {r4, r5, r6, r7, lr}
 	sub sp, #8
 	adds r5, r0, #0
@@ -208397,8 +211350,9 @@ _0807AECE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectNecklaceOfCommand_0807AEF4
-gCardEffectNecklaceOfCommand_0807AEF4: @ 0x0807AEF4
+	@ Necklace of Command
+	thumb_func_start gCardEffectDiscardSendToGY_0807AEF4
+gCardEffectDiscardSendToGY_0807AEF4: @ 0x0807AEF4
 	push {lr}
 	ldrh r1, [r0, #0xc]
 	cmp r1, #1
@@ -208427,8 +211381,9 @@ _0807AF22:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectBackToSquareOne_0807AF28
-gCardEffectBackToSquareOne_0807AF28: @ 0x0807AF28
+	@ Back to Square One
+	thumb_func_start gCardEffectDiscard_0807AF28
+gCardEffectDiscard_0807AF28: @ 0x0807AF28
 	push {r4, r5, r6, lr}
 	sub sp, #4
 	adds r4, r0, #0
@@ -208460,8 +211415,9 @@ _0807AF5C:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectLightenTheLoad_0807AF68
-gCardEffectLightenTheLoad_0807AF68: @ 0x0807AF68
+	@ Lighten the Load
+	thumb_func_start gCardEffectDraw_0807AF68
+gCardEffectDraw_0807AF68: @ 0x0807AF68
 	push {r4, r5, r6, r7, lr}
 	adds r7, r0, #0
 	ldrb r1, [r7, #2]
@@ -208627,8 +211583,9 @@ _0807B0C0:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectDivineWrath_0807B0C8
-gCardEffectDivineWrath_0807B0C8: @ 0x0807B0C8
+	@ Divine Wrath
+	thumb_func_start gCardEffectNegateDiscard_0807B0C8
+gCardEffectNegateDiscard_0807B0C8: @ 0x0807B0C8
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r4, r1, #0
@@ -208725,8 +211682,9 @@ _0807B178:
 _0807B180: .4byte 0x00000868
 _0807B184: .4byte gUnk_0201C600
 
-	thumb_func_start gCardEffectXingZhenHu_0807B188
-gCardEffectXingZhenHu_0807B188: @ 0x0807B188
+	@ Xing Zhen Hu
+	thumb_func_start gCardEffectUnknown_0807B188
+gCardEffectUnknown_0807B188: @ 0x0807B188
 	push {r4, r5, r6, r7, lr}
 	sub sp, #0xc
 	adds r7, r0, #0
@@ -208819,8 +211777,9 @@ _0807B236:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectFuhRinKaZan_0807B240
-gCardEffectFuhRinKaZan_0807B240: @ 0x0807B240
+	@ Fuh-Rin-Ka-Zan
+	thumb_func_start gCardEffectDiscardDestroySpellTrap_0807B240
+gCardEffectDiscardDestroySpellTrap_0807B240: @ 0x0807B240
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -208849,13 +211808,13 @@ _0807B26C:
 	beq _0807B272
 	b _0807B408
 _0807B272:
-	ldr r1, _0807B328 @ =gCardEffectArchlordZeratoBurstStreamOfDestructionGilfordTheLightningNeedleWallObeliskTheTormentorRaigekiSandGamblerTimeWizard_080507AC
+	ldr r1, _0807B328 @ =gCardEffectDestroy_080507AC
 	adds r0, r7, #0
 	bl sub_0809077C
 	rsbs r1, r0, #0
 	orrs r1, r0
 	lsrs r6, r1, #0x1f
-	ldr r1, _0807B32C @ =gCardEffectDarkMagicAttackGryphonWingHarpieSFeatherDusterMoistureCreature_08051ABC
+	ldr r1, _0807B32C @ =gCardEffectDestroySpellTrapDestroyAll_08051ABC
 	adds r0, r7, #0
 	bl sub_0809077C
 	cmp r0, #0
@@ -208944,8 +211903,8 @@ _0807B31C:
 	str r3, [r0]
 	b _0807B37C
 	.align 2, 0
-_0807B328: .4byte gCardEffectArchlordZeratoBurstStreamOfDestructionGilfordTheLightningNeedleWallObeliskTheTormentorRaigekiSandGamblerTimeWizard_080507AC
-_0807B32C: .4byte gCardEffectDarkMagicAttackGryphonWingHarpieSFeatherDusterMoistureCreature_08051ABC
+_0807B328: .4byte gCardEffectDestroy_080507AC
+_0807B32C: .4byte gCardEffectDestroySpellTrapDestroyAll_08051ABC
 _0807B330: .4byte gUnk_0201C4E0
 _0807B334: .4byte 0x00000868
 _0807B338: .4byte 0x00001CF4
@@ -209015,12 +211974,12 @@ _0807B3A8:
 	.align 2, 0
 _0807B3C4: .4byte gUnk_0201C4E0
 _0807B3C8:
-	ldr r1, _0807B3CC @ =gCardEffectArchlordZeratoBurstStreamOfDestructionGilfordTheLightningNeedleWallObeliskTheTormentorRaigekiSandGamblerTimeWizard_080507AC
+	ldr r1, _0807B3CC @ =gCardEffectDestroy_080507AC
 	b _0807B3D2
 	.align 2, 0
-_0807B3CC: .4byte gCardEffectArchlordZeratoBurstStreamOfDestructionGilfordTheLightningNeedleWallObeliskTheTormentorRaigekiSandGamblerTimeWizard_080507AC
+_0807B3CC: .4byte gCardEffectDestroy_080507AC
 _0807B3D0:
-	ldr r1, _0807B3E4 @ =gCardEffectDarkMagicAttackGryphonWingHarpieSFeatherDusterMoistureCreature_08051ABC
+	ldr r1, _0807B3E4 @ =gCardEffectDestroySpellTrapDestroyAll_08051ABC
 _0807B3D2:
 	adds r0, r7, #0
 	bl sub_080906CC
@@ -209029,7 +211988,7 @@ _0807B3D2:
 	bl sub_080478FC
 	b _0807B408
 	.align 2, 0
-_0807B3E4: .4byte gCardEffectDarkMagicAttackGryphonWingHarpieSFeatherDusterMoistureCreature_08051ABC
+_0807B3E4: .4byte gCardEffectDestroySpellTrapDestroyAll_08051ABC
 _0807B3E8:
 	ldrb r7, [r7, #2]
 	lsls r1, r7, #0x1f
@@ -209057,8 +212016,9 @@ _0807B40A:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectCoveringFire_0807B418
-gCardEffectCoveringFire_0807B418: @ 0x0807B418
+	@ Covering Fire
+	thumb_func_start gCardEffectBoostATK_0807B418
+gCardEffectBoostATK_0807B418: @ 0x0807B418
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -209115,8 +212075,9 @@ _0807B47E:
 	.align 2, 0
 _0807B48C: .4byte gUnk_0201BB90
 
-	thumb_func_start gCardEffectOwnerSSeal_0807B490
-gCardEffectOwnerSSeal_0807B490: @ 0x0807B490
+	@ Owner's Seal
+	thumb_func_start gCardEffectUnknown_0807B490
+gCardEffectUnknown_0807B490: @ 0x0807B490
 	push {r4, r5, r6, r7, lr}
 	sub sp, #8
 	adds r5, r0, #0
@@ -209153,8 +212114,10 @@ _0807B4BE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectHeroKidHyena_0807B4D4
-gCardEffectHeroKidHyena_0807B4D4: @ 0x0807B4D4
+	@ Hero Kid
+	@ Hyena
+	thumb_func_start gCardEffectSpecialSummonSendToGY_0807B4D4
+gCardEffectSpecialSummonSendToGY_0807B4D4: @ 0x0807B4D4
 	push {r4, r5, r6, lr}
 	sub sp, #0x100
 	adds r5, r0, #0
@@ -209364,8 +212327,9 @@ _0807B6AE:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectAbareUshioni_0807B6B8
-gCardEffectAbareUshioni_0807B6B8: @ 0x0807B6B8
+	@ Abare Ushioni
+	thumb_func_start gCardEffectDamageRNG_0807B6B8
+gCardEffectDamageRNG_0807B6B8: @ 0x0807B6B8
 	push {lr}
 	adds r3, r0, #0
 	ldr r0, _0807B6D4 @ =gUnk_0201B290
@@ -209464,8 +212428,11 @@ _0807B776:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectTheDarkHexSealedFusionTheEarthHexSealedFusionTheLightHexSealedFusion_0807B77C
-gCardEffectTheDarkHexSealedFusionTheEarthHexSealedFusionTheLightHexSealedFusion_0807B77C: @ 0x0807B77C
+	@ The Dark - Hex-Sealed Fusion
+	@ The Earth - Hex-Sealed Fusion
+	@ The Light - Hex-Sealed Fusion
+	thumb_func_start gCardEffectSpecialSummonFusion_0807B77C
+gCardEffectSpecialSummonFusion_0807B77C: @ 0x0807B77C
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -209510,8 +212477,9 @@ _0807B7CA:
 _0807B7D4: .4byte 0x00000868
 _0807B7D8: .4byte gUnk_0201C880
 
-	thumb_func_start gCardEffectRescueCat_0807B7DC
-gCardEffectRescueCat_0807B7DC: @ 0x0807B7DC
+	@ Rescue Cat
+	thumb_func_start gCardEffectSpecialSummonSendToGY_0807B7DC
+gCardEffectSpecialSummonSendToGY_0807B7DC: @ 0x0807B7DC
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldr r0, _0807B7FC @ =gUnk_0201B290
@@ -209672,8 +212640,9 @@ _0807B950:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectBrainJacker_0807B958
-gCardEffectBrainJacker_0807B958: @ 0x0807B958
+	@ Brain Jacker
+	thumb_func_start gCardEffectTakeControlGainLP_0807B958
+gCardEffectTakeControlGainLP_0807B958: @ 0x0807B958
 	push {r4, r5, r6, r7, lr}
 	adds r5, r0, #0
 	movs r0, #0xfc
@@ -209683,7 +212652,7 @@ gCardEffectBrainJacker_0807B958: @ 0x0807B958
 	cmp r0, #0x80
 	bne _0807B970
 	adds r0, r5, #0
-	bl gCardEffect7AbsorbingKidFromTheSkyAltarForTributeAmazonArcherAmebaAndroSphinxAntiAircraftFlowerAtomicFireflyBackfireBlackPendantBlastingTheRuinsBlueMedicineBowganianBurningAlgaeCannonSoldierCastleGateCatapultTurtleCemetaryBombCestusOfDaglaDDDynamiteDarkMagicianSTomeOfBlackMagicDarkRoomOfNightmareDesKoalaDesVolstgalphDianKetoTheCureMasterEbonMagicianCurranElementalHeroFlameWingmanElementalHeroShiningFlareWingmanElementalHeroSteamHealerElephantStatueOfBlessingElephantStatueOfDisasterEmergencyProvisionsFallingDownFinalFlameFireSorcererFuhmaShurikenGiantKozakyGiftOfTheMysticalElfGoblinThiefGoblinSSecretRemedyGranadoraGraveOhjaGravekeeperSCannonholderGravekeeperSCurseGriggleGuardianAngelJoanHamonLordOfStrikingThunderHinotamaHystericFairyInfernoJustDessertsKa2DesScissorsKozakySSelfDestructButtonLadyAssailantOfFlamesLavaGolemLegendaryBlackBeltMagicalBlastMagicalExplosionManThroTroMarshmallonMaskOfDispelMaskOfTheAccursedMassDriverMechaDogMarronMemoryCrusherMeteorOfDestructionMinarMineGolemMinorGoblinOfficialMooyanCurryMysteriousPuppeteerMystikWokNeedleBallNeedleBurrowerNightmareWheelNitroUnitNutrientZOokaziOptionHunterOxygeddonPoisonFangsPoisonMummyPoisonOfTheOldManPrincessCurranPrincessPikeruPrincessOfTsurugiRaimeiRainOfMercyRedMedicineReflectBounderRestructerRevolutionRockBombardmentSecretBarrelShinatoKingOfAHigherPlaneSkullMarkLadybugSnatchStealSolarFlareDragonSolarRaySoulAbsorptionSoulOfThePureSparksSphinxTeleiaSpiritualFireArtKurenaiStealthBirdTheEyeOfTruthToonCannonSoldierTremendousFireUltimateBaseballKidWaveMotionCannonWhiteMagicianPikeruWoodlandSpriteZolga_080655EC
+	bl gCardEffectDamageGraveyard_080655EC
 	b _0807B9EE
 _0807B970:
 	adds r0, r5, #0
@@ -209749,8 +212718,9 @@ _0807B9EE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectGatlingDragon_0807B9F4
-gCardEffectGatlingDragon_0807B9F4: @ 0x0807B9F4
+	@ Gatling Dragon
+	thumb_func_start gCardEffectDestroyRNG_0807B9F4
+gCardEffectDestroyRNG_0807B9F4: @ 0x0807B9F4
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldr r0, _0807BA14 @ =gUnk_0201B290
@@ -209795,7 +212765,7 @@ _0807BA46:
 	ldrh r0, [r0]
 	cmp r0, #0
 	beq _0807BB28
-	ldr r1, _0807BA78 @ =gCardEffectChaosEndDarkHoleTorrentialTribute_08050750
+	ldr r1, _0807BA78 @ =gCardEffectDestroyAll_08050750
 	adds r0, r5, #0
 	bl sub_0809077C
 	cmp r0, #0
@@ -209812,11 +212782,11 @@ _0807BA6C:
 	.align 2, 0
 _0807BA70: .4byte gUnk_0201C4E0
 _0807BA74: .4byte 0x00001DAA
-_0807BA78: .4byte gCardEffectChaosEndDarkHoleTorrentialTribute_08050750
+_0807BA78: .4byte gCardEffectDestroyAll_08050750
 _0807BA7C: .4byte gUnk_0201B290
 _0807BA80: .4byte 0x000004A4
 _0807BA84:
-	ldr r4, _0807BA98 @ =gCardEffectChaosEndDarkHoleTorrentialTribute_08050750
+	ldr r4, _0807BA98 @ =gCardEffectDestroyAll_08050750
 	adds r0, r5, #0
 	adds r1, r4, #0
 	bl sub_0809077C
@@ -209826,7 +212796,7 @@ _0807BA92:
 	movs r0, #0x7c
 	b _0807BB2A
 	.align 2, 0
-_0807BA98: .4byte gCardEffectChaosEndDarkHoleTorrentialTribute_08050750
+_0807BA98: .4byte gCardEffectDestroyAll_08050750
 _0807BA9C:
 	ldr r0, _0807BAC8 @ =gUnk_0201B290
 	ldr r2, _0807BACC @ =0x000004A4
@@ -209896,8 +212866,9 @@ _0807BB2A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectSwordsOfConcealingLight_0807BB30
-gCardEffectSwordsOfConcealingLight_0807BB30: @ 0x0807BB30
+	@ Swords of Concealing Light
+	thumb_func_start gCardEffectDestroyChangePosition_0807BB30
+gCardEffectDestroyChangePosition_0807BB30: @ 0x0807BB30
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -209945,8 +212916,9 @@ _0807BB6E:
 	.align 2, 0
 _0807BB88: .4byte gUnk_0201E1C8
 
-	thumb_func_start gCardEffectPhoenixWingWindBlast_0807BB8C
-gCardEffectPhoenixWingWindBlast_0807BB8C: @ 0x0807BB8C
+	@ Phoenix Wing Wind Blast
+	thumb_func_start gCardEffectDiscard_0807BB8C
+gCardEffectDiscard_0807BB8C: @ 0x0807BB8C
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	movs r1, #0
@@ -209977,8 +212949,10 @@ _0807BBC4:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectGoodGoblinHousekeepingHelpingRoboForCombat_0807BBCC
-gCardEffectGoodGoblinHousekeepingHelpingRoboForCombat_0807BBCC: @ 0x0807BBCC
+	@ Good Goblin Housekeeping
+	@ Helping Robo For Combat
+	thumb_func_start gCardEffectDrawDestroy_0807BBCC
+gCardEffectDrawDestroy_0807BBCC: @ 0x0807BBCC
 	push {r4, lr}
 	adds r3, r0, #0
 	ldr r0, _0807BBE8 @ =gUnk_0201B290
@@ -209999,7 +212973,7 @@ _0807BBEC:
 	cmp r0, #0x80
 	bne _0807BC38
 	adds r0, r3, #0
-	bl gCardEffectAirknightParshathAppropriateAvatarOfThePotBrowwHuntsmanOfDarkWorldCardOfSafeReturnCardOfSanctityChainsawInsectChaosGreedCorpseOfYataGarasuDarkMimicLv3DesLacoodaElectricSnakeElementalHeroBubblemanHeartOfTheUnderdogJarOfGreedMaskedSorcererMoltenZombiePoisonDrawFrogPotOfGreedPreciousCardsFromBeyondRoyalMagicalLibrarySacredCraneSkelengelTheAgentOfWisdomMercuryToonMaskedSorcerer_080656E0
+	bl gCardEffectDraw_080656E0
 	movs r0, #0x7f
 	b _0807BC3A
 _0807BBFA:
@@ -210042,8 +213016,9 @@ _0807BC3A:
 _0807BC40: .4byte gUnk_0201C4E0
 _0807BC44: .4byte 0x00001DA8
 
-	thumb_func_start gCardEffectBeastSoulSwap_0807BC48
-gCardEffectBeastSoulSwap_0807BC48: @ 0x0807BC48
+	@ Beast Soul Swap
+	thumb_func_start gCardEffectSpecialSummonReturnToHand_0807BC48
+gCardEffectSpecialSummonReturnToHand_0807BC48: @ 0x0807BC48
 	push {r4, r5, r6, r7, lr}
 	adds r5, r0, #0
 	adds r6, r1, #0
@@ -210147,7 +213122,7 @@ _0807BCE8:
 	strh r0, [r5, #0xc]
 	adds r0, r5, #0
 	adds r1, r6, #0
-	bl gCardEffectAncientLampMagnetCircleLv2_0805C294
+	bl gCardEffectSpecialSummonChangePosition_0805C294
 	cmp r0, #0
 	beq _0807BDB0
 	b _0807BDAC
@@ -210224,8 +213199,9 @@ _0807BDB2:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectAssaultOnGhq_0807BDB8
-gCardEffectAssaultOnGhq_0807BDB8: @ 0x0807BDB8
+	@ Assault on GHQ
+	thumb_func_start gCardEffectSendToGYDestroy_0807BDB8
+gCardEffectSendToGYDestroy_0807BDB8: @ 0x0807BDB8
 	push {lr}
 	adds r1, r0, #0
 	ldr r0, _0807BDDC @ =gUnk_0201B290
@@ -210260,8 +213236,9 @@ _0807BDF4:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectCurseOfVampire_0807BDF8
-gCardEffectCurseOfVampire_0807BDF8: @ 0x0807BDF8
+	@ Curse of Vampire
+	thumb_func_start gCardEffectSpecialSummonSendToGY_0807BDF8
+gCardEffectSpecialSummonSendToGY_0807BDF8: @ 0x0807BDF8
 	push {lr}
 	adds r2, r0, #0
 	movs r0, #0xfc
@@ -210271,7 +213248,7 @@ gCardEffectCurseOfVampire_0807BDF8: @ 0x0807BDF8
 	cmp r0, #0x80
 	bne _0807BE10
 	adds r0, r2, #0
-	bl gCardEffectBeiigeVanguardOfDarkWorldDespairFromTheDarkFearFromTheDarkFoxFireHeliosDuoMegisteHeliosTrisMegisteKingOfTheSkullServantsManticoreOfDarknessSacredPhoenixOfNephthysSandMothTreebornFrog_08075874
+	bl gCardEffectSpecialSummonGraveyard_08075874
 	b _0807BE26
 _0807BE10:
 	ldrb r1, [r2, #2]
@@ -210289,8 +213266,9 @@ _0807BE26:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectCriosphinx_0807BE2C
-gCardEffectCriosphinx_0807BE2C: @ 0x0807BE2C
+	@ Criosphinx
+	thumb_func_start gCardEffectReturnToHandSendToGY_0807BE2C
+gCardEffectReturnToHandSendToGY_0807BE2C: @ 0x0807BE2C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -210447,8 +213425,9 @@ _0807BF52:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectDummyGolem_0807BF64
-gCardEffectDummyGolem_0807BF64: @ 0x0807BF64
+	@ Dummy Golem
+	thumb_func_start gCardEffectTakeControlFlip_0807BF64
+gCardEffectTakeControlFlip_0807BF64: @ 0x0807BF64
 	push {r4, r5, r6, r7, lr}
 	sub sp, #4
 	adds r5, r0, #0
@@ -210588,8 +213567,13 @@ _0807C07A:
 	.align 2, 0
 _0807C084: .4byte 0x000004A4
 
-	thumb_func_start gCardEffectAussaTheEarthCharmerElementalHeroTempestEriaTheWaterCharmerHiitaTheFireCharmerWynnTheWindCharmer_0807C088
-gCardEffectAussaTheEarthCharmerElementalHeroTempestEriaTheWaterCharmerHiitaTheFireCharmerWynnTheWindCharmer_0807C088: @ 0x0807C088
+	@ Aussa the Earth Charmer
+	@ Elemental Hero Tempest
+	@ Eria the Water Charmer
+	@ Hiita the Fire Charmer
+	@ Wynn the Wind Charmer
+	thumb_func_start gCardEffectTakeControlFlip_0807C088
+gCardEffectTakeControlFlip_0807C088: @ 0x0807C088
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -210691,8 +213675,9 @@ _0807C142:
 _0807C150: .4byte 0x00000868
 _0807C154: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectShiftingShadows_0807C158
-gCardEffectShiftingShadows_0807C158: @ 0x0807C158
+	@ Shifting Shadows
+	thumb_func_start gCardEffectDamageChangePosition_0807C158
+gCardEffectDamageChangePosition_0807C158: @ 0x0807C158
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
@@ -210703,8 +213688,9 @@ gCardEffectShiftingShadows_0807C158: @ 0x0807C158
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectPikeruSSecondSight_0807C16C
-gCardEffectPikeruSSecondSight_0807C16C: @ 0x0807C16C
+	@ Pikeru's Second Sight
+	thumb_func_start gCardEffectSearchEndPhase_0807C16C
+gCardEffectSearchEndPhase_0807C16C: @ 0x0807C16C
 	push {r4, lr}
 	ldrb r1, [r0, #2]
 	lsls r2, r1, #0x1f
@@ -210735,8 +213721,9 @@ _0807C18C:
 _0807C1A0: .4byte gUnk_0201C4E0
 _0807C1A4: .4byte 0x00001CE8
 
-	thumb_func_start gCardEffectMinefieldEruption_0807C1A8
-gCardEffectMinefieldEruption_0807C1A8: @ 0x0807C1A8
+	@ Minefield Eruption
+	thumb_func_start gCardEffectDestroyAllDamage_0807C1A8
+gCardEffectDestroyAllDamage_0807C1A8: @ 0x0807C1A8
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldr r0, _0807C1E4 @ =gUnk_0201B290
@@ -210769,7 +213756,7 @@ gCardEffectMinefieldEruption_0807C1A8: @ 0x0807C1A8
 _0807C1E4: .4byte gUnk_0201B290
 _0807C1E8:
 	adds r0, r5, #0
-	bl gCardEffect4StarredLadybugOfDoomAcidRainArmedDragonLv10ArmedDragonLv7BreathOfLightBurstBreathCalamityOfTheWickedChaosEndDarkHoleDarkMagicAttackDemiseKingOfArmageddonDesCounterblowDesCroakingDisarmamentElementalBurstEradicatingAerosolEternalDroughtEternalRestExileOfTheWickedFinalDestinyGearfriedTheIronKnightGigantesGilfordTheLightningHarpieSFeatherDusterHeavyStormJowgenTheSpiritualistLastDayOfWitchLegendaryFlameLordLeviaDragonDaedalusLightningVortexMaliceDispersionMegaTonMagicalCannonMirrorForceMoistureCreatureNeedleCeilingObeliskTheTormentorOjamaDeltaHurricaneRaigekiReallyEternalRestSacredPhoenixOfNephthysSpecialHurricaneSpellPurificationTheLastWarriorFromAnotherPlanetTorrentialTributeTragedyTribeInfectingVirusWarriorEliminationWeedOut_08064660
+	bl gCardEffectDestroy_08064660
 	b _0807C1F2
 _0807C1F0:
 	movs r0, #0
@@ -210778,8 +213765,9 @@ _0807C1F2:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectLevelConversionLab_0807C1F8
-gCardEffectLevelConversionLab_0807C1F8: @ 0x0807C1F8
+	@ Level Conversion Lab
+	thumb_func_start gCardEffectSendToGYGraveyard_0807C1F8
+gCardEffectSendToGYGraveyard_0807C1F8: @ 0x0807C1F8
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	ldr r5, _0807C214 @ =gUnk_0201B290
@@ -210972,8 +213960,9 @@ _0807C37A:
 _0807C380: .4byte 0x000004A4
 _0807C384: .4byte 0x00000868
 
-	thumb_func_start gCardEffectInfernalFlameEmperor_0807C388
-gCardEffectInfernalFlameEmperor_0807C388: @ 0x0807C388
+	@ Infernal Flame Emperor
+	thumb_func_start gCardEffectSpecialSummonBanish_0807C388
+gCardEffectSpecialSummonBanish_0807C388: @ 0x0807C388
 	push {r4, r5, r6, lr}
 	sub sp, #0x100
 	adds r4, r0, #0
@@ -211091,8 +214080,9 @@ _0807C46C:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectOceanDragonLordNeoDaedalus_0807C474
-gCardEffectOceanDragonLordNeoDaedalus_0807C474: @ 0x0807C474
+	@ Ocean Dragon Lord - Neo-Daedalus
+	thumb_func_start gCardEffectSpecialSummonSendToGY_0807C474
+gCardEffectSpecialSummonSendToGY_0807C474: @ 0x0807C474
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldr r0, _0807C49C @ =gUnk_0201B290
@@ -211173,8 +214163,9 @@ _0807C508:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectWingedKuribohLv10_0807C510
-gCardEffectWingedKuribohLv10_0807C510: @ 0x0807C510
+	@ Winged Kuriboh LV10
+	thumb_func_start gCardEffectSpecialSummonDestroyAll_0807C510
+gCardEffectSpecialSummonDestroyAll_0807C510: @ 0x0807C510
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -211237,8 +214228,9 @@ _0807C55C:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectBubbleShuffle_0807C590
-gCardEffectBubbleShuffle_0807C590: @ 0x0807C590
+	@ Bubble Shuffle
+	thumb_func_start gCardEffectSpecialSummonChangePosition_0807C590
+gCardEffectSpecialSummonChangePosition_0807C590: @ 0x0807C590
 	push {r4, r5, r6, lr}
 	sub sp, #4
 	adds r4, r0, #0
@@ -211329,7 +214321,7 @@ _0807C642:
 	adds r0, #2
 	str r0, [r2]
 	adds r0, r4, #0
-	bl gCardEffectAncientLampContractWithExodiaDonTurtleFrontlineBaseHiddenSoldierKaibamanKingDragunMagnetCircleLv2MaraudingCaptainPinchHopperRedEyesBChickTheCreatorIncarnateTheThingInTheCraterTributeDollTwoManCellBattleUltraEvolutionPillVampireOrchis_080659E8
+	bl gCardEffectSpecialSummon_080659E8
 	cmp r0, #0
 	beq _0807C654
 	subs r0, #2
@@ -211343,8 +214335,9 @@ _0807C656:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectSparkBlaster_0807C660
-gCardEffectSparkBlaster_0807C660: @ 0x0807C660
+	@ Spark Blaster
+	thumb_func_start gCardEffectDestroyChangePosition_0807C660
+gCardEffectDestroyChangePosition_0807C660: @ 0x0807C660
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -211461,8 +214454,9 @@ _0807C738:
 _0807C748: .4byte 0x00000868
 _0807C74C: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectDarkRulerVandalgyon_0807C750
-gCardEffectDarkRulerVandalgyon_0807C750: @ 0x0807C750
+	@ Dark Ruler Vandalgyon
+	thumb_func_start gCardEffectSpecialSummonDestroySpellTrap_0807C750
+gCardEffectSpecialSummonDestroySpellTrap_0807C750: @ 0x0807C750
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -211481,7 +214475,7 @@ gCardEffectDarkRulerVandalgyon_0807C750: @ 0x0807C750
 	blt _0807C7AC
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	cmp r0, #0
 	beq _0807C7AC
 	ldrb r0, [r4, #2]
@@ -211518,7 +214512,7 @@ _0807C7B8:
 	bne _0807C7CC
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffect7AbsorbingKidFromTheSkyAltarForTributeAmazonArcherAmebaAndroSphinxAntiAircraftFlowerAtomicFireflyBackfireBlackPendantBlastingTheRuinsBlueMedicineBowganianBurningAlgaeCannonSoldierCastleGateCatapultTurtleCemetaryBombCestusOfDaglaDDDynamiteDarkMagicianSTomeOfBlackMagicDarkRoomOfNightmareDesKoalaDesVolstgalphDianKetoTheCureMasterEbonMagicianCurranElementalHeroFlameWingmanElementalHeroShiningFlareWingmanElementalHeroSteamHealerElephantStatueOfBlessingElephantStatueOfDisasterEmergencyProvisionsFallingDownFinalFlameFireSorcererFuhmaShurikenGiantKozakyGiftOfTheMysticalElfGoblinThiefGoblinSSecretRemedyGranadoraGraveOhjaGravekeeperSCannonholderGravekeeperSCurseGriggleGuardianAngelJoanHamonLordOfStrikingThunderHinotamaHystericFairyInfernoJustDessertsKa2DesScissorsKozakySSelfDestructButtonLadyAssailantOfFlamesLavaGolemLegendaryBlackBeltMagicalBlastMagicalExplosionManThroTroMarshmallonMaskOfDispelMaskOfTheAccursedMassDriverMechaDogMarronMemoryCrusherMeteorOfDestructionMinarMineGolemMinorGoblinOfficialMooyanCurryMysteriousPuppeteerMystikWokNeedleBallNeedleBurrowerNightmareWheelNitroUnitNutrientZOokaziOptionHunterOxygeddonPoisonFangsPoisonMummyPoisonOfTheOldManPrincessCurranPrincessPikeruPrincessOfTsurugiRaimeiRainOfMercyRedMedicineReflectBounderRestructerRevolutionRockBombardmentSecretBarrelShinatoKingOfAHigherPlaneSkullMarkLadybugSnatchStealSolarFlareDragonSolarRaySoulAbsorptionSoulOfThePureSparksSphinxTeleiaSpiritualFireArtKurenaiStealthBirdTheEyeOfTruthToonCannonSoldierTremendousFireUltimateBaseballKidWaveMotionCannonWhiteMagicianPikeruWoodlandSpriteZolga_080655EC
+	bl gCardEffectDamageGraveyard_080655EC
 	b _0807C7E8
 _0807C7CC:
 	ldr r0, [r4, #0x14]
@@ -211527,20 +214521,21 @@ _0807C7CC:
 	beq _0807C7E0
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectArchfiendSRoarBatteryChargerCentrifugalFieldChimeraTheFlyingMythicalBeastFushiohRichieLordPoisonMiracleRestoringRiteOfSpiritSpiritCallerSpiritualEarthArtKuroganeVampireGenesis_080687A8
+	bl gCardEffectSpecialSummonGraveyard_080687A8
 	b _0807C7E8
 _0807C7E0:
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectAnteatereatingantArcaneArcherOfTheForestArmedDragonLv5BESTetranBladeRabbitBlastMagicianBlastWithChainBreakerTheMagicalWarriorBurningBeastChironTheMageCyberLaserDragonDarkMagicianKnightDoubleSnareDragonSeekerDreamClownDrivingSnowEatgaboonElementalHeroThunderGiantExiledForceFreedTheBraveWandererFreezingBeastGearfriedTheSwordmasterGranmargTheRockMonarchGuardianCealGustHannibalNecromancerHarpiesHuntingGroundHouseOfAdhesiveTapeMagicalMarionetteManEaterBugMedusaWormMichizureMysticalSpaceTyphoonNewdoriaNightAssailantOldVindictiveMagicianOrcaMegaFortressOfDarknessRaigekiBreakRemoveTrapSakuretsuArmorShieldCrashSwarmOfLocustsSwarmOfScarabsThousandKnivesThrowstoneUnitTrapHoleTributeToTheDoomedUriaLordOfSearingFlamesWhiteNinjaXyDragonCannonXyzDragonCannonXzTankCannonYzTankDragonZaborgTheThunderMonarch_08064654
+	bl gCardEffectDestroy_08064654
 _0807C7E8:
 	pop {r4, r5, r6}
 	pop {r1}
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectCyberArchfiend_0807C7F0
-gCardEffectCyberArchfiend_0807C7F0: @ 0x0807C7F0
+	@ Cyber Archfiend
+	thumb_func_start gCardEffectDrawSearch_0807C7F0
+gCardEffectDrawSearch_0807C7F0: @ 0x0807C7F0
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	adds r2, r1, #0
@@ -211605,15 +214600,16 @@ _0807C85C:
 _0807C86C:
 	adds r0, r6, #0
 	adds r1, r2, #0
-	bl gCardEffectAirknightParshathAppropriateAvatarOfThePotBrowwHuntsmanOfDarkWorldCardOfSafeReturnCardOfSanctityChainsawInsectChaosGreedCorpseOfYataGarasuDarkMimicLv3DesLacoodaElectricSnakeElementalHeroBubblemanHeartOfTheUnderdogJarOfGreedMaskedSorcererMoltenZombiePoisonDrawFrogPotOfGreedPreciousCardsFromBeyondRoyalMagicalLibrarySacredCraneSkelengelTheAgentOfWisdomMercuryToonMaskedSorcerer_080656E0
+	bl gCardEffectDraw_080656E0
 _0807C874:
 	pop {r4, r5, r6, r7}
 	pop {r1}
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectDesFrog_0807C87C
-gCardEffectDesFrog_0807C87C: @ 0x0807C87C
+	@ Des Frog
+	thumb_func_start gCardEffectSpecialSummonRevive_0807C87C
+gCardEffectSpecialSummonRevive_0807C87C: @ 0x0807C87C
 	push {r4, r5, r6, r7, lr}
 	adds r7, r0, #0
 	adds r3, r1, #0
@@ -211676,7 +214672,7 @@ _0807C8B8: @ jump table
 _0807C92C:
 	adds r0, r7, #0
 	adds r1, r3, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	cmp r0, #0
 	bne _0807C93A
 	b _0807CA7A
@@ -211837,8 +214833,9 @@ _0807CA7C:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectSystemDown_0807CA84
-gCardEffectSystemDown_0807CA84: @ 0x0807CA84
+	@ System Down
+	thumb_func_start gCardEffectBanishDamage_0807CA84
+gCardEffectBanishDamage_0807CA84: @ 0x0807CA84
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -211965,8 +214962,9 @@ _0807CB72:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectPotOfGenerosity_0807CB80
-gCardEffectPotOfGenerosity_0807CB80: @ 0x0807CB80
+	@ Pot of Generosity
+	thumb_func_start gCardEffectUnknown_0807CB80
+gCardEffectUnknown_0807CB80: @ 0x0807CB80
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldr r5, _0807CB9C @ =gUnk_0201B290
@@ -212052,8 +215050,9 @@ _0807CC24:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectFireDarts_0807CC2C
-gCardEffectFireDarts_0807CC2C: @ 0x0807CC2C
+	@ Fire Darts
+	thumb_func_start gCardEffectDamage_0807CC2C
+gCardEffectDamage_0807CC2C: @ 0x0807CC2C
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldr r0, _0807CC58 @ =gUnk_0201B290
@@ -212110,8 +215109,9 @@ _0807CC94: .4byte gUnk_0201C4E0
 _0807CC98: .4byte 0x00001DA8
 _0807CC9C: .4byte 0x00001DAC
 
-	thumb_func_start gCardEffectSpiritualWaterArtAoi_0807CCA0
-gCardEffectSpiritualWaterArtAoi_0807CCA0: @ 0x0807CCA0
+	@ Spiritual Water Art - Aoi
+	thumb_func_start gCardEffectSendToGYGraveyard_0807CCA0
+gCardEffectSendToGYGraveyard_0807CCA0: @ 0x0807CCA0
 	push {r4, lr}
 	adds r3, r0, #0
 	ldr r0, _0807CCE0 @ =gUnk_0201B290
@@ -212177,8 +215177,9 @@ _0807CD1C: .4byte 0x00000868
 _0807CD20: .4byte gUnk_0201C600
 _0807CD24: .4byte 0x00001C88
 
-	thumb_func_start gCardEffectSpiritualWindArtMiyabi_0807CD28
-gCardEffectSpiritualWindArtMiyabi_0807CD28: @ 0x0807CD28
+	@ Spiritual Wind Art - Miyabi
+	thumb_func_start gCardEffectTribute_0807CD28
+gCardEffectTribute_0807CD28: @ 0x0807CD28
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	movs r1, #0
@@ -212209,8 +215210,9 @@ _0807CD60:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectARivalAppears_0807CD68
-gCardEffectARivalAppears_0807CD68: @ 0x0807CD68
+	@ A Rival Appears!
+	thumb_func_start gCardEffectSpecialSummon_0807CD68
+gCardEffectSpecialSummon_0807CD68: @ 0x0807CD68
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	ldr r0, _0807CD84 @ =gUnk_0201B290
@@ -212322,8 +215324,9 @@ _0807CE44: .4byte gUnk_0201C4E0
 _0807CE48: .4byte 0x00001D70
 _0807CE4C: .4byte 0x00000868
 
-	thumb_func_start gCardEffectDDTrapHole_0807CE50
-gCardEffectDDTrapHole_0807CE50: @ 0x0807CE50
+	@ D.D. Trap Hole
+	thumb_func_start gCardEffectBanishDestroy_0807CE50
+gCardEffectBanishDestroy_0807CE50: @ 0x0807CE50
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -212404,8 +215407,9 @@ _0807CECE:
 _0807CEE8: .4byte 0x00000868
 _0807CEEC: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectConscription_0807CEF0
-gCardEffectConscription_0807CEF0: @ 0x0807CEF0
+	@ Conscription
+	thumb_func_start gCardEffectSearchSpecialSummon_0807CEF0
+gCardEffectSearchSpecialSummon_0807CEF0: @ 0x0807CEF0
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -212542,8 +215546,9 @@ _0807D000:
 _0807D00C: .4byte 0x00000868
 _0807D010: .4byte gUnk_0201C740
 
-	thumb_func_start gCardEffectPrepareToStrikeBack_0807D014
-gCardEffectPrepareToStrikeBack_0807D014: @ 0x0807D014
+	@ Prepare to Strike Back
+	thumb_func_start gCardEffectChangePositionRNG_0807D014
+gCardEffectChangePositionRNG_0807D014: @ 0x0807D014
 	push {r4, r5, r6, lr}
 	sub sp, #4
 	adds r6, r0, #0
@@ -212565,7 +215570,7 @@ _0807D038:
 	cmp r0, #0x80
 	bne _0807D0F4
 	adds r0, r6, #0
-	bl gCardEffectPrepareToStrikeBack_08063954
+	bl gCardEffectChangePositionRNG_08063954
 	cmp r0, #0
 	beq _0807D0F4
 	ldr r0, _0807D06C @ =gUnk_0201E2A0
@@ -212661,8 +215666,9 @@ _0807D0F6:
 	.align 2, 0
 _0807D100: .4byte gUnk_0201BB90
 
-	thumb_func_start gCardEffectGilfordTheLegend_0807D104
-gCardEffectGilfordTheLegend_0807D104: @ 0x0807D104
+	@ Gilford the Legend
+	thumb_func_start gCardEffectSpecialSummonRevive_0807D104
+gCardEffectSpecialSummonRevive_0807D104: @ 0x0807D104
 	push {r4, r5, r6, r7, lr}
 	sub sp, #0x10c
 	adds r7, r0, #0
@@ -212866,8 +215872,9 @@ _0807D2D6:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectLevelModulation_0807D2E0
-gCardEffectLevelModulation_0807D2E0: @ 0x0807D2E0
+	@ Level Modulation
+	thumb_func_start gCardEffectSpecialSummonPreventAttack_0807D2E0
+gCardEffectSpecialSummonPreventAttack_0807D2E0: @ 0x0807D2E0
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	ldrb r1, [r6, #2]
@@ -212931,12 +215938,13 @@ _0807D35A:
 _0807D364: .4byte 0x00000868
 _0807D368: .4byte gUnk_0201C8F8
 
-	thumb_func_start gCardEffectOjamuscle_0807D36C
-gCardEffectOjamuscle_0807D36C: @ 0x0807D36C
+	@ Ojamuscle
+	thumb_func_start gCardEffectDestroyAllBoostATK_0807D36C
+gCardEffectDestroyAllBoostATK_0807D36C: @ 0x0807D36C
 	push {r4, r5, r6, r7, lr}
 	sub sp, #8
 	adds r4, r0, #0
-	ldr r1, _0807D3DC @ =gCardEffectAcidRainBreathOfLightEradicatingAerosolEternalDroughtEternalRestExileOfTheWickedLastDayOfWitchNeedleCeilingReallyEternalRestTribeInfectingVirusWarriorEliminationWeedOut_08050A54
+	ldr r1, _0807D3DC @ =gCardEffectDestroyAll_08050A54
 	bl sub_080906CC
 	adds r1, r0, #0
 	adds r0, r4, #0
@@ -212984,10 +215992,11 @@ _0807D3D2:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0807D3DC: .4byte gCardEffectAcidRainBreathOfLightEradicatingAerosolEternalDroughtEternalRestExileOfTheWickedLastDayOfWitchNeedleCeilingReallyEternalRestTribeInfectingVirusWarriorEliminationWeedOut_08050A54
+_0807D3DC: .4byte gCardEffectDestroyAll_08050A54
 
-	thumb_func_start gCardEffectOjamagic_0807D3E0
-gCardEffectOjamagic_0807D3E0: @ 0x0807D3E0
+	@ Ojamagic
+	thumb_func_start gCardEffectSearchSendToGY_0807D3E0
+gCardEffectSearchSendToGY_0807D3E0: @ 0x0807D3E0
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -213106,8 +216115,9 @@ _0807D4D2:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectVwTigerCatapult_0807D4DC
-gCardEffectVwTigerCatapult_0807D4DC: @ 0x0807D4DC
+	@ VW-Tiger Catapult
+	thumb_func_start gCardEffectSpecialSummonDiscard_0807D4DC
+gCardEffectSpecialSummonDiscard_0807D4DC: @ 0x0807D4DC
 	push {r4, r5, r6, lr}
 	sub sp, #4
 	adds r6, r0, #0
@@ -213172,8 +216182,9 @@ _0807D558:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectVwxyzDragonCatapultCannon_0807D564
-gCardEffectVwxyzDragonCatapultCannon_0807D564: @ 0x0807D564
+	@ VWXYZ-Dragon Catapult Cannon
+	thumb_func_start gCardEffectSpecialSummonBanish_0807D564
+gCardEffectSpecialSummonBanish_0807D564: @ 0x0807D564
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _0807D58C @ =gUnk_0201C4E0
@@ -213190,7 +216201,7 @@ gCardEffectVwxyzDragonCatapultCannon_0807D564: @ 0x0807D564
 	cmp r0, #0
 	beq _0807D594
 	adds r0, r4, #0
-	bl gCardEffectVwTigerCatapult_0807D4DC
+	bl gCardEffectSpecialSummonDiscard_0807D4DC
 	b _0807D596
 	.align 2, 0
 _0807D58C: .4byte gUnk_0201C4E0
@@ -213202,8 +216213,9 @@ _0807D596:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectFeatherShot_0807D59C
-gCardEffectFeatherShot_0807D59C: @ 0x0807D59C
+	@ Feather Shot
+	thumb_func_start gCardEffectPreventAttackDirectAttack_0807D59C
+gCardEffectPreventAttackDirectAttack_0807D59C: @ 0x0807D59C
 	push {r4, r5, r6, r7, lr}
 	sub sp, #8
 	adds r6, r0, #0
@@ -213292,8 +216304,9 @@ _0807D650:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectChthonianPolymer_0807D65C
-gCardEffectChthonianPolymer_0807D65C: @ 0x0807D65C
+	@ Chthonian Polymer
+	thumb_func_start gCardEffectFusionSummonTakeControl_0807D65C
+gCardEffectFusionSummonTakeControl_0807D65C: @ 0x0807D65C
 	push {r4, r5, lr}
 	sub sp, #8
 	adds r4, r0, #0
@@ -213326,8 +216339,9 @@ _0807D692:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectChthonianBlast_0807D69C
-gCardEffectChthonianBlast_0807D69C: @ 0x0807D69C
+	@ Chthonian Blast
+	thumb_func_start gCardEffectSendToGYDestroy_0807D69C
+gCardEffectSendToGYDestroy_0807D69C: @ 0x0807D69C
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldr r5, _0807D6EC @ =gUnk_0201B290
@@ -213367,14 +216381,15 @@ _0807D6EC: .4byte gUnk_0201B290
 _0807D6F0: .4byte 0x000004A4
 _0807D6F4:
 	adds r0, r4, #0
-	bl gCardEffectBottomlessShiftingSandFissureHammerShotSmashingGroundWidespreadRuin_08069984
+	bl gCardEffectDestroy_08069984
 _0807D6FA:
 	pop {r4, r5}
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectHeroBarrier_0807D700
-gCardEffectHeroBarrier_0807D700: @ 0x0807D700
+	@ Hero Barrier
+	thumb_func_start gCardEffectNegate_0807D700
+gCardEffectNegate_0807D700: @ 0x0807D700
 	push {r4, r5, r6, r7, lr}
 	adds r5, r0, #0
 	movs r1, #0xfc
@@ -213475,8 +216490,9 @@ _0807D7C8:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectBrronMadKingOfDarkWorld_0807D7D0
-gCardEffectBrronMadKingOfDarkWorld_0807D7D0: @ 0x0807D7D0
+	@ Brron, Mad King of Dark World
+	thumb_func_start gCardEffectDiscardDamage_0807D7D0
+gCardEffectDiscardDamage_0807D7D0: @ 0x0807D7D0
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
@@ -213489,8 +216505,9 @@ gCardEffectBrronMadKingOfDarkWorld_0807D7D0: @ 0x0807D7D0
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectSillvaWarlordOfDarkWorld_0807D7E8
-gCardEffectSillvaWarlordOfDarkWorld_0807D7E8: @ 0x0807D7E8
+	@ Sillva, Warlord of Dark World
+	thumb_func_start gCardEffectSpecialSummonDiscard_0807D7E8
+gCardEffectSpecialSummonDiscard_0807D7E8: @ 0x0807D7E8
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -213523,12 +216540,12 @@ _0807D814: @ jump table
 _0807D830:
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	cmp r0, #0
 	beq _0807D924
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectBeiigeVanguardOfDarkWorldDespairFromTheDarkFearFromTheDarkFoxFireHeliosDuoMegisteHeliosTrisMegisteKingOfTheSkullServantsManticoreOfDarknessSacredPhoenixOfNephthysSandMothTreebornFrog_08075874
+	bl gCardEffectSpecialSummonGraveyard_08075874
 	ldrb r2, [r4, #2]
 	lsls r3, r2, #0x1f
 	lsrs r1, r3, #0x1f
@@ -213643,8 +216660,9 @@ _0807D926:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectGolddWuLordOfDarkWorld_0807D92C
-gCardEffectGolddWuLordOfDarkWorld_0807D92C: @ 0x0807D92C
+	@ Goldd, Wu-Lord of Dark World
+	thumb_func_start gCardEffectSpecialSummonDiscard_0807D92C
+gCardEffectSpecialSummonDiscard_0807D92C: @ 0x0807D92C
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -213659,12 +216677,12 @@ gCardEffectGolddWuLordOfDarkWorld_0807D92C: @ 0x0807D92C
 	bne _0807D968
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	cmp r0, #0
 	beq _0807D968
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectBeiigeVanguardOfDarkWorldDespairFromTheDarkFearFromTheDarkFoxFireHeliosDuoMegisteHeliosTrisMegisteKingOfTheSkullServantsManticoreOfDarknessSacredPhoenixOfNephthysSandMothTreebornFrog_08075874
+	bl gCardEffectSpecialSummonGraveyard_08075874
 	movs r0, #0x7f
 	b _0807D96A
 	.align 2, 0
@@ -213672,7 +216690,7 @@ _0807D95C: .4byte gUnk_0201B290
 _0807D960:
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectGreenkappaMobiusTheFrostMonarchNoblemanEaterBug_08067594
+	bl gCardEffectDestroyFlip_08067594
 _0807D968:
 	movs r0, #0
 _0807D96A:
@@ -213680,8 +216698,9 @@ _0807D96A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectPotOfAvarice_0807D970
-gCardEffectPotOfAvarice_0807D970: @ 0x0807D970
+	@ Pot of Avarice
+	thumb_func_start gCardEffectDrawGraveyard_0807D970
+gCardEffectDrawGraveyard_0807D970: @ 0x0807D970
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	ldr r0, _0807D98C @ =gUnk_0201B290
@@ -213812,8 +216831,9 @@ _0807DA68:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectDarkWorldLightning_0807DA70
-gCardEffectDarkWorldLightning_0807DA70: @ 0x0807DA70
+	@ Dark World Lightning
+	thumb_func_start gCardEffectDiscardDestroy_0807DA70
+gCardEffectDiscardDestroy_0807DA70: @ 0x0807DA70
 	push {lr}
 	adds r1, r0, #0
 	ldr r0, _0807DA94 @ =gUnk_0201B290
@@ -213848,8 +216868,9 @@ _0807DAAA:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectGatewayToDarkWorld_0807DAB0
-gCardEffectGatewayToDarkWorld_0807DAB0: @ 0x0807DAB0
+	@ Gateway to Dark World
+	thumb_func_start gCardEffectSpecialSummonRevive_0807DAB0
+gCardEffectSpecialSummonRevive_0807DAB0: @ 0x0807DAB0
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -213875,7 +216896,7 @@ gCardEffectGatewayToDarkWorld_0807DAB0: @ 0x0807DAB0
 	bne _0807DB02
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectArchfiendSRoarBatteryChargerCentrifugalFieldChimeraTheFlyingMythicalBeastFushiohRichieLordPoisonMiracleRestoringRiteOfSpiritSpiritCallerSpiritualEarthArtKuroganeVampireGenesis_080687A8
+	bl gCardEffectSpecialSummonGraveyard_080687A8
 _0807DAE6:
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
@@ -213898,8 +216919,9 @@ _0807DB02:
 _0807DB0C: .4byte gUnk_0201C4E0
 _0807DB10: .4byte 0x00000868
 
-	thumb_func_start gCardEffectDarkDeal_0807DB14
-gCardEffectDarkDeal_0807DB14: @ 0x0807DB14
+	@ Dark Deal
+	thumb_func_start gCardEffectDiscardDamage_0807DB14
+gCardEffectDiscardDamage_0807DB14: @ 0x0807DB14
 	movs r0, #0x20
 	ldrb r2, [r1, #4]
 	orrs r0, r2
@@ -213907,8 +216929,9 @@ gCardEffectDarkDeal_0807DB14: @ 0x0807DB14
 	movs r0, #0
 	bx lr
 
-	thumb_func_start gCardEffectSimultaneousLoss_0807DB20
-gCardEffectSimultaneousLoss_0807DB20: @ 0x0807DB20
+	@ Simultaneous Loss
+	thumb_func_start gCardEffectSendToGYGraveyard_0807DB20
+gCardEffectSendToGYGraveyard_0807DB20: @ 0x0807DB20
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	bl sub_0804A76C
@@ -213937,8 +216960,9 @@ _0807DB2C:
 	.align 2, 0
 _0807DB58: .4byte gUnk_0201E1C8
 
-	thumb_func_start gCardEffectRollOut_0807DB5C
-gCardEffectRollOut_0807DB5C: @ 0x0807DB5C
+	@ Roll Out!
+	thumb_func_start gCardEffectGraveyardEquip_0807DB5C
+gCardEffectGraveyardEquip_0807DB5C: @ 0x0807DB5C
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -214091,8 +217115,9 @@ _0807DC98: .4byte gUnk_0201C4E0
 _0807DC9C: .4byte 0x00001D68
 _0807DCA0: .4byte gUnk_0201E2A0
 
-	thumb_func_start gCardEffectMagicalBlast_0807DCA4
-gCardEffectMagicalBlast_0807DCA4: @ 0x0807DCA4
+	@ Magical Blast
+	thumb_func_start gCardEffectSearchDamage_0807DCA4
+gCardEffectSearchDamage_0807DCA4: @ 0x0807DCA4
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	adds r6, r1, #0
@@ -214128,15 +217153,16 @@ _0807DCD8:
 _0807DCE8:
 	adds r0, r4, #0
 	adds r1, r6, #0
-	bl gCardEffectButterflyDaggerElmaDivineSwordPhoenixBladeReturnZombieSinisterSerpent_08075A7C
+	bl gCardEffectGraveyardSearch_08075A7C
 _0807DCF0:
 	pop {r4, r5, r6}
 	pop {r1}
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectClayCharge_0807DCF8
-gCardEffectClayCharge_0807DCF8: @ 0x0807DCF8
+	@ Clay Charge
+	thumb_func_start gCardEffectDestroyDamage_0807DCF8
+gCardEffectDestroyDamage_0807DCF8: @ 0x0807DCF8
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldr r0, _0807DD5C @ =gUnk_0201C4E0
@@ -214188,8 +217214,9 @@ _0807DD5C: .4byte gUnk_0201C4E0
 _0807DD60: .4byte 0x000010D0 @ Wicked Dragon with the Ersatz Head
 _0807DD64: .4byte gUnk_0201BB90
 
-	thumb_func_start gCardEffectMagicalMallet_0807DD68
-gCardEffectMagicalMallet_0807DD68: @ 0x0807DD68
+	@ Magical Mallet
+	thumb_func_start gCardEffectDraw_0807DD68
+gCardEffectDraw_0807DD68: @ 0x0807DD68
 	push {r4, r5, r6, r7, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -214370,8 +217397,9 @@ _0807DED6:
 	.align 2, 0
 _0807DEDC: .4byte 0x000004A4
 
-	thumb_func_start gCardEffectInfernoRecklessSummon_0807DEE0
-gCardEffectInfernoRecklessSummon_0807DEE0: @ 0x0807DEE0
+	@ Inferno Reckless Summon
+	thumb_func_start gCardEffectSpecialSummonChangePosition_0807DEE0
+gCardEffectSpecialSummonChangePosition_0807DEE0: @ 0x0807DEE0
 	push {r4, r5, r6, r7, lr}
 	sub sp, #4
 	adds r5, r0, #0
@@ -214768,8 +217796,9 @@ _0807E244:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectWhiteHornsD_0807E24C
-gCardEffectWhiteHornsD_0807E24C: @ 0x0807E24C
+	@ White Horns D.
+	thumb_func_start gCardEffectSpecialSummonBoostATK_0807E24C
+gCardEffectSpecialSummonBoostATK_0807E24C: @ 0x0807E24C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -214937,8 +217966,9 @@ _0807E38C: .4byte 0x00000868
 _0807E390: .4byte gUnk_0201C510
 _0807E394: .4byte 0x000004A4
 
-	thumb_func_start gCardEffectAncientGearDrill_0807E398
-gCardEffectAncientGearDrill_0807E398: @ 0x0807E398
+	@ Ancient Gear Drill
+	thumb_func_start gCardEffectDiscard_0807E398
+gCardEffectDiscard_0807E398: @ 0x0807E398
 	push {r4, r5, r6, lr}
 	sub sp, #0xc
 	adds r6, r0, #0
@@ -215161,8 +218191,9 @@ _0807E59A:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectAncientGearCannon_0807E5A4
-gCardEffectAncientGearCannon_0807E5A4: @ 0x0807E5A4
+	@ Ancient Gear Cannon
+	thumb_func_start gCardEffectDamageBattlePhase_0807E5A4
+gCardEffectDamageBattlePhase_0807E5A4: @ 0x0807E5A4
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r1, [r4, #2]
@@ -215187,8 +218218,9 @@ _0807E5CC:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectBESCoveredCore_0807E5D4
-gCardEffectBESCoveredCore_0807E5D4: @ 0x0807E5D4
+	@ B.E.S. Covered Core
+	thumb_func_start gCardEffectDestroyCounter_0807E5D4
+gCardEffectDestroyCounter_0807E5D4: @ 0x0807E5D4
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -215320,8 +218352,9 @@ _0807E6D0:
 	.align 2, 0
 _0807E6DC: .4byte 0x00001D7A
 
-	thumb_func_start gCardEffectDDGuide_0807E6E0
-gCardEffectDDGuide_0807E6E0: @ 0x0807E6E0
+	@ D.D. Guide
+	thumb_func_start gCardEffectBanishGraveyard_0807E6E0
+gCardEffectBanishGraveyard_0807E6E0: @ 0x0807E6E0
 	push {r4, r5, r6, r7, lr}
 	sub sp, #4
 	adds r6, r0, #0
@@ -215449,8 +218482,9 @@ _0807E7D8: .4byte gUnk_0201C4E0
 _0807E7DC: .4byte 0x00001DAA
 _0807E7E0: .4byte 0x00000868
 
-	thumb_func_start gCardEffectDiscipleOfTheForbiddenSpell_0807E7E4
-gCardEffectDiscipleOfTheForbiddenSpell_0807E7E4: @ 0x0807E7E4
+	@ Disciple of the Forbidden Spell
+	thumb_func_start gCardEffectSpecialSummonDestroy_0807E7E4
+gCardEffectSpecialSummonDestroy_0807E7E4: @ 0x0807E7E4
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -215466,7 +218500,7 @@ gCardEffectDiscipleOfTheForbiddenSpell_0807E7E4: @ 0x0807E7E4
 	bne _0807E808
 	adds r0, r4, #0
 	adds r1, r2, #0
-	bl gCardEffectNanobreakerNinjaGrandmasterSasukePaladinOfWhiteDragonSasukeSamurai_08072870
+	bl gCardEffectDestroyChangePosition_08072870
 	b _0807E956
 _0807E808:
 	ldr r5, _0807E820 @ =gUnk_0201B290
@@ -215639,8 +218673,9 @@ _0807E956:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectMaliceAscendant_0807E960
-gCardEffectMaliceAscendant_0807E960: @ 0x0807E960
+	@ Malice Ascendant
+	thumb_func_start gCardEffectSendToGYGraveyard_0807E960
+gCardEffectSendToGYGraveyard_0807E960: @ 0x0807E960
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -215701,7 +218736,7 @@ gCardEffectMaliceAscendant_0807E960: @ 0x0807E960
 	beq _0807E9E8
 	adds r0, r7, #0
 	mov r1, sb
-	bl gCardEffectBloodSuckerDoomDozerNeedleWormRobbinZombieSoulAbsorbingBoneTower_080673E0
+	bl gCardEffectGraveyardSendToGY_080673E0
 	b _0807E9EA
 	.align 2, 0
 _0807E9E0: .4byte 0x00000868
@@ -215717,8 +218752,9 @@ _0807E9EA:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectDivineDragonExcelion_0807E9F8
-gCardEffectDivineDragonExcelion_0807E9F8: @ 0x0807E9F8
+	@ Divine Dragon - Excelion
+	thumb_func_start gCardEffectSendToGYDestroy_0807E9F8
+gCardEffectSendToGYDestroy_0807E9F8: @ 0x0807E9F8
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -215958,7 +218994,7 @@ _0807EBCA:
 	cmp r2, r0
 	bne _0807EBDA
 	adds r0, r6, #0
-	bl gCardEffectBlackLusterSoldierEnvoyOfTheBeginningElementDoomElementDragonElementMagicianRuinQueenOfOblivion_08076E20
+	bl gCardEffectDestroy_08076E20
 	b _0807EBFE
 _0807EBDA:
 	movs r0, #0xb0
@@ -215966,7 +219002,7 @@ _0807EBDA:
 	cmp r2, r0
 	bne _0807EBFC
 	adds r0, r6, #0
-	bl gCardEffect7AbsorbingKidFromTheSkyAltarForTributeAmazonArcherAmebaAndroSphinxAntiAircraftFlowerAtomicFireflyBackfireBlackPendantBlastingTheRuinsBlueMedicineBowganianBurningAlgaeCannonSoldierCastleGateCatapultTurtleCemetaryBombCestusOfDaglaDDDynamiteDarkMagicianSTomeOfBlackMagicDarkRoomOfNightmareDesKoalaDesVolstgalphDianKetoTheCureMasterEbonMagicianCurranElementalHeroFlameWingmanElementalHeroShiningFlareWingmanElementalHeroSteamHealerElephantStatueOfBlessingElephantStatueOfDisasterEmergencyProvisionsFallingDownFinalFlameFireSorcererFuhmaShurikenGiantKozakyGiftOfTheMysticalElfGoblinThiefGoblinSSecretRemedyGranadoraGraveOhjaGravekeeperSCannonholderGravekeeperSCurseGriggleGuardianAngelJoanHamonLordOfStrikingThunderHinotamaHystericFairyInfernoJustDessertsKa2DesScissorsKozakySSelfDestructButtonLadyAssailantOfFlamesLavaGolemLegendaryBlackBeltMagicalBlastMagicalExplosionManThroTroMarshmallonMaskOfDispelMaskOfTheAccursedMassDriverMechaDogMarronMemoryCrusherMeteorOfDestructionMinarMineGolemMinorGoblinOfficialMooyanCurryMysteriousPuppeteerMystikWokNeedleBallNeedleBurrowerNightmareWheelNitroUnitNutrientZOokaziOptionHunterOxygeddonPoisonFangsPoisonMummyPoisonOfTheOldManPrincessCurranPrincessPikeruPrincessOfTsurugiRaimeiRainOfMercyRedMedicineReflectBounderRestructerRevolutionRockBombardmentSecretBarrelShinatoKingOfAHigherPlaneSkullMarkLadybugSnatchStealSolarFlareDragonSolarRaySoulAbsorptionSoulOfThePureSparksSphinxTeleiaSpiritualFireArtKurenaiStealthBirdTheEyeOfTruthToonCannonSoldierTremendousFireUltimateBaseballKidWaveMotionCannonWhiteMagicianPikeruWoodlandSpriteZolga_080655EC
+	bl gCardEffectDamageGraveyard_080655EC
 	b _0807EBFE
 _0807EBEA:
 	ldr r0, _0807EBF8 @ =gUnk_0201C4E0
@@ -215992,8 +219028,9 @@ _0807EBFE:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectKarmaCut_0807EC10
-gCardEffectKarmaCut_0807EC10: @ 0x0807EC10
+	@ Karma Cut
+	thumb_func_start gCardEffectBanishDiscard_0807EC10
+gCardEffectBanishDiscard_0807EC10: @ 0x0807EC10
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	ldr r0, _0807EC2C @ =gUnk_0201B290
@@ -216113,8 +219150,9 @@ _0807ECFE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectNextToBeLost_0807ED04
-gCardEffectNextToBeLost_0807ED04: @ 0x0807ED04
+	@ Next to be Lost
+	thumb_func_start gCardEffectSendToGYGraveyard_0807ED04
+gCardEffectSendToGYGraveyard_0807ED04: @ 0x0807ED04
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	ldr r0, _0807ED24 @ =gUnk_0201B290
@@ -216266,8 +219304,9 @@ _0807EE6E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectGenerationShift_0807EE74
-gCardEffectGenerationShift_0807EE74: @ 0x0807EE74
+	@ Generation Shift
+	thumb_func_start gCardEffectSearchDestroy_0807EE74
+gCardEffectSearchDestroy_0807EE74: @ 0x0807EE74
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	ldr r0, _0807EE94 @ =gUnk_0201B290
@@ -216423,8 +219462,9 @@ _0807EFE4:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectFullSalvo_0807EFEC
-gCardEffectFullSalvo_0807EFEC: @ 0x0807EFEC
+	@ Full Salvo
+	thumb_func_start gCardEffectSendToGYDamage_0807EFEC
+gCardEffectSendToGYDamage_0807EFEC: @ 0x0807EFEC
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldr r5, _0807F008 @ =gUnk_0201B290
@@ -216516,8 +219556,9 @@ _0807F096:
 _0807F09C: .4byte 0x00001332 @ Banisher of the Light
 _0807F0A0: .4byte 0x000004A4
 
-	thumb_func_start gCardEffectSuccessProbability0_0807F0A4
-gCardEffectSuccessProbability0_0807F0A4: @ 0x0807F0A4
+	@ Success Probability 0%
+	thumb_func_start gCardEffectSendToGYGraveyard_0807F0A4
+gCardEffectSendToGYGraveyard_0807F0A4: @ 0x0807F0A4
 	push {r4, r5, r6, r7, lr}
 	adds r7, r0, #0
 	ldr r4, _0807F0C0 @ =gUnk_0201B290
@@ -216608,8 +219649,9 @@ _0807F152:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectGoblinOutOfTheFryingPan_0807F158
-gCardEffectGoblinOutOfTheFryingPan_0807F158: @ 0x0807F158
+	@ Goblin Out of the Frying Pan
+	thumb_func_start gCardEffectNegateReturnToHand_0807F158
+gCardEffectNegateReturnToHand_0807F158: @ 0x0807F158
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -216682,8 +219724,9 @@ _0807F1D6:
 _0807F1E4: .4byte 0x00000868
 _0807F1E8: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectMalfunction_0807F1EC
-gCardEffectMalfunction_0807F1EC: @ 0x0807F1EC
+	@ Malfunction
+	thumb_func_start gCardEffectNegateDamage_0807F1EC
+gCardEffectNegateDamage_0807F1EC: @ 0x0807F1EC
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -216757,8 +219800,9 @@ _0807F26C:
 _0807F278: .4byte 0x00000868
 _0807F27C: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectTheFluteOfSummoningKuriboh_0807F280
-gCardEffectTheFluteOfSummoningKuriboh_0807F280: @ 0x0807F280
+	@ The Flute of Summoning Kuriboh
+	thumb_func_start gCardEffectSearchSpecialSummon_0807F280
+gCardEffectSearchSpecialSummon_0807F280: @ 0x0807F280
 	push {r4, r5, r6, lr}
 	sub sp, #0x100
 	adds r5, r0, #0
@@ -216853,7 +219897,7 @@ _0807F35E:
 _0807F376:
 	adds r0, r5, #0
 	adds r1, r2, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	cmp r0, #0
 	beq _0807F3F0
 	bl sub_080942DC
@@ -216959,8 +220003,9 @@ _0807F44E:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectElementalHeroErikshieler_0807F458
-gCardEffectElementalHeroErikshieler_0807F458: @ 0x0807F458
+	@ Elemental Hero Erikshieler
+	thumb_func_start gCardEffectSpecialSummonFusionSummon_0807F458
+gCardEffectSpecialSummonFusionSummon_0807F458: @ 0x0807F458
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	ldr r2, _0807F484 @ =gUnk_0201C4E0
@@ -217076,8 +220121,9 @@ _0807F534:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectGuardianExode_0807F53C
-gCardEffectGuardianExode_0807F53C: @ 0x0807F53C
+	@ Guardian Exode
+	thumb_func_start gCardEffectSpecialSummonDamage_0807F53C
+gCardEffectSpecialSummonDamage_0807F53C: @ 0x0807F53C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -217138,7 +220184,7 @@ gCardEffectGuardianExode_0807F53C: @ 0x0807F53C
 	beq _0807F5C4
 	adds r0, r7, #0
 	mov r1, sb
-	bl gCardEffect7AbsorbingKidFromTheSkyAltarForTributeAmazonArcherAmebaAndroSphinxAntiAircraftFlowerAtomicFireflyBackfireBlackPendantBlastingTheRuinsBlueMedicineBowganianBurningAlgaeCannonSoldierCastleGateCatapultTurtleCemetaryBombCestusOfDaglaDDDynamiteDarkMagicianSTomeOfBlackMagicDarkRoomOfNightmareDesKoalaDesVolstgalphDianKetoTheCureMasterEbonMagicianCurranElementalHeroFlameWingmanElementalHeroShiningFlareWingmanElementalHeroSteamHealerElephantStatueOfBlessingElephantStatueOfDisasterEmergencyProvisionsFallingDownFinalFlameFireSorcererFuhmaShurikenGiantKozakyGiftOfTheMysticalElfGoblinThiefGoblinSSecretRemedyGranadoraGraveOhjaGravekeeperSCannonholderGravekeeperSCurseGriggleGuardianAngelJoanHamonLordOfStrikingThunderHinotamaHystericFairyInfernoJustDessertsKa2DesScissorsKozakySSelfDestructButtonLadyAssailantOfFlamesLavaGolemLegendaryBlackBeltMagicalBlastMagicalExplosionManThroTroMarshmallonMaskOfDispelMaskOfTheAccursedMassDriverMechaDogMarronMemoryCrusherMeteorOfDestructionMinarMineGolemMinorGoblinOfficialMooyanCurryMysteriousPuppeteerMystikWokNeedleBallNeedleBurrowerNightmareWheelNitroUnitNutrientZOokaziOptionHunterOxygeddonPoisonFangsPoisonMummyPoisonOfTheOldManPrincessCurranPrincessPikeruPrincessOfTsurugiRaimeiRainOfMercyRedMedicineReflectBounderRestructerRevolutionRockBombardmentSecretBarrelShinatoKingOfAHigherPlaneSkullMarkLadybugSnatchStealSolarFlareDragonSolarRaySoulAbsorptionSoulOfThePureSparksSphinxTeleiaSpiritualFireArtKurenaiStealthBirdTheEyeOfTruthToonCannonSoldierTremendousFireUltimateBaseballKidWaveMotionCannonWhiteMagicianPikeruWoodlandSpriteZolga_080655EC
+	bl gCardEffectDamageGraveyard_080655EC
 	b _0807F5C6
 	.align 2, 0
 _0807F5BC: .4byte 0x00000868
@@ -218191,8 +221237,13 @@ _0807FD76:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDragonSMirrorFusionGateMiracleFusionPolymerizationPowerBond_0807FD84
-gCardEffectDragonSMirrorFusionGateMiracleFusionPolymerizationPowerBond_0807FD84: @ 0x0807FD84
+	@ Dragon's Mirror
+	@ Fusion Gate
+	@ Miracle Fusion
+	@ Polymerization
+	@ Power Bond
+	thumb_func_start gCardEffectSpecialSummonGraveyard_0807FD84
+gCardEffectSpecialSummonGraveyard_0807FD84: @ 0x0807FD84
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldrb r1, [r5, #2]
@@ -218240,8 +221291,11 @@ _0807FDE2:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectFusionGatePolymerizationPowerBond_0807FDE8
-gCardEffectFusionGatePolymerizationPowerBond_0807FDE8: @ 0x0807FDE8
+	@ Fusion Gate
+	@ Polymerization
+	@ Power Bond
+	thumb_func_start gCardEffectSpecialSummonSendToGY_0807FDE8
+gCardEffectSpecialSummonSendToGY_0807FDE8: @ 0x0807FDE8
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -218310,7 +221364,7 @@ _0807FE2C: @ jump table
 _0807FEA4:
 	adds r0, r7, #0
 	adds r1, r2, #0
-	bl gCardEffectDragonSMirrorFusionGateMiracleFusionPolymerizationPowerBond_0807FD84
+	bl gCardEffectSpecialSummonGraveyard_0807FD84
 	cmp r0, #0
 	bne _0807FEB2
 	b _08080324
@@ -219272,8 +222326,10 @@ _08080684: .4byte gUnk_0201C8F8
 _08080688: .4byte gUnk_0201B830
 _0808068C: .4byte gUnk_0201C4F4
 
-	thumb_func_start gCardEffectDragonSMirrorMiracleFusion_08080690
-gCardEffectDragonSMirrorMiracleFusion_08080690: @ 0x08080690
+	@ Dragon's Mirror
+	@ Miracle Fusion
+	thumb_func_start gCardEffectSpecialSummonFusionSummon_08080690
+gCardEffectSpecialSummonFusionSummon_08080690: @ 0x08080690
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -219604,8 +222660,10 @@ _08080932:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectDragonSMirrorMiracleFusion_08080944
-gCardEffectDragonSMirrorMiracleFusion_08080944: @ 0x08080944
+	@ Dragon's Mirror
+	@ Miracle Fusion
+	thumb_func_start gCardEffectSpecialSummonFusionSummon_08080944
+gCardEffectSpecialSummonFusionSummon_08080944: @ 0x08080944
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -219861,7 +222919,7 @@ _08080B58:
 	b _08080B62
 _08080B5C:
 	mov r0, sl
-	bl gCardEffectFusionGatePolymerizationPowerBond_0807FDE8
+	bl gCardEffectSpecialSummonSendToGY_0807FDE8
 _08080B62:
 	add sp, #4
 	pop {r3, r4, r5}
@@ -221927,8 +224985,202 @@ _08081984:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectAManWithWdjatARivalAppearsAbyssSoldierAcidTrapHoleAmazonessBlowpiperAnteatereatingantApprenticeMagicianAquaSpiritArcaneArcherOfTheForestArmedDragonLv5ArmedNinjaAssaultOnGhqAussaTheEarthCharmerBESCrystalCoreBESTetranBackToSquareOneBaitDollBarrelDragonBattleScarredBeastSoulSwapBiteShoesBlackLusterSoldierEnvoyOfTheBeginningBladeRabbitBlastMagicianBlastWithChainBlockAttackBlowbackDragonBombardmentBeetleBookOfMoonBookOfTaiyouBrainControlBreakerTheMagicalWarriorBurningBeastCastleWallsCatnippedKittyChangeOfHeartChaosSorcererCheckmateChironTheMageCollapseCollectedPowerCombinationAttackCompulsoryEvacuationDeviceCopycatCoveringFireCrassClownCrimsonNinjaCyberLaserDragonCyberRaiderCyberneticMagicianDarkCoreDarkJeroidDarkMagicianKnightDarkNecrofearDarkWorldLightningDarknessApproachesDeFusionDeSpellDealOfPhantomDesertapirDestructionRingDiffusionWaveMotionDimensionholeDoubleAttackDoubleSnareDragonManipulatorDragonSeekerDreamClownDrivingSnowDustTornadoElectromagneticBagwormElementalHeroTempestElementalHeroThunderGiantEnemyControllerEnergyDrainEriaTheWaterCharmerExiledForceFeatherShotFreedTheBraveWandererFreezingBeastGaleLizardGarudaTheWindSpiritGearfriedTheSwordmasterGenerationShiftGiftOfTheMartyrGolemSentryGradiusOptionGranmargTheRockMonarchGravekeeperSAssailantGravekeeperSGuardGreatSpiritGuardianCealGuardianStatueGustHaneHaneHannibalNecromancerHarpiesHuntingGroundHeroHeartHiitaTheFireCharmerImpenetrableFormationInfernalqueenArchfiendInfernoFireBlastInfernoHammerInterdimensionalMatterTransporterInvaderOfTheThroneJamDefenderJowlsOfDarkDemiseKaiserGliderKarmaCutKryuelMachineDuplicationMagicArmShieldMagicalHatsMagicalMarionetteMagicianSUniteMakiuManEaterBugMaskOfDispelMaskedBeastDesGardiusMedusaWormMichizureMicroRayMindControlMiracleKidsMonsterRecoveryMonsterReliefMysticalSpaceTyphoonNewdoriaNightAssailantNightmarePenguinNightmareWheelNinjitsuArtOfDecoyNoblemanOfCrossoutNoblemanOfExterminationOfferingsToTheDoomedOjamuscleOldVindictiveMagicianOrcaMegaFortressOfDarknessOrderToChargeOrderToSmashOverpoweringEyePatroidPatrolRoboPhoenixWingWindBlastRafflesiaSeductionRaigekiBreakRareMetalmorphReadyForInterceptingReaperOfTheCardsReinforcementsRemoveTrapReshefTheDarkBeingRingOfDestructionRisingEnergyRushRecklesslyRyuKishinClownShadowSpellShadowTamerShieldCrashShienSSpySnakeFangSoulExchangeSoulTakerSparkBlasterSpellbindingCircleSpiritualWindArtMiyabiSpiritualismStampingDestructionStaunchDefenderStopDefenseSwarmOfLocustsSwarmOfScarabsTauntTheLeagueOfUniformNomenclatureTheReliableGuardianTheSecretOfTheBanditThousandKnivesThrowstoneUnitTrapMasterTributeToTheDoomedUnionAttackUnityUriaLordOfSearingFlamesVwTigerCatapultVwxyzDragonCatapultCannonWhiteNinjaWildNatureSReleaseWingedMinionWynnTheWindCharmerXyDragonCannonXyzDragonCannonXzTankCannonYzTankDragonZaborgTheThunderMonarch_0808198C
-gCardEffectAManWithWdjatARivalAppearsAbyssSoldierAcidTrapHoleAmazonessBlowpiperAnteatereatingantApprenticeMagicianAquaSpiritArcaneArcherOfTheForestArmedDragonLv5ArmedNinjaAssaultOnGhqAussaTheEarthCharmerBESCrystalCoreBESTetranBackToSquareOneBaitDollBarrelDragonBattleScarredBeastSoulSwapBiteShoesBlackLusterSoldierEnvoyOfTheBeginningBladeRabbitBlastMagicianBlastWithChainBlockAttackBlowbackDragonBombardmentBeetleBookOfMoonBookOfTaiyouBrainControlBreakerTheMagicalWarriorBurningBeastCastleWallsCatnippedKittyChangeOfHeartChaosSorcererCheckmateChironTheMageCollapseCollectedPowerCombinationAttackCompulsoryEvacuationDeviceCopycatCoveringFireCrassClownCrimsonNinjaCyberLaserDragonCyberRaiderCyberneticMagicianDarkCoreDarkJeroidDarkMagicianKnightDarkNecrofearDarkWorldLightningDarknessApproachesDeFusionDeSpellDealOfPhantomDesertapirDestructionRingDiffusionWaveMotionDimensionholeDoubleAttackDoubleSnareDragonManipulatorDragonSeekerDreamClownDrivingSnowDustTornadoElectromagneticBagwormElementalHeroTempestElementalHeroThunderGiantEnemyControllerEnergyDrainEriaTheWaterCharmerExiledForceFeatherShotFreedTheBraveWandererFreezingBeastGaleLizardGarudaTheWindSpiritGearfriedTheSwordmasterGenerationShiftGiftOfTheMartyrGolemSentryGradiusOptionGranmargTheRockMonarchGravekeeperSAssailantGravekeeperSGuardGreatSpiritGuardianCealGuardianStatueGustHaneHaneHannibalNecromancerHarpiesHuntingGroundHeroHeartHiitaTheFireCharmerImpenetrableFormationInfernalqueenArchfiendInfernoFireBlastInfernoHammerInterdimensionalMatterTransporterInvaderOfTheThroneJamDefenderJowlsOfDarkDemiseKaiserGliderKarmaCutKryuelMachineDuplicationMagicArmShieldMagicalHatsMagicalMarionetteMagicianSUniteMakiuManEaterBugMaskOfDispelMaskedBeastDesGardiusMedusaWormMichizureMicroRayMindControlMiracleKidsMonsterRecoveryMonsterReliefMysticalSpaceTyphoonNewdoriaNightAssailantNightmarePenguinNightmareWheelNinjitsuArtOfDecoyNoblemanOfCrossoutNoblemanOfExterminationOfferingsToTheDoomedOjamuscleOldVindictiveMagicianOrcaMegaFortressOfDarknessOrderToChargeOrderToSmashOverpoweringEyePatroidPatrolRoboPhoenixWingWindBlastRafflesiaSeductionRaigekiBreakRareMetalmorphReadyForInterceptingReaperOfTheCardsReinforcementsRemoveTrapReshefTheDarkBeingRingOfDestructionRisingEnergyRushRecklesslyRyuKishinClownShadowSpellShadowTamerShieldCrashShienSSpySnakeFangSoulExchangeSoulTakerSparkBlasterSpellbindingCircleSpiritualWindArtMiyabiSpiritualismStampingDestructionStaunchDefenderStopDefenseSwarmOfLocustsSwarmOfScarabsTauntTheLeagueOfUniformNomenclatureTheReliableGuardianTheSecretOfTheBanditThousandKnivesThrowstoneUnitTrapMasterTributeToTheDoomedUnionAttackUnityUriaLordOfSearingFlamesVwTigerCatapultVwxyzDragonCatapultCannonWhiteNinjaWildNatureSReleaseWingedMinionWynnTheWindCharmerXyDragonCannonXyzDragonCannonXzTankCannonYzTankDragonZaborgTheThunderMonarch_0808198C: @ 0x0808198C
+	@ A Man with Wdjat
+	@ A Rival Appears!
+	@ Abyss Soldier
+	@ Acid Trap Hole
+	@ Amazoness Blowpiper
+	@ Anteatereatingant
+	@ Apprentice Magician
+	@ Aqua Spirit
+	@ Arcane Archer of the Forest
+	@ Armed Dragon LV5
+	@ Armed Ninja
+	@ Assault on GHQ
+	@ Aussa the Earth Charmer
+	@ B.E.S. Crystal Core
+	@ B.E.S. Tetran
+	@ Back to Square One
+	@ Bait Doll
+	@ Barrel Dragon
+	@ Battle-Scarred
+	@ Beast Soul Swap
+	@ Bite Shoes
+	@ Black Luster Soldier - Envoy of the Beginning
+	@ Blade Rabbit
+	@ Blast Magician
+	@ Blast with Chain
+	@ Block Attack
+	@ Blowback Dragon
+	@ Bombardment Beetle
+	@ Book of Moon
+	@ Book of Taiyou
+	@ Brain Control
+	@ Breaker the Magical Warrior
+	@ Burning Beast
+	@ Castle Walls
+	@ Catnipped Kitty
+	@ Change of Heart
+	@ Chaos Sorcerer
+	@ Checkmate
+	@ Chiron the Mage
+	@ Collapse
+	@ Collected Power
+	@ Combination Attack
+	@ Compulsory Evacuation Device
+	@ Copycat
+	@ Covering Fire
+	@ Crass Clown
+	@ Crimson Ninja
+	@ Cyber Laser Dragon
+	@ Cyber Raider
+	@ Cybernetic Magician
+	@ Dark Core
+	@ Dark Jeroid
+	@ Dark Magician Knight
+	@ Dark Necrofear
+	@ Dark World Lightning
+	@ Darkness Approaches
+	@ De-Fusion
+	@ De-Spell
+	@ Deal of Phantom
+	@ Desertapir
+	@ Destruction Ring
+	@ Diffusion Wave-Motion
+	@ Dimensionhole
+	@ Double Attack
+	@ Double Snare
+	@ Dragon Manipulator
+	@ Dragon Seeker
+	@ Dream Clown
+	@ Driving Snow
+	@ Dust Tornado
+	@ Electromagnetic Bagworm
+	@ Elemental Hero Tempest
+	@ Elemental Hero Thunder Giant
+	@ Enemy Controller
+	@ Energy Drain
+	@ Eria the Water Charmer
+	@ Exiled Force
+	@ Feather Shot
+	@ Freed the Brave Wanderer
+	@ Freezing Beast
+	@ Gale Lizard
+	@ Garuda the Wind Spirit
+	@ Gearfried the Swordmaster
+	@ Generation Shift
+	@ Gift of the Martyr
+	@ Golem Sentry
+	@ Gradius' Option
+	@ Granmarg the Rock Monarch
+	@ Gravekeeper's Assailant
+	@ Gravekeeper's Guard
+	@ Great Spirit
+	@ Guardian Ceal
+	@ Guardian Statue
+	@ Gust
+	@ Hane-Hane
+	@ Hannibal Necromancer
+	@ Harpies' Hunting Ground
+	@ Hero Heart
+	@ Hiita the Fire Charmer
+	@ Impenetrable Formation
+	@ Infernalqueen Archfiend
+	@ Inferno Fire Blast
+	@ Inferno Hammer
+	@ Interdimensional Matter Transporter
+	@ Invader of the Throne
+	@ Jam Defender
+	@ Jowls of Dark Demise
+	@ Kaiser Glider
+	@ Karma Cut
+	@ Kryuel
+	@ Machine Duplication
+	@ Magic-Arm Shield
+	@ Magical Hats
+	@ Magical Marionette
+	@ Magician's Unite
+	@ Makiu
+	@ Man-Eater Bug
+	@ Mask of Dispel
+	@ Masked Beast Des Gardius
+	@ Medusa Worm
+	@ Michizure
+	@ Micro Ray
+	@ Mind Control
+	@ Miracle Kids
+	@ Monster Recovery
+	@ Monster Relief
+	@ Mystical Space Typhoon
+	@ Newdoria
+	@ Night Assailant
+	@ Nightmare Penguin
+	@ Nightmare Wheel
+	@ Ninjitsu Art of Decoy
+	@ Nobleman of Crossout
+	@ Nobleman of Extermination
+	@ Offerings to the Doomed
+	@ Ojamuscle
+	@ Old Vindictive Magician
+	@ Orca Mega-Fortress of Darkness
+	@ Order to Charge
+	@ Order to Smash
+	@ Overpowering Eye
+	@ Patroid
+	@ Patrol Robo
+	@ Phoenix Wing Wind Blast
+	@ Rafflesia Seduction
+	@ Raigeki Break
+	@ Rare Metalmorph
+	@ Ready for Intercepting
+	@ Reaper of the Cards
+	@ Reinforcements
+	@ Remove Trap
+	@ Reshef the Dark Being
+	@ Ring of Destruction
+	@ Rising Energy
+	@ Rush Recklessly
+	@ Ryu-Kishin Clown
+	@ Shadow Spell
+	@ Shadow Tamer
+	@ Shield Crash
+	@ Shien's Spy
+	@ Snake Fang
+	@ Soul Exchange
+	@ Soul Taker
+	@ Spark Blaster
+	@ Spellbinding Circle
+	@ Spiritual Wind Art - Miyabi
+	@ Spiritualism
+	@ Stamping Destruction
+	@ Staunch Defender
+	@ Stop Defense
+	@ Swarm of Locusts
+	@ Swarm of Scarabs
+	@ Taunt
+	@ The League of Uniform Nomenclature
+	@ The Reliable Guardian
+	@ The Secret of the Bandit
+	@ Thousand Knives
+	@ Throwstone Unit
+	@ Trap Master
+	@ Tribute to The Doomed
+	@ Union Attack
+	@ Unity
+	@ Uria, Lord of Searing Flames
+	@ VW-Tiger Catapult
+	@ VWXYZ-Dragon Catapult Cannon
+	@ White Ninja
+	@ Wild Nature's Release
+	@ Winged Minion
+	@ Wynn the Wind Charmer
+	@ XY-Dragon Cannon
+	@ XYZ-Dragon Cannon
+	@ XZ-Tank Cannon
+	@ YZ-Tank Dragon
+	@ Zaborg the Thunder Monarch
+	thumb_func_start gCardEffectDestroy_0808198C
+gCardEffectDestroy_0808198C: @ 0x0808198C
 	push {r4, r5, lr}
 	adds r3, r0, #0
 	adds r4, r1, #0
@@ -222196,8 +225448,55 @@ _08081B7E:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectAFeatherOfThePhoenixArchfiendSRoarArmedChangerAswanApparitionAutonomousActionUnitBatteryChargerCallOfTheHauntedCentrifugalFieldChimeraTheFlyingMythicalBeastChopmanTheDesperateOutlawDDMDifferentDimensionMasterDarkMagicianOfChaosDesFeralImpDimensionDistortionExcavationOfMageStonesFairyOfTheSpringFulfillmentOfTheContractFushiohRichieGatewayToDarkWorldGraverobberGuardianElmaLevelModulationLordPoisonMagicianOfFaithMaskOfDarknessMiracleRestoringMonsterRebornMonsterReincarnationNightAssailantNubianGuardPrematureBurialReFusionRecycleRiteOfSpiritRollOutSilentFiendSoulResurrectionSoulReversalSpellReproductionSpiritCallerSpiritualEarthArtKuroganeSymbolOfHeritageTheCreatorTheKickManTheWarriorReturningAliveVampireGenesisWitchDoctorOfChaos_08081B84
-gCardEffectAFeatherOfThePhoenixArchfiendSRoarArmedChangerAswanApparitionAutonomousActionUnitBatteryChargerCallOfTheHauntedCentrifugalFieldChimeraTheFlyingMythicalBeastChopmanTheDesperateOutlawDDMDifferentDimensionMasterDarkMagicianOfChaosDesFeralImpDimensionDistortionExcavationOfMageStonesFairyOfTheSpringFulfillmentOfTheContractFushiohRichieGatewayToDarkWorldGraverobberGuardianElmaLevelModulationLordPoisonMagicianOfFaithMaskOfDarknessMiracleRestoringMonsterRebornMonsterReincarnationNightAssailantNubianGuardPrematureBurialReFusionRecycleRiteOfSpiritRollOutSilentFiendSoulResurrectionSoulReversalSpellReproductionSpiritCallerSpiritualEarthArtKuroganeSymbolOfHeritageTheCreatorTheKickManTheWarriorReturningAliveVampireGenesisWitchDoctorOfChaos_08081B84: @ 0x08081B84
+	@ A Feather of the Phoenix
+	@ Archfiend's Roar
+	@ Armed Changer
+	@ Aswan Apparition
+	@ Autonomous Action Unit
+	@ Battery Charger
+	@ Call of the Haunted
+	@ Centrifugal Field
+	@ Chimera the Flying Mythical Beast
+	@ Chopman the Desperate Outlaw
+	@ D.D.M. - Different Dimension Master
+	@ Dark Magician of Chaos
+	@ Des Feral Imp
+	@ Dimension Distortion
+	@ Excavation of Mage Stones
+	@ Fairy of the Spring
+	@ Fulfillment of the Contract
+	@ Fushioh Richie
+	@ Gateway to Dark World
+	@ Graverobber
+	@ Guardian Elma
+	@ Level Modulation
+	@ Lord Poison
+	@ Magician of Faith
+	@ Mask of Darkness
+	@ Miracle Restoring
+	@ Monster Reborn
+	@ Monster Reincarnation
+	@ Night Assailant
+	@ Nubian Guard
+	@ Premature Burial
+	@ Re-Fusion
+	@ Recycle
+	@ Rite of Spirit
+	@ Roll Out!
+	@ Silent Fiend
+	@ Soul Resurrection
+	@ Soul Reversal
+	@ Spell Reproduction
+	@ Spirit Caller
+	@ Spiritual Earth Art - Kurogane
+	@ Symbol of Heritage
+	@ The Creator
+	@ The Kick Man
+	@ The Warrior Returning Alive
+	@ Vampire Genesis
+	@ Witch Doctor of Chaos
+	thumb_func_start gCardEffectGraveyardSpecialSummon_08081B84
+gCardEffectGraveyardSpecialSummon_08081B84: @ 0x08081B84
 	push {r4, r5, r6, r7, lr}
 	adds r7, r0, #0
 	ldrb r1, [r7, #2]
@@ -222300,8 +225599,96 @@ _08081C4C:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectAmplifierArmedChangerAxeOfDespairBallistaOfRampartSmashingBeastFangsBigBangShotBlackPendantBlastWithChainBookOfSecretArtsBrightCastleBubbleBlasterBurningSpearBusterRancherButterflyDaggerElmaCestusOfDaglaChthonianAllianceCocoonOfEvolutionCyberShieldCyclonLaserCycloneBoomerangDarkEnergyDarkMagicianSTomeOfBlackMagicDemotionDivineSwordPhoenixBladeDragonTreasureDragonicAttackEkibyoDrakmordElectroWhipElfSLightFairyMeteorCrushFallingDownFlintFollowWindFuhmaShurikenFusionSwordMurasameBladeFusionWeaponGermInfectionGravityAxeGrarlGustFanHeartOfClearWaterHeroHeyroHornOfLightHornOfTheUnicornInsectArmorWithLaserCannonInvigorationLaserCannonArmorLegendaryBlackBeltLegendarySwordLightningBladeMachineConversionFactoryMagePowerMagicalLabyrinthMalevolentNuzzlerMaskOfBrutalityMaskOfTheAccursedMegamorphMetalmorphMetalsilverArmorMistobodyMysticalMoonNecklaceOfCommandNitroUnitOptiCamouflageArmorParalyzingPotionPowerOfKaishinRaiseBodyHeatRaregoldArmorRingOfMagnetismRitualWeaponRodOfSilenceKayEstRodOfTheMindSEyeSalamandraShootingStarBowCealSilverBowAndArrowSmokeGrenadeOfTheThiefSnatchStealSparkBlasterSteelShellStimPackSwordOfDarkDestructionSwordOfDeepSeatedSwordOfDragonSSoulTrialOfThePrincessesTwinSwordsOfFlashingLightTryceUnitedWeStandVileGermsVioletCrystalWickedBreakingFlambergeBaou_08081C54
-gCardEffectAmplifierArmedChangerAxeOfDespairBallistaOfRampartSmashingBeastFangsBigBangShotBlackPendantBlastWithChainBookOfSecretArtsBrightCastleBubbleBlasterBurningSpearBusterRancherButterflyDaggerElmaCestusOfDaglaChthonianAllianceCocoonOfEvolutionCyberShieldCyclonLaserCycloneBoomerangDarkEnergyDarkMagicianSTomeOfBlackMagicDemotionDivineSwordPhoenixBladeDragonTreasureDragonicAttackEkibyoDrakmordElectroWhipElfSLightFairyMeteorCrushFallingDownFlintFollowWindFuhmaShurikenFusionSwordMurasameBladeFusionWeaponGermInfectionGravityAxeGrarlGustFanHeartOfClearWaterHeroHeyroHornOfLightHornOfTheUnicornInsectArmorWithLaserCannonInvigorationLaserCannonArmorLegendaryBlackBeltLegendarySwordLightningBladeMachineConversionFactoryMagePowerMagicalLabyrinthMalevolentNuzzlerMaskOfBrutalityMaskOfTheAccursedMegamorphMetalmorphMetalsilverArmorMistobodyMysticalMoonNecklaceOfCommandNitroUnitOptiCamouflageArmorParalyzingPotionPowerOfKaishinRaiseBodyHeatRaregoldArmorRingOfMagnetismRitualWeaponRodOfSilenceKayEstRodOfTheMindSEyeSalamandraShootingStarBowCealSilverBowAndArrowSmokeGrenadeOfTheThiefSnatchStealSparkBlasterSteelShellStimPackSwordOfDarkDestructionSwordOfDeepSeatedSwordOfDragonSSoulTrialOfThePrincessesTwinSwordsOfFlashingLightTryceUnitedWeStandVileGermsVioletCrystalWickedBreakingFlambergeBaou_08081C54: @ 0x08081C54
+	@ Amplifier
+	@ Armed Changer
+	@ Axe of Despair
+	@ Ballista of Rampart Smashing
+	@ Beast Fangs
+	@ Big Bang Shot
+	@ Black Pendant
+	@ Blast with Chain
+	@ Book of Secret Arts
+	@ Bright Castle
+	@ Bubble Blaster
+	@ Burning Spear
+	@ Buster Rancher
+	@ Butterfly Dagger - Elma
+	@ Cestus of Dagla
+	@ Chthonian Alliance
+	@ Cocoon of Evolution
+	@ Cyber Shield
+	@ Cyclon Laser
+	@ Cyclone Boomerang
+	@ Dark Energy
+	@ Dark Magician's Tome of Black Magic
+	@ Demotion
+	@ Divine Sword - Phoenix Blade
+	@ Dragon Treasure
+	@ Dragonic Attack
+	@ Ekibyo Drakmord
+	@ Electro-Whip
+	@ Elf's Light
+	@ Fairy Meteor Crush
+	@ Falling Down
+	@ Flint
+	@ Follow Wind
+	@ Fuhma Shuriken
+	@ Fusion Sword Murasame Blade
+	@ Fusion Weapon
+	@ Germ Infection
+	@ Gravity Axe - Grarl
+	@ Gust Fan
+	@ Heart of Clear Water
+	@ Hero Heyro
+	@ Horn of Light
+	@ Horn of the Unicorn
+	@ Insect Armor with Laser Cannon
+	@ Invigoration
+	@ Laser Cannon Armor
+	@ Legendary Black Belt
+	@ Legendary Sword
+	@ Lightning Blade
+	@ Machine Conversion Factory
+	@ Mage Power
+	@ Magical Labyrinth
+	@ Malevolent Nuzzler
+	@ Mask of Brutality
+	@ Mask of the Accursed
+	@ Megamorph
+	@ Metalmorph
+	@ Metalsilver Armor
+	@ Mistobody
+	@ Mystical Moon
+	@ Necklace of Command
+	@ Nitro Unit
+	@ Opti-Camouflage Armor
+	@ Paralyzing Potion
+	@ Power of Kaishin
+	@ Raise Body Heat
+	@ Raregold Armor
+	@ Ring of Magnetism
+	@ Ritual Weapon
+	@ Rod of Silence - Kay'est
+	@ Rod of the Mind's Eye
+	@ Salamandra
+	@ Shooting Star Bow - Ceal
+	@ Silver Bow and Arrow
+	@ Smoke Grenade of the Thief
+	@ Snatch Steal
+	@ Spark Blaster
+	@ Steel Shell
+	@ Stim-Pack
+	@ Sword of Dark Destruction
+	@ Sword of Deep-Seated
+	@ Sword of Dragon's Soul
+	@ Trial of the Princesses
+	@ Twin Swords of Flashing Light - Tryce
+	@ United We Stand
+	@ Vile Germs
+	@ Violet Crystal
+	@ Wicked-Breaking Flamberge - Baou
+	thumb_func_start gCardEffectEquipBoostATK_08081C54
+gCardEffectEquipBoostATK_08081C54: @ 0x08081C54
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r3, r1, #0
@@ -222375,8 +225762,9 @@ _08081CE0:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectMooyanCurry_08081CE8
-gCardEffectMooyanCurry_08081CE8: @ 0x08081CE8
+	@ Mooyan Curry
+	thumb_func_start gCardEffectGainLP_08081CE8
+gCardEffectGainLP_08081CE8: @ 0x08081CE8
 	push {r4, r5, r6, r7, lr}
 	sub sp, #8
 	adds r5, r0, #0
@@ -222469,8 +225857,17 @@ _08081D90:
 	.align 2, 0
 _08081D98: .4byte gUnk_0201C4E0
 
-	thumb_func_start gCardEffectBlueMedicineDianKetoTheCureMasterGoblinSSecretRemedyGracefulCharityJarOfGreedPotOfGreedRedMedicineSoulOfThePureTheCheerfulCoffin_08081D9C
-gCardEffectBlueMedicineDianKetoTheCureMasterGoblinSSecretRemedyGracefulCharityJarOfGreedPotOfGreedRedMedicineSoulOfThePureTheCheerfulCoffin_08081D9C: @ 0x08081D9C
+	@ Blue Medicine
+	@ Dian Keto the Cure Master
+	@ Goblin's Secret Remedy
+	@ Graceful Charity
+	@ Jar of Greed
+	@ Pot of Greed
+	@ Red Medicine
+	@ Soul of the Pure
+	@ The Cheerful Coffin
+	thumb_func_start gCardEffectGainLPDraw_08081D9C
+gCardEffectGainLPDraw_08081D9C: @ 0x08081D9C
 	push {lr}
 	ldrb r2, [r0, #2]
 	lsls r1, r2, #0x1f
@@ -222481,8 +225878,22 @@ gCardEffectBlueMedicineDianKetoTheCureMasterGoblinSSecretRemedyGracefulCharityJa
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectCemetaryBombConfiscationDDDynamiteDelinquentDuoFinalFlameHinotamaMesmericControlOokaziRaimeiRestructerRevolutionSmokeGrenadeOfTheThiefSparksTheForcefulSentryTheInexperiencedSpy_08081DB0
-gCardEffectCemetaryBombConfiscationDDDynamiteDelinquentDuoFinalFlameHinotamaMesmericControlOokaziRaimeiRestructerRevolutionSmokeGrenadeOfTheThiefSparksTheForcefulSentryTheInexperiencedSpy_08081DB0: @ 0x08081DB0
+	@ Cemetary Bomb
+	@ Confiscation
+	@ D.D. Dynamite
+	@ Delinquent Duo
+	@ Final Flame
+	@ Hinotama
+	@ Mesmeric Control
+	@ Ookazi
+	@ Raimei
+	@ Restructer Revolution
+	@ Smoke Grenade of the Thief
+	@ Sparks
+	@ The Forceful Sentry
+	@ The Inexperienced Spy
+	thumb_func_start gCardEffectDamage_08081DB0
+gCardEffectDamage_08081DB0: @ 0x08081DB0
 	push {lr}
 	ldrb r1, [r0, #2]
 	lsls r2, r1, #0x1f
@@ -222497,8 +225908,18 @@ gCardEffectCemetaryBombConfiscationDDDynamiteDelinquentDuoFinalFlameHinotamaMesm
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectDrainingShieldEnchantedJavelinKazejinMagicCylinderMaskOfWeaknessNegateAttackSakuretsuArmorSangaOfTheThunderSebekSBlessingSuijin_08081DCC
-gCardEffectDrainingShieldEnchantedJavelinKazejinMagicCylinderMaskOfWeaknessNegateAttackSakuretsuArmorSangaOfTheThunderSebekSBlessingSuijin_08081DCC: @ 0x08081DCC
+	@ Draining Shield
+	@ Enchanted Javelin
+	@ Kazejin
+	@ Magic Cylinder
+	@ Mask of Weakness
+	@ Negate Attack
+	@ Sakuretsu Armor
+	@ Sanga of the Thunder
+	@ Sebek's Blessing
+	@ Suijin
+	thumb_func_start gCardEffectNegateGainLP_08081DCC
+gCardEffectNegateGainLP_08081DCC: @ 0x08081DCC
 	push {lr}
 	ldr r2, _08081DE0 @ =gUnk_0201BB90
 	ldr r1, [r2]
@@ -222535,8 +225956,9 @@ _08081E08:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectBlastJuggler_08081E10
-gCardEffectBlastJuggler_08081E10: @ 0x08081E10
+	@ Blast Juggler
+	thumb_func_start gCardEffectDestroyTribute_08081E10
+gCardEffectDestroyTribute_08081E10: @ 0x08081E10
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _08081E30 @ =gUnk_0201B290
@@ -222668,8 +226090,11 @@ _08081F22:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectGreenkappaNoblemanEaterBugXingZhenHu_08081F28
-gCardEffectGreenkappaNoblemanEaterBugXingZhenHu_08081F28: @ 0x08081F28
+	@ Greenkappa
+	@ Nobleman-Eater Bug
+	@ Xing Zhen Hu
+	thumb_func_start gCardEffectDestroyFlip_08081F28
+gCardEffectDestroyFlip_08081F28: @ 0x08081F28
 	push {r4, lr}
 	sub sp, #0x100
 	adds r4, r0, #0
@@ -222813,8 +226238,9 @@ _0808203E:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectPenguinSoldier_08082048
-gCardEffectPenguinSoldier_08082048: @ 0x08082048
+	@ Penguin Soldier
+	thumb_func_start gCardEffectReturnToHandFlip_08082048
+gCardEffectReturnToHandFlip_08082048: @ 0x08082048
 	push {r4, r5, r6, r7, lr}
 	sub sp, #4
 	adds r4, r0, #0
@@ -223100,8 +226526,9 @@ _08082284:
 	.align 2, 0
 _0808228C: .4byte gUnk_0201B290
 
-	thumb_func_start gCardEffectKunaiWithChain_08082290
-gCardEffectKunaiWithChain_08082290: @ 0x08082290
+	@ Kunai with Chain
+	thumb_func_start gCardEffectBoostATKBoostDEF_08082290
+gCardEffectBoostATKBoostDEF_08082290: @ 0x08082290
 	push {r4, r5, r6, r7, lr}
 	sub sp, #8
 	adds r4, r0, #0
@@ -223372,8 +226799,13 @@ _0808249C:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDarkEyesIllusionistInvitationToADarkSleepRelinquishedThousandEyesRestrictViserDes_080824A4
-gCardEffectDarkEyesIllusionistInvitationToADarkSleepRelinquishedThousandEyesRestrictViserDes_080824A4: @ 0x080824A4
+	@ Dark-Eyes Illusionist
+	@ Invitation to a Dark Sleep
+	@ Relinquished
+	@ Thousand-Eyes Restrict
+	@ Viser Des
+	thumb_func_start gCardEffectDestroyPreventAttack_080824A4
+gCardEffectDestroyPreventAttack_080824A4: @ 0x080824A4
 	push {r4, r5, lr}
 	adds r3, r0, #0
 	adds r5, r1, #0
@@ -223427,8 +226859,9 @@ _08082508:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffect7Completed_08082510
-gCardEffect7Completed_08082510: @ 0x08082510
+	@ 7 Completed
+	thumb_func_start gCardEffectBoostATKBoostDEF_08082510
+gCardEffectBoostATKBoostDEF_08082510: @ 0x08082510
 	push {r4, r5, lr}
 	sub sp, #8
 	adds r5, r0, #0
@@ -223493,7 +226926,7 @@ _08082572:
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r5]
-	ldr r2, _080825A8 @ =gCardEffect7CompletedAmplifierArchfiendOfGilferArmedChangerAxeOfDespairBallistaOfRampartSmashingBeastFangsBigBangShotBlackPendantBlastWithChainBookOfSecretArtsBrainJackerBrightCastleBubbleBlasterBurningBeastBurningSpearBusterRancherButterflyDaggerElmaCestusOfDaglaChthonianAllianceCocoonOfEvolutionCyberShieldCyclonLaserCycloneBoomerangDarkEnergyDarkMagicianSTomeOfBlackMagicDarkNecrofearDemotionDesDendleDivineSwordPhoenixBladeDoitsuDragonTreasureDragonicAttackEkibyoDrakmordElectroWhipElfSLightFairyMeteorCrushFallingDownFlintFollowWindFreezingBeastFuhmaShurikenFusionSwordMurasameBladeFusionWeaponGermInfectionGravityAxeGrarlGustFanHeartOfClearWaterHeavyMechSupportPlatformHeroHeyroHornOfLightHornOfTheUnicornInsectArmorWithLaserCannonInvigorationKiryuKoitsuKunaiWithChainLaserCannonArmorLegendaryBlackBeltLegendarySwordLightningBladeMachineConversionFactoryMagePowerMagicalLabyrinthMalevolentNuzzlerMaskOfBrutalityMaskOfTheAccursedMaskedBeastDesGardiusMegamorphMetallizingParasiteLunatiteMetalmorphMetalsilverArmorMistobodyMysticalMoonNecklaceOfCommandNitroUnitOptiCamouflageArmorParalyzingPotionPitchDarkDragonPowerOfKaishinProtectiveSoulAilinRaiseBodyHeatRaregoldArmorRingOfMagnetismRitualWeaponRodOfSilenceKayEstRodOfTheMindSEyeSalamandraScrollOfBewitchmentSecondGoblinShootingStarBowCealSilverBowAndArrowSmokeGrenadeOfTheThiefSnatchStealSparkBlasterSteelShellStimPackSwordOfDarkDestructionSwordOfDeepSeatedSwordOfDragonSSoulSwordOfTheSoulEaterTrialOfThePrincessesTwinSwordsOfFlashingLightTryceUnitedWeStandVileGermsVioletCrystalWWingCatapultWickedBreakingFlambergeBaouYDragonHeadZMetalTankZombieTiger_0805000C
+	ldr r2, _080825A8 @ =gCardEffectEquipBoostATK_0805000C
 	bl sub_08096A4C
 _0808259A:
 	ldr r0, [r4]
@@ -223502,7 +226935,7 @@ _0808259A:
 	b _08082630
 	.align 2, 0
 _080825A4: .4byte 0xFFFC7FFF
-_080825A8: .4byte gCardEffect7CompletedAmplifierArchfiendOfGilferArmedChangerAxeOfDespairBallistaOfRampartSmashingBeastFangsBigBangShotBlackPendantBlastWithChainBookOfSecretArtsBrainJackerBrightCastleBubbleBlasterBurningBeastBurningSpearBusterRancherButterflyDaggerElmaCestusOfDaglaChthonianAllianceCocoonOfEvolutionCyberShieldCyclonLaserCycloneBoomerangDarkEnergyDarkMagicianSTomeOfBlackMagicDarkNecrofearDemotionDesDendleDivineSwordPhoenixBladeDoitsuDragonTreasureDragonicAttackEkibyoDrakmordElectroWhipElfSLightFairyMeteorCrushFallingDownFlintFollowWindFreezingBeastFuhmaShurikenFusionSwordMurasameBladeFusionWeaponGermInfectionGravityAxeGrarlGustFanHeartOfClearWaterHeavyMechSupportPlatformHeroHeyroHornOfLightHornOfTheUnicornInsectArmorWithLaserCannonInvigorationKiryuKoitsuKunaiWithChainLaserCannonArmorLegendaryBlackBeltLegendarySwordLightningBladeMachineConversionFactoryMagePowerMagicalLabyrinthMalevolentNuzzlerMaskOfBrutalityMaskOfTheAccursedMaskedBeastDesGardiusMegamorphMetallizingParasiteLunatiteMetalmorphMetalsilverArmorMistobodyMysticalMoonNecklaceOfCommandNitroUnitOptiCamouflageArmorParalyzingPotionPitchDarkDragonPowerOfKaishinProtectiveSoulAilinRaiseBodyHeatRaregoldArmorRingOfMagnetismRitualWeaponRodOfSilenceKayEstRodOfTheMindSEyeSalamandraScrollOfBewitchmentSecondGoblinShootingStarBowCealSilverBowAndArrowSmokeGrenadeOfTheThiefSnatchStealSparkBlasterSteelShellStimPackSwordOfDarkDestructionSwordOfDeepSeatedSwordOfDragonSSoulSwordOfTheSoulEaterTrialOfThePrincessesTwinSwordsOfFlashingLightTryceUnitedWeStandVileGermsVioletCrystalWWingCatapultWickedBreakingFlambergeBaouYDragonHeadZMetalTankZombieTiger_0805000C
+_080825A8: .4byte gCardEffectEquipBoostATK_0805000C
 _080825AC:
 	bl sub_08096B14
 	cmp r0, #0
@@ -223575,8 +227008,10 @@ _08082632:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectChainDestructionShadowOfEyes_0808263C
-gCardEffectChainDestructionShadowOfEyes_0808263C: @ 0x0808263C
+	@ Chain Destruction
+	@ Shadow of Eyes
+	thumb_func_start gCardEffectSpecialSummonDestroyAll_0808263C
+gCardEffectSpecialSummonDestroyAll_0808263C: @ 0x0808263C
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -223708,8 +227143,11 @@ _08082738:
 	.align 2, 0
 _08082740: .4byte gUnk_0201B290
 
-	thumb_func_start gCardEffectEatgaboonHouseOfAdhesiveTapeTrapHole_08082744
-gCardEffectEatgaboonHouseOfAdhesiveTapeTrapHole_08082744: @ 0x08082744
+	@ Eatgaboon
+	@ House of Adhesive Tape
+	@ Trap Hole
+	thumb_func_start gCardEffectDestroySpecialSummon_08082744
+gCardEffectDestroySpecialSummon_08082744: @ 0x08082744
 	push {lr}
 	ldr r1, [r0, #4]
 	ldr r2, _0808276C @ =0xFFFC7FFF
@@ -223788,8 +227226,9 @@ _080827CE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectTwoProngedAttack_080827D4
-gCardEffectTwoProngedAttack_080827D4: @ 0x080827D4
+	@ Two-Pronged Attack
+	thumb_func_start gCardEffectDestroy_080827D4
+gCardEffectDestroy_080827D4: @ 0x080827D4
 	push {r4, r5, r6, r7, lr}
 	sub sp, #4
 	adds r5, r0, #0
@@ -224017,8 +227456,14 @@ _080829B2:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectDarkBladeTheDragonKnightDisappearGravediggerGhoulKycooTheGhostDestroyerSoulReleaseWhiteHornsD_080829BC
-gCardEffectDarkBladeTheDragonKnightDisappearGravediggerGhoulKycooTheGhostDestroyerSoulReleaseWhiteHornsD_080829BC: @ 0x080829BC
+	@ Dark Blade the Dragon Knight
+	@ Disappear
+	@ Gravedigger Ghoul
+	@ Kycoo the Ghost Destroyer
+	@ Soul Release
+	@ White Horns D.
+	thumb_func_start gCardEffectGraveyardBanish_080829BC
+gCardEffectGraveyardBanish_080829BC: @ 0x080829BC
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	movs r1, #0
@@ -224264,8 +227709,10 @@ _08082B82:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectFairySHandMirrorFiendSHandMirror_08082B88
-gCardEffectFairySHandMirrorFiendSHandMirror_08082B88: @ 0x08082B88
+	@ Fairy's Hand Mirror
+	@ Fiend's Hand Mirror
+	thumb_func_start gCardEffectUnknown_08082B88
+gCardEffectUnknown_08082B88: @ 0x08082B88
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -224461,8 +227908,9 @@ _08082CFE:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectTailorOfTheFickle_08082D0C
-gCardEffectTailorOfTheFickle_08082D0C: @ 0x08082D0C
+	@ Tailor of the Fickle
+	thumb_func_start gCardEffectEquip_08082D0C
+gCardEffectEquip_08082D0C: @ 0x08082D0C
 	push {r4, r5, r6, r7, lr}
 	sub sp, #0x100
 	adds r6, r0, #0
@@ -224655,8 +228103,12 @@ _08082E90:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectArrayOfRevealingLightDnaSurgeryTheRegulationOfTribeTribeInfectingVirus_08082E98
-gCardEffectArrayOfRevealingLightDnaSurgeryTheRegulationOfTribeTribeInfectingVirus_08082E98: @ 0x08082E98
+	@ Array of Revealing Light
+	@ DNA Surgery
+	@ The Regulation of Tribe
+	@ Tribe-Infecting Virus
+	thumb_func_start gCardEffectDestroyPreventAttack_08082E98
+gCardEffectDestroyPreventAttack_08082E98: @ 0x08082E98
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	ldr r0, _08082EB4 @ =gUnk_0201B290
@@ -224742,8 +228194,23 @@ _08082F3E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectBackupSoldierBehemothTheKingOfAllAnimalsDarkFactoryOfMassProductionHiddenBookOfSpellKeldoMiracleDigPotOfAvaricePrimalSeedPuppetMasterRayOfHopeSalvageSpiritOfThePharaohSupplyTheForcesOfDarknessTheGraveyardInTheFourthDimension_08082F44
-gCardEffectBackupSoldierBehemothTheKingOfAllAnimalsDarkFactoryOfMassProductionHiddenBookOfSpellKeldoMiracleDigPotOfAvaricePrimalSeedPuppetMasterRayOfHopeSalvageSpiritOfThePharaohSupplyTheForcesOfDarknessTheGraveyardInTheFourthDimension_08082F44: @ 0x08082F44
+	@ Backup Soldier
+	@ Behemoth the King of All Animals
+	@ Dark Factory of Mass Production
+	@ Hidden Book of Spell
+	@ Keldo
+	@ Miracle Dig
+	@ Pot of Avarice
+	@ Primal Seed
+	@ Puppet Master
+	@ Ray of Hope
+	@ Salvage
+	@ Spirit of the Pharaoh
+	@ Supply
+	@ The Forces of Darkness
+	@ The Graveyard in the Fourth Dimension
+	thumb_func_start gCardEffectGraveyard_08082F44
+gCardEffectGraveyard_08082F44: @ 0x08082F44
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -225032,8 +228499,10 @@ _08083160:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectSpearCretinTheShallowGrave_08083170
-gCardEffectSpearCretinTheShallowGrave_08083170: @ 0x08083170
+	@ Spear Cretin
+	@ The Shallow Grave
+	thumb_func_start gCardEffectSpecialSummonChangePosition_08083170
+gCardEffectSpecialSummonChangePosition_08083170: @ 0x08083170
 	push {r4, r5, r6, r7, lr}
 	adds r5, r0, #0
 	ldr r7, _0808319C @ =gUnk_0201C4E0
@@ -225170,8 +228639,14 @@ _0808327A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectArchfiendSOathDDDesignatorDarkDesignatorGreatPhantomThiefMindCrushProhibition_08083280
-gCardEffectArchfiendSOathDDDesignatorDarkDesignatorGreatPhantomThiefMindCrushProhibition_08083280: @ 0x08083280
+	@ Archfiend's Oath
+	@ D.D. Designator
+	@ Dark Designator
+	@ Great Phantom Thief
+	@ Mind Crush
+	@ Prohibition
+	thumb_func_start gCardEffectSearchDiscard_08083280
+gCardEffectSearchDiscard_08083280: @ 0x08083280
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldr r0, _0808329C @ =gUnk_0201B290
@@ -225324,13 +228799,17 @@ _080833A0:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectCliffTheTrapRemoverDarkScorpionChickTheYellowDarkScorpionGorgTheStrongTheWingedDragonOfRa_080833A8
-gCardEffectCliffTheTrapRemoverDarkScorpionChickTheYellowDarkScorpionGorgTheStrongTheWingedDragonOfRa_080833A8: @ 0x080833A8
+	@ Cliff the Trap Remover
+	@ Dark Scorpion - Chick the Yellow
+	@ Dark Scorpion - Gorg the Strong
+	@ The Winged Dragon of Ra
+	thumb_func_start gCardEffectDamageSendToGY_080833A8
+gCardEffectDamageSendToGY_080833A8: @ 0x080833A8
 	push {lr}
 	ldrh r2, [r0, #0xc]
 	cmp r2, #1
 	bne _080833B6
-	bl gCardEffectAManWithWdjatARivalAppearsAbyssSoldierAcidTrapHoleAmazonessBlowpiperAnteatereatingantApprenticeMagicianAquaSpiritArcaneArcherOfTheForestArmedDragonLv5ArmedNinjaAssaultOnGhqAussaTheEarthCharmerBESCrystalCoreBESTetranBackToSquareOneBaitDollBarrelDragonBattleScarredBeastSoulSwapBiteShoesBlackLusterSoldierEnvoyOfTheBeginningBladeRabbitBlastMagicianBlastWithChainBlockAttackBlowbackDragonBombardmentBeetleBookOfMoonBookOfTaiyouBrainControlBreakerTheMagicalWarriorBurningBeastCastleWallsCatnippedKittyChangeOfHeartChaosSorcererCheckmateChironTheMageCollapseCollectedPowerCombinationAttackCompulsoryEvacuationDeviceCopycatCoveringFireCrassClownCrimsonNinjaCyberLaserDragonCyberRaiderCyberneticMagicianDarkCoreDarkJeroidDarkMagicianKnightDarkNecrofearDarkWorldLightningDarknessApproachesDeFusionDeSpellDealOfPhantomDesertapirDestructionRingDiffusionWaveMotionDimensionholeDoubleAttackDoubleSnareDragonManipulatorDragonSeekerDreamClownDrivingSnowDustTornadoElectromagneticBagwormElementalHeroTempestElementalHeroThunderGiantEnemyControllerEnergyDrainEriaTheWaterCharmerExiledForceFeatherShotFreedTheBraveWandererFreezingBeastGaleLizardGarudaTheWindSpiritGearfriedTheSwordmasterGenerationShiftGiftOfTheMartyrGolemSentryGradiusOptionGranmargTheRockMonarchGravekeeperSAssailantGravekeeperSGuardGreatSpiritGuardianCealGuardianStatueGustHaneHaneHannibalNecromancerHarpiesHuntingGroundHeroHeartHiitaTheFireCharmerImpenetrableFormationInfernalqueenArchfiendInfernoFireBlastInfernoHammerInterdimensionalMatterTransporterInvaderOfTheThroneJamDefenderJowlsOfDarkDemiseKaiserGliderKarmaCutKryuelMachineDuplicationMagicArmShieldMagicalHatsMagicalMarionetteMagicianSUniteMakiuManEaterBugMaskOfDispelMaskedBeastDesGardiusMedusaWormMichizureMicroRayMindControlMiracleKidsMonsterRecoveryMonsterReliefMysticalSpaceTyphoonNewdoriaNightAssailantNightmarePenguinNightmareWheelNinjitsuArtOfDecoyNoblemanOfCrossoutNoblemanOfExterminationOfferingsToTheDoomedOjamuscleOldVindictiveMagicianOrcaMegaFortressOfDarknessOrderToChargeOrderToSmashOverpoweringEyePatroidPatrolRoboPhoenixWingWindBlastRafflesiaSeductionRaigekiBreakRareMetalmorphReadyForInterceptingReaperOfTheCardsReinforcementsRemoveTrapReshefTheDarkBeingRingOfDestructionRisingEnergyRushRecklesslyRyuKishinClownShadowSpellShadowTamerShieldCrashShienSSpySnakeFangSoulExchangeSoulTakerSparkBlasterSpellbindingCircleSpiritualWindArtMiyabiSpiritualismStampingDestructionStaunchDefenderStopDefenseSwarmOfLocustsSwarmOfScarabsTauntTheLeagueOfUniformNomenclatureTheReliableGuardianTheSecretOfTheBanditThousandKnivesThrowstoneUnitTrapMasterTributeToTheDoomedUnionAttackUnityUriaLordOfSearingFlamesVwTigerCatapultVwxyzDragonCatapultCannonWhiteNinjaWildNatureSReleaseWingedMinionWynnTheWindCharmerXyDragonCannonXyzDragonCannonXzTankCannonYzTankDragonZaborgTheThunderMonarch_0808198C
+	bl gCardEffectDestroy_0808198C
 	b _080833B8
 _080833B6:
 	movs r0, #1
@@ -225338,8 +228817,9 @@ _080833B8:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectValkyrionTheMagnaWarrior_080833BC
-gCardEffectValkyrionTheMagnaWarrior_080833BC: @ 0x080833BC
+	@ Valkyrion the Magna Warrior
+	thumb_func_start gCardEffectSpecialSummonRevive_080833BC
+gCardEffectSpecialSummonRevive_080833BC: @ 0x080833BC
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -225414,8 +228894,9 @@ _08083444:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectRiryoku_08083450
-gCardEffectRiryoku_08083450: @ 0x08083450
+	@ Riryoku
+	thumb_func_start gCardEffectBoostATKReduceATK_08083450
+gCardEffectBoostATKReduceATK_08083450: @ 0x08083450
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	adds r6, r1, #0
@@ -225550,8 +229031,9 @@ _0808355A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectArchfiendOfGilfer_08083560
-gCardEffectArchfiendOfGilfer_08083560: @ 0x08083560
+	@ Archfiend of Gilfer
+	thumb_func_start gCardEffectSendToGYReduceATK_08083560
+gCardEffectSendToGYReduceATK_08083560: @ 0x08083560
 	push {r4, r5, r6, r7, lr}
 	sub sp, #0x100
 	adds r4, r0, #0
@@ -225753,8 +229235,9 @@ _080836FA:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectShift_08083704
-gCardEffectShift_08083704: @ 0x08083704
+	@ Shift
+	thumb_func_start gCardEffectUnknown_08083704
+gCardEffectUnknown_08083704: @ 0x08083704
 	push {r4, r5, r6, r7, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -225777,7 +229260,7 @@ _08083728: .4byte gUnk_0201B290
 _0808372C:
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectShift_0805E864
+	bl gCardEffectUnknown_0805E864
 	movs r7, #0
 	cmp r0, #2
 	bne _0808373C
@@ -225891,19 +229374,20 @@ _08083808: .4byte gUnk_0201C4E0
 _0808380C:
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectFairySHandMirrorFiendSHandMirror_08082B88
+	bl gCardEffectUnknown_08082B88
 	b _0808381E
 _08083816:
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectAncientLampDreamsprite_08083E14
+	bl gCardEffectSpecialSummonChangePosition_08083E14
 _0808381E:
 	pop {r4, r5, r6, r7}
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDimensionhole_08083824
-gCardEffectDimensionhole_08083824: @ 0x08083824
+	@ Dimensionhole
+	thumb_func_start gCardEffectBanishStandbyPhase_08083824
+gCardEffectBanishStandbyPhase_08083824: @ 0x08083824
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	movs r0, #0x30
@@ -225941,8 +229425,9 @@ _08083866:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectRedMoonBaby_0808386C
-gCardEffectRedMoonBaby_0808386C: @ 0x0808386C
+	@ Red-Moon Baby
+	thumb_func_start gCardEffectSpecialSummonSendToGY_0808386C
+gCardEffectSpecialSummonSendToGY_0808386C: @ 0x0808386C
 	push {r4, r5, r6, lr}
 	sub sp, #0x100
 	adds r4, r0, #0
@@ -226110,8 +229595,9 @@ _080839AC:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectMysticBox_080839B4
-gCardEffectMysticBox_080839B4: @ 0x080839B4
+	@ Mystic Box
+	thumb_func_start gCardEffectDestroy_080839B4
+gCardEffectDestroy_080839B4: @ 0x080839B4
 	push {r4, r5, lr}
 	sub sp, #4
 	adds r5, r0, #0
@@ -226152,7 +229638,7 @@ _080839E8:
 	strb r0, [r5, #6]
 	adds r0, r5, #0
 	adds r1, r2, #0
-	bl gCardEffectCreatureSwapMysticBox_0805EC40
+	bl gCardEffectTakeControlDestroy_0805EC40
 	cmp r0, #0
 	bne _08083A08
 	b _08083B48
@@ -226363,8 +229849,9 @@ _08083B9A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectGroundCollapse_08083BA0
-gCardEffectGroundCollapse_08083BA0: @ 0x08083BA0
+	@ Ground Collapse
+	thumb_func_start gCardEffectUnknown_08083BA0
+gCardEffectUnknown_08083BA0: @ 0x08083BA0
 	push {r4, r5, r6, lr}
 	sub sp, #0x100
 	adds r6, r0, #0
@@ -226484,8 +229971,9 @@ _08083C8E:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectScrollOfBewitchment_08083C98
-gCardEffectScrollOfBewitchment_08083C98: @ 0x08083C98
+	@ Scroll of Bewitchment
+	thumb_func_start gCardEffectEquip_08083C98
+gCardEffectEquip_08083C98: @ 0x08083C98
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	ldr r0, _08083CB4 @ =gUnk_0201B290
@@ -226506,7 +229994,7 @@ _08083CB8:
 	cmp r0, #0
 	blt _08083D30
 	adds r0, r5, #0
-	bl gCardEffectAmplifierArmedChangerAxeOfDespairBallistaOfRampartSmashingBeastFangsBigBangShotBlackPendantBlastWithChainBookOfSecretArtsBrightCastleBubbleBlasterBurningSpearBusterRancherButterflyDaggerElmaCestusOfDaglaChthonianAllianceCocoonOfEvolutionCyberShieldCyclonLaserCycloneBoomerangDarkEnergyDarkMagicianSTomeOfBlackMagicDemotionDivineSwordPhoenixBladeDragonTreasureDragonicAttackEkibyoDrakmordElectroWhipElfSLightFairyMeteorCrushFallingDownFlintFollowWindFuhmaShurikenFusionSwordMurasameBladeFusionWeaponGermInfectionGravityAxeGrarlGustFanHeartOfClearWaterHeroHeyroHornOfLightHornOfTheUnicornInsectArmorWithLaserCannonInvigorationLaserCannonArmorLegendaryBlackBeltLegendarySwordLightningBladeMachineConversionFactoryMagePowerMagicalLabyrinthMalevolentNuzzlerMaskOfBrutalityMaskOfTheAccursedMegamorphMetalmorphMetalsilverArmorMistobodyMysticalMoonNecklaceOfCommandNitroUnitOptiCamouflageArmorParalyzingPotionPowerOfKaishinRaiseBodyHeatRaregoldArmorRingOfMagnetismRitualWeaponRodOfSilenceKayEstRodOfTheMindSEyeSalamandraShootingStarBowCealSilverBowAndArrowSmokeGrenadeOfTheThiefSnatchStealSparkBlasterSteelShellStimPackSwordOfDarkDestructionSwordOfDeepSeatedSwordOfDragonSSoulTrialOfThePrincessesTwinSwordsOfFlashingLightTryceUnitedWeStandVileGermsVioletCrystalWickedBreakingFlambergeBaou_08081C54
+	bl gCardEffectEquipBoostATK_08081C54
 	cmp r0, #0
 	beq _08083D1E
 	movs r0, #2
@@ -226566,8 +230054,9 @@ _08083D32:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDarkSpiritOfTheSilent_08083D38
-gCardEffectDarkSpiritOfTheSilent_08083D38: @ 0x08083D38
+	@ Dark Spirit of the Silent
+	thumb_func_start gCardEffectNegateChangePosition_08083D38
+gCardEffectNegateChangePosition_08083D38: @ 0x08083D38
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	adds r6, r1, #0
@@ -226675,8 +230164,10 @@ _08083E0C:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectAncientLampDreamsprite_08083E14
-gCardEffectAncientLampDreamsprite_08083E14: @ 0x08083E14
+	@ Ancient Lamp
+	@ Dreamsprite
+	thumb_func_start gCardEffectSpecialSummonChangePosition_08083E14
+gCardEffectSpecialSummonChangePosition_08083E14: @ 0x08083E14
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldr r0, _08083E30 @ =gUnk_0201B290
@@ -226837,8 +230328,9 @@ _08083F46:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectTornadoBird_08083F4C
-gCardEffectTornadoBird_08083F4C: @ 0x08083F4C
+	@ Tornado Bird
+	thumb_func_start gCardEffectReturnToHandFlip_08083F4C
+gCardEffectReturnToHandFlip_08083F4C: @ 0x08083F4C
 	push {r4, lr}
 	sub sp, #0x100
 	adds r4, r0, #0
@@ -226953,8 +230445,9 @@ _0808402E:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectBarkOfDarkRuler_08084038
-gCardEffectBarkOfDarkRuler_08084038: @ 0x08084038
+	@ Bark of Dark Ruler
+	thumb_func_start gCardEffectReduceATKDamage_08084038
+gCardEffectReduceATKDamage_08084038: @ 0x08084038
 	push {r4, r5, r6, lr}
 	sub sp, #0x24
 	adds r6, r0, #0
@@ -227090,8 +230583,9 @@ _08084138:
 	.align 2, 0
 _08084140: .4byte gUnk_0201B290
 
-	thumb_func_start gCardEffectTheHunterWith7Weapons_08084144
-gCardEffectTheHunterWith7Weapons_08084144: @ 0x08084144
+	@ The Hunter with 7 Weapons
+	thumb_func_start gCardEffectBoostATK_08084144
+gCardEffectBoostATK_08084144: @ 0x08084144
 	push {lr}
 	adds r2, r0, #0
 	adds r3, r1, #0
@@ -227108,14 +230602,15 @@ gCardEffectTheHunterWith7Weapons_08084144: @ 0x08084144
 _0808415E:
 	adds r0, r2, #0
 	adds r1, r3, #0
-	bl gCardEffectArrayOfRevealingLightDnaSurgeryTheRegulationOfTribeTribeInfectingVirus_08082E98
+	bl gCardEffectDestroyPreventAttack_08082E98
 _08084166:
 	pop {r1}
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectDragonSGunfire_0808416C
-gCardEffectDragonSGunfire_0808416C: @ 0x0808416C
+	@ Dragon's Gunfire
+	thumb_func_start gCardEffectDestroyDamage_0808416C
+gCardEffectDestroyDamage_0808416C: @ 0x0808416C
 	push {lr}
 	ldrh r2, [r0, #0xc]
 	cmp r2, #2
@@ -227123,13 +230618,15 @@ gCardEffectDragonSGunfire_0808416C: @ 0x0808416C
 	movs r0, #1
 	b _0808417C
 _08084178:
-	bl gCardEffectAManWithWdjatARivalAppearsAbyssSoldierAcidTrapHoleAmazonessBlowpiperAnteatereatingantApprenticeMagicianAquaSpiritArcaneArcherOfTheForestArmedDragonLv5ArmedNinjaAssaultOnGhqAussaTheEarthCharmerBESCrystalCoreBESTetranBackToSquareOneBaitDollBarrelDragonBattleScarredBeastSoulSwapBiteShoesBlackLusterSoldierEnvoyOfTheBeginningBladeRabbitBlastMagicianBlastWithChainBlockAttackBlowbackDragonBombardmentBeetleBookOfMoonBookOfTaiyouBrainControlBreakerTheMagicalWarriorBurningBeastCastleWallsCatnippedKittyChangeOfHeartChaosSorcererCheckmateChironTheMageCollapseCollectedPowerCombinationAttackCompulsoryEvacuationDeviceCopycatCoveringFireCrassClownCrimsonNinjaCyberLaserDragonCyberRaiderCyberneticMagicianDarkCoreDarkJeroidDarkMagicianKnightDarkNecrofearDarkWorldLightningDarknessApproachesDeFusionDeSpellDealOfPhantomDesertapirDestructionRingDiffusionWaveMotionDimensionholeDoubleAttackDoubleSnareDragonManipulatorDragonSeekerDreamClownDrivingSnowDustTornadoElectromagneticBagwormElementalHeroTempestElementalHeroThunderGiantEnemyControllerEnergyDrainEriaTheWaterCharmerExiledForceFeatherShotFreedTheBraveWandererFreezingBeastGaleLizardGarudaTheWindSpiritGearfriedTheSwordmasterGenerationShiftGiftOfTheMartyrGolemSentryGradiusOptionGranmargTheRockMonarchGravekeeperSAssailantGravekeeperSGuardGreatSpiritGuardianCealGuardianStatueGustHaneHaneHannibalNecromancerHarpiesHuntingGroundHeroHeartHiitaTheFireCharmerImpenetrableFormationInfernalqueenArchfiendInfernoFireBlastInfernoHammerInterdimensionalMatterTransporterInvaderOfTheThroneJamDefenderJowlsOfDarkDemiseKaiserGliderKarmaCutKryuelMachineDuplicationMagicArmShieldMagicalHatsMagicalMarionetteMagicianSUniteMakiuManEaterBugMaskOfDispelMaskedBeastDesGardiusMedusaWormMichizureMicroRayMindControlMiracleKidsMonsterRecoveryMonsterReliefMysticalSpaceTyphoonNewdoriaNightAssailantNightmarePenguinNightmareWheelNinjitsuArtOfDecoyNoblemanOfCrossoutNoblemanOfExterminationOfferingsToTheDoomedOjamuscleOldVindictiveMagicianOrcaMegaFortressOfDarknessOrderToChargeOrderToSmashOverpoweringEyePatroidPatrolRoboPhoenixWingWindBlastRafflesiaSeductionRaigekiBreakRareMetalmorphReadyForInterceptingReaperOfTheCardsReinforcementsRemoveTrapReshefTheDarkBeingRingOfDestructionRisingEnergyRushRecklesslyRyuKishinClownShadowSpellShadowTamerShieldCrashShienSSpySnakeFangSoulExchangeSoulTakerSparkBlasterSpellbindingCircleSpiritualWindArtMiyabiSpiritualismStampingDestructionStaunchDefenderStopDefenseSwarmOfLocustsSwarmOfScarabsTauntTheLeagueOfUniformNomenclatureTheReliableGuardianTheSecretOfTheBanditThousandKnivesThrowstoneUnitTrapMasterTributeToTheDoomedUnionAttackUnityUriaLordOfSearingFlamesVwTigerCatapultVwxyzDragonCatapultCannonWhiteNinjaWildNatureSReleaseWingedMinionWynnTheWindCharmerXyDragonCannonXyzDragonCannonXzTankCannonYzTankDragonZaborgTheThunderMonarch_0808198C
+	bl gCardEffectDestroy_0808198C
 _0808417C:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectOtohimeTsukuyomi_08084180
-gCardEffectOtohimeTsukuyomi_08084180: @ 0x08084180
+	@ Otohime
+	@ Tsukuyomi
+	thumb_func_start gCardEffectSpecialSummonReturnToHand_08084180
+gCardEffectSpecialSummonReturnToHand_08084180: @ 0x08084180
 	push {lr}
 	adds r2, r0, #0
 	adds r3, r1, #0
@@ -227151,7 +230648,7 @@ gCardEffectOtohimeTsukuyomi_08084180: @ 0x08084180
 _080841A4:
 	adds r0, r2, #0
 	adds r1, r3, #0
-	bl gCardEffectAManWithWdjatARivalAppearsAbyssSoldierAcidTrapHoleAmazonessBlowpiperAnteatereatingantApprenticeMagicianAquaSpiritArcaneArcherOfTheForestArmedDragonLv5ArmedNinjaAssaultOnGhqAussaTheEarthCharmerBESCrystalCoreBESTetranBackToSquareOneBaitDollBarrelDragonBattleScarredBeastSoulSwapBiteShoesBlackLusterSoldierEnvoyOfTheBeginningBladeRabbitBlastMagicianBlastWithChainBlockAttackBlowbackDragonBombardmentBeetleBookOfMoonBookOfTaiyouBrainControlBreakerTheMagicalWarriorBurningBeastCastleWallsCatnippedKittyChangeOfHeartChaosSorcererCheckmateChironTheMageCollapseCollectedPowerCombinationAttackCompulsoryEvacuationDeviceCopycatCoveringFireCrassClownCrimsonNinjaCyberLaserDragonCyberRaiderCyberneticMagicianDarkCoreDarkJeroidDarkMagicianKnightDarkNecrofearDarkWorldLightningDarknessApproachesDeFusionDeSpellDealOfPhantomDesertapirDestructionRingDiffusionWaveMotionDimensionholeDoubleAttackDoubleSnareDragonManipulatorDragonSeekerDreamClownDrivingSnowDustTornadoElectromagneticBagwormElementalHeroTempestElementalHeroThunderGiantEnemyControllerEnergyDrainEriaTheWaterCharmerExiledForceFeatherShotFreedTheBraveWandererFreezingBeastGaleLizardGarudaTheWindSpiritGearfriedTheSwordmasterGenerationShiftGiftOfTheMartyrGolemSentryGradiusOptionGranmargTheRockMonarchGravekeeperSAssailantGravekeeperSGuardGreatSpiritGuardianCealGuardianStatueGustHaneHaneHannibalNecromancerHarpiesHuntingGroundHeroHeartHiitaTheFireCharmerImpenetrableFormationInfernalqueenArchfiendInfernoFireBlastInfernoHammerInterdimensionalMatterTransporterInvaderOfTheThroneJamDefenderJowlsOfDarkDemiseKaiserGliderKarmaCutKryuelMachineDuplicationMagicArmShieldMagicalHatsMagicalMarionetteMagicianSUniteMakiuManEaterBugMaskOfDispelMaskedBeastDesGardiusMedusaWormMichizureMicroRayMindControlMiracleKidsMonsterRecoveryMonsterReliefMysticalSpaceTyphoonNewdoriaNightAssailantNightmarePenguinNightmareWheelNinjitsuArtOfDecoyNoblemanOfCrossoutNoblemanOfExterminationOfferingsToTheDoomedOjamuscleOldVindictiveMagicianOrcaMegaFortressOfDarknessOrderToChargeOrderToSmashOverpoweringEyePatroidPatrolRoboPhoenixWingWindBlastRafflesiaSeductionRaigekiBreakRareMetalmorphReadyForInterceptingReaperOfTheCardsReinforcementsRemoveTrapReshefTheDarkBeingRingOfDestructionRisingEnergyRushRecklesslyRyuKishinClownShadowSpellShadowTamerShieldCrashShienSSpySnakeFangSoulExchangeSoulTakerSparkBlasterSpellbindingCircleSpiritualWindArtMiyabiSpiritualismStampingDestructionStaunchDefenderStopDefenseSwarmOfLocustsSwarmOfScarabsTauntTheLeagueOfUniformNomenclatureTheReliableGuardianTheSecretOfTheBanditThousandKnivesThrowstoneUnitTrapMasterTributeToTheDoomedUnionAttackUnityUriaLordOfSearingFlamesVwTigerCatapultVwxyzDragonCatapultCannonWhiteNinjaWildNatureSReleaseWingedMinionWynnTheWindCharmerXyDragonCannonXyzDragonCannonXzTankCannonYzTankDragonZaborgTheThunderMonarch_0808198C
+	bl gCardEffectDestroy_0808198C
 	b _080841BA
 	.align 2, 0
 _080841B0: .4byte 0x00001503 @ Otohime
@@ -227163,8 +230660,11 @@ _080841BA:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectAdhesionTrapHoleBottomlessTrapHoleChainDisappearance_080841C0
-gCardEffectAdhesionTrapHoleBottomlessTrapHoleChainDisappearance_080841C0: @ 0x080841C0
+	@ Adhesion Trap Hole
+	@ Bottomless Trap Hole
+	@ Chain Disappearance
+	thumb_func_start gCardEffectSpecialSummonBanish_080841C0
+gCardEffectSpecialSummonBanish_080841C0: @ 0x080841C0
 	push {r4, r5, r6, r7, lr}
 	sub sp, #4
 	adds r5, r0, #0
@@ -227207,8 +230707,9 @@ _080841F6:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectBookOfLife_08084210
-gCardEffectBookOfLife_08084210: @ 0x08084210
+	@ Book of Life
+	thumb_func_start gCardEffectSpecialSummonBanish_08084210
+gCardEffectSpecialSummonBanish_08084210: @ 0x08084210
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	ldr r0, _0808422C @ =gUnk_0201B290
@@ -227336,8 +230837,9 @@ _08084312:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectPyramidEnergy_08084318
-gCardEffectPyramidEnergy_08084318: @ 0x08084318
+	@ Pyramid Energy
+	thumb_func_start gCardEffectBoostATKBoostDEF_08084318
+gCardEffectBoostATKBoostDEF_08084318: @ 0x08084318
 	push {r4, r5, r6, lr}
 	sub sp, #8
 	adds r5, r0, #0
@@ -227450,8 +230952,23 @@ _080843F0:
 	.align 2, 0
 _080843F8: .4byte gUnk_0201C4E0
 
-	thumb_func_start gCardEffectBurningBeastDesDendleDoitsuFreezingBeastHeavyMechSupportPlatformKiryuKoitsuMetallizingParasiteLunatitePitchDarkDragonProtectiveSoulAilinSecondGoblinWWingCatapultYDragonHeadZMetalTankZombieTiger_080843FC
-gCardEffectBurningBeastDesDendleDoitsuFreezingBeastHeavyMechSupportPlatformKiryuKoitsuMetallizingParasiteLunatitePitchDarkDragonProtectiveSoulAilinSecondGoblinWWingCatapultYDragonHeadZMetalTankZombieTiger_080843FC: @ 0x080843FC
+	@ Burning Beast
+	@ Des Dendle
+	@ Doitsu
+	@ Freezing Beast
+	@ Heavy Mech Support Platform
+	@ Kiryu
+	@ Koitsu
+	@ Metallizing Parasite - Lunatite
+	@ Pitch-Dark Dragon
+	@ Protective Soul Ailin
+	@ Second Goblin
+	@ W-Wing Catapult
+	@ Y-Dragon Head
+	@ Z-Metal Tank
+	@ Zombie Tiger
+	thumb_func_start gCardEffectSpecialSummonDestroy_080843FC
+gCardEffectSpecialSummonDestroy_080843FC: @ 0x080843FC
 	push {lr}
 	adds r2, r0, #0
 	ldrb r3, [r2, #2]
@@ -227463,13 +230980,15 @@ gCardEffectBurningBeastDesDendleDoitsuFreezingBeastHeavyMechSupportPlatformKiryu
 	b _08084414
 _0808440E:
 	adds r0, r2, #0
-	bl gCardEffectAmplifierArmedChangerAxeOfDespairBallistaOfRampartSmashingBeastFangsBigBangShotBlackPendantBlastWithChainBookOfSecretArtsBrightCastleBubbleBlasterBurningSpearBusterRancherButterflyDaggerElmaCestusOfDaglaChthonianAllianceCocoonOfEvolutionCyberShieldCyclonLaserCycloneBoomerangDarkEnergyDarkMagicianSTomeOfBlackMagicDemotionDivineSwordPhoenixBladeDragonTreasureDragonicAttackEkibyoDrakmordElectroWhipElfSLightFairyMeteorCrushFallingDownFlintFollowWindFuhmaShurikenFusionSwordMurasameBladeFusionWeaponGermInfectionGravityAxeGrarlGustFanHeartOfClearWaterHeroHeyroHornOfLightHornOfTheUnicornInsectArmorWithLaserCannonInvigorationLaserCannonArmorLegendaryBlackBeltLegendarySwordLightningBladeMachineConversionFactoryMagePowerMagicalLabyrinthMalevolentNuzzlerMaskOfBrutalityMaskOfTheAccursedMegamorphMetalmorphMetalsilverArmorMistobodyMysticalMoonNecklaceOfCommandNitroUnitOptiCamouflageArmorParalyzingPotionPowerOfKaishinRaiseBodyHeatRaregoldArmorRingOfMagnetismRitualWeaponRodOfSilenceKayEstRodOfTheMindSEyeSalamandraShootingStarBowCealSilverBowAndArrowSmokeGrenadeOfTheThiefSnatchStealSparkBlasterSteelShellStimPackSwordOfDarkDestructionSwordOfDeepSeatedSwordOfDragonSSoulTrialOfThePrincessesTwinSwordsOfFlashingLightTryceUnitedWeStandVileGermsVioletCrystalWickedBreakingFlambergeBaou_08081C54
+	bl gCardEffectEquipBoostATK_08081C54
 _08084414:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectInterdimensionalMatterTransporterStrikeNinja_08084418
-gCardEffectInterdimensionalMatterTransporterStrikeNinja_08084418: @ 0x08084418
+	@ Interdimensional Matter Transporter
+	@ Strike Ninja
+	thumb_func_start gCardEffectBanishEndPhase_08084418
+gCardEffectBanishEndPhase_08084418: @ 0x08084418
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	movs r0, #0x30
@@ -227507,8 +231026,9 @@ _0808445A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectFormationUnion_08084460
-gCardEffectFormationUnion_08084460: @ 0x08084460
+	@ Formation Union
+	thumb_func_start gCardEffectSpecialSummonChangePosition_08084460
+gCardEffectSpecialSummonChangePosition_08084460: @ 0x08084460
 	push {r4, r5, lr}
 	sub sp, #0x100
 	adds r4, r0, #0
@@ -227549,7 +231069,7 @@ _0808449C:
 	strh r0, [r4, #0xc]
 	adds r0, r4, #0
 	adds r1, r3, #0
-	bl gCardEffectAManWithWdjatARivalAppearsAbyssSoldierAcidTrapHoleAmazonessBlowpiperAnteatereatingantApprenticeMagicianAquaSpiritArcaneArcherOfTheForestArmedDragonLv5ArmedNinjaAssaultOnGhqAussaTheEarthCharmerBESCrystalCoreBESTetranBackToSquareOneBaitDollBarrelDragonBattleScarredBeastSoulSwapBiteShoesBlackLusterSoldierEnvoyOfTheBeginningBladeRabbitBlastMagicianBlastWithChainBlockAttackBlowbackDragonBombardmentBeetleBookOfMoonBookOfTaiyouBrainControlBreakerTheMagicalWarriorBurningBeastCastleWallsCatnippedKittyChangeOfHeartChaosSorcererCheckmateChironTheMageCollapseCollectedPowerCombinationAttackCompulsoryEvacuationDeviceCopycatCoveringFireCrassClownCrimsonNinjaCyberLaserDragonCyberRaiderCyberneticMagicianDarkCoreDarkJeroidDarkMagicianKnightDarkNecrofearDarkWorldLightningDarknessApproachesDeFusionDeSpellDealOfPhantomDesertapirDestructionRingDiffusionWaveMotionDimensionholeDoubleAttackDoubleSnareDragonManipulatorDragonSeekerDreamClownDrivingSnowDustTornadoElectromagneticBagwormElementalHeroTempestElementalHeroThunderGiantEnemyControllerEnergyDrainEriaTheWaterCharmerExiledForceFeatherShotFreedTheBraveWandererFreezingBeastGaleLizardGarudaTheWindSpiritGearfriedTheSwordmasterGenerationShiftGiftOfTheMartyrGolemSentryGradiusOptionGranmargTheRockMonarchGravekeeperSAssailantGravekeeperSGuardGreatSpiritGuardianCealGuardianStatueGustHaneHaneHannibalNecromancerHarpiesHuntingGroundHeroHeartHiitaTheFireCharmerImpenetrableFormationInfernalqueenArchfiendInfernoFireBlastInfernoHammerInterdimensionalMatterTransporterInvaderOfTheThroneJamDefenderJowlsOfDarkDemiseKaiserGliderKarmaCutKryuelMachineDuplicationMagicArmShieldMagicalHatsMagicalMarionetteMagicianSUniteMakiuManEaterBugMaskOfDispelMaskedBeastDesGardiusMedusaWormMichizureMicroRayMindControlMiracleKidsMonsterRecoveryMonsterReliefMysticalSpaceTyphoonNewdoriaNightAssailantNightmarePenguinNightmareWheelNinjitsuArtOfDecoyNoblemanOfCrossoutNoblemanOfExterminationOfferingsToTheDoomedOjamuscleOldVindictiveMagicianOrcaMegaFortressOfDarknessOrderToChargeOrderToSmashOverpoweringEyePatroidPatrolRoboPhoenixWingWindBlastRafflesiaSeductionRaigekiBreakRareMetalmorphReadyForInterceptingReaperOfTheCardsReinforcementsRemoveTrapReshefTheDarkBeingRingOfDestructionRisingEnergyRushRecklesslyRyuKishinClownShadowSpellShadowTamerShieldCrashShienSSpySnakeFangSoulExchangeSoulTakerSparkBlasterSpellbindingCircleSpiritualWindArtMiyabiSpiritualismStampingDestructionStaunchDefenderStopDefenseSwarmOfLocustsSwarmOfScarabsTauntTheLeagueOfUniformNomenclatureTheReliableGuardianTheSecretOfTheBanditThousandKnivesThrowstoneUnitTrapMasterTributeToTheDoomedUnionAttackUnityUriaLordOfSearingFlamesVwTigerCatapultVwxyzDragonCatapultCannonWhiteNinjaWildNatureSReleaseWingedMinionWynnTheWindCharmerXyDragonCannonXyzDragonCannonXzTankCannonYzTankDragonZaborgTheThunderMonarch_0808198C
+	bl gCardEffectDestroy_0808198C
 	cmp r0, #0
 	beq _0808457A
 	movs r0, #2
@@ -227650,7 +231170,7 @@ _0808457A:
 _0808457E:
 	adds r0, r4, #0
 	adds r1, r3, #0
-	bl gCardEffectAManWithWdjatARivalAppearsAbyssSoldierAcidTrapHoleAmazonessBlowpiperAnteatereatingantApprenticeMagicianAquaSpiritArcaneArcherOfTheForestArmedDragonLv5ArmedNinjaAssaultOnGhqAussaTheEarthCharmerBESCrystalCoreBESTetranBackToSquareOneBaitDollBarrelDragonBattleScarredBeastSoulSwapBiteShoesBlackLusterSoldierEnvoyOfTheBeginningBladeRabbitBlastMagicianBlastWithChainBlockAttackBlowbackDragonBombardmentBeetleBookOfMoonBookOfTaiyouBrainControlBreakerTheMagicalWarriorBurningBeastCastleWallsCatnippedKittyChangeOfHeartChaosSorcererCheckmateChironTheMageCollapseCollectedPowerCombinationAttackCompulsoryEvacuationDeviceCopycatCoveringFireCrassClownCrimsonNinjaCyberLaserDragonCyberRaiderCyberneticMagicianDarkCoreDarkJeroidDarkMagicianKnightDarkNecrofearDarkWorldLightningDarknessApproachesDeFusionDeSpellDealOfPhantomDesertapirDestructionRingDiffusionWaveMotionDimensionholeDoubleAttackDoubleSnareDragonManipulatorDragonSeekerDreamClownDrivingSnowDustTornadoElectromagneticBagwormElementalHeroTempestElementalHeroThunderGiantEnemyControllerEnergyDrainEriaTheWaterCharmerExiledForceFeatherShotFreedTheBraveWandererFreezingBeastGaleLizardGarudaTheWindSpiritGearfriedTheSwordmasterGenerationShiftGiftOfTheMartyrGolemSentryGradiusOptionGranmargTheRockMonarchGravekeeperSAssailantGravekeeperSGuardGreatSpiritGuardianCealGuardianStatueGustHaneHaneHannibalNecromancerHarpiesHuntingGroundHeroHeartHiitaTheFireCharmerImpenetrableFormationInfernalqueenArchfiendInfernoFireBlastInfernoHammerInterdimensionalMatterTransporterInvaderOfTheThroneJamDefenderJowlsOfDarkDemiseKaiserGliderKarmaCutKryuelMachineDuplicationMagicArmShieldMagicalHatsMagicalMarionetteMagicianSUniteMakiuManEaterBugMaskOfDispelMaskedBeastDesGardiusMedusaWormMichizureMicroRayMindControlMiracleKidsMonsterRecoveryMonsterReliefMysticalSpaceTyphoonNewdoriaNightAssailantNightmarePenguinNightmareWheelNinjitsuArtOfDecoyNoblemanOfCrossoutNoblemanOfExterminationOfferingsToTheDoomedOjamuscleOldVindictiveMagicianOrcaMegaFortressOfDarknessOrderToChargeOrderToSmashOverpoweringEyePatroidPatrolRoboPhoenixWingWindBlastRafflesiaSeductionRaigekiBreakRareMetalmorphReadyForInterceptingReaperOfTheCardsReinforcementsRemoveTrapReshefTheDarkBeingRingOfDestructionRisingEnergyRushRecklesslyRyuKishinClownShadowSpellShadowTamerShieldCrashShienSSpySnakeFangSoulExchangeSoulTakerSparkBlasterSpellbindingCircleSpiritualWindArtMiyabiSpiritualismStampingDestructionStaunchDefenderStopDefenseSwarmOfLocustsSwarmOfScarabsTauntTheLeagueOfUniformNomenclatureTheReliableGuardianTheSecretOfTheBanditThousandKnivesThrowstoneUnitTrapMasterTributeToTheDoomedUnionAttackUnityUriaLordOfSearingFlamesVwTigerCatapultVwxyzDragonCatapultCannonWhiteNinjaWildNatureSReleaseWingedMinionWynnTheWindCharmerXyDragonCannonXyzDragonCannonXzTankCannonYzTankDragonZaborgTheThunderMonarch_0808198C
+	bl gCardEffectDestroy_0808198C
 	b _0808458A
 _08084588:
 	movs r0, #1
@@ -227661,15 +231181,16 @@ _0808458A:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectPitchBlackPowerStone_08084594
-gCardEffectPitchBlackPowerStone_08084594: @ 0x08084594
+	@ Pitch-Black Power Stone
+	thumb_func_start gCardEffectDestroyCounter_08084594
+gCardEffectDestroyCounter_08084594: @ 0x08084594
 	push {lr}
 	adds r2, r0, #0
 	ldrh r0, [r2, #0xc]
 	cmp r0, #0
 	beq _080845A6
 	adds r0, r2, #0
-	bl gCardEffectAManWithWdjatARivalAppearsAbyssSoldierAcidTrapHoleAmazonessBlowpiperAnteatereatingantApprenticeMagicianAquaSpiritArcaneArcherOfTheForestArmedDragonLv5ArmedNinjaAssaultOnGhqAussaTheEarthCharmerBESCrystalCoreBESTetranBackToSquareOneBaitDollBarrelDragonBattleScarredBeastSoulSwapBiteShoesBlackLusterSoldierEnvoyOfTheBeginningBladeRabbitBlastMagicianBlastWithChainBlockAttackBlowbackDragonBombardmentBeetleBookOfMoonBookOfTaiyouBrainControlBreakerTheMagicalWarriorBurningBeastCastleWallsCatnippedKittyChangeOfHeartChaosSorcererCheckmateChironTheMageCollapseCollectedPowerCombinationAttackCompulsoryEvacuationDeviceCopycatCoveringFireCrassClownCrimsonNinjaCyberLaserDragonCyberRaiderCyberneticMagicianDarkCoreDarkJeroidDarkMagicianKnightDarkNecrofearDarkWorldLightningDarknessApproachesDeFusionDeSpellDealOfPhantomDesertapirDestructionRingDiffusionWaveMotionDimensionholeDoubleAttackDoubleSnareDragonManipulatorDragonSeekerDreamClownDrivingSnowDustTornadoElectromagneticBagwormElementalHeroTempestElementalHeroThunderGiantEnemyControllerEnergyDrainEriaTheWaterCharmerExiledForceFeatherShotFreedTheBraveWandererFreezingBeastGaleLizardGarudaTheWindSpiritGearfriedTheSwordmasterGenerationShiftGiftOfTheMartyrGolemSentryGradiusOptionGranmargTheRockMonarchGravekeeperSAssailantGravekeeperSGuardGreatSpiritGuardianCealGuardianStatueGustHaneHaneHannibalNecromancerHarpiesHuntingGroundHeroHeartHiitaTheFireCharmerImpenetrableFormationInfernalqueenArchfiendInfernoFireBlastInfernoHammerInterdimensionalMatterTransporterInvaderOfTheThroneJamDefenderJowlsOfDarkDemiseKaiserGliderKarmaCutKryuelMachineDuplicationMagicArmShieldMagicalHatsMagicalMarionetteMagicianSUniteMakiuManEaterBugMaskOfDispelMaskedBeastDesGardiusMedusaWormMichizureMicroRayMindControlMiracleKidsMonsterRecoveryMonsterReliefMysticalSpaceTyphoonNewdoriaNightAssailantNightmarePenguinNightmareWheelNinjitsuArtOfDecoyNoblemanOfCrossoutNoblemanOfExterminationOfferingsToTheDoomedOjamuscleOldVindictiveMagicianOrcaMegaFortressOfDarknessOrderToChargeOrderToSmashOverpoweringEyePatroidPatrolRoboPhoenixWingWindBlastRafflesiaSeductionRaigekiBreakRareMetalmorphReadyForInterceptingReaperOfTheCardsReinforcementsRemoveTrapReshefTheDarkBeingRingOfDestructionRisingEnergyRushRecklesslyRyuKishinClownShadowSpellShadowTamerShieldCrashShienSSpySnakeFangSoulExchangeSoulTakerSparkBlasterSpellbindingCircleSpiritualWindArtMiyabiSpiritualismStampingDestructionStaunchDefenderStopDefenseSwarmOfLocustsSwarmOfScarabsTauntTheLeagueOfUniformNomenclatureTheReliableGuardianTheSecretOfTheBanditThousandKnivesThrowstoneUnitTrapMasterTributeToTheDoomedUnionAttackUnityUriaLordOfSearingFlamesVwTigerCatapultVwxyzDragonCatapultCannonWhiteNinjaWildNatureSReleaseWingedMinionWynnTheWindCharmerXyDragonCannonXyzDragonCannonXzTankCannonYzTankDragonZaborgTheThunderMonarch_0808198C
+	bl gCardEffectDestroy_0808198C
 	b _080845A8
 _080845A6:
 	movs r0, #1
@@ -227677,8 +231198,9 @@ _080845A8:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDesrookArchfiend_080845AC
-gCardEffectDesrookArchfiend_080845AC: @ 0x080845AC
+	@ Desrook Archfiend
+	thumb_func_start gCardEffectSpecialSummonNegate_080845AC
+gCardEffectSpecialSummonNegate_080845AC: @ 0x080845AC
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, [r4, #0x14]
@@ -227705,8 +231227,9 @@ _080845D6:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectDnaTransplant_080845E0
-gCardEffectDnaTransplant_080845E0: @ 0x080845E0
+	@ DNA Transplant
+	thumb_func_start gCardEffectUnknown_080845E0
+gCardEffectUnknown_080845E0: @ 0x080845E0
 	push {r4, r5, r6, r7, lr}
 	adds r5, r0, #0
 	ldr r0, _080845FC @ =gUnk_0201B290
@@ -227777,8 +231300,9 @@ _08084668: .4byte gUnk_0201C4E0
 _0808466C: .4byte 0x00001DAA
 _08084670: .4byte 0x0000171F @ DNA Transplant
 
-	thumb_func_start gCardEffectSwordOfTheSoulEater_08084674
-gCardEffectSwordOfTheSoulEater_08084674: @ 0x08084674
+	@ Sword of the Soul-Eater
+	thumb_func_start gCardEffectBoostATKEquip_08084674
+gCardEffectBoostATKEquip_08084674: @ 0x08084674
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -227791,7 +231315,7 @@ gCardEffectSwordOfTheSoulEater_08084674: @ 0x08084674
 	cmp r0, #0xa
 	beq _080846A0
 	adds r0, r4, #0
-	bl gCardEffectAmplifierArmedChangerAxeOfDespairBallistaOfRampartSmashingBeastFangsBigBangShotBlackPendantBlastWithChainBookOfSecretArtsBrightCastleBubbleBlasterBurningSpearBusterRancherButterflyDaggerElmaCestusOfDaglaChthonianAllianceCocoonOfEvolutionCyberShieldCyclonLaserCycloneBoomerangDarkEnergyDarkMagicianSTomeOfBlackMagicDemotionDivineSwordPhoenixBladeDragonTreasureDragonicAttackEkibyoDrakmordElectroWhipElfSLightFairyMeteorCrushFallingDownFlintFollowWindFuhmaShurikenFusionSwordMurasameBladeFusionWeaponGermInfectionGravityAxeGrarlGustFanHeartOfClearWaterHeroHeyroHornOfLightHornOfTheUnicornInsectArmorWithLaserCannonInvigorationLaserCannonArmorLegendaryBlackBeltLegendarySwordLightningBladeMachineConversionFactoryMagePowerMagicalLabyrinthMalevolentNuzzlerMaskOfBrutalityMaskOfTheAccursedMegamorphMetalmorphMetalsilverArmorMistobodyMysticalMoonNecklaceOfCommandNitroUnitOptiCamouflageArmorParalyzingPotionPowerOfKaishinRaiseBodyHeatRaregoldArmorRingOfMagnetismRitualWeaponRodOfSilenceKayEstRodOfTheMindSEyeSalamandraShootingStarBowCealSilverBowAndArrowSmokeGrenadeOfTheThiefSnatchStealSparkBlasterSteelShellStimPackSwordOfDarkDestructionSwordOfDeepSeatedSwordOfDragonSSoulTrialOfThePrincessesTwinSwordsOfFlashingLightTryceUnitedWeStandVileGermsVioletCrystalWickedBreakingFlambergeBaou_08081C54
+	bl gCardEffectEquipBoostATK_08081C54
 	cmp r0, #0
 	beq _08084698
 	movs r0, #0xa
@@ -227874,8 +231398,11 @@ _08084724:
 _08084730: .4byte 0x00000868
 _08084734: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectDarkRulerVandalgyonTheinenTheGreatSphinxWatapon_08084738
-gCardEffectDarkRulerVandalgyonTheinenTheGreatSphinxWatapon_08084738: @ 0x08084738
+	@ Dark Ruler Vandalgyon
+	@ Theinen the Great Sphinx
+	@ Watapon
+	thumb_func_start gCardEffectSpecialSummonDestroy_08084738
+gCardEffectSpecialSummonDestroy_08084738: @ 0x08084738
 	push {lr}
 	ldrb r1, [r0, #2]
 	lsls r2, r1, #0x1f
@@ -227888,8 +231415,9 @@ gCardEffectDarkRulerVandalgyonTheinenTheGreatSphinxWatapon_08084738: @ 0x0808473
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectMobiusTheFrostMonarch_08084750
-gCardEffectMobiusTheFrostMonarch_08084750: @ 0x08084750
+	@ Mobius the Frost Monarch
+	thumb_func_start gCardEffectDestroySpellTrapTribute_08084750
+gCardEffectDestroySpellTrapTribute_08084750: @ 0x08084750
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _08084770 @ =gUnk_0201B290
@@ -228070,8 +231598,9 @@ _080848C2:
 	.align 2, 0
 _080848C8: .4byte gUnk_0201B290
 
-	thumb_func_start gCardEffectHadeHane_080848CC
-gCardEffectHadeHane_080848CC: @ 0x080848CC
+	@ Hade-Hane
+	thumb_func_start gCardEffectReturnToHandFlip_080848CC
+gCardEffectReturnToHandFlip_080848CC: @ 0x080848CC
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r1, _080848EC @ =gUnk_0201B290
@@ -228346,8 +231875,9 @@ _08084AEC:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectOjamaKing_08084AF4
-gCardEffectOjamaKing_08084AF4: @ 0x08084AF4
+	@ Ojama King
+	thumb_func_start gCardEffectUnknown_08084AF4
+gCardEffectUnknown_08084AF4: @ 0x08084AF4
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	ldr r0, _08084B14 @ =gUnk_0201B290
@@ -228502,8 +232032,9 @@ _08084C3A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectAbyssalDesignator_08084C40
-gCardEffectAbyssalDesignator_08084C40: @ 0x08084C40
+	@ Abyssal Designator
+	thumb_func_start gCardEffectSendToGYDamage_08084C40
+gCardEffectSendToGYDamage_08084C40: @ 0x08084C40
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	ldr r0, _08084C5C @ =gUnk_0201B290
@@ -228591,8 +232122,9 @@ _08084CE6:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectSerialSpell_08084CEC
-gCardEffectSerialSpell_08084CEC: @ 0x08084CEC
+	@ Serial Spell
+	thumb_func_start gCardEffectDiscardGraveyard_08084CEC
+gCardEffectDiscardGraveyard_08084CEC: @ 0x08084CEC
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrh r0, [r1]
@@ -228607,8 +232139,9 @@ gCardEffectSerialSpell_08084CEC: @ 0x08084CEC
 	.align 2, 0
 _08084D04: .4byte 0x0000183E @ Serial Spell
 
-	thumb_func_start gCardEffectFlint_08084D08
-gCardEffectFlint_08084D08: @ 0x08084D08
+	@ Flint
+	thumb_func_start gCardEffectDestroyReduceATK_08084D08
+gCardEffectDestroyReduceATK_08084D08: @ 0x08084D08
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	adds r6, r1, #0
@@ -228626,7 +232159,7 @@ gCardEffectFlint_08084D08: @ 0x08084D08
 	beq _08084D34
 	adds r0, r4, #0
 	adds r1, r6, #0
-	bl gCardEffectAManWithWdjatARivalAppearsAbyssSoldierAcidTrapHoleAmazonessBlowpiperAnteatereatingantApprenticeMagicianAquaSpiritArcaneArcherOfTheForestArmedDragonLv5ArmedNinjaAssaultOnGhqAussaTheEarthCharmerBESCrystalCoreBESTetranBackToSquareOneBaitDollBarrelDragonBattleScarredBeastSoulSwapBiteShoesBlackLusterSoldierEnvoyOfTheBeginningBladeRabbitBlastMagicianBlastWithChainBlockAttackBlowbackDragonBombardmentBeetleBookOfMoonBookOfTaiyouBrainControlBreakerTheMagicalWarriorBurningBeastCastleWallsCatnippedKittyChangeOfHeartChaosSorcererCheckmateChironTheMageCollapseCollectedPowerCombinationAttackCompulsoryEvacuationDeviceCopycatCoveringFireCrassClownCrimsonNinjaCyberLaserDragonCyberRaiderCyberneticMagicianDarkCoreDarkJeroidDarkMagicianKnightDarkNecrofearDarkWorldLightningDarknessApproachesDeFusionDeSpellDealOfPhantomDesertapirDestructionRingDiffusionWaveMotionDimensionholeDoubleAttackDoubleSnareDragonManipulatorDragonSeekerDreamClownDrivingSnowDustTornadoElectromagneticBagwormElementalHeroTempestElementalHeroThunderGiantEnemyControllerEnergyDrainEriaTheWaterCharmerExiledForceFeatherShotFreedTheBraveWandererFreezingBeastGaleLizardGarudaTheWindSpiritGearfriedTheSwordmasterGenerationShiftGiftOfTheMartyrGolemSentryGradiusOptionGranmargTheRockMonarchGravekeeperSAssailantGravekeeperSGuardGreatSpiritGuardianCealGuardianStatueGustHaneHaneHannibalNecromancerHarpiesHuntingGroundHeroHeartHiitaTheFireCharmerImpenetrableFormationInfernalqueenArchfiendInfernoFireBlastInfernoHammerInterdimensionalMatterTransporterInvaderOfTheThroneJamDefenderJowlsOfDarkDemiseKaiserGliderKarmaCutKryuelMachineDuplicationMagicArmShieldMagicalHatsMagicalMarionetteMagicianSUniteMakiuManEaterBugMaskOfDispelMaskedBeastDesGardiusMedusaWormMichizureMicroRayMindControlMiracleKidsMonsterRecoveryMonsterReliefMysticalSpaceTyphoonNewdoriaNightAssailantNightmarePenguinNightmareWheelNinjitsuArtOfDecoyNoblemanOfCrossoutNoblemanOfExterminationOfferingsToTheDoomedOjamuscleOldVindictiveMagicianOrcaMegaFortressOfDarknessOrderToChargeOrderToSmashOverpoweringEyePatroidPatrolRoboPhoenixWingWindBlastRafflesiaSeductionRaigekiBreakRareMetalmorphReadyForInterceptingReaperOfTheCardsReinforcementsRemoveTrapReshefTheDarkBeingRingOfDestructionRisingEnergyRushRecklesslyRyuKishinClownShadowSpellShadowTamerShieldCrashShienSSpySnakeFangSoulExchangeSoulTakerSparkBlasterSpellbindingCircleSpiritualWindArtMiyabiSpiritualismStampingDestructionStaunchDefenderStopDefenseSwarmOfLocustsSwarmOfScarabsTauntTheLeagueOfUniformNomenclatureTheReliableGuardianTheSecretOfTheBanditThousandKnivesThrowstoneUnitTrapMasterTributeToTheDoomedUnionAttackUnityUriaLordOfSearingFlamesVwTigerCatapultVwxyzDragonCatapultCannonWhiteNinjaWildNatureSReleaseWingedMinionWynnTheWindCharmerXyDragonCannonXyzDragonCannonXzTankCannonYzTankDragonZaborgTheThunderMonarch_0808198C
+	bl gCardEffectDestroy_0808198C
 	b _08084D36
 _08084D34:
 	adds r0, r5, #0
@@ -228635,8 +232168,9 @@ _08084D36:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectBrainJacker_08084D3C
-gCardEffectBrainJacker_08084D3C: @ 0x08084D3C
+	@ Brain Jacker
+	thumb_func_start gCardEffectTakeControlGainLP_08084D3C
+gCardEffectTakeControlGainLP_08084D3C: @ 0x08084D3C
 	push {lr}
 	adds r2, r0, #0
 	movs r0, #0xfc
@@ -228646,7 +232180,7 @@ gCardEffectBrainJacker_08084D3C: @ 0x08084D3C
 	cmp r0, #0x80
 	beq _08084D54
 	adds r0, r2, #0
-	bl gCardEffectAmplifierArmedChangerAxeOfDespairBallistaOfRampartSmashingBeastFangsBigBangShotBlackPendantBlastWithChainBookOfSecretArtsBrightCastleBubbleBlasterBurningSpearBusterRancherButterflyDaggerElmaCestusOfDaglaChthonianAllianceCocoonOfEvolutionCyberShieldCyclonLaserCycloneBoomerangDarkEnergyDarkMagicianSTomeOfBlackMagicDemotionDivineSwordPhoenixBladeDragonTreasureDragonicAttackEkibyoDrakmordElectroWhipElfSLightFairyMeteorCrushFallingDownFlintFollowWindFuhmaShurikenFusionSwordMurasameBladeFusionWeaponGermInfectionGravityAxeGrarlGustFanHeartOfClearWaterHeroHeyroHornOfLightHornOfTheUnicornInsectArmorWithLaserCannonInvigorationLaserCannonArmorLegendaryBlackBeltLegendarySwordLightningBladeMachineConversionFactoryMagePowerMagicalLabyrinthMalevolentNuzzlerMaskOfBrutalityMaskOfTheAccursedMegamorphMetalmorphMetalsilverArmorMistobodyMysticalMoonNecklaceOfCommandNitroUnitOptiCamouflageArmorParalyzingPotionPowerOfKaishinRaiseBodyHeatRaregoldArmorRingOfMagnetismRitualWeaponRodOfSilenceKayEstRodOfTheMindSEyeSalamandraShootingStarBowCealSilverBowAndArrowSmokeGrenadeOfTheThiefSnatchStealSparkBlasterSteelShellStimPackSwordOfDarkDestructionSwordOfDeepSeatedSwordOfDragonSSoulTrialOfThePrincessesTwinSwordsOfFlashingLightTryceUnitedWeStandVileGermsVioletCrystalWickedBreakingFlambergeBaou_08081C54
+	bl gCardEffectEquipBoostATK_08081C54
 	b _08084D56
 _08084D54:
 	movs r0, #1
@@ -228655,8 +232189,9 @@ _08084D56:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectBubbleShuffle_08084D5C
-gCardEffectBubbleShuffle_08084D5C: @ 0x08084D5C
+	@ Bubble Shuffle
+	thumb_func_start gCardEffectSpecialSummonChangePosition_08084D5C
+gCardEffectSpecialSummonChangePosition_08084D5C: @ 0x08084D5C
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldr r0, _08084D78 @ =gUnk_0201B290
@@ -228689,10 +232224,10 @@ _08084D86:
 	lsls r0, r3, #0x1f
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r4]
-	ldr r2, _08084DA0 @ =gCardEffectHeroKidMachineDuplicationStaunchDefenderTheLeagueOfUniformNomenclature_080557E0
+	ldr r2, _08084DA0 @ =gCardEffectSpecialSummon_080557E0
 	b _08084DBA
 	.align 2, 0
-_08084DA0: .4byte gCardEffectHeroKidMachineDuplicationStaunchDefenderTheLeagueOfUniformNomenclature_080557E0
+_08084DA0: .4byte gCardEffectSpecialSummon_080557E0
 _08084DA4:
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
@@ -228703,7 +232238,7 @@ _08084DA4:
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r4]
-	ldr r2, _08084DC8 @ =gCardEffectBESCrystalCore_080554C4
+	ldr r2, _08084DC8 @ =gCardEffectDestroyChangePosition_080554C4
 _08084DBA:
 	bl sub_08096A4C
 	ldr r0, [r5]
@@ -228712,7 +232247,7 @@ _08084DBA:
 	movs r0, #0
 	b _08084E26
 	.align 2, 0
-_08084DC8: .4byte gCardEffectBESCrystalCore_080554C4
+_08084DC8: .4byte gCardEffectDestroyChangePosition_080554C4
 _08084DCC:
 	bl sub_08096B14
 	cmp r0, #0
@@ -228761,8 +232296,9 @@ _08084E26:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDarkRulerVandalgyon_08084E2C
-gCardEffectDarkRulerVandalgyon_08084E2C: @ 0x08084E2C
+	@ Dark Ruler Vandalgyon
+	thumb_func_start gCardEffectSpecialSummonDestroySpellTrap_08084E2C
+gCardEffectSpecialSummonDestroySpellTrap_08084E2C: @ 0x08084E2C
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -228776,17 +232312,17 @@ gCardEffectDarkRulerVandalgyon_08084E2C: @ 0x08084E2C
 	bne _08084E50
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectAManWithWdjatARivalAppearsAbyssSoldierAcidTrapHoleAmazonessBlowpiperAnteatereatingantApprenticeMagicianAquaSpiritArcaneArcherOfTheForestArmedDragonLv5ArmedNinjaAssaultOnGhqAussaTheEarthCharmerBESCrystalCoreBESTetranBackToSquareOneBaitDollBarrelDragonBattleScarredBeastSoulSwapBiteShoesBlackLusterSoldierEnvoyOfTheBeginningBladeRabbitBlastMagicianBlastWithChainBlockAttackBlowbackDragonBombardmentBeetleBookOfMoonBookOfTaiyouBrainControlBreakerTheMagicalWarriorBurningBeastCastleWallsCatnippedKittyChangeOfHeartChaosSorcererCheckmateChironTheMageCollapseCollectedPowerCombinationAttackCompulsoryEvacuationDeviceCopycatCoveringFireCrassClownCrimsonNinjaCyberLaserDragonCyberRaiderCyberneticMagicianDarkCoreDarkJeroidDarkMagicianKnightDarkNecrofearDarkWorldLightningDarknessApproachesDeFusionDeSpellDealOfPhantomDesertapirDestructionRingDiffusionWaveMotionDimensionholeDoubleAttackDoubleSnareDragonManipulatorDragonSeekerDreamClownDrivingSnowDustTornadoElectromagneticBagwormElementalHeroTempestElementalHeroThunderGiantEnemyControllerEnergyDrainEriaTheWaterCharmerExiledForceFeatherShotFreedTheBraveWandererFreezingBeastGaleLizardGarudaTheWindSpiritGearfriedTheSwordmasterGenerationShiftGiftOfTheMartyrGolemSentryGradiusOptionGranmargTheRockMonarchGravekeeperSAssailantGravekeeperSGuardGreatSpiritGuardianCealGuardianStatueGustHaneHaneHannibalNecromancerHarpiesHuntingGroundHeroHeartHiitaTheFireCharmerImpenetrableFormationInfernalqueenArchfiendInfernoFireBlastInfernoHammerInterdimensionalMatterTransporterInvaderOfTheThroneJamDefenderJowlsOfDarkDemiseKaiserGliderKarmaCutKryuelMachineDuplicationMagicArmShieldMagicalHatsMagicalMarionetteMagicianSUniteMakiuManEaterBugMaskOfDispelMaskedBeastDesGardiusMedusaWormMichizureMicroRayMindControlMiracleKidsMonsterRecoveryMonsterReliefMysticalSpaceTyphoonNewdoriaNightAssailantNightmarePenguinNightmareWheelNinjitsuArtOfDecoyNoblemanOfCrossoutNoblemanOfExterminationOfferingsToTheDoomedOjamuscleOldVindictiveMagicianOrcaMegaFortressOfDarknessOrderToChargeOrderToSmashOverpoweringEyePatroidPatrolRoboPhoenixWingWindBlastRafflesiaSeductionRaigekiBreakRareMetalmorphReadyForInterceptingReaperOfTheCardsReinforcementsRemoveTrapReshefTheDarkBeingRingOfDestructionRisingEnergyRushRecklesslyRyuKishinClownShadowSpellShadowTamerShieldCrashShienSSpySnakeFangSoulExchangeSoulTakerSparkBlasterSpellbindingCircleSpiritualWindArtMiyabiSpiritualismStampingDestructionStaunchDefenderStopDefenseSwarmOfLocustsSwarmOfScarabsTauntTheLeagueOfUniformNomenclatureTheReliableGuardianTheSecretOfTheBanditThousandKnivesThrowstoneUnitTrapMasterTributeToTheDoomedUnionAttackUnityUriaLordOfSearingFlamesVwTigerCatapultVwxyzDragonCatapultCannonWhiteNinjaWildNatureSReleaseWingedMinionWynnTheWindCharmerXyDragonCannonXyzDragonCannonXzTankCannonYzTankDragonZaborgTheThunderMonarch_0808198C
+	bl gCardEffectDestroy_0808198C
 	b _08084E68
 _08084E50:
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectArchfiendSRoarAutonomousActionUnitBatteryChargerCallOfTheHauntedCentrifugalFieldChimeraTheFlyingMythicalBeastCyberSteinFulfillmentOfTheContractFushiohRichieMagicalScientistPrematureBurialReFusionReturnFromTheDifferentDimensionRiteOfSpiritSilentFiendSoulResurrectionSpiritCallerSpiritOfThePharaohSymbolOfHeritage_0805C248
+	bl gCardEffectSpecialSummonGraveyard_0805C248
 	cmp r0, #0
 	beq _08084E66
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl gCardEffectAFeatherOfThePhoenixArchfiendSRoarArmedChangerAswanApparitionAutonomousActionUnitBatteryChargerCallOfTheHauntedCentrifugalFieldChimeraTheFlyingMythicalBeastChopmanTheDesperateOutlawDDMDifferentDimensionMasterDarkMagicianOfChaosDesFeralImpDimensionDistortionExcavationOfMageStonesFairyOfTheSpringFulfillmentOfTheContractFushiohRichieGatewayToDarkWorldGraverobberGuardianElmaLevelModulationLordPoisonMagicianOfFaithMaskOfDarknessMiracleRestoringMonsterRebornMonsterReincarnationNightAssailantNubianGuardPrematureBurialReFusionRecycleRiteOfSpiritRollOutSilentFiendSoulResurrectionSoulReversalSpellReproductionSpiritCallerSpiritualEarthArtKuroganeSymbolOfHeritageTheCreatorTheKickManTheWarriorReturningAliveVampireGenesisWitchDoctorOfChaos_08081B84
+	bl gCardEffectGraveyardSpecialSummon_08081B84
 	b _08084E68
 _08084E66:
 	movs r0, #1
@@ -228796,8 +232332,10 @@ _08084E68:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectFusionRecoveryWroughtweiler_08084E70
-gCardEffectFusionRecoveryWroughtweiler_08084E70: @ 0x08084E70
+	@ Fusion Recovery
+	@ Wroughtweiler
+	thumb_func_start gCardEffectSearchGraveyard_08084E70
+gCardEffectSearchGraveyard_08084E70: @ 0x08084E70
 	push {r4, r5, r6, r7, lr}
 	adds r7, r0, #0
 	adds r4, r1, #0
@@ -228822,13 +232360,13 @@ _08084E94:
 _08084E9A:
 	adds r0, r7, #0
 	adds r1, r4, #0
-	bl gCardEffectFusionRecovery_08063794
+	bl gCardEffectSearchFusionSummon_08063794
 	cmp r0, #0
 	beq _08084F2A
 _08084EA6:
 	adds r0, r7, #0
 	adds r1, r4, #0
-	bl gCardEffectAFeatherOfThePhoenixArchfiendSRoarArmedChangerAswanApparitionAutonomousActionUnitBatteryChargerCallOfTheHauntedCentrifugalFieldChimeraTheFlyingMythicalBeastChopmanTheDesperateOutlawDDMDifferentDimensionMasterDarkMagicianOfChaosDesFeralImpDimensionDistortionExcavationOfMageStonesFairyOfTheSpringFulfillmentOfTheContractFushiohRichieGatewayToDarkWorldGraverobberGuardianElmaLevelModulationLordPoisonMagicianOfFaithMaskOfDarknessMiracleRestoringMonsterRebornMonsterReincarnationNightAssailantNubianGuardPrematureBurialReFusionRecycleRiteOfSpiritRollOutSilentFiendSoulResurrectionSoulReversalSpellReproductionSpiritCallerSpiritualEarthArtKuroganeSymbolOfHeritageTheCreatorTheKickManTheWarriorReturningAliveVampireGenesisWitchDoctorOfChaos_08081B84
+	bl gCardEffectGraveyardSpecialSummon_08081B84
 	b _08084F2C
 _08084EB0:
 	ldrb r1, [r7, #2]
@@ -228896,8 +232434,9 @@ _08084F34: .4byte 0x000012E5 @ Polymerization
 _08084F38: .4byte 0x00000868
 _08084F3C: .4byte gUnk_0201C8F8
 
-	thumb_func_start gCardEffectDDTrapHole_08084F40
-gCardEffectDDTrapHole_08084F40: @ 0x08084F40
+	@ D.D. Trap Hole
+	thumb_func_start gCardEffectBanishDestroy_08084F40
+gCardEffectBanishDestroy_08084F40: @ 0x08084F40
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	ldr r0, _08084F5C @ =gUnk_0201B290
@@ -228963,13 +232502,13 @@ _08084FB2:
 	lsls r0, r3, #0x1f
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r6]
-	ldr r2, _08084FC8 @ =gCardEffectImpenetrableFormationTaunt_08054898
+	ldr r2, _08084FC8 @ =gCardEffectDestroyBoostDEF_08054898
 	bl sub_08096A4C
 	ldr r0, [r4]
 	adds r0, #1
 	b _08085004
 	.align 2, 0
-_08084FC8: .4byte gCardEffectImpenetrableFormationTaunt_08054898
+_08084FC8: .4byte gCardEffectDestroyBoostDEF_08054898
 _08084FCC:
 	bl sub_08096B14
 	cmp r0, #0
@@ -229022,8 +232561,9 @@ _0808502E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectWaterDragon_08085034
-gCardEffectWaterDragon_08085034: @ 0x08085034
+	@ Water Dragon
+	thumb_func_start gCardEffectSpecialSummonSendToGY_08085034
+gCardEffectSpecialSummonSendToGY_08085034: @ 0x08085034
 	push {r4, r5, r6, r7, lr}
 	adds r7, r0, #0
 	bl sub_08090848
@@ -229099,8 +232639,9 @@ _080850C8:
 _080850D0: .4byte 0x0000194F @ Hydrogeddon
 _080850D4: .4byte 0x00001950 @ Oxygeddon
 
-	thumb_func_start gCardEffectVwxyzDragonCatapultCannon_080850D8
-gCardEffectVwxyzDragonCatapultCannon_080850D8: @ 0x080850D8
+	@ VWXYZ-Dragon Catapult Cannon
+	thumb_func_start gCardEffectSpecialSummonBanish_080850D8
+gCardEffectSpecialSummonBanish_080850D8: @ 0x080850D8
 	push {lr}
 	ldr r2, _080850EC @ =gUnk_0201BB90
 	ldr r1, [r2, #4]
@@ -229112,8 +232653,9 @@ gCardEffectVwxyzDragonCatapultCannon_080850D8: @ 0x080850D8
 	.align 2, 0
 _080850EC: .4byte gUnk_0201BB90
 
-	thumb_func_start gCardEffectGolddWuLordOfDarkWorld_080850F0
-gCardEffectGolddWuLordOfDarkWorld_080850F0: @ 0x080850F0
+	@ Goldd, Wu-Lord of Dark World
+	thumb_func_start gCardEffectSpecialSummonDiscard_080850F0
+gCardEffectSpecialSummonDiscard_080850F0: @ 0x080850F0
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _08085110 @ =gUnk_0201B290
@@ -229305,8 +232847,9 @@ _0808526E:
 _08085274: .4byte 0x0000013B
 _08085278: .4byte gUnk_0201B290
 
-	thumb_func_start gCardEffectClayCharge_0808527C
-gCardEffectClayCharge_0808527C: @ 0x0808527C
+	@ Clay Charge
+	thumb_func_start gCardEffectDestroyDamage_0808527C
+gCardEffectDestroyDamage_0808527C: @ 0x0808527C
 	push {r4, r5, lr}
 	ldr r4, _080852C0 @ =gUnk_0201BB90
 	ldr r5, [r4, #4]
@@ -229344,8 +232887,9 @@ _080852C0: .4byte gUnk_0201BB90
 _080852C4: .4byte 0x00000868
 _080852C8: .4byte gUnk_0201C510
 
-	thumb_func_start gCardEffectInfernoRecklessSummon_080852CC
-gCardEffectInfernoRecklessSummon_080852CC: @ 0x080852CC
+	@ Inferno Reckless Summon
+	thumb_func_start gCardEffectSpecialSummonChangePosition_080852CC
+gCardEffectSpecialSummonChangePosition_080852CC: @ 0x080852CC
 	push {lr}
 	ldr r2, [r0, #0x14]
 	lsls r1, r2, #0x16
@@ -229358,11 +232902,12 @@ gCardEffectInfernoRecklessSummon_080852CC: @ 0x080852CC
 	bx r1
 	.align 2, 0
 
-	thumb_func_start gCardEffectNextToBeLost_080852E4
-gCardEffectNextToBeLost_080852E4: @ 0x080852E4
+	@ Next to be Lost
+	thumb_func_start gCardEffectSendToGYGraveyard_080852E4
+gCardEffectSendToGYGraveyard_080852E4: @ 0x080852E4
 	push {r4, lr}
 	adds r4, r0, #0
-	bl gCardEffectAManWithWdjatARivalAppearsAbyssSoldierAcidTrapHoleAmazonessBlowpiperAnteatereatingantApprenticeMagicianAquaSpiritArcaneArcherOfTheForestArmedDragonLv5ArmedNinjaAssaultOnGhqAussaTheEarthCharmerBESCrystalCoreBESTetranBackToSquareOneBaitDollBarrelDragonBattleScarredBeastSoulSwapBiteShoesBlackLusterSoldierEnvoyOfTheBeginningBladeRabbitBlastMagicianBlastWithChainBlockAttackBlowbackDragonBombardmentBeetleBookOfMoonBookOfTaiyouBrainControlBreakerTheMagicalWarriorBurningBeastCastleWallsCatnippedKittyChangeOfHeartChaosSorcererCheckmateChironTheMageCollapseCollectedPowerCombinationAttackCompulsoryEvacuationDeviceCopycatCoveringFireCrassClownCrimsonNinjaCyberLaserDragonCyberRaiderCyberneticMagicianDarkCoreDarkJeroidDarkMagicianKnightDarkNecrofearDarkWorldLightningDarknessApproachesDeFusionDeSpellDealOfPhantomDesertapirDestructionRingDiffusionWaveMotionDimensionholeDoubleAttackDoubleSnareDragonManipulatorDragonSeekerDreamClownDrivingSnowDustTornadoElectromagneticBagwormElementalHeroTempestElementalHeroThunderGiantEnemyControllerEnergyDrainEriaTheWaterCharmerExiledForceFeatherShotFreedTheBraveWandererFreezingBeastGaleLizardGarudaTheWindSpiritGearfriedTheSwordmasterGenerationShiftGiftOfTheMartyrGolemSentryGradiusOptionGranmargTheRockMonarchGravekeeperSAssailantGravekeeperSGuardGreatSpiritGuardianCealGuardianStatueGustHaneHaneHannibalNecromancerHarpiesHuntingGroundHeroHeartHiitaTheFireCharmerImpenetrableFormationInfernalqueenArchfiendInfernoFireBlastInfernoHammerInterdimensionalMatterTransporterInvaderOfTheThroneJamDefenderJowlsOfDarkDemiseKaiserGliderKarmaCutKryuelMachineDuplicationMagicArmShieldMagicalHatsMagicalMarionetteMagicianSUniteMakiuManEaterBugMaskOfDispelMaskedBeastDesGardiusMedusaWormMichizureMicroRayMindControlMiracleKidsMonsterRecoveryMonsterReliefMysticalSpaceTyphoonNewdoriaNightAssailantNightmarePenguinNightmareWheelNinjitsuArtOfDecoyNoblemanOfCrossoutNoblemanOfExterminationOfferingsToTheDoomedOjamuscleOldVindictiveMagicianOrcaMegaFortressOfDarknessOrderToChargeOrderToSmashOverpoweringEyePatroidPatrolRoboPhoenixWingWindBlastRafflesiaSeductionRaigekiBreakRareMetalmorphReadyForInterceptingReaperOfTheCardsReinforcementsRemoveTrapReshefTheDarkBeingRingOfDestructionRisingEnergyRushRecklesslyRyuKishinClownShadowSpellShadowTamerShieldCrashShienSSpySnakeFangSoulExchangeSoulTakerSparkBlasterSpellbindingCircleSpiritualWindArtMiyabiSpiritualismStampingDestructionStaunchDefenderStopDefenseSwarmOfLocustsSwarmOfScarabsTauntTheLeagueOfUniformNomenclatureTheReliableGuardianTheSecretOfTheBanditThousandKnivesThrowstoneUnitTrapMasterTributeToTheDoomedUnionAttackUnityUriaLordOfSearingFlamesVwTigerCatapultVwxyzDragonCatapultCannonWhiteNinjaWildNatureSReleaseWingedMinionWynnTheWindCharmerXyDragonCannonXyzDragonCannonXzTankCannonYzTankDragonZaborgTheThunderMonarch_0808198C
+	bl gCardEffectDestroy_0808198C
 	cmp r0, #0
 	beq _08085316
 	movs r0, #0x1c
@@ -232558,8 +236103,33 @@ _08086C72:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectBeastlyMirrorRitualBlackIllusionRitualBlackLusterRitualCommencementDanceContractWithTheAbyssContractWithTheDarkMasterCurseOfTheMaskedBeastDarkMagicRitualDoriadoSBlessingEarthChantEndOfTheWorldFinalRitualOfTheAncientsFortressWhaleSOathGarmaSwordOathHamburgerRecipeIncandescentOrdealJavelinBeetlePactNovoxSPrayerResurrectionOfChakraRevivalOfDokuroriderShinatoSArkTurtleOathWarLionRitualWhiteDragonRitualZeraRitual_08086C80
-gCardEffectBeastlyMirrorRitualBlackIllusionRitualBlackLusterRitualCommencementDanceContractWithTheAbyssContractWithTheDarkMasterCurseOfTheMaskedBeastDarkMagicRitualDoriadoSBlessingEarthChantEndOfTheWorldFinalRitualOfTheAncientsFortressWhaleSOathGarmaSwordOathHamburgerRecipeIncandescentOrdealJavelinBeetlePactNovoxSPrayerResurrectionOfChakraRevivalOfDokuroriderShinatoSArkTurtleOathWarLionRitualWhiteDragonRitualZeraRitual_08086C80: @ 0x08086C80
+	@ Beastly Mirror Ritual
+	@ Black Illusion Ritual
+	@ Black Luster Ritual
+	@ Commencement Dance
+	@ Contract with the Abyss
+	@ Contract with the Dark Master
+	@ Curse of the Masked Beast
+	@ Dark Magic Ritual
+	@ Doriado's Blessing
+	@ Earth Chant
+	@ End of the World
+	@ Final Ritual of the Ancients
+	@ Fortress Whale's Oath
+	@ Garma Sword Oath
+	@ Hamburger Recipe
+	@ Incandescent Ordeal
+	@ Javelin Beetle Pact
+	@ Novox's Prayer
+	@ Resurrection of Chakra
+	@ Revival of Dokurorider
+	@ Shinato's Ark
+	@ Turtle Oath
+	@ War-Lion Ritual
+	@ White Dragon Ritual
+	@ Zera Ritual
+	thumb_func_start gCardEffectRitualSummonTribute_08086C80
+gCardEffectRitualSummonTribute_08086C80: @ 0x08086C80
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	ldrb r1, [r6, #2]
@@ -232607,8 +236177,33 @@ _08086CD0:
 	.align 2, 0
 _08086CD8: .4byte gRitual
 
-	thumb_func_start gCardEffectBeastlyMirrorRitualBlackIllusionRitualBlackLusterRitualCommencementDanceContractWithTheAbyssContractWithTheDarkMasterCurseOfTheMaskedBeastDarkMagicRitualDoriadoSBlessingEarthChantEndOfTheWorldFinalRitualOfTheAncientsFortressWhaleSOathGarmaSwordOathHamburgerRecipeIncandescentOrdealJavelinBeetlePactNovoxSPrayerResurrectionOfChakraRevivalOfDokuroriderShinatoSArkTurtleOathWarLionRitualWhiteDragonRitualZeraRitual_08086CDC
-gCardEffectBeastlyMirrorRitualBlackIllusionRitualBlackLusterRitualCommencementDanceContractWithTheAbyssContractWithTheDarkMasterCurseOfTheMaskedBeastDarkMagicRitualDoriadoSBlessingEarthChantEndOfTheWorldFinalRitualOfTheAncientsFortressWhaleSOathGarmaSwordOathHamburgerRecipeIncandescentOrdealJavelinBeetlePactNovoxSPrayerResurrectionOfChakraRevivalOfDokuroriderShinatoSArkTurtleOathWarLionRitualWhiteDragonRitualZeraRitual_08086CDC: @ 0x08086CDC
+	@ Beastly Mirror Ritual
+	@ Black Illusion Ritual
+	@ Black Luster Ritual
+	@ Commencement Dance
+	@ Contract with the Abyss
+	@ Contract with the Dark Master
+	@ Curse of the Masked Beast
+	@ Dark Magic Ritual
+	@ Doriado's Blessing
+	@ Earth Chant
+	@ End of the World
+	@ Final Ritual of the Ancients
+	@ Fortress Whale's Oath
+	@ Garma Sword Oath
+	@ Hamburger Recipe
+	@ Incandescent Ordeal
+	@ Javelin Beetle Pact
+	@ Novox's Prayer
+	@ Resurrection of Chakra
+	@ Revival of Dokurorider
+	@ Shinato's Ark
+	@ Turtle Oath
+	@ War-Lion Ritual
+	@ White Dragon Ritual
+	@ Zera Ritual
+	thumb_func_start gCardEffectRitualSummonTribute_08086CDC
+gCardEffectRitualSummonTribute_08086CDC: @ 0x08086CDC
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -232681,7 +236276,7 @@ _08086D98:
 	strh r0, [r7, #0xc]
 	adds r0, r7, #0
 	movs r1, #0
-	bl gCardEffectBeastlyMirrorRitualBlackIllusionRitualBlackLusterRitualCommencementDanceContractWithTheAbyssContractWithTheDarkMasterCurseOfTheMaskedBeastDarkMagicRitualDoriadoSBlessingEarthChantEndOfTheWorldFinalRitualOfTheAncientsFortressWhaleSOathGarmaSwordOathHamburgerRecipeIncandescentOrdealJavelinBeetlePactNovoxSPrayerResurrectionOfChakraRevivalOfDokuroriderShinatoSArkTurtleOathWarLionRitualWhiteDragonRitualZeraRitual_08086C80
+	bl gCardEffectRitualSummonTribute_08086C80
 	cmp r0, #0
 	bne _08086DB0
 	b _08087194
@@ -252165,13 +255760,32 @@ _080904DE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start gCardEffectDarkCoffinKozakySSelfDestructButtonOjamagicSpiritMessageASpiritMessageISpiritMessageLSpiritMessageNStatueOfTheWickedTheSecondSarcophagusTheThirdSarcophagus_080904EC
-gCardEffectDarkCoffinKozakySSelfDestructButtonOjamagicSpiritMessageASpiritMessageISpiritMessageLSpiritMessageNStatueOfTheWickedTheSecondSarcophagusTheThirdSarcophagus_080904EC: @ 0x080904EC
+	@ Dark Coffin
+	@ Kozaky's Self-Destruct Button
+	@ Ojamagic
+	@ Spirit Message "A
+	@ Spirit Message "I
+	@ Spirit Message "L
+	@ Spirit Message "N
+	@ Statue of the Wicked
+	@ The Second Sarcophagus
+	@ The Third Sarcophagus
+	thumb_func_start gCardEffectSendToGYDestroy_080904EC
+gCardEffectSendToGYDestroy_080904EC: @ 0x080904EC
 	movs r0, #0
 	bx lr
 
-	thumb_func_start gCardEffectBottomlessShiftingSandCliffTheTrapRemoverCopycatDarkRulerVandalgyonDarkScorpionChickTheYellowDarkScorpionGorgTheStrongGearfriedTheIronKnightSwordsOfConcealingLightSwordsOfRevealingLight_080904F0
-gCardEffectBottomlessShiftingSandCliffTheTrapRemoverCopycatDarkRulerVandalgyonDarkScorpionChickTheYellowDarkScorpionGorgTheStrongGearfriedTheIronKnightSwordsOfConcealingLightSwordsOfRevealingLight_080904F0: @ 0x080904F0
+	@ Bottomless Shifting Sand
+	@ Cliff the Trap Remover
+	@ Copycat
+	@ Dark Ruler Vandalgyon
+	@ Dark Scorpion - Chick the Yellow
+	@ Dark Scorpion - Gorg the Strong
+	@ Gearfried the Iron Knight
+	@ Swords of Concealing Light
+	@ Swords of Revealing Light
+	thumb_func_start gCardEffectDestroyDamage_080904F0
+gCardEffectDestroyDamage_080904F0: @ 0x080904F0
 	movs r0, #2
 	bx lr
 
@@ -315549,7 +319163,7 @@ _080AF16C:
 	adds r0, r7, #0
 	adds r1, r6, #0
 	adds r2, r5, #0
-	bl gCardEffect7CompletedAmplifierArchfiendOfGilferArmedChangerAxeOfDespairBallistaOfRampartSmashingBeastFangsBigBangShotBlackPendantBlastWithChainBookOfSecretArtsBrainJackerBrightCastleBubbleBlasterBurningBeastBurningSpearBusterRancherButterflyDaggerElmaCestusOfDaglaChthonianAllianceCocoonOfEvolutionCyberShieldCyclonLaserCycloneBoomerangDarkEnergyDarkMagicianSTomeOfBlackMagicDarkNecrofearDemotionDesDendleDivineSwordPhoenixBladeDoitsuDragonTreasureDragonicAttackEkibyoDrakmordElectroWhipElfSLightFairyMeteorCrushFallingDownFlintFollowWindFreezingBeastFuhmaShurikenFusionSwordMurasameBladeFusionWeaponGermInfectionGravityAxeGrarlGustFanHeartOfClearWaterHeavyMechSupportPlatformHeroHeyroHornOfLightHornOfTheUnicornInsectArmorWithLaserCannonInvigorationKiryuKoitsuKunaiWithChainLaserCannonArmorLegendaryBlackBeltLegendarySwordLightningBladeMachineConversionFactoryMagePowerMagicalLabyrinthMalevolentNuzzlerMaskOfBrutalityMaskOfTheAccursedMaskedBeastDesGardiusMegamorphMetallizingParasiteLunatiteMetalmorphMetalsilverArmorMistobodyMysticalMoonNecklaceOfCommandNitroUnitOptiCamouflageArmorParalyzingPotionPitchDarkDragonPowerOfKaishinProtectiveSoulAilinRaiseBodyHeatRaregoldArmorRingOfMagnetismRitualWeaponRodOfSilenceKayEstRodOfTheMindSEyeSalamandraScrollOfBewitchmentSecondGoblinShootingStarBowCealSilverBowAndArrowSmokeGrenadeOfTheThiefSnatchStealSparkBlasterSteelShellStimPackSwordOfDarkDestructionSwordOfDeepSeatedSwordOfDragonSSoulSwordOfTheSoulEaterTrialOfThePrincessesTwinSwordsOfFlashingLightTryceUnitedWeStandVileGermsVioletCrystalWWingCatapultWickedBreakingFlambergeBaouYDragonHeadZMetalTankZombieTiger_0805000C
+	bl gCardEffectEquipBoostATK_0805000C
 	cmp r0, #0
 	bne _080AF17C
 	b _080AF2F8
@@ -315786,7 +319400,7 @@ _080AF324:
 	adds r0, r7, #0
 	adds r1, r6, #0
 	adds r2, r5, #0
-	bl gCardEffect7CompletedAmplifierArchfiendOfGilferArmedChangerAxeOfDespairBallistaOfRampartSmashingBeastFangsBigBangShotBlackPendantBlastWithChainBookOfSecretArtsBrainJackerBrightCastleBubbleBlasterBurningBeastBurningSpearBusterRancherButterflyDaggerElmaCestusOfDaglaChthonianAllianceCocoonOfEvolutionCyberShieldCyclonLaserCycloneBoomerangDarkEnergyDarkMagicianSTomeOfBlackMagicDarkNecrofearDemotionDesDendleDivineSwordPhoenixBladeDoitsuDragonTreasureDragonicAttackEkibyoDrakmordElectroWhipElfSLightFairyMeteorCrushFallingDownFlintFollowWindFreezingBeastFuhmaShurikenFusionSwordMurasameBladeFusionWeaponGermInfectionGravityAxeGrarlGustFanHeartOfClearWaterHeavyMechSupportPlatformHeroHeyroHornOfLightHornOfTheUnicornInsectArmorWithLaserCannonInvigorationKiryuKoitsuKunaiWithChainLaserCannonArmorLegendaryBlackBeltLegendarySwordLightningBladeMachineConversionFactoryMagePowerMagicalLabyrinthMalevolentNuzzlerMaskOfBrutalityMaskOfTheAccursedMaskedBeastDesGardiusMegamorphMetallizingParasiteLunatiteMetalmorphMetalsilverArmorMistobodyMysticalMoonNecklaceOfCommandNitroUnitOptiCamouflageArmorParalyzingPotionPitchDarkDragonPowerOfKaishinProtectiveSoulAilinRaiseBodyHeatRaregoldArmorRingOfMagnetismRitualWeaponRodOfSilenceKayEstRodOfTheMindSEyeSalamandraScrollOfBewitchmentSecondGoblinShootingStarBowCealSilverBowAndArrowSmokeGrenadeOfTheThiefSnatchStealSparkBlasterSteelShellStimPackSwordOfDarkDestructionSwordOfDeepSeatedSwordOfDragonSSoulSwordOfTheSoulEaterTrialOfThePrincessesTwinSwordsOfFlashingLightTryceUnitedWeStandVileGermsVioletCrystalWWingCatapultWickedBreakingFlambergeBaouYDragonHeadZMetalTankZombieTiger_0805000C
+	bl gCardEffectEquipBoostATK_0805000C
 	cmp r0, #0
 	bne _080AF2A8
 _080AF34C:
@@ -326821,7 +330435,7 @@ _080B4592:
 	strh r0, [r4, #0xc]
 	adds r0, r4, #0
 	adds r1, r6, #0
-	bl gCardEffectARivalAppearsBeiigeVanguardOfDarkWorldCobraJarDesDendleFiendSSanctuaryGravekeeperSSpyGuardianTryceHydrogeddonMultiplicationOfAntsRavielLordOfPhantasmsSillvaWarlordOfDarkWorldTheinenTheGreatSphinxWatapon_0805C218
+	bl gCardEffectSpecialSummon_0805C218
 	cmp r0, #0
 	beq _080B4606
 	ldrb r2, [r4, #2]
