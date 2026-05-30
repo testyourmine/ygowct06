@@ -44454,20 +44454,11 @@ gUnk_08510434:: @ 08510434
 gUnk_08510436:: @ 08510436
 	.incbin "baserom.gba", 0x510436, 0xA
 
-gUnk_08510440:: @ 08510440
-	.incbin "baserom.gba", 0x510440, 0xD
+gCardIconPalette0:: @ 08510440
+	.incbin "baserom.gba", 0x510440, 0x20
 
-gUnk_0851044D:: @ 0851044D
-	.incbin "baserom.gba", 0x51044D, 0x13
-
-gUnk_08510460:: @ 08510460
-	.incbin "baserom.gba", 0x510460, 0xB4
-
-gUnk_08510514:: @ 08510514
-	.incbin "baserom.gba", 0x510514, 0x4
-
-gUnk_08510518:: @ 08510518
-	.incbin "baserom.gba", 0x510518, 0x5C
+gCardIconPalettes:: @ 08510460
+	.incbin "baserom.gba", 0x510460, 0x100
 
 gUnk_08510574:: @ 08510574
 	.incbin "baserom.gba", 0x510574, 0xCC
@@ -76743,7 +76734,7 @@ gUnk_08FBB8D6:: @ 08FBB8D6
 gUnk_08FBBAE2:: @ 08FBBAE2
 	.incbin "baserom.gba", 0xFBBAE2, 0x59E
 
-gUnk_08FBC080:: @ 08FBC080
+gCardIconsLarge:: @ 08FBC080
 	.incbin "baserom.gba", 0xFBC080, 0x471
 
 gUnk_08FBC4F1:: @ 08FBC4F1
@@ -108693,7 +108684,7 @@ gUnk_09325442:: @ 09325442
 gUnk_09325E05:: @ 09325E05
 	.incbin "baserom.gba", 0x1325E05, 0x47B
 
-gUnk_09326280:: @ 09326280
+gCardIconsSmall:: @ 09326280
 	.incbin "baserom.gba", 0x1326280, 0x240
 
 gUnk_093264C0:: @ 093264C0
@@ -122682,7 +122673,7 @@ gUnk_09B0FFB7:: @ 09B0FFB7
 gUnk_09B10008:: @ 09B10008
 	.incbin "baserom.gba", 0x1B10008, 0x1A4
 
-gUnk_09B101AC:: @ 09B101AC
+gCoinFlipDuelistPalettes:: @ 09B101AC
 	.incbin "baserom.gba", 0x1B101AC, 0x654
 
 gUnk_09B10800:: @ 09B10800
@@ -122706,7 +122697,7 @@ gUnk_09B11CA8:: @ 09B11CA8
 gUnk_09B11FA8:: @ 09B11FA8
 	.incbin "baserom.gba", 0x1B11FA8, 0x64
 
-gUnk_09B1200C:: @ 09B1200C
+gCoinFlipDuelistTilesets:: @ 09B1200C
 	.incbin "baserom.gba", 0x1B1200C, 0x11B
 
 gUnk_09B12127:: @ 09B12127
@@ -122982,7 +122973,7 @@ gUnk_09B46E3A:: @ 09B46E3A
 gUnk_09B475EB:: @ 09B475EB
 	.incbin "baserom.gba", 0x1B475EB, 0xA21
 
-gUnk_09B4800C:: @ 09B4800C
+gCoinFlipDuelistTilemaps:: @ 09B4800C
 	.incbin "baserom.gba", 0x1B4800C, 0x14C
 
 gUnk_09B48158:: @ 09B48158
