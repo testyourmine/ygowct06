@@ -14325,7 +14325,7 @@ _080FC200:
 	lsls r5, r2, #0x10
 	lsrs r5, r5, #0x10
 	lsls r1, r1, #5
-	ldr r0, _080FC2CC @ =gUnk_09896290
+	ldr r0, _080FC2CC @ =gIconPals
 	adds r1, r1, r0
 	adds r0, r7, #0
 	movs r2, #0x20
@@ -14334,7 +14334,7 @@ _080FC200:
 	lsls r0, r4, #5
 	ldr r1, _080FC2D0 @ =0x06004000
 	adds r0, r0, r1
-	ldr r1, _080FC2D4 @ =gUnk_0988CF30
+	ldr r1, _080FC2D4 @ =gIconGraphics
 	ldr r3, [sp, #8]
 	adds r1, r3, r1
 	movs r2, #0x90
@@ -14413,9 +14413,9 @@ _080FC200:
 	.align 2, 0
 _080FC2C4: .4byte gUnk_09DC9F24
 _080FC2C8: .4byte 0x06004200
-_080FC2CC: .4byte gUnk_09896290
+_080FC2CC: .4byte gIconPals
 _080FC2D0: .4byte 0x06004000
-_080FC2D4: .4byte gUnk_0988CF30
+_080FC2D4: .4byte gIconGraphics
 _080FC2D8: .4byte 0x06000800
 _080FC2DC: .4byte 0x06000802
 _080FC2E0: .4byte 0x06000840

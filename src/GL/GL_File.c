@@ -16,14 +16,14 @@ extern struct Unk_02000000 gUnk_02000000;
 
 extern void gUnk_0200AF20;
 
-struct Unk_09E61178 {
+struct FileSystem {
     s32 unk_0;
     s32 unk_4;
     s32 unk_8;
     s32 unk_C;
     s32 unk_10;
 };
-extern struct Unk_09E61178 gUnk_09E61178;
+extern struct FileSystem gFileSystemHeader;
 
 #define GET_HEADER_REGION() (*(u16 *)0x080000AE >> 8)
 
@@ -150,11 +150,11 @@ void* GL_OpenFile(u8* filePathString, void *dest)
     u32* uncompFileData;
 
     filePath = filePathString;
-    fileCount = (void*)&gUnk_09E61178.unk_0;
-    filePathsTable = gUnk_09E61178.unk_4 + (void*)&gUnk_09E61178;
-    fileOffsetsTable = gUnk_09E61178.unk_8 + (void*)&gUnk_09E61178;
-    fileSizesTable = gUnk_09E61178.unk_C + (void*)&gUnk_09E61178;
-    fileDataTable = gUnk_09E61178.unk_10 + (void*)&gUnk_09E61178;
+    fileCount = (void*)&gFileSystemHeader.unk_0;
+    filePathsTable = gFileSystemHeader.unk_4 + (void*)&gFileSystemHeader;
+    fileOffsetsTable = gFileSystemHeader.unk_8 + (void*)&gFileSystemHeader;
+    fileSizesTable = gFileSystemHeader.unk_C + (void*)&gFileSystemHeader;
+    fileDataTable = gFileSystemHeader.unk_10 + (void*)&gFileSystemHeader;
     file = NULL;
 
     // when # is in the file path, replace it with the language

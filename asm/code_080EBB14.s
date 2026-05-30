@@ -896,7 +896,7 @@ sub_080EC294: @ 0x080EC294
 	adds r4, r0, #0
 	ldr r0, _080EC2C0 @ =0x05000240
 	lsls r1, r4, #5
-	ldr r2, _080EC2C4 @ =gUnk_09896290
+	ldr r2, _080EC2C4 @ =gIconPals
 	adds r1, r1, r2
 	movs r2, #0x20
 	bl MemoryCopyWord
@@ -904,7 +904,7 @@ sub_080EC294: @ 0x080EC294
 	lsls r1, r4, #3
 	adds r1, r1, r4
 	lsls r1, r1, #5
-	ldr r2, _080EC2CC @ =gUnk_0988CF30
+	ldr r2, _080EC2CC @ =gIconGraphics
 	adds r1, r1, r2
 	movs r2, #3
 	movs r3, #3
@@ -914,9 +914,9 @@ sub_080EC294: @ 0x080EC294
 	bx r0
 	.align 2, 0
 _080EC2C0: .4byte 0x05000240
-_080EC2C4: .4byte gUnk_09896290
+_080EC2C4: .4byte gIconPals
 _080EC2C8: .4byte 0x06011000
-_080EC2CC: .4byte gUnk_0988CF30
+_080EC2CC: .4byte gIconGraphics
 
 	thumb_func_start sub_080EC2D0
 sub_080EC2D0: @ 0x080EC2D0
@@ -1017,7 +1017,7 @@ _080EC376:
 	lsls r5, r2, #0x10
 	lsrs r5, r5, #0x10
 	lsls r1, r1, #5
-	ldr r0, _080EC4B8 @ =gUnk_09896290
+	ldr r0, _080EC4B8 @ =gIconPals
 	adds r1, r1, r0
 	adds r0, r7, #0
 	movs r2, #0x20
@@ -1026,7 +1026,7 @@ _080EC376:
 	lsls r0, r4, #5
 	ldr r1, _080EC4BC @ =0x06004000
 	adds r0, r0, r1
-	ldr r1, _080EC4C0 @ =gUnk_0988CF30
+	ldr r1, _080EC4C0 @ =gIconGraphics
 	add r1, r8
 	movs r2, #0x90
 	lsls r2, r2, #1
@@ -1161,9 +1161,9 @@ _080EC376:
 	.align 2, 0
 _080EC4B0: .4byte 0x0800FDB0
 _080EC4B4: .4byte 0x08010538
-_080EC4B8: .4byte gUnk_09896290
+_080EC4B8: .4byte gIconPals
 _080EC4BC: .4byte 0x06004000
-_080EC4C0: .4byte gUnk_0988CF30
+_080EC4C0: .4byte gIconGraphics
 _080EC4C4: .4byte 0x06000002
 _080EC4C8: .4byte 0x06000040
 _080EC4CC: .4byte 0x06000044

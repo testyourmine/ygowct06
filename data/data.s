@@ -43335,7 +43335,7 @@ gUnk_084C7670:: @ 084C7670
 gUnk_084C76B0:: @ 084C76B0
 	.incbin "baserom.gba", 0x4C76B0, 0x10
 
-gUnk_084C76C0:: @ 084C76C0
+gCardPalettes:: @ 084C76C0
 	.incbin "baserom.gba", 0x4C76C0, 0x701
 
 gUnk_084C7DC1:: @ 084C7DC1
@@ -44472,7 +44472,7 @@ gUnk_08510518:: @ 08510518
 gUnk_08510574:: @ 08510574
 	.incbin "baserom.gba", 0x510574, 0xCC
 
-gUnk_08510640:: @ 08510640
+gCardGraphics:: @ 08510640
 	.incbin "baserom.gba", 0x510640, 0x1EA
 
 gUnk_0851082A:: @ 0851082A
@@ -118566,7 +118566,7 @@ gUnk_0988CEF0:: @ 0988CEF0
 gUnk_0988CF07:: @ 0988CF07
 	.incbin "baserom.gba", 0x188CF07, 0x29
 
-gUnk_0988CF30:: @ 0988CF30
+gIconGraphics:: @ 0988CF30
 	.incbin "baserom.gba", 0x188CF30, 0xCEF
 
 gUnk_0988DC1F:: @ 0988DC1F
@@ -118620,7 +118620,7 @@ gUnk_098938FB:: @ 098938FB
 gUnk_09896001:: @ 09896001
 	.incbin "baserom.gba", 0x1896001, 0x28F
 
-gUnk_09896290:: @ 09896290
+gIconPals:: @ 09896290
 	.incbin "baserom.gba", 0x1896290, 0x2D0
 
 gUnk_09896560:: @ 09896560
