@@ -4711,8 +4711,8 @@ _08017C70: .4byte 0x00001007 @ Dragon Zombie
 _08017C74: .4byte 0x0000100C @ Mask of Darkness
 _08017C78: .4byte 0x00000322
 
-	thumb_func_start sub_08017C7C
-sub_08017C7C: @ 0x08017C7C
+	thumb_func_start gEngineEffectReturnToHandChangePosition_08017C7C
+gEngineEffectReturnToHandChangePosition_08017C7C: @ 0x08017C7C
 	push {lr}
 	ldr r1, _08017C90 @ =gUnk_02029250
 	cmp r0, #1
@@ -4839,8 +4839,8 @@ _08017D4E:
 	bx r0
 	.align 2, 0
 
-	thumb_func_start sub_08017D64
-sub_08017D64: @ 0x08017D64
+	thumb_func_start gEngineEffectReturnToHandChangePosition_08017D64
+gEngineEffectReturnToHandChangePosition_08017D64: @ 0x08017D64
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -4865,7 +4865,7 @@ sub_08017D64: @ 0x08017D64
 	asrs r6, r1, #0x1f
 	movs r1, #2
 	ands r6, r1
-	bl sub_08017C7C
+	bl gEngineEffectReturnToHandChangePosition_08017C7C
 	bl sub_08017798
 	str r5, [sp, #0x14]
 	bl GL_GetBg0ScreenBasePtr
@@ -5257,8 +5257,8 @@ _080180A6:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080180AC
-sub_080180AC: @ 0x080180AC
+	thumb_func_start gEngineEffectSearchReturnToHand_080180AC
+gEngineEffectSearchReturnToHand_080180AC: @ 0x080180AC
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -5414,7 +5414,7 @@ _080181F8:
 	ldrb r0, [r0]
 	lsls r0, r0, #0x1a
 	lsrs r0, r0, #0x1d
-	bl sub_08017D64
+	bl gEngineEffectReturnToHandChangePosition_08017D64
 	ldr r0, _08018240 @ =0x05000202
 	ldr r4, _08018244 @ =0x000002BE
 	adds r1, r7, r4
@@ -6254,8 +6254,8 @@ _08018878:
 	.align 2, 0
 _08018880: .4byte gUnk_09E3B0B0
 
-	thumb_func_start sub_08018884
-sub_08018884: @ 0x08018884
+	thumb_func_start gEngineEffectReturnToHandChangePosition_08018884
+gEngineEffectReturnToHandChangePosition_08018884: @ 0x08018884
 	push {lr}
 	ldr r2, _080188C4 @ =gUnk_02029250
 	movs r0, #0xc5
@@ -6311,7 +6311,7 @@ _080188DA:
 	strb r0, [r3]
 	lsls r0, r0, #0x1a
 	lsrs r0, r0, #0x1d
-	bl sub_08017D64
+	bl gEngineEffectReturnToHandChangePosition_08017D64
 	movs r0, #1
 	b _08018924
 _080188FC:
@@ -6347,8 +6347,8 @@ _08018932:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_08018938
-sub_08018938: @ 0x08018938
+	thumb_func_start gEngineEffectReturnToHandChangePosition_08018938
+gEngineEffectReturnToHandChangePosition_08018938: @ 0x08018938
 	push {r4, r5, r6, r7, lr}
 	sub sp, #4
 	ldr r6, _0801898C @ =gUnk_02029250
@@ -6523,7 +6523,7 @@ _08018A78:
 	ldrb r4, [r4]
 	lsls r0, r4, #0x1a
 	lsrs r0, r0, #0x1d
-	bl sub_08017D64
+	bl gEngineEffectReturnToHandChangePosition_08017D64
 _08018AA0:
 	movs r0, #0
 	bl sub_080F9AB4
@@ -6538,11 +6538,11 @@ _08018AA8:
 	ldrb r4, [r4]
 	lsls r0, r4, #0x1a
 	lsrs r0, r0, #0x1d
-	bl sub_08017D64
+	bl gEngineEffectReturnToHandChangePosition_08017D64
 	movs r0, #0
 	bl sub_080F9AB4
 _08018AC6:
-	bl sub_08018884
+	bl gEngineEffectReturnToHandChangePosition_08018884
 	cmp r0, #0
 	beq _08018AD0
 	b _08018CAA
@@ -6624,7 +6624,7 @@ _08018B54:
 	strb r0, [r4]
 	lsls r0, r0, #0x1a
 	lsrs r0, r0, #0x1d
-	bl sub_08017D64
+	bl gEngineEffectReturnToHandChangePosition_08017D64
 	ldrh r0, [r4]
 	lsls r1, r0, #0x16
 	lsrs r1, r1, #0x1c
@@ -6687,7 +6687,7 @@ _08018BCC:
 	strb r0, [r4]
 	lsls r0, r0, #0x1a
 	lsrs r0, r0, #0x1d
-	bl sub_08017D64
+	bl gEngineEffectReturnToHandChangePosition_08017D64
 	ldr r0, [r4]
 	lsls r0, r0, #0xe
 	lsrs r0, r0, #0x1c
@@ -6732,7 +6732,7 @@ _08018C3C:
 	strb r0, [r4]
 	lsls r0, r0, #0x1a
 	lsrs r0, r0, #0x1d
-	bl sub_08017D64
+	bl gEngineEffectReturnToHandChangePosition_08017D64
 	ldr r0, [r4]
 	lsls r0, r0, #0xe
 	lsrs r0, r0, #0x1c
@@ -6982,15 +6982,15 @@ sub_08018E30: @ 0x08018E30
 	.align 2, 0
 _08018E4C: .4byte gUnk_02029250
 
-	thumb_func_start sub_08018E50
-sub_08018E50: @ 0x08018E50
+	thumb_func_start gEngineEffectReturnToHandChangePosition_08018E50
+gEngineEffectReturnToHandChangePosition_08018E50: @ 0x08018E50
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
 	sub sp, #0xc
 	ldr r0, _08018F68 @ =gUnk_02029250
 	mov r8, r0
-	bl sub_08018938
+	bl gEngineEffectReturnToHandChangePosition_08018938
 	movs r0, #0
 	bl sub_08018254
 	bl sub_08017FE4
@@ -7667,7 +7667,7 @@ _080193DC:
 	ldrb r0, [r0]
 	lsls r0, r0, #0x1a
 	lsrs r0, r0, #0x1d
-	bl sub_08017D64
+	bl gEngineEffectReturnToHandChangePosition_08017D64
 	ldr r2, _08019488 @ =0x00000316
 	adds r1, r6, r2
 	movs r0, #0x3f
@@ -7722,8 +7722,8 @@ _08019488: .4byte 0x00000316
 _0801948C: .4byte 0x00000319
 _08019490: .4byte gUnk_09E587EC
 
-	thumb_func_start sub_08019494
-sub_08019494: @ 0x08019494
+	thumb_func_start gEngineEffectReturnToHandBoostATK_08019494
+gEngineEffectReturnToHandBoostATK_08019494: @ 0x08019494
 	push {r4, lr}
 	ldr r4, _080194AC @ =gUnk_02029250
 	ldr r1, _080194B0 @ =0x00000316
@@ -7739,7 +7739,7 @@ sub_08019494: @ 0x08019494
 _080194AC: .4byte gUnk_02029250
 _080194B0: .4byte 0x00000316
 _080194B4:
-	bl sub_08018E50
+	bl gEngineEffectReturnToHandChangePosition_08018E50
 	b _080194BE
 _080194BA:
 	bl gEngineEffectBoostATKBoostDEF_08018F7C
@@ -18310,8 +18310,8 @@ sub_0801E974: @ 0x0801E974
 	.align 2, 0
 _0801E980: .4byte gUnk_02001138
 
-	thumb_func_start sub_0801E984
-sub_0801E984: @ 0x0801E984
+	thumb_func_start gEngineEffectBoostATKBoostDEF_0801E984
+gEngineEffectBoostATKBoostDEF_0801E984: @ 0x0801E984
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -18402,7 +18402,7 @@ _0801EA26:
 	beq _0801EA38
 	b _0801EC50
 _0801EA38:
-	bl sub_08094DAC
+	bl gEngineEffectBoostATKBoostDEF_08094DAC
 	b _0801EB70
 	.align 2, 0
 _0801EA40: .4byte gUnk_0201F440
@@ -18544,7 +18544,7 @@ _0801EB48:
 	ldr r0, [r0, #4]
 	bl gEngineEffectBoostATKBoostDEF_08094750
 _0801EB6C:
-	bl sub_080CCDF4
+	bl gEngineEffectSpecialSummon_080CCDF4
 _0801EB70:
 	movs r0, #0
 	b _0801EC86
@@ -18593,7 +18593,7 @@ _0801EBCA:
 	strb r0, [r1]
 	ldr r0, _0801EC00 @ =gUnk_0201E2A0
 	ldr r0, [r0, #4]
-	bl sub_0803BC58
+	bl gEngineEffectSpecialSummon_0803BC58
 	cmp r0, #0
 	beq _0801EC0C
 	ldr r4, _0801EC04 @ =gUnk_03000040
@@ -18628,7 +18628,7 @@ _0801EC0C:
 _0801EC18:
 	strb r0, [r1]
 _0801EC1A:
-	bl sub_080CCDF4
+	bl gEngineEffectSpecialSummon_080CCDF4
 	ldr r1, _0801EC3C @ =gUnk_0201F440
 	movs r2, #1
 	adds r0, r2, #0
@@ -18659,7 +18659,7 @@ _0801EC50:
 _0801EC58: .4byte gUnk_02020160
 _0801EC5C: .4byte 0x00002F51
 _0801EC60:
-	bl sub_08094DAC
+	bl gEngineEffectBoostATKBoostDEF_08094DAC
 	cmp r0, #0
 	bne _0801EC6A
 	b _0801EB70
@@ -18690,8 +18690,8 @@ _0801EC90: .4byte gUnk_03000040
 _0801EC94: .4byte 0x00000213
 _0801EC98: .4byte 0x00000217
 
-	thumb_func_start sub_0801EC9C
-sub_0801EC9C: @ 0x0801EC9C
+	thumb_func_start gEngineEffectSpecialSummon_0801EC9C
+gEngineEffectSpecialSummon_0801EC9C: @ 0x0801EC9C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -18791,7 +18791,7 @@ _0801EDD0:
 	adds r0, r6, #0
 	adds r1, r7, #0
 	adds r2, r4, #0
-	bl sub_080C412C
+	bl gEngineEffectSpecialSummonDamage_080C412C
 	b _0801EDC2
 _0801EDDC:
 	adds r0, r6, #0
@@ -18811,10 +18811,10 @@ _0801EDE6:
 	lsrs r2, r2, #0x10
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_080C39FC
+	bl gEngineEffectSpecialSummonDamage_080C39FC
 	b _0801EDC2
 _0801EE06:
-	bl sub_080C8BF0
+	bl gEngineEffectSpecialSummonPreventAttack_080C8BF0
 	adds r0, r6, #0
 	bl sub_080C2840
 	b _0801EDC2
@@ -18843,7 +18843,7 @@ _0801EE36:
 	b _0801EDC2
 _0801EE40:
 	adds r0, r7, #0
-	bl sub_080CBF58
+	bl gEngineEffectSpecialSummonBoostATK_080CBF58
 	b _0801EF84
 _0801EE48:
 	bl sub_08096974
@@ -18874,7 +18874,7 @@ _0801EE78:
 	adds r0, r5, #0
 	adds r1, r4, #0
 	movs r2, #0
-	bl sub_08096B3C
+	bl gEngineEffectSpecialSummonSendToGY_08096B3C
 	mov r1, r8
 	ands r0, r1
 	cmp r0, #0
@@ -18899,7 +18899,7 @@ _0801EEAA:
 	adds r0, r5, #0
 	movs r1, #0xb
 	adds r2, r4, #0
-	bl sub_08096B3C
+	bl gEngineEffectSpecialSummonSendToGY_08096B3C
 	mov r1, r8
 	ands r0, r1
 	cmp r0, #0
@@ -18924,7 +18924,7 @@ _0801EEDC: .4byte 0x00000868
 _0801EEE0: .4byte gUnk_0201C4EC
 _0801EEE4:
 	adds r0, r6, #0
-	bl sub_080C8F48
+	bl gEngineEffectBoostATKBoostDEF_080C8F48
 	b _0801EDC2
 _0801EEEC:
 	ldr r2, _0801EF1C @ =gUnk_02023130
@@ -18943,9 +18943,9 @@ _0801EEEC:
 	adds r0, r0, r2
 	ldrh r1, [r0]
 	adds r0, r6, #0
-	bl sub_080C4220
+	bl gEngineEffectSpecialSummon_080C4220
 	bl sub_080C678C
-	bl sub_080CBF0C
+	bl gEngineEffectSpecialSummon_080CBF0C
 	b _0801EF60
 	.align 2, 0
 _0801EF1C: .4byte gUnk_02023130
@@ -18956,7 +18956,7 @@ _0801EF20:
 	adds r1, r1, r0
 	ldrh r1, [r1]
 	adds r0, r6, #0
-	bl sub_080C4220
+	bl gEngineEffectSpecialSummon_080C4220
 	b _0801EDC2
 	.align 2, 0
 _0801EF34: .4byte gUnk_02023130
@@ -18970,13 +18970,13 @@ _0801EF42:
 	adds r1, r7, #0
 	adds r2, r4, #0
 _0801EF48:
-	bl sub_080C6A20
+	bl gEngineEffectSpecialSummon_080C6A20
 	b _0801EDC2
 _0801EF4E:
-	bl sub_080CBF0C
-	bl sub_080C8D30
-	bl sub_080C8BF0
-	bl sub_080C8904
+	bl gEngineEffectSpecialSummon_080CBF0C
+	bl gEngineEffectSpecialSummonNegate_080C8D30
+	bl gEngineEffectSpecialSummonPreventAttack_080C8BF0
+	bl gEngineEffectSpecialSummon_080C8904
 	b _0801EDC2
 _0801EF60:
 	adds r0, r6, #0
@@ -18994,8 +18994,8 @@ _0801EF74:
 	movs r1, #0xb
 	adds r2, r4, #0
 _0801EF7A:
-	bl sub_080C6A20
-	bl sub_080C89E8
+	bl gEngineEffectSpecialSummon_080C6A20
+	bl gEngineEffectSpecialSummonSendToGY_080C89E8
 	b _0801EDC2
 _0801EF84:
 	movs r0, #0
@@ -19008,8 +19008,8 @@ _0801EF86:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_0801EF94
-sub_0801EF94: @ 0x0801EF94
+	thumb_func_start gEngineEffectSpecialSummon_0801EF94
+gEngineEffectSpecialSummon_0801EF94: @ 0x0801EF94
 	push {lr}
 	cmp r0, #0x3d
 	bls _0801EF9C
@@ -19092,7 +19092,7 @@ _0801F0A4:
 	ands r0, r1
 	cmp r0, #0
 	beq _0801F0BC
-	bl sub_080C4EDC
+	bl gEngineEffectSpecialSummon_080C4EDC
 	b _0801F234
 	.align 2, 0
 _0801F0B8: .4byte gUnk_02023110
@@ -19103,19 +19103,19 @@ _0801F0BC:
 	bne _0801F0C6
 	b _0801F232
 _0801F0C6:
-	bl sub_080C4350
+	bl gEngineEffectSpecialSummon_080C4350
 	b _0801F234
 _0801F0CC:
-	bl sub_080CCA80
+	bl gEngineEffectSpecialSummon_080CCA80
 	b _0801F234
 _0801F0D2:
-	bl sub_080BEA94
+	bl gEngineEffectSpecialSummonDamage_080BEA94
 	b _0801F234
 _0801F0D8:
-	bl sub_080C25AC
+	bl gEngineEffectSpecialSummon_080C25AC
 	b _0801F234
 _0801F0DE:
-	bl sub_080BF228
+	bl gEngineEffectSpecialSummon_080BF228
 	b _0801F234
 _0801F0E4:
 	ldr r0, _0801F0FC @ =gUnk_0201F440
@@ -19134,7 +19134,7 @@ _0801F0FC: .4byte gUnk_0201F440
 _0801F100: .4byte gUnk_02020160
 _0801F104: .4byte 0x00002F51
 _0801F108:
-	bl sub_080C3D20
+	bl gEngineEffectSpecialSummon_080C3D20
 	b _0801F234
 _0801F10E:
 	bl sub_080BF394
@@ -19228,25 +19228,25 @@ _0801F1C0:
 	bl sub_080BD870
 	b _0801F234
 _0801F1C6:
-	bl sub_080C0C70
+	bl gEngineEffectSpecialSummonChangePosition_080C0C70
 	b _0801F234
 _0801F1CC:
-	bl sub_080C0F38
+	bl gEngineEffectSpecialSummon_080C0F38
 	b _0801F234
 _0801F1D2:
-	bl sub_080C17D4
+	bl gEngineEffectSpecialSummonChangePosition_080C17D4
 	b _0801F234
 _0801F1D8:
-	bl sub_080C1448
+	bl gEngineEffectSpecialSummonChangePosition_080C1448
 	b _0801F234
 _0801F1DE:
-	bl sub_080C1AD0
+	bl gEngineEffectSpecialSummonDamage_080C1AD0
 	b _0801F234
 _0801F1E4:
-	bl sub_080C3080
+	bl gEngineEffectSpecialSummonPreventAttack_080C3080
 	b _0801F234
 _0801F1EA:
-	bl sub_080C2ACC
+	bl gEngineEffectSpecialSummon_080C2ACC
 	b _0801F234
 _0801F1F0:
 	bl sub_080C07E4
@@ -19261,16 +19261,16 @@ _0801F202:
 	bl sub_080BF5A0
 	b _0801F234
 _0801F208:
-	bl sub_080BCBD4
+	bl gEngineEffectSpecialSummonDamage_080BCBD4
 	b _0801F234
 _0801F20E:
-	bl sub_080BC918
+	bl gEngineEffectSpecialSummonDamage_080BC918
 	b _0801F234
 _0801F214:
-	bl sub_080BC880
+	bl gEngineEffectSpecialSummonDamage_080BC880
 	b _0801F234
 _0801F21A:
-	bl sub_080BEFC0
+	bl gEngineEffectSpecialSummonChangePosition_080BEFC0
 	b _0801F234
 _0801F220:
 	bl sub_080C1E9C
@@ -19770,7 +19770,7 @@ _0801F5E0: .4byte gUnk_02023360
 _0801F5E4: .4byte 0x00000203
 _0801F5E8: .4byte 0xFFFFC03F
 _0801F5EC:
-	bl sub_0802E918
+	bl gEngineEffectSpecialSummon_0802E918
 	cmp r0, #0
 	bne _0801F5F8
 	bl _0801FEAC
@@ -19783,7 +19783,7 @@ _0801F5F8:
 _0801F604: .4byte gUnk_03000040
 _0801F608: .4byte 0x00000202
 _0801F60C:
-	bl sub_0802D4BC
+	bl gEngineEffectSpecialSummon_0802D4BC
 	cmp r0, #0
 	bne _0801F618
 	bl _0801FEAC
@@ -19931,7 +19931,7 @@ _0801F72C: .4byte gUnk_09DC8830
 _0801F730: .4byte gUnk_03000040
 _0801F734: .4byte 0x00000202
 _0801F738:
-	bl sub_0802E108
+	bl gEngineEffectSpecialSummon_0802E108
 	cmp r0, #0
 	bne _0801F744
 	bl _0801FEAC
@@ -20253,7 +20253,7 @@ _0801F9B8: .4byte gUnk_03000040
 _0801F9BC: .4byte 0x00000202
 _0801F9C0: .4byte 0xFFFFC03F
 _0801F9C4:
-	bl sub_0802E108
+	bl gEngineEffectSpecialSummon_0802E108
 	cmp r0, #0
 	bne _0801F9CE
 	b _0801FEAC
@@ -20266,7 +20266,7 @@ _0801F9CE:
 _0801F9D8: .4byte gUnk_03000040
 _0801F9DC: .4byte 0x00000202
 _0801F9E0:
-	bl sub_0802E938
+	bl gEngineEffectSpecialSummon_0802E938
 	cmp r0, #0
 	bne _0801F9EA
 	b _0801FEAC
@@ -20358,7 +20358,7 @@ _0801F9EA:
 	adds r1, r1, r0
 	movs r0, #1
 	bl sub_0801E7CC
-	bl sub_08093660
+	bl gEngineEffectSpecialSummon_08093660
 	ldr r0, _0801FB0C @ =0x00004E2C
 	mov r2, r8
 	ldrh r2, [r2]
@@ -20378,7 +20378,7 @@ _0801FAC2:
 	ldrb r5, [r1]
 	ands r0, r5
 	strb r0, [r1]
-	bl sub_080CC904
+	bl gEngineEffectSpecialSummonDamage_080CC904
 	ldr r0, _0801FB18 @ =0xFFFFFC03
 	ldrh r1, [r7]
 	ands r0, r1
@@ -20488,7 +20488,7 @@ _0801FBC2:
 	movs r0, #0
 	bl gEngineEffectBoostATKBoostDEF_08094750
 _0801FBD4:
-	bl sub_0801E984
+	bl gEngineEffectBoostATKBoostDEF_0801E984
 	cmp r0, #0
 	bne _0801FBDE
 	b _0801FEAC
@@ -20810,7 +20810,7 @@ _0801FE54:
 _0801FE74: .4byte gUnk_02023360
 _0801FE78: .4byte gUnk_0201E2A0
 _0801FE7C:
-	bl sub_0802E938
+	bl gEngineEffectSpecialSummon_0802E938
 	cmp r0, #0
 	beq _0801FEAC
 	movs r1, #0x80
@@ -20955,8 +20955,8 @@ _0801FF1C:
 	ldr r0, [r0]
 	movs r1, #0
 	bl GL_OpenFile
-	bl sub_080937D4
-	bl sub_080CC904
+	bl gEngineEffectSpecialSummon_080937D4
+	bl gEngineEffectSpecialSummonDamage_080CC904
 	ldr r0, _08020010 @ =0xFFFFFC03
 	mov r3, r8
 	ldrh r3, [r3]
@@ -21002,7 +21002,7 @@ _0802001C:
 _08020026:
 	b _0802023E
 _08020028:
-	bl sub_0801E984
+	bl gEngineEffectBoostATKBoostDEF_0801E984
 	cmp r0, #0
 	bne _08020032
 	b _080202EC
@@ -21588,7 +21588,7 @@ _08020518: .4byte gUnk_02023360
 _0802051C: .4byte gUnk_03000040
 _08020520: .4byte 0x00000203
 _08020524:
-	bl sub_0802E918
+	bl gEngineEffectSpecialSummon_0802E918
 	cmp r0, #0
 	bne _08020530
 	bl _08020D7C
@@ -21601,7 +21601,7 @@ _08020530:
 _0802053C: .4byte gUnk_03000040
 _08020540: .4byte 0x00000202
 _08020544:
-	bl sub_0802D4BC
+	bl gEngineEffectSpecialSummon_0802D4BC
 	cmp r0, #0
 	bne _08020550
 	bl _08020D7C
@@ -21749,7 +21749,7 @@ _08020664: .4byte gUnk_09DC8830
 _08020668: .4byte gUnk_03000040
 _0802066C: .4byte 0x00000202
 _08020670:
-	bl sub_0802E108
+	bl gEngineEffectSpecialSummon_0802E108
 	cmp r0, #0
 	bne _0802067A
 	b _08020D7C
@@ -22199,7 +22199,7 @@ _080209E8: .4byte gUnk_09DC8830
 _080209EC: .4byte gUnk_03000040
 _080209F0: .4byte 0x00000202
 _080209F4:
-	bl sub_0802E108
+	bl gEngineEffectSpecialSummon_0802E108
 	cmp r0, #0
 	bne _080209FE
 	b _08020D7C
@@ -22212,7 +22212,7 @@ _080209FE:
 _08020A08: .4byte gUnk_03000040
 _08020A0C: .4byte 0x00000202
 _08020A10:
-	bl sub_0802E938
+	bl gEngineEffectSpecialSummon_0802E938
 	cmp r0, #0
 	bne _08020A1A
 	b _08020D7C
@@ -22300,7 +22300,7 @@ _08020A1A:
 	adds r1, r1, r0
 	movs r0, #1
 	bl sub_0801E7CC
-	bl sub_08093660
+	bl gEngineEffectSpecialSummon_08093660
 	ldr r1, _08020B3C @ =gUnk_0201C4E0
 	ldr r0, _08020B40 @ =gUnk_02029590
 	movs r3, #0x93
@@ -22308,7 +22308,7 @@ _08020A1A:
 	adds r0, r0, r3
 	ldr r0, [r0]
 	str r0, [r1]
-	bl sub_080CC904
+	bl gEngineEffectSpecialSummonDamage_080CC904
 	ldr r0, _08020B44 @ =0xFFFFFC03
 	mov r4, sb
 	ldrh r4, [r4]
@@ -22363,7 +22363,7 @@ _08020B5A:
 _08020B64: .4byte gUnk_03000040
 _08020B68: .4byte 0x00000202
 _08020B6C:
-	bl sub_0801E984
+	bl gEngineEffectBoostATKBoostDEF_0801E984
 	cmp r0, #0
 	bne _08020B76
 	b _08020D7C
@@ -26682,7 +26682,7 @@ _08022FD0: .4byte gUnk_02023360
 _08022FD4: .4byte 0x00000203
 _08022FD8: .4byte 0xFFFFC03F
 _08022FDC:
-	bl sub_0802E918
+	bl gEngineEffectSpecialSummon_0802E918
 	cmp r0, #0
 	beq _08022F9A
 	ldr r2, _08023004 @ =gUnk_03000040
@@ -26705,7 +26705,7 @@ _08023004: .4byte gUnk_03000040
 _08023008: .4byte 0x00000202
 _0802300C: .4byte 0xFFFFC03F
 _08023010:
-	bl sub_0802D4BC
+	bl gEngineEffectSpecialSummon_0802D4BC
 	cmp r0, #0
 	beq _08022F9A
 	ldr r0, _08023040 @ =gUnk_02000000
@@ -26863,7 +26863,7 @@ _08023148: .4byte gUnk_03000040
 _0802314C: .4byte 0x00000202
 _08023150: .4byte 0xFFFFC03F
 _08023154:
-	bl sub_0802E108
+	bl gEngineEffectSpecialSummon_0802E108
 	cmp r0, #0
 	bne _0802315E
 	b _08022F9A
@@ -27185,7 +27185,7 @@ _080233D0: .4byte gUnk_03000040
 _080233D4: .4byte 0x00000202
 _080233D8: .4byte 0xFFFFC03F
 _080233DC:
-	bl sub_0802E108
+	bl gEngineEffectSpecialSummon_0802E108
 	cmp r0, #0
 	bne _080233E6
 	b _08022F9A
@@ -27210,7 +27210,7 @@ _08023404: .4byte gUnk_03000040
 _08023408: .4byte 0x00000202
 _0802340C: .4byte 0xFFFFC03F
 _08023410:
-	bl sub_0802E938
+	bl gEngineEffectSpecialSummon_0802E938
 	cmp r0, #0
 	bne _0802341A
 	b _08022F9A
@@ -27299,8 +27299,8 @@ _0802341A:
 	adds r1, r1, r0
 	movs r0, #1
 	bl sub_0801E7CC
-	bl sub_08093660
-	bl sub_080CC904
+	bl gEngineEffectSpecialSummon_08093660
+	bl gEngineEffectSpecialSummonDamage_080CC904
 	bl sub_080E3258
 	adds r1, r0, #0
 	ldr r2, _08023548 @ =gUnk_02029590
@@ -27376,7 +27376,7 @@ _08023580: .4byte gUnk_03000040
 _08023584: .4byte 0x00000202
 _08023588: .4byte 0xFFFFC03F
 _0802358C:
-	bl sub_0801E984
+	bl gEngineEffectBoostATKBoostDEF_0801E984
 	cmp r0, #0
 	bne _08023596
 	b _08022F9A
@@ -27714,7 +27714,7 @@ _08023840:
 	movs r0, #0
 	b _08023868
 _08023844:
-	bl sub_0802E938
+	bl gEngineEffectSpecialSummon_0802E938
 	cmp r0, #0
 	bne _08023850
 	bl _08022F9A
@@ -34398,7 +34398,7 @@ _08026E5C: .4byte 0x00000203
 _08026E60: .4byte 0x00000202
 _08026E64: .4byte 0xFFFFC03F
 _08026E68:
-	bl sub_0802E918
+	bl gEngineEffectSpecialSummon_0802E918
 	cmp r0, #0
 	bne _08026E72
 	b _08026714
@@ -34423,7 +34423,7 @@ _08026E90: .4byte gUnk_03000040
 _08026E94: .4byte 0x00000202
 _08026E98: .4byte 0xFFFFC03F
 _08026E9C:
-	bl sub_0802D4BC
+	bl gEngineEffectSpecialSummon_0802D4BC
 	cmp r0, #0
 	bne _08026EA6
 	b _08026714
@@ -34583,7 +34583,7 @@ _08026FD8: .4byte gUnk_03000040
 _08026FDC: .4byte 0x00000202
 _08026FE0: .4byte 0xFFFFC03F
 _08026FE4:
-	bl sub_0802E108
+	bl gEngineEffectSpecialSummon_0802E108
 	cmp r0, #0
 	bne _08026FF0
 	bl _08026714
@@ -34913,7 +34913,7 @@ _08027270: .4byte gUnk_03000040
 _08027274: .4byte 0x00000202
 _08027278: .4byte 0xFFFFC03F
 _0802727C:
-	bl sub_0802E938
+	bl gEngineEffectSpecialSummon_0802E938
 	cmp r0, #0
 	bne _08027288
 	bl _08026714
@@ -35207,7 +35207,7 @@ _080274E8: .4byte gUnk_03000040
 _080274EC: .4byte 0x00000202
 _080274F0: .4byte 0xFFFFC03F
 _080274F4:
-	bl sub_0802E108
+	bl gEngineEffectSpecialSummon_0802E108
 	cmp r0, #0
 	bne _08027500
 	bl _08026714
@@ -35232,7 +35232,7 @@ _08027520: .4byte gUnk_03000040
 _08027524: .4byte 0x00000202
 _08027528: .4byte 0xFFFFC03F
 _0802752C:
-	bl sub_0802E938
+	bl gEngineEffectSpecialSummon_0802E938
 	cmp r0, #0
 	bne _08027538
 	bl _08026714
@@ -35378,8 +35378,8 @@ _08027658:
 	movs r0, #1
 	bl sub_0801E850
 _08027672:
-	bl sub_08093660
-	bl sub_080CC904
+	bl gEngineEffectSpecialSummon_08093660
+	bl gEngineEffectSpecialSummonDamage_080CC904
 	ldr r4, _080276C4 @ =gUnk_02023130
 	ldr r0, _080276C8 @ =gUnk_02023360
 	ldrb r0, [r0, #2]
@@ -35447,7 +35447,7 @@ _08027708: .4byte gUnk_03000040
 _0802770C: .4byte 0x00000202
 _08027710: .4byte 0xFFFFC03F
 _08027714:
-	bl sub_0801E984
+	bl gEngineEffectBoostATKBoostDEF_0801E984
 	cmp r0, #0
 	bne _08027720
 	bl _08026714
@@ -38178,8 +38178,8 @@ _08028D36:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_08028D40
-sub_08028D40: @ 0x08028D40
+	thumb_func_start gEngineEffectSpecialSummonDestroy_08028D40
+gEngineEffectSpecialSummonDestroy_08028D40: @ 0x08028D40
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -40190,7 +40190,7 @@ _08029FCC: .4byte gUnk_03000040
 _08029FD0: .4byte 0x00000202
 _08029FD4: .4byte 0xFFFFC03F
 _08029FD8:
-	bl sub_0802E918
+	bl gEngineEffectSpecialSummon_0802E918
 	cmp r0, #0
 	bne _08029FE2
 	b _08029BB2
@@ -40215,7 +40215,7 @@ _0802A000: .4byte gUnk_03000040
 _0802A004: .4byte 0x00000202
 _0802A008: .4byte 0xFFFFC03F
 _0802A00C:
-	bl sub_0802D4BC
+	bl gEngineEffectSpecialSummon_0802D4BC
 	cmp r0, #0
 	bne _0802A016
 	b _0802A19C
@@ -40441,7 +40441,7 @@ _0802A1C0: .4byte gUnk_03000040
 _0802A1C4: .4byte 0x00000202
 _0802A1C8: .4byte 0xFFFFC03F
 _0802A1CC:
-	bl sub_0802E108
+	bl gEngineEffectSpecialSummon_0802E108
 	cmp r0, #0
 	bne _0802A1D6
 	b _0802A3B0
@@ -40707,7 +40707,7 @@ _0802A3D8: .4byte gUnk_03000040
 _0802A3DC: .4byte 0x00000202
 _0802A3E0: .4byte 0xFFFFC03F
 _0802A3E4:
-	bl sub_0802E108
+	bl gEngineEffectSpecialSummon_0802E108
 	cmp r0, #0
 	beq _0802A40C
 	ldr r2, _0802A430 @ =gUnk_03000040
@@ -40746,7 +40746,7 @@ _0802A430: .4byte gUnk_03000040
 _0802A434: .4byte 0x00000202
 _0802A438: .4byte 0xFFFFC03F
 _0802A43C:
-	bl sub_0802E938
+	bl gEngineEffectSpecialSummon_0802E938
 	cmp r0, #0
 	beq _0802A492
 	movs r0, #0x80
@@ -40857,16 +40857,16 @@ _0802A4F4:
 	ands r0, r3
 	cmp r0, #0
 	beq _0802A544
-	bl sub_08093780
+	bl gEngineEffectSpecialSummon_08093780
 	b _0802A548
 	.align 2, 0
 _0802A538: .4byte gUnk_02023130
 _0802A53C: .4byte gUnk_02023360
 _0802A540: .4byte 0x00000213
 _0802A544:
-	bl sub_08093660
+	bl gEngineEffectSpecialSummon_08093660
 _0802A548:
-	bl sub_080CC904
+	bl gEngineEffectSpecialSummonDamage_080CC904
 	ldr r2, _0802A56C @ =gUnk_02023130
 	movs r0, #0x88
 	lsls r0, r0, #2
@@ -40956,7 +40956,7 @@ _0802A5B4:
 	ands r2, r7
 	strb r2, [r5]
 _0802A60A:
-	bl sub_0801E984
+	bl gEngineEffectBoostATKBoostDEF_0801E984
 	cmp r0, #0
 	bne _0802A616
 	bl _08029BB2
@@ -41699,7 +41699,7 @@ _0802AC44:
 _0802AC4C: .4byte 0x00000202
 _0802AC50: .4byte 0xFFFFC03F
 _0802AC54:
-	bl sub_0802D4BC
+	bl gEngineEffectSpecialSummon_0802D4BC
 	cmp r0, #0
 	bne _0802AC60
 	bl _08029BB2
@@ -45703,8 +45703,8 @@ _0802CC4A:
 _0802CC60: .4byte 0x06001080
 _0802CC64: .4byte 0x06008020
 
-	thumb_func_start sub_0802CC68
-sub_0802CC68: @ 0x0802CC68
+	thumb_func_start gEngineEffectSpecialSummonDestroy_0802CC68
+gEngineEffectSpecialSummonDestroy_0802CC68: @ 0x0802CC68
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	ldr r1, _0802CC78 @ =0xFFFFD8EF
@@ -46677,10 +46677,10 @@ sub_0802D48C: @ 0x0802D48C
 _0802D4B4: .4byte gUnk_03000040
 _0802D4B8: .4byte gUnk_02023360
 
-	thumb_func_start sub_0802D4BC
-sub_0802D4BC: @ 0x0802D4BC
+	thumb_func_start gEngineEffectSpecialSummon_0802D4BC
+gEngineEffectSpecialSummon_0802D4BC: @ 0x0802D4BC
 	push {r4, r5, r6, lr}
-	bl sub_0802DFB8
+	bl gEngineEffectSpecialSummon_0802DFB8
 	ldr r0, _0802D4DC @ =gUnk_02023360
 	adds r4, r0, #0
 	adds r4, #0x61
@@ -47992,8 +47992,8 @@ _0802DFAC: .4byte 0x00008001
 _0802DFB0: .4byte 0x06014200
 _0802DFB4: .4byte 0x06014600
 
-	thumb_func_start sub_0802DFB8
-sub_0802DFB8: @ 0x0802DFB8
+	thumb_func_start gEngineEffectSpecialSummon_0802DFB8
+gEngineEffectSpecialSummon_0802DFB8: @ 0x0802DFB8
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -48151,10 +48151,10 @@ _0802E0FC: .4byte 0x0000388C
 _0802E100: .4byte 0x00002888
 _0802E104: .4byte 0x000040C0
 
-	thumb_func_start sub_0802E108
-sub_0802E108: @ 0x0802E108
+	thumb_func_start gEngineEffectSpecialSummon_0802E108
+gEngineEffectSpecialSummon_0802E108: @ 0x0802E108
 	push {r4, r5, r6, lr}
-	bl sub_0802DFB8
+	bl gEngineEffectSpecialSummon_0802DFB8
 	ldr r4, _0802E144 @ =gUnk_02023360
 	movs r0, #0x3b
 	adds r0, r0, r4
@@ -49196,10 +49196,10 @@ _0802E90E:
 	.align 2, 0
 _0802E914: .4byte gUnk_02023360
 
-	thumb_func_start sub_0802E918
-sub_0802E918: @ 0x0802E918
+	thumb_func_start gEngineEffectSpecialSummon_0802E918
+gEngineEffectSpecialSummon_0802E918: @ 0x0802E918
 	push {lr}
-	bl sub_0802DFB8
+	bl gEngineEffectSpecialSummon_0802DFB8
 	movs r2, #0x80
 	lsls r2, r2, #0x13
 	ldrh r0, [r2]
@@ -49213,10 +49213,10 @@ sub_0802E918: @ 0x0802E918
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_0802E938
-sub_0802E938: @ 0x0802E938
+	thumb_func_start gEngineEffectSpecialSummon_0802E938
+gEngineEffectSpecialSummon_0802E938: @ 0x0802E938
 	push {lr}
-	bl sub_0802DFB8
+	bl gEngineEffectSpecialSummon_0802DFB8
 	movs r0, #4
 	bl sub_080F5840
 	cmp r0, #0
@@ -49358,8 +49358,8 @@ _0802EA30: .4byte 0x00000868
 _0802EA34: .4byte 0x000010E6 @ Stop Defense
 _0802EA38: .4byte 0x000014EE @ De-Spell Germ Weapon
 
-	thumb_func_start sub_0802EA3C
-sub_0802EA3C: @ 0x0802EA3C
+	thumb_func_start gEngineEffectSendToGYGraveyard_0802EA3C
+gEngineEffectSendToGYGraveyard_0802EA3C: @ 0x0802EA3C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -49433,8 +49433,8 @@ _0802EABC: .4byte 0x00000868
 _0802EAC0: .4byte gUnk_0201C510
 _0802EAC4: .4byte gUnk_0201D9C0
 
-	thumb_func_start sub_0802EAC8
-sub_0802EAC8: @ 0x0802EAC8
+	thumb_func_start gEngineEffectSearchSendToGY_0802EAC8
+gEngineEffectSearchSendToGY_0802EAC8: @ 0x0802EAC8
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -49493,8 +49493,8 @@ _0802EB30: .4byte gUnk_0201D9C0
 _0802EB34: .4byte 0x00000868
 _0802EB38: .4byte 0xFFFFEB50
 
-	thumb_func_start sub_0802EB3C
-sub_0802EB3C: @ 0x0802EB3C
+	thumb_func_start gEngineEffectSearchSendToGY_0802EB3C
+gEngineEffectSearchSendToGY_0802EB3C: @ 0x0802EB3C
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -49539,8 +49539,8 @@ _0802EB72:
 _0802EB8C: .4byte gUnk_0201D9C0
 _0802EB90: .4byte 0xFFFFFC02
 
-	thumb_func_start sub_0802EB94
-sub_0802EB94: @ 0x0802EB94
+	thumb_func_start gEngineEffectSendToGYGraveyard_0802EB94
+gEngineEffectSendToGYGraveyard_0802EB94: @ 0x0802EB94
 	push {r4, r5, lr}
 	ldrh r1, [r0, #0xa]
 	cmp r1, #0
@@ -49562,8 +49562,8 @@ _0802EBB0:
 	.align 2, 0
 _0802EBB8: .4byte gUnk_0201D9C0
 
-	thumb_func_start sub_0802EBBC
-sub_0802EBBC: @ 0x0802EBBC
+	thumb_func_start gEngineEffectSendToGYGraveyard_0802EBBC
+gEngineEffectSendToGYGraveyard_0802EBBC: @ 0x0802EBBC
 	push {r4, r5, r6, lr}
 	adds r6, r2, #0
 	lsls r1, r1, #0x10
@@ -49599,8 +49599,8 @@ _0802EBF2:
 	.align 2, 0
 _0802EBF8: .4byte gUnk_0201D9C0
 
-	thumb_func_start sub_0802EBFC
-sub_0802EBFC: @ 0x0802EBFC
+	thumb_func_start gEngineEffectSendToGYGraveyard_0802EBFC
+gEngineEffectSendToGYGraveyard_0802EBFC: @ 0x0802EBFC
 	push {r4, r5, r6, lr}
 	adds r6, r2, #0
 	lsls r1, r1, #0x10
@@ -49636,8 +49636,8 @@ _0802EC32:
 	.align 2, 0
 _0802EC38: .4byte gUnk_0201D9C0
 
-	thumb_func_start sub_0802EC3C
-sub_0802EC3C: @ 0x0802EC3C
+	thumb_func_start gEngineEffectSendToGYGraveyard_0802EC3C
+gEngineEffectSendToGYGraveyard_0802EC3C: @ 0x0802EC3C
 	push {r4, r5, r6, r7, lr}
 	adds r7, r2, #0
 	adds r6, r3, #0
@@ -49867,8 +49867,8 @@ _0802EDE4: .4byte gUnk_0201C4E0
 _0802EDE8: .4byte 0x000010E2 @ Electro-Whip (None)
 _0802EDEC: .4byte gUnk_0201D9C0
 
-	thumb_func_start sub_0802EDF0
-sub_0802EDF0: @ 0x0802EDF0
+	thumb_func_start gEngineEffectSendToGYGraveyard_0802EDF0
+gEngineEffectSendToGYGraveyard_0802EDF0: @ 0x0802EDF0
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -50214,7 +50214,7 @@ _0802F074:
 	ldrh r0, [r0, #0xa]
 	lsrs r1, r6, #0x10
 	movs r2, #1
-	bl sub_0802EBBC
+	bl gEngineEffectSendToGYGraveyard_0802EBBC
 	adds r4, #0x14
 	subs r5, #1
 	cmp r5, #0
@@ -50636,8 +50636,8 @@ sub_0802F394: @ 0x0802F394
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_0802F3A8
-sub_0802F3A8: @ 0x0802F3A8
+	thumb_func_start gEngineEffectSpecialSummonDestroy_0802F3A8
+gEngineEffectSpecialSummonDestroy_0802F3A8: @ 0x0802F3A8
 	push {r4, r5, r6, lr}
 	mov r6, r8
 	push {r6}
@@ -50664,8 +50664,8 @@ sub_0802F3A8: @ 0x0802F3A8
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_0802F3E0
-sub_0802F3E0: @ 0x0802F3E0
+	thumb_func_start gEngineEffectSpecialSummonDestroy_0802F3E0
+gEngineEffectSpecialSummonDestroy_0802F3E0: @ 0x0802F3E0
 	push {r4, r5, r6, r7, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -50692,7 +50692,7 @@ _0802F408:
 	lsrs r2, r2, #0x1f
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_08036658
+	bl gEngineEffectSpecialSummonDestroy_08036658
 _0802F41A:
 	cmp r0, #0
 	beq _0802F422
@@ -51496,8 +51496,8 @@ _0802F9E8:
 	.align 2, 0
 _0802F9F8: .4byte 0x0000FFFF
 
-	thumb_func_start sub_0802F9FC
-sub_0802F9FC: @ 0x0802F9FC
+	thumb_func_start gEngineEffectDestroyDamage_0802F9FC
+gEngineEffectDestroyDamage_0802F9FC: @ 0x0802F9FC
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -53590,7 +53590,7 @@ _08030850:
 	lsrs r1, r1, #0x1f
 	movs r0, #1
 	subs r0, r0, r1
-	bl sub_08033B08
+	bl gEngineEffectSpecialSummonChangePosition_08033B08
 	cmp r0, #0
 	beq _08030884
 	movs r0, #6
@@ -53792,8 +53792,8 @@ _080309B0:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080309B8
-sub_080309B8: @ 0x080309B8
+	thumb_func_start gEngineEffectSpecialSummonChangePosition_080309B8
+gEngineEffectSpecialSummonChangePosition_080309B8: @ 0x080309B8
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r1, #0
@@ -53830,8 +53830,8 @@ _080309F6:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080309FC
-sub_080309FC: @ 0x080309FC
+	thumb_func_start gEngineEffectBoostATKBoostDEF_080309FC
+gEngineEffectBoostATKBoostDEF_080309FC: @ 0x080309FC
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r2, _08030A24 @ =0x00001407 (Cold Wave)
@@ -53843,7 +53843,7 @@ sub_080309FC: @ 0x080309FC
 	movs r1, #1
 	rsbs r1, r1, #0
 	adds r0, r4, #0
-	bl sub_08034298
+	bl gEngineEffectBoostATKBoostDEF_08034298
 	cmp r0, #0
 	bne _08030A28
 	adds r0, r4, #0
@@ -53976,8 +53976,8 @@ _08030B06:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_08030B0C
-sub_08030B0C: @ 0x08030B0C
+	thumb_func_start gEngineEffectSpecialSummonChangePosition_08030B0C
+gEngineEffectSpecialSummonChangePosition_08030B0C: @ 0x08030B0C
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
@@ -54210,8 +54210,8 @@ _08030CB4: .4byte gUnk_0201C510
 _08030CB8: .4byte 0x00001CB4
 _08030CBC: .4byte 0x000010B1 @ Unknown Warrior of Fiend
 
-	thumb_func_start sub_08030CC0
-sub_08030CC0: @ 0x08030CC0
+	thumb_func_start gEngineEffectSearchSendToGY_08030CC0
+gEngineEffectSearchSendToGY_08030CC0: @ 0x08030CC0
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -54332,7 +54332,7 @@ _08030DB0:
 	adds r0, r7, #0
 	adds r1, r6, #0
 	adds r3, r4, #0
-	bl sub_0802EAC8
+	bl gEngineEffectSearchSendToGY_0802EAC8
 _08030DBE:
 	add sp, #4
 	pop {r3, r4, r5}
@@ -55155,14 +55155,14 @@ _080313B2:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080313B8
-sub_080313B8: @ 0x080313B8
+	thumb_func_start gEngineEffectSpecialSummon_080313B8
+gEngineEffectSpecialSummon_080313B8: @ 0x080313B8
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, [r4]
 	lsls r0, r0, #0x13
 	lsrs r0, r0, #0x13
-	bl sub_0804BA58
+	bl gEngineEffectSpecialSummon_0804BA58
 	cmp r0, #0
 	bne _080313CE
 	movs r0, #1
@@ -55177,8 +55177,8 @@ _080313D4:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080313DC
-sub_080313DC: @ 0x080313DC
+	thumb_func_start gEngineEffectDestroyStandbyPhase_080313DC
+gEngineEffectDestroyStandbyPhase_080313DC: @ 0x080313DC
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r4, r1, #0
@@ -55278,8 +55278,8 @@ sub_08031474: @ 0x08031474
 _08031494: .4byte gEngineEffectDestroyEndPhase_08031454
 _08031498: .4byte 0x0000FFFF
 
-	thumb_func_start sub_0803149C
-sub_0803149C: @ 0x0803149C
+	thumb_func_start gEngineEffectDestroyCounter_0803149C
+gEngineEffectDestroyCounter_0803149C: @ 0x0803149C
 	push {r4, lr}
 	movs r2, #1
 	ands r2, r0
@@ -55386,8 +55386,8 @@ _0803155E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_08031564
-sub_08031564: @ 0x08031564
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_08031564
+gEngineEffectSpecialSummonBoostATK_08031564: @ 0x08031564
 	push {r4, lr}
 	adds r4, r2, #0
 	bl gEngineEffectSpecialSummon_080314D4
@@ -55561,8 +55561,8 @@ _080316A8:
 _080316B0: .4byte gUnk_0201C4E0
 _080316B4: .4byte 0x00000868
 
-	thumb_func_start sub_080316B8
-sub_080316B8: @ 0x080316B8
+	thumb_func_start gEngineEffectBoostATKBoostDEF_080316B8
+gEngineEffectBoostATKBoostDEF_080316B8: @ 0x080316B8
 	push {r4, r5, r6, r7, lr}
 	adds r7, r1, #0
 	movs r5, #0
@@ -55609,8 +55609,8 @@ _0803170A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_08031710
-sub_08031710: @ 0x08031710
+	thumb_func_start gEngineEffectBoostATKBoostDEF_08031710
+gEngineEffectBoostATKBoostDEF_08031710: @ 0x08031710
 	push {r4, r5, r6, r7, lr}
 	adds r7, r1, #0
 	movs r5, #0
@@ -56077,8 +56077,8 @@ _08031A74:
 _08031A7C: .4byte gUnk_0201C4E0
 _08031A80: .4byte 0x00000868
 
-	thumb_func_start sub_08031A84
-sub_08031A84: @ 0x08031A84
+	thumb_func_start gEngineEffectBoostATKBoostDEF_08031A84
+gEngineEffectBoostATKBoostDEF_08031A84: @ 0x08031A84
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -56129,8 +56129,8 @@ _08031AD0:
 _08031ADC: .4byte gUnk_0201C4E0
 _08031AE0: .4byte 0x00000868
 
-	thumb_func_start sub_08031AE4
-sub_08031AE4: @ 0x08031AE4
+	thumb_func_start gEngineEffectBoostATKBoostDEF_08031AE4
+gEngineEffectBoostATKBoostDEF_08031AE4: @ 0x08031AE4
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -56996,11 +56996,11 @@ _08032170: .4byte 0x00000868
 _08032174: .4byte 0xFFFFE000
 _08032178: .4byte 0xFFFFC03F
 
-	thumb_func_start sub_0803217C
-sub_0803217C: @ 0x0803217C
+	thumb_func_start gEngineEffectSendToGYGraveyard_0803217C
+gEngineEffectSendToGYGraveyard_0803217C: @ 0x0803217C
 	push {r4, lr}
 	adds r4, r0, #0
-	bl sub_0802EB94
+	bl gEngineEffectSendToGYGraveyard_0802EB94
 	adds r0, r4, #0
 	movs r1, #0x14
 	bl MemoryClearHalfWord
@@ -57009,8 +57009,8 @@ sub_0803217C: @ 0x0803217C
 	bx r0
 	.align 2, 0
 
-	thumb_func_start sub_08032194
-sub_08032194: @ 0x08032194
+	thumb_func_start gEngineEffectGraveyardSendToGY_08032194
+gEngineEffectGraveyardSendToGY_08032194: @ 0x08032194
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -57082,14 +57082,14 @@ _08032226:
 	adds r1, #0x14
 _08032228:
 	adds r0, r1, #0
-	bl sub_0803217C
+	bl gEngineEffectSendToGYGraveyard_0803217C
 	b _08032268
 	.align 2, 0
 _08032230: .4byte gUnk_0201BC54
 _08032234:
 	adds r0, r7, #0
 	adds r1, r6, #0
-	bl sub_0802EA3C
+	bl gEngineEffectSendToGYGraveyard_0802EA3C
 	movs r5, #1
 	adds r0, r7, #0
 	ands r0, r5
@@ -57101,7 +57101,7 @@ _08032234:
 	adds r1, r1, r6
 	lsls r1, r1, #2
 	adds r0, r0, r1
-	bl sub_0803217C
+	bl gEngineEffectSendToGYGraveyard_0803217C
 	ldr r0, _0803227C @ =0x000010A4 (Embryonic Beast)
 	adds r4, r4, r0
 	lsls r0, r7, #4
@@ -57123,8 +57123,8 @@ _08032274: .4byte 0x00000868
 _08032278: .4byte gUnk_0201C510
 _0803227C: .4byte 0x000010A4 @ Embryonic Beast
 
-	thumb_func_start sub_08032280
-sub_08032280: @ 0x08032280
+	thumb_func_start gEngineEffectSearchSendToGY_08032280
+gEngineEffectSearchSendToGY_08032280: @ 0x08032280
 	push {r4, r5, r6, lr}
 	sub sp, #4
 	adds r5, r0, #0
@@ -57198,7 +57198,7 @@ _08032310:
 	adds r0, r5, #0
 	adds r1, r6, #0
 	adds r2, r4, #0
-	bl sub_08030CC0
+	bl gEngineEffectSearchSendToGY_08030CC0
 _0803231E:
 	ldr r0, [r4]
 	lsls r0, r0, #0x12
@@ -57648,7 +57648,7 @@ _0803260E:
 _0803262C:
 	ldr r0, [r4, #0x10]
 	ldr r1, [r4, #0xc]
-	bl sub_08034298
+	bl gEngineEffectBoostATKBoostDEF_08034298
 	cmp r0, #0
 	beq _0803264C
 _08032638:
@@ -58069,8 +58069,8 @@ _08032954:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_08032960
-sub_08032960: @ 0x08032960
+	thumb_func_start gEngineEffectNegateFlip_08032960
+gEngineEffectNegateFlip_08032960: @ 0x08032960
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -58204,17 +58204,17 @@ _08032A60: .4byte 0x00000868
 _08032A64: .4byte 0x000010D0 @ Wicked Dragon with the Ersatz Head
 _08032A68: .4byte gUnk_0201BB90
 
-	thumb_func_start sub_08032A6C
-sub_08032A6C: @ 0x08032A6C
+	thumb_func_start gEngineEffectNegateFlip_08032A6C
+gEngineEffectNegateFlip_08032A6C: @ 0x08032A6C
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	movs r0, #0
 	adds r1, r5, #0
-	bl sub_08032960
+	bl gEngineEffectNegateFlip_08032960
 	adds r4, r0, #0
 	movs r0, #1
 	adds r1, r5, #0
-	bl sub_08032960
+	bl gEngineEffectNegateFlip_08032960
 	adds r4, r4, r0
 	adds r0, r4, #0
 	pop {r4, r5}
@@ -58387,8 +58387,8 @@ _08032BC0:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_08032BC8
-sub_08032BC8: @ 0x08032BC8
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_08032BC8
+gEngineEffectSpecialSummonBoostATK_08032BC8: @ 0x08032BC8
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -58428,7 +58428,7 @@ _08032BFA:
 	adds r1, r5, #0
 	mov r2, r8
 	str r3, [sp]
-	bl sub_08031564
+	bl gEngineEffectSpecialSummonBoostATK_08031564
 	ldr r3, [sp]
 	cmp r0, #0
 	beq _08032C28
@@ -58493,18 +58493,18 @@ _08032C7A:
 _08032C8C: .4byte gUnk_0201C510
 _08032C90: .4byte 0x00000868
 
-	thumb_func_start sub_08032C94
-sub_08032C94: @ 0x08032C94
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_08032C94
+gEngineEffectSpecialSummonBoostATK_08032C94: @ 0x08032C94
 	push {lr}
 	movs r2, #1
 	rsbs r2, r2, #0
-	bl sub_08032BC8
+	bl gEngineEffectSpecialSummonBoostATK_08032BC8
 	pop {r1}
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_08032CA4
-sub_08032CA4: @ 0x08032CA4
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_08032CA4
+gEngineEffectSpecialSummonBoostATK_08032CA4: @ 0x08032CA4
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	movs r6, #1
@@ -58512,20 +58512,20 @@ sub_08032CA4: @ 0x08032CA4
 	movs r0, #0
 	adds r1, r5, #0
 	adds r2, r6, #0
-	bl sub_08032BC8
+	bl gEngineEffectSpecialSummonBoostATK_08032BC8
 	adds r4, r0, #0
 	movs r0, #1
 	adds r1, r5, #0
 	adds r2, r6, #0
-	bl sub_08032BC8
+	bl gEngineEffectSpecialSummonBoostATK_08032BC8
 	adds r4, r4, r0
 	adds r0, r4, #0
 	pop {r4, r5, r6}
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_08032CCC
-sub_08032CCC: @ 0x08032CCC
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_08032CCC
+gEngineEffectSpecialSummonBoostATK_08032CCC: @ 0x08032CCC
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -58542,7 +58542,7 @@ _08032CE4:
 	adds r0, r6, #0
 	adds r1, r5, #0
 	mov r2, r8
-	bl sub_08031564
+	bl gEngineEffectSpecialSummonBoostATK_08031564
 	cmp r0, #0
 	beq _08032CFE
 	ldr r0, _08032D18 @ =gUnk_0201C510
@@ -58566,8 +58566,8 @@ _08032CFE:
 _08032D14: .4byte 0x00000868
 _08032D18: .4byte gUnk_0201C510
 
-	thumb_func_start sub_08032D1C
-sub_08032D1C: @ 0x08032D1C
+	thumb_func_start gEngineEffectDestroyStandbyPhase_08032D1C
+gEngineEffectDestroyStandbyPhase_08032D1C: @ 0x08032D1C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -58615,7 +58615,7 @@ _08032D4C:
 	adds r0, r7, #0
 	adds r1, r6, #0
 	str r3, [sp]
-	bl sub_080313DC
+	bl gEngineEffectDestroyStandbyPhase_080313DC
 	ldr r3, [sp]
 	cmp r0, sb
 	bge _08032D86
@@ -58753,8 +58753,8 @@ _08032E68:
 _08032E78: .4byte gUnk_0201C510
 _08032E7C: .4byte 0x00000868
 
-	thumb_func_start sub_08032E80
-sub_08032E80: @ 0x08032E80
+	thumb_func_start gEngineEffectSpecialSummonChangePosition_08032E80
+gEngineEffectSpecialSummonChangePosition_08032E80: @ 0x08032E80
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -58788,7 +58788,7 @@ _08032EA2:
 	beq _08032ECE
 	adds r0, r6, #0
 	adds r1, r4, #0
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	cmp r0, sl
@@ -58811,18 +58811,18 @@ _08032ECE:
 _08032EE8: .4byte 0x00000868
 _08032EEC: .4byte gUnk_0201C510
 
-	thumb_func_start sub_08032EF0
-sub_08032EF0: @ 0x08032EF0
+	thumb_func_start gEngineEffectSpecialSummonChangePosition_08032EF0
+gEngineEffectSpecialSummonChangePosition_08032EF0: @ 0x08032EF0
 	push {lr}
 	movs r2, #1
 	rsbs r2, r2, #0
-	bl sub_08032E80
+	bl gEngineEffectSpecialSummonChangePosition_08032E80
 	pop {r1}
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_08032F00
-sub_08032F00: @ 0x08032F00
+	thumb_func_start gEngineEffectSpecialSummonRitualSummon_08032F00
+gEngineEffectSpecialSummonRitualSummon_08032F00: @ 0x08032F00
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -58857,7 +58857,7 @@ _08032F22:
 	adds r0, r6, #0
 	adds r1, r4, #0
 	mov r2, sl
-	bl sub_0803B230
+	bl gEngineEffectSpecialSummonRitualSummon_0803B230
 	cmp r0, #0
 	beq _08032F4C
 	adds r7, #1
@@ -58878,18 +58878,18 @@ _08032F4C:
 _08032F64: .4byte 0x00000868
 _08032F68: .4byte gUnk_0201C510
 
-	thumb_func_start sub_08032F6C
-sub_08032F6C: @ 0x08032F6C
+	thumb_func_start gEngineEffectSpecialSummonRitualSummon_08032F6C
+gEngineEffectSpecialSummonRitualSummon_08032F6C: @ 0x08032F6C
 	push {lr}
 	movs r2, #1
 	rsbs r2, r2, #0
-	bl sub_08032F00
+	bl gEngineEffectSpecialSummonRitualSummon_08032F00
 	pop {r1}
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_08032F7C
-sub_08032F7C: @ 0x08032F7C
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_08032F7C
+gEngineEffectSpecialSummonBoostATK_08032F7C: @ 0x08032F7C
 	push {r4, r5, r6, r7, lr}
 	adds r7, r0, #0
 	adds r6, r1, #0
@@ -58899,7 +58899,7 @@ _08032F86:
 	adds r0, r7, #0
 	adds r1, r4, #0
 	adds r2, r6, #0
-	bl sub_08031564
+	bl gEngineEffectSpecialSummonBoostATK_08031564
 	cmp r0, #0
 	beq _08032F96
 	adds r5, #1
@@ -58912,8 +58912,8 @@ _08032F96:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_08032FA4
-sub_08032FA4: @ 0x08032FA4
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_08032FA4
+gEngineEffectSpecialSummonBoostATK_08032FA4: @ 0x08032FA4
 	push {r4, r5, r6, r7, lr}
 	adds r5, r0, #0
 	adds r7, r1, #0
@@ -58923,12 +58923,12 @@ _08032FAE:
 	adds r0, r5, #0
 	adds r1, r4, #0
 	adds r2, r7, #0
-	bl sub_08031564
+	bl gEngineEffectSpecialSummonBoostATK_08031564
 	cmp r0, #0
 	beq _08032FCA
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_08034180
+	bl gEngineEffectSpecialSummonBoostATK_08034180
 	cmp r0, #0
 	bne _08032FCA
 	adds r6, #1
@@ -58941,8 +58941,8 @@ _08032FCA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_08032FD8
-sub_08032FD8: @ 0x08032FD8
+	thumb_func_start gEngineEffectBoostATKBoostDEF_08032FD8
+gEngineEffectBoostATKBoostDEF_08032FD8: @ 0x08032FD8
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -59682,8 +59682,8 @@ _08033518:
 	.align 2, 0
 _08033528: .4byte 0x00001472 @ Embodiment of Apophis
 
-	thumb_func_start sub_0803352C
-sub_0803352C: @ 0x0803352C
+	thumb_func_start gEngineEffectSpecialSummon_0803352C
+gEngineEffectSpecialSummon_0803352C: @ 0x0803352C
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r3, r1, #0
@@ -59755,8 +59755,8 @@ _080335B2:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080335B8
-sub_080335B8: @ 0x080335B8
+	thumb_func_start gEngineEffectSpecialSummon_080335B8
+gEngineEffectSpecialSummon_080335B8: @ 0x080335B8
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	movs r5, #0
@@ -59764,7 +59764,7 @@ sub_080335B8: @ 0x080335B8
 _080335C0:
 	adds r0, r6, #0
 	adds r1, r4, #0
-	bl sub_0803352C
+	bl gEngineEffectSpecialSummon_0803352C
 	cmp r0, #0
 	beq _080335CE
 	adds r5, #1
@@ -59802,8 +59802,8 @@ _08033606:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_08033610
-sub_08033610: @ 0x08033610
+	thumb_func_start gEngineEffectSpecialSummon_08033610
+gEngineEffectSpecialSummon_08033610: @ 0x08033610
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	movs r5, #0
@@ -59811,7 +59811,7 @@ sub_08033610: @ 0x08033610
 _08033618:
 	adds r0, r6, #0
 	adds r1, r4, #0
-	bl sub_0803352C
+	bl gEngineEffectSpecialSummon_0803352C
 	cmp r0, #0
 	beq _08033626
 	adds r5, #1
@@ -59824,15 +59824,15 @@ _08033626:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_08033634
-sub_08033634: @ 0x08033634
+	thumb_func_start gEngineEffectSpecialSummon_08033634
+gEngineEffectSpecialSummon_08033634: @ 0x08033634
 	push {r4, lr}
 	adds r4, r0, #0
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	beq _08033648
 	adds r0, r4, #0
-	bl sub_08033654
+	bl gEngineEffectSpecialSummon_08033654
 	b _0803364C
 _08033648:
 	movs r0, #1
@@ -59843,8 +59843,8 @@ _0803364C:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_08033654
-sub_08033654: @ 0x08033654
+	thumb_func_start gEngineEffectSpecialSummon_08033654
+gEngineEffectSpecialSummon_08033654: @ 0x08033654
 	push {r4, r5, r6, r7, lr}
 	adds r7, r0, #0
 	movs r6, #0
@@ -59853,7 +59853,7 @@ _0803365C:
 	ldr r4, [r5]
 	adds r0, r7, #0
 	adds r1, r4, #0
-	bl sub_0803352C
+	bl gEngineEffectSpecialSummon_0803352C
 	cmp r0, #0
 	beq _08033674
 	adds r0, r4, #0
@@ -60446,7 +60446,7 @@ _08033AAA:
 _08033AC2:
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	ldr r1, [sp]
@@ -60479,18 +60479,18 @@ _08033AF0:
 _08033B00: .4byte 0x00000868
 _08033B04: .4byte gUnk_0201C510
 
-	thumb_func_start sub_08033B08
-sub_08033B08: @ 0x08033B08
+	thumb_func_start gEngineEffectSpecialSummonChangePosition_08033B08
+gEngineEffectSpecialSummonChangePosition_08033B08: @ 0x08033B08
 	push {lr}
 	movs r1, #0
 	movs r2, #0
 	movs r3, #1
-	bl sub_08033B18
+	bl gEngineEffectSpecialSummonChangePosition_08033B18
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_08033B18
-sub_08033B18: @ 0x08033B18
+	thumb_func_start gEngineEffectSpecialSummonChangePosition_08033B18
+gEngineEffectSpecialSummonChangePosition_08033B18: @ 0x08033B18
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -60575,8 +60575,8 @@ _08033B9E:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_08033BB0
-sub_08033BB0: @ 0x08033BB0
+	thumb_func_start gEngineEffectSpecialSummon_08033BB0
+gEngineEffectSpecialSummon_08033BB0: @ 0x08033BB0
 	push {r4, lr}
 	adds r4, r0, #0
 	adds r3, r1, #0
@@ -60611,8 +60611,8 @@ _08033BEE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_08033BF4
-sub_08033BF4: @ 0x08033BF4
+	thumb_func_start gEngineEffectSpecialSummon_08033BF4
+gEngineEffectSpecialSummon_08033BF4: @ 0x08033BF4
 	push {r4, r5, r6, r7, lr}
 	adds r7, r0, #0
 	ldr r0, _08033C10 @ =0x000016DF (Spatial Collapse)
@@ -60637,7 +60637,7 @@ _08033C1C:
 	adds r4, r0, #5
 	adds r0, r7, #0
 	adds r1, r4, #0
-	bl sub_08033BB0
+	bl gEngineEffectSpecialSummon_08033BB0
 	cmp r0, #0
 	bne _08033C14
 	adds r5, #4
@@ -60654,8 +60654,8 @@ _08033C38:
 	.align 2, 0
 _08033C40: .4byte gUnk_09E3EF60
 
-	thumb_func_start sub_08033C44
-sub_08033C44: @ 0x08033C44
+	thumb_func_start gEngineEffectSpecialSummon_08033C44
+gEngineEffectSpecialSummon_08033C44: @ 0x08033C44
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	movs r5, #0
@@ -60663,7 +60663,7 @@ sub_08033C44: @ 0x08033C44
 _08033C4C:
 	adds r0, r6, #0
 	adds r1, r4, #0
-	bl sub_08033BB0
+	bl gEngineEffectSpecialSummon_08033BB0
 	cmp r0, #0
 	beq _08033C5A
 	adds r5, #1
@@ -60701,8 +60701,8 @@ _08033C92:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_08033C9C
-sub_08033C9C: @ 0x08033C9C
+	thumb_func_start gEngineEffectSpecialSummon_08033C9C
+gEngineEffectSpecialSummon_08033C9C: @ 0x08033C9C
 	push {r4, lr}
 	adds r4, r0, #0
 	adds r0, r1, #0
@@ -60734,7 +60734,7 @@ _08033CD8: .4byte 0x00000868
 _08033CDC: .4byte gUnk_0201C5D8
 _08033CE0:
 	adds r0, r4, #0
-	bl sub_08033BF4
+	bl gEngineEffectSpecialSummon_08033BF4
 	cmp r0, #0
 	blt _08033CEE
 _08033CEA:
@@ -60790,8 +60790,8 @@ _08033D3E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_08033D44
-sub_08033D44: @ 0x08033D44
+	thumb_func_start gEngineEffectSpecialSummonRitualSummon_08033D44
+gEngineEffectSpecialSummonRitualSummon_08033D44: @ 0x08033D44
 	push {r4, r5, r6, r7, lr}
 	adds r5, r0, #0
 	movs r4, #0
@@ -61227,8 +61227,8 @@ _08034066:
 _08034074: .4byte gUnk_0201C4E0
 _08034078: .4byte 0x00000868
 
-	thumb_func_start sub_0803407C
-sub_0803407C: @ 0x0803407C
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_0803407C
+gEngineEffectSpecialSummonBoostATK_0803407C: @ 0x0803407C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -61293,7 +61293,7 @@ _080340E4:
 	adds r1, r4, #0
 	ldr r2, [sp]
 	str r3, [sp, #4]
-	bl sub_08031564
+	bl gEngineEffectSpecialSummonBoostATK_08031564
 	ldr r3, [sp, #4]
 	cmp r0, #0
 	beq _08034104
@@ -61365,8 +61365,8 @@ _08034170:
 _08034178: .4byte gUnk_0201C4E0
 _0803417C: .4byte 0x000010D8 @ Insect Armor with Laser Cannon
 
-	thumb_func_start sub_08034180
-sub_08034180: @ 0x08034180
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_08034180
+gEngineEffectSpecialSummonBoostATK_08034180: @ 0x08034180
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -61408,7 +61408,7 @@ _080341C0:
 	lsrs r2, r2, #0x1f
 	mov r0, r8
 	adds r1, r7, #0
-	bl sub_08036658
+	bl gEngineEffectSpecialSummonDestroy_08036658
 	cmp r0, #0
 	bne _08034270
 	movs r2, #5
@@ -61456,7 +61456,7 @@ _080341FE:
 	ldr r2, [r4, #0xc]
 	mov r0, r8
 	adds r1, r7, #0
-	bl sub_08031564
+	bl gEngineEffectSpecialSummonBoostATK_08031564
 	cmp r0, #0
 	beq _08034262
 	lsls r0, r7, #2
@@ -61509,8 +61509,8 @@ _0803428C: .4byte 0x00000868
 _08034290: .4byte gUnk_0201C510
 _08034294: .4byte 0x00001368 @ Prohibition (None)
 
-	thumb_func_start sub_08034298
-sub_08034298: @ 0x08034298
+	thumb_func_start gEngineEffectBoostATKBoostDEF_08034298
+gEngineEffectBoostATKBoostDEF_08034298: @ 0x08034298
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -61708,7 +61708,7 @@ _080343FC:
 	ldr r2, _08034478 @ =0x00001103 (Spellbinding Circle)
 	adds r0, r5, #0
 	adds r1, r6, #0
-	bl sub_0802F3A8
+	bl gEngineEffectSpecialSummonDestroy_0802F3A8
 	cmp r0, #0
 	beq _0803440C
 	b _080345B4
@@ -61716,7 +61716,7 @@ _0803440C:
 	ldr r2, _0803447C @ =0x00001243 (Shadow Spell)
 	adds r0, r5, #0
 	adds r1, r6, #0
-	bl sub_0802F3A8
+	bl gEngineEffectSpecialSummonDestroy_0802F3A8
 	cmp r0, #0
 	beq _0803441C
 	b _080345B4
@@ -61724,7 +61724,7 @@ _0803441C:
 	ldr r2, _08034480 @ =0x000014B2 (Nightmare Wheel)
 	adds r0, r5, #0
 	adds r1, r6, #0
-	bl sub_0802F3A8
+	bl gEngineEffectSpecialSummonDestroy_0802F3A8
 	cmp r0, #0
 	beq _0803442C
 	b _080345B4
@@ -61732,7 +61732,7 @@ _0803442C:
 	ldr r2, _08034484 @ =0x00001842 (Flint)
 	adds r0, r5, #0
 	adds r1, r6, #0
-	bl sub_0802F3A8
+	bl gEngineEffectSpecialSummonDestroy_0802F3A8
 	cmp r0, #0
 	beq _0803443C
 	b _080345B4
@@ -61796,7 +61796,7 @@ _08034496:
 	beq _080344CE
 	adds r0, r5, #0
 	adds r1, r6, #0
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	cmp r0, #1
@@ -61824,7 +61824,7 @@ _080344CE:
 _080344F6:
 	adds r0, r5, #0
 	adds r1, r6, #0
-	bl sub_08034180
+	bl gEngineEffectSpecialSummonBoostATK_08034180
 	cmp r0, #0
 	beq _08034530
 	ldr r0, _08034524 @ =gUnk_0201E2A0
@@ -61893,7 +61893,7 @@ _08034570:
 	ldr r1, _080345B0 @ =0x0000187C (Swords of Concealing Light)
 	adds r0, r4, #0
 	movs r2, #2
-	bl sub_08032D1C
+	bl gEngineEffectDestroyStandbyPhase_08032D1C
 	cmp r0, #0
 	bne _080345B4
 _0803459A:
@@ -61976,7 +61976,7 @@ _0803462A:
 	cmp r0, #0
 	beq _08034644
 	adds r0, r4, #0
-	bl sub_0804BA58
+	bl gEngineEffectSpecialSummon_0804BA58
 	cmp r0, #0
 	bne _08034696
 _08034644:
@@ -62016,7 +62016,7 @@ _08034680:
 _08034688: .4byte 0x00001691 @ Terrorking Archfiend
 _0803468C:
 	adds r0, r5, #0
-	bl sub_08032C94
+	bl gEngineEffectSpecialSummonBoostATK_08032C94
 	cmp r0, #0
 	beq _080346B6
 _08034696:
@@ -62027,7 +62027,7 @@ _0803469A:
 	bl gEngineEffectEquipSendToGY_0804C6CC
 	adds r1, r0, #0
 	adds r0, r5, #0
-	bl sub_08032C94
+	bl gEngineEffectSpecialSummonBoostATK_08032C94
 	b _080346B2
 _080346AA:
 	ldr r1, _080346C0 @ =gEngineEffectDestroyGraveyard_0804AEA0
@@ -62209,7 +62209,7 @@ _080347D0:
 	ldr r2, _08034870 @ =0x00001661 (Twin Swords of Flashing Light - Tryce)
 	adds r0, r6, #0
 	adds r1, r7, #0
-	bl sub_0802F3A8
+	bl gEngineEffectSpecialSummonDestroy_0802F3A8
 	cmp r0, #0
 	bne _080347AC
 	ldr r2, _08034874 @ =0x000018CB (Double Attack)
@@ -62381,8 +62381,8 @@ _08034952:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_0803495C
-sub_0803495C: @ 0x0803495C
+	thumb_func_start gEngineEffectSpecialSummonPreventAttack_0803495C
+gEngineEffectSpecialSummonPreventAttack_0803495C: @ 0x0803495C
 	push {r4, r5, r6, r7, lr}
 	sub sp, #4
 	adds r5, r0, #0
@@ -62392,7 +62392,7 @@ sub_0803495C: @ 0x0803495C
 	beq _080349A4
 	adds r0, r5, #0
 	adds r1, r7, #0
-	bl sub_08035BA4
+	bl gEngineEffectSpecialSummonPreventAttack_08035BA4
 	cmp r0, #0
 	bne _08034984
 	adds r0, r5, #0
@@ -62609,7 +62609,7 @@ gEngineEffectPreventAttack_08034A58: @ 0x08034A58
 _08034AAA:
 	adds r0, r5, #0
 	adds r1, r6, #0
-	bl sub_08034180
+	bl gEngineEffectSpecialSummonBoostATK_08034180
 	cmp r0, #0
 	beq _08034ADC
 	ldr r0, _08034AD4 @ =gUnk_0201E2A0
@@ -62650,7 +62650,7 @@ _08034ADC:
 	ldr r2, _08034E04 @ =0x0000149D (Ekibyo Drakmord)
 	adds r0, r5, #0
 	adds r1, r6, #0
-	bl sub_0802F3A8
+	bl gEngineEffectSpecialSummonDestroy_0802F3A8
 	cmp r0, #0
 	beq _08034B16
 	b _08035280
@@ -62658,7 +62658,7 @@ _08034B16:
 	ldr r2, _08034E08 @ =0x000013F3 (Mask of the Accursed)
 	adds r0, r5, #0
 	adds r1, r6, #0
-	bl sub_0802F3A8
+	bl gEngineEffectSpecialSummonDestroy_0802F3A8
 	cmp r0, #0
 	beq _08034B26
 	b _08035280
@@ -62666,7 +62666,7 @@ _08034B26:
 	ldr r2, _08034E0C @ =0x00001842 (Flint)
 	adds r0, r5, #0
 	adds r1, r6, #0
-	bl sub_0802F3A8
+	bl gEngineEffectSpecialSummonDestroy_0802F3A8
 	cmp r0, #0
 	beq _08034B36
 	b _08035280
@@ -62674,7 +62674,7 @@ _08034B36:
 	ldr r2, _08034E10 @ =0x00001103 (Spellbinding Circle)
 	adds r0, r5, #0
 	adds r1, r6, #0
-	bl sub_0802F3A8
+	bl gEngineEffectSpecialSummonDestroy_0802F3A8
 	cmp r0, #0
 	beq _08034B46
 	b _08035280
@@ -62682,7 +62682,7 @@ _08034B46:
 	ldr r2, _08034E14 @ =0x00001243 (Shadow Spell)
 	adds r0, r5, #0
 	adds r1, r6, #0
-	bl sub_0802F3A8
+	bl gEngineEffectSpecialSummonDestroy_0802F3A8
 	cmp r0, #0
 	beq _08034B56
 	b _08035280
@@ -62690,7 +62690,7 @@ _08034B56:
 	ldr r2, _08034E18 @ =0x000014B2 (Nightmare Wheel)
 	adds r0, r5, #0
 	adds r1, r6, #0
-	bl sub_0802F3A8
+	bl gEngineEffectSpecialSummonDestroy_0802F3A8
 	cmp r0, #0
 	beq _08034B66
 	b _08035280
@@ -62718,7 +62718,7 @@ _08034B82:
 	lsls r1, r1, #5
 	adds r0, r5, #0
 	movs r2, #2
-	bl sub_08032D1C
+	bl gEngineEffectDestroyStandbyPhase_08032D1C
 	cmp r0, #0
 	beq _08034B9E
 	b _08035280
@@ -62732,7 +62732,7 @@ _08034B9E:
 	movs r1, #0xa0
 	lsls r1, r1, #5
 	movs r2, #2
-	bl sub_08032D1C
+	bl gEngineEffectDestroyStandbyPhase_08032D1C
 	cmp r0, #0
 	beq _08034BBA
 	b _08035280
@@ -63249,7 +63249,7 @@ _08034FC8:
 	ldr r1, _08035140 @ =0x00001102 (Swords of Revealing Light)
 	adds r0, r4, #0
 	movs r2, #3
-	bl sub_08032D1C
+	bl gEngineEffectDestroyStandbyPhase_08032D1C
 	cmp r0, #0
 	beq _08034FE4
 	b _08035280
@@ -63260,7 +63260,7 @@ _08034FE4:
 	ldr r2, _08035144 @ =0x0000130E (Paralyzing Potion (None))
 	adds r0, r5, #0
 	adds r1, r6, #0
-	bl sub_0802F3A8
+	bl gEngineEffectSpecialSummonDestroy_0802F3A8
 	cmp r0, #0
 	beq _08034FFA
 	b _08035280
@@ -63467,7 +63467,7 @@ _08035198:
 	adds r0, r5, #0
 	movs r1, #1
 	adds r2, r6, #0
-	bl sub_08032E80
+	bl gEngineEffectSpecialSummonChangePosition_08032E80
 	cmp r0, #0
 	beq _08035280
 _080351AC:
@@ -63786,7 +63786,7 @@ _080353DC:
 	ldr r2, _08035424 @ =0x00001561 (Toon Defense)
 	ldr r0, [sp]
 	ldr r1, [sp, #4]
-	bl sub_0802F3A8
+	bl gEngineEffectSpecialSummonDestroy_0802F3A8
 	cmp r0, #0
 	beq _080353EC
 	b _08035582
@@ -63794,7 +63794,7 @@ _080353EC:
 	ldr r2, _08035428 @ =0x00001852 (Astral Barrier)
 	ldr r0, [sp]
 	ldr r1, [sp, #4]
-	bl sub_0802F3A8
+	bl gEngineEffectSpecialSummonDestroy_0802F3A8
 	cmp r0, #0
 	beq _080353FC
 	b _08035582
@@ -63905,7 +63905,7 @@ _080354BC:
 	adds r1, r4, #0
 	ldr r2, _08035548 @ =0x000015EA (Raregold Armor)
 	adds r3, r7, #0
-	bl sub_0802F3E0
+	bl gEngineEffectSpecialSummonDestroy_0802F3E0
 	cmp r0, #0
 	bne _08035582
 _080354DE:
@@ -63975,7 +63975,7 @@ _08035560: .4byte 0x0000179D @ Emissary of the Oasis
 _08035564:
 	adds r0, r7, #0
 	movs r1, #0xd
-	bl sub_08032EF0
+	bl gEngineEffectSpecialSummonChangePosition_08032EF0
 	b _0803557E
 _0803556E:
 	mov r0, sb
@@ -63983,7 +63983,7 @@ _0803556E:
 	adds r1, r0, #0
 	adds r0, r7, #0
 	mov r2, r8
-	bl sub_08032E80
+	bl gEngineEffectSpecialSummonChangePosition_08032E80
 _0803557E:
 	cmp r0, #0
 	beq _080355C0
@@ -64006,7 +64006,7 @@ _0803558C:
 	beq _080355B6
 	adds r0, r7, #0
 	adds r1, r4, #0
-	bl sub_08030B0C
+	bl gEngineEffectSpecialSummonChangePosition_08030B0C
 	cmp r0, #0
 	beq _080355B6
 	adds r0, r7, #0
@@ -64036,7 +64036,7 @@ _080355C0:
 	beq _08035664
 	adds r0, r7, #0
 	mov r1, r8
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	cmp r0, #0xa
@@ -64094,7 +64094,7 @@ _08035636:
 	bgt _08035664
 	ldr r0, [sp]
 	ldr r1, [sp, #4]
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	ldr r1, _080356D0 @ =0x0000076B
 	cmp r0, r1
 	bgt _08035582
@@ -64271,7 +64271,7 @@ _080357A8:
 	beq _080357F8
 	adds r0, r7, #0
 	mov r1, r8
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	cmp r0, #0xf
@@ -64309,7 +64309,7 @@ _080357F8:
 	ldr r4, _08035930 @ =0x00001770 (Marshmallon)
 	adds r0, r7, #0
 	adds r1, r4, #0
-	bl sub_08032C94
+	bl gEngineEffectSpecialSummonBoostATK_08032C94
 	cmp r0, #0
 	beq _08035842
 	movs r2, #1
@@ -64460,8 +64460,8 @@ _08035940: .4byte 0x000018B1 @ Hieracosphinx
 _08035944: .4byte 0xCD200000
 _08035948: .4byte 0x000014D4 @ A Feint Plan
 
-	thumb_func_start sub_0803594C
-sub_0803594C: @ 0x0803594C
+	thumb_func_start gEngineEffectPreventAttack_0803594C
+gEngineEffectPreventAttack_0803594C: @ 0x0803594C
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -64773,8 +64773,8 @@ _08035B9C:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_08035BA4
-sub_08035BA4: @ 0x08035BA4
+	thumb_func_start gEngineEffectSpecialSummonPreventAttack_08035BA4
+gEngineEffectSpecialSummonPreventAttack_08035BA4: @ 0x08035BA4
 	push {r4, lr}
 	adds r4, r0, #0
 	bl gEngineEffectPreventAttackSpecialSummon_08035988
@@ -64839,7 +64839,7 @@ _08035BEA:
 	ldr r2, _08035C90 @ =0x00001561 (Toon Defense)
 	adds r0, r5, #0
 	mov r1, r8
-	bl sub_0802F3A8
+	bl gEngineEffectSpecialSummonDestroy_0802F3A8
 	cmp r0, #0
 	beq _08035BFA
 	b _08035D8C
@@ -64847,7 +64847,7 @@ _08035BFA:
 	ldr r2, _08035C94 @ =0x00001852 (Astral Barrier)
 	adds r0, r5, #0
 	mov r1, r8
-	bl sub_0802F3A8
+	bl gEngineEffectSpecialSummonDestroy_0802F3A8
 	cmp r0, #0
 	beq _08035C0A
 	b _08035D8C
@@ -65080,7 +65080,7 @@ _08035DAE:
 	b _08035F44
 _08035DB0:
 	subs r0, r4, r5
-	bl sub_08033D44
+	bl gEngineEffectSpecialSummonRitualSummon_08033D44
 	b _08035DA8
 _08035DB8:
 	movs r4, #1
@@ -65142,7 +65142,7 @@ _08035E0E:
 	beq _08035EB0
 	adds r0, r6, #0
 	adds r1, r4, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	ldr r1, _08035E4C @ =0x0000063F
 	cmp r0, r1
 	ble _08035EB0
@@ -65249,13 +65249,13 @@ _08035EB0:
 	ldr r2, _08035F3C @ =0x00001759 (Opti-Camouflage Armor)
 	adds r0, r5, #0
 	mov r1, r8
-	bl sub_0802F3A8
+	bl gEngineEffectSpecialSummonDestroy_0802F3A8
 	cmp r0, #0
 	bne _08035F44
 	ldr r2, _08035F40 @ =0x0000165D (Shooting Star Bow - Ceal)
 	adds r0, r5, #0
 	mov r1, r8
-	bl sub_0802F3A8
+	bl gEngineEffectSpecialSummonDestroy_0802F3A8
 	cmp r0, #0
 	bne _08035F44
 _08035F20:
@@ -65369,7 +65369,7 @@ _08035FDE:
 	adds r0, r6, #0
 	adds r1, r5, #0
 	movs r2, #1
-	bl sub_0802EAC8
+	bl gEngineEffectSearchSendToGY_0802EAC8
 _08036002:
 	add sp, #4
 	pop {r4, r5, r6}
@@ -65856,7 +65856,7 @@ _08036324:
 	adds r2, r0, #0
 	mov r0, sl
 	ldr r1, [sp]
-	bl sub_0803B230
+	bl gEngineEffectSpecialSummonRitualSummon_0803B230
 	cmp r0, #0
 	beq _0803638E
 	adds r6, r4, #0
@@ -65944,13 +65944,13 @@ _08036420:
 _08036428:
 	adds r0, r6, #0
 	movs r1, #3
-	bl sub_08032F6C
+	bl gEngineEffectSpecialSummonRitualSummon_08032F6C
 	cmp r0, #0
 	bne _08036442
 	movs r0, #1
 	subs r0, r0, r6
 	movs r1, #3
-	bl sub_08032F6C
+	bl gEngineEffectSpecialSummonRitualSummon_08032F6C
 	cmp r0, #0
 	beq _08036446
 _08036442:
@@ -65964,8 +65964,8 @@ _08036448:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_08036450
-sub_08036450: @ 0x08036450
+	thumb_func_start gEngineEffectSpecialSummonDestroy_08036450
+gEngineEffectSpecialSummonDestroy_08036450: @ 0x08036450
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
@@ -65998,7 +65998,7 @@ sub_08036450: @ 0x08036450
 	cmp r0, #0
 	beq _080364A8
 	subs r0, r6, r5
-	bl sub_08033BF4
+	bl gEngineEffectSpecialSummon_08033BF4
 	cmp r0, #0
 	bge _080364A8
 _0803649C:
@@ -66237,8 +66237,8 @@ _0803664C: .4byte 0x00001693 @ Metallizing Parasite - Lunatite
 _08036650: .4byte 0x00001667 @ Non-Spellcasting Area
 _08036654: .4byte 0x000017A1 @ Dust Barrier
 
-	thumb_func_start sub_08036658
-sub_08036658: @ 0x08036658
+	thumb_func_start gEngineEffectSpecialSummonDestroy_08036658
+gEngineEffectSpecialSummonDestroy_08036658: @ 0x08036658
 	push {r4, lr}
 	adds r4, r2, #0
 	bl gEngineEffectSpecialSummonDestroy_080364B0
@@ -66335,8 +66335,8 @@ _08036704:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_0803670C
-sub_0803670C: @ 0x0803670C
+	thumb_func_start gEngineEffectSpecialSummonDestroy_0803670C
+gEngineEffectSpecialSummonDestroy_0803670C: @ 0x0803670C
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -66378,7 +66378,7 @@ _08036750:
 	lsrs r2, r2, #0x1f
 	adds r0, r5, #0
 	adds r1, r6, #0
-	bl sub_08036658
+	bl gEngineEffectSpecialSummonDestroy_08036658
 	b _0803676A
 _08036768:
 	movs r0, #0
@@ -66444,7 +66444,7 @@ gEngineEffectSpecialSummonNegate_08036770: @ 0x08036770
 _080367CE:
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	cmp r0, #1
@@ -66629,7 +66629,7 @@ _08036938:
 	ldr r2, _08036974 @ =0x0000150A (Heart of Clear Water)
 	adds r0, r7, #0
 	adds r1, r4, #0
-	bl sub_0802F3A8
+	bl gEngineEffectSpecialSummonDestroy_0802F3A8
 	cmp r0, #0
 	beq _08036990
 	adds r0, r5, #0
@@ -66673,8 +66673,8 @@ _08036992:
 	.align 2, 0
 _080369A0: .4byte 0x0000153C @ Timidity
 
-	thumb_func_start sub_080369A4
-sub_080369A4: @ 0x080369A4
+	thumb_func_start gEngineEffectDestroyBoostATK_080369A4
+gEngineEffectDestroyBoostATK_080369A4: @ 0x080369A4
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -66783,8 +66783,8 @@ _08036A72:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_08036A78
-sub_08036A78: @ 0x08036A78
+	thumb_func_start gEngineEffectDestroyCounter_08036A78
+gEngineEffectDestroyCounter_08036A78: @ 0x08036A78
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	movs r7, #0
@@ -66806,7 +66806,7 @@ _08036A8A:
 	beq _08036AA6
 	adds r0, r6, #0
 	adds r1, r5, #0
-	bl sub_0803149C
+	bl gEngineEffectDestroyCounter_0803149C
 	adds r7, r7, r0
 _08036AA6:
 	adds r4, #0x14
@@ -67014,8 +67014,8 @@ _08036C1A:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_08036C2C
-sub_08036C2C: @ 0x08036C2C
+	thumb_func_start gEngineEffectNegateDestroy_08036C2C
+gEngineEffectNegateDestroy_08036C2C: @ 0x08036C2C
 	push {r4, r5, r6, lr}
 	sub sp, #0x18
 	adds r5, r0, #0
@@ -67541,8 +67541,8 @@ _08037020:
 	pop {r0}
 	bx r0
 
-	thumb_func_start sub_08037030
-sub_08037030: @ 0x08037030
+	thumb_func_start gEngineEffectBoostATKBoostDEF_08037030
+gEngineEffectBoostATKBoostDEF_08037030: @ 0x08037030
 	push {r4, r5, r6, lr}
 	adds r6, r1, #0
 	ldr r2, _08037068 @ =gUnk_0201C4E0
@@ -67980,8 +67980,8 @@ _0803734C:
 _08037354: .4byte gUnk_0201C4E0
 _08037358: .4byte 0x00000868
 
-	thumb_func_start sub_0803735C
-sub_0803735C: @ 0x0803735C
+	thumb_func_start gEngineEffectSpecialSummonFusionSummon_0803735C
+gEngineEffectSpecialSummonFusionSummon_0803735C: @ 0x0803735C
 	push {r4, r5, r6, r7, lr}
 	movs r5, #0
 	movs r6, #0
@@ -68124,7 +68124,7 @@ gEngineEffectSpecialSummonDestroy_08037434: @ 0x08037434
 	cmp r0, #0
 	beq _080374D4
 	adds r0, r4, #0
-	bl sub_0804BA58
+	bl gEngineEffectSpecialSummon_0804BA58
 	cmp r0, #0
 	beq _080374E4
 	ldr r0, [r5]
@@ -68154,7 +68154,7 @@ _08037494: .4byte 0x000014FC @ Gradius' Option
 _08037498:
 	ldr r1, _080374A4 @ =0x00001414 (Gradius)
 	adds r0, r6, #0
-	bl sub_08032C94
+	bl gEngineEffectSpecialSummonBoostATK_08032C94
 	b _080374EE
 	.align 2, 0
 _080374A4: .4byte 0x00001414 @ Gradius
@@ -68281,7 +68281,7 @@ gEngineEffectSpecialSummonDestroy_08037568: @ 0x08037568
 	cmp r0, #0
 	beq _08037608
 	adds r0, r4, #0
-	bl sub_0804BA58
+	bl gEngineEffectSpecialSummon_0804BA58
 	cmp r0, #0
 	beq _08037618
 	ldr r0, [r5]
@@ -68311,7 +68311,7 @@ _080375C8: .4byte 0x000014FC @ Gradius' Option
 _080375CC:
 	ldr r1, _080375D8 @ =0x00001414 (Gradius)
 	adds r0, r6, #0
-	bl sub_08032C94
+	bl gEngineEffectSpecialSummonBoostATK_08032C94
 	b _08037622
 	.align 2, 0
 _080375D8: .4byte 0x00001414 @ Gradius
@@ -68889,8 +68889,8 @@ _08037A16:
 _08037A24: .4byte gUnk_0201C4E0
 _08037A28: .4byte 0x00000868
 
-	thumb_func_start sub_08037A2C
-sub_08037A2C: @ 0x08037A2C
+	thumb_func_start gEngineEffectBoostATKBoostDEF_08037A2C
+gEngineEffectBoostATKBoostDEF_08037A2C: @ 0x08037A2C
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -68941,8 +68941,8 @@ _08037A78:
 _08037A84: .4byte gUnk_0201C4E0
 _08037A88: .4byte 0x00000868
 
-	thumb_func_start sub_08037A8C
-sub_08037A8C: @ 0x08037A8C
+	thumb_func_start gEngineEffectBoostATKBoostDEF_08037A8C
+gEngineEffectBoostATKBoostDEF_08037A8C: @ 0x08037A8C
 	push {r4, r5, r6, r7, lr}
 	adds r7, r1, #0
 	movs r5, #0
@@ -69260,7 +69260,7 @@ gEngineEffectBoostATKBoostDEF_08037C9C: @ 0x08037C9C
 	lsrs r2, r2, #0x1f
 	adds r0, r5, #0
 	mov r1, r8
-	bl sub_08036658
+	bl gEngineEffectSpecialSummonDestroy_08036658
 	cmp r0, #0
 	beq _08037CF8
 	movs r0, #0
@@ -69627,7 +69627,7 @@ _08037F24:
 	bl _0803A520
 _08037F2E:
 	ldr r0, [sp, #0x3c]
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	str r0, [r7, #4]
@@ -70568,7 +70568,7 @@ _0803861C: .4byte 0x000019F7 @ Helios Duo Megiste
 _08038620:
 	ldr r1, _0803862C @ =0x000011D0 (Lava Battleguard (None))
 	ldr r0, [sp, #0x3c]
-	bl sub_08032C94
+	bl gEngineEffectSpecialSummonBoostATK_08032C94
 	b _08038D38
 	.align 2, 0
 _0803862C: .4byte 0x000011D0 @ Lava Battleguard (None)
@@ -70593,7 +70593,7 @@ _0803864A:
 _08038654:
 	movs r0, #0
 	movs r1, #0xd
-	bl sub_08032EF0
+	bl gEngineEffectSpecialSummonChangePosition_08032EF0
 	movs r4, #0x64
 	muls r0, r4, r0
 	add sl, r0
@@ -70602,7 +70602,7 @@ _08038654:
 	b _0803879A
 _08038668:
 	ldr r0, _08038684 @ =0x00000FE4 (Harpie Lady)
-	bl sub_08032CA4
+	bl gEngineEffectSpecialSummonBoostATK_08032CA4
 	lsls r1, r0, #2
 	adds r1, r1, r0
 	lsls r0, r1, #4
@@ -70618,7 +70618,7 @@ _08038684: .4byte 0x00000FE4 @ Harpie Lady
 _08038688:
 	movs r0, #0
 	movs r1, #7
-	bl sub_08032EF0
+	bl gEngineEffectSpecialSummonChangePosition_08032EF0
 	movs r4, #0x64
 	muls r0, r4, r0
 	add sl, r0
@@ -70644,7 +70644,7 @@ _080386A6:
 _080386BA:
 	ldr r1, _080386C4 @ =0x00000FB2 (Swamp Battleguard (None))
 	ldr r0, [sp, #0x3c]
-	bl sub_08032C94
+	bl gEngineEffectSpecialSummonBoostATK_08032C94
 	b _08038D38
 	.align 2, 0
 _080386C4: .4byte 0x00000FB2 @ Swamp Battleguard (None)
@@ -70751,14 +70751,14 @@ _08038784: .4byte 0x0000142D @ Dark Magician
 _08038788:
 	movs r0, #0
 	movs r1, #0xa
-	bl sub_08032EF0
+	bl gEngineEffectSpecialSummonChangePosition_08032EF0
 	movs r4, #0xc8
 	muls r0, r4, r0
 	add sl, r0
 	movs r0, #1
 	movs r1, #0xa
 _0803879A:
-	bl sub_08032EF0
+	bl gEngineEffectSpecialSummonChangePosition_08032EF0
 	muls r0, r4, r0
 	add sl, r0
 	b _08038E1E
@@ -70792,7 +70792,7 @@ _080387C0:
 	add sl, r1
 	adds r0, r4, #0
 	movs r1, #1
-	bl sub_08032EF0
+	bl gEngineEffectSpecialSummonChangePosition_08032EF0
 	b _08038D38
 _080387E4:
 	movs r5, #0
@@ -70808,7 +70808,7 @@ _080387E6:
 	add sl, r1
 	adds r0, r5, #0
 	movs r1, #1
-	bl sub_08032EF0
+	bl gEngineEffectSpecialSummonChangePosition_08032EF0
 	lsls r1, r0, #5
 	subs r1, r1, r0
 	lsls r1, r1, #2
@@ -70902,7 +70902,7 @@ _080388AC:
 	ldr r0, [sp, #0x3c]
 	movs r1, #0xa
 	ldr r2, [sp, #0x40]
-	bl sub_08032E80
+	bl gEngineEffectSpecialSummonChangePosition_08032E80
 	cmp r0, #0
 	beq _080388BC
 	b _08038E1E
@@ -71046,7 +71046,7 @@ _080389C2:
 	ldr r0, [sp, #0x3c]
 	movs r1, #1
 	ldr r2, [sp, #0x40]
-	bl sub_08032E80
+	bl gEngineEffectSpecialSummonChangePosition_08032E80
 	b _08038D38
 _080389CE:
 	ldr r1, _080389DC @ =gEngineEffectSearchSendToGY_0804B048
@@ -71072,7 +71072,7 @@ _080389F8: .4byte gEngineEffectSearchSendToGY_0804B048
 _080389FC:
 	ldr r0, [sp, #0x3c]
 	ldr r1, [sp, #0x40]
-	bl sub_0803149C
+	bl gEngineEffectDestroyCounter_0803149C
 _08038A04:
 	movs r1, #0xc8
 _08038A06:
@@ -71082,7 +71082,7 @@ _08038A06:
 _08038A0C:
 	ldr r0, [sp, #0x3c]
 	ldr r1, [sp, #0x40]
-	bl sub_0803149C
+	bl gEngineEffectDestroyCounter_0803149C
 	lsls r1, r0, #2
 	adds r1, r1, r0
 	b _08038D98
@@ -71117,7 +71117,7 @@ _08038A44:
 	ldr r0, [sp, #0x3c]
 	movs r1, #7
 	ldr r2, [sp, #0x40]
-	bl sub_08032E80
+	bl gEngineEffectSpecialSummonChangePosition_08032E80
 	lsls r1, r0, #5
 	subs r1, r1, r0
 	lsls r1, r1, #2
@@ -71127,7 +71127,7 @@ _08038A44:
 	ldr r4, [sp, #0x3c]
 	subs r0, r6, r4
 	movs r1, #7
-	bl sub_08032EF0
+	bl gEngineEffectSpecialSummonChangePosition_08032EF0
 	b _08038D38
 _08038A66:
 	ldr r0, [sp, #0x3c]
@@ -71200,12 +71200,12 @@ _08038AE8:
 	ldr r5, [sp, #0x3c]
 	subs r0, r0, r5
 	movs r1, #3
-	bl sub_08032EF0
+	bl gEngineEffectSpecialSummonChangePosition_08032EF0
 	adds r4, r0, #0
 	ldr r0, [sp, #0x3c]
 	movs r1, #3
 	ldr r2, [sp, #0x40]
-	bl sub_08032E80
+	bl gEngineEffectSpecialSummonChangePosition_08032E80
 	adds r4, r4, r0
 	lsls r0, r4, #5
 	subs r0, r0, r4
@@ -71229,7 +71229,7 @@ _08038B20:
 	movs r1, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_08033B18
+	bl gEngineEffectSpecialSummonChangePosition_08033B18
 	cmp r0, #0
 	beq _08038B32
 	b _08038E1E
@@ -71243,12 +71243,12 @@ _08038B3C:
 	ldr r1, [sp, #0x3c]
 	subs r0, r6, r1
 	movs r1, #4
-	bl sub_08032F6C
+	bl gEngineEffectSpecialSummonRitualSummon_08032F6C
 	adds r4, r0, #0
 	ldr r0, [sp, #0x3c]
 	movs r1, #4
 	ldr r2, [sp, #0x40]
-	bl sub_08032F00
+	bl gEngineEffectSpecialSummonRitualSummon_08032F00
 	adds r4, r4, r0
 	lsls r0, r4, #5
 	subs r0, r0, r4
@@ -71260,14 +71260,14 @@ _08038B3C:
 _08038B62:
 	ldr r0, [sp, #0x3c]
 	movs r1, #4
-	bl sub_08032F6C
+	bl gEngineEffectSpecialSummonRitualSummon_08032F6C
 	cmp r0, #0
 	bne _08038B80
 	movs r0, #1
 	ldr r2, [sp, #0x3c]
 	subs r0, r0, r2
 	movs r1, #4
-	bl sub_08032F6C
+	bl gEngineEffectSpecialSummonRitualSummon_08032F6C
 	cmp r0, #0
 	bne _08038B80
 	b _08038E1E
@@ -71304,21 +71304,21 @@ _08038BA4:
 _08038BB6:
 	ldr r1, _08038BE8 @ =0x00001807 (Green Gadget)
 	ldr r0, [sp, #0x3c]
-	bl sub_08032C94
+	bl gEngineEffectSpecialSummonBoostATK_08032C94
 	cmp r0, #0
 	bne _08038BC4
 	b _08038E1E
 _08038BC4:
 	ldr r1, _08038BEC @ =0x0000180B (Red Gadget)
 	ldr r0, [sp, #0x3c]
-	bl sub_08032C94
+	bl gEngineEffectSpecialSummonBoostATK_08032C94
 	cmp r0, #0
 	bne _08038BD2
 	b _08038E1E
 _08038BD2:
 	ldr r1, _08038BF0 @ =0x0000180C (Yellow Gadget)
 	ldr r0, [sp, #0x3c]
-	bl sub_08032C94
+	bl gEngineEffectSpecialSummonBoostATK_08032C94
 	cmp r0, #0
 	bne _08038BE0
 	b _08038E1E
@@ -71334,7 +71334,7 @@ _08038BF4: .4byte 0x00000BB8
 _08038BF8:
 	ldr r0, [sp, #0x3c]
 	ldr r1, [sp, #0x40]
-	bl sub_0803149C
+	bl gEngineEffectDestroyCounter_0803149C
 	b _08038D38
 _08038C02:
 	ldr r0, [sp, #0x3c]
@@ -71421,14 +71421,14 @@ _08038C96:
 	b _08038E1E
 _08038C9E:
 	ldr r0, [sp, #0x3c]
-	bl sub_0803735C
+	bl gEngineEffectSpecialSummonFusionSummon_0803735C
 	lsls r1, r0, #2
 	adds r1, r1, r0
 	b _08038D98
 _08038CAA:
 	ldr r0, [sp, #0x3c]
 	ldr r1, [sp, #0x40]
-	bl sub_0803149C
+	bl gEngineEffectDestroyCounter_0803149C
 	b _08038D38
 _08038CB4:
 	ldr r0, [sp, #0x3c]
@@ -71445,12 +71445,12 @@ _08038CCA:
 	ldr r0, [sp, #0x3c]
 	movs r1, #7
 	ldr r2, [sp, #0x40]
-	bl sub_08032E80
+	bl gEngineEffectSpecialSummonChangePosition_08032E80
 	adds r4, r0, #0
 	ldr r3, [sp, #0x3c]
 	subs r0, r6, r3
 	movs r1, #7
-	bl sub_08032EF0
+	bl gEngineEffectSpecialSummonChangePosition_08032EF0
 	adds r4, r4, r0
 	movs r0, #0x64
 	adds r5, r4, #0
@@ -71817,7 +71817,7 @@ _08038EB0:
 	beq _08038F90
 	ldr r0, [sp, #0x3c]
 	movs r1, #0xf
-	bl sub_08032EF0
+	bl gEngineEffectSpecialSummonChangePosition_08032EF0
 	movs r4, #0xc8
 	muls r0, r4, r0
 	muls r0, r5, r0
@@ -71825,7 +71825,7 @@ _08038EB0:
 	adds r6, r6, r0
 	ldr r0, [sp, #0x3c]
 	movs r1, #0x12
-	bl sub_08032EF0
+	bl gEngineEffectSpecialSummonChangePosition_08032EF0
 	muls r0, r4, r0
 	muls r0, r5, r0
 	adds r6, r6, r0
@@ -72022,7 +72022,7 @@ _0803906C:
 	beq _0803909E
 	ldr r0, [sp, #0x3c]
 	ldr r1, [sp, #0x40]
-	bl sub_0803407C
+	bl gEngineEffectSpecialSummonBoostATK_0803407C
 	cmp r0, #0
 	beq _0803909E
 	lsls r0, r4, #5
@@ -74294,7 +74294,7 @@ _0803A110:
 _0803A118:
 	mov r0, r8
 	ldr r1, [sp, #0x74]
-	bl sub_080313DC
+	bl gEngineEffectDestroyStandbyPhase_080313DC
 	lsls r1, r0, #2
 	adds r1, r1, r0
 	lsls r0, r1, #4
@@ -74307,7 +74307,7 @@ _0803A118:
 _0803A132:
 	mov r0, r8
 	ldr r1, [sp, #0x74]
-	bl sub_080313DC
+	bl gEngineEffectDestroyStandbyPhase_080313DC
 	ldr r3, [sp, #0x48]
 	movs r4, #0xaf
 	lsls r4, r4, #2
@@ -74345,7 +74345,7 @@ _0803A14C:
 	b _0803A2A8
 _0803A182:
 	mov r0, r8
-	bl sub_08033B08
+	bl gEngineEffectSpecialSummonChangePosition_08033B08
 	lsls r1, r0, #5
 	subs r1, r1, r0
 	lsls r1, r1, #2
@@ -74355,7 +74355,7 @@ _0803A182:
 	adds r0, r0, r1
 	str r0, [sp, #0x48]
 	mov r0, r8
-	bl sub_08033B08
+	bl gEngineEffectSpecialSummonChangePosition_08033B08
 	lsls r1, r0, #5
 	subs r1, r1, r0
 	lsls r1, r1, #2
@@ -74429,7 +74429,7 @@ _0803A224: .4byte gUnk_0201C510
 _0803A228:
 	ldr r0, [sp, #0x3c]
 	ldr r1, [sp, #0x40]
-	bl sub_0803407C
+	bl gEngineEffectSpecialSummonBoostATK_0803407C
 	lsls r1, r0, #1
 	adds r1, r1, r0
 	lsls r1, r1, #3
@@ -74770,7 +74770,7 @@ _0803A4B0:
 	ldr r2, _0803A538 @ =0x00001381 (Mirror Wall)
 	ldr r0, [sp, #0x3c]
 	ldr r1, [sp, #0x40]
-	bl sub_0802F3A8
+	bl gEngineEffectSpecialSummonDestroy_0802F3A8
 	adds r2, r0, #0
 	cmp r2, #0
 	ble _0803A4D0
@@ -74851,7 +74851,7 @@ gEngineEffectBoostATKPreventAttack_0803A540: @ 0x0803A540
 	adds r4, r1, #0
 	adds r6, r2, #0
 	mov r8, r3
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	lsls r0, r0, #0x10
 	lsrs r7, r0, #0x10
 	adds r0, r5, #0
@@ -75148,7 +75148,7 @@ _0803A756:
 	bne _0803A7C0
 	mov r0, r8
 	adds r1, r5, #0
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	str r0, [sp, #8]
@@ -75197,8 +75197,8 @@ _0803A7DE:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_0803A7F0
-sub_0803A7F0: @ 0x0803A7F0
+	thumb_func_start gEngineEffectSpecialSummonNegate_0803A7F0
+gEngineEffectSpecialSummonNegate_0803A7F0: @ 0x0803A7F0
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -75253,7 +75253,7 @@ _0803A82E:
 	bgt _0803A85E
 	mov r0, r8
 	adds r1, r7, #0
-	bl sub_08034180
+	bl gEngineEffectSpecialSummonBoostATK_08034180
 	cmp r0, #0
 	bne _0803A8AA
 _0803A85E:
@@ -75290,7 +75290,7 @@ _0803A890:
 	mov r0, r8
 	adds r1, r7, #0
 	movs r2, #0
-	bl sub_08036C2C
+	bl gEngineEffectNegateDestroy_08036C2C
 _0803A8A6:
 	cmp r0, #0
 	beq _0803A8BE
@@ -75384,8 +75384,8 @@ _0803A94C: .4byte gUnk_0201E2A0
 _0803A950: .4byte 0x00000868
 _0803A954: .4byte gUnk_0201C510
 
-	thumb_func_start sub_0803A958
-sub_0803A958: @ 0x0803A958
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_0803A958
+gEngineEffectSpecialSummonBoostATK_0803A958: @ 0x0803A958
 	push {lr}
 	sub sp, #0x24
 	mov r2, sp
@@ -75396,8 +75396,8 @@ sub_0803A958: @ 0x0803A958
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_0803A96C
-sub_0803A96C: @ 0x0803A96C
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_0803A96C
+gEngineEffectSpecialSummonBoostATK_0803A96C: @ 0x0803A96C
 	push {lr}
 	sub sp, #0x24
 	mov r2, sp
@@ -75408,8 +75408,8 @@ sub_0803A96C: @ 0x0803A96C
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_0803A980
-sub_0803A980: @ 0x0803A980
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_0803A980
+gEngineEffectSpecialSummonBoostATK_0803A980: @ 0x0803A980
 	push {lr}
 	sub sp, #0x24
 	mov r2, sp
@@ -75420,8 +75420,8 @@ sub_0803A980: @ 0x0803A980
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_0803A994
-sub_0803A994: @ 0x0803A994
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_0803A994
+gEngineEffectSpecialSummonBoostATK_0803A994: @ 0x0803A994
 	push {lr}
 	sub sp, #0x24
 	mov r2, sp
@@ -75714,7 +75714,7 @@ _0803ABB6:
 	mov r0, sb
 	mov r1, sl
 	movs r2, #3
-	bl sub_0803B230
+	bl gEngineEffectSpecialSummonRitualSummon_0803B230
 	cmp r0, #0
 	beq _0803ABCC
 	subs r6, #1
@@ -75738,8 +75738,8 @@ _0803ABDA:
 	.align 2, 0
 _0803ABEC: .4byte 0x0000150B @ A Legendary Ocean
 
-	thumb_func_start sub_0803ABF0
-sub_0803ABF0: @ 0x0803ABF0
+	thumb_func_start gEngineEffectSpecialSummonChangePosition_0803ABF0
+gEngineEffectSpecialSummonChangePosition_0803ABF0: @ 0x0803ABF0
 	push {lr}
 	movs r2, #1
 	rsbs r2, r2, #0
@@ -76508,8 +76508,8 @@ _0803B198: .4byte 0x0000145B @ Scroll of Bewitchment
 _0803B19C: .4byte 0x00000868
 _0803B1A0: .4byte gUnk_0201C510
 
-	thumb_func_start sub_0803B1A4
-sub_0803B1A4: @ 0x0803B1A4
+	thumb_func_start gEngineEffectSpecialSummonChangePosition_0803B1A4
+gEngineEffectSpecialSummonChangePosition_0803B1A4: @ 0x0803B1A4
 	push {lr}
 	movs r2, #0
 	bl gEngineEffectSpecialSummonChangePosition_0803AED0
@@ -76584,8 +76584,8 @@ _0803B228:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_0803B230
-sub_0803B230: @ 0x0803B230
+	thumb_func_start gEngineEffectSpecialSummonRitualSummon_0803B230
+gEngineEffectSpecialSummonRitualSummon_0803B230: @ 0x0803B230
 	push {r4, lr}
 	adds r4, r2, #0
 	bl gEngineEffectSpecialSummonRitualSummon_0803B1B0
@@ -77493,7 +77493,7 @@ gEngineEffectSpecialSummonDamage_0803B910: @ 0x0803B910
 	adds r0, r1, #0
 	movs r1, #1
 	rsbs r1, r1, #0
-	bl sub_08034298
+	bl gEngineEffectBoostATKBoostDEF_08034298
 	cmp r0, #0
 	beq _0803B926
 	movs r0, #0
@@ -77836,7 +77836,7 @@ gEngineEffectSpecialSummonSendToGY_0803BBA4: @ 0x0803BBA4
 	cmp r0, #0
 	beq _0803BBEC
 	adds r0, r4, #0
-	bl sub_0804BA58
+	bl gEngineEffectSpecialSummon_0804BA58
 	cmp r0, #0
 	beq _0803BBDA
 	cmp r6, #0
@@ -77856,7 +77856,7 @@ _0803BBDA:
 	bne _0803BBF4
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_08032C94
+	bl gEngineEffectSpecialSummonBoostATK_08032C94
 	cmp r0, #0
 	beq _0803BC16
 _0803BBEC:
@@ -77877,7 +77877,7 @@ _0803BBF4:
 	bl gEngineEffectEquipSendToGY_0804C6CC
 	adds r1, r0, #0
 	adds r0, r5, #0
-	bl sub_08032C94
+	bl gEngineEffectSpecialSummonBoostATK_08032C94
 	cmp r0, #0
 	beq _0803BBEC
 _0803BC16:
@@ -77918,8 +77918,8 @@ _0803BC52:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_0803BC58
-sub_0803BC58: @ 0x0803BC58
+	thumb_func_start gEngineEffectSpecialSummon_0803BC58
+gEngineEffectSpecialSummon_0803BC58: @ 0x0803BC58
 	push {r4, lr}
 	adds r2, r0, #0
 	ldr r1, _0803BC78 @ =gUnk_0201BCC0
@@ -77987,11 +77987,11 @@ _0803BCCC:
 	cmp r0, #0
 	bne _0803BCF4
 	movs r0, #0x31
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	cmp r0, #0
 	bne _0803BCF4
 	movs r0, #0x32
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	cmp r0, #0
 	beq _0803BCF6
 _0803BCF4:
@@ -78320,73 +78320,73 @@ _0803BE88: @ jump table
 	.4byte _0803C2FA @ case 113
 	.4byte _0803C300 @ case 114
 _0803C054:
-	bl sub_08040258
+	bl gEngineEffectSpecialSummon_08040258
 	b _0803C30E
 _0803C05A:
-	bl sub_08040498
+	bl gEngineEffectSpecialSummon_08040498
 	b _0803C30E
 _0803C060:
-	bl sub_080404C4
+	bl gEngineEffectSendToGYGraveyard_080404C4
 	b _0803C30E
 _0803C066:
-	bl sub_08040338
+	bl gEngineEffectSpecialSummon_08040338
 	b _0803C30E
 _0803C06C:
-	bl sub_0804029C
+	bl gEngineEffectSpecialSummon_0804029C
 	b _0803C30E
 _0803C072:
-	bl sub_08040968
+	bl gEngineEffectSpecialSummon_08040968
 	b _0803C30E
 _0803C078:
-	bl sub_08040A4C
+	bl gEngineEffectSpecialSummon_08040A4C
 	b _0803C30E
 _0803C07E:
-	bl sub_08040B04
+	bl gEngineEffectSpecialSummon_08040B04
 	b _0803C30E
 _0803C084:
-	bl sub_08040634
+	bl gEngineEffectSpecialSummon_08040634
 	b _0803C30E
 _0803C08A:
 	bl sub_08040604
 	b _0803C30E
 _0803C090:
-	bl sub_08040B4C
+	bl gEngineEffectSpecialSummon_08040B4C
 	b _0803C30E
 _0803C096:
-	bl sub_08040450
+	bl gEngineEffectDirectAttack_08040450
 	b _0803C30E
 _0803C09C:
-	bl sub_0804045C
+	bl gEngineEffectDirectAttack_0804045C
 	b _0803C30E
 _0803C0A2:
-	bl sub_08040468
+	bl gEngineEffectDirectAttack_08040468
 	b _0803C30E
 _0803C0A8:
-	bl sub_08040474
+	bl gEngineEffectDirectAttack_08040474
 	b _0803C30E
 _0803C0AE:
-	bl sub_08040480
+	bl gEngineEffectDirectAttack_08040480
 	b _0803C30E
 _0803C0B4:
-	bl sub_0804048C
+	bl gEngineEffectDirectAttack_0804048C
 	b _0803C30E
 _0803C0BA:
-	bl sub_080407FC
+	bl gEngineEffectSpecialSummon_080407FC
 	b _0803C30E
 _0803C0C0:
-	bl sub_0804084C
+	bl gEngineEffectSpecialSummon_0804084C
 	b _0803C30E
 _0803C0C6:
 	bl gEngineEffectBoostATKEquip_0804074C
 	b _0803C30E
 _0803C0CC:
-	bl sub_0803C53C
+	bl gEngineEffectSpecialSummon_0803C53C
 	b _0803C30E
 _0803C0D2:
-	bl sub_0803C8E0
+	bl gEngineEffectDestroyBoostATK_0803C8E0
 	b _0803C30E
 _0803C0D8:
-	bl sub_0803C708
+	bl gEngineEffectSpecialSummonDestroy_0803C708
 	b _0803C30E
 _0803C0DE:
 	bl gEngineEffectGraveyardBattlePhase_0803C774
@@ -78395,10 +78395,10 @@ _0803C0E4:
 	bl gEngineEffectBoostATKBoostDEF_0803C564
 	b _0803C30E
 _0803C0EA:
-	bl sub_0803C674
+	bl gEngineEffectSpecialSummon_0803C674
 	b _0803C30E
 _0803C0F0:
-	bl sub_0803C814
+	bl gEngineEffectSearchSendToGY_0803C814
 	b _0803C30E
 _0803C0F6:
 	bl gEngineEffectDestroyFlip_0803C904
@@ -78407,61 +78407,61 @@ _0803C0FC:
 	bl sub_0803C9AC
 	b _0803C30E
 _0803C102:
-	bl sub_0803CA00
+	bl gEngineEffectDirectAttack_0803CA00
 	b _0803C30E
 _0803C108:
-	bl sub_0803CA34
+	bl gEngineEffectBoostATKBoostDEF_0803CA34
 	b _0803C30E
 _0803C10E:
-	bl sub_0803CA70
+	bl gEngineEffectGraveyardBattlePhase_0803CA70
 	b _0803C30E
 _0803C114:
-	bl sub_0803CAEC
+	bl gEngineEffectSendToGYGraveyard_0803CAEC
 	b _0803C30E
 _0803C11A:
-	bl sub_08040698
+	bl gEngineEffectSpecialSummon_08040698
 	b _0803C30E
 _0803C120:
 	bl gEngineEffectBoostATKBoostDEF_08042544
 	b _0803C30E
 _0803C126:
-	bl sub_080429D4
+	bl gEngineEffectSpecialSummonPreventAttack_080429D4
 	b _0803C30E
 _0803C12C:
-	bl sub_080429E0
+	bl gEngineEffectSpecialSummonPreventAttack_080429E0
 	b _0803C30E
 _0803C132:
-	bl sub_080429EC
+	bl gEngineEffectSpecialSummon_080429EC
 	b _0803C30E
 _0803C138:
-	bl sub_08042AB4
+	bl gEngineEffectSpecialSummon_08042AB4
 	b _0803C30E
 _0803C13E:
-	bl sub_0803E44C
+	bl gEngineEffectSpecialSummon_0803E44C
 	b _0803C30E
 _0803C144:
-	bl sub_0803E474
+	bl gEngineEffectSpecialSummon_0803E474
 	b _0803C30E
 _0803C14A:
-	bl sub_08040718
+	bl gEngineEffectSpecialSummon_08040718
 	b _0803C30E
 _0803C150:
-	bl sub_08040BAC
+	bl gEngineEffectSpecialSummon_08040BAC
 	b _0803C30E
 _0803C156:
-	bl sub_08041EF0
+	bl gEngineEffectSpecialSummon_08041EF0
 	b _0803C30E
 _0803C15C:
 	bl gEngineEffectDiscardEndPhase_08041FE4
 	b _0803C30E
 _0803C162:
-	bl sub_0803F3DC
+	bl gEngineEffectSpecialSummon_0803F3DC
 	b _0803C30E
 _0803C168:
-	bl sub_0803F580
+	bl gEngineEffectSpecialSummon_0803F580
 	b _0803C30E
 _0803C16E:
-	bl sub_0803F618
+	bl gEngineEffectSpecialSummon_0803F618
 	b _0803C30E
 _0803C174:
 	bl gEngineEffectSendToGYGraveyard_0803E594
@@ -78473,52 +78473,52 @@ _0803C180:
 	bl gEngineEffectBanishGainLP_0803EFCC
 	b _0803C30E
 _0803C186:
-	bl sub_0803DC34
+	bl gEngineEffectSpecialSummonSendToGY_0803DC34
 	b _0803C30E
 _0803C18C:
-	bl sub_0803DE90
+	bl gEngineEffectSpecialSummonDestroy_0803DE90
 	b _0803C30E
 _0803C192:
-	bl sub_0803E0C4
+	bl gEngineEffectSearchSendToGY_0803E0C4
 	b _0803C30E
 _0803C198:
-	bl sub_0803E170
+	bl gEngineEffectSendToGYGraveyard_0803E170
 	b _0803C30E
 _0803C19E:
-	bl sub_0803E130
+	bl gEngineEffectSpecialSummon_0803E130
 	b _0803C30E
 _0803C1A4:
-	bl sub_0803E228
+	bl gEngineEffectSpecialSummon_0803E228
 	b _0803C30E
 _0803C1AA:
-	bl sub_0803E298
+	bl gEngineEffectSpecialSummon_0803E298
 	b _0803C30E
 _0803C1B0:
-	bl sub_0803F948
+	bl gEngineEffectDestroyStandbyPhase_0803F948
 	b _0803C30E
 _0803C1B6:
-	bl sub_0803E318
+	bl gEngineEffectDestroyCounter_0803E318
 	b _0803C30E
 _0803C1BC:
-	bl sub_0803D6F4
+	bl gEngineEffectSpecialSummonSendToGY_0803D6F4
 	b _0803C30E
 _0803C1C2:
-	bl sub_0803D91C
+	bl gEngineEffectSpecialSummon_0803D91C
 	b _0803C30E
 _0803C1C8:
-	bl sub_0803CCAC
+	bl gEngineEffectSendToGYSearch_0803CCAC
 	b _0803C30E
 _0803C1CE:
 	bl gEngineEffectSpecialSummonSendToGY_0803D038
 	b _0803C30E
 _0803C1D4:
-	bl sub_0803D478
+	bl gEngineEffectSendToGYSearch_0803D478
 	b _0803C30E
 _0803C1DA:
-	bl sub_0803F89C
+	bl gEngineEffectSearchSendToGY_0803F89C
 	b _0803C30E
 _0803C1E0:
-	bl sub_0803F790
+	bl gEngineEffectSpecialSummon_0803F790
 	b _0803C30E
 _0803C1E6:
 	bl gEngineEffectSpecialSummonDamage_0804154C
@@ -78530,85 +78530,85 @@ _0803C1F2:
 	bl gEngineEffectDestroyEndPhase_08042470
 	b _0803C30E
 _0803C1F8:
-	bl sub_080422C4
+	bl gEngineEffectSpecialSummon_080422C4
 	b _0803C30E
 _0803C1FE:
-	bl sub_08041988
+	bl gEngineEffectSpecialSummon_08041988
 	b _0803C30E
 _0803C204:
-	bl sub_08041768
+	bl gEngineEffectSpecialSummon_08041768
 	b _0803C30E
 _0803C20A:
-	bl sub_08041790
+	bl gEngineEffectSpecialSummon_08041790
 	b _0803C30E
 _0803C210:
-	bl sub_080417F0
+	bl gEngineEffectSpecialSummon_080417F0
 	b _0803C30E
 _0803C216:
 	bl gEngineEffectSpecialSummonSendToGY_0804186C
 	b _0803C30E
 _0803C21C:
-	bl sub_08040EBC
+	bl gEngineEffectSpecialSummon_08040EBC
 	b _0803C30E
 _0803C222:
 	bl gEngineEffectDiscardEndPhase_080410C4
 	b _0803C30E
 _0803C228:
-	bl sub_08041330
+	bl gEngineEffectSendToGYSearch_08041330
 	b _0803C30E
 _0803C22E:
-	bl sub_08040FBC
+	bl gEngineEffectSpecialSummon_08040FBC
 	b _0803C30E
 _0803C234:
-	bl sub_08041044
+	bl gEngineEffectSpecialSummon_08041044
 	b _0803C30E
 _0803C23A:
-	bl sub_08040F5C
+	bl gEngineEffectSpecialSummon_08040F5C
 	b _0803C30E
 _0803C240:
-	bl sub_080400A8
+	bl gEngineEffectSpecialSummon_080400A8
 	b _0803C30E
 _0803C246:
-	bl sub_0803FC70
+	bl gEngineEffectSpecialSummonDamage_0803FC70
 	b _0803C30E
 _0803C24C:
 	bl gEngineEffectBanishGainLP_0803FE24
 	b _0803C30E
 _0803C252:
-	bl sub_08040194
+	bl gEngineEffectSpecialSummon_08040194
 	b _0803C30E
 _0803C258:
-	bl sub_0804020C
+	bl gEngineEffectSpecialSummon_0804020C
 	b _0803C30E
 _0803C25E:
-	bl sub_08040144
+	bl gEngineEffectSpecialSummon_08040144
 	b _0803C30E
 _0803C264:
-	bl sub_08040D28
+	bl gEngineEffectSendToGYSearch_08040D28
 	b _0803C30E
 _0803C26A:
-	bl sub_08040E54
+	bl gEngineEffectSpecialSummon_08040E54
 	b _0803C30E
 _0803C270:
-	bl sub_08040894
+	bl gEngineEffectSpecialSummon_08040894
 	b _0803C30E
 _0803C276:
-	bl sub_0804090C
+	bl gEngineEffectSpecialSummon_0804090C
 	b _0803C30E
 _0803C27C:
-	bl sub_080409B0
+	bl gEngineEffectSpecialSummon_080409B0
 	b _0803C30E
 _0803C282:
-	bl sub_08040A04
+	bl gEngineEffectSpecialSummon_08040A04
 	b _0803C30E
 _0803C288:
-	bl sub_0804192C
+	bl gEngineEffectSpecialSummon_0804192C
 	b _0803C30E
 _0803C28E:
-	bl sub_08041B70
+	bl gEngineEffectSpecialSummon_08041B70
 	b _0803C30E
 _0803C294:
-	bl sub_080407B4
+	bl gEngineEffectSpecialSummon_080407B4
 	b _0803C30E
 _0803C29A:
 	bl sub_08040BD4
@@ -78662,7 +78662,7 @@ _0803C2FA:
 	bl sub_08040D14
 	b _0803C30E
 _0803C300:
-	bl sub_0803FA38
+	bl gEngineEffectSearchSendToGY_0803FA38
 	b _0803C30E
 _0803C306:
 	ldr r0, _0803C314 @ =0x0000080C
@@ -78675,8 +78675,8 @@ _0803C30E:
 	.align 2, 0
 _0803C314: .4byte 0x0000080C
 
-	thumb_func_start sub_0803C318
-sub_0803C318: @ 0x0803C318
+	thumb_func_start gEngineEffectDamageTribute_0803C318
+gEngineEffectDamageTribute_0803C318: @ 0x0803C318
 	push {r4, r5, r6, r7, lr}
 	ldr r0, _0803C334 @ =gUnk_0201B870
 	movs r1, #0xc3
@@ -78755,13 +78755,13 @@ _0803C3A8: .4byte gUnk_0201BCC0
 _0803C3AC: .4byte 0x0000080C
 _0803C3B0: .4byte gUnk_0201B870
 
-	thumb_func_start sub_0803C3B4
-sub_0803C3B4: @ 0x0803C3B4
+	thumb_func_start gEngineEffectDamageTribute_0803C3B4
+gEngineEffectDamageTribute_0803C3B4: @ 0x0803C3B4
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
 	movs r0, #0
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	cmp r0, #0
 	beq _0803C3C6
 	b _0803C50A
@@ -78781,7 +78781,7 @@ _0803C3C6:
 	lsls r0, r0, #0x1d
 	cmp r0, #0
 	bge _0803C3F8
-	bl sub_0803C318
+	bl gEngineEffectDamageTribute_0803C318
 	b _0803C532
 	.align 2, 0
 _0803C3EC: .4byte gUnk_0201C4E0
@@ -78948,8 +78948,8 @@ _0803C532:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_0803C53C
-sub_0803C53C: @ 0x0803C53C
+	thumb_func_start gEngineEffectSpecialSummon_0803C53C
+gEngineEffectSpecialSummon_0803C53C: @ 0x0803C53C
 	push {r4, lr}
 	ldr r4, _0803C55C @ =gUnk_0201BCC0
 	ldrh r0, [r4]
@@ -78957,7 +78957,7 @@ sub_0803C53C: @ 0x0803C53C
 	movs r0, #9
 	movs r2, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r0, _0803C560 @ =0x0000080C
 	adds r4, r4, r0
 	movs r0, #0
@@ -79065,13 +79065,13 @@ gEngineEffectBoostATKBoostDEF_0803C564: @ 0x0803C564
 	movs r1, #0xb
 	movs r2, #4
 	adds r3, r5, #0
-	bl sub_0802EAC8
+	bl gEngineEffectSearchSendToGY_0802EAC8
 _0803C624:
 	movs r0, #0xb
 	adds r1, r6, #0
 	mov r2, sb
 	mov r3, r8
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r1, _0803C660 @ =gUnk_0201BCC0
 	movs r5, #0x81
 	lsls r5, r5, #4
@@ -79081,7 +79081,7 @@ _0803C624:
 	str r0, [r1]
 _0803C63E:
 	movs r0, #0xb
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	adds r1, r0, #0
 	cmp r1, #0
 	bne _0803C652
@@ -79104,8 +79104,8 @@ _0803C668: .4byte gUnk_0201C510
 _0803C66C: .4byte 0x00001846 @ Ballista of Rampart Smashing
 _0803C670: .4byte 0x0000080C
 
-	thumb_func_start sub_0803C674
-sub_0803C674: @ 0x0803C674
+	thumb_func_start gEngineEffectSpecialSummon_0803C674
+gEngineEffectSpecialSummon_0803C674: @ 0x0803C674
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -79150,13 +79150,13 @@ sub_0803C674: @ 0x0803C674
 	movs r0, #0xb
 	adds r1, r5, #0
 	movs r3, #5
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r0, [r6]
 	adds r0, #1
 	str r0, [r6]
 _0803C6D6:
 	movs r0, #0xb
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	adds r1, r0, #0
 	cmp r1, #0
 	bne _0803C6E8
@@ -79176,8 +79176,8 @@ _0803C6FC: .4byte 0x00000868
 _0803C700: .4byte gUnk_0201C510
 _0803C704: .4byte 0x0000080C
 
-	thumb_func_start sub_0803C708
-sub_0803C708: @ 0x0803C708
+	thumb_func_start gEngineEffectSpecialSummonDestroy_0803C708
+gEngineEffectSpecialSummonDestroy_0803C708: @ 0x0803C708
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -79197,22 +79197,22 @@ sub_0803C708: @ 0x0803C708
 	cmp r0, #0
 	bne _0803C74E
 	movs r0, #0
-	bl sub_080916C0
+	bl gEngineEffectBoostATKBoostDEF_080916C0
 	movs r0, #0
-	bl sub_08093384
+	bl gEngineEffectDestroyChangePosition_08093384
 	lsls r0, r7, #8
 	orrs r4, r0
 	movs r0, #0xc
 	mov r1, r8
 	mov r2, sb
 	adds r3, r4, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r0, [r5]
 	adds r0, #1
 	str r0, [r5]
 _0803C74E:
 	movs r0, #0xc
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	adds r1, r0, #0
 	cmp r1, #0
 	bne _0803C760
@@ -79285,7 +79285,7 @@ _0803C7D6:
 	lsls r1, r1, #0x13
 	lsrs r1, r1, #0x13
 	movs r2, #1
-	bl sub_0802EBFC
+	bl gEngineEffectSendToGYGraveyard_0802EBFC
 _0803C7E4:
 	adds r5, #0x14
 	adds r4, #0x14
@@ -79308,8 +79308,8 @@ _0803C808: .4byte gUnk_0201BB90
 _0803C80C: .4byte gUnk_0201BCC0
 _0803C810: .4byte 0x0000080C
 
-	thumb_func_start sub_0803C814
-sub_0803C814: @ 0x0803C814
+	thumb_func_start gEngineEffectSearchSendToGY_0803C814
+gEngineEffectSearchSendToGY_0803C814: @ 0x0803C814
 	push {r4, r5, r6, r7, lr}
 	sub sp, #4
 	ldr r0, _0803C85C @ =gUnk_0201BCC0
@@ -79362,7 +79362,7 @@ _0803C870:
 	movs r1, #0xb
 	movs r2, #1
 	adds r3, r6, #0
-	bl sub_0802EAC8
+	bl gEngineEffectSearchSendToGY_0802EAC8
 	b _0803C8AA
 _0803C88E:
 	adds r0, r5, #0
@@ -79376,7 +79376,7 @@ _0803C88E:
 	movs r1, #0xb
 	movs r2, #1
 	adds r3, r4, #0
-	bl sub_0802EAC8
+	bl gEngineEffectSearchSendToGY_0802EAC8
 _0803C8AA:
 	cmp r7, #0
 	beq _0803C8C2
@@ -79405,13 +79405,13 @@ _0803C8D4: .4byte 0xFFBFFFFF
 _0803C8D8: .4byte gUnk_0201BCC0
 _0803C8DC: .4byte 0x0000080C
 
-	thumb_func_start sub_0803C8E0
-sub_0803C8E0: @ 0x0803C8E0
+	thumb_func_start gEngineEffectDestroyBoostATK_0803C8E0
+gEngineEffectDestroyBoostATK_0803C8E0: @ 0x0803C8E0
 	push {lr}
 	movs r0, #0
-	bl sub_080916C0
+	bl gEngineEffectBoostATKBoostDEF_080916C0
 	movs r0, #0
-	bl sub_08093384
+	bl gEngineEffectDestroyChangePosition_08093384
 	ldr r0, _0803C8FC @ =gUnk_0201BCC0
 	ldr r1, _0803C900 @ =0x0000080C
 	adds r0, r0, r1
@@ -79461,7 +79461,7 @@ _0803C926:
 	ldrh r0, [r0, #0xa]
 	ldr r1, _0803C998 @ =0x000011ED (Weather Report (None))
 	movs r2, #1
-	bl sub_0802EBFC
+	bl gEngineEffectSendToGYGraveyard_0802EBFC
 _0803C94A:
 	ldr r0, _0803C99C @ =0x00001D28
 	adds r1, r4, r0
@@ -79544,8 +79544,8 @@ _0803C9F4: .4byte 0x00001D2C
 _0803C9F8: .4byte 0x000010D0 @ Wicked Dragon with the Ersatz Head
 _0803C9FC: .4byte 0x0000080C
 
-	thumb_func_start sub_0803CA00
-sub_0803CA00: @ 0x0803CA00
+	thumb_func_start gEngineEffectDirectAttack_0803CA00
+gEngineEffectDirectAttack_0803CA00: @ 0x0803CA00
 	push {lr}
 	ldr r1, _0803CA24 @ =gUnk_0201C4E0
 	ldr r0, _0803CA28 @ =0x000010D0 (Wicked Dragon with the Ersatz Head)
@@ -79569,11 +79569,11 @@ _0803CA28: .4byte 0x000010D0 @ Wicked Dragon with the Ersatz Head
 _0803CA2C: .4byte gUnk_0201BCC0
 _0803CA30: .4byte 0x0000080C
 
-	thumb_func_start sub_0803CA34
-sub_0803CA34: @ 0x0803CA34
+	thumb_func_start gEngineEffectBoostATKBoostDEF_0803CA34
+gEngineEffectBoostATKBoostDEF_0803CA34: @ 0x0803CA34
 	push {lr}
 	movs r0, #0
-	bl sub_080916C0
+	bl gEngineEffectBoostATKBoostDEF_080916C0
 	ldr r1, _0803CA5C @ =gUnk_0201C4E0
 	ldr r0, _0803CA60 @ =0x00001D28
 	adds r2, r1, r0
@@ -79596,8 +79596,8 @@ _0803CA64: .4byte 0x00001D2C
 _0803CA68: .4byte gUnk_0201BCC0
 _0803CA6C: .4byte 0x0000080C
 
-	thumb_func_start sub_0803CA70
-sub_0803CA70: @ 0x0803CA70
+	thumb_func_start gEngineEffectGraveyardBattlePhase_0803CA70
+gEngineEffectGraveyardBattlePhase_0803CA70: @ 0x0803CA70
 	push {r4, r5, lr}
 	ldr r0, _0803CACC @ =gUnk_0201BCC0
 	ldrh r1, [r0]
@@ -79655,8 +79655,8 @@ _0803CAE0: .4byte 0x00001D2C
 _0803CAE4: .4byte 0x000010D0 @ Wicked Dragon with the Ersatz Head
 _0803CAE8: .4byte 0x0000080C
 
-	thumb_func_start sub_0803CAEC
-sub_0803CAEC: @ 0x0803CAEC
+	thumb_func_start gEngineEffectSendToGYGraveyard_0803CAEC
+gEngineEffectSendToGYGraveyard_0803CAEC: @ 0x0803CAEC
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -79773,7 +79773,7 @@ _0803CB20:
 	add r0, sp, #4
 	ldrh r3, [r0]
 	movs r0, #0x18
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r1, _0803CBF8 @ =gUnk_0201C4D0
 	ldr r0, [r1]
 	adds r0, #1
@@ -79788,7 +79788,7 @@ _0803CBF8: .4byte gUnk_0201C4D0
 _0803CBFC:
 	adds r0, r7, #0
 	mov r1, sb
-	bl sub_0802EA3C
+	bl gEngineEffectSendToGYGraveyard_0802EA3C
 	lsls r0, r6, #2
 	adds r0, r0, r6
 	lsls r0, r0, #2
@@ -79869,8 +79869,8 @@ _0803CCA0: .4byte 0x000010A4 @ Embryonic Beast
 _0803CCA4: .4byte gUnk_0201BCC0
 _0803CCA8: .4byte 0x0000080C
 
-	thumb_func_start sub_0803CCAC
-sub_0803CCAC: @ 0x0803CCAC
+	thumb_func_start gEngineEffectSendToGYSearch_0803CCAC
+gEngineEffectSendToGYSearch_0803CCAC: @ 0x0803CCAC
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -79945,7 +79945,7 @@ _0803CD14:
 	adds r1, r7, #0
 	movs r2, #0xe
 	adds r3, r4, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 _0803CD48:
 	mov r0, r8
 	cmp r0, #0xf
@@ -79969,7 +79969,7 @@ _0803CD48:
 	adds r1, r7, #0
 	movs r2, #0xf
 	adds r3, r4, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 _0803CD7C:
 	ldr r1, _0803CD94 @ =gUnk_0201BCC0
 	movs r2, #0x81
@@ -79985,7 +79985,7 @@ _0803CD90: .4byte 0x00000868
 _0803CD94: .4byte gUnk_0201BCC0
 _0803CD98:
 	movs r0, #0x16
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	adds r1, r0, #0
 	cmp r1, #0
 	beq _0803CDA6
@@ -80197,7 +80197,7 @@ _0803CE9C:
 	lsls r1, r1, #0x1a
 	lsrs r1, r1, #0x1b
 	ldr r2, [sp, #8]
-	bl sub_08032194
+	bl gEngineEffectGraveyardSendToGY_08032194
 	ldr r0, [sp, #0x10]
 	cmp r0, #0xf
 	beq _0803CF74
@@ -80231,7 +80231,7 @@ _0803CF84:
 	lsrs r1, r1, #0x1b
 	ldr r4, _0803D004 @ =gUnk_0201C4D8
 	adds r3, r4, #0
-	bl sub_08032280
+	bl gEngineEffectSearchSendToGY_08032280
 	ldr r2, [sp, #4]
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
@@ -80278,7 +80278,7 @@ _0803CF84:
 	add r0, sp, #4
 	ldrh r3, [r0]
 	movs r0, #0x18
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	subs r4, #8
 	ldr r0, [r4]
 	adds r0, #1
@@ -80291,7 +80291,7 @@ _0803D00C: .4byte 0xFFFFBFFF
 _0803D010:
 	movs r0, #1
 	rsbs r0, r0, #0
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	adds r1, r0, #0
 	cmp r1, #0
 	bne _0803D024
@@ -80456,7 +80456,7 @@ _0803D13C:
 	ldr r0, [sp, #0xc]
 	movs r1, #0xb
 	movs r2, #1
-	bl sub_0802EAC8
+	bl gEngineEffectSearchSendToGY_0802EAC8
 _0803D158:
 	cmp r6, #0xd
 	bgt _0803D17C
@@ -80714,7 +80714,7 @@ _0803D2CA:
 	lsrs r1, r1, #0x1b
 	lsls r2, r2, #0x12
 	lsrs r2, r2, #0x18
-	bl sub_08032194
+	bl gEngineEffectGraveyardSendToGY_08032194
 	cmp r6, #0xf
 	beq _0803D3A0
 	ldr r1, [sp, #8]
@@ -80762,7 +80762,7 @@ _0803D3D2:
 	lsrs r1, r1, #0x1b
 	ldr r4, _0803D450 @ =gUnk_0201C4D8
 	adds r3, r4, #0
-	bl sub_08032280
+	bl gEngineEffectSearchSendToGY_08032280
 	ldr r2, [sp, #8]
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
@@ -80809,7 +80809,7 @@ _0803D3D2:
 	add r0, sp, #8
 	ldrh r3, [r0]
 	movs r0, #0x18
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	subs r4, #8
 	ldr r0, [r4]
 	adds r0, #1
@@ -80836,8 +80836,8 @@ _0803D464:
 	.align 2, 0
 _0803D474: .4byte 0x0000080A
 
-	thumb_func_start sub_0803D478
-sub_0803D478: @ 0x0803D478
+	thumb_func_start gEngineEffectSendToGYSearch_0803D478
+gEngineEffectSendToGYSearch_0803D478: @ 0x0803D478
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -80911,7 +80911,7 @@ _0803D4E0:
 	adds r1, r5, #0
 	movs r2, #0xe
 	adds r3, r4, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 _0803D514:
 	mov r6, r8
 	cmp r6, #0xf
@@ -80935,7 +80935,7 @@ _0803D514:
 	adds r1, r5, #0
 	movs r2, #0xf
 	adds r3, r4, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 _0803D548:
 	ldr r1, _0803D560 @ =gUnk_0201BCC0
 	movs r0, #0x81
@@ -80950,7 +80950,7 @@ _0803D55C: .4byte 0x00000868
 _0803D560: .4byte gUnk_0201BCC0
 _0803D564:
 	movs r0, #0x16
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	cmp r0, #0
 	beq _0803D570
 	b _0803D6E0
@@ -81069,7 +81069,7 @@ _0803D570:
 	lsrs r1, r1, #0x1b
 	lsls r2, r2, #0x12
 	lsrs r2, r2, #0x18
-	bl sub_08032194
+	bl gEngineEffectGraveyardSendToGY_08032194
 	ldr r1, [sp, #4]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
@@ -81079,7 +81079,7 @@ _0803D570:
 	lsls r2, r3, #8
 	orrs r2, r6
 	adds r3, r4, #0
-	bl sub_08032280
+	bl gEngineEffectSearchSendToGY_08032280
 	ldr r1, [r4]
 	lsls r0, r1, #2
 	lsrs r0, r0, #0x18
@@ -81092,7 +81092,7 @@ _0803D570:
 	add r0, sp, #4
 	ldrh r3, [r0]
 	movs r0, #0x18
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r0, _0803D6D0 @ =gUnk_0201E2A0
 	ldr r0, [r0, #4]
 	ldr r5, [sp, #8]
@@ -81141,8 +81141,8 @@ _0803D6E0:
 	.align 2, 0
 _0803D6F0: .4byte 0x0000080A
 
-	thumb_func_start sub_0803D6F4
-sub_0803D6F4: @ 0x0803D6F4
+	thumb_func_start gEngineEffectSpecialSummonSendToGY_0803D6F4
+gEngineEffectSpecialSummonSendToGY_0803D6F4: @ 0x0803D6F4
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -81381,7 +81381,7 @@ _0803D8BC:
 	add r0, sp, #4
 	ldrh r3, [r0]
 	movs r0, #0x18
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r1, _0803D910 @ =gUnk_0201C4D8
 	subs r1, #8
 	ldr r0, [r1]
@@ -81409,8 +81409,8 @@ _0803D910: .4byte gUnk_0201C4D8
 _0803D914: .4byte 0x000010A4 @ Embryonic Beast
 _0803D918: .4byte 0xFFDFFFFF
 
-	thumb_func_start sub_0803D91C
-sub_0803D91C: @ 0x0803D91C
+	thumb_func_start gEngineEffectSpecialSummon_0803D91C
+gEngineEffectSpecialSummon_0803D91C: @ 0x0803D91C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -81698,7 +81698,7 @@ _0803DAB2:
 	ldrh r3, [r0]
 	movs r0, #0x19
 	movs r1, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r1, _0803DB98 @ =gUnk_0201BCC0
 	subs r7, #0x58
 	adds r1, r1, r7
@@ -81786,8 +81786,8 @@ _0803DC28: .4byte 0xFFFFE000
 _0803DC2C: .4byte 0x00000818
 _0803DC30: .4byte 0x0000080C
 
-	thumb_func_start sub_0803DC34
-sub_0803DC34: @ 0x0803DC34
+	thumb_func_start gEngineEffectSpecialSummonSendToGY_0803DC34
+gEngineEffectSpecialSummonSendToGY_0803DC34: @ 0x0803DC34
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -81852,7 +81852,7 @@ _0803DCA2:
 	movs r0, #0x44
 	mov r1, r8
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 _0803DCBC:
 	ldr r1, _0803DCC8 @ =gUnk_0201BCC0
 	movs r2, #0x81
@@ -81863,7 +81863,7 @@ _0803DCBC:
 _0803DCC8: .4byte gUnk_0201BCC0
 _0803DCCC:
 	movs r0, #0x44
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	cmp r0, #0
 	beq _0803DCD8
 	b _0803DE5C
@@ -81912,7 +81912,7 @@ _0803DCEE:
 _0803DD2A:
 	movs r0, #0x1a
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r1, _0803DD44 @ =gUnk_0201BCC0
 	movs r3, #0x81
 	lsls r3, r3, #4
@@ -81926,7 +81926,7 @@ _0803DD3A:
 _0803DD44: .4byte gUnk_0201BCC0
 _0803DD48:
 	movs r0, #0x1a
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	cmp r0, #0
 	beq _0803DD54
 	b _0803DE5C
@@ -82002,7 +82002,7 @@ _0803DDD4:
 	ldrh r0, [r0, #0xa]
 	lsrs r1, r6, #0x10
 	movs r2, #1
-	bl sub_0802EBBC
+	bl gEngineEffectSendToGYGraveyard_0802EBBC
 	adds r4, #0x14
 	subs r5, #1
 	cmp r5, #0
@@ -82087,8 +82087,8 @@ _0803DE84: .4byte 0x00001CE8
 _0803DE88: .4byte gUnk_0201BCC0
 _0803DE8C: .4byte 0x0000080C
 
-	thumb_func_start sub_0803DE90
-sub_0803DE90: @ 0x0803DE90
+	thumb_func_start gEngineEffectSpecialSummonDestroy_0803DE90
+gEngineEffectSpecialSummonDestroy_0803DE90: @ 0x0803DE90
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -82177,7 +82177,7 @@ _0803DF2E:
 	adds r1, r4, #0
 	mov r2, sl
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 _0803DF44:
 	ldr r2, [sp, #4]
 	cmp r2, #0
@@ -82186,7 +82186,7 @@ _0803DF44:
 	adds r1, r4, #0
 	mov r2, sl
 	movs r3, #1
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 _0803DF56:
 	mov r1, sb
 	b _0803E084
@@ -82194,7 +82194,7 @@ _0803DF56:
 _0803DF5C: .4byte gUnk_0201BB90
 _0803DF60:
 	movs r0, #0x45
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	cmp r0, #0
 	beq _0803DF6C
 	b _0803E0AE
@@ -82234,7 +82234,7 @@ _0803DF84:
 	movs r0, #0x1a
 	movs r2, #1
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	b _0803E07C
 _0803DFB6:
 	movs r1, #1
@@ -82262,11 +82262,11 @@ _0803DFB6:
 _0803DFE2:
 	movs r0, #0x1a
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	b _0803E07C
 _0803DFEC:
 	movs r0, #0x1a
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	cmp r0, #0
 	bne _0803E0AE
 	ldr r0, [sp, #8]
@@ -82321,7 +82321,7 @@ _0803E050:
 	adds r1, r4, #0
 	mov r2, sl
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 _0803E062:
 	ldr r2, _0803E090 @ =gUnk_0201C4E0
 	lsls r0, r5, #2
@@ -82353,7 +82353,7 @@ _0803E094: .4byte 0x00000868
 _0803E098: .4byte gUnk_0201BCC0
 _0803E09C:
 	movs r0, #0x41
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	adds r1, r0, #0
 	cmp r1, #0
 	bne _0803E0AE
@@ -82372,8 +82372,8 @@ _0803E0AE:
 	.align 2, 0
 _0803E0C0: .4byte 0x0000080C
 
-	thumb_func_start sub_0803E0C4
-sub_0803E0C4: @ 0x0803E0C4
+	thumb_func_start gEngineEffectSearchSendToGY_0803E0C4
+gEngineEffectSearchSendToGY_0803E0C4: @ 0x0803E0C4
 	push {r4, r5, r6, r7, lr}
 	sub sp, #4
 	ldr r0, _0803E0F4 @ =gUnk_0201BCC0
@@ -82395,7 +82395,7 @@ sub_0803E0C4: @ 0x0803E0C4
 	adds r0, r0, r7
 	adds r1, r6, #0
 	adds r2, r4, #0
-	bl sub_0802EB3C
+	bl gEngineEffectSearchSendToGY_0802EB3C
 	b _0803E10A
 	.align 2, 0
 _0803E0F4: .4byte gUnk_0201BCC0
@@ -82406,13 +82406,13 @@ _0803E0FC:
 	adds r1, r5, #0
 	adds r2, r6, #0
 	adds r3, r4, #0
-	bl sub_0802EAC8
+	bl gEngineEffectSearchSendToGY_0802EAC8
 _0803E10A:
 	movs r0, #0x24
 	movs r1, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r0, _0803E128 @ =gUnk_0201BCC0
 	ldr r1, _0803E12C @ =0x0000080C
 	adds r0, r0, r1
@@ -82426,8 +82426,8 @@ _0803E10A:
 _0803E128: .4byte gUnk_0201BCC0
 _0803E12C: .4byte 0x0000080C
 
-	thumb_func_start sub_0803E130
-sub_0803E130: @ 0x0803E130
+	thumb_func_start gEngineEffectSpecialSummon_0803E130
+gEngineEffectSpecialSummon_0803E130: @ 0x0803E130
 	push {r4, r5, lr}
 	sub sp, #4
 	ldr r5, _0803E168 @ =gUnk_0201BCC0
@@ -82444,7 +82444,7 @@ sub_0803E130: @ 0x0803E130
 	movs r1, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r0, _0803E16C @ =0x0000080C
 	adds r5, r5, r0
 	movs r0, #0
@@ -82457,8 +82457,8 @@ sub_0803E130: @ 0x0803E130
 _0803E168: .4byte gUnk_0201BCC0
 _0803E16C: .4byte 0x0000080C
 
-	thumb_func_start sub_0803E170
-sub_0803E170: @ 0x0803E170
+	thumb_func_start gEngineEffectSendToGYGraveyard_0803E170
+gEngineEffectSendToGYGraveyard_0803E170: @ 0x0803E170
 	push {r4, r5, r6, lr}
 	ldr r0, _0803E1AC @ =gUnk_0201BCC0
 	ldrh r1, [r0]
@@ -82485,7 +82485,7 @@ sub_0803E170: @ 0x0803E170
 	adds r1, r3, #0
 	adds r2, r5, #0
 	adds r3, r4, #0
-	bl sub_0802EC3C
+	bl gEngineEffectSendToGYGraveyard_0802EC3C
 	b _0803E1FA
 	.align 2, 0
 _0803E1AC: .4byte gUnk_0201BCC0
@@ -82505,7 +82505,7 @@ _0803E1B8:
 	ldrh r0, [r0, #0xa]
 	adds r1, r3, #0
 	adds r2, r4, #0
-	bl sub_0802EBBC
+	bl gEngineEffectSendToGYGraveyard_0802EBBC
 	b _0803E1FA
 	.align 2, 0
 _0803E1D8: .4byte 0x00000868
@@ -82522,13 +82522,13 @@ _0803E1E0:
 	ldrh r0, [r0, #0xa]
 	adds r1, r3, #0
 	adds r2, r4, #0
-	bl sub_0802EBFC
+	bl gEngineEffectSendToGYGraveyard_0802EBFC
 _0803E1FA:
 	movs r0, #0x24
 	movs r1, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r0, _0803E220 @ =gUnk_0201BCC0
 	ldr r1, _0803E224 @ =0x0000080C
 	adds r0, r0, r1
@@ -82543,8 +82543,8 @@ _0803E21C: .4byte gUnk_0201C510
 _0803E220: .4byte gUnk_0201BCC0
 _0803E224: .4byte 0x0000080C
 
-	thumb_func_start sub_0803E228
-sub_0803E228: @ 0x0803E228
+	thumb_func_start gEngineEffectSpecialSummon_0803E228
+gEngineEffectSpecialSummon_0803E228: @ 0x0803E228
 	push {r4, r5, r6, lr}
 	ldr r6, _0803E284 @ =gUnk_0201BCC0
 	ldrh r0, [r6]
@@ -82580,7 +82580,7 @@ sub_0803E228: @ 0x0803E228
 	movs r1, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 _0803E274:
 	ldr r0, _0803E294 @ =0x0000080C
 	adds r1, r6, r0
@@ -82596,8 +82596,8 @@ _0803E28C: .4byte gUnk_0201C510
 _0803E290: .4byte 0x00001CB4
 _0803E294: .4byte 0x0000080C
 
-	thumb_func_start sub_0803E298
-sub_0803E298: @ 0x0803E298
+	thumb_func_start gEngineEffectSpecialSummon_0803E298
+gEngineEffectSpecialSummon_0803E298: @ 0x0803E298
 	push {r4, lr}
 	ldr r0, _0803E2CC @ =gUnk_0201BCC0
 	ldrh r1, [r0]
@@ -82642,7 +82642,7 @@ _0803E2EA:
 	movs r1, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r0, _0803E310 @ =gUnk_0201BCC0
 	ldr r1, _0803E314 @ =0x0000080C
 	adds r0, r0, r1
@@ -82657,8 +82657,8 @@ _0803E30C: .4byte gUnk_0201C510
 _0803E310: .4byte gUnk_0201BCC0
 _0803E314: .4byte 0x0000080C
 
-	thumb_func_start sub_0803E318
-sub_0803E318: @ 0x0803E318
+	thumb_func_start gEngineEffectDestroyCounter_0803E318
+gEngineEffectDestroyCounter_0803E318: @ 0x0803E318
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -82776,7 +82776,7 @@ _0803E3D2:
 _0803E3F8:
 	movs r0, #0x25
 	mov r3, sb
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 _0803E400:
 	ldr r1, _0803E418 @ =gUnk_0201BCC0
 	movs r3, #0x81
@@ -82792,7 +82792,7 @@ _0803E414: .4byte gUnk_0201C510
 _0803E418: .4byte gUnk_0201BCC0
 _0803E41C:
 	movs r0, #0x25
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	adds r4, r0, #0
 	cmp r4, #0
 	bne _0803E43A
@@ -82800,7 +82800,7 @@ _0803E41C:
 	movs r1, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r1, _0803E448 @ =0x0000080C
 	adds r0, r6, r1
 	str r4, [r0]
@@ -82815,8 +82815,8 @@ _0803E43A:
 	.align 2, 0
 _0803E448: .4byte 0x0000080C
 
-	thumb_func_start sub_0803E44C
-sub_0803E44C: @ 0x0803E44C
+	thumb_func_start gEngineEffectSpecialSummon_0803E44C
+gEngineEffectSpecialSummon_0803E44C: @ 0x0803E44C
 	push {r4, lr}
 	ldr r4, _0803E46C @ =gUnk_0201BCC0
 	ldrh r0, [r4]
@@ -82824,7 +82824,7 @@ sub_0803E44C: @ 0x0803E44C
 	ldrh r2, [r4, #2]
 	ldrh r3, [r4, #4]
 	movs r0, #7
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r0, _0803E470 @ =0x0000080C
 	adds r4, r4, r0
 	movs r0, #0
@@ -82836,8 +82836,8 @@ sub_0803E44C: @ 0x0803E44C
 _0803E46C: .4byte gUnk_0201BCC0
 _0803E470: .4byte 0x0000080C
 
-	thumb_func_start sub_0803E474
-sub_0803E474: @ 0x0803E474
+	thumb_func_start gEngineEffectSpecialSummon_0803E474
+gEngineEffectSpecialSummon_0803E474: @ 0x0803E474
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -82892,7 +82892,7 @@ _0803E4AC:
 	adds r1, r5, #0
 	movs r2, #0xe
 	adds r3, r7, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 _0803E4E6:
 	mov r0, r8
 	cmp r0, #0xf
@@ -82917,14 +82917,14 @@ _0803E4E6:
 	adds r1, r5, #0
 	movs r2, #0xf
 	adds r3, r4, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	b _0803E55A
 	.align 2, 0
 _0803E520: .4byte gUnk_0201C4E0
 _0803E524: .4byte 0x00000868
 _0803E528:
 	movs r0, #0x16
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	cmp r0, #0
 	bne _0803E582
 	mov r0, r8
@@ -82946,7 +82946,7 @@ _0803E544:
 	movs r0, #0x17
 	adds r1, r5, #0
 	adds r3, r4, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 _0803E55A:
 	ldr r1, _0803E56C @ =gUnk_0201BCC0
 	movs r2, #0x81
@@ -82960,7 +82960,7 @@ _0803E55A:
 _0803E56C: .4byte gUnk_0201BCC0
 _0803E570:
 	movs r0, #0x17
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	adds r1, r0, #0
 	cmp r1, #0
 	bne _0803E582
@@ -83110,7 +83110,7 @@ _0803E654:
 _0803E690:
 	movs r0, #0x1d
 	mov r1, sl
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	b _0803E6A2
 _0803E69A:
 	ldr r0, _0803E6AC @ =gUnk_0201BCC0
@@ -83128,7 +83128,7 @@ _0803E6AC: .4byte gUnk_0201BCC0
 _0803E6B0: .4byte 0x0000080C
 _0803E6B4:
 	movs r0, #0x1d
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	cmp r0, #0
 	beq _0803E6C0
 	b _0803EAF4
@@ -83280,7 +83280,7 @@ _0803E7D0:
 	mov r0, sl
 	movs r1, #0xb
 	movs r2, #1
-	bl sub_0802EAC8
+	bl gEngineEffectSearchSendToGY_0802EAC8
 _0803E7F0:
 	mov r1, r8
 	ldr r0, [r1]
@@ -83337,7 +83337,7 @@ _0803E844:
 	adds r1, r4, #0
 	movs r2, #1
 	ldr r3, _0803E9FC @ =0x00001972 (Boss Rush)
-	bl sub_0802EAC8
+	bl gEngineEffectSearchSendToGY_0802EAC8
 _0803E862:
 	adds r4, #1
 	cmp r4, #9
@@ -83517,7 +83517,7 @@ _0803E91E:
 	lsls r1, r1, #0x1a
 	lsrs r1, r1, #0x1b
 	ldr r2, [sp, #0xc]
-	bl sub_08032194
+	bl gEngineEffectGraveyardSendToGY_08032194
 	ldr r2, [sp, #8]
 	lsls r0, r2, #0x1f
 	lsrs r3, r0, #0x1f
@@ -83549,7 +83549,7 @@ _0803EA1E:
 	ldr r4, _0803EA9C @ =gUnk_0201C4D8
 	adds r0, r3, #0
 	adds r3, r4, #0
-	bl sub_08032280
+	bl gEngineEffectSearchSendToGY_08032280
 	ldr r2, [sp, #8]
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
@@ -83599,7 +83599,7 @@ _0803EA1E:
 	ldr r0, [sp, #0x1c]
 	ldrh r3, [r0]
 	movs r0, #0x18
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	subs r4, #8
 	ldr r0, [r4]
 	adds r0, #1
@@ -83624,7 +83624,7 @@ _0803EAA8:
 	movs r0, #0x48
 	mov r1, sl
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 _0803EAC8:
 	ldr r1, _0803EADC @ =gUnk_0201BCC0
 	movs r2, #0x81
@@ -83640,7 +83640,7 @@ _0803EAD8: .4byte gUnk_0201C4D8
 _0803EADC: .4byte gUnk_0201BCC0
 _0803EAE0:
 	movs r0, #0x48
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	adds r1, r0, #0
 	cmp r1, #0
 	bne _0803EAF4
@@ -83745,7 +83745,7 @@ _0803EB94:
 	movs r0, #0x1e
 	mov r1, r8
 	ldr r2, [sp, #0xc]
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r1, _0803EBC8 @ =gUnk_0201BCC0
 	movs r3, #0x81
 	lsls r3, r3, #4
@@ -83763,7 +83763,7 @@ _0803EBC8: .4byte gUnk_0201BCC0
 _0803EBCC: .4byte 0x00000814
 _0803EBD0:
 	movs r0, #0x1e
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	cmp r0, #0
 	beq _0803EBDC
 	b _0803EFB4
@@ -83854,7 +83854,7 @@ _0803EC70:
 	mov r0, r8
 	movs r1, #0xb
 	movs r2, #1
-	bl sub_0802EAC8
+	bl gEngineEffectSearchSendToGY_0802EAC8
 _0803EC90:
 	mov r3, sb
 	ldr r0, [r3]
@@ -83911,7 +83911,7 @@ _0803ECE4:
 	adds r1, r4, #0
 	movs r2, #1
 	ldr r3, _0803EE14 @ =0x00001972 (Boss Rush)
-	bl sub_0802EAC8
+	bl gEngineEffectSearchSendToGY_0802EAC8
 _0803ED02:
 	adds r4, #1
 	cmp r4, #9
@@ -83977,7 +83977,7 @@ _0803ED58:
 	mov r0, r8
 	movs r1, #0xb
 	movs r2, #1
-	bl sub_0802EAC8
+	bl gEngineEffectSearchSendToGY_0802EAC8
 _0803ED84:
 	ldr r4, _0803EE24 @ =gUnk_0201C4D8
 	adds r0, r4, #0
@@ -84136,7 +84136,7 @@ _0803EEBA:
 	lsrs r1, r1, #0x1b
 	lsls r2, r4, #0x12
 	lsrs r2, r2, #0x18
-	bl sub_08032194
+	bl gEngineEffectGraveyardSendToGY_08032194
 	ldr r2, [sp, #8]
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
@@ -84145,7 +84145,7 @@ _0803EEBA:
 	lsls r2, r2, #0x12
 	lsrs r2, r2, #0x18
 	adds r3, r6, #0
-	bl sub_08032280
+	bl gEngineEffectSearchSendToGY_08032280
 	ldr r2, [sp, #8]
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
@@ -84194,7 +84194,7 @@ _0803EEBA:
 	mov r4, sl
 	ldrh r3, [r4]
 	movs r0, #0x18
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	adds r1, r6, #0
 	subs r1, #8
 _0803EF5E:
@@ -84219,7 +84219,7 @@ _0803EF78:
 	movs r0, #0x48
 	mov r1, r8
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	subs r4, #8
 	ldr r0, [r4]
 	adds r0, #1
@@ -84229,7 +84229,7 @@ _0803EF78:
 _0803EF9C: .4byte gUnk_0201C4D8
 _0803EFA0:
 	movs r0, #0x48
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	adds r1, r0, #0
 	cmp r1, #0
 	bne _0803EFB4
@@ -84340,7 +84340,7 @@ _0803F050:
 	mov r1, sl
 	movs r2, #0xe
 	adds r3, r4, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 _0803F088:
 	ldr r1, _0803F09C @ =gUnk_0201BCC0
 	movs r0, #0x81
@@ -84353,7 +84353,7 @@ _0803F098: .4byte 0x00000868
 _0803F09C: .4byte gUnk_0201BCC0
 _0803F0A0:
 	movs r0, #0x16
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	cmp r0, #0
 	beq _0803F0AC
 	b _0803F3C4
@@ -84384,7 +84384,7 @@ _0803F0AC:
 	orrs r2, r0
 	movs r0, #0x1f
 	mov r1, sl
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	b _0803F398
 _0803F0EA:
 	ldr r0, _0803F0F4 @ =gUnk_0201BCC0
@@ -84397,7 +84397,7 @@ _0803F0F4: .4byte gUnk_0201BCC0
 _0803F0F8: .4byte 0x0000080C
 _0803F0FC:
 	movs r0, #0x1f
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	cmp r0, #0
 	beq _0803F108
 	b _0803F3C4
@@ -84594,7 +84594,7 @@ _0803F1E0:
 	lsls r1, r1, #0x1a
 	lsrs r1, r1, #0x1b
 	mov r2, r8
-	bl sub_08032194
+	bl gEngineEffectGraveyardSendToGY_08032194
 	movs r1, #0x80
 	ldr r0, [sp, #8]
 	ands r0, r1
@@ -84631,7 +84631,7 @@ _0803F2CC:
 	lsls r1, r1, #0x1a
 	lsrs r1, r1, #0x1b
 	ldr r3, _0803F34C @ =gUnk_0201C4D8
-	bl sub_08032280
+	bl gEngineEffectSearchSendToGY_08032280
 	ldr r2, [sp, #4]
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
@@ -84678,7 +84678,7 @@ _0803F2CC:
 	ldr r0, [sp, #0x14]
 	ldrh r3, [r0]
 	movs r0, #0x18
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r1, _0803F34C @ =gUnk_0201C4D8
 	subs r1, #8
 	b _0803F3A0
@@ -84712,7 +84712,7 @@ _0803F370:
 	movs r0, #0x48
 	mov r1, sl
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 _0803F398:
 	ldr r1, _0803F3AC @ =gUnk_0201BCC0
 	movs r2, #0x81
@@ -84728,7 +84728,7 @@ _0803F3A8: .4byte gUnk_0201C4D8
 _0803F3AC: .4byte gUnk_0201BCC0
 _0803F3B0:
 	movs r0, #0x48
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	adds r1, r0, #0
 	cmp r1, #0
 	bne _0803F3C4
@@ -84749,8 +84749,8 @@ _0803F3C4:
 _0803F3D4: .4byte gUnk_0201BCC0
 _0803F3D8: .4byte 0x0000080C
 
-	thumb_func_start sub_0803F3DC
-sub_0803F3DC: @ 0x0803F3DC
+	thumb_func_start gEngineEffectSpecialSummon_0803F3DC
+gEngineEffectSpecialSummon_0803F3DC: @ 0x0803F3DC
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -84816,7 +84816,7 @@ _0803F434:
 	adds r1, r5, #0
 	movs r2, #0xe
 	mov r3, r8
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 _0803F462:
 	cmp r4, #0xf
 	bne _0803F50C
@@ -84845,7 +84845,7 @@ _0803F490: .4byte gUnk_0201C4E0
 _0803F494: .4byte 0x00000868
 _0803F498:
 	movs r0, #0x16
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	cmp r0, #0
 	bne _0803F560
 	mov r0, sb
@@ -84856,7 +84856,7 @@ _0803F498:
 	adds r1, r5, #0
 	mov r2, sb
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 _0803F4B8:
 	ldr r0, [r7]
 	adds r0, #1
@@ -84864,7 +84864,7 @@ _0803F4B8:
 	b _0803F560
 _0803F4C0:
 	movs r0, #0x41
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	cmp r0, #0
 	bne _0803F560
 	cmp r6, #0
@@ -84883,7 +84883,7 @@ _0803F4E0:
 	adds r1, r5, #0
 	mov r2, sb
 	mov r3, r8
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	b _0803F50C
 _0803F4F0:
 	movs r0, #0x1f
@@ -84899,7 +84899,7 @@ _0803F4F0:
 	mov r2, sb
 	mov r3, r8
 _0803F508:
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 _0803F50C:
 	ldr r1, _0803F51C @ =gUnk_0201BCC0
 	movs r0, #0x81
@@ -84913,7 +84913,7 @@ _0803F50C:
 _0803F51C: .4byte gUnk_0201BCC0
 _0803F520:
 	movs r0, #0x20
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	adds r4, r0, #0
 	cmp r4, #0
 	bne _0803F560
@@ -84958,8 +84958,8 @@ _0803F574: .4byte 0x00001CF4
 _0803F578: .4byte 0x00000868
 _0803F57C: .4byte 0x0000080C
 
-	thumb_func_start sub_0803F580
-sub_0803F580: @ 0x0803F580
+	thumb_func_start gEngineEffectSpecialSummon_0803F580
+gEngineEffectSpecialSummon_0803F580: @ 0x0803F580
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -84993,7 +84993,7 @@ _0803F5B0:
 	mov r1, r8
 	adds r2, r6, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 _0803F5C6:
 	mov r2, sb
 	ldr r0, [r2]
@@ -85002,7 +85002,7 @@ _0803F5C6:
 	b _0803F606
 _0803F5D0:
 	movs r0, #0x41
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	cmp r0, #0
 	bne _0803F606
 	ands r5, r4
@@ -85011,7 +85011,7 @@ _0803F5D0:
 	adds r1, r5, #0
 	adds r2, r6, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	mov r1, sb
 	ldr r0, [r1]
 	adds r0, #1
@@ -85019,7 +85019,7 @@ _0803F5D0:
 	b _0803F606
 _0803F5F4:
 	movs r0, #0x20
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	adds r1, r0, #0
 	cmp r1, #0
 	bne _0803F606
@@ -85036,8 +85036,8 @@ _0803F606:
 	.align 2, 0
 _0803F614: .4byte 0x0000080C
 
-	thumb_func_start sub_0803F618
-sub_0803F618: @ 0x0803F618
+	thumb_func_start gEngineEffectSpecialSummon_0803F618
+gEngineEffectSpecialSummon_0803F618: @ 0x0803F618
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -85076,7 +85076,7 @@ _0803F650:
 	ldr r1, [sp]
 	mov r2, r8
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 _0803F666:
 	ldr r0, [r5]
 	adds r0, #1
@@ -85084,7 +85084,7 @@ _0803F666:
 	b _0803F77A
 _0803F66E:
 	movs r0, #0x41
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	cmp r0, #0
 	beq _0803F67A
 	b _0803F77A
@@ -85171,7 +85171,7 @@ _0803F6D8:
 	adds r3, r3, r0
 	movs r0, #0x20
 	mov r2, r8
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r0, [sp, #8]
 	adds r0, #1
 	str r0, [sp, #8]
@@ -85196,7 +85196,7 @@ _0803F72C:
 	adds r1, r3, #0
 	mov r2, r8
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 _0803F74A:
 	ldr r1, _0803F764 @ =gUnk_0201BCC0
 	movs r0, #0x81
@@ -85212,7 +85212,7 @@ _0803F760: .4byte 0x00000868
 _0803F764: .4byte gUnk_0201BCC0
 _0803F768:
 	movs r0, #0x20
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	adds r1, r0, #0
 	cmp r1, #0
 	bne _0803F77A
@@ -85231,8 +85231,8 @@ _0803F77A:
 	.align 2, 0
 _0803F78C: .4byte 0x0000080C
 
-	thumb_func_start sub_0803F790
-sub_0803F790: @ 0x0803F790
+	thumb_func_start gEngineEffectSpecialSummon_0803F790
+gEngineEffectSpecialSummon_0803F790: @ 0x0803F790
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -85333,7 +85333,7 @@ _0803F852:
 	adds r1, r7, #0
 	adds r2, r4, #0
 	mov r3, r8
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r1, _0803F878 @ =gUnk_0201BCC0
 	movs r0, #0x81
 	lsls r0, r0, #4
@@ -85348,7 +85348,7 @@ _0803F874: .4byte 0xAB880000
 _0803F878: .4byte gUnk_0201BCC0
 _0803F87C:
 	movs r0, #0x21
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	adds r1, r0, #0
 	cmp r1, #0
 	bne _0803F88E
@@ -85365,8 +85365,8 @@ _0803F88E:
 	.align 2, 0
 _0803F898: .4byte 0x0000080C
 
-	thumb_func_start sub_0803F89C
-sub_0803F89C: @ 0x0803F89C
+	thumb_func_start gEngineEffectSearchSendToGY_0803F89C
+gEngineEffectSearchSendToGY_0803F89C: @ 0x0803F89C
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -85413,7 +85413,7 @@ sub_0803F89C: @ 0x0803F89C
 	adds r3, r3, r0
 	movs r0, #0x22
 	adds r2, r5, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	b _0803F938
 	.align 2, 0
 _0803F900: .4byte gUnk_0201BCC0
@@ -85421,7 +85421,7 @@ _0803F904: .4byte 0x00000868
 _0803F908: .4byte gUnk_0201C510
 _0803F90C:
 	movs r0, #0x22
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	adds r4, r0, #0
 	cmp r4, #0
 	bne _0803F938
@@ -85430,12 +85430,12 @@ _0803F90C:
 	adds r0, r5, #0
 	mov r1, r8
 	adds r2, r7, #0
-	bl sub_0802EAC8
+	bl gEngineEffectSearchSendToGY_0802EAC8
 	movs r0, #0x24
 	movs r1, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r1, _0803F944 @ =0x0000080C
 	adds r0, r6, r1
 	str r4, [r0]
@@ -85449,8 +85449,8 @@ _0803F938:
 	.align 2, 0
 _0803F944: .4byte 0x0000080C
 
-	thumb_func_start sub_0803F948
-sub_0803F948: @ 0x0803F948
+	thumb_func_start gEngineEffectDestroyStandbyPhase_0803F948
+gEngineEffectDestroyStandbyPhase_0803F948: @ 0x0803F948
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -85482,7 +85482,7 @@ sub_0803F948: @ 0x0803F948
 	movs r0, #0x23
 	adds r1, r5, #0
 	mov r2, r8
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r0, [r4]
 	adds r0, #1
 	str r0, [r4]
@@ -85529,7 +85529,7 @@ _0803F998:
 	lsrs r0, r0, #0x1f
 	adds r3, r3, r0
 	movs r0, #0x23
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r0, [r7]
 	adds r0, #1
 	str r0, [r7]
@@ -85539,7 +85539,7 @@ _0803F9F4: .4byte 0x00000868
 _0803F9F8: .4byte gUnk_0201C510
 _0803F9FC:
 	movs r0, #0x23
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	cmp r0, #0
 	bne _0803FA22
 	b _0803FA0C
@@ -85551,7 +85551,7 @@ _0803FA0C:
 	movs r1, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r0, _0803FA30 @ =gUnk_0201BCC0
 	ldr r1, _0803FA34 @ =0x0000080C
 	adds r0, r0, r1
@@ -85568,8 +85568,8 @@ _0803FA22:
 _0803FA30: .4byte gUnk_0201BCC0
 _0803FA34: .4byte 0x0000080C
 
-	thumb_func_start sub_0803FA38
-sub_0803FA38: @ 0x0803FA38
+	thumb_func_start gEngineEffectSearchSendToGY_0803FA38
+gEngineEffectSearchSendToGY_0803FA38: @ 0x0803FA38
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -85712,7 +85712,7 @@ _0803FB50:
 	orrs r0, r5
 	str r0, [sp, #4]
 	ldr r0, [sp, #0x10]
-	bl sub_0804BA58
+	bl gEngineEffectSpecialSummon_0804BA58
 	ands r6, r0
 	lsls r1, r6, #0xe
 	ldr r0, [sp, #4]
@@ -85790,7 +85790,7 @@ _0803FC04:
 	ldr r0, [sp, #0xc]
 	adds r1, r7, #0
 	add r2, sp, #4
-	bl sub_08030CC0
+	bl gEngineEffectSearchSendToGY_08030CC0
 	lsls r0, r7, #2
 	adds r0, r0, r7
 	lsls r0, r0, #2
@@ -85813,7 +85813,7 @@ _0803FC36:
 	movs r0, #0x1b
 	ldr r2, [sp, #0x10]
 	mov r3, sl
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r0, _0803FC68 @ =gUnk_0201BCC0
 	ldr r1, _0803FC6C @ =0x0000080C
 	adds r0, r0, r1
@@ -85833,8 +85833,8 @@ _0803FC64: .4byte 0xFFEFFFFF
 _0803FC68: .4byte gUnk_0201BCC0
 _0803FC6C: .4byte 0x0000080C
 
-	thumb_func_start sub_0803FC70
-sub_0803FC70: @ 0x0803FC70
+	thumb_func_start gEngineEffectSpecialSummonDamage_0803FC70
+gEngineEffectSpecialSummonDamage_0803FC70: @ 0x0803FC70
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -85978,7 +85978,7 @@ _0803FCE8:
 	add r0, sp, #4
 	ldrh r3, [r0]
 	movs r0, #0x18
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r3, _0803FDC0 @ =gUnk_0201C4D0
 	ldr r0, [r3]
 	adds r0, #1
@@ -86135,14 +86135,14 @@ _0803FEBC:
 	movs r0, #0x1f
 	mov r1, r8
 	movs r2, #0xd
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 _0803FEE2:
 	ldr r0, [r5]
 	adds r0, #1
 	b _08040096
 _0803FEE8:
 	movs r0, #0x1f
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	cmp r0, #0
 	beq _0803FEF4
 	b _08040098
@@ -86283,7 +86283,7 @@ _0803FFEC:
 	lsls r1, r3, #0x1a
 	lsrs r1, r1, #0x1b
 	movs r2, #0
-	bl sub_08032194
+	bl gEngineEffectGraveyardSendToGY_08032194
 	ldr r2, [sp, #4]
 	lsls r0, r2, #0x1f
 	lsrs r3, r0, #0x1f
@@ -86310,7 +86310,7 @@ _08040046:
 	ldr r4, _08040078 @ =gUnk_0201C4D8
 	adds r0, r3, #0
 	adds r3, r4, #0
-	bl sub_08032280
+	bl gEngineEffectSearchSendToGY_08032280
 	ldr r1, [r4]
 	lsls r0, r1, #2
 	lsrs r0, r0, #0x18
@@ -86323,7 +86323,7 @@ _08040046:
 	ldr r0, [sp, #0x10]
 	ldrh r3, [r0]
 	movs r0, #0x18
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	subs r4, #8
 	ldr r0, [r4]
 	adds r0, #1
@@ -86357,8 +86357,8 @@ _08040098:
 	pop {r0}
 	bx r0
 
-	thumb_func_start sub_080400A8
-sub_080400A8: @ 0x080400A8
+	thumb_func_start gEngineEffectSpecialSummon_080400A8
+gEngineEffectSpecialSummon_080400A8: @ 0x080400A8
 	push {r4, r5, r6, r7, lr}
 	ldr r7, _080400CC @ =gUnk_0201BCC0
 	ldrh r0, [r7]
@@ -86400,14 +86400,14 @@ _080400F4:
 	adds r1, r5, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r0, [r6]
 	adds r0, #1
 	str r0, [r6]
 	b _08040136
 _08040108:
 	movs r0, #0x13
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	adds r6, r0, #0
 	cmp r6, #0
 	bne _08040136
@@ -86422,7 +86422,7 @@ _08040108:
 	adds r1, r5, #0
 	movs r2, #0xd
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r1, _08040140 @ =0x0000080C
 	adds r0, r7, r1
 	str r6, [r0]
@@ -86434,8 +86434,8 @@ _08040136:
 _0804013C: .4byte gUnk_0201C4E0
 _08040140: .4byte 0x0000080C
 
-	thumb_func_start sub_08040144
-sub_08040144: @ 0x08040144
+	thumb_func_start gEngineEffectSpecialSummon_08040144
+gEngineEffectSpecialSummon_08040144: @ 0x08040144
 	push {r4, r5, lr}
 	ldr r4, _0804018C @ =gUnk_0201BCC0
 	ldrh r1, [r4, #2]
@@ -86455,12 +86455,12 @@ sub_08040144: @ 0x08040144
 	movs r1, #0
 	movs r2, #0xd
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	movs r0, #0x14
 	movs r1, #1
 	movs r2, #0xd
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r1, _08040190 @ =0x0000080C
 	adds r0, r4, r1
 	str r5, [r0]
@@ -86472,8 +86472,8 @@ _08040186:
 _0804018C: .4byte gUnk_0201BCC0
 _08040190: .4byte 0x0000080C
 
-	thumb_func_start sub_08040194
-sub_08040194: @ 0x08040194
+	thumb_func_start gEngineEffectSpecialSummon_08040194
+gEngineEffectSpecialSummon_08040194: @ 0x08040194
 	push {r4, r5, r6, lr}
 	sub sp, #4
 	ldr r1, _080401D8 @ =gUnk_0201BCC0
@@ -86514,7 +86514,7 @@ _080401E4:
 	adds r1, r5, #0
 	movs r2, #0xd
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 _080401F0:
 	ldr r0, _08040204 @ =gUnk_0201BCC0
 	ldr r1, _08040208 @ =0x0000080C
@@ -86529,8 +86529,8 @@ _080401F0:
 _08040204: .4byte gUnk_0201BCC0
 _08040208: .4byte 0x0000080C
 
-	thumb_func_start sub_0804020C
-sub_0804020C: @ 0x0804020C
+	thumb_func_start gEngineEffectSpecialSummon_0804020C
+gEngineEffectSpecialSummon_0804020C: @ 0x0804020C
 	push {r4, r5, lr}
 	ldr r5, _08040228 @ =gUnk_0201BCC0
 	ldrh r0, [r5]
@@ -86550,14 +86550,14 @@ _08040228: .4byte gUnk_0201BCC0
 _0804022C:
 	movs r0, #0x15
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r0, [r4]
 	adds r0, #1
 	str r0, [r4]
 	b _0804024E
 _0804023C:
 	movs r0, #0x15
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	adds r1, r0, #0
 	cmp r1, #0
 	bne _0804024E
@@ -86571,8 +86571,8 @@ _0804024E:
 	.align 2, 0
 _08040254: .4byte 0x0000080C
 
-	thumb_func_start sub_08040258
-sub_08040258: @ 0x08040258
+	thumb_func_start gEngineEffectSpecialSummon_08040258
+gEngineEffectSpecialSummon_08040258: @ 0x08040258
 	push {r4, r5, lr}
 	ldr r5, _0804027C @ =gUnk_0201BCC0
 	movs r0, #0x81
@@ -86585,7 +86585,7 @@ sub_08040258: @ 0x08040258
 	movs r1, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r0, [r4]
 	adds r0, #1
 	str r0, [r4]
@@ -86594,7 +86594,7 @@ sub_08040258: @ 0x08040258
 _0804027C: .4byte gUnk_0201BCC0
 _08040280:
 	movs r0, #1
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	adds r1, r0, #0
 	cmp r1, #0
 	bne _08040292
@@ -86608,8 +86608,8 @@ _08040292:
 	.align 2, 0
 _08040298: .4byte 0x0000080C
 
-	thumb_func_start sub_0804029C
-sub_0804029C: @ 0x0804029C
+	thumb_func_start gEngineEffectSpecialSummon_0804029C
+gEngineEffectSpecialSummon_0804029C: @ 0x0804029C
 	push {r4, r5, lr}
 	ldr r4, _080402CC @ =gUnk_0201BCC0
 	ldrh r0, [r4]
@@ -86657,7 +86657,7 @@ _080402EE:
 	adds r1, r2, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r1, _08040318 @ =gUnk_0201BCC0
 	movs r2, #0x81
 	lsls r2, r2, #4
@@ -86673,7 +86673,7 @@ _08040314: .4byte 0x00000894
 _08040318: .4byte gUnk_0201BCC0
 _0804031C:
 	movs r0, #2
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	adds r1, r0, #0
 	cmp r1, #0
 	bne _0804032E
@@ -86687,8 +86687,8 @@ _0804032E:
 	.align 2, 0
 _08040334: .4byte 0x0000080C
 
-	thumb_func_start sub_08040338
-sub_08040338: @ 0x08040338
+	thumb_func_start gEngineEffectSpecialSummon_08040338
+gEngineEffectSpecialSummon_08040338: @ 0x08040338
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -86748,7 +86748,7 @@ _0804039C:
 	movs r0, #5
 	movs r2, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r0, _080403E4 @ =0x0000080C
 	add r0, sb
 	str r6, [r0]
@@ -86769,8 +86769,8 @@ _080403DC: .4byte gUnk_0201E2A0
 _080403E0: .4byte 0x00000868
 _080403E4: .4byte 0x0000080C
 
-	thumb_func_start sub_080403E8
-sub_080403E8: @ 0x080403E8
+	thumb_func_start gEngineEffectDirectAttack_080403E8
+gEngineEffectDirectAttack_080403E8: @ 0x080403E8
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	ldr r5, _0804041C @ =gUnk_0201BCC0
@@ -86785,7 +86785,7 @@ sub_080403E8: @ 0x080403E8
 	movs r0, #4
 	adds r2, r6, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r0, _08040420 @ =gUnk_0201C4E0
 	ldr r1, _08040424 @ =0x00001CF4
 	adds r0, r0, r1
@@ -86801,7 +86801,7 @@ _08040420: .4byte gUnk_0201C4E0
 _08040424: .4byte 0x00001CF4
 _08040428:
 	movs r0, #4
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	adds r4, r0, #0
 	cmp r4, #0
 	bne _08040446
@@ -86809,7 +86809,7 @@ _08040428:
 	movs r1, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r1, _0804044C @ =0x0000080C
 	adds r0, r5, r1
 	str r4, [r0]
@@ -86820,59 +86820,59 @@ _08040446:
 	.align 2, 0
 _0804044C: .4byte 0x0000080C
 
-	thumb_func_start sub_08040450
-sub_08040450: @ 0x08040450
+	thumb_func_start gEngineEffectDirectAttack_08040450
+gEngineEffectDirectAttack_08040450: @ 0x08040450
 	push {lr}
 	movs r0, #0
-	bl sub_080403E8
+	bl gEngineEffectDirectAttack_080403E8
 	pop {r0}
 	bx r0
 
-	thumb_func_start sub_0804045C
-sub_0804045C: @ 0x0804045C
+	thumb_func_start gEngineEffectDirectAttack_0804045C
+gEngineEffectDirectAttack_0804045C: @ 0x0804045C
 	push {lr}
 	movs r0, #1
-	bl sub_080403E8
+	bl gEngineEffectDirectAttack_080403E8
 	pop {r0}
 	bx r0
 
-	thumb_func_start sub_08040468
-sub_08040468: @ 0x08040468
+	thumb_func_start gEngineEffectDirectAttack_08040468
+gEngineEffectDirectAttack_08040468: @ 0x08040468
 	push {lr}
 	movs r0, #2
-	bl sub_080403E8
+	bl gEngineEffectDirectAttack_080403E8
 	pop {r0}
 	bx r0
 
-	thumb_func_start sub_08040474
-sub_08040474: @ 0x08040474
+	thumb_func_start gEngineEffectDirectAttack_08040474
+gEngineEffectDirectAttack_08040474: @ 0x08040474
 	push {lr}
 	movs r0, #3
-	bl sub_080403E8
+	bl gEngineEffectDirectAttack_080403E8
 	pop {r0}
 	bx r0
 
-	thumb_func_start sub_08040480
-sub_08040480: @ 0x08040480
+	thumb_func_start gEngineEffectDirectAttack_08040480
+gEngineEffectDirectAttack_08040480: @ 0x08040480
 	push {lr}
 	movs r0, #4
-	bl sub_080403E8
+	bl gEngineEffectDirectAttack_080403E8
 	pop {r0}
 	bx r0
 
-	thumb_func_start sub_0804048C
-sub_0804048C: @ 0x0804048C
+	thumb_func_start gEngineEffectDirectAttack_0804048C
+gEngineEffectDirectAttack_0804048C: @ 0x0804048C
 	push {lr}
 	movs r0, #5
-	bl sub_080403E8
+	bl gEngineEffectDirectAttack_080403E8
 	pop {r0}
 	bx r0
 
-	thumb_func_start sub_08040498
-sub_08040498: @ 0x08040498
+	thumb_func_start gEngineEffectSpecialSummon_08040498
+gEngineEffectSpecialSummon_08040498: @ 0x08040498
 	push {r4, lr}
 	movs r0, #5
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	adds r4, r0, #0
 	cmp r4, #0
 	bne _080404B6
@@ -86891,8 +86891,8 @@ _080404B6:
 _080404BC: .4byte gUnk_0201BCC0
 _080404C0: .4byte 0x0000080C
 
-	thumb_func_start sub_080404C4
-sub_080404C4: @ 0x080404C4
+	thumb_func_start gEngineEffectSendToGYGraveyard_080404C4
+gEngineEffectSendToGYGraveyard_080404C4: @ 0x080404C4
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -86905,7 +86905,7 @@ sub_080404C4: @ 0x080404C4
 	movs r0, #0x46
 	movs r2, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	movs r4, #0
 	ldr r3, _080405D0 @ =gUnk_0201C4E0
 	movs r0, #1
@@ -87015,7 +87015,7 @@ _080405A6:
 	adds r4, r6, #0
 	cmp r4, #1
 	ble _08040530
-	bl sub_0802EDF0
+	bl gEngineEffectSendToGYGraveyard_0802EDF0
 	ldr r0, _080405CC @ =gUnk_0201BCC0
 	ldr r5, _08040600 @ =0x0000080C
 	adds r0, r0, r5
@@ -87071,8 +87071,8 @@ _08040624:
 _0804062C: .4byte gUnk_0201BCC0
 _08040630: .4byte 0x0000080C
 
-	thumb_func_start sub_08040634
-sub_08040634: @ 0x08040634
+	thumb_func_start gEngineEffectSpecialSummon_08040634
+gEngineEffectSpecialSummon_08040634: @ 0x08040634
 	push {lr}
 	ldr r0, _08040650 @ =gUnk_0201BCC0
 	ldrh r3, [r0, #2]
@@ -87105,7 +87105,7 @@ _0804066A:
 	movs r1, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r0, _08040690 @ =gUnk_0201BCC0
 	ldr r1, _08040694 @ =0x0000080C
 	adds r0, r0, r1
@@ -87119,8 +87119,8 @@ _0804068C: .4byte 0x000010D0 @ Wicked Dragon with the Ersatz Head
 _08040690: .4byte gUnk_0201BCC0
 _08040694: .4byte 0x0000080C
 
-	thumb_func_start sub_08040698
-sub_08040698: @ 0x08040698
+	thumb_func_start gEngineEffectSpecialSummon_08040698
+gEngineEffectSpecialSummon_08040698: @ 0x08040698
 	push {r4, lr}
 	ldr r0, _080406C4 @ =gUnk_0201BCC0
 	ldrh r1, [r0]
@@ -87165,7 +87165,7 @@ _080406E8:
 	movs r1, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r0, _08040710 @ =gUnk_0201BCC0
 	ldr r1, _08040714 @ =0x0000080C
 	adds r0, r0, r1
@@ -87180,8 +87180,8 @@ _0804070C: .4byte 0x00000868
 _08040710: .4byte gUnk_0201BCC0
 _08040714: .4byte 0x0000080C
 
-	thumb_func_start sub_08040718
-sub_08040718: @ 0x08040718
+	thumb_func_start gEngineEffectSpecialSummon_08040718
+gEngineEffectSpecialSummon_08040718: @ 0x08040718
 	push {r4, lr}
 	ldr r4, _08040744 @ =gUnk_0201BCC0
 	ldrh r1, [r4]
@@ -87194,7 +87194,7 @@ sub_08040718: @ 0x08040718
 	movs r1, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r0, _08040748 @ =0x0000080C
 	adds r4, r4, r0
 	movs r0, #0
@@ -87230,7 +87230,7 @@ gEngineEffectBoostATKEquip_0804074C: @ 0x0804074C
 	adds r1, r4, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	b _080407AA
 	.align 2, 0
 _08040780: .4byte gUnk_0201BCC0
@@ -87238,7 +87238,7 @@ _08040784: .4byte gUnk_0201C4E0
 _08040788: .4byte 0x000010D8 @ Insect Armor with Laser Cannon
 _0804078C:
 	movs r0, #6
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	adds r4, r0, #0
 	cmp r4, #0
 	bne _080407AA
@@ -87246,7 +87246,7 @@ _0804078C:
 	movs r1, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r1, _080407B0 @ =0x0000080C
 	adds r0, r5, r1
 	str r4, [r0]
@@ -87257,8 +87257,8 @@ _080407AA:
 	.align 2, 0
 _080407B0: .4byte 0x0000080C
 
-	thumb_func_start sub_080407B4
-sub_080407B4: @ 0x080407B4
+	thumb_func_start gEngineEffectSpecialSummon_080407B4
+gEngineEffectSpecialSummon_080407B4: @ 0x080407B4
 	push {r4, r5, lr}
 	ldr r5, _080407DC @ =gUnk_0201BCC0
 	ldrh r0, [r5]
@@ -87272,7 +87272,7 @@ sub_080407B4: @ 0x080407B4
 	movs r0, #0x40
 	movs r2, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r0, [r4]
 	adds r0, #1
 	str r0, [r4]
@@ -87281,7 +87281,7 @@ sub_080407B4: @ 0x080407B4
 _080407DC: .4byte gUnk_0201BCC0
 _080407E0:
 	movs r0, #0x40
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	adds r1, r0, #0
 	cmp r1, #0
 	bne _080407F2
@@ -87295,8 +87295,8 @@ _080407F2:
 	.align 2, 0
 _080407F8: .4byte 0x0000080C
 
-	thumb_func_start sub_080407FC
-sub_080407FC: @ 0x080407FC
+	thumb_func_start gEngineEffectSpecialSummon_080407FC
+gEngineEffectSpecialSummon_080407FC: @ 0x080407FC
 	push {r4, r5, r6, lr}
 	ldr r4, _0804082C @ =gUnk_0201BCC0
 	ldrh r0, [r4]
@@ -87311,7 +87311,7 @@ sub_080407FC: @ 0x080407FC
 	bne _08040830
 	movs r0, #0x2e
 	adds r3, r6, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	movs r0, #0x25
 	adds r1, r6, #0
 	bl sub_08094F20
@@ -87323,7 +87323,7 @@ sub_080407FC: @ 0x080407FC
 _0804082C: .4byte gUnk_0201BCC0
 _08040830:
 	movs r0, #0x2e
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	adds r1, r0, #0
 	cmp r1, #0
 	bne _08040842
@@ -87337,8 +87337,8 @@ _08040842:
 	.align 2, 0
 _08040848: .4byte 0x0000080C
 
-	thumb_func_start sub_0804084C
-sub_0804084C: @ 0x0804084C
+	thumb_func_start gEngineEffectSpecialSummon_0804084C
+gEngineEffectSpecialSummon_0804084C: @ 0x0804084C
 	push {r4, r5, lr}
 	ldr r5, _08040874 @ =gUnk_0201BCC0
 	ldrh r0, [r5]
@@ -87352,7 +87352,7 @@ sub_0804084C: @ 0x0804084C
 	cmp r0, #0
 	bne _08040878
 	movs r0, #0x2f
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r0, [r4]
 	adds r0, #1
 	str r0, [r4]
@@ -87361,7 +87361,7 @@ sub_0804084C: @ 0x0804084C
 _08040874: .4byte gUnk_0201BCC0
 _08040878:
 	movs r0, #0x2f
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	adds r1, r0, #0
 	cmp r1, #0
 	bne _0804088A
@@ -87375,8 +87375,8 @@ _0804088A:
 	.align 2, 0
 _08040890: .4byte 0x0000080C
 
-	thumb_func_start sub_08040894
-sub_08040894: @ 0x08040894
+	thumb_func_start gEngineEffectSpecialSummon_08040894
+gEngineEffectSpecialSummon_08040894: @ 0x08040894
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -87410,7 +87410,7 @@ sub_08040894: @ 0x08040894
 	movs r0, #0x37
 	adds r2, r5, #0
 	mov r3, sl
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r0, [r6]
 	adds r0, #1
 	str r0, [r6]
@@ -87419,7 +87419,7 @@ sub_08040894: @ 0x08040894
 _080408E4: .4byte gUnk_0201BCC0
 _080408E8:
 	movs r0, #0x37
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	adds r1, r0, #0
 	cmp r1, #0
 	bne _080408FA
@@ -87437,8 +87437,8 @@ _080408FA:
 	.align 2, 0
 _08040908: .4byte 0x0000080C
 
-	thumb_func_start sub_0804090C
-sub_0804090C: @ 0x0804090C
+	thumb_func_start gEngineEffectSpecialSummon_0804090C
+gEngineEffectSpecialSummon_0804090C: @ 0x0804090C
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -87459,7 +87459,7 @@ sub_0804090C: @ 0x0804090C
 	adds r1, r6, #0
 	adds r2, r7, #0
 	mov r3, r8
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r0, [r4]
 	adds r0, #1
 	str r0, [r4]
@@ -87468,7 +87468,7 @@ sub_0804090C: @ 0x0804090C
 _08040944: .4byte gUnk_0201BCC0
 _08040948:
 	movs r0, #0x38
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	adds r1, r0, #0
 	cmp r1, #0
 	bne _0804095A
@@ -87484,8 +87484,8 @@ _0804095A:
 	.align 2, 0
 _08040964: .4byte 0x0000080C
 
-	thumb_func_start sub_08040968
-sub_08040968: @ 0x08040968
+	thumb_func_start gEngineEffectSpecialSummon_08040968
+gEngineEffectSpecialSummon_08040968: @ 0x08040968
 	push {r4, r5, lr}
 	ldr r5, _08040990 @ =gUnk_0201BCC0
 	ldrh r0, [r5]
@@ -87499,7 +87499,7 @@ sub_08040968: @ 0x08040968
 	movs r0, #0x3a
 	movs r2, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r0, [r4]
 	adds r0, #1
 	str r0, [r4]
@@ -87508,7 +87508,7 @@ sub_08040968: @ 0x08040968
 _08040990: .4byte gUnk_0201BCC0
 _08040994:
 	movs r0, #0x3a
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	adds r1, r0, #0
 	cmp r1, #0
 	bne _080409A6
@@ -87522,8 +87522,8 @@ _080409A6:
 	.align 2, 0
 _080409AC: .4byte 0x0000080C
 
-	thumb_func_start sub_080409B0
-sub_080409B0: @ 0x080409B0
+	thumb_func_start gEngineEffectSpecialSummon_080409B0
+gEngineEffectSpecialSummon_080409B0: @ 0x080409B0
 	push {r4, r5, r6, lr}
 	ldr r5, _080409D8 @ =gUnk_0201BCC0
 	ldrh r0, [r5]
@@ -87538,7 +87538,7 @@ sub_080409B0: @ 0x080409B0
 	movs r0, #0x39
 	adds r2, r6, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r0, [r4]
 	adds r0, #1
 	str r0, [r4]
@@ -87547,7 +87547,7 @@ sub_080409B0: @ 0x080409B0
 _080409D8: .4byte gUnk_0201BCC0
 _080409DC:
 	movs r0, #0x39
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	adds r4, r0, #0
 	cmp r4, #0
 	bne _080409FA
@@ -87567,8 +87567,8 @@ _080409FA:
 	.align 2, 0
 _08040A00: .4byte 0x0000080C
 
-	thumb_func_start sub_08040A04
-sub_08040A04: @ 0x08040A04
+	thumb_func_start gEngineEffectSpecialSummon_08040A04
+gEngineEffectSpecialSummon_08040A04: @ 0x08040A04
 	push {r4, r5, lr}
 	ldr r5, _08040A2C @ =gUnk_0201BCC0
 	ldrh r0, [r5]
@@ -87582,7 +87582,7 @@ sub_08040A04: @ 0x08040A04
 	cmp r0, #0
 	bne _08040A30
 	movs r0, #0x3b
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r0, [r4]
 	adds r0, #1
 	str r0, [r4]
@@ -87591,7 +87591,7 @@ sub_08040A04: @ 0x08040A04
 _08040A2C: .4byte gUnk_0201BCC0
 _08040A30:
 	movs r0, #0x3b
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	adds r1, r0, #0
 	cmp r1, #0
 	bne _08040A42
@@ -87605,8 +87605,8 @@ _08040A42:
 	.align 2, 0
 _08040A48: .4byte 0x0000080C
 
-	thumb_func_start sub_08040A4C
-sub_08040A4C: @ 0x08040A4C
+	thumb_func_start gEngineEffectSpecialSummon_08040A4C
+gEngineEffectSpecialSummon_08040A4C: @ 0x08040A4C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -87654,7 +87654,7 @@ _08040A8A:
 	movs r0, #0x3b
 	adds r1, r6, #0
 	lsrs r3, r3, #0x10
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	b _08040AC4
 	.align 2, 0
 _08040AAC: .4byte gUnk_0201BCC0
@@ -87682,7 +87682,7 @@ _08040AC4:
 _08040ADC: .4byte gUnk_0201BCC0
 _08040AE0:
 	movs r0, #0x3b
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	adds r1, r0, #0
 	cmp r1, #0
 	bne _08040AF2
@@ -87699,8 +87699,8 @@ _08040AF2:
 	.align 2, 0
 _08040B00: .4byte 0x0000080C
 
-	thumb_func_start sub_08040B04
-sub_08040B04: @ 0x08040B04
+	thumb_func_start gEngineEffectSpecialSummon_08040B04
+gEngineEffectSpecialSummon_08040B04: @ 0x08040B04
 	push {r4, r5, lr}
 	ldr r5, _08040B2C @ =gUnk_0201BCC0
 	ldrh r0, [r5]
@@ -87714,7 +87714,7 @@ sub_08040B04: @ 0x08040B04
 	movs r0, #0x3c
 	movs r2, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r0, [r4]
 	adds r0, #1
 	str r0, [r4]
@@ -87723,7 +87723,7 @@ sub_08040B04: @ 0x08040B04
 _08040B2C: .4byte gUnk_0201BCC0
 _08040B30:
 	movs r0, #0x3c
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	adds r1, r0, #0
 	cmp r1, #0
 	bne _08040B42
@@ -87737,8 +87737,8 @@ _08040B42:
 	.align 2, 0
 _08040B48: .4byte 0x0000080C
 
-	thumb_func_start sub_08040B4C
-sub_08040B4C: @ 0x08040B4C
+	thumb_func_start gEngineEffectSpecialSummon_08040B4C
+gEngineEffectSpecialSummon_08040B4C: @ 0x08040B4C
 	push {r4, r5, lr}
 	ldr r4, _08040B84 @ =gUnk_0201BCC0
 	ldrh r2, [r4, #2]
@@ -87762,7 +87762,7 @@ _08040B70:
 	adds r1, r2, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r0, [r5]
 	adds r0, #1
 	str r0, [r5]
@@ -87773,7 +87773,7 @@ _08040B88: .4byte gUnk_0201C4E0
 _08040B8C: .4byte 0x00001CF0
 _08040B90:
 	movs r0, #0x3d
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	adds r1, r0, #0
 	cmp r1, #0
 	bne _08040BA2
@@ -87787,15 +87787,15 @@ _08040BA2:
 	.align 2, 0
 _08040BA8: .4byte 0x0000080C
 
-	thumb_func_start sub_08040BAC
-sub_08040BAC: @ 0x08040BAC
+	thumb_func_start gEngineEffectSpecialSummon_08040BAC
+gEngineEffectSpecialSummon_08040BAC: @ 0x08040BAC
 	push {r4, lr}
 	ldr r4, _08040BCC @ =gUnk_0201BCC0
 	ldrh r1, [r4, #2]
 	movs r0, #0x36
 	movs r2, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r0, _08040BD0 @ =0x0000080C
 	adds r4, r4, r0
 	movs r0, #0
@@ -88011,8 +88011,8 @@ sub_08040D14: @ 0x08040D14
 _08040D20: .4byte gUnk_0201BCC0
 _08040D24: .4byte 0x0000080C
 
-	thumb_func_start sub_08040D28
-sub_08040D28: @ 0x08040D28
+	thumb_func_start gEngineEffectSendToGYSearch_08040D28
+gEngineEffectSendToGYSearch_08040D28: @ 0x08040D28
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -88108,7 +88108,7 @@ _08040DCC:
 	subs r2, #1
 	mov r0, sl
 	movs r1, #0xe
-	bl sub_08032194
+	bl gEngineEffectGraveyardSendToGY_08032194
 	ldr r2, [sp, #4]
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
@@ -88117,7 +88117,7 @@ _08040DCC:
 	lsls r2, r2, #0x12
 	lsrs r2, r2, #0x18
 	adds r3, r7, #0
-	bl sub_08032280
+	bl gEngineEffectSearchSendToGY_08032280
 	ldr r1, [r7]
 	lsls r0, r1, #2
 	lsrs r0, r0, #0x18
@@ -88130,7 +88130,7 @@ _08040DCC:
 	add r0, sp, #4
 	ldrh r3, [r0]
 	movs r0, #0x18
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	b _08040E3E
 	.align 2, 0
 _08040E20: .4byte gUnk_0201BCC0
@@ -88155,8 +88155,8 @@ _08040E3E:
 	.align 2, 0
 _08040E50: .4byte 0x0000080C
 
-	thumb_func_start sub_08040E54
-sub_08040E54: @ 0x08040E54
+	thumb_func_start gEngineEffectSpecialSummon_08040E54
+gEngineEffectSpecialSummon_08040E54: @ 0x08040E54
 	push {r4, lr}
 	ldr r0, _08040E6C @ =gUnk_0201BCC0
 	movs r1, #0x81
@@ -88186,12 +88186,12 @@ _08040E86:
 	adds r1, r4, #0
 	movs r2, #0xd
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	movs r0, #0x14
 	adds r1, r4, #0
 	movs r2, #0xe
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	adds r4, #1
 	cmp r4, #1
 	ble _08040E86
@@ -88208,8 +88208,8 @@ _08040EAE:
 _08040EB4: .4byte gUnk_0201BCC0
 _08040EB8: .4byte 0x0000080C
 
-	thumb_func_start sub_08040EBC
-sub_08040EBC: @ 0x08040EBC
+	thumb_func_start gEngineEffectSpecialSummon_08040EBC
+gEngineEffectSpecialSummon_08040EBC: @ 0x08040EBC
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -88235,7 +88235,7 @@ _08040EE4: .4byte gUnk_0201BCC0
 _08040EE8:
 	movs r0, #1
 	rsbs r0, r0, #0
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	cmp r0, #0
 	bne _08040F4E
 	ldr r6, _08040F34 @ =gUnk_0201C4E0
@@ -88251,7 +88251,7 @@ _08040EE8:
 	adds r1, r5, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 _08040F14:
 	ldr r0, _08040F38 @ =0x00000868
 	mov r2, r8
@@ -88274,7 +88274,7 @@ _08040F34: .4byte gUnk_0201C4E0
 _08040F38: .4byte 0x00000868
 _08040F3C:
 	movs r0, #0x10
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	adds r1, r0, #0
 	cmp r1, #0
 	bne _08040F4E
@@ -88290,8 +88290,8 @@ _08040F4E:
 	.align 2, 0
 _08040F58: .4byte 0x0000080C
 
-	thumb_func_start sub_08040F5C
-sub_08040F5C: @ 0x08040F5C
+	thumb_func_start gEngineEffectSpecialSummon_08040F5C
+gEngineEffectSpecialSummon_08040F5C: @ 0x08040F5C
 	push {r4, r5, r6, lr}
 	ldr r2, _08040F9C @ =gUnk_0201BCC0
 	ldrh r1, [r2]
@@ -88319,7 +88319,7 @@ sub_08040F5C: @ 0x08040F5C
 	movs r0, #7
 	adds r1, r6, #0
 	movs r2, #0xb
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	b _08040FB0
 	.align 2, 0
 _08040F9C: .4byte gUnk_0201BCC0
@@ -88337,8 +88337,8 @@ _08040FB0:
 	.align 2, 0
 _08040FB8: .4byte 0x0000080C
 
-	thumb_func_start sub_08040FBC
-sub_08040FBC: @ 0x08040FBC
+	thumb_func_start gEngineEffectSpecialSummon_08040FBC
+gEngineEffectSpecialSummon_08040FBC: @ 0x08040FBC
 	push {r4, r5, r6, r7, lr}
 	ldr r6, _08040FE4 @ =gUnk_0201BCC0
 	ldrh r1, [r6]
@@ -88370,7 +88370,7 @@ _08040FEE:
 	movs r0, #0x11
 	adds r1, r5, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r1, _08041020 @ =gUnk_0201C4E0
 	ands r4, r5
 	ldr r0, _08041024 @ =0x00000868
@@ -88394,7 +88394,7 @@ _08041020: .4byte gUnk_0201C4E0
 _08041024: .4byte 0x00000868
 _08041028:
 	movs r0, #0x11
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	adds r1, r0, #0
 	cmp r1, #0
 	bne _0804103A
@@ -88408,8 +88408,8 @@ _0804103A:
 	.align 2, 0
 _08041040: .4byte 0x0000080C
 
-	thumb_func_start sub_08041044
-sub_08041044: @ 0x08041044
+	thumb_func_start gEngineEffectSpecialSummon_08041044
+gEngineEffectSpecialSummon_08041044: @ 0x08041044
 	push {r4, r5, r6, r7, lr}
 	ldr r6, _08041060 @ =gUnk_0201BCC0
 	ldrh r0, [r6]
@@ -88435,7 +88435,7 @@ _08041064:
 	adds r1, r5, #0
 	adds r2, r4, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	cmp r4, #0
 	beq _08041096
 	ldr r0, _080410A0 @ =gUnk_0201C4E0
@@ -88460,7 +88460,7 @@ _080410A0: .4byte gUnk_0201C4E0
 _080410A4: .4byte 0x00000868
 _080410A8:
 	movs r0, #0x12
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	adds r1, r0, #0
 	cmp r1, #0
 	bne _080410BA
@@ -88531,14 +88531,14 @@ _08041124:
 	adds r1, r7, #0
 	mov r2, sb
 	ldr r3, [sp, #0x14]
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r0, [r4]
 	adds r0, #1
 	str r0, [r4]
 	b _0804131A
 _08041138:
 	movs r0, #0x42
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	cmp r0, #0
 	beq _08041144
 	b _0804131A
@@ -88615,7 +88615,7 @@ _08041144:
 	lsrs r1, r1, #0x1b
 	lsls r2, r2, #0x12
 	lsrs r2, r2, #0x18
-	bl sub_08032194
+	bl gEngineEffectGraveyardSendToGY_08032194
 	ldr r0, [sp, #0x14]
 	str r0, [sp]
 	adds r0, r7, #0
@@ -88656,7 +88656,7 @@ _08041228:
 	add r0, sp, #8
 	ldrh r3, [r0]
 	movs r0, #0x18
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	b _080412DC
 _0804123A:
 	ldr r4, _080412EC @ =0x000015C7 (Cost Down)
@@ -88675,7 +88675,7 @@ _0804123A:
 	ldr r1, [sp, #0x10]
 	movs r2, #1
 	adds r3, r4, #0
-	bl sub_0802EAC8
+	bl gEngineEffectSearchSendToGY_0802EAC8
 _08041262:
 	ldr r3, _080412F0 @ =gUnk_0201C4E0
 	cmp r6, #0
@@ -88737,7 +88737,7 @@ _080412D0:
 	adds r1, r7, #0
 	ldr r2, [sp, #0x10]
 	ldr r3, [sp, #0x18]
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 _080412DC:
 	ldr r1, _08041304 @ =gUnk_0201BCC0
 	movs r4, #0x81
@@ -88757,7 +88757,7 @@ _08041300: .4byte gUnk_0201E2A0
 _08041304: .4byte gUnk_0201BCC0
 _08041308:
 	movs r0, #0x1c
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	adds r1, r0, #0
 	cmp r1, #0
 	bne _0804131A
@@ -88776,8 +88776,8 @@ _0804131A:
 	.align 2, 0
 _0804132C: .4byte 0x0000080C
 
-	thumb_func_start sub_08041330
-sub_08041330: @ 0x08041330
+	thumb_func_start gEngineEffectSendToGYSearch_08041330
+gEngineEffectSendToGYSearch_08041330: @ 0x08041330
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -88826,14 +88826,14 @@ _08041384:
 	adds r1, r7, #0
 	mov r2, r8
 	mov r3, sl
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r0, [r4]
 	adds r0, #1
 	str r0, [r4]
 	b _08041538
 _08041398:
 	movs r0, #0x42
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	cmp r0, #0
 	beq _080413A4
 	b _08041538
@@ -88903,12 +88903,12 @@ _080413A4:
 	lsrs r1, r1, #0x1b
 	lsls r2, r2, #0x12
 	lsrs r2, r2, #0x18
-	bl sub_08032194
+	bl gEngineEffectGraveyardSendToGY_08032194
 	adds r0, r7, #0
 	ldr r1, [sp, #0xc]
 	ldr r2, _08041460 @ =gUnk_0201C4D8
 	mov r3, sl
-	bl sub_08030CC0
+	bl gEngineEffectSearchSendToGY_08030CC0
 	mov r2, sl
 	cmp r2, #0
 	beq _0804144A
@@ -88942,7 +88942,7 @@ _08041474:
 	add r0, sp, #4
 	ldrh r3, [r0]
 	movs r0, #0x18
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r1, _08041490 @ =gUnk_0201BCC0
 	movs r0, #0x81
 	lsls r0, r0, #4
@@ -88982,7 +88982,7 @@ _080414C8:
 	adds r1, r7, #0
 	ldr r2, [sp, #0xc]
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r0, _080414F8 @ =gUnk_0201E2A0
 	ldr r0, [r0, #4]
 	cmp r7, r0
@@ -89002,7 +89002,7 @@ _080414FC:
 	adds r1, r7, #0
 	mov r2, r8
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 _08041508:
 	ldr r1, _08041518 @ =gUnk_0201BCC0
 	movs r2, #0x81
@@ -89017,11 +89017,11 @@ _08041510:
 _08041518: .4byte gUnk_0201BCC0
 _0804151C:
 	movs r0, #0x1c
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	cmp r0, #0
 	bne _08041538
 	movs r0, #0x41
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	adds r1, r0, #0
 	cmp r1, #0
 	bne _08041538
@@ -89101,7 +89101,7 @@ gEngineEffectSpecialSummonDamage_0804154C: @ 0x0804154C
 	ldr r0, [r1]
 	lsls r0, r0, #0x13
 	lsrs r0, r0, #0x13
-	bl sub_08094F58
+	bl gEngineEffectSpecialSummonGraveyard_08094F58
 _080415C2:
 	movs r0, #4
 	ands r0, r7
@@ -89283,7 +89283,7 @@ _08041726:
 	movs r1, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r0, _08041760 @ =gUnk_0201BCC0
 	ldr r1, _08041764 @ =0x0000080C
 	adds r0, r0, r1
@@ -89302,8 +89302,8 @@ _0804175C: .4byte 0x00000868
 _08041760: .4byte gUnk_0201BCC0
 _08041764: .4byte 0x0000080C
 
-	thumb_func_start sub_08041768
-sub_08041768: @ 0x08041768
+	thumb_func_start gEngineEffectSpecialSummon_08041768
+gEngineEffectSpecialSummon_08041768: @ 0x08041768
 	push {r4, lr}
 	ldr r4, _08041788 @ =gUnk_0201BCC0
 	ldrh r0, [r4]
@@ -89311,7 +89311,7 @@ sub_08041768: @ 0x08041768
 	ldrh r2, [r4, #2]
 	movs r0, #0x28
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r0, _0804178C @ =0x0000080C
 	adds r4, r4, r0
 	movs r0, #0
@@ -89323,8 +89323,8 @@ sub_08041768: @ 0x08041768
 _08041788: .4byte gUnk_0201BCC0
 _0804178C: .4byte 0x0000080C
 
-	thumb_func_start sub_08041790
-sub_08041790: @ 0x08041790
+	thumb_func_start gEngineEffectSpecialSummon_08041790
+gEngineEffectSpecialSummon_08041790: @ 0x08041790
 	push {r4, lr}
 	ldr r4, _080417D8 @ =gUnk_0201BCC0
 	ldrh r0, [r4]
@@ -89332,7 +89332,7 @@ sub_08041790: @ 0x08041790
 	ldrh r2, [r4, #2]
 	ldrh r3, [r4, #4]
 	movs r0, #0x2b
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r0, _080417DC @ =gUnk_0201C4E0
 	ldr r2, _080417E0 @ =0x00001DA8
 	adds r1, r0, r2
@@ -89367,8 +89367,8 @@ _080417E4: .4byte 0x00001DAA
 _080417E8: .4byte 0x00001DB2
 _080417EC: .4byte 0x0000080C
 
-	thumb_func_start sub_080417F0
-sub_080417F0: @ 0x080417F0
+	thumb_func_start gEngineEffectSpecialSummon_080417F0
+gEngineEffectSpecialSummon_080417F0: @ 0x080417F0
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -89388,7 +89388,7 @@ sub_080417F0: @ 0x080417F0
 	adds r1, r4, #0
 	adds r2, r5, #0
 	adds r3, r6, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	adds r0, r4, #0
 	adds r1, r5, #0
 	adds r2, r6, #0
@@ -89408,7 +89408,7 @@ sub_080417F0: @ 0x080417F0
 	str r0, [r7]
 _0804183E:
 	movs r0, #0x2d
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	adds r1, r0, #0
 	cmp r1, #0
 	bne _08041850
@@ -89446,7 +89446,7 @@ gEngineEffectSpecialSummonSendToGY_0804186C: @ 0x0804186C
 	cmp r0, #1
 	beq _080418BA
 	movs r0, #0x35
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	cmp r0, #0
 	bne _0804191E
 	ldr r0, _080418A4 @ =gUnk_0201E2A0
@@ -89461,21 +89461,21 @@ _080418A8:
 	movs r0, #0x3f
 	adds r1, r6, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r0, [r4]
 	adds r0, #1
 	str r0, [r4]
 	b _0804191E
 _080418BA:
 	movs r0, #0x3f
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	cmp r0, #0
 	bne _0804191E
 	movs r0, #0x35
 	adds r1, r6, #0
 	adds r2, r7, #0
 	adds r3, r5, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	movs r4, #0
 	cmp r4, r5
 	bge _080418EE
@@ -89488,7 +89488,7 @@ _080418D8:
 	adds r0, r7, #0
 	movs r1, #3
 	ldr r2, _08041904 @ =0x000012E5 (Polymerization)
-	bl sub_0802EB3C
+	bl gEngineEffectSearchSendToGY_0802EB3C
 	cmp r4, r5
 	blt _080418D8
 _080418EE:
@@ -89522,8 +89522,8 @@ _0804191E:
 _08041924: .4byte gUnk_0201BCC0
 _08041928: .4byte 0x0000080C
 
-	thumb_func_start sub_0804192C
-sub_0804192C: @ 0x0804192C
+	thumb_func_start gEngineEffectSpecialSummon_0804192C
+gEngineEffectSpecialSummon_0804192C: @ 0x0804192C
 	push {r4, r5, r6, lr}
 	ldr r6, _08041980 @ =gUnk_0201BCC0
 	ldrh r0, [r6]
@@ -89543,13 +89543,13 @@ sub_0804192C: @ 0x0804192C
 	orrs r3, r0
 	lsrs r3, r3, #0x10
 	movs r0, #0x3e
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r0, [r5]
 	adds r0, #1
 	str r0, [r5]
 _0804195C:
 	movs r0, #0x3e
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	adds r4, r0, #0
 	cmp r4, #0
 	bne _0804197A
@@ -89557,7 +89557,7 @@ _0804195C:
 	movs r1, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r1, _08041984 @ =0x0000080C
 	adds r0, r6, r1
 	str r4, [r0]
@@ -89569,8 +89569,8 @@ _0804197A:
 _08041980: .4byte gUnk_0201BCC0
 _08041984: .4byte 0x0000080C
 
-	thumb_func_start sub_08041988
-sub_08041988: @ 0x08041988
+	thumb_func_start gEngineEffectSpecialSummon_08041988
+gEngineEffectSpecialSummon_08041988: @ 0x08041988
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -89786,7 +89786,7 @@ _08041B18:
 	mov r1, r8
 	mov r2, sl
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r1, _08041B44 @ =gUnk_0201BCC0
 	movs r2, #0x81
 	lsls r2, r2, #4
@@ -89803,7 +89803,7 @@ _08041B40: .4byte gUnk_0201C520
 _08041B44: .4byte gUnk_0201BCC0
 _08041B48:
 	movs r0, #0x27
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	adds r1, r0, #0
 	cmp r1, #0
 	bne _08041B5A
@@ -89822,8 +89822,8 @@ _08041B5A:
 	.align 2, 0
 _08041B6C: .4byte 0x0000080C
 
-	thumb_func_start sub_08041B70
-sub_08041B70: @ 0x08041B70
+	thumb_func_start gEngineEffectSpecialSummon_08041B70
+gEngineEffectSpecialSummon_08041B70: @ 0x08041B70
 	push {r4, r5, lr}
 	ldr r5, _08041BAC @ =gUnk_0201BCC0
 	ldrh r0, [r5]
@@ -89837,13 +89837,13 @@ sub_08041B70: @ 0x08041B70
 	cmp r0, #0
 	bne _08041B94
 	movs r0, #0x43
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r0, [r4]
 	adds r0, #1
 	str r0, [r4]
 _08041B94:
 	movs r0, #0x43
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	adds r1, r0, #0
 	cmp r1, #0
 	bne _08041BA6
@@ -89898,7 +89898,7 @@ _08041BF4: .4byte gUnk_0201BCC0
 _08041BF8: .4byte 0x0000080C
 _08041BFC:
 	movs r0, #0x2a
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	cmp r0, #0
 	beq _08041C08
 	b _08041ED2
@@ -89909,7 +89909,7 @@ _08041C0A:
 	mov r1, sb
 	adds r2, r6, #0
 	adds r3, r7, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r0, [r4]
 	adds r0, #1
 	str r0, [r4]
@@ -89923,7 +89923,7 @@ _08041C20:
 _08041C28: .4byte 0x00000814
 _08041C2C:
 	movs r0, #0x2a
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	cmp r0, #0
 	beq _08041C38
 	b _08041ED2
@@ -90000,7 +90000,7 @@ _08041CB2:
 	mov r0, sb
 	movs r1, #0xb
 	movs r2, #1
-	bl sub_0802EAC8
+	bl gEngineEffectSearchSendToGY_0802EAC8
 _08041CD0:
 	mov r0, sb
 	lsls r0, r0, #0x10
@@ -90162,7 +90162,7 @@ _08041D4A:
 	lsrs r1, r1, #0x1b
 	lsls r2, r2, #0x12
 	lsrs r2, r2, #0x18
-	bl sub_08032194
+	bl gEngineEffectGraveyardSendToGY_08032194
 	ldr r2, [sp, #8]
 	lsls r0, r2, #0x1f
 	lsrs r3, r0, #0x1f
@@ -90191,7 +90191,7 @@ _08041E56:
 	ldr r4, _08041EE4 @ =gUnk_0201C4D8
 	adds r0, r3, #0
 	adds r3, r4, #0
-	bl sub_08032280
+	bl gEngineEffectSearchSendToGY_08032280
 	ldr r2, [sp, #8]
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
@@ -90241,7 +90241,7 @@ _08041E56:
 	ldr r0, [sp, #0x18]
 	ldrh r3, [r0]
 	movs r0, #0x18
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	subs r4, #8
 _08041ECC:
 	ldr r0, [r4]
@@ -90261,8 +90261,8 @@ _08041EE4: .4byte gUnk_0201C4D8
 _08041EE8: .4byte 0xFFFF7FFF
 _08041EEC: .4byte 0xFFFFBFFF
 
-	thumb_func_start sub_08041EF0
-sub_08041EF0: @ 0x08041EF0
+	thumb_func_start gEngineEffectSpecialSummon_08041EF0
+gEngineEffectSpecialSummon_08041EF0: @ 0x08041EF0
 	push {r4, r5, r6, r7, lr}
 	ldr r6, _08041F14 @ =gUnk_0201BCC0
 	ldrh r0, [r6]
@@ -90288,7 +90288,7 @@ _08041F18:
 _08041F1C:
 	movs r0, #1
 	rsbs r0, r0, #0
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	cmp r0, #0
 	bne _08041FD8
 	cmp r7, #2
@@ -90325,7 +90325,7 @@ _08041F1C:
 	adds r2, r2, r0
 	movs r0, #0x34
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	b _08041FA4
 	.align 2, 0
 _08041F74: .4byte 0x00000868
@@ -90349,7 +90349,7 @@ _08041F7C:
 	movs r0, #0x33
 	adds r1, r4, #0
 	adds r2, r5, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 _08041FA4:
 	ldr r1, _08041FBC @ =gUnk_0201BCC0
 	movs r2, #0x81
@@ -90369,7 +90369,7 @@ _08041FC0:
 	bne _08041FC8
 	movs r0, #0x34
 _08041FC8:
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	adds r1, r0, #0
 	cmp r1, #0
 	bne _08041FD8
@@ -90423,7 +90423,7 @@ _08042020: .4byte gUnk_0201BCC0
 _08042024:
 	movs r0, #1
 	rsbs r0, r0, #0
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	cmp r0, #0
 	beq _08042032
 	b _080422AE
@@ -90558,7 +90558,7 @@ _08042086:
 	lsrs r1, r1, #0x1b
 	lsls r2, r2, #0x12
 	lsrs r2, r2, #0x18
-	bl sub_08032194
+	bl gEngineEffectGraveyardSendToGY_08032194
 	ldr r1, [sp, #8]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
@@ -90572,7 +90572,7 @@ _08042086:
 	ldr r4, _080421C0 @ =gUnk_0201C4D8
 	mov r2, sl
 	adds r3, r4, #0
-	bl sub_08032280
+	bl gEngineEffectSearchSendToGY_08032280
 	adds r0, r7, #0
 	mov r1, sb
 	movs r2, #1
@@ -90593,7 +90593,7 @@ _08042086:
 	add r0, sp, #8
 	ldrh r3, [r0]
 	movs r0, #0x18
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	adds r0, r7, #0
 	mov r1, sb
 	movs r2, #7
@@ -90657,7 +90657,7 @@ _080421F0:
 	mov r1, sb
 	movs r2, #1
 	adds r3, r4, #0
-	bl sub_0802EAC8
+	bl gEngineEffectSearchSendToGY_0802EAC8
 _08042222:
 	movs r3, #1
 	adds r1, r7, #0
@@ -90695,7 +90695,7 @@ _08042222:
 	adds r2, r2, r0
 	movs r0, #0x34
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r1, _08042298 @ =gUnk_0201BCC0
 	movs r3, #0x81
 	lsls r3, r3, #4
@@ -90714,7 +90714,7 @@ _08042294: .4byte gUnk_0201C510
 _08042298: .4byte gUnk_0201BCC0
 _0804229C:
 	movs r0, #0x34
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	adds r2, r0, #0
 	cmp r2, #0
 	bne _080422AE
@@ -90733,8 +90733,8 @@ _080422AE:
 	.align 2, 0
 _080422C0: .4byte 0x0000080C
 
-	thumb_func_start sub_080422C4
-sub_080422C4: @ 0x080422C4
+	thumb_func_start gEngineEffectSpecialSummon_080422C4
+gEngineEffectSpecialSummon_080422C4: @ 0x080422C4
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -90868,7 +90868,7 @@ _08042322:
 	movs r0, #0x1b
 	adds r1, r7, #0
 	mov r2, sl
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r1, _080423FC @ =gUnk_0201BCC0
 	movs r3, #0x81
 	lsls r3, r3, #4
@@ -90913,7 +90913,7 @@ _08042400:
 	adds r2, r2, r0
 	movs r0, #0x34
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r0, [r5]
 	adds r0, #1
 	str r0, [r5]
@@ -90923,7 +90923,7 @@ _08042440: .4byte 0x00000868
 _08042444: .4byte gUnk_0201C510
 _08042448:
 	movs r0, #0x34
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	adds r1, r0, #0
 	cmp r1, #0
 	bne _0804245A
@@ -91010,18 +91010,18 @@ _080424EC:
 	ldr r4, _0804251C @ =0x00001130 (Steel Scorpion (None))
 	adds r1, r4, #0
 	movs r2, #1
-	bl sub_0802EBFC
+	bl gEngineEffectSendToGYGraveyard_0802EBFC
 	str r7, [sp]
 	adds r0, r6, #0
 	adds r1, r5, #0
 	movs r2, #3
 	adds r3, r4, #0
-	bl sub_0802EAC8
+	bl gEngineEffectSearchSendToGY_0802EAC8
 	movs r0, #0x26
 	adds r1, r6, #0
 	adds r2, r5, #0
 	adds r3, r7, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	mov r1, r8
 	ldr r0, [r1]
 	adds r0, #1
@@ -91031,7 +91031,7 @@ _080424EC:
 _0804251C: .4byte 0x00001130 @ Steel Scorpion (None)
 _08042520:
 	movs r0, #0x26
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	adds r1, r0, #0
 	cmp r1, #0
 	bne _08042532
@@ -91076,13 +91076,13 @@ _08042568:
 	adds r1, r6, #0
 	adds r2, r5, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 _08042578:
 	movs r0, #0xd
 	adds r1, r6, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r0, [r7]
 	adds r0, #1
 	str r0, [r7]
@@ -91092,7 +91092,7 @@ _0804258C:
 	beq _0804259E
 	movs r0, #0x30
 	str r3, [sp]
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	ldr r3, [sp]
 	cmp r0, #0
 	bne _080425DA
@@ -91197,7 +91197,7 @@ _08042650:
 	movs r0, #0xe
 	adds r1, r6, #0
 	adds r2, r7, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r2, _0804274C @ =gUnk_0201E2A0
 	mov sl, r2
 	ldr r0, [r2, #4]
@@ -91445,7 +91445,7 @@ _08042868: .4byte 0x00000868
 _0804286C: .4byte gUnk_0201E2A0
 _08042870:
 	movs r0, #0xe
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	adds r4, r0, #0
 	cmp r4, #0
 	beq _0804287E
@@ -91455,7 +91455,7 @@ _0804287E:
 	adds r1, r6, #0
 	adds r2, r7, #0
 	mov r3, r8
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r0, _080428A0 @ =gUnk_0201BCC0
 	movs r1, #0x81
 	lsls r1, r1, #4
@@ -91472,7 +91472,7 @@ _080428A0: .4byte gUnk_0201BCC0
 _080428A4: .4byte 0x00000814
 _080428A8:
 	movs r0, #0x47
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	cmp r0, #0
 	beq _080428B4
 	b _080429AC
@@ -91499,7 +91499,7 @@ _080428D4:
 	movs r0, #0xe
 	adds r1, r6, #0
 	adds r2, r7, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 _080428E4:
 	ldr r1, _080428F4 @ =gUnk_0201BCC0
 	movs r2, #0x81
@@ -91514,7 +91514,7 @@ _080428EC:
 _080428F4: .4byte gUnk_0201BCC0
 _080428F8:
 	movs r0, #0xe
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	cmp r0, #0
 	bne _080429AC
 	cmp r7, #0
@@ -91560,7 +91560,7 @@ _08042936:
 	adds r0, r6, #0
 	movs r1, #0xb
 	movs r2, #0x21
-	bl sub_0802EAC8
+	bl gEngineEffectSearchSendToGY_0802EAC8
 _0804295A:
 	ldr r6, _080429BC @ =gUnk_0201C4E0
 	ldr r2, _080429C8 @ =gUnk_0201E2A0
@@ -91594,7 +91594,7 @@ _0804295A:
 	movs r1, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r0, _080429CC @ =gUnk_0201BCC0
 	ldr r1, _080429D0 @ =0x0000080C
 	adds r0, r0, r1
@@ -91617,24 +91617,24 @@ _080429C8: .4byte gUnk_0201E2A0
 _080429CC: .4byte gUnk_0201BCC0
 _080429D0: .4byte 0x0000080C
 
-	thumb_func_start sub_080429D4
-sub_080429D4: @ 0x080429D4
+	thumb_func_start gEngineEffectSpecialSummonPreventAttack_080429D4
+gEngineEffectSpecialSummonPreventAttack_080429D4: @ 0x080429D4
 	push {lr}
 	movs r0, #1
 	bl gEngineEffectSpecialSummonPreventAttack_080425FC
 	pop {r0}
 	bx r0
 
-	thumb_func_start sub_080429E0
-sub_080429E0: @ 0x080429E0
+	thumb_func_start gEngineEffectSpecialSummonPreventAttack_080429E0
+gEngineEffectSpecialSummonPreventAttack_080429E0: @ 0x080429E0
 	push {lr}
 	movs r0, #0
 	bl gEngineEffectSpecialSummonPreventAttack_080425FC
 	pop {r0}
 	bx r0
 
-	thumb_func_start sub_080429EC
-sub_080429EC: @ 0x080429EC
+	thumb_func_start gEngineEffectSpecialSummon_080429EC
+gEngineEffectSpecialSummon_080429EC: @ 0x080429EC
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -91658,14 +91658,14 @@ _08042A10:
 	adds r1, r6, #0
 	adds r2, r7, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r0, [r5]
 	adds r0, #1
 	str r0, [r5]
 	b _08042A96
 _08042A24:
 	movs r0, #0xd
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	cmp r0, #0
 	bne _08042A96
 	ldr r1, _08042AA0 @ =gUnk_0201C4E0
@@ -91731,8 +91731,8 @@ _08042AA8: .4byte gUnk_0201E2A0
 _08042AAC: .4byte gUnk_0201BCC0
 _08042AB0: .4byte 0x0000080C
 
-	thumb_func_start sub_08042AB4
-sub_08042AB4: @ 0x08042AB4
+	thumb_func_start gEngineEffectSpecialSummon_08042AB4
+gEngineEffectSpecialSummon_08042AB4: @ 0x08042AB4
 	push {r4, lr}
 	ldr r0, _08042AD4 @ =gUnk_0201BCC0
 	ldrh r0, [r0]
@@ -91775,7 +91775,7 @@ _08042AFE:
 	movs r1, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r0, _08042B1C @ =gUnk_0201BCC0
 	ldr r1, _08042B20 @ =0x0000080C
 	adds r0, r0, r1
@@ -91788,8 +91788,8 @@ _08042AFE:
 _08042B1C: .4byte gUnk_0201BCC0
 _08042B20: .4byte 0x0000080C
 
-	thumb_func_start sub_08042B24
-sub_08042B24: @ 0x08042B24
+	thumb_func_start gEngineEffectSpecialSummon_08042B24
+gEngineEffectSpecialSummon_08042B24: @ 0x08042B24
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -91821,7 +91821,7 @@ sub_08042B24: @ 0x08042B24
 	adds r7, r0, #0
 	cmp r7, r4
 	beq _08042BC4
-	bl sub_08033634
+	bl gEngineEffectSpecialSummon_08033634
 	adds r6, r0, #0
 	adds r0, r4, #0
 	adds r1, r5, #0
@@ -91830,7 +91830,7 @@ sub_08042B24: @ 0x08042B24
 	beq _08042B88
 	mov r1, r8
 	subs r0, r1, r4
-	bl sub_08033BF4
+	bl gEngineEffectSpecialSummon_08033BF4
 	cmp r0, #0
 	bge _08042B88
 	movs r6, #1
@@ -91844,7 +91844,7 @@ _08042B88:
 	adds r1, r5, #0
 	movs r2, #1
 	movs r3, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 	b _08042BC0
 	.align 2, 0
 _08042BA0: .4byte 0x00000868
@@ -91860,7 +91860,7 @@ _08042BA8:
 	lsrs r1, r1, #8
 	orrs r1, r2
 	lsrs r1, r1, #0x10
-	bl sub_08043EA4
+	bl gEngineEffectDamage_08043EA4
 _08042BC0:
 	movs r0, #1
 	b _08042BC6
@@ -91909,7 +91909,7 @@ gEngineEffectNegateDestroy_08042BD0: @ 0x08042BD0
 _08042C02:
 	ldr r0, [sp, #0x40]
 	adds r1, r2, #0
-	bl sub_080435C4
+	bl gEngineEffectBoostATKBoostDEF_080435C4
 	b _0804303E
 	.align 2, 0
 _08042C0C: .4byte 0x00000868
@@ -91925,7 +91925,7 @@ _08042C14:
 	adds r2, r2, r0
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_08044DCC
+	bl gEngineEffectDestroyBoostATK_08044DCC
 	adds r0, r5, #0
 	adds r1, r4, #0
 	movs r2, #6
@@ -91961,7 +91961,7 @@ _08042C50:
 	adds r2, r2, r0
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_08044DCC
+	bl gEngineEffectDestroyBoostATK_08044DCC
 	adds r0, r5, #0
 	adds r1, r4, #0
 	movs r2, #6
@@ -91999,7 +91999,7 @@ _08042CA4:
 	adds r2, r2, r0
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_08044DCC
+	bl gEngineEffectDestroyBoostATK_08044DCC
 	ldr r2, _08042CF8 @ =0x000017C2 (Blue-Eyes Shining Dragon)
 	movs r0, #0
 	str r0, [sp]
@@ -92040,7 +92040,7 @@ _08042CFC:
 	adds r2, r2, r0
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_08044DCC
+	bl gEngineEffectDestroyBoostATK_08044DCC
 	adds r0, r5, #0
 	adds r1, r4, #0
 	movs r2, #6
@@ -92276,7 +92276,7 @@ _08042ED6:
 	adds r2, r2, r0
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_08044DCC
+	bl gEngineEffectDestroyBoostATK_08044DCC
 	adds r0, r5, #0
 	adds r1, r4, #0
 	movs r2, #6
@@ -92405,7 +92405,7 @@ _08042F6E:
 	movs r2, #0
 	movs r3, #0
 _08043014:
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 	movs r0, #1
 	b _08043040
 	.align 2, 0
@@ -92470,8 +92470,8 @@ _0804306E:
 	.align 2, 0
 _08043088: .4byte 0x00008036
 
-	thumb_func_start sub_0804308C
-sub_0804308C: @ 0x0804308C
+	thumb_func_start gEngineEffectSpecialSummonDestroy_0804308C
+gEngineEffectSpecialSummonDestroy_0804308C: @ 0x0804308C
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -92488,7 +92488,7 @@ sub_0804308C: @ 0x0804308C
 	lsrs r7, r2, #0x10
 	adds r1, r4, #0
 	adds r2, r5, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	beq _080430B8
 	movs r0, #0
@@ -92763,8 +92763,8 @@ _0804328A:
 	.align 2, 0
 _080432A4: .4byte 0x00008038
 
-	thumb_func_start sub_080432A8
-sub_080432A8: @ 0x080432A8
+	thumb_func_start gEngineEffectDestroyEquip_080432A8
+gEngineEffectDestroyEquip_080432A8: @ 0x080432A8
 	push {lr}
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
@@ -92826,7 +92826,7 @@ _08043314:
 	adds r0, r5, #0
 	adds r1, r4, #0
 	movs r2, #0
-	bl sub_08045298
+	bl gEngineEffectDestroyStandbyPhase_08045298
 _0804331E:
 	movs r0, #0x42
 	ldr r1, [sp]
@@ -92902,7 +92902,7 @@ _08043398:
 	orrs r1, r2
 	mov r2, sb
 	orrs r2, r5
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	b _080433D0
 	.align 2, 0
 _080433C0: .4byte 0x30200000
@@ -92927,8 +92927,8 @@ _080433D0:
 	pop {r0}
 	bx r0
 
-	thumb_func_start sub_080433EC
-sub_080433EC: @ 0x080433EC
+	thumb_func_start gEngineEffectDestroyEquip_080433EC
+gEngineEffectDestroyEquip_080433EC: @ 0x080433EC
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -93133,7 +93133,7 @@ _08043558:
 	adds r2, r0, #0
 	mov r0, sl
 	mov r1, sb
-	bl sub_0803B230
+	bl gEngineEffectSpecialSummonRitualSummon_0803B230
 	cmp r0, #0
 	beq _08043596
 	mov r4, r8
@@ -93173,8 +93173,8 @@ _080435B4:
 	pop {r0}
 	bx r0
 
-	thumb_func_start sub_080435C4
-sub_080435C4: @ 0x080435C4
+	thumb_func_start gEngineEffectBoostATKBoostDEF_080435C4
+gEngineEffectBoostATKBoostDEF_080435C4: @ 0x080435C4
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -93216,7 +93216,7 @@ _080435E8:
 	adds r1, r5, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 _0804361A:
 	adds r0, r6, #0
 	cmp r0, #0
@@ -93238,8 +93238,8 @@ _08043638: .4byte 0x00000868
 _0804363C: .4byte gUnk_0201C510
 _08043640: .4byte gUnk_0201D9C0
 
-	thumb_func_start sub_08043644
-sub_08043644: @ 0x08043644
+	thumb_func_start gEngineEffectBoostATKBoostDEF_08043644
+gEngineEffectBoostATKBoostDEF_08043644: @ 0x08043644
 	push {r4, r5, lr}
 	adds r5, r2, #0
 	movs r2, #1
@@ -93270,7 +93270,7 @@ _08043662:
 	lsrs r1, r1, #8
 	movs r2, #0
 	movs r3, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 _08043682:
 	adds r1, r4, #0
 	cmp r1, #0
@@ -93284,8 +93284,8 @@ _08043690: .4byte 0x00000868
 _08043694: .4byte gUnk_0201C510
 _08043698: .4byte gUnk_0201D9C0
 
-	thumb_func_start sub_0804369C
-sub_0804369C: @ 0x0804369C
+	thumb_func_start gEngineEffectBoostATKBoostDEF_0804369C
+gEngineEffectBoostATKBoostDEF_0804369C: @ 0x0804369C
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -93312,7 +93312,7 @@ sub_0804369C: @ 0x0804369C
 	lsls r3, r3, #0x13
 	lsrs r3, r3, #0x13
 	movs r2, #1
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 _080436D6:
 	pop {r4, r5, r6}
 	pop {r0}
@@ -93322,8 +93322,8 @@ _080436DC: .4byte 0x0000FFFF
 _080436E0: .4byte 0x00000868
 _080436E4: .4byte gUnk_0201C510
 
-	thumb_func_start sub_080436E8
-sub_080436E8: @ 0x080436E8
+	thumb_func_start gEngineEffectSpecialSummonDestroy_080436E8
+gEngineEffectSpecialSummonDestroy_080436E8: @ 0x080436E8
 	push {r4, r5, lr}
 	sub sp, #4
 	adds r5, r3, #0
@@ -93339,15 +93339,15 @@ sub_080436E8: @ 0x080436E8
 	adds r0, r1, #0
 	adds r1, r2, #0
 	adds r2, r5, #0
-	bl sub_08043714
+	bl gEngineEffectSpecialSummonDestroy_08043714
 	add sp, #4
 	pop {r4, r5}
 	pop {r0}
 	bx r0
 	.align 2, 0
 
-	thumb_func_start sub_08043714
-sub_08043714: @ 0x08043714
+	thumb_func_start gEngineEffectSpecialSummonDestroy_08043714
+gEngineEffectSpecialSummonDestroy_08043714: @ 0x08043714
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -93399,7 +93399,7 @@ _08043770:
 	adds r0, r7, #0
 	adds r1, r4, #0
 	ldr r2, [sp, #0x30]
-	bl sub_08036658
+	bl gEngineEffectSpecialSummonDestroy_08036658
 _08043784:
 	cmp r0, #0
 	beq _0804378A
@@ -93556,7 +93556,7 @@ _0804385E:
 	lsls r1, r6, #0x17
 	lsrs r1, r1, #0x17
 	adds r2, r6, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	strh r5, [r4, #8]
 _080438B4:
 	movs r0, #0xc
@@ -93673,8 +93673,8 @@ _08043994: .4byte 0x00000868
 _08043998: .4byte gUnk_0201C510
 _0804399C: .4byte 0x00008035
 
-	thumb_func_start sub_080439A0
-sub_080439A0: @ 0x080439A0
+	thumb_func_start gEngineEffectChangePosition_080439A0
+gEngineEffectChangePosition_080439A0: @ 0x080439A0
 	push {r4, lr}
 	sub sp, #4
 	movs r4, #0
@@ -93685,14 +93685,14 @@ sub_080439A0: @ 0x080439A0
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080439B4
-sub_080439B4: @ 0x080439B4
+	thumb_func_start gEngineEffectSpecialSummonDestroy_080439B4
+gEngineEffectSpecialSummonDestroy_080439B4: @ 0x080439B4
 	push {r4, r5, r6, lr}
 	sub sp, #4
 	adds r4, r1, #0
 	adds r5, r2, #0
 	adds r6, r3, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _080439D6
 	str r0, [sp]
@@ -93878,7 +93878,7 @@ _08043B02:
 	lsls r1, r5, #0x17
 	lsrs r1, r1, #0x17
 	adds r2, r5, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	b _08043B78
 	.align 2, 0
 _08043B30: .4byte 0x00001005 @ Crass Clown
@@ -93916,7 +93916,7 @@ _08043B58:
 	lsls r1, r5, #0x17
 	lsrs r1, r1, #0x17
 	adds r2, r5, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _08043B78:
 	ldr r3, [sp, #4]
 	cmp r3, #0
@@ -93957,7 +93957,7 @@ _08043B78:
 	lsls r1, r5, #0x17
 	lsrs r1, r1, #0x17
 	adds r2, r5, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	mov r0, sl
 	strh r0, [r4, #8]
 _08043BD0:
@@ -94053,7 +94053,7 @@ _08043C80:
 	adds r0, r5, #0
 	adds r1, r4, #0
 	adds r2, r7, #0
-	bl sub_08036658
+	bl gEngineEffectSpecialSummonDestroy_08036658
 _08043C94:
 	cmp r0, #0
 	bne _08043D10
@@ -94084,7 +94084,7 @@ _08043C98:
 	adds r1, r4, #0
 	movs r2, #0
 	adds r3, r6, #0
-	bl sub_08043714
+	bl gEngineEffectSpecialSummonDestroy_08043714
 	b _08043D10
 	.align 2, 0
 _08043CD4: .4byte gUnk_0201C510
@@ -94095,7 +94095,7 @@ _08043CDC:
 	adds r1, r4, #0
 	movs r2, #1
 	movs r3, #0
-	bl sub_080439A0
+	bl gEngineEffectChangePosition_080439A0
 	b _08043D10
 _08043CEC:
 	movs r2, #1
@@ -94114,7 +94114,7 @@ _08043CEC:
 	adds r1, r4, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_080439A0
+	bl gEngineEffectChangePosition_080439A0
 _08043D10:
 	add sp, #4
 	pop {r3}
@@ -94247,7 +94247,7 @@ _08043DD4:
 	adds r0, r4, #0
 	adds r1, r3, #0
 	movs r2, #0
-	bl sub_08045298
+	bl gEngineEffectDestroyStandbyPhase_08045298
 _08043E14:
 	adds r0, r5, #0
 	cmp r0, #0
@@ -94297,7 +94297,7 @@ _08043E40:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	cmp r0, #0
 	beq _08043E82
 	mov r0, sb
@@ -94319,8 +94319,8 @@ _08043E98: .4byte gUnk_0201D9C0
 _08043E9C: .4byte 0xA4E80000
 _08043EA0: .4byte 0x0000118A @ Ameba
 
-	thumb_func_start sub_08043EA4
-sub_08043EA4: @ 0x08043EA4
+	thumb_func_start gEngineEffectDamage_08043EA4
+gEngineEffectDamage_08043EA4: @ 0x08043EA4
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -94398,8 +94398,8 @@ _08043F38: .4byte 0x00000868
 _08043F3C: .4byte gUnk_0201C510
 _08043F40: .4byte 0x0000803D
 
-	thumb_func_start sub_08043F44
-sub_08043F44: @ 0x08043F44
+	thumb_func_start gEngineEffectDamage_08043F44
+gEngineEffectDamage_08043F44: @ 0x08043F44
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -94914,7 +94914,7 @@ _080442E6:
 	lsls r3, r3, #1
 	orrs r1, r3
 	adds r2, r7, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _08044310:
 	mov r1, sb
 	ldr r0, [r1]
@@ -95842,8 +95842,8 @@ sub_08044A00: @ 0x08044A00
 	pop {r0}
 	bx r0
 
-	thumb_func_start sub_08044A28
-sub_08044A28: @ 0x08044A28
+	thumb_func_start gEngineEffectSearchSpecialSummon_08044A28
+gEngineEffectSearchSpecialSummon_08044A28: @ 0x08044A28
 	push {lr}
 	movs r2, #1
 	bl gEngineEffectSearchSpecialSummon_08044A34
@@ -95965,7 +95965,7 @@ _08044AF6:
 	orrs r0, r2
 	lsrs r1, r1, #0x10
 	adds r2, r5, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _08044B18:
 	movs r0, #0x1a
 	adds r1, r7, #0
@@ -96334,8 +96334,8 @@ _08044DBE:
 	.align 2, 0
 _08044DC8: .4byte 0x00008048
 
-	thumb_func_start sub_08044DCC
-sub_08044DCC: @ 0x08044DCC
+	thumb_func_start gEngineEffectDestroyBoostATK_08044DCC
+gEngineEffectDestroyBoostATK_08044DCC: @ 0x08044DCC
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
@@ -96785,7 +96785,7 @@ _080450AC:
 	adds r1, r6, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 	b _0804513A
 	.align 2, 0
 _080450D0: .4byte gUnk_0201C4E0
@@ -96832,13 +96832,13 @@ _08045124:
 	mov r0, r8
 	adds r1, r6, #0
 	movs r2, #0xd
-	bl sub_08043644
+	bl gEngineEffectBoostATKBoostDEF_08043644
 	b _0804513A
 _08045130:
 	mov r0, r8
 	adds r1, r6, #0
 	movs r2, #0xc
-	bl sub_08043644
+	bl gEngineEffectBoostATKBoostDEF_08043644
 _0804513A:
 	adds r0, r5, #0
 	bl gEngineEffectCounterDestroy_0804BE38
@@ -96888,7 +96888,7 @@ _08045174:
 	rsbs r2, r2, #0
 	mov r0, r8
 	adds r1, r6, #0
-	bl sub_0804543C
+	bl gEngineEffectDestroyCounter_0804543C
 	b _08045236
 	.align 2, 0
 _080451A8: .4byte 0x00000868
@@ -96942,7 +96942,7 @@ _080451F0:
 	adds r1, r6, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 	b _08045236
 	.align 2, 0
 _08045214: .4byte gUnk_0201C4E0
@@ -97015,8 +97015,8 @@ _08045274:
 	.align 2, 0
 _08045294: .4byte 0x0000803A
 
-	thumb_func_start sub_08045298
-sub_08045298: @ 0x08045298
+	thumb_func_start gEngineEffectDestroyStandbyPhase_08045298
+gEngineEffectDestroyStandbyPhase_08045298: @ 0x08045298
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
@@ -97057,7 +97057,7 @@ _080452E4: .4byte 0x0000803B
 _080452E8:
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_080313DC
+	bl gEngineEffectDestroyStandbyPhase_080313DC
 	cmp r0, #0
 	beq _08045308
 	movs r0, #0x3b
@@ -97087,7 +97087,7 @@ gEngineEffectSpecialSummonCounter_08045314: @ 0x08045314
 	adds r5, r0, #0
 	adds r4, r1, #0
 	adds r7, r2, #0
-	bl sub_0803149C
+	bl gEngineEffectDestroyCounter_0803149C
 	adds r6, r0, #0
 	movs r2, #1
 	ands r2, r5
@@ -97189,7 +97189,7 @@ _0804539A:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	b _08045430
 	.align 2, 0
 _080453F4: .4byte 0x00000868
@@ -97223,8 +97223,8 @@ _08045430:
 	.align 2, 0
 _08045438: .4byte 0x0000803C
 
-	thumb_func_start sub_0804543C
-sub_0804543C: @ 0x0804543C
+	thumb_func_start gEngineEffectDestroyCounter_0804543C
+gEngineEffectDestroyCounter_0804543C: @ 0x0804543C
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -97328,7 +97328,7 @@ _080454F6:
 	adds r1, r5, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 _08045510:
 	adds r5, #1
 	cmp r5, #0xa
@@ -97345,8 +97345,8 @@ _08045524: .4byte 0x000010F4 @ Umi
 _08045528: .4byte gUnk_0201E1C8
 _0804552C: .4byte 0x000013F7 @ Tornado Wall
 
-	thumb_func_start sub_08045530
-sub_08045530: @ 0x08045530
+	thumb_func_start gEngineEffectSpecialSummonSendToGY_08045530
+gEngineEffectSpecialSummonSendToGY_08045530: @ 0x08045530
 	push {r4, r5, lr}
 	adds r3, r0, #0
 	movs r0, #0xf
@@ -97387,7 +97387,7 @@ sub_08045530: @ 0x08045530
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	adds r2, r5, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _08045584:
 	movs r0, #0
 	pop {r4, r5}
@@ -98561,7 +98561,7 @@ _08045D10:
 	orrs r1, r0
 	ldrh r2, [r7, #4]
 	adds r0, r3, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	b _08045D5C
 _08045D2E:
 	cmp r1, #0
@@ -98586,7 +98586,7 @@ _08045D34:
 	lsls r2, r2, #1
 	orrs r1, r2
 	adds r2, r3, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _08045D5C:
 	ldr r0, [sp, #0x1c]
 	cmp r0, #0
@@ -98653,7 +98653,7 @@ _08045DC2:
 	orrs r1, r0
 	ldr r2, [sp]
 	adds r0, r3, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _08045DE6:
 	adds r4, #1
 	cmp r4, #1
@@ -98720,7 +98720,7 @@ _08045E4E:
 	orrs r1, r0
 	ldr r2, [sp]
 	adds r0, r3, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _08045E72:
 	adds r4, #1
 	cmp r4, #1
@@ -98742,7 +98742,7 @@ _08045E7E:
 	bl sub_08032654
 	cmp r0, #0
 	beq _08045EA2
-	ldr r1, _08045EFC @ =sub_08045530
+	ldr r1, _08045EFC @ =gEngineEffectSpecialSummonSendToGY_08045530
 	ldr r0, [sp, #4]
 	mov r2, sp
 	bl sub_0803009C
@@ -98756,7 +98756,7 @@ _08045EA2:
 	lsrs r0, r0, #0x1f
 	adds r1, r1, r0
 	adds r0, r6, #0
-	bl sub_08034298
+	bl gEngineEffectBoostATKBoostDEF_08034298
 	movs r1, #0
 	cmp r0, #0
 	bne _08045EC0
@@ -98791,7 +98791,7 @@ _08045EEC: .4byte 0x002A187F
 _08045EF0: .4byte 0x00000868
 _08045EF4: .4byte gUnk_0201C5D8
 _08045EF8: .4byte 0x000018D1 @ Nitro Unit
-_08045EFC: .4byte sub_08045530
+_08045EFC: .4byte gEngineEffectSpecialSummonSendToGY_08045530
 _08045F00: .4byte 0x00001672 @ Ojama Token (black) (None)
 _08045F04: .4byte 0x000014A5 @ Makyura the Destructor
 _08045F08:
@@ -99200,7 +99200,7 @@ _080461E6:
 	beq _0804625C
 	ldr r1, _08046234 @ =0x00001782 (Mokey Mokey)
 	mov r0, sl
-	bl sub_08032C94
+	bl gEngineEffectSpecialSummonBoostATK_08032C94
 	cmp r0, #0
 	beq _0804625C
 	ldr r1, _08046238 @ =0x00001843 (Mokey Mokey Smackdown)
@@ -99240,7 +99240,7 @@ _0804623C: .4byte gUnk_0201BB90
 _08046240:
 	mov r0, sl
 	ldr r1, [sp, #8]
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 _0804624C:
@@ -99291,7 +99291,7 @@ _080462A0: .4byte gUnk_0201BB90
 _080462A4:
 	mov r0, sl
 	ldr r1, [sp, #8]
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 _080462B0:
@@ -99432,7 +99432,7 @@ _0804639E:
 	orrs r1, r0
 	adds r0, r4, #0
 	adds r2, r7, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	b _080463F8
 _080463BC:
 	mov r2, sl
@@ -99465,7 +99465,7 @@ _080463DA:
 	orrs r1, r0
 	adds r0, r4, #0
 	adds r2, r7, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _080463F8:
 	add sp, #0x24
 	pop {r3, r4, r5}
@@ -99524,7 +99524,7 @@ gEngineEffectDestroy_0804640C: @ 0x0804640C
 	adds r0, r5, #0
 	adds r1, r4, #0
 	adds r2, r6, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _08046506
 	mov r2, sl
@@ -99628,8 +99628,8 @@ _0804652A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_08046538
-sub_08046538: @ 0x08046538
+	thumb_func_start gEngineEffectDestroy_08046538
+gEngineEffectDestroy_08046538: @ 0x08046538
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -99731,7 +99731,7 @@ _080465C2:
 	ldr r0, [sp, #4]
 	mov r1, sb
 	adds r2, r6, #0
-	bl sub_08036658
+	bl gEngineEffectSpecialSummonDestroy_08036658
 	b _080465F8
 _080465E4:
 	adds r0, r5, #0
@@ -100078,7 +100078,7 @@ _08046864:
 	adds r1, r5, #0
 	adds r2, r4, #0
 	mov r3, sb
-	bl sub_080369A4
+	bl gEngineEffectDestroyBoostATK_080369A4
 	cmp r0, #0
 	bne _08046878
 	b _08046B5C
@@ -100210,7 +100210,7 @@ _08046968:
 	adds r1, r6, #0
 	adds r2, r4, #0
 	mov r3, sb
-	bl sub_080369A4
+	bl gEngineEffectDestroyBoostATK_080369A4
 	cmp r0, #0
 	bne _0804697E
 	b _08046B5C
@@ -100864,7 +100864,7 @@ _08046E3A:
 	adds r1, r4, #0
 	mov r2, r8
 	adds r3, r6, #0
-	bl sub_080369A4
+	bl gEngineEffectDestroyBoostATK_080369A4
 	cmp r0, #0
 	bne _08046E4E
 	b _080471A8
@@ -101075,7 +101075,7 @@ _08046FD8:
 	adds r1, r5, #0
 	mov r2, r8
 	adds r3, r6, #0
-	bl sub_080369A4
+	bl gEngineEffectDestroyBoostATK_080369A4
 	cmp r0, #0
 	bne _08046FEE
 	b _080471A8
@@ -101403,7 +101403,7 @@ gEngineEffectSpecialSummonDestroy_08047218: @ 0x08047218
 _08047260:
 	mov r0, sb
 	mov r1, r8
-	bl sub_08036658
+	bl gEngineEffectSpecialSummonDestroy_08036658
 _08047268:
 	cmp r0, #0
 	beq _08047298
@@ -102028,7 +102028,7 @@ gEngineEffectBoostATKBoostDEF_08047724: @ 0x08047724
 	ldr r0, [r0]
 	str r0, [sp, #0xc]
 	mov r0, r8
-	bl sub_08046538
+	bl gEngineEffectDestroy_08046538
 	str r0, [sp, #0x10]
 	movs r6, #0
 	mov sb, r6
@@ -102244,8 +102244,8 @@ _080478F0: .4byte gUnk_0201D5B4
 _080478F4: .4byte gUnk_0201C4E0
 _080478F8: .4byte 0x000010D4 @ Sword of Dark Destruction (None)
 
-	thumb_func_start sub_080478FC
-sub_080478FC: @ 0x080478FC
+	thumb_func_start gEngineEffectBoostATKBoostDEF_080478FC
+gEngineEffectBoostATKBoostDEF_080478FC: @ 0x080478FC
 	push {lr}
 	movs r2, #0xe
 	movs r3, #2
@@ -102254,8 +102254,8 @@ sub_080478FC: @ 0x080478FC
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_0804790C
-sub_0804790C: @ 0x0804790C
+	thumb_func_start gEngineEffectBoostATKBoostDEF_0804790C
+gEngineEffectBoostATKBoostDEF_0804790C: @ 0x0804790C
 	push {r4, r5, r6, lr}
 	sub sp, #0x18
 	adds r4, r0, #0
@@ -102287,8 +102287,8 @@ sub_0804790C: @ 0x0804790C
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_0804794C
-sub_0804794C: @ 0x0804794C
+	thumb_func_start gEngineEffectBoostATKBoostDEF_0804794C
+gEngineEffectBoostATKBoostDEF_0804794C: @ 0x0804794C
 	push {r4, r5, lr}
 	lsls r4, r0, #4
 	adds r4, r4, r1
@@ -102297,7 +102297,7 @@ sub_0804794C: @ 0x0804794C
 	eors r0, r2
 	adds r1, r3, #0
 	adds r2, r5, #0
-	bl sub_0804790C
+	bl gEngineEffectBoostATKBoostDEF_0804790C
 	ands r0, r5
 	cmp r0, #0
 	beq _08047968
@@ -102308,15 +102308,15 @@ _08047968:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_08047970
-sub_08047970: @ 0x08047970
+	thumb_func_start gEngineEffectBoostATKBoostDEF_08047970
+gEngineEffectBoostATKBoostDEF_08047970: @ 0x08047970
 	push {r4, lr}
 	lsls r1, r1, #4
 	adds r1, r1, r2
 	movs r4, #1
 	lsls r4, r1
 	adds r1, r4, #0
-	bl sub_080478FC
+	bl gEngineEffectBoostATKBoostDEF_080478FC
 	ands r0, r4
 	cmp r0, #0
 	beq _08047988
@@ -102327,8 +102327,8 @@ _08047988:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_08047990
-sub_08047990: @ 0x08047990
+	thumb_func_start gEngineEffectBoostATKDestroy_08047990
+gEngineEffectBoostATKDestroy_08047990: @ 0x08047990
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r4, r1, #0
@@ -102343,7 +102343,7 @@ sub_08047990: @ 0x08047990
 	lsls r4, r0
 	adds r0, r6, #0
 	adds r1, r4, #0
-	bl sub_080478FC
+	bl gEngineEffectBoostATKBoostDEF_080478FC
 	ands r0, r4
 	cmp r0, #0
 	beq _080479BE
@@ -102356,8 +102356,8 @@ _080479BE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080479C4
-sub_080479C4: @ 0x080479C4
+	thumb_func_start gEngineEffectBoostATKBoostDEF_080479C4
+gEngineEffectBoostATKBoostDEF_080479C4: @ 0x080479C4
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	lsls r0, r1, #4
@@ -102398,8 +102398,8 @@ _08047A06:
 _08047A0C: .4byte 0x00000868
 _08047A10: .4byte gUnk_0201C510
 
-	thumb_func_start sub_08047A14
-sub_08047A14: @ 0x08047A14
+	thumb_func_start gEngineEffectBoostATKBoostDEF_08047A14
+gEngineEffectBoostATKBoostDEF_08047A14: @ 0x08047A14
 	push {r4, lr}
 	lsls r1, r1, #4
 	adds r1, r1, r2
@@ -102419,8 +102419,8 @@ _08047A30:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_08047A38
-sub_08047A38: @ 0x08047A38
+	thumb_func_start gEngineEffectBoostATKBoostDEF_08047A38
+gEngineEffectBoostATKBoostDEF_08047A38: @ 0x08047A38
 	push {r4, r5, r6, lr}
 	sub sp, #0x18
 	adds r4, r0, #0
@@ -102457,8 +102457,8 @@ _08047A78:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_08047A80
-sub_08047A80: @ 0x08047A80
+	thumb_func_start gEngineEffectBoostATKBoostDEF_08047A80
+gEngineEffectBoostATKBoostDEF_08047A80: @ 0x08047A80
 	push {r4, lr}
 	lsls r1, r1, #4
 	adds r1, r1, r2
@@ -102592,8 +102592,8 @@ _08047B72:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_08047B80
-sub_08047B80: @ 0x08047B80
+	thumb_func_start gEngineEffectBoostATKBoostDEF_08047B80
+gEngineEffectBoostATKBoostDEF_08047B80: @ 0x08047B80
 	push {lr}
 	adds r3, r2, #0
 	movs r2, #0xf
@@ -102602,8 +102602,8 @@ sub_08047B80: @ 0x08047B80
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_08047B90
-sub_08047B90: @ 0x08047B90
+	thumb_func_start gEngineEffectBoostATKBoostDEF_08047B90
+gEngineEffectBoostATKBoostDEF_08047B90: @ 0x08047B90
 	push {r4, lr}
 	lsls r1, r1, #4
 	adds r1, r1, r2
@@ -102623,8 +102623,8 @@ _08047BAC:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_08047BB4
-sub_08047BB4: @ 0x08047BB4
+	thumb_func_start gEngineEffectBoostATKBoostDEF_08047BB4
+gEngineEffectBoostATKBoostDEF_08047BB4: @ 0x08047BB4
 	push {r4, r5, r6, lr}
 	mov r6, r8
 	push {r6}
@@ -102671,8 +102671,8 @@ _08047C02:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_08047C10
-sub_08047C10: @ 0x08047C10
+	thumb_func_start gEngineEffectBoostATKBoostDEF_08047C10
+gEngineEffectBoostATKBoostDEF_08047C10: @ 0x08047C10
 	push {lr}
 	movs r2, #0xb
 	movs r3, #0
@@ -102681,8 +102681,8 @@ sub_08047C10: @ 0x08047C10
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_08047C20
-sub_08047C20: @ 0x08047C20
+	thumb_func_start gEngineEffectBoostATKBoostDEF_08047C20
+gEngineEffectBoostATKBoostDEF_08047C20: @ 0x08047C20
 	push {r4, lr}
 	lsls r1, r1, #4
 	adds r1, r1, r2
@@ -102702,8 +102702,8 @@ _08047C3C:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_08047C44
-sub_08047C44: @ 0x08047C44
+	thumb_func_start gEngineEffectBoostATKBoostDEF_08047C44
+gEngineEffectBoostATKBoostDEF_08047C44: @ 0x08047C44
 	push {r4, lr}
 	lsls r1, r1, #4
 	adds r1, r1, r2
@@ -102723,8 +102723,8 @@ _08047C62:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_08047C68
-sub_08047C68: @ 0x08047C68
+	thumb_func_start gEngineEffectBoostATKBoostDEF_08047C68
+gEngineEffectBoostATKBoostDEF_08047C68: @ 0x08047C68
 	push {lr}
 	movs r2, #0xd
 	movs r3, #0
@@ -102733,8 +102733,8 @@ sub_08047C68: @ 0x08047C68
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_08047C78
-sub_08047C78: @ 0x08047C78
+	thumb_func_start gEngineEffectBoostATKBoostDEF_08047C78
+gEngineEffectBoostATKBoostDEF_08047C78: @ 0x08047C78
 	push {r4, r5, r6, lr}
 	mov r6, r8
 	push {r6}
@@ -102781,8 +102781,8 @@ _08047CC6:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_08047CD4
-sub_08047CD4: @ 0x08047CD4
+	thumb_func_start gEngineEffectBoostATKBoostDEF_08047CD4
+gEngineEffectBoostATKBoostDEF_08047CD4: @ 0x08047CD4
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	lsls r0, r1, #4
@@ -102861,7 +102861,7 @@ gEngineEffectDrawDiscard_08047D28: @ 0x08047D28
 	beq _08047D90
 	adds r0, r5, #0
 	adds r1, r6, #0
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	cmp r0, #1
@@ -102929,7 +102929,7 @@ _08047DB2:
 	beq _08047E14
 	adds r0, r5, #0
 	adds r1, r6, #0
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	cmp r0, #1
@@ -102954,8 +102954,8 @@ _08047E16:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_08047E20
-sub_08047E20: @ 0x08047E20
+	thumb_func_start gEngineEffectBoostATKBoostDEF_08047E20
+gEngineEffectBoostATKBoostDEF_08047E20: @ 0x08047E20
 	push {r4, r5, r6, lr}
 	mov r6, r8
 	push {r6}
@@ -103002,8 +103002,8 @@ _08047E6E:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_08047E7C
-sub_08047E7C: @ 0x08047E7C
+	thumb_func_start gEngineEffectBoostATKBoostDEF_08047E7C
+gEngineEffectBoostATKBoostDEF_08047E7C: @ 0x08047E7C
 	push {r4, lr}
 	lsls r1, r1, #4
 	adds r1, r1, r2
@@ -103023,8 +103023,8 @@ _08047E98:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_08047EA0
-sub_08047EA0: @ 0x08047EA0
+	thumb_func_start gEngineEffectBoostATKBoostDEF_08047EA0
+gEngineEffectBoostATKBoostDEF_08047EA0: @ 0x08047EA0
 	push {r4, lr}
 	lsls r1, r1, #4
 	adds r1, r1, r2
@@ -103042,8 +103042,8 @@ _08047EBA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_08047EC0
-sub_08047EC0: @ 0x08047EC0
+	thumb_func_start gEngineEffectBoostATKBoostDEF_08047EC0
+gEngineEffectBoostATKBoostDEF_08047EC0: @ 0x08047EC0
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	lsls r1, r1, #4
@@ -103069,8 +103069,8 @@ _08047EE6:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_08047EF0
-sub_08047EF0: @ 0x08047EF0
+	thumb_func_start gEngineEffectBoostATKBoostDEF_08047EF0
+gEngineEffectBoostATKBoostDEF_08047EF0: @ 0x08047EF0
 	push {lr}
 	movs r2, #0xe
 	movs r3, #0
@@ -103079,8 +103079,8 @@ sub_08047EF0: @ 0x08047EF0
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_08047F00
-sub_08047F00: @ 0x08047F00
+	thumb_func_start gEngineEffectBoostATKBoostDEF_08047F00
+gEngineEffectBoostATKBoostDEF_08047F00: @ 0x08047F00
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldrh r5, [r4]
@@ -103095,8 +103095,8 @@ sub_08047F00: @ 0x08047F00
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_08047F1C
-sub_08047F1C: @ 0x08047F1C
+	thumb_func_start gEngineEffectBoostATKBoostDEF_08047F1C
+gEngineEffectBoostATKBoostDEF_08047F1C: @ 0x08047F1C
 	push {r4, r5, r6, lr}
 	adds r4, r3, #0
 	ldr r6, [sp, #0x10]
@@ -103276,7 +103276,7 @@ _08048056:
 	adds r0, r4, #0
 	mov r1, r8
 	ldr r2, [sp]
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	beq _0804807A
 	b _08048254
@@ -103569,7 +103569,7 @@ _08048296:
 	mov r0, r8
 	adds r1, r5, #0
 	adds r2, r6, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _08048354
 	cmp r4, #0
@@ -103954,7 +103954,7 @@ _08048592:
 	mov r0, sl
 	adds r1, r5, #0
 	adds r2, r6, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _08048664
 	cmp r4, #0
@@ -104231,8 +104231,8 @@ _080487A4:
 _080487A8: .4byte 0x0000FFFF
 _080487AC: .4byte 0x00008025
 
-	thumb_func_start sub_080487B0
-sub_080487B0: @ 0x080487B0
+	thumb_func_start gEngineEffectDiscardDamage_080487B0
+gEngineEffectDiscardDamage_080487B0: @ 0x080487B0
 	push {r4, r5, lr}
 	adds r4, r2, #0
 	ldrb r2, [r0, #2]
@@ -104737,7 +104737,7 @@ _08048B0E:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	ldr r2, [sp, #4]
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	b _08048BDE
 	.align 2, 0
 _08048B54: .4byte gUnk_0201BB90
@@ -104801,7 +104801,7 @@ _08048B94:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	ldr r2, [sp, #4]
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _08048BD6:
 	adds r7, #0x14
 	adds r5, #1
@@ -104852,7 +104852,7 @@ _08048BF8:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	ldr r2, [sp, #4]
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _08048C3A:
 	adds r7, #0x14
 	adds r5, #1
@@ -104903,7 +104903,7 @@ _08048C5C:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	ldr r2, [sp, #4]
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _08048CA0:
 	adds r7, #0x14
 	adds r5, #1
@@ -104927,7 +104927,7 @@ _08048CA8:
 	ldr r1, _08048F3C @ =0x1E501511
 	orrs r0, r1
 	movs r1, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _08048CD0:
 	movs r5, #5
 	movs r0, #1
@@ -104979,7 +104979,7 @@ _08048CE4:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	ldr r2, [sp, #4]
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _08048D3A:
 	movs r2, #0x14
 	add sb, r2
@@ -105032,7 +105032,7 @@ _08048D66:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	ldr r2, [sp, #4]
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _08048DA6:
 	adds r6, #0x14
 	adds r5, #1
@@ -105096,7 +105096,7 @@ _08048DAE:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	adds r2, r7, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _08048E26:
 	ldr r5, _08048F50 @ =gUnk_0201C4E0
 	mov r0, r8
@@ -105219,7 +105219,7 @@ _08048EDA:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	ldr r2, [sp, #4]
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	ldr r3, [sp, #0xc]
 _08048F20:
 	adds r3, #0x14
@@ -105301,7 +105301,7 @@ _08048F96:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	ldr r2, [sp, #4]
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	ldr r3, [sp, #0xc]
 _08048FDC:
 	adds r3, #0x14
@@ -105485,7 +105485,7 @@ _08049124:
 	ldr r5, _08049158 @ =0x0000178B (Protector of the Sanctuary)
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_08032960
+	bl gEngineEffectNegateFlip_08032960
 	cmp r0, #0
 	beq _0804915C
 	adds r0, r4, #0
@@ -105696,7 +105696,7 @@ _080492D8:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	adds r2, r6, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	cmp r0, #0
 	bne _08049352
 	ldr r0, [r5]
@@ -105727,7 +105727,7 @@ _08049334:
 	ldr r2, _08049598 @ =0x325017CC
 	orrs r0, r2
 	adds r2, r6, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _08049352:
 	adds r7, #1
 	ldr r0, [sp, #4]
@@ -105795,7 +105795,7 @@ _08049380:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	mov r2, sb
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _080493DC:
 	adds r6, #0x14
 	adds r7, #1
@@ -105908,7 +105908,7 @@ _0804947C:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _080494BA:
 	adds r4, #0x14
 	adds r7, #1
@@ -105977,7 +105977,7 @@ _080494EC:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	cmp r0, #0
 	beq _08049552
 	mov r0, r8
@@ -106039,8 +106039,8 @@ _080495C4: .4byte 0x00001CF4
 _080495C8: .4byte 0x000016CD @ Heart of the Underdog
 _080495CC: .4byte 0x00001817 @ Silent Magician LV4
 
-	thumb_func_start sub_080495D0
-sub_080495D0: @ 0x080495D0
+	thumb_func_start gEngineEffectDrawSearch_080495D0
+gEngineEffectDrawSearch_080495D0: @ 0x080495D0
 	push {lr}
 	movs r2, #1
 	bl gEngineEffectDrawSearch_080490B4
@@ -106310,7 +106310,7 @@ _080497B6:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	adds r2, r4, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _080497DC:
 	movs r0, #0x1c
 	adds r1, r4, #0
@@ -106543,7 +106543,7 @@ _08049992:
 	lsls r1, r2, #0x10
 	lsrs r1, r1, #0x10
 	adds r2, r6, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _080499A8:
 	movs r0, #0x1c
 	adds r1, r6, #0
@@ -106581,7 +106581,7 @@ gEngineEffectBanishSendToGY_080499C4: @ 0x080499C4
 	ldr r1, [sp]
 	ldr r2, [sp, #4]
 	ldr r3, [sp, #8]
-	bl sub_08049BBC
+	bl gEngineEffectBoostATKBoostDEF_08049BBC
 	b _08049B22
 	.align 2, 0
 _080499F4: .4byte 0x00001332 @ Banisher of the Light
@@ -106591,11 +106591,11 @@ _080499F8:
 	lsrs r4, r4, #0x10
 	adds r0, r7, #0
 	adds r1, r4, #0
-	bl sub_08031A84
+	bl gEngineEffectBoostATKBoostDEF_08031A84
 	adds r5, r0, #0
 	adds r0, r7, #0
 	adds r1, r4, #0
-	bl sub_08031AE4
+	bl gEngineEffectBoostATKBoostDEF_08031AE4
 	cmn r5, r0
 	bne _08049A16
 	b _08049B22
@@ -106810,8 +106810,8 @@ _08049BB4:
 	bx r0
 	.align 2, 0
 
-	thumb_func_start sub_08049BBC
-sub_08049BBC: @ 0x08049BBC
+	thumb_func_start gEngineEffectBoostATKBoostDEF_08049BBC
+gEngineEffectBoostATKBoostDEF_08049BBC: @ 0x08049BBC
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -107013,8 +107013,8 @@ _08049D2A:
 	.align 2, 0
 _08049D40: .4byte 0x00008033
 
-	thumb_func_start sub_08049D44
-sub_08049D44: @ 0x08049D44
+	thumb_func_start gEngineEffectBoostATKBoostDEF_08049D44
+gEngineEffectBoostATKBoostDEF_08049D44: @ 0x08049D44
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -107469,7 +107469,7 @@ _0804A076:
 	orrs r1, r0
 	adds r0, r2, #0
 	adds r2, r6, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _0804A09A:
 	adds r4, #1
 	cmp r4, #1
@@ -107526,7 +107526,7 @@ _0804A0EE:
 	orrs r1, r0
 	adds r0, r2, #0
 	adds r2, r6, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _0804A112:
 	adds r4, #1
 	cmp r4, #1
@@ -107540,7 +107540,7 @@ _0804A118:
 	lsrs r0, r0, #0x1f
 	adds r1, r1, r0
 	adds r0, r5, #0
-	bl sub_08034298
+	bl gEngineEffectBoostATKBoostDEF_08034298
 	movs r1, #0
 	cmp r0, #0
 	bne _0804A134
@@ -107732,7 +107732,7 @@ _0804A28A:
 	lsls r2, r2, #1
 	orrs r1, r2
 	adds r2, r6, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _0804A2AC:
 	movs r0, #0x1e
 	adds r1, r6, #0
@@ -107748,8 +107748,8 @@ _0804A2AC:
 	.align 2, 0
 _0804A2C4: .4byte 0x3C4E0000
 
-	thumb_func_start sub_0804A2C8
-sub_0804A2C8: @ 0x0804A2C8
+	thumb_func_start gEngineEffectSendToGYGraveyard_0804A2C8
+gEngineEffectSendToGYGraveyard_0804A2C8: @ 0x0804A2C8
 	push {r4, r5, lr}
 	sub sp, #4
 	adds r4, r1, #0
@@ -107764,8 +107764,8 @@ sub_0804A2C8: @ 0x0804A2C8
 	pop {r0}
 	bx r0
 
-	thumb_func_start sub_0804A2E4
-sub_0804A2E4: @ 0x0804A2E4
+	thumb_func_start gEngineEffectSendToGYGraveyard_0804A2E4
+gEngineEffectSendToGYGraveyard_0804A2E4: @ 0x0804A2E4
 	push {r4, r5, r6, lr}
 	sub sp, #4
 	adds r4, r0, #0
@@ -107785,8 +107785,8 @@ sub_0804A2E4: @ 0x0804A2E4
 	pop {r0}
 	bx r0
 
-	thumb_func_start sub_0804A30C
-sub_0804A30C: @ 0x0804A30C
+	thumb_func_start gEngineEffectSendToGYGraveyard_0804A30C
+gEngineEffectSendToGYGraveyard_0804A30C: @ 0x0804A30C
 	push {r4, r5, r6, lr}
 	sub sp, #4
 	adds r4, r0, #0
@@ -107806,8 +107806,8 @@ sub_0804A30C: @ 0x0804A30C
 	pop {r0}
 	bx r0
 
-	thumb_func_start sub_0804A334
-sub_0804A334: @ 0x0804A334
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_0804A334
+gEngineEffectSpecialSummonBoostATK_0804A334: @ 0x0804A334
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -107817,7 +107817,7 @@ sub_0804A334: @ 0x0804A334
 	adds r5, r0, #0
 	mov sb, r1
 	str r2, [sp]
-	bl sub_08033BF4
+	bl gEngineEffectSpecialSummon_08033BF4
 	mov sl, r0
 	movs r0, #1
 	ands r0, r5
@@ -107851,7 +107851,7 @@ sub_0804A334: @ 0x0804A334
 	movs r1, #0xa
 	movs r2, #0
 	movs r3, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 _0804A394:
 	movs r0, #0xa
 	mov sl, r0
@@ -108005,8 +108005,8 @@ _0804A4B6:
 	.align 2, 0
 _0804A4C8: .4byte 0x00008050
 
-	thumb_func_start sub_0804A4CC
-sub_0804A4CC: @ 0x0804A4CC
+	thumb_func_start gEngineEffectGainLPStandbyPhase_0804A4CC
+gEngineEffectGainLPStandbyPhase_0804A4CC: @ 0x0804A4CC
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
@@ -111175,8 +111175,8 @@ _0804BA54:
 _0804BA56:
 	bx lr
 
-	thumb_func_start sub_0804BA58
-sub_0804BA58: @ 0x0804BA58
+	thumb_func_start gEngineEffectSpecialSummon_0804BA58
+gEngineEffectSpecialSummon_0804BA58: @ 0x0804BA58
 	push {r4, lr}
 	adds r4, r0, #0
 	bl sub_0804A9DC
@@ -111208,8 +111208,8 @@ _0804BA88:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_0804BA90
-sub_0804BA90: @ 0x0804BA90
+	thumb_func_start gEngineEffectSpecialSummon_0804BA90
+gEngineEffectSpecialSummon_0804BA90: @ 0x0804BA90
 	push {lr}
 	adds r1, r0, #0
 	ldr r0, _0804BAA0 @ =0x000017C4 (Rare Metal Dragon)
@@ -111221,7 +111221,7 @@ sub_0804BA90: @ 0x0804BA90
 _0804BAA0: .4byte 0x000017C4 @ Rare Metal Dragon
 _0804BAA4:
 	adds r0, r1, #0
-	bl sub_0804BA58
+	bl gEngineEffectSpecialSummon_0804BA58
 	movs r1, #0
 	cmp r0, #0
 	bne _0804BAB2
@@ -113420,8 +113420,8 @@ _0804C900:
 	.align 2, 0
 _0804C90C: .4byte gUnk_0201B290
 
-	thumb_func_start sub_0804C910
-sub_0804C910: @ 0x0804C910
+	thumb_func_start gEngineEffectSpecialSummonSendToGY_0804C910
+gEngineEffectSpecialSummonSendToGY_0804C910: @ 0x0804C910
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	adds r6, r2, #0
@@ -113439,7 +113439,7 @@ _0804C92C:
 	adds r0, r5, #0
 	adds r1, r4, #0
 	adds r2, r6, #0
-	bl sub_0805B1F0
+	bl gEngineEffectSpecialSummonSendToGY_0805B1F0
 	cmp r0, #0
 	bne _0804C944
 	movs r0, #0
@@ -114147,8 +114147,8 @@ _0804CE72:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_0804CE78
-sub_0804CE78: @ 0x0804CE78
+	thumb_func_start gEngineEffectDestroyDamage_0804CE78
+gEngineEffectDestroyDamage_0804CE78: @ 0x0804CE78
 	push {r4, r5, r6, lr}
 	sub sp, #0x100
 	adds r4, r0, #0
@@ -114221,7 +114221,7 @@ _0804CF32:
 	adds r0, r4, #0
 	adds r1, r5, #0
 	movs r2, #1
-	bl sub_08085928
+	bl gEngineEffectSendToGYGraveyard_08085928
 	cmp r0, #0
 	bne _0804CF50
 	b _0804D1CA
@@ -114258,7 +114258,7 @@ _0804CF88:
 	adds r0, r4, #0
 	adds r1, r5, #0
 	movs r2, #0
-	bl sub_08085928
+	bl gEngineEffectSendToGYGraveyard_08085928
 	cmp r0, #0
 	bne _0804CFB8
 	mov r0, sp
@@ -114296,7 +114296,7 @@ _0804CFDC:
 	adds r0, r4, #0
 	adds r1, r5, #0
 	movs r2, #1
-	bl sub_08085928
+	bl gEngineEffectSendToGYGraveyard_08085928
 	adds r1, r0, #1
 _0804CFEC:
 	ldr r0, _0804D008 @ =gUnk_0201B290
@@ -114308,7 +114308,7 @@ _0804CFEC:
 	movs r1, #3
 _0804CFFA:
 	mov r0, sp
-	bl sub_080933C8
+	bl gEngineEffectSpecialSummon_080933C8
 	movs r0, #2
 	str r0, [r4]
 	b _0804CF68
@@ -114503,7 +114503,7 @@ _0804D198:
 	movs r0, #1
 	movs r1, #1
 	adds r2, r4, #0
-	bl sub_08095D84
+	bl gEngineEffectSpecialSummonBoostATK_08095D84
 	b _0804D1AA
 _0804D1A4:
 	adds r0, r4, #0
@@ -115440,7 +115440,7 @@ _0804D8BE:
 	adds r0, r4, #0
 	adds r1, r5, #0
 	mov r2, sb
-	bl sub_0805B1F0
+	bl gEngineEffectSpecialSummonSendToGY_0805B1F0
 	cmp r0, #0
 	beq _0804D92E
 	movs r0, #1
@@ -115494,7 +115494,7 @@ _0804D92E:
 	adds r0, r4, #0
 	adds r1, r5, #0
 	mov r2, sb
-	bl sub_0805B1F0
+	bl gEngineEffectSpecialSummonSendToGY_0805B1F0
 	cmp r0, #0
 	beq _0804D99C
 	movs r0, #1
@@ -115540,7 +115540,7 @@ _0804D99C:
 	adds r0, r4, #0
 	adds r1, r5, #0
 	mov r2, sb
-	bl sub_0805B1F0
+	bl gEngineEffectSpecialSummonSendToGY_0805B1F0
 	cmp r0, #0
 	beq _0804D9FA
 	movs r0, #1
@@ -115597,7 +115597,7 @@ _0804DA52:
 	movs r4, #1
 	subs r1, r4, r1
 	ldr r0, [sp, #4]
-	bl sub_0804CE78
+	bl gEngineEffectDestroyDamage_0804CE78
 	cmp r0, #0
 	beq _0804DB32
 	ldr r1, _0804DA80 @ =gUnk_0201B290
@@ -115643,7 +115643,7 @@ _0804DAB4:
 	lsls r1, r4, #0x1f
 	lsrs r1, r1, #0x1f
 	ldr r0, [sp, #4]
-	bl sub_0804CE78
+	bl gEngineEffectDestroyDamage_0804CE78
 	cmp r0, #0
 	beq _0804DB32
 	ldr r1, _0804DAE4 @ =gUnk_0201B290
@@ -115717,8 +115717,8 @@ _0804DB44: .4byte gUnk_0201B290
 _0804DB48: .4byte 0x0000048C
 _0804DB4C: .4byte 0x0000049C
 
-	thumb_func_start sub_0804DB50
-sub_0804DB50: @ 0x0804DB50
+	thumb_func_start gEngineEffectNegateDestroy_0804DB50
+gEngineEffectNegateDestroy_0804DB50: @ 0x0804DB50
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -116006,7 +116006,7 @@ _0804DE54:
 	ldrh r7, [r7, #4]
 	lsls r2, r7, #0x11
 	lsrs r2, r2, #0x17
-	bl sub_08044DCC
+	bl gEngineEffectDestroyBoostATK_08044DCC
 _0804DE72:
 	ldr r1, _0804DEA4 @ =gUnk_0201B290
 	ldr r3, _0804DEAC @ =0x0000049C
@@ -116233,7 +116233,7 @@ _0804DFC8:
 	ldrh r3, [r7, #4]
 	lsls r2, r3, #0x11
 	lsrs r2, r2, #0x17
-	bl sub_08044DCC
+	bl gEngineEffectDestroyBoostATK_08044DCC
 	ldrb r2, [r7, #2]
 	lsls r1, r2, #0x1a
 	lsrs r0, r1, #0x1b
@@ -116249,7 +116249,7 @@ _0804DFC8:
 	orrs r2, r3
 	lsrs r2, r2, #0x1f
 	adds r3, r5, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 _0804E05E:
 	ldr r5, _0804E07C @ =gUnk_0201B72C
 	ldr r0, [r5]
@@ -116283,7 +116283,7 @@ _0804E080:
 	beq _0804E12C
 	mov r0, sb
 	mov r1, r8
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	cmp r0, #0xf
@@ -116310,7 +116310,7 @@ _0804E080:
 	ldrh r3, [r7, #4]
 	lsls r2, r3, #0x11
 	lsrs r2, r2, #0x17
-	bl sub_08044DCC
+	bl gEngineEffectDestroyBoostATK_08044DCC
 	ldrb r2, [r7, #2]
 	lsls r1, r2, #0x1a
 	lsrs r0, r1, #0x1b
@@ -116327,7 +116327,7 @@ _0804E080:
 	lsrs r2, r2, #0x1f
 	movs r3, #0xb3
 	lsls r3, r3, #5
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 _0804E10E:
 	ldr r5, _0804E128 @ =gUnk_0201B72C
 	ldr r0, [r5]
@@ -116389,7 +116389,7 @@ _0804E12C:
 	ldrh r3, [r7, #4]
 	lsls r2, r3, #0x11
 	lsrs r2, r2, #0x17
-	bl sub_08044DCC
+	bl gEngineEffectDestroyBoostATK_08044DCC
 	ldrb r2, [r7, #2]
 	lsls r1, r2, #0x1a
 	lsrs r0, r1, #0x1b
@@ -116543,7 +116543,7 @@ _0804E296:
 _0804E2B4:
 	mov r0, sb
 	mov r1, r8
-	bl sub_08034180
+	bl gEngineEffectSpecialSummonBoostATK_08034180
 	adds r6, r0, #0
 	cmp r6, #0
 	beq _0804E2C4
@@ -116569,7 +116569,7 @@ _0804E2E0:
 	mov r1, r8
 	movs r2, #0
 	movs r3, #0
-	bl sub_080439A0
+	bl gEngineEffectChangePosition_080439A0
 _0804E2EE:
 	movs r0, #0
 	str r0, [sp]
@@ -116577,7 +116577,7 @@ _0804E2EE:
 	mov r1, r8
 	movs r2, #0
 	movs r3, #0
-	bl sub_08043714
+	bl gEngineEffectSpecialSummonDestroy_08043714
 	movs r0, #2
 	ldrb r2, [r7, #4]
 	orrs r0, r2
@@ -116615,7 +116615,7 @@ _0804E2EE:
 	ldrh r7, [r7, #4]
 	lsls r2, r7, #0x11
 	lsrs r2, r2, #0x17
-	bl sub_08044DCC
+	bl gEngineEffectDestroyBoostATK_08044DCC
 	ldr r5, _0804E36C @ =gUnk_0201B72C
 	ldr r0, [r5]
 	adds r0, #1
@@ -116684,7 +116684,7 @@ _0804E3B2:
 	ldrh r3, [r7, #4]
 	lsls r2, r3, #0x11
 	lsrs r2, r2, #0x17
-	bl sub_08044DCC
+	bl gEngineEffectDestroyBoostATK_08044DCC
 	ldrb r2, [r7, #2]
 	lsls r1, r2, #0x1a
 	lsrs r0, r1, #0x1b
@@ -116701,7 +116701,7 @@ _0804E3B2:
 	lsrs r2, r2, #0x1f
 	movs r3, #0xb3
 	lsls r3, r3, #5
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 _0804E408:
 	ldr r5, _0804E420 @ =gUnk_0201B72C
 	ldr r0, [r5]
@@ -116770,7 +116770,7 @@ _0804E466:
 	ldrh r3, [r7, #4]
 	lsls r2, r3, #0x11
 	lsrs r2, r2, #0x17
-	bl sub_08044DCC
+	bl gEngineEffectDestroyBoostATK_08044DCC
 	ldrb r2, [r7, #2]
 	lsls r1, r2, #0x1a
 	lsrs r0, r1, #0x1b
@@ -116787,7 +116787,7 @@ _0804E466:
 	lsrs r2, r2, #0x1f
 	movs r3, #0xb3
 	lsls r3, r3, #5
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 _0804E4BC:
 	ldr r5, _0804E4D4 @ =gUnk_0201B72C
 	ldr r0, [r5]
@@ -116931,14 +116931,14 @@ _0804E546:
 	ldrh r3, [r7, #4]
 	lsls r2, r3, #0x11
 	lsrs r2, r2, #0x17
-	bl sub_08044DCC
+	bl gEngineEffectDestroyBoostATK_08044DCC
 	ldrb r2, [r7, #2]
 	lsls r1, r2, #0x1f
 	lsrs r1, r1, #0x1f
 	lsls r2, r2, #0x1a
 	lsrs r2, r2, #0x1b
 	add r0, sp, #4
-	bl sub_08047A14
+	bl gEngineEffectBoostATKBoostDEF_08047A14
 	ldr r4, _0804E60C @ =gUnk_0201B72C
 	ldr r0, [r4]
 	adds r0, #1
@@ -117042,7 +117042,7 @@ _0804E690:
 	ldrh r3, [r7, #4]
 	lsls r2, r3, #0x11
 	lsrs r2, r2, #0x17
-	bl sub_08044DCC
+	bl gEngineEffectDestroyBoostATK_08044DCC
 	b _0804E78A
 	.align 2, 0
 _0804E6C4: .4byte 0x00000868
@@ -117105,7 +117105,7 @@ _0804E71E:
 	ldrh r3, [r7, #4]
 	lsls r2, r3, #0x11
 	lsrs r2, r2, #0x17
-	bl sub_08044DCC
+	bl gEngineEffectDestroyBoostATK_08044DCC
 	ldrb r2, [r7, #2]
 	lsls r1, r2, #0x1a
 	lsrs r0, r1, #0x1b
@@ -117121,7 +117121,7 @@ _0804E71E:
 	orrs r2, r3
 	lsrs r2, r2, #0x1f
 	mov r3, sl
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 _0804E768:
 	ldr r5, _0804E784 @ =gUnk_0201B72C
 	ldr r0, [r5]
@@ -117222,7 +117222,7 @@ _0804E814:
 	ldrh r5, [r7, #4]
 	lsls r2, r5, #0x11
 	lsrs r2, r2, #0x17
-	bl sub_08044DCC
+	bl gEngineEffectDestroyBoostATK_08044DCC
 	ldrb r2, [r7, #2]
 	lsls r1, r2, #0x1a
 	lsrs r0, r1, #0x1b
@@ -117238,7 +117238,7 @@ _0804E814:
 	orrs r2, r3
 	lsrs r2, r2, #0x1f
 	mov r3, sl
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 _0804E85E:
 	ldr r3, _0804E878 @ =gUnk_0201B72C
 	ldr r0, [r3]
@@ -117295,7 +117295,7 @@ gEngineEffectDestroyDamage_0804E888: @ 0x0804E888
 	ldrh r3, [r7, #4]
 	lsls r2, r3, #0x11
 	lsrs r2, r2, #0x17
-	bl sub_08044DCC
+	bl gEngineEffectDestroyBoostATK_08044DCC
 _0804E8BE:
 	ldr r2, _0804E8F0 @ =0x000004A4
 	ldr r4, _0804E8F4 @ =gUnk_0201B290
@@ -117740,7 +117740,7 @@ _0804EC3E:
 _0804EC46:
 	adds r0, r6, #0
 	mov r1, sb
-	bl sub_0803149C
+	bl gEngineEffectDestroyCounter_0803149C
 	adds r4, r0, #0
 	adds r0, r5, #0
 	bl gEngineEffectCounterDestroy_0804BE38
@@ -117759,7 +117759,7 @@ _0804EC46:
 	bne _0804EC92
 	adds r0, r6, #0
 	mov r1, sb
-	bl sub_0803149C
+	bl gEngineEffectDestroyCounter_0803149C
 	cmp r0, #3
 	bne _0804EC92
 	ldrb r3, [r7, #2]
@@ -117923,7 +117923,7 @@ _0804ED7C:
 	lsrs r0, r0, #0x1f
 	ldr r6, _0804EE64 @ =0x0000190A (Dark Ruler Vandalgyon)
 	adds r1, r6, #0
-	bl sub_08037A2C
+	bl gEngineEffectBoostATKBoostDEF_08037A2C
 	cmp r0, #0
 	beq _0804EE34
 	ldrb r4, [r7, #2]
@@ -117937,13 +117937,13 @@ _0804ED7C:
 	mov r8, r2
 	lsrs r0, r0, #0x1f
 	adds r1, r6, #0
-	bl sub_08037A8C
+	bl gEngineEffectBoostATKBoostDEF_08037A8C
 	adds r4, r0, #0
 	ldrb r3, [r7, #2]
 	lsls r0, r3, #0x1f
 	lsrs r0, r0, #0x1f
 	adds r1, r6, #0
-	bl sub_08037A8C
+	bl gEngineEffectBoostATKBoostDEF_08037A8C
 	ldrb r7, [r7, #2]
 	lsls r3, r7, #0x1f
 	lsrs r2, r3, #0x1f
@@ -117977,7 +117977,7 @@ _0804ED7C:
 	ldr r5, [sp, #0x20]
 	ldrh r2, [r5]
 	mov r0, r8
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _0804EE34:
 	ldr r0, _0804EE6C @ =gUnk_0201B290
 	ldr r1, _0804EE70 @ =0x0000049C
@@ -118158,7 +118158,7 @@ _0804EF3C:
 	lsrs r1, r5, #0x1f
 	lsrs r2, r6, #0x1b
 	mov r0, sb
-	bl sub_08047E7C
+	bl gEngineEffectBoostATKBoostDEF_08047E7C
 	b _0804EFE0
 	.align 2, 0
 _0804EFBC: .4byte 0x0000049C
@@ -118434,8 +118434,8 @@ _0804F1D0: .4byte 0xFFFFFD00
 _0804F1D4: .4byte 0x0000048C
 _0804F1D8: .4byte 0x00000494
 
-	thumb_func_start sub_0804F1DC
-sub_0804F1DC: @ 0x0804F1DC
+	thumb_func_start gEngineEffectNegateDestroy_0804F1DC
+gEngineEffectNegateDestroy_0804F1DC: @ 0x0804F1DC
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -118565,8 +118565,8 @@ _0804F2D4: .4byte gUnk_0201B290
 _0804F2D8: .4byte 0x0000048C
 _0804F2DC: .4byte 0x00000494
 
-	thumb_func_start sub_0804F2E0
-sub_0804F2E0: @ 0x0804F2E0
+	thumb_func_start gEngineEffectDestroyDraw_0804F2E0
+gEngineEffectDestroyDraw_0804F2E0: @ 0x0804F2E0
 	push {r4, r5, lr}
 	ldr r5, _0804F2F4 @ =gUnk_0201B290
 	ldr r1, _0804F2F8 @ =0x0000048C
@@ -118586,7 +118586,7 @@ _0804F2FC:
 	ldr r0, [r0]
 	cmp r0, #0
 	beq _0804F30E
-	bl sub_0804DB50
+	bl gEngineEffectNegateDestroy_0804DB50
 	b _0804F346
 _0804F30E:
 	bl gEngineEffectDestroyBoostATK_08090218
@@ -118611,7 +118611,7 @@ _0804F32C:
 	ldr r0, [r5]
 	cmp r0, #0
 	beq _0804F344
-	bl sub_08085D4C
+	bl gEngineEffectSendToGYBoostATK_08085D4C
 	cmp r0, #0
 	beq _0804F316
 	str r4, [r5]
@@ -118623,8 +118623,8 @@ _0804F346:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_0804F34C
-sub_0804F34C: @ 0x0804F34C
+	thumb_func_start gEngineEffectNegateDestroy_0804F34C
+gEngineEffectNegateDestroy_0804F34C: @ 0x0804F34C
 	push {lr}
 	ldr r1, _0804F368 @ =gUnk_0201E4D0
 	ldrh r2, [r1, #0x14]
@@ -118671,7 +118671,7 @@ _0804F38E:
 	ldr r0, [r0]
 	cmp r0, #0
 	beq _0804F3B8
-	bl sub_0804F1DC
+	bl gEngineEffectNegateDestroy_0804F1DC
 	b _0804F438
 	.align 2, 0
 _0804F3AC: .4byte gUnk_0201B290
@@ -118723,7 +118723,7 @@ _0804F402:
 	cmp r0, #0
 	beq _0804F420
 _0804F410:
-	bl sub_0804DB50
+	bl gEngineEffectNegateDestroy_0804DB50
 	b _0804F438
 	.align 2, 0
 _0804F418: .4byte 0xFFFFFE01
@@ -118884,7 +118884,7 @@ gCardEffectReturnToHandChangePosition_0804F4EC: @ 0x0804F4EC
 	adds r0, r6, #0
 	adds r1, r5, #0
 	adds r2, r4, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _0804F548
 	movs r0, #1
@@ -118945,7 +118945,7 @@ gCardEffectDestroy_0804F550: @ 0x0804F550
 	adds r0, r6, #0
 	adds r1, r5, #0
 	adds r2, r4, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _0804F5BC
 	adds r0, r6, #0
@@ -119059,13 +119059,13 @@ gCardEffectTakeControlDestroy_0804F618: @ 0x0804F618
 	ldrh r2, [r6]
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_08036450
+	bl gEngineEffectSpecialSummonDestroy_08036450
 	cmp r0, #0
 	beq _0804F680
 	adds r0, r6, #0
 	adds r1, r5, #0
 	adds r2, r4, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _0804F680
 	movs r0, #1
@@ -119158,8 +119158,8 @@ sub_0804F6C4: @ 0x0804F6C4
 	add r0, r8
 	ldrh r2, [r0, #4]
 
-	thumb_func_start sub_0804F718
-sub_0804F718: @ 0x0804F718
+	thumb_func_start gEngineEffectSpecialSummonChangePosition_0804F718
+gEngineEffectSpecialSummonChangePosition_0804F718: @ 0x0804F718
 	b _0804F726
 	.align 2, 0
 _0804F71C: .4byte 0x00000868
@@ -119298,9 +119298,9 @@ _0804F7D8:
 	cmp r2, r0
 	bne _0804F7E2
 
-	non_word_aligned_thumb_func_start sub_0804F7DE
-sub_0804F7DE: @ 0x0804F7DE
-	bl sub_0804FFEA
+	non_word_aligned_thumb_func_start gEngineEffectSpecialSummonRitualSummon_0804F7DE
+gEngineEffectSpecialSummonRitualSummon_0804F7DE: @ 0x0804F7DE
+	bl gEngineEffectSpecialSummonRitualSummon_0804FFEA
 _0804F7E2:
 	adds r0, #1
 	cmp r2, r0
@@ -119365,7 +119365,7 @@ _0804F7E2:
 	@ Z-Metal Tank
 	thumb_func_start gEngineEffectEquipDestroy_0804F7E8
 gEngineEffectEquipDestroy_0804F7E8: @ 0x0804F7E8
-	bl sub_0804FFA4
+	bl gEngineEffectSpecialSummonRitualSummon_0804FFA4
 _0804F7EC:
 	bl _0804FFFC
 	.align 2, 0
@@ -119378,7 +119378,7 @@ _0804F7F4:
 _0804F7FE:
 	cmp r2, r0
 	ble _0804F806
-	bl sub_0804FFBA
+	bl gEngineEffectSpecialSummonRitualSummon_0804FFBA
 _0804F806:
 	bl _0804FFD2
 	.align 2, 0
@@ -119924,7 +119924,7 @@ _0804FBA6:
 	beq _0804FBC0
 	adds r0, r4, #0
 	adds r1, r7, #0
-	bl sub_08036450
+	bl gEngineEffectSpecialSummonDestroy_08036450
 	movs r1, #1
 	cmp r0, #0
 	beq _0804FBC0
@@ -120039,7 +120039,7 @@ _0804FC78:
 _0804FC84:
 	adds r0, r4, #0
 	adds r1, r7, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	movs r2, #0
 	ldr r1, _0804FC94 @ =0x00000513
 	b _0804FCA6
@@ -120048,7 +120048,7 @@ _0804FC94: .4byte 0x00000513
 _0804FC98:
 	adds r0, r4, #0
 	adds r1, r7, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	movs r2, #0
 	movs r1, #0xfa
 	lsls r1, r1, #2
@@ -120081,7 +120081,7 @@ _0804FCC8:
 _0804FCD4:
 	adds r0, r4, #0
 	adds r1, r7, #0
-	bl sub_08030B0C
+	bl gEngineEffectSpecialSummonChangePosition_08030B0C
 	cmp r0, #0
 	bne _0804FCE2
 	b _0804FED6
@@ -120159,7 +120159,7 @@ _0804FD5C:
 	bne _0804FD72
 	adds r0, r4, #0
 	adds r1, r7, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	ldr r1, _0804FD78 @ =0x000005DC
 	cmp r0, r1
 	bgt _0804FD72
@@ -120173,7 +120173,7 @@ _0804FD7C:
 	ldr r2, _0804FD88 @ =0x000018F9 (Elemental Hero Bubbleman)
 	adds r0, r4, #0
 	adds r1, r7, #0
-	bl sub_08031564
+	bl gEngineEffectSpecialSummonBoostATK_08031564
 	b _0804FFFE
 	.align 2, 0
 _0804FD88: .4byte 0x000018F9 @ Elemental Hero Bubbleman
@@ -120495,8 +120495,8 @@ sub_0804FF9A: @ 0x0804FF9A
 	movs r0, #1
 	b _0804FFFE
 
-	thumb_func_start sub_0804FFA4
-sub_0804FFA4: @ 0x0804FFA4
+	thumb_func_start gEngineEffectSpecialSummonRitualSummon_0804FFA4
+gEngineEffectSpecialSummonRitualSummon_0804FFA4: @ 0x0804FFA4
 	movs r0, #0
 	cmp r3, #3
 	bne _0804FFFE
@@ -120506,41 +120506,41 @@ _0804FFAE:
 	adds r0, r4, #0
 	adds r1, r7, #0
 	movs r2, #5
-	bl sub_0803B230
+	bl gEngineEffectSpecialSummonRitualSummon_0803B230
 	b _0804FFFE
 
-	non_word_aligned_thumb_func_start sub_0804FFBA
-sub_0804FFBA: @ 0x0804FFBA
+	non_word_aligned_thumb_func_start gEngineEffectSpecialSummonRitualSummon_0804FFBA
+gEngineEffectSpecialSummonRitualSummon_0804FFBA: @ 0x0804FFBA
 	adds r0, r4, #0
 	adds r1, r7, #0
 	movs r2, #3
-	bl sub_0803B230
+	bl gEngineEffectSpecialSummonRitualSummon_0803B230
 	b _0804FFFE
 _0804FFC6:
 	adds r0, r4, #0
 	adds r1, r7, #0
 	movs r2, #4
-	bl sub_0803B230
+	bl gEngineEffectSpecialSummonRitualSummon_0803B230
 	b _0804FFFE
 _0804FFD2:
 	adds r0, r4, #0
 	adds r1, r7, #0
 	movs r2, #1
-	bl sub_0803B230
+	bl gEngineEffectSpecialSummonRitualSummon_0803B230
 	b _0804FFFE
 _0804FFDE:
 	adds r0, r4, #0
 	adds r1, r7, #0
 	movs r2, #6
-	bl sub_0803B230
+	bl gEngineEffectSpecialSummonRitualSummon_0803B230
 	b _0804FFFE
 
-	non_word_aligned_thumb_func_start sub_0804FFEA
-sub_0804FFEA: @ 0x0804FFEA
+	non_word_aligned_thumb_func_start gEngineEffectSpecialSummonRitualSummon_0804FFEA
+gEngineEffectSpecialSummonRitualSummon_0804FFEA: @ 0x0804FFEA
 	adds r0, r4, #0
 	adds r1, r7, #0
 	movs r2, #2
-	bl sub_0803B230
+	bl gEngineEffectSpecialSummonRitualSummon_0803B230
 	b _0804FFFE
 _0804FFF6:
 	movs r0, #1
@@ -120809,7 +120809,7 @@ gCardEffectChangePosition_080500C8: @ 0x080500C8
 	adds r0, r7, #0
 	adds r1, r6, #0
 	adds r2, r5, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _08050128
 	ldrh r1, [r4, #6]
@@ -120862,7 +120862,7 @@ gCardEffectPreventAttack_08050130: @ 0x08050130
 	adds r0, r5, #0
 	adds r1, r4, #0
 	adds r2, r3, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _08050184
 	movs r0, #1
@@ -120929,7 +120929,7 @@ gCardEffectDestroyTribute_0805018C: @ 0x0805018C
 	beq _0805020C
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	movs r1, #0xfa
 	lsls r1, r1, #2
 	cmp r0, r1
@@ -121096,14 +121096,14 @@ _0805030E:
 	adds r0, r7, #0
 	adds r1, r6, #0
 	adds r2, r5, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	beq _0805031E
 	b _0805073C
 _0805031E:
 	adds r0, r6, #0
 	adds r1, r5, #0
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	lsls r0, r0, #0x10
 	lsrs r2, r0, #0x10
 	ldrh r1, [r7]
@@ -121256,7 +121256,7 @@ _08050438:
 _0805043A:
 	adds r0, r6, #0
 	adds r1, r5, #0
-	bl sub_0803A980
+	bl gEngineEffectSpecialSummonBoostATK_0803A980
 	adds r6, r0, #0
 	ldrb r1, [r7, #2]
 	lsls r5, r1, #0x1f
@@ -121302,7 +121302,7 @@ _0805043A:
 _08050498:
 	lsrs r0, r5, #0x1f
 	lsrs r1, r4, #0x1b
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 _080504A0:
 	movs r1, #0
 	cmp r6, r0
@@ -121323,7 +121323,7 @@ _080504B8:
 _080504BA:
 	adds r0, r6, #0
 	adds r1, r5, #0
-	bl sub_0803A980
+	bl gEngineEffectSpecialSummonBoostATK_0803A980
 	movs r2, #0
 	movs r1, #0xc8
 	lsls r1, r1, #2
@@ -121437,14 +121437,14 @@ _0805057A:
 _0805059E:
 	adds r0, r6, #0
 	adds r1, r5, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	adds r4, r0, #0
 	ldrb r1, [r7, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	lsls r1, r1, #0x1a
 	lsrs r1, r1, #0x1b
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	movs r1, #0
 	cmp r4, r0
 	ble _08050696
@@ -121464,7 +121464,7 @@ _080505C8:
 _080505D6:
 	adds r0, r6, #0
 	adds r1, r5, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	movs r2, #0
 	movs r1, #0xaf
 	lsls r1, r1, #2
@@ -121535,14 +121535,14 @@ _080505F2:
 	beq _0805073C
 	adds r0, r6, #0
 	adds r1, r5, #0
-	bl sub_0803A96C
+	bl gEngineEffectSpecialSummonBoostATK_0803A96C
 	adds r4, r0, #0
 	ldrb r1, [r7, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	lsls r1, r1, #0x1a
 	lsrs r1, r1, #0x1b
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	movs r1, #0
 	cmp r4, r0
 	bge _08050696
@@ -121551,7 +121551,7 @@ _080505F2:
 _08050682:
 	adds r0, r6, #0
 	adds r1, r5, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	movs r1, #0xfa
 	lsls r1, r1, #3
 	eors r0, r1
@@ -121620,7 +121620,7 @@ _0805069A:
 	mov r1, ip
 	lsrs r0, r1, #0x1f
 	lsrs r1, r4, #0x1b
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	adds r4, r0, #0
 	adds r0, r6, #0
 	adds r1, r5, #0
@@ -121640,7 +121640,7 @@ _08050730:
 	adds r0, r6, #0
 	adds r1, r5, #0
 	movs r2, #5
-	bl sub_0803B230
+	bl gEngineEffectSpecialSummonRitualSummon_0803B230
 	b _0805073E
 _0805073C:
 	movs r0, #0
@@ -121683,7 +121683,7 @@ gCardEffectDestroyAll_08050750: @ 0x08050750
 	adds r0, r6, #0
 	adds r1, r5, #0
 	adds r2, r4, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _080507A4
 	adds r0, r6, #0
@@ -121743,7 +121743,7 @@ gCardEffectDestroy_080507AC: @ 0x080507AC
 	adds r0, r6, #0
 	adds r1, r5, #0
 	adds r2, r4, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _08050808
 	adds r0, r6, #0
@@ -121863,7 +121863,7 @@ gCardEffectBoostATKSpecialSummon_0805086C: @ 0x0805086C
 	adds r0, r6, #0
 	adds r1, r5, #0
 	adds r2, r4, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _080508C4
 	movs r0, #1
@@ -121905,13 +121905,13 @@ gCardEffectTakeControlChangePosition_080508CC: @ 0x080508CC
 	ldrh r2, [r6]
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_08036450
+	bl gEngineEffectSpecialSummonDestroy_08036450
 	cmp r0, #0
 	beq _0805091C
 	adds r0, r6, #0
 	adds r1, r5, #0
 	adds r2, r4, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _0805091C
 	movs r0, #1
@@ -121963,7 +121963,7 @@ gCardEffectDestroy_08050924: @ 0x08050924
 	ldrh r2, [r6]
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_08036450
+	bl gEngineEffectSpecialSummonDestroy_08036450
 	b _08050984
 	.align 2, 0
 _08050970: .4byte 0x00000868
@@ -122020,7 +122020,7 @@ gCardEffectDestroy_08050994: @ 0x08050994
 	adds r0, r6, #0
 	adds r1, r5, #0
 	adds r2, r4, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _080509F4
 	adds r0, r6, #0
@@ -122086,7 +122086,7 @@ gCardEffectReturnToHandFlip_080509FC: @ 0x080509FC
 	adds r0, r6, #0
 	adds r1, r5, #0
 	adds r2, r4, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _08050A4C
 	movs r0, #1
@@ -122150,7 +122150,7 @@ _08050A8E:
 	adds r0, r6, #0
 	adds r1, r5, #0
 	adds r2, r4, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	beq _08050A9E
 	b _08050C4C
@@ -122166,7 +122166,7 @@ _08050A9E:
 _08050AB0:
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	lsls r0, r0, #0x10
 	lsrs r2, r0, #0x10
 	ldrh r1, [r6]
@@ -122271,7 +122271,7 @@ _08050B70:
 _08050B80:
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_0803A980
+	bl gEngineEffectSpecialSummonBoostATK_0803A980
 	movs r1, #0
 	ldrh r6, [r6, #8]
 	cmp r0, r6
@@ -122427,7 +122427,7 @@ _08050C6A:
 	adds r0, r7, #0
 	adds r1, r6, #0
 	adds r2, r4, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _08050D6C
 	ldrh r1, [r7]
@@ -123095,19 +123095,19 @@ _08051160:
 	adds r0, r4, #0
 	adds r1, r5, #0
 	movs r2, #3
-	bl sub_0803B230
+	bl gEngineEffectSpecialSummonRitualSummon_0803B230
 	b _080511A6
 _0805116C:
 	adds r0, r4, #0
 	adds r1, r5, #0
 	movs r2, #4
-	bl sub_0803B230
+	bl gEngineEffectSpecialSummonRitualSummon_0803B230
 	b _080511A6
 _08051178:
 	adds r0, r4, #0
 	adds r1, r5, #0
 	movs r2, #6
-	bl sub_0803B230
+	bl gEngineEffectSpecialSummonRitualSummon_0803B230
 	b _080511A6
 _08051184:
 	ldrh r6, [r6, #0xc]
@@ -123122,7 +123122,7 @@ _08051194:
 _08051196:
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_08031564
+	bl gEngineEffectSpecialSummonBoostATK_08031564
 	b _080511A6
 	.align 2, 0
 _080511A0: .4byte 0x00001950 @ Oxygeddon
@@ -123229,7 +123229,7 @@ _0805124C:
 _0805125A:
 	adds r0, r4, #0
 	adds r1, r3, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	movs r1, #0
 	ldrh r5, [r5, #8]
 	cmp r0, r5
@@ -123313,7 +123313,7 @@ gCardEffectDamageEndPhase_080512C0: @ 0x080512C0
 	adds r0, r7, #0
 	adds r1, r5, #0
 	adds r2, r4, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _08051310
 	movs r0, #1
@@ -123329,8 +123329,8 @@ _08051312:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_08051318
-sub_08051318: @ 0x08051318
+	thumb_func_start gEngineEffectSpecialSummonChangePosition_08051318
+gEngineEffectSpecialSummonChangePosition_08051318: @ 0x08051318
 	push {r4, lr}
 	adds r4, r1, #0
 	adds r3, r2, #0
@@ -123412,7 +123412,7 @@ gCardEffectChangePosition_08051364: @ 0x08051364
 	adds r0, r6, #0
 	adds r1, r5, #0
 	adds r2, r4, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _080513C8
 	movs r0, #1
@@ -123504,7 +123504,7 @@ _08051440:
 	bne _08051488
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	movs r1, #0xfa
 	lsls r1, r1, #3
 	cmp r0, r1
@@ -123526,7 +123526,7 @@ _08051488:
 _08051494:
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	movs r1, #0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
@@ -123591,13 +123591,13 @@ _08051508:
 	ldrh r2, [r6]
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_08036450
+	bl gEngineEffectSpecialSummonDestroy_08036450
 	cmp r0, #0
 	beq _08051534
 	adds r0, r6, #0
 	adds r1, r5, #0
 	adds r2, r4, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _08051534
 	movs r0, #1
@@ -123719,7 +123719,7 @@ _080515EC:
 _080515FA:
 	adds r0, r4, #0
 	adds r1, r3, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	movs r1, #0
 	ldrh r5, [r5, #8]
 	cmp r0, r5
@@ -123862,7 +123862,7 @@ _08051700:
 	lsrs r3, r3, #0x1b
 	mov r0, sb
 	mov r1, r8
-	bl sub_0802F9FC
+	bl gEngineEffectDestroyDamage_0802F9FC
 	cmp r0, #0
 	bne _0805173A
 	b _0805172A
@@ -123947,7 +123947,7 @@ gCardEffectSpecialSummonChangePosition_0805174C: @ 0x0805174C
 	adds r0, r6, #0
 	adds r1, r5, #0
 	adds r2, r4, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _080517AC
 	movs r0, #1
@@ -124002,7 +124002,7 @@ gCardEffectDestroySpecialSummon_080517B4: @ 0x080517B4
 	adds r0, r6, #0
 	adds r1, r4, #0
 	adds r2, r5, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _0805188E
 	movs r1, #0xfc
@@ -124046,7 +124046,7 @@ _0805184C:
 	bne _0805188E
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	movs r2, #0
 	ldr r1, _08051868 @ =0x000003E7
 	cmp r0, r1
@@ -124058,12 +124058,12 @@ _08051868: .4byte 0x000003E7
 _0805186C:
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_0803A980
+	bl gEngineEffectSpecialSummonBoostATK_0803A980
 	b _0805187E
 _08051876:
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 _0805187E:
 	movs r2, #0
 	movs r1, #0xfa
@@ -124196,7 +124196,7 @@ gCardEffectChangePosition_08051924: @ 0x08051924
 	adds r0, r7, #0
 	adds r1, r6, #0
 	adds r2, r4, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	beq _08051984
 _08051978:
@@ -124355,7 +124355,7 @@ _08051A74:
 	adds r1, r6, #0
 	adds r2, r5, #0
 	adds r3, r4, #0
-	bl sub_0802F9FC
+	bl gEngineEffectDestroyDamage_0802F9FC
 	cmp r0, #0
 	bne _08051A54
 _08051A9C:
@@ -124703,7 +124703,7 @@ gCardEffectSpecialSummonTribute_08051CC4: @ 0x08051CC4
 	ldrb r1, [r6, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	bne _08051D28
 	ldrb r1, [r6, #2]
@@ -125009,7 +125009,7 @@ gCardEffectDiscardDestroyAll_08051F04: @ 0x08051F04
 	adds r0, r5, #0
 	adds r1, r4, #0
 	adds r2, r3, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _08051F58
 	movs r0, #1
@@ -125054,7 +125054,7 @@ gCardEffectDestroyDamage_08051F60: @ 0x08051F60
 	adds r0, r6, #0
 	adds r1, r5, #0
 	adds r2, r4, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _08051FC8
 	adds r0, r6, #0
@@ -125221,13 +125221,13 @@ gCardEffectTakeControlFlip_08052080: @ 0x08052080
 	ldrh r2, [r6]
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_08036450
+	bl gEngineEffectSpecialSummonDestroy_08036450
 	cmp r0, #0
 	beq _080520E2
 	adds r0, r6, #0
 	adds r1, r5, #0
 	adds r2, r4, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	beq _080520F0
 _080520E2:
@@ -125239,7 +125239,7 @@ _080520EC: .4byte gUnk_0201C510
 _080520F0:
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	lsls r0, r0, #0x10
 	lsrs r2, r0, #0x10
 	ldrh r1, [r6]
@@ -125455,7 +125455,7 @@ gCardEffectSpecialSummonTribute_08052224: @ 0x08052224
 _08052272:
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	bne _08052294
 	ldrb r1, [r6, #2]
@@ -125525,7 +125525,7 @@ _08052304: .4byte 0x000019B1 @ Photon Generator Unit
 _08052308:
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	movs r1, #0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
@@ -125557,7 +125557,7 @@ _08052344: .4byte 0x00000FC9 @ Dark Magician
 _08052348:
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	movs r1, #0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
@@ -125580,13 +125580,13 @@ _08052370:
 	adds r0, r4, #0
 	adds r1, r5, #0
 	movs r2, #5
-	bl sub_0803B230
+	bl gEngineEffectSpecialSummonRitualSummon_0803B230
 	b _0805238E
 _0805237C:
 	ldr r2, _08052388 @ =0x000018F6 (Cyber Dragon)
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_08031564
+	bl gEngineEffectSpecialSummonBoostATK_08031564
 	b _0805238E
 	.align 2, 0
 _08052388: .4byte 0x000018F6 @ Cyber Dragon
@@ -125659,7 +125659,7 @@ _080523E8:
 	adds r0, r7, #0
 	adds r1, r4, #0
 	adds r2, r5, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	beq _080523F8
 	b _080525C0
@@ -125749,7 +125749,7 @@ _08052494: .4byte 0x000018D6 @ Minefield Eruption
 _08052498:
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	movs r1, #0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
@@ -125760,7 +125760,7 @@ _080524AC:
 	movs r6, #0
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	cmp r0, #1
@@ -125800,7 +125800,7 @@ _080524FC:
 	movs r7, #0
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_08030B0C
+	bl gEngineEffectSpecialSummonChangePosition_08030B0C
 	cmp r0, #0
 	beq _08052550
 	ldr r0, [r6]
@@ -125819,7 +125819,7 @@ _08052526:
 	movs r7, #0
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_08030B0C
+	bl gEngineEffectSpecialSummonChangePosition_08030B0C
 	cmp r0, #0
 	beq _08052550
 	ldr r0, [r6]
@@ -125842,12 +125842,12 @@ _08052554:
 	adds r0, r4, #0
 	adds r1, r5, #0
 	movs r2, #3
-	bl sub_0803B230
+	bl gEngineEffectSpecialSummonRitualSummon_0803B230
 	b _080525C2
 _08052560:
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	movs r1, #0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
@@ -125947,7 +125947,7 @@ gCardEffectDraw_080525D0: @ 0x080525D0
 	adds r0, r4, #0
 	adds r1, r6, #0
 	adds r2, r5, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _08052650
 	ldrh r1, [r4]
@@ -126248,7 +126248,7 @@ gCardEffectBanishStandbyPhase_08052820: @ 0x08052820
 	adds r0, r6, #0
 	adds r1, r5, #0
 	adds r2, r4, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _0805287C
 	ldrb r6, [r6, #2]
@@ -126459,7 +126459,7 @@ gCardEffectDestroyAllFlip_080529A8: @ 0x080529A8
 	adds r0, r7, #0
 	adds r1, r5, #0
 	adds r2, r4, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _08052A14
 	ldrb r7, [r7, #2]
@@ -126630,7 +126630,7 @@ _08052AFA:
 	adds r0, r7, #0
 	adds r1, r4, #0
 	adds r2, r5, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	beq _08052B0A
 	b _08052DEE
@@ -126782,7 +126782,7 @@ _08052C08:
 _08052C10:
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	cmp r0, #0x13
@@ -126810,7 +126810,7 @@ _08052C40:
 	movs r6, #0
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	cmp r0, #0x12
@@ -126847,7 +126847,7 @@ _08052C88:
 	movs r7, #0
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_08030B0C
+	bl gEngineEffectSpecialSummonChangePosition_08030B0C
 	cmp r0, #0
 	beq _08052CCC
 	b _08052CB2
@@ -126855,7 +126855,7 @@ _08052C98:
 	movs r7, #0
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_08030B0C
+	bl gEngineEffectSpecialSummonChangePosition_08030B0C
 	cmp r0, #0
 	beq _08052CCC
 	adds r0, r4, #0
@@ -126908,7 +126908,7 @@ _08052CE8:
 	bne _08052DEE
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	movs r1, #0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
@@ -126921,7 +126921,7 @@ _08052D1C: .4byte gUnk_0201C510
 _08052D20:
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	movs r1, #0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
@@ -126962,14 +126962,14 @@ _08052D6C:
 	movs r6, #0
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	cmp r0, #2
 	bne _08052D9C
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	movs r1, #0xfa
 	lsls r1, r1, #3
 	cmp r0, r1
@@ -127381,7 +127381,7 @@ gCardEffectSpecialSummonDiscard_08053034: @ 0x08053034
 	adds r0, r6, #0
 	adds r1, r5, #0
 	adds r2, r3, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _0805308C
 	adds r0, r7, #0
@@ -127556,13 +127556,13 @@ gCardEffectTakeControlTribute_08053178: @ 0x08053178
 	ldrh r2, [r6]
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_08036450
+	bl gEngineEffectSpecialSummonDestroy_08036450
 	cmp r0, #0
 	beq _080531CC
 	adds r0, r6, #0
 	adds r1, r5, #0
 	adds r2, r4, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	beq _080531D8
 _080531CC:
@@ -127639,7 +127639,7 @@ _0805323E:
 	adds r0, r6, #0
 	adds r1, r5, #0
 	adds r2, r4, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _08053288
 	adds r0, r5, #0
@@ -127739,8 +127739,8 @@ _08053306:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_0805330C
-sub_0805330C: @ 0x0805330C
+	thumb_func_start gEngineEffectSpecialSummonNegate_0805330C
+gEngineEffectSpecialSummonNegate_0805330C: @ 0x0805330C
 	push {r4, r5, r6, r7, lr}
 	adds r7, r0, #0
 	adds r5, r1, #0
@@ -127821,7 +127821,7 @@ gCardEffectSpecialSummonBanish_08053374: @ 0x08053374
 	adds r0, r6, #0
 	adds r1, r5, #0
 	adds r2, r4, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _08053458
 	ldr r0, _08053414 @ =0x00001518 (Bottomless Trap Hole)
@@ -127830,7 +127830,7 @@ gCardEffectSpecialSummonBanish_08053374: @ 0x08053374
 	bne _080533C2
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	ldr r1, _08053418 @ =0x000005DB
 	cmp r0, r1
 	ble _08053458
@@ -127931,7 +127931,7 @@ gCardEffectReturnToHandChangePosition_08053460: @ 0x08053460
 	adds r0, r3, #0
 	adds r1, r5, #0
 	adds r2, r4, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	beq _08053488
 _08053484:
@@ -128520,13 +128520,13 @@ gCardEffectTakeControlChangePosition_080538A8: @ 0x080538A8
 	ldrh r2, [r4]
 	adds r0, r5, #0
 	adds r1, r6, #0
-	bl sub_08036450
+	bl gEngineEffectSpecialSummonDestroy_08036450
 	cmp r0, #0
 	beq _080538D2
 	adds r0, r4, #0
 	adds r1, r5, #0
 	adds r2, r6, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	beq _080538D6
 _080538D2:
@@ -128938,7 +128938,7 @@ gCardEffectDestroy_08053B84: @ 0x08053B84
 	adds r0, r6, #0
 	adds r1, r5, #0
 	adds r2, r4, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _08053BF8
 	movs r0, #1
@@ -128997,7 +128997,7 @@ gCardEffectDestroyChangePosition_08053C00: @ 0x08053C00
 	adds r0, r6, #0
 	adds r1, r5, #0
 	adds r2, r4, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _08053C68
 	movs r0, #1
@@ -129140,7 +129140,7 @@ gCardEffectSpecialSummonPreventAttack_08053D40: @ 0x08053D40
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	bne _08053D80
 	ldrb r4, [r4, #2]
@@ -129251,13 +129251,13 @@ gCardEffectSpecialSummonDestroy_08053E14: @ 0x08053E14
 	adds r0, r4, #0
 	adds r1, r5, #0
 	adds r2, r6, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _08053E5E
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	bne _08053E62
 	ldrb r4, [r4, #2]
@@ -129399,7 +129399,7 @@ gCardEffectSpecialSummonSendToGY_08053F10: @ 0x08053F10
 	beq _08053F54
 	adds r0, r4, #0
 	adds r1, r3, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _08053F54
 	movs r0, #1
@@ -129448,7 +129448,7 @@ gCardEffectSpecialSummonBanish_08053F5C: @ 0x08053F5C
 	beq _08054022
 	adds r0, r6, #0
 	adds r1, r4, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	movs r1, #0xfa
 	lsls r1, r1, #2
 	cmp r0, r1
@@ -129555,7 +129555,7 @@ gCardEffectChangePositionBanish_0805402C: @ 0x0805402C
 	adds r0, r5, #0
 	adds r1, r4, #0
 	adds r2, r3, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _08054080
 	movs r0, #1
@@ -129792,7 +129792,7 @@ gCardEffectEndPhaseDestroy_080541CC: @ 0x080541CC
 	adds r0, r6, #0
 	adds r1, r5, #0
 	adds r2, r4, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _0805422C
 	movs r0, #1
@@ -129836,7 +129836,7 @@ gCardEffectDestroyAllSpecialSummon_08054234: @ 0x08054234
 	adds r0, r6, #0
 	adds r1, r5, #0
 	adds r2, r4, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _0805427C
 	movs r0, #1
@@ -129899,7 +129899,7 @@ _080542C8:
 _080542D6:
 	adds r0, r4, #0
 	adds r1, r3, #0
-	bl sub_0803A980
+	bl gEngineEffectSpecialSummonBoostATK_0803A980
 	movs r1, #0
 	ldrh r5, [r5, #8]
 	cmp r0, r5
@@ -129954,7 +129954,7 @@ gCardEffectSendToGYDestroy_080542F0: @ 0x080542F0
 	adds r0, r7, #0
 	adds r1, r5, #0
 	adds r2, r4, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _0805435C
 	ldrh r1, [r6, #8]
@@ -130049,7 +130049,7 @@ gCardEffectChangePosition_080543B4: @ 0x080543B4
 	adds r0, r5, #0
 	adds r1, r4, #0
 	adds r2, r3, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _08054404
 	movs r0, #1
@@ -130139,7 +130139,7 @@ gCardEffectUnknown_08054468: @ 0x08054468
 	bne _080544CC
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_08030B0C
+	bl gEngineEffectSpecialSummonChangePosition_08030B0C
 	cmp r0, #0
 	beq _080544CC
 	ldrb r1, [r7, #2]
@@ -130237,7 +130237,7 @@ gCardEffectDiscardDestroyAll_08054518: @ 0x08054518
 	beq _08054568
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_08030B0C
+	bl gEngineEffectSpecialSummonChangePosition_08030B0C
 	cmp r0, #0
 	beq _08054568
 	adds r0, r5, #0
@@ -130295,7 +130295,7 @@ gCardEffectDirectAttack_08054570: @ 0x08054570
 	beq _080545C8
 	adds r0, r4, #0
 	adds r1, r3, #0
-	bl sub_08030B0C
+	bl gEngineEffectSpecialSummonChangePosition_08030B0C
 	cmp r0, #0
 	beq _080545C8
 	adds r0, r7, #0
@@ -130501,7 +130501,7 @@ gCardEffectSpecialSummonSendToGY_080546E0: @ 0x080546E0
 	beq _08054744
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	ldrh r6, [r6, #0xc]
 	cmp r0, r6
 	bgt _08054744
@@ -130563,7 +130563,7 @@ _0805478C:
 _0805479A:
 	adds r0, r4, #0
 	adds r1, r3, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	movs r1, #0
 	ldrh r5, [r5, #8]
 	cmp r0, r5
@@ -130620,7 +130620,7 @@ gCardEffectSpecialSummonSendToGY_080547B4: @ 0x080547B4
 	ldrb r7, [r7, #2]
 	lsls r0, r7, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	bne _0805482C
 	adds r0, r6, #0
@@ -130679,7 +130679,7 @@ gCardEffectSpecialSummonReturnToHand_08054834: @ 0x08054834
 	adds r0, r6, #0
 	adds r1, r5, #0
 	adds r2, r4, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _08054890
 	movs r0, #1
@@ -130833,7 +130833,7 @@ _08054988:
 	adds r0, r6, #0
 	adds r1, r7, #0
 	movs r2, #4
-	bl sub_0803B230
+	bl gEngineEffectSpecialSummonRitualSummon_0803B230
 	b _08054ABE
 _08054994:
 	adds r0, r6, #0
@@ -130858,7 +130858,7 @@ _080549B4: .4byte 0xC0300000
 _080549B8:
 	adds r0, r6, #0
 	adds r1, r7, #0
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	cmp r0, #0xf
@@ -131226,13 +131226,13 @@ gCardEffectUnknown_08054C50: @ 0x08054C50
 	ldrh r2, [r6]
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_08036450
+	bl gEngineEffectSpecialSummonDestroy_08036450
 	cmp r0, #0
 	beq _08054CA8
 	adds r0, r6, #0
 	adds r1, r5, #0
 	adds r2, r4, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _08054CA8
 	movs r0, #1
@@ -131328,7 +131328,7 @@ gCardEffectTakeControlFlip_08054D08: @ 0x08054D08
 	adds r2, r0, #0
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_0803B230
+	bl gEngineEffectSpecialSummonRitualSummon_0803B230
 	cmp r0, #0
 	beq _08054D54
 	movs r0, #1
@@ -131403,7 +131403,7 @@ _08054DB4:
 	bl gEngineEffectSpecialSummonFusionSummon_0807F730
 	mov r1, r8
 	adds r2, r7, #0
-	bl sub_0807F618
+	bl gEngineEffectSpecialSummonBoostATK_0807F618
 	cmp r0, #0
 	beq _08054DE0
 	movs r0, #1
@@ -131466,7 +131466,7 @@ _08054E38:
 	adds r0, r5, #0
 	adds r1, r4, #0
 	adds r2, r3, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _08054E54
 	movs r0, #1
@@ -131563,7 +131563,7 @@ gCardEffectDamageChangePosition_08054EA8: @ 0x08054EA8
 	adds r0, r5, #0
 	adds r1, r4, #0
 	adds r2, r3, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _08054F00
 	movs r0, #1
@@ -131611,7 +131611,7 @@ gCardEffectSpecialSummonFusion_08054F08: @ 0x08054F08
 	adds r0, r7, #0
 	adds r1, r6, #0
 	adds r2, r4, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _08054F5C
 	movs r0, #1
@@ -131718,7 +131718,7 @@ gCardEffectSpecialSummonDestroy_08054FBC: @ 0x08054FBC
 	adds r0, r6, #0
 	adds r1, r4, #0
 	adds r2, r5, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _08055014
 	movs r0, #1
@@ -131770,7 +131770,7 @@ gCardEffectDestroyAllDamage_0805501C: @ 0x0805501C
 	adds r0, r4, #0
 	adds r1, r5, #0
 	adds r2, r3, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _08055070
 	movs r0, #1
@@ -131827,7 +131827,7 @@ gCardEffectDiscardDestroy_08055078: @ 0x08055078
 	adds r0, r6, #0
 	adds r1, r7, #0
 	adds r2, r4, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _080550DC
 	movs r0, #1
@@ -131875,7 +131875,7 @@ gCardEffectReturnToHandDestroy_080550E4: @ 0x080550E4
 	adds r0, r6, #0
 	adds r1, r5, #0
 	adds r2, r4, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _08055130
 	movs r0, #1
@@ -131924,7 +131924,7 @@ gCardEffectDestroyAll_08055138: @ 0x08055138
 	adds r0, r5, #0
 	adds r1, r3, #0
 	adds r2, r4, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _08055180
 	movs r0, #1
@@ -132022,7 +132022,7 @@ _08055210:
 	adds r0, r7, #0
 	adds r1, r6, #0
 	adds r2, r5, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _08055240
 	adds r0, r7, #0
@@ -132074,7 +132074,7 @@ _0805527C: .4byte gUnk_0201C510
 _08055280:
 	adds r0, r4, #0
 	adds r1, r3, #0
-	bl sub_0803149C
+	bl gEngineEffectDestroyCounter_0803149C
 	adds r4, r0, #0
 	adds r0, r5, #0
 	bl gEngineEffectCounterDestroy_0804BE38
@@ -132134,7 +132134,7 @@ gCardEffectDestroyCounter_080552A0: @ 0x080552A0
 	beq _08055310
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_0803149C
+	bl gEngineEffectDestroyCounter_0803149C
 	adds r4, r0, #0
 	adds r0, r6, #0
 	bl gEngineEffectCounterDestroy_0804BE38
@@ -132472,7 +132472,7 @@ gCardEffectBanishDamage_08055524: @ 0x08055524
 	beq _08055588
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	cmp r0, #7
@@ -132480,7 +132480,7 @@ gCardEffectBanishDamage_08055524: @ 0x08055524
 	adds r0, r6, #0
 	adds r1, r5, #0
 	adds r2, r4, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _08055588
 	movs r0, #1
@@ -132535,13 +132535,13 @@ gCardEffectEndPhase_08055590: @ 0x08055590
 	ldrh r2, [r6]
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_08036450
+	bl gEngineEffectSpecialSummonDestroy_08036450
 	cmp r0, #0
 	beq _08055604
 	adds r0, r6, #0
 	mov r1, r8
 	adds r2, r4, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _08055604
 	ldr r0, _08055610 @ =gUnk_0201B290
@@ -132791,7 +132791,7 @@ _080557B8:
 _080557C6:
 	adds r0, r4, #0
 	adds r1, r3, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	movs r1, #0
 	ldrh r5, [r5, #8]
 	cmp r0, r5
@@ -132885,14 +132885,14 @@ _08055874:
 	movs r6, #0
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	cmp r0, #7
 	bne _08055898
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	movs r1, #0xfa
 	lsls r1, r1, #1
 	cmp r0, r1
@@ -132945,7 +132945,7 @@ _080558E8:
 	ldr r2, _080558FC @ =0x000018F9 (Elemental Hero Bubbleman)
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_08031564
+	bl gEngineEffectSpecialSummonBoostATK_08031564
 	b _08055920
 	.align 2, 0
 _080558FC: .4byte 0x000018F9 @ Elemental Hero Bubbleman
@@ -134847,7 +134847,7 @@ _08056406:
 	beq _08056424
 	ldr r1, _08056420 @ =0x00000107
 	adds r0, r5, #0
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 _08056418:
 	movs r0, #1
 	rsbs r0, r0, #0
@@ -134925,7 +134925,7 @@ _0805649C:
 	adds r1, r5, #0
 	bl sub_0801F2C4
 	mov r0, sp
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 _080564B2:
 	ldr r1, _080564C0 @ =gUnk_0201B290
 	ldr r0, _080564C4 @ =0x000004AC
@@ -135307,7 +135307,7 @@ _08056758: .4byte gUnk_0201B290
 _0805675C: .4byte 0x000004AC
 _08056760:
 	movs r0, #0x1d
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 	ldr r0, [r4]
 	adds r0, #1
 	str r0, [r4]
@@ -135414,7 +135414,7 @@ _08056810:
 	movs r1, #0xe4
 	bl sub_0801F2C4
 	mov r0, sp
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 _08056826:
 	ldr r1, _0805683C @ =gUnk_0201B290
 	ldr r0, _08056840 @ =0x000004AC
@@ -135677,7 +135677,7 @@ _080569CE:
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
 	mov r1, sp
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	b _080569FC
 	.align 2, 0
 _080569EC: .4byte gCardEffectTributeDestroy_08050EAC
@@ -135686,14 +135686,14 @@ _080569F0:
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x12
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 _080569FC:
 	ldrb r2, [r5, #2]
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r5]
 	adds r2, r4, #0
-	bl sub_08096A4C
+	bl gEngineEffectSpecialSummonTribute_08096A4C
 	ldr r1, _08056A18 @ =gUnk_0201B290
 	ldr r0, _08056A1C @ =0x000004AC
 	adds r1, r1, r0
@@ -135782,7 +135782,7 @@ _08056ABC: .4byte 0x00001929 @ Spiritual Fire Art - Kurenai
 _08056AC0:
 	adds r0, r7, #0
 	adds r1, r6, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	adds r0, #1
 	asrs r0, r0, #1
 	strh r0, [r5, #8]
@@ -135790,7 +135790,7 @@ _08056AC0:
 _08056AD0:
 	adds r0, r7, #0
 	adds r1, r6, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	b _08056AF0
 _08056ADA:
 	adds r0, r7, #0
@@ -135861,13 +135861,13 @@ _08056B58: .4byte 0x00000868
 _08056B5C:
 	adds r0, r7, #0
 	adds r1, r6, #0
-	bl sub_0803A96C
+	bl gEngineEffectSpecialSummonBoostATK_0803A96C
 	strh r0, [r5, #8]
 	b _08056B7A
 _08056B68:
 	adds r0, r7, #0
 	adds r1, r6, #0
-	bl sub_0803A96C
+	bl gEngineEffectSpecialSummonBoostATK_0803A96C
 	strh r0, [r5, #8]
 	adds r0, r5, #0
 	mov r1, r8
@@ -136196,7 +136196,7 @@ _08056DBC:
 	ldrb r2, [r5, #2]
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_08033BF4
+	bl gEngineEffectSpecialSummon_08033BF4
 	cmp r0, #0
 	blt _08056DDA
 	adds r0, r5, #0
@@ -136216,7 +136216,7 @@ _08056DDA:
 	ldrb r1, [r5, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	beq _08056EB6
 	adds r0, r5, #0
@@ -136431,7 +136431,7 @@ _08056F84:
 	mov r0, r8
 	adds r1, r4, #0
 	movs r3, #0
-	bl sub_080933DC
+	bl gEngineEffectSpecialSummon_080933DC
 _08056FA8:
 	ldr r1, _08056FB8 @ =gUnk_0201B290
 	ldr r3, _08056FBC @ =0x000004AC
@@ -136707,7 +136707,7 @@ _080571BC: .4byte gUnk_0201C4E0
 _080571C0:
 	movs r0, #0x87
 	lsls r0, r0, #1
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 _080571C8:
 	ldr r1, _080571D0 @ =gUnk_0201B290
 	ldr r3, _080571D4 @ =0x000004AC
@@ -136876,7 +136876,7 @@ gCardEffectSpecialSummonNegate_080572B8: @ 0x080572B8
 	lsls r0, r5, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _080572F0 @ =0x00000107
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #1
 	rsbs r0, r0, #0
 	b _08057336
@@ -137010,13 +137010,13 @@ _080573AC:
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x3a
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldrb r1, [r6, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r6]
 	ldr r2, _080573CC @ =sub_080905E8
-	bl sub_08096A4C
+	bl gEngineEffectSpecialSummonTribute_08096A4C
 	ldr r0, [r4]
 	adds r0, #1
 	b _08057424
@@ -137051,7 +137051,7 @@ _080573D0:
 	lsrs r0, r0, #0x13
 	strh r0, [r6, #0xa]
 	adds r0, r6, #0
-	bl sub_08047EC0
+	bl gEngineEffectBoostATKBoostDEF_08047EC0
 	movs r0, #1
 	b _08057428
 	.align 2, 0
@@ -137170,7 +137170,7 @@ _080574D8: .4byte gUnk_0201C4E0
 _080574DC:
 	movs r0, #0x87
 	lsls r0, r0, #1
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 	b _080574F0
 _080574E6:
 	ldr r0, _08057500 @ =gUnk_0201C4E0
@@ -137322,13 +137322,13 @@ _080575DA:
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x3a
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldrb r1, [r6, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r6]
 	ldr r2, _080575FC @ =sub_080905E8
-	bl sub_08096A4C
+	bl gEngineEffectSpecialSummonTribute_08096A4C
 	ldr r0, [r4]
 	adds r0, #1
 	b _08057612
@@ -137364,14 +137364,14 @@ _08057618:
 	adds r0, r6, #0
 	adds r1, r5, #0
 	adds r2, r4, #0
-	bl sub_08047EC0
+	bl gEngineEffectBoostATKBoostDEF_08047EC0
 	ldrb r2, [r6, #2]
 	lsls r1, r2, #0x1f
 	lsrs r1, r1, #0x1f
 	lsls r2, r2, #0x1a
 	lsrs r2, r2, #0x1b
 	adds r0, r6, #0
-	bl sub_08047EC0
+	bl gEngineEffectBoostATKBoostDEF_08047EC0
 	bl sub_0804A870
 _08057650:
 	movs r0, #1
@@ -137509,7 +137509,7 @@ _0805773A:
 	lsls r0, r6, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x50
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	b _0805780C
 _08057756:
 	ldrb r1, [r6, #2]
@@ -137525,7 +137525,7 @@ _08057766:
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r6]
 	ldr r2, _08057778 @ =sub_08057678
-	bl sub_08096A4C
+	bl gEngineEffectSpecialSummonTribute_08096A4C
 	b _0805780C
 	.align 2, 0
 _08057778: .4byte sub_08057678
@@ -137546,7 +137546,7 @@ _0805777C:
 	adds r2, r2, r0
 	adds r0, r6, #0
 	movs r3, #0
-	bl sub_08047A80
+	bl gEngineEffectBoostATKBoostDEF_08047A80
 	ldrh r0, [r6, #8]
 	adds r0, #1
 	strh r0, [r6, #8]
@@ -137589,7 +137589,7 @@ _080577EE:
 	lsls r0, r6, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x56
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	b _0805780C
 _080577FC:
 	ldrb r2, [r6, #2]
@@ -137737,7 +137737,7 @@ _08057908: .4byte gUnk_0201C4E0
 _0805790C:
 	movs r0, #0x87
 	lsls r0, r0, #1
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 	b _08057B7A
 _08057916:
 	ldr r0, _08057924 @ =gUnk_0201C4E0
@@ -137845,7 +137845,7 @@ _080579CE:
 	ldrh r1, [r6]
 	movs r2, #0
 	adds r3, r4, #0
-	bl sub_080AECE4
+	bl gEngineEffectSpecialSummonGraveyard_080AECE4
 	ldr r1, _080579F0 @ =gUnk_0201B290
 	ldr r3, _080579F4 @ =0x000004AC
 	adds r2, r1, r3
@@ -137861,7 +137861,7 @@ _080579F8: .4byte 0x000004B4
 _080579FC:
 	lsrs r0, r2, #0x1f
 	movs r1, #0xa4
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldr r0, [r4]
 	adds r0, #1
 	b _08057A3A
@@ -137956,7 +137956,7 @@ _08057AB0:
 	lsls r0, r6, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0xa4
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldr r0, [r5]
 	adds r0, #1
 	str r0, [r5]
@@ -138052,7 +138052,7 @@ _08057B6C:
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r6]
 	ldr r2, _08057B88 @ =sub_08057678
-	bl sub_08096A4C
+	bl gEngineEffectSpecialSummonTribute_08096A4C
 _08057B7A:
 	ldr r1, _08057B8C @ =gUnk_0201B290
 	ldr r0, _08057B90 @ =0x000004AC
@@ -138082,7 +138082,7 @@ _08057B94:
 	adds r2, r2, r0
 	adds r0, r6, #0
 	movs r3, #0
-	bl sub_08047A80
+	bl gEngineEffectBoostATKBoostDEF_08047A80
 	ldr r0, _08057BD8 @ =0x000004B4
 	adds r1, r7, r0
 	ldr r0, [r1]
@@ -138300,7 +138300,7 @@ _08057D4C:
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x3a
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldr r1, _08057DBC @ =gUnk_0201E2A0
 	ldrb r3, [r4, #2]
 	lsls r0, r3, #0x1f
@@ -138358,7 +138358,7 @@ _08057DD0:
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r4]
 	ldr r2, _08057DEC @ =sub_080905E8
-	bl sub_08096A4C
+	bl gEngineEffectSpecialSummonTribute_08096A4C
 	ldr r1, _08057DF0 @ =gUnk_0201B290
 	ldr r2, _08057DF4 @ =0x000004AC
 	adds r1, r1, r2
@@ -138387,7 +138387,7 @@ _08057DF8:
 	lsrs r0, r2, #0x1f
 	ldrh r1, [r4]
 	ldr r2, _08057E34 @ =sub_080905E8
-	bl sub_08096A4C
+	bl gEngineEffectSpecialSummonTribute_08096A4C
 	ldr r0, _08057E38 @ =gUnk_0201B290
 	ldr r1, _08057E3C @ =0x000004AC
 	adds r0, r0, r1
@@ -138418,7 +138418,7 @@ _08057E40:
 	ldr r0, [r0]
 	adds r2, r2, r0
 	adds r0, r4, #0
-	bl sub_08047EC0
+	bl gEngineEffectBoostATKBoostDEF_08047EC0
 	ldrh r0, [r4, #8]
 	adds r0, #1
 	strh r0, [r4, #8]
@@ -138514,7 +138514,7 @@ _08057F10:
 _08057F16:
 	lsrs r0, r3, #0x1f
 	movs r1, #0x74
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	strh r4, [r5, #0xc]
 _08057F20:
 	ldr r0, [r6]
@@ -138534,7 +138534,7 @@ _08057F28:
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r5]
 	ldr r2, _08057F48 @ =sub_080905E8
-	bl sub_08096A4C
+	bl gEngineEffectSpecialSummonTribute_08096A4C
 	b _08057F20
 	.align 2, 0
 _08057F48: .4byte sub_080905E8
@@ -139079,7 +139079,7 @@ _08058314:
 	str r1, [sp]
 	str r6, [sp, #4]
 	adds r1, r4, #0
-	bl sub_080933DC
+	bl gEngineEffectSpecialSummon_080933DC
 _0805833A:
 	ldr r1, _0805834C @ =gUnk_0201B290
 	ldr r2, _08058350 @ =0x000004AC
@@ -139183,7 +139183,7 @@ _080583DC:
 	bics r1, r0
 	adds r0, r4, #0
 	movs r2, #0
-	bl sub_08047B80
+	bl gEngineEffectBoostATKBoostDEF_08047B80
 	ldr r0, [r5]
 	adds r0, #1
 	b _0805843A
@@ -139331,7 +139331,7 @@ _080584EC:
 	lsls r0, r2
 	eors r1, r0
 	adds r0, r4, #0
-	bl sub_08047EF0
+	bl gEngineEffectBoostATKBoostDEF_08047EF0
 	ldr r0, [r5]
 	adds r0, #1
 	b _08058546
@@ -139425,7 +139425,7 @@ gCardEffectSendToGYDamage_08058598: @ 0x08058598
 	lsrs r0, r0, #0x1f
 	lsls r1, r1, #0x1a
 	lsrs r1, r1, #0x1b
-	bl sub_080313DC
+	bl gEngineEffectDestroyStandbyPhase_080313DC
 	strh r0, [r4, #0xa]
 	ldrb r2, [r4, #2]
 	lsls r1, r2, #0x1f
@@ -139433,7 +139433,7 @@ gCardEffectSendToGYDamage_08058598: @ 0x08058598
 	lsls r2, r2, #0x1a
 	lsrs r2, r2, #0x1b
 	adds r0, r4, #0
-	bl sub_08047EC0
+	bl gEngineEffectBoostATKBoostDEF_08047EC0
 	movs r0, #1
 	pop {r4}
 	pop {r1}
@@ -139511,8 +139511,8 @@ gCardEffectSearch_0805861C: @ 0x0805861C
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_08058638
-sub_08058638: @ 0x08058638
+	thumb_func_start gEngineEffectDestroyCounter_08058638
+gEngineEffectDestroyCounter_08058638: @ 0x08058638
 	push {lr}
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
@@ -139536,7 +139536,7 @@ sub_08058638: @ 0x08058638
 	beq _0805867C
 	adds r0, r3, #0
 	adds r1, r2, #0
-	bl sub_0803149C
+	bl gEngineEffectDestroyCounter_0803149C
 	cmp r0, #0
 	beq _0805867C
 	movs r0, #1
@@ -139590,7 +139590,7 @@ _080586AE:
 	lsls r0, r3, #0x1f
 	lsrs r0, r0, #0x1f
 	mov r1, sp
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	adds r0, r5, #0
 	bl gEngineEffectCounterDestroy_08055EBC
 	strh r0, [r5, #0xc]
@@ -139604,11 +139604,11 @@ _080586DE:
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r5]
-	ldr r2, _080586F0 @ =sub_08058638
-	bl sub_08096AB0
+	ldr r2, _080586F0 @ =gEngineEffectDestroyCounter_08058638
+	bl gEngineEffectSpecialSummonTribute_08096AB0
 	b _080586D6
 	.align 2, 0
-_080586F0: .4byte sub_08058638
+_080586F0: .4byte gEngineEffectDestroyCounter_08058638
 _080586F4:
 	bl sub_08096B14
 	cmp r0, #0
@@ -139968,7 +139968,7 @@ _08058984:
 	movs r1, #0xfa
 	bl sub_0801F2C4
 	mov r0, sp
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 _0805899A:
 	ldr r1, _080589A4 @ =gUnk_0201B290
 	ldr r0, _080589A8 @ =0x000004AC
@@ -140150,7 +140150,7 @@ _08058AC6:
 	bne _08058B0C
 	lsrs r0, r2, #0x1f
 	ldrh r1, [r5]
-	bl sub_08032C94
+	bl gEngineEffectSpecialSummonBoostATK_08032C94
 	cmp r0, #0
 	beq _08058AFC
 	ldr r0, _08058AF8 @ =gUnk_0201C4E0
@@ -140179,7 +140179,7 @@ _08058B0C:
 	movs r1, #0xfa
 	bl sub_0801F2C4
 	mov r0, sp
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 _08058B22:
 	ldr r1, _08058B2C @ =gUnk_0201B290
 	ldr r5, _08058B30 @ =0x000004AC
@@ -140209,7 +140209,7 @@ _08058B50:
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x3a
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldr r1, _08058B7C @ =gUnk_0201E2A0
 	ldrb r0, [r5, #2]
 	lsls r2, r0, #0x1f
@@ -140289,7 +140289,7 @@ _08058BF8:
 	ldr r2, [r0]
 	adds r2, r3, r2
 	adds r0, r5, #0
-	bl sub_08047EC0
+	bl gEngineEffectBoostATKBoostDEF_08047EC0
 	b _08058C22
 	.align 2, 0
 _08058C10: .4byte 0x00001D68
@@ -140318,7 +140318,7 @@ gCardEffectSendToGYGraveyard_08058C2C: @ 0x08058C2C
 	lsls r1, r2, #0x1f
 	lsrs r1, r1, #0x1f
 	movs r2, #0xa
-	bl sub_08047EC0
+	bl gEngineEffectBoostATKBoostDEF_08047EC0
 	movs r0, #1
 	pop {r1}
 	bx r1
@@ -140346,7 +140346,7 @@ _08058C60:
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x3a
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldr r1, _08058C8C @ =gUnk_0201E2A0
 	ldrb r5, [r5, #2]
 	lsls r2, r5, #0x1f
@@ -140504,7 +140504,7 @@ _08058D94:
 	str r0, [sp, #4]
 	movs r0, #0x81
 	movs r3, #0
-	bl sub_080933DC
+	bl gEngineEffectSpecialSummon_080933DC
 _08058DAA:
 	ldr r1, _08058DB8 @ =gUnk_0201B290
 	ldr r2, _08058DBC @ =0x000004AC
@@ -140617,7 +140617,7 @@ _08058E6C:
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x29
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldr r1, _08058E98 @ =gUnk_0201E2A0
 	ldrb r7, [r7, #2]
 	lsls r2, r7, #0x1f
@@ -140930,7 +140930,7 @@ _080590D2:
 	ble _08059094
 	adds r0, r6, #0
 	mov r1, ip
-	bl sub_08047F00
+	bl gEngineEffectBoostATKBoostDEF_08047F00
 	ldr r0, _0805910C @ =0x00001332 (Banisher of the Light)
 	bl sub_0803279C
 	movs r1, #0
@@ -140958,7 +140958,7 @@ gCardEffectSpecialSummonSendToGY_08059110: @ 0x08059110
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
-	bl sub_08061F80
+	bl gEngineEffectSpecialSummonNegate_08061F80
 	cmp r0, #0
 	bne _08059124
 	movs r0, #1
@@ -141126,7 +141126,7 @@ _08059248:
 	bl sub_0801F2C4
 _08059258:
 	mov r0, sp
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 _0805925E:
 	ldr r1, _08059270 @ =gUnk_0201B290
 	ldr r2, _08059274 @ =0x000004AC
@@ -141168,7 +141168,7 @@ _080592A8:
 	lsls r2, r2, #0x1a
 	lsrs r2, r2, #0x1b
 	adds r0, r5, #0
-	bl sub_08047EC0
+	bl gEngineEffectBoostATKBoostDEF_08047EC0
 _080592B8:
 	movs r0, #1
 _080592BA:
@@ -141279,7 +141279,7 @@ _08059370:
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x3a
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldr r1, _080593A0 @ =gUnk_0201E2A0
 	mov r3, r8
 	ldrb r3, [r3, #2]
@@ -141374,7 +141374,7 @@ gCardEffectSpecialSummonSendToGY_08059430: @ 0x08059430
 	lsrs r1, r1, #0x1f
 	lsls r2, r2, #0x1a
 	lsrs r2, r2, #0x1b
-	bl sub_08047EC0
+	bl gEngineEffectBoostATKBoostDEF_08047EC0
 	movs r0, #1
 	pop {r1}
 	bx r1
@@ -141445,7 +141445,7 @@ _080594B8:
 	movs r1, #0x91
 	lsls r1, r1, #1
 	adds r0, r5, #0
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldr r0, [r4]
 	adds r0, #1
 	str r0, [r4]
@@ -141488,7 +141488,7 @@ gCardEffectSpecialSummonPreventAttack_080594F0: @ 0x080594F0
 	lsrs r0, r0, #0x1f
 	lsls r1, r1, #0x1a
 	lsrs r1, r1, #0x1b
-	bl sub_080313DC
+	bl gEngineEffectDestroyStandbyPhase_080313DC
 	strh r0, [r4, #8]
 	movs r0, #1
 	pop {r4}
@@ -141570,7 +141570,7 @@ _080595A8:
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x12
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldr r0, _080595C8 @ =gUnk_0201C4E0
 	movs r1, #0xea
 	lsls r1, r1, #5
@@ -141607,7 +141607,7 @@ _080595F4:
 	lsrs r0, r0, #0x1f
 	ldr r2, _0805960C @ =sub_080905E8
 	movs r1, #1
-	bl sub_08096A4C
+	bl gEngineEffectSpecialSummonTribute_08096A4C
 	ldr r1, _08059610 @ =gUnk_0201B290
 	ldr r2, _08059614 @ =0x000004AC
 	adds r1, r1, r2
@@ -141693,7 +141693,7 @@ _080596B8: .4byte gUnk_0201C4E0
 _080596BC:
 	movs r0, #0x9c
 	lsls r0, r0, #1
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 _080596C4:
 	ldr r1, _080596CC @ =gUnk_0201B290
 	ldr r2, _080596D0 @ =0x000004AC
@@ -141806,7 +141806,7 @@ _0805978A:
 	lsls r0, r6, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x12
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldr r0, [r7]
 	adds r0, #1
 	b _08059804
@@ -141816,7 +141816,7 @@ _0805979C:
 	lsrs r0, r0, #0x1f
 	ldr r2, _080597B0 @ =sub_080905E8
 	movs r1, #1
-	bl sub_08096AB0
+	bl gEngineEffectSpecialSummonTribute_08096AB0
 	ldr r0, [r7]
 	adds r0, #1
 	b _08059804
@@ -141892,7 +141892,7 @@ _08059834:
 	lsrs r0, r0, #0x1f
 	lsls r1, r1, #0x1a
 	lsrs r1, r1, #0x1b
-	bl sub_0803149C
+	bl gEngineEffectDestroyCounter_0803149C
 	adds r6, r0, #0
 	movs r5, #1
 	b _0805984A
@@ -141932,7 +141932,7 @@ _08059884:
 	lsls r1, r1, #1
 	adds r2, r5, #0
 	adds r3, r6, #0
-	bl sub_08093534
+	bl gEngineEffectSpecialSummon_08093534
 _08059892:
 	ldr r1, _080598A8 @ =gUnk_0201B290
 	ldr r0, _080598AC @ =0x000004AC
@@ -142009,7 +142009,7 @@ _08059920:
 	lsls r0, r5, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x1a
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldr r1, _08059934 @ =gUnk_0201B290
 	ldr r2, _08059938 @ =0x000004AC
 	adds r1, r1, r2
@@ -142046,7 +142046,7 @@ _08059960:
 	lsls r0, r5, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x12
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	b _08059A4E
 _08059980:
 	ldrb r5, [r5, #2]
@@ -142054,7 +142054,7 @@ _08059980:
 	lsrs r0, r0, #0x1f
 	ldr r2, _08059998 @ =sub_080905E8
 	movs r1, #1
-	bl sub_08096AB0
+	bl gEngineEffectSpecialSummonTribute_08096AB0
 	ldr r1, _0805999C @ =gUnk_0201B290
 	ldr r2, _080599A0 @ =0x000004AC
 	adds r1, r1, r2
@@ -142105,7 +142105,7 @@ _080599E2:
 	bl gEngineEffectSpecialSummonFusionSummon_0807F730
 	mov r1, sl
 	mov r2, sb
-	bl sub_0807F618
+	bl gEngineEffectSpecialSummonBoostATK_0807F618
 	cmp r0, #0
 	bne _080599A4
 _08059A00:
@@ -142200,7 +142200,7 @@ _08059AA2:
 	lsls r0, r5, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x12
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 _08059AB2:
 	ldr r0, [r4]
 	adds r0, #1
@@ -142212,7 +142212,7 @@ _08059ABA:
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r5]
 	ldr r2, _08059ACC @ =gCardEffectTributeDestroy_08050EAC
-	bl sub_08096A4C
+	bl gEngineEffectSpecialSummonTribute_08096A4C
 	b _08059AB2
 	.align 2, 0
 _08059ACC: .4byte gCardEffectTributeDestroy_08050EAC
@@ -142323,7 +142323,7 @@ _08059B96:
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x56
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	b _08059BCE
 _08059BA4:
 	ldrb r1, [r4, #2]
@@ -142421,7 +142421,7 @@ _08059C36:
 	lsls r0, r6, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0xd
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #5
 	b _08059CB0
 _08059C58:
@@ -142536,7 +142536,7 @@ _08059D38:
 	lsls r0, r6, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x56
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldr r1, _08059D4C @ =gUnk_0201B290
 	ldr r0, _08059D50 @ =0x000004AC
 	adds r1, r1, r0
@@ -142644,13 +142644,13 @@ _08059E0A:
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x3a
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldrb r3, [r5, #2]
 	lsls r0, r3, #0x1f
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r5]
 	ldr r2, _08059E2C @ =sub_080905E8
-	bl sub_08096A4C
+	bl gEngineEffectSpecialSummonTribute_08096A4C
 	ldr r0, [r4]
 	adds r0, #1
 	b _08059E6C
@@ -142672,7 +142672,7 @@ _08059E30:
 	ldr r0, [r0]
 	adds r2, r2, r0
 	adds r0, r5, #0
-	bl sub_08047EC0
+	bl gEngineEffectBoostATKBoostDEF_08047EC0
 	ldr r0, [r4]
 	adds r0, #1
 	b _08059E6C
@@ -142817,7 +142817,7 @@ _08059F56:
 	lsls r0, r6, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x56
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	b _08059F74
 _08059F64:
 	ldrb r2, [r6, #2]
@@ -142924,7 +142924,7 @@ gCardEffectDestroySpellTrapCounter_0805A00C: @ 0x0805A00C
 	lsrs r1, r1, #0x1b
 	movs r2, #1
 	rsbs r2, r2, #0
-	bl sub_0804543C
+	bl gEngineEffectDestroyCounter_0804543C
 	movs r0, #1
 	pop {r4}
 	pop {r1}
@@ -143055,7 +143055,7 @@ _0805A118:
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x12
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldr r1, _0805A12C @ =gUnk_0201B290
 	ldr r3, _0805A130 @ =0x000004AC
 	adds r1, r1, r3
@@ -143069,7 +143069,7 @@ _0805A134:
 	lsrs r0, r0, #0x1f
 	ldr r2, _0805A144 @ =sub_080905E8
 	movs r1, #1
-	bl sub_08096A4C
+	bl gEngineEffectSpecialSummonTribute_08096A4C
 	b _0805A100
 	.align 2, 0
 _0805A144: .4byte sub_080905E8
@@ -143180,7 +143180,7 @@ gCardEffectSpecialSummonSendToGY_0805A204: @ 0x0805A204
 	lsrs r1, r1, #0x1f
 	eors r4, r1
 	adds r1, r4, #0
-	bl sub_0805C17C
+	bl gEngineEffectSpecialSummon_0805C17C
 	cmp r0, #1
 	ble _0805A22C
 	adds r0, r4, #0
@@ -143238,8 +143238,8 @@ _0805A27A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_0805A280
-sub_0805A280: @ 0x0805A280
+	thumb_func_start gEngineEffectSendToGYGraveyard_0805A280
+gEngineEffectSendToGYGraveyard_0805A280: @ 0x0805A280
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -143333,7 +143333,7 @@ _0805A338: .4byte 0xFFFF803F
 _0805A33C:
 	mov r0, sp
 	mov r1, sb
-	bl sub_0805A3E0
+	bl gEngineEffectSpecialSummonDiscard_0805A3E0
 _0805A344:
 	add sp, #0x18
 	pop {r3, r4}
@@ -143344,8 +143344,8 @@ _0805A344:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_0805A354
-sub_0805A354: @ 0x0805A354
+	thumb_func_start gEngineEffectSendToGYGraveyard_0805A354
+gEngineEffectSendToGYGraveyard_0805A354: @ 0x0805A354
 	push {r4, r5, r6, lr}
 	sub sp, #0x18
 	adds r5, r0, #0
@@ -143412,8 +143412,8 @@ _0805A3D4: .4byte 0x00000868
 _0805A3D8: .4byte gUnk_0201C600
 _0805A3DC: .4byte 0xFFFF803F
 
-	thumb_func_start sub_0805A3E0
-sub_0805A3E0: @ 0x0805A3E0
+	thumb_func_start gEngineEffectSpecialSummonDiscard_0805A3E0
+gEngineEffectSpecialSummonDiscard_0805A3E0: @ 0x0805A3E0
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -143695,7 +143695,7 @@ _0805A5FC:
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r4]
-	bl sub_08033C9C
+	bl gEngineEffectSpecialSummon_08033C9C
 	cmp r0, #0
 	bne _0805A618
 	b _0805A850
@@ -143728,7 +143728,7 @@ _0805A648:
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r4]
-	bl sub_08033C9C
+	bl gEngineEffectSpecialSummon_08033C9C
 	cmp r0, #0
 	bne _0805A65C
 	b _0805A850
@@ -144186,14 +144186,14 @@ gEngineEffectNegateDestroy_0805A9A8: @ 0x0805A9A8
 	bhi _0805A9D2
 	lsrs r0, r2, #0x1f
 	lsrs r1, r1, #0x1b
-	bl sub_08034180
+	bl gEngineEffectSpecialSummonBoostATK_08034180
 	b _0805A9DE
 _0805A9D2:
 	ldrh r0, [r6]
 	ldrh r5, [r6, #4]
 	lsls r1, r5, #0x11
 	lsrs r1, r1, #0x17
-	bl sub_08034298
+	bl gEngineEffectBoostATKBoostDEF_08034298
 _0805A9DE:
 	cmp r0, #0
 	beq _0805A9E4
@@ -144888,7 +144888,7 @@ _0805AF68:
 	ldrb r2, [r7, #2]
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_08033BF4
+	bl gEngineEffectSpecialSummon_08033BF4
 	adds r5, r0, #0
 	lsls r6, r5, #2
 	adds r6, r6, r5
@@ -144969,8 +144969,8 @@ _0805B024:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_0805B034
-sub_0805B034: @ 0x0805B034
+	thumb_func_start gEngineEffectSpecialSummonDiscard_0805B034
+gEngineEffectSpecialSummonDiscard_0805B034: @ 0x0805B034
 	push {r4, r5, r6, lr}
 	sub sp, #0x18
 	adds r6, r0, #0
@@ -145031,7 +145031,7 @@ sub_0805B034: @ 0x0805B034
 	strh r0, [r2, #2]
 	mov r0, sp
 	movs r1, #0
-	bl sub_0805A3E0
+	bl gEngineEffectSpecialSummonDiscard_0805A3E0
 	add sp, #0x18
 	pop {r4, r5, r6}
 	pop {r1}
@@ -145042,8 +145042,8 @@ _0805B0C0: .4byte gUnk_0201C510
 _0805B0C4: .4byte 0xFFFF803F
 _0805B0C8: .4byte 0xFFFFF03F
 
-	thumb_func_start sub_0805B0CC
-sub_0805B0CC: @ 0x0805B0CC
+	thumb_func_start gEngineEffectSendToGYGraveyard_0805B0CC
+gEngineEffectSendToGYGraveyard_0805B0CC: @ 0x0805B0CC
 	push {r4, r5, r6, lr}
 	sub sp, #0x18
 	adds r6, r0, #0
@@ -145115,8 +145115,8 @@ _0805B158: .4byte gUnk_0201C510
 _0805B15C: .4byte 0xFFFF803F
 _0805B160: .4byte 0xFFFFF03F
 
-	thumb_func_start sub_0805B164
-sub_0805B164: @ 0x0805B164
+	thumb_func_start gEngineEffectSendToGYGraveyard_0805B164
+gEngineEffectSendToGYGraveyard_0805B164: @ 0x0805B164
 	push {r4, r5, r6, lr}
 	sub sp, #0x18
 	adds r6, r0, #0
@@ -145183,8 +145183,8 @@ _0805B1E4: .4byte gUnk_0201C600
 _0805B1E8: .4byte 0xFFFF803F
 _0805B1EC: .4byte 0xFFFFF03F
 
-	thumb_func_start sub_0805B1F0
-sub_0805B1F0: @ 0x0805B1F0
+	thumb_func_start gEngineEffectSpecialSummonSendToGY_0805B1F0
+gEngineEffectSpecialSummonSendToGY_0805B1F0: @ 0x0805B1F0
 	push {r4, r5, r6, lr}
 	sub sp, #0x18
 	adds r5, r0, #0
@@ -145847,7 +145847,7 @@ _0805B742:
 	adds r0, r6, #0
 	adds r1, r3, #0
 	str r3, [sp, #0x10]
-	bl sub_08034180
+	bl gEngineEffectSpecialSummonBoostATK_08034180
 	ldr r3, [sp, #0x10]
 	cmp r0, #0
 	bne _0805B772
@@ -145969,7 +145969,7 @@ _0805B828:
 	adds r0, r6, #0
 	adds r1, r3, #0
 	str r3, [sp, #0x10]
-	bl sub_08034180
+	bl gEngineEffectSpecialSummonBoostATK_08034180
 	ldr r3, [sp, #0x10]
 	cmp r0, #0
 	bne _0805B8E8
@@ -146074,7 +146074,7 @@ _0805B908:
 	bne _0805B92A
 	adds r0, r6, #0
 	ldr r1, _0805B984 @ =0x00001302 (Royal Decree)
-	bl sub_08032C94
+	bl gEngineEffectSpecialSummonBoostATK_08032C94
 	cmp r0, #0
 	beq _0805B92A
 	ldr r0, [r7]
@@ -146101,7 +146101,7 @@ _0805B938:
 	adds r0, r6, #0
 	movs r1, #0x9b
 	lsls r1, r1, #5
-	bl sub_08032C94
+	bl gEngineEffectSpecialSummonBoostATK_08032C94
 	cmp r0, #0
 	beq _0805B950
 	str r5, [r7, #0xc]
@@ -146109,14 +146109,14 @@ _0805B938:
 _0805B950:
 	adds r0, r6, #0
 	ldr r1, _0805B988 @ =0x00001495 (The Emperor's Holiday)
-	bl sub_08032C94
+	bl gEngineEffectSpecialSummonBoostATK_08032C94
 	cmp r0, #0
 	beq _0805B95E
 	str r5, [r7, #0x28]
 _0805B95E:
 	adds r0, r6, #0
 	ldr r1, _0805B98C @ =0x0000148E (Royal Command)
-	bl sub_08032C94
+	bl gEngineEffectSpecialSummonBoostATK_08032C94
 	cmp r0, #0
 	beq _0805B96C
 	str r5, [r7, #0x18]
@@ -146267,7 +146267,7 @@ _0805BA68:
 _0805BA78:
 	mov r0, sl
 	adds r1, r7, #0
-	bl sub_08034180
+	bl gEngineEffectSpecialSummonBoostATK_08034180
 	cmp r0, #0
 	beq _0805BA88
 	movs r0, #1
@@ -147019,8 +147019,8 @@ _0805C038: .4byte gUnk_0201C600
 _0805C03C: .4byte 0x000012A1 @ Parasite Paracide
 _0805C040: .4byte 0xFFFFFEEC
 
-	thumb_func_start sub_0805C044
-sub_0805C044: @ 0x0805C044
+	thumb_func_start gEngineEffectSpecialSummonDamage_0805C044
+gEngineEffectSpecialSummonDamage_0805C044: @ 0x0805C044
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -147184,11 +147184,11 @@ _0805C170: .4byte gUnk_0201C600
 _0805C174: .4byte 0x000012A1 @ Parasite Paracide
 _0805C178: .4byte 0xFFFFFEEC
 
-	thumb_func_start sub_0805C17C
-sub_0805C17C: @ 0x0805C17C
+	thumb_func_start gEngineEffectSpecialSummon_0805C17C
+gEngineEffectSpecialSummon_0805C17C: @ 0x0805C17C
 	push {lr}
 	adds r0, r1, #0
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	pop {r1}
 	bx r1
 
@@ -147300,7 +147300,7 @@ gCardEffectDiscard_0805C1E4: @ 0x0805C1E4
 	lsrs r2, r2, #0x17
 	movs r3, #0
 	str r3, [sp]
-	bl sub_0805C044
+	bl gEngineEffectSpecialSummonDamage_0805C044
 	cmp r0, #0
 	beq _0805C20C
 	movs r0, #1
@@ -147338,7 +147338,7 @@ gCardEffectSpecialSummon_0805C218: @ 0x0805C218
 	lsrs r1, r1, #0x1f
 	eors r4, r1
 	adds r1, r4, #0
-	bl sub_0805C17C
+	bl gEngineEffectSpecialSummon_0805C17C
 	cmp r0, #0
 	beq _0805C240
 	adds r0, r4, #0
@@ -147386,7 +147386,7 @@ gCardEffectSpecialSummonGraveyard_0805C248: @ 0x0805C248
 	eors r5, r0
 	adds r0, r6, #0
 	adds r1, r5, #0
-	bl sub_0805C17C
+	bl gEngineEffectSpecialSummon_0805C17C
 	cmp r0, #0
 	beq _0805C28A
 	adds r0, r5, #0
@@ -147595,7 +147595,7 @@ gCardEffectEquip_0805C394: @ 0x0805C394
 	cmp r0, #0
 	bne _0805C3D8
 	lsrs r0, r4, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	beq _0805C3D8
 	ldrb r1, [r5, #2]
@@ -147605,7 +147605,7 @@ gCardEffectEquip_0805C394: @ 0x0805C394
 	bls _0805C3E4
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_08033BF4
+	bl gEngineEffectSpecialSummon_08033BF4
 	cmp r0, #0
 	bge _0805C3E4
 _0805C3D8:
@@ -147797,7 +147797,7 @@ gCardEffectSpecialSummon_0805C4D4: @ 0x0805C4D4
 	cmp r0, #0
 	beq _0805C50E
 	ldr r0, _0805C514 @ =0x00000FE4 (Harpie Lady)
-	bl sub_08032CA4
+	bl gEngineEffectSpecialSummonBoostATK_08032CA4
 	cmp r0, #0
 	beq _0805C50E
 	ldr r1, _0805C518 @ =gUnk_0201C4E0
@@ -147990,7 +147990,7 @@ gCardEffectUnknown_0805C630: @ 0x0805C630
 	movs r1, #1
 	subs r1, r1, r0
 	adds r0, r2, #0
-	bl sub_0805C17C
+	bl gEngineEffectSpecialSummon_0805C17C
 	cmp r0, #0
 	beq _0805C658
 _0805C654:
@@ -148148,7 +148148,7 @@ gCardEffectSpecialSummonEquip_0805C724: @ 0x0805C724
 	cmp r0, #0
 	beq _0805C79C
 	adds r0, r4, #0
-	bl sub_08033610
+	bl gEngineEffectSpecialSummon_08033610
 	cmp r0, #0
 	bne _0805C778
 	cmp r5, r4
@@ -148165,7 +148165,7 @@ _0805C778:
 	beq _0805C79C
 	ldr r1, _0805C798 @ =0x00001117 (Wall Shadow)
 	adds r0, r4, #0
-	bl sub_08031A84
+	bl gEngineEffectBoostATKBoostDEF_08031A84
 	cmp r0, #0
 	beq _0805C79C
 	movs r0, #1
@@ -148221,7 +148221,7 @@ _0805C7CA:
 	bne _0805C810
 	lsrs r1, r5, #0x1f
 	adds r0, r4, #0
-	bl sub_0805C17C
+	bl gEngineEffectSpecialSummon_0805C17C
 	cmp r0, r6
 	blt _0805C810
 	ldrb r4, [r4, #2]
@@ -148431,7 +148431,7 @@ _0805C970:
 	adds r0, r7, #0
 	adds r1, r5, #0
 	adds r2, r4, #0
-	bl sub_0805B0CC
+	bl gEngineEffectSendToGYGraveyard_0805B0CC
 	b _0805CA40
 	.align 2, 0
 _0805C988: .4byte 0x00000868
@@ -148557,7 +148557,7 @@ gCardEffectDestroyEquip_0805CA50: @ 0x0805CA50
 	cmp r0, r1
 	bne _0805CA8C
 	adds r0, r4, #0
-	bl sub_08033BF4
+	bl gEngineEffectSpecialSummon_08033BF4
 	movs r1, #1
 	rsbs r1, r1, #0
 	cmp r0, r1
@@ -148866,7 +148866,7 @@ _0805CC72:
 	ldr r0, [r5, #0x14]
 	lsls r0, r0, #0x16
 	lsrs r0, r0, #0x1f
-	bl sub_08033634
+	bl gEngineEffectSpecialSummon_08033634
 	cmp r0, #0
 	blt _0805CD14
 	cmp r4, #0xe
@@ -148899,7 +148899,7 @@ _0805CC72:
 	ldr r0, [r4]
 	lsls r0, r0, #0x13
 	lsrs r0, r0, #0x13
-	bl sub_0804BA58
+	bl gEngineEffectSpecialSummon_0804BA58
 	cmp r0, #0
 	beq _0805CD00
 	ldrb r5, [r5, #2]
@@ -149032,7 +149032,7 @@ gCardEffectSpecialSummon_0805CDB0: @ 0x0805CDB0
 	adds r4, r0, #0
 	adds r5, r1, #0
 	ldr r0, _0805CDCC @ =0x0000128B (Lord of D.)
-	bl sub_08032CA4
+	bl gEngineEffectSpecialSummonBoostATK_08032CA4
 	cmp r0, #0
 	beq _0805CDD0
 	adds r0, r4, #0
@@ -149213,7 +149213,7 @@ gCardEffectUnknown_0805CEC8: @ 0x0805CEC8
 	lsls r1, r0, #0x1f
 	lsrs r1, r1, #0x1f
 	adds r0, r4, #0
-	bl sub_0805C17C
+	bl gEngineEffectSpecialSummon_0805C17C
 	cmp r0, #0
 	beq _0805CF14
 	movs r0, #1
@@ -149480,7 +149480,7 @@ _0805D09C:
 	lsrs r2, r2, #0x1f
 	adds r1, r1, r2
 	adds r0, r3, #0
-	bl sub_080A4694
+	bl gEngineEffectSpecialSummonTribute_080A4694
 	cmp r0, #0
 	bne _0805D104
 	adds r5, #1
@@ -150053,7 +150053,7 @@ _0805D472:
 _0805D48E:
 	adds r0, r4, #0
 	adds r1, r3, #0
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	cmp r0, #2
@@ -150135,7 +150135,7 @@ _0805D534:
 	ldrb r1, [r5, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_08036A78
+	bl gEngineEffectDestroyCounter_08036A78
 	adds r4, r0, #0
 	adds r0, r5, #0
 	bl gEngineEffectCounterDestroy_08055EBC
@@ -150161,7 +150161,7 @@ _0805D55C:
 	movs r1, #1
 	str r1, [sp]
 	movs r3, #0
-	bl sub_0805C044
+	bl gEngineEffectSpecialSummonDamage_0805C044
 	b _0805D436
 _0805D574:
 	ldrh r0, [r4]
@@ -150224,7 +150224,7 @@ _0805D5DA:
 	lsls r0, r5, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _0805D5F0 @ =0x000018A6 (Elemental Hero Avian)
-	bl sub_08032C94
+	bl gEngineEffectSpecialSummonBoostATK_08032C94
 	movs r1, #0
 	cmp r0, #0
 	ble _0805D682
@@ -150544,7 +150544,7 @@ gCardEffectTakeControlFlip_0805D824: @ 0x0805D824
 	ldrb r2, [r0, #2]
 	lsls r1, r2, #0x1f
 	lsrs r1, r1, #0x1f
-	bl sub_0805C17C
+	bl gEngineEffectSpecialSummon_0805C17C
 	cmp r0, #0
 	beq _0805D838
 	movs r0, #1
@@ -150879,7 +150879,7 @@ gCardEffectDiscardDestroyAll_0805DA74: @ 0x0805DA74
 	str r1, [sp]
 	movs r1, #5
 	movs r3, #0
-	bl sub_0805C044
+	bl gEngineEffectSpecialSummonDamage_0805C044
 	cmp r0, #0
 	beq _0805DA9A
 	movs r0, #1
@@ -150912,7 +150912,7 @@ gCardEffectDiscardChangePosition_0805DAA4: @ 0x0805DAA4
 	str r1, [sp]
 	movs r1, #2
 	movs r3, #0
-	bl sub_0805C044
+	bl gEngineEffectSpecialSummonDamage_0805C044
 	cmp r0, #0
 	beq _0805DAD8
 	movs r0, #1
@@ -151594,7 +151594,7 @@ _0805DF6E:
 	adds r3, #1
 	cmp r3, #1
 	ble _0805DF4E
-	ldr r1, _0805DF94 @ =sub_08051318
+	ldr r1, _0805DF94 @ =gEngineEffectSpecialSummonChangePosition_08051318
 	adds r0, r4, #0
 	bl sub_0809077C
 	cmp r0, #0
@@ -151604,7 +151604,7 @@ _0805DF6E:
 	.align 2, 0
 _0805DF8C: .4byte gUnk_0201C510
 _0805DF90: .4byte 0x00000868
-_0805DF94: .4byte sub_08051318
+_0805DF94: .4byte gEngineEffectSpecialSummonChangePosition_08051318
 _0805DF98:
 	movs r0, #1
 _0805DF9A:
@@ -151633,7 +151633,7 @@ gCardEffectDestroyChangePosition_0805DFA0: @ 0x0805DFA0
 	bne _0805E000
 	lsrs r1, r2, #0x1f
 	adds r0, r4, #0
-	bl sub_0805C17C
+	bl gEngineEffectSpecialSummon_0805C17C
 	cmp r0, #1
 	ble _0805E000
 	ldrb r4, [r4, #2]
@@ -151684,7 +151684,7 @@ _0805E01E:
 _0805E020:
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_0805C17C
+	bl gEngineEffectSpecialSummon_0805C17C
 	cmp r0, #0
 	beq _0805E01A
 	ldrh r1, [r5]
@@ -151940,7 +151940,7 @@ _0805E1CA:
 	ldr r1, [r5]
 	ldr r2, [r5, #0x1c]
 	adds r0, r4, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _0805E200
 	movs r0, #1
@@ -151985,7 +151985,7 @@ gCardEffectSpecialSummonNegate_0805E208: @ 0x0805E208
 	beq _0805E258
 	adds r0, r3, #0
 	adds r1, r2, #0
-	bl sub_0803A980
+	bl gEngineEffectSpecialSummonBoostATK_0803A980
 	movs r1, #0xfa
 	lsls r1, r1, #3
 	cmp r0, r1
@@ -152046,7 +152046,7 @@ gCardEffectSpecialSummonRevive_0805E284: @ 0x0805E284
 	beq _0805E304
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_0805C17C
+	bl gEngineEffectSpecialSummon_0805C17C
 	adds r1, r0, #0
 	ldrb r5, [r5, #2]
 	lsls r0, r5, #0x1f
@@ -152160,7 +152160,7 @@ gCardEffectSpecialSummonDestroyAll_0805E358: @ 0x0805E358
 	beq _0805E3A0
 	adds r0, r3, #0
 	adds r1, r2, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	movs r1, #0xaf
 	lsls r1, r1, #3
 	cmp r0, r1
@@ -152309,7 +152309,7 @@ _0805E478:
 	ldr r0, [r3]
 	ldr r1, [r3, #0x1c]
 _0805E492:
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	movs r1, #0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
@@ -152667,7 +152667,7 @@ gCardEffectDiscardReturnToHand_0805E6F4: @ 0x0805E6F4
 	str r1, [sp]
 	movs r1, #1
 	movs r3, #1
-	bl sub_0805C044
+	bl gEngineEffectSpecialSummonDamage_0805C044
 	cmp r0, #0
 	beq _0805E728
 	movs r0, #1
@@ -152800,7 +152800,7 @@ _0805E7B6:
 	ldr r1, _0805E810 @ =0x000013C7 (Revival Jam)
 	adds r0, r4, #0
 	adds r2, r3, #0
-	bl sub_08032BC8
+	bl gEngineEffectSpecialSummonBoostATK_08032BC8
 	cmp r0, #0
 	ble _0805E814
 	movs r0, #1
@@ -153167,7 +153167,7 @@ gCardEffectSpecialSummonSendToGY_0805EA3C: @ 0x0805EA3C
 	ldr r0, [r5]
 	lsls r0, r0, #0x13
 	lsrs r0, r0, #0x13
-	bl sub_0804BA58
+	bl gEngineEffectSpecialSummon_0804BA58
 	cmp r0, #0
 	beq _0805EAD2
 	ldrb r6, [r6, #2]
@@ -153320,7 +153320,7 @@ gCardEffectDiscardDamage_0805EBC4: @ 0x0805EBC4
 	movs r1, #1
 	str r1, [sp]
 	movs r3, #0
-	bl sub_0805C044
+	bl gEngineEffectSpecialSummonDamage_0805C044
 	cmp r0, #0
 	beq _0805EBE8
 	movs r0, #2
@@ -153420,7 +153420,7 @@ _0805EC7A:
 _0805EC7E:
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_0803352C
+	bl gEngineEffectSpecialSummon_0803352C
 	cmp r0, #0
 	beq _0805EC8C
 	adds r7, #1
@@ -153714,7 +153714,7 @@ gCardEffectSpecialSummonDestroy_0805EE60: @ 0x0805EE60
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_08033BF4
+	bl gEngineEffectSpecialSummon_08033BF4
 	cmp r0, #0
 	blt _0805EE94
 	ldrb r1, [r4, #2]
@@ -153742,7 +153742,7 @@ gCardEffectSendToGYGraveyard_0805EE9C: @ 0x0805EE9C
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_08033BF4
+	bl gEngineEffectSpecialSummon_08033BF4
 	cmp r0, #0
 	blt _0805EEB0
 	movs r0, #1
@@ -153978,7 +153978,7 @@ gCardEffectSpecialSummonRevive_0805F020: @ 0x0805F020
 	lsrs r1, r1, #0x1f
 	subs r1, r5, r1
 	adds r0, r4, #0
-	bl sub_0805C17C
+	bl gEngineEffectSpecialSummon_0805C17C
 	cmp r0, #0
 	ble _0805F060
 	ldrb r4, [r4, #2]
@@ -154242,7 +154242,7 @@ gCardEffectDestroyChangePosition_0805F1CC: @ 0x0805F1CC
 	ldr r1, [r0]
 	ldr r2, [r0, #0x1c]
 	adds r0, r3, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _0805F234
 	movs r0, #1
@@ -154427,7 +154427,7 @@ gCardEffectReduceATKDamage_0805F33C: @ 0x0805F33C
 	bne _0805F374
 	ldr r1, [r1, #0x1c]
 	adds r0, r2, #0
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	cmp r0, #3
@@ -154442,7 +154442,7 @@ _0805F374:
 	bne _0805F39C
 	ldr r1, [r1, #0x20]
 	adds r0, r2, #0
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	cmp r0, #3
@@ -154567,7 +154567,7 @@ _0805F444:
 	ldr r0, [r3]
 	ldr r1, [r3, #0x1c]
 _0805F45E:
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	movs r1, #0
@@ -154753,7 +154753,7 @@ gCardEffectNegateDiscard_0805F550: @ 0x0805F550
 	beq _0805F5D0
 	adds r0, r4, #0
 	adds r1, r3, #0
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	cmp r0, #1
@@ -154828,7 +154828,7 @@ gCardEffectDestroySpellTrapDamage_0805F628: @ 0x0805F628
 	lsls r0, r0, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #1
-	bl sub_08032EF0
+	bl gEngineEffectSpecialSummonChangePosition_08032EF0
 	movs r1, #0
 	cmp r0, #0
 	ble _0805F63E
@@ -154970,7 +154970,7 @@ gCardEffectDestroyAllDamage_0805F6E4: @ 0x0805F6E4
 	cmp r4, #0
 	beq _0805F778
 	adds r0, r4, #0
-	bl sub_0804BA58
+	bl gEngineEffectSpecialSummon_0804BA58
 	cmp r0, #0
 	bne _0805F778
 	adds r0, r4, #0
@@ -155966,7 +155966,7 @@ gCardEffectSpecialSummonDamage_0805FDF4: @ 0x0805FDF4
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #1
 	bgt _0805FE18
 _0805FE14:
@@ -156194,7 +156194,7 @@ _0805FF96:
 gCardEffectPreventAttackChangePosition_0805FF9C: @ 0x0805FF9C
 	push {lr}
 	ldr r0, _0805FFAC @ =0x0000159D (Necrovalley)
-	bl sub_08032CA4
+	bl gEngineEffectSpecialSummonBoostATK_08032CA4
 	cmp r0, #0
 	beq _0805FFB0
 	movs r0, #1
@@ -156362,7 +156362,7 @@ gCardEffectDiscardGraveyard_080600B4: @ 0x080600B4
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _080600F0 @ =0x0000159D (Necrovalley)
-	bl sub_08032C94
+	bl gEngineEffectSpecialSummonBoostATK_08032C94
 	cmp r0, #0
 	beq _080600EC
 	ldr r2, _080600F4 @ =gUnk_0201C4E0
@@ -156504,7 +156504,7 @@ gCardEffectSpecialSummonDestroy_0806019C: @ 0x0806019C
 	bhi _080601C4
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_08033BF4
+	bl gEngineEffectSpecialSummon_08033BF4
 	cmp r0, #0
 	blt _080601D4
 	movs r0, #1
@@ -156844,7 +156844,7 @@ _08060402:
 	beq _0806045C
 	adds r0, r6, #0
 	adds r1, r7, #0
-	bl sub_0805C17C
+	bl gEngineEffectSpecialSummon_0805C17C
 	cmp r0, #0
 	bne _0806044A
 	ldrb r1, [r6, #2]
@@ -156982,21 +156982,21 @@ gCardEffectSendToGYDestroyAll_08060514: @ 0x08060514
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _0806054C @ =0x000015CA (People Running About)
-	bl sub_08032C94
+	bl gEngineEffectSpecialSummonBoostATK_08032C94
 	cmp r0, #0
 	beq _08060548
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _08060550 @ =0x000015CB (Oppressed People)
-	bl sub_08032C94
+	bl gEngineEffectSpecialSummonBoostATK_08032C94
 	cmp r0, #0
 	beq _08060548
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _08060554 @ =0x000015CC (United Resistance)
-	bl sub_08032C94
+	bl gEngineEffectSpecialSummonBoostATK_08032C94
 	cmp r0, #0
 	bne _08060558
 _08060548:
@@ -157183,7 +157183,7 @@ gCardEffectSpecialSummonChangePosition_08060684: @ 0x08060684
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_08033BF4
+	bl gEngineEffectSpecialSummon_08033BF4
 	cmp r0, #0
 	blt _080606A6
 	adds r0, r4, #0
@@ -157271,7 +157271,7 @@ gCardEffectSpecialSummonRevive_08060710: @ 0x08060710
 	lsrs r0, r0, #0x1f
 	lsls r1, r1, #0x1a
 	lsrs r1, r1, #0x1b
-	bl sub_0803149C
+	bl gEngineEffectDestroyCounter_0803149C
 	adds r4, r0, #0
 	adds r0, r5, #0
 	bl gEngineEffectCounterDestroy_08055EBC
@@ -157288,7 +157288,7 @@ gCardEffectSpecialSummonRevive_08060710: @ 0x08060710
 	beq _08060780
 	adds r0, r5, #0
 	adds r1, r6, #0
-	bl sub_0805C17C
+	bl gEngineEffectSpecialSummon_0805C17C
 	cmp r0, #0
 	bne _0806077C
 	ldrb r1, [r5, #2]
@@ -157324,7 +157324,7 @@ gCardEffectDestroyCounter_08060788: @ 0x08060788
 	lsrs r0, r0, #0x1f
 	lsls r1, r1, #0x1a
 	lsrs r1, r1, #0x1b
-	bl sub_0803149C
+	bl gEngineEffectDestroyCounter_0803149C
 	adds r4, r0, #0
 	adds r0, r5, #0
 	bl gEngineEffectCounterDestroy_08055EBC
@@ -157514,7 +157514,7 @@ gCardEffectDestroyAllCounter_080608E0: @ 0x080608E0
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_08036A78
+	bl gEngineEffectDestroyCounter_08036A78
 	adds r5, r0, #0
 	adds r0, r4, #0
 	bl gEngineEffectCounterDestroy_08055EBC
@@ -157537,14 +157537,14 @@ gCardEffectCounter_08060908: @ 0x08060908
 	ldrb r1, [r5, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_08036A78
+	bl gEngineEffectDestroyCounter_08036A78
 	adds r4, r0, #0
 	ldrb r5, [r5, #2]
 	lsls r1, r5, #0x1f
 	lsrs r1, r1, #0x1f
 	movs r0, #1
 	subs r0, r0, r1
-	bl sub_08036A78
+	bl gEngineEffectDestroyCounter_08036A78
 	adds r4, r4, r0
 	movs r0, #0
 	cmp r4, #0
@@ -157599,7 +157599,7 @@ gCardEffectSpecialSummonChangePosition_08060974: @ 0x08060974
 	ldrb r1, [r5, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_08036A78
+	bl gEngineEffectDestroyCounter_08036A78
 	adds r4, r0, #0
 	adds r0, r5, #0
 	bl gEngineEffectCounterDestroy_08055EBC
@@ -157627,7 +157627,7 @@ gCardEffectSpecialSummonChangePosition_080609A4: @ 0x080609A4
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_08033654
+	bl gEngineEffectSpecialSummon_08033654
 	cmp r0, #0
 	blt _080609C8
 	ldrb r4, [r4, #2]
@@ -157798,7 +157798,7 @@ gCardEffectSpecialSummonGraveyard_08060A88: @ 0x08060A88
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _08060B0C @ =0x00001645 (Exodia Necross)
-	bl sub_08037A2C
+	bl gEngineEffectBoostATKBoostDEF_08037A2C
 	cmp r0, #0
 	beq _08060B10
 	movs r0, #1
@@ -157866,7 +157866,7 @@ gCardEffectSpecialSummonDestroy_08060B4C: @ 0x08060B4C
 	movs r1, #1
 	subs r1, r1, r0
 	adds r0, r4, #0
-	bl sub_0805C17C
+	bl gEngineEffectSpecialSummon_0805C17C
 	cmp r0, #2
 	ble _08060B76
 	movs r0, #1
@@ -157888,7 +157888,7 @@ gCardEffectSpecialSummonDestroy_08060B80: @ 0x08060B80
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x12
-	bl sub_08032EF0
+	bl gEngineEffectSpecialSummonChangePosition_08032EF0
 	cmp r0, #0
 	beq _08060BE6
 	ldrb r1, [r4, #2]
@@ -158020,7 +158020,7 @@ _08060C72:
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
 	adds r1, r5, #0
-	bl sub_08032C94
+	bl gEngineEffectSpecialSummonBoostATK_08032C94
 	cmp r0, #0
 	beq _08060C8C
 	movs r0, #1
@@ -158150,35 +158150,35 @@ gCardEffectDirectAttack_08060D48: @ 0x08060D48
 	bhi _08060DD8
 	lsrs r0, r2, #0x1f
 	ldr r1, _08060DC4 @ =0x00001532 (Don Zaloog)
-	bl sub_08032C94
+	bl gEngineEffectSpecialSummonBoostATK_08032C94
 	cmp r0, #0
 	beq _08060DD8
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _08060DC8 @ =0x0000161E (Cliff the Trap Remover)
-	bl sub_08032C94
+	bl gEngineEffectSpecialSummonBoostATK_08032C94
 	cmp r0, #0
 	beq _08060DD8
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _08060DCC @ =0x00001656 (Dark Scorpion - Chick the Yellow)
-	bl sub_08032C94
+	bl gEngineEffectSpecialSummonBoostATK_08032C94
 	cmp r0, #0
 	beq _08060DD8
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _08060DD0 @ =0x00001685 (Dark Scorpion - Gorg the Strong)
-	bl sub_08032C94
+	bl gEngineEffectSpecialSummonBoostATK_08032C94
 	cmp r0, #0
 	beq _08060DD8
 	ldrb r4, [r4, #2]
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _08060DD4 @ =0x00001686 (Dark Scorpion - Meanae the Thorn)
-	bl sub_08032C94
+	bl gEngineEffectSpecialSummonBoostATK_08032C94
 	cmp r0, #0
 	beq _08060DD8
 	movs r0, #2
@@ -158259,7 +158259,7 @@ gCardEffectDiscardDestroySpellTrap_08060E24: @ 0x08060E24
 	movs r1, #1
 	str r1, [sp]
 	movs r3, #0
-	bl sub_0805C044
+	bl gEngineEffectSpecialSummonDamage_0805C044
 	cmp r0, #0
 	beq _08060E50
 	adds r0, r4, #0
@@ -158770,21 +158770,21 @@ gCardEffectDestroyAll_080611D0: @ 0x080611D0
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _08061208 @ =0x00001681 (Ojama Green)
-	bl sub_08032C94
+	bl gEngineEffectSpecialSummonBoostATK_08032C94
 	cmp r0, #0
 	beq _08061214
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _0806120C @ =0x000016B3 (Ojama Yellow)
-	bl sub_08032C94
+	bl gEngineEffectSpecialSummonBoostATK_08032C94
 	cmp r0, #0
 	beq _08061214
 	ldrb r4, [r4, #2]
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _08061210 @ =0x000016B4 (Ojama Black)
-	bl sub_08032C94
+	bl gEngineEffectSpecialSummonBoostATK_08032C94
 	cmp r0, #0
 	beq _08061214
 	movs r0, #1
@@ -158886,11 +158886,11 @@ gCardEffectSearchBanish_0806129C: @ 0x0806129C
 	cmp r0, #1
 	bls _080612DC
 	ldr r0, _080612D4 @ =0x000016CB (Black Luster Soldier - Envoy of the Beginning)
-	bl sub_08032CA4
+	bl gEngineEffectSpecialSummonBoostATK_08032CA4
 	cmp r0, #0
 	bne _080612C8
 	ldr r0, _080612D8 @ =0x000016E4 (Chaos Emperor Dragon - Envoy of the End)
-	bl sub_08032CA4
+	bl gEngineEffectSpecialSummonBoostATK_08032CA4
 	cmp r0, #0
 	beq _080612DC
 _080612C8:
@@ -159379,7 +159379,7 @@ gCardEffectSpecialSummonBanish_08061624: @ 0x08061624
 _0806162A:
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_0805C17C
+	bl gEngineEffectSpecialSummon_0805C17C
 	cmp r0, #0
 	beq _08061652
 	adds r0, r4, #0
@@ -159466,7 +159466,7 @@ _080616BC: .4byte 0x00000868
 _080616C0: .4byte gUnk_0201C510
 _080616C4:
 	adds r0, r6, #0
-	bl sub_080309B8
+	bl gEngineEffectSpecialSummonChangePosition_080309B8
 	cmp r0, #0
 	beq _08061796
 	ldrb r1, [r6, #2]
@@ -159880,7 +159880,7 @@ gCardEffectDestroyChangePosition_080619C0: @ 0x080619C0
 	ldr r1, _080619E0 @ =gUnk_0201BB90
 	ldr r0, [r1, #4]
 	ldr r1, [r1, #0x20]
-	bl sub_0803A980
+	bl gEngineEffectSpecialSummonBoostATK_0803A980
 	ldr r1, _080619E4 @ =0x000007CF
 	cmp r0, r1
 	ble _080619E8
@@ -160036,7 +160036,7 @@ _08061AE2:
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	adds r1, r5, #0
-	bl sub_08032C94
+	bl gEngineEffectSpecialSummonBoostATK_08032C94
 	cmp r0, #0
 	beq _08061B0C
 	ldrb r4, [r4, #2]
@@ -160101,7 +160101,7 @@ gCardEffectDiscardSendToGY_08061B54: @ 0x08061B54
 	adds r5, r0, #0
 	adds r4, r1, #0
 	ldr r0, _08061B90 @ =0x0000175E (The Sanctuary in the Sky)
-	bl sub_08032CA4
+	bl gEngineEffectSpecialSummonBoostATK_08032CA4
 	cmp r0, #0
 	beq _08061BA0
 	adds r0, r5, #0
@@ -160146,7 +160146,7 @@ gCardEffectDamage_08061BA8: @ 0x08061BA8
 	lsls r0, r0, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #1
-	bl sub_08032F6C
+	bl gEngineEffectSpecialSummonRitualSummon_08032F6C
 	movs r1, #0
 	cmp r0, #0
 	ble _08061BBE
@@ -160285,7 +160285,7 @@ gCardEffectUnknown_08061C90: @ 0x08061C90
 	ldr r4, _08061CBC @ =gUnk_0201BB90
 	ldr r0, [r4]
 	ldr r1, [r4, #0x1c]
-	bl sub_0803594C
+	bl gEngineEffectPreventAttack_0803594C
 	cmp r0, #1
 	bgt _08061CB8
 	cmp r0, #0
@@ -160425,7 +160425,7 @@ gCardEffectDrawSendToGY_08061D78: @ 0x08061D78
 	ldrh r1, [r4]
 	lsls r2, r2, #0x1a
 	lsrs r2, r2, #0x1b
-	bl sub_08032BC8
+	bl gEngineEffectSpecialSummonBoostATK_08032BC8
 	cmp r0, #1
 	ble _08061DC4
 	ldr r0, _08061DB8 @ =gUnk_0201C4E0
@@ -160524,7 +160524,7 @@ gCardEffectSpecialSummonSendToGY_08061E20: @ 0x08061E20
 	ldrb r2, [r2, #2]
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_08033C44
+	bl gEngineEffectSpecialSummon_08033C44
 	movs r1, #0
 	cmp r0, #0
 	ble _08061E46
@@ -160710,8 +160710,8 @@ _08061F7A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_08061F80
-sub_08061F80: @ 0x08061F80
+	thumb_func_start gEngineEffectSpecialSummonNegate_08061F80
+gEngineEffectSpecialSummonNegate_08061F80: @ 0x08061F80
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	ldrb r1, [r6, #2]
@@ -161106,7 +161106,7 @@ gCardEffectSpecialSummonSendToGY_08062244: @ 0x08062244
 	lsls r1, r0, #0x1f
 	lsrs r1, r1, #0x1f
 	adds r0, r4, #0
-	bl sub_0805C17C
+	bl gEngineEffectSpecialSummon_0805C17C
 	cmp r0, #0
 	bne _08062274
 	ldrb r1, [r4, #2]
@@ -161219,12 +161219,12 @@ gCardEffectDestroy_0806231C: @ 0x0806231C
 	adds r5, r1, #0
 	movs r0, #0
 	movs r1, #6
-	bl sub_08032F6C
+	bl gEngineEffectSpecialSummonRitualSummon_08032F6C
 	cmp r0, #0
 	bne _0806233A
 	movs r0, #1
 	movs r1, #6
-	bl sub_08032F6C
+	bl gEngineEffectSpecialSummonRitualSummon_08032F6C
 	cmp r0, #0
 	beq _08062344
 _0806233A:
@@ -161252,7 +161252,7 @@ _08062352:
 	movs r0, #1
 	subs r0, r0, r1
 	adds r1, r4, #0
-	bl sub_0803352C
+	bl gEngineEffectSpecialSummon_0803352C
 	cmp r0, #0
 	beq _0806236A
 	movs r0, #1
@@ -161475,7 +161475,7 @@ _080624D0:
 	ldrb r5, [r5, #2]
 	lsls r0, r5, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	movs r1, #0
 	adds r0, #1
 	cmp r4, r0
@@ -161499,7 +161499,7 @@ gCardEffectSpecialSummonPreventAttack_080624FC: @ 0x080624FC
 	lsrs r0, r0, #0x1f
 	lsls r1, r1, #0x1a
 	lsrs r1, r1, #0x1b
-	bl sub_080313DC
+	bl gEngineEffectDestroyStandbyPhase_080313DC
 	adds r6, r0, #0
 	cmp r6, #0
 	beq _0806255C
@@ -161522,7 +161522,7 @@ gCardEffectSpecialSummonPreventAttack_080624FC: @ 0x080624FC
 	lsls r1, r0, #0x1f
 	lsrs r1, r1, #0x1f
 	adds r0, r5, #0
-	bl sub_0805C17C
+	bl gEngineEffectSpecialSummon_0805C17C
 	adds r4, r0, #0
 	ldrb r1, [r5, #2]
 	lsls r0, r1, #0x1f
@@ -161719,7 +161719,7 @@ gCardEffectSpecialSummonSendToGY_08062640: @ 0x08062640
 	bne _080626C4
 	lsrs r0, r6, #0x1f
 	lsrs r1, r7, #0x1b
-	bl sub_0803149C
+	bl gEngineEffectDestroyCounter_0803149C
 	movs r1, #0
 	cmp r0, #4
 	bgt _080626B8
@@ -161743,7 +161743,7 @@ _080626C4:
 	lsrs r0, r0, #0x1f
 	lsls r1, r1, #0x1a
 	lsrs r1, r1, #0x1b
-	bl sub_0803149C
+	bl gEngineEffectDestroyCounter_0803149C
 	cmp r0, #4
 	ble _080626F4
 	mov r0, r8
@@ -161783,7 +161783,7 @@ gCardEffectSpecialSummonChangePosition_08062704: @ 0x08062704
 	ldr r1, _08062758 @ =gUnk_0201BB90
 	ldr r0, [r1]
 	ldr r1, [r1, #0x1c]
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	cmp r0, #0x12
@@ -161879,7 +161879,7 @@ _080627A0:
 	adds r0, r1, #0
 	adds r1, r5, #0
 	str r3, [sp]
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	ldr r3, [sp]
@@ -162287,7 +162287,7 @@ gCardEffectDiscardDestroySpellTrap_08062AC8: @ 0x08062AC8
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #3
-	bl sub_08032F6C
+	bl gEngineEffectSpecialSummonRitualSummon_08032F6C
 	cmp r0, #0
 	bne _08062AF0
 	ldrb r0, [r4, #2]
@@ -162296,7 +162296,7 @@ gCardEffectDiscardDestroySpellTrap_08062AC8: @ 0x08062AC8
 	movs r0, #1
 	subs r0, r0, r1
 	movs r1, #3
-	bl sub_08032F6C
+	bl gEngineEffectSpecialSummonRitualSummon_08032F6C
 	cmp r0, #0
 	beq _08062BE0
 _08062AF0:
@@ -162304,7 +162304,7 @@ _08062AF0:
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #4
-	bl sub_08032F6C
+	bl gEngineEffectSpecialSummonRitualSummon_08032F6C
 	cmp r0, #0
 	bne _08062B14
 	ldrb r0, [r4, #2]
@@ -162313,7 +162313,7 @@ _08062AF0:
 	movs r0, #1
 	subs r0, r0, r1
 	movs r1, #4
-	bl sub_08032F6C
+	bl gEngineEffectSpecialSummonRitualSummon_08032F6C
 	cmp r0, #0
 	beq _08062BE0
 _08062B14:
@@ -162321,7 +162321,7 @@ _08062B14:
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #5
-	bl sub_08032F6C
+	bl gEngineEffectSpecialSummonRitualSummon_08032F6C
 	cmp r0, #0
 	bne _08062B38
 	ldrb r0, [r4, #2]
@@ -162330,7 +162330,7 @@ _08062B14:
 	movs r0, #1
 	subs r0, r0, r1
 	movs r1, #5
-	bl sub_08032F6C
+	bl gEngineEffectSpecialSummonRitualSummon_08032F6C
 	cmp r0, #0
 	beq _08062BE0
 _08062B38:
@@ -162338,7 +162338,7 @@ _08062B38:
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #6
-	bl sub_08032F6C
+	bl gEngineEffectSpecialSummonRitualSummon_08032F6C
 	cmp r0, #0
 	bne _08062B5C
 	ldrb r0, [r4, #2]
@@ -162347,7 +162347,7 @@ _08062B38:
 	movs r0, #1
 	subs r0, r0, r1
 	movs r1, #6
-	bl sub_08032F6C
+	bl gEngineEffectSpecialSummonRitualSummon_08032F6C
 	cmp r0, #0
 	beq _08062BE0
 _08062B5C:
@@ -162608,7 +162608,7 @@ gCardEffectDestroyCounter_08062D28: @ 0x08062D28
 	lsrs r0, r0, #0x1f
 	lsls r1, r1, #0x1a
 	lsrs r1, r1, #0x1b
-	bl sub_0803149C
+	bl gEngineEffectDestroyCounter_0803149C
 	strh r0, [r4, #0xc]
 	movs r1, #0
 	cmp r0, #0
@@ -162678,7 +162678,7 @@ gCardEffectSpecialSummonSendToGY_08062D90: @ 0x08062D90
 	lsls r1, r0, #0x1f
 	lsrs r1, r1, #0x1f
 	adds r0, r5, #0
-	bl sub_0805C17C
+	bl gEngineEffectSpecialSummon_0805C17C
 	adds r4, r0, #0
 	ldrb r1, [r5, #2]
 	lsls r0, r1, #0x1f
@@ -163067,7 +163067,7 @@ gCardEffectSpecialSummonTribute_0806305C: @ 0x0806305C
 	lsls r1, r0, #0x1f
 	lsrs r1, r1, #0x1f
 	adds r0, r5, #0
-	bl sub_0805C17C
+	bl gEngineEffectSpecialSummon_0805C17C
 	cmp r0, #0
 	bne _08063096
 	ldrb r1, [r5, #2]
@@ -163302,7 +163302,7 @@ gCardEffectTakeControlFlip_080631C0: @ 0x080631C0
 	beq _08063248
 	lsrs r1, r6, #0x1f
 	adds r0, r7, #0
-	bl sub_0805C17C
+	bl gEngineEffectSpecialSummon_0805C17C
 	cmp r0, #0
 	beq _08063248
 	movs r0, #1
@@ -163353,7 +163353,7 @@ gCardEffectRitualSummonTakeControl_0806327C: @ 0x0806327C
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	beq _0806329A
 	adds r0, r4, #0
@@ -163957,7 +163957,7 @@ gCardEffectSpecialSummonDestroySpellTrap_080636CC: @ 0x080636CC
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _080636EC @ =0x0000190A (Dark Ruler Vandalgyon)
-	bl sub_08037A2C
+	bl gEngineEffectBoostATKBoostDEF_08037A2C
 	cmp r0, #0
 	beq _080636F0
 	adds r0, r4, #0
@@ -164066,7 +164066,7 @@ gCardEffectSearchFusionSummon_08063794: @ 0x08063794
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _080637B4 @ =0x000012E5 (Polymerization)
-	bl sub_08037030
+	bl gEngineEffectBoostATKBoostDEF_08037030
 	cmp r0, #0
 	blt _080637B8
 	adds r0, r4, #0
@@ -164120,7 +164120,7 @@ gCardEffectDestroyAll_080637F4: @ 0x080637F4
 	lsls r0, r0, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _08063810 @ =0x00001918 (Des Frog)
-	bl sub_08032C94
+	bl gEngineEffectSpecialSummonBoostATK_08032C94
 	movs r1, #0
 	cmp r0, #3
 	bne _0806380A
@@ -164160,7 +164160,7 @@ gCardEffectEndPhase_08063830: @ 0x08063830
 	lsrs r2, r2, #0x1f
 	movs r1, #1
 	subs r1, r1, r2
-	bl sub_0805C17C
+	bl gEngineEffectSpecialSummon_0805C17C
 	cmp r0, #0
 	beq _08063848
 	movs r0, #1
@@ -164440,7 +164440,7 @@ _08063A30:
 _08063A34:
 	movs r0, #0
 	adds r1, r5, #0
-	bl sub_08032E80
+	bl gEngineEffectSpecialSummonChangePosition_08032E80
 	cmp r0, #0
 	bne _08063A5E
 	ldr r1, [r6]
@@ -164456,7 +164456,7 @@ _08063A4E:
 _08063A52:
 	movs r0, #1
 	adds r1, r5, #0
-	bl sub_08032E80
+	bl gEngineEffectSpecialSummonChangePosition_08032E80
 	cmp r0, #0
 	beq _08063A62
 _08063A5E:
@@ -164486,7 +164486,7 @@ gCardEffectSpecialSummonBanish_08063A6C: @ 0x08063A6C
 	movs r1, #1
 	str r1, [sp]
 	movs r3, #0
-	bl sub_0805C044
+	bl gEngineEffectSpecialSummonDamage_0805C044
 	cmp r0, #0
 	beq _08063AA4
 	adds r0, r4, #0
@@ -164617,7 +164617,7 @@ gCardEffectGraveyardEquip_08063B68: @ 0x08063B68
 	ldrb r1, [r6, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_08033BF4
+	bl gEngineEffectSpecialSummon_08033BF4
 	cmp r0, #0
 	blt _08063B9A
 	ldrb r0, [r6, #2]
@@ -164669,7 +164669,7 @@ _08063BCC:
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r4]
-	bl sub_08037030
+	bl gEngineEffectBoostATKBoostDEF_08037030
 	cmp r0, #0
 	blt _08063C0C
 	ldrb r1, [r4, #2]
@@ -164786,7 +164786,7 @@ gEngineEffectSendToGYDestroy_08063C94: @ 0x08063C94
 	lsls r1, r0, #0x1f
 	lsrs r1, r1, #0x1f
 	adds r0, r4, #0
-	bl sub_0805C17C
+	bl gEngineEffectSpecialSummon_0805C17C
 	cmp r0, #2
 	ble _08063CE8
 	ldrb r1, [r4, #2]
@@ -165270,7 +165270,7 @@ _0806400A:
 	ldrb r3, [r3, #2]
 	lsls r0, r3, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_08032C94
+	bl gEngineEffectSpecialSummonBoostATK_08032C94
 	cmp r0, #0
 	beq _08064020
 	movs r0, #1
@@ -165310,7 +165310,7 @@ gCardEffectDestroyDamage_08064028: @ 0x08064028
 	ldr r1, [r1, #0x20]
 	ldr r2, _08064068 @ =0x000018A8 (Elemental Hero Clayman)
 	adds r0, r3, #0
-	bl sub_08031564
+	bl gEngineEffectSpecialSummonBoostATK_08031564
 	cmp r0, #0
 	beq _0806406C
 	movs r0, #1
@@ -165438,7 +165438,7 @@ _080640CE:
 	bne _080641A8
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	ldr r1, _080641A4 @ =0x000005DC
 	cmp r0, r1
 	bgt _080641A8
@@ -165543,21 +165543,21 @@ gCardEffectSpecialSummonSendToGY_08064204: @ 0x08064204
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #2
 	ble _08064258
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _08064250 @ =0x000019A3 (Uria, Lord of Searing Flames)
-	bl sub_08032C94
+	bl gEngineEffectSpecialSummonBoostATK_08032C94
 	cmp r0, #0
 	bne _0806424C
 	ldrb r4, [r4, #2]
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _08064254 @ =0x000019A4 (Hamon, Lord of Striking Thunder)
-	bl sub_08032C94
+	bl gEngineEffectSpecialSummonBoostATK_08032C94
 	cmp r0, #0
 	beq _08064258
 _0806424C:
@@ -165795,14 +165795,14 @@ gCardEffectSpecialSummonGraveyard_080643E0: @ 0x080643E0
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_08033B08
+	bl gEngineEffectSpecialSummonChangePosition_08033B08
 	cmp r0, #0
 	bne _0806440E
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r4]
-	bl sub_08032C94
+	bl gEngineEffectSpecialSummonBoostATK_08032C94
 	cmp r0, #0
 	bne _0806440E
 	adds r0, r4, #0
@@ -165939,7 +165939,7 @@ gCardEffectSpecialSummonDestroy_080644B4: @ 0x080644B4
 	cmp r0, #0
 	beq _08064554
 	adds r0, r4, #0
-	bl sub_08033610
+	bl gEngineEffectSpecialSummon_08033610
 	cmp r0, #0
 	bne _0806451C
 	cmp r5, r4
@@ -166082,8 +166082,8 @@ _08064602:
 _08064604: .4byte gUnk_0201C4E0
 _08064608: .4byte 0x00000884
 
-	thumb_func_start sub_0806460C
-sub_0806460C: @ 0x0806460C
+	thumb_func_start gEngineEffectDestroyBoostATK_0806460C
+gEngineEffectDestroyBoostATK_0806460C: @ 0x0806460C
 	push {r4, r5, r6, lr}
 	sub sp, #4
 	adds r4, r0, #0
@@ -166106,7 +166106,7 @@ sub_0806460C: @ 0x0806460C
 	adds r0, r4, #0
 	adds r1, r6, #0
 	adds r2, r5, #0
-	bl sub_08047990
+	bl gEngineEffectBoostATKDestroy_08047990
 	cmp r0, #0
 	beq _08064648
 	movs r0, #1
@@ -166177,7 +166177,7 @@ _0806464A:
 	thumb_func_start gCardEffectDestroy_08064654
 gCardEffectDestroy_08064654: @ 0x08064654
 	push {lr}
-	bl sub_0806460C
+	bl gEngineEffectDestroyBoostATK_0806460C
 	movs r0, #0
 	pop {r1}
 	bx r1
@@ -166237,7 +166237,7 @@ gCardEffectDestroy_08064660: @ 0x08064660
 	bl sub_08090690
 	adds r1, r0, #0
 	adds r0, r4, #0
-	bl sub_080478FC
+	bl gEngineEffectBoostATKBoostDEF_080478FC
 	movs r0, #0
 	pop {r4}
 	pop {r1}
@@ -166423,7 +166423,7 @@ _08064714:
 	ldr r2, [sp]
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_080432A8
+	bl gEngineEffectDestroyEquip_080432A8
 	ldrh r1, [r7]
 	ldr r0, _08064758 @ =0x000012C6 (7 Completed (None))
 	cmp r1, r0
@@ -166550,7 +166550,7 @@ gCardEffectBoostATKBoostDEF_08064760: @ 0x08064760
 	movs r1, #0xa
 	movs r2, #1
 	movs r3, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 _080647FC:
 	movs r6, #0
 	ldr r1, _08064874 @ =0x00000868
@@ -166839,7 +166839,7 @@ _080649A8:
 	ldr r0, _080649C4 @ =0x0000129A (Reflect Bounder)
 	cmp r3, r0
 	bne _080649B2
-	bl sub_0806525C
+	bl gEngineEffectSpecialSummonBoostATK_0806525C
 _080649B2:
 	cmp r3, r0
 	bgt _080649C8
@@ -167262,7 +167262,7 @@ _08064C9C:
 	ldr r0, _08064CC4 @ =0x00001767 (Solar Ray)
 	cmp r3, r0
 	bne _08064CA6
-	bl sub_080654B8
+	bl gEngineEffectSpecialSummonRitualSummon_080654B8
 _08064CA6:
 	cmp r3, r0
 	bgt _08064CF0
@@ -167407,7 +167407,7 @@ _08064D9C:
 	subs r0, #0xe
 	cmp r3, r0
 	bne _08064DAA
-	bl sub_0806552E
+	bl gEngineEffectSpecialSummonChangePosition_0806552E
 _08064DAA:
 	bl _080655DA
 	.align 2, 0
@@ -167773,7 +167773,7 @@ _08065018:
 	mov r1, r8
 	subs r4, r1, r6
 	adds r0, r4, #0
-	bl sub_08033B08
+	bl gEngineEffectSpecialSummonChangePosition_08033B08
 	b _08065112
 _08065024:
 	movs r4, #1
@@ -168091,12 +168091,12 @@ _08065226:
 _08065254: .4byte gUnk_0201C4E0
 _08065258: .4byte 0x00000868
 
-	thumb_func_start sub_0806525C
-sub_0806525C: @ 0x0806525C
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_0806525C
+gEngineEffectSpecialSummonBoostATK_0806525C: @ 0x0806525C
 	ldr r1, _0806526C @ =gUnk_0201BB90
 	ldr r0, [r1]
 	ldr r1, [r1, #0x1c]
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	movs r1, #1
 	subs r1, r1, r6
 	b _08065564
@@ -168419,11 +168419,11 @@ _080654AA:
 _080654B0: .4byte gUnk_0201C4E0
 _080654B4: .4byte 0x00000868
 
-	thumb_func_start sub_080654B8
-sub_080654B8: @ 0x080654B8
+	thumb_func_start gEngineEffectSpecialSummonRitualSummon_080654B8
+gEngineEffectSpecialSummonRitualSummon_080654B8: @ 0x080654B8
 	adds r0, r6, #0
 	movs r1, #1
-	bl sub_08032F6C
+	bl gEngineEffectSpecialSummonRitualSummon_08032F6C
 	mov r1, r8
 	subs r2, r1, r6
 	lsls r2, r2, #2
@@ -168489,8 +168489,8 @@ sub_080654F8: @ 0x080654F8
 	str r1, [r7, #4]
 	b _080655DA
 
-	non_word_aligned_thumb_func_start sub_0806552E
-sub_0806552E: @ 0x0806552E
+	non_word_aligned_thumb_func_start gEngineEffectSpecialSummonChangePosition_0806552E
+gEngineEffectSpecialSummonChangePosition_0806552E: @ 0x0806552E
 	movs r0, #1
 	subs r0, r0, r6
 	lsls r0, r0, #2
@@ -168547,7 +168547,7 @@ _08065588:
 _08065596:
 	adds r0, r6, #0
 	movs r1, #0x12
-	bl sub_08032EF0
+	bl gEngineEffectSpecialSummonChangePosition_08032EF0
 	movs r2, #1
 	subs r2, r2, r6
 _080655A2:
@@ -168731,7 +168731,7 @@ gCardEffectDamageGraveyard_080655EC: @ 0x080655EC
 	ldr r2, [r0]
 	rsbs r2, r2, #0
 	adds r0, r4, #0
-	bl sub_080487B0
+	bl gEngineEffectDiscardDamage_080487B0
 _08065626:
 	ldrb r0, [r4, #2]
 	lsls r2, r0, #0x1f
@@ -168748,7 +168748,7 @@ _08065626:
 	ldr r2, [r0]
 	rsbs r2, r2, #0
 	adds r0, r4, #0
-	bl sub_080487B0
+	bl gEngineEffectDiscardDamage_080487B0
 _08065648:
 	ldrb r0, [r4, #2]
 	lsls r1, r0, #0x1f
@@ -168828,14 +168828,14 @@ gCardEffectNegateDestroy_08065698: @ 0x08065698
 	ldrh r3, [r4, #4]
 	lsls r2, r3, #0x11
 	lsrs r2, r2, #0x17
-	bl sub_08044DCC
+	bl gEngineEffectDestroyBoostATK_08044DCC
 	ldrb r2, [r4, #2]
 	lsls r1, r2, #0x1f
 	lsrs r1, r1, #0x1f
 	lsls r2, r2, #0x1a
 	lsrs r2, r2, #0x1b
 	adds r0, r5, #0
-	bl sub_08047A14
+	bl gEngineEffectBoostATKBoostDEF_08047A14
 _080656D6:
 	movs r0, #0
 	pop {r4, r5}
@@ -169235,7 +169235,7 @@ _0806596E:
 _08065974:
 	ldr r0, [sp]
 	mov r1, r8
-	bl sub_080495D0
+	bl gEngineEffectDrawSearch_080495D0
 _0806597C:
 	movs r0, #0
 	add sp, #4
@@ -169549,13 +169549,13 @@ _08065BE8:
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
 	mov r1, sp
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	b _08065C00
 _08065BF6:
 	movs r1, #0x8f
 	lsls r1, r1, #1
 	adds r0, r5, #0
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 _08065C00:
 	ldr r0, _08065C10 @ =gUnk_0201C4E0
 	movs r2, #0xea
@@ -169568,7 +169568,7 @@ _08065C00:
 _08065C10: .4byte gUnk_0201C4E0
 _08065C14:
 	movs r0, #0x23
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 _08065C1A:
 	movs r0, #0x7e
 	b _08065CD6
@@ -169634,7 +169634,7 @@ _08065C82:
 	orrs r3, r0
 	adds r0, r5, #0
 	movs r2, #1
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 	ldr r1, _08065CC8 @ =gUnk_0201B290
 	ldr r0, _08065CCC @ =0x000004A4
 	adds r1, r1, r0
@@ -169667,8 +169667,8 @@ _08065CD6:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_08065CE4
-sub_08065CE4: @ 0x08065CE4
+	thumb_func_start gEngineEffectSpecialSummon_08065CE4
+gEngineEffectSpecialSummon_08065CE4: @ 0x08065CE4
 	push {r4, r5, r6, r7, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
@@ -169714,7 +169714,7 @@ sub_08065CE4: @ 0x08065CE4
 _08065D3C:
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	bne _08065D70
 	ldrb r5, [r5, #2]
@@ -169833,7 +169833,7 @@ _08065E64: .4byte gUnk_0201E2A0
 _08065E68: .4byte gUnk_0201C4E0
 _08065E6C:
 	movs r0, #0x38
-	bl sub_080934E4
+	bl gEngineEffectSpecialSummon_080934E4
 _08065E72:
 	movs r0, #0x7f
 	b _080660CA
@@ -169870,7 +169870,7 @@ _08065E98:
 	movs r1, #0x1f
 	lsls r1, r0
 	adds r0, r5, #0
-	bl sub_080478FC
+	bl gEngineEffectBoostATKBoostDEF_080478FC
 	ldrb r3, [r5, #2]
 	lsls r0, r3, #0x1f
 	lsrs r0, r0, #0x1f
@@ -169889,7 +169889,7 @@ _08065ECE:
 	bne _08065EDE
 	b _080660C4
 _08065EDE:
-	ldr r1, _08065EF8 @ =sub_08065CE4
+	ldr r1, _08065EF8 @ =gEngineEffectSpecialSummon_08065CE4
 	adds r0, r5, #0
 	bl sub_0809077C
 	cmp r0, #0
@@ -169901,7 +169901,7 @@ _08065EEC:
 	.align 2, 0
 _08065EF0: .4byte gUnk_0201C4E0
 _08065EF4: .4byte 0x00001DAA
-_08065EF8: .4byte sub_08065CE4
+_08065EF8: .4byte gEngineEffectSpecialSummon_08065CE4
 _08065EFC:
 	movs r7, #0
 	movs r4, #0
@@ -169921,7 +169921,7 @@ _08065F02:
 	beq _08065F24
 	lsrs r0, r2, #0x1f
 	adds r1, r4, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	adds r7, r7, r0
 _08065F24:
 	adds r6, #0x14
@@ -169935,13 +169935,13 @@ _08065F24:
 	movs r1, #0x1f
 	lsls r1, r0
 	adds r0, r5, #0
-	bl sub_080478FC
+	bl gEngineEffectBoostATKBoostDEF_080478FC
 	ldrb r2, [r5, #2]
 	lsls r1, r2, #0x1f
 	lsrs r1, r1, #0x1f
 	asrs r2, r7, #1
 	adds r0, r5, #0
-	bl sub_080487B0
+	bl gEngineEffectDiscardDamage_080487B0
 	b _080660C4
 	.align 2, 0
 _08065F50: .4byte 0x00000868
@@ -169982,7 +169982,7 @@ _08065F84:
 	adds r1, r4, #0
 	bl sub_0801F2C4
 	mov r0, sp
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 	b _08066034
 	.align 2, 0
 _08065FB0: .4byte 0x00000FC9 @ Dark Magician
@@ -170008,19 +170008,19 @@ _08065FC8:
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
 	adds r1, r4, #0
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldrb r5, [r5, #2]
 	lsls r0, r5, #0x1f
 	lsrs r0, r0, #0x1f
-	ldr r2, _08066000 @ =sub_08065CE4
+	ldr r2, _08066000 @ =gEngineEffectSpecialSummon_08065CE4
 	movs r1, #1
-	bl sub_08096A4C
+	bl gEngineEffectSpecialSummonTribute_08096A4C
 	movs r0, #0x6d
 	b _080660CA
 	.align 2, 0
 _08065FF8: .4byte gUnk_0201C4E0
 _08065FFC: .4byte 0x00000FC9 @ Dark Magician
-_08066000: .4byte sub_08065CE4
+_08066000: .4byte gEngineEffectSpecialSummon_08065CE4
 _08066004:
 	bl sub_08096B14
 	cmp r0, #0
@@ -170064,7 +170064,7 @@ _0806604C:
 	adds r0, r4, #0
 	movs r2, #1
 	movs r3, #1
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 	movs r0, #0x61
 	b _080660CA
 _08066066:
@@ -170080,7 +170080,7 @@ _08066066:
 	lsls r0, r5, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x3c
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x60
 	b _080660CA
 	.align 2, 0
@@ -170104,7 +170104,7 @@ _080660A4:
 	bl sub_080942DC
 	adds r1, r0, #0
 	adds r0, r4, #0
-	bl sub_08044A28
+	bl gEngineEffectSearchSpecialSummon_08044A28
 	cmp r0, #0
 	beq _080660C4
 	ldrb r5, [r5, #2]
@@ -170192,7 +170192,7 @@ _08066140:
 	ble _08066112
 	mov r0, sb
 	adds r1, r6, #0
-	bl sub_080478FC
+	bl gEngineEffectBoostATKBoostDEF_080478FC
 	cmp r6, #0
 	beq _080661D6
 	movs r0, #0x7f
@@ -170235,7 +170235,7 @@ _0806618E:
 	beq _080661C8
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	cmp r0, #1
@@ -170246,7 +170246,7 @@ _0806618E:
 	adds r1, r5, #0
 	adds r2, r4, #0
 	movs r3, #0
-	bl sub_080439B4
+	bl gEngineEffectSpecialSummonDestroy_080439B4
 _080661C8:
 	adds r6, #0x14
 	adds r4, #1
@@ -170356,13 +170356,13 @@ _080662A4:
 	bne _080662C6
 	adds r0, r5, #0
 	movs r1, #0x15
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x78
 	b _0806630E
 _080662C6:
 	adds r0, r5, #0
 	movs r1, #0x33
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x7e
 	b _0806630E
 _080662D2:
@@ -170380,7 +170380,7 @@ _080662EA:
 	bl sub_080942DC
 	adds r1, r0, #0
 	adds r0, r5, #0
-	bl sub_08044A28
+	bl gEngineEffectSearchSpecialSummon_08044A28
 	movs r0, #0x64
 	b _0806630E
 _080662FA:
@@ -170520,7 +170520,7 @@ _080663DE:
 	beq _08066420
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	cmp r0, #2
@@ -170636,7 +170636,7 @@ _080664CE:
 	adds r0, r7, #0
 	adds r1, r6, #0
 	adds r2, r5, #0
-	bl sub_08047990
+	bl gEngineEffectBoostATKDestroy_08047990
 	b _08066522
 _080664DA:
 	adds r0, r6, #0
@@ -170664,7 +170664,7 @@ _0806650A:
 	adds r0, r7, #0
 	adds r1, r6, #0
 	adds r2, r5, #0
-	bl sub_08047990
+	bl gEngineEffectBoostATKDestroy_08047990
 	cmp r0, #0
 	bne _08066522
 _08066518:
@@ -170867,7 +170867,7 @@ _08066628:
 	beq _08066690
 	lsrs r0, r3, #0x1f
 	movs r1, #0xf5
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x7f
 	b _08066692
 	.align 2, 0
@@ -171017,7 +171017,7 @@ _0806673C:
 	adds r1, r5, #0
 	adds r2, r4, #0
 	movs r3, #0
-	bl sub_08047A80
+	bl gEngineEffectBoostATKBoostDEF_08047A80
 _08066772:
 	adds r6, #1
 	cmp r6, #1
@@ -171255,7 +171255,7 @@ _080668E2:
 	movs r1, #0x91
 	lsls r1, r1, #1
 	adds r0, r5, #0
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x78
 	b _08066A8E
 	.align 2, 0
@@ -171263,7 +171263,7 @@ _08066908: .4byte 0x000017F5 @ Level Up!
 _0806690C:
 	ldr r1, _08066918 @ =0x0000011D
 	adds r0, r5, #0
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x7f
 	b _08066A8E
 	.align 2, 0
@@ -171397,7 +171397,7 @@ _080669FC:
 	bl sub_08094F3C
 _08066A1E:
 	adds r0, r5, #0
-	bl sub_08033634
+	bl gEngineEffectSpecialSummon_08033634
 	ldr r1, _08066A50 @ =gUnk_0201B290
 	ldr r2, _08066A54 @ =0x000004A4
 	adds r1, r1, r2
@@ -171410,7 +171410,7 @@ _08066A1E:
 	adds r0, r5, #0
 	movs r2, #1
 	adds r3, r4, #0
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 	movs r0, #0x7d
 	b _08066A8E
 	.align 2, 0
@@ -171426,7 +171426,7 @@ _08066A58:
 _08066A62:
 	adds r0, r5, #0
 	movs r1, #1
-	bl sub_0804A4CC
+	bl gEngineEffectGainLPStandbyPhase_0804A4CC
 	movs r0, #0x77
 	b _08066A8E
 _08066A6E:
@@ -171438,7 +171438,7 @@ _08066A6E:
 _08066A7A:
 	adds r0, r5, #0
 	movs r1, #0
-	bl sub_0804A4CC
+	bl gEngineEffectGainLPStandbyPhase_0804A4CC
 	movs r0, #0x75
 	b _08066A8E
 _08066A86:
@@ -171495,7 +171495,7 @@ gCardEffectChangePosition_08066A94: @ 0x08066A94
 	adds r1, r4, #0
 	adds r2, r3, #0
 	movs r3, #0
-	bl sub_080439B4
+	bl gEngineEffectSpecialSummonDestroy_080439B4
 	b _08066B06
 	.align 2, 0
 _08066AF0: .4byte 0x00000868
@@ -171506,7 +171506,7 @@ _08066AF8:
 	adds r1, r4, #0
 	adds r2, r3, #0
 	movs r3, #1
-	bl sub_080439B4
+	bl gEngineEffectSpecialSummonDestroy_080439B4
 _08066B06:
 	movs r0, #0
 	add sp, #8
@@ -171598,7 +171598,7 @@ _08066B8E:
 	beq _08066BC8
 	adds r0, r6, #0
 	adds r1, r5, #0
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	cmp r0, #1
@@ -171608,7 +171608,7 @@ _08066B8E:
 	adds r1, r6, #0
 	adds r2, r5, #0
 	movs r3, #0
-	bl sub_080439B4
+	bl gEngineEffectSpecialSummonDestroy_080439B4
 _08066BC8:
 	adds r7, #0x14
 	adds r5, #1
@@ -171659,7 +171659,7 @@ _08066C08:
 	adds r1, r4, #0
 	adds r2, r5, #0
 	movs r3, #1
-	bl sub_080436E8
+	bl gEngineEffectSpecialSummonDestroy_080436E8
 _08066C22:
 	adds r5, #1
 	cmp r5, #0xa
@@ -171843,7 +171843,7 @@ gCardEffectReturnToHandGraveyard_08066D68: @ 0x08066D68
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _08066DA0 @ =0x000012E5 (Polymerization)
-	bl sub_08037030
+	bl gEngineEffectBoostATKBoostDEF_08037030
 	adds r3, r0, #0
 	cmp r3, #0
 	blt _08066D98
@@ -171911,7 +171911,7 @@ _08066DF0:
 	ble _08066DBC
 	adds r0, r7, #0
 	mov r1, r8
-	bl sub_080478FC
+	bl gEngineEffectBoostATKBoostDEF_080478FC
 	movs r0, #0
 	add sp, #4
 	pop {r3}
@@ -171953,7 +171953,7 @@ _08066E30:
 	ldrb r1, [r6, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	beq _08066ED6
 	ldrb r0, [r6, #2]
@@ -171972,7 +171972,7 @@ _08066E30:
 	lsls r0, r6, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x1a
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x7f
 	b _08066ED8
 _08066E7C:
@@ -172016,7 +172016,7 @@ _08066EC0:
 	adds r0, r4, #0
 	movs r2, #1
 	movs r3, #0
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 _08066ED6:
 	movs r0, #0
 _08066ED8:
@@ -172108,7 +172108,7 @@ _08066FA8:
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r4]
-	bl sub_080316B8
+	bl gEngineEffectBoostATKBoostDEF_080316B8
 	adds r3, r0, #0
 	cmp r3, #0
 	blt _08066FFC
@@ -172122,7 +172122,7 @@ _08066FA8:
 	adds r1, r1, r2
 	lsls r2, r3, #2
 	adds r1, r1, r2
-	bl sub_08044A28
+	bl gEngineEffectSearchSpecialSummon_08044A28
 	cmp r0, #0
 	beq _08066FFC
 	ldr r1, _08066FF4 @ =gUnk_0201B290
@@ -172145,7 +172145,7 @@ _08066FFC:
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x15
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x6f
 	b _08067098
 _0806700C:
@@ -172189,7 +172189,7 @@ _0806704C:
 	movs r1, #0x1c
 	bl sub_0801F2C4
 	mov r0, sp
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 	movs r0, #0x7d
 	b _08067098
 _08067066:
@@ -172276,7 +172276,7 @@ _080670F8: .4byte gUnk_0201E2A0
 _080670FC: .4byte gUnk_0201C4E0
 _08067100:
 	movs r0, #0x38
-	bl sub_080934E4
+	bl gEngineEffectSpecialSummon_080934E4
 _08067106:
 	movs r0, #0x7f
 	b _08067156
@@ -172446,7 +172446,7 @@ _0806722C:
 	cmp r0, #0
 	beq _0806729C
 	movs r0, #0x1e
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 	movs r0, #0x7f
 	b _0806729E
 	.align 2, 0
@@ -172533,7 +172533,7 @@ _080672D0:
 	beq _0806732C
 	lsrs r0, r3, #0x1f
 	movs r1, #0x1b
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x7f
 	b _0806732E
 	.align 2, 0
@@ -172577,7 +172577,7 @@ gCardEffectDamage_08067334: @ 0x08067334
 	movs r0, #1
 	subs r0, r0, r1
 	movs r1, #2
-	bl sub_080495D0
+	bl gEngineEffectDrawSearch_080495D0
 	movs r0, #0
 	pop {r1}
 	bx r1
@@ -172617,7 +172617,7 @@ gCardEffectReturnToHand_0806734C: @ 0x0806734C
 	adds r0, r4, #0
 	adds r1, r6, #0
 	adds r2, r5, #0
-	bl sub_08047B90
+	bl gEngineEffectBoostATKBoostDEF_08047B90
 _08067380:
 	movs r0, #0
 	add sp, #4
@@ -172847,7 +172847,7 @@ _0806751A:
 	ble _080674DC
 	mov r0, sl
 	adds r1, r6, #0
-	bl sub_080478FC
+	bl gEngineEffectBoostATKBoostDEF_080478FC
 	cmp r6, #0
 	beq _0806756C
 	ldr r6, _08067588 @ =gUnk_0201C4E0
@@ -172958,7 +172958,7 @@ _080675F2:
 _080675FE:
 	adds r0, r6, #0
 	mov r1, r8
-	bl sub_080478FC
+	bl gEngineEffectBoostATKBoostDEF_080478FC
 	movs r0, #0
 	add sp, #4
 	pop {r3}
@@ -173051,7 +173051,7 @@ _080676AC:
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #5
-	bl sub_080495D0
+	bl gEngineEffectDrawSearch_080495D0
 	movs r0, #0x7d
 	b _080676DA
 _080676C0:
@@ -173061,7 +173061,7 @@ _080676C0:
 	movs r0, #1
 	subs r0, r0, r1
 	movs r1, #5
-	bl sub_080495D0
+	bl gEngineEffectDrawSearch_080495D0
 	bl sub_0804A870
 	movs r0, #0x7c
 	b _080676DA
@@ -173124,7 +173124,7 @@ _0806772E:
 _0806773A:
 	adds r0, r6, #0
 	mov r1, r8
-	bl sub_08047C10
+	bl gEngineEffectBoostATKBoostDEF_08047C10
 	movs r0, #0
 	add sp, #4
 	pop {r3}
@@ -173407,13 +173407,13 @@ gCardEffectTakeControlFlip_080678C8: @ 0x080678C8
 	ldrh r2, [r5]
 	adds r0, r4, #0
 	adds r1, r7, #0
-	bl sub_08036450
+	bl gEngineEffectSpecialSummonDestroy_08036450
 	cmp r0, #0
 	beq _080679C2
 	ldrh r2, [r5]
 	adds r0, r6, #0
 	mov r1, r8
-	bl sub_08036450
+	bl gEngineEffectSpecialSummonDestroy_08036450
 	cmp r0, #0
 	beq _080679C2
 	ldrh r2, [r5]
@@ -173444,7 +173444,7 @@ gCardEffectTakeControlFlip_080678C8: @ 0x080678C8
 	lsls r2, r0, #8
 	orrs r2, r6
 	adds r0, r4, #0
-	bl sub_08043F44
+	bl gEngineEffectDamage_08043F44
 _080679C2:
 	movs r0, #0
 	add sp, #8
@@ -173544,7 +173544,7 @@ _08067A1E:
 	adds r1, r5, #0
 	adds r2, r3, #0
 	movs r3, #0
-	bl sub_080439B4
+	bl gEngineEffectSpecialSummonDestroy_080439B4
 _08067A80:
 	ldr r1, _08067A9C @ =gUnk_0201B290
 	ldr r3, _08067A90 @ =0x000004A4
@@ -173627,7 +173627,7 @@ _08067AA0:
 	lsls r2, r2, #8
 	orrs r1, r2
 	mov r2, sb
-	bl sub_080432A8
+	bl gEngineEffectDestroyEquip_080432A8
 	movs r0, #0x7e
 	b _08067B4E
 	.align 2, 0
@@ -173697,7 +173697,7 @@ _08067BA8:
 	cmp r0, #0x80
 	bne _08067C02
 	adds r0, r5, #0
-	bl sub_08031A84
+	bl gEngineEffectBoostATKBoostDEF_08031A84
 	cmp r0, #0
 	beq _08067C02
 	adds r0, r5, #0
@@ -173705,14 +173705,14 @@ _08067BA8:
 	cmp r0, #0
 	beq _08067C02
 	adds r0, r5, #0
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	beq _08067C02
 	movs r0, #0x7f
 	b _08067C04
 _08067BCE:
 	lsrs r0, r2, #0x1f
-	bl sub_080316B8
+	bl gEngineEffectBoostATKBoostDEF_080316B8
 	ldrb r4, [r4, #2]
 	lsls r1, r4, #0x1f
 	lsrs r1, r1, #0x1f
@@ -173725,7 +173725,7 @@ _08067BCE:
 	adds r0, r5, #0
 	movs r2, #1
 	movs r3, #1
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 	movs r0, #0x7e
 	b _08067C04
 	.align 2, 0
@@ -173849,7 +173849,7 @@ _08067CD6:
 	mov r0, r8
 	adds r1, r5, #0
 	adds r2, r6, #0
-	bl sub_08047970
+	bl gEngineEffectBoostATKBoostDEF_08047970
 	b _08067D42
 	.align 2, 0
 _08067CE4: .4byte 0x000005DC
@@ -173876,7 +173876,7 @@ _08067D0C: .4byte 0x0000188C @ Deck Devastation Virus
 _08067D10:
 	adds r0, r5, #0
 	adds r1, r6, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	ldr r1, _08067D20 @ =0x000005DB
 	cmp r0, r1
 	ble _08067D34
@@ -173886,7 +173886,7 @@ _08067D20: .4byte 0x000005DB
 _08067D24:
 	adds r0, r5, #0
 	adds r1, r6, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	ldr r1, _08067D5C @ =0x000005DC
 	cmp r0, r1
 	bgt _08067D34
@@ -173898,7 +173898,7 @@ _08067D38:
 	mov r0, r8
 	adds r1, r5, #0
 	adds r2, r6, #0
-	bl sub_08047970
+	bl gEngineEffectBoostATKBoostDEF_08047970
 _08067D42:
 	movs r4, #0x14
 	add sl, r4
@@ -174013,7 +174013,7 @@ _08067E1A:
 	adds r0, r5, #0
 	adds r1, r4, #0
 	movs r3, #1
-	bl sub_0804A2C8
+	bl gEngineEffectSendToGYGraveyard_0804A2C8
 	movs r0, #0x7f
 	b _08067E8A
 	.align 2, 0
@@ -174133,7 +174133,7 @@ _08067EFC:
 	adds r1, r5, #0
 	adds r2, r4, #0
 	movs r3, #1
-	bl sub_080436E8
+	bl gEngineEffectSpecialSummonDestroy_080436E8
 	adds r0, r5, #0
 	adds r1, r4, #0
 	movs r2, #1
@@ -174155,7 +174155,7 @@ _08067F36:
 _08067F50:
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_0803A980
+	bl gEngineEffectSpecialSummonBoostATK_0803A980
 	movs r1, #0xfa
 	lsls r1, r1, #3
 	cmp r0, r1
@@ -174164,7 +174164,7 @@ _08067F50:
 	adds r1, r5, #0
 	adds r2, r4, #0
 	movs r3, #0
-	bl sub_080436E8
+	bl gEngineEffectSpecialSummonDestroy_080436E8
 	adds r0, r5, #0
 	adds r1, r4, #0
 	movs r2, #1
@@ -174175,7 +174175,7 @@ _08067F7A:
 	adds r0, r7, #0
 	adds r1, r5, #0
 	adds r2, r4, #0
-	bl sub_08047990
+	bl gEngineEffectBoostATKDestroy_08047990
 _08067F84:
 	movs r0, #1
 	b _08067F8A
@@ -174429,7 +174429,7 @@ _08068156:
 	lsrs r1, r1, #0x1f
 	lsls r2, r2, #0x1a
 	lsrs r2, r2, #0x1b
-	bl sub_08047970
+	bl gEngineEffectBoostATKBoostDEF_08047970
 _08068166:
 	movs r0, #0x10
 	mov r1, sl
@@ -174709,7 +174709,7 @@ gCardEffectDestroyEquip_08068350: @ 0x08068350
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_08033BF4
+	bl gEngineEffectSpecialSummon_08033BF4
 	adds r6, r0, #0
 	ldrb r0, [r4, #2]
 	lsls r7, r0, #0x1f
@@ -174755,7 +174755,7 @@ gCardEffectDestroyEquip_08068350: @ 0x08068350
 	adds r0, r4, #0
 	adds r1, r5, #0
 	mov r2, r8
-	bl sub_08047F1C
+	bl gEngineEffectBoostATKBoostDEF_08047F1C
 	ldrb r3, [r4, #2]
 	lsls r2, r3, #0x1f
 	lsrs r0, r2, #0x1f
@@ -174778,7 +174778,7 @@ _08068420:
 	adds r0, r4, #0
 	adds r1, r5, #0
 	mov r2, r8
-	bl sub_08047E7C
+	bl gEngineEffectBoostATKBoostDEF_08047E7C
 _0806842A:
 	movs r0, #0
 	add sp, #8
@@ -174828,7 +174828,7 @@ _08068460:
 	beq _08068486
 	lsrs r0, r2, #0x1f
 	adds r1, r5, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	adds r7, r7, r0
 _08068486:
 	adds r6, #0x14
@@ -174842,7 +174842,7 @@ _08068486:
 	movs r1, #0x1f
 	lsls r1, r0
 	adds r0, r4, #0
-	bl sub_080478FC
+	bl gEngineEffectBoostATKBoostDEF_080478FC
 	ldrb r0, [r4, #2]
 	lsls r1, r0, #0x1f
 	lsrs r1, r1, #0x1f
@@ -174851,7 +174851,7 @@ _08068486:
 	adds r2, r7, #1
 	asrs r2, r2, #1
 	adds r0, r4, #0
-	bl sub_080487B0
+	bl gEngineEffectDiscardDamage_080487B0
 	b _080684D2
 	.align 2, 0
 _080684B8: .4byte 0x00000868
@@ -174958,7 +174958,7 @@ _08068550:
 	lsrs r1, r1, #0x1b
 	movs r2, #0
 	movs r3, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 _08068586:
 	ldrh r2, [r7]
 	ldrb r0, [r7, #2]
@@ -174968,7 +174968,7 @@ _08068586:
 	str r1, [sp]
 	adds r0, r5, #0
 	adds r1, r6, #0
-	bl sub_080369A4
+	bl gEngineEffectDestroyBoostATK_080369A4
 	cmp r0, #0
 	beq _080685D0
 	ldrb r2, [r7, #2]
@@ -174980,7 +174980,7 @@ _08068586:
 	lsrs r2, r2, #0x1f
 	adds r0, r5, #0
 	adds r1, r6, #0
-	bl sub_08036658
+	bl gEngineEffectSpecialSummonDestroy_08036658
 	cmp r0, #0
 	bne _080685D0
 	ldrb r1, [r7, #2]
@@ -174993,7 +174993,7 @@ _08068586:
 	ldrh r3, [r7]
 	adds r0, r5, #0
 	adds r1, r6, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 _080685D0:
 	ldr r0, _08068600 @ =0x00001286 (Blast Sphere)
 	ldrh r2, [r7]
@@ -175006,7 +175006,7 @@ _080685D0:
 	subs r4, r4, r0
 	adds r0, r5, #0
 	adds r1, r6, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	adds r1, r0, #0
 	ldrh r3, [r7]
 	adds r0, r4, #0
@@ -175076,7 +175076,7 @@ _08068660:
 	cmp r0, #1
 	bls _08068672
 	adds r0, r4, #0
-	bl sub_0806460C
+	bl gEngineEffectDestroyBoostATK_0806460C
 _08068672:
 	movs r0, #0
 _08068674:
@@ -175157,7 +175157,7 @@ _08068720:
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x15
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x78
 	b _080687A2
 _08068742:
@@ -175191,7 +175191,7 @@ _0806876E:
 	bl sub_080942DC
 	adds r1, r0, #0
 	adds r0, r4, #0
-	bl sub_08044A28
+	bl gEngineEffectSearchSpecialSummon_08044A28
 	movs r0, #0x64
 	b _080687A2
 _08068784:
@@ -175238,7 +175238,7 @@ gCardEffectSpecialSummonGraveyard_080687A8: @ 0x080687A8
 	lsrs r0, r0, #0x1f
 	eors r4, r0
 	adds r0, r4, #0
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	beq _08068816
 	adds r0, r4, #0
@@ -175276,7 +175276,7 @@ gCardEffectSpecialSummonGraveyard_080687A8: @ 0x080687A8
 	lsls r3, r6, #0x10
 	adds r0, r4, #0
 	movs r2, #1
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 _08068816:
 	movs r0, #0
 	pop {r4, r5, r6}
@@ -175373,7 +175373,7 @@ _08068844:
 	lsls r0, r0, #8
 	orrs r1, r0
 	adds r0, r4, #0
-	bl sub_080433EC
+	bl gEngineEffectDestroyEquip_080433EC
 _080688CC:
 	movs r0, #0
 _080688CE:
@@ -175464,7 +175464,7 @@ gCardEffectNegateChangePosition_080688DC: @ 0x080688DC
 	str r6, [sp]
 	adds r0, r7, #0
 	movs r3, #0
-	bl sub_080439B4
+	bl gEngineEffectSpecialSummonDestroy_080439B4
 _0806897A:
 	movs r0, #0
 	add sp, #4
@@ -175560,7 +175560,7 @@ _08068A12:
 	lsls r2, r2, #0x1a
 	lsrs r2, r2, #0x1b
 	adds r0, r4, #0
-	bl sub_08047CD4
+	bl gEngineEffectBoostATKBoostDEF_08047CD4
 	ldrb r4, [r4, #2]
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
@@ -175602,7 +175602,7 @@ _08068A68:
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	beq _08068A9E
 	ldrb r2, [r4, #2]
@@ -175624,7 +175624,7 @@ _08068A9E:
 	adds r2, r2, r1
 	adds r1, r5, #0
 	movs r3, #0
-	bl sub_0804A2C8
+	bl gEngineEffectSendToGYGraveyard_0804A2C8
 	b _08068B4A
 	.align 2, 0
 _08068ABC: .4byte 0x00000868
@@ -175641,7 +175641,7 @@ _08068AD4:
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_08033634
+	bl gEngineEffectSpecialSummon_08033634
 	adds r5, r0, #0
 	ldr r2, _08068B14 @ =0x000004A4
 	adds r0, r6, r2
@@ -175690,7 +175690,7 @@ _08068B20:
 	movs r2, #0xfa
 	lsls r2, r2, #2
 	adds r0, r4, #0
-	bl sub_080487B0
+	bl gEngineEffectDiscardDamage_080487B0
 _08068B4A:
 	movs r0, #0
 _08068B4C:
@@ -175768,7 +175768,7 @@ gCardEffectChangePositionEndPhase_08068B58: @ 0x08068B58
 	str r0, [sp]
 	adds r0, r6, #0
 	movs r3, #0
-	bl sub_080439B4
+	bl gEngineEffectSpecialSummonDestroy_080439B4
 _08068BDC:
 	movs r0, #0
 	add sp, #4
@@ -175812,7 +175812,7 @@ gCardEffectDamage_08068BF4: @ 0x08068BF4
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0xd
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	b _08068C92
 	.align 2, 0
 _08068C34: .4byte gUnk_0201B290
@@ -175888,7 +175888,7 @@ gCardEffectChangePositionFlip_08068C9C: @ 0x08068C9C
 	str r0, [sp]
 	adds r0, r4, #0
 	movs r3, #0
-	bl sub_080439B4
+	bl gEngineEffectSpecialSummonDestroy_080439B4
 _08068CCC:
 	movs r0, #0
 	add sp, #4
@@ -175979,7 +175979,7 @@ gCardEffectChangePosition_08068CD8: @ 0x08068CD8
 	str r6, [sp]
 	adds r0, r7, #0
 	movs r3, #0
-	bl sub_080439B4
+	bl gEngineEffectSpecialSummonDestroy_080439B4
 _08068D76:
 	movs r0, #0
 	add sp, #4
@@ -176006,7 +176006,7 @@ gCardEffectSpecialSummonSendToGY_08068D8C: @ 0x08068D8C
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	beq _08068E02
 	ldrb r1, [r4, #2]
@@ -176204,7 +176204,7 @@ gCardEffectNegateBattlePhase_08068F0C: @ 0x08068F0C
 	adds r0, r4, #0
 	adds r1, r6, #0
 	adds r2, r5, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _08068F66
 	movs r0, #0x1b
@@ -176279,7 +176279,7 @@ _08068FC0:
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	beq _08068FF4
 	ldr r2, _08068FF0 @ =0x000014F8 (Kuriboh Token)
@@ -176424,7 +176424,7 @@ gCardEffectSpecialSummon_080690DC: @ 0x080690DC
 	adds r4, r0, #0
 	adds r5, r1, #0
 	ldr r0, _080690F8 @ =0x0000128B (Lord of D.)
-	bl sub_08032CA4
+	bl gEngineEffectSpecialSummonBoostATK_08032CA4
 	cmp r0, #0
 	beq _080690FC
 	adds r0, r4, #0
@@ -176469,7 +176469,7 @@ _08069110:
 	adds r0, r5, #0
 	adds r1, r6, #0
 	adds r2, r4, #0
-	bl sub_0804308C
+	bl gEngineEffectSpecialSummonDestroy_0804308C
 _08069132:
 	adds r4, #1
 	cmp r4, #4
@@ -176538,7 +176538,7 @@ _0806917E:
 	str r0, [r3]
 	adds r0, r7, #0
 	adds r1, r4, #0
-	bl sub_080495D0
+	bl gEngineEffectDrawSearch_080495D0
 	movs r0, #0x7f
 	b _08069252
 	.align 2, 0
@@ -176705,7 +176705,7 @@ _080692C0:
 	lsrs r3, r3, #0x1f
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_0804A2C8
+	bl gEngineEffectSendToGYGraveyard_0804A2C8
 _080692F6:
 	subs r6, #4
 	subs r4, #1
@@ -176751,7 +176751,7 @@ _0806932A:
 	lsrs r2, r2, #0x1f
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_0804A2E4
+	bl gEngineEffectSendToGYGraveyard_0804A2E4
 _08069354:
 	subs r6, #4
 	subs r4, #1
@@ -176790,7 +176790,7 @@ _08069376:
 	lsrs r2, r2, #0x1f
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_0804A30C
+	bl gEngineEffectSendToGYGraveyard_0804A30C
 _080693A0:
 	subs r6, #4
 	subs r4, #1
@@ -176915,7 +176915,7 @@ _0806945E:
 	adds r0, r5, #0
 	adds r1, r6, #0
 	adds r2, r4, #0
-	bl sub_0804308C
+	bl gEngineEffectSpecialSummonDestroy_0804308C
 _0806948A:
 	adds r4, #1
 	cmp r4, #4
@@ -176993,7 +176993,7 @@ _0806950C:
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, r7
 	blt _080695C8
 	ldrb r1, [r4, #2]
@@ -177179,7 +177179,7 @@ _08069674:
 	adds r1, #8
 	adds r1, r1, r2
 	ldrh r1, [r1]
-	bl sub_080495D0
+	bl gEngineEffectDrawSearch_080495D0
 	movs r0, #0x7e
 	b _080696CA
 	.align 2, 0
@@ -177197,7 +177197,7 @@ _0806969C:
 	adds r1, #8
 	adds r1, r1, r2
 	ldrh r1, [r1]
-	bl sub_080495D0
+	bl gEngineEffectDrawSearch_080495D0
 	bl sub_0804A870
 	movs r0, #0x7d
 	b _080696CA
@@ -177285,13 +177285,13 @@ _08069738:
 	subs r4, r4, r0
 	adds r0, r5, #0
 	adds r1, r6, #0
-	bl sub_0803A96C
+	bl gEngineEffectSpecialSummonBoostATK_0803A96C
 	adds r2, r0, #0
 	adds r2, #1
 	asrs r2, r2, #1
 	adds r0, r7, #0
 	adds r1, r4, #0
-	bl sub_080487B0
+	bl gEngineEffectDiscardDamage_080487B0
 _0806976C:
 	movs r0, #0
 _0806976E:
@@ -177341,7 +177341,7 @@ _080697AC:
 	ldrb r3, [r4, #2]
 	lsls r0, r3, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	beq _0806986C
 	ldr r1, _0806980C @ =gUnk_0201C4E0
@@ -177369,7 +177369,7 @@ _080697AC:
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0xd
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x7e
 	b _0806986E
 	.align 2, 0
@@ -177385,7 +177385,7 @@ _08069818:
 	ldr r1, _0806982C @ =gUnk_0201E500
 	movs r2, #1
 	movs r3, #0
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 	movs r0, #0x7d
 	b _0806986E
 	.align 2, 0
@@ -177492,7 +177492,7 @@ gCardEffectUnknown_08069874: @ 0x08069874
 	ldrb r1, [r5, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_08033634
+	bl gEngineEffectSpecialSummon_08033634
 	adds r4, r0, #0
 	ldrb r1, [r5, #2]
 	lsls r0, r1, #0x1f
@@ -177510,7 +177510,7 @@ gCardEffectUnknown_08069874: @ 0x08069874
 	lsls r6, r4, #0x10
 	lsrs r1, r6, #0x10
 	mov r0, sb
-	bl sub_08043EA4
+	bl gEngineEffectDamage_08043EA4
 	ldr r4, _08069964 @ =gUnk_0201BB90
 	ldr r0, [r4]
 	ldr r1, [r4, #0x1c]
@@ -177654,12 +177654,12 @@ _08069A24: .4byte 0x0000195E @ Chthonian Blast
 _08069A28:
 	adds r0, r7, #0
 	adds r1, r5, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	b _08069A4C
 _08069A32:
 	adds r0, r7, #0
 	adds r1, r5, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	cmp r4, #0
 	blt _08069A54
 	cmp r0, r4
@@ -177668,7 +177668,7 @@ _08069A32:
 _08069A44:
 	adds r0, r7, #0
 	adds r1, r5, #0
-	bl sub_0803A980
+	bl gEngineEffectSpecialSummonBoostATK_0803A980
 _08069A4C:
 	cmp r4, #0
 	blt _08069A54
@@ -177734,21 +177734,21 @@ _08069ABC:
 	lsls r0, r3, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x6d
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	b _08069AD6
 _08069ACA:
 	ldrb r1, [r6, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x62
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 _08069AD6:
 	ldrb r2, [r6, #2]
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r6]
 	ldr r2, _08069AE8 @ =sub_08090624
-	bl sub_08096A4C
+	bl gEngineEffectSpecialSummonTribute_08096A4C
 	movs r0, #0x7e
 	b _08069B4E
 	.align 2, 0
@@ -177798,7 +177798,7 @@ _08069B40:
 	adds r0, r4, r1
 	ldr r1, [r0]
 	adds r0, r6, #0
-	bl sub_080478FC
+	bl gEngineEffectBoostATKBoostDEF_080478FC
 _08069B4C:
 	movs r0, #0
 _08069B4E:
@@ -177869,7 +177869,7 @@ _08069BBE:
 	bne _08069BD0
 	adds r0, r6, #0
 	mov r1, r8
-	bl sub_080478FC
+	bl gEngineEffectBoostATKBoostDEF_080478FC
 _08069BD0:
 	movs r0, #0
 	add sp, #4
@@ -177933,7 +177933,7 @@ gCardEffectSpecialSummonGraveyard_08069BE0: @ 0x08069BE0
 	ldrh r5, [r5]
 	lsls r3, r5, #0x10
 	movs r2, #1
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 _08069C52:
 	movs r0, #0
 	pop {r4, r5, r6}
@@ -178080,7 +178080,7 @@ gCardEffectUnknown_08069D08: @ 0x08069D08
 	bne _08069DE4
 	lsrs r0, r3, #0x1f
 	movs r1, #0xf4
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldr r0, _08069D7C @ =sub_08069CDC
 	bl sub_080969C4
 	movs r0, #0x7f
@@ -178195,7 +178195,7 @@ gCardEffectEndPhaseBoostATK_08069DF8: @ 0x08069DF8
 	adds r0, r4, #0
 	adds r1, r6, #0
 	adds r2, r5, #0
-	bl sub_0804308C
+	bl gEngineEffectSpecialSummonDestroy_0804308C
 _08069E36:
 	movs r0, #0
 	add sp, #0xc
@@ -178319,7 +178319,7 @@ _08069F28:
 	lsls r0, r7, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x27
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 _08069F34:
 	movs r0, #0x7f
 	b _08069FF6
@@ -178377,7 +178377,7 @@ _08069F98:
 	adds r0, r1, #0
 	movs r1, #0
 	movs r2, #0
-	bl sub_080A5F38
+	bl gEngineEffectChangePosition_080A5F38
 	movs r0, #0x7d
 	b _08069FF6
 	.align 2, 0
@@ -178402,7 +178402,7 @@ _08069FCC:
 	lsls r0, r5, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #1
-	bl sub_0804A4CC
+	bl gEngineEffectGainLPStandbyPhase_0804A4CC
 	ldrb r0, [r7, #2]
 	lsls r1, r0, #0x1f
 	lsrs r1, r1, #0x1f
@@ -178416,7 +178416,7 @@ _08069FEA:
 	lsls r0, r5, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0
-	bl sub_0804A4CC
+	bl gEngineEffectGainLPStandbyPhase_0804A4CC
 _08069FF4:
 	movs r0, #0
 _08069FF6:
@@ -178520,7 +178520,7 @@ _0806A098:
 	lsls r1, r2
 _0806A0A8:
 	adds r0, r5, #0
-	bl sub_080478FC
+	bl gEngineEffectBoostATKBoostDEF_080478FC
 	b _0806A110
 _0806A0B0:
 	ldrb r1, [r2, #2]
@@ -178531,7 +178531,7 @@ _0806A0B0:
 	ldrh r2, [r2, #4]
 	lsls r2, r2, #0x11
 	lsrs r2, r2, #0x17
-	bl sub_08044DCC
+	bl gEngineEffectDestroyBoostATK_08044DCC
 	b _0806A110
 _0806A0C6:
 	ldrb r3, [r5, #2]
@@ -178564,12 +178564,12 @@ _0806A0F0:
 	ldrh r2, [r2, #4]
 	lsls r2, r2, #0x11
 	lsrs r2, r2, #0x17
-	bl sub_08044DCC
+	bl gEngineEffectDestroyBoostATK_08044DCC
 	ldrb r5, [r5, #2]
 	lsls r0, r5, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #1
-	bl sub_080495D0
+	bl gEngineEffectDrawSearch_080495D0
 _0806A110:
 	movs r0, #0
 	pop {r4, r5}
@@ -178691,7 +178691,7 @@ _0806A1EC: .4byte gUnk_0201C4E0
 _0806A1F0: .4byte 0x00000868
 _0806A1F4:
 	movs r0, #0x28
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 _0806A1FA:
 	movs r0, #0x7e
 	b _0806A236
@@ -178798,7 +178798,7 @@ _0806A2AC:
 	adds r0, r7, #0
 	adds r1, r4, #0
 	adds r2, r5, #0
-	bl sub_08047E7C
+	bl gEngineEffectBoostATKBoostDEF_08047E7C
 _0806A2C4:
 	adds r5, #1
 	cmp r5, #4
@@ -178892,7 +178892,7 @@ gCardEffectSpecialSummonNegate_0806A334: @ 0x0806A334
 	ldrh r3, [r4, #4]
 	lsls r2, r3, #0x11
 	lsrs r2, r2, #0x17
-	bl sub_08044DCC
+	bl gEngineEffectDestroyBoostATK_08044DCC
 	movs r0, #2
 	ldrb r1, [r4, #4]
 	orrs r0, r1
@@ -178907,7 +178907,7 @@ gCardEffectSpecialSummonNegate_0806A334: @ 0x0806A334
 	lsls r2, r2, #0x1a
 	lsrs r2, r2, #0x1b
 	adds r0, r5, #0
-	bl sub_08047A14
+	bl gEngineEffectBoostATKBoostDEF_08047A14
 	b _0806A3DC
 _0806A390:
 	ldrh r3, [r5, #2]
@@ -178938,14 +178938,14 @@ _0806A390:
 	lsrs r2, r2, #0x17
 	adds r0, r4, #0
 	adds r1, r3, #0
-	bl sub_08044DCC
+	bl gEngineEffectDestroyBoostATK_08044DCC
 	ldr r2, [r6]
 	lsls r1, r2, #0x16
 	lsrs r1, r1, #0x1f
 	lsls r2, r2, #0x12
 	lsrs r2, r2, #0x1c
 	adds r0, r5, #0
-	bl sub_08047A14
+	bl gEngineEffectBoostATKBoostDEF_08047A14
 _0806A3DC:
 	movs r0, #0
 	pop {r4, r5, r6}
@@ -178973,14 +178973,14 @@ gCardEffectSpecialSummonDestroy_0806A3EC: @ 0x0806A3EC
 	lsrs r1, r1, #0x1c
 	lsls r2, r2, #0x17
 	lsrs r2, r2, #0x17
-	bl sub_08044DCC
+	bl gEngineEffectDestroyBoostATK_08044DCC
 	ldr r2, [r4, #0x14]
 	lsls r1, r2, #0x16
 	lsrs r1, r1, #0x1f
 	lsls r2, r2, #0x12
 	lsrs r2, r2, #0x1c
 	adds r0, r4, #0
-	bl sub_08047A14
+	bl gEngineEffectBoostATKBoostDEF_08047A14
 _0806A41C:
 	movs r0, #0
 	pop {r4}
@@ -179014,7 +179014,7 @@ _0806A444:
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _0806A47C @ =0x000012E5 (Polymerization)
-	bl sub_080316B8
+	bl gEngineEffectBoostATKBoostDEF_080316B8
 	adds r3, r0, #0
 	cmp r3, #0
 	blt _0806A488
@@ -179028,7 +179028,7 @@ _0806A444:
 	adds r1, r1, r2
 	lsls r2, r3, #2
 	adds r1, r1, r2
-	bl sub_08044A28
+	bl gEngineEffectSearchSpecialSummon_08044A28
 	cmp r0, #0
 	beq _0806A488
 	movs r0, #0x64
@@ -179042,7 +179042,7 @@ _0806A488:
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x15
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x6f
 	b _0806A4B6
 _0806A498:
@@ -179106,7 +179106,7 @@ gCardEffectChangePosition_0806A4BC: @ 0x0806A4BC
 	adds r1, r5, #0
 	adds r2, r3, #0
 	movs r3, #0
-	bl sub_080439B4
+	bl gEngineEffectSpecialSummonDestroy_080439B4
 _0806A50C:
 	movs r0, #0
 	add sp, #8
@@ -179179,7 +179179,7 @@ _0806A568:
 	movs r0, #1
 	subs r0, r0, r1
 	movs r1, #1
-	bl sub_0804A4CC
+	bl gEngineEffectGainLPStandbyPhase_0804A4CC
 _0806A584:
 	movs r1, #0
 _0806A586:
@@ -179300,7 +179300,7 @@ _0806A656:
 	movs r0, #1
 	subs r0, r0, r1
 	movs r1, #0
-	bl sub_0804A4CC
+	bl gEngineEffectGainLPStandbyPhase_0804A4CC
 _0806A67E:
 	movs r0, #0
 _0806A680:
@@ -179358,7 +179358,7 @@ gCardEffectReturnToHand_0806A694: @ 0x0806A694
 	adds r0, r7, #0
 	adds r1, r5, #0
 	adds r2, r4, #0
-	bl sub_08047B90
+	bl gEngineEffectBoostATKBoostDEF_08047B90
 _0806A6E8:
 	movs r0, #0
 	pop {r4, r5, r6, r7}
@@ -179392,7 +179392,7 @@ gCardEffectSpecialSummonSendToGY_0806A700: @ 0x0806A700
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0xa2
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0
 	b _0806A756
 _0806A730:
@@ -179543,7 +179543,7 @@ _0806A82C:
 	adds r0, r6, #0
 	adds r1, r5, #0
 	adds r2, r4, #0
-	bl sub_080439B4
+	bl gEngineEffectSpecialSummonDestroy_080439B4
 	cmp r0, #0
 	beq _0806A84A
 	adds r0, r5, #0
@@ -179594,7 +179594,7 @@ gCardEffectDrawGainLP_0806A884: @ 0x0806A884
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #1
-	bl sub_080495D0
+	bl gEngineEffectDrawSearch_080495D0
 	cmp r0, #0
 	beq _0806A8B4
 	ldrb r4, [r4, #2]
@@ -179777,7 +179777,7 @@ gCardEffectDiscardChangePosition_0806A9A4: @ 0x0806A9A4
 	adds r1, r5, #0
 	adds r2, r3, #0
 	movs r3, #0
-	bl sub_080436E8
+	bl gEngineEffectSpecialSummonDestroy_080436E8
 _0806A9FC:
 	movs r0, #0
 	add sp, #4
@@ -179879,7 +179879,7 @@ gCardEffectEquip_0806AA64: @ 0x0806AA64
 	adds r1, r4, #0
 	mov r2, r8
 	adds r3, r7, #0
-	bl sub_0802F9FC
+	bl gEngineEffectDestroyDamage_0802F9FC
 	cmp r0, #0
 	beq _0806AAFA
 	adds r0, r5, #0
@@ -179903,7 +179903,7 @@ gCardEffectEquip_0806AA64: @ 0x0806AA64
 	ldr r1, [sp, #4]
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_080433EC
+	bl gEngineEffectDestroyEquip_080433EC
 _0806AAFA:
 	movs r0, #0
 	add sp, #8
@@ -180027,7 +180027,7 @@ gCardEffectReturnToHand_0806ABD4: @ 0x0806ABD4
 	bl sub_08090690
 	adds r1, r0, #0
 	adds r0, r4, #0
-	bl sub_08047C10
+	bl gEngineEffectBoostATKBoostDEF_08047C10
 	movs r0, #0
 	pop {r4}
 	pop {r1}
@@ -180109,7 +180109,7 @@ _0806ACAA:
 	lsls r0, r6, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x2b
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x7f
 	b _0806ADAA
 _0806ACBA:
@@ -180186,7 +180186,7 @@ _0806AD2C:
 	lsls r0, r6, #0x1f
 	lsrs r0, r0, #0x1f
 	adds r1, r5, #0
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x7b
 	b _0806ADAA
 	.align 2, 0
@@ -180203,7 +180203,7 @@ _0806AD60:
 	bl sub_08031390
 	adds r1, r0, #0
 	adds r0, r4, #0
-	bl sub_08044A28
+	bl gEngineEffectSearchSpecialSummon_08044A28
 	movs r0, #0x7a
 	b _0806ADAA
 	.align 2, 0
@@ -180283,7 +180283,7 @@ _0806ADF4: @ jump table
 _0806AE18:
 	ldr r1, _0806AE44 @ =0x001F001F
 	adds r0, r5, #0
-	bl sub_080478FC
+	bl gEngineEffectBoostATKBoostDEF_080478FC
 	movs r0, #0xfc
 	lsls r0, r0, #4
 	ldrh r1, [r5, #2]
@@ -180390,7 +180390,7 @@ _0806AEE0:
 	cmp r0, #0
 	beq _0806AF4E
 	mov r0, r8
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	ble _0806AF40
 	mov r0, r8
@@ -180432,9 +180432,9 @@ _0806AF52:
 	adds r0, r4, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 	adds r0, r4, #0
-	bl sub_08033634
+	bl gEngineEffectSpecialSummon_08033634
 	lsls r4, r4, #1
 	adds r2, r5, #0
 	adds r2, #8
@@ -180601,7 +180601,7 @@ _0806B074: @ jump table
 	.4byte _0806B098 @ case 8
 _0806B098:
 	adds r0, r6, #0
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	bne _0806B0A4
 	b _0806B1F4
@@ -180623,7 +180623,7 @@ _0806B0B0:
 	bne _0806B0D2
 	adds r0, r6, #0
 	movs r1, #0xd
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x7b
 	b _0806B1F6
 _0806B0D2:
@@ -180663,7 +180663,7 @@ _0806B114: .4byte gUnk_0201E4F0
 _0806B118:
 	adds r0, r6, #0
 	movs r1, #0x30
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x7e
 	b _0806B1F6
 _0806B124:
@@ -180734,7 +180734,7 @@ _0806B19E:
 	lsls r3, r5, #0x10
 	adds r0, r6, #0
 	movs r2, #1
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 	b _0806B1E6
 _0806B1B2:
 	bl sub_080942DC
@@ -180850,7 +180850,7 @@ _0806B2A8:
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x15
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x78
 	b _0806B316
 _0806B2CA:
@@ -180873,7 +180873,7 @@ _0806B2E2:
 	bl sub_080942DC
 	adds r1, r0, #0
 	adds r0, r4, #0
-	bl sub_08044A28
+	bl gEngineEffectSearchSpecialSummon_08044A28
 	movs r0, #0x64
 	b _0806B316
 _0806B2F8:
@@ -180948,7 +180948,7 @@ _0806B364:
 	movs r2, #0xfa
 	lsls r2, r2, #1
 	adds r0, r4, #0
-	bl sub_080487B0
+	bl gEngineEffectDiscardDamage_080487B0
 	b _0806B388
 _0806B37A:
 	ldrb r1, [r4, #2]
@@ -180966,7 +180966,7 @@ _0806B388:
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	bne _0806B3A2
 	b _0806B52C
@@ -180991,7 +180991,7 @@ _0806B3B2:
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0xd
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 _0806B3D0:
 	movs r0, #0x64
 	b _0806B52E
@@ -181002,7 +181002,7 @@ _0806B3DC:
 	ldrb r2, [r4, #2]
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	beq _0806B3D0
 	ldrb r1, [r4, #2]
@@ -181060,7 +181060,7 @@ _0806B44A:
 	bl sub_0801F2C4
 _0806B45A:
 	add r0, sp, #4
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 _0806B460:
 	movs r0, #0x7e
 	b _0806B52E
@@ -181098,7 +181098,7 @@ _0806B4A4:
 	ldrb r2, [r4, #2]
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080316B8
+	bl gEngineEffectBoostATKBoostDEF_080316B8
 	ldrb r4, [r4, #2]
 	lsls r3, r4, #0x1f
 	lsrs r2, r3, #0x1f
@@ -181124,7 +181124,7 @@ _0806B4DC:
 	ldrb r2, [r4, #2]
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080316B8
+	bl gEngineEffectBoostATKBoostDEF_080316B8
 	ldrb r4, [r4, #2]
 	lsls r3, r4, #0x1f
 	lsrs r2, r3, #0x1f
@@ -181263,7 +181263,7 @@ _0806B5C4:
 	movs r2, #0xaf
 	lsls r2, r2, #2
 	adds r0, r4, #0
-	bl sub_080487B0
+	bl gEngineEffectDiscardDamage_080487B0
 	movs r5, #0
 	b _0806B5F2
 _0806B5DC:
@@ -181275,7 +181275,7 @@ _0806B5DC:
 	adds r0, r4, #0
 	movs r2, #0x96
 	lsls r2, r2, #1
-	bl sub_080487B0
+	bl gEngineEffectDiscardDamage_080487B0
 	adds r5, #1
 _0806B5F2:
 	ldrb r1, [r4, #2]
@@ -181414,7 +181414,7 @@ _0806B6EC: .4byte gUnk_0201E2A0
 _0806B6F0: .4byte gUnk_0201C4E0
 _0806B6F4:
 	movs r0, #0x38
-	bl sub_080934E4
+	bl gEngineEffectSpecialSummon_080934E4
 _0806B6FA:
 	movs r0, #0x7f
 	b _0806B77E
@@ -181462,7 +181462,7 @@ _0806B720:
 	ldr r2, [r1]
 	movs r1, #5
 	subs r1, r1, r2
-	bl sub_080495D0
+	bl gEngineEffectDrawSearch_080495D0
 	b _0806B778
 	.align 2, 0
 _0806B75C: .4byte gUnk_0201C4E0
@@ -181553,7 +181553,7 @@ _0806B80C:
 	strh r0, [r7, #0xc]
 	ldr r1, _0806B89C @ =0x001F001F
 	adds r0, r7, #0
-	bl sub_08047C10
+	bl gEngineEffectBoostATKBoostDEF_08047C10
 	str r0, [sp, #4]
 	movs r4, #0
 _0806B820:
@@ -181653,7 +181653,7 @@ _0806B8D4:
 	b _0806B9FC
 _0806B8E4:
 	adds r0, r5, #0
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	bne _0806B8F0
 	b _0806B9FC
@@ -181731,7 +181731,7 @@ _0806B968:
 _0806B97E:
 	adds r0, r5, #0
 	movs r1, #1
-	bl sub_0804A4CC
+	bl gEngineEffectGainLPStandbyPhase_0804A4CC
 	movs r0, #0x79
 	b _0806BA66
 	.align 2, 0
@@ -181756,7 +181756,7 @@ _0806B990:
 	movs r3, #1
 	bl gEngineEffectChangePosition_080ABD60
 	adds r0, r5, #0
-	bl sub_08033634
+	bl gEngineEffectSpecialSummon_08033634
 	adds r1, r5, #2
 	lsls r1, r1, #1
 	adds r2, r7, #0
@@ -181792,7 +181792,7 @@ _0806B9FC:
 _0806BA00:
 	adds r0, r5, #0
 	movs r1, #0
-	bl sub_0804A4CC
+	bl gEngineEffectGainLPStandbyPhase_0804A4CC
 	ldr r1, _0806BA1C @ =gUnk_0201B290
 	ldr r2, _0806BA20 @ =0x000004A4
 	adds r1, r1, r2
@@ -181912,7 +181912,7 @@ _0806BAC0:
 	adds r1, r4, #0
 	adds r2, r5, #0
 	movs r3, #2
-	bl sub_080436E8
+	bl gEngineEffectSpecialSummonDestroy_080436E8
 _0806BAE8:
 	adds r6, #0x14
 	adds r5, #1
@@ -181929,7 +181929,7 @@ _0806BB00: .4byte 0x00000868
 _0806BB04: .4byte gUnk_0201E1C8
 _0806BB08: .4byte gUnk_0201C510
 _0806BB0C:
-	ldr r1, _0806BB28 @ =sub_08051318
+	ldr r1, _0806BB28 @ =gEngineEffectSpecialSummonChangePosition_08051318
 	adds r0, r7, #0
 	bl sub_0809077C
 	adds r3, r0, #0
@@ -181942,7 +181942,7 @@ _0806BB0C:
 	beq _0806BB50
 	b _0806BB64
 	.align 2, 0
-_0806BB28: .4byte sub_08051318
+_0806BB28: .4byte gEngineEffectSpecialSummonChangePosition_08051318
 _0806BB2C: .4byte 0x0000135C @ Ceasefire
 _0806BB30: .4byte 0x00001635 @ The Spell Absorbing Life
 _0806BB34:
@@ -181957,7 +181957,7 @@ _0806BB34:
 	adds r2, r2, r3
 	lsls r2, r2, #2
 	adds r0, r7, #0
-	bl sub_080487B0
+	bl gEngineEffectDiscardDamage_080487B0
 	b _0806BB64
 _0806BB50:
 	ldrb r7, [r7, #2]
@@ -182075,7 +182075,7 @@ _0806BC4A:
 	lsls r0, r6, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0xd
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x6e
 	b _0806BF58
 _0806BC6C:
@@ -182096,7 +182096,7 @@ _0806BC86:
 	lsls r0, r6, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x20
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x7d
 	b _0806BF58
 _0806BC96:
@@ -182159,7 +182159,7 @@ _0806BCAA:
 	str r0, [sp]
 	adds r0, r6, #0
 	movs r3, #0
-	bl sub_080439B4
+	bl gEngineEffectSpecialSummonDestroy_080439B4
 	b _0806BD34
 	.align 2, 0
 _0806BD14: .4byte gUnk_0201B290
@@ -182194,7 +182194,7 @@ _0806BD4C:
 	ldrb r1, [r6, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_08033634
+	bl gEngineEffectSpecialSummon_08033634
 	adds r5, r0, #0
 	adds r4, #1
 	adds r0, r4, #0
@@ -182525,7 +182525,7 @@ _0806BFBC:
 	adds r1, r7, #0
 	adds r2, r6, #0
 	movs r3, #2
-	bl sub_08047A80
+	bl gEngineEffectBoostATKBoostDEF_08047A80
 	cmp r0, #0
 	beq _0806C0C0
 	movs r0, #0x1e
@@ -182566,7 +182566,7 @@ _0806C050:
 	adds r1, r5, #0
 	movs r2, #1
 	movs r3, #0
-	bl sub_08049BBC
+	bl gEngineEffectBoostATKBoostDEF_08049BBC
 	movs r0, #0x7e
 	b _0806C0C2
 _0806C066:
@@ -182579,7 +182579,7 @@ _0806C066:
 	adds r1, r5, #0
 	movs r2, #1
 	movs r3, #1
-	bl sub_08049BBC
+	bl gEngineEffectBoostATKBoostDEF_08049BBC
 	movs r0, #0x7d
 	b _0806C0C2
 _0806C080:
@@ -182689,7 +182689,7 @@ _0806C140:
 	cmp r1, r0
 	bge _0806C1E4
 	adds r0, r5, #0
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	beq _0806C1E4
 	movs r2, #0x95
@@ -182740,14 +182740,14 @@ _0806C1B8:
 	ldr r0, [r4]
 	lsls r0, r0, #0x13
 	lsrs r0, r0, #0x13
-	bl sub_0804BA58
+	bl gEngineEffectSpecialSummon_0804BA58
 	rsbs r2, r0, #0
 	orrs r2, r0
 	lsrs r2, r2, #0x1f
 	adds r0, r5, #0
 	adds r1, r4, #0
 	movs r3, #0x20
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 	b _0806C1E4
 _0806C1D4:
 	movs r0, #0x20
@@ -183118,7 +183118,7 @@ _0806C49E:
 	ble _0806C44E
 	ldr r1, _0806C4E0 @ =0x001F001F
 	ldr r0, [sp, #4]
-	bl sub_08047C68
+	bl gEngineEffectBoostATKBoostDEF_08047C68
 	movs r7, #0
 	ldr r4, _0806C4E4 @ =gUnk_0201E1C8
 _0806C4BA:
@@ -183239,7 +183239,7 @@ _0806C58C:
 	cmp r0, #0
 	beq _0806C5F4
 	adds r0, r7, #0
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	ble _0806C5F4
 	movs r0, #0x95
@@ -183272,7 +183272,7 @@ _0806C5F8:
 	lsrs r4, r4, #0x1f
 	lsls r0, r0, #0x13
 	lsrs r0, r0, #0x13
-	bl sub_0804BA58
+	bl gEngineEffectSpecialSummon_0804BA58
 	adds r2, r0, #0
 	movs r0, #0
 	str r0, [sp]
@@ -183281,7 +183281,7 @@ _0806C5F8:
 	movs r3, #1
 	bl gEngineEffectChangePosition_080ABD60
 	adds r0, r4, #0
-	bl sub_08033634
+	bl gEngineEffectSpecialSummon_08033634
 	adds r4, #2
 	lsls r4, r4, #1
 	ldr r2, [sp, #4]
@@ -183385,7 +183385,7 @@ gCardEffectBoostATKBoostDEF_0806C6D8: @ 0x0806C6D8
 	ldrb r1, [r6, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_08033BF4
+	bl gEngineEffectSpecialSummon_08033BF4
 	adds r7, r0, #0
 	cmp r7, #0
 	blt _0806C73C
@@ -183402,7 +183402,7 @@ gCardEffectBoostATKBoostDEF_0806C6D8: @ 0x0806C6D8
 	adds r1, r4, #0
 	ldrb r2, [r5, #4]
 	orrs r1, r2
-	bl sub_08043EA4
+	bl gEngineEffectDamage_08043EA4
 	ldrb r1, [r6, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
@@ -183413,7 +183413,7 @@ gCardEffectBoostATKBoostDEF_0806C6D8: @ 0x0806C6D8
 	ldrb r1, [r5]
 	orrs r2, r1
 	adds r1, r4, #0
-	bl sub_080432A8
+	bl gEngineEffectDestroyEquip_080432A8
 	ldr r0, [r5, #4]
 	ldrh r2, [r6]
 	movs r1, #0
@@ -183432,7 +183432,7 @@ _0806C73C:
 	lsrs r1, r1, #0x1b
 	ldrh r3, [r6]
 	movs r2, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 _0806C74E:
 	movs r0, #0x1f
 	movs r1, #0
@@ -183540,7 +183540,7 @@ gCardEffectGainLPStandbyPhase_0806C808: @ 0x0806C808
 	movs r0, #1
 	subs r0, r0, r1
 	movs r1, #1
-	bl sub_0804A4CC
+	bl gEngineEffectGainLPStandbyPhase_0804A4CC
 	movs r0, #0x3c
 	bl sub_0804A754
 	movs r0, #0
@@ -183587,7 +183587,7 @@ _0806C85C:
 	b _0806C960
 _0806C866:
 	adds r0, r4, #0
-	bl sub_0806460C
+	bl gEngineEffectDestroyBoostATK_0806460C
 	cmp r0, #0
 	beq _0806C960
 	movs r0, #0x7f
@@ -183679,7 +183679,7 @@ _0806C918: .4byte gUnk_0201E2A0
 _0806C91C: .4byte gUnk_0201C4E0
 _0806C920:
 	movs r0, #0x2d
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 _0806C926:
 	movs r0, #0x7e
 	b _0806C962
@@ -183709,7 +183709,7 @@ _0806C94C:
 	adds r1, r1, r3
 	ldrh r1, [r1]
 	movs r2, #0
-	bl sub_0804A334
+	bl gEngineEffectSpecialSummonBoostATK_0804A334
 _0806C960:
 	movs r0, #0
 _0806C962:
@@ -183956,7 +183956,7 @@ _0806CB18:
 	lsrs r3, r3, #0x1c
 	lsls r3, r3, #8
 	orrs r2, r3
-	bl sub_080432A8
+	bl gEngineEffectDestroyEquip_080432A8
 _0806CB3A:
 	movs r0, #0x64
 	b _0806CB4A
@@ -184132,7 +184132,7 @@ _0806CC64:
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	mov r1, sp
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x7d
 	b _0806CD26
 	.align 2, 0
@@ -184190,7 +184190,7 @@ _0806CCDC:
 	adds r1, r4, #0
 	str r2, [sp, #0x100]
 	str r3, [sp, #0x104]
-	bl sub_0803B1A4
+	bl gEngineEffectSpecialSummonChangePosition_0803B1A4
 	ldr r2, [sp, #0x100]
 	ldr r3, [sp, #0x104]
 	cmp r0, sl
@@ -184210,7 +184210,7 @@ _0806CD0E:
 	ble _0806CCA6
 	mov r0, r8
 	adds r1, r3, #0
-	bl sub_080478FC
+	bl gEngineEffectBoostATKBoostDEF_080478FC
 _0806CD24:
 	movs r0, #0
 _0806CD26:
@@ -184304,7 +184304,7 @@ _0806CDCC:
 	lsrs r4, r4, #0x1f
 	adds r0, r6, #0
 	adds r1, r5, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	adds r1, r0, #0
 	adds r0, r4, #0
 	bl gEngineEffectDamage_08049014
@@ -184313,7 +184313,7 @@ _0806CDE4:
 	adds r0, r7, #0
 	adds r1, r6, #0
 	adds r2, r5, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _0806CE58
 	movs r0, #0x20
@@ -184328,11 +184328,11 @@ _0806CDFA:
 	bl sub_0803BD2C
 	adds r0, r6, #0
 	adds r1, r4, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	adds r2, r0, #0
 	adds r0, r7, #0
 	adds r1, r6, #0
-	bl sub_080487B0
+	bl gEngineEffectDiscardDamage_080487B0
 	b _0806CE58
 	.align 2, 0
 _0806CE1C: .4byte 0x00008020
@@ -184340,7 +184340,7 @@ _0806CE20:
 	adds r0, r7, #0
 	adds r1, r6, #0
 	adds r2, r5, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _0806CE58
 	movs r0, #0x20
@@ -184358,7 +184358,7 @@ _0806CE36:
 	lsrs r5, r5, #0x1f
 	adds r0, r6, #0
 	adds r1, r4, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	adds r1, r0, #0
 	adds r0, r5, #0
 	bl gEngineEffectDamage_08049014
@@ -184466,7 +184466,7 @@ _0806CEEA:
 	adds r0, r7, #0
 	mov r1, r8
 	mov r2, sb
-	bl sub_0804308C
+	bl gEngineEffectSpecialSummonDestroy_0804308C
 _0806CF22:
 	movs r0, #0
 	add sp, #8
@@ -184554,7 +184554,7 @@ gCardEffectSpecialSummonDestroy_0806CF40: @ 0x0806CF40
 	lsls r2, r2, #0x12
 	lsrs r2, r2, #0x1c
 	adds r0, r7, #0
-	bl sub_08047970
+	bl gEngineEffectBoostATKBoostDEF_08047970
 _0806CFD0:
 	movs r0, #0
 	pop {r3, r4}
@@ -184611,7 +184611,7 @@ _0806CFFC:
 	adds r1, r5, #0
 	adds r2, r4, #0
 	movs r3, #2
-	bl sub_08047A80
+	bl gEngineEffectBoostATKBoostDEF_08047A80
 	b _0806D0B8
 _0806D046:
 	ldrb r0, [r6, #2]
@@ -184713,7 +184713,7 @@ _0806D0E6:
 	adds r1, r4, #0
 	adds r2, r5, #0
 	movs r3, #0
-	bl sub_080439B4
+	bl gEngineEffectSpecialSummonDestroy_080439B4
 _0806D104:
 	adds r5, #1
 	cmp r5, #4
@@ -184774,7 +184774,7 @@ _0806D164:
 	ldrb r2, [r6, #2]
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, r7
 	blt _0806D21C
 	ldrb r1, [r6, #2]
@@ -184839,7 +184839,7 @@ _0806D1DC:
 	lsls r3, r6, #0x10
 	adds r0, r4, #0
 	movs r2, #1
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 	ldr r0, [r5]
 	adds r0, #1
 	str r0, [r5]
@@ -184907,7 +184907,7 @@ gCardEffectDestroyDamage_0806D224: @ 0x0806D224
 	bne _0806D290
 	adds r0, r5, #0
 	adds r1, r3, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	adds r5, r0, #0
 	b _0806D294
 	.align 2, 0
@@ -184920,7 +184920,7 @@ _0806D290:
 _0806D294:
 	bl sub_0804A76C
 	adds r0, r4, #0
-	bl sub_0806460C
+	bl gEngineEffectDestroyBoostATK_0806460C
 	cmp r0, #0
 	beq _0806D2C2
 	ldrb r1, [r4, #2]
@@ -184930,13 +184930,13 @@ _0806D294:
 	subs r1, r1, r0
 	adds r0, r4, #0
 	adds r2, r5, #0
-	bl sub_080487B0
+	bl gEngineEffectDiscardDamage_080487B0
 	ldrb r0, [r4, #2]
 	lsls r1, r0, #0x1f
 	lsrs r1, r1, #0x1f
 	adds r0, r4, #0
 	adds r2, r5, #0
-	bl sub_080487B0
+	bl gEngineEffectDiscardDamage_080487B0
 _0806D2C2:
 	bl sub_0804A870
 _0806D2C6:
@@ -185008,7 +185008,7 @@ gCardEffectBoostATKReduceATK_0806D2F0: @ 0x0806D2F0
 	mov sb, r0
 	mov r0, r8
 	adds r1, r5, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	adds r0, #1
 	asrs r0, r0, #1
 	mov ip, r0
@@ -185053,7 +185053,7 @@ gCardEffectBoostATKReduceATK_0806D2F0: @ 0x0806D2F0
 	mov r1, r8
 	adds r2, r5, #0
 	adds r3, r6, #0
-	bl sub_0804308C
+	bl gEngineEffectSpecialSummonDestroy_0804308C
 	ldrh r3, [r7]
 	mov r1, sl
 	str r1, [sp]
@@ -185064,7 +185064,7 @@ gCardEffectBoostATKReduceATK_0806D2F0: @ 0x0806D2F0
 	adds r0, r7, #0
 	ldr r1, [sp, #0x10]
 	mov r2, sb
-	bl sub_0804308C
+	bl gEngineEffectSpecialSummonDestroy_0804308C
 _0806D3BC:
 	movs r0, #0
 	add sp, #0x14
@@ -185142,7 +185142,7 @@ _0806D44C: .4byte gUnk_0201E2A0
 _0806D450: .4byte gUnk_0201C4E0
 _0806D454:
 	movs r0, #0x38
-	bl sub_080934E4
+	bl gEngineEffectSpecialSummon_080934E4
 _0806D45A:
 	movs r0, #0x7f
 	b _0806D49E
@@ -185228,7 +185228,7 @@ gCardEffectSpecialSummonSendToGY_0806D4A4: @ 0x0806D4A4
 	adds r1, r1, r2
 	movs r2, #1
 	movs r3, #1
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 _0806D504:
 	movs r0, #0
 	pop {r4, r5}
@@ -185744,7 +185744,7 @@ gCardEffectReduceATKEquip_0806D8C0: @ 0x0806D8C0
 	ldrb r1, [r5, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_08033BF4
+	bl gEngineEffectSpecialSummon_08033BF4
 	movs r1, #1
 	rsbs r1, r1, #0
 	cmp r0, r1
@@ -185769,7 +185769,7 @@ gCardEffectReduceATKEquip_0806D8C0: @ 0x0806D8C0
 	ldrb r2, [r5, #2]
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_08033BF4
+	bl gEngineEffectSpecialSummon_08033BF4
 	adds r4, r0, #0
 	ldrb r0, [r5, #2]
 	lsls r3, r0, #0x1f
@@ -185795,7 +185795,7 @@ gCardEffectReduceATKEquip_0806D8C0: @ 0x0806D8C0
 	lsls r2, r6, #8
 	orrs r2, r7
 	adds r1, r4, #0
-	bl sub_080432A8
+	bl gEngineEffectDestroyEquip_080432A8
 _0806D954:
 	movs r0, #0
 	add sp, #0x10
@@ -185839,7 +185839,7 @@ _0806D98C:
 	lsls r0, r3, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _0806D9F0 @ =0x000013EA (The Mask of Remnants (None))
-	bl sub_08033C9C
+	bl gEngineEffectSpecialSummon_08033C9C
 	cmp r0, #0
 	beq _0806D9C8
 	adds r0, r4, #0
@@ -185862,7 +185862,7 @@ _0806D9C8:
 	lsrs r0, r0, #0x1f
 	ldr r5, _0806D9F0 @ =0x000013EA (The Mask of Remnants (None))
 	adds r1, r5, #0
-	bl sub_08031A84
+	bl gEngineEffectBoostATKBoostDEF_08031A84
 	cmp r0, #0
 	beq _0806D9F4
 	ldrb r4, [r4, #2]
@@ -185881,7 +185881,7 @@ _0806D9F4:
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0xd
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x78
 	b _0806DA7E
 _0806DA04:
@@ -185891,7 +185891,7 @@ _0806DA08:
 	ldrb r3, [r4, #2]
 	lsls r0, r3, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_08033BF4
+	bl gEngineEffectSpecialSummon_08033BF4
 	adds r2, r0, #0
 	ldr r1, _0806DA2C @ =0x000004A4
 	adds r0, r6, r1
@@ -185900,7 +185900,7 @@ _0806DA08:
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _0806DA30 @ =0x000013EA (The Mask of Remnants (None))
-	bl sub_08049D44
+	bl gEngineEffectBoostATKBoostDEF_08049D44
 	movs r0, #0x7e
 	b _0806DA7E
 	.align 2, 0
@@ -185918,7 +185918,7 @@ _0806DA34:
 	orrs r1, r2
 	lsls r2, r5, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_080432A8
+	bl gEngineEffectDestroyEquip_080432A8
 	movs r0, #0x7d
 	b _0806DA7E
 	.align 2, 0
@@ -185964,7 +185964,7 @@ gCardEffectEquip_0806DA84: @ 0x0806DA84
 	lsls r2, r2, #0x1a
 	lsrs r2, r2, #0x1b
 	adds r0, r4, #0
-	bl sub_08047C20
+	bl gEngineEffectBoostATKBoostDEF_08047C20
 	ldrb r4, [r4, #2]
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
@@ -186014,7 +186014,7 @@ gCardEffectTributeBattlePhase_0806DAB4: @ 0x0806DAB4
 	lsrs r0, r0, #0x1f
 	str r0, [sp, #4]
 	adds r0, r4, #0
-	bl sub_0804308C
+	bl gEngineEffectSpecialSummonDestroy_0804308C
 _0806DB06:
 	movs r0, #0
 	add sp, #8
@@ -186022,8 +186022,8 @@ _0806DB06:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_0806DB10
-sub_0806DB10: @ 0x0806DB10
+	thumb_func_start gEngineEffectSpecialSummonSendToGY_0806DB10
+gEngineEffectSpecialSummonSendToGY_0806DB10: @ 0x0806DB10
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -186185,13 +186185,13 @@ _0806DC4A:
 	lsls r0, r7, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x49
-	bl sub_08093390
-	ldr r0, _0806DC6C @ =sub_0806DB10
+	bl gEngineEffectSpecialSummon_08093390
+	ldr r0, _0806DC6C @ =gEngineEffectSpecialSummonSendToGY_0806DB10
 	bl sub_080969C4
 	movs r0, #0x7f
 	b _0806DFFC
 	.align 2, 0
-_0806DC6C: .4byte sub_0806DB10
+_0806DC6C: .4byte gEngineEffectSpecialSummonSendToGY_0806DB10
 _0806DC70:
 	bl sub_08096B14
 	cmp r0, #0
@@ -186269,13 +186269,13 @@ _0806DCFC:
 	lsls r0, r7, #0x1f
 	lsrs r0, r0, #0x1f
 	mov r1, sp
-	bl sub_08093390
-	ldr r0, _0806DD1C @ =sub_0806DB10
+	bl gEngineEffectSpecialSummon_08093390
+	ldr r0, _0806DD1C @ =gEngineEffectSpecialSummonSendToGY_0806DB10
 	bl sub_080969C4
 	movs r0, #0x7d
 	b _0806DFFC
 	.align 2, 0
-_0806DD1C: .4byte sub_0806DB10
+_0806DD1C: .4byte gEngineEffectSpecialSummonSendToGY_0806DB10
 _0806DD20:
 	bl sub_08096B14
 	cmp r0, #0
@@ -186342,12 +186342,12 @@ _0806DD9C: .4byte gUnk_0201C4E0
 _0806DDA0: .4byte 0x00001D70
 _0806DDA4: .4byte 0x00000868
 _0806DDA8:
-	ldr r0, _0806DDB4 @ =sub_0806DB10
+	ldr r0, _0806DDB4 @ =gEngineEffectSpecialSummonSendToGY_0806DB10
 	bl sub_08096A08
 	movs r0, #0x7b
 	b _0806DFFC
 	.align 2, 0
-_0806DDB4: .4byte sub_0806DB10
+_0806DDB4: .4byte gEngineEffectSpecialSummonSendToGY_0806DB10
 _0806DDB8:
 	bl sub_08096B14
 	cmp r0, #0
@@ -186540,7 +186540,7 @@ _0806DF14:
 	lsls r0, r7, #0x1f
 	lsrs r0, r0, #0x1f
 	adds r1, r4, #0
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x77
 	b _0806DFFC
 	.align 2, 0
@@ -186614,7 +186614,7 @@ _0806DFA8:
 	adds r1, r4, #0
 	movs r2, #1
 	movs r3, #0
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 	b _0806DFFA
 	.align 2, 0
 _0806DFE8: .4byte 0x000004A4
@@ -186677,7 +186677,7 @@ gCardEffectReduceATK_0806E00C: @ 0x0806E00C
 	adds r0, r5, #0
 	adds r1, r6, #0
 	adds r2, r4, #0
-	bl sub_0804308C
+	bl gEngineEffectSpecialSummonDestroy_0804308C
 _0806E05E:
 	movs r0, #0
 	add sp, #8
@@ -186829,7 +186829,7 @@ _0806E168:
 	lsls r0, r5, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x4d
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x7f
 	b _0806E1BC
 _0806E18E:
@@ -186971,7 +186971,7 @@ _0806E298: .4byte gUnk_0201E2A0
 _0806E29C: .4byte 0x00001D10
 _0806E2A0:
 	movs r0, #0x38
-	bl sub_080934E4
+	bl gEngineEffectSpecialSummon_080934E4
 _0806E2A6:
 	movs r0, #0x7f
 	b _0806E2FA
@@ -187005,7 +187005,7 @@ _0806E2C4:
 	mov r0, ip
 	str r0, [sp, #4]
 	adds r0, r7, #0
-	bl sub_0804308C
+	bl gEngineEffectSpecialSummonDestroy_0804308C
 _0806E2EA:
 	movs r0, #0xa
 	b _0806E2FA
@@ -187101,7 +187101,7 @@ _0806E36E:
 	ldrb r4, [r4, #2]
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, r6
 	blt _0806E3F0
 	ldr r0, _0806E3B4 @ =0x000004A4
@@ -187244,11 +187244,11 @@ _0806E480:
 	adds r0, r7, #0
 	mov r1, r8
 	adds r2, r6, #0
-	bl sub_08047C20
+	bl gEngineEffectBoostATKBoostDEF_08047C20
 	add r4, sb
 	adds r4, r4, r5
 	adds r0, r4, #0
-	bl sub_080313B8
+	bl gEngineEffectSpecialSummon_080313B8
 	cmp r0, #0
 	bne _0806E4CC
 	b _0806E61C
@@ -187268,7 +187268,7 @@ _0806E4CC:
 _0806E4E8:
 	ldrh r0, [r7, #0xa]
 	ldr r1, _0806E510 @ =gUnk_0201E500
-	bl sub_0807FCC0
+	bl gEngineEffectSpecialSummonFusionSummon_0807FCC0
 	cmp r0, #0
 	bne _0806E4F6
 	b _0806E61C
@@ -187329,7 +187329,7 @@ _0806E55C:
 	ldrb r2, [r7, #2]
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, r5
 	blt _0806E61C
 	ldr r1, _0806E59C @ =gUnk_0201E2A0
@@ -187354,7 +187354,7 @@ _0806E59C: .4byte gUnk_0201E2A0
 _0806E5A0: .4byte gUnk_0201C4E0
 _0806E5A4:
 	movs r0, #0x59
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 _0806E5AA:
 	movs r0, #0x7d
 	b _0806E61E
@@ -187392,7 +187392,7 @@ _0806E5D4:
 	adds r1, r1, r2
 	movs r2, #1
 	movs r3, #0x20
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 	ldr r0, [r4]
 	adds r0, #1
 	str r0, [r4]
@@ -187567,7 +187567,7 @@ gCardEffectDestroyAllDamage_0806E6F8: @ 0x0806E6F8
 	bne _0806E756
 	ldr r1, _0806E768 @ =0x04000400
 	adds r0, r7, #0
-	bl sub_080478FC
+	bl gEngineEffectBoostATKBoostDEF_080478FC
 _0806E756:
 	movs r0, #0
 	pop {r4, r5, r6, r7}
@@ -187640,7 +187640,7 @@ _0806E7D0:
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	adds r1, r5, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	adds r2, r0, #0
 	ldr r0, _0806E7E8 @ =0x0000FFFF
 	cmp r2, r0
@@ -187666,7 +187666,7 @@ _0806E804:
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0xb
-	bl sub_08032EF0
+	bl gEngineEffectSpecialSummonChangePosition_08032EF0
 	movs r1, #0xc8
 	adds r2, r0, #0
 	muls r2, r1, r2
@@ -187682,7 +187682,7 @@ _0806E816:
 	str r0, [sp, #4]
 	adds r0, r4, #0
 	adds r2, r5, #0
-	bl sub_0804308C
+	bl gEngineEffectSpecialSummonDestroy_0804308C
 _0806E830:
 	adds r5, #1
 	cmp r5, #4
@@ -187808,7 +187808,7 @@ _0806E934:
 	ldrb r1, [r6, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	beq _0806E9F8
 	ldr r0, _0806E990 @ =0x0000140B (Insect Imitation)
@@ -187836,7 +187836,7 @@ _0806E962:
 	lsls r0, r6, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0xd
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x6e
 	b _0806E9FA
 	.align 2, 0
@@ -187846,7 +187846,7 @@ _0806E994:
 	lsls r0, r6, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x30
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x7f
 	b _0806E9FA
 _0806E9A4:
@@ -187872,7 +187872,7 @@ _0806E9C2:
 	adds r0, r4, #0
 	movs r2, #1
 	movs r3, #0
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 	movs r0, #0x64
 	b _0806E9FA
 _0806E9DC:
@@ -188076,7 +188076,7 @@ _0806EB50:
 	adds r1, r4, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 	b _0806EBC0
 	.align 2, 0
 _0806EB7C: .4byte gUnk_0201C4E0
@@ -188164,7 +188164,7 @@ _0806EC04:
 	movs r1, #1
 	movs r2, #0
 	movs r3, #0
-	bl sub_0805C044
+	bl gEngineEffectSpecialSummonDamage_0805C044
 	cmp r0, #0
 	bne _0806EC26
 _0806EC22:
@@ -188222,14 +188222,14 @@ _0806EC64:
 	ldrh r3, [r4, #4]
 	lsls r2, r3, #0x11
 	lsrs r2, r2, #0x17
-	bl sub_08044DCC
+	bl gEngineEffectDestroyBoostATK_08044DCC
 	ldrb r2, [r4, #2]
 	lsls r1, r2, #0x1f
 	lsrs r1, r1, #0x1f
 	lsls r2, r2, #0x1a
 	lsrs r2, r2, #0x1b
 	adds r0, r5, #0
-	bl sub_08047A14
+	bl gEngineEffectBoostATKBoostDEF_08047A14
 _0806ECA6:
 	movs r0, #0
 _0806ECA8:
@@ -188284,7 +188284,7 @@ gCardEffectChangePositionFlip_0806ECB0: @ 0x0806ECB0
 	adds r1, r5, #0
 	adds r2, r3, #0
 	movs r3, #1
-	bl sub_080439B4
+	bl gEngineEffectSpecialSummonDestroy_080439B4
 _0806ED0E:
 	movs r0, #0
 	add sp, #4
@@ -188369,7 +188369,7 @@ _0806EDAC:
 	cmp r0, #0
 	beq _0806EDC0
 	adds r0, r5, #0
-	bl sub_0806460C
+	bl gEngineEffectDestroyBoostATK_0806460C
 	cmp r0, #0
 	bne _0806EDCA
 _0806EDC0:
@@ -188399,7 +188399,7 @@ gCardEffectSpecialSummonSendToGY_0806EDD4: @ 0x0806EDD4
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	beq _0806EE42
 	movs r0, #0x1c
@@ -188437,7 +188437,7 @@ gCardEffectSpecialSummonSendToGY_0806EDD4: @ 0x0806EDD4
 	lsrs r0, r0, #0x1f
 	movs r2, #1
 	movs r3, #0x20
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 _0806EE42:
 	movs r0, #0
 	pop {r4, r5, r6}
@@ -188495,7 +188495,7 @@ _0806EE84:
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x18
 	adds r0, r4, #0
-	bl sub_08047C20
+	bl gEngineEffectBoostATKBoostDEF_08047C20
 	cmp r0, #0
 	beq _0806EF80
 	ldr r0, _0806EEDC @ =0x000004A4
@@ -188592,7 +188592,7 @@ _0806EF68:
 	ldr r2, _0806EF7C @ =0x000004A4
 	adds r1, r6, r2
 	ldr r1, [r1]
-	bl sub_080495D0
+	bl gEngineEffectDrawSearch_080495D0
 	movs r0, #0x7c
 	b _0806EF82
 	.align 2, 0
@@ -188660,7 +188660,7 @@ gCardEffectDiscardDamage_0806EF88: @ 0x0806EF88
 	movs r2, #0xfa
 	lsls r2, r2, #1
 	adds r0, r6, #0
-	bl sub_080487B0
+	bl gEngineEffectDiscardDamage_080487B0
 _0806EFF6:
 	movs r0, #0
 	pop {r4, r5, r6, r7}
@@ -188771,7 +188771,7 @@ _0806F0CC:
 	mov r8, r0
 	ldr r2, [r0]
 	adds r0, r5, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _0806F1B6
 	ldrb r1, [r5, #2]
@@ -188780,7 +188780,7 @@ _0806F0CC:
 	mov r2, r8
 	ldr r1, [r2]
 	ldrh r2, [r5]
-	bl sub_08036450
+	bl gEngineEffectSpecialSummonDestroy_08036450
 	cmp r0, #0
 	beq _0806F1B6
 	ldrb r3, [r5, #2]
@@ -188793,7 +188793,7 @@ _0806F0CC:
 	adds r7, r4, r0
 	ldr r2, [r7]
 	adds r0, r5, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _0806F1B6
 	ldrb r1, [r5, #2]
@@ -188802,7 +188802,7 @@ _0806F0CC:
 	subs r0, r6, r0
 	ldr r1, [r7]
 	ldrh r2, [r5]
-	bl sub_08036450
+	bl gEngineEffectSpecialSummonDestroy_08036450
 	cmp r0, #0
 	beq _0806F1B6
 	ldrb r2, [r5, #2]
@@ -188844,7 +188844,7 @@ _0806F0CC:
 	ldrb r7, [r7]
 	lsls r3, r7, #8
 	orrs r2, r3
-	bl sub_08043F44
+	bl gEngineEffectDamage_08043F44
 	movs r0, #0x7b
 	b _0806F1B8
 	.align 2, 0
@@ -188951,7 +188951,7 @@ gCardEffectDestroy_0806F1C8: @ 0x0806F1C8
 	adds r0, r5, #0
 	adds r1, r6, #0
 	adds r2, r4, #0
-	bl sub_08047990
+	bl gEngineEffectBoostATKDestroy_08047990
 	movs r0, #0x7f
 	b _0806F2B6
 	.align 2, 0
@@ -188964,11 +188964,11 @@ _0806F260:
 	adds r0, r5, #0
 	adds r1, r7, #0
 	mov r2, r8
-	bl sub_0804308C
+	bl gEngineEffectSpecialSummonDestroy_0804308C
 	adds r0, r5, #0
 	adds r1, r7, #0
 	mov r2, r8
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _0806F2B4
 	movs r2, #1
@@ -188986,7 +188986,7 @@ _0806F260:
 	cmp r0, #0
 	beq _0806F2A4
 	adds r0, r6, #0
-	bl sub_08033634
+	bl gEngineEffectSpecialSummon_08033634
 	adds r4, r0, #0
 _0806F2A4:
 	cmp r4, #0
@@ -188995,7 +188995,7 @@ _0806F2A4:
 	lsrs r1, r1, #0x10
 	orrs r1, r6
 	mov r0, sb
-	bl sub_08043EA4
+	bl gEngineEffectDamage_08043EA4
 _0806F2B4:
 	movs r0, #0
 _0806F2B6:
@@ -189138,7 +189138,7 @@ gCardEffectTributeDestroy_0806F390: @ 0x0806F390
 	bl sub_0804A484
 	adds r0, r4, #0
 	movs r1, #0x9c
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	b _0806F4F8
 _0806F3C0:
 	ldr r0, _0806F3D8 @ =gUnk_0201B290
@@ -189197,21 +189197,21 @@ _0806F424:
 	lsls r0, r5, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x4c
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	b _0806F44C
 _0806F432:
 	ldrb r5, [r5, #2]
 	lsls r0, r5, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x4e
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	b _0806F44C
 _0806F440:
 	ldrb r5, [r5, #2]
 	lsls r0, r5, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x4d
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 _0806F44C:
 	movs r0, #0x7f
 	b _0806F4FA
@@ -189419,7 +189419,7 @@ _0806F5CA:
 gCardEffectDestroy_0806F5D0: @ 0x0806F5D0
 	push {r4, lr}
 	adds r4, r0, #0
-	bl sub_0806460C
+	bl gEngineEffectDestroyBoostATK_0806460C
 	ldrb r4, [r4, #2]
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
@@ -189658,7 +189658,7 @@ gCardEffectSpecialSummonDestroy_0806F788: @ 0x0806F788
 	ldrb r1, [r5, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_08033BF4
+	bl gEngineEffectSpecialSummon_08033BF4
 	movs r1, #1
 	rsbs r1, r1, #0
 	cmp r0, r1
@@ -189701,7 +189701,7 @@ gCardEffectSpecialSummonDestroy_0806F788: @ 0x0806F788
 	cmp r0, #0
 	beq _0806F844
 	lsrs r0, r3, #0x1f
-	bl sub_08033BF4
+	bl gEngineEffectSpecialSummon_08033BF4
 	adds r4, r0, #0
 	ldrb r1, [r5, #2]
 	lsls r3, r1, #0x1f
@@ -189727,7 +189727,7 @@ gCardEffectSpecialSummonDestroy_0806F788: @ 0x0806F788
 	lsls r2, r6, #8
 	orrs r2, r7
 	adds r1, r4, #0
-	bl sub_080432A8
+	bl gEngineEffectDestroyEquip_080432A8
 _0806F844:
 	movs r0, #0
 	add sp, #0xc
@@ -189757,7 +189757,7 @@ gCardEffectSendToGYGraveyard_0806F85C: @ 0x0806F85C
 	lsrs r0, r0, #0x1b
 	str r0, [sp, #0xc]
 	adds r0, r6, #0
-	bl sub_08033BF4
+	bl gEngineEffectSpecialSummon_08033BF4
 	str r0, [sp, #0x10]
 	adds r1, r6, #0
 	movs r0, #1
@@ -189947,13 +189947,13 @@ _0806FA08:
 	lsls r0, r3, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0xd
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x78
 	b _0806FB78
 _0806FA2C:
 	adds r0, r6, #0
 	movs r1, #0xf6
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldr r0, _0806FA44 @ =gUnk_0201B290
 	ldr r1, _0806FA48 @ =0x000004A4
 	adds r0, r0, r1
@@ -190041,7 +190041,7 @@ _0806FABA:
 	lsls r2, r2, #3
 	mov r0, r8
 	adds r1, r6, #0
-	bl sub_080487B0
+	bl gEngineEffectDiscardDamage_080487B0
 _0806FAF0:
 	ldr r0, _0806FB0C @ =gUnk_0201B290
 	ldr r1, _0806FB10 @ =0x000004A4
@@ -190068,7 +190068,7 @@ _0806FB14:
 	adds r1, r3, #0
 	adds r0, r6, #0
 	ldr r2, [sp, #0x10]
-	bl sub_08049D44
+	bl gEngineEffectBoostATKBoostDEF_08049D44
 	movs r0, #0x5e
 	cmp r6, #0
 	beq _0806FB36
@@ -190087,7 +190087,7 @@ _0806FB48: .4byte 0x0000805E
 _0806FB4C:
 	adds r0, r6, #0
 	movs r1, #1
-	bl sub_0804A4CC
+	bl gEngineEffectGainLPStandbyPhase_0804A4CC
 	movs r0, #0x77
 	b _0806FB78
 _0806FB58:
@@ -190099,7 +190099,7 @@ _0806FB58:
 _0806FB64:
 	adds r0, r6, #0
 	movs r1, #0
-	bl sub_0804A4CC
+	bl gEngineEffectGainLPStandbyPhase_0804A4CC
 	movs r0, #0x64
 	b _0806FB78
 _0806FB70:
@@ -190238,7 +190238,7 @@ _0806FC62:
 	adds r0, r7, #0
 	adds r1, r5, #0
 	adds r2, r4, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	beq _0806FC72
 	b _0806FDDE
@@ -190327,7 +190327,7 @@ _0806FCE4:
 	adds r0, r7, #0
 	adds r1, r5, #0
 	adds r2, r4, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	adds r1, r0, #0
 	cmp r1, #0
 	bne _0806FDDE
@@ -190339,7 +190339,7 @@ _0806FCE4:
 	adds r1, r5, #0
 	adds r2, r4, #0
 	movs r3, #0
-	bl sub_080439B4
+	bl gEngineEffectSpecialSummonDestroy_080439B4
 _0806FD40:
 	movs r0, #0x7e
 	b _0806FDE0
@@ -190367,7 +190367,7 @@ _0806FD50:
 	ble _0806FDAC
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_08035BA4
+	bl gEngineEffectSpecialSummonPreventAttack_08035BA4
 	cmp r0, #0
 	bne _0806FD8E
 	adds r0, r4, #0
@@ -190482,7 +190482,7 @@ _0806FE88:
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	beq _0806FF46
 	ldrb r1, [r4, #2]
@@ -190503,7 +190503,7 @@ _0806FE88:
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0xd
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x6e
 	b _0806FF48
 _0806FEC6:
@@ -190511,7 +190511,7 @@ _0806FEC6:
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _0806FED8 @ =0x0000011D
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x7f
 	b _0806FF48
 	.align 2, 0
@@ -190535,7 +190535,7 @@ _0806FEF0:
 	adds r0, r4, #0
 	movs r2, #1
 	movs r3, #0
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 	movs r0, #0x64
 	b _0806FF48
 _0806FF0A:
@@ -190543,7 +190543,7 @@ _0806FF0A:
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #1
-	bl sub_0804A4CC
+	bl gEngineEffectGainLPStandbyPhase_0804A4CC
 	movs r0, #0x6d
 	b _0806FF48
 _0806FF1A:
@@ -190560,7 +190560,7 @@ _0806FF2C:
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0
-	bl sub_0804A4CC
+	bl gEngineEffectGainLPStandbyPhase_0804A4CC
 	movs r0, #0x64
 	b _0806FF48
 _0806FF3C:
@@ -190633,7 +190633,7 @@ _0806FFB4: .4byte gUnk_0201E2A0
 _0806FFB8: .4byte gUnk_0201C4E0
 _0806FFBC:
 	movs r0, #0x68
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 _0806FFC2:
 	movs r0, #0x7e
 	b _0807003E
@@ -190650,7 +190650,7 @@ _0806FFC6:
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r7]
 	ldr r2, _0806FFEC @ =gCardEffectDiscardDestroyAll_08051F04
-	bl sub_08096AB0
+	bl gEngineEffectSpecialSummonTribute_08096AB0
 	movs r0, #0x7d
 	b _0807003E
 	.align 2, 0
@@ -190675,7 +190675,7 @@ _0806FFF0:
 	adds r0, r7, #0
 	adds r1, r6, #0
 	adds r2, r5, #0
-	bl sub_08047970
+	bl gEngineEffectBoostATKBoostDEF_08047970
 	ldrb r1, [r7, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
@@ -190683,11 +190683,11 @@ _0806FFF0:
 	subs r4, r4, r0
 	adds r0, r6, #0
 	adds r1, r5, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	adds r2, r0, #0
 	adds r0, r7, #0
 	adds r1, r4, #0
-	bl sub_080487B0
+	bl gEngineEffectDiscardDamage_080487B0
 	bl sub_0804A870
 _0807003C:
 	movs r0, #0
@@ -190746,7 +190746,7 @@ gCardEffectSpecialSummon_0807004C: @ 0x0807004C
 	cmp r2, r0
 	bne _080700DE
 	lsrs r0, r4, #0x1f
-	bl sub_08033654
+	bl gEngineEffectSpecialSummon_08033654
 	cmp r0, #0
 	blt _080700DE
 	ldrb r3, [r5, #2]
@@ -190771,7 +190771,7 @@ gCardEffectSpecialSummon_0807004C: @ 0x0807004C
 	adds r1, r1, r2
 	movs r2, #1
 	movs r3, #1
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 _080700DE:
 	movs r0, #0
 	pop {r3}
@@ -190819,7 +190819,7 @@ _08070114:
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0xd
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x7e
 	b _0807019C
 _0807013E:
@@ -190915,7 +190915,7 @@ gCardEffectDestroyBattlePhase_080701A4: @ 0x080701A4
 	beq _08070258
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	str r0, [sp, #4]
 	movs r7, #0
 	movs r4, #0
@@ -190945,7 +190945,7 @@ _08070216:
 	adds r0, r5, #0
 	adds r1, r4, #0
 	str r2, [sp, #8]
-	bl sub_0803A980
+	bl gEngineEffectSpecialSummonBoostATK_0803A980
 	ldr r2, [sp, #8]
 	ldr r1, [sp, #4]
 	cmp r0, r1
@@ -190962,7 +190962,7 @@ _08070248:
 	ble _08070216
 	mov r0, r8
 	adds r1, r7, #0
-	bl sub_080478FC
+	bl gEngineEffectBoostATKBoostDEF_080478FC
 _08070258:
 	movs r0, #0
 	add sp, #0xc
@@ -191215,14 +191215,14 @@ _08070424:
 	ldrb r1, [r5, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	beq _0807046E
 	ldrb r5, [r5, #2]
 	lsls r0, r5, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x1a
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x7e
 	b _08070470
 _08070442:
@@ -191245,7 +191245,7 @@ _08070456:
 	lsls r3, r5, #0x10
 	adds r0, r4, #0
 	movs r2, #1
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 _0807046E:
 	movs r0, #0
 _08070470:
@@ -191383,7 +191383,7 @@ _08070560:
 	adds r1, r6, #0
 	adds r2, r4, #0
 	movs r3, #0
-	bl sub_080439B4
+	bl gEngineEffectSpecialSummonDestroy_080439B4
 _08070570:
 	movs r0, #0
 	add sp, #4
@@ -191434,7 +191434,7 @@ _080705AC:
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
 	subs r0, r4, r0
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	beq _08070674
 	ldrb r1, [r6, #2]
@@ -191501,7 +191501,7 @@ _08070624:
 	adds r0, r4, #0
 	movs r2, #1
 	movs r3, #0x20
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 	movs r0, #0x7d
 	b _08070676
 	.align 2, 0
@@ -191570,7 +191570,7 @@ _080706D2:
 _080706DE:
 	adds r0, r6, #0
 	mov r1, r8
-	bl sub_08047C10
+	bl gEngineEffectBoostATKBoostDEF_08047C10
 _080706E6:
 	movs r0, #0
 	pop {r3}
@@ -191758,7 +191758,7 @@ _0807080E:
 	adds r1, r6, #0
 	ldr r2, [sp, #8]
 	ldr r3, [sp, #0xc]
-	bl sub_0802F9FC
+	bl gEngineEffectDestroyDamage_0802F9FC
 	cmp r0, #0
 	beq _080708AA
 	ldr r1, _08070890 @ =gUnk_0201C520
@@ -191798,7 +191798,7 @@ _08070894:
 	ldr r2, [sp, #4]
 	lsls r1, r2, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_080433EC
+	bl gEngineEffectDestroyEquip_080433EC
 	movs r0, #0x7f
 	b _080708EE
 _080708AA:
@@ -191833,7 +191833,7 @@ _080708D6:
 	ldrh r0, [r0, #0xa]
 	orrs r1, r0
 	mov r0, r8
-	bl sub_080478FC
+	bl gEngineEffectBoostATKBoostDEF_080478FC
 	bl sub_0804A870
 _080708EC:
 	movs r0, #0
@@ -192019,13 +192019,13 @@ _08070A44: .4byte gUnk_0201E2A0
 _08070A48:
 	lsrs r0, r2, #0x1f
 	movs r1, #0x6d
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldrb r1, [r7, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r7]
 	ldr r2, _08070A64 @ =sub_08090624
-	bl sub_08096A4C
+	bl gEngineEffectSpecialSummonTribute_08096A4C
 	movs r0, #0x7f
 	b _08070A9C
 	.align 2, 0
@@ -192056,7 +192056,7 @@ _08070A90:
 	adds r1, r4, #0
 	adds r2, r5, #0
 _08070A96:
-	bl sub_08047970
+	bl gEngineEffectBoostATKBoostDEF_08047970
 _08070A9A:
 	movs r0, #0
 _08070A9C:
@@ -192119,7 +192119,7 @@ _08070AEC:
 	bl sub_08090690
 	adds r1, r0, #0
 	adds r0, r4, #0
-	bl sub_080478FC
+	bl gEngineEffectBoostATKBoostDEF_080478FC
 _08070B04:
 	movs r0, #0
 _08070B06:
@@ -192195,7 +192195,7 @@ _08070B42:
 	adds r1, r4, #0
 	adds r2, r5, #0
 	movs r3, #0
-	bl sub_080436E8
+	bl gEngineEffectSpecialSummonDestroy_080436E8
 	adds r0, r4, #0
 	adds r1, r7, #0
 	bl sub_08048704
@@ -192213,7 +192213,7 @@ _08070B42:
 	adds r0, r4, #0
 	adds r1, r5, #0
 	adds r2, r7, #0
-	bl sub_0805B0CC
+	bl gEngineEffectSendToGYGraveyard_0805B0CC
 	cmp r0, #0
 	beq _08070C10
 	mov r2, r8
@@ -192258,7 +192258,7 @@ _08070C14:
 	adds r1, r4, #0
 	adds r2, r5, #0
 	movs r3, #0
-	bl sub_080436E8
+	bl gEngineEffectSpecialSummonDestroy_080436E8
 	b _08070C3A
 _08070C22:
 	adds r0, r6, #0
@@ -192270,7 +192270,7 @@ _08070C22:
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x18
 	adds r0, r6, #0
-	bl sub_08047990
+	bl gEngineEffectBoostATKDestroy_08047990
 _08070C3A:
 	movs r0, #0x64
 	b _08070C90
@@ -192310,7 +192310,7 @@ _08070C3E:
 	lsrs r1, r7, #0x1f
 	lsrs r2, r5, #0x1b
 	adds r0, r6, #0
-	bl sub_08047C20
+	bl gEngineEffectBoostATKBoostDEF_08047C20
 	adds r0, r4, #0
 	bl sub_0804A540
 _08070C8E:
@@ -192472,7 +192472,7 @@ _08070D94:
 	adds r0, r5, #0
 	adds r1, r2, #0
 	adds r2, r7, #0
-	bl sub_080439B4
+	bl gEngineEffectSpecialSummonDestroy_080439B4
 	b _08070DD0
 	.align 2, 0
 _08070DA4: .4byte 0x00000868
@@ -192494,7 +192494,7 @@ _08070DAC:
 	adds r0, r5, #0
 	adds r2, r7, #0
 	movs r3, #2
-	bl sub_080436E8
+	bl gEngineEffectSpecialSummonDestroy_080436E8
 _08070DD0:
 	ldrb r0, [r5, #2]
 	lsls r1, r0, #0x1f
@@ -192508,7 +192508,7 @@ _08070DD0:
 	str r0, [sp, #4]
 	adds r0, r5, #0
 	adds r2, r7, #0
-	bl sub_0804308C
+	bl gEngineEffectSpecialSummonDestroy_0804308C
 _08070DEC:
 	adds r6, #0x14
 	adds r7, #1
@@ -192577,7 +192577,7 @@ _08070E58:
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	beq _08070EE4
 	ldr r1, [r5]
@@ -192614,7 +192614,7 @@ _08070E58:
 	ldrh r4, [r4]
 	lsls r3, r4, #0x10
 	movs r2, #1
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 _08070EC2:
 	ldr r1, _08070EE0 @ =gUnk_0201B290
 	ldr r0, _08070ED4 @ =0x000004A4
@@ -192675,7 +192675,7 @@ _08070F18:
 	adds r4, r0, #0
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_080478FC
+	bl gEngineEffectBoostATKBoostDEF_080478FC
 	ands r4, r0
 	adds r0, r4, #0
 	bl sub_08030208
@@ -192789,7 +192789,7 @@ _08070FF4:
 _0807100C:
 	lsls r2, r2, #2
 	adds r0, r5, #0
-	bl sub_080487B0
+	bl gEngineEffectDiscardDamage_080487B0
 	b _0807103E
 	.align 2, 0
 _08071018: .4byte 0x000004A4
@@ -192809,7 +192809,7 @@ _0807101C:
 	movs r0, #0x64
 	muls r2, r0, r2
 	adds r0, r5, #0
-	bl sub_080487B0
+	bl gEngineEffectDiscardDamage_080487B0
 _0807103E:
 	movs r0, #0
 _08071040:
@@ -192862,7 +192862,7 @@ _08071070:
 	lsrs r0, r0, #0x1f
 	subs r0, r5, r0
 	movs r1, #1
-	bl sub_0804A4CC
+	bl gEngineEffectGainLPStandbyPhase_0804A4CC
 	movs r0, #0x6e
 	b _08071166
 _080710A6:
@@ -192946,7 +192946,7 @@ _08071144:
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x11
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x64
 	b _08071166
 _08071154:
@@ -192956,7 +192956,7 @@ _08071154:
 	movs r0, #1
 	subs r0, r0, r1
 	movs r1, #0
-	bl sub_0804A4CC
+	bl gEngineEffectGainLPStandbyPhase_0804A4CC
 _08071164:
 	movs r0, #0
 _08071166:
@@ -192986,7 +192986,7 @@ gCardEffectFusionSummonNegate_08071170: @ 0x08071170
 	ldrh r3, [r6, #4]
 	lsls r2, r3, #0x11
 	lsrs r2, r2, #0x17
-	bl sub_08044DCC
+	bl gEngineEffectDestroyBoostATK_08044DCC
 	ldrb r2, [r6, #2]
 	lsls r7, r2, #0x1a
 	lsrs r0, r7, #0x1b
@@ -193075,7 +193075,7 @@ _0807121C:
 	adds r0, r4, #0
 	adds r1, r6, #0
 	adds r2, r5, #0
-	bl sub_0804308C
+	bl gEngineEffectSpecialSummonDestroy_0804308C
 _08071242:
 	adds r5, #1
 	cmp r5, #4
@@ -193089,8 +193089,8 @@ _08071242:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_08071258
-sub_08071258: @ 0x08071258
+	thumb_func_start gEngineEffectDamage_08071258
+gEngineEffectDamage_08071258: @ 0x08071258
 	push {lr}
 	adds r3, r0, #0
 	adds r2, r1, #0
@@ -193122,14 +193122,14 @@ gCardEffectGainLP_08071284: @ 0x08071284
 	ldrb r1, [r3, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	ldr r2, _0807129C @ =sub_08071258
+	ldr r2, _0807129C @ =gEngineEffectDamage_08071258
 	movs r1, #0xb
 	bl sub_08030048
 	movs r0, #0
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0807129C: .4byte sub_08071258
+_0807129C: .4byte gEngineEffectDamage_08071258
 
 	@ Freed the Matchless General
 	thumb_func_start gCardEffectSearchNegate_080712A0
@@ -193432,14 +193432,14 @@ gCardEffectNegateDiscard_080714AC: @ 0x080714AC
 	ldrh r3, [r4, #4]
 	lsls r2, r3, #0x11
 	lsrs r2, r2, #0x17
-	bl sub_08044DCC
+	bl gEngineEffectDestroyBoostATK_08044DCC
 	ldrb r2, [r4, #2]
 	lsls r1, r2, #0x1f
 	lsrs r1, r1, #0x1f
 	lsls r2, r2, #0x1a
 	lsrs r2, r2, #0x1b
 	adds r0, r5, #0
-	bl sub_08047970
+	bl gEngineEffectBoostATKBoostDEF_08047970
 _080714E4:
 	movs r0, #0
 	pop {r4, r5}
@@ -193476,13 +193476,13 @@ _0807150C:
 	lsls r0, r3, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x6e
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r4]
 	ldr r2, _08071538 @ =sub_08090624
-	bl sub_08096A4C
+	bl gEngineEffectSpecialSummonTribute_08096A4C
 	movs r0, #0x7f
 	b _08071584
 	.align 2, 0
@@ -193503,7 +193503,7 @@ _0807153C:
 	ldr r0, [r0]
 	adds r2, r2, r0
 	adds r0, r4, #0
-	bl sub_08047B90
+	bl gEngineEffectBoostATKBoostDEF_08047B90
 	cmp r0, #0
 	beq _08071582
 	movs r0, #0x7e
@@ -193575,14 +193575,14 @@ gCardEffectDestroySpellTrapDamage_080715AC: @ 0x080715AC
 	adds r0, r5, #0
 	adds r1, r4, #0
 	adds r2, r6, #0
-	bl sub_08047990
+	bl gEngineEffectBoostATKDestroy_08047990
 	cmp r0, #0
 	beq _080715F4
 	movs r2, #0xfa
 	lsls r2, r2, #1
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_080487B0
+	bl gEngineEffectDiscardDamage_080487B0
 _080715F4:
 	bl sub_0804A870
 _080715F8:
@@ -193621,7 +193621,7 @@ _08071622:
 	lsls r0, r3, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #1
-	bl sub_080495D0
+	bl gEngineEffectDrawSearch_080495D0
 	ldr r0, [r4]
 	subs r0, #1
 	str r0, [r4]
@@ -193821,14 +193821,14 @@ _080717C4:
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #1
-	bl sub_080495D0
+	bl gEngineEffectDrawSearch_080495D0
 	ldrb r4, [r4, #2]
 	lsls r1, r4, #0x1f
 	lsrs r1, r1, #0x1f
 	movs r0, #1
 	subs r0, r0, r1
 	movs r1, #1
-	bl sub_080495D0
+	bl gEngineEffectDrawSearch_080495D0
 	bl sub_0804A870
 _080717E8:
 	movs r0, #0
@@ -193968,7 +193968,7 @@ gCardEffectDestroyAllDamage_080718D0: @ 0x080718D0
 	bl sub_08090690
 	adds r1, r0, #0
 	adds r0, r4, #0
-	bl sub_080478FC
+	bl gEngineEffectBoostATKBoostDEF_080478FC
 	cmp r0, #0
 	beq _080718FE
 	ldrb r1, [r4, #2]
@@ -193979,7 +193979,7 @@ gCardEffectDestroyAllDamage_080718D0: @ 0x080718D0
 	movs r2, #0xfa
 	lsls r2, r2, #2
 	adds r0, r4, #0
-	bl sub_080487B0
+	bl gEngineEffectDiscardDamage_080487B0
 _080718FE:
 	bl sub_0804A870
 	movs r0, #0
@@ -194021,7 +194021,7 @@ _0807192C:
 	ldrb r3, [r4, #2]
 	lsls r0, r3, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	beq _080719F2
 	ldrb r1, [r4, #2]
@@ -194065,7 +194065,7 @@ _0807199C: .4byte 0x00001DA8
 _080719A0: .4byte gUnk_0201E2A0
 _080719A4:
 	movs r0, #0x2f
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 _080719AA:
 	movs r0, #0x7e
 	b _080719F4
@@ -194100,7 +194100,7 @@ _080719DC:
 	adds r0, r4, #0
 	movs r2, #1
 	movs r3, #0x20
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 _080719F2:
 	movs r0, #0
 _080719F4:
@@ -194118,7 +194118,7 @@ gCardEffectSpecialSummonPreventAttack_080719FC: @ 0x080719FC
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	beq _08071A88
 	ldrb r1, [r4, #2]
@@ -194218,7 +194218,7 @@ _08071AD4:
 	movs r1, #1
 	rsbs r1, r1, #0
 	adds r0, r4, #0
-	bl sub_08047C68
+	bl gEngineEffectBoostATKBoostDEF_08047C68
 	movs r0, #0xfc
 	lsls r0, r0, #4
 	ldrh r1, [r4, #2]
@@ -194334,7 +194334,7 @@ _08071BC0:
 	ldr r0, [r5]
 	eors r0, r4
 	movs r1, #5
-	bl sub_080495D0
+	bl gEngineEffectDrawSearch_080495D0
 	adds r4, #1
 	cmp r4, #1
 	ble _08071BC0
@@ -194466,7 +194466,7 @@ _08071CB0:
 	movs r3, #0xf
 	str r3, [sp, #4]
 	movs r3, #0
-	bl sub_080933DC
+	bl gEngineEffectSpecialSummon_080933DC
 _08071CC8:
 	movs r0, #0x7e
 	b _08071D4C
@@ -194611,7 +194611,7 @@ gCardEffectSpecialSummonReturnToHand_08071D64: @ 0x08071D64
 	lsrs r1, r5, #0x1f
 	lsrs r2, r7, #0x1b
 	adds r0, r6, #0
-	bl sub_08047B90
+	bl gEngineEffectBoostATKBoostDEF_08047B90
 	b _08071E90
 	.align 2, 0
 _08071DD0: .4byte 0x00000868
@@ -194777,7 +194777,7 @@ gCardEffectSpecialSummonBoostATK_08071E98: @ 0x08071E98
 	lsls r2, r2, #0x1a
 	lsrs r2, r2, #0x1b
 	adds r0, r7, #0
-	bl sub_08047C20
+	bl gEngineEffectBoostATKBoostDEF_08047C20
 	movs r0, #0x7f
 	b _08071F50
 	.align 2, 0
@@ -194801,7 +194801,7 @@ _08071F24:
 	adds r0, r4, #0
 	movs r2, #1
 	movs r3, #0
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 _08071F4E:
 	movs r0, #0
 _08071F50:
@@ -194957,7 +194957,7 @@ _080720AC:
 	movs r0, #1
 	subs r0, r0, r1
 	movs r1, #1
-	bl sub_0804A4CC
+	bl gEngineEffectGainLPStandbyPhase_0804A4CC
 	movs r0, #0x63
 	b _080720F6
 _080720C0:
@@ -194965,7 +194965,7 @@ _080720C0:
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x11
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x62
 	b _080720F6
 _080720D0:
@@ -194975,7 +194975,7 @@ _080720D0:
 	movs r0, #1
 	subs r0, r0, r1
 	movs r1, #0
-	bl sub_0804A4CC
+	bl gEngineEffectGainLPStandbyPhase_0804A4CC
 	b _080720F4
 _080720E2:
 	ldrb r1, [r4, #2]
@@ -194997,8 +194997,8 @@ _080720F6:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_08072104
-sub_08072104: @ 0x08072104
+	thumb_func_start gEngineEffectSpecialSummonDestroy_08072104
+gEngineEffectSpecialSummonDestroy_08072104: @ 0x08072104
 	push {r4, r5, r6, lr}
 	sub sp, #8
 	adds r4, r0, #0
@@ -195028,7 +195028,7 @@ sub_08072104: @ 0x08072104
 	adds r0, r4, #0
 	adds r1, r6, #0
 	adds r2, r5, #0
-	bl sub_0804308C
+	bl gEngineEffectSpecialSummonDestroy_0804308C
 _08072148:
 	movs r0, #0
 	add sp, #8
@@ -195117,7 +195117,7 @@ _080721B8:
 	lsls r2, r2, #8
 	orrs r1, r2
 	adds r2, r4, #0
-	bl sub_080432A8
+	bl gEngineEffectDestroyEquip_080432A8
 	b _08072204
 _080721FC:
 	movs r0, #8
@@ -195140,7 +195140,7 @@ gCardEffectSpecialSummonBanish_0807220C: @ 0x0807220C
 	adds r1, r0, #0
 	adds r0, r4, #0
 	movs r2, #2
-	bl sub_08047B80
+	bl gEngineEffectBoostATKBoostDEF_08047B80
 	movs r0, #0
 	pop {r4}
 	pop {r1}
@@ -195233,7 +195233,7 @@ _080722B8:
 	str r4, [sp]
 	movs r4, #0xf
 	str r4, [sp, #4]
-	bl sub_080933DC
+	bl gEngineEffectSpecialSummon_080933DC
 _080722D2:
 	movs r0, #0x7e
 	b _080723C0
@@ -195351,7 +195351,7 @@ _080723AA:
 	movs r2, #0xaf
 	lsls r2, r2, #2
 	adds r0, r7, #0
-	bl sub_080487B0
+	bl gEngineEffectDiscardDamage_080487B0
 _080723BE:
 	movs r0, #0
 _080723C0:
@@ -195452,7 +195452,7 @@ _08072478: .4byte gUnk_0201E2A0
 _0807247C: .4byte gUnk_0201C4E0
 _08072480:
 	movs r0, #0x38
-	bl sub_080934E4
+	bl gEngineEffectSpecialSummon_080934E4
 _08072486:
 	movs r0, #0x7f
 	b _0807253A
@@ -195612,13 +195612,13 @@ _080725A6:
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x7c
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldrb r2, [r4, #2]
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r4]
 	ldr r2, _080725E4 @ =sub_08090624
-	bl sub_08096A4C
+	bl gEngineEffectSpecialSummonTribute_08096A4C
 	movs r0, #0x7f
 	b _080726E8
 	.align 2, 0
@@ -195691,7 +195691,7 @@ _0807264C:
 	mvns r1, r1
 _0807266A:
 	adds r0, r4, #0
-	bl sub_08047EF0
+	bl gEngineEffectBoostATKBoostDEF_08047EF0
 	movs r0, #0x7c
 	b _080726E8
 	.align 2, 0
@@ -195851,7 +195851,7 @@ _08072794:
 	str r4, [sp]
 	movs r4, #0xf
 	str r4, [sp, #4]
-	bl sub_080933DC
+	bl gEngineEffectSpecialSummon_080933DC
 _080727AE:
 	movs r0, #0x7f
 	b _08072866
@@ -195921,7 +195921,7 @@ _08072838:
 	lsls r0, r3, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0xd
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x7c
 	b _08072866
 _08072848:
@@ -195962,7 +195962,7 @@ gCardEffectDestroyChangePosition_08072870: @ 0x08072870
 	ldr r1, [r2, #4]
 	ldr r2, [r2, #0x20]
 	adds r0, r3, #0
-	bl sub_08047970
+	bl gEngineEffectBoostATKBoostDEF_08047970
 _08072886:
 	movs r0, #0
 	pop {r1}
@@ -196053,7 +196053,7 @@ gCardEffectReturnToHandChangePosition_080728F0: @ 0x080728F0
 	lsls r2, r2, #4
 	movs r1, #0x1f
 	lsls r1, r2
-	bl sub_08047C10
+	bl gEngineEffectBoostATKBoostDEF_08047C10
 	movs r0, #0
 	pop {r1}
 	bx r1
@@ -196161,7 +196161,7 @@ _080729C4:
 _080729C6:
 	adds r0, r4, #0
 	adds r1, r3, #0
-	bl sub_080487B0
+	bl gEngineEffectDiscardDamage_080487B0
 _080729CE:
 	movs r0, #0
 _080729D0:
@@ -196332,7 +196332,7 @@ gCardEffectSpecialSummonBanish_08072AAC: @ 0x08072AAC
 	lsrs r0, r0, #0x1f
 	movs r2, #1
 	movs r3, #0x20
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 _08072B0C:
 	movs r0, #0x7f
 	b _08072B76
@@ -196433,7 +196433,7 @@ gCardEffectChangePosition_08072B7C: @ 0x08072B7C
 	adds r1, r4, #0
 	adds r2, r3, #0
 	movs r3, #1
-	bl sub_080439B4
+	bl gEngineEffectSpecialSummonDestroy_080439B4
 	b _08072BF0
 	.align 2, 0
 _08072BDC: .4byte 0x00000868
@@ -196443,7 +196443,7 @@ _08072BE4:
 	adds r1, r4, #0
 	adds r2, r3, #0
 	movs r3, #1
-	bl sub_080436E8
+	bl gEngineEffectSpecialSummonDestroy_080436E8
 _08072BF0:
 	movs r0, #0
 	add sp, #4
@@ -196526,7 +196526,7 @@ gCardEffectDrawDiscard_08072BFC: @ 0x08072BFC
 	beq _08072CD4
 	lsrs r0, r6, #0x1f
 	adds r1, r4, #0
-	bl sub_080495D0
+	bl gEngineEffectDrawSearch_080495D0
 	cmp r0, #0
 	beq _08072CD4
 	ldrb r1, [r5, #2]
@@ -196702,7 +196702,7 @@ _08072DC4:
 	lsls r0, r7, #0x1f
 	lsrs r0, r0, #0x1f
 	mov r1, sp
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x7d
 	b _08072EA2
 	.align 2, 0
@@ -196790,7 +196790,7 @@ _08072E8E:
 	ldr r1, [r0]
 	ldr r2, [r0, #0x1c]
 	adds r0, r7, #0
-	bl sub_08047B90
+	bl gEngineEffectBoostATKBoostDEF_08047B90
 _08072EA0:
 	movs r0, #0
 _08072EA2:
@@ -196819,7 +196819,7 @@ gCardEffectSpecialSummonDestroy_08072EB4: @ 0x08072EB4
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	bne _08072ECA
 	b _08072FC2
@@ -197041,7 +197041,7 @@ _08073044:
 	lsls r0, r5, #0x1f
 	lsrs r0, r0, #0x1f
 	mov r1, sp
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x7e
 	b _080730D0
 	.align 2, 0
@@ -197089,7 +197089,7 @@ _080730BC:
 	ldrh r0, [r0]
 	lsrs r2, r0, #8
 	adds r0, r5, #0
-	bl sub_08047970
+	bl gEngineEffectBoostATKBoostDEF_08047970
 _080730CE:
 	movs r0, #0
 _080730D0:
@@ -197146,7 +197146,7 @@ _08073124:
 	ldrh r2, [r2]
 	subs r2, #1
 	adds r0, r3, #0
-	bl sub_08047970
+	bl gEngineEffectBoostATKBoostDEF_08047970
 _08073138:
 	movs r0, #0
 _0807313A:
@@ -197280,7 +197280,7 @@ _0807326C:
 	movs r0, #1
 	subs r0, r0, r1
 	movs r1, #1
-	bl sub_0804A4CC
+	bl gEngineEffectGainLPStandbyPhase_0804A4CC
 	movs r0, #0x63
 	b _080732A2
 _08073280:
@@ -197288,7 +197288,7 @@ _08073280:
 	lsls r0, r7, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x11
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x62
 	b _080732A2
 _08073290:
@@ -197298,7 +197298,7 @@ _08073290:
 	movs r0, #1
 	subs r0, r0, r1
 	movs r1, #0
-	bl sub_0804A4CC
+	bl gEngineEffectGainLPStandbyPhase_0804A4CC
 _080732A0:
 	movs r0, #0
 _080732A2:
@@ -197320,7 +197320,7 @@ gCardEffectDraw_080732A8: @ 0x080732A8
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #2
-	bl sub_080495D0
+	bl gEngineEffectDrawSearch_080495D0
 	cmp r0, #0
 	beq _080732EA
 	ldrb r1, [r4, #2]
@@ -197408,7 +197408,7 @@ gCardEffectDirectAttack_080732FC: @ 0x080732FC
 	adds r0, r6, #0
 	adds r1, r7, #0
 	adds r2, r4, #0
-	bl sub_0804308C
+	bl gEngineEffectSpecialSummonDestroy_0804308C
 _0807336E:
 	movs r0, #0
 	add sp, #8
@@ -197451,7 +197451,7 @@ _080733B0:
 	lsrs r0, r0, #0x1f
 	movs r5, #1
 	subs r0, r5, r0
-	bl sub_080316B8
+	bl gEngineEffectBoostATKBoostDEF_080316B8
 	adds r3, r0, #0
 	cmp r3, #0
 	bge _080733D8
@@ -197459,7 +197459,7 @@ _080733B0:
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0xd
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x78
 	b _08073422
 _080733D8:
@@ -197476,7 +197476,7 @@ _080733D8:
 	adds r1, r1, r2
 	lsls r2, r3, #2
 	adds r1, r1, r2
-	bl sub_08044A28
+	bl gEngineEffectSearchSpecialSummon_08044A28
 	movs r0, #0x64
 	b _08073422
 	.align 2, 0
@@ -197590,7 +197590,7 @@ _08073478:
 	adds r0, r5, #0
 	adds r1, r6, #0
 	adds r2, r4, #0
-	bl sub_08047B90
+	bl gEngineEffectBoostATKBoostDEF_08047B90
 	movs r0, #0x7f
 	b _08073554
 	.align 2, 0
@@ -197649,7 +197649,7 @@ _0807352C:
 	ldrh r5, [r5]
 	lsls r3, r5, #0x10
 	movs r2, #1
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 _08073552:
 	movs r0, #0
 _08073554:
@@ -197753,7 +197753,7 @@ _08073636:
 	lsls r0, r5, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0xd
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x6e
 	b _08073758
 _0807365C:
@@ -197761,7 +197761,7 @@ _0807365C:
 	ldrb r2, [r5, #2]
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r4, r0
 	bge _08073670
 	ldrh r0, [r5, #0xa]
@@ -197770,14 +197770,14 @@ _08073670:
 	ldrb r1, [r5, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 _0807367A:
 	strh r0, [r5, #0xa]
 	ldrb r5, [r5, #2]
 	lsls r0, r5, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _0807368C @ =0x0000011D
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x7e
 	b _08073758
 	.align 2, 0
@@ -197862,7 +197862,7 @@ _08073704:
 	lsls r3, r2, #0x10
 	adds r0, r4, #0
 	movs r2, #1
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 	ldrh r0, [r5, #8]
 	adds r0, #1
 	strh r0, [r5, #8]
@@ -197970,7 +197970,7 @@ _080737E8:
 	adds r1, r6, #0
 	adds r2, r5, #0
 	movs r3, #0
-	bl sub_080439B4
+	bl gEngineEffectSpecialSummonDestroy_080439B4
 	b _08073810
 _080737F8:
 	ldrh r3, [r4]
@@ -197983,7 +197983,7 @@ _080737F8:
 	adds r0, r4, #0
 	adds r1, r6, #0
 	adds r2, r5, #0
-	bl sub_0804308C
+	bl gEngineEffectSpecialSummonDestroy_0804308C
 _08073810:
 	movs r0, #0
 	add sp, #8
@@ -198099,7 +198099,7 @@ _08073900:
 	lsls r0, r5, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0xd
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x78
 	b _08073A56
 _08073922:
@@ -198107,7 +198107,7 @@ _08073922:
 	lsls r0, r5, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x5e
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x7f
 	b _08073A56
 _08073932:
@@ -198138,7 +198138,7 @@ _08073946:
 	b _08073A56
 _08073968:
 	ldr r0, _08073990 @ =0x0000159D (Necrovalley)
-	bl sub_08032CA4
+	bl gEngineEffectSpecialSummonBoostATK_08032CA4
 	adds r1, r0, #0
 	cmp r1, #0
 	beq _0807399C
@@ -198153,7 +198153,7 @@ _08073968:
 	cmp r1, #1
 	beq _0807399C
 	ldr r0, _08073998 @ =0x00000131
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 	b _080739A6
 	.align 2, 0
 _08073990: .4byte 0x0000159D @ Necrovalley
@@ -198184,7 +198184,7 @@ _080739B0:
 	bl sub_080942DC
 	adds r1, r0, #0
 	adds r0, r4, #0
-	bl sub_08044A28
+	bl gEngineEffectSearchSpecialSummon_08044A28
 	movs r0, #0x64
 	b _08073A56
 	.align 2, 0
@@ -198289,7 +198289,7 @@ _08073A82:
 	lsls r1, r1, #0x18
 	lsrs r1, r1, #0x18
 	adds r0, r4, #0
-	bl sub_08047970
+	bl gEngineEffectBoostATKBoostDEF_08047970
 _08073AA2:
 	movs r0, #0
 	pop {r4}
@@ -198469,7 +198469,7 @@ _08073C0C:
 	lsls r0, r5, #0x1f
 	lsrs r0, r0, #0x1f
 	mov r1, sp
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x7e
 	b _08073D76
 	.align 2, 0
@@ -198527,7 +198527,7 @@ _08073CAA:
 	cmp r0, #0
 	beq _08073D30
 	adds r0, r6, #0
-	bl sub_0804BA90
+	bl gEngineEffectSpecialSummon_0804BA90
 	cmp r0, #0
 	beq _08073D30
 	adds r0, r6, #0
@@ -198541,7 +198541,7 @@ _08073CAA:
 	ldrb r1, [r5, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	beq _08073D24
 	ldrb r2, [r5, #2]
@@ -198562,7 +198562,7 @@ _08073CAA:
 	adds r1, r7, #0
 	movs r2, #1
 	movs r3, #0
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 	b _08073D3E
 	.align 2, 0
 _08073D14: .4byte gUnk_0201C4E0
@@ -198593,7 +198593,7 @@ _08073D48:
 	lsls r0, r5, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0xd
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x63
 	b _08073D76
 _08073D58:
@@ -198664,7 +198664,7 @@ _08073DCC:
 	lsls r0, r6, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x5e
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x7f
 	b _08073E80
 _08073DDC:
@@ -198807,7 +198807,7 @@ _08073EDC:
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #1
-	bl sub_0804A4CC
+	bl gEngineEffectGainLPStandbyPhase_0804A4CC
 	mov r3, sb
 	ldrb r3, [r3, #2]
 	lsls r1, r3, #0x1f
@@ -198815,7 +198815,7 @@ _08073EDC:
 	movs r0, #1
 	subs r0, r0, r1
 	movs r1, #1
-	bl sub_0804A4CC
+	bl gEngineEffectGainLPStandbyPhase_0804A4CC
 	ldr r0, _08073F0C @ =0x000004A4
 	adds r1, r4, r0
 	movs r0, #0
@@ -198906,7 +198906,7 @@ _08073FAC:
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0
-	bl sub_0804A4CC
+	bl gEngineEffectGainLPStandbyPhase_0804A4CC
 	mov r2, sb
 	ldrb r2, [r2, #2]
 	lsls r1, r2, #0x1f
@@ -198914,7 +198914,7 @@ _08073FAC:
 	movs r0, #1
 	subs r0, r0, r1
 	movs r1, #0
-	bl sub_0804A4CC
+	bl gEngineEffectGainLPStandbyPhase_0804A4CC
 _08073FCC:
 	movs r0, #0
 _08073FCE:
@@ -199028,7 +199028,7 @@ _080740C4:
 	str r4, [sp]
 	movs r4, #0xf
 	str r4, [sp, #4]
-	bl sub_080933DC
+	bl gEngineEffectSpecialSummon_080933DC
 _080740DE:
 	movs r0, #0x7f
 	b _080741F0
@@ -199311,7 +199311,7 @@ _080742FA:
 	adds r0, r5, r2
 	ldr r1, [r0]
 	adds r0, r4, #0
-	bl sub_080495D0
+	bl gEngineEffectDrawSearch_080495D0
 	movs r0, #0x7c
 	b _08074312
 	.align 2, 0
@@ -199440,7 +199440,7 @@ _080743C4:
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_08033BF4
+	bl gEngineEffectSpecialSummon_08033BF4
 	ldr r5, _08074434 @ =0x000004A4
 	add r5, sl
 	str r0, [r5]
@@ -199461,7 +199461,7 @@ _080743C4:
 	adds r3, r1, #0
 	str r0, [sp]
 	adds r0, r4, #0
-	bl sub_08047F1C
+	bl gEngineEffectBoostATKBoostDEF_08047F1C
 	ldrb r4, [r4, #2]
 	lsls r1, r4, #0x1f
 	lsrs r0, r1, #0x1f
@@ -199483,7 +199483,7 @@ _08074430: .4byte gUnk_0201C510
 _08074434: .4byte 0x000004A4
 _08074438:
 	lsrs r0, r6, #0x1f
-	bl sub_08033634
+	bl gEngineEffectSpecialSummon_08033634
 	ldr r5, _08074484 @ =0x000004A4
 	add r5, sl
 	str r0, [r5]
@@ -199526,7 +199526,7 @@ _08074488:
 	lsrs r1, r1, #0x1b
 	movs r2, #0
 	movs r3, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 	b _08074424
 _0807449C:
 	ldrb r1, [r4, #2]
@@ -199719,7 +199719,7 @@ _080745C8:
 	ldrb r1, [r5, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_08033634
+	bl gEngineEffectSpecialSummon_08033634
 	adds r2, r0, #0
 	ldr r0, _08074644 @ =0x000004A4
 	add r0, sb
@@ -199764,7 +199764,7 @@ _08074666:
 	ldr r1, [r1]
 	ldrh r3, [r5]
 	movs r2, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 	b _080746CE
 	.align 2, 0
 _08074688: .4byte 0x000004A4
@@ -199981,7 +199981,7 @@ _08074800:
 	str r0, [sp]
 	adds r0, r5, #0
 	movs r3, #0
-	bl sub_080439B4
+	bl gEngineEffectSpecialSummonDestroy_080439B4
 	movs r0, #0
 	b _0807482A
 _08074824:
@@ -200236,7 +200236,7 @@ _08074A1C:
 	lsls r1, r4
 	adds r2, r2, r1
 	movs r1, #1
-	bl sub_08093514
+	bl gEngineEffectSpecialSummon_08093514
 	b _08074AE8
 	.align 2, 0
 _08074A48: .4byte gUnk_0201C4E0
@@ -200277,13 +200277,13 @@ _08074A7A:
 	lsls r0, r3, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x6d
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r4]
 	adds r2, r5, #0
-	bl sub_08096A4C
+	bl gEngineEffectSpecialSummonTribute_08096A4C
 	movs r0, #0x7d
 	b _08074AEE
 	.align 2, 0
@@ -200305,7 +200305,7 @@ _08074AB4:
 	ldr r0, [r0]
 	adds r2, r2, r0
 	adds r0, r4, #0
-	bl sub_08047970
+	bl gEngineEffectBoostATKBoostDEF_08047970
 	b _08074AEC
 	.align 2, 0
 _08074ADC: .4byte gUnk_0201C4E0
@@ -200431,7 +200431,7 @@ _08074B88:
 	ldrb r4, [r4, #2]
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_08033634
+	bl gEngineEffectSpecialSummon_08033634
 	ldr r2, _08074C00 @ =0x000004A4
 	adds r1, r7, r2
 	str r0, [r1]
@@ -200448,7 +200448,7 @@ _08074B88:
 	adds r0, r6, #0
 	movs r2, #1
 	movs r3, #0
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 	movs r0, #0x7e
 	b _08074C74
 	.align 2, 0
@@ -200557,7 +200557,7 @@ _08074CC4:
 	bl sub_08090690
 	adds r1, r0, #0
 	adds r0, r5, #0
-	bl sub_080478FC
+	bl gEngineEffectBoostATKBoostDEF_080478FC
 	movs r0, #0
 	pop {r4, r5}
 	pop {r1}
@@ -200628,7 +200628,7 @@ _08074D50:
 	ldrh r0, [r0]
 	lsrs r2, r0, #8
 	adds r0, r5, #0
-	bl sub_08047970
+	bl gEngineEffectBoostATKBoostDEF_08047970
 	movs r0, #0x7f
 	b _08074D72
 	.align 2, 0
@@ -200744,7 +200744,7 @@ _08074E22:
 	ldrb r3, [r5, #2]
 	lsls r0, r3, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_08033BF4
+	bl gEngineEffectSpecialSummon_08033BF4
 	ldr r1, _08074E94 @ =0x000004A4
 	adds r4, r4, r1
 	str r0, [r4]
@@ -200757,7 +200757,7 @@ _08074E4C:
 	adds r1, r6, #0
 	adds r2, r7, #0
 	adds r3, r6, #0
-	bl sub_08047F1C
+	bl gEngineEffectBoostATKBoostDEF_08047F1C
 	ldrb r2, [r5, #2]
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
@@ -200817,7 +200817,7 @@ _08074E9C:
 	ldrb r3, [r5, #2]
 	lsls r0, r3, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_08033634
+	bl gEngineEffectSpecialSummon_08033634
 	ldr r2, _08074F2C @ =0x000004A4
 	adds r1, r7, r2
 	str r0, [r1]
@@ -200915,7 +200915,7 @@ _08074F80:
 	adds r0, r5, #0
 	adds r1, r6, #0
 	adds r2, r4, #0
-	bl sub_0804308C
+	bl gEngineEffectSpecialSummonDestroy_0804308C
 _08074FA2:
 	adds r4, #1
 	cmp r4, #4
@@ -200959,7 +200959,7 @@ gCardEffectDestroyDamage_08074FB8: @ 0x08074FB8
 	adds r0, r4, #0
 	adds r1, r5, #0
 	adds r2, r6, #0
-	bl sub_0804308C
+	bl gEngineEffectSpecialSummonDestroy_0804308C
 	ldrh r1, [r4]
 	adds r0, r5, #0
 	movs r2, #1
@@ -201081,7 +201081,7 @@ gCardEffectSendToGYDestroySpellTrap_080750C0: @ 0x080750C0
 	beq _080750D4
 	b _080750E6
 _080750CE:
-	bl sub_0806460C
+	bl gEngineEffectDestroyBoostATK_0806460C
 	b _080750E6
 _080750D4:
 	ldrb r0, [r0, #2]
@@ -201263,7 +201263,7 @@ _08075260:
 	bne _08075284
 	adds r0, r4, #0
 	adds r1, r6, #0
-	bl sub_08044A28
+	bl gEngineEffectSearchSpecialSummon_08044A28
 _08075278:
 	movs r0, #0x7c
 	b _080752C6
@@ -201285,7 +201285,7 @@ _08075298:
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0xd
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x63
 	b _080752C6
 _080752A8:
@@ -201462,7 +201462,7 @@ _08075414:
 	lsls r0, r5, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x15
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x78
 	b _080754B0
 _08075436:
@@ -201470,7 +201470,7 @@ _08075436:
 	lsls r0, r5, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x37
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x7e
 	b _080754B0
 _08075446:
@@ -201497,7 +201497,7 @@ _08075468:
 	bl sub_080942DC
 	adds r1, r0, #0
 	adds r0, r4, #0
-	bl sub_08044A28
+	bl gEngineEffectSearchSpecialSummon_08044A28
 	b _080754A0
 _0807547C:
 	ldrb r0, [r5, #2]
@@ -201567,7 +201567,7 @@ _080754E4:
 	beq _08075506
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_0803149C
+	bl gEngineEffectDestroyCounter_0803149C
 	cmp r0, #0
 	beq _08075506
 	rsbs r2, r0, #0
@@ -201643,7 +201643,7 @@ gCardEffectSpecialSummonChangePosition_08075530: @ 0x08075530
 	cmp r2, r0
 	bne _080755C4
 	lsrs r0, r4, #0x1f
-	bl sub_08033654
+	bl gEngineEffectSpecialSummon_08033654
 	cmp r0, #0
 	blt _080755C4
 	ldrb r2, [r5, #2]
@@ -201744,7 +201744,7 @@ gCardEffectSpecialSummonBanish_080755DC: @ 0x080755DC
 	lsrs r0, r7, #0x1f
 	lsrs r1, r5, #0x1b
 	movs r2, #0
-	bl sub_08047A38
+	bl gEngineEffectBoostATKBoostDEF_08047A38
 _08075654:
 	movs r0, #0
 	pop {r3}
@@ -201838,7 +201838,7 @@ _080756C6:
 	ldrb r3, [r6, #2]
 	lsls r0, r3, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_08033BF4
+	bl gEngineEffectSpecialSummon_08033BF4
 	mov r8, r0
 	add r0, sp, #0xc
 	movs r1, #0
@@ -202004,7 +202004,7 @@ gCardEffectSpecialSummonSendToGY_080757F0: @ 0x080757F0
 	ldrh r4, [r4]
 	lsls r3, r4, #0x10
 	movs r2, #1
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 _08075862:
 	movs r0, #0
 	pop {r4, r5, r6, r7}
@@ -202032,7 +202032,7 @@ gCardEffectSpecialSummonGraveyard_08075874: @ 0x08075874
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	beq _080758DE
 	ldrb r2, [r4, #2]
@@ -202074,7 +202074,7 @@ gCardEffectSpecialSummonGraveyard_08075874: @ 0x08075874
 	movs r2, #0x20
 	orrs r3, r2
 	movs r2, #1
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 _080758DE:
 	movs r0, #0
 	pop {r4, r5}
@@ -202200,7 +202200,7 @@ _080759C0:
 	movs r3, #0xf
 	str r3, [sp, #4]
 	movs r3, #0
-	bl sub_080933DC
+	bl gEngineEffectSpecialSummon_080933DC
 _080759D8:
 	movs r0, #0x7e
 	b _08075A62
@@ -202599,7 +202599,7 @@ gCardEffectDestroy_08075CB0: @ 0x08075CB0
 	adds r0, r4, #0
 	adds r1, r6, #0
 	adds r2, r5, #0
-	bl sub_08047990
+	bl gEngineEffectBoostATKDestroy_08047990
 	cmp r0, #0
 	beq _08075CFE
 	ldrb r4, [r4, #2]
@@ -202712,13 +202712,13 @@ _08075DC4:
 	lsls r0, r5, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x12
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldrb r4, [r4, #2]
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r2, _08075DE4 @ =gCardEffectSpecialSummonDestroy_08053E14
 	movs r1, #1
-	bl sub_08096AB0
+	bl gEngineEffectSpecialSummonTribute_08096AB0
 	movs r0, #0x7e
 	b _08075F6A
 	.align 2, 0
@@ -202772,7 +202772,7 @@ _08075E48:
 	lsrs r0, r2, #0x1f
 	movs r1, #0x8f
 	lsls r1, r1, #1
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldr r0, _08075E5C @ =gEngineEffectDiscardGraveyard_08065990
 	bl sub_080969C4
 _08075E58:
@@ -202816,7 +202816,7 @@ _08075E8C:
 	ldrh r4, [r4]
 	lsls r3, r4, #0x10
 	movs r2, #1
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 _08075EB0:
 	movs r0, #0x7a
 	b _08075F6A
@@ -202852,7 +202852,7 @@ _08075EF0: .4byte gUnk_0201E2A0
 _08075EF4: .4byte gUnk_0201C4E0
 _08075EF8:
 	movs r0, #0x68
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 _08075EFE:
 	movs r0, #0x79
 	b _08075F6A
@@ -202869,7 +202869,7 @@ _08075F02:
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r4]
 	ldr r2, _08075F28 @ =gCardEffectDestroyAll_08050750
-	bl sub_08096AB0
+	bl gEngineEffectSpecialSummonTribute_08096AB0
 	movs r0, #0x78
 	b _08075F6A
 	.align 2, 0
@@ -202891,7 +202891,7 @@ _08075F2C:
 	ldr r0, [r0]
 	adds r2, r2, r0
 	adds r0, r4, #0
-	bl sub_08047970
+	bl gEngineEffectBoostATKBoostDEF_08047970
 	b _08075F68
 	.align 2, 0
 _08075F54: .4byte gUnk_0201C4E0
@@ -203007,7 +203007,7 @@ _08076030:
 	lsrs r0, r0, #0x1f
 	ldr r6, _08076074 @ =0x0000167B (Unity)
 	adds r1, r6, #0
-	bl sub_08037A8C
+	bl gEngineEffectBoostATKBoostDEF_08037A8C
 	cmp r0, #0
 	blt _0807608E
 	ldr r4, _08076078 @ =0x0000012B
@@ -203040,7 +203040,7 @@ _0807607C: .4byte gUnk_0201E2A0
 _08076080: .4byte gUnk_0201C4E0
 _08076084:
 	mov r0, sp
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 _0807608A:
 	movs r0, #0x7d
 	b _08076148
@@ -203050,7 +203050,7 @@ _0807608E:
 	lsrs r0, r0, #0x1f
 	movs r1, #0x96
 	lsls r1, r1, #1
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	b _08076146
 _0807609E:
 	ldr r6, _080760F4 @ =gUnk_0201C4E0
@@ -203064,7 +203064,7 @@ _0807609E:
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _080760F8 @ =0x0000167B (Unity)
-	bl sub_08037A8C
+	bl gEngineEffectBoostATKBoostDEF_08037A8C
 	ldrb r5, [r5, #2]
 	lsls r2, r5, #0x1f
 	lsrs r5, r2, #0x1f
@@ -203186,7 +203186,7 @@ _08076194:
 	beq _080761B4
 	lsrs r0, r2, #0x1f
 	adds r1, r4, #0
-	bl sub_0803A994
+	bl gEngineEffectSpecialSummonBoostATK_0803A994
 	adds r7, r7, r0
 _080761B4:
 	adds r5, #0x14
@@ -203271,7 +203271,7 @@ gCardEffectSearchDamage_08076214: @ 0x08076214
 	lsls r0, r5, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x15
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	b _08076294
 	.align 2, 0
 _08076250: .4byte gUnk_0201B290
@@ -203294,7 +203294,7 @@ _08076268:
 	bl sub_080942DC
 	adds r1, r0, #0
 	adds r0, r4, #0
-	bl sub_08044A28
+	bl gEngineEffectSearchSpecialSummon_08044A28
 	b _08076294
 _08076280:
 	ldrb r0, [r5, #2]
@@ -203384,7 +203384,7 @@ gCardEffectSpecialSummonNegate_080762C8: @ 0x080762C8
 	ldrh r4, [r4]
 	lsls r3, r4, #0x10
 	movs r2, #1
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 _0807632A:
 	movs r0, #0
 	pop {r4, r5, r6}
@@ -203456,7 +203456,7 @@ _080763B4:
 	bl sub_080906CC
 	adds r1, r0, #0
 	adds r0, r4, #0
-	bl sub_080478FC
+	bl gEngineEffectBoostATKBoostDEF_080478FC
 	b _08076440
 	.align 2, 0
 _080763C8: .4byte gCardEffectDestroy_080507AC
@@ -203477,7 +203477,7 @@ _080763E0:
 	bl sub_080906CC
 	adds r1, r0, #0
 	adds r0, r4, #0
-	bl sub_080478FC
+	bl gEngineEffectBoostATKBoostDEF_080478FC
 	b _08076440
 	.align 2, 0
 _080763F4: .4byte gCardEffectSpecialSummonSendToGY_08053F10
@@ -203486,13 +203486,13 @@ _080763F8:
 	lsls r0, r3, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x62
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r4]
 	ldr r2, _08076418 @ =gCardEffectDestroy_080507AC
-	bl sub_08096A4C
+	bl gEngineEffectSpecialSummonTribute_08096A4C
 	movs r0, #0x7d
 	b _08076442
 	.align 2, 0
@@ -203513,7 +203513,7 @@ _0807641C:
 	ldr r0, [r0]
 	adds r2, r2, r0
 	adds r0, r4, #0
-	bl sub_08047970
+	bl gEngineEffectBoostATKBoostDEF_08047970
 _08076440:
 	movs r0, #0
 _08076442:
@@ -203600,7 +203600,7 @@ gCardEffectSearchSendToGY_08076490: @ 0x08076490
 	adds r1, r5, #0
 	muls r1, r7, r1
 	adds r1, r1, r6
-	bl sub_08044A28
+	bl gEngineEffectSearchSpecialSummon_08044A28
 	b _08076506
 	.align 2, 0
 _080764EC: .4byte gUnk_0201B290
@@ -203752,7 +203752,7 @@ _08076600:
 	lsrs r0, r0, #0x1f
 	movs r1, #0x8f
 	lsls r1, r1, #1
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	bl sub_0804A76C
 	movs r0, #0x7f
 	b _08076786
@@ -203760,7 +203760,7 @@ _08076616:
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	beq _080766D4
 	movs r5, #0
@@ -203930,7 +203930,7 @@ _08076758:
 	adds r1, r1, r2
 	movs r2, #1
 	movs r3, #0
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 	movs r0, #0x7f
 	b _08076786
 	.align 2, 0
@@ -204011,7 +204011,7 @@ _08076804:
 	movs r0, #1
 	subs r0, r0, r1
 	movs r1, #1
-	bl sub_0804A4CC
+	bl gEngineEffectGainLPStandbyPhase_0804A4CC
 	movs r0, #0x7e
 	b _080768FC
 _08076818:
@@ -204102,7 +204102,7 @@ _080768B8:
 	movs r0, #1
 	subs r0, r0, r1
 	movs r1, #0
-	bl sub_0804A4CC
+	bl gEngineEffectGainLPStandbyPhase_0804A4CC
 	movs r0, #0x7a
 	b _080768FC
 _080768CC:
@@ -204334,7 +204334,7 @@ gCardEffectBanishGraveyard_080769FC: @ 0x080769FC
 	lsrs r2, r4, #0x1b
 	adds r0, r5, #0
 	movs r3, #0
-	bl sub_08047A80
+	bl gEngineEffectBoostATKBoostDEF_08047A80
 	cmp r0, #0
 	beq _08076AD2
 	ldrb r1, [r5, #2]
@@ -204403,7 +204403,7 @@ gCardEffectDestroyChangePosition_08076AE8: @ 0x08076AE8
 	ldr r2, [r1]
 	movs r1, #7
 	subs r1, r1, r2
-	bl sub_080495D0
+	bl gEngineEffectDrawSearch_080495D0
 	movs r0, #0
 	pop {r1}
 	bx r1
@@ -204451,7 +204451,7 @@ gCardEffectSpecialSummonBanish_08076B1C: @ 0x08076B1C
 	cmp r0, #0
 	beq _08076BD8
 	adds r0, r6, #0
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	beq _08076BB0
 	movs r1, #2
@@ -204512,8 +204512,8 @@ _08076BD8:
 	.align 2, 0
 _08076BE8: .4byte 0x000016BE @ D. D. Scout Plane
 
-	thumb_func_start sub_08076BEC
-sub_08076BEC: @ 0x08076BEC
+	thumb_func_start gEngineEffectBanishBoostATK_08076BEC
+gEngineEffectBanishBoostATK_08076BEC: @ 0x08076BEC
 	push {r4, r5, r6, r7, lr}
 	mov ip, r0
 	ldrb r0, [r0, #2]
@@ -204557,7 +204557,7 @@ sub_08076BEC: @ 0x08076BEC
 	lsrs r1, r7, #0x1b
 	movs r2, #0
 	movs r3, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 	b _08076C82
 	.align 2, 0
 _08076C48: .4byte 0x00000868
@@ -204694,7 +204694,7 @@ _08076D28:
 	lsls r0, r6, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x56
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x7f
 	b _08076DCA
 _08076D62:
@@ -204790,7 +204790,7 @@ gCardEffectBanishSpecialSummon_08076DE0: @ 0x08076DE0
 	adds r1, r6, #0
 	adds r2, r5, #0
 	movs r3, #0
-	bl sub_08047A80
+	bl gEngineEffectBoostATKBoostDEF_08047A80
 _08076E16:
 	movs r0, #0
 	add sp, #4
@@ -205002,7 +205002,7 @@ _08076F80:
 _08076F8C:
 	ldr r0, [sp, #8]
 	mov r1, sl
-	bl sub_0803A980
+	bl gEngineEffectSpecialSummonBoostATK_0803A980
 	mov r8, r0
 	b _08077030
 _08076F98:
@@ -205065,7 +205065,7 @@ _08076FC6:
 	bne _08077026
 	adds r0, r1, #0
 	adds r1, r7, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	add r8, r0
 	ldrb r2, [r6, #2]
 	lsls r1, r2, #0x1f
@@ -205076,7 +205076,7 @@ _08076FC6:
 	str r5, [sp, #4]
 	adds r0, r6, #0
 	adds r2, r7, #0
-	bl sub_0804308C
+	bl gEngineEffectSpecialSummonDestroy_0804308C
 _08077026:
 	movs r0, #0x14
 	add sb, r0
@@ -205105,7 +205105,7 @@ _08077048:
 _0807705C:
 	ldr r0, [sp, #8]
 	mov r1, sl
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	adds r0, #1
 	asrs r0, r0, #1
 	mov r8, r0
@@ -205134,7 +205134,7 @@ _08077084:
 	adds r0, r6, #0
 	ldr r1, [sp, #8]
 	mov r2, sl
-	bl sub_0804308C
+	bl gEngineEffectSpecialSummonDestroy_0804308C
 _0807709C:
 	movs r0, #0
 	add sp, #0xc
@@ -205189,7 +205189,7 @@ gCardEffectSpecialSummonChangePosition_080770B4: @ 0x080770B4
 	adds r1, r5, #0
 	adds r2, r4, #0
 	movs r3, #0
-	bl sub_080439B4
+	bl gEngineEffectSpecialSummonDestroy_080439B4
 _08077104:
 	movs r0, #0
 	add sp, #4
@@ -205274,7 +205274,7 @@ _080771D2:
 	movs r4, #1
 	subs r0, r4, r0
 	movs r1, #1
-	bl sub_0804A4CC
+	bl gEngineEffectGainLPStandbyPhase_0804A4CC
 	movs r0, #0x1e
 	bl sub_0804A754
 	ldrb r1, [r5, #2]
@@ -205283,7 +205283,7 @@ _080771D2:
 	subs r4, r4, r0
 	mov r1, sb
 	adds r0, r4, #0
-	bl sub_08037A2C
+	bl gEngineEffectBoostATKBoostDEF_08037A2C
 	adds r2, r0, #0
 	cmp r2, #0
 	bne _08077202
@@ -205400,7 +205400,7 @@ _080772D8:
 	lsls r0, r5, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x11
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x77
 	b _0807730A
 _080772E8:
@@ -205418,7 +205418,7 @@ _080772F8:
 	movs r0, #1
 	subs r0, r0, r1
 	movs r1, #0
-	bl sub_0804A4CC
+	bl gEngineEffectGainLPStandbyPhase_0804A4CC
 _08077308:
 	movs r0, #0
 _0807730A:
@@ -205499,7 +205499,7 @@ gCardEffectSpecialSummonBanish_0807738C: @ 0x0807738C
 	ldrb r1, [r5, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	beq _08077402
 	ldrb r2, [r5, #2]
@@ -205546,7 +205546,7 @@ gCardEffectSpecialSummonBanish_0807738C: @ 0x0807738C
 	lsrs r0, r0, #0x1f
 	movs r2, #1
 	movs r3, #0
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 _08077402:
 	movs r0, #0
 	pop {r4, r5, r6}
@@ -205735,13 +205735,13 @@ gCardEffectDestroyDamage_08077538: @ 0x08077538
 	lsrs r1, r1, #0x1b
 	movs r2, #0
 	movs r3, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 	cmp r5, #0
 	blt _0807756E
 	ldr r2, _08077578 @ =0x00000BB8
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_080487B0
+	bl gEngineEffectDiscardDamage_080487B0
 _0807756E:
 	movs r0, #0
 	pop {r4, r5}
@@ -205836,7 +205836,7 @@ _0807762A:
 	lsrs r2, r0, #8
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_08047E7C
+	bl gEngineEffectBoostATKBoostDEF_08047E7C
 	movs r0, #0x7e
 	b _08077672
 	.align 2, 0
@@ -205893,7 +205893,7 @@ gCardEffectSpecialSummonBanish_08077678: @ 0x08077678
 	mov r0, sb
 	ldr r1, [sp, #4]
 	movs r2, #0
-	bl sub_08047B80
+	bl gEngineEffectBoostATKBoostDEF_08047B80
 	movs r0, #0
 	adds r3, r6, #0
 	movs r1, #1
@@ -205982,7 +205982,7 @@ _08077742:
 	adds r0, r6, #0
 	adds r1, r7, #0
 	movs r2, #1
-	bl sub_08049BBC
+	bl gEngineEffectBoostATKBoostDEF_08049BBC
 	adds r0, r7, #0
 	bl sub_0804ADC8
 	cmp r0, #0
@@ -206035,7 +206035,7 @@ gCardEffectBanishChangePosition_080777B0: @ 0x080777B0
 	adds r1, r0, #0
 	adds r0, r4, #0
 	movs r2, #0
-	bl sub_08047B80
+	bl gEngineEffectBoostATKBoostDEF_08047B80
 _080777CE:
 	movs r0, #0
 	pop {r4}
@@ -206102,7 +206102,7 @@ _0807782C:
 	movs r1, #1
 	rsbs r1, r1, #0
 	adds r0, r3, #0
-	bl sub_08047EF0
+	bl gEngineEffectBoostATKBoostDEF_08047EF0
 	movs r0, #0x7f
 	b _08077912
 	.align 2, 0
@@ -206201,7 +206201,7 @@ _080778F0:
 	subs r2, r2, r0
 	lsls r2, r2, #2
 	adds r0, r3, #0
-	bl sub_080487B0
+	bl gEngineEffectDiscardDamage_080487B0
 _08077910:
 	movs r0, #0
 _08077912:
@@ -206256,13 +206256,13 @@ _08077968:
 	adds r0, r4, #0
 	adds r1, r6, #0
 	adds r2, r5, #0
-	bl sub_08047B90
+	bl gEngineEffectBoostATKBoostDEF_08047B90
 	b _080779AA
 _08077974:
 	adds r0, r4, #0
 	adds r1, r6, #0
 	adds r2, r5, #0
-	bl sub_08047C20
+	bl gEngineEffectBoostATKBoostDEF_08047C20
 	b _080779AA
 _08077980:
 	movs r3, #1
@@ -206284,7 +206284,7 @@ _08077980:
 	adds r1, r6, #0
 	adds r2, r5, #0
 	movs r3, #0
-	bl sub_080439B4
+	bl gEngineEffectSpecialSummonDestroy_080439B4
 _080779AA:
 	movs r0, #0
 	add sp, #4
@@ -206313,7 +206313,7 @@ gCardEffectDestroy_080779BC: @ 0x080779BC
 	adds r0, r4, #0
 	adds r1, r6, #0
 	adds r2, r5, #0
-	bl sub_08047970
+	bl gEngineEffectBoostATKBoostDEF_08047970
 _080779DC:
 	movs r0, #0
 	pop {r4, r5, r6}
@@ -206388,7 +206388,7 @@ _08077A70:
 	cmp r0, #0
 	beq _08077AFC
 	adds r0, r6, #0
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	adds r4, r0, #0
 	ldrh r1, [r5]
 	adds r0, r6, #0
@@ -206397,7 +206397,7 @@ _08077A70:
 	cmp r4, r0
 	bge _08077A9E
 	adds r0, r6, #0
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	b _08077AA8
 _08077A9E:
 	ldrh r1, [r5]
@@ -206435,7 +206435,7 @@ _08077AC2:
 	adds r0, r6, #0
 	movs r2, #1
 	movs r3, #0
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 	ldrh r0, [r5, #8]
 	adds r0, #1
 _08077AEC:
@@ -206629,7 +206629,7 @@ gCardEffectSpecialSummonSendToGY_08077C50: @ 0x08077C50
 	ldrb r2, [r4, #2]
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	beq _08077D46
 	ldrb r1, [r4, #2]
@@ -206710,7 +206710,7 @@ _08077CC0:
 	adds r1, r1, r7
 	movs r2, #1
 	movs r3, #0
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 	b _08077D46
 	.align 2, 0
 _08077D2C: .4byte gUnk_0201C4E0
@@ -206793,7 +206793,7 @@ _08077DA6:
 	bhi _08077DCC
 	lsls r0, r2, #0x18
 	lsrs r0, r0, #0x18
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	b _08077DE2
 	.align 2, 0
 _08077DC8: .4byte gUnk_0201BB90
@@ -206816,7 +206816,7 @@ _08077DE2:
 	movs r1, #1
 	subs r1, r1, r0
 	adds r0, r5, #0
-	bl sub_080487B0
+	bl gEngineEffectDiscardDamage_080487B0
 _08077DF4:
 	movs r0, #0
 	pop {r4, r5}
@@ -207013,7 +207013,7 @@ _08077F6C:
 	lsrs r0, r0, #0x1f
 _08077F72:
 	movs r1, #1
-	bl sub_080495D0
+	bl gEngineEffectDrawSearch_080495D0
 	b _08077FFC
 _08077F7A:
 	ldrb r4, [r4, #2]
@@ -207041,20 +207041,20 @@ _08077F9C:
 	lsrs r2, r2, #0x1b
 _08077FA6:
 	adds r0, r4, #0
-	bl sub_08047970
+	bl gEngineEffectBoostATKBoostDEF_08047970
 	b _08077FFC
 _08077FAE:
 	ldrb r3, [r4, #2]
 	lsls r0, r3, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x62
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r4]
 	ldr r2, _08077FCC @ =gCardEffectDestroy_080507AC
-	bl sub_08096A4C
+	bl gEngineEffectSpecialSummonTribute_08096A4C
 	movs r0, #0x7d
 	b _08077FFE
 	.align 2, 0
@@ -207134,7 +207134,7 @@ _08078058:
 	movs r0, #0x94
 	lsls r0, r0, #1
 	movs r1, #2
-	bl sub_080934F8
+	bl gEngineEffectSpecialSummon_080934F8
 _08078062:
 	movs r0, #0x7f
 	b _080780EC
@@ -207187,7 +207187,7 @@ _080780AA:
 	lsls r0, r3, #0x1f
 	lsrs r0, r0, #0x1f
 	adds r1, r2, #0
-	bl sub_080495D0
+	bl gEngineEffectDrawSearch_080495D0
 	b _080780EA
 	.align 2, 0
 _080780D0: .4byte 0x000004A4
@@ -207296,7 +207296,7 @@ gCardEffectDestroyChangePosition_08078158: @ 0x08078158
 	ldr r1, [r7, #4]
 	ldr r2, [r7, #0x20]
 	adds r0, r6, #0
-	bl sub_08047970
+	bl gEngineEffectBoostATKBoostDEF_08047970
 	ldr r2, [r7, #4]
 	mov r0, sb
 	ands r2, r0
@@ -207319,7 +207319,7 @@ _080781C4:
 	ldr r1, [r7, #4]
 	ldr r2, [r7, #0x20]
 	adds r0, r6, #0
-	bl sub_08047970
+	bl gEngineEffectBoostATKBoostDEF_08047970
 _080781CE:
 	movs r0, #0
 	pop {r3, r4}
@@ -207409,7 +207409,7 @@ _08078246:
 	lsrs r1, r1, #0x1f
 	adds r0, r4, #0
 	adds r2, r5, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	beq _0807828C
 	ldrb r1, [r4, #2]
@@ -207582,13 +207582,13 @@ _080783FA:
 	cmp r0, #0
 	beq _08078464
 	adds r0, r6, #0
-	bl sub_0804BA90
+	bl gEngineEffectSpecialSummon_0804BA90
 	cmp r0, #0
 	beq _08078464
 	ldrb r1, [r5, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	beq _08078458
 	ldrb r2, [r5, #2]
@@ -207609,7 +207609,7 @@ _080783FA:
 	adds r1, r7, #0
 	movs r2, #1
 	movs r3, #0
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 	b _08078472
 	.align 2, 0
 _08078450: .4byte gUnk_0201C4E0
@@ -207638,7 +207638,7 @@ _0807847C:
 	lsls r0, r5, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0xd
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x63
 	b _080784AA
 _0807848C:
@@ -207694,7 +207694,7 @@ _080784CE:
 	adds r1, r4, #0
 	adds r2, r5, #0
 	movs r3, #0
-	bl sub_080439B4
+	bl gEngineEffectSpecialSummonDestroy_080439B4
 _080784EC:
 	adds r5, #1
 	cmp r5, #4
@@ -207805,7 +207805,7 @@ _080785BC: .4byte sub_0807850C
 _080785C0:
 	lsrs r0, r2, #0x1f
 	movs r1, #0x3a
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldr r0, _080785D4 @ =sub_0807850C
 	bl sub_080969C4
 _080785CE:
@@ -207859,7 +207859,7 @@ _0807862C:
 	ldr r2, [r0]
 	adds r2, r3, r2
 	adds r0, r4, #0
-	bl sub_08047E7C
+	bl gEngineEffectBoostATKBoostDEF_08047E7C
 	b _08078650
 	.align 2, 0
 _08078644: .4byte 0x00001D68
@@ -208181,7 +208181,7 @@ _0807888E:
 	ldrb r4, [r4, #2]
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, r6
 	blt _0807894C
 _0807889C:
@@ -208209,7 +208209,7 @@ _080788BC:
 	ldrb r2, [r4, #2]
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	beq _08078944
 	ldr r1, [r5]
@@ -208244,7 +208244,7 @@ _080788BC:
 	ldrh r4, [r4]
 	lsls r3, r4, #0x10
 	movs r2, #1
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 _08078924:
 	ldr r1, _08078940 @ =gUnk_0201B290
 	ldr r3, _08078934 @ =0x000004A4
@@ -208360,7 +208360,7 @@ _080789E0:
 	bl sub_08090690
 	adds r1, r0, #0
 	adds r0, r4, #0
-	bl sub_080478FC
+	bl gEngineEffectBoostATKBoostDEF_080478FC
 	b _08078A18
 	.align 2, 0
 _080789FC: .4byte gUnk_0201C4E0
@@ -208373,7 +208373,7 @@ _08078A04:
 	bl sub_080906CC
 	adds r1, r0, #0
 	adds r0, r4, #0
-	bl sub_080478FC
+	bl gEngineEffectBoostATKBoostDEF_080478FC
 _08078A18:
 	movs r0, #0
 _08078A1A:
@@ -208566,7 +208566,7 @@ _08078B9C:
 	bl sub_08031390
 	adds r1, r0, #0
 	adds r0, r4, #0
-	bl sub_08044A28
+	bl gEngineEffectSearchSpecialSummon_08044A28
 _08078BB6:
 	ldr r1, _08078BCC @ =gUnk_0201B290
 	ldr r0, _08078BD0 @ =0x000004A4
@@ -208663,19 +208663,19 @@ _08078C52:
 	ldrh r1, [r4]
 	lsls r2, r2, #0x1a
 	lsrs r2, r2, #0x1b
-	bl sub_08032BC8
+	bl gEngineEffectSpecialSummonBoostATK_08032BC8
 	cmp r0, #1
 	ble _08078C8A
 	ldrb r2, [r4, #2]
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #3
-	bl sub_080495D0
+	bl gEngineEffectDrawSearch_080495D0
 	adds r0, r4, #0
 	bl sub_08090690
 	adds r1, r0, #0
 	adds r0, r4, #0
-	bl sub_080478FC
+	bl gEngineEffectBoostATKBoostDEF_080478FC
 _08078C8A:
 	movs r0, #0
 _08078C8C:
@@ -208894,7 +208894,7 @@ _08078DEC:
 	ldrb r1, [r5, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	beq _08078E68
 	ldrb r2, [r5, #2]
@@ -208908,7 +208908,7 @@ _08078DEC:
 	ldrh r5, [r5]
 	lsls r3, r5, #0x10
 	movs r2, #1
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 	b _08078E94
 	.align 2, 0
 _08078E60: .4byte 0x00000868
@@ -209049,7 +209049,7 @@ _08078F50:
 	lsls r0, r2
 	eors r1, r0
 	adds r0, r4, #0
-	bl sub_080478FC
+	bl gEngineEffectBoostATKBoostDEF_080478FC
 _08078F74:
 	movs r0, #0
 _08078F76:
@@ -209089,7 +209089,7 @@ _08078F88:
 	adds r0, r5, #0
 	adds r1, r6, #0
 	adds r2, r4, #0
-	bl sub_0804308C
+	bl gEngineEffectSpecialSummonDestroy_0804308C
 _08078FB8:
 	adds r4, #1
 	cmp r4, #4
@@ -209157,7 +209157,7 @@ _0807900E:
 	add r0, sl
 	ldr r5, [r0, #0xc]
 	adds r0, r7, #0
-	bl sub_08033BF4
+	bl gEngineEffectSpecialSummon_08033BF4
 	str r0, [sp, #0xc]
 	ldrb r3, [r6, #2]
 	lsls r4, r3, #0x1f
@@ -209280,12 +209280,12 @@ _08079148:
 	lsls r0, r6, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0xd
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	b _080792E4
 _08079168:
 	adds r0, r7, #0
 	movs r1, #0xf6
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldr r0, _08079180 @ =gUnk_0201B290
 	ldr r3, _08079184 @ =0x000004A4
 	adds r0, r0, r3
@@ -209351,7 +209351,7 @@ _080791AA:
 	lsls r2, r2, #3
 	adds r0, r6, #0
 	adds r1, r7, #0
-	bl sub_080487B0
+	bl gEngineEffectDiscardDamage_080487B0
 _08079202:
 	ldr r0, _0807921C @ =gUnk_0201B290
 	ldr r3, _08079220 @ =0x000004A4
@@ -209370,7 +209370,7 @@ _08079224:
 	mov r1, r8
 	adds r0, r7, #0
 	ldr r2, [sp, #0xc]
-	bl sub_08049D44
+	bl gEngineEffectBoostATKBoostDEF_08049D44
 	adds r0, r7, #0
 	bl sub_0804A540
 _08079234:
@@ -209420,7 +209420,7 @@ _08079246:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	b _080792E4
 	.align 2, 0
 _08079298: .4byte 0x000017AE @ The Second Sarcophagus
@@ -209430,7 +209430,7 @@ _080792A4: .4byte gUnk_0201C510
 _080792A8:
 	adds r0, r7, #0
 	movs r1, #1
-	bl sub_0804A4CC
+	bl gEngineEffectGainLPStandbyPhase_0804A4CC
 	movs r0, #0x6d
 	b _080792E6
 _080792B4:
@@ -209442,7 +209442,7 @@ _080792B4:
 _080792C0:
 	adds r0, r7, #0
 	movs r1, #0
-	bl sub_0804A4CC
+	bl gEngineEffectGainLPStandbyPhase_0804A4CC
 	movs r0, #0x64
 	b _080792E6
 _080792CC:
@@ -209552,7 +209552,7 @@ _080793BA:
 	lsls r0, r6, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0xd
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x64
 	b _080794F8
 _080793DC:
@@ -209560,7 +209560,7 @@ _080793DC:
 	lsls r0, r6, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x30
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x7f
 	b _080794F8
 _080793EC:
@@ -209609,7 +209609,7 @@ _08079434:
 	ldrb r1, [r6, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	beq _08079478
 	ldrb r0, [r6, #2]
@@ -209623,7 +209623,7 @@ _08079434:
 	lsls r3, r6, #0x10
 	adds r0, r4, #0
 	movs r2, #1
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 	b _080794B4
 	.align 2, 0
 _08079470: .4byte gUnk_0201B290
@@ -209654,7 +209654,7 @@ _08079478:
 	lsls r0, r6, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r2, #0
-	bl sub_0804A2E4
+	bl gEngineEffectSendToGYGraveyard_0804A2E4
 _080794B4:
 	ldr r1, _080794C4 @ =gUnk_0201B290
 	ldr r0, _080794C8 @ =0x000004A4
@@ -209744,7 +209744,7 @@ _08079532:
 	adds r1, r4, #0
 	adds r2, r5, #0
 	movs r3, #0
-	bl sub_080439B4
+	bl gEngineEffectSpecialSummonDestroy_080439B4
 _0807955C:
 	adds r6, #0x14
 	adds r5, #1
@@ -209831,7 +209831,7 @@ _080795CC:
 	adds r0, r4, #0
 	adds r2, r6, #0
 	movs r3, #1
-	bl sub_080436E8
+	bl gEngineEffectSpecialSummonDestroy_080436E8
 _08079608:
 	ldrb r0, [r4, #2]
 	lsls r2, r0, #0x1f
@@ -209851,7 +209851,7 @@ _08079608:
 	adds r0, r4, #0
 	adds r2, r6, #0
 	movs r3, #0
-	bl sub_080439B4
+	bl gEngineEffectSpecialSummonDestroy_080439B4
 _08079630:
 	movs r2, #0x14
 	add sb, r2
@@ -209992,14 +209992,14 @@ _08079734:
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
 	adds r1, r3, #0
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 _0807974A:
 	ldrb r3, [r4, #2]
 	lsls r0, r3, #0x1f
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r4]
 	adds r2, r7, #0
-	bl sub_08096A4C
+	bl gEngineEffectSpecialSummonTribute_08096A4C
 	movs r0, #0x7d
 	b _080797CA
 	.align 2, 0
@@ -210020,7 +210020,7 @@ _08079760:
 	ldr r0, [r0]
 	adds r2, r2, r0
 	adds r0, r4, #0
-	bl sub_08047970
+	bl gEngineEffectBoostATKBoostDEF_08047970
 	ldr r1, _080797A4 @ =gUnk_0201B290
 	ldr r0, _080797A8 @ =0x000004A4
 	adds r1, r1, r0
@@ -210128,7 +210128,7 @@ gCardEffectSpecialSummonSendToGY_080797D0: @ 0x080797D0
 	lsrs r1, r5, #0x1b
 	movs r2, #0
 	movs r3, #0
-	bl sub_08047E20
+	bl gEngineEffectBoostATKBoostDEF_08047E20
 	b _08079928
 	.align 2, 0
 _0807985C: .4byte 0x00000868
@@ -210149,7 +210149,7 @@ _08079864:
 	adds r1, r0, #0
 	adds r0, r4, #0
 	movs r2, #2
-	bl sub_08047B80
+	bl gEngineEffectBoostATKBoostDEF_08047B80
 	bl sub_08030208
 	ldr r1, _0807989C @ =0x000004A4
 	add r1, sb
@@ -210277,7 +210277,7 @@ _08079974:
 	cmp r0, #0
 	beq _08079A14
 	adds r0, r6, #0
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	adds r4, r0, #0
 	ldrh r1, [r5]
 	adds r0, r6, #0
@@ -210286,7 +210286,7 @@ _08079974:
 	cmp r4, r0
 	bge _080799A0
 	adds r0, r6, #0
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	b _080799AA
 _080799A0:
 	ldrh r1, [r5]
@@ -210300,7 +210300,7 @@ _080799AA:
 	beq _08079A14
 	ldr r1, _080799C0 @ =0x0000011D
 	adds r0, r6, #0
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x7e
 	b _08079A16
 	.align 2, 0
@@ -210337,7 +210337,7 @@ _080799E8:
 	lsls r3, r0, #0x10
 	adds r0, r6, #0
 	movs r2, #1
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 	ldrh r0, [r5, #8]
 	adds r0, #1
 	strh r0, [r5, #8]
@@ -210516,7 +210516,7 @@ _08079B80:
 	lsls r3, r0, #0x10
 	adds r0, r7, #0
 	movs r2, #1
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 _08079BA8:
 	movs r0, #0x64
 	b _08079BD2
@@ -210801,7 +210801,7 @@ _08079E0C:
 	mov r0, r8
 	adds r1, r6, #0
 	movs r2, #0
-	bl sub_08049BBC
+	bl gEngineEffectBoostATKBoostDEF_08049BBC
 	movs r0, #0x7f
 	b _08079E50
 _08079E2C:
@@ -210852,7 +210852,7 @@ gCardEffectSearchSpecialSummon_08079E60: @ 0x08079E60
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	beq _08079EB4
 	ldrb r2, [r4, #2]
@@ -210874,7 +210874,7 @@ gCardEffectSearchSpecialSummon_08079E60: @ 0x08079E60
 	ldrh r4, [r4]
 	lsls r3, r4, #0x10
 	movs r2, #1
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 _08079EB4:
 	movs r0, #0
 	pop {r4, r5}
@@ -211135,7 +211135,7 @@ _0807A0A8:
 	movs r0, #1
 	subs r0, r0, r1
 	movs r1, #1
-	bl sub_0804A4CC
+	bl gEngineEffectGainLPStandbyPhase_0804A4CC
 	movs r0, #0x77
 	b _0807A0EC
 _0807A0BC:
@@ -211143,7 +211143,7 @@ _0807A0BC:
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0xd
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x76
 	b _0807A0EC
 _0807A0CC:
@@ -211160,7 +211160,7 @@ _0807A0DA:
 	movs r0, #1
 	subs r0, r0, r1
 	movs r1, #0
-	bl sub_0804A4CC
+	bl gEngineEffectGainLPStandbyPhase_0804A4CC
 _0807A0EA:
 	movs r0, #0
 _0807A0EC:
@@ -211196,7 +211196,7 @@ gCardEffectDamagePreventAttack_0807A0F4: @ 0x0807A0F4
 	adds r2, r0, #0
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_080487B0
+	bl gEngineEffectDiscardDamage_080487B0
 _0807A12C:
 	movs r0, #0
 	pop {r4, r5}
@@ -211241,7 +211241,7 @@ _0807A178:
 	adds r4, r0, #0
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_080478FC
+	bl gEngineEffectBoostATKBoostDEF_080478FC
 	ands r4, r0
 	adds r0, r4, #0
 	bl sub_08030208
@@ -211272,13 +211272,13 @@ _0807A1AE:
 	ldrb r2, [r5, #2]
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r4, r0
 	blt _0807A1D8
 	ldrb r1, [r5, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	b _0807A1DA
 _0807A1D8:
 	adds r0, r4, #0
@@ -211312,7 +211312,7 @@ _0807A208: .4byte gUnk_0201E2A0
 _0807A20C: .4byte gUnk_0201C4E0
 _0807A210:
 	movs r0, #0x2f
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 _0807A216:
 	movs r0, #0x7e
 	b _0807A2BE
@@ -211328,7 +211328,7 @@ _0807A21A:
 	lsls r0, r5, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _0807A23C @ =0x0000011D
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x7d
 	b _0807A2BE
 	.align 2, 0
@@ -211382,7 +211382,7 @@ _0807A278:
 	lsls r3, r2, #0x10
 	adds r0, r4, #0
 	movs r2, #1
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 	ldrh r0, [r5, #8]
 	adds r0, #1
 	strh r0, [r5, #8]
@@ -211525,7 +211525,7 @@ _0807A3A4:
 _0807A3A8:
 	adds r0, r4, #0
 	movs r1, #2
-	bl sub_080495D0
+	bl gEngineEffectDrawSearch_080495D0
 _0807A3B0:
 	movs r0, #0
 _0807A3B2:
@@ -211608,14 +211608,14 @@ _0807A472:
 	movs r4, #1
 	subs r0, r4, r0
 	movs r1, #1
-	bl sub_0804A4CC
+	bl gEngineEffectGainLPStandbyPhase_0804A4CC
 	ldrb r1, [r5, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	subs r4, r4, r0
 	mov r1, r8
 	adds r0, r4, #0
-	bl sub_08037A2C
+	bl gEngineEffectBoostATKBoostDEF_08037A2C
 	cmp r0, #0
 	bne _0807A49A
 	movs r0, #0x78
@@ -211626,7 +211626,7 @@ _0807A49A:
 	lsrs r0, r0, #0x1f
 	movs r1, #0x83
 	lsls r1, r1, #1
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x7f
 	b _0807A572
 _0807A4AC:
@@ -211701,7 +211701,7 @@ _0807A534:
 	lsls r0, r5, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x11
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x77
 	b _0807A572
 _0807A544:
@@ -211725,7 +211725,7 @@ _0807A560:
 	movs r0, #1
 	subs r0, r0, r1
 	movs r1, #0
-	bl sub_0804A4CC
+	bl gEngineEffectGainLPStandbyPhase_0804A4CC
 _0807A570:
 	movs r0, #0
 _0807A572:
@@ -211790,7 +211790,7 @@ _0807A5D8:
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, r7
 	blt _0807A650
 	ldrb r4, [r4, #2]
@@ -211949,7 +211949,7 @@ _0807A730:
 	cmp r0, #0
 	beq _0807A774
 	adds r0, r4, #0
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	beq _0807A774
 	ldrh r1, [r5]
@@ -212094,7 +212094,7 @@ gCardEffectPreventAttackChangePosition_0807A814: @ 0x0807A814
 	adds r0, r6, #0
 	adds r1, r4, #0
 	mov r2, sb
-	bl sub_0804308C
+	bl gEngineEffectSpecialSummonDestroy_0804308C
 	movs r7, #0
 	movs r0, #0
 	mov r8, r0
@@ -212134,7 +212134,7 @@ _0807A866:
 	bne _0807A8CE
 	adds r0, r1, #0
 	adds r1, r7, #0
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	cmp r0, #0x12
@@ -212148,7 +212148,7 @@ _0807A866:
 	str r4, [sp, #4]
 	adds r0, r6, #0
 	adds r2, r7, #0
-	bl sub_0804308C
+	bl gEngineEffectSpecialSummonDestroy_0804308C
 _0807A8CE:
 	movs r0, #0x14
 	add r8, r0
@@ -212345,7 +212345,7 @@ _0807AA44: .4byte gUnk_0201E2A0
 _0807AA48: .4byte 0x00001D10
 _0807AA4C:
 	ldr r0, _0807AA58 @ =0x00000137
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 _0807AA52:
 	movs r0, #0x7f
 	b _0807AA8E
@@ -212363,7 +212363,7 @@ _0807AA5C:
 	ldr r1, [r0, #4]
 	ldr r2, [r0, #0x20]
 	adds r0, r3, #0
-	bl sub_080479C4
+	bl gEngineEffectBoostATKBoostDEF_080479C4
 	b _0807AA8C
 	.align 2, 0
 _0807AA78: .4byte gUnk_0201C4E0
@@ -212373,7 +212373,7 @@ _0807AA80:
 	ldr r1, [r0, #4]
 	ldr r2, [r0, #0x20]
 	adds r0, r3, #0
-	bl sub_08047970
+	bl gEngineEffectBoostATKBoostDEF_08047970
 _0807AA8C:
 	movs r0, #0
 _0807AA8E:
@@ -212428,7 +212428,7 @@ _0807AAE4: .4byte gUnk_0201E2A0
 _0807AAE8: .4byte gUnk_0201C4E0
 _0807AAEC:
 	movs r0, #0x38
-	bl sub_080934E4
+	bl gEngineEffectSpecialSummon_080934E4
 _0807AAF2:
 	movs r0, #0x7f
 	b _0807AB64
@@ -212472,7 +212472,7 @@ _0807AB18:
 	ldr r1, [r3, #4]
 	ldr r2, [r3, #0x20]
 	adds r0, r5, #0
-	bl sub_08047970
+	bl gEngineEffectBoostATKBoostDEF_08047970
 	b _0807AB62
 	.align 2, 0
 _0807AB4C: .4byte gUnk_0201C4E0
@@ -212482,7 +212482,7 @@ _0807AB58:
 	ldr r1, [r3]
 	ldr r2, [r3, #0x1c]
 	adds r0, r5, #0
-	bl sub_08047970
+	bl gEngineEffectBoostATKBoostDEF_08047970
 _0807AB62:
 	movs r0, #0
 _0807AB64:
@@ -212563,7 +212563,7 @@ _0807ABBC:
 	muls r2, r1, r2
 	adds r0, r6, #0
 	adds r1, r4, #0
-	bl sub_080487B0
+	bl gEngineEffectDiscardDamage_080487B0
 _0807AC06:
 	movs r0, #0
 _0807AC08:
@@ -212620,7 +212620,7 @@ gCardEffectDestroyBoostATK_0807AC1C: @ 0x0807AC1C
 	lsrs r1, r7, #0x1b
 	movs r2, #0
 	movs r3, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 _0807AC74:
 	movs r0, #0
 	pop {r4, r5, r6, r7}
@@ -212694,7 +212694,7 @@ gCardEffectDestroyCounter_0807AC84: @ 0x0807AC84
 	lsrs r1, r5, #0x1b
 	movs r2, #1
 	rsbs r2, r2, #0
-	bl sub_0804543C
+	bl gEngineEffectDestroyCounter_0804543C
 _0807ACFE:
 	movs r0, #0
 	pop {r3}
@@ -212724,12 +212724,12 @@ gCardEffectDrawFlip_0807AD14: @ 0x0807AD14
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #1
-	bl sub_080495D0
+	bl gEngineEffectDrawSearch_080495D0
 	ldrb r4, [r4, #2]
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _0807AD50 @ =0x0000181E (Bokoichi the Freightening Car)
-	bl sub_08032CCC
+	bl gEngineEffectSpecialSummonBoostATK_08032CCC
 	ldr r2, _0807AD54 @ =0x000004A4
 	adds r1, r5, r2
 	str r0, [r1]
@@ -212749,7 +212749,7 @@ _0807AD58:
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #1
-	bl sub_080495D0
+	bl gEngineEffectDrawSearch_080495D0
 	ldr r0, [r5]
 	subs r0, #1
 	str r0, [r5]
@@ -212836,7 +212836,7 @@ gCardEffectUnknown_0807AD84: @ 0x0807AD84
 	beq _0807AE68
 	lsrs r0, r6, #0x1f
 	lsrs r1, r5, #0x1b
-	bl sub_0803B1A4
+	bl gEngineEffectSpecialSummonChangePosition_0803B1A4
 	lsls r4, r0
 	movs r0, #0xff
 	eors r4, r0
@@ -212931,7 +212931,7 @@ _0807AEAC:
 	adds r0, r5, #0
 	adds r1, r6, #0
 	adds r2, r4, #0
-	bl sub_0804308C
+	bl gEngineEffectSpecialSummonDestroy_0804308C
 _0807AECE:
 	adds r4, #1
 	cmp r4, #4
@@ -212967,7 +212967,7 @@ _0807AF02:
 	lsls r0, r0, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #1
-	bl sub_080495D0
+	bl gEngineEffectDrawSearch_080495D0
 	b _0807AF22
 _0807AF10:
 	ldrb r0, [r0, #2]
@@ -213008,7 +213008,7 @@ gCardEffectDiscard_0807AF28: @ 0x0807AF28
 	adds r0, r4, #0
 	adds r1, r6, #0
 	adds r2, r5, #0
-	bl sub_08047C20
+	bl gEngineEffectBoostATKBoostDEF_08047C20
 _0807AF5C:
 	movs r0, #0
 	add sp, #4
@@ -213102,7 +213102,7 @@ _0807B010: .4byte gEngineEffectDiscardGraveyard_08065990
 _0807B014:
 	adds r0, r5, #0
 	movs r1, #0x1f
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldr r0, _0807B028 @ =gEngineEffectDiscardGraveyard_08065990
 	bl sub_080969C4
 _0807B022:
@@ -213172,7 +213172,7 @@ _0807B0AC:
 	lsls r0, r7, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #1
-	bl sub_080495D0
+	bl gEngineEffectDrawSearch_080495D0
 	b _0807B0BE
 _0807B0BA:
 	movs r0, #0x7f
@@ -213217,7 +213217,7 @@ gCardEffectNegateDiscard_0807B0C8: @ 0x0807B0C8
 	ldrh r3, [r4, #4]
 	lsls r2, r3, #0x11
 	lsrs r2, r2, #0x17
-	bl sub_08044DCC
+	bl gEngineEffectDestroyBoostATK_08044DCC
 _0807B108:
 	lsls r0, r5, #0x10
 	lsrs r0, r0, #0x18
@@ -213254,7 +213254,7 @@ _0807B140:
 	lsls r2, r2, #0x1a
 	lsrs r2, r2, #0x1b
 	adds r0, r6, #0
-	bl sub_08047970
+	bl gEngineEffectBoostATKBoostDEF_08047970
 	b _0807B178
 _0807B152:
 	cmp r0, #0xb
@@ -213274,7 +213274,7 @@ _0807B152:
 	ldrb r6, [r6, #2]
 	eors r3, r6
 	ands r3, r5
-	bl sub_0804A2C8
+	bl gEngineEffectSendToGYGraveyard_0804A2C8
 _0807B178:
 	movs r0, #0
 	pop {r4, r5, r6}
@@ -213363,7 +213363,7 @@ _0807B1E4:
 	adds r0, r7, #0
 	adds r1, r5, #0
 	adds r2, r4, #0
-	bl sub_0804308C
+	bl gEngineEffectSpecialSummonDestroy_0804308C
 _0807B22A:
 	adds r6, #1
 _0807B22C:
@@ -213535,7 +213535,7 @@ _0807B344:
 	mov r1, r8
 	adds r2, r5, #0
 	adds r3, r4, #0
-	bl sub_080933DC
+	bl gEngineEffectSpecialSummon_080933DC
 _0807B37C:
 	movs r0, #0x7f
 	b _0807B40A
@@ -213587,7 +213587,7 @@ _0807B3D2:
 	bl sub_080906CC
 	adds r1, r0, #0
 	adds r0, r7, #0
-	bl sub_080478FC
+	bl gEngineEffectBoostATKBoostDEF_080478FC
 	b _0807B408
 	.align 2, 0
 _0807B3E4: .4byte gCardEffectDestroySpellTrapDestroyAll_08051ABC
@@ -213606,7 +213606,7 @@ _0807B3FC:
 	lsls r0, r7, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #2
-	bl sub_080495D0
+	bl gEngineEffectDrawSearch_080495D0
 _0807B408:
 	movs r0, #0
 _0807B40A:
@@ -213655,7 +213655,7 @@ gCardEffectBoostATK_0807B418: @ 0x0807B418
 	beq _0807B47E
 	adds r0, r6, #0
 	adds r1, r5, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	ldrh r3, [r4]
 	movs r1, #4
 	str r1, [sp]
@@ -213665,7 +213665,7 @@ gCardEffectBoostATK_0807B418: @ 0x0807B418
 	adds r0, r4, #0
 	adds r1, r7, #0
 	mov r2, r8
-	bl sub_0804308C
+	bl gEngineEffectSpecialSummonDestroy_0804308C
 _0807B47E:
 	movs r0, #0
 	add sp, #8
@@ -213702,7 +213702,7 @@ _0807B49C:
 	adds r0, r5, #0
 	adds r1, r6, #0
 	adds r2, r4, #0
-	bl sub_0804308C
+	bl gEngineEffectSpecialSummonDestroy_0804308C
 _0807B4BE:
 	adds r4, #1
 	cmp r4, #4
@@ -213775,7 +213775,7 @@ _0807B574:
 	ldrb r2, [r5, #2]
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	bne _0807B584
 	b _0807B6AC
@@ -213800,7 +213800,7 @@ _0807B594:
 	lsls r0, r5, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0xd
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x78
 	b _0807B6AE
 _0807B5B6:
@@ -213821,7 +213821,7 @@ _0807B5D0:
 	ldrb r3, [r5, #2]
 	lsls r0, r3, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	beq _0807B63E
 	ldrb r1, [r5, #2]
@@ -213858,7 +213858,7 @@ _0807B618:
 	movs r1, #0x35
 	bl sub_0801F2C4
 	mov r0, sp
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 	b _0807B5C6
 _0807B630:
 	ldr r6, _0807B644 @ =gUnk_0201C4E0
@@ -213879,7 +213879,7 @@ _0807B648:
 	lsrs r4, r0, #0x1f
 	adds r0, r4, #0
 	ldrh r1, [r5]
-	bl sub_080316B8
+	bl gEngineEffectBoostATKBoostDEF_080316B8
 	ldrb r5, [r5, #2]
 	lsls r1, r5, #0x1f
 	lsrs r1, r1, #0x1f
@@ -213894,7 +213894,7 @@ _0807B648:
 	adds r0, r4, #0
 	movs r2, #1
 	movs r3, #0
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 	movs r0, #0x7f
 	b _0807B6AE
 	.align 2, 0
@@ -213974,7 +213974,7 @@ _0807B704: .4byte gUnk_0201E2A0
 _0807B708: .4byte gUnk_0201C4E0
 _0807B70C:
 	movs r0, #0x38
-	bl sub_080934E4
+	bl gEngineEffectSpecialSummon_080934E4
 _0807B712:
 	movs r0, #0x7f
 	b _0807B776
@@ -214010,7 +214010,7 @@ _0807B738:
 	movs r2, #0xfa
 	lsls r2, r2, #2
 	adds r0, r3, #0
-	bl sub_080487B0
+	bl gEngineEffectDiscardDamage_080487B0
 	b _0807B774
 	.align 2, 0
 _0807B75C: .4byte gUnk_0201C4E0
@@ -214022,7 +214022,7 @@ _0807B764:
 	movs r2, #0xfa
 	lsls r2, r2, #2
 	adds r0, r3, #0
-	bl sub_080487B0
+	bl gEngineEffectDiscardDamage_080487B0
 _0807B774:
 	movs r0, #0
 _0807B776:
@@ -214041,7 +214041,7 @@ gCardEffectSpecialSummonFusion_0807B77C: @ 0x0807B77C
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r4, #8]
-	bl sub_08031710
+	bl gEngineEffectBoostATKBoostDEF_08031710
 	adds r5, r0, #0
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
@@ -214052,7 +214052,7 @@ gCardEffectSpecialSummonFusion_0807B77C: @ 0x0807B77C
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	beq _0807B7CA
 	cmp r5, #0
@@ -214069,7 +214069,7 @@ gCardEffectSpecialSummonFusion_0807B77C: @ 0x0807B77C
 	adds r1, r1, r2
 	movs r2, #1
 	movs r3, #0
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 _0807B7CA:
 	movs r0, #0
 	pop {r4, r5}
@@ -214142,7 +214142,7 @@ _0807B878:
 	ldrb r1, [r5, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #1
 	ble _0807B94E
 	ldrb r1, [r5, #2]
@@ -214157,7 +214157,7 @@ _0807B878:
 	lsls r0, r5, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x15
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x6e
 	b _0807B950
 _0807B8B6:
@@ -214165,7 +214165,7 @@ _0807B8B6:
 	lsls r0, r5, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _0807B8C8 @ =0x0000011D
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x7f
 	b _0807B950
 	.align 2, 0
@@ -214210,7 +214210,7 @@ _0807B8FC:
 	lsls r3, r0, #0x10
 	adds r0, r4, #0
 	movs r2, #1
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 	ldrh r0, [r5, #8]
 	adds r0, #1
 	strh r0, [r5, #8]
@@ -214279,7 +214279,7 @@ _0807B970:
 	ldrb r1, [r5, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_08033BF4
+	bl gEngineEffectSpecialSummon_08033BF4
 	adds r4, r0, #0
 	cmp r4, #0
 	blt _0807B9DA
@@ -214294,7 +214294,7 @@ _0807B970:
 	lsls r4, r4, #0x18
 	lsrs r4, r4, #0x10
 	orrs r1, r4
-	bl sub_08043EA4
+	bl gEngineEffectDamage_08043EA4
 	ldrb r5, [r5, #2]
 	lsls r1, r5, #0x1f
 	lsrs r0, r1, #0x1f
@@ -214302,7 +214302,7 @@ _0807B970:
 	orrs r1, r4
 	lsls r2, r6, #8
 	orrs r2, r7
-	bl sub_080432A8
+	bl gEngineEffectDestroyEquip_080432A8
 	b _0807B9EC
 _0807B9DA:
 	ldrb r1, [r5, #2]
@@ -214312,7 +214312,7 @@ _0807B9DA:
 	lsrs r1, r1, #0x1b
 	ldrh r3, [r5]
 	movs r2, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 _0807B9EC:
 	movs r0, #0
 _0807B9EE:
@@ -214410,14 +214410,14 @@ _0807BA9C:
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x6d
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 _0807BAB4:
 	ldrb r2, [r5, #2]
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r5]
 	adds r2, r4, #0
-	bl sub_08096A4C
+	bl gEngineEffectSpecialSummonTribute_08096A4C
 	movs r0, #0x7d
 	b _0807BB2A
 	.align 2, 0
@@ -214439,7 +214439,7 @@ _0807BAD0:
 	ldr r0, [r3]
 	adds r2, r2, r0
 	adds r0, r5, #0
-	bl sub_08047970
+	bl gEngineEffectBoostATKBoostDEF_08047970
 	ldr r0, _0807BB18 @ =gUnk_0201B290
 	ldr r1, _0807BB1C @ =0x000004A4
 	adds r0, r0, r1
@@ -214544,7 +214544,7 @@ gCardEffectDiscard_0807BB8C: @ 0x0807BB8C
 	adds r0, r4, #0
 	adds r1, r6, #0
 	adds r2, r5, #0
-	bl sub_08047C20
+	bl gEngineEffectBoostATKBoostDEF_08047C20
 _0807BBC4:
 	movs r0, #0
 	pop {r4, r5, r6}
@@ -214693,7 +214693,7 @@ _0807BCA6:
 	adds r0, r5, #0
 	adds r1, r6, #0
 	adds r2, r4, #0
-	bl sub_08047B90
+	bl gEngineEffectBoostATKBoostDEF_08047B90
 	movs r0, #0x7f
 	b _0807BDB2
 	.align 2, 0
@@ -214754,7 +214754,7 @@ _0807BD54:
 	lsrs r0, r2, #0x1f
 	movs r1, #0x8f
 	lsls r1, r1, #1
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldr r0, _0807BD68 @ =gEngineEffectDiscardGraveyard_08065990
 	bl sub_080969C4
 _0807BD64:
@@ -214785,7 +214785,7 @@ _0807BD6C:
 	ldrh r5, [r5]
 	lsls r3, r5, #0x10
 	movs r2, #1
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 	b _0807BDB0
 	.align 2, 0
 _0807BDA0: .4byte gUnk_0201C4E0
@@ -214816,7 +214816,7 @@ gCardEffectSendToGYDestroy_0807BDB8: @ 0x0807BDB8
 	cmp r0, #0x80
 	bne _0807BDF2
 	adds r0, r1, #0
-	bl sub_0806460C
+	bl gEngineEffectDestroyBoostATK_0806460C
 	cmp r0, #0
 	beq _0807BDF2
 	movs r0, #0x7f
@@ -215086,7 +215086,7 @@ _0807BFCC:
 	lsls r2, r2, #0x1a
 	lsrs r2, r2, #0x1b
 	adds r0, r5, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _0807C078
 	ldrb r1, [r5, #2]
@@ -215095,7 +215095,7 @@ _0807BFCC:
 	lsls r1, r1, #0x1a
 	lsrs r1, r1, #0x1b
 	ldrh r2, [r5]
-	bl sub_08036450
+	bl gEngineEffectSpecialSummonDestroy_08036450
 	cmp r0, #0
 	beq _0807C078
 	ldrb r0, [r5, #2]
@@ -215107,7 +215107,7 @@ _0807BFCC:
 	adds r7, r4, r2
 	ldr r2, [r7]
 	adds r0, r5, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _0807C078
 	ldrb r1, [r5, #2]
@@ -215116,7 +215116,7 @@ _0807BFCC:
 	subs r0, r6, r0
 	ldr r1, [r7]
 	ldrh r2, [r5]
-	bl sub_08036450
+	bl gEngineEffectSpecialSummonDestroy_08036450
 	cmp r0, #0
 	beq _0807C078
 	ldrb r1, [r5, #2]
@@ -215158,7 +215158,7 @@ _0807BFCC:
 	ldrb r7, [r7]
 	lsls r3, r7, #8
 	orrs r2, r3
-	bl sub_08043F44
+	bl gEngineEffectDamage_08043F44
 _0807C078:
 	movs r0, #0
 _0807C07A:
@@ -215351,7 +215351,7 @@ gCardEffectDestroyAllDamage_0807C1A8: @ 0x0807C1A8
 	lsls r2, r2, #3
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_080487B0
+	bl gEngineEffectDiscardDamage_080487B0
 	movs r0, #0x7f
 	b _0807C1F2
 	.align 2, 0
@@ -215420,7 +215420,7 @@ _0807C254: .4byte gEngineEffectDiscardGraveyard_08065990
 _0807C258:
 	lsrs r0, r2, #0x1f
 	movs r1, #0x49
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldr r0, _0807C26C @ =gEngineEffectDiscardGraveyard_08065990
 	bl sub_080969C4
 _0807C266:
@@ -215605,7 +215605,7 @@ _0807C3AC:
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
 	mov r1, sp
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 _0807C3DE:
 	movs r0, #0x7f
 	b _0807C46C
@@ -215625,7 +215625,7 @@ _0807C3F6:
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r4]
 	ldr r2, _0807C408 @ =sub_08090624
-	bl sub_08096A4C
+	bl gEngineEffectSpecialSummonTribute_08096A4C
 	movs r0, #0x7d
 	b _0807C46C
 	.align 2, 0
@@ -215673,7 +215673,7 @@ _0807C45C:
 	ldrh r0, [r4, #8]
 	orrs r1, r0
 	adds r0, r4, #0
-	bl sub_080478FC
+	bl gEngineEffectBoostATKBoostDEF_080478FC
 _0807C46A:
 	movs r0, #0
 _0807C46C:
@@ -215700,7 +215700,7 @@ gCardEffectSpecialSummonSendToGY_0807C474: @ 0x0807C474
 	bl sub_08090690
 	adds r1, r0, #0
 	adds r0, r4, #0
-	bl sub_08047EF0
+	bl gEngineEffectBoostATKBoostDEF_08047EF0
 	movs r0, #0x7f
 	b _0807C508
 	.align 2, 0
@@ -215782,7 +215782,7 @@ gCardEffectSpecialSummonDestroyAll_0807C510: @ 0x0807C510
 	bl sub_08090690
 	adds r1, r0, #0
 	mov r0, sl
-	bl sub_080478FC
+	bl gEngineEffectBoostATKBoostDEF_080478FC
 	mov r8, r0
 	movs r5, #0
 _0807C538:
@@ -215801,7 +215801,7 @@ _0807C53E:
 	adds r0, r5, #0
 	adds r1, r4, #0
 	str r2, [sp]
-	bl sub_0803A96C
+	bl gEngineEffectSpecialSummonBoostATK_0803A96C
 	add sb, r0
 	ldr r2, [sp]
 _0807C55C:
@@ -215818,7 +215818,7 @@ _0807C55C:
 	subs r1, r2, r1
 	mov r0, sl
 	mov r2, sb
-	bl sub_080487B0
+	bl gEngineEffectDiscardDamage_080487B0
 	bl sub_0804A870
 	movs r0, #0
 	add sp, #4
@@ -215890,7 +215890,7 @@ _0807C5EA:
 	str r0, [sp]
 	adds r0, r4, #0
 	movs r3, #0
-	bl sub_080439B4
+	bl gEngineEffectSpecialSummonDestroy_080439B4
 	adds r5, #1
 	ldrb r1, [r4, #6]
 _0807C60C:
@@ -215911,7 +215911,7 @@ _0807C618:
 	adds r0, r4, #0
 	adds r1, r6, #0
 	adds r2, r5, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _0807C654
 	adds r0, r6, #0
@@ -215976,7 +215976,7 @@ gCardEffectDestroyChangePosition_0807C660: @ 0x0807C660
 	adds r1, r6, #0
 	adds r2, r5, #0
 	movs r3, #0
-	bl sub_080439B4
+	bl gEngineEffectSpecialSummonDestroy_080439B4
 _0807C6B2:
 	ldrb r0, [r4, #2]
 	lsls r6, r0, #0x1f
@@ -216020,7 +216020,7 @@ _0807C6B2:
 	lsrs r0, r6, #0x1f
 	lsrs r1, r5, #0x1b
 	movs r2, #1
-	bl sub_0804543C
+	bl gEngineEffectDestroyCounter_0804543C
 	ldrb r1, [r4, #2]
 	lsls r3, r1, #0x1f
 	lsrs r0, r3, #0x1f
@@ -216042,7 +216042,7 @@ _0807C6B2:
 	lsrs r1, r2, #0x1b
 	movs r2, #0
 	movs r3, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 _0807C738:
 	movs r0, #0
 	add sp, #4
@@ -216071,7 +216071,7 @@ gCardEffectSpecialSummonDestroySpellTrap_0807C750: @ 0x0807C750
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r4]
-	bl sub_08037A8C
+	bl gEngineEffectBoostATKBoostDEF_08037A8C
 	adds r6, r0, #0
 	cmp r6, #0
 	blt _0807C7AC
@@ -216093,7 +216093,7 @@ gCardEffectSpecialSummonDestroySpellTrap_0807C750: @ 0x0807C750
 	ldrh r2, [r4]
 	lsls r3, r2, #0x10
 	movs r2, #1
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
@@ -216196,7 +216196,7 @@ _0807C85C:
 	lsrs r1, r7, #0x1b
 	movs r2, #0
 	movs r3, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 	movs r0, #0
 	b _0807C874
 _0807C86C:
@@ -216289,7 +216289,7 @@ _0807C93A:
 	adds r4, r1, #0
 	adds r0, r7, #0
 	adds r1, r6, #0
-	bl sub_0805C17C
+	bl gEngineEffectSpecialSummon_0805C17C
 	ldr r1, [r4]
 	cmp r1, r0
 	bge _0807C96C
@@ -216302,7 +216302,7 @@ _0807C968: .4byte 0x000004A4
 _0807C96C:
 	adds r0, r7, #0
 	adds r1, r6, #0
-	bl sub_0805C17C
+	bl gEngineEffectSpecialSummon_0805C17C
 _0807C974:
 	str r0, [r4]
 	ldr r0, _0807C9A8 @ =gUnk_0201B290
@@ -216325,7 +216325,7 @@ _0807C984:
 	movs r1, #0x91
 	lsls r1, r1, #1
 	adds r0, r6, #0
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x78
 	b _0807CA7C
 	.align 2, 0
@@ -216334,7 +216334,7 @@ _0807C9AC: .4byte 0x000004A4
 _0807C9B0:
 	ldr r1, _0807C9BC @ =0x0000011D
 	adds r0, r6, #0
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x7f
 	b _0807CA7C
 	.align 2, 0
@@ -216394,7 +216394,7 @@ _0807CA18:
 	lsls r3, r7, #0x10
 	adds r0, r6, #0
 	movs r2, #1
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 	ldr r0, [r4]
 	adds r0, #1
 	str r0, [r4]
@@ -216409,7 +216409,7 @@ _0807CA48:
 _0807CA50:
 	adds r0, r6, #0
 	movs r1, #1
-	bl sub_0804A4CC
+	bl gEngineEffectGainLPStandbyPhase_0804A4CC
 	movs r0, #0x77
 	b _0807CA7C
 _0807CA5C:
@@ -216421,7 +216421,7 @@ _0807CA5C:
 _0807CA68:
 	adds r0, r6, #0
 	movs r1, #0
-	bl sub_0804A4CC
+	bl gEngineEffectGainLPStandbyPhase_0804A4CC
 	movs r0, #0x64
 	b _0807CA7C
 _0807CA74:
@@ -216467,7 +216467,7 @@ _0807CAAC:
 	adds r1, r0, #0
 	adds r0, r6, #0
 	movs r2, #0
-	bl sub_08047B80
+	bl gEngineEffectBoostATKBoostDEF_08047B80
 	movs r0, #0x7f
 	b _0807CB72
 _0807CAC8:
@@ -216596,7 +216596,7 @@ _0807CBA0:
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x1f
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldr r0, _0807CBCC @ =0x000004A4
 	adds r1, r5, r0
 	movs r0, #0
@@ -216805,7 +216805,7 @@ gCardEffectTribute_0807CD28: @ 0x0807CD28
 	adds r0, r4, #0
 	adds r1, r6, #0
 	adds r2, r5, #0
-	bl sub_08047C44
+	bl gEngineEffectBoostATKBoostDEF_08047C44
 _0807CD60:
 	movs r0, #0
 	pop {r4, r5, r6}
@@ -216883,7 +216883,7 @@ _0807CDF0:
 	lsrs r0, r2, #0x1f
 	movs r1, #0x8f
 	lsls r1, r1, #1
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldr r0, _0807CE04 @ =gEngineEffectDiscardGraveyard_08065990
 	bl sub_080969C4
 _0807CE00:
@@ -216914,7 +216914,7 @@ _0807CE08:
 	ldrh r5, [r5]
 	lsls r3, r5, #0x10
 	movs r2, #1
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 _0807CE3A:
 	movs r0, #0
 _0807CE3C:
@@ -216996,7 +216996,7 @@ _0807CECE:
 	adds r0, r6, #0
 	mov r1, sb
 	movs r2, #2
-	bl sub_08047B80
+	bl gEngineEffectBoostATKBoostDEF_08047B80
 	movs r0, #0
 	add sp, #4
 	pop {r3, r4}
@@ -217066,7 +217066,7 @@ _0807CF4A:
 	cmp r0, #0
 	beq _0807CFD0
 	adds r0, r4, #0
-	bl sub_0804BA90
+	bl gEngineEffectSpecialSummon_0804BA90
 	cmp r0, #0
 	beq _0807CFD0
 	ldrb r1, [r5, #2]
@@ -217080,7 +217080,7 @@ _0807CF4A:
 	ldrb r1, [r5, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	beq _0807CFBC
 	ldrb r1, [r5, #2]
@@ -217099,7 +217099,7 @@ _0807CF4A:
 	add r1, r8
 	movs r2, #1
 	movs r3, #0
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 	b _0807D000
 	.align 2, 0
 _0807CFB4: .4byte gUnk_0201C4E0
@@ -217198,7 +217198,7 @@ _0807D06C: .4byte gUnk_0201E2A0
 _0807D070: .4byte gUnk_0201C4E0
 _0807D074:
 	movs r0, #0x38
-	bl sub_080934E4
+	bl gEngineEffectSpecialSummon_080934E4
 _0807D07A:
 	movs r0, #0x7f
 	b _0807D0F6
@@ -217233,7 +217233,7 @@ _0807D0A0:
 	str r0, [sp]
 	adds r0, r6, #0
 	movs r3, #0
-	bl sub_080439B4
+	bl gEngineEffectSpecialSummonDestroy_080439B4
 	b _0807D0F4
 	.align 2, 0
 _0807D0C0: .4byte gUnk_0201C4E0
@@ -217243,11 +217243,11 @@ _0807D0CC:
 	ldr r4, _0807D100 @ =gUnk_0201BB90
 	ldr r0, [r4]
 	ldr r1, [r4, #0x1c]
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	adds r5, r0, #0
 	ldr r0, [r4, #4]
 	ldr r1, [r4, #0x20]
-	bl sub_0803A980
+	bl gEngineEffectSpecialSummonBoostATK_0803A980
 	ldrb r2, [r6, #2]
 	lsls r1, r2, #0x1f
 	lsrs r1, r1, #0x1f
@@ -217257,7 +217257,7 @@ _0807D0CC:
 	movs r2, #0
 _0807D0EE:
 	adds r0, r6, #0
-	bl sub_080487B0
+	bl gEngineEffectDiscardDamage_080487B0
 _0807D0F4:
 	movs r0, #0
 _0807D0F6:
@@ -217344,7 +217344,7 @@ _0807D1BA:
 	lsls r0, r7, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _0807D1D8 @ =0x00000139
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x7e
 	b _0807D2D6
 	.align 2, 0
@@ -217400,13 +217400,13 @@ _0807D22E:
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
 	add r1, sp, #0xc
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldrb r1, [r7, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r7]
 	ldr r2, _0807D25C @ =sub_08090624
-	bl sub_08096A4C
+	bl gEngineEffectSpecialSummonTribute_08096A4C
 	movs r0, #0x7b
 	b _0807D2D6
 	.align 2, 0
@@ -217429,7 +217429,7 @@ _0807D260:
 	ldrb r1, [r7, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_08033BF4
+	bl gEngineEffectSpecialSummon_08033BF4
 	adds r4, r0, #0
 	ldrb r2, [r7, #2]
 	lsls r3, r2, #0x1f
@@ -217457,7 +217457,7 @@ _0807D260:
 	lsrs r5, r5, #0x10
 	adds r1, r4, #0
 	adds r2, r5, #0
-	bl sub_080432A8
+	bl gEngineEffectDestroyEquip_080432A8
 	movs r0, #0x7f
 	b _0807D2D6
 	.align 2, 0
@@ -217490,9 +217490,9 @@ gCardEffectSpecialSummonPreventAttack_0807D2E0: @ 0x0807D2E0
 	movs r5, #1
 	subs r0, r5, r0
 	movs r1, #2
-	bl sub_080495D0
+	bl gEngineEffectDrawSearch_080495D0
 	adds r0, r4, #0
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	beq _0807D35A
 	adds r0, r4, #0
@@ -217522,7 +217522,7 @@ gCardEffectSpecialSummonPreventAttack_0807D2E0: @ 0x0807D2E0
 	lsls r1, r2, #2
 	adds r5, r0, r1
 	adds r0, r5, #0
-	bl sub_080313B8
+	bl gEngineEffectSpecialSummon_080313B8
 	cmp r0, #0
 	beq _0807D35A
 	ldrh r6, [r6]
@@ -217530,7 +217530,7 @@ gCardEffectSpecialSummonPreventAttack_0807D2E0: @ 0x0807D2E0
 	adds r0, r4, #0
 	adds r1, r5, #0
 	movs r2, #1
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 _0807D35A:
 	movs r0, #0
 	pop {r4, r5, r6}
@@ -217550,7 +217550,7 @@ gCardEffectDestroyAllBoostATK_0807D36C: @ 0x0807D36C
 	bl sub_080906CC
 	adds r1, r0, #0
 	adds r0, r4, #0
-	bl sub_080478FC
+	bl gEngineEffectBoostATKBoostDEF_080478FC
 	adds r7, r0, #0
 	adds r0, r4, #0
 	movs r1, #0
@@ -217586,7 +217586,7 @@ gCardEffectDestroyAllBoostATK_0807D36C: @ 0x0807D36C
 	adds r0, r4, #0
 	adds r1, r6, #0
 	adds r2, r5, #0
-	bl sub_0804308C
+	bl gEngineEffectSpecialSummonDestroy_0804308C
 _0807D3D2:
 	movs r0, #0
 	add sp, #8
@@ -217624,19 +217624,19 @@ _0807D404:
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _0807D490 @ =0x00001681 (Ojama Green)
-	bl sub_080316B8
+	bl gEngineEffectBoostATKBoostDEF_080316B8
 	adds r7, r0, #0
 	ldrb r3, [r6, #2]
 	lsls r0, r3, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _0807D494 @ =0x000016B3 (Ojama Yellow)
-	bl sub_080316B8
+	bl gEngineEffectBoostATKBoostDEF_080316B8
 	adds r5, r0, #0
 	ldrb r1, [r6, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _0807D498 @ =0x000016B4 (Ojama Black)
-	bl sub_080316B8
+	bl gEngineEffectBoostATKBoostDEF_080316B8
 	mov r8, r0
 	cmp r7, #0
 	blt _0807D4A4
@@ -217655,7 +217655,7 @@ _0807D404:
 	adds r1, r1, r4
 	lsls r2, r7, #2
 	adds r1, r1, r2
-	bl sub_08044A28
+	bl gEngineEffectSearchSpecialSummon_08044A28
 	ldrb r0, [r6, #2]
 	lsls r1, r0, #0x1f
 	lsrs r0, r1, #0x1f
@@ -217665,7 +217665,7 @@ _0807D404:
 	adds r1, r1, r4
 	lsls r2, r5, #2
 	adds r1, r1, r2
-	bl sub_08044A28
+	bl gEngineEffectSearchSpecialSummon_08044A28
 	ldrb r6, [r6, #2]
 	lsls r1, r6, #0x1f
 	lsrs r0, r1, #0x1f
@@ -217676,7 +217676,7 @@ _0807D404:
 	mov r3, r8
 	lsls r2, r3, #2
 	adds r1, r1, r2
-	bl sub_08044A28
+	bl gEngineEffectSearchSpecialSummon_08044A28
 	bl sub_0804A870
 	movs r0, #0x64
 	b _0807D4D2
@@ -217691,7 +217691,7 @@ _0807D4A4:
 	lsls r0, r6, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x15
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x6f
 	b _0807D4D2
 _0807D4B4:
@@ -217763,7 +217763,7 @@ gCardEffectSpecialSummonDiscard_0807D4DC: @ 0x0807D4DC
 	adds r1, r5, #0
 	adds r2, r4, #0
 	movs r3, #1
-	bl sub_080439B4
+	bl gEngineEffectSpecialSummonDestroy_080439B4
 	b _0807D558
 	.align 2, 0
 _0807D540: .4byte 0x00000868
@@ -217775,7 +217775,7 @@ _0807D548:
 	adds r1, r5, #0
 	adds r2, r4, #0
 	movs r3, #0
-	bl sub_080439B4
+	bl gEngineEffectSpecialSummonDestroy_080439B4
 _0807D558:
 	movs r0, #0
 	add sp, #4
@@ -217933,7 +217933,7 @@ gCardEffectFusionSummonTakeControl_0807D65C: @ 0x0807D65C
 	adds r0, r4, #0
 	adds r1, r2, #0
 	adds r2, r5, #0
-	bl sub_0804308C
+	bl gEngineEffectSpecialSummonDestroy_0804308C
 _0807D692:
 	movs r0, #0
 	add sp, #8
@@ -217958,7 +217958,7 @@ gCardEffectSendToGYDestroy_0807D69C: @ 0x0807D69C
 	adds r0, r5, r1
 	ldr r1, [r0]
 	adds r0, r4, #0
-	bl sub_080478FC
+	bl gEngineEffectBoostATKBoostDEF_080478FC
 	ldrb r2, [r4, #2]
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
@@ -217967,14 +217967,14 @@ gCardEffectSendToGYDestroy_0807D69C: @ 0x0807D69C
 	ldrh r0, [r4, #8]
 	lsrs r2, r0, #1
 	adds r0, r4, #0
-	bl sub_080487B0
+	bl gEngineEffectDiscardDamage_080487B0
 	ldrb r2, [r4, #2]
 	lsls r1, r2, #0x1f
 	lsrs r1, r1, #0x1f
 	ldrh r0, [r4, #8]
 	lsrs r2, r0, #1
 	adds r0, r4, #0
-	bl sub_080487B0
+	bl gEngineEffectDiscardDamage_080487B0
 	bl sub_0804A870
 	movs r0, #0
 	b _0807D6FA
@@ -218056,7 +218056,7 @@ _0807D71A:
 	adds r0, r5, #0
 	adds r1, r6, #0
 	adds r2, r3, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _0807D7B8
 	ldr r0, [r4]
@@ -218424,7 +218424,7 @@ _0807DA5A:
 	lsls r0, r6, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #2
-	bl sub_080495D0
+	bl gEngineEffectDrawSearch_080495D0
 _0807DA66:
 	movs r0, #0
 _0807DA68:
@@ -218448,7 +218448,7 @@ gCardEffectDiscardDestroy_0807DA70: @ 0x0807DA70
 	cmp r0, #0x80
 	bne _0807DAA8
 	adds r0, r1, #0
-	bl sub_0806460C
+	bl gEngineEffectDestroyBoostATK_0806460C
 	cmp r0, #0
 	beq _0807DAA8
 	movs r0, #0x7f
@@ -218593,7 +218593,7 @@ _0807DB8C:
 	ldrb r2, [r7, #2]
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_08033BF4
+	bl gEngineEffectSpecialSummon_08033BF4
 	cmp r0, #0
 	blt _0807DC88
 	ldrb r1, [r7, #2]
@@ -218632,13 +218632,13 @@ _0807DBC0:
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
 	add r1, sp, #0xc
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldrb r7, [r7, #2]
 	lsls r0, r7, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _0807DC04 @ =0x000010D3 (Legendary Sword (None))
 	ldr r2, _0807DC08 @ =sub_08090624
-	bl sub_08096A4C
+	bl gEngineEffectSpecialSummonTribute_08096A4C
 	movs r0, #0x7e
 	b _0807DC8A
 	.align 2, 0
@@ -218663,7 +218663,7 @@ _0807DC0C:
 	ldrb r1, [r7, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_08033BF4
+	bl gEngineEffectSpecialSummon_08033BF4
 	adds r4, r0, #0
 	ldrb r2, [r7, #2]
 	lsls r3, r2, #0x1f
@@ -218796,7 +218796,7 @@ gCardEffectDestroyDamage_0807DCF8: @ 0x0807DCF8
 	lsls r0, r2
 	orrs r1, r0
 	adds r0, r4, #0
-	bl sub_080478FC
+	bl gEngineEffectBoostATKBoostDEF_080478FC
 	ldrb r0, [r4, #2]
 	lsls r1, r0, #0x1f
 	lsrs r1, r1, #0x1f
@@ -218804,7 +218804,7 @@ gCardEffectDestroyDamage_0807DCF8: @ 0x0807DCF8
 	movs r2, #0xc8
 	lsls r2, r2, #2
 	adds r0, r4, #0
-	bl sub_080487B0
+	bl gEngineEffectDiscardDamage_080487B0
 	bl sub_0804A870
 _0807DD52:
 	movs r0, #0
@@ -218872,7 +218872,7 @@ _0807DDAC:
 _0807DDD2:
 	lsrs r0, r3, #0x1f
 	movs r1, #0x1f
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x7f
 	b _0807DED6
 	.align 2, 0
@@ -218989,7 +218989,7 @@ _0807DEC8:
 	adds r0, r2, r3
 	ldr r1, [r0]
 	adds r0, r5, #0
-	bl sub_080495D0
+	bl gEngineEffectDrawSearch_080495D0
 _0807DED4:
 	movs r0, #0
 _0807DED6:
@@ -219077,7 +219077,7 @@ _0807DF90:
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
 	subs r0, r4, r0
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	beq _0807E010
 	ldr r1, _0807DFEC @ =gUnk_0201C4E0
@@ -219097,7 +219097,7 @@ _0807DFCC:
 	subs r0, r6, r0
 	adds r1, r4, #0
 	movs r2, #0
-	bl sub_080A2DA4
+	bl gEngineEffectSpecialSummonFusionSummon_080A2DA4
 	cmp r0, #0
 	beq _0807DFE2
 	b _0807E22E
@@ -219138,7 +219138,7 @@ _0807E01C:
 	ldrb r2, [r5, #2]
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	beq _0807E098
 	adds r0, r5, #0
@@ -219238,7 +219238,7 @@ _0807E106:
 	b _0807E244
 _0807E10A:
 	adds r0, r6, #0
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	ldrh r2, [r5, #0x10]
 	cmp r0, r2
 	bge _0807E15C
@@ -219332,19 +219332,19 @@ _0807E1AC:
 _0807E1C6:
 	ldrh r1, [r5, #0xa]
 	adds r0, r6, #0
-	bl sub_08032FD8
+	bl gEngineEffectBoostATKBoostDEF_08032FD8
 	adds r4, r0, #0
 	ldrh r0, [r5, #0xa]
 	bl sub_080EEF9C
 	cmp r4, r0
 	bge _0807E204
 	ldrh r0, [r5, #0xa]
-	bl sub_0804BA58
+	bl gEngineEffectSpecialSummon_0804BA58
 	cmp r0, #0
 	bne _0807E204
 	adds r0, r6, #0
 	movs r1, #1
-	bl sub_0804A4CC
+	bl gEngineEffectGainLPStandbyPhase_0804A4CC
 	movs r0, #0x77
 	b _0807E244
 _0807E1F0:
@@ -219356,7 +219356,7 @@ _0807E1F0:
 _0807E1FC:
 	adds r0, r6, #0
 	movs r1, #0
-	bl sub_0804A4CC
+	bl gEngineEffectGainLPStandbyPhase_0804A4CC
 _0807E204:
 	movs r0, #0x75
 	b _0807E244
@@ -219636,7 +219636,7 @@ _0807E438:
 	lsls r0, r6, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0xd
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x78
 	b _0807E59A
 _0807E45A:
@@ -219644,7 +219644,7 @@ _0807E45A:
 	lsls r0, r6, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x5e
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x7f
 	b _0807E59A
 _0807E46A:
@@ -219671,7 +219671,7 @@ _0807E47E:
 	movs r1, #0xa
 	movs r2, #0
 	movs r3, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 	ldr r0, _0807E4AC @ =gUnk_0201B290
 	ldr r4, _0807E4B0 @ =0x000004A4
 	adds r0, r0, r4
@@ -219685,7 +219685,7 @@ _0807E4B4:
 	ldrb r1, [r6, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_08033BF4
+	bl gEngineEffectSpecialSummon_08033BF4
 	ldr r1, _0807E530 @ =gUnk_0201B290
 	ldr r2, _0807E534 @ =0x000004A4
 	adds r1, r1, r2
@@ -219806,7 +219806,7 @@ gCardEffectDamageBattlePhase_0807E5A4: @ 0x0807E5A4
 	movs r2, #0xfa
 	lsls r2, r2, #1
 	adds r0, r4, #0
-	bl sub_080487B0
+	bl gEngineEffectDiscardDamage_080487B0
 	cmp r0, #0
 	beq _0807E5CC
 	ldrh r1, [r4]
@@ -219916,7 +219916,7 @@ _0807E68C: .4byte gUnk_0201E2A0
 _0807E690: .4byte 0x00001D10
 _0807E694:
 	movs r0, #0x38
-	bl sub_080934E4
+	bl gEngineEffectSpecialSummon_080934E4
 _0807E69A:
 	movs r0, #0x7f
 	b _0807E6D0
@@ -219942,7 +219942,7 @@ _0807E6B8:
 	lsrs r1, r7, #0x1b
 	movs r2, #1
 	rsbs r2, r2, #0
-	bl sub_0804543C
+	bl gEngineEffectDestroyCounter_0804543C
 _0807E6CE:
 	movs r0, #0
 _0807E6D0:
@@ -220534,7 +220534,7 @@ _0807EB20:
 	str r1, [sp, #4]
 	adds r1, r5, #0
 	adds r2, r4, #0
-	bl sub_080933DC
+	bl gEngineEffectSpecialSummon_080933DC
 	b _0807EBF4
 	.align 2, 0
 _0807EB5C: .4byte 0x00000103
@@ -220677,7 +220677,7 @@ _0807EC30:
 	adds r1, r6, #0
 	adds r2, r4, #0
 	movs r3, #0
-	bl sub_08047A80
+	bl gEngineEffectBoostATKBoostDEF_08047A80
 	cmp r0, #0
 	beq _0807ECFC
 	movs r2, #1
@@ -220716,7 +220716,7 @@ _0807ECB2:
 	movs r4, #1
 	subs r0, r4, r0
 	ldrh r1, [r5, #0xc]
-	bl sub_08037030
+	bl gEngineEffectBoostATKBoostDEF_08037030
 	adds r3, r0, #0
 	cmp r3, #0
 	blt _0807ECF4
@@ -220826,7 +220826,7 @@ _0807EDA0:
 	lsls r0, r6, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0xd
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x78
 	b _0807EE6E
 _0807EDD6:
@@ -220834,7 +220834,7 @@ _0807EDD6:
 	lsls r0, r6, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x3a
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x7e
 	b _0807EE6E
 _0807EDE6:
@@ -220877,7 +220877,7 @@ _0807EE30:
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r6, #0xa]
-	bl sub_08032FD8
+	bl gEngineEffectBoostATKBoostDEF_08032FD8
 	adds r4, r0, #0
 	ldrh r0, [r6, #0xa]
 	bl sub_080EEF9C
@@ -220961,7 +220961,7 @@ _0807EE9C: @ jump table
 	.4byte _0807EF10 @ case 28
 _0807EF10:
 	adds r0, r6, #0
-	bl sub_0806460C
+	bl gEngineEffectDestroyBoostATK_0806460C
 	cmp r0, #0
 	beq _0807EFE2
 	adds r0, r6, #0
@@ -220997,7 +220997,7 @@ _0807EF40:
 	lsls r0, r6, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x15
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x78
 	b _0807EFE4
 _0807EF6C:
@@ -221005,7 +221005,7 @@ _0807EF6C:
 	lsls r0, r6, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x33
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x7e
 	b _0807EFE4
 _0807EF7C:
@@ -221029,7 +221029,7 @@ _0807EF9A:
 	bl sub_080942DC
 	adds r1, r0, #0
 	adds r0, r4, #0
-	bl sub_08044A28
+	bl gEngineEffectSearchSpecialSummon_08044A28
 _0807EFAC:
 	movs r0, #0x64
 	b _0807EFE4
@@ -221038,7 +221038,7 @@ _0807EFB0:
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r6, #0xa]
-	bl sub_08032FD8
+	bl gEngineEffectBoostATKBoostDEF_08032FD8
 	adds r4, r0, #0
 	ldrh r0, [r6, #0xa]
 	bl sub_080EEF9C
@@ -221147,7 +221147,7 @@ _0807F070:
 	movs r0, #0xc8
 	muls r2, r0, r2
 	adds r0, r4, #0
-	bl sub_080487B0
+	bl gEngineEffectDiscardDamage_080487B0
 _0807F094:
 	movs r0, #0
 _0807F096:
@@ -221307,14 +221307,14 @@ gCardEffectNegateReturnToHand_0807F158: @ 0x0807F158
 	lsrs r0, r5, #0x1f
 	lsrs r1, r6, #0x1b
 	lsrs r2, r3, #0x17
-	bl sub_08044DCC
+	bl gEngineEffectDestroyBoostATK_08044DCC
 	ldrb r2, [r7, #2]
 	lsls r1, r2, #0x1f
 	lsrs r1, r1, #0x1f
 	lsls r2, r2, #0x1a
 	lsrs r2, r2, #0x1b
 	mov r0, r8
-	bl sub_08047B90
+	bl gEngineEffectBoostATKBoostDEF_08047B90
 _0807F1D6:
 	movs r0, #0
 	pop {r3}
@@ -221382,7 +221382,7 @@ gCardEffectNegateDamage_0807F1EC: @ 0x0807F1EC
 	lsrs r0, r5, #0x1f
 	lsrs r1, r6, #0x1b
 	lsrs r2, r3, #0x17
-	bl sub_08044DCC
+	bl gEngineEffectDestroyBoostATK_08044DCC
 	ldrb r2, [r7, #2]
 	lsls r1, r2, #0x1f
 	lsrs r1, r1, #0x1f
@@ -221390,7 +221390,7 @@ gCardEffectNegateDamage_0807F1EC: @ 0x0807F1EC
 	lsrs r2, r2, #0x1b
 	mov r0, r8
 	movs r3, #0
-	bl sub_080436E8
+	bl gEngineEffectSpecialSummonDestroy_080436E8
 _0807F26C:
 	movs r0, #0
 	pop {r3}
@@ -221476,13 +221476,13 @@ _0807F330:
 	bne _0807F352
 	adds r0, r6, #0
 	movs r1, #0x15
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x78
 	b _0807F44E
 _0807F352:
 	adds r0, r6, #0
 	movs r1, #0x5e
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x7e
 	b _0807F44E
 _0807F35E:
@@ -221548,7 +221548,7 @@ _0807F3D0:
 	movs r1, #0x35
 	bl sub_0801F2C4
 	mov r0, sp
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 	b _0807F3FC
 _0807F3F0:
 	ldr r0, _0807F400 @ =gUnk_0201C4E0
@@ -221576,7 +221576,7 @@ _0807F404:
 	lsls r3, r5, #0x10
 	adds r0, r6, #0
 	movs r2, #1
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 	b _0807F442
 	.align 2, 0
 _0807F428: .4byte gUnk_0201C4E0
@@ -221584,7 +221584,7 @@ _0807F42C:
 	bl sub_080942DC
 	adds r1, r0, #0
 	adds r0, r6, #0
-	bl sub_08044A28
+	bl gEngineEffectSearchSpecialSummon_08044A28
 	b _0807F442
 _0807F43A:
 	movs r0, #1
@@ -221821,8 +221821,8 @@ _0807F5EA:
 	.align 2, 0
 _0807F5EC: .4byte gFusion
 
-	thumb_func_start sub_0807F5F0
-sub_0807F5F0: @ 0x0807F5F0
+	thumb_func_start gEngineEffectBoostATKBoostDEF_0807F5F0
+gEngineEffectBoostATKBoostDEF_0807F5F0: @ 0x0807F5F0
 	push {r4, lr}
 	adds r4, r0, #0
 	cmp r4, #0x14
@@ -221845,15 +221845,15 @@ _0807F610:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_0807F618
-sub_0807F618: @ 0x0807F618
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_0807F618
+gEngineEffectSpecialSummonBoostATK_0807F618: @ 0x0807F618
 	push {r4, lr}
 	adds r4, r0, #0
 	adds r0, r1, #0
 	adds r1, r2, #0
 	cmp r4, #0x14
 	bgt _0807F638
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	movs r1, #0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
@@ -221865,7 +221865,7 @@ _0807F634:
 	b _0807F63E
 _0807F638:
 	adds r2, r4, #0
-	bl sub_08031564
+	bl gEngineEffectSpecialSummonBoostATK_08031564
 _0807F63E:
 	pop {r4}
 	pop {r1}
@@ -221905,22 +221905,22 @@ _0807F66E:
 _0807F672:
 	ldr r1, _0807F6D8 @ =0x000018A6 (Elemental Hero Avian)
 	adds r0, r5, #0
-	bl sub_0807F5F0
+	bl gEngineEffectBoostATKBoostDEF_0807F5F0
 	cmp r0, #0
 	bne _0807F6E8
 	ldr r1, _0807F6DC @ =0x000018A7 (Elemental Hero Burstinatrix)
 	adds r0, r5, #0
-	bl sub_0807F5F0
+	bl gEngineEffectBoostATKBoostDEF_0807F5F0
 	cmp r0, #0
 	bne _0807F6E8
 	ldr r1, _0807F6E0 @ =0x000018A8 (Elemental Hero Clayman)
 	adds r0, r5, #0
-	bl sub_0807F5F0
+	bl gEngineEffectBoostATKBoostDEF_0807F5F0
 	cmp r0, #0
 	bne _0807F6E8
 	ldr r1, _0807F6E4 @ =0x000018F9 (Elemental Hero Bubbleman)
 	adds r0, r5, #0
-	bl sub_0807F5F0
+	bl gEngineEffectBoostATKBoostDEF_0807F5F0
 	cmp r0, #0
 	bne _0807F6E8
 _0807F6A2:
@@ -221931,17 +221931,17 @@ _0807F6A2:
 	beq _0807F6D2
 	ldrh r0, [r4, #2]
 	adds r1, r5, #0
-	bl sub_0807F5F0
+	bl gEngineEffectBoostATKBoostDEF_0807F5F0
 	cmp r0, #0
 	bne _0807F6E8
 	ldrh r0, [r4, #4]
 	adds r1, r5, #0
-	bl sub_0807F5F0
+	bl gEngineEffectBoostATKBoostDEF_0807F5F0
 	cmp r0, #0
 	bne _0807F6E8
 	ldrh r0, [r4, #6]
 	adds r1, r5, #0
-	bl sub_0807F5F0
+	bl gEngineEffectBoostATKBoostDEF_0807F5F0
 	cmp r0, #0
 	bne _0807F6E8
 _0807F6D2:
@@ -222089,8 +222089,8 @@ _0807F7B4:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_0807F7BC
-sub_0807F7BC: @ 0x0807F7BC
+	thumb_func_start gEngineEffectSpecialSummonFusionSummon_0807F7BC
+gEngineEffectSpecialSummonFusionSummon_0807F7BC: @ 0x0807F7BC
 	push {r4, r5, r6, lr}
 	movs r4, #0
 	ldr r2, _0807F7F8 @ =gUnk_0201B290
@@ -222126,8 +222126,8 @@ _0807F7F2:
 _0807F7F8: .4byte gUnk_0201B290
 _0807F7FC: .4byte 0x000005AC
 
-	thumb_func_start sub_0807F800
-sub_0807F800: @ 0x0807F800
+	thumb_func_start gEngineEffectBoostATKBoostDEF_0807F800
+gEngineEffectBoostATKBoostDEF_0807F800: @ 0x0807F800
 	push {r4, r5, r6, r7, lr}
 	adds r5, r0, #0
 	movs r4, #0
@@ -222147,7 +222147,7 @@ _0807F818:
 	adds r0, r0, r1
 	ldr r0, [r0]
 	adds r1, r5, #0
-	bl sub_0807F5F0
+	bl gEngineEffectBoostATKBoostDEF_0807F5F0
 	cmp r0, #0
 	beq _0807F838
 	movs r0, #1
@@ -222167,8 +222167,8 @@ _0807F842:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_0807F848
-sub_0807F848: @ 0x0807F848
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_0807F848
+gEngineEffectSpecialSummonBoostATK_0807F848: @ 0x0807F848
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -222192,7 +222192,7 @@ _0807F866:
 	ldr r0, [r0]
 	adds r1, r6, #0
 	adds r2, r5, #0
-	bl sub_0807F618
+	bl gEngineEffectSpecialSummonBoostATK_0807F618
 	cmp r0, #0
 	beq _0807F888
 	movs r0, #1
@@ -222214,8 +222214,8 @@ _0807F892:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_0807F89C
-sub_0807F89C: @ 0x0807F89C
+	thumb_func_start gEngineEffectBoostATKBoostDEF_0807F89C
+gEngineEffectBoostATKBoostDEF_0807F89C: @ 0x0807F89C
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -222237,7 +222237,7 @@ _0807F8B8:
 	adds r4, r1, r0
 	ldr r0, [r4]
 	adds r1, r6, #0
-	bl sub_0807F5F0
+	bl gEngineEffectBoostATKBoostDEF_0807F5F0
 	cmp r0, #0
 	beq _0807F8DC
 	movs r0, #0
@@ -222261,8 +222261,8 @@ _0807F8E6:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_0807F8F0
-sub_0807F8F0: @ 0x0807F8F0
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_0807F8F0
+gEngineEffectSpecialSummonBoostATK_0807F8F0: @ 0x0807F8F0
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -222288,7 +222288,7 @@ _0807F912:
 	ldr r0, [r0]
 	mov r1, r8
 	adds r2, r7, #0
-	bl sub_0807F618
+	bl gEngineEffectSpecialSummonBoostATK_0807F618
 	cmp r0, #0
 	beq _0807F92E
 	cmp r6, #0
@@ -222331,8 +222331,8 @@ _0807F962:
 	.align 2, 0
 _0807F970: .4byte 0x000005AC
 
-	thumb_func_start sub_0807F974
-sub_0807F974: @ 0x0807F974
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_0807F974
+gEngineEffectSpecialSummonBoostATK_0807F974: @ 0x0807F974
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -222371,12 +222371,12 @@ sub_0807F974: @ 0x0807F974
 	adds r6, r0, r1
 	adds r0, r7, #0
 	adds r1, r3, #0
-	bl sub_08034180
+	bl gEngineEffectSpecialSummonBoostATK_08034180
 	cmp r0, #0
 	bne _0807FA60
 	adds r0, r7, #0
 	adds r1, r5, #0
-	bl sub_0807F848
+	bl gEngineEffectSpecialSummonBoostATK_0807F848
 	cmp r0, #0
 	bne _0807FA70
 	adds r0, r4, #0
@@ -222425,11 +222425,11 @@ _0807FA08:
 	adds r6, r1, r0
 	adds r0, r4, #0
 	adds r1, r6, #0
-	bl sub_08034298
+	bl gEngineEffectBoostATKBoostDEF_08034298
 	cmp r0, #0
 	bne _0807FA60
 	adds r0, r4, #0
-	bl sub_0807F800
+	bl gEngineEffectBoostATKBoostDEF_0807F800
 	cmp r0, #0
 	bne _0807FA70
 	adds r0, r4, #0
@@ -222473,7 +222473,7 @@ _0807FA86:
 	blo _0807FA86
 _0807FA94:
 	adds r0, r7, #0
-	bl sub_08033634
+	bl gEngineEffectSpecialSummon_08033634
 	cmp r0, #0
 	bge _0807FABC
 	ldr r0, _0807FAD0 @ =gUnk_0201B290
@@ -222505,8 +222505,8 @@ _0807FAC0:
 _0807FAD0: .4byte gUnk_0201B290
 _0807FAD4: .4byte 0x000005A4
 
-	thumb_func_start sub_0807FAD8
-sub_0807FAD8: @ 0x0807FAD8
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_0807FAD8
+gEngineEffectSpecialSummonBoostATK_0807FAD8: @ 0x0807FAD8
 	push {r4, r5, lr}
 	adds r3, r0, #0
 	adds r4, r1, #0
@@ -222525,7 +222525,7 @@ sub_0807FAD8: @ 0x0807FAD8
 	bne _0807FB0C
 	adds r0, r3, #0
 	adds r1, r4, #0
-	bl sub_0807F974
+	bl gEngineEffectSpecialSummonBoostATK_0807F974
 	b _0807FB0E
 	.align 2, 0
 _0807FB04: .4byte gUnk_0201B290
@@ -222537,8 +222537,8 @@ _0807FB0E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_0807FB14
-sub_0807FB14: @ 0x0807FB14
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_0807FB14
+gEngineEffectSpecialSummonBoostATK_0807FB14: @ 0x0807FB14
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	movs r5, #0
@@ -222563,7 +222563,7 @@ _0807FB3C:
 	adds r0, r6, #0
 	movs r1, #0xb
 	adds r2, r5, #0
-	bl sub_0807F974
+	bl gEngineEffectSpecialSummonBoostATK_0807F974
 	cmp r0, #0
 	beq _0807FB58
 	adds r0, r4, #0
@@ -222590,7 +222590,7 @@ _0807FB72:
 	adds r0, r6, #0
 	adds r1, r5, #0
 	movs r2, #0
-	bl sub_0807F974
+	bl gEngineEffectSpecialSummonBoostATK_0807F974
 	cmp r0, #0
 	beq _0807FB8C
 	adds r0, r7, r4
@@ -222609,8 +222609,8 @@ _0807FB96:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_0807FB9C
-sub_0807FB9C: @ 0x0807FB9C
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_0807FB9C
+gEngineEffectSpecialSummonBoostATK_0807FB9C: @ 0x0807FB9C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -222625,7 +222625,7 @@ sub_0807FB9C: @ 0x0807FB9C
 	movs r1, #1
 	rsbs r1, r1, #0
 	adds r0, r4, #0
-	bl sub_08034298
+	bl gEngineEffectBoostATKBoostDEF_08034298
 	adds r7, r0, #0
 	cmp r7, #0
 	bne _0807FBCE
@@ -222663,7 +222663,7 @@ _0807FBD2:
 	movs r1, #1
 _0807FC06:
 	str r1, [r4]
-	bl sub_0807F7BC
+	bl gEngineEffectSpecialSummonFusionSummon_0807F7BC
 	movs r7, #0
 	ldr r0, [r6]
 	cmp r7, r0
@@ -222672,7 +222672,7 @@ _0807FC06:
 	adds r5, r6, #0
 _0807FC18:
 	mov r0, sb
-	bl sub_0807FB14
+	bl gEngineEffectSpecialSummonBoostATK_0807FB14
 	adds r4, r0, #0
 	cmp r4, #0
 	beq _0807FBCE
@@ -222706,7 +222706,7 @@ _0807FC18:
 	ldr r0, [r4]
 	lsls r0, r0, #0x13
 	lsrs r0, r0, #0x13
-	bl sub_0807F89C
+	bl gEngineEffectBoostATKBoostDEF_0807F89C
 	b _0807FC94
 	.align 2, 0
 _0807FC68: .4byte gUnk_0201B290
@@ -222726,7 +222726,7 @@ _0807FC74:
 	lsrs r0, r0, #0x18
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x18
-	bl sub_0807F8F0
+	bl gEngineEffectSpecialSummonBoostATK_0807F8F0
 _0807FC94:
 	ldr r0, [r4]
 	lsls r0, r0, #0x13
@@ -222753,8 +222753,8 @@ _0807FCB2:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_0807FCC0
-sub_0807FCC0: @ 0x0807FCC0
+	thumb_func_start gEngineEffectSpecialSummonFusionSummon_0807FCC0
+gEngineEffectSpecialSummonFusionSummon_0807FCC0: @ 0x0807FCC0
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -222787,7 +222787,7 @@ sub_0807FCC0: @ 0x0807FCC0
 	movs r1, #1
 _0807FD02:
 	str r1, [r2]
-	bl sub_0807F7BC
+	bl gEngineEffectSpecialSummonFusionSummon_0807F7BC
 	movs r7, #0
 	ldr r0, [r5]
 	cmp r7, r0
@@ -222813,7 +222813,7 @@ _0807FD16:
 	lsls r0, r0, #0x13
 	lsrs r4, r0, #0x13
 	adds r0, r4, #0
-	bl sub_0807F89C
+	bl gEngineEffectBoostATKBoostDEF_0807F89C
 	cmp r0, #0
 	bne _0807FD68
 	movs r5, #0xb5
@@ -222989,7 +222989,7 @@ _0807FEB2:
 	lsls r0, r7, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x5b
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x7f
 	b _08080326
 _0807FEC2:
@@ -223026,7 +223026,7 @@ _0807FED2:
 	str r1, [r2]
 	ldr r1, [r5]
 	adds r0, r6, #0
-	bl sub_0807FB9C
+	bl gEngineEffectSpecialSummonBoostATK_0807FB9C
 	cmp r0, #0
 	bne _0807FF14
 	b _08080324
@@ -223067,23 +223067,23 @@ _0807FF58: .4byte 0x0000059C
 _0807FF5C: .4byte 0x000005A4
 _0807FF60: .4byte gUnk_0201E2A0
 _0807FF64:
-	bl sub_0807F7BC
+	bl gEngineEffectSpecialSummonFusionSummon_0807F7BC
 	ldr r2, [r4]
 	mov r0, sp
 	movs r1, #0xc
 	bl sub_0801F338
 	adds r0, r6, #0
 	mov r1, sp
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r0, #0x7d
 	b _08080326
 _0807FF7E:
-	ldr r0, _0807FF88 @ =sub_0807FAD8
+	ldr r0, _0807FF88 @ =gEngineEffectSpecialSummonBoostATK_0807FAD8
 	bl sub_080969C4
 	movs r0, #0x7c
 	b _08080326
 	.align 2, 0
-_0807FF88: .4byte sub_0807FAD8
+_0807FF88: .4byte gEngineEffectSpecialSummonBoostATK_0807FAD8
 _0807FF8C:
 	bl sub_08096B14
 	cmp r0, #0
@@ -223126,14 +223126,14 @@ _0807FF8C:
 	ldr r2, [r0]
 	ldr r3, [r7]
 	movs r0, #0x2b
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	adds r0, r6, #0
 	mov r1, sb
 	bl sub_080312EC
 	cmp r0, #0
 	blt _08080010
 	mov r0, sl
-	bl sub_0807F89C
+	bl gEngineEffectBoostATKBoostDEF_0807F89C
 	b _0808001E
 	.align 2, 0
 _08080000: .4byte gUnk_0201C4E0
@@ -223146,7 +223146,7 @@ _08080010:
 	ldr r0, [r7]
 	adds r1, r1, r0
 	adds r0, r6, #0
-	bl sub_0807F8F0
+	bl gEngineEffectSpecialSummonBoostATK_0807F8F0
 _0808001E:
 	ldr r4, _08080060 @ =gUnk_0201B290
 	ldr r3, _08080064 @ =0x000005A4
@@ -223193,7 +223193,7 @@ _08080070:
 	movs r1, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	movs r0, #0x80
 	b _08080326
 _08080080:
@@ -223429,7 +223429,7 @@ _08080264:
 	adds r1, r6, #0
 	adds r2, r4, #0
 	adds r3, r5, #0
-	bl sub_08047A80
+	bl gEngineEffectBoostATKBoostDEF_08047A80
 	b _08080290
 	.align 2, 0
 _08080274: .4byte 0x000012E5 @ Polymerization
@@ -223441,7 +223441,7 @@ _08080284:
 	adds r1, r6, #0
 	adds r2, r4, #0
 	adds r3, r5, #0
-	bl sub_08047EA0
+	bl gEngineEffectBoostATKBoostDEF_08047EA0
 _08080290:
 	ldr r5, _080802C4 @ =gUnk_0201B290
 	movs r1, #0xb3
@@ -223453,7 +223453,7 @@ _08080290:
 	bne _080802B2
 	adds r0, r6, #0
 	adds r1, r4, #0
-	bl sub_0803A96C
+	bl gEngineEffectSpecialSummonBoostATK_0803A96C
 _080802A8:
 	ldr r3, _080802CC @ =0x000005AC
 	adds r2, r5, r3
@@ -223514,7 +223514,7 @@ _080802E0:
 	orrs r3, r4
 	adds r0, r6, #0
 	movs r2, #1
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 _08080324:
 	movs r0, #0
 _08080326:
@@ -223532,8 +223532,8 @@ _0808033C: .4byte 0x0000059C
 _08080340: .4byte 0x00000868
 _08080344: .4byte gUnk_0201C880
 
-	thumb_func_start sub_08080348
-sub_08080348: @ 0x08080348
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_08080348
+gEngineEffectSpecialSummonBoostATK_08080348: @ 0x08080348
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -223574,7 +223574,7 @@ sub_08080348: @ 0x08080348
 	mov r8, r0
 	adds r0, r7, #0
 	adds r1, r4, #0
-	bl sub_08034180
+	bl gEngineEffectSpecialSummonBoostATK_08034180
 	cmp r0, #0
 	bne _08080450
 	ldr r1, _080803F0 @ =gUnk_0201B290
@@ -223588,7 +223588,7 @@ sub_08080348: @ 0x08080348
 	beq _08080450
 	adds r0, r7, #0
 	adds r1, r6, #0
-	bl sub_0807F848
+	bl gEngineEffectSpecialSummonBoostATK_0807F848
 	cmp r0, #0
 	bne _08080460
 	adds r0, r5, #0
@@ -223638,11 +223638,11 @@ _080803F8:
 	adds r1, r1, r0
 	mov r8, r1
 	adds r0, r5, #0
-	bl sub_08034298
+	bl gEngineEffectBoostATKBoostDEF_08034298
 	cmp r0, #0
 	bne _08080450
 	adds r0, r5, #0
-	bl sub_0807F800
+	bl gEngineEffectBoostATKBoostDEF_0807F800
 	cmp r0, #0
 	bne _08080460
 	adds r0, r5, #0
@@ -223686,7 +223686,7 @@ _08080476:
 	blo _08080476
 _08080484:
 	adds r0, r7, #0
-	bl sub_08033634
+	bl gEngineEffectSpecialSummon_08033634
 	cmp r0, #0
 	bge _080804AC
 	ldr r0, _080804C0 @ =gUnk_0201B290
@@ -223719,8 +223719,8 @@ _080804B0:
 _080804C0: .4byte gUnk_0201B290
 _080804C4: .4byte 0x000005A4
 
-	thumb_func_start sub_080804C8
-sub_080804C8: @ 0x080804C8
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_080804C8
+gEngineEffectSpecialSummonBoostATK_080804C8: @ 0x080804C8
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -223737,7 +223737,7 @@ _080804E2:
 	movs r1, #1
 	rsbs r1, r1, #0
 	adds r0, r4, #0
-	bl sub_08034298
+	bl gEngineEffectBoostATKBoostDEF_08034298
 	adds r6, r0, #0
 	cmp r6, #0
 	beq _080804F4
@@ -223778,7 +223778,7 @@ _08080504:
 	movs r1, #1
 _08080538:
 	str r1, [r4]
-	bl sub_0807F7BC
+	bl gEngineEffectSpecialSummonFusionSummon_0807F7BC
 	movs r6, #0
 	mov sb, r7
 	movs r7, #0
@@ -223786,12 +223786,12 @@ _08080544:
 	mov r0, r8
 	adds r1, r6, #0
 	movs r2, #0
-	bl sub_08080348
+	bl gEngineEffectSpecialSummonBoostATK_08080348
 	cmp r0, #0
 	beq _080805AA
 	mov r0, r8
 	adds r1, r6, #0
-	bl sub_0807F8F0
+	bl gEngineEffectSpecialSummonBoostATK_0807F8F0
 	movs r5, #1
 	mov r0, r8
 	ands r0, r5
@@ -223862,7 +223862,7 @@ _080805DE:
 	mov r0, r8
 	movs r1, #0xe
 	adds r2, r6, #0
-	bl sub_08080348
+	bl gEngineEffectSpecialSummonBoostATK_08080348
 	cmp r0, #0
 	beq _08080646
 	movs r7, #1
@@ -223878,7 +223878,7 @@ _080805DE:
 	lsls r4, r4, #0x13
 	lsrs r4, r4, #0x13
 	adds r0, r4, #0
-	bl sub_0807F89C
+	bl gEngineEffectBoostATKBoostDEF_0807F89C
 	adds r0, r4, #0
 	bl gEngineEffectFusion_0804C08C
 	cmp r0, #0
@@ -223991,7 +223991,7 @@ _080806D8: @ jump table
 _080806F0:
 	mov r0, r8
 	movs r1, #0x5b
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldr r1, _08080704 @ =gUnk_0201B290
 	movs r3, #0x96
 	lsls r3, r3, #3
@@ -224057,14 +224057,14 @@ _0808077A:
 	adds r1, r6, r0
 	movs r0, #0
 	str r0, [r1]
-	bl sub_0807F7BC
+	bl gEngineEffectSpecialSummonFusionSummon_0807F7BC
 	ldr r2, [r4]
 	mov r0, sp
 	movs r1, #0xc
 	bl sub_0801F338
 	mov r0, r8
 	mov r1, sp
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r2, #0x96
 	lsls r2, r2, #3
 	adds r1, r6, r2
@@ -224083,7 +224083,7 @@ _080807B0:
 	cmp r1, r0
 	bne _080807E0
 	mov r0, r8
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	beq _080807E0
 	ldrh r2, [r6]
@@ -224136,7 +224136,7 @@ _08080816:
 	cmp r0, #0xe
 	bne _08080840
 	adds r0, r7, #0
-	bl sub_0807F89C
+	bl gEngineEffectBoostATKBoostDEF_0807F89C
 	b _0808084C
 	.align 2, 0
 _0808083C: .4byte gUnk_0201C4E0
@@ -224144,7 +224144,7 @@ _08080840:
 	bl sub_080942F8
 	adds r1, r0, #0
 	mov r0, r8
-	bl sub_0807F8F0
+	bl gEngineEffectSpecialSummonBoostATK_0807F8F0
 _0808084C:
 	bl sub_080942DC
 	adds r4, r0, #0
@@ -224320,7 +224320,7 @@ _0808098C:
 	mov r3, sl
 	ldrh r1, [r3, #0x12]
 	adds r0, r7, #0
-	bl sub_08031710
+	bl gEngineEffectBoostATKBoostDEF_08031710
 	adds r1, r0, #0
 	cmp r1, #0
 	bge _0808099E
@@ -224369,7 +224369,7 @@ _080809EC:
 	adds r0, r5, r2
 	mov r3, sb
 	str r3, [r0]
-	bl sub_0807F7BC
+	bl gEngineEffectSpecialSummonFusionSummon_0807F7BC
 	movs r0, #0
 	str r0, [sp]
 	mov sb, r0
@@ -224414,7 +224414,7 @@ _08080A44:
 	b _08080B58
 _08080A52:
 	adds r0, r6, #0
-	bl sub_0807F800
+	bl gEngineEffectBoostATKBoostDEF_0807F800
 	cmp r0, #0
 	bne _08080A6E
 	adds r0, r6, #0
@@ -224427,7 +224427,7 @@ _08080A52:
 	bne _08080B58
 _08080A6E:
 	adds r0, r6, #0
-	bl sub_0807F89C
+	bl gEngineEffectBoostATKBoostDEF_0807F89C
 	b _08080B00
 	.align 2, 0
 _08080A78: .4byte gUnk_0201B290
@@ -224448,7 +224448,7 @@ _08080A98:
 	beq _08080B58
 	adds r0, r7, #0
 	adds r1, r4, #0
-	bl sub_0807F848
+	bl gEngineEffectSpecialSummonBoostATK_0807F848
 	cmp r0, #0
 	bne _08080AE8
 	adds r0, r6, #0
@@ -224487,7 +224487,7 @@ _08080AE8:
 _08080AF8:
 	adds r0, r7, #0
 	adds r1, r5, #0
-	bl sub_0807F8F0
+	bl gEngineEffectSpecialSummonBoostATK_0807F8F0
 _08080B00:
 	adds r0, r6, #0
 	bl gEngineEffectFusion_0804C08C
@@ -224515,7 +224515,7 @@ _08080B10:
 	b _08080A0A
 _08080B30:
 	adds r0, r7, #0
-	bl sub_08033610
+	bl gEngineEffectSpecialSummon_08033610
 	cmp r0, #0
 	bne _08080B40
 	ldr r2, [sp]
@@ -226602,7 +226602,7 @@ _080818E0:
 	lsrs r1, r1, #0x1f
 	eors r0, r1
 	adds r1, r2, #0
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	movs r3, #0x80
 	lsls r3, r3, #2
 	add sp, r3
@@ -226610,8 +226610,8 @@ _080818E0:
 	pop {r0}
 	bx r0
 
-	thumb_func_start sub_08081900
-sub_08081900: @ 0x08081900
+	thumb_func_start gEngineEffectDiscardDestroySpellTrap_08081900
+gEngineEffectDiscardDestroySpellTrap_08081900: @ 0x08081900
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	adds r6, r1, #0
@@ -226640,7 +226640,7 @@ _08081920:
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r4]
 	ldr r2, _08081948 @ =sub_080905E8
-	bl sub_08096A4C
+	bl gEngineEffectSpecialSummonTribute_08096A4C
 	ldr r0, [r5]
 	adds r0, #1
 	b _08081980
@@ -226896,7 +226896,7 @@ gCardEffectDestroy_0808198C: @ 0x0808198C
 	beq _080819BC
 	adds r0, r3, #0
 	adds r1, r4, #0
-	bl sub_08081900
+	bl gEngineEffectDiscardDestroySpellTrap_08081900
 	b _080819C6
 	.align 2, 0
 _080819B8: .4byte gUnk_0201E2A0
@@ -227096,7 +227096,7 @@ _08081AFC:
 	lsls r0, r1, #0x18
 	lsrs r0, r0, #0x18
 	lsrs r1, r1, #8
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	adds r1, r0, #0
 	movs r0, #0x80
 	lsls r0, r0, #0x15
@@ -227262,7 +227262,7 @@ _08081BF4: .4byte 0xFFFC7FFF
 _08081BF8:
 	adds r0, r4, #0
 	movs r1, #0x5e
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	b _08081C0C
 _08081C02:
 	ldrh r2, [r7]
@@ -227443,13 +227443,13 @@ _08081CAC:
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x65
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldrb r4, [r4, #2]
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _08081CD0 @ =0x000010D3 (Legendary Sword (None))
 	ldr r2, _08081CD4 @ =sub_080905E8
-	bl sub_08096A4C
+	bl gEngineEffectSpecialSummonTribute_08096A4C
 	ldr r0, [r5]
 	adds r0, #1
 	str r0, [r5]
@@ -227461,7 +227461,7 @@ _08081CD4: .4byte sub_080905E8
 _08081CD8:
 	adds r0, r4, #0
 	adds r1, r3, #0
-	bl sub_08081900
+	bl gEngineEffectDiscardDestroySpellTrap_08081900
 _08081CE0:
 	pop {r4, r5}
 	pop {r1}
@@ -227516,7 +227516,7 @@ _08081D30:
 	str r0, [sp, #4]
 	movs r0, #0x67
 	movs r3, #0
-	bl sub_080933DC
+	bl gEngineEffectSpecialSummon_080933DC
 _08081D44:
 	ldr r1, _08081D58 @ =gUnk_0201B290
 	movs r0, #0x96
@@ -227709,13 +227709,13 @@ _08081E68:
 	lsls r0, r3, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x69
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r4]
 	ldr r2, _08081E90 @ =sub_08081DE4
-	bl sub_08096A4C
+	bl gEngineEffectSpecialSummonTribute_08096A4C
 	ldr r1, _08081E94 @ =gUnk_0201B290
 	movs r2, #0x96
 	lsls r2, r2, #3
@@ -227731,13 +227731,13 @@ _08081E98:
 	lsls r0, r3, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x6a
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r4]
 	ldr r2, _08081EC0 @ =sub_08081DE4
-	bl sub_08096A4C
+	bl gEngineEffectSpecialSummonTribute_08096A4C
 	ldr r1, _08081EC4 @ =gUnk_0201B290
 	movs r2, #0x96
 	lsls r2, r2, #3
@@ -227875,14 +227875,14 @@ _08081FAE:
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
 	mov r1, sp
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 _08081FBA:
 	ldrb r3, [r4, #2]
 	lsls r0, r3, #0x1f
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r4]
 	ldr r2, _08081FD8 @ =sub_08081DE4
-	bl sub_08096AB0
+	bl gEngineEffectSpecialSummonTribute_08096AB0
 	ldr r1, _08081FDC @ =gUnk_0201B290
 	movs r0, #0x96
 	lsls r0, r0, #3
@@ -228020,7 +228020,7 @@ _080820C6:
 	str r5, [sp]
 	adds r2, r6, #0
 	movs r3, #1
-	bl sub_080AEFC4
+	bl gEngineEffectSpecialSummonBoostATK_080AEFC4
 	adds r6, r0, #0
 	cmp r6, #0
 	blt _08082104
@@ -228091,7 +228091,7 @@ _08082158:
 	beq _0808219E
 	movs r0, #0x73
 _08082176:
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 _0808217A:
 	ldr r1, _0808218C @ =gUnk_0201B290
 	movs r3, #0x96
@@ -228124,7 +228124,7 @@ _080821A8:
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r4]
 	ldr r2, _080821B8 @ =sub_08081DE4
-	bl sub_08096A4C
+	bl gEngineEffectSpecialSummonTribute_08096A4C
 	b _0808217A
 	.align 2, 0
 _080821B8: .4byte sub_08081DE4
@@ -228183,7 +228183,7 @@ _08082218:
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r4]
 	ldr r2, _0808223C @ =sub_08081DE4
-	bl sub_08096A4C
+	bl gEngineEffectSpecialSummonTribute_08096A4C
 	b _0808217A
 	.align 2, 0
 _08082238: .4byte gUnk_0201C4E0
@@ -228365,7 +228365,7 @@ _0808237C:
 	str r4, [sp]
 	movs r4, #0xf
 	str r4, [sp, #4]
-	bl sub_080933DC
+	bl gEngineEffectSpecialSummon_080933DC
 	b _080823C4
 	.align 2, 0
 _08082398: .4byte 0x00000103
@@ -228458,13 +228458,13 @@ _08082440: .4byte gUnk_0201E2A0
 _08082444:
 	lsrs r0, r2, #0x1f
 	movs r1, #0x79
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r4]
 	ldr r2, _0808245C @ =sub_080905E8
-	bl sub_08096A4C
+	bl gEngineEffectSpecialSummonTribute_08096A4C
 	b _0808240C
 	.align 2, 0
 _0808245C: .4byte sub_080905E8
@@ -228551,7 +228551,7 @@ _080824E0:
 	beq _08082500
 	adds r0, r3, #0
 	adds r1, r5, #0
-	bl sub_08081900
+	bl gEngineEffectDiscardDestroySpellTrap_08081900
 	b _08082508
 	.align 2, 0
 _080824FC: .4byte gUnk_0201E2A0
@@ -228618,7 +228618,7 @@ _08082568:
 _08082572:
 	lsrs r0, r2, #0x1f
 	movs r1, #0x65
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldr r0, [r5, #4]
 	ldr r1, _080825A4 @ =0xFFFC7FFF
 	ands r0, r1
@@ -228633,7 +228633,7 @@ _08082572:
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r5]
 	ldr r2, _080825A8 @ =gCardEffectEquipBoostATK_0805000C
-	bl sub_08096A4C
+	bl gEngineEffectSpecialSummonTribute_08096A4C
 _0808259A:
 	ldr r0, [r4]
 	adds r0, #1
@@ -228678,7 +228678,7 @@ _080825E4:
 	str r0, [sp, #4]
 	movs r0, #0x7f
 	movs r3, #0
-	bl sub_080933DC
+	bl gEngineEffectSpecialSummon_080933DC
 	b _0808259A
 	.align 2, 0
 _080825FC: .4byte 0x00000199
@@ -228776,13 +228776,13 @@ _080826AC: .4byte gUnk_0201E2A0
 _080826B0:
 	lsrs r0, r2, #0x1f
 	ldr r1, _080826C8 @ =0x0000010F
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldrb r1, [r6, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r6]
 	ldr r2, _080826CC @ =sub_080905E8
-	bl sub_08096A4C
+	bl gEngineEffectSpecialSummonTribute_08096A4C
 	b _080826FC
 	.align 2, 0
 _080826C8: .4byte 0x0000010F
@@ -228808,7 +228808,7 @@ _080826D4:
 _080826F0:
 	adds r0, r6, #0
 	adds r1, r5, #0
-	bl sub_08081900
+	bl gEngineEffectDiscardDestroySpellTrap_08081900
 	cmp r0, #0
 	beq _08082736
 _080826FC:
@@ -228964,7 +228964,7 @@ gCardEffectDestroy_080827D4: @ 0x080827D4
 	adds r0, r5, #0
 	adds r2, r6, #0
 	adds r3, r6, #0
-	bl sub_080B4F2C
+	bl gEngineEffectSpecialSummonBoostATK_080B4F2C
 	adds r4, r0, #0
 	cmp r4, #0
 	bge _0808281A
@@ -228983,7 +228983,7 @@ _0808281A:
 	adds r0, r5, #0
 	adds r2, r6, #0
 	adds r3, r6, #0
-	bl sub_080B4F2C
+	bl gEngineEffectSpecialSummonBoostATK_080B4F2C
 	adds r4, r0, #0
 	cmp r4, #0
 	bge _08082842
@@ -229003,7 +229003,7 @@ _08082842:
 	adds r0, r5, #0
 	movs r2, #1
 	movs r3, #0
-	bl sub_080B4F2C
+	bl gEngineEffectSpecialSummonBoostATK_080B4F2C
 	adds r4, r0, #0
 	cmp r4, #0
 	bge _0808286C
@@ -229050,13 +229050,13 @@ _080828C4:
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x82
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldrb r3, [r5, #2]
 	lsls r0, r3, #0x1f
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r5]
 	ldr r2, _080828EC @ =sub_08082770
-	bl sub_08096A4C
+	bl gEngineEffectSpecialSummonTribute_08096A4C
 	ldr r1, _080828F0 @ =gUnk_0201B290
 	movs r0, #0x96
 	lsls r0, r0, #3
@@ -229072,13 +229072,13 @@ _080828F4:
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x83
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldrb r2, [r5, #2]
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r5]
 	ldr r2, _0808291C @ =sub_08082770
-	bl sub_08096A4C
+	bl gEngineEffectSpecialSummonTribute_08096A4C
 	ldr r1, _08082920 @ =gUnk_0201B290
 	movs r3, #0x96
 	lsls r3, r3, #3
@@ -229094,13 +229094,13 @@ _08082924:
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x84
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldrb r2, [r5, #2]
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r5]
 	ldr r2, _0808294C @ =sub_08082770
-	bl sub_08096A4C
+	bl gEngineEffectSpecialSummonTribute_08096A4C
 	ldr r1, _08082950 @ =gUnk_0201B290
 	movs r3, #0x96
 	lsls r3, r3, #3
@@ -229290,7 +229290,7 @@ _08082A88:
 	lsls r0, r5, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x56
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	b _08082ACA
 	.align 2, 0
 _08082AAC: .4byte gUnk_0201C4E0
@@ -229390,8 +229390,8 @@ _08082B56:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_08082B5C
-sub_08082B5C: @ 0x08082B5C
+	thumb_func_start gEngineEffectSpecialSummonChangePosition_08082B5C
+gEngineEffectSpecialSummonChangePosition_08082B5C: @ 0x08082B5C
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -229455,7 +229455,7 @@ _08082BC0:
 	.align 2, 0
 _08082BC4: .4byte sub_08082B2C
 _08082BC8:
-	ldr r7, _08082BE4 @ =sub_08082B5C
+	ldr r7, _08082BE4 @ =gEngineEffectSpecialSummonChangePosition_08082B5C
 _08082BCA:
 	ldr r6, _08082BE8 @ =gUnk_0201B290
 	movs r0, #0x96
@@ -229470,7 +229470,7 @@ _08082BCA:
 	beq _08082BF2
 	b _08082C7C
 	.align 2, 0
-_08082BE4: .4byte sub_08082B5C
+_08082BE4: .4byte gEngineEffectSpecialSummonChangePosition_08082B5C
 _08082BE8: .4byte gUnk_0201B290
 _08082BEC:
 	cmp r0, #2
@@ -229488,7 +229488,7 @@ _08082BF2:
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
 	mov r1, sp
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldr r3, _08082C30 @ =0x00000484
 	adds r0, r6, r3
 	mov r1, r8
@@ -229498,7 +229498,7 @@ _08082BF2:
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r5]
 	adds r2, r7, #0
-	bl sub_08096A4C
+	bl gEngineEffectSpecialSummonTribute_08096A4C
 _08082C26:
 	ldr r0, [r4]
 	adds r0, #1
@@ -229551,8 +229551,8 @@ _08082C7E:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_08082C8C
-sub_08082C8C: @ 0x08082C8C
+	thumb_func_start gEngineEffectSpecialSummonNegate_08082C8C
+gEngineEffectSpecialSummonNegate_08082C8C: @ 0x08082C8C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -229596,7 +229596,7 @@ sub_08082C8C: @ 0x08082C8C
 	mov r1, r8
 	adds r2, r5, #0
 	adds r3, r6, #0
-	bl sub_0802F9FC
+	bl gEngineEffectDestroyDamage_0802F9FC
 	cmp r0, #0
 	beq _08082CFC
 	movs r0, #1
@@ -229653,7 +229653,7 @@ _08082D46:
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x8b
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldrb r3, [r6, #2]
 	lsls r0, r3, #0x1f
 	lsrs r0, r0, #0x1f
@@ -229663,7 +229663,7 @@ _08082D46:
 	.align 2, 0
 _08082D60: .4byte sub_080905E8
 _08082D64:
-	ldr r7, _08082DBC @ =sub_08082C8C
+	ldr r7, _08082DBC @ =gEngineEffectSpecialSummonNegate_08082C8C
 	adds r0, r6, #0
 	adds r1, r7, #0
 	bl sub_0809077C
@@ -229694,7 +229694,7 @@ _08082D9A:
 	adds r0, r6, #0
 	adds r1, r4, #0
 	adds r2, r5, #0
-	bl sub_08082C8C
+	bl gEngineEffectSpecialSummonNegate_08082C8C
 	cmp r0, #0
 	bne _08082E84
 	adds r5, #1
@@ -229707,7 +229707,7 @@ _08082D9A:
 	ble _08082D98
 	b _08082E90
 	.align 2, 0
-_08082DBC: .4byte sub_08082C8C
+_08082DBC: .4byte gEngineEffectSpecialSummonNegate_08082C8C
 _08082DC0: .4byte gUnk_0201E2A0
 _08082DC4:
 	adds r0, r6, #0
@@ -229738,14 +229738,14 @@ _08082DC4:
 	lsls r0, r3, #0x1f
 	lsrs r0, r0, #0x1f
 	mov r1, sp
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldrb r1, [r6, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r6]
 	adds r2, r7, #0
 _08082E10:
-	bl sub_08096A4C
+	bl gEngineEffectSpecialSummonTribute_08096A4C
 	ldr r0, [r4]
 	adds r0, #1
 	str r0, [r4]
@@ -230044,13 +230044,13 @@ _08083028:
 	ldrb r1, [r6, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #4
 	bgt _08083042
 	ldrb r1, [r6, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	b _08083044
 _08083042:
 	movs r0, #4
@@ -230121,7 +230121,7 @@ _08083092:
 	lsls r0, r6, #0x1f
 	lsrs r0, r0, #0x1f
 	mov r1, sp
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	mov r1, r8
 	ldr r0, [r1]
 	adds r0, #1
@@ -230257,7 +230257,7 @@ _080831B6:
 _080831CC: .4byte 0xFFFC7FFF
 _080831D0:
 	adds r0, r4, #0
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	beq _0808320A
 	adds r0, r4, #0
@@ -230389,7 +230389,7 @@ _080832AA:
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x91
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	b _0808337C
 	.align 2, 0
 _080832CC: .4byte 0xFFFC7FFF
@@ -230545,7 +230545,7 @@ _080833D2:
 	lsls r1, r6, #2
 	adds r1, r1, r2
 	ldr r1, [r1]
-	bl sub_08037030
+	bl gEngineEffectBoostATKBoostDEF_08037030
 	adds r4, r0, #0
 	cmp r4, #0
 	bge _080833FC
@@ -230644,7 +230644,7 @@ _0808347E:
 	lsls r0, r3, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x92
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldr r1, _080834D0 @ =gUnk_0201E2A0
 	ldrb r0, [r4, #2]
 	lsls r2, r0, #0x1f
@@ -230673,14 +230673,14 @@ _080834D8:
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x93
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldrb r2, [r4, #2]
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
 _080834EA:
 	ldrh r1, [r4]
 	ldr r2, _080834FC @ =sub_08081DE4
-	bl sub_08096A4C
+	bl gEngineEffectSpecialSummonTribute_08096A4C
 	ldr r0, [r5]
 	adds r0, #1
 _080834F6:
@@ -230785,7 +230785,7 @@ _08083592:
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _080835C4 @ =0x00000107
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 _080835BA:
 	movs r0, #1
 	rsbs r0, r0, #0
@@ -230797,7 +230797,7 @@ _080835C8:
 	ldrb r3, [r4, #2]
 	lsls r0, r3, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_08033BF4
+	bl gEngineEffectSpecialSummon_08033BF4
 	movs r5, #1
 	rsbs r5, r5, #0
 	cmp r0, r5
@@ -230878,7 +230878,7 @@ _08083670:
 	movs r1, #0x42
 	bl sub_0801F2C4
 	mov r0, sp
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 	ldr r0, [r7]
 	adds r0, #1
 	b _080836F2
@@ -230895,7 +230895,7 @@ _0808368C:
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r4]
 	ldr r2, _080836B4 @ =sub_080905E8
-	bl sub_08096A4C
+	bl gEngineEffectSpecialSummonTribute_08096A4C
 	ldr r0, [r7]
 	adds r0, #1
 	b _080836F2
@@ -231043,7 +231043,7 @@ _080837C0: .4byte gUnk_0201E2A0
 _080837C4: .4byte gUnk_0201C4E0
 _080837C8:
 	ldr r0, _080837E0 @ =0x00000109
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 _080837CE:
 	ldr r1, _080837E4 @ =gUnk_0201B290
 	movs r0, #0x96
@@ -231220,7 +231220,7 @@ _08083918:
 	movs r1, #0x35
 	bl sub_0801F2C4
 	mov r0, sp
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 _0808392E:
 	ldr r1, _08083940 @ =gUnk_0201B290
 	movs r0, #0x96
@@ -231367,7 +231367,7 @@ _08083A08:
 	adds r0, r5, #0
 	movs r2, #1
 	movs r3, #1
-	bl sub_080B4F2C
+	bl gEngineEffectSpecialSummonBoostATK_080B4F2C
 	adds r4, r0, #0
 	cmp r4, #0
 	bge _08083A60
@@ -231408,7 +231408,7 @@ _08083A60:
 	str r3, [sp]
 	adds r0, r5, #0
 	adds r2, r3, #0
-	bl sub_080B4F2C
+	bl gEngineEffectSpecialSummonBoostATK_080B4F2C
 	adds r4, r0, #0
 	cmp r4, #0
 	bge _08083AA8
@@ -231438,7 +231438,7 @@ _08083AA8:
 _08083AB8:
 	lsrs r0, r2, #0x1f
 	movs r1, #0x94
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldrb r3, [r5, #2]
 	lsls r0, r3, #0x1f
 	b _08083AD6
@@ -231447,14 +231447,14 @@ _08083AC6:
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x95
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldrb r2, [r5, #2]
 	lsls r0, r2, #0x1f
 _08083AD6:
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r5]
 	ldr r2, _08083AEC @ =sub_08083968
-	bl sub_08096A4C
+	bl gEngineEffectSpecialSummonTribute_08096A4C
 	ldr r0, [r4]
 	adds r0, #1
 	str r0, [r4]
@@ -231512,8 +231512,8 @@ _08083B4A:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_08083B54
-sub_08083B54: @ 0x08083B54
+	thumb_func_start gEngineEffectSpecialSummon_08083B54
+gEngineEffectSpecialSummon_08083B54: @ 0x08083B54
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -231522,7 +231522,7 @@ sub_08083B54: @ 0x08083B54
 	bgt _08083B94
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_0803352C
+	bl gEngineEffectSpecialSummon_0803352C
 	cmp r0, #0
 	beq _08083B94
 	ldrb r2, [r6, #6]
@@ -231599,14 +231599,14 @@ _08083BCE:
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	mov r1, sp
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 _08083BF6:
 	ldrb r2, [r6, #2]
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r6]
-	ldr r2, _08083C18 @ =sub_08083B54
-	bl sub_08096AB0
+	ldr r2, _08083C18 @ =gEngineEffectSpecialSummon_08083B54
+	bl gEngineEffectSpecialSummonTribute_08096AB0
 	ldr r1, _08083C1C @ =gUnk_0201B290
 	movs r0, #0x96
 	lsls r0, r0, #3
@@ -231616,7 +231616,7 @@ _08083BF6:
 	b _08083C80
 	.align 2, 0
 _08083C14: .4byte 0xFFFC7FFF
-_08083C18: .4byte sub_08083B54
+_08083C18: .4byte gEngineEffectSpecialSummon_08083B54
 _08083C1C: .4byte gUnk_0201B290
 _08083C20:
 	bl sub_08096B14
@@ -231714,7 +231714,7 @@ _08083CCA:
 	lsrs r0, r0, #0x18
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x18
-	bl sub_0803B1A4
+	bl gEngineEffectSpecialSummonChangePosition_0803B1A4
 	movs r2, #1
 	lsls r2, r0
 	movs r0, #0xff
@@ -231825,7 +231825,7 @@ _08083D9E:
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r4]
 	ldr r2, _08083DC4 @ =sub_080905E8
-	bl sub_08096A4C
+	bl gEngineEffectSpecialSummonTribute_08096A4C
 	ldr r0, [r5]
 	adds r0, #1
 	b _08083E04
@@ -231930,7 +231930,7 @@ _08083E7A:
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0xf
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldr r0, _08083E98 @ =gUnk_0201C4E0
 	movs r3, #0xea
 	lsls r3, r3, #5
@@ -231963,7 +231963,7 @@ _08083EBC: .4byte gUnk_0201E2A0
 _08083EC0: .4byte gUnk_0201C4E0
 _08083EC4:
 	movs r0, #0xe2
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 _08083ECA:
 	ldr r1, _08083EDC @ =gUnk_0201B290
 	movs r3, #0x96
@@ -231996,7 +231996,7 @@ _08083EF8:
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r4]
 	ldr r2, _08083F08 @ =sub_080905E8
-	bl sub_08096A4C
+	bl gEngineEffectSpecialSummonTribute_08096A4C
 	b _08083F30
 	.align 2, 0
 _08083F08: .4byte sub_080905E8
@@ -232082,14 +232082,14 @@ _08083F7A:
 	lsls r0, r3, #0x1f
 	lsrs r0, r0, #0x1f
 	mov r1, sp
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 _08083FAC:
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r4]
 	ldr r2, _08083FCC @ =sub_08081DE4
-	bl sub_08096AB0
+	bl gEngineEffectSpecialSummonTribute_08096AB0
 	ldr r1, _08083FD0 @ =gUnk_0201B290
 	movs r2, #0x96
 	lsls r2, r2, #3
@@ -232477,7 +232477,7 @@ _0808428C:
 	lsls r0, r6, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x5e
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	b _080842FA
 _0808429A:
 	ldrb r1, [r6, #2]
@@ -232493,7 +232493,7 @@ _080842AC:
 	lsls r0, r6, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x56
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	b _080842FA
 _080842BA:
 	ldrb r1, [r6, #2]
@@ -232617,7 +232617,7 @@ _08084398:
 	str r0, [sp, #4]
 	movs r0, #0x7f
 	movs r3, #0
-	bl sub_080933DC
+	bl gEngineEffectSpecialSummon_080933DC
 _080843AC:
 	ldr r1, _080843C4 @ =gUnk_0201B290
 	movs r0, #0x96
@@ -232829,13 +232829,13 @@ _080844DC:
 	lsls r0, r3, #0x1f
 	lsrs r0, r0, #0x1f
 	mov r1, sp
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r4]
 	ldr r2, _0808453C @ =sub_080905E8
-	bl sub_08096A4C
+	bl gEngineEffectSpecialSummonTribute_08096A4C
 	ldr r0, [r5]
 	adds r0, #1
 	b _08084578
@@ -233064,7 +233064,7 @@ _080846B4:
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
 	adds r1, r5, #0
-	bl sub_08030B0C
+	bl gEngineEffectSpecialSummonChangePosition_08030B0C
 	cmp r0, #0
 	beq _0808470A
 	ldrb r0, [r4, #2]
@@ -233072,7 +233072,7 @@ _080846B4:
 	lsrs r1, r1, #0x1f
 	adds r0, r4, #0
 	adds r2, r5, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _0808470A
 	ldrb r1, [r4, #2]
@@ -233174,7 +233174,7 @@ _080847B8:
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x8d
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldr r0, _080847DC @ =gUnk_0201C4E0
 	movs r3, #0xea
 	lsls r3, r3, #5
@@ -233203,7 +233203,7 @@ _080847E4:
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r4]
 	ldr r2, _08084808 @ =sub_08081DE4
-	bl sub_08096A4C
+	bl gEngineEffectSpecialSummonTribute_08096A4C
 	b _080848B2
 	.align 2, 0
 _08084804: .4byte gUnk_0201C4E0
@@ -233284,7 +233284,7 @@ _080848A4: .4byte gUnk_0201E2A0
 _080848A8: .4byte gUnk_0201C4E0
 _080848AC:
 	movs r0, #0x21
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 _080848B2:
 	ldr r1, _080848C8 @ =gUnk_0201B290
 	movs r3, #0x96
@@ -233382,7 +233382,7 @@ _0808496C: .4byte gUnk_0201E2A0
 _08084970: .4byte gUnk_0201C4E0
 _08084974:
 	movs r0, #0x73
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 _0808497A:
 	ldr r1, _08084988 @ =gUnk_0201B290
 	movs r3, #0x96
@@ -233432,7 +233432,7 @@ _080849D0: .4byte gUnk_0201E2A0
 _080849D4: .4byte gUnk_0201C4E0
 _080849D8:
 	movs r0, #0x75
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 _080849DE:
 	ldr r1, _080849EC @ =gUnk_0201B290
 	movs r3, #0x96
@@ -233469,7 +233469,7 @@ _08084A14:
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r4]
 	ldr r2, _08084A30 @ =sub_08081DE4
-	bl sub_08096A4C
+	bl gEngineEffectSpecialSummonTribute_08096A4C
 	ldr r1, _08084A34 @ =gUnk_0201B290
 	movs r2, #0x96
 	lsls r2, r2, #3
@@ -233528,8 +233528,8 @@ _08084A92:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_08084A98
-sub_08084A98: @ 0x08084A98
+	thumb_func_start gEngineEffectSpecialSummon_08084A98
+gEngineEffectSpecialSummon_08084A98: @ 0x08084A98
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r4, r1, #0
@@ -233543,7 +233543,7 @@ sub_08084A98: @ 0x08084A98
 	bgt _08084ABA
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_0803352C
+	bl gEngineEffectSpecialSummon_0803352C
 	cmp r0, #0
 	bne _08084ABE
 _08084ABA:
@@ -233620,7 +233620,7 @@ _08084B34:
 	ldrb r2, [r6, #6]
 	ands r0, r2
 	strb r0, [r6, #6]
-	ldr r4, _08084B60 @ =sub_08084A98
+	ldr r4, _08084B60 @ =gEngineEffectSpecialSummon_08084A98
 	adds r0, r6, #0
 	adds r1, r4, #0
 	bl sub_0809077C
@@ -233631,19 +233631,19 @@ _08084B34:
 	b _08084C3A
 	.align 2, 0
 _08084B5C: .4byte 0xFFFC7FFF
-_08084B60: .4byte sub_08084A98
+_08084B60: .4byte gEngineEffectSpecialSummon_08084A98
 _08084B64:
 	ldrb r1, [r6, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x9b
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldrb r2, [r6, #2]
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r6]
 	adds r2, r4, #0
-	bl sub_08096AB0
+	bl gEngineEffectSpecialSummonTribute_08096AB0
 	ldr r1, _08084B8C @ =gUnk_0201B290
 	movs r0, #0x96
 	lsls r0, r0, #3
@@ -233658,8 +233658,8 @@ _08084B90:
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r6]
-	ldr r2, _08084BAC @ =sub_08084A98
-	bl sub_08096A4C
+	ldr r2, _08084BAC @ =gEngineEffectSpecialSummon_08084A98
+	bl gEngineEffectSpecialSummonTribute_08096A4C
 	ldr r1, _08084BB0 @ =gUnk_0201B290
 	movs r2, #0x96
 	lsls r2, r2, #3
@@ -233668,7 +233668,7 @@ _08084B90:
 	adds r0, #1
 	b _08084C2E
 	.align 2, 0
-_08084BAC: .4byte sub_08084A98
+_08084BAC: .4byte gEngineEffectSpecialSummon_08084A98
 _08084BB0: .4byte gUnk_0201B290
 _08084BB4:
 	bl sub_08096B14
@@ -233696,7 +233696,7 @@ _08084BB4:
 	adds r0, r6, #0
 	adds r1, r4, #0
 	bl sub_08080B74
-	ldr r1, _08084C10 @ =sub_08084A98
+	ldr r1, _08084C10 @ =gEngineEffectSpecialSummon_08084A98
 	adds r0, r6, #0
 	bl sub_0809077C
 	cmp r0, #0
@@ -233711,7 +233711,7 @@ _08084BB4:
 	.align 2, 0
 _08084C08: .4byte gUnk_0201C4E0
 _08084C0C: .4byte 0x00001D68
-_08084C10: .4byte sub_08084A98
+_08084C10: .4byte gEngineEffectSpecialSummon_08084A98
 _08084C14: .4byte gUnk_0201B290
 _08084C18:
 	movs r0, #0x1c
@@ -233854,7 +233854,7 @@ gCardEffectDestroyReduceATK_08084D08: @ 0x08084D08
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_08033BF4
+	bl gEngineEffectSpecialSummon_08033BF4
 	movs r5, #1
 	rsbs r5, r5, #0
 	cmp r0, r5
@@ -233925,7 +233925,7 @@ _08084D86:
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x7c
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldrb r3, [r4, #2]
 	lsls r0, r3, #0x1f
 	lsrs r0, r0, #0x1f
@@ -233939,14 +233939,14 @@ _08084DA4:
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x64
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldrb r2, [r4, #2]
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r4]
 	ldr r2, _08084DC8 @ =gCardEffectDestroyChangePosition_080554C4
 _08084DBA:
-	bl sub_08096A4C
+	bl gEngineEffectSpecialSummonTribute_08096A4C
 	ldr r0, [r5]
 	adds r0, #1
 	str r0, [r5]
@@ -234079,7 +234079,7 @@ _08084EB0:
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _08084F34 @ =0x000012E5 (Polymerization)
-	bl sub_08037030
+	bl gEngineEffectBoostATKBoostDEF_08037030
 	adds r2, r0, #0
 	cmp r2, #0
 	blt _08084F2A
@@ -234199,7 +234199,7 @@ _08084FA0:
 	lsls r0, r6, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x7b
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldr r0, [r4]
 	adds r0, #1
 	b _08085004
@@ -234209,7 +234209,7 @@ _08084FB2:
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r6]
 	ldr r2, _08084FC8 @ =gCardEffectDestroyBoostDEF_08054898
-	bl sub_08096A4C
+	bl gEngineEffectSpecialSummonTribute_08096A4C
 	ldr r0, [r4]
 	adds r0, #1
 	b _08085004
@@ -234437,7 +234437,7 @@ _0808518C: .4byte gUnk_0201C4E0
 _08085190:
 	movs r0, #0x9d
 	lsls r0, r0, #1
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 _08085198:
 	ldr r1, _080851A4 @ =gUnk_0201B290
 	movs r3, #0x96
@@ -234465,7 +234465,7 @@ _080851C0:
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r4]
 	ldr r2, _080851D0 @ =sub_08081DE4
-	bl sub_08096A4C
+	bl gEngineEffectSpecialSummonTribute_08096A4C
 	b _08085198
 	.align 2, 0
 _080851D0: .4byte sub_08081DE4
@@ -234532,7 +234532,7 @@ _08085250: .4byte gUnk_0201E2A0
 _08085254: .4byte gUnk_0201C4E0
 _08085258:
 	ldr r0, _08085274 @ =0x0000013B
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 _0808525E:
 	ldr r1, _08085278 @ =gUnk_0201B290
 	movs r0, #0x96
@@ -235319,8 +235319,8 @@ _08085834:
 _08085836:
 	bx lr
 
-	thumb_func_start sub_08085838
-sub_08085838: @ 0x08085838
+	thumb_func_start gEngineEffectSendToGYGraveyard_08085838
+gEngineEffectSendToGYGraveyard_08085838: @ 0x08085838
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -235353,7 +235353,7 @@ _0808585A:
 	adds r1, r6, #0
 	adds r2, r5, #0
 	movs r3, #0
-	bl sub_0805A280
+	bl gEngineEffectSendToGYGraveyard_0805A280
 	cmp r0, #0
 	beq _0808588E
 	mov r0, sl
@@ -235401,7 +235401,7 @@ _080858BC:
 	mov r0, r8
 	adds r1, r6, #0
 	movs r2, #0
-	bl sub_0805A354
+	bl gEngineEffectSendToGYGraveyard_0805A354
 	cmp r0, #0
 	beq _08085904
 	mov r2, sl
@@ -235442,8 +235442,8 @@ _08085916:
 	.align 2, 0
 _08085924: .4byte 0x00000868
 
-	thumb_func_start sub_08085928
-sub_08085928: @ 0x08085928
+	thumb_func_start gEngineEffectSendToGYGraveyard_08085928
+gEngineEffectSendToGYGraveyard_08085928: @ 0x08085928
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -235498,7 +235498,7 @@ _08085972:
 	adds r1, r6, #0
 	adds r2, r5, #0
 	mov r3, r8
-	bl sub_0805A280
+	bl gEngineEffectSendToGYGraveyard_0805A280
 	cmp r0, #0
 	beq _080859AC
 	ldr r0, [sp]
@@ -235549,7 +235549,7 @@ _080859DA:
 	mov r0, sl
 	adds r1, r6, #0
 	mov r2, r8
-	bl sub_0805A354
+	bl gEngineEffectSendToGYGraveyard_0805A354
 	cmp r0, #0
 	beq _08085A28
 	ldr r2, [sp]
@@ -235952,8 +235952,8 @@ _08085D32:
 _08085D44: .4byte gUnk_09E3F14C
 _08085D48: .4byte 0x0000010D
 
-	thumb_func_start sub_08085D4C
-sub_08085D4C: @ 0x08085D4C
+	thumb_func_start gEngineEffectSendToGYBoostATK_08085D4C
+gEngineEffectSendToGYBoostATK_08085D4C: @ 0x08085D4C
 	push {r4, lr}
 	sub sp, #0x100
 	ldr r0, _08085D74 @ =gUnk_0201B290
@@ -236058,11 +236058,11 @@ _08085E6E:
 	bne _08085EC0
 	adds r0, r4, #0
 	movs r1, #1
-	bl sub_08085838
+	bl gEngineEffectSendToGYGraveyard_08085838
 	cmp r0, #0
 	beq _08085EAC
 	adds r0, r4, #0
-	bl sub_080B4BA8
+	bl gEngineEffectSpecialSummonNegate_080B4BA8
 	cmp r0, #0
 	beq _08085EAC
 	ldr r0, _08085EA0 @ =gUnk_0201B290
@@ -236097,7 +236097,7 @@ _08085EC0:
 _08085ECE:
 	adds r0, r4, #0
 	movs r1, #0
-	bl sub_08085838
+	bl gEngineEffectSendToGYGraveyard_08085838
 	cmp r0, #0
 	bne _08085EFC
 	mov r0, sp
@@ -236118,7 +236118,7 @@ _08085EFC:
 	bl sub_08085A50
 	adds r0, r4, #0
 	movs r1, #1
-	bl sub_08085838
+	bl gEngineEffectSendToGYGraveyard_08085838
 	adds r1, r0, #1
 _08085F0C:
 	ldr r0, _08085F28 @ =gUnk_0201B290
@@ -236131,7 +236131,7 @@ _08085F0C:
 	movs r1, #3
 _08085F1C:
 	mov r0, sp
-	bl sub_080933C8
+	bl gEngineEffectSpecialSummon_080933C8
 	movs r0, #2
 	str r0, [r4]
 	b _08085FF2
@@ -236290,7 +236290,7 @@ _0808603C:
 	adds r0, r1, r3
 	ldr r1, [r0]
 	movs r0, #0
-	bl sub_08095EC4
+	bl gEngineEffectDiscardDestroyAll_08095EC4
 	b _08086096
 	.align 2, 0
 _08086060: .4byte gUnk_0201C4E0
@@ -236311,7 +236311,7 @@ _08086084:
 	movs r0, #1
 	movs r1, #0
 	movs r2, #0
-	bl sub_08095D84
+	bl gEngineEffectSpecialSummonBoostATK_08095D84
 	b _08086096
 _08086090:
 	movs r0, #0
@@ -236382,8 +236382,8 @@ _08086112:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_0808611C
-sub_0808611C: @ 0x0808611C
+	thumb_func_start gEngineEffectSendToGYGraveyard_0808611C
+gEngineEffectSendToGYGraveyard_0808611C: @ 0x0808611C
 	push {r4, r5, r6, lr}
 	sub sp, #0x100
 	movs r6, #0
@@ -236455,7 +236455,7 @@ _080861A0:
 	adds r0, r6, #0
 	adds r1, r4, #0
 	movs r2, #1
-	bl sub_08085928
+	bl gEngineEffectSendToGYGraveyard_08085928
 	cmp r0, #0
 	beq _08086204
 	adds r0, r4, #0
@@ -236472,11 +236472,11 @@ _080861DC: .4byte 0x0000058C
 _080861E0:
 	adds r0, r4, #0
 	movs r1, #1
-	bl sub_08085838
+	bl gEngineEffectSendToGYGraveyard_08085838
 	cmp r0, #0
 	beq _08086204
 	adds r0, r4, #0
-	bl sub_080B4BA8
+	bl gEngineEffectSpecialSummonNegate_080B4BA8
 	cmp r0, #0
 	beq _08086204
 	ldr r0, _08086200 @ =0x0000058C
@@ -236509,7 +236509,7 @@ _0808621C:
 	adds r0, r6, #0
 	adds r1, r4, #0
 	movs r2, #0
-	bl sub_08085928
+	bl gEngineEffectSendToGYGraveyard_08085928
 	cmp r0, #0
 	bne _08086248
 	mov r0, sp
@@ -236532,7 +236532,7 @@ _08086248:
 	adds r0, r6, #0
 	adds r1, r4, #0
 	movs r2, #1
-	bl sub_08085928
+	bl gEngineEffectSendToGYGraveyard_08085928
 	b _080862C6
 _0808626E:
 	ldrh r0, [r6]
@@ -236544,12 +236544,12 @@ _0808626E:
 	adds r0, r6, #0
 	adds r1, r4, #0
 	movs r2, #1
-	bl sub_08085928
+	bl gEngineEffectSendToGYGraveyard_08085928
 	b _080862C6
 _0808628A:
 	adds r0, r4, #0
 	movs r1, #0
-	bl sub_08085838
+	bl gEngineEffectSendToGYGraveyard_08085838
 	cmp r0, #0
 	bne _080862B8
 	mov r0, sp
@@ -236571,7 +236571,7 @@ _080862B8:
 	bl sub_08085A50
 	adds r0, r4, #0
 	movs r1, #1
-	bl sub_08085838
+	bl gEngineEffectSendToGYGraveyard_08085838
 _080862C6:
 	adds r1, r0, #1
 _080862C8:
@@ -236584,7 +236584,7 @@ _080862C8:
 	movs r1, #3
 _080862D6:
 	mov r0, sp
-	bl sub_080933C8
+	bl gEngineEffectSpecialSummon_080933C8
 	movs r0, #2
 	str r0, [r4]
 	movs r0, #0
@@ -236795,8 +236795,8 @@ _08086476:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_0808647C
-sub_0808647C: @ 0x0808647C
+	thumb_func_start gEngineEffectBoostATKBoostDEF_0808647C
+gEngineEffectBoostATKBoostDEF_0808647C: @ 0x0808647C
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -236837,7 +236837,7 @@ _080864AA:
 	adds r0, r2, #0
 	movs r1, #1
 	rsbs r1, r1, #0
-	bl sub_08034298
+	bl gEngineEffectBoostATKBoostDEF_08034298
 	cmp r0, #0
 	bne _080864E8
 	movs r0, #1
@@ -236867,8 +236867,8 @@ _080864FA:
 	.align 2, 0
 _08086504: .4byte 0x00000868
 
-	thumb_func_start sub_08086508
-sub_08086508: @ 0x08086508
+	thumb_func_start gEngineEffectDiscardBoostATK_08086508
+gEngineEffectDiscardBoostATK_08086508: @ 0x08086508
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -236951,8 +236951,8 @@ _08086594:
 _080865A4: .4byte 0x00000868
 _080865A8: .4byte gUnk_0201C4EC
 
-	thumb_func_start sub_080865AC
-sub_080865AC: @ 0x080865AC
+	thumb_func_start gEngineEffectSpecialSummon_080865AC
+gEngineEffectSpecialSummon_080865AC: @ 0x080865AC
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -236984,7 +236984,7 @@ _080865D4:
 	adds r0, r5, #0
 	adds r1, r4, #0
 	movs r2, #0
-	bl sub_08036658
+	bl gEngineEffectSpecialSummonDestroy_08036658
 	cmp r0, #0
 	bne _0808660C
 	cmp r7, r5
@@ -237087,7 +237087,7 @@ gEngineEffectRitualSummonTribute_08086634: @ 0x08086634
 	cmp r2, r0
 	bne _080866D8
 	lsrs r0, r1, #0x1f
-	bl sub_08033634
+	bl gEngineEffectSpecialSummon_08033634
 	cmp r0, #0
 	blt _080866D8
 	adds r0, r4, #0
@@ -237100,7 +237100,7 @@ gEngineEffectRitualSummonTribute_08086634: @ 0x08086634
 	lsls r1, r3, #0x10
 	lsrs r1, r1, #0x10
 	ldr r0, [sp, #0xac]
-	bl sub_08037A2C
+	bl gEngineEffectBoostATKBoostDEF_08037A2C
 	cmp r0, #1
 	bgt _08086776
 _080866D8:
@@ -237145,7 +237145,7 @@ _080866F0:
 	ldr r0, [sp, #0xac]
 	adds r1, r4, #0
 	movs r2, #0
-	bl sub_08036658
+	bl gEngineEffectSpecialSummonDestroy_08036658
 	cmp r0, #0
 	bne _080866D8
 	ldr r2, [sp, #0xa8]
@@ -237161,7 +237161,7 @@ _080866F0:
 _08086750:
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_08033634
+	bl gEngineEffectSpecialSummon_08033634
 	cmp r0, #0
 	bge _08086776
 	ldr r1, [sp, #0xa8]
@@ -237362,7 +237362,7 @@ _080868C2:
 	adds r0, r6, #0
 	adds r1, r4, #0
 	movs r2, #0
-	bl sub_08036658
+	bl gEngineEffectSpecialSummonDestroy_08036658
 	cmp r0, #0
 	bne _08086926
 	ldr r2, [sp, #0xac]
@@ -237473,8 +237473,8 @@ _0808699E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080869A8
-sub_080869A8: @ 0x080869A8
+	thumb_func_start gEngineEffectRitualSummonTribute_080869A8
+gEngineEffectRitualSummonTribute_080869A8: @ 0x080869A8
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	ldr r0, _08086A08 @ =gUnk_0201B290
@@ -237546,8 +237546,8 @@ _08086A2E:
 	.align 2, 0
 _08086A34: .4byte gRitual
 
-	thumb_func_start sub_08086A38
-sub_08086A38: @ 0x08086A38
+	thumb_func_start gEngineEffectRitualSummonTribute_08086A38
+gEngineEffectRitualSummonTribute_08086A38: @ 0x08086A38
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -237607,7 +237607,7 @@ _08086A9A:
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	adds r1, r4, #0
-	bl sub_0808647C
+	bl gEngineEffectBoostATKBoostDEF_0808647C
 	cmp r0, #0
 	bne _08086AAC
 	b _08086C70
@@ -237630,7 +237630,7 @@ _08086AAC:
 	ldrb r1, [r7, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_08033634
+	bl gEngineEffectSpecialSummon_08033634
 	cmp r0, #0
 	bge _08086B34
 	movs r4, #0
@@ -237814,12 +237814,12 @@ _08086C38:
 	ldrh r2, [r5]
 	lsls r1, r2, #0x13
 	lsrs r1, r1, #0x13
-	bl sub_08086508
+	bl gEngineEffectDiscardBoostATK_08086508
 	adds r4, r0, #0
 	ldrb r7, [r7, #2]
 	lsls r0, r7, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080865AC
+	bl gEngineEffectSpecialSummon_080865AC
 	movs r1, #0
 	adds r4, r4, r0
 	ldrb r5, [r5, #3]
@@ -238066,7 +238066,7 @@ _08086DFE:
 	lsrs r0, r0, #0x1f
 	movs r1, #0xb
 	adds r2, r5, #0
-	bl sub_080869A8
+	bl gEngineEffectRitualSummonTribute_080869A8
 	cmp r0, #0
 	beq _08086E68
 	ldrb r0, [r7, #2]
@@ -238129,14 +238129,14 @@ _08086E84:
 	lsrs r0, r4, #0x1f
 	movs r1, #0x8f
 	lsls r1, r1, #1
-	bl sub_08093390
-	ldr r0, _08086E98 @ =sub_080869A8
+	bl gEngineEffectSpecialSummon_08093390
+	ldr r0, _08086E98 @ =gEngineEffectRitualSummonTribute_080869A8
 	bl sub_08096A08
 _08086E94:
 	movs r0, #0x7f
 	b _08087196
 	.align 2, 0
-_08086E98: .4byte sub_080869A8
+_08086E98: .4byte gEngineEffectRitualSummonTribute_080869A8
 _08086E9C:
 	movs r5, #0
 	ldr r1, _08086EAC @ =gRitual
@@ -238245,7 +238245,7 @@ _08086F34:
 _08086F66:
 	movs r0, #0xcf
 	adds r1, r4, #0
-	bl sub_08093584
+	bl gEngineEffectSpecialSummon_08093584
 	b _08087108
 	.align 2, 0
 _08086F70: .4byte 0x000004A4
@@ -238264,20 +238264,20 @@ _08086F7C:
 	bne _08086FA4
 	lsrs r0, r2, #0x1f
 	ldrh r1, [r7]
-	ldr r2, _08086FA0 @ =sub_08086A38
+	ldr r2, _08086FA0 @ =gEngineEffectRitualSummonTribute_08086A38
 	bl gEngineEffectSpecialSummonGraveyard_080B70AC
 	b _08086FAA
 	.align 2, 0
 _08086F9C: .4byte gUnk_0201E2A0
-_08086FA0: .4byte sub_08086A38
+_08086FA0: .4byte gEngineEffectRitualSummonTribute_08086A38
 _08086FA4:
-	ldr r0, _08086FB0 @ =sub_08086A38
+	ldr r0, _08086FB0 @ =gEngineEffectRitualSummonTribute_08086A38
 	bl sub_08096A08
 _08086FAA:
 	movs r0, #0x7c
 	b _08087196
 	.align 2, 0
-_08086FB0: .4byte sub_08086A38
+_08086FB0: .4byte gEngineEffectRitualSummonTribute_08086A38
 _08086FB4:
 	bl sub_08096B14
 	cmp r0, #0
@@ -238454,7 +238454,7 @@ _0808710C:
 	ldrb r3, [r7, #2]
 	lsls r0, r3, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_08037A8C
+	bl gEngineEffectBoostATKBoostDEF_08037A8C
 	ldrb r4, [r7, #2]
 	lsls r1, r4, #0x1f
 	lsrs r3, r1, #0x1f
@@ -238468,7 +238468,7 @@ _0808710C:
 	adds r0, r3, #0
 	movs r2, #1
 	movs r3, #1
-	bl sub_080ABE40
+	bl gEngineEffectChangePosition_080ABE40
 	ldrb r7, [r7, #2]
 	lsls r0, r7, #0x1f
 	lsrs r0, r0, #0x1f
@@ -240010,7 +240010,7 @@ _08087C1A:
 	lsls r1, r1, #0x13
 	lsrs r1, r1, #0x13
 	adds r0, r6, #0
-	bl sub_0807FB9C
+	bl gEngineEffectSpecialSummonBoostATK_0807FB9C
 	cmp r0, #0
 	beq _08087C34
 	adds r0, r6, #0
@@ -240945,11 +240945,11 @@ gCardAIDestroySpellTrap_08088304: @ 0x08088304
 	cmp r0, #0
 	bne _08088352
 	adds r0, r4, #0
-	bl sub_080309FC
+	bl gEngineEffectBoostATKBoostDEF_080309FC
 	cmp r0, #0
 	bne _08088352
 	adds r0, r5, #0
-	bl sub_08033BF4
+	bl gEngineEffectSpecialSummon_08033BF4
 	cmp r0, #0
 	bge _08088348
 	adds r0, r4, #0
@@ -243659,7 +243659,7 @@ gCardAISpecialSummon_08089760: @ 0x08089760
 	cmp r0, #2
 	bne _080897A4
 	adds r0, r4, #0
-	bl sub_0804BA58
+	bl gEngineEffectSpecialSummon_0804BA58
 	cmp r0, #0
 	bne _080897A4
 	adds r0, r4, #0
@@ -246635,7 +246635,7 @@ _0808ADF6:
 	cmp r0, #0
 	beq _0808AE26
 	adds r0, r4, #0
-	bl sub_0804BA58
+	bl gEngineEffectSpecialSummon_0804BA58
 	cmp r0, #0
 	bne _0808AE26
 	adds r0, r7, #0
@@ -248324,7 +248324,7 @@ _0808BAFC:
 	ldrb r1, [r6]
 	ldrb r2, [r6, #1]
 	str r3, [sp, #0x44]
-	bl sub_0807F618
+	bl gEngineEffectSpecialSummonBoostATK_0807F618
 	ldr r3, [sp, #0x44]
 	cmp r0, #0
 	beq _0808BB30
@@ -249424,7 +249424,7 @@ _0808C376:
 	bne _0808C3A8
 	adds r0, r7, #0
 	adds r1, r4, #0
-	bl sub_0807FB9C
+	bl gEngineEffectSpecialSummonBoostATK_0807FB9C
 	cmp r0, #0
 	beq _0808C3A8
 	adds r0, r7, #0
@@ -249647,7 +249647,7 @@ _0808C526:
 	beq _0808C558
 	adds r0, r6, #0
 	adds r1, r4, #0
-	bl sub_080804C8
+	bl gEngineEffectSpecialSummonBoostATK_080804C8
 	cmp r0, #0
 	beq _0808C558
 	adds r0, r6, #0
@@ -249674,7 +249674,7 @@ _0808C57A:
 	adds r0, r6, #0
 	adds r1, r5, #0
 	movs r2, #0
-	bl sub_08080348
+	bl gEngineEffectSpecialSummonBoostATK_08080348
 	cmp r0, #0
 	beq _0808C592
 	adds r0, r6, #0
@@ -249705,7 +249705,7 @@ _0808C5BA:
 	adds r0, r6, #0
 	movs r1, #0xe
 	adds r2, r5, #0
-	bl sub_08080348
+	bl gEngineEffectSpecialSummonBoostATK_08080348
 	cmp r0, #0
 	beq _0808C5D2
 	adds r0, r6, #0
@@ -249767,7 +249767,7 @@ _0808C616:
 	bne _0808C648
 	adds r0, r6, #0
 	adds r1, r4, #0
-	bl sub_080804C8
+	bl gEngineEffectSpecialSummonBoostATK_080804C8
 	cmp r0, #0
 	beq _0808C648
 	adds r0, r6, #0
@@ -249794,7 +249794,7 @@ _0808C66A:
 	adds r0, r6, #0
 	adds r1, r5, #0
 	movs r2, #0
-	bl sub_08080348
+	bl gEngineEffectSpecialSummonBoostATK_08080348
 	cmp r0, #0
 	beq _0808C682
 	adds r0, r6, #0
@@ -249825,7 +249825,7 @@ _0808C6AA:
 	adds r0, r6, #0
 	movs r1, #0xe
 	adds r2, r5, #0
-	bl sub_08080348
+	bl gEngineEffectSpecialSummonBoostATK_08080348
 	cmp r0, #0
 	beq _0808C6C2
 	adds r0, r6, #0
@@ -250055,7 +250055,7 @@ _0808C864:
 	beq _0808C89C
 	adds r0, r7, #0
 	adds r1, r6, #0
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	cmp r0, #0xf
@@ -250383,7 +250383,7 @@ _0808CAEC:
 	mov r1, sl
 	adds r0, r5, r1
 	adds r0, r0, r6
-	bl sub_080313B8
+	bl gEngineEffectSpecialSummon_080313B8
 	cmp r0, #0
 	beq _0808CB28
 	mov r0, sb
@@ -251391,11 +251391,11 @@ _0808D2BA:
 	cmp r0, #0x16
 	bne _0808D2FE
 	adds r0, r4, #0
-	bl sub_080309FC
+	bl gEngineEffectBoostATKBoostDEF_080309FC
 	cmp r0, #0
 	bne _0808D2FE
 	adds r0, r7, #0
-	bl sub_08033BF4
+	bl gEngineEffectSpecialSummon_08033BF4
 	cmp r0, #0
 	bge _0808D2F4
 	adds r0, r4, #0
@@ -252582,7 +252582,7 @@ _0808DBE4:
 	cmp r0, #0
 	bne _0808DC00
 	ldr r0, _0808DC24 @ =0x000013A2 (Maiden of the Aqua)
-	bl sub_08032A6C
+	bl gEngineEffectNegateFlip_08032A6C
 	cmp r0, #0
 	beq _0808DC00
 	ldr r2, _0808DC28 @ =0x000010F4 (Umi)
@@ -252618,8 +252618,8 @@ _0808DC3C:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_0808DC48
-sub_0808DC48: @ 0x0808DC48
+	thumb_func_start gEngineEffectDestroyStandbyPhase_0808DC48
+gEngineEffectDestroyStandbyPhase_0808DC48: @ 0x0808DC48
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -252650,13 +252650,13 @@ sub_0808DC48: @ 0x0808DC48
 	beq _0808DD3E
 	mov r0, r8
 	adds r1, r7, #0
-	bl sub_080313DC
+	bl gEngineEffectDestroyStandbyPhase_080313DC
 	cmp r0, #3
 	bgt _0808DD3E
 	mov r0, r8
 	adds r1, r7, #0
 	movs r2, #1
-	bl sub_08045298
+	bl gEngineEffectDestroyStandbyPhase_08045298
 	mov r0, sb
 	cmp r0, #0
 	bne _0808DD3E
@@ -252709,7 +252709,7 @@ _0808DCE2:
 	beq _0808DD30
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	cmp r0, #2
@@ -252792,7 +252792,7 @@ _0808DD88:
 	cmp r0, #0
 	beq _0808DE66
 	ldr r0, _0808DE3C @ =0x00000FF9 (Castle of Dark Illusions)
-	bl sub_08032CA4
+	bl gEngineEffectSpecialSummonBoostATK_08032CA4
 	cmp r0, #0
 	beq _0808DE44
 	ldr r0, _0808DE40 @ =gUnk_0201C520
@@ -252830,13 +252830,13 @@ _0808DDE2:
 	bne _0808DE66
 	adds r0, r6, #0
 	adds r1, r5, #0
-	bl sub_080313DC
+	bl gEngineEffectDestroyStandbyPhase_080313DC
 	cmp r0, #3
 	bgt _0808DE66
 	adds r0, r6, #0
 	adds r1, r5, #0
 	movs r2, #1
-	bl sub_08045298
+	bl gEngineEffectDestroyStandbyPhase_08045298
 	cmp r4, #0
 	beq _0808DE66
 	mov r1, sb
@@ -252880,7 +252880,7 @@ _0808DE44:
 	adds r0, r6, #0
 	adds r1, r5, #0
 	movs r2, #0
-	bl sub_08045298
+	bl gEngineEffectDestroyStandbyPhase_08045298
 _0808DE66:
 	adds r7, #0x14
 	movs r1, #0x14
@@ -252968,7 +252968,7 @@ _0808DEC4:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	ldr r3, [sp, #4]
 _0808DF0A:
 	movs r1, #0x14
@@ -253278,7 +253278,7 @@ _0808E140:
 	bne _0808E1DE
 	adds r0, r4, #0
 	adds r1, r6, #0
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	cmp r0, #1
@@ -253292,7 +253292,7 @@ _0808E168:
 	lsrs r2, r2, #0x1f
 	adds r0, r4, #0
 	adds r1, r6, #0
-	bl sub_08036658
+	bl gEngineEffectSpecialSummonDestroy_08036658
 	cmp r0, #0
 	bne _0808E1DE
 	adds r0, r4, #0
@@ -253333,7 +253333,7 @@ _0808E1B0:
 	beq _0808E1DE
 	adds r0, r4, #0
 	adds r1, r6, #0
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	cmp r0, #0xa
@@ -253514,7 +253514,7 @@ _0808E318:
 	adds r1, r6, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_080439A0
+	bl gEngineEffectChangePosition_080439A0
 	bl sub_0804A870
 	movs r2, #1
 	str r2, [sp, #0x58]
@@ -253648,7 +253648,7 @@ _0808E414:
 	adds r1, r4, #0
 	mov r2, r8
 	ldr r3, _0808E440 @ =0x000012FB (Call of Darkness (None))
-	bl sub_08047E20
+	bl gEngineEffectBoostATKBoostDEF_08047E20
 _0808E42E:
 	adds r4, #1
 	cmp r4, #4
@@ -253972,7 +253972,7 @@ _0808E662:
 	bne _0808E6F0
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_0803407C
+	bl gEngineEffectSpecialSummonBoostATK_0803407C
 	adds r1, r0, #0
 	cmp r1, #0
 	beq _0808E6D8
@@ -254042,7 +254042,7 @@ _0808E72A:
 	adds r0, r5, #0
 	adds r1, r4, #0
 	mov r2, sl
-	bl sub_0804790C
+	bl gEngineEffectBoostATKBoostDEF_0804790C
 	movs r0, #1
 	b _0808E75E
 	.align 2, 0
@@ -254160,7 +254160,7 @@ _0808E7A2:
 	orrs r1, r2
 	lsls r2, r5, #0x18
 	lsrs r2, r2, #0x18
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	b _0808E842
 	.align 2, 0
 _0808E824: .4byte 0x00001354 @ Forced Requisition
@@ -254471,7 +254471,7 @@ _0808EA80:
 	adds r0, r7, #0
 	adds r1, r6, #0
 	mov r2, sb
-	bl sub_08031564
+	bl gEngineEffectSpecialSummonBoostATK_08031564
 	cmp r0, #0
 	beq _0808EAB2
 	adds r0, r4, r5
@@ -254579,8 +254579,8 @@ _0808EB5C: .4byte gUnk_0201C4F0
 _0808EB60: .4byte gUnk_0201C740
 _0808EB64: .4byte 0xFFFFFDB0
 
-	thumb_func_start sub_0808EB68
-sub_0808EB68: @ 0x0808EB68
+	thumb_func_start gEngineEffectSpecialSummonRitualSummon_0808EB68
+gEngineEffectSpecialSummonRitualSummon_0808EB68: @ 0x0808EB68
 	push {r4, r5, r6, r7, lr}
 	adds r5, r0, #0
 	movs r4, #0
@@ -254604,7 +254604,7 @@ _0808EB7A:
 	adds r0, r5, #0
 	adds r1, r4, #0
 	movs r2, #1
-	bl sub_0803B230
+	bl gEngineEffectSpecialSummonRitualSummon_0803B230
 	cmp r0, #0
 	bne _0808EBA8
 	movs r0, #1
@@ -254641,14 +254641,14 @@ _0808EBC4:
 	cmp r0, #0
 	beq _0808EBF4
 	adds r0, r4, #0
-	bl sub_0808EB68
+	bl gEngineEffectSpecialSummonRitualSummon_0808EB68
 	cmp r0, #0
 	beq _0808EBF4
 	adds r0, r4, #0
 	adds r1, r5, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 	movs r0, #1
 	b _0808EC02
 	.align 2, 0
@@ -254775,7 +254775,7 @@ _0808EC4E:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	adds r2, r7, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	movs r0, #1
 	str r0, [sp]
 _0808ECE0:
@@ -254866,8 +254866,8 @@ _0808ED8C: .4byte gUnk_0201C510
 _0808ED90: .4byte 0x00000868
 _0808ED94: .4byte 0xA0280000
 
-	thumb_func_start sub_0808ED98
-sub_0808ED98: @ 0x0808ED98
+	thumb_func_start gEngineEffectDamage_0808ED98
+gEngineEffectDamage_0808ED98: @ 0x0808ED98
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -255252,7 +255252,7 @@ _0808F08A:
 	add r0, sp, #4
 	adds r1, r5, #0
 	mov r2, r8
-	bl sub_08047970
+	bl gEngineEffectBoostATKBoostDEF_08047970
 _0808F094:
 	movs r0, #1
 	b _0808F160
@@ -255272,7 +255272,7 @@ _0808F0B0:
 	adds r1, r5, #0
 	mov r2, r8
 	adds r3, r5, #0
-	bl sub_08047F1C
+	bl gEngineEffectBoostATKBoostDEF_08047F1C
 	adds r0, r5, #0
 	adds r1, r4, #0
 	movs r2, #0x14
@@ -255295,14 +255295,14 @@ _0808F0D2:
 	adds r1, r5, #0
 	mov r2, r8
 	adds r3, r5, #0
-	bl sub_08047F1C
+	bl gEngineEffectBoostATKBoostDEF_08047F1C
 	b _0808F094
 _0808F0F8:
 	adds r0, r5, #0
 	mov r1, r8
 	movs r2, #0
 	movs r3, #0
-	bl sub_08047E20
+	bl gEngineEffectBoostATKBoostDEF_08047E20
 	b _0808F094
 _0808F106:
 	adds r0, r5, #0
@@ -255313,11 +255313,11 @@ _0808F106:
 	lsls r0, r5, #0x18
 	lsrs r4, r0, #0x18
 	adds r0, r5, #0
-	bl sub_08033BF4
+	bl gEngineEffectSpecialSummon_08033BF4
 	cmp r0, #0
 	blt _0808F134
 	adds r0, r5, #0
-	bl sub_08033BF4
+	bl gEngineEffectSpecialSummon_08033BF4
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x10
 	orrs r0, r4
@@ -255382,14 +255382,14 @@ _0808F180:
 	beq _0808F1B8
 	adds r0, r4, #0
 	ldr r1, _0808F1B4 @ =0x0000146F (Cathedral of Nobles)
-	bl sub_08032C94
+	bl gEngineEffectSpecialSummonBoostATK_08032C94
 	cmp r0, #0
 	bne _0808F1B8
 	adds r0, r4, #0
 	adds r1, r5, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 	movs r0, #1
 	b _0808F1C6
 	.align 2, 0
@@ -255429,19 +255429,19 @@ _0808F1D8:
 	beq _0808F21C
 	movs r0, #0
 	ldr r1, _0808F218 @ =0x00001784 (Kozaky)
-	bl sub_08032CCC
+	bl gEngineEffectSpecialSummonBoostATK_08032CCC
 	cmp r0, #0
 	bne _0808F21C
 	movs r0, #1
 	ldr r1, _0808F218 @ =0x00001784 (Kozaky)
-	bl sub_08032CCC
+	bl gEngineEffectSpecialSummonBoostATK_08032CCC
 	cmp r0, #0
 	bne _0808F21C
 	adds r0, r4, #0
 	adds r1, r5, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 	movs r0, #1
 	b _0808F22A
 	.align 2, 0
@@ -255532,7 +255532,7 @@ _0808F2B0:
 _0808F2B4:
 	movs r2, #0
 	movs r3, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 	movs r0, #1
 	b _0808F2E0
 _0808F2C0:
@@ -255563,8 +255563,8 @@ _0808F2E0:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_0808F2F0
-sub_0808F2F0: @ 0x0808F2F0
+	thumb_func_start gEngineEffectDestroyStandbyPhase_0808F2F0
+gEngineEffectDestroyStandbyPhase_0808F2F0: @ 0x0808F2F0
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -255584,10 +255584,10 @@ sub_0808F2F0: @ 0x0808F2F0
 	adds r0, r6, #0
 	adds r1, r5, #0
 	movs r2, #1
-	bl sub_08045298
+	bl gEngineEffectDestroyStandbyPhase_08045298
 	adds r0, r6, #0
 	adds r1, r5, #0
-	bl sub_080313DC
+	bl gEngineEffectDestroyStandbyPhase_080313DC
 	adds r0, #1
 	cmp r0, #2
 	ble _0808F398
@@ -255642,7 +255642,7 @@ sub_0808F2F0: @ 0x0808F2F0
 	lsrs r3, r3, #0x13
 	adds r0, r7, #0
 	mov r1, r8
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 _0808F398:
 	pop {r3}
 	mov r8, r3
@@ -255736,8 +255736,8 @@ _0808F444: .4byte gUnk_0201C520
 _0808F448: .4byte gUnk_0201C510
 _0808F44C: .4byte 0xA5F80000
 
-	thumb_func_start sub_0808F450
-sub_0808F450: @ 0x0808F450
+	thumb_func_start gEngineEffectDiscardDamage_0808F450
+gEngineEffectDiscardDamage_0808F450: @ 0x0808F450
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -255930,7 +255930,7 @@ _0808F588:
 	adds r1, r5, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 	movs r0, #1
 	b _0808F602
 	.align 2, 0
@@ -256022,7 +256022,7 @@ _0808F684:
 	adds r0, r6, #0
 	adds r1, r4, #0
 	movs r3, #1
-	bl sub_0804A2C8
+	bl gEngineEffectSendToGYGraveyard_0804A2C8
 	movs r3, #1
 	mov sb, r3
 _0808F696:
@@ -256128,7 +256128,7 @@ _0808F760:
 	adds r0, r6, #0
 	adds r1, r4, #0
 	movs r3, #1
-	bl sub_0804A2C8
+	bl gEngineEffectSendToGYGraveyard_0804A2C8
 	movs r3, #1
 	mov sb, r3
 _0808F772:
@@ -256284,7 +256284,7 @@ _0808F8A0:
 	adds r1, r5, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 	movs r0, #1
 	b _0808F914
 _0808F8B0:
@@ -256418,7 +256418,7 @@ _0808F958:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	cmp r0, #0
 	beq _0808F9E2
 	adds r0, r5, #0
@@ -256472,14 +256472,14 @@ _0808FA04:
 	beq _0808FA38
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_0803149C
+	bl gEngineEffectDestroyCounter_0803149C
 	cmp r0, #0
 	bne _0808FA38
 	adds r0, r4, #0
 	adds r1, r5, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 	movs r0, #1
 	b _0808FA46
 	.align 2, 0
@@ -256550,7 +256550,7 @@ _0808FAA2:
 	adds r1, r5, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 	movs r0, #1
 	b _0808FADE
 	.align 2, 0
@@ -256574,8 +256574,8 @@ _0808FADE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_0808FAE4
-sub_0808FAE4: @ 0x0808FAE4
+	thumb_func_start gEngineEffectDestroyBoostATK_0808FAE4
+gEngineEffectDestroyBoostATK_0808FAE4: @ 0x0808FAE4
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -256659,7 +256659,7 @@ _0808FB70:
 	mov r1, r8
 	movs r2, #0
 	movs r3, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 	movs r0, #1
 	b _0808FBBE
 	.align 2, 0
@@ -256753,7 +256753,7 @@ _0808FBFE:
 	adds r1, r5, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 	movs r0, #1
 	b _0808FC68
 	.align 2, 0
@@ -256882,12 +256882,12 @@ _0808FD22:
 	ldr r4, _0808FD9C @ =0x000017C9 (Theinen the Great Sphinx)
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_08037A8C
+	bl gEngineEffectBoostATKBoostDEF_08037A8C
 	cmp r0, #0
 	bge _0808FD4E
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_080316B8
+	bl gEngineEffectBoostATKBoostDEF_080316B8
 	cmp r0, #0
 	blt _0808FDA8
 _0808FD4E:
@@ -256917,7 +256917,7 @@ _0808FD4E:
 	add r3, r8
 	ldr r2, [r3]
 	movs r1, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	cmp r0, #0
 	beq _0808FDA8
 	movs r0, #1
@@ -257009,7 +257009,7 @@ _0808FE00:
 	orrs r1, r0
 	adds r0, r3, #0
 	adds r2, r5, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	adds r0, r6, #0
 	adds r1, r7, #0
 	movs r2, #0
@@ -257107,7 +257107,7 @@ _0808FEC0:
 	orrs r1, r0
 	adds r0, r3, #0
 	adds r2, r5, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	adds r0, r6, #0
 	adds r1, r7, #0
 	movs r2, #0
@@ -257299,8 +257299,8 @@ _0809006A:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_0809007C
-sub_0809007C: @ 0x0809007C
+	thumb_func_start gEngineEffectDestroyStandbyPhase_0809007C
+gEngineEffectDestroyStandbyPhase_0809007C: @ 0x0809007C
 	push {r4, r5, r6, r7, lr}
 	ldr r1, _0809008C @ =gUnk_0201C4E0
 	ldr r2, _08090090 @ =0x00001CF4
@@ -257318,7 +257318,7 @@ _08090094:
 	adds r0, r7, #0
 	adds r1, r6, #0
 	movs r2, #1
-	bl sub_08045298
+	bl gEngineEffectDestroyStandbyPhase_08045298
 	adds r4, #1
 	lsls r4, r4, #0x10
 	lsrs r4, r4, #0x10
@@ -257380,8 +257380,8 @@ _08090110: .4byte 0x00000868
 _08090114: .4byte 0xC0800000
 _08090118: .4byte 0x00001CBC
 
-	thumb_func_start sub_0809011C
-sub_0809011C: @ 0x0809011C
+	thumb_func_start gEngineEffectSpecialSummonSendToGY_0809011C
+gEngineEffectSpecialSummonSendToGY_0809011C: @ 0x0809011C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -257471,7 +257471,7 @@ _08090170:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	adds r4, r0, #0
 	adds r0, r7, #0
 	adds r1, r5, #0
@@ -257529,7 +257529,7 @@ gEngineEffectDestroyBoostATK_08090218: @ 0x08090218
 	bne _08090230
 	b _080904AC
 _08090230:
-	bl sub_08095084
+	bl gEngineEffectSpecialSummonBoostATK_08095084
 	ldr r2, _080903D4 @ =0x00001D08
 	adds r0, r4, r2
 	ldr r0, [r0]
@@ -257579,7 +257579,7 @@ _0809028E:
 	beq _08090298
 	b _080904D8
 _08090298:
-	bl sub_0808ED98
+	bl gEngineEffectDamage_0808ED98
 	cmp r0, #0
 	beq _080902A2
 	b _080904D8
@@ -257594,7 +257594,7 @@ _080902AC:
 	beq _080902B6
 	b _080904D8
 _080902B6:
-	bl sub_0808F450
+	bl gEngineEffectDiscardDamage_0808F450
 	cmp r0, #0
 	beq _080902C0
 	b _080904D8
@@ -257634,7 +257634,7 @@ _080902FC:
 	beq _08090306
 	b _080904D8
 _08090306:
-	bl sub_0808FAE4
+	bl gEngineEffectDestroyBoostATK_0808FAE4
 	cmp r0, #0
 	beq _08090310
 	b _080904D8
@@ -257659,7 +257659,7 @@ _0809032E:
 	beq _08090338
 	b _080904D8
 _08090338:
-	bl sub_0809007C
+	bl gEngineEffectDestroyStandbyPhase_0809007C
 	cmp r0, #0
 	beq _08090342
 	b _080904D8
@@ -257730,7 +257730,7 @@ _080903B0:
 	beq _080903E4
 	adds r0, r4, #0
 	movs r1, #1
-	bl sub_0804A4CC
+	bl gEngineEffectGainLPStandbyPhase_0804A4CC
 	b _08090406
 	.align 2, 0
 _080903CC: .4byte gUnk_0201C4E0
@@ -257742,7 +257742,7 @@ _080903E0: .4byte 0x000010D0 @ Wicked Dragon with the Ersatz Head
 _080903E4:
 	adds r0, r4, #0
 	movs r1, #0
-	bl sub_0804A4CC
+	bl gEngineEffectGainLPStandbyPhase_0804A4CC
 	adds r0, r4, #0
 	ands r0, r5
 	ldr r1, _080904B0 @ =0x00000868
@@ -257799,7 +257799,7 @@ _0809044A:
 	bne _080904D8
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_08042B24
+	bl gEngineEffectSpecialSummon_08042B24
 	cmp r0, #0
 	bne _080904D8
 _08090462:
@@ -257811,19 +257811,19 @@ _08090462:
 	cmp r7, #1
 	ble _08090416
 	ldr r0, _080904BC @ =0x00001762 (Backfire)
-	bl sub_0809011C
+	bl gEngineEffectSpecialSummonSendToGY_0809011C
 	cmp r0, #0
 	bne _080904D8
 	ldr r0, _080904C0 @ =0x0000186B (Gearfried the Swordmaster)
-	bl sub_0809011C
+	bl gEngineEffectSpecialSummonSendToGY_0809011C
 	cmp r0, #0
 	bne _080904D8
 	ldr r0, _080904C4 @ =0x00001862 (Maji-Gire Panda)
-	bl sub_0809011C
+	bl gEngineEffectSpecialSummonSendToGY_0809011C
 	cmp r0, #0
 	bne _080904D8
 	ldr r0, _080904C8 @ =0x00001875 (Firebird)
-	bl sub_0809011C
+	bl gEngineEffectSpecialSummonSendToGY_0809011C
 	adds r4, r0, #0
 	cmp r4, #0
 	bne _080904D8
@@ -258589,8 +258589,8 @@ _080909F4:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080909FC
-sub_080909FC: @ 0x080909FC
+	thumb_func_start gEngineEffectBoostATKBoostDEF_080909FC
+gEngineEffectBoostATKBoostDEF_080909FC: @ 0x080909FC
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -258634,7 +258634,7 @@ _08090A20:
 	adds r1, r4, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 	b _08090A66
 	.align 2, 0
 _08090A58: .4byte 0x00000868
@@ -259122,7 +259122,7 @@ _08090DD6:
 	ldr r1, [r0, #0x1c]
 	mov r0, sb
 	adds r2, r4, #0
-	bl sub_0802F3A8
+	bl gEngineEffectSpecialSummonDestroy_0802F3A8
 	ldr r1, _08090E58 @ =0x000005DC
 	muls r0, r1, r0
 	adds r7, r7, r0
@@ -259611,7 +259611,7 @@ _0809117C:
 	ldr r1, [r6, #0x1c]
 	ldr r2, _08091354 @ =0x00001238 (Metalmorph)
 	mov r0, sb
-	bl sub_0802F3A8
+	bl gEngineEffectSpecialSummonDestroy_0802F3A8
 	str r0, [sp, #0x80]
 	movs r0, #0
 	str r0, [sp, #0x84]
@@ -259819,7 +259819,7 @@ _0809133A:
 	ldr r0, [sp, #0x50]
 	adds r2, r5, #0
 	movs r3, #1
-	bl sub_080909FC
+	bl gEngineEffectBoostATKBoostDEF_080909FC
 	b _0809144C
 	.align 2, 0
 _08091348: .4byte 0xFFFFFE0C
@@ -259869,13 +259869,13 @@ _0809139E:
 	ldr r2, _080914F4 @ =0x0000159E (Buster Rancher)
 	ldr r0, [sp, #0x50]
 	movs r3, #0
-	bl sub_080909FC
+	bl gEngineEffectBoostATKBoostDEF_080909FC
 _080913B6:
 	ldr r0, _080914F0 @ =gUnk_0201BB90
 	ldr r1, [r0, #0x20]
 	ldr r2, _080914F4 @ =0x0000159E (Buster Rancher)
 	ldr r0, [sp, #0x50]
-	bl sub_0802F3A8
+	bl gEngineEffectSpecialSummonDestroy_0802F3A8
 	cmp r0, #0
 	beq _0809144C
 	ldr r3, _080914F8 @ =0x000009C4
@@ -260035,7 +260035,7 @@ _080914B0:
 	mov r0, sb
 	adds r2, r5, #0
 	movs r3, #1
-	bl sub_080909FC
+	bl gEngineEffectBoostATKBoostDEF_080909FC
 	b _080915A0
 	.align 2, 0
 _080914EC: .4byte 0x000009C3
@@ -260086,13 +260086,13 @@ _0809153C:
 	ldr r2, _080916AC @ =0x0000159E (Buster Rancher)
 	mov r0, sb
 	movs r3, #0
-	bl sub_080909FC
+	bl gEngineEffectBoostATKBoostDEF_080909FC
 _08091554:
 	ldr r0, _080916A8 @ =gUnk_0201BB90
 	ldr r1, [r0, #0x1c]
 	ldr r2, _080916AC @ =0x0000159E (Buster Rancher)
 	mov r0, sb
-	bl sub_0802F3A8
+	bl gEngineEffectSpecialSummonDestroy_0802F3A8
 	cmp r0, #0
 	beq _080915A0
 	ldr r3, _080916B0 @ =0x000009C4
@@ -260147,7 +260147,7 @@ _080915A0:
 	ldr r2, _080916B8 @ =0x0000150A (Heart of Clear Water)
 	mov r0, sb
 	movs r3, #1
-	bl sub_080909FC
+	bl gEngineEffectBoostATKBoostDEF_080909FC
 _080915C6:
 	ldr r2, _080916A8 @ =gUnk_0201BB90
 	ldr r0, [r2, #8]
@@ -260172,7 +260172,7 @@ _080915C6:
 	ldr r2, _080916B8 @ =0x0000150A (Heart of Clear Water)
 	ldr r0, [sp, #0x50]
 	movs r3, #1
-	bl sub_080909FC
+	bl gEngineEffectBoostATKBoostDEF_080909FC
 _080915F8:
 	ldr r4, _080916A8 @ =gUnk_0201BB90
 	movs r0, #0x2c
@@ -260274,8 +260274,8 @@ _080916B4: .4byte 0x00000513
 _080916B8: .4byte 0x0000150A @ Heart of Clear Water
 _080916BC: .4byte gUnk_0201E2A0
 
-	thumb_func_start sub_080916C0
-sub_080916C0: @ 0x080916C0
+	thumb_func_start gEngineEffectBoostATKBoostDEF_080916C0
+gEngineEffectBoostATKBoostDEF_080916C0: @ 0x080916C0
 	push {lr}
 	movs r1, #0
 	bl gEngineEffectBoostATKBoostDEF_08090A78
@@ -260910,28 +260910,28 @@ _08091AE4:
 	ldr r2, _08091B64 @ =0x00001408 (Fairy Meteor Crush)
 	mov r0, sb
 	mov r3, sb
-	bl sub_0802F3E0
+	bl gEngineEffectSpecialSummonDestroy_0802F3E0
 	cmp r0, #0
 	bne _08091B3C
 	ldr r1, [r4, #0x1c]
 	ldr r2, _08091B68 @ =0x00001625 (Big Bang Shot)
 	mov r0, sb
 	mov r3, sb
-	bl sub_0802F3E0
+	bl gEngineEffectSpecialSummonDestroy_0802F3E0
 	cmp r0, #0
 	bne _08091B3C
 	ldr r1, [r4, #0x1c]
 	ldr r2, _08091B6C @ =0x00001496 (Cyclon Laser)
 	mov r0, sb
 	mov r3, sb
-	bl sub_0802F3E0
+	bl gEngineEffectSpecialSummonDestroy_0802F3E0
 	cmp r0, #0
 	bne _08091B3C
 	ldr r1, [r4, #0x1c]
 	ldr r2, _08091B70 @ =0x000015CE (Pitch-Dark Dragon)
 	mov r0, sb
 	mov r3, sb
-	bl sub_0802F3E0
+	bl gEngineEffectSpecialSummonDestroy_0802F3E0
 	cmp r0, #0
 	bne _08091B3C
 	ldr r1, [r4, #0x1c]
@@ -260939,7 +260939,7 @@ _08091AE4:
 	lsls r2, r2, #5
 	mov r0, sb
 	mov r3, sb
-	bl sub_0802F3E0
+	bl gEngineEffectSpecialSummonDestroy_0802F3E0
 	cmp r0, #0
 	beq _08091B7E
 _08091B3C:
@@ -260975,28 +260975,28 @@ _08091B7E:
 	subs r4, r0, r3
 	mov r0, sb
 	adds r3, r4, #0
-	bl sub_0802F3E0
+	bl gEngineEffectSpecialSummonDestroy_0802F3E0
 	cmp r0, #0
 	bne _08091BD8
 	ldr r1, [r5, #0x1c]
 	ldr r2, _08091BF4 @ =0x00001625 (Big Bang Shot)
 	mov r0, sb
 	adds r3, r4, #0
-	bl sub_0802F3E0
+	bl gEngineEffectSpecialSummonDestroy_0802F3E0
 	cmp r0, #0
 	bne _08091BD8
 	ldr r1, [r5, #0x1c]
 	ldr r2, _08091BF8 @ =0x00001496 (Cyclon Laser)
 	mov r0, sb
 	adds r3, r4, #0
-	bl sub_0802F3E0
+	bl gEngineEffectSpecialSummonDestroy_0802F3E0
 	cmp r0, #0
 	bne _08091BD8
 	ldr r1, [r5, #0x1c]
 	ldr r2, _08091BFC @ =0x000015CE (Pitch-Dark Dragon)
 	mov r0, sb
 	adds r3, r4, #0
-	bl sub_0802F3E0
+	bl gEngineEffectSpecialSummonDestroy_0802F3E0
 	cmp r0, #0
 	bne _08091BD8
 	ldr r1, [r5, #0x1c]
@@ -261004,7 +261004,7 @@ _08091B7E:
 	lsls r2, r2, #5
 	mov r0, sb
 	adds r3, r4, #0
-	bl sub_0802F3E0
+	bl gEngineEffectSpecialSummonDestroy_0802F3E0
 	cmp r0, #0
 	beq _08091BE2
 _08091BD8:
@@ -261240,7 +261240,7 @@ _08091DB0:
 	mov r3, sl
 	ldr r1, [r3, #4]
 	mov r0, sb
-	bl sub_08030B0C
+	bl gEngineEffectSpecialSummonChangePosition_08030B0C
 	cmp r0, #0
 	beq _08091DD6
 	mov r1, sl
@@ -261255,7 +261255,7 @@ _08091DD6:
 	ldr r2, [sp, #0x10]
 	ldr r1, [r2, #4]
 	ldr r0, [sp, #0xc]
-	bl sub_08030B0C
+	bl gEngineEffectSpecialSummonChangePosition_08030B0C
 	cmp r0, #0
 	beq _08091DF4
 	ldr r3, [sp, #0x10]
@@ -261441,7 +261441,7 @@ _08091F58:
 	ldr r2, _08091F9C @ =0x00001663 (Rod of the Mind's Eye)
 	mov r0, sb
 	mov r3, sb
-	bl sub_0802F3E0
+	bl gEngineEffectSpecialSummonDestroy_0802F3E0
 	cmp r0, #0
 	beq _08091F6E
 	movs r0, #0xfa
@@ -261861,7 +261861,7 @@ _0809224C:
 	ldr r1, [r4, #0x20]
 	ldr r0, [sp, #0xc]
 	movs r2, #2
-	bl sub_0803B230
+	bl gEngineEffectSpecialSummonRitualSummon_0803B230
 	cmp r0, #0
 	bne _0809225C
 	b _08092410
@@ -262006,7 +262006,7 @@ _08092364:
 	ldr r2, [r4, #0x1c]
 	mov r0, sb
 	movs r1, #3
-	bl sub_08032E80
+	bl gEngineEffectSpecialSummonChangePosition_08032E80
 	cmp r0, #0
 	beq _08092410
 	b _0809220E
@@ -262039,12 +262039,12 @@ _0809239E:
 _080923A4:
 	movs r0, #0
 	movs r1, #5
-	bl sub_08032F6C
+	bl gEngineEffectSpecialSummonRitualSummon_08032F6C
 	cmp r0, #0
 	bne _080923BC
 	movs r0, #1
 	movs r1, #5
-	bl sub_08032F6C
+	bl gEngineEffectSpecialSummonRitualSummon_08032F6C
 	cmp r0, #0
 	beq _08092410
 _080923BC:
@@ -262270,7 +262270,7 @@ _08092536:
 	subs r3, r3, r0
 	mov r0, sb
 	ldr r2, _08092870 @ =0x00001663 (Rod of the Mind's Eye)
-	bl sub_0802F3E0
+	bl gEngineEffectSpecialSummonDestroy_0802F3E0
 	cmp r0, #0
 	beq _08092578
 	movs r0, #0xfa
@@ -262354,7 +262354,7 @@ _0809260A:
 	ldr r1, [r4, #0x1c]
 	ldr r2, _08092888 @ =0x0000150A (Heart of Clear Water)
 	mov r0, sb
-	bl sub_0802F3A8
+	bl gEngineEffectSpecialSummonDestroy_0802F3A8
 	cmp r0, #0
 	beq _08092620
 	movs r0, #0
@@ -262364,7 +262364,7 @@ _08092620:
 	ldr r1, [r4, #0x1c]
 	ldr r2, _0809288C @ =0x000017FF (Ninjitsu Art of Decoy)
 	mov r0, sb
-	bl sub_0802F3A8
+	bl gEngineEffectSpecialSummonDestroy_0802F3A8
 	cmp r0, #0
 	beq _08092634
 	movs r0, #0
@@ -262374,7 +262374,7 @@ _08092634:
 	ldr r1, [r4, #0x1c]
 	ldr r2, _08092890 @ =0x00001992 (Mistobody)
 	mov r0, sb
-	bl sub_0802F3A8
+	bl gEngineEffectSpecialSummonDestroy_0802F3A8
 	cmp r0, #0
 	beq _08092648
 	movs r0, #0
@@ -262593,7 +262593,7 @@ _080927D4:
 	ldr r3, [sp, #0xc]
 	eors r3, r4
 	mov r0, sb
-	bl sub_0802F3E0
+	bl gEngineEffectSpecialSummonDestroy_0802F3E0
 	cmp r0, #0
 	beq _080927EE
 	ldr r0, [sp, #0x10]
@@ -263255,12 +263255,12 @@ _08092CB8: .4byte gUnk_0201BB90
 _08092CBC:
 	movs r0, #0
 	movs r1, #5
-	bl sub_08032F6C
+	bl gEngineEffectSpecialSummonRitualSummon_08032F6C
 	cmp r0, #0
 	bne _08092CD4
 	movs r0, #1
 	movs r1, #5
-	bl sub_08032F6C
+	bl gEngineEffectSpecialSummonRitualSummon_08032F6C
 	cmp r0, #0
 	beq _08092D2C
 _08092CD4:
@@ -263488,7 +263488,7 @@ _08092E52:
 	subs r3, r3, r0
 	ldr r0, [sp, #0xc]
 	ldr r2, _0809318C @ =0x00001663 (Rod of the Mind's Eye)
-	bl sub_0802F3E0
+	bl gEngineEffectSpecialSummonDestroy_0802F3E0
 	cmp r0, #0
 	beq _08092E96
 	movs r0, #0xfa
@@ -263573,7 +263573,7 @@ _08092F2A:
 	ldr r1, [r4, #0x20]
 	ldr r2, _080931A4 @ =0x0000150A (Heart of Clear Water)
 	ldr r0, [sp, #0xc]
-	bl sub_0802F3A8
+	bl gEngineEffectSpecialSummonDestroy_0802F3A8
 	cmp r0, #0
 	beq _08092F40
 	movs r0, #0
@@ -263583,7 +263583,7 @@ _08092F40:
 	ldr r1, [r4, #0x20]
 	ldr r2, _080931A8 @ =0x000017FF (Ninjitsu Art of Decoy)
 	ldr r0, [sp, #0xc]
-	bl sub_0802F3A8
+	bl gEngineEffectSpecialSummonDestroy_0802F3A8
 	cmp r0, #0
 	beq _08092F54
 	movs r0, #0
@@ -263593,7 +263593,7 @@ _08092F54:
 	ldr r1, [r4, #0x20]
 	ldr r2, _080931AC @ =0x00001992 (Mistobody)
 	ldr r0, [sp, #0xc]
-	bl sub_0802F3A8
+	bl gEngineEffectSpecialSummonDestroy_0802F3A8
 	cmp r0, #0
 	beq _08092F68
 	movs r0, #0
@@ -263791,7 +263791,7 @@ _080930BC:
 	mov r3, sb
 	eors r3, r4
 	ldr r0, [sp, #0xc]
-	bl sub_0802F3E0
+	bl gEngineEffectSpecialSummonDestroy_0802F3E0
 	cmp r0, #0
 	beq _080930E2
 	mov r2, sl
@@ -264111,16 +264111,16 @@ _0809336A:
 _0809337C: .4byte gUnk_0201BB90
 _08093380: .4byte 0x0000FFFF
 
-	thumb_func_start sub_08093384
-sub_08093384: @ 0x08093384
+	thumb_func_start gEngineEffectDestroyChangePosition_08093384
+gEngineEffectDestroyChangePosition_08093384: @ 0x08093384
 	push {lr}
 	movs r1, #0
 	bl gEngineEffectDestroyChangePosition_08091888
 	pop {r0}
 	bx r0
 
-	thumb_func_start sub_08093390
-sub_08093390: @ 0x08093390
+	thumb_func_start gEngineEffectSpecialSummon_08093390
+gEngineEffectSpecialSummon_08093390: @ 0x08093390
 	push {lr}
 	adds r2, r1, #0
 	ldr r1, _080933B0 @ =gUnk_0201E2A0
@@ -264133,39 +264133,39 @@ sub_08093390: @ 0x08093390
 	movs r0, #0x31
 	movs r1, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 _080933AC:
 	pop {r0}
 	bx r0
 	.align 2, 0
 _080933B0: .4byte gUnk_0201E2A0
 
-	thumb_func_start sub_080933B4
-sub_080933B4: @ 0x080933B4
+	thumb_func_start gEngineEffectSpecialSummon_080933B4
+gEngineEffectSpecialSummon_080933B4: @ 0x080933B4
 	push {lr}
 	adds r2, r0, #0
 	movs r0, #0x31
 	movs r1, #1
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	pop {r0}
 	bx r0
 	.align 2, 0
 
-	thumb_func_start sub_080933C8
-sub_080933C8: @ 0x080933C8
+	thumb_func_start gEngineEffectSpecialSummon_080933C8
+gEngineEffectSpecialSummon_080933C8: @ 0x080933C8
 	push {lr}
 	adds r2, r0, #0
 	adds r3, r1, #0
 	movs r0, #0x31
 	movs r1, #2
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	pop {r0}
 	bx r0
 	.align 2, 0
 
-	thumb_func_start sub_080933DC
-sub_080933DC: @ 0x080933DC
+	thumb_func_start gEngineEffectSpecialSummon_080933DC
+gEngineEffectSpecialSummon_080933DC: @ 0x080933DC
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -264231,7 +264231,7 @@ _08093442:
 	movs r1, #3
 	mov r2, sl
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	add sp, #0x10
 	pop {r3, r4, r5}
 	mov r8, r3
@@ -264245,32 +264245,32 @@ _08093470: .4byte gUnk_0201E4F0
 _08093474: .4byte 0xFFFFE000
 _08093478: .4byte 0x00001FFF
 
-	thumb_func_start sub_0809347C
-sub_0809347C: @ 0x0809347C
+	thumb_func_start gEngineEffectSpecialSummon_0809347C
+gEngineEffectSpecialSummon_0809347C: @ 0x0809347C
 	push {lr}
 	adds r3, r0, #0
 	movs r0, #0x31
 	movs r1, #4
 	movs r2, #0xe7
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	pop {r0}
 	bx r0
 	.align 2, 0
 
-	thumb_func_start sub_08093490
-sub_08093490: @ 0x08093490
+	thumb_func_start gEngineEffectSpecialSummon_08093490
+gEngineEffectSpecialSummon_08093490: @ 0x08093490
 	push {lr}
 	adds r2, r0, #0
 	adds r3, r1, #0
 	movs r0, #0x31
 	movs r1, #5
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	pop {r0}
 	bx r0
 	.align 2, 0
 
-	thumb_func_start sub_080934A4
-sub_080934A4: @ 0x080934A4
+	thumb_func_start gEngineEffectSpecialSummon_080934A4
+gEngineEffectSpecialSummon_080934A4: @ 0x080934A4
 	push {r4, lr}
 	adds r4, r0, #0
 	adds r3, r1, #0
@@ -264281,14 +264281,14 @@ sub_080934A4: @ 0x080934A4
 	movs r0, #0x31
 	movs r1, #6
 	adds r2, r4, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	pop {r4}
 	pop {r0}
 	bx r0
 	.align 2, 0
 
-	thumb_func_start sub_080934C4
-sub_080934C4: @ 0x080934C4
+	thumb_func_start gEngineEffectSpecialSummon_080934C4
+gEngineEffectSpecialSummon_080934C4: @ 0x080934C4
 	push {r4, lr}
 	adds r4, r0, #0
 	adds r3, r1, #0
@@ -264299,26 +264299,26 @@ sub_080934C4: @ 0x080934C4
 	movs r0, #0x31
 	movs r1, #7
 	adds r2, r4, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	pop {r4}
 	pop {r0}
 	bx r0
 	.align 2, 0
 
-	thumb_func_start sub_080934E4
-sub_080934E4: @ 0x080934E4
+	thumb_func_start gEngineEffectSpecialSummon_080934E4
+gEngineEffectSpecialSummon_080934E4: @ 0x080934E4
 	push {lr}
 	adds r2, r0, #0
 	movs r0, #0x31
 	movs r1, #8
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	pop {r0}
 	bx r0
 	.align 2, 0
 
-	thumb_func_start sub_080934F8
-sub_080934F8: @ 0x080934F8
+	thumb_func_start gEngineEffectSpecialSummon_080934F8
+gEngineEffectSpecialSummon_080934F8: @ 0x080934F8
 	push {lr}
 	adds r2, r0, #0
 	lsls r3, r1, #0x10
@@ -264328,13 +264328,13 @@ sub_080934F8: @ 0x080934F8
 	orrs r3, r0
 	movs r0, #0x31
 	movs r1, #9
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	pop {r0}
 	bx r0
 	.align 2, 0
 
-	thumb_func_start sub_08093514
-sub_08093514: @ 0x08093514
+	thumb_func_start gEngineEffectSpecialSummon_08093514
+gEngineEffectSpecialSummon_08093514: @ 0x08093514
 	push {r4, lr}
 	adds r4, r0, #0
 	adds r3, r1, #0
@@ -264345,14 +264345,14 @@ sub_08093514: @ 0x08093514
 	movs r0, #0x31
 	movs r1, #9
 	adds r2, r4, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	pop {r4}
 	pop {r0}
 	bx r0
 	.align 2, 0
 
-	thumb_func_start sub_08093534
-sub_08093534: @ 0x08093534
+	thumb_func_start gEngineEffectSpecialSummon_08093534
+gEngineEffectSpecialSummon_08093534: @ 0x08093534
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
@@ -264367,53 +264367,53 @@ sub_08093534: @ 0x08093534
 	movs r1, #0xa
 	adds r2, r5, #0
 	adds r3, r4, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	pop {r4, r5}
 	pop {r0}
 	bx r0
 	.align 2, 0
 
-	thumb_func_start sub_0809355C
-sub_0809355C: @ 0x0809355C
+	thumb_func_start gEngineEffectSpecialSummon_0809355C
+gEngineEffectSpecialSummon_0809355C: @ 0x0809355C
 	push {lr}
 	movs r0, #0x31
 	movs r1, #0xb
 	movs r2, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	pop {r0}
 	bx r0
 	.align 2, 0
 
-	thumb_func_start sub_08093570
-sub_08093570: @ 0x08093570
+	thumb_func_start gEngineEffectSpecialSummon_08093570
+gEngineEffectSpecialSummon_08093570: @ 0x08093570
 	push {lr}
 	adds r2, r0, #0
 	movs r0, #0x31
 	movs r1, #0xc
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	pop {r0}
 	bx r0
 	.align 2, 0
 
-	thumb_func_start sub_08093584
-sub_08093584: @ 0x08093584
+	thumb_func_start gEngineEffectSpecialSummon_08093584
+gEngineEffectSpecialSummon_08093584: @ 0x08093584
 	push {lr}
 	adds r2, r0, #0
 	adds r3, r1, #0
 	movs r0, #0x31
 	movs r1, #0xd
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	pop {r0}
 	bx r0
 	.align 2, 0
 
-	thumb_func_start sub_08093598
-sub_08093598: @ 0x08093598
+	thumb_func_start gEngineEffectSpecialSummon_08093598
+gEngineEffectSpecialSummon_08093598: @ 0x08093598
 	push {lr}
 	movs r0, #0x31
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	pop {r1}
 	bx r1
 
@@ -264494,8 +264494,8 @@ _08093654: .4byte gUnk_0201B870
 _08093658: .4byte gUnk_0201E2A0
 _0809365C: .4byte 0x00001D08
 
-	thumb_func_start sub_08093660
-sub_08093660: @ 0x08093660
+	thumb_func_start gEngineEffectSpecialSummon_08093660
+gEngineEffectSpecialSummon_08093660: @ 0x08093660
 	push {r4, r5, r6, r7, lr}
 	bl sub_080935A4
 	ldr r6, _0809370C @ =gUnk_0201C4E0
@@ -264530,32 +264530,32 @@ sub_08093660: @ 0x08093660
 	movs r0, #0xd
 	movs r1, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r2, [r5]
 	movs r0, #0xd
 	movs r1, #1
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	movs r0, #0x14
 	movs r1, #0
 	movs r2, #0xd
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	movs r0, #0x14
 	movs r1, #1
 	movs r2, #0xd
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	movs r0, #0x14
 	movs r1, #0
 	movs r2, #0xc
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	movs r0, #0x14
 	movs r1, #1
 	movs r2, #0xc
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r1, _08093718 @ =0x00001CE8
 	adds r5, r6, r1
 	ldr r2, [r4, #0x10]
@@ -264624,10 +264624,10 @@ _0809376E:
 _08093778: .4byte 0x00001D08
 _0809377C: .4byte 0x00008054
 
-	thumb_func_start sub_08093780
-sub_08093780: @ 0x08093780
+	thumb_func_start gEngineEffectSpecialSummon_08093780
+gEngineEffectSpecialSummon_08093780: @ 0x08093780
 	push {lr}
-	bl sub_08093660
+	bl gEngineEffectSpecialSummon_08093660
 	ldr r1, _0809379C @ =gUnk_0201C4E0
 	ldr r0, _080937A0 @ =0x00001CF0
 	adds r2, r1, r0
@@ -264644,11 +264644,11 @@ _0809379C: .4byte gUnk_0201C4E0
 _080937A0: .4byte 0x00001CF0
 _080937A4: .4byte 0x00001D04
 
-	thumb_func_start sub_080937A8
-sub_080937A8: @ 0x080937A8
+	thumb_func_start gEngineEffectSpecialSummon_080937A8
+gEngineEffectSpecialSummon_080937A8: @ 0x080937A8
 	push {r4, r5, lr}
 	adds r5, r0, #0
-	bl sub_08093660
+	bl gEngineEffectSpecialSummon_08093660
 	ldr r4, _080937D0 @ =gUnk_0201E2A0
 	ldr r0, [r4, #0x10]
 	adds r1, r5, #0
@@ -264665,8 +264665,8 @@ sub_080937A8: @ 0x080937A8
 	.align 2, 0
 _080937D0: .4byte gUnk_0201E2A0
 
-	thumb_func_start sub_080937D4
-sub_080937D4: @ 0x080937D4
+	thumb_func_start gEngineEffectSpecialSummon_080937D4
+gEngineEffectSpecialSummon_080937D4: @ 0x080937D4
 	push {r4, lr}
 	adds r4, r0, #0
 	bl sub_080935A4
@@ -264699,7 +264699,7 @@ sub_080937D4: @ 0x080937D4
 	adds r1, r1, r0
 	str r3, [r1]
 	adds r0, r4, #0
-	bl sub_08093FA8
+	bl gEngineEffectSpecialSummon_08093FA8
 	movs r0, #1
 	pop {r4}
 	pop {r1}
@@ -265614,8 +265614,8 @@ _08093F9A:
 	.align 2, 0
 _08093FA4: .4byte gUnk_09E47554
 
-	thumb_func_start sub_08093FA8
-sub_08093FA8: @ 0x08093FA8
+	thumb_func_start gEngineEffectSpecialSummon_08093FA8
+gEngineEffectSpecialSummon_08093FA8: @ 0x08093FA8
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -265802,54 +265802,54 @@ _080940EC:
 	movs r0, #0xd
 	movs r1, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r3, _080941C0 @ =0x00000868
 	adds r4, r4, r3
 	ldr r2, [r4]
 	movs r0, #0xd
 	movs r1, #1
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	movs r0, #0x14
 	movs r1, #0
 	movs r2, #0xd
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	movs r0, #0x14
 	movs r1, #1
 	movs r2, #0xd
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	movs r0, #0x14
 	movs r1, #0
 	movs r2, #0xc
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	movs r0, #0x14
 	movs r1, #1
 	movs r2, #0xc
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	movs r0, #0x14
 	movs r1, #0
 	movs r2, #0xe
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	movs r0, #0x14
 	movs r1, #1
 	movs r2, #0xe
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	movs r0, #0x14
 	movs r1, #0
 	movs r2, #0xf
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	movs r0, #0x14
 	movs r1, #1
 	movs r2, #0xf
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	add sp, #0x104
 	pop {r3, r4, r5}
 	mov r8, r3
@@ -265911,7 +265911,7 @@ _08094212:
 	adds r0, r6, #0
 	adds r1, r7, #0
 	mov r2, r8
-	bl sub_080AEC8C
+	bl gEngineEffectSpecialSummonGraveyard_080AEC8C
 	b _08094286
 	.align 2, 0
 _08094220: .4byte gUnk_0201E4F0
@@ -265924,7 +265924,7 @@ _08094228:
 	adds r0, r6, #0
 	adds r1, r7, #0
 	mov r2, r8
-	bl sub_080AECE4
+	bl gEngineEffectSpecialSummonGraveyard_080AECE4
 	b _08094286
 _0809423C:
 	adds r0, r5, #0
@@ -265936,7 +265936,7 @@ _0809423C:
 	adds r0, r6, #0
 	adds r1, r7, #0
 	mov r2, r8
-	bl sub_080AED4C
+	bl gEngineEffectSpecialSummonGraveyard_080AED4C
 	b _08094286
 _08094254:
 	cmp r5, #0x49
@@ -265960,7 +265960,7 @@ _08094270:
 	adds r1, r6, #0
 	adds r2, r5, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 _08094286:
 	pop {r3}
 	mov r8, r3
@@ -266001,11 +266001,11 @@ _080942BA:
 _080942C2:
 	bx lr
 
-	thumb_func_start sub_080942C4
-sub_080942C4: @ 0x080942C4
+	thumb_func_start gEngineEffectSpecialSummon_080942C4
+gEngineEffectSpecialSummon_080942C4: @ 0x080942C4
 	push {lr}
 	movs r0, #0x32
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	pop {r1}
 	bx r1
 
@@ -266061,8 +266061,8 @@ sub_08094314: @ 0x08094314
 	.align 2, 0
 _0809431C: .4byte gUnk_0201E4F0
 
-	thumb_func_start sub_08094320
-sub_08094320: @ 0x08094320
+	thumb_func_start gEngineEffectSpecialSummonDamage_08094320
+gEngineEffectSpecialSummonDamage_08094320: @ 0x08094320
 	push {r4, lr}
 	adds r4, r0, #0
 	lsls r0, r4, #2
@@ -266125,8 +266125,8 @@ sub_0809437C: @ 0x0809437C
 	.align 2, 0
 _08094394: .4byte gUnk_0201E4F0
 
-	thumb_func_start sub_08094398
-sub_08094398: @ 0x08094398
+	thumb_func_start gEngineEffectSpecialSummonDestroy_08094398
+gEngineEffectSpecialSummonDestroy_08094398: @ 0x08094398
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -266688,27 +266688,27 @@ gEngineEffectSearch_080947A0: @ 0x080947A0
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r1, _080947E4 @ =0x00000FB7 (Right Leg of the Forbidden One)
-	bl sub_08037A2C
+	bl gEngineEffectBoostATKBoostDEF_08037A2C
 	cmp r0, #0
 	beq _080947F8
 	ldr r1, _080947E8 @ =0x00000FB8 (Left Leg of the Forbidden One)
 	adds r0, r4, #0
-	bl sub_08037A2C
+	bl gEngineEffectBoostATKBoostDEF_08037A2C
 	cmp r0, #0
 	beq _080947F8
 	ldr r1, _080947EC @ =0x00000FB9 (Right Arm of the Forbidden One)
 	adds r0, r4, #0
-	bl sub_08037A2C
+	bl gEngineEffectBoostATKBoostDEF_08037A2C
 	cmp r0, #0
 	beq _080947F8
 	ldr r1, _080947F0 @ =0x00000FBA (Left Arm of the Forbidden One)
 	adds r0, r4, #0
-	bl sub_08037A2C
+	bl gEngineEffectBoostATKBoostDEF_08037A2C
 	cmp r0, #0
 	beq _080947F8
 	ldr r1, _080947F4 @ =0x00000FBB (Exodia the Forbidden One)
 	adds r0, r4, #0
-	bl sub_08037A2C
+	bl gEngineEffectBoostATKBoostDEF_08037A2C
 	cmp r0, #0
 	beq _080947F8
 	movs r0, #1
@@ -267005,12 +267005,12 @@ _08094A22:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_08094A28
-sub_08094A28: @ 0x08094A28
+	thumb_func_start gEngineEffectSpecialSummon_08094A28
+gEngineEffectSpecialSummon_08094A28: @ 0x08094A28
 	push {r4, r5, r6, lr}
 	ldr r6, _08094A54 @ =gUnk_0201E2A0
 	ldr r4, [r6, #4]
-	bl sub_08093598
+	bl gEngineEffectSpecialSummon_08093598
 	cmp r0, #0
 	beq _08094A38
 	b _08094C08
@@ -267215,7 +267215,7 @@ _08094BB6:
 	ldr r0, [r0]
 	cmp r0, #1
 	beq _08094BC8
-	bl sub_0809355C
+	bl gEngineEffectSpecialSummon_0809355C
 _08094BC8:
 	ldr r0, [r5]
 	adds r0, #1
@@ -267391,15 +267391,15 @@ _08094D12:
 	ldr r0, [r0]
 	cmp r0, #0
 	bne _08094D70
-	bl sub_08093598
+	bl gEngineEffectSpecialSummon_08093598
 	adds r1, r0, #0
 	cmp r1, #0
 	bne _08094D54
-	bl sub_080951CC
+	bl gEngineEffectSpecialSummon_080951CC
 	adds r1, r0, #0
 	cmp r1, #0
 	bne _08094D54
-	bl sub_080A1658
+	bl gEngineEffectGraveyardSpecialSummon_080A1658
 	adds r1, r0, #0
 	cmp r1, #0
 	bne _08094D54
@@ -267407,11 +267407,11 @@ _08094D12:
 	adds r1, r0, #0
 	cmp r1, #0
 	bne _08094D54
-	bl sub_08095348
+	bl gEngineEffectDiscardDestroyAll_08095348
 	adds r1, r0, #0
 	cmp r1, #0
 	bne _08094D54
-	bl sub_0804F2E0
+	bl gEngineEffectDestroyDraw_0804F2E0
 	adds r1, r0, #0
 _08094D54:
 	ldr r0, _08094D80 @ =gUnk_0201C4E0
@@ -267445,7 +267445,7 @@ _08094D88:
 	ldr r0, [r1]
 	cmp r0, #2
 	bne _08094DA0
-	bl sub_080A0B14
+	bl gEngineEffectSendToGYGraveyard_080A0B14
 	b _08094DA4
 	.align 2, 0
 _08094D9C: .4byte gUnk_0201E2A0
@@ -267458,8 +267458,8 @@ _08094DA6:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_08094DAC
-sub_08094DAC: @ 0x08094DAC
+	thumb_func_start gEngineEffectBoostATKBoostDEF_08094DAC
+gEngineEffectBoostATKBoostDEF_08094DAC: @ 0x08094DAC
 	push {r4, r5, r6, lr}
 	ldr r1, _08094E0C @ =gUnk_09E5AADC
 	ldr r4, _08094E10 @ =gUnk_0201C4E0
@@ -267483,7 +267483,7 @@ sub_08094DAC: @ 0x08094DAC
 _08094DD6:
 	cmp r5, #0
 	bne _08094E08
-	bl sub_0803C3B4
+	bl gEngineEffectDamageTribute_0803C3B4
 	adds r5, r0, #0
 	cmp r5, #0
 	bne _08094E08
@@ -267688,8 +267688,8 @@ sub_08094F3C: @ 0x08094F3C
 	bx r0
 	.align 2, 0
 
-	thumb_func_start sub_08094F58
-sub_08094F58: @ 0x08094F58
+	thumb_func_start gEngineEffectSpecialSummonGraveyard_08094F58
+gEngineEffectSpecialSummonGraveyard_08094F58: @ 0x08094F58
 	push {lr}
 	bl gEngineEffectSpecialSummonGraveyard_080A422C
 	cmp r0, #0
@@ -267834,8 +267834,8 @@ _08095074:
 _0809507C: .4byte gUnk_0201C4E0
 _08095080: .4byte 0x00001CE8
 
-	thumb_func_start sub_08095084
-sub_08095084: @ 0x08095084
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_08095084
+gEngineEffectSpecialSummonBoostATK_08095084: @ 0x08095084
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -267873,7 +267873,7 @@ _080950A0:
 	add r8, r0
 	adds r0, r2, #0
 	adds r1, r5, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	adds r1, r0, #0
 	movs r0, #0
 	bl sub_08094F20
@@ -268006,11 +268006,11 @@ _080951B4:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080951CC
-sub_080951CC: @ 0x080951CC
+	thumb_func_start gEngineEffectSpecialSummon_080951CC
+gEngineEffectSpecialSummon_080951CC: @ 0x080951CC
 	push {lr}
 	movs r0, #3
-	bl sub_0801EF94
+	bl gEngineEffectSpecialSummon_0801EF94
 	cmp r0, #0
 	beq _080951DC
 _080951D8:
@@ -268034,7 +268034,7 @@ _080951DC:
 	movs r1, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	b _080951D8
 	.align 2, 0
 _08095204: .4byte gUnk_0201C4E0
@@ -268051,8 +268051,8 @@ _08095218:
 	.align 2, 0
 _0809521C: .4byte 0x00001D50
 
-	thumb_func_start sub_08095220
-sub_08095220: @ 0x08095220
+	thumb_func_start gEngineEffectDiscardDestroyAll_08095220
+gEngineEffectDiscardDestroyAll_08095220: @ 0x08095220
 	push {r4, lr}
 	ldr r1, _08095240 @ =gUnk_0201C4E0
 	ldr r2, _08095244 @ =0x00001D5C
@@ -268088,7 +268088,7 @@ _08095274:
 	ldr r1, _08095280 @ =0x00001D5C
 	adds r0, r4, r1
 	ldrh r0, [r0]
-	bl sub_08095E70
+	bl gEngineEffectChangePosition_08095E70
 	b _0809533C
 	.align 2, 0
 _08095280: .4byte 0x00001D5C
@@ -268106,13 +268106,13 @@ _08095292:
 _08095294:
 	movs r1, #0
 	movs r2, #1
-	bl sub_080A5F38
+	bl gEngineEffectChangePosition_080A5F38
 	b _0809533C
 _0809529E:
 	movs r0, #1
 	movs r1, #1
 	movs r2, #0
-	bl sub_080A5F38
+	bl gEngineEffectChangePosition_080A5F38
 	b _0809533C
 _080952AA:
 	ldr r2, _080952CC @ =0x00001D6C
@@ -268128,7 +268128,7 @@ _080952AA:
 	adds r0, r4, r1
 	ldr r1, [r0]
 	movs r0, #0
-	bl sub_08095EC4
+	bl gEngineEffectDiscardDestroyAll_08095EC4
 	b _0809533C
 	.align 2, 0
 _080952CC: .4byte 0x00001D6C
@@ -268150,14 +268150,14 @@ _080952F0:
 _080952F2:
 	movs r1, #0
 	movs r2, #0
-	bl sub_08095D84
+	bl gEngineEffectSpecialSummonBoostATK_08095D84
 	b _0809533C
 _080952FC:
 	movs r0, #0
 	bl sub_08095BA8
 	b _0809533C
 _08095304:
-	bl sub_08095F4C
+	bl gEngineEffectSpecialSummon_08095F4C
 	b _0809533C
 _0809530A:
 	ldr r1, _08095328 @ =0x00001D68
@@ -268191,8 +268191,8 @@ _0809533C:
 	.align 2, 0
 _08095344: .4byte 0x00001D54
 
-	thumb_func_start sub_08095348
-sub_08095348: @ 0x08095348
+	thumb_func_start gEngineEffectDiscardDestroyAll_08095348
+gEngineEffectDiscardDestroyAll_08095348: @ 0x08095348
 	push {r4, r5, lr}
 	ldr r4, _0809535C @ =gUnk_0201C4E0
 	ldr r0, _08095360 @ =0x00001D58
@@ -268206,7 +268206,7 @@ sub_08095348: @ 0x08095348
 _0809535C: .4byte gUnk_0201C4E0
 _08095360: .4byte 0x00001D58
 _08095364:
-	bl sub_08095220
+	bl gEngineEffectDiscardDestroyAll_08095220
 	ldr r1, _0809537C @ =0x00001D54
 	adds r0, r4, r1
 	ldr r0, [r0]
@@ -268487,7 +268487,7 @@ _080955D4:
 	ldr r0, [r0]
 	cmp r0, #1
 	beq _0809562E
-	bl sub_0809355C
+	bl gEngineEffectSpecialSummon_0809355C
 	b _0809562E
 	.align 2, 0
 _08095608: .4byte gUnk_0201B870
@@ -269304,7 +269304,7 @@ gEngineEffectEquip_08095CA0: @ 0x08095CA0
 	movs r0, #1
 	movs r1, #0
 	movs r2, #0
-	bl sub_08095D84
+	bl gEngineEffectSpecialSummonBoostATK_08095D84
 	b _08095D32
 	.align 2, 0
 _08095CC0: .4byte gUnk_0201C4E0
@@ -269396,8 +269396,8 @@ _08095D78: .4byte 0x00001D6C
 _08095D7C: .4byte 0x00001D70
 _08095D80: .4byte 0x00001D54
 
-	thumb_func_start sub_08095D84
-sub_08095D84: @ 0x08095D84
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_08095D84
+gEngineEffectSpecialSummonBoostATK_08095D84: @ 0x08095D84
 	push {r4, r5, r6, lr}
 	adds r3, r0, #0
 	adds r6, r2, #0
@@ -269425,7 +269425,7 @@ _08095DAC:
 	adds r1, r4, r2
 	ldr r1, [r1]
 	adds r2, r3, #0
-	bl sub_0804A334
+	bl gEngineEffectSpecialSummonBoostATK_0804A334
 	ldr r2, _08095DD4 @ =0x00001D74
 	adds r1, r4, r2
 	str r0, [r1]
@@ -269508,8 +269508,8 @@ _08095E64: .4byte 0x00001D44
 _08095E68: .4byte gUnk_0201C4E0
 _08095E6C: .4byte 0x00001D54
 
-	thumb_func_start sub_08095E70
-sub_08095E70: @ 0x08095E70
+	thumb_func_start gEngineEffectChangePosition_08095E70
+gEngineEffectChangePosition_08095E70: @ 0x08095E70
 	push {lr}
 	sub sp, #4
 	lsls r0, r0, #0x10
@@ -269549,8 +269549,8 @@ _08095EB8: .4byte 0x00001D68
 _08095EBC: .4byte 0x00001D6C
 _08095EC0: .4byte 0x00001D54
 
-	thumb_func_start sub_08095EC4
-sub_08095EC4: @ 0x08095EC4
+	thumb_func_start gEngineEffectDiscardDestroyAll_08095EC4
+gEngineEffectDiscardDestroyAll_08095EC4: @ 0x08095EC4
 	push {r4, r5, r6, r7, lr}
 	adds r6, r1, #0
 	adds r3, r2, #0
@@ -269572,7 +269572,7 @@ _08095EE8:
 	movs r1, #0x8a
 	lsls r1, r1, #1
 	adds r0, r6, #0
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	b _08095EFE
 _08095EF4:
 	ldr r2, _08095F08 @ =0x0000FFFE
@@ -269616,8 +269616,8 @@ _08095F40:
 	.align 2, 0
 _08095F48: .4byte 0x00001D54
 
-	thumb_func_start sub_08095F4C
-sub_08095F4C: @ 0x08095F4C
+	thumb_func_start gEngineEffectSpecialSummon_08095F4C
+gEngineEffectSpecialSummon_08095F4C: @ 0x08095F4C
 	push {r4, r5, r6, lr}
 	ldr r6, _08095F64 @ =gUnk_0201C4E0
 	movs r0, #0xeb
@@ -269642,7 +269642,7 @@ _08095F68:
 	adds r0, r6, r1
 	ldr r0, [r0]
 	movs r1, #0x52
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldr r1, _08095F8C @ =0x00001D54
 	adds r0, r6, r1
 	str r4, [r0]
@@ -269652,7 +269652,7 @@ _08095F88: .4byte 0x00001CEC
 _08095F8C: .4byte 0x00001D54
 _08095F90:
 	movs r0, #6
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 	ldr r0, [r5]
 	adds r0, #1
 	str r0, [r5]
@@ -269692,8 +269692,8 @@ _08095FD4: .4byte 0x00008023
 _08095FD8: .4byte gUnk_0201C4E0
 _08095FDC: .4byte 0x00001D54
 
-	thumb_func_start sub_08095FE0
-sub_08095FE0: @ 0x08095FE0
+	thumb_func_start gEngineEffectSpecialSummon_08095FE0
+gEngineEffectSpecialSummon_08095FE0: @ 0x08095FE0
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -269737,7 +269737,7 @@ _08096030:
 	movs r1, #1
 	rsbs r1, r1, #0
 	adds r0, r5, #0
-	bl sub_08034298
+	bl gEngineEffectBoostATKBoostDEF_08034298
 	cmp r0, #0
 	beq _08096054
 	ldr r0, [r7, #4]
@@ -269794,13 +269794,13 @@ _08096096:
 	blt _080960FC
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_08033C9C
+	bl gEngineEffectSpecialSummon_08033C9C
 	cmp r0, #0
 	beq _080960E8
 	adds r0, r4, #0
 	mov r1, sl
 	adds r2, r5, #0
-	bl sub_0805B164
+	bl gEngineEffectSendToGYGraveyard_0805B164
 	cmp r0, #0
 	beq _080960C6
 	movs r0, #8
@@ -269815,7 +269815,7 @@ _080960C6:
 	b _08096226
 _080960D2:
 	adds r0, r5, #0
-	bl sub_080309FC
+	bl gEngineEffectBoostATKBoostDEF_080309FC
 	cmp r0, #0
 	beq _080960DE
 	b _08096226
@@ -269837,7 +269837,7 @@ _080960F4: .4byte gUnk_0201C4E0
 _080960F8: .4byte 0x00001D78
 _080960FC:
 	adds r0, r5, #0
-	bl sub_0804BA58
+	bl gEngineEffectSpecialSummon_0804BA58
 	cmp r0, #0
 	beq _08096128
 	ldr r0, _08096120 @ =gUnk_0201C4E0
@@ -269873,7 +269873,7 @@ _08096128:
 	bne _0809616C
 	adds r0, r4, #0
 	mov r1, sb
-	bl sub_080A4694
+	bl gEngineEffectSpecialSummonTribute_080A4694
 	mov r1, r8
 	orrs r1, r0
 	mov r8, r1
@@ -269906,7 +269906,7 @@ _08096182:
 	adds r0, r4, #0
 	mov r1, sl
 	adds r2, r5, #0
-	bl sub_0805B164
+	bl gEngineEffectSendToGYGraveyard_0805B164
 	cmp r0, #0
 	beq _08096226
 	movs r0, #8
@@ -269944,13 +269944,13 @@ _080961D8: .4byte 0x00001C58
 _080961DC:
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_08033C9C
+	bl gEngineEffectSpecialSummon_08033C9C
 	cmp r0, #0
 	beq _080961FC
 	adds r0, r4, #0
 	mov r1, sl
 	adds r2, r5, #0
-	bl sub_0805B164
+	bl gEngineEffectSendToGYGraveyard_0805B164
 	cmp r0, #0
 	beq _08096226
 	movs r6, #8
@@ -269972,7 +269972,7 @@ _0809620C:
 	adds r0, r4, #0
 	mov r1, sl
 	adds r2, r5, #0
-	bl sub_0805B164
+	bl gEngineEffectSendToGYGraveyard_0805B164
 	cmp r0, #0
 	beq _08096226
 	movs r2, #8
@@ -270010,8 +270010,8 @@ _0809624E:
 _0809625C: .4byte 0x00001C58
 _08096260: .4byte 0x00001407 @ Cold Wave
 
-	thumb_func_start sub_08096264
-sub_08096264: @ 0x08096264
+	thumb_func_start gEngineEffectSpecialSummon_08096264
+gEngineEffectSpecialSummon_08096264: @ 0x08096264
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -270129,7 +270129,7 @@ _080962D6:
 	str r0, [r1]
 	mov r0, sp
 	movs r1, #0
-	bl sub_0805A3E0
+	bl gEngineEffectSpecialSummonDiscard_0805A3E0
 	cmp r0, #0
 	bne _0809635A
 	b _080964E6
@@ -270161,7 +270161,7 @@ _08096388:
 _0809638C:
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_08034180
+	bl gEngineEffectSpecialSummonBoostATK_08034180
 	cmp r0, #0
 	beq _080963B8
 	ldr r0, _080963AC @ =gUnk_0201E2A0
@@ -270234,7 +270234,7 @@ _08096408:
 	adds r0, r4, #0
 	adds r1, r5, #0
 	movs r2, #1
-	bl sub_0803495C
+	bl gEngineEffectSpecialSummonPreventAttack_0803495C
 	cmp r0, #0
 	beq _0809643C
 	movs r3, #1
@@ -270322,7 +270322,7 @@ _0809643C:
 	str r0, [r1]
 	mov r0, sp
 	movs r1, #0
-	bl sub_0805A3E0
+	bl gEngineEffectSpecialSummonDiscard_0805A3E0
 	cmp r0, #0
 	beq _080964E6
 	movs r0, #8
@@ -270382,7 +270382,7 @@ gEngineEffectChangePositionStandbyPhase_0809650C: @ 0x0809650C
 	mov sl, r0
 	adds r0, r4, #0
 	adds r1, r6, #0
-	bl sub_08034180
+	bl gEngineEffectSpecialSummonBoostATK_08034180
 	cmp r0, #0
 	beq _08096578
 	ldr r0, _08096570 @ =gUnk_0201E2A0
@@ -270486,7 +270486,7 @@ _080965A4:
 	str r0, [r1]
 	mov r0, sp
 	movs r1, #0
-	bl sub_0805A3E0
+	bl gEngineEffectSpecialSummonDiscard_0805A3E0
 	cmp r0, #0
 	bne _0809662A
 	b _08096772
@@ -270566,7 +270566,7 @@ _080966B8:
 	adds r0, r4, #0
 	adds r1, r6, #0
 	adds r2, r5, #0
-	bl sub_0805B0CC
+	bl gEngineEffectSendToGYGraveyard_0805B0CC
 	cmp r0, #0
 	beq _08096750
 	movs r0, #8
@@ -270604,7 +270604,7 @@ _0809670C:
 	adds r0, r4, #0
 	adds r1, r6, #0
 	adds r2, r5, #0
-	bl sub_0805B0CC
+	bl gEngineEffectSendToGYGraveyard_0805B0CC
 	cmp r0, #0
 	beq _08096750
 	movs r1, #8
@@ -270624,7 +270624,7 @@ _0809672C:
 	adds r0, r4, #0
 	adds r1, r6, #0
 	adds r2, r5, #0
-	bl sub_0805B034
+	bl gEngineEffectSpecialSummonDiscard_0805B034
 	cmp r0, #0
 	beq _08096750
 	movs r2, #8
@@ -270661,8 +270661,8 @@ _08096774:
 _08096784: .4byte 0x00001D48
 _08096788: .4byte 0x00001407 @ Cold Wave
 
-	thumb_func_start sub_0809678C
-sub_0809678C: @ 0x0809678C
+	thumb_func_start gEngineEffectSendToGYGraveyard_0809678C
+gEngineEffectSendToGYGraveyard_0809678C: @ 0x0809678C
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
@@ -270715,7 +270715,7 @@ _080967EC:
 	adds r0, r5, #0
 	adds r1, r2, #0
 	movs r2, #0
-	bl sub_0805A354
+	bl gEngineEffectSendToGYGraveyard_0805A354
 	cmp r0, #0
 	beq _08096852
 	movs r6, #8
@@ -270752,7 +270752,7 @@ _08096838:
 	adds r2, r4, r2
 	adds r1, r5, #0
 	movs r3, #0
-	bl sub_0805A280
+	bl gEngineEffectSendToGYGraveyard_0805A280
 	cmp r0, #0
 	beq _08096852
 	movs r0, #8
@@ -270768,8 +270768,8 @@ _08096854:
 _0809685C: .4byte gUnk_0201C4E0
 _08096860: .4byte 0x00001D64
 
-	thumb_func_start sub_08096864
-sub_08096864: @ 0x08096864
+	thumb_func_start gEngineEffectSendToGYGraveyard_08096864
+gEngineEffectSendToGYGraveyard_08096864: @ 0x08096864
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r4, r1, #0
@@ -270812,7 +270812,7 @@ _080968A8:
 	adds r0, r4, #0
 	adds r1, r3, #0
 	adds r2, r6, #0
-	bl sub_0805A354
+	bl gEngineEffectSendToGYGraveyard_0805A354
 	cmp r0, #0
 	beq _080968E2
 	movs r5, #8
@@ -270827,7 +270827,7 @@ _080968C8:
 	adds r2, r1, r3
 	adds r1, r4, #0
 	adds r3, r6, #0
-	bl sub_0805A280
+	bl gEngineEffectSendToGYGraveyard_0805A280
 	cmp r0, #0
 	beq _080968E2
 	movs r0, #8
@@ -271017,8 +271017,8 @@ _08096A40: .4byte 0x00001D58
 _08096A44: .4byte 0x00001D64
 _08096A48: .4byte gUnk_0201E2A0
 
-	thumb_func_start sub_08096A4C
-sub_08096A4C: @ 0x08096A4C
+	thumb_func_start gEngineEffectSpecialSummonTribute_08096A4C
+gEngineEffectSpecialSummonTribute_08096A4C: @ 0x08096A4C
 	push {r4, r5, lr}
 	adds r3, r0, #0
 	adds r4, r1, #0
@@ -271066,8 +271066,8 @@ _08096AA4: .4byte 0x00001D7C
 _08096AA8: .4byte 0x00001D58
 _08096AAC: .4byte 0x00001D64
 
-	thumb_func_start sub_08096AB0
-sub_08096AB0: @ 0x08096AB0
+	thumb_func_start gEngineEffectSpecialSummonTribute_08096AB0
+gEngineEffectSpecialSummonTribute_08096AB0: @ 0x08096AB0
 	push {r4, r5, lr}
 	adds r3, r0, #0
 	adds r4, r1, #0
@@ -271137,8 +271137,8 @@ _08096B2E:
 _08096B34: .4byte gUnk_0201C4E0
 _08096B38: .4byte 0x00001D54
 
-	thumb_func_start sub_08096B3C
-sub_08096B3C: @ 0x08096B3C
+	thumb_func_start gEngineEffectSpecialSummonSendToGY_08096B3C
+gEngineEffectSpecialSummonSendToGY_08096B3C: @ 0x08096B3C
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -271266,7 +271266,7 @@ _08096C38:
 _08096C5A:
 	adds r1, r6, #0
 	adds r2, r3, #0
-	bl sub_08096264
+	bl gEngineEffectSpecialSummon_08096264
 	b _08096E0A
 	.align 2, 0
 _08096C64: .4byte 0x00000868
@@ -271321,7 +271321,7 @@ _08096CB6:
 	lsrs r0, r0, #0x13
 	adds r1, r6, #0
 	adds r2, r4, #0
-	bl sub_08095FE0
+	bl gEngineEffectSpecialSummon_08095FE0
 	b _08096E0A
 	.align 2, 0
 _08096CD4: .4byte 0x00000868
@@ -271356,7 +271356,7 @@ _08096D0C:
 	adds r0, r6, #0
 	adds r1, r5, #0
 	adds r2, r4, #0
-	bl sub_0809678C
+	bl gEngineEffectSendToGYGraveyard_0809678C
 	b _08096E0A
 _08096D18:
 	ldr r2, _08096D3C @ =gUnk_0201B290
@@ -271373,7 +271373,7 @@ _08096D18:
 	adds r1, r6, #0
 	adds r2, r5, #0
 	adds r3, r4, #0
-	bl sub_08096864
+	bl gEngineEffectSendToGYGraveyard_08096864
 	b _08096E0A
 	.align 2, 0
 _08096D3C: .4byte gUnk_0201B290
@@ -271409,7 +271409,7 @@ _08096D44:
 	lsrs r0, r0, #0x1f
 	adds r1, r1, r0
 	adds r0, r6, #0
-	bl sub_080A4694
+	bl gEngineEffectSpecialSummonTribute_080A4694
 	b _08096E0A
 	.align 2, 0
 _08096D88: .4byte gUnk_0201E2A0
@@ -271609,8 +271609,8 @@ _08096F14: .4byte 0x00001D4C
 _08096F18: .4byte 0x00001D54
 _08096F1C: .4byte 0x00001D5C
 
-	thumb_func_start sub_08096F20
-sub_08096F20: @ 0x08096F20
+	thumb_func_start gEngineEffectSpecialSummonSendToGY_08096F20
+gEngineEffectSpecialSummonSendToGY_08096F20: @ 0x08096F20
 	push {lr}
 	lsls r0, r0, #0x1f
 	ldr r2, _08096F3C @ =0x0000FFFF
@@ -271621,14 +271621,14 @@ sub_08096F20: @ 0x08096F20
 	orrs r0, r1
 	movs r1, #0
 	movs r2, #0
-	bl sub_0805B1F0
+	bl gEngineEffectSpecialSummonSendToGY_0805B1F0
 	pop {r1}
 	bx r1
 	.align 2, 0
 _08096F3C: .4byte 0x0000FFFF
 
-	thumb_func_start sub_08096F40
-sub_08096F40: @ 0x08096F40
+	thumb_func_start gEngineEffectSpecialSummonSendToGY_08096F40
+gEngineEffectSpecialSummonSendToGY_08096F40: @ 0x08096F40
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	lsls r5, r4, #0x1f
@@ -271639,7 +271639,7 @@ sub_08096F40: @ 0x08096F40
 	orrs r0, r2
 	orrs r5, r0
 	adds r0, r4, #0
-	bl sub_08037030
+	bl gEngineEffectBoostATKBoostDEF_08037030
 	adds r1, r0, #0
 	cmp r1, #0
 	blt _08096F94
@@ -271660,7 +271660,7 @@ sub_08096F40: @ 0x08096F40
 	orrs r1, r0
 	adds r0, r5, #0
 	movs r2, #0
-	bl sub_0805B1F0
+	bl gEngineEffectSpecialSummonSendToGY_0805B1F0
 	b _08096F96
 	.align 2, 0
 _08096F88: .4byte 0x0000FFFF
@@ -271673,11 +271673,11 @@ _08096F96:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_08096F9C
-sub_08096F9C: @ 0x08096F9C
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_08096F9C
+gEngineEffectSpecialSummonBoostATK_08096F9C: @ 0x08096F9C
 	push {r4, lr}
 	adds r4, r0, #0
-	bl sub_080316B8
+	bl gEngineEffectBoostATKBoostDEF_080316B8
 	adds r1, r0, #0
 	cmp r1, #0
 	blt _08096FD8
@@ -271709,11 +271709,11 @@ _08096FDA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_08096FE0
-sub_08096FE0: @ 0x08096FE0
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_08096FE0
+gEngineEffectSpecialSummonBoostATK_08096FE0: @ 0x08096FE0
 	push {r4, lr}
 	adds r4, r0, #0
-	bl sub_08031710
+	bl gEngineEffectBoostATKBoostDEF_08031710
 	adds r1, r0, #0
 	cmp r1, #0
 	blt _0809701C
@@ -271745,8 +271745,8 @@ _0809701E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_08097024
-sub_08097024: @ 0x08097024
+	thumb_func_start gEngineEffectSpecialSummonSendToGY_08097024
+gEngineEffectSpecialSummonSendToGY_08097024: @ 0x08097024
 	push {lr}
 	lsls r0, r0, #0x1f
 	ldr r2, _08097044 @ =0x0000FFFF
@@ -271757,15 +271757,15 @@ sub_08097024: @ 0x08097024
 	orrs r0, r1
 	movs r1, #0
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	movs r0, #0
 	pop {r1}
 	bx r1
 	.align 2, 0
 _08097044: .4byte 0x0000FFFF
 
-	thumb_func_start sub_08097048
-sub_08097048: @ 0x08097048
+	thumb_func_start gEngineEffectSpecialSummonSendToGY_08097048
+gEngineEffectSpecialSummonSendToGY_08097048: @ 0x08097048
 	push {lr}
 	lsls r0, r0, #0x1f
 	ldr r3, _0809706C @ =0x0000FFFF
@@ -271778,15 +271778,15 @@ sub_08097048: @ 0x08097048
 	lsrs r2, r2, #0x10
 	adds r1, r2, #0
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	movs r0, #0
 	pop {r1}
 	bx r1
 	.align 2, 0
 _0809706C: .4byte 0x0000FFFF
 
-	thumb_func_start sub_08097070
-sub_08097070: @ 0x08097070
+	thumb_func_start gEngineEffectChangePosition_08097070
+gEngineEffectChangePosition_08097070: @ 0x08097070
 	push {r4, lr}
 	ldr r1, _08097094 @ =gUnk_0201C4E0
 	ldr r4, _08097098 @ =0x00001D68
@@ -271798,7 +271798,7 @@ sub_08097070: @ 0x08097070
 	movs r0, #1
 	movs r1, #1
 	movs r2, #0
-	bl sub_080A5F38
+	bl gEngineEffectChangePosition_080A5F38
 	movs r0, #0
 	pop {r4}
 	pop {r1}
@@ -271808,8 +271808,8 @@ _08097094: .4byte gUnk_0201C4E0
 _08097098: .4byte 0x00001D68
 _0809709C: .4byte 0x00001D48
 
-	thumb_func_start sub_080970A0
-sub_080970A0: @ 0x080970A0
+	thumb_func_start gEngineEffectChangePosition_080970A0
+gEngineEffectChangePosition_080970A0: @ 0x080970A0
 	push {r4, lr}
 	ldr r1, _080970C4 @ =gUnk_0201C4E0
 	ldr r4, _080970C8 @ =0x00001D68
@@ -271821,7 +271821,7 @@ sub_080970A0: @ 0x080970A0
 	movs r0, #1
 	movs r1, #1
 	movs r2, #0
-	bl sub_080A5F38
+	bl gEngineEffectChangePosition_080A5F38
 	movs r0, #0
 	pop {r4}
 	pop {r1}
@@ -271853,7 +271853,7 @@ sub_080970E4: @ 0x080970E4
 	adds r1, #0xc
 	adds r0, r0, r1
 	ldr r1, [r0]
-	ldr r0, _08097100 @ =sub_08097024
+	ldr r0, _08097100 @ =gEngineEffectSpecialSummonSendToGY_08097024
 	eors r1, r0
 	rsbs r0, r1, #0
 	orrs r0, r1
@@ -271861,7 +271861,7 @@ sub_080970E4: @ 0x080970E4
 	bx lr
 	.align 2, 0
 _080970FC: .4byte gSpecialSummonCardEffects
-_08097100: .4byte sub_08097024
+_08097100: .4byte gEngineEffectSpecialSummonSendToGY_08097024
 
 	thumb_func_start sub_08097104
 sub_08097104: @ 0x08097104
@@ -272121,7 +272121,7 @@ _080972E2:
 	adds r0, r5, #0
 	adds r1, r4, #0
 	movs r2, #1
-	bl sub_0803495C
+	bl gEngineEffectSpecialSummonPreventAttack_0803495C
 	cmp r0, #0
 	bne _080972D8
 	adds r4, #1
@@ -272146,7 +272146,7 @@ _08097314:
 	adds r0, r5, #0
 	adds r1, r4, #0
 	movs r2, #1
-	bl sub_0803495C
+	bl gEngineEffectSpecialSummonPreventAttack_0803495C
 	cmp r0, #0
 	bne _080972D8
 	adds r4, #1
@@ -272164,7 +272164,7 @@ _0809732A:
 	adds r0, r5, #0
 	adds r1, r4, #0
 	movs r2, #1
-	bl sub_0803495C
+	bl gEngineEffectSpecialSummonPreventAttack_0803495C
 	cmp r0, #0
 	bne _080972D8
 _08097346:
@@ -272197,7 +272197,7 @@ gEngineEffectDestroyReduceATK_08097360: @ 0x08097360
 	adds r4, r0, #0
 	adds r5, r1, #0
 	movs r2, #0
-	bl sub_0803495C
+	bl gEngineEffectSpecialSummonPreventAttack_0803495C
 	cmp r0, #0
 	beq _08097428
 	ldr r2, _08097404 @ =0x000015FF (Diffusion Wave-Motion)
@@ -272242,13 +272242,13 @@ gEngineEffectDestroyReduceATK_08097360: @ 0x08097360
 	ldr r2, _0809741C @ =0x00001561 (Toon Defense)
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_0802F3A8
+	bl gEngineEffectSpecialSummonDestroy_0802F3A8
 	cmp r0, #0
 	bne _08097400
 	ldr r2, _08097420 @ =0x00001852 (Astral Barrier)
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_0802F3A8
+	bl gEngineEffectSpecialSummonDestroy_0802F3A8
 	cmp r0, #0
 	bne _08097400
 	ldr r1, _08097424 @ =0x00001318 (Ring of Magnetism)
@@ -272259,7 +272259,7 @@ gEngineEffectDestroyReduceATK_08097360: @ 0x08097360
 	adds r0, r4, #0
 	adds r1, r5, #0
 	movs r2, #1
-	bl sub_08036658
+	bl gEngineEffectSpecialSummonDestroy_08036658
 	cmp r0, #0
 	bne _08097428
 _08097400:
@@ -272282,8 +272282,8 @@ _0809742A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_08097430
-sub_08097430: @ 0x08097430
+	thumb_func_start gEngineEffectSpecialSummonChangePosition_08097430
+gEngineEffectSpecialSummonChangePosition_08097430: @ 0x08097430
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	movs r4, #0
@@ -272453,8 +272453,8 @@ _08097570: .4byte 0x00000868
 _08097574: .4byte gUnk_0201C510
 _08097578: .4byte 0x000010E1 @ Dragon Treasure (None)
 
-	thumb_func_start sub_0809757C
-sub_0809757C: @ 0x0809757C
+	thumb_func_start gEngineEffectSpecialSummonPreventAttack_0809757C
+gEngineEffectSpecialSummonPreventAttack_0809757C: @ 0x0809757C
 	push {r4, r5, r6, lr}
 	sub sp, #0x48
 	movs r6, #0
@@ -272506,7 +272506,7 @@ _080975DC:
 	beq _080975F8
 	ldr r0, [r4]
 	ldr r1, [r4, #0x1c]
-	bl sub_08035BA4
+	bl gEngineEffectSpecialSummonPreventAttack_08035BA4
 	cmp r0, #0
 	bne _0809760C
 	ldr r0, [r4]
@@ -272539,7 +272539,7 @@ _0809761E:
 	ldr r0, [r5]
 	ldr r1, [r5, #0x1c]
 	movs r2, #0
-	bl sub_0803495C
+	bl gEngineEffectSpecialSummonPreventAttack_0803495C
 	adds r4, r0, #0
 	cmp r4, #0
 	bne _08097678
@@ -272592,7 +272592,7 @@ _08097678:
 	movs r3, #1
 	rsbs r3, r3, #0
 	movs r0, #0xb
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r0, [r5]
 	ldr r1, [r5, #0x1c]
 	movs r2, #0x15
@@ -272740,7 +272740,7 @@ gEngineEffectBattlePhase_080977A0: @ 0x080977A0
 	movs r1, #0x9b
 	lsls r1, r1, #1
 	adds r0, r4, #0
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldr r1, _080977E4 @ =gUnk_0201C4E0
 	ldr r0, _080977E8 @ =0x00001D28
 	adds r2, r1, r0
@@ -272928,11 +272928,11 @@ _08097930:
 	movs r1, #1
 _0809794C:
 	adds r0, r5, #0
-	bl sub_080B0FE8
+	bl gEngineEffectSpecialSummonDestroy_080B0FE8
 	adds r4, r0, #0
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_080BB38C
+	bl gEngineEffectSpecialSummon_080BB38C
 	adds r2, r0, #0
 	cmp r2, #0
 	beq _08097978
@@ -272992,14 +272992,14 @@ _080979CA:
 	adds r0, r5, #0
 	adds r1, r4, #0
 	movs r2, #1
-	bl sub_0803495C
+	bl gEngineEffectSpecialSummonPreventAttack_0803495C
 	cmp r0, #0
 	beq _080979C8
 	movs r0, #7
 	adds r1, r5, #0
 	adds r2, r4, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 _080979E8:
 	movs r0, #3
 	bl sub_08096988
@@ -273032,7 +273032,7 @@ _080979F0:
 	movs r3, #1
 	rsbs r3, r3, #0
 	movs r0, #0xb
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	movs r0, #1
 	b _08097BD2
 	.align 2, 0
@@ -273064,7 +273064,7 @@ _08097A54:
 	cmp r6, #0
 	beq _08097A84
 	movs r0, #0xdd
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 	ldr r0, _08097A80 @ =0x00001D2C
 	adds r1, r4, r0
 	b _08097896
@@ -273170,7 +273170,7 @@ _08097B38:
 	movs r4, #0x38
 _08097B52:
 	adds r0, r4, #0
-	bl sub_0809347C
+	bl gEngineEffectSpecialSummon_0809347C
 	ldr r1, _08097B60 @ =gUnk_0201C4E0
 	ldr r3, _08097B64 @ =0x00001D2C
 	adds r1, r1, r3
@@ -273245,8 +273245,8 @@ _08097BE0: .4byte 0x00001D28
 _08097BE4: .4byte 0x00001D2C
 _08097BE8: .4byte 0x00001D30
 
-	thumb_func_start sub_08097BEC
-sub_08097BEC: @ 0x08097BEC
+	thumb_func_start gEngineEffectPreventAttack_08097BEC
+gEngineEffectPreventAttack_08097BEC: @ 0x08097BEC
 	push {r4, r5, lr}
 	sub sp, #4
 	adds r5, r0, #0
@@ -273357,7 +273357,7 @@ _08097CC0:
 	ldr r1, [r5, #0x1c]
 	adds r0, r6, #0
 	movs r2, #0
-	bl sub_080B1078
+	bl gEngineEffectSpecialSummonDestroy_080B1078
 	ldr r1, _08097CE8 @ =gUnk_0201C4E0
 	movs r2, #0xea
 	lsls r2, r2, #5
@@ -273369,7 +273369,7 @@ _08097CE4: .4byte gUnk_0201E2A0
 _08097CE8: .4byte gUnk_0201C4E0
 _08097CEC:
 	movs r0, #0xdf
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 _08097CF2:
 	ldr r1, _08097D00 @ =gUnk_0201C4E0
 	ldr r3, _08097D04 @ =0x00001D2C
@@ -273403,7 +273403,7 @@ _08097D28: .4byte 0x00001D2C
 _08097D2C:
 	ldr r1, [r5, #0x1c]
 	adds r0, r6, #0
-	bl sub_08035BA4
+	bl gEngineEffectSpecialSummonPreventAttack_08035BA4
 	adds r7, r0, #0
 	cmp r7, #0
 	beq _08097D50
@@ -273463,7 +273463,7 @@ _08097DAC:
 	ldr r1, [r5, #0x1c]
 	adds r0, r6, #0
 	movs r2, #1
-	bl sub_08036658
+	bl gEngineEffectSpecialSummonDestroy_08036658
 	cmp r0, #0
 	bne _08097E34
 	movs r0, #1
@@ -273544,7 +273544,7 @@ _08097E60: .4byte 0x00001D2C
 _08097E64:
 	ldr r1, [r7, #0x1c]
 	adds r0, r6, #0
-	bl sub_0803594C
+	bl gEngineEffectPreventAttack_0803594C
 	cmp r0, #0
 	beq _08097ED8
 	subs r4, r4, r6
@@ -273620,7 +273620,7 @@ _08097F0C: .4byte gUnk_0201C4E0
 _08097F10: .4byte 0x00001D2C
 _08097F14:
 	movs r0, #0xe1
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 	ldr r0, _08097F24 @ =gUnk_0201C4E0
 	ldr r3, _08097F28 @ =0x00001D2C
 	adds r0, r0, r3
@@ -273661,7 +273661,7 @@ _08097F5C:
 _08097F66:
 	ldr r1, [r5, #0x1c]
 	adds r0, r6, #0
-	bl sub_0803594C
+	bl gEngineEffectPreventAttack_0803594C
 	cmp r0, #1
 	ble _08097FE0
 	movs r0, #1
@@ -273742,7 +273742,7 @@ _08098018:
 	ldr r1, [r4, #0x1c]
 	adds r0, r6, #0
 	adds r2, r5, #0
-	bl sub_080B1078
+	bl gEngineEffectSpecialSummonDestroy_080B1078
 	cmp r0, #0
 	beq _0809807C
 	ldr r1, _08098048 @ =gUnk_0201AFE0
@@ -273795,7 +273795,7 @@ _08098086:
 	movs r1, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	movs r5, #0
 	movs r7, #1
 	b _0809809A
@@ -273818,7 +273818,7 @@ _0809809A:
 	adds r1, r4, #0
 	adds r2, r5, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 _080980C0:
 	ldr r4, _080980E8 @ =gUnk_0201BB90
 	ldr r0, [r4, #0x18]
@@ -273834,14 +273834,14 @@ _080980C0:
 	bl gEngineEffectDirectAttack_08035BC8
 	cmp r0, #1
 	beq _080980F0
-	ldr r0, _080980EC @ =sub_08097BEC
+	ldr r0, _080980EC @ =gEngineEffectPreventAttack_08097BEC
 	bl sub_08096A08
 	b _080980F6
 	.align 2, 0
 _080980E8: .4byte gUnk_0201BB90
-_080980EC: .4byte sub_08097BEC
+_080980EC: .4byte gEngineEffectPreventAttack_08097BEC
 _080980F0:
-	ldr r0, _08098104 @ =sub_08097BEC
+	ldr r0, _08098104 @ =gEngineEffectPreventAttack_08097BEC
 	bl sub_080969C4
 _080980F6:
 	ldr r1, _08098108 @ =gUnk_0201C4E0
@@ -273851,7 +273851,7 @@ _080980F6:
 	adds r0, #1
 	b _08098210
 	.align 2, 0
-_08098104: .4byte sub_08097BEC
+_08098104: .4byte gEngineEffectPreventAttack_08097BEC
 _08098108: .4byte gUnk_0201C4E0
 _0809810C: .4byte 0x00001D2C
 _08098110:
@@ -274000,8 +274000,8 @@ _0809821E:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_0809822C
-sub_0809822C: @ 0x0809822C
+	thumb_func_start gEngineEffectSpecialSummonTribute_0809822C
+gEngineEffectSpecialSummonTribute_0809822C: @ 0x0809822C
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r4, r1, r2
@@ -274218,7 +274218,7 @@ _0809839C:
 _080983B4: .4byte gUnk_0201E2A0
 _080983B8:
 	movs r0, #0x38
-	bl sub_080934E4
+	bl gEngineEffectSpecialSummon_080934E4
 _080983BE:
 	ldr r0, _080983CC @ =gUnk_0201C4E0
 	ldr r3, _080983D0 @ =0x00001D2C
@@ -274234,7 +274234,7 @@ _080983D0: .4byte 0x00001D2C
 _080983D4:
 	adds r0, r4, #0
 	movs r1, #0xe0
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldr r0, _080983F8 @ =gUnk_0201E2A0
 	lsls r1, r4, #2
 	adds r0, #8
@@ -274242,16 +274242,16 @@ _080983D4:
 	ldr r0, [r1]
 	cmp r0, #1
 	bne _08098400
-	ldr r2, _080983FC @ =sub_0809822C
+	ldr r2, _080983FC @ =gEngineEffectSpecialSummonTribute_0809822C
 	adds r0, r4, #0
 	movs r1, #1
 	bl gEngineEffectSpecialSummonGraveyard_080B70AC
 	b _08098406
 	.align 2, 0
 _080983F8: .4byte gUnk_0201E2A0
-_080983FC: .4byte sub_0809822C
+_080983FC: .4byte gEngineEffectSpecialSummonTribute_0809822C
 _08098400:
-	ldr r0, _08098414 @ =sub_0809822C
+	ldr r0, _08098414 @ =gEngineEffectSpecialSummonTribute_0809822C
 	bl sub_080969C4
 _08098406:
 	ldr r1, _08098418 @ =gUnk_0201C4E0
@@ -274261,7 +274261,7 @@ _08098406:
 	adds r0, #1
 	b _08098464
 	.align 2, 0
-_08098414: .4byte sub_0809822C
+_08098414: .4byte gEngineEffectSpecialSummonTribute_0809822C
 _08098418: .4byte gUnk_0201C4E0
 _0809841C: .4byte 0x00001D2C
 _08098420:
@@ -274304,7 +274304,7 @@ _08098464:
 _0809846C: .4byte 0x00001D2C
 _08098470:
 	adds r0, r4, #0
-	bl sub_0809757C
+	bl gEngineEffectSpecialSummonPreventAttack_0809757C
 	cmp r0, #0
 	beq _080984BE
 	movs r0, #0
@@ -274731,7 +274731,7 @@ _080987D4: .4byte gUnk_0201C4E0
 _080987D8: .4byte 0x00001D2C
 _080987DC:
 	mov r0, r8
-	bl sub_0809757C
+	bl gEngineEffectSpecialSummonPreventAttack_0809757C
 	cmp r0, #0
 	bne _08098790
 	ldr r6, _080988C0 @ =gUnk_0201BB90
@@ -274905,7 +274905,7 @@ _080988F2:
 	movs r2, #1
 _0809893A:
 	adds r0, r5, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _08098940:
 	movs r7, #5
 	movs r6, #1
@@ -274992,7 +274992,7 @@ _080989A2:
 	movs r2, #1
 _080989EE:
 	adds r0, r3, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _080989F4:
 	adds r5, #0x14
 	adds r4, #0x14
@@ -275031,7 +275031,7 @@ _08098A3C: .4byte gUnk_0201C4E0
 _08098A40: .4byte 0x00001D2C
 _08098A44:
 	mov r0, r8
-	bl sub_0809757C
+	bl gEngineEffectSpecialSummonPreventAttack_0809757C
 	adds r4, r0, #0
 	cmp r4, #0
 	beq _08098A52
@@ -275475,7 +275475,7 @@ _08098D54:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	ldr r2, [sp, #4]
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _08098D9A:
 	ldr r5, _08098E08 @ =gUnk_0201BB90
 	ldr r0, [r5, #8]
@@ -275523,7 +275523,7 @@ _08098D9A:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	ldr r2, [sp, #4]
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _08098DFC:
 	ldr r1, _08098E1C @ =gUnk_0201C4E0
 	ldr r7, _08098E20 @ =0x00001D2C
@@ -275575,7 +275575,7 @@ _08098E40:
 	adds r1, r2, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_08043714
+	bl gEngineEffectSpecialSummonDestroy_08043714
 	ldr r0, [r5, #4]
 	adds r3, r0, #0
 	mov r1, sb
@@ -275630,7 +275630,7 @@ _08098ED8: .4byte gUnk_0201C4E0
 _08098EDC: .4byte 0x00001D2C
 _08098EE0:
 	movs r0, #0
-	bl sub_080916C0
+	bl gEngineEffectBoostATKBoostDEF_080916C0
 	mov r2, r8
 	mov r6, sb
 	ands r2, r6
@@ -275752,7 +275752,7 @@ _08098FC0:
 	mov r0, sl
 	movs r2, #1
 _08098FCE:
-	bl sub_0803B230
+	bl gEngineEffectSpecialSummonRitualSummon_0803B230
 	rsbs r1, r0, #0
 	orrs r1, r0
 	lsrs r3, r1, #0x1f
@@ -275911,7 +275911,7 @@ _08099108:
 	mov r0, r8
 	movs r2, #2
 _08099110:
-	bl sub_0803B230
+	bl gEngineEffectSpecialSummonRitualSummon_0803B230
 	adds r6, r0, #0
 	b _08099168
 	.align 2, 0
@@ -276053,7 +276053,7 @@ _080991FA:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	ldr r2, [sp, #4]
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _08099238:
 	ldr r0, _0809926C @ =0x00001476 (Ancient Lamp)
 	ldr r1, [sp, #8]
@@ -276122,7 +276122,7 @@ _0809928A:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	ldr r2, [sp, #4]
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _080992CC:
 	movs r0, #0x14
 	ldr r1, [sp, #4]
@@ -276239,7 +276239,7 @@ _080993B4: .4byte gUnk_0201C4E0
 _080993B8: .4byte 0x00001D2C
 _080993BC:
 	movs r0, #0
-	bl sub_080916C0
+	bl gEngineEffectBoostATKBoostDEF_080916C0
 	mov r3, sb
 	ldr r1, [r3, #0x10]
 	ldr r0, _080993E4 @ =0x00001913 (B.E.S. Crystal Core)
@@ -276653,7 +276653,7 @@ _080996CC:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	b _08099962
 	.align 2, 0
 _08099718: .4byte 0x00001512 @ After the Struggle
@@ -276682,7 +276682,7 @@ _08099742:
 	movs r3, #0
 	bl sub_0803BD2C
 	movs r0, #2
-	bl sub_080916C0
+	bl gEngineEffectBoostATKBoostDEF_080916C0
 	ldr r0, [r4, #0x14]
 	cmp r0, #0
 	bne _08099822
@@ -276751,7 +276751,7 @@ _080997C0:
 	mov r3, sb
 	ldrh r1, [r3, #0xc]
 	adds r2, r5, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _080997E2:
 	mov r0, sl
 	ldr r3, [r0, #0x10]
@@ -276780,7 +276780,7 @@ _080997F2:
 	mov r2, sl
 	ldrh r1, [r2, #0xc]
 	adds r2, r5, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _0809981A:
 	movs r0, #0xd
 	adds r1, r5, #0
@@ -276815,7 +276815,7 @@ _08099860: .4byte 0x00001D28
 _08099864: .4byte 0x00001D2C
 _08099868:
 	movs r0, #1
-	bl sub_080916C0
+	bl gEngineEffectBoostATKBoostDEF_080916C0
 	ldr r1, _08099878 @ =gUnk_0201C4E0
 	ldr r3, _0809987C @ =0x00001D2C
 	adds r1, r1, r3
@@ -276825,7 +276825,7 @@ _08099878: .4byte gUnk_0201C4E0
 _0809987C: .4byte 0x00001D2C
 _08099880:
 	movs r0, #1
-	bl sub_08093384
+	bl gEngineEffectDestroyChangePosition_08093384
 	b _08099962
 _08099888:
 	movs r3, #0
@@ -277062,7 +277062,7 @@ _080999E0:
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
 	adds r2, r4, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _08099A5A:
 	ldr r1, _08099A8C @ =gUnk_0201C4E0
 	ldr r3, _08099A90 @ =0x00001D28
@@ -277378,7 +277378,7 @@ _08099CA2:
 	orrs r0, r3
 	ldrh r1, [r6, #0xc]
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _08099CC8:
 	ldr r0, [r6, #0x2c]
 	cmp r0, #0
@@ -277411,7 +277411,7 @@ _08099CC8:
 	mov r2, r8
 	ldrh r1, [r2, #0xc]
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _08099D0A:
 	ldr r4, _08099D74 @ =gUnk_0201BC2C
 	movs r5, #1
@@ -277466,7 +277466,7 @@ _08099D80:
 	mov r0, sb
 	movs r2, #0
 	movs r3, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 	b _08099DE0
 _08099D8E:
 	mov r2, r8
@@ -277508,7 +277508,7 @@ _08099DD4:
 	mov r0, sb
 	movs r2, #0
 	movs r3, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 _08099DE0:
 	bl sub_0804A870
 _08099DE4:
@@ -277616,7 +277616,7 @@ _08099E60:
 	ldrh r1, [r6, #0xc]
 	adds r0, r2, #0
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _08099EA0:
 	ldr r1, _08099EB8 @ =gUnk_0201C4E0
 	ldr r2, _08099EBC @ =0x00001D2C
@@ -277745,7 +277745,7 @@ _08099F96:
 	ldrh r1, [r2, #0xc]
 	adds r0, r4, #0
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _08099FA2:
 	mov r0, sb
 	lsls r0, r0, #0x1f
@@ -277833,7 +277833,7 @@ _0809A044:
 	beq _0809A0DC
 	ldr r1, [r7, #0x1c]
 	adds r0, r5, #0
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	cmp r0, #7
@@ -277861,7 +277861,7 @@ _0809A080:
 	beq _0809A0DC
 	ldr r1, [r7, #0x1c]
 	adds r0, r5, #0
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	cmp r0, #2
@@ -277910,7 +277910,7 @@ _0809A0E2:
 	ldrh r1, [r6, #0xc]
 	mov r0, sl
 	adds r2, r4, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _0809A0EC:
 	ldr r5, _0809A180 @ =gUnk_0201BB90
 	ldr r0, [r5, #0x24]
@@ -277957,7 +277957,7 @@ _0809A0EC:
 	lsrs r1, r1, #0x17
 	mov r0, sl
 	adds r2, r4, #0
-	bl sub_0805B1F0
+	bl gEngineEffectSpecialSummonSendToGY_0805B1F0
 	cmp r0, #0
 	beq _0809A16E
 	movs r0, #0x60
@@ -277973,7 +277973,7 @@ _0809A15A:
 	ldrh r1, [r6, #0xc]
 	mov r0, sl
 	adds r2, r4, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _0809A16E:
 	movs r0, #1
 _0809A170:
@@ -278266,7 +278266,7 @@ _0809A344:
 _0809A360: .4byte 0x000013A4 @ Thunder Nyan Nyan
 _0809A364:
 	ldr r0, [sp, #0x1c]
-	bl sub_0808EB68
+	bl gEngineEffectSpecialSummonRitualSummon_0808EB68
 	cmp r0, #0
 	beq _0809A388
 	mov r7, sb
@@ -278276,7 +278276,7 @@ _0809A364:
 _0809A376:
 	ldr r1, _0809A3A4 @ =0x0000146F (Cathedral of Nobles)
 	ldr r0, [sp, #0x1c]
-	bl sub_08032C94
+	bl gEngineEffectSpecialSummonBoostATK_08032C94
 	cmp r0, #0
 	bne _0809A388
 	mov r1, sb
@@ -278301,7 +278301,7 @@ _0809A3A4: .4byte 0x0000146F @ Cathedral of Nobles
 _0809A3A8: .4byte 0x000013A4 @ Thunder Nyan Nyan
 _0809A3AC:
 	ldr r0, [sp, #0x20]
-	bl sub_0808EB68
+	bl gEngineEffectSpecialSummonRitualSummon_0808EB68
 	cmp r0, #0
 	beq _0809A3D0
 	movs r0, #1
@@ -278311,7 +278311,7 @@ _0809A3AC:
 _0809A3BE:
 	ldr r1, _0809A3DC @ =0x0000146F (Cathedral of Nobles)
 	ldr r0, [sp, #0x20]
-	bl sub_08032C94
+	bl gEngineEffectSpecialSummonBoostATK_08032C94
 	cmp r0, #0
 	bne _0809A3D0
 	movs r0, #1
@@ -278556,7 +278556,7 @@ _0809A578:
 	ldr r1, [r4, #0x20]
 	ldr r0, [sp, #0x20]
 	movs r2, #1
-	bl sub_0804543C
+	bl gEngineEffectDestroyCounter_0804543C
 	b _0809A5D4
 	.align 2, 0
 _0809A5B0: .4byte gUnk_0201BB90
@@ -278811,7 +278811,7 @@ _0809A778:
 	ldr r1, [r4, #0x1c]
 	ldr r0, [sp, #0x1c]
 	movs r2, #1
-	bl sub_0804543C
+	bl gEngineEffectDestroyCounter_0804543C
 	b _0809A7D4
 	.align 2, 0
 _0809A7B0: .4byte gUnk_0201BB90
@@ -278872,7 +278872,7 @@ _0809A82A:
 	ldr r0, [sp, #0x1c]
 	movs r2, #0
 	movs r3, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 	b _0809AB98
 _0809A83A:
 	ldr r7, [sp, #0x30]
@@ -279132,7 +279132,7 @@ _0809AA16:
 	orrs r0, r7
 	ldrh r1, [r4, #0xc]
 	adds r2, r6, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _0809AA3C:
 	ldr r0, [sp, #0x3c]
 	cmp r0, #0
@@ -279304,7 +279304,7 @@ _0809AB52:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	adds r2, r6, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _0809AB90:
 	ldr r0, [sp, #0x40]
 	cmp r0, #0
@@ -279346,7 +279346,7 @@ _0809ABDC:
 	ldr r0, [sp, #0x20]
 	movs r2, #0
 	movs r3, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 	b _0809AF84
 _0809ABEC:
 	ldr r7, [sp, #0x34]
@@ -279613,7 +279613,7 @@ _0809ADD6:
 	orrs r0, r4
 	ldrh r1, [r3, #0xc]
 	adds r2, r6, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _0809ADFE:
 	ldr r4, [sp, #0x38]
 	cmp r4, #0
@@ -279799,7 +279799,7 @@ _0809AF36:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	adds r2, r6, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _0809AF74:
 	ldr r0, [sp, #0x44]
 	cmp r0, #0
@@ -279847,7 +279847,7 @@ _0809AFA2:
 	adds r0, r5, #0
 	adds r1, r6, #0
 	movs r2, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 _0809AFD0:
 	adds r7, #0x14
 	adds r6, #1
@@ -279936,7 +279936,7 @@ _0809B070:
 	ldr r3, [r7, #0x10]
 	ldr r0, [sp, #0x1c]
 	movs r2, #1
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 _0809B08A:
 	ldr r0, [sp, #0x38]
 	cmp r0, #0
@@ -279958,7 +279958,7 @@ _0809B08A:
 	ldr r0, [sp, #0x1c]
 	movs r2, #1
 	adds r3, r4, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 _0809B0BA:
 	ldr r1, [r5, #0x1c]
 	ldr r4, _0809B168 @ =0x0000162E (Continuous Destruction Punch)
@@ -279976,7 +279976,7 @@ _0809B0BA:
 	ldr r0, [sp, #0x1c]
 	movs r2, #1
 	adds r3, r4, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 _0809B0E2:
 	ldr r1, [r5, #0x1c]
 	ldr r4, _0809B16C @ =0x00001883 (Cross Counter)
@@ -279994,7 +279994,7 @@ _0809B0E2:
 	ldr r0, [sp, #0x1c]
 	movs r2, #1
 	adds r3, r4, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 _0809B10A:
 	ldr r4, _0809B160 @ =gUnk_0201BB90
 	ldr r1, [r4, #0x20]
@@ -280017,7 +280017,7 @@ _0809B10A:
 	ldr r3, [r2, #0x10]
 	ldr r0, [sp, #0x20]
 	movs r2, #1
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 _0809B13C:
 	bl sub_0804A870
 	ldr r1, _0809B170 @ =gUnk_0201C4E0
@@ -280231,7 +280231,7 @@ _0809B298:
 	adds r0, r6, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_080439A0
+	bl gEngineEffectChangePosition_080439A0
 _0809B2D4:
 	ldr r4, _0809B340 @ =gUnk_0201BB90
 	ldr r1, [r4, #0x20]
@@ -280246,7 +280246,7 @@ _0809B2D4:
 	mov r0, sl
 	movs r2, #1
 	adds r3, r5, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 _0809B2F4:
 	ldr r1, [r4, #0x1c]
 	adds r0, r6, #0
@@ -280259,7 +280259,7 @@ _0809B2F4:
 	adds r0, r6, #0
 	movs r2, #1
 	adds r3, r5, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 _0809B310:
 	ldr r2, [r7, #0x10]
 	ldr r0, _0809B348 @ =0x00001866 (Kangaroo Champ)
@@ -280361,7 +280361,7 @@ _0809B3AA:
 	lsrs r2, r2, #8
 	orrs r2, r3
 	lsrs r2, r2, #0x10
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	b _0809B4D0
 	.align 2, 0
 _0809B3D8: .4byte gUnk_0201BB90
@@ -280429,7 +280429,7 @@ _0809B3DC:
 	orrs r0, r1
 	ldrh r1, [r7, #0xc]
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	b _0809B4D0
 	.align 2, 0
 _0809B464: .4byte gUnk_0201BB90
@@ -280439,7 +280439,7 @@ _0809B470:
 	adds r0, r6, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 	b _0809B4D0
 _0809B47C:
 	ldr r3, [r7, #0xc]
@@ -280485,7 +280485,7 @@ _0809B4C4:
 	lsrs r1, r1, #0x10
 	adds r0, r2, #0
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _0809B4D0:
 	ldr r0, _0809B504 @ =gUnk_0201BB90
 	ldr r1, [r0, #8]
@@ -280638,7 +280638,7 @@ _0809B5C8:
 	ldrb r4, [r5, #0x1c]
 	lsls r3, r4, #8
 	orrs r2, r3
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	b _0809B6F4
 _0809B5F8:
 	ldr r5, [sp, #0x10]
@@ -280706,7 +280706,7 @@ _0809B5F8:
 	ldrh r1, [r5, #0xc]
 _0809B678:
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	b _0809B6F4
 	.align 2, 0
 _0809B680: .4byte 0x00000868
@@ -280715,7 +280715,7 @@ _0809B688:
 	mov r0, sl
 	movs r2, #0
 	movs r3, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 	b _0809B6F4
 _0809B694:
 	ldr r0, [sp, #4]
@@ -280766,7 +280766,7 @@ _0809B6E8:
 	lsrs r1, r1, #0x10
 	adds r0, r3, #0
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _0809B6F4:
 	bl sub_0804A870
 	ldr r1, _0809B700 @ =gUnk_0201C4E0
@@ -280851,7 +280851,7 @@ _0809B73C:
 	movs r3, #1
 	rsbs r3, r3, #0
 	movs r0, #0xb
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	b _0809B7C4
 	.align 2, 0
 _0809B7AC: .4byte 0x000016CB @ Black Luster Soldier - Envoy of the Beginning
@@ -281064,7 +281064,7 @@ _0809B8F4:
 	adds r1, r7, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_080439A0
+	bl gEngineEffectChangePosition_080439A0
 	str r6, [sp]
 	adds r0, r5, #0
 	adds r1, r7, #0
@@ -281098,7 +281098,7 @@ _0809B97C:
 	beq _0809B9C0
 	adds r0, r5, #0
 	adds r1, r7, #0
-	bl sub_0803149C
+	bl gEngineEffectDestroyCounter_0803149C
 	cmp r0, #0
 	beq _0809B9C0
 	ldr r0, [r6]
@@ -281113,7 +281113,7 @@ _0809B97C:
 	bl sub_08048674
 	adds r0, r5, #0
 	adds r1, r7, #0
-	bl sub_0803149C
+	bl gEngineEffectDestroyCounter_0803149C
 	adds r2, r0, #0
 	rsbs r2, r2, #0
 	adds r0, r5, #0
@@ -281161,7 +281161,7 @@ _0809B9F0:
 	adds r1, r7, #0
 	movs r2, #1
 	ldr r3, _0809BA28 @ =0x00001392 (Sword of Dragon's Soul)
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 _0809BA12:
 	adds r7, #1
 	cmp r7, #4
@@ -281203,7 +281203,7 @@ _0809BA34:
 	mov r4, sb
 	ands r4, r1
 	adds r0, r4, #0
-	bl sub_08033BF4
+	bl gEngineEffectSpecialSummon_08033BF4
 	adds r6, r0, #0
 	mov r0, r8
 	bl sub_08030DE8
@@ -281248,7 +281248,7 @@ _0809BAAC:
 	orrs r0, r1
 	movs r1, #0
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	cmp r0, #0
 	beq _0809BACE
 	b _0809BBE0
@@ -281385,7 +281385,7 @@ _0809BBC0:
 	mov r1, sl
 	subs r0, r0, r1
 	ldr r1, _0809BBF0 @ =0x00001362 (Magical Hats)
-	bl sub_0804790C
+	bl gEngineEffectBoostATKBoostDEF_0804790C
 _0809BBE0:
 	movs r0, #0
 	b _0809BDE6
@@ -281465,7 +281465,7 @@ _0809BC5C:
 	mov r0, sl
 	adds r1, r4, #0
 	mov r2, r8
-	bl sub_0804790C
+	bl gEngineEffectBoostATKBoostDEF_0804790C
 _0809BC84:
 	ldr r1, _0809BC9C @ =gUnk_0201C4E0
 	ldr r2, _0809BCA0 @ =0x00001D2C
@@ -281519,7 +281519,7 @@ _0809BCCA:
 	mov r0, r8
 	orrs r0, r7
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	cmp r0, #0
 	beq _0809BCFC
 	b _0809BBE0
@@ -281853,13 +281853,13 @@ gEngineEffectSpecialSummonReturnToHand_0809BF60: @ 0x0809BF60
 	cmp r0, #0
 	bne _0809BFBA
 	adds r0, r4, #0
-	bl sub_08033B08
+	bl gEngineEffectSpecialSummonChangePosition_08033B08
 	cmp r0, #0
 	bne _0809BFBA
 	subs r4, r6, r4
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_08037A2C
+	bl gEngineEffectBoostATKBoostDEF_08037A2C
 	cmp r0, #0
 	bne _0809BFCC
 	movs r2, #1
@@ -281993,12 +281993,12 @@ _0809C0B0:
 	movs r1, #0x99
 	lsls r1, r1, #1
 	adds r0, r6, #0
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	b _0809C0C8
 _0809C0C0:
 	ldr r1, _0809C0D4 @ =0x00000133
 	adds r0, r6, #0
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 _0809C0C8:
 	adds r0, r6, #0
 	movs r1, #0
@@ -282123,7 +282123,7 @@ _0809C1AC:
 	lsls r1, r4, #0x10
 	lsrs r1, r1, #0x10
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	adds r0, r6, #0
 	movs r1, #0xb
 	adds r2, r5, #0
@@ -282191,7 +282191,7 @@ _0809C216:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _0809C258:
 	adds r7, #0x14
 	adds r4, #1
@@ -282231,7 +282231,7 @@ _0809C27E:
 	adds r0, r6, #0
 	orrs r0, r2
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _0809C2A4:
 	subs r5, #4
 	subs r4, #1
@@ -282372,8 +282372,8 @@ _0809C3CA:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_0809C3D8
-sub_0809C3D8: @ 0x0809C3D8
+	thumb_func_start gEngineEffectSpecialSummonSendToGY_0809C3D8
+gEngineEffectSpecialSummonSendToGY_0809C3D8: @ 0x0809C3D8
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -282436,7 +282436,7 @@ _0809C402:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	cmp r0, #0
 	beq _0809C478
 	ldr r0, [r5]
@@ -282469,8 +282469,8 @@ _0809C486:
 	.align 2, 0
 _0809C494: .4byte gUnk_0201C4E0
 
-	thumb_func_start sub_0809C498
-sub_0809C498: @ 0x0809C498
+	thumb_func_start gEngineEffectSpecialSummonSendToGY_0809C498
+gEngineEffectSpecialSummonSendToGY_0809C498: @ 0x0809C498
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -282534,7 +282534,7 @@ _0809C4B4:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	cmp r0, #0
 	beq _0809C53C
 	ldr r0, [r6]
@@ -282567,8 +282567,8 @@ _0809C54C:
 	.align 2, 0
 _0809C558: .4byte gUnk_0201C4E0
 
-	thumb_func_start sub_0809C55C
-sub_0809C55C: @ 0x0809C55C
+	thumb_func_start gEngineEffectSpecialSummonSendToGY_0809C55C
+gEngineEffectSpecialSummonSendToGY_0809C55C: @ 0x0809C55C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -282632,7 +282632,7 @@ _0809C586:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	cmp r0, #0
 	beq _0809C5FC
 	ldr r0, [r5]
@@ -282665,8 +282665,8 @@ _0809C60A:
 	.align 2, 0
 _0809C618: .4byte gUnk_0201C4E0
 
-	thumb_func_start sub_0809C61C
-sub_0809C61C: @ 0x0809C61C
+	thumb_func_start gEngineEffectSpecialSummonSendToGY_0809C61C
+gEngineEffectSpecialSummonSendToGY_0809C61C: @ 0x0809C61C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -282734,7 +282734,7 @@ _0809C640:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	cmp r0, #0
 	beq _0809C6CC
 	ldr r0, [r6]
@@ -282766,8 +282766,8 @@ _0809C6DA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_0809C6E8
-sub_0809C6E8: @ 0x0809C6E8
+	thumb_func_start gEngineEffectSpecialSummonSendToGY_0809C6E8
+gEngineEffectSpecialSummonSendToGY_0809C6E8: @ 0x0809C6E8
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -282793,7 +282793,7 @@ _0809C6FC:
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	adds r0, r4, #0
 	movs r1, #0xb
 	adds r2, r6, #0
@@ -282822,18 +282822,18 @@ _0809C740:
 gEngineEffectDamagePreventAttack_0809C74C: @ 0x0809C74C
 	push {lr}
 	ldr r1, _0809C758 @ =0x00001756 (Solar Flare Dragon)
-	bl sub_0809C3D8
+	bl gEngineEffectSpecialSummonSendToGY_0809C3D8
 	pop {r1}
 	bx r1
 	.align 2, 0
 _0809C758: .4byte 0x00001756 @ Solar Flare Dragon
 
-	thumb_func_start sub_0809C75C
-sub_0809C75C: @ 0x0809C75C
+	thumb_func_start gEngineEffectSpecialSummonSendToGY_0809C75C
+gEngineEffectSpecialSummonSendToGY_0809C75C: @ 0x0809C75C
 	push {lr}
 	movs r1, #0x95
 	lsls r1, r1, #5
-	bl sub_0809C498
+	bl gEngineEffectSpecialSummonSendToGY_0809C498
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -282843,18 +282843,18 @@ sub_0809C75C: @ 0x0809C75C
 gEngineEffectDestroyBoostATK_0809C76C: @ 0x0809C76C
 	push {lr}
 	ldr r1, _0809C778 @ =0x00001835 (Gaia Soul the Combustible Collective)
-	bl sub_0809C498
+	bl gEngineEffectSpecialSummonSendToGY_0809C498
 	pop {r1}
 	bx r1
 	.align 2, 0
 _0809C778: .4byte 0x00001835 @ Gaia Soul the Combustible Collective
 
-	thumb_func_start sub_0809C77C
-sub_0809C77C: @ 0x0809C77C
+	thumb_func_start gEngineEffectSpecialSummonSendToGY_0809C77C
+gEngineEffectSpecialSummonSendToGY_0809C77C: @ 0x0809C77C
 	push {lr}
 	movs r1, #0xce
 	lsls r1, r1, #5
-	bl sub_0809C498
+	bl gEngineEffectSpecialSummonSendToGY_0809C498
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -282864,7 +282864,7 @@ sub_0809C77C: @ 0x0809C77C
 gEngineEffectSpecialSummonBanish_0809C78C: @ 0x0809C78C
 	push {lr}
 	ldr r1, _0809C798 @ =0x00001643 (Mirage Knight)
-	bl sub_0809C498
+	bl gEngineEffectSpecialSummonSendToGY_0809C498
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -282875,14 +282875,14 @@ _0809C798: .4byte 0x00001643 @ Mirage Knight
 gEngineEffectSpecialSummonSendToGY_0809C79C: @ 0x0809C79C
 	push {lr}
 	ldr r1, _0809C7A8 @ =0x000017BC (Crush D. Gandra)
-	bl sub_0809C498
+	bl gEngineEffectSpecialSummonSendToGY_0809C498
 	pop {r1}
 	bx r1
 	.align 2, 0
 _0809C7A8: .4byte 0x000017BC @ Crush D. Gandra
 
-	thumb_func_start sub_0809C7AC
-sub_0809C7AC: @ 0x0809C7AC
+	thumb_func_start gEngineEffectSpecialSummonSendToGY_0809C7AC
+gEngineEffectSpecialSummonSendToGY_0809C7AC: @ 0x0809C7AC
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -282980,7 +282980,7 @@ _0809C84C:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	ldr r0, _0809C8A4 @ =0x00001CF4
 	adds r1, r7, r0
 	ldr r0, [r1]
@@ -283035,7 +283035,7 @@ _0809C8D4:
 	orrs r0, r1
 	movs r1, #0
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	cmp r0, #0
 	bne _0809C904
 	adds r0, r4, #0
@@ -283083,7 +283083,7 @@ _0809C928:
 	lsls r1, r2, #0xe
 	lsrs r1, r1, #0x10
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	cmp r0, #0
 	bne _0809C95C
 	adds r0, r4, #0
@@ -283170,7 +283170,7 @@ _0809C9AA:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	ldr r3, [sp]
 	cmp r0, #0
 	beq _0809CA14
@@ -283239,7 +283239,7 @@ _0809CA6E:
 	lsls r1, r3, #0x10
 	lsrs r1, r1, #0x10
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	adds r0, r4, #0
 	movs r1, #0xb
 	ldr r2, _0809CA90 @ =0x000018BC (D.D. Survivor)
@@ -283261,11 +283261,11 @@ _0809CA9C:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_0809CAA4
-sub_0809CAA4: @ 0x0809CAA4
+	thumb_func_start gEngineEffectSpecialSummonSendToGY_0809CAA4
+gEngineEffectSpecialSummonSendToGY_0809CAA4: @ 0x0809CAA4
 	push {lr}
 	ldr r1, _0809CAB0 @ =0x000011CF (Mushroom Man)
-	bl sub_0809C3D8
+	bl gEngineEffectSpecialSummonSendToGY_0809C3D8
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -283276,7 +283276,7 @@ _0809CAB0: .4byte 0x000011CF @ Mushroom Man
 gEngineEffectDestroyPreventAttack_0809CAB4: @ 0x0809CAB4
 	push {lr}
 	ldr r1, _0809CAC0 @ =0x000012AC (Satellite Cannon)
-	bl sub_0809C3D8
+	bl gEngineEffectSpecialSummonSendToGY_0809C3D8
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -283287,7 +283287,7 @@ _0809CAC0: .4byte 0x000012AC @ Satellite Cannon
 gEngineEffectSpecialSummonReduceATK_0809CAC4: @ 0x0809CAC4
 	push {lr}
 	ldr r1, _0809CAD0 @ =0x00001644 (Berserk Dragon)
-	bl sub_0809C3D8
+	bl gEngineEffectSpecialSummonSendToGY_0809C3D8
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -283298,7 +283298,7 @@ _0809CAD0: .4byte 0x00001644 @ Berserk Dragon
 gEngineEffectDrawSearch_0809CAD4: @ 0x0809CAD4
 	push {lr}
 	ldr r1, _0809CAE0 @ =0x00001911 (Cyber Archfiend)
-	bl sub_0809C3D8
+	bl gEngineEffectSpecialSummonSendToGY_0809C3D8
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -283352,7 +283352,7 @@ _0809CB08:
 	adds r1, r4, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_08047BB4
+	bl gEngineEffectBoostATKBoostDEF_08047BB4
 	ldr r0, [r6]
 	adds r0, #1
 	str r0, [r6]
@@ -283416,7 +283416,7 @@ _0809CB98:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	movs r0, #0
 	b _0809CC3E
 _0809CBC6:
@@ -283570,7 +283570,7 @@ _0809CC8E:
 	mov r1, r8
 	movs r2, #0
 	movs r3, #0
-	bl sub_08047E20
+	bl gEngineEffectBoostATKBoostDEF_08047E20
 	movs r0, #0
 	b _0809CD12
 	.align 2, 0
@@ -283654,7 +283654,7 @@ _0809CD40:
 	adds r1, r4, #0
 	movs r2, #0
 	adds r3, r6, #0
-	bl sub_08047BB4
+	bl gEngineEffectBoostATKBoostDEF_08047BB4
 	cmp r0, #0
 	bne _0809CDA0
 	adds r0, r5, #0
@@ -283689,8 +283689,8 @@ _0809CDC8:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_0809CDD4
-sub_0809CDD4: @ 0x0809CDD4
+	thumb_func_start gEngineEffectBoostATKBoostDEF_0809CDD4
+gEngineEffectBoostATKBoostDEF_0809CDD4: @ 0x0809CDD4
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -283741,7 +283741,7 @@ _0809CDF2:
 	adds r1, r4, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 	cmp r0, #0
 	bne _0809CE50
 	adds r0, r5, #0
@@ -283780,7 +283780,7 @@ _0809CE74:
 gEngineEffectDestroyAllEndPhase_0809CE80: @ 0x0809CE80
 	push {lr}
 	ldr r1, _0809CE8C @ =0x00001409 (Limiter Removal)
-	bl sub_0809CDD4
+	bl gEngineEffectBoostATKBoostDEF_0809CDD4
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -283791,7 +283791,7 @@ _0809CE8C: .4byte 0x00001409 @ Limiter Removal
 gEngineEffectDestroyEndPhase_0809CE90: @ 0x0809CE90
 	push {lr}
 	ldr r1, _0809CE9C @ =0x00001337 (Karate Man)
-	bl sub_0809CDD4
+	bl gEngineEffectBoostATKBoostDEF_0809CDD4
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -283802,7 +283802,7 @@ _0809CE9C: .4byte 0x00001337 @ Karate Man
 gEngineEffectDestroyBoostATK_0809CEA0: @ 0x0809CEA0
 	push {lr}
 	ldr r1, _0809CEAC @ =0x000016CE (Wild Nature's Release)
-	bl sub_0809CDD4
+	bl gEngineEffectBoostATKBoostDEF_0809CDD4
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -283825,7 +283825,7 @@ gEngineEffectFlipNegate_0809CEB0: @ 0x0809CEB0
 	bne _0809CEE0
 	ldr r1, _0809CEDC @ =0x00001481 (Summoner of Illusions)
 	adds r0, r4, #0
-	bl sub_0809CDD4
+	bl gEngineEffectBoostATKBoostDEF_0809CDD4
 	b _0809CEE2
 	.align 2, 0
 _0809CED4: .4byte 0x0000148E @ Royal Command
@@ -283843,7 +283843,7 @@ _0809CEE2:
 gEngineEffectSpecialSummonDestroy_0809CEE8: @ 0x0809CEE8
 	push {lr}
 	ldr r1, _0809CEF4 @ =0x000016A4 (Archfiend's Roar)
-	bl sub_0809CDD4
+	bl gEngineEffectBoostATKBoostDEF_0809CDD4
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -283854,7 +283854,7 @@ _0809CEF4: .4byte 0x000016A4 @ Archfiend's Roar
 gEngineEffectSpecialSummonSendToGY_0809CEF8: @ 0x0809CEF8
 	push {lr}
 	ldr r1, _0809CF04 @ =0x00001876 (Rescue Cat)
-	bl sub_0809CDD4
+	bl gEngineEffectBoostATKBoostDEF_0809CDD4
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -283918,7 +283918,7 @@ _0809CF24:
 	adds r0, r5, #0
 	adds r1, r4, #0
 	movs r2, #0
-	bl sub_08047A38
+	bl gEngineEffectBoostATKBoostDEF_08047A38
 	cmp r0, #0
 	bne _0809CF90
 	adds r0, r5, #0
@@ -284055,7 +284055,7 @@ _0809D07A:
 	adds r0, r7, #0
 	adds r1, r5, #0
 	mov r2, sb
-	bl sub_0804790C
+	bl gEngineEffectBoostATKBoostDEF_0804790C
 	ldr r1, _0809D09C @ =gUnk_0201C4E0
 	ldr r3, _0809D0A0 @ =0x00001D24
 	adds r1, r1, r3
@@ -284084,8 +284084,8 @@ _0809D0B6:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_0809D0C8
-sub_0809D0C8: @ 0x0809D0C8
+	thumb_func_start gEngineEffectBoostATKBoostDEF_0809D0C8
+gEngineEffectBoostATKBoostDEF_0809D0C8: @ 0x0809D0C8
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -284147,7 +284147,7 @@ _0809D0F2:
 	ldrh r1, [r5]
 	adds r0, r6, #0
 	adds r2, r4, #0
-	bl sub_0804790C
+	bl gEngineEffectBoostATKBoostDEF_0804790C
 	ldr r0, [r7]
 	adds r0, #1
 	str r0, [r7]
@@ -284183,21 +284183,21 @@ gEngineEffectSendToGYGraveyard_0809D180: @ 0x0809D180
 	movs r0, #1
 	subs r0, r0, r1
 	ldr r1, _0809D194 @ =0x00001468 (Destiny Board)
-	bl sub_0809C55C
+	bl gEngineEffectSpecialSummonSendToGY_0809C55C
 	pop {r1}
 	bx r1
 	.align 2, 0
 _0809D194: .4byte 0x00001468 @ Destiny Board
 
-	thumb_func_start sub_0809D198
-sub_0809D198: @ 0x0809D198
+	thumb_func_start gEngineEffectSpecialSummonSendToGY_0809D198
+gEngineEffectSpecialSummonSendToGY_0809D198: @ 0x0809D198
 	push {lr}
 	adds r1, r0, #0
 	movs r0, #1
 	subs r0, r0, r1
 	movs r1, #0xaa
 	lsls r1, r1, #5
-	bl sub_0809C55C
+	bl gEngineEffectSpecialSummonSendToGY_0809C55C
 	pop {r1}
 	bx r1
 
@@ -284209,7 +284209,7 @@ gEngineEffectSpecialSummonSendToGY_0809D1AC: @ 0x0809D1AC
 	movs r0, #1
 	subs r0, r0, r1
 	ldr r1, _0809D1C0 @ =0x000017AF (The First Sarcophagus)
-	bl sub_0809C55C
+	bl gEngineEffectSpecialSummonSendToGY_0809C55C
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -284223,7 +284223,7 @@ gEngineEffectSpecialSummonChangePosition_0809D1C4: @ 0x0809D1C4
 	movs r0, #1
 	subs r0, r0, r1
 	ldr r1, _0809D1D8 @ =0x00001487 (Garuda the Wind Spirit)
-	bl sub_0809C3D8
+	bl gEngineEffectSpecialSummonSendToGY_0809C3D8
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -284250,7 +284250,7 @@ _0809D1F8:
 	orrs r0, r1
 	movs r1, #0
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	adds r0, r4, #0
 	movs r1, #0xb
 	adds r2, r5, #0
@@ -284362,7 +284362,7 @@ _0809D2A2:
 	adds r1, r4, #0
 	movs r2, #0
 	ldr r3, _0809D300 @ =0x00001379 (Graverobber)
-	bl sub_08047E20
+	bl gEngineEffectBoostATKBoostDEF_08047E20
 _0809D2E4:
 	adds r6, #0x14
 	adds r4, #1
@@ -284399,7 +284399,7 @@ _0809D318:
 gEngineEffectSpecialSummonDestroy_0809D324: @ 0x0809D324
 	push {lr}
 	ldr r1, _0809D330 @ =0x00001466 (Dark Necrofear)
-	bl sub_0809C6E8
+	bl gEngineEffectSpecialSummonSendToGY_0809C6E8
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -284410,7 +284410,7 @@ _0809D330: .4byte 0x00001466 @ Dark Necrofear
 gEngineEffectSpecialSummonSendToGY_0809D334: @ 0x0809D334
 	push {lr}
 	ldr r1, _0809D340 @ =0x000016F9 (Manticore of Darkness)
-	bl sub_0809C6E8
+	bl gEngineEffectSpecialSummonSendToGY_0809C6E8
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -284421,7 +284421,7 @@ _0809D340: .4byte 0x000016F9 @ Manticore of Darkness
 gEngineEffectSpecialSummonDestroy_0809D344: @ 0x0809D344
 	push {lr}
 	ldr r1, _0809D350 @ =0x00001836 (Fox Fire)
-	bl sub_0809C6E8
+	bl gEngineEffectSpecialSummonSendToGY_0809C6E8
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -284432,7 +284432,7 @@ _0809D350: .4byte 0x00001836 @ Fox Fire
 gEngineEffectSpecialSummonSendToGY_0809D354: @ 0x0809D354
 	push {lr}
 	ldr r1, _0809D360 @ =0x000019F7 (Helios Duo Megiste)
-	bl sub_0809C6E8
+	bl gEngineEffectSpecialSummonSendToGY_0809C6E8
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -284443,7 +284443,7 @@ _0809D360: .4byte 0x000019F7 @ Helios Duo Megiste
 gEngineEffectSpecialSummonSendToGY_0809D364: @ 0x0809D364
 	push {lr}
 	ldr r1, _0809D370 @ =0x000019F8 (Helios Tris Megiste)
-	bl sub_0809C6E8
+	bl gEngineEffectSpecialSummonSendToGY_0809C6E8
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -284509,7 +284509,7 @@ _0809D392:
 	lsls r1, r6, #0x10
 	lsrs r1, r1, #0x10
 	adds r2, r5, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	mov r0, sb
 	str r0, [sp]
 	adds r0, r4, #0
@@ -284582,7 +284582,7 @@ _0809D452:
 	lsls r1, r4, #0x10
 	lsrs r1, r1, #0x10
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _0809D482:
 	adds r0, r5, #0
 	movs r1, #0xb
@@ -284617,7 +284617,7 @@ _0809D4B0:
 gEngineEffectSpecialSummonDestroy_0809D4BC: @ 0x0809D4BC
 	push {lr}
 	ldr r0, _0809D4C8 @ =0x000017B2 (Human-Wave Tactics)
-	bl sub_0809C61C
+	bl gEngineEffectSpecialSummonSendToGY_0809C61C
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -284628,7 +284628,7 @@ _0809D4C8: .4byte 0x000017B2 @ Human-Wave Tactics
 gEngineEffectChangePositionEndPhase_0809D4CC: @ 0x0809D4CC
 	push {lr}
 	ldr r1, _0809D4D8 @ =0x000012A3 (Little-Winguard)
-	bl sub_0809C3D8
+	bl gEngineEffectSpecialSummonSendToGY_0809C3D8
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -284639,7 +284639,7 @@ _0809D4D8: .4byte 0x000012A3 @ Little-Winguard
 gEngineEffectDamageEndPhase_0809D4DC: @ 0x0809D4DC
 	push {lr}
 	ldr r0, _0809D4E8 @ =0x000012DC (Ectoplasmer)
-	bl sub_0809C61C
+	bl gEngineEffectSpecialSummonSendToGY_0809C61C
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -284650,7 +284650,7 @@ _0809D4E8: .4byte 0x000012DC @ Ectoplasmer
 gEngineEffectChangePositionEndPhase_0809D4EC: @ 0x0809D4EC
 	push {lr}
 	ldr r0, _0809D4F8 @ =0x000017B6 (Labyrinth of Nightmare)
-	bl sub_0809C61C
+	bl gEngineEffectSpecialSummonSendToGY_0809C61C
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -284661,7 +284661,7 @@ _0809D4F8: .4byte 0x000017B6 @ Labyrinth of Nightmare
 gEngineEffectSpecialSummonSendToGY_0809D4FC: @ 0x0809D4FC
 	push {lr}
 	ldr r0, _0809D508 @ =0x00001972 (Boss Rush)
-	bl sub_0809C61C
+	bl gEngineEffectSpecialSummonSendToGY_0809C61C
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -284672,7 +284672,7 @@ _0809D508: .4byte 0x00001972 @ Boss Rush
 gEngineEffectEndPhase_0809D50C: @ 0x0809D50C
 	push {lr}
 	ldr r0, _0809D518 @ =0x00001802 (Greed)
-	bl sub_0809C61C
+	bl gEngineEffectSpecialSummonSendToGY_0809C61C
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -284756,7 +284756,7 @@ _0809D53A:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	mov r1, r8
 	ldr r0, [r1]
 	adds r0, #1
@@ -284786,8 +284786,8 @@ _0809D5E6:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_0809D5F4
-sub_0809D5F4: @ 0x0809D5F4
+	thumb_func_start gEngineEffectSpecialSummonSendToGY_0809D5F4
+gEngineEffectSpecialSummonSendToGY_0809D5F4: @ 0x0809D5F4
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -284823,7 +284823,7 @@ _0809D61E:
 	orrs r0, r1
 	movs r1, #0
 	movs r2, #0
-	bl sub_0805B1F0
+	bl gEngineEffectSpecialSummonSendToGY_0805B1F0
 	cmp r0, #0
 	beq _0809D694
 	ldr r0, _0809D67C @ =gUnk_0201E2A0
@@ -284845,7 +284845,7 @@ _0809D61E:
 	movs r1, #0xfa
 	bl sub_0801F2C4
 	mov r0, sp
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 	b _0809D686
 	.align 2, 0
 _0809D670: .4byte gUnk_0201C4E0
@@ -284891,7 +284891,7 @@ _0809D6A2:
 	orrs r0, r1
 	movs r1, #0
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	b _0809D6E8
 	.align 2, 0
 _0809D6CC: .4byte gUnk_09E47688
@@ -285481,7 +285481,7 @@ _0809DB54:
 	bne _0809DC2A
 	ldr r0, [sp, #0x104]
 	movs r2, #1
-	bl sub_08045298
+	bl gEngineEffectDestroyStandbyPhase_08045298
 	b _0809DC22
 _0809DB74:
 	cmp r1, #4
@@ -285539,7 +285539,7 @@ _0809DBD0:
 	movs r1, #0xee
 	bl sub_0801F2C4
 	add r0, sp, #4
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 	b _0809DBF0
 _0809DBE8:
 	movs r4, #0xea
@@ -285569,7 +285569,7 @@ _0809DC12:
 	ldr r0, [sp, #0x104]
 	movs r2, #0
 	movs r3, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 _0809DC1C:
 	movs r0, #0
 	mov r3, sl
@@ -285647,7 +285647,7 @@ _0809DCAC:
 	adds r0, r5, #0
 	adds r1, r4, #0
 	movs r2, #1
-	bl sub_08045298
+	bl gEngineEffectDestroyStandbyPhase_08045298
 	ldr r2, [sp, #0x108]
 	cmp r2, #0
 	beq _0809DCBE
@@ -285655,7 +285655,7 @@ _0809DCAC:
 _0809DCBE:
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_080313DC
+	bl gEngineEffectDestroyStandbyPhase_080313DC
 	cmp r0, #2
 	beq _0809DCCC
 	b _0809E05C
@@ -285664,13 +285664,13 @@ _0809DCCC:
 	adds r1, r4, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 	b _0809E05C
 _0809DCDA:
 	adds r0, r5, #0
 	adds r1, r4, #0
 	movs r2, #1
-	bl sub_08045298
+	bl gEngineEffectDestroyStandbyPhase_08045298
 	ldr r3, [sp, #0x108]
 	cmp r3, #0
 	beq _0809DCEC
@@ -285678,7 +285678,7 @@ _0809DCDA:
 _0809DCEC:
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_080313DC
+	bl gEngineEffectDestroyStandbyPhase_080313DC
 	cmp r0, #1
 	beq _0809DCFA
 	b _0809E05C
@@ -285687,7 +285687,7 @@ _0809DCFA:
 	adds r1, r4, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 	b _0809E05C
 _0809DD08:
 	ldr r0, [r6]
@@ -285758,7 +285758,7 @@ _0809DD4E:
 	adds r0, r6, #0
 	mov r1, sb
 	movs r2, #1
-	bl sub_08045298
+	bl gEngineEffectDestroyStandbyPhase_08045298
 	ldr r0, [sp, #0x108]
 	cmp r0, #0
 	bne _0809DE1A
@@ -285772,7 +285772,7 @@ _0809DD4E:
 	bne _0809DE1A
 	adds r0, r6, #0
 	mov r1, sb
-	bl sub_080313DC
+	bl gEngineEffectDestroyStandbyPhase_080313DC
 	adds r4, r0, #0
 	cmp r4, #1
 	bne _0809DE1A
@@ -285798,7 +285798,7 @@ _0809DD4E:
 	mov r1, sl
 	mov r2, r8
 	mov r3, sb
-	bl sub_080369A4
+	bl gEngineEffectDestroyBoostATK_080369A4
 	cmp r0, #0
 	beq _0809DDFC
 	ldr r0, [sp, #0x104]
@@ -285806,7 +285806,7 @@ _0809DD4E:
 	ldr r3, [sp, #0x114]
 	lsrs r2, r3, #0x1f
 	mov r3, r8
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 	str r0, [sp, #0x110]
 _0809DDFC:
 	adds r0, r7, #0
@@ -285822,7 +285822,7 @@ _0809DDFC:
 	mov r1, sb
 	movs r2, #0
 	movs r3, #0
-	bl sub_08047BB4
+	bl gEngineEffectBoostATKBoostDEF_08047BB4
 _0809DE1A:
 	ldr r3, [sp, #0x11c]
 	adds r3, #0x14
@@ -286109,7 +286109,7 @@ _0809E050:
 	adds r1, r5, #0
 	movs r2, #1
 	movs r3, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 _0809E05C:
 	ldr r0, [r6]
 	adds r0, #1
@@ -286378,7 +286378,7 @@ _0809E29C:
 	beq _0809E2B2
 	adds r0, r5, #0
 	movs r1, #5
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 _0809E2B2:
 	ldr r0, _0809E2E4 @ =0x00001D1C
 	adds r1, r4, r0
@@ -286512,7 +286512,7 @@ _0809E3B6:
 _0809E3C6:
 	adds r0, r4, #0
 _0809E3C8:
-	bl sub_0809347C
+	bl gEngineEffectSpecialSummon_0809347C
 	ldr r0, _0809E3D8 @ =gUnk_0201C4E0
 	ldr r2, _0809E3DC @ =0x00001D1C
 	adds r0, r0, r2
@@ -286562,7 +286562,7 @@ _0809E424: .4byte 0x00001D1C
 _0809E428:
 	ldr r1, _0809E438 @ =0x00000135
 	adds r0, r5, #0
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldr r1, _0809E43C @ =gUnk_0201C4E0
 	ldr r0, _0809E440 @ =0x00001D1C
 	adds r1, r1, r0
@@ -286594,7 +286594,7 @@ _0809E45C:
 _0809E46C:
 	adds r0, r4, #0
 _0809E46E:
-	bl sub_0809347C
+	bl gEngineEffectSpecialSummon_0809347C
 	ldr r0, _0809E47C @ =gUnk_0201C4E0
 	ldr r1, _0809E480 @ =0x00001D1C
 	adds r0, r0, r1
@@ -286751,7 +286751,7 @@ _0809E570:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	cmp r0, #0
 	bne _0809E5D8
 _0809E5B0:
@@ -286819,7 +286819,7 @@ _0809E5F2:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	movs r2, #0
-	bl sub_0805B1F0
+	bl gEngineEffectSpecialSummonSendToGY_0805B1F0
 	cmp r0, #0
 	beq _0809E644
 	movs r0, #0
@@ -286979,7 +286979,7 @@ _0809E764: .4byte 0x00001CF4
 _0809E768: .4byte 0x00001D34
 _0809E76C:
 	adds r0, r4, #0
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	beq _0809E7B0
 	adds r0, r4, #0
@@ -286994,7 +286994,7 @@ _0809E76C:
 	beq _0809E7B0
 	ldr r1, _0809E7A4 @ =0x0000011D
 	adds r0, r4, #0
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldr r1, _0809E7A8 @ =gUnk_0201C4E0
 	ldr r2, _0809E7AC @ =0x00001D34
 	adds r1, r1, r2
@@ -287186,8 +287186,8 @@ _0809E914:
 _0809E918: .4byte gUnk_0201C4E0
 _0809E91C: .4byte 0x00001D34
 
-	thumb_func_start sub_0809E920
-sub_0809E920: @ 0x0809E920
+	thumb_func_start gEngineEffectSpecialSummonSendToGY_0809E920
+gEngineEffectSpecialSummonSendToGY_0809E920: @ 0x0809E920
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -287250,7 +287250,7 @@ _0809E94A:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	cmp r0, #0
 	beq _0809E9C0
 	ldr r0, [r5]
@@ -287283,8 +287283,8 @@ _0809E9CE:
 	.align 2, 0
 _0809E9DC: .4byte gUnk_0201C4E0
 
-	thumb_func_start sub_0809E9E0
-sub_0809E9E0: @ 0x0809E9E0
+	thumb_func_start gEngineEffectSpecialSummonSendToGY_0809E9E0
+gEngineEffectSpecialSummonSendToGY_0809E9E0: @ 0x0809E9E0
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -287348,7 +287348,7 @@ _0809EA0A:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	cmp r0, #0
 	beq _0809EA80
 	ldr r0, [r5]
@@ -287386,7 +287386,7 @@ _0809EA9C: .4byte gUnk_0201C4E0
 gEngineEffectSpecialSummonChangePosition_0809EAA0: @ 0x0809EAA0
 	push {lr}
 	ldr r1, _0809EAAC @ =0x000013FF (Jam Breeding Machine)
-	bl sub_0809E9E0
+	bl gEngineEffectSpecialSummonSendToGY_0809E9E0
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -287397,7 +287397,7 @@ _0809EAAC: .4byte 0x000013FF @ Jam Breeding Machine
 gEngineEffectDestroyAllStandbyPhase_0809EAB0: @ 0x0809EAB0
 	push {lr}
 	ldr r1, _0809EABC @ =0x00001494 (Blind Destruction)
-	bl sub_0809E9E0
+	bl gEngineEffectSpecialSummonSendToGY_0809E9E0
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -287408,7 +287408,7 @@ _0809EABC: .4byte 0x00001494 @ Blind Destruction
 gEngineEffectDamageStandbyPhase_0809EAC0: @ 0x0809EAC0
 	push {lr}
 	ldr r1, _0809EACC @ =0x00001519 (Ominous Fortunetelling)
-	bl sub_0809E9E0
+	bl gEngineEffectSpecialSummonSendToGY_0809E9E0
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -287419,7 +287419,7 @@ _0809EACC: .4byte 0x00001519 @ Ominous Fortunetelling
 gEngineEffectDestroyStandbyPhase_0809EAD0: @ 0x0809EAD0
 	push {lr}
 	ldr r1, _0809EADC @ =0x00001545 (Needle Wall)
-	bl sub_0809E9E0
+	bl gEngineEffectSpecialSummonSendToGY_0809E9E0
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -287430,7 +287430,7 @@ _0809EADC: .4byte 0x00001545 @ Needle Wall
 gEngineEffectDrawDiscard_0809EAE0: @ 0x0809EAE0
 	push {lr}
 	ldr r1, _0809EAEC @ =0x00001738 (Dangerous Machine TYPE-6)
-	bl sub_0809E9E0
+	bl gEngineEffectSpecialSummonSendToGY_0809E9E0
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -287452,7 +287452,7 @@ gEngineEffectBanishStandbyPhase_0809EAF0: @ 0x0809EAF0
 	orrs r0, r1
 	movs r1, #0
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	cmp r0, #0
 	bne _0809EB20
 	adds r0, r4, #0
@@ -287473,11 +287473,11 @@ _0809EB2E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_0809EB34
-sub_0809EB34: @ 0x0809EB34
+	thumb_func_start gEngineEffectSpecialSummonSendToGY_0809EB34
+gEngineEffectSpecialSummonSendToGY_0809EB34: @ 0x0809EB34
 	push {lr}
 	ldr r1, _0809EB40 @ =0x000011CF (Mushroom Man)
-	bl sub_0809E920
+	bl gEngineEffectSpecialSummonSendToGY_0809E920
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -287488,7 +287488,7 @@ _0809EB40: .4byte 0x000011CF @ Mushroom Man
 gEngineEffectSpecialSummonDamage_0809EB44: @ 0x0809EB44
 	push {lr}
 	ldr r1, _0809EB50 @ =0x00001578 (Lava Golem)
-	bl sub_0809E920
+	bl gEngineEffectSpecialSummonSendToGY_0809E920
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -287550,7 +287550,7 @@ _0809EB70:
 	adds r1, r5, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_080439A0
+	bl gEngineEffectChangePosition_080439A0
 _0809EBC6:
 	adds r0, r6, #0
 	adds r1, r5, #0
@@ -287588,7 +287588,7 @@ _0809EBF8:
 gEngineEffectGainLPChangePosition_0809EC04: @ 0x0809EC04
 	push {lr}
 	ldr r1, _0809EC10 @ =0x00001450 (Spirit of the Breeze)
-	bl sub_0809E920
+	bl gEngineEffectSpecialSummonSendToGY_0809E920
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -287599,7 +287599,7 @@ _0809EC10: .4byte 0x00001450 @ Spirit of the Breeze
 gEngineEffectBoostDEFGainLP_0809EC14: @ 0x0809EC14
 	push {lr}
 	ldr r1, _0809EC20 @ =0x00001451 (Dancing Fairy)
-	bl sub_0809E920
+	bl gEngineEffectSpecialSummonSendToGY_0809E920
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -287610,7 +287610,7 @@ _0809EC20: .4byte 0x00001451 @ Dancing Fairy
 gEngineEffectGainLPStandbyPhase_0809EC24: @ 0x0809EC24
 	push {lr}
 	ldr r1, _0809EC30 @ =0x00001454 (Cure Mermaid)
-	bl sub_0809E920
+	bl gEngineEffectSpecialSummonSendToGY_0809E920
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -287676,7 +287676,7 @@ _0809EC78:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _0809ECA8:
 	adds r4, #1
 	ldr r0, [r6]
@@ -287704,12 +287704,12 @@ _0809ECD4: .4byte 0x044E0000
 _0809ECD8: .4byte gUnk_0201C4E0
 _0809ECDC: .4byte 0x00001D24
 
-	thumb_func_start sub_0809ECE0
-sub_0809ECE0: @ 0x0809ECE0
+	thumb_func_start gEngineEffectSpecialSummonSendToGY_0809ECE0
+gEngineEffectSpecialSummonSendToGY_0809ECE0: @ 0x0809ECE0
 	push {lr}
 	movs r1, #0xa6
 	lsls r1, r1, #5
-	bl sub_0809E9E0
+	bl gEngineEffectSpecialSummonSendToGY_0809E9E0
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -287719,7 +287719,7 @@ sub_0809ECE0: @ 0x0809ECE0
 gEngineEffectDamageStandbyPhase_0809ECF0: @ 0x0809ECF0
 	push {lr}
 	ldr r1, _0809ECFC @ =0x00001628 (Senri Eye)
-	bl sub_0809E9E0
+	bl gEngineEffectSpecialSummonSendToGY_0809E9E0
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -287730,7 +287730,7 @@ _0809ECFC: .4byte 0x00001628 @ Senri Eye
 gEngineEffectGainLPStandbyPhase_0809ED00: @ 0x0809ED00
 	push {lr}
 	ldr r1, _0809ED0C @ =0x00001757 (White Magician Pikeru)
-	bl sub_0809E920
+	bl gEngineEffectSpecialSummonSendToGY_0809E920
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -287741,7 +287741,7 @@ _0809ED0C: .4byte 0x00001757 @ White Magician Pikeru
 gEngineEffectDamageStandbyPhase_0809ED10: @ 0x0809ED10
 	push {lr}
 	ldr r1, _0809ED1C @ =0x0000191D (Ebon Magician Curran)
-	bl sub_0809E920
+	bl gEngineEffectSpecialSummonSendToGY_0809E920
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -287752,7 +287752,7 @@ _0809ED1C: .4byte 0x0000191D @ Ebon Magician Curran
 gEngineEffectSpecialSummonGainLP_0809ED20: @ 0x0809ED20
 	push {lr}
 	ldr r1, _0809ED2C @ =0x000019CD (Princess Pikeru)
-	bl sub_0809E920
+	bl gEngineEffectSpecialSummonSendToGY_0809E920
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -287763,7 +287763,7 @@ _0809ED2C: .4byte 0x000019CD @ Princess Pikeru
 gEngineEffectSpecialSummonDamage_0809ED30: @ 0x0809ED30
 	push {lr}
 	ldr r1, _0809ED3C @ =0x000019CE (Princess Curran)
-	bl sub_0809E920
+	bl gEngineEffectSpecialSummonSendToGY_0809E920
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -287774,7 +287774,7 @@ _0809ED3C: .4byte 0x000019CE @ Princess Curran
 gEngineEffectDamageStandbyPhase_0809ED40: @ 0x0809ED40
 	push {lr}
 	ldr r1, _0809ED4C @ =0x00001637 (Bowganian)
-	bl sub_0809E920
+	bl gEngineEffectSpecialSummonSendToGY_0809E920
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -287848,7 +287848,7 @@ _0809ED6E:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	mov r1, r8
 	ldr r0, [r1]
 	adds r0, #1
@@ -288069,7 +288069,7 @@ _0809EF7C:
 gEngineEffectDestroyStandbyPhase_0809EF88: @ 0x0809EF88
 	push {lr}
 	ldr r1, _0809EF94 @ =0x000013F0 (Mask of Dispel)
-	bl sub_0809E9E0
+	bl gEngineEffectSpecialSummonSendToGY_0809E9E0
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -288080,7 +288080,7 @@ _0809EF94: .4byte 0x000013F0 @ Mask of Dispel
 gEngineEffectPreventAttackEquip_0809EF98: @ 0x0809EF98
 	push {lr}
 	ldr r1, _0809EFA4 @ =0x000013F3 (Mask of the Accursed)
-	bl sub_0809E9E0
+	bl gEngineEffectSpecialSummonSendToGY_0809E9E0
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -288091,7 +288091,7 @@ _0809EFA4: .4byte 0x000013F3 @ Mask of the Accursed
 gEngineEffectDestroyDamage_0809EFA8: @ 0x0809EFA8
 	push {lr}
 	ldr r1, _0809EFB4 @ =0x000014B2 (Nightmare Wheel)
-	bl sub_0809E9E0
+	bl gEngineEffectSpecialSummonSendToGY_0809E9E0
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -288105,7 +288105,7 @@ gEngineEffectTakeControlGainLP_0809EFB8: @ 0x0809EFB8
 	movs r0, #1
 	subs r0, r0, r1
 	ldr r1, _0809EFCC @ =0x00001322 (Snatch Steal)
-	bl sub_0809E9E0
+	bl gEngineEffectSpecialSummonSendToGY_0809E9E0
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -288119,7 +288119,7 @@ gEngineEffectTakeControlGainLP_0809EFD0: @ 0x0809EFD0
 	movs r0, #1
 	subs r0, r0, r1
 	ldr r1, _0809EFE4 @ =0x00001877 (Brain Jacker)
-	bl sub_0809E9E0
+	bl gEngineEffectSpecialSummonSendToGY_0809E9E0
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -288133,7 +288133,7 @@ gEngineEffectTakeControlDestroy_0809EFE8: @ 0x0809EFE8
 	movs r0, #1
 	subs r0, r0, r1
 	ldr r1, _0809EFFC @ =0x0000169A (Falling Down)
-	bl sub_0809E9E0
+	bl gEngineEffectSpecialSummonSendToGY_0809E9E0
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -288147,7 +288147,7 @@ gEngineEffectGainLPStandbyPhase_0809F000: @ 0x0809F000
 	movs r0, #1
 	subs r0, r0, r1
 	ldr r1, _0809F014 @ =0x0000137B (The Eye of Truth)
-	bl sub_0809E9E0
+	bl gEngineEffectSpecialSummonSendToGY_0809E9E0
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -288161,7 +288161,7 @@ gEngineEffectDamageStandbyPhase_0809F018: @ 0x0809F018
 	movs r0, #1
 	subs r0, r0, r1
 	ldr r1, _0809F02C @ =0x00001355 (Minor Goblin Official)
-	bl sub_0809E9E0
+	bl gEngineEffectSpecialSummonSendToGY_0809E9E0
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -288175,7 +288175,7 @@ gEngineEffectDestroyChangePosition_0809F030: @ 0x0809F030
 	movs r0, #1
 	subs r0, r0, r1
 	ldr r1, _0809F044 @ =0x00001286 (Blast Sphere)
-	bl sub_0809E9E0
+	bl gEngineEffectSpecialSummonSendToGY_0809E9E0
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -288189,7 +288189,7 @@ gEngineEffectDestroyChangePosition_0809F048: @ 0x0809F048
 	movs r0, #1
 	subs r0, r0, r1
 	ldr r1, _0809F05C @ =0x000019BD (Adhesive Explosive)
-	bl sub_0809E9E0
+	bl gEngineEffectSpecialSummonSendToGY_0809E9E0
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -288203,7 +288203,7 @@ gEngineEffectSendToGYGraveyard_0809F060: @ 0x0809F060
 	movs r0, #1
 	subs r0, r0, r1
 	ldr r1, _0809F074 @ =0x000019D0 (Malice Ascendant)
-	bl sub_0809E920
+	bl gEngineEffectSpecialSummonSendToGY_0809E920
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -288282,7 +288282,7 @@ _0809F0A2:
 	bl sub_08048674
 	adds r0, r7, #0
 	adds r1, r6, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	adds r1, r0, #0
 	adds r1, #1
 	asrs r1, r1, #1
@@ -288318,8 +288318,8 @@ _0809F14A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_0809F158
-sub_0809F158: @ 0x0809F158
+	thumb_func_start gEngineEffectSpecialSummonSendToGY_0809F158
+gEngineEffectSpecialSummonSendToGY_0809F158: @ 0x0809F158
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -288371,7 +288371,7 @@ _0809F18C:
 	orrs r1, r0
 	adds r0, r2, #0
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	cmp r0, #0
 	beq _0809F1DC
 	movs r0, #0
@@ -288406,7 +288406,7 @@ _0809F1F8: .4byte 0x00000868
 gEngineEffectReturnToHandGraveyard_0809F1FC: @ 0x0809F1FC
 	push {lr}
 	ldr r1, _0809F208 @ =0x00001181 (Sinister Serpent)
-	bl sub_0809F158
+	bl gEngineEffectSpecialSummonSendToGY_0809F158
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -288417,7 +288417,7 @@ _0809F208: .4byte 0x00001181 @ Sinister Serpent
 gEngineEffectSpecialSummonGraveyard_0809F20C: @ 0x0809F20C
 	push {lr}
 	ldr r1, _0809F218 @ =0x000019CB (Treeborn Frog)
-	bl sub_0809F158
+	bl gEngineEffectSpecialSummonSendToGY_0809F158
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -288529,7 +288529,7 @@ _0809F24C:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	cmp r0, #0
 	beq _0809F318
 	movs r0, #0
@@ -288672,7 +288672,7 @@ _0809F3FA:
 gEngineEffectStandbyPhase_0809F40C: @ 0x0809F40C
 	push {lr}
 	ldr r1, _0809F418 @ =0x0000154D (Legendary Fiend)
-	bl sub_0809E920
+	bl gEngineEffectSpecialSummonSendToGY_0809E920
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -288683,7 +288683,7 @@ _0809F418: .4byte 0x0000154D @ Legendary Fiend
 gEngineEffectSpecialSummonDestroySpellTrap_0809F41C: @ 0x0809F41C
 	push {lr}
 	ldr r1, _0809F428 @ =0x00001645 (Exodia Necross)
-	bl sub_0809E920
+	bl gEngineEffectSpecialSummonSendToGY_0809E920
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -288694,18 +288694,18 @@ _0809F428: .4byte 0x00001645 @ Exodia Necross
 gEngineEffectReduceATKStandbyPhase_0809F42C: @ 0x0809F42C
 	push {lr}
 	ldr r1, _0809F438 @ =0x0000160E (Amazoness Blowpiper)
-	bl sub_0809E920
+	bl gEngineEffectSpecialSummonSendToGY_0809E920
 	pop {r1}
 	bx r1
 	.align 2, 0
 _0809F438: .4byte 0x0000160E @ Amazoness Blowpiper
 
-	thumb_func_start sub_0809F43C
-sub_0809F43C: @ 0x0809F43C
+	thumb_func_start gEngineEffectSpecialSummonSendToGY_0809F43C
+gEngineEffectSpecialSummonSendToGY_0809F43C: @ 0x0809F43C
 	push {lr}
 	movs r1, #0xba
 	lsls r1, r1, #5
-	bl sub_0809E920
+	bl gEngineEffectSpecialSummonSendToGY_0809E920
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -288811,7 +288811,7 @@ _0809F4D0:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	ldr r0, _0809F520 @ =0x00001CF4
 	adds r1, r5, r0
 	ldr r0, [r1]
@@ -288837,8 +288837,8 @@ _0809F530:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_0809F538
-sub_0809F538: @ 0x0809F538
+	thumb_func_start gEngineEffectSpecialSummonSendToGY_0809F538
+gEngineEffectSpecialSummonSendToGY_0809F538: @ 0x0809F538
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	adds r6, r1, #0
@@ -288865,7 +288865,7 @@ _0809F550:
 	lsls r1, r5, #0x10
 	lsrs r1, r1, #0x10
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	movs r0, #0
 _0809F574:
 	pop {r4, r5, r6}
@@ -288880,7 +288880,7 @@ _0809F580: .4byte 0x044E0000
 gEngineEffectSpecialSummonSendToGY_0809F584: @ 0x0809F584
 	push {lr}
 	ldr r1, _0809F590 @ =0x000013C7 (Revival Jam)
-	bl sub_0809F538
+	bl gEngineEffectSpecialSummonSendToGY_0809F538
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -288891,7 +288891,7 @@ _0809F590: .4byte 0x000013C7 @ Revival Jam
 gEngineEffectSpecialSummonSendToGY_0809F594: @ 0x0809F594
 	push {lr}
 	ldr r1, _0809F5A0 @ =0x00001522 (Vampire Lord)
-	bl sub_0809F538
+	bl gEngineEffectSpecialSummonSendToGY_0809F538
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -288902,7 +288902,7 @@ _0809F5A0: .4byte 0x00001522 @ Vampire Lord
 gEngineEffectSpecialSummonDestroySpellTrap_0809F5A4: @ 0x0809F5A4
 	push {lr}
 	ldr r1, _0809F5B0 @ =0x0000185C (Sacred Phoenix of Nephthys)
-	bl sub_0809F538
+	bl gEngineEffectSpecialSummonSendToGY_0809F538
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -288913,7 +288913,7 @@ _0809F5B0: .4byte 0x0000185C @ Sacred Phoenix of Nephthys
 gEngineEffectSpecialSummonSendToGY_0809F5B4: @ 0x0809F5B4
 	push {lr}
 	ldr r1, _0809F5C0 @ =0x0000188F (Curse of Vampire)
-	bl sub_0809F538
+	bl gEngineEffectSpecialSummonSendToGY_0809F538
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -288927,14 +288927,14 @@ gEngineEffectSpecialSummonSendToGY_0809F5C4: @ 0x0809F5C4
 	movs r0, #1
 	subs r0, r0, r1
 	ldr r1, _0809F5D8 @ =0x0000188F (Curse of Vampire)
-	bl sub_0809F538
+	bl gEngineEffectSpecialSummonSendToGY_0809F538
 	pop {r1}
 	bx r1
 	.align 2, 0
 _0809F5D8: .4byte 0x0000188F @ Curse of Vampire
 
-	thumb_func_start sub_0809F5DC
-sub_0809F5DC: @ 0x0809F5DC
+	thumb_func_start gEngineEffectSpecialSummonSendToGY_0809F5DC
+gEngineEffectSpecialSummonSendToGY_0809F5DC: @ 0x0809F5DC
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -289002,7 +289002,7 @@ _0809F616:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	movs r2, #0
-	bl sub_0805B1F0
+	bl gEngineEffectSpecialSummonSendToGY_0805B1F0
 	cmp r0, #0
 	bne _0809F6E4
 _0809F66A:
@@ -289089,7 +289089,7 @@ gEngineEffectDamageStandbyPhase_0809F704: @ 0x0809F704
 	movs r0, #1
 	subs r0, r0, r1
 	ldr r1, _0809F718 @ =0x00001367 (Inspection (None))
-	bl sub_0809F5DC
+	bl gEngineEffectSpecialSummonSendToGY_0809F5DC
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -289100,7 +289100,7 @@ _0809F718: .4byte 0x00001367 @ Inspection (None)
 gEngineEffectDamageGraveyard_0809F71C: @ 0x0809F71C
 	push {lr}
 	ldr r1, _0809F728 @ =0x000016D5 (Recycle)
-	bl sub_0809F5DC
+	bl gEngineEffectSpecialSummonSendToGY_0809F5DC
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -289114,7 +289114,7 @@ gEngineEffectSpecialSummonChangePosition_0809F72C: @ 0x0809F72C
 	movs r0, #1
 	subs r0, r0, r1
 	ldr r1, _0809F740 @ =0x00001485 (Aqua Spirit)
-	bl sub_0809E920
+	bl gEngineEffectSpecialSummonSendToGY_0809E920
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -289188,7 +289188,7 @@ _0809F762:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	mov r1, r8
 	ldr r0, [r1]
 	adds r0, #1
@@ -289218,8 +289218,8 @@ _0809F7FA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_0809F808
-sub_0809F808: @ 0x0809F808
+	thumb_func_start gEngineEffectBoostATKBoostDEF_0809F808
+gEngineEffectBoostATKBoostDEF_0809F808: @ 0x0809F808
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldr r2, _0809F844 @ =gUnk_0201C4E0
@@ -289245,7 +289245,7 @@ _0809F822:
 	adds r1, r4, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 	movs r0, #0
 	b _0809F854
 	.align 2, 0
@@ -289268,7 +289268,7 @@ _0809F854:
 gEngineEffectDestroyAllDamage_0809F85C: @ 0x0809F85C
 	push {lr}
 	ldr r1, _0809F868 @ =0x00001282 (Jigen Bakudan (None))
-	bl sub_0809E920
+	bl gEngineEffectSpecialSummonSendToGY_0809E920
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -289279,7 +289279,7 @@ _0809F868: .4byte 0x00001282 @ Jigen Bakudan (None)
 gEngineEffectStandbyPhase_0809F86C: @ 0x0809F86C
 	push {lr}
 	ldr r1, _0809F878 @ =0x000011EA (Patrol Robo (None))
-	bl sub_0809E920
+	bl gEngineEffectSpecialSummonSendToGY_0809E920
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -289290,7 +289290,7 @@ _0809F878: .4byte 0x000011EA @ Patrol Robo (None)
 gEngineEffectStandbyPhase_0809F87C: @ 0x0809F87C
 	push {lr}
 	ldr r1, _0809F888 @ =0x0000158E (A Man with Wdjat)
-	bl sub_0809E920
+	bl gEngineEffectSpecialSummonSendToGY_0809E920
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -289301,7 +289301,7 @@ _0809F888: .4byte 0x0000158E @ A Man with Wdjat
 gEngineEffectDestroyTribute_0809F88C: @ 0x0809F88C
 	push {lr}
 	ldr r1, _0809F898 @ =0x00001147 (Blast Juggler (None))
-	bl sub_0809E920
+	bl gEngineEffectSpecialSummonSendToGY_0809E920
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -289411,8 +289411,8 @@ _0809F940:
 _0809F942:
 	bx lr
 
-	thumb_func_start sub_0809F944
-sub_0809F944: @ 0x0809F944
+	thumb_func_start gEngineEffectSpecialSummonTribute_0809F944
+gEngineEffectSpecialSummonTribute_0809F944: @ 0x0809F944
 	push {r4, r5, lr}
 	adds r3, r0, #0
 	adds r4, r1, r2
@@ -289449,8 +289449,8 @@ _0809F986:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_0809F98C
-sub_0809F98C: @ 0x0809F98C
+	thumb_func_start gEngineEffectDestroyCounter_0809F98C
+gEngineEffectDestroyCounter_0809F98C: @ 0x0809F98C
 	push {r4, lr}
 	adds r3, r0, #0
 	adds r2, r1, r2
@@ -289468,7 +289468,7 @@ sub_0809F98C: @ 0x0809F98C
 	bne _0809F9C4
 	adds r0, r3, #0
 	adds r1, r2, #0
-	bl sub_0803149C
+	bl gEngineEffectDestroyCounter_0803149C
 	cmp r0, #0
 	beq _0809F9C4
 	movs r0, #0x80
@@ -289616,11 +289616,11 @@ _0809FAA8:
 _0809FAAC:
 	cmp r1, #0x84
 	bne _0809FAB4
-	bl sub_080A02E8
+	bl gEngineEffectSpecialSummonCounter_080A02E8
 _0809FAB4:
 	cmp r1, #0x84
 	bhs _0809FABC
-	bl sub_080A02A0
+	bl gEngineEffectBoostATKBoostDEF_080A02A0
 _0809FABC:
 	cmp r1, #0x96
 	bne _0809FAC4
@@ -289635,7 +289635,7 @@ _0809FAD0:
 	movs r1, #0x9a
 	lsls r1, r1, #1
 	mov r0, r8
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 _0809FADA:
 	ldr r0, _0809FAE4 @ =gUnk_0201C4E0
 	ldr r2, _0809FAE8 @ =0x00001D1C
@@ -289984,7 +289984,7 @@ _0809FD6C:
 	adds r1, r7, #0
 	bl sub_08048674
 	adds r0, r6, #0
-	bl sub_08036A78
+	bl gEngineEffectDestroyCounter_08036A78
 	cmp r0, #0
 	beq _0809FDBC
 	ldr r3, _0809FDB4 @ =0x00001CEC
@@ -290003,7 +290003,7 @@ _0809FDBC:
 	adds r1, r7, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 _0809FDC8:
 	mov r1, sl
 	ldr r0, [r1]
@@ -290147,7 +290147,7 @@ _0809FE72:
 	mov r0, r8
 	ldr r2, _0809FF6C @ =0x000016A2 (Battle-Scarred)
 	mov r3, r8
-	bl sub_0802F3E0
+	bl gEngineEffectSpecialSummonDestroy_0802F3E0
 	cmp r0, #0
 	beq _0809FF10
 	mov r2, sb
@@ -290172,7 +290172,7 @@ _0809FF10:
 	mov r0, r8
 	subs r3, r5, r0
 	ldr r2, _0809FF6C @ =0x000016A2 (Battle-Scarred)
-	bl sub_0802F3E0
+	bl gEngineEffectSpecialSummonDestroy_0802F3E0
 	cmp r0, #0
 	beq _0809FF40
 	mov r0, r8
@@ -290196,7 +290196,7 @@ _0809FF46:
 	adds r1, r7, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 	ldr r2, _0809FF74 @ =gUnk_0201E204
 	ldr r0, [r2]
 	adds r0, #1
@@ -290294,7 +290294,7 @@ _080A0012:
 _080A0018: .4byte 0x00001770 @ Marshmallon
 _080A001C:
 	mov r0, r8
-	bl sub_080AEDD4
+	bl gEngineEffectSpecialSummonBoostATK_080AEDD4
 	movs r1, #0
 	cmp r0, #0
 	bgt _080A002A
@@ -290304,7 +290304,7 @@ _080A002A:
 	b _080A0038
 _080A002E:
 	mov r0, r8
-	bl sub_080AEDD4
+	bl gEngineEffectSpecialSummonBoostATK_080AEDD4
 	lsrs r0, r0, #0x1f
 	str r0, [r6]
 _080A0038:
@@ -290364,7 +290364,7 @@ _080A0090:
 	adds r1, r4, #0
 	bl sub_0801F338
 	mov r0, sp
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 _080A00B8:
 	ldr r1, _080A00C4 @ =gUnk_0201C4E0
 	ldr r2, _080A00C8 @ =0x00001D1C
@@ -290415,7 +290415,7 @@ _080A0114:
 	mov r0, r8
 	movs r2, #0
 	movs r3, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 _080A0124:
 	ldr r1, _080A013C @ =gUnk_0201C4E0
 	ldr r3, _080A0138 @ =0x00001D24
@@ -290468,8 +290468,8 @@ _080A0168:
 	adds r1, r4, #0
 	adds r1, #0x30
 
-	non_word_aligned_thumb_func_start sub_080A018A
-sub_080A018A: @ 0x080A018A
+	non_word_aligned_thumb_func_start gEngineEffectDrawDiscard_080A018A
+gEngineEffectDrawDiscard_080A018A: @ 0x080A018A
 	adds r0, r0, r1
 	ldr r0, [r0]
 	lsls r0, r0, #0x13
@@ -290480,7 +290480,7 @@ sub_080A018A: @ 0x080A018A
 	movs r1, #0xe9
 	bl sub_0801F2C4
 	mov r0, sp
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 	ldr r0, [r7]
 	adds r0, #1
 	b _080A032E
@@ -290496,10 +290496,10 @@ _080A01B4:
 	beq _080A01CC
 	movs r0, #0x7a
 	str r0, [r7]
-	ldr r0, _080A01C8 @ =sub_0809F944
+	ldr r0, _080A01C8 @ =gEngineEffectSpecialSummonTribute_0809F944
 	b _080A02B2
 	.align 2, 0
-_080A01C8: .4byte sub_0809F944
+_080A01C8: .4byte gEngineEffectSpecialSummonTribute_0809F944
 _080A01CC:
 	ldr r2, _080A01E8 @ =0x00001D24
 	adds r4, r4, r2
@@ -290507,7 +290507,7 @@ _080A01CC:
 	mov r0, r8
 	movs r2, #0
 	movs r3, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 	ldr r0, [r4]
 	adds r0, #1
 	str r0, [r4]
@@ -290592,7 +290592,7 @@ _080A0258:
 	movs r1, #0xdb
 	bl sub_0801F2C4
 	adds r0, r4, #0
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 	ldr r0, [r7]
 	adds r0, #1
 	b _080A032E
@@ -290600,8 +290600,8 @@ _080A0258:
 _080A0298: .4byte 0x00001D24
 _080A029C: .4byte 0x00000868
 
-	thumb_func_start sub_080A02A0
-sub_080A02A0: @ 0x080A02A0
+	thumb_func_start gEngineEffectBoostATKBoostDEF_080A02A0
+gEngineEffectBoostATKBoostDEF_080A02A0: @ 0x080A02A0
 	movs r2, #0xea
 	lsls r2, r2, #5
 	adds r0, r4, r2
@@ -290610,12 +290610,12 @@ sub_080A02A0: @ 0x080A02A0
 	beq _080A02BC
 	adds r0, r1, #1
 	str r0, [r7]
-	ldr r0, _080A02B8 @ =sub_0809F98C
+	ldr r0, _080A02B8 @ =gEngineEffectDestroyCounter_0809F98C
 _080A02B2:
 	bl sub_080969C4
 	b _0809FB16
 	.align 2, 0
-_080A02B8: .4byte sub_0809F98C
+_080A02B8: .4byte gEngineEffectDestroyCounter_0809F98C
 _080A02BC:
 	movs r3, #0xe9
 	lsls r3, r3, #5
@@ -290630,7 +290630,7 @@ _080A02BC:
 	mov r0, r8
 	movs r2, #0
 	movs r3, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 	ldr r0, [r4]
 	adds r0, #1
 	str r0, [r4]
@@ -290639,8 +290639,8 @@ _080A02BC:
 	.align 2, 0
 _080A02E4: .4byte 0x00001D24
 
-	thumb_func_start sub_080A02E8
-sub_080A02E8: @ 0x080A02E8
+	thumb_func_start gEngineEffectSpecialSummonCounter_080A02E8
+gEngineEffectSpecialSummonCounter_080A02E8: @ 0x080A02E8
 	bl sub_08096B14
 	cmp r0, #0
 	beq _080A0328
@@ -290725,13 +290725,13 @@ _080A0378:
 	mov r0, r8
 	adds r1, r7, #0
 	ldr r2, [sp, #0x280]
-	bl sub_0808DC48
+	bl gEngineEffectDestroyStandbyPhase_0808DC48
 	b _080A038E
 _080A0384:
 	mov r0, r8
 	adds r1, r7, #0
 	ldr r2, [sp, #0x280]
-	bl sub_0808F2F0
+	bl gEngineEffectDestroyStandbyPhase_0808F2F0
 _080A038E:
 	adds r4, #0x14
 	adds r7, #1
@@ -290829,7 +290829,7 @@ _080A043C:
 	mov r0, r8
 	adds r1, r7, #0
 	movs r2, #1
-	bl sub_08045298
+	bl gEngineEffectDestroyStandbyPhase_08045298
 	ldr r3, [sp, #0x280]
 	cmp r3, #0
 	beq _080A044E
@@ -290848,7 +290848,7 @@ _080A044E:
 _080A0462:
 	mov r0, r8
 	adds r1, r7, #0
-	bl sub_080313DC
+	bl gEngineEffectDestroyStandbyPhase_080313DC
 	cmp r0, #1
 	beq _080A0470
 	b _080A058C
@@ -290877,7 +290877,7 @@ _080A0470:
 	adds r1, r7, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 	movs r3, #1
 	ands r4, r3
 	movs r0, #0x1e
@@ -290905,7 +290905,7 @@ _080A04DA:
 	mov r0, r8
 	adds r1, r7, #0
 	movs r2, #1
-	bl sub_08045298
+	bl gEngineEffectDestroyStandbyPhase_08045298
 	ldr r0, [sp, #0x280]
 	cmp r0, #0
 	bne _080A058C
@@ -290920,7 +290920,7 @@ _080A04DA:
 	bne _080A058C
 	mov r0, r8
 	adds r1, r7, #0
-	bl sub_080313DC
+	bl gEngineEffectDestroyStandbyPhase_080313DC
 	adds r5, r0, #0
 	mov r2, sb
 	ldr r0, [r2]
@@ -290952,19 +290952,19 @@ _080A0540:
 	mov r0, r8
 	adds r1, r7, #0
 	movs r2, #1
-	bl sub_08045298
+	bl gEngineEffectDestroyStandbyPhase_08045298
 	b _080A058C
 _080A054C:
 	mov r0, r8
 	adds r1, r7, #0
 	movs r2, #1
-	bl sub_08045298
+	bl gEngineEffectDestroyStandbyPhase_08045298
 	ldr r2, [sp, #0x280]
 	cmp r2, #0
 	bne _080A058C
 	mov r0, r8
 	adds r1, r7, #0
-	bl sub_080313DC
+	bl gEngineEffectDestroyStandbyPhase_080313DC
 	cmp r0, #1
 	bne _080A058C
 	mov r3, sb
@@ -290982,7 +290982,7 @@ _080A054C:
 	adds r1, r7, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 _080A058C:
 	movs r0, #0x14
 	add sb, r0
@@ -291640,8 +291640,8 @@ _080A0A84:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080A0A8C
-sub_080A0A8C: @ 0x080A0A8C
+	thumb_func_start gEngineEffectSendToGYGraveyard_080A0A8C
+gEngineEffectSendToGYGraveyard_080A0A8C: @ 0x080A0A8C
 	push {r4, r5, lr}
 	ldr r2, _080A0AB0 @ =gUnk_0201B870
 	ldr r0, _080A0AB4 @ =0x00000301
@@ -291679,7 +291679,7 @@ _080A0ACC:
 	lsls r0, r2, #0x1b
 	cmp r0, #0
 	bge _080A0AEE
-	bl sub_0808611C
+	bl gEngineEffectSendToGYGraveyard_0808611C
 	cmp r0, #0
 	beq _080A0B06
 	movs r0, #0x11
@@ -291713,10 +291713,10 @@ _080A0B0C:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080A0B14
-sub_080A0B14: @ 0x080A0B14
+	thumb_func_start gEngineEffectSendToGYGraveyard_080A0B14
+gEngineEffectSendToGYGraveyard_080A0B14: @ 0x080A0B14
 	push {lr}
-	bl sub_080A0A8C
+	bl gEngineEffectSendToGYGraveyard_080A0A8C
 	movs r0, #0
 	pop {r1}
 	bx r1
@@ -291878,7 +291878,7 @@ _080A0C04: .4byte gUnk_0201C4E0
 _080A0C08: .4byte 0x00001DA8
 _080A0C0C:
 	adds r0, r7, #0
-	bl sub_080AFA10
+	bl gEngineEffectSpecialSummonDestroy_080AFA10
 	ldr r2, _080A0C18 @ =0x00001DA8
 	adds r1, r4, r2
 	b _080A0DD4
@@ -292551,12 +292551,12 @@ _080A10C6:
 _080A10CA:
 	adds r0, r7, #0
 	movs r1, #0x11
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	b _080A130E
 _080A10D4:
 	adds r0, r7, #0
 	movs r1, #0xed
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	b _080A130E
 _080A10DE:
 	movs r4, #0x84
@@ -292570,11 +292570,11 @@ _080A10DE:
 	b _080A1246
 _080A10F4:
 	movs r0, #0xe1
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 	b _080A130E
 _080A10FC:
 	movs r0, #0xb
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 	b _080A130E
 _080A1104:
 	adds r0, r6, #0
@@ -292585,7 +292585,7 @@ _080A1104:
 _080A1110:
 	bl sub_0801F2C4
 	add r0, sp, #8
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 	b _080A130E
 _080A111C:
 	movs r4, #0x84
@@ -292619,7 +292619,7 @@ _080A1134:
 	str r1, [sp, #4]
 	adds r1, r5, #0
 	adds r2, r4, #0
-	bl sub_080933DC
+	bl gEngineEffectSpecialSummon_080933DC
 	b _080A130E
 _080A1168:
 	ands r3, r7
@@ -292653,7 +292653,7 @@ _080A118A:
 	str r5, [sp, #4]
 	adds r1, r4, #0
 	movs r3, #0
-	bl sub_080933DC
+	bl gEngineEffectSpecialSummon_080933DC
 	b _080A130E
 	.align 2, 0
 _080A11B0: .4byte 0x00000868
@@ -292670,27 +292670,27 @@ _080A11B8:
 	b _080A1246
 _080A11CE:
 	movs r0, #0x55
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 	b _080A130E
 _080A11D6:
 	adds r0, r7, #0
 	movs r1, #0x7b
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	b _080A130E
 _080A11E0:
 	movs r0, #0x95
 	lsls r0, r0, #1
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 	b _080A130E
 _080A11EA:
 	adds r0, r7, #0
 	movs r1, #0x3a
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	b _080A130E
 _080A11F4:
 	adds r0, r7, #0
 	movs r1, #0xd
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	b _080A130E
 _080A11FE:
 	movs r4, #0x84
@@ -292731,18 +292731,18 @@ _080A1228:
 _080A1246:
 	adds r0, r7, #0
 	add r1, sp, #8
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	b _080A130E
 	.align 2, 0
 _080A1250: .4byte 0x00000129
 _080A1254:
 	movs r0, #0x2f
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 	b _080A130E
 _080A125C:
 	adds r0, r7, #0
 	movs r1, #0x1f
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	b _080A130E
 _080A1266:
 	cmp r2, #0
@@ -292756,7 +292756,7 @@ _080A1274:
 	lsls r1, r1, #1
 _080A1278:
 	adds r0, r7, #0
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	b _080A130E
 _080A1280:
 	lsls r0, r2, #0x10
@@ -292813,7 +292813,7 @@ _080A12C6:
 	lsrs r1, r5, #0x18
 	adds r1, #1
 	add r0, sp, #8
-	bl sub_080933C8
+	bl gEngineEffectSpecialSummon_080933C8
 	b _080A130E
 	.align 2, 0
 _080A12F4: .4byte gUnk_09E47894
@@ -292825,7 +292825,7 @@ _080A12F8:
 	movs r1, #0xfa
 	bl sub_0801F2C4
 	add r0, sp, #8
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 _080A130E:
 	ldr r1, _080A1330 @ =gUnk_0201C4E0
 	ldr r2, _080A1334 @ =0x00001D94
@@ -293007,7 +293007,7 @@ _080A146C: .4byte gUnk_0201E2A0
 _080A1470: .4byte 0x00001DAA
 _080A1474:
 	ldr r0, _080A148C @ =0x0000011F
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 _080A147A:
 	ldr r1, _080A1490 @ =gUnk_0201C4E0
 	ldr r0, _080A1494 @ =0x00001D94
@@ -293200,7 +293200,7 @@ _080A1600: .4byte 0x00001DA8
 _080A1604:
 	movs r0, #0x90
 	lsls r0, r0, #1
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 _080A160C:
 	ldr r1, _080A161C @ =gUnk_0201C4E0
 	ldr r0, _080A1620 @ =0x00001D94
@@ -293242,8 +293242,8 @@ _080A1652:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080A1658
-sub_080A1658: @ 0x080A1658
+	thumb_func_start gEngineEffectGraveyardSpecialSummon_080A1658
+gEngineEffectGraveyardSpecialSummon_080A1658: @ 0x080A1658
 	push {r4, lr}
 	ldr r0, _080A166C @ =gUnk_0201C4E0
 	ldr r2, _080A1670 @ =0x00001D88
@@ -293332,7 +293332,7 @@ _080A1720:
 	adds r4, #0xe
 	adds r2, r3, r4
 	ldrh r2, [r2]
-	bl sub_080A1F68
+	bl gEngineEffectBanishSendToGY_080A1F68
 	b _080A190A
 	.align 2, 0
 _080A1738: .4byte 0x00001D8C
@@ -293347,7 +293347,7 @@ _080A1740:
 	ldr r4, _080A1760 @ =0x00001D9A
 	adds r2, r3, r4
 	ldrh r2, [r2]
-	bl sub_080A2234
+	bl gEngineEffectBanishSendToGY_080A2234
 	b _080A190A
 	.align 2, 0
 _080A1758: .4byte 0x00001D8C
@@ -293401,7 +293401,7 @@ _080A17C8:
 	ldr r4, _080A17D4 @ =0x00001D8C
 	adds r0, r3, r4
 	ldr r0, [r0]
-	bl sub_080A3534
+	bl gEngineEffectDiscardDestroyAll_080A3534
 	b _080A190A
 	.align 2, 0
 _080A17D4: .4byte 0x00001D8C
@@ -293415,7 +293415,7 @@ _080A17D8:
 	ldr r4, _080A17F8 @ =0x00001D9A
 	adds r2, r3, r4
 	ldrh r2, [r2]
-	bl sub_080A2AD0
+	bl gEngineEffectDrawSpecialSummon_080A2AD0
 	b _080A190A
 	.align 2, 0
 _080A17F0: .4byte 0x00001D8C
@@ -293456,7 +293456,7 @@ _080A183C:
 	ldr r2, _080A1854 @ =0x00001D98
 	adds r1, r3, r2
 	ldrh r1, [r1]
-	bl sub_080A33A0
+	bl gEngineEffectSpecialSummonBoostATK_080A33A0
 	b _080A190A
 	.align 2, 0
 _080A1850: .4byte 0x00001D8C
@@ -294418,8 +294418,8 @@ sub_080A1F54: @ 0x080A1F54
 _080A1F60: .4byte gUnk_0201C4E0
 _080A1F64: .4byte 0x00001DAA
 
-	thumb_func_start sub_080A1F68
-sub_080A1F68: @ 0x080A1F68
+	thumb_func_start gEngineEffectBanishSendToGY_080A1F68
+gEngineEffectBanishSendToGY_080A1F68: @ 0x080A1F68
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -294533,7 +294533,7 @@ _080A203A:
 	cmp r2, #0
 	beq _080A2068
 	movs r0, #0x3d
-	bl sub_08093570
+	bl gEngineEffectSpecialSummon_08093570
 	b _080A208A
 	.align 2, 0
 _080A2058: .4byte gUnk_0201C4E0
@@ -294545,18 +294545,18 @@ _080A2068:
 	cmp r3, #0
 	beq _080A2076
 	movs r0, #0x14
-	bl sub_08093570
+	bl gEngineEffectSpecialSummon_08093570
 	b _080A208A
 _080A2076:
 	mov r4, r8
 	cmp r4, #0
 	beq _080A2084
 	movs r0, #0x29
-	bl sub_08093570
+	bl gEngineEffectSpecialSummon_08093570
 	b _080A208A
 _080A2084:
 	movs r0, #0xeb
-	bl sub_08093570
+	bl gEngineEffectSpecialSummon_08093570
 _080A208A:
 	ldr r1, _080A2098 @ =gUnk_0201C4E0
 	ldr r0, _080A209C @ =0x00001D94
@@ -294630,7 +294630,7 @@ _080A2110:
 	adds r1, r5, #0
 	movs r2, #0xb
 	adds r3, r4, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r0, _080A2134 @ =gEngineEffectSpecialSummonDamage_080A1E80
 	bl sub_08096A08
 _080A2122:
@@ -294762,8 +294762,8 @@ _080A2228: .4byte gUnk_0201C4E0
 _080A222C: .4byte 0x00001DAA
 _080A2230: .4byte 0x00001D94
 
-	thumb_func_start sub_080A2234
-sub_080A2234: @ 0x080A2234
+	thumb_func_start gEngineEffectBanishSendToGY_080A2234
+gEngineEffectBanishSendToGY_080A2234: @ 0x080A2234
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -295273,7 +295273,7 @@ _080A2608:
 _080A2626:
 	adds r0, r6, #0
 	movs r1, #0xf4
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldr r0, _080A2640 @ =0x00001D94
 	adds r1, r5, r0
 	b _080A2784
@@ -295428,7 +295428,7 @@ _080A2770:
 	subs r0, r0, r6
 	movs r1, #0
 _080A277A:
-	bl sub_0804A4CC
+	bl gEngineEffectGainLPStandbyPhase_0804A4CC
 _080A277E:
 	ldr r1, _080A2790 @ =gUnk_0201C4E0
 	ldr r2, _080A2794 @ =0x00001D94
@@ -295696,18 +295696,18 @@ _080A2968: .4byte 0x000017C3 @ Familiar Knight
 _080A296C:
 	adds r0, r7, #0
 	movs r1, #0x1f
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	b _080A29AE
 _080A2976:
 	adds r0, r7, #0
 	movs r1, #0x2e
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	b _080A29AE
 _080A2980:
 	movs r1, #0x8f
 	lsls r1, r1, #1
 	adds r0, r7, #0
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	b _080A29AE
 _080A298C:
 	mov r0, sb
@@ -295718,12 +295718,12 @@ _080A298C:
 	bl sub_0801F2C4
 	adds r0, r7, #0
 	mov r1, sp
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	b _080A29AE
 _080A29A6:
 	adds r0, r7, #0
 	movs r1, #0x1f
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 _080A29AE:
 	ldr r0, _080A29C8 @ =gUnk_0201E2A0
 	lsls r1, r7, #2
@@ -295816,8 +295816,8 @@ _080A2A4E:
 _080A2A5C: .4byte 0x00001DA8
 _080A2A60: .4byte 0x00000868
 
-	thumb_func_start sub_080A2A64
-sub_080A2A64: @ 0x080A2A64
+	thumb_func_start gEngineEffectSpecialSummonChangePosition_080A2A64
+gEngineEffectSpecialSummonChangePosition_080A2A64: @ 0x080A2A64
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, r2
@@ -295850,7 +295850,7 @@ sub_080A2A64: @ 0x080A2A64
 	beq _080A2AB2
 	adds r0, r6, #0
 	adds r1, r5, #0
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	cmp r0, r4
@@ -295871,8 +295871,8 @@ _080A2ACA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080A2AD0
-sub_080A2AD0: @ 0x080A2AD0
+	thumb_func_start gEngineEffectDrawSpecialSummon_080A2AD0
+gEngineEffectDrawSpecialSummon_080A2AD0: @ 0x080A2AD0
 	push {r4, lr}
 	adds r3, r0, #0
 	lsls r2, r2, #0x18
@@ -295902,7 +295902,7 @@ _080A2B00: @ jump table
 	.4byte _080A2B9C @ case 3
 	.4byte _080A2C28 @ case 4
 _080A2B14:
-	ldr r0, _080A2B34 @ =sub_080A2A64
+	ldr r0, _080A2B34 @ =gEngineEffectSpecialSummonChangePosition_080A2A64
 	bl sub_08095194
 	cmp r0, #0
 	bne _080A2B20
@@ -295918,14 +295918,14 @@ _080A2B20:
 	adds r1, #1
 	b _080A2C18
 	.align 2, 0
-_080A2B34: .4byte sub_080A2A64
+_080A2B34: .4byte gEngineEffectSpecialSummonChangePosition_080A2A64
 _080A2B38: .4byte gUnk_0201C4E0
 _080A2B3C: .4byte 0x00001D9E
 _080A2B40: .4byte 0x00001D94
 _080A2B44:
 	adds r0, r3, #0
 	movs r1, #0x12
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldr r1, _080A2B54 @ =gUnk_0201C4E0
 	ldr r0, _080A2B58 @ =0x00001D94
 	adds r1, r1, r0
@@ -295941,16 +295941,16 @@ _080A2B5C:
 	ldr r0, [r1]
 	cmp r0, #1
 	bne _080A2B80
-	ldr r2, _080A2B7C @ =sub_080A2A64
+	ldr r2, _080A2B7C @ =gEngineEffectSpecialSummonChangePosition_080A2A64
 	adds r0, r3, #0
 	movs r1, #1
 	bl gEngineEffectSpecialSummonGraveyard_080B70AC
 	b _080A2B86
 	.align 2, 0
 _080A2B78: .4byte gUnk_0201E2A0
-_080A2B7C: .4byte sub_080A2A64
+_080A2B7C: .4byte gEngineEffectSpecialSummonChangePosition_080A2A64
 _080A2B80:
-	ldr r0, _080A2B90 @ =sub_080A2A64
+	ldr r0, _080A2B90 @ =gEngineEffectSpecialSummonChangePosition_080A2A64
 	bl sub_080969C4
 _080A2B86:
 	ldr r1, _080A2B94 @ =gUnk_0201C4E0
@@ -295958,7 +295958,7 @@ _080A2B86:
 	adds r1, r1, r2
 	b _080A2C4C
 	.align 2, 0
-_080A2B90: .4byte sub_080A2A64
+_080A2B90: .4byte gEngineEffectSpecialSummonChangePosition_080A2A64
 _080A2B94: .4byte gUnk_0201C4E0
 _080A2B98: .4byte 0x00001D94
 _080A2B9C:
@@ -296059,8 +296059,8 @@ _080A2C5E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080A2C64
-sub_080A2C64: @ 0x080A2C64
+	thumb_func_start gEngineEffectSpecialSummonDestroy_080A2C64
+gEngineEffectSpecialSummonDestroy_080A2C64: @ 0x080A2C64
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	adds r4, r1, r2
@@ -296097,7 +296097,7 @@ sub_080A2C64: @ 0x080A2C64
 	lsrs r2, r2, #0x1f
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_08036658
+	bl gEngineEffectSpecialSummonDestroy_08036658
 	cmp r0, #0
 	bne _080A2CCC
 	movs r0, #0x80
@@ -296147,7 +296147,7 @@ gEngineEffectTakeControlChangePosition_080A2CD4: @ 0x080A2CD4
 	ldr r2, _080A2D44 @ =0x0000142A (Creature Swap)
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_08036450
+	bl gEngineEffectSpecialSummonDestroy_08036450
 	cmp r0, #0
 	beq _080A2D4C
 	ldr r0, _080A2D48 @ =0x00001D9A
@@ -296160,7 +296160,7 @@ gEngineEffectTakeControlChangePosition_080A2CD4: @ 0x080A2CD4
 	lsrs r2, r2, #0x1f
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_08036658
+	bl gEngineEffectSpecialSummonDestroy_08036658
 	cmp r0, #0
 	bne _080A2D4C
 	movs r0, #0x80
@@ -296221,8 +296221,8 @@ _080A2D9E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080A2DA4
-sub_080A2DA4: @ 0x080A2DA4
+	thumb_func_start gEngineEffectSpecialSummonFusionSummon_080A2DA4
+gEngineEffectSpecialSummonFusionSummon_080A2DA4: @ 0x080A2DA4
 	push {r4, lr}
 	adds r3, r0, #0
 	adds r1, r1, r2
@@ -296332,8 +296332,8 @@ _080A2E7A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080A2E80
-sub_080A2E80: @ 0x080A2E80
+	thumb_func_start gEngineEffectPreventAttack_080A2E80
+gEngineEffectPreventAttack_080A2E80: @ 0x080A2E80
 	push {r4, r5, r6, lr}
 	sub sp, #4
 	adds r3, r0, #0
@@ -296448,11 +296448,11 @@ _080A2F4C: .4byte 0x000018B5 @ Dummy Golem
 _080A2F50:
 	adds r0, r5, #0
 	movs r1, #0x12
-	bl sub_08093390
-	ldr r2, _080A2F5C @ =sub_080A2C64
+	bl gEngineEffectSpecialSummon_08093390
+	ldr r2, _080A2F5C @ =gEngineEffectSpecialSummonDestroy_080A2C64
 	b _080A2FD6
 	.align 2, 0
-_080A2F5C: .4byte sub_080A2C64
+_080A2F5C: .4byte gEngineEffectSpecialSummonDestroy_080A2C64
 _080A2F60:
 	ldr r2, _080A2F98 @ =gUnk_0201BB90
 	movs r0, #1
@@ -296467,25 +296467,25 @@ _080A2F60:
 	rsbs r3, r3, #0
 	movs r0, #0xb
 	adds r2, r5, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	movs r0, #0xa
 	movs r1, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	adds r0, r5, #0
 	movs r1, #0xde
-	bl sub_08093390
-	ldr r2, _080A2FA0 @ =sub_080A2E80
+	bl gEngineEffectSpecialSummon_08093390
+	ldr r2, _080A2FA0 @ =gEngineEffectPreventAttack_080A2E80
 	b _080A2FD6
 	.align 2, 0
 _080A2F98: .4byte gUnk_0201BB90
 _080A2F9C: .4byte 0x00001D9A
-_080A2FA0: .4byte sub_080A2E80
+_080A2FA0: .4byte gEngineEffectPreventAttack_080A2E80
 _080A2FA4:
 	adds r0, r5, #0
 	movs r1, #0x95
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldr r2, _080A2FB0 @ =gEngineEffectTakeControlChangePosition_080A2CD4
 	b _080A2FD6
 	.align 2, 0
@@ -296493,7 +296493,7 @@ _080A2FB0: .4byte gEngineEffectTakeControlChangePosition_080A2CD4
 _080A2FB4:
 	adds r0, r5, #0
 	movs r1, #0x7b
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldr r2, _080A2FC0 @ =sub_080A2D54
 	b _080A2FD6
 	.align 2, 0
@@ -296506,8 +296506,8 @@ _080A2FC8: .4byte sub_080A2E18
 _080A2FCC:
 	adds r0, r5, #0
 	movs r1, #0x7c
-	bl sub_08093390
-	ldr r2, _080A2FF0 @ =sub_080A2DA4
+	bl gEngineEffectSpecialSummon_08093390
+	ldr r2, _080A2FF0 @ =gEngineEffectSpecialSummonFusionSummon_080A2DA4
 _080A2FD6:
 	ldr r0, _080A2FF4 @ =gUnk_0201E2A0
 	lsls r1, r5, #2
@@ -296521,7 +296521,7 @@ _080A2FD6:
 	bl gEngineEffectSpecialSummonGraveyard_080B70AC
 	b _080A2FFE
 	.align 2, 0
-_080A2FF0: .4byte sub_080A2DA4
+_080A2FF0: .4byte gEngineEffectSpecialSummonFusionSummon_080A2DA4
 _080A2FF4: .4byte gUnk_0201E2A0
 _080A2FF8:
 	adds r0, r2, #0
@@ -296610,7 +296610,7 @@ _080A3088:
 	adds r0, r3, #0
 	adds r1, r4, #0
 	adds r2, r6, #0
-	bl sub_080AEC8C
+	bl gEngineEffectSpecialSummonGraveyard_080AEC8C
 _080A30A0:
 	bl sub_080942DC
 	adds r4, r0, #0
@@ -296658,7 +296658,7 @@ _080A30F4:
 	adds r0, r3, #0
 	movs r1, #0xef
 _080A30F8:
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldr r1, _080A310C @ =gUnk_0201C4E0
 	ldr r0, _080A3110 @ =0x00001D94
 	adds r1, r1, r0
@@ -296746,7 +296746,7 @@ _080A317A:
 	adds r1, r4, #0
 	str r2, [sp, #8]
 	str r3, [sp, #0xc]
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	mov r1, sl
@@ -296801,21 +296801,21 @@ _080A3204:
 	movs r1, #0x97
 	lsls r1, r1, #5
 	mov r0, sb
-	bl sub_080AF8CC
+	bl gEngineEffectBoostATKBoostDEF_080AF8CC
 	cmp r0, #0
 	beq _080A3214
 	movs r7, #0xa
 _080A3214:
 	ldr r1, _080A3234 @ =0x000013AA (Kinetic Soldier)
 	mov r0, sb
-	bl sub_080AF8CC
+	bl gEngineEffectBoostATKBoostDEF_080AF8CC
 	cmp r0, #0
 	beq _080A3222
 	movs r7, #0xf
 _080A3222:
 	ldr r1, _080A3238 @ =0x0000191C (Batteryman C)
 	mov r0, sb
-	bl sub_080AF8CC
+	bl gEngineEffectBoostATKBoostDEF_080AF8CC
 	cmp r0, #0
 	bne _080A3230
 	b _080A3332
@@ -296834,7 +296834,7 @@ _080A323C:
 	mov r0, sb
 	adds r1, r6, #0
 	movs r3, #1
-	bl sub_080AEFC4
+	bl gEngineEffectSpecialSummonBoostATK_080AEFC4
 	adds r4, r0, #0
 	cmp r4, #0
 	blt _080A3332
@@ -296859,14 +296859,14 @@ _080A327C: .4byte gUnk_0201C510
 _080A3280:
 	adds r0, r3, #0
 	adds r1, r4, #0
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	lsls r0, r0, #0x10
 	lsrs r7, r0, #0x10
 	b _080A3306
 _080A328E:
 	mov r0, sb
 	adds r1, r4, #0
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	lsls r0, r0, #0x10
 	lsrs r7, r0, #0x10
 	b _080A3332
@@ -296878,7 +296878,7 @@ _080A329C:
 	str r5, [sp]
 	adds r1, r6, #0
 	movs r3, #1
-	bl sub_080AEFC4
+	bl gEngineEffectSpecialSummonBoostATK_080AEFC4
 	adds r4, r0, #0
 	cmp r4, #0
 	blt _080A32D8
@@ -296896,7 +296896,7 @@ _080A329C:
 	beq _080A32D8
 	adds r0, r6, #0
 	adds r1, r4, #0
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	lsls r0, r0, #0x10
 	lsrs r7, r0, #0x10
 _080A32D8:
@@ -296974,7 +296974,7 @@ _080A3358: .4byte gUnk_0201C4E0
 _080A335C:
 	movs r0, #0xf1
 	adds r1, r2, #0
-	bl sub_08093490
+	bl gEngineEffectSpecialSummon_08093490
 _080A3364:
 	ldr r1, _080A3374 @ =gUnk_0201C4E0
 	ldr r3, _080A3378 @ =0x00001D94
@@ -297008,8 +297008,8 @@ _080A338C:
 	.align 2, 0
 _080A339C: .4byte 0x00001DA8
 
-	thumb_func_start sub_080A33A0
-sub_080A33A0: @ 0x080A33A0
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_080A33A0
+gEngineEffectSpecialSummonBoostATK_080A33A0: @ 0x080A33A0
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -297069,7 +297069,7 @@ _080A3408:
 	mov r1, sb
 	adds r2, r4, #0
 	movs r3, #1
-	bl sub_080AEFC4
+	bl gEngineEffectSpecialSummonBoostATK_080AEFC4
 	adds r4, r0, #0
 	cmp r4, #0
 	blt _080A3462
@@ -297156,7 +297156,7 @@ _080A34C0:
 	movs r0, #0xf2
 	mov r1, r8
 	adds r2, r5, #0
-	bl sub_080934A4
+	bl gEngineEffectSpecialSummon_080934A4
 _080A34CA:
 	ldr r1, _080A34DC @ =gUnk_0201C4E0
 	ldr r0, _080A34E0 @ =0x00001D94
@@ -297213,8 +297213,8 @@ _080A351A:
 _080A352C: .4byte 0x00001DA8
 _080A3530: .4byte 0x00001DAA
 
-	thumb_func_start sub_080A3534
-sub_080A3534: @ 0x080A3534
+	thumb_func_start gEngineEffectDiscardDestroyAll_080A3534
+gEngineEffectDiscardDestroyAll_080A3534: @ 0x080A3534
 	push {r4, lr}
 	adds r2, r0, #0
 	ldr r0, _080A3574 @ =gUnk_0201E2A0
@@ -297255,7 +297255,7 @@ _080A3580: .4byte 0x00001D94
 _080A3584:
 	adds r0, r2, #0
 	movs r1, #0xf9
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	b _080A359C
 _080A358E:
 	movs r2, #1
@@ -297401,7 +297401,7 @@ _080A3678:
 _080A3682:
 	adds r0, r6, #0
 	movs r1, #0xf6
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	b _080A36EA
 _080A368C:
 	adds r0, r6, #0
@@ -297413,7 +297413,7 @@ _080A368C:
 	bne _080A36C0
 	adds r0, r6, #0
 	movs r1, #0xd
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldr r0, _080A36B4 @ =gUnk_0201C4E0
 	ldr r2, _080A36B8 @ =0x00001DA8
 	adds r1, r0, r2
@@ -297435,19 +297435,19 @@ _080A36C8:
 	ldr r1, _080A36D4 @ =0x0000011D
 _080A36CA:
 	adds r0, r6, #0
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	b _080A36EA
 	.align 2, 0
 _080A36D4: .4byte 0x0000011D
 _080A36D8:
 	adds r0, r6, #0
 	movs r1, #0x16
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	b _080A36EA
 _080A36E2:
 	adds r0, r6, #0
 	movs r1, #0x56
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 _080A36EA:
 	ldr r1, _080A36F4 @ =gUnk_0201C4E0
 	ldr r0, _080A36F8 @ =0x00001D94
@@ -297590,11 +297590,11 @@ _080A37E6:
 	bl sub_0808DAB0
 	adds r5, r0, #0
 	adds r0, r6, #0
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r5, r0
 	blt _080A3804
 	adds r0, r6, #0
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	b _080A3806
 _080A3804:
 	adds r0, r5, #0
@@ -297796,7 +297796,7 @@ _080A397C:
 	ldr r0, _080A3988 @ =0x0000012D
 	ldr r1, _080A398C @ =0x0000012F
 	movs r2, #1
-	bl sub_08093534
+	bl gEngineEffectSpecialSummon_08093534
 	b _080A3A56
 	.align 2, 0
 _080A3988: .4byte 0x0000012D
@@ -297826,7 +297826,7 @@ _080A39B4:
 	lsls r1, r1, #1
 	movs r2, #1
 	movs r3, #0xc
-	bl sub_08093534
+	bl gEngineEffectSpecialSummon_08093534
 	b _080A3A56
 _080A39C6:
 	ldr r0, _080A3A20 @ =gUnk_0201E2A0
@@ -297854,7 +297854,7 @@ _080A39C6:
 	movs r1, #1
 	rsbs r1, r1, #0
 	movs r2, #0
-	bl sub_080AC028
+	bl gEngineEffectSpecialSummonBoostATK_080AC028
 	ldr r1, _080A3A2C @ =0x000003E7
 	adds r0, r0, r1
 	adds r1, r4, #0
@@ -297895,7 +297895,7 @@ _080A3A30:
 	adds r0, r4, #0
 	adds r1, r5, #0
 	movs r2, #1
-	bl sub_08093534
+	bl gEngineEffectSpecialSummon_08093534
 _080A3A56:
 	ldr r1, _080A3A78 @ =gUnk_0201C4E0
 	ldr r0, _080A3A7C @ =0x00001D94
@@ -297917,8 +297917,8 @@ _080A3A74: .4byte 0x00000868
 _080A3A78: .4byte gUnk_0201C4E0
 _080A3A7C: .4byte 0x00001D94
 
-	thumb_func_start sub_080A3A80
-sub_080A3A80: @ 0x080A3A80
+	thumb_func_start gEngineEffectSpecialSummonEquip_080A3A80
+gEngineEffectSpecialSummonEquip_080A3A80: @ 0x080A3A80
 	push {r4, r5, lr}
 	ldr r3, _080A3AC8 @ =gUnk_0201E4D0
 	movs r2, #1
@@ -297972,8 +297972,8 @@ _080A3AE2:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080A3AE8
-sub_080A3AE8: @ 0x080A3AE8
+	thumb_func_start gEngineEffectSpecialSummon_080A3AE8
+gEngineEffectSpecialSummon_080A3AE8: @ 0x080A3AE8
 	push {r4, r5, lr}
 	ldr r3, _080A3B30 @ =gUnk_0201E4D0
 	movs r2, #1
@@ -298005,7 +298005,7 @@ _080A3B1C:
 	adds r0, r5, #0
 	adds r1, r4, #0
 	movs r2, #0
-	bl sub_080A5714
+	bl gEngineEffectSpecialSummon_080A5714
 	cmp r0, #0
 	beq _080A3B3C
 	movs r0, #1
@@ -298051,8 +298051,8 @@ _080A3B70:
 _080A3B72:
 	bx lr
 
-	thumb_func_start sub_080A3B74
-sub_080A3B74: @ 0x080A3B74
+	thumb_func_start gEngineEffectSpecialSummon_080A3B74
+gEngineEffectSpecialSummon_080A3B74: @ 0x080A3B74
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -298126,7 +298126,7 @@ _080A3BEC:
 	cmp r2, #0
 	bne _080A3C1C
 	adds r0, r7, #0
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	bne _080A3C1C
 _080A3C0C:
@@ -298210,11 +298210,11 @@ _080A3C9C:
 	.align 2, 0
 _080A3CA4: .4byte 0x000019C8 @ Anteatereatingant
 _080A3CA8:
-	ldr r7, _080A3CB0 @ =sub_080A839C
+	ldr r7, _080A3CB0 @ =gEngineEffectSpecialSummonChangePosition_080A839C
 	movs r6, #3
 	b _080A3CC4
 	.align 2, 0
-_080A3CB0: .4byte sub_080A839C
+_080A3CB0: .4byte gEngineEffectSpecialSummonChangePosition_080A839C
 _080A3CB4:
 	ldr r7, _080A3CBC @ =sub_080A840C
 	movs r6, #3
@@ -298222,7 +298222,7 @@ _080A3CB4:
 	.align 2, 0
 _080A3CBC: .4byte sub_080A840C
 _080A3CC0:
-	ldr r7, _080A3CFC @ =sub_080A8478
+	ldr r7, _080A3CFC @ =gEngineEffectSpecialSummonSearch_080A8478
 	movs r6, #2
 _080A3CC4:
 	movs r4, #0
@@ -298249,14 +298249,14 @@ _080A3CDE:
 	cmp r1, #0
 	bne _080A3D00
 	adds r0, r5, #0
-	bl sub_08033610
+	bl gEngineEffectSpecialSummon_08033610
 	cmp r0, #0
 	bne _080A3D00
 _080A3CF8:
 	movs r0, #0
 	b _080A3D02
 	.align 2, 0
-_080A3CFC: .4byte sub_080A8478
+_080A3CFC: .4byte gEngineEffectSpecialSummonSearch_080A8478
 _080A3D00:
 	movs r0, #1
 _080A3D02:
@@ -298266,8 +298266,8 @@ _080A3D02:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080A3D0C
-sub_080A3D0C: @ 0x080A3D0C
+	thumb_func_start gEngineEffectSpecialSummonGraveyard_080A3D0C
+gEngineEffectSpecialSummonGraveyard_080A3D0C: @ 0x080A3D0C
 	push {r4, r5, lr}
 	ldr r3, _080A3D54 @ =gUnk_0201E4D0
 	movs r2, #1
@@ -298334,12 +298334,12 @@ gEngineEffectSpecialSummonBanish_080A3D74: @ 0x080A3D74
 	bne _080A3DA4
 	ldr r1, _080A3DA0 @ =0x000015A3 (Metamorphosis)
 	adds r0, r4, #0
-	bl sub_08037A2C
+	bl gEngineEffectBoostATKBoostDEF_08037A2C
 	cmp r0, #0
 	beq _080A3DA4
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_080A3D0C
+	bl gEngineEffectSpecialSummonGraveyard_080A3D0C
 	b _080A3DA6
 	.align 2, 0
 _080A3D9C: .4byte 0x00001332 @ Banisher of the Light
@@ -298361,7 +298361,7 @@ gEngineEffectTribute_080A3DAC: @ 0x080A3DAC
 	push {r5, r6, r7}
 	sub sp, #0x1c
 	adds r6, r0, #0
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	mov sl, r0
 	mov r1, sp
 	ldr r0, _080A3E90 @ =gUnk_09E47898
@@ -298496,7 +298496,7 @@ gEngineEffectTribute_080A3EB4: @ 0x080A3EB4
 	push {r5, r6, r7}
 	sub sp, #0x1c
 	adds r6, r0, #0
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	str r0, [sp, #0xc]
 	mov r1, sp
 	ldr r0, _080A3F8C @ =gUnk_09E478A4
@@ -298591,7 +298591,7 @@ _080A3F78:
 	mov r2, r8
 	ldrh r1, [r2]
 	adds r0, r6, #0
-	bl sub_08037A2C
+	bl gEngineEffectBoostATKBoostDEF_08037A2C
 	ldr r3, [sp, #0x10]
 	orrs r3, r0
 	cmp r3, #0
@@ -298629,8 +298629,8 @@ _080A3FB8:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080A3FC8
-sub_080A3FC8: @ 0x080A3FC8
+	thumb_func_start gEngineEffectTributeSpecialSummon_080A3FC8
+gEngineEffectTributeSpecialSummon_080A3FC8: @ 0x080A3FC8
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -298706,8 +298706,8 @@ _080A4048:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080A4058
-sub_080A4058: @ 0x080A4058
+	thumb_func_start gEngineEffectTakeControlFlip_080A4058
+gEngineEffectTakeControlFlip_080A4058: @ 0x080A4058
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldr r3, _080A40A0 @ =gUnk_0201E4D0
@@ -298873,7 +298873,7 @@ _080A417C:
 	movs r1, #0xac
 	lsls r1, r1, #5
 	adds r0, r4, #0
-	bl sub_08032FA4
+	bl gEngineEffectSpecialSummonBoostATK_08032FA4
 	cmp r0, #0
 	beq _080A421C
 	ldr r1, _080A4190 @ =0x000015B0 (Y-Dragon Head)
@@ -298884,12 +298884,12 @@ _080A4194:
 	movs r1, #0xac
 	lsls r1, r1, #5
 	adds r0, r4, #0
-	bl sub_08032FA4
+	bl gEngineEffectSpecialSummonBoostATK_08032FA4
 	cmp r0, #0
 	beq _080A421C
 	ldr r1, _080A41B4 @ =0x000015B0 (Y-Dragon Head)
 	adds r0, r4, #0
-	bl sub_08032FA4
+	bl gEngineEffectSpecialSummonBoostATK_08032FA4
 	cmp r0, #0
 	beq _080A421C
 	ldr r1, _080A41B8 @ =0x000015B3 (Z-Metal Tank)
@@ -298901,7 +298901,7 @@ _080A41BC:
 	movs r1, #0xac
 	lsls r1, r1, #5
 	adds r0, r4, #0
-	bl sub_08032FA4
+	bl gEngineEffectSpecialSummonBoostATK_08032FA4
 	cmp r0, #0
 	beq _080A421C
 	ldr r1, _080A41D0 @ =0x000015B3 (Z-Metal Tank)
@@ -298911,7 +298911,7 @@ _080A41D0: .4byte 0x000015B3 @ Z-Metal Tank
 _080A41D4:
 	ldr r1, _080A41E4 @ =0x000015B0 (Y-Dragon Head)
 	adds r0, r4, #0
-	bl sub_08032FA4
+	bl gEngineEffectSpecialSummonBoostATK_08032FA4
 	cmp r0, #0
 	beq _080A421C
 	ldr r1, _080A41E8 @ =0x000015B3 (Z-Metal Tank)
@@ -298922,7 +298922,7 @@ _080A41E8: .4byte 0x000015B3 @ Z-Metal Tank
 _080A41EC:
 	ldr r1, _080A41FC @ =0x00001947 (V-Tiger Jet)
 	adds r0, r4, #0
-	bl sub_08032FA4
+	bl gEngineEffectSpecialSummonBoostATK_08032FA4
 	cmp r0, #0
 	beq _080A421C
 	ldr r1, _080A4200 @ =0x0000194B (W-Wing Catapult)
@@ -298933,13 +298933,13 @@ _080A4200: .4byte 0x0000194B @ W-Wing Catapult
 _080A4204:
 	adds r0, r4, #0
 	adds r1, r2, #0
-	bl sub_08032FA4
+	bl gEngineEffectSpecialSummonBoostATK_08032FA4
 	cmp r0, #0
 	beq _080A421C
 	ldr r1, _080A4220 @ =0x000015B4 (XYZ-Dragon Cannon)
 _080A4212:
 	adds r0, r4, #0
-	bl sub_08032FA4
+	bl gEngineEffectSpecialSummonBoostATK_08032FA4
 	cmp r0, #0
 	bne _080A4224
 _080A421C:
@@ -299068,7 +299068,7 @@ gEngineEffectSpecialSummonGraveyard_080A42B0: @ 0x080A42B0
 	cmp r0, #0
 	beq _080A42FA
 	adds r0, r6, #0
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	bne _080A42FE
 	cmp r4, #0
@@ -299121,7 +299121,7 @@ _080A434C:
 _080A4352:
 	adds r0, r6, #0
 	adds r1, r7, #0
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	adds r4, r0, #0
 	adds r0, r5, #0
 	bl sub_080EEDF8
@@ -299139,7 +299139,7 @@ _080A4374:
 	adds r2, r0, #0
 	adds r0, r6, #0
 	adds r1, r7, #0
-	bl sub_0803B230
+	bl gEngineEffectSpecialSummonRitualSummon_0803B230
 	adds r1, r0, #0
 _080A4386:
 	cmp r1, #0
@@ -299181,8 +299181,8 @@ _080A43BA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080A43C8
-sub_080A43C8: @ 0x080A43C8
+	thumb_func_start gEngineEffectSpecialSummonChangePosition_080A43C8
+gEngineEffectSpecialSummonChangePosition_080A43C8: @ 0x080A43C8
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -299223,7 +299223,7 @@ _080A440A:
 	beq _080A443E
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_0803B1A4
+	bl gEngineEffectSpecialSummonChangePosition_0803B1A4
 	cmp r0, #1
 	beq _080A4434
 	cmp r0, #2
@@ -299252,7 +299252,7 @@ _080A443E:
 	b _080A4482
 _080A4452:
 	adds r0, r4, #0
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	bne _080A4460
 _080A445C:
@@ -299329,7 +299329,7 @@ _080A44C4:
 	beq _080A4522
 	adds r0, r5, #0
 	adds r1, r6, #0
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	adds r4, r0, #0
 	lsls r4, r4, #0x10
 	lsrs r4, r4, #0x10
@@ -299366,7 +299366,7 @@ _080A4522:
 	cmp r1, #0
 	bne _080A453C
 	adds r0, r5, #0
-	bl sub_08033634
+	bl gEngineEffectSpecialSummon_08033634
 	cmp r0, #0
 	beq _080A455C
 _080A453C:
@@ -299406,7 +299406,7 @@ gEngineEffectGraveyard_080A4574: @ 0x080A4574
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r4, r1, #0
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	beq _080A45EC
 	adds r0, r6, #0
@@ -299478,7 +299478,7 @@ gEngineEffectTributeBoostATK_080A45F4: @ 0x080A45F4
 	cmp r0, #0
 	bgt _080A4640
 	adds r0, r4, #0
-	bl sub_08033610
+	bl gEngineEffectSpecialSummon_08033610
 	cmp r0, #0
 	beq _080A4640
 	adds r0, r4, #0
@@ -299511,12 +299511,12 @@ _080A4642:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080A4648
-sub_080A4648: @ 0x080A4648
+	thumb_func_start gEngineEffectSpecialSummonTribute_080A4648
+gEngineEffectSpecialSummonTribute_080A4648: @ 0x080A4648
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	adds r6, r1, #0
-	bl sub_08033634
+	bl gEngineEffectSpecialSummon_08033634
 	cmp r0, #0
 	blt _080A465A
 _080A4656:
@@ -299555,8 +299555,8 @@ _080A468E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080A4694
-sub_080A4694: @ 0x080A4694
+	thumb_func_start gEngineEffectSpecialSummonTribute_080A4694
+gEngineEffectSpecialSummonTribute_080A4694: @ 0x080A4694
 	push {lr}
 	movs r2, #1
 	bl gEngineEffectSpecialSummonTribute_080A46A0
@@ -299612,7 +299612,7 @@ _080A46E0:
 	movs r1, #1
 	rsbs r1, r1, #0
 	adds r0, r4, #0
-	bl sub_08034298
+	bl gEngineEffectBoostATKBoostDEF_08034298
 	cmp r0, #0
 	beq _080A470C
 	ldr r0, _080A4704 @ =gUnk_0201E2A0
@@ -299651,7 +299651,7 @@ _080A472C: .4byte gUnk_0201E2A0
 _080A4730: .4byte 0x00001D78
 _080A4734:
 	adds r0, r4, #0
-	bl sub_0804BA90
+	bl gEngineEffectSpecialSummon_0804BA90
 	cmp r0, #0
 	bne _080A4740
 	b _080A48B6
@@ -299811,7 +299811,7 @@ _080A485C: .4byte 0x00001986 @ Queen of Fate - Eternia (None)
 _080A4860:
 	adds r0, r5, #0
 	movs r1, #0
-	bl sub_080A4648
+	bl gEngineEffectSpecialSummonTribute_080A4648
 	cmp r0, #0
 	bne _080A488C
 	ldr r0, _080A4880 @ =gUnk_0201E2A0
@@ -299890,7 +299890,7 @@ _080A48EC:
 	cmp r0, #1
 	bne _080A49D0
 	adds r0, r5, #0
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	beq _080A49D0
 	mov r1, sl
@@ -299910,7 +299910,7 @@ _080A4920:
 _080A4928:
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_08032C94
+	bl gEngineEffectSpecialSummonBoostATK_08032C94
 _080A4930:
 	cmp r0, #0
 	beq _080A49D0
@@ -299922,7 +299922,7 @@ _080A4938:
 	bl gEngineEffectEquipSendToGY_0804C6CC
 	adds r1, r0, #0
 	adds r0, r5, #0
-	bl sub_08032C94
+	bl gEngineEffectSpecialSummonBoostATK_08032C94
 	b _080A4950
 _080A4948:
 	ldr r1, _080A4958 @ =gEngineEffectDestroyGraveyard_0804AEA0
@@ -299936,7 +299936,7 @@ _080A4950:
 _080A4958: .4byte gEngineEffectDestroyGraveyard_0804AEA0
 _080A495C:
 	adds r0, r5, #0
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	beq _080A49D0
 	mov r0, sl
@@ -299953,7 +299953,7 @@ _080A4976:
 	beq _080A4A0C
 	adds r0, r5, #0
 	movs r1, #0
-	bl sub_080A4648
+	bl gEngineEffectSpecialSummonTribute_080A4648
 	cmp r0, #0
 	bne _080A49A8
 	ldr r0, _080A499C @ =gUnk_0201E2A0
@@ -300034,7 +300034,7 @@ _080A4A0C:
 	bgt _080A4A72
 	adds r0, r5, #0
 	movs r1, #0
-	bl sub_080A4648
+	bl gEngineEffectSpecialSummonTribute_080A4648
 	cmp r0, #0
 	bne _080A4A52
 	b _080A4A7E
@@ -300044,7 +300044,7 @@ _080A4A38: .4byte gUnk_0201C4E0
 _080A4A3C: .4byte 0x00001D78
 _080A4A40:
 	adds r0, r5, #0
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	beq _080A4A7E
 	mov r0, sb
@@ -300070,7 +300070,7 @@ _080A4A62:
 _080A4A72:
 	adds r0, r5, #0
 	movs r1, #0
-	bl sub_080A4648
+	bl gEngineEffectSpecialSummonTribute_080A4648
 	cmp r0, #0
 	bne _080A4AA0
 _080A4A7E:
@@ -300190,7 +300190,7 @@ gEngineEffectSpecialSummon_080A4AF4: @ 0x080A4AF4
 	movs r1, #1
 	rsbs r1, r1, #0
 	adds r0, r4, #0
-	bl sub_08034298
+	bl gEngineEffectBoostATKBoostDEF_08034298
 	cmp r0, #0
 	beq _080A4B4C
 	ldr r0, _080A4B44 @ =gUnk_0201E2A0
@@ -300640,7 +300640,7 @@ _080A4E50:
 _080A4E58:
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_080A4058
+	bl gEngineEffectTakeControlFlip_080A4058
 _080A4E60:
 	cmp r0, #0
 	bne _080A4E66
@@ -300724,11 +300724,11 @@ _080A4EDE:
 _080A4EE0: .4byte 0x000019F0 @ Guardian Exode
 _080A4EE4:
 	adds r0, r5, #0
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	b _080A4E60
 _080A4EEC:
 	adds r0, r5, #0
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	bne _080A4EF8
 	b _080A517C
@@ -300747,7 +300747,7 @@ _080A4F10:
 	b _080A5178
 _080A4F12:
 	adds r0, r5, #0
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	bne _080A4F1E
 	b _080A517C
@@ -300766,7 +300766,7 @@ _080A4F1E:
 _080A4F34:
 	ldr r1, _080A4F48 @ =0x0000165E (Gravity Axe - Grarl)
 	adds r0, r5, #0
-	bl sub_08032C94
+	bl gEngineEffectSpecialSummonBoostATK_08032C94
 	b _080A4E60
 	.align 2, 0
 _080A4F40: .4byte gUnk_0201C4E0
@@ -300774,7 +300774,7 @@ _080A4F44: .4byte 0x00000868
 _080A4F48: .4byte 0x0000165E @ Gravity Axe - Grarl
 _080A4F4C:
 	ldr r0, _080A4F88 @ =0x000017BF (Pyramid of Light)
-	bl sub_08032CA4
+	bl gEngineEffectSpecialSummonBoostATK_08032CA4
 	cmp r0, #0
 	bne _080A4F58
 	b _080A517C
@@ -300809,7 +300809,7 @@ _080A4F90: .4byte 0x00000868
 _080A4F94: .4byte 0x0000132C @ Chain Energy
 _080A4F98:
 	adds r0, r5, #0
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	bne _080A4FA4
 	b _080A517C
@@ -300832,7 +300832,7 @@ _080A4FBC: .4byte gUnk_0201C4E0
 _080A4FC0: .4byte 0x00000868
 _080A4FC4:
 	adds r0, r5, #0
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	bne _080A4FD0
 	b _080A517C
@@ -300849,7 +300849,7 @@ _080A4FDC:
 	b _080A4E60
 _080A4FE6:
 	adds r0, r5, #0
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	bne _080A4FF2
 	b _080A517C
@@ -300872,19 +300872,19 @@ _080A500C: .4byte gUnk_0201C4E0
 _080A5010: .4byte 0x00000868
 _080A5014:
 	adds r0, r5, #0
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	bne _080A5020
 	b _080A517C
 _080A5020:
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_08032CCC
+	bl gEngineEffectSpecialSummonBoostATK_08032CCC
 	b _080A4E60
 _080A502A:
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_080A3A80
+	bl gEngineEffectSpecialSummonEquip_080A3A80
 	b _080A4E60
 _080A5034:
 	adds r0, r5, #0
@@ -300896,7 +300896,7 @@ _080A5034:
 _080A5042:
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_080A3AE8
+	bl gEngineEffectSpecialSummon_080A3AE8
 	b _080A4E60
 _080A504C:
 	adds r0, r5, #0
@@ -300914,22 +300914,22 @@ _080A505C:
 _080A5066:
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_080A43C8
+	bl gEngineEffectSpecialSummonChangePosition_080A43C8
 	b _080A4E60
 _080A5070:
 	adds r0, r5, #0
-	bl sub_080A3FC8
+	bl gEngineEffectTributeSpecialSummon_080A3FC8
 	b _080A4E60
 _080A5078:
 	adds r0, r5, #0
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	bne _080A5084
 	b _080A517C
 _080A5084:
 	ldr r1, _080A5090 @ =0x00001414 (Gradius)
 	adds r0, r5, #0
-	bl sub_08032C94
+	bl gEngineEffectSpecialSummonBoostATK_08032C94
 	b _080A4E60
 	.align 2, 0
 _080A5090: .4byte 0x00001414 @ Gradius
@@ -300950,17 +300950,17 @@ _080A50A6:
 _080A50B0:
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_080A3AE8
+	bl gEngineEffectSpecialSummon_080A3AE8
 	b _080A4E60
 _080A50BA:
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_080A3B74
+	bl gEngineEffectSpecialSummon_080A3B74
 	b _080A4E60
 _080A50C4:
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_080A3D0C
+	bl gEngineEffectSpecialSummonGraveyard_080A3D0C
 	b _080A4E60
 _080A50CE:
 	adds r0, r5, #0
@@ -300992,7 +300992,7 @@ _080A50E4:
 	b _080A512C
 _080A5108:
 	adds r0, r5, #0
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 _080A510E:
 	cmp r0, #0
 	beq _080A5158
@@ -301000,7 +301000,7 @@ _080A510E:
 _080A5114:
 	adds r0, r5, #0
 	movs r1, #1
-	bl sub_080A4648
+	bl gEngineEffectSpecialSummonTribute_080A4648
 	b _080A510E
 _080A511E:
 	movs r1, #1
@@ -301027,7 +301027,7 @@ _080A5148: .4byte 0x00001D78
 _080A514C:
 	adds r0, r5, #0
 	movs r1, #1
-	bl sub_080A4648
+	bl gEngineEffectSpecialSummonTribute_080A4648
 	cmp r0, #0
 	bne _080A5178
 _080A5158:
@@ -301203,7 +301203,7 @@ _080A5290:
 	bne _080A5284
 	adds r0, r7, #0
 	mov r1, r8
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	adds r4, r0, #0
 	lsls r4, r4, #0x10
 	lsrs r4, r4, #0x10
@@ -301232,7 +301232,7 @@ _080A52C6:
 	ldrb r4, [r5]
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	bne _080A5326
 	ldrb r5, [r5]
@@ -301330,7 +301330,7 @@ _080A5368:
 	ldrb r2, [r6]
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	bne _080A53AC
 	ldrb r6, [r6]
@@ -301440,7 +301440,7 @@ _080A541E:
 	bne _080A5470
 	adds r0, r4, #0
 	adds r1, r3, #0
-	bl sub_080313DC
+	bl gEngineEffectDestroyStandbyPhase_080313DC
 	cmp r0, sb
 	bge _080A53F4
 _080A5470:
@@ -301736,7 +301736,7 @@ _080A566C:
 	ble _080A570A
 	adds r0, r6, #0
 	adds r1, r5, #0
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	cmp r0, #0x12
@@ -301780,7 +301780,7 @@ _080A56D4: .4byte 0x000017DB @ Armed Dragon LV7
 _080A56D8:
 	adds r0, r6, #0
 	adds r1, r5, #0
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	cmp r0, #3
@@ -301811,8 +301811,8 @@ _080A570C:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080A5714
-sub_080A5714: @ 0x080A5714
+	thumb_func_start gEngineEffectSpecialSummon_080A5714
+gEngineEffectSpecialSummon_080A5714: @ 0x080A5714
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -301842,7 +301842,7 @@ sub_080A5714: @ 0x080A5714
 	cmp r0, #0
 	bne _080A577C
 	adds r0, r6, #0
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	bne _080A57A2
 	ldrb r5, [r5]
@@ -301928,7 +301928,7 @@ gEngineEffectSpecialSummonGraveyard_080A57B8: @ 0x080A57B8
 	cmp r0, #0
 	beq _080A5854
 	adds r0, r4, #0
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	bne _080A580A
 	ldrb r6, [r6]
@@ -301969,7 +301969,7 @@ _080A583C:
 _080A583E:
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_08031564
+	bl gEngineEffectSpecialSummonBoostATK_08031564
 	cmp r0, #0
 	beq _080A5854
 	movs r0, #0x80
@@ -301984,8 +301984,8 @@ _080A5856:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080A585C
-sub_080A585C: @ 0x080A585C
+	thumb_func_start gEngineEffectSpecialSummon_080A585C
+gEngineEffectSpecialSummon_080A585C: @ 0x080A585C
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -302037,7 +302037,7 @@ _080A58B8:
 	ldrb r1, [r4]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	bne _080A5984
 	ldrb r4, [r4]
@@ -302146,8 +302146,8 @@ _080A5988:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080A5994
-sub_080A5994: @ 0x080A5994
+	thumb_func_start gEngineEffectSpecialSummon_080A5994
+gEngineEffectSpecialSummon_080A5994: @ 0x080A5994
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -302175,7 +302175,7 @@ _080A59C4:
 	ldrb r2, [r5]
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	ldr r1, [sp]
 	adds r1, r1, r6
 	mov sl, r1
@@ -302391,7 +302391,7 @@ _080A5B60:
 _080A5B66:
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	adds r4, r0, #0
 	ldr r0, _080A5B8C @ =gUnk_0201E4D0
 	ldr r0, [r0]
@@ -302425,7 +302425,7 @@ _080A5BA0:
 _080A5BAC:
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_0803B230
+	bl gEngineEffectSpecialSummonRitualSummon_0803B230
 	adds r1, r0, #0
 _080A5BB6:
 	cmp r1, #0
@@ -302441,8 +302441,8 @@ _080A5BC2:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080A5BC8
-sub_080A5BC8: @ 0x080A5BC8
+	thumb_func_start gEngineEffectSpecialSummonTribute_080A5BC8
+gEngineEffectSpecialSummonTribute_080A5BC8: @ 0x080A5BC8
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -302533,7 +302533,7 @@ _080A5C74:
 	ldrb r1, [r4]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	bne _080A5CBA
 	ldrh r1, [r4, #0xc]
@@ -302573,8 +302573,8 @@ _080A5CBE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080A5CC8
-sub_080A5CC8: @ 0x080A5CC8
+	thumb_func_start gEngineEffectSpecialSummon_080A5CC8
+gEngineEffectSpecialSummon_080A5CC8: @ 0x080A5CC8
 	push {r4, r5, r6, r7, lr}
 	adds r4, r0, #0
 	adds r5, r1, r2
@@ -302601,7 +302601,7 @@ sub_080A5CC8: @ 0x080A5CC8
 	lsls r0, r6, #0x1f
 	lsrs r0, r0, #0x1f
 	subs r0, r7, r0
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	bne _080A5D42
 	adds r0, r4, #0
@@ -302897,8 +302897,8 @@ _080A5EF2:
 _080A5F30: .4byte 0xFFFFFE01
 _080A5F34: .4byte 0xFFFE01FF
 
-	thumb_func_start sub_080A5F38
-sub_080A5F38: @ 0x080A5F38
+	thumb_func_start gEngineEffectChangePosition_080A5F38
+gEngineEffectChangePosition_080A5F38: @ 0x080A5F38
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	adds r7, r2, #0
@@ -302932,8 +302932,8 @@ _080A5F70: .4byte gUnk_0201C4E0
 _080A5F74: .4byte 0x00001D68
 _080A5F78: .4byte 0x00001D54
 
-	thumb_func_start sub_080A5F7C
-sub_080A5F7C: @ 0x080A5F7C
+	thumb_func_start gEngineEffectSpecialSummonDiscard_080A5F7C
+gEngineEffectSpecialSummonDiscard_080A5F7C: @ 0x080A5F7C
 	push {r4, r5, r6, r7, lr}
 	ldr r4, _080A5FA4 @ =0xFFFFFE00
 	add sp, r4
@@ -303067,7 +303067,7 @@ _080A60BC:
 	movs r2, #3
 	bl sub_0801F338
 	mov r0, sp
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 _080A60CC:
 	ldr r3, _080A60D4 @ =gUnk_0201E4D0
 	movs r0, #0
@@ -303122,7 +303122,7 @@ _080A6110:
 	adds r1, r6, #0
 	adds r2, r4, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r5, _080A61A8 @ =gUnk_0201E4D0
 	ldrb r3, [r5, #8]
 	lsls r2, r3, #1
@@ -303181,7 +303181,7 @@ _080A61AC: .4byte gUnk_0201E2A0
 _080A61B0:
 	movs r0, #0x92
 	lsls r0, r0, #1
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 	b _080A643E
 _080A61BA:
 	ldrb r4, [r5, #0x13]
@@ -303199,7 +303199,7 @@ _080A61CE:
 	movs r1, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r2, _080A61E8 @ =gUnk_0201E4D0
 	movs r0, #1
 	ldrb r1, [r2, #0x13]
@@ -303270,7 +303270,7 @@ _080A6258:
 	movs r2, #2
 	bl sub_0801F338
 	adds r0, r4, #0
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 _080A626A:
 	ldr r3, _080A6274 @ =gUnk_0201E4D0
 	movs r0, #0
@@ -303297,7 +303297,7 @@ _080A6278:
 	adds r1, r6, #0
 	adds r2, r4, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r5, _080A6314 @ =gUnk_0201E4D0
 	ldrb r3, [r5, #8]
 	lsls r2, r3, #1
@@ -303344,7 +303344,7 @@ _080A62CA:
 _080A62F8:
 	movs r0, #0x92
 	lsls r0, r0, #1
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 	b _080A643E
 	.align 2, 0
 _080A6304: .4byte gUnk_0201C4E0
@@ -303369,7 +303369,7 @@ _080A6330:
 	movs r1, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r2, _080A6348 @ =gUnk_0201E4D0
 	movs r0, #1
 	ldrb r1, [r2, #0x13]
@@ -303465,7 +303465,7 @@ _080A63E8: .4byte gUnk_0201E4D0
 _080A63EC: .4byte gUnk_0201C4E0
 _080A63F0:
 	movs r0, #1
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 	b _080A643E
 _080A63F8:
 	ldr r0, _080A6428 @ =gUnk_0201C4E0
@@ -303550,7 +303550,7 @@ _080A647C:
 	adds r1, r5, #0
 	adds r2, r4, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r1, _080A64C8 @ =gUnk_0201E4D0
 	movs r0, #1
 	strb r0, [r1, #8]
@@ -303571,7 +303571,7 @@ _080A64CC:
 	movs r1, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r2, _080A64F4 @ =gUnk_0201E4D0
 	movs r0, #1
 	ldrb r1, [r2, #0x13]
@@ -303600,8 +303600,8 @@ _080A64FC:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080A6508
-sub_080A6508: @ 0x080A6508
+	thumb_func_start gEngineEffectSpecialSummonGraveyard_080A6508
+gEngineEffectSpecialSummonGraveyard_080A6508: @ 0x080A6508
 	push {r4, r5, r6, r7, lr}
 	ldr r4, _080A652C @ =0xFFFFFE00
 	add sp, r4
@@ -303663,7 +303663,7 @@ _080A6560:
 	lsls r0, r7, #0x1f
 	lsrs r0, r0, #0x1f
 	mov r1, sp
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldr r0, _080A65D4 @ =gEngineEffectSpecialSummonEquip_080A533C
 	bl sub_080969C4
 _080A6598:
@@ -303717,7 +303717,7 @@ _080A65DC:
 	adds r1, r5, #0
 	adds r2, r4, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	strb r6, [r7, #8]
 	lsls r5, r5, #0x18
 	lsrs r5, r5, #0x18
@@ -303741,8 +303741,8 @@ _080A6624:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080A6630
-sub_080A6630: @ 0x080A6630
+	thumb_func_start gEngineEffectSpecialSummonDiscard_080A6630
+gEngineEffectSpecialSummonDiscard_080A6630: @ 0x080A6630
 	push {r4, r5, r6, r7, lr}
 	ldr r7, _080A6644 @ =gUnk_0201E4D0
 	movs r0, #2
@@ -303750,7 +303750,7 @@ sub_080A6630: @ 0x080A6630
 	ands r0, r1
 	cmp r0, #0
 	bne _080A6648
-	bl sub_080A5F7C
+	bl gEngineEffectSpecialSummonDiscard_080A5F7C
 	b _080A6724
 	.align 2, 0
 _080A6644: .4byte gUnk_0201E4D0
@@ -303782,18 +303782,18 @@ _080A6662:
 	ldr r1, [r7]
 	lsls r1, r1, #9
 	lsrs r1, r1, #0x11
-	ldr r2, _080A668C @ =sub_080A5714
+	ldr r2, _080A668C @ =gEngineEffectSpecialSummon_080A5714
 	adds r0, r3, #0
 	bl gEngineEffectSpecialSummonGraveyard_080B70AC
 	b _080A669E
 	.align 2, 0
 _080A6688: .4byte gUnk_0201E2A0
-_080A668C: .4byte sub_080A5714
+_080A668C: .4byte gEngineEffectSpecialSummon_080A5714
 _080A6690:
 	adds r0, r3, #0
 	movs r1, #0x12
-	bl sub_08093390
-	ldr r0, _080A66D4 @ =sub_080A5714
+	bl gEngineEffectSpecialSummon_08093390
+	ldr r0, _080A66D4 @ =gEngineEffectSpecialSummon_080A5714
 	bl sub_080969C4
 _080A669E:
 	ldr r3, _080A66D8 @ =gUnk_0201E4D0
@@ -303824,7 +303824,7 @@ _080A669E:
 	movs r0, #0
 	b _080A6724
 	.align 2, 0
-_080A66D4: .4byte sub_080A5714
+_080A66D4: .4byte gEngineEffectSpecialSummon_080A5714
 _080A66D8: .4byte gUnk_0201E4D0
 _080A66DC:
 	bl sub_08096B14
@@ -303845,7 +303845,7 @@ _080A66DC:
 	adds r1, r5, #0
 	adds r2, r4, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	strb r6, [r7, #8]
 	lsls r5, r5, #0x18
 	lsrs r5, r5, #0x18
@@ -303867,8 +303867,8 @@ _080A6724:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080A672C
-sub_080A672C: @ 0x080A672C
+	thumb_func_start gEngineEffectSpecialSummonNegate_080A672C
+gEngineEffectSpecialSummonNegate_080A672C: @ 0x080A672C
 	push {r4, r5, r6, r7, lr}
 	ldr r6, _080A6750 @ =gUnk_0201E4D0
 	ldrb r0, [r6, #0x13]
@@ -303898,7 +303898,7 @@ _080A675A:
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x12
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldrb r3, [r6, #0x13]
 	lsrs r0, r3, #1
 	adds r1, r7, #0
@@ -303938,15 +303938,15 @@ _080A6798:
 	ldr r1, [r6]
 	lsls r1, r1, #9
 	lsrs r1, r1, #0x11
-	ldr r2, _080A67C0 @ =sub_080A5714
+	ldr r2, _080A67C0 @ =gEngineEffectSpecialSummon_080A5714
 	adds r0, r3, #0
 	bl gEngineEffectSpecialSummonGraveyard_080B70AC
 	b _080A67CA
 	.align 2, 0
 _080A67BC: .4byte gUnk_0201E2A0
-_080A67C0: .4byte sub_080A5714
+_080A67C0: .4byte gEngineEffectSpecialSummon_080A5714
 _080A67C4:
-	ldr r0, _080A6800 @ =sub_080A5714
+	ldr r0, _080A6800 @ =gEngineEffectSpecialSummon_080A5714
 	bl sub_080969C4
 _080A67CA:
 	ldr r3, _080A6804 @ =gUnk_0201E4D0
@@ -303976,7 +303976,7 @@ _080A67CA:
 	strb r0, [r3, #0x14]
 	b _080A6892
 	.align 2, 0
-_080A6800: .4byte sub_080A5714
+_080A6800: .4byte gEngineEffectSpecialSummon_080A5714
 _080A6804: .4byte gUnk_0201E4D0
 _080A6808:
 	bl sub_08096B14
@@ -303997,7 +303997,7 @@ _080A6808:
 	adds r1, r5, #0
 	adds r2, r4, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldrb r0, [r6, #8]
 	lsls r1, r0, #1
 	adds r0, r6, #0
@@ -304040,7 +304040,7 @@ _080A6880:
 	movs r1, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	movs r0, #1
 	rsbs r0, r0, #0
 	b _080A6894
@@ -304110,7 +304110,7 @@ _080A6900: .4byte gEngineEffectSpecialSummonGraveyard_080A57B8
 _080A6904:
 	adds r0, r3, #0
 	movs r1, #0x3a
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldr r0, _080A6948 @ =gEngineEffectSpecialSummonGraveyard_080A57B8
 	bl sub_080969C4
 _080A6912:
@@ -304164,14 +304164,14 @@ _080A6950:
 	lsls r0, r3, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _080A6A00 @ =0x000015A3 (Metamorphosis)
-	bl sub_08037A8C
+	bl gEngineEffectBoostATKBoostDEF_08037A8C
 	adds r6, r0, #0
 	bl sub_0804A76C
 	mov r0, r8
 	adds r1, r4, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_08047E20
+	bl gEngineEffectBoostATKBoostDEF_08047E20
 	mov r1, sb
 	ldrb r1, [r1]
 	lsls r0, r1, #0x1f
@@ -304241,8 +304241,8 @@ _080A6A14:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080A6A20
-sub_080A6A20: @ 0x080A6A20
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_080A6A20
+gEngineEffectSpecialSummonBoostATK_080A6A20: @ 0x080A6A20
 	push {r4, r5, r6, lr}
 	ldr r6, _080A6A40 @ =gUnk_0201E4D0
 	ldrb r0, [r6, #0x13]
@@ -304289,7 +304289,7 @@ _080A6A74: .4byte gEngineEffectSpecialSummonGraveyard_080A57B8
 _080A6A78:
 	adds r0, r3, #0
 	movs r1, #0x7e
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldr r0, _080A6ABC @ =gEngineEffectSpecialSummonGraveyard_080A57B8
 	bl sub_080969C4
 _080A6A86:
@@ -304338,7 +304338,7 @@ _080A6AC4:
 	ldr r2, [r2]
 	adds r1, r1, r2
 	movs r2, #0
-	bl sub_08047A38
+	bl gEngineEffectBoostATKBoostDEF_08047A38
 	ldrb r4, [r6, #0x13]
 	lsrs r0, r4, #1
 	adds r1, r5, #0
@@ -304383,8 +304383,8 @@ _080A6B30:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080A6B38
-sub_080A6B38: @ 0x080A6B38
+	thumb_func_start gEngineEffectSpecialSummonGraveyard_080A6B38
+gEngineEffectSpecialSummonGraveyard_080A6B38: @ 0x080A6B38
 	push {r4, r5, r6, r7, lr}
 	sub sp, #0x100
 	ldr r7, _080A6B58 @ =gUnk_0201E4D0
@@ -304417,13 +304417,13 @@ _080A6B5C:
 	ldr r1, [r7]
 	lsls r1, r1, #9
 	lsrs r1, r1, #0x11
-	ldr r2, _080A6B84 @ =sub_080A585C
+	ldr r2, _080A6B84 @ =gEngineEffectSpecialSummon_080A585C
 	adds r0, r3, #0
 	bl gEngineEffectSpecialSummonGraveyard_080B70AC
 	b _080A6BAE
 	.align 2, 0
 _080A6B80: .4byte gUnk_0201E2A0
-_080A6B84: .4byte sub_080A585C
+_080A6B84: .4byte gEngineEffectSpecialSummon_080A585C
 _080A6B88:
 	ldrb r1, [r7, #8]
 	ldr r2, _080A6BE4 @ =0x00001119 (Sanga of the Thunder)
@@ -304437,8 +304437,8 @@ _080A6B88:
 	lsls r0, r7, #0x1f
 	lsrs r0, r0, #0x1f
 	mov r1, sp
-	bl sub_08093390
-	ldr r0, _080A6BE8 @ =sub_080A585C
+	bl gEngineEffectSpecialSummon_08093390
+	ldr r0, _080A6BE8 @ =gEngineEffectSpecialSummon_080A585C
 	bl sub_080969C4
 _080A6BAE:
 	ldr r3, _080A6BEC @ =gUnk_0201E4D0
@@ -304470,7 +304470,7 @@ _080A6BAE:
 	b _080A6C84
 	.align 2, 0
 _080A6BE4: .4byte 0x00001119 @ Sanga of the Thunder
-_080A6BE8: .4byte sub_080A585C
+_080A6BE8: .4byte gEngineEffectSpecialSummon_080A585C
 _080A6BEC: .4byte gUnk_0201E4D0
 _080A6BF0:
 	bl sub_08096B14
@@ -304491,7 +304491,7 @@ _080A6BF0:
 	adds r1, r5, #0
 	adds r2, r4, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldrb r0, [r7, #8]
 	lsls r1, r0, #1
 	adds r0, r7, #0
@@ -304552,8 +304552,8 @@ _080A6C84:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080A6C8C
-sub_080A6C8C: @ 0x080A6C8C
+	thumb_func_start gEngineEffectSpecialSummonDiscard_080A6C8C
+gEngineEffectSpecialSummonDiscard_080A6C8C: @ 0x080A6C8C
 	push {r4, r5, lr}
 	ldr r2, _080A6CC4 @ =gUnk_0201E4D0
 	ldrb r3, [r2, #0x13]
@@ -304577,15 +304577,15 @@ sub_080A6C8C: @ 0x080A6C8C
 	ands r0, r1
 	strb r0, [r2, #0x14]
 _080A6CB8:
-	bl sub_080A5F7C
+	bl gEngineEffectSpecialSummonDiscard_080A5F7C
 	pop {r4, r5}
 	pop {r1}
 	bx r1
 	.align 2, 0
 _080A6CC4: .4byte gUnk_0201E4D0
 
-	thumb_func_start sub_080A6CC8
-sub_080A6CC8: @ 0x080A6CC8
+	thumb_func_start gEngineEffectGraveyardDraw_080A6CC8
+gEngineEffectGraveyardDraw_080A6CC8: @ 0x080A6CC8
 	push {r4, r5, r6, lr}
 	sub sp, #0x100
 	ldr r6, _080A6CEC @ =gUnk_0201E4D0
@@ -304625,13 +304625,13 @@ _080A6CF8:
 	ldr r1, [r6]
 	lsls r1, r1, #9
 	lsrs r1, r1, #0x11
-	ldr r2, _080A6D20 @ =sub_080A5994
+	ldr r2, _080A6D20 @ =gEngineEffectSpecialSummon_080A5994
 	adds r0, r3, #0
 	bl gEngineEffectSpecialSummonGraveyard_080B70AC
 	b _080A6D4E
 	.align 2, 0
 _080A6D1C: .4byte gUnk_0201E2A0
-_080A6D20: .4byte sub_080A5994
+_080A6D20: .4byte gEngineEffectSpecialSummon_080A5994
 _080A6D24:
 	ldr r1, _080A6D84 @ =gUnk_09E478BC
 	ldrb r2, [r6, #8]
@@ -304647,8 +304647,8 @@ _080A6D24:
 	lsls r0, r6, #0x1f
 	lsrs r0, r0, #0x1f
 	mov r1, sp
-	bl sub_08093390
-	ldr r0, _080A6D88 @ =sub_080A5994
+	bl gEngineEffectSpecialSummon_08093390
+	ldr r0, _080A6D88 @ =gEngineEffectSpecialSummon_080A5994
 	bl sub_080969C4
 _080A6D4E:
 	ldr r3, _080A6D8C @ =gUnk_0201E4D0
@@ -304679,7 +304679,7 @@ _080A6D4E:
 	b _080A6E68
 	.align 2, 0
 _080A6D84: .4byte gUnk_09E478BC
-_080A6D88: .4byte sub_080A5994
+_080A6D88: .4byte gEngineEffectSpecialSummon_080A5994
 _080A6D8C: .4byte gUnk_0201E4D0
 _080A6D90:
 	bl sub_08096B14
@@ -304798,8 +304798,8 @@ _080A6E6A:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080A6E74
-sub_080A6E74: @ 0x080A6E74
+	thumb_func_start gEngineEffectSpecialSummonGraveyard_080A6E74
+gEngineEffectSpecialSummonGraveyard_080A6E74: @ 0x080A6E74
 	push {r4, r5, r6, r7, lr}
 	ldr r4, _080A6E9C @ =0xFFFFFE00
 	add sp, r4
@@ -304847,13 +304847,13 @@ _080A6EC6:
 	ldr r1, [r6]
 	lsls r1, r1, #9
 	lsrs r1, r1, #0x11
-	ldr r2, _080A6EDC @ =sub_080A5BC8
+	ldr r2, _080A6EDC @ =gEngineEffectSpecialSummonTribute_080A5BC8
 	adds r0, r3, #0
 	bl gEngineEffectSpecialSummonGraveyard_080B70AC
 	b _080A6F14
 	.align 2, 0
 _080A6ED8: .4byte gUnk_0201E2A0
-_080A6EDC: .4byte sub_080A5BC8
+_080A6EDC: .4byte gEngineEffectSpecialSummonTribute_080A5BC8
 _080A6EE0:
 	add r4, sp, #0x100
 	ldr r0, _080A6F48 @ =0x000013E5 (Grand Tiki Elder)
@@ -304873,8 +304873,8 @@ _080A6EE0:
 	lsrs r0, r0, #0x1f
 	mov r1, sp
 _080A6F0A:
-	bl sub_08093390
-	ldr r0, _080A6F50 @ =sub_080A5BC8
+	bl gEngineEffectSpecialSummon_08093390
+	ldr r0, _080A6F50 @ =gEngineEffectSpecialSummonTribute_080A5BC8
 	bl sub_080969C4
 _080A6F14:
 	ldr r3, _080A6F54 @ =gUnk_0201E4D0
@@ -304906,7 +304906,7 @@ _080A6F14:
 	.align 2, 0
 _080A6F48: .4byte 0x000013E5 @ Grand Tiki Elder
 _080A6F4C: .4byte 0x000013E7 @ Melchid the Four-Face Beast
-_080A6F50: .4byte sub_080A5BC8
+_080A6F50: .4byte gEngineEffectSpecialSummonTribute_080A5BC8
 _080A6F54: .4byte gUnk_0201E4D0
 _080A6F58:
 	bl sub_08096B14
@@ -304927,7 +304927,7 @@ _080A6F58:
 	adds r1, r5, #0
 	adds r2, r4, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	strb r7, [r6, #8]
 	lsls r5, r5, #0x18
 	lsrs r5, r5, #0x18
@@ -305003,7 +305003,7 @@ _080A6FF0:
 	adds r1, r5, #0
 	adds r2, r4, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	movs r0, #2
 	strb r0, [r6, #8]
 	lsls r5, r5, #0x18
@@ -305031,7 +305031,7 @@ _080A7038:
 	movs r1, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 _080A7056:
 	movs r0, #0
 _080A7058:
@@ -305042,8 +305042,8 @@ _080A7058:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080A7064
-sub_080A7064: @ 0x080A7064
+	thumb_func_start gEngineEffectSpecialSummonDiscard_080A7064
+gEngineEffectSpecialSummonDiscard_080A7064: @ 0x080A7064
 	push {lr}
 	ldr r1, _080A7078 @ =gUnk_0201E4D0
 	movs r0, #2
@@ -305051,7 +305051,7 @@ sub_080A7064: @ 0x080A7064
 	ands r0, r1
 	cmp r0, #0
 	bne _080A707C
-	bl sub_080A5F7C
+	bl gEngineEffectSpecialSummonDiscard_080A5F7C
 	b _080A707E
 	.align 2, 0
 _080A7078: .4byte gUnk_0201E4D0
@@ -305062,8 +305062,8 @@ _080A707E:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080A7084
-sub_080A7084: @ 0x080A7084
+	thumb_func_start gEngineEffectSpecialSummonDiscard_080A7084
+gEngineEffectSpecialSummonDiscard_080A7084: @ 0x080A7084
 	push {lr}
 	ldr r1, _080A7098 @ =gUnk_0201E4D0
 	movs r0, #2
@@ -305071,7 +305071,7 @@ sub_080A7084: @ 0x080A7084
 	ands r0, r2
 	cmp r0, #0
 	bne _080A709C
-	bl sub_080A5F7C
+	bl gEngineEffectSpecialSummonDiscard_080A5F7C
 	b _080A70A6
 	.align 2, 0
 _080A7098: .4byte gUnk_0201E4D0
@@ -305086,8 +305086,8 @@ _080A70A6:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080A70AC
-sub_080A70AC: @ 0x080A70AC
+	thumb_func_start gEngineEffectSpecialSummonDiscard_080A70AC
+gEngineEffectSpecialSummonDiscard_080A70AC: @ 0x080A70AC
 	push {lr}
 	ldr r1, _080A70C0 @ =gUnk_0201E4D0
 	movs r0, #2
@@ -305095,7 +305095,7 @@ sub_080A70AC: @ 0x080A70AC
 	ands r0, r2
 	cmp r0, #0
 	bne _080A70C4
-	bl sub_080A5F7C
+	bl gEngineEffectSpecialSummonDiscard_080A5F7C
 	b _080A70D4
 	.align 2, 0
 _080A70C0: .4byte gUnk_0201E4D0
@@ -305111,8 +305111,8 @@ _080A70D4:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080A70D8
-sub_080A70D8: @ 0x080A70D8
+	thumb_func_start gEngineEffectSpecialSummonBanish_080A70D8
+gEngineEffectSpecialSummonBanish_080A70D8: @ 0x080A70D8
 	push {r4, r5, r6, lr}
 	ldr r6, _080A7100 @ =gUnk_0201E4D0
 	movs r0, #2
@@ -305160,7 +305160,7 @@ _080A712C: .4byte sub_080A5D4C
 _080A7130:
 	adds r0, r3, #0
 	movs r1, #0xeb
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldr r0, _080A7174 @ =sub_080A5D4C
 	bl sub_080969C4
 _080A713E:
@@ -305241,7 +305241,7 @@ _080A71CC:
 _080A71D0: .4byte gUnk_0201C4E0
 _080A71D4: .4byte 0x00001D68
 _080A71D8:
-	bl sub_080A5F7C
+	bl gEngineEffectSpecialSummonDiscard_080A5F7C
 _080A71DC:
 	pop {r4, r5, r6}
 	pop {r1}
@@ -305464,7 +305464,7 @@ _080A7370:
 _080A7396:
 	adds r0, r2, #0
 	mov r1, sp
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	b _080A763E
 	.align 2, 0
 _080A73A0: .4byte gUnk_0201E4D0
@@ -305729,7 +305729,7 @@ _080A759C:
 	ldr r2, [r2]
 	adds r1, r1, r2
 	movs r2, #0
-	bl sub_08047A38
+	bl gEngineEffectBoostATKBoostDEF_08047A38
 	ldr r4, _080A7604 @ =gUnk_0201E4D0
 	ldrh r3, [r4, #0x14]
 	lsls r2, r3, #0x17
@@ -305803,8 +305803,8 @@ _080A7640:
 	.align 2, 0
 _080A764C: .4byte gUnk_0201E4D0
 
-	thumb_func_start sub_080A7650
-sub_080A7650: @ 0x080A7650
+	thumb_func_start gEngineEffectSpecialSummonDiscard_080A7650
+gEngineEffectSpecialSummonDiscard_080A7650: @ 0x080A7650
 	push {r4, r5, r6, r7, lr}
 	sub sp, #0x100
 	ldr r5, _080A7670 @ =gUnk_0201E4D0
@@ -305879,7 +305879,7 @@ _080A76D4:
 	movs r1, #0x72
 	bl sub_0801F2C4
 	mov r0, sp
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 	b _080A770A
 _080A76F0:
 	ldr r0, _080A76FC @ =gUnk_0201C4E0
@@ -305954,7 +305954,7 @@ _080A776C:
 	ands r0, r1
 	strb r0, [r5, #0x14]
 _080A777A:
-	bl sub_080A5F7C
+	bl gEngineEffectSpecialSummonDiscard_080A5F7C
 _080A777E:
 	add sp, #0x100
 	pop {r4, r5, r6, r7}
@@ -305962,8 +305962,8 @@ _080A777E:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080A7788
-sub_080A7788: @ 0x080A7788
+	thumb_func_start gEngineEffectSpecialSummonDiscard_080A7788
+gEngineEffectSpecialSummonDiscard_080A7788: @ 0x080A7788
 	push {r4, r5, r6, r7, lr}
 	sub sp, #0x100
 	ldr r5, _080A77A8 @ =gUnk_0201E4D0
@@ -306039,7 +306039,7 @@ _080A780C:
 	adds r1, r4, #0
 	bl sub_0801F2C4
 	mov r0, sp
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 	b _080A7856
 	.align 2, 0
 _080A782C: .4byte 0x0000013F
@@ -306048,7 +306048,7 @@ _080A7830:
 	lsls r0, r5, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x12
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldr r0, _080A7848 @ =gUnk_0201C4E0
 	movs r2, #0xea
 	lsls r2, r2, #5
@@ -306128,15 +306128,15 @@ _080A78C0:
 _080A78CE:
 	strb r0, [r5, #0x14]
 _080A78D0:
-	bl sub_080A5F7C
+	bl gEngineEffectSpecialSummonDiscard_080A5F7C
 _080A78D4:
 	add sp, #0x100
 	pop {r4, r5, r6, r7}
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080A78DC
-sub_080A78DC: @ 0x080A78DC
+	thumb_func_start gEngineEffectSpecialSummonGraveyard_080A78DC
+gEngineEffectSpecialSummonGraveyard_080A78DC: @ 0x080A78DC
 	push {r4, r5, lr}
 	sub sp, #0x100
 	ldr r0, _080A7904 @ =gUnk_0201E4D0
@@ -306221,7 +306221,7 @@ _080A7988:
 	movs r2, #2
 	bl sub_0801F338
 	mov r0, sp
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 _080A7998:
 	ldr r3, _080A79D0 @ =gUnk_0201E4D0
 	movs r0, #0
@@ -306282,22 +306282,22 @@ _080A79EC:
 	ldr r1, [r2]
 	lsls r1, r1, #9
 	lsrs r1, r1, #0x11
-	ldr r2, _080A7A1C @ =sub_080A5CC8
+	ldr r2, _080A7A1C @ =gEngineEffectSpecialSummon_080A5CC8
 	adds r0, r3, #0
 	bl gEngineEffectSpecialSummonGraveyard_080B70AC
 	b _080A7A26
 	.align 2, 0
 _080A7A14: .4byte gUnk_0201E2A0
 _080A7A18: .4byte gUnk_0201E4D0
-_080A7A1C: .4byte sub_080A5CC8
+_080A7A1C: .4byte gEngineEffectSpecialSummon_080A5CC8
 _080A7A20:
-	ldr r0, _080A7A2C @ =sub_080A5CC8
+	ldr r0, _080A7A2C @ =gEngineEffectSpecialSummon_080A5CC8
 	bl sub_080969C4
 _080A7A26:
 	ldr r3, _080A7A30 @ =gUnk_0201E4D0
 	b _080A799E
 	.align 2, 0
-_080A7A2C: .4byte sub_080A5CC8
+_080A7A2C: .4byte gEngineEffectSpecialSummon_080A5CC8
 _080A7A30: .4byte gUnk_0201E4D0
 _080A7A34:
 	bl sub_08096B14
@@ -306318,7 +306318,7 @@ _080A7A34:
 	adds r1, r5, #0
 	adds r2, r4, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r3, _080A7A8C @ =gUnk_0201E4D0
 	ldrb r0, [r3, #8]
 	adds r1, r0, #1
@@ -306345,7 +306345,7 @@ _080A7A90:
 	movs r1, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	ldr r2, _080A7AB8 @ =gUnk_0201E4D0
 	movs r0, #1
 	ldrb r3, [r2, #0x13]
@@ -306373,8 +306373,8 @@ _080A7AC2:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080A7ACC
-sub_080A7ACC: @ 0x080A7ACC
+	thumb_func_start gEngineEffectSpecialSummon_080A7ACC
+gEngineEffectSpecialSummon_080A7ACC: @ 0x080A7ACC
 	push {r4, r5, r6, r7, lr}
 	adds r5, r0, #0
 	adds r4, r1, r2
@@ -306403,7 +306403,7 @@ sub_080A7ACC: @ 0x080A7ACC
 	beq _080A7B66
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_08034180
+	bl gEngineEffectSpecialSummonBoostATK_08034180
 	cmp r0, #0
 	bne _080A7B66
 	ldrb r0, [r7, #8]
@@ -306412,7 +306412,7 @@ sub_080A7ACC: @ 0x080A7ACC
 	ldrb r7, [r7]
 	lsls r0, r7, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	bne _080A7B42
 	adds r0, r5, #0
@@ -306643,7 +306643,7 @@ _080A7CBC:
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x46
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldrb r4, [r6, #0x13]
 	lsrs r0, r4, #1
 	movs r3, #1
@@ -306689,19 +306689,19 @@ _080A7D10:
 	ldr r1, [r4]
 	lsls r1, r1, #9
 	lsrs r1, r1, #0x11
-	ldr r2, _080A7D38 @ =sub_080A7ACC
+	ldr r2, _080A7D38 @ =gEngineEffectSpecialSummon_080A7ACC
 	adds r0, r3, #0
 	bl gEngineEffectSpecialSummonGraveyard_080B70AC
 	b _080A7EF4
 	.align 2, 0
 _080A7D34: .4byte gUnk_0201E2A0
-_080A7D38: .4byte sub_080A7ACC
+_080A7D38: .4byte gEngineEffectSpecialSummon_080A7ACC
 _080A7D3C:
-	ldr r0, _080A7D44 @ =sub_080A7ACC
+	ldr r0, _080A7D44 @ =gEngineEffectSpecialSummon_080A7ACC
 	bl sub_080969C4
 	b _080A7EF4
 	.align 2, 0
-_080A7D44: .4byte sub_080A7ACC
+_080A7D44: .4byte gEngineEffectSpecialSummon_080A7ACC
 _080A7D48:
 	bl sub_08096B14
 	cmp r0, #0
@@ -306907,7 +306907,7 @@ _080A7EB8:
 	lsls r0, r0, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r2, #0
-	bl sub_08047A38
+	bl gEngineEffectBoostATKBoostDEF_08047A38
 _080A7EEC:
 	ldr r0, [r4]
 	cmp r0, #0
@@ -307078,7 +307078,7 @@ _080A8030: .4byte 0xFFFF803F
 _080A8034: .4byte gUnk_0201E2A0
 _080A8038:
 	ldr r0, _080A8060 @ =0x00000123
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 _080A803E:
 	ldr r2, _080A8064 @ =gUnk_0201E4D0
 	movs r0, #0
@@ -307128,7 +307128,7 @@ _080A808C:
 _080A8098:
 	strb r0, [r4, #0x14]
 _080A809A:
-	bl sub_080A5F7C
+	bl gEngineEffectSpecialSummonDiscard_080A5F7C
 _080A809E:
 	add sp, #0x18
 	pop {r4, r5}
@@ -307243,11 +307243,11 @@ _080A8154:
 	adds r2, r0, #0
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_0803B230
+	bl gEngineEffectSpecialSummonRitualSummon_0803B230
 	cmp r0, #0
 	beq _080A8194
 	adds r0, r5, #0
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	bne _080A81E8
 	adds r0, r5, #0
@@ -307287,11 +307287,11 @@ _080A81A4:
 	adds r2, r0, #0
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_0803B230
+	bl gEngineEffectSpecialSummonRitualSummon_0803B230
 	cmp r0, #0
 	beq _080A81EE
 	adds r0, r5, #0
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	bne _080A81E8
 	adds r0, r5, #0
@@ -307313,8 +307313,8 @@ _080A81F0:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080A81FC
-sub_080A81FC: @ 0x080A81FC
+	thumb_func_start gEngineEffectSpecialSummonDiscard_080A81FC
+gEngineEffectSpecialSummonDiscard_080A81FC: @ 0x080A81FC
 	push {r4, r5, lr}
 	ldr r2, _080A8210 @ =gUnk_0201E4D0
 	movs r0, #2
@@ -307322,7 +307322,7 @@ sub_080A81FC: @ 0x080A81FC
 	ands r0, r1
 	cmp r0, #0
 	bne _080A8214
-	bl sub_080A5F7C
+	bl gEngineEffectSpecialSummonDiscard_080A5F7C
 	b _080A8396
 	.align 2, 0
 _080A8210: .4byte gUnk_0201E4D0
@@ -307360,7 +307360,7 @@ _080A8250:
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x3a
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 _080A8262:
 	ldr r1, _080A828C @ =gUnk_0201E2A0
 	ldr r2, _080A8288 @ =gUnk_0201E4D0
@@ -307490,13 +307490,13 @@ _080A835E:
 	lsrs r1, r2, #8
 	movs r2, #0
 	movs r3, #0
-	bl sub_08047E20
+	bl gEngineEffectBoostATKBoostDEF_08047E20
 	ldrb r0, [r4, #0xe]
 	ldrh r3, [r4, #0xe]
 	lsrs r1, r3, #8
 	movs r2, #0
 	movs r3, #0
-	bl sub_08047E20
+	bl gEngineEffectBoostATKBoostDEF_08047E20
 	bl sub_0804A870
 	movs r0, #0
 	strb r0, [r4, #8]
@@ -307513,8 +307513,8 @@ _080A8396:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080A839C
-sub_080A839C: @ 0x080A839C
+	thumb_func_start gEngineEffectSpecialSummonChangePosition_080A839C
+gEngineEffectSpecialSummonChangePosition_080A839C: @ 0x080A839C
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r4, r1, r2
@@ -307625,8 +307625,8 @@ _080A8472:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080A8478
-sub_080A8478: @ 0x080A8478
+	thumb_func_start gEngineEffectSpecialSummonSearch_080A8478
+gEngineEffectSpecialSummonSearch_080A8478: @ 0x080A8478
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r4, r1, r2
@@ -307712,7 +307712,7 @@ gEngineEffectSpecialSummonSendToGY_080A84E0: @ 0x080A84E0
 	cmp r0, #0
 	bne _080A854C
 	adds r0, r4, #0
-	bl sub_08033610
+	bl gEngineEffectSpecialSummon_08033610
 	cmp r0, #0
 	bne _080A8572
 	ldrb r6, [r6]
@@ -307781,7 +307781,7 @@ _080A85A0:
 	adds r0, r4, #0
 	adds r1, r7, #0
 	mov r2, r8
-	bl sub_080A839C
+	bl gEngineEffectSpecialSummonChangePosition_080A839C
 	b _080A85C6
 _080A85AC:
 	adds r0, r4, #0
@@ -307793,7 +307793,7 @@ _080A85B8:
 	adds r0, r4, #0
 	adds r1, r7, #0
 	mov r2, r8
-	bl sub_080A8478
+	bl gEngineEffectSpecialSummonSearch_080A8478
 	b _080A85C6
 _080A85C4:
 	movs r0, #0
@@ -307850,7 +307850,7 @@ _080A862C:
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0x3a
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 _080A863E:
 	ldr r1, _080A8668 @ =gUnk_0201E2A0
 	ldr r2, _080A8664 @ =gUnk_0201E4D0
@@ -308024,7 +308024,7 @@ _080A8780:
 _080A8798:
 	mov r0, sp
 	adds r1, r5, #0
-	bl sub_08047EF0
+	bl gEngineEffectBoostATKBoostDEF_08047EF0
 	ldr r3, _080A87D8 @ =gUnk_0201E4D0
 	movs r0, #0
 	strb r0, [r3, #8]
@@ -308150,7 +308150,7 @@ _080A887C:
 	movs r1, #0x72
 	bl sub_0801F2C4
 	mov r0, sp
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 	b _080A88B2
 _080A8898:
 	ldr r0, _080A88A4 @ =gUnk_0201C4E0
@@ -308319,7 +308319,7 @@ _080A89D4:
 	ands r0, r1
 	strb r0, [r5, #0x14]
 _080A89E2:
-	bl sub_080A5F7C
+	bl gEngineEffectSpecialSummonDiscard_080A5F7C
 _080A89E6:
 	add sp, #0x100
 	pop {r3, r4, r5}
@@ -308418,7 +308418,7 @@ _080A8A8C:
 	movs r1, #0xfa
 	bl sub_0801F2C4
 	mov r0, sp
-	bl sub_080933B4
+	bl gEngineEffectSpecialSummon_080933B4
 	b _080A8B3A
 	.align 2, 0
 _080A8AA4: .4byte 0x000019B2 @ Ancient Gear Castle
@@ -308470,7 +308470,7 @@ _080A8AEC:
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
 	mov r1, sp
-	bl sub_08093390
+	bl gEngineEffectSpecialSummon_08093390
 	ldr r1, _080A8B2C @ =gUnk_0201E2A0
 	ldrb r6, [r6]
 	lsls r0, r6, #0x1f
@@ -308606,7 +308606,7 @@ _080A8C12:
 	.align 2, 0
 _080A8C20: .4byte 0x000019B2 @ Ancient Gear Castle
 _080A8C24:
-	bl sub_080A5F7C
+	bl gEngineEffectSpecialSummonDiscard_080A5F7C
 _080A8C28:
 	add sp, #0x100
 	pop {r4, r5, r6, r7}
@@ -309000,7 +309000,7 @@ _080A8E86:
 	subs r0, #3
 	cmp r2, r0
 	blt _080A8F84
-	bl sub_080A81FC
+	bl gEngineEffectSpecialSummonDiscard_080A81FC
 	b _080A8FB0
 	.align 2, 0
 _080A8EA4: .4byte 0x000019A4 @ Hamon, Lord of Striking Thunder
@@ -309059,37 +309059,37 @@ _080A8EF8:
 	.align 2, 0
 _080A8F08: .4byte 0x000019F8 @ Helios Tris Megiste
 _080A8F0C:
-	bl sub_080A6508
+	bl gEngineEffectSpecialSummonGraveyard_080A6508
 	b _080A8FB0
 _080A8F12:
-	bl sub_080A6B38
+	bl gEngineEffectSpecialSummonGraveyard_080A6B38
 	b _080A8FB0
 _080A8F18:
-	bl sub_080A6630
+	bl gEngineEffectSpecialSummonDiscard_080A6630
 	b _080A8FB0
 _080A8F1E:
-	bl sub_080A7064
+	bl gEngineEffectSpecialSummonDiscard_080A7064
 	b _080A8FB0
 _080A8F24:
-	bl sub_080A7084
+	bl gEngineEffectSpecialSummonDiscard_080A7084
 	b _080A8FB0
 _080A8F2A:
-	bl sub_080A6CC8
+	bl gEngineEffectGraveyardDraw_080A6CC8
 	b _080A8FB0
 _080A8F30:
-	bl sub_080A6E74
+	bl gEngineEffectSpecialSummonGraveyard_080A6E74
 	b _080A8FB0
 _080A8F36:
 	bl gEngineEffectSpecialSummonGraveyard_080A71E4
 	b _080A8FB0
 _080A8F3C:
-	bl sub_080A7650
+	bl gEngineEffectSpecialSummonDiscard_080A7650
 	b _080A8FB0
 _080A8F42:
-	bl sub_080A7788
+	bl gEngineEffectSpecialSummonDiscard_080A7788
 	b _080A8FB0
 _080A8F48:
-	bl sub_080A78DC
+	bl gEngineEffectSpecialSummonGraveyard_080A78DC
 	b _080A8FB0
 _080A8F4E:
 	bl gEngineEffectSpecialSummonFusion_080A7B78
@@ -309098,25 +309098,25 @@ _080A8F54:
 	bl gEngineEffectChangePosition_080A7F4C
 	b _080A8FB0
 _080A8F5A:
-	bl sub_080A672C
+	bl gEngineEffectSpecialSummonNegate_080A672C
 	b _080A8FB0
 _080A8F60:
-	bl sub_080A70AC
+	bl gEngineEffectSpecialSummonDiscard_080A70AC
 	b _080A8FB0
 _080A8F66:
 	bl gEngineEffectSpecialSummonFusion_080A689C
 	b _080A8FB0
 _080A8F6C:
-	bl sub_080A6A20
+	bl gEngineEffectSpecialSummonBoostATK_080A6A20
 	b _080A8FB0
 _080A8F72:
-	bl sub_080A70D8
+	bl gEngineEffectSpecialSummonBanish_080A70D8
 	b _080A8FB0
 _080A8F78:
 	bl gEngineEffectSpecialSummonSendToGY_080A85D0
 	b _080A8FB0
 _080A8F7E:
-	bl sub_080A6C8C
+	bl gEngineEffectSpecialSummonDiscard_080A6C8C
 	b _080A8FB0
 _080A8F84:
 	ldr r0, [r4]
@@ -309137,7 +309137,7 @@ _080A8F98:
 	bl gEngineEffectBoostATKTribute_080A89F8
 	b _080A8FB0
 _080A8FAC:
-	bl sub_080A5F7C
+	bl gEngineEffectSpecialSummonDiscard_080A5F7C
 _080A8FB0:
 	adds r3, r0, #0
 	cmp r3, #0
@@ -309151,7 +309151,7 @@ _080A8FB0:
 	movs r1, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 _080A8FCC:
 	movs r0, #1
 	b _080A9126
@@ -309180,7 +309180,7 @@ _080A8FE2:
 	eors r5, r3
 _080A8FF8:
 	adds r0, r5, #0
-	bl sub_08033634
+	bl gEngineEffectSpecialSummon_08033634
 	mov r8, r0
 	movs r6, #0
 	adds r1, r4, #0
@@ -309216,7 +309216,7 @@ _080A9032:
 	movs r1, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0801EC9C
+	bl gEngineEffectSpecialSummon_0801EC9C
 	b _080A9098
 	.align 2, 0
 _080A9048: .4byte gUnk_0201E4D0
@@ -309237,7 +309237,7 @@ _080A9050:
 	ldrb r2, [r2, #8]
 	str r2, [sp]
 	mov r2, r8
-	bl sub_080ABE54
+	bl gEngineEffectSpecialSummonDamage_080ABE54
 	b _080A9098
 	.align 2, 0
 _080A9074: .4byte gUnk_0201E4D0
@@ -309286,7 +309286,7 @@ _080A90C6:
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	subs r0, r5, r0
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	bgt _080A90D8
 	b _080A8FCC
@@ -309303,7 +309303,7 @@ _080A90EA:
 	ldrb r3, [r4]
 	lsls r0, r3, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_08033634
+	bl gEngineEffectSpecialSummon_08033634
 	ldrb r1, [r4]
 	lsls r2, r1, #0x1f
 	lsls r0, r0, #0x10
@@ -309904,7 +309904,7 @@ _080A9558:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	adds r2, r7, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	ldr r4, _080A9608 @ =gUnk_0201E4D0
 	ldrb r3, [r4, #0x13]
 	lsrs r0, r3, #1
@@ -310051,7 +310051,7 @@ _080A96EC: .4byte 0x00001D08
 _080A96F0: .4byte 0x00001CE8
 _080A96F4: .4byte gUnk_0201E2A0
 _080A96F8:
-	bl sub_0804F34C
+	bl gEngineEffectNegateDestroy_0804F34C
 	cmp r0, #0
 	beq _080A9702
 	b _080A94BA
@@ -310183,7 +310183,7 @@ _080A97A6:
 	movs r0, #0
 	str r0, [sp, #4]
 	adds r0, r4, #0
-	bl sub_080B1400
+	bl gEngineEffectSpecialSummonDiscard_080B1400
 	ldr r1, _080A97E8 @ =gUnk_0201C4E0
 	movs r6, #0xea
 	lsls r6, r6, #5
@@ -310200,7 +310200,7 @@ _080A97EC:
 	lsls r2, r2, #0x1a
 	lsrs r2, r2, #0x1f
 	movs r0, #0xf7
-	bl sub_080934C4
+	bl gEngineEffectSpecialSummon_080934C4
 	bl _080AA0D2
 _080A9800:
 	mov r5, r8
@@ -310566,14 +310566,14 @@ _080A9ABA:
 	lsrs r0, r0, #0x18
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x18
-	bl sub_0803A96C
+	bl gEngineEffectSpecialSummonBoostATK_0803A96C
 	adds r4, r0, #0
 	ldr r1, [sp, #0xc]
 	lsls r0, r1, #0x18
 	lsrs r0, r0, #0x18
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x18
-	bl sub_0803A96C
+	bl gEngineEffectSpecialSummonBoostATK_0803A96C
 	adds r4, r4, r0
 	mov r6, r8
 	ldrb r1, [r6]
@@ -310601,7 +310601,7 @@ _080A9B00:
 	lsrs r0, r0, #0x18
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x18
-	bl sub_0803A96C
+	bl gEngineEffectSpecialSummonBoostATK_0803A96C
 	adds r2, r0, #0
 	mov r0, r8
 	ldrb r1, [r0]
@@ -310809,7 +310809,7 @@ _080A9C9C:
 	ldr r4, [sp, #0x38]
 	ldrb r1, [r4]
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _080A9CAC:
 	ldr r5, [sp, #0x38]
 	adds r5, #1
@@ -310864,7 +310864,7 @@ _080A9CCA:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _080A9D18:
 	adds r4, #0x14
 	adds r6, #1
@@ -310888,7 +310888,7 @@ _080A9D2C:
 	adds r0, r4, #0
 	adds r1, r5, #0
 	movs r2, #1
-	bl sub_0804543C
+	bl gEngineEffectDestroyCounter_0804543C
 _080A9D44:
 	adds r5, #1
 	cmp r5, #9
@@ -311260,7 +311260,7 @@ _080A9FEC:
 	lsls r1, r5, #0x17
 	lsrs r1, r1, #0x17
 	mov r2, sb
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _080AA012:
 	mov r6, r8
 	ldrb r4, [r6]
@@ -311336,7 +311336,7 @@ _080AA08C:
 	lsls r1, r1, #0x1b
 	lsrs r1, r1, #0x1c
 	movs r2, #3
-	bl sub_0804543C
+	bl gEngineEffectDestroyCounter_0804543C
 	b _080AA0D2
 _080AA0B2:
 	mov r7, r8
@@ -311352,7 +311352,7 @@ _080AA0B2:
 	lsls r1, r1, #0x1b
 	lsrs r1, r1, #0x1c
 	movs r2, #2
-	bl sub_0804543C
+	bl gEngineEffectDestroyCounter_0804543C
 _080AA0D2:
 	ldr r3, _080AA108 @ =gUnk_0201E4D0
 	ldrb r5, [r3, #0x13]
@@ -311543,7 +311543,7 @@ _080AA22C:
 	ldr r0, [r4]
 	lsls r0, r0, #9
 	lsrs r0, r0, #0x11
-	bl sub_0804BA58
+	bl gEngineEffectSpecialSummon_0804BA58
 	rsbs r1, r0, #0
 	orrs r1, r0
 	lsrs r5, r1, #0x1f
@@ -311633,7 +311633,7 @@ _080AA2F6:
 	lsrs r3, r3, #0x11
 	adds r0, r6, #0
 	adds r1, r7, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 	b _080AA768
 	.align 2, 0
 _080AA308: .4byte 0x00001255 @ Goblin Fan (None)
@@ -311802,7 +311802,7 @@ _080AA402:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _080AA45A:
 	adds r6, #0x14
 	adds r4, #1
@@ -311815,7 +311815,7 @@ _080AA45A:
 	lsls r1, r1, #0x1b
 	lsrs r1, r1, #0x1c
 	movs r2, #5
-	bl sub_0803B230
+	bl gEngineEffectSpecialSummonRitualSummon_0803B230
 	cmp r0, #0
 	beq _080AA500
 	movs r0, #0
@@ -311877,7 +311877,7 @@ _080AA4AA:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	movs r2, #0
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	ldr r3, [sp, #4]
 _080AA4F0:
 	movs r0, #0x14
@@ -312106,7 +312106,7 @@ _080AA69E:
 	lsls r1, r3, #0x17
 	lsrs r1, r1, #0x17
 	mov r2, sb
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _080AA6C4:
 	mov r4, sl
 	ldr r0, [r4]
@@ -312134,7 +312134,7 @@ _080AA6C4:
 	lsrs r5, r0, #0x17
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_0805B1F0
+	bl gEngineEffectSpecialSummonSendToGY_0805B1F0
 	cmp r0, #0
 	beq _080AA72A
 	ldrb r1, [r6]
@@ -312155,7 +312155,7 @@ _080AA70E:
 	adds r0, r4, #0
 	adds r1, r5, #0
 	mov r2, sb
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _080AA72A:
 	ldr r3, _080AA764 @ =gUnk_0201E4D0
 	ldrb r5, [r3, #0x13]
@@ -312298,7 +312298,7 @@ _080AA7E6:
 	str r0, [sp]
 	str r5, [sp, #4]
 	adds r0, r4, #0
-	bl sub_080B1400
+	bl gEngineEffectSpecialSummonDiscard_080B1400
 	ldr r1, _080AA824 @ =gUnk_0201C4E0
 	movs r3, #0xea
 	lsls r3, r3, #5
@@ -312354,7 +312354,7 @@ _080AA874:
 	lsls r2, r7, #0x1a
 	lsrs r2, r2, #0x1f
 	movs r0, #0xf7
-	bl sub_080934C4
+	bl gEngineEffectSpecialSummon_080934C4
 	b _080AAEF4
 	.align 2, 0
 _080AA888: .4byte gUnk_0201C4E0
@@ -313201,7 +313201,7 @@ _080AAE58:
 	orrs r0, r1
 	lsls r1, r2, #0x17
 	lsrs r1, r1, #0x17
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _080AAEF4:
 	ldr r3, _080AAF2C @ =gUnk_0201E4D0
 	ldrb r5, [r3, #0x13]
@@ -313315,7 +313315,7 @@ _080AAFB0:
 	str r0, [sp]
 	str r4, [sp, #4]
 	adds r0, r6, #0
-	bl sub_080B1400
+	bl gEngineEffectSpecialSummonDiscard_080B1400
 	ldr r1, _080AAFF4 @ =gUnk_0201C4E0
 	movs r2, #0xea
 	lsls r2, r2, #5
@@ -313331,7 +313331,7 @@ _080AAFF8:
 	lsls r2, r2, #0x1a
 	lsrs r2, r2, #0x1f
 	movs r0, #0xf7
-	bl sub_080934C4
+	bl gEngineEffectSpecialSummon_080934C4
 _080AB006:
 	ldr r3, _080AB03C @ =gUnk_0201E4D0
 	ldrb r5, [r3, #0x13]
@@ -313856,7 +313856,7 @@ _080AB3F0:
 	cmp r0, #0
 	beq _080AB408
 	ldr r0, [sp]
-	bl sub_0804BA58
+	bl gEngineEffectSpecialSummon_0804BA58
 	movs r3, #8
 	str r3, [sp, #8]
 	cmp r0, #0
@@ -313951,7 +313951,7 @@ _080AB498:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	mov r2, sb
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _080AB4C4:
 	adds r7, #0x14
 	adds r5, #1
@@ -313988,7 +313988,7 @@ _080AB4FA:
 	lsrs r0, r0, #0x1f
 	lsls r1, r1, #0x1b
 	lsrs r1, r1, #0x1c
-	bl sub_0803ABF0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	cmp r0, #2
@@ -314056,7 +314056,7 @@ _080AB532:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	mov r2, sb
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	cmp r0, #0
 	beq _080AB5A2
 	adds r0, r4, #0
@@ -314081,7 +314081,7 @@ _080AB5B2:
 	lsls r1, r1, #0x1b
 	lsrs r1, r1, #0x1c
 	movs r2, #0
-	bl sub_08036658
+	bl gEngineEffectSpecialSummonDestroy_08036658
 	cmp r0, #0
 	bne _080AB668
 	ldr r4, _080AB6C4 @ =gUnk_0201E4D0
@@ -314155,7 +314155,7 @@ _080AB60E:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	mov r2, sb
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	ldr r3, [sp, #0x14]
 _080AB65A:
 	adds r3, #0x14
@@ -314243,7 +314243,7 @@ _080AB6F2:
 	orrs r1, r0
 	adds r0, r2, #0
 	mov r2, sb
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _080AB716:
 	adds r5, #1
 	cmp r5, #1
@@ -314336,7 +314336,7 @@ _080AB7AA:
 	mov r2, sb
 	lsls r1, r2, #0x17
 	lsrs r1, r1, #0x17
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _080AB7D6:
 	ldr r4, _080AB830 @ =gUnk_0201E4D0
 	ldrb r3, [r4]
@@ -314459,7 +314459,7 @@ _080AB886:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	mov r2, sb
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 	ldr r3, [sp, #0x14]
 _080AB8D2:
 	adds r3, #0x14
@@ -314521,7 +314521,7 @@ _080AB8F2:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	mov r2, sb
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _080AB94A:
 	adds r5, #0x14
 	adds r4, #1
@@ -314579,7 +314579,7 @@ _080AB964:
 	lsrs r1, r1, #0x1f
 	orrs r1, r2
 	mov r2, sb
-	bl sub_0804C910
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
 _080AB9BC:
 	adds r5, #0x14
 	adds r4, #1
@@ -314623,7 +314623,7 @@ _080AB9E8:
 	lsrs r1, r1, #0x1c
 	movs r2, #0
 	movs r3, #0
-	bl sub_0804794C
+	bl gEngineEffectBoostATKBoostDEF_0804794C
 	bl sub_0804A870
 _080ABA1A:
 	ldr r1, _080ABA68 @ =gUnk_0201E4D0
@@ -315051,7 +315051,7 @@ gEngineEffectChangePosition_080ABD60: @ 0x080ABD60
 	mov sb, r1
 	adds r6, r2, #0
 	mov r8, r3
-	bl sub_08033654
+	bl gEngineEffectSpecialSummon_08033654
 	adds r4, r0, #0
 	cmp r4, #0
 	blt _080ABE24
@@ -315152,8 +315152,8 @@ _080ABE34: .4byte gUnk_0201E4D0
 _080ABE38: .4byte 0xFF8000FF
 _080ABE3C: .4byte 0xFFFFFE3F
 
-	thumb_func_start sub_080ABE40
-sub_080ABE40: @ 0x080ABE40
+	thumb_func_start gEngineEffectChangePosition_080ABE40
+gEngineEffectChangePosition_080ABE40: @ 0x080ABE40
 	push {lr}
 	sub sp, #4
 	str r3, [sp]
@@ -315164,8 +315164,8 @@ sub_080ABE40: @ 0x080ABE40
 	bx r0
 	.align 2, 0
 
-	thumb_func_start sub_080ABE54
-sub_080ABE54: @ 0x080ABE54
+	thumb_func_start gEngineEffectSpecialSummonDamage_080ABE54
+gEngineEffectSpecialSummonDamage_080ABE54: @ 0x080ABE54
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
@@ -315232,7 +315232,7 @@ _080ABE94:
 	strh r0, [r4, #6]
 	movs r1, #4
 	strh r1, [r4, #4]
-	bl sub_0804BA58
+	bl gEngineEffectSpecialSummon_0804BA58
 	cmp r0, #0
 	beq _080ABEE6
 	movs r0, #1
@@ -315259,8 +315259,8 @@ _080ABF08: .4byte gUnk_0201C4E0
 _080ABF0C: .4byte 0xFF8000FF
 _080ABF10: .4byte 0xFFFFFE3F
 
-	thumb_func_start sub_080ABF14
-sub_080ABF14: @ 0x080ABF14
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_080ABF14
+gEngineEffectSpecialSummonBoostATK_080ABF14: @ 0x080ABF14
 	push {r4, r5, r6, r7, lr}
 	adds r5, r0, #0
 	adds r3, r1, #0
@@ -315301,8 +315301,8 @@ _080ABF5E:
 	pop {r0}
 	bx r0
 
-	thumb_func_start sub_080ABF64
-sub_080ABF64: @ 0x080ABF64
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_080ABF64
+gEngineEffectSpecialSummonBoostATK_080ABF64: @ 0x080ABF64
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -315384,8 +315384,8 @@ _080ABFFA:
 	pop {r0}
 	bx r0
 
-	thumb_func_start sub_080AC004
-sub_080AC004: @ 0x080AC004
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_080AC004
+gEngineEffectSpecialSummonBoostATK_080AC004: @ 0x080AC004
 	push {lr}
 	adds r3, r0, #0
 	ldr r0, _080AC018 @ =gUnk_0201AFE0
@@ -315393,20 +315393,20 @@ sub_080AC004: @ 0x080AC004
 	cmp r0, r3
 	bne _080AC01C
 	adds r0, r3, #0
-	bl sub_080ABF14
+	bl gEngineEffectSpecialSummonBoostATK_080ABF14
 	b _080AC022
 	.align 2, 0
 _080AC018: .4byte gUnk_0201AFE0
 _080AC01C:
 	adds r0, r3, #0
-	bl sub_080ABF64
+	bl gEngineEffectSpecialSummonBoostATK_080ABF64
 _080AC022:
 	pop {r0}
 	bx r0
 	.align 2, 0
 
-	thumb_func_start sub_080AC028
-sub_080AC028: @ 0x080AC028
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_080AC028
+gEngineEffectSpecialSummonBoostATK_080AC028: @ 0x080AC028
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -315461,7 +315461,7 @@ _080AC08E:
 	adds r0, r4, #0
 	adds r1, r5, #0
 	mov r2, sp
-	bl sub_080AC004
+	bl gEngineEffectSpecialSummonBoostATK_080AC004
 	ldr r0, [sp, #0x14]
 	cmp r0, r7
 	ble _080AC0A0
@@ -315503,7 +315503,7 @@ gEngineEffectDamageDiscard_080AC0BC: @ 0x080AC0BC
 	adds r0, r6, #0
 	adds r1, r4, #0
 	movs r2, #0
-	bl sub_080AC028
+	bl gEngineEffectSpecialSummonBoostATK_080AC028
 	mov sb, r0
 	movs r0, #0
 	str r0, [sp]
@@ -315511,7 +315511,7 @@ gEngineEffectDamageDiscard_080AC0BC: @ 0x080AC0BC
 	adds r1, r5, #0
 	adds r2, r4, #0
 	movs r3, #1
-	bl sub_080AEF1C
+	bl gEngineEffectSpecialSummonBoostATK_080AEF1C
 	str r0, [sp, #4]
 	mov r1, r8
 	str r1, [sp]
@@ -315519,7 +315519,7 @@ gEngineEffectDamageDiscard_080AC0BC: @ 0x080AC0BC
 	adds r1, r5, #0
 	adds r2, r4, #0
 	movs r3, #0
-	bl sub_080AEF1C
+	bl gEngineEffectSpecialSummonBoostATK_080AEF1C
 	str r0, [sp, #8]
 	movs r0, #0x64
 	str r0, [sp, #0xc]
@@ -315536,7 +315536,7 @@ gEngineEffectDamageDiscard_080AC0BC: @ 0x080AC0BC
 	adds r4, r4, r1
 	adds r0, r5, #0
 	adds r1, r5, #0
-	bl sub_080AF374
+	bl gEngineEffectSpecialSummonBoostATK_080AF374
 	ldr r1, [r4]
 	cmp r1, r0
 	bgt _080AC140
@@ -315948,7 +315948,7 @@ _080AC424: .4byte gUnk_0201C510
 _080AC428:
 	ldr r1, _080AC438 @ =0x0000146F (Cathedral of Nobles)
 	adds r0, r6, #0
-	bl sub_08032C94
+	bl gEngineEffectSpecialSummonBoostATK_08032C94
 _080AC430:
 	cmp r0, #0
 	bne _080AC454
@@ -315965,7 +315965,7 @@ _080AC442:
 _080AC448:
 	adds r0, r6, #0
 	movs r1, #7
-	bl sub_08032EF0
+	bl gEngineEffectSpecialSummonChangePosition_08032EF0
 	cmp r0, #0
 	bne _080AC374
 _080AC454:
@@ -316095,8 +316095,8 @@ _080AC53A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080AC540
-sub_080AC540: @ 0x080AC540
+	thumb_func_start gEngineEffectSpecialSummonDiscard_080AC540
+gEngineEffectSpecialSummonDiscard_080AC540: @ 0x080AC540
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -316668,14 +316668,14 @@ _080AC8D8:
 	b _080ACBA4
 _080AC8E0:
 	mov r0, r8
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #1
 	bgt _080AC8EC
 	b _080ACBA4
 _080AC8EC:
 	ldr r1, _080AC8F8 @ =0x000012C5 (Multiply)
 	mov r0, r8
-	bl sub_08032F7C
+	bl gEngineEffectSpecialSummonBoostATK_08032F7C
 	b _080ACB6A
 	.align 2, 0
 _080AC8F8: .4byte 0x000012C5 @ Multiply
@@ -316773,7 +316773,7 @@ _080AC9A2:
 _080AC9A4:
 	ldr r1, _080AC9B8 @ =0x0000146F (Cathedral of Nobles)
 	mov r0, r8
-	bl sub_08032C94
+	bl gEngineEffectSpecialSummonBoostATK_08032C94
 	cmp r0, #0
 	beq _080AC9B2
 	b _080ACBA4
@@ -316785,7 +316785,7 @@ _080AC9B8: .4byte 0x0000146F @ Cathedral of Nobles
 _080AC9BC:
 	ldr r1, _080AC9C8 @ =0x0000142A (Creature Swap)
 	mov r0, r8
-	bl sub_080AF914
+	bl gEngineEffectBoostATKSpecialSummon_080AF914
 	b _080ACB6A
 	.align 2, 0
 _080AC9C8: .4byte 0x0000142A @ Creature Swap
@@ -316819,7 +316819,7 @@ _080AC9EC:
 	beq _080ACA0E
 	mov r0, r8
 	adds r1, r7, #0
-	bl sub_0803149C
+	bl gEngineEffectDestroyCounter_0803149C
 	cmp r0, r4
 	bge _080ACA0E
 	b _080AC90A
@@ -316839,7 +316839,7 @@ _080ACA20:
 	b _080ACBA4
 _080ACA28:
 	mov r0, r8
-	bl sub_080AF9C0
+	bl gEngineEffectSpecialSummonDestroy_080AF9C0
 	b _080ACB6A
 _080ACA30:
 	mov r1, sb
@@ -316860,7 +316860,7 @@ _080ACA48:
 	bl sub_080EEDF8
 	adds r1, r0, #0
 	mov r0, r8
-	bl sub_08032EF0
+	bl gEngineEffectSpecialSummonChangePosition_08032EF0
 _080ACA56:
 	adds r4, r0, #0
 	movs r0, #1
@@ -316912,7 +316912,7 @@ _080ACAA0:
 	str r0, [sp]
 	mov r0, r8
 	movs r3, #1
-	bl sub_080AF070
+	bl gEngineEffectSpecialSummonBoostATK_080AF070
 	ldr r1, _080ACAC4 @ =0xFFFFFBB3
 	adds r0, r0, r1
 	ldr r1, _080ACAC8 @ =0x0000031E
@@ -316928,7 +316928,7 @@ _080ACACC:
 	bne _080ACBA4
 	ldr r1, _080ACADC @ =0x00000FA7 (Blue-Eyes White Dragon)
 	mov r0, r8
-	bl sub_08037A2C
+	bl gEngineEffectBoostATKBoostDEF_08037A2C
 	b _080ACB6A
 	.align 2, 0
 _080ACADC: .4byte 0x00000FA7 @ Blue-Eyes White Dragon
@@ -316939,7 +316939,7 @@ _080ACAE0:
 	movs r1, #0xc1
 	lsls r1, r1, #5
 	mov r0, r8
-	bl sub_08037A2C
+	bl gEngineEffectBoostATKBoostDEF_08037A2C
 	b _080ACB6A
 _080ACAF2:
 	mov r0, sb
@@ -316970,7 +316970,7 @@ _080ACB12:
 _080ACB26:
 	mov r0, r8
 	movs r1, #7
-	bl sub_08032EF0
+	bl gEngineEffectSpecialSummonChangePosition_08032EF0
 	cmp r0, #0
 	beq _080ACB34
 	b _080AC90A
@@ -316984,7 +316984,7 @@ _080ACB34:
 	beq _080ACBA4
 	ldr r1, _080ACB54 @ =0x0000198E (Inferno Reckless Summon)
 	mov r0, r8
-	bl sub_080AF914
+	bl gEngineEffectBoostATKSpecialSummon_080AF914
 	b _080ACB6A
 	.align 2, 0
 _080ACB50: .4byte 0x00001357 @ DNA Surgery
@@ -317013,12 +317013,12 @@ _080ACB78:
 	ldr r4, _080ACBA0 @ =0x00001784 (Kozaky)
 	movs r0, #0
 	adds r1, r4, #0
-	bl sub_08032CCC
+	bl gEngineEffectSpecialSummonBoostATK_08032CCC
 	cmp r0, #0
 	bne _080ACB9C
 	movs r0, #1
 	adds r1, r4, #0
-	bl sub_08032CCC
+	bl gEngineEffectSpecialSummonBoostATK_08032CCC
 	cmp r0, #0
 	bne _080ACB9C
 	movs r5, #1
@@ -317034,7 +317034,7 @@ _080ACBA4:
 	beq _080ACBC6
 	ldr r1, _080ACBEC @ =0x0000142A (Creature Swap)
 	mov r0, r8
-	bl sub_080AF914
+	bl gEngineEffectBoostATKSpecialSummon_080AF914
 	cmp r0, #0
 	beq _080ACBC6
 	adds r0, r5, #0
@@ -317209,7 +317209,7 @@ _080ACC98: .4byte 0x00001986 @ Queen of Fate - Eternia (None)
 _080ACC9C:
 	ldr r1, _080ACCAC @ =0x00001645 (Exodia Necross)
 	adds r0, r6, #0
-	bl sub_080AF8CC
+	bl gEngineEffectBoostATKBoostDEF_080AF8CC
 	cmp r0, #0
 	beq _080ACCAA
 	b _080AD264
@@ -317320,7 +317320,7 @@ _080ACD70: .4byte 0x000014F0 @ Reversal of Graves
 _080ACD74: .4byte 0x0000179A @ Night Assailant
 _080ACD78:
 	adds r0, r6, #0
-	bl sub_080AEDD4
+	bl gEngineEffectSpecialSummonBoostATK_080AEDD4
 	cmp r0, #0
 	ble _080ACD98
 _080ACD82:
@@ -317605,7 +317605,7 @@ _080ACF60: .4byte 0x00001918 @ Des Frog
 _080ACF64:
 	ldr r1, _080ACF78 @ =0x000012C5 (Multiply)
 	adds r0, r6, #0
-	bl sub_080AF914
+	bl gEngineEffectBoostATKSpecialSummon_080AF914
 	movs r1, #0
 	cmp r0, #0
 	beq _080ACF74
@@ -317640,7 +317640,7 @@ _080ACF92:
 	bne _080AD04A
 	adds r0, r5, #0
 	adds r1, r6, #0
-	bl sub_08037A2C
+	bl gEngineEffectBoostATKBoostDEF_08037A2C
 	adds r4, r0, #0
 	adds r0, r5, #0
 	adds r1, r6, #0
@@ -317661,7 +317661,7 @@ _080ACFC0:
 	bne _080AD04A
 	adds r0, r5, #0
 	adds r1, r6, #0
-	bl sub_08037A2C
+	bl gEngineEffectBoostATKBoostDEF_08037A2C
 	adds r4, r0, #0
 	adds r0, r5, #0
 	adds r1, r6, #0
@@ -317707,7 +317707,7 @@ _080AD022:
 	bne _080AD04A
 	adds r0, r6, #0
 	adds r1, r5, #0
-	bl sub_08037A2C
+	bl gEngineEffectBoostATKBoostDEF_08037A2C
 	adds r4, r0, #0
 	adds r0, r6, #0
 	adds r1, r5, #0
@@ -317735,12 +317735,12 @@ _080AD062:
 _080AD064: .4byte 0x0000140E @ Gravity Bind
 _080AD068:
 	adds r0, r6, #0
-	bl sub_080AEDD4
+	bl gEngineEffectSpecialSummonBoostATK_080AEDD4
 	b _080AD216
 _080AD070:
 	ldr r1, _080AD084 @ =0x0000146F (Cathedral of Nobles)
 	adds r0, r6, #0
-	bl sub_08032C94
+	bl gEngineEffectSpecialSummonBoostATK_08032C94
 	movs r1, #0
 	cmp r0, #0
 	beq _080AD080
@@ -317785,7 +317785,7 @@ _080AD0C2:
 	movs r1, #0
 	movs r2, #1
 	movs r3, #1
-	bl sub_08033B18
+	bl gEngineEffectSpecialSummonChangePosition_08033B18
 	b _080AD200
 _080AD0D0:
 	adds r0, r6, #0
@@ -317804,7 +317804,7 @@ _080AD0E8:
 _080AD0EA:
 	ldr r1, _080AD0FC @ =0x0000142A (Creature Swap)
 	adds r0, r6, #0
-	bl sub_080AF914
+	bl gEngineEffectBoostATKSpecialSummon_080AF914
 	movs r1, #0
 	cmp r0, #0
 	beq _080AD0FA
@@ -317874,19 +317874,19 @@ _080AD16C: .4byte gUnk_0201C510
 _080AD170:
 	adds r0, r6, #0
 	adds r1, r4, #0
-	bl sub_08032F7C
+	bl gEngineEffectSpecialSummonBoostATK_08032F7C
 	cmp r0, #0
 	beq _080AD264
 	ldr r1, _080AD198 @ =0x0000180B (Red Gadget)
 	adds r0, r6, #0
-	bl sub_08037A2C
+	bl gEngineEffectBoostATKBoostDEF_08037A2C
 	cmp r0, #0
 	beq _080AD18A
 	b _080ACD82
 _080AD18A:
 	ldr r1, _080AD19C @ =0x0000180C (Yellow Gadget)
 	adds r0, r6, #0
-	bl sub_08037A2C
+	bl gEngineEffectBoostATKBoostDEF_08037A2C
 	cmp r0, #0
 	beq _080AD264
 	b _080ACD82
@@ -317913,7 +317913,7 @@ _080AD1B4:
 	cmp r0, #1
 	bgt _080AD256
 	adds r0, r6, #0
-	bl sub_080AEDD4
+	bl gEngineEffectSpecialSummonBoostATK_080AEDD4
 	cmp r0, #0
 	ble _080AD256
 	b _080AD254
@@ -317932,12 +317932,12 @@ _080AD1E8:
 	ldr r4, _080AD20C @ =0x00001784 (Kozaky)
 	movs r0, #0
 	adds r1, r4, #0
-	bl sub_08032CCC
+	bl gEngineEffectSpecialSummonBoostATK_08032CCC
 	cmp r0, #0
 	bne _080AD206
 	movs r0, #1
 	adds r1, r4, #0
-	bl sub_08032CCC
+	bl gEngineEffectSpecialSummonBoostATK_08032CCC
 _080AD200:
 	cmp r0, #0
 	bne _080AD206
@@ -317963,22 +317963,22 @@ _080AD222:
 	movs r4, #0
 	adds r0, r6, #0
 	adds r1, r5, #0
-	bl sub_08037A2C
+	bl gEngineEffectBoostATKBoostDEF_08037A2C
 	cmp r0, #0
 	bne _080AD256
 	adds r0, r6, #0
 	adds r1, r5, #0
-	bl sub_08032F7C
+	bl gEngineEffectSpecialSummonBoostATK_08032F7C
 	cmp r0, #0
 	bne _080AD256
 	ldr r1, _080AD25C @ =0x000019B5 (Attack Reflector Unit)
 	adds r0, r6, #0
-	bl sub_080AF914
+	bl gEngineEffectBoostATKSpecialSummon_080AF914
 	cmp r0, #0
 	bne _080AD256
 	ldr r1, _080AD260 @ =0x00001870 (The Light - Hex-Sealed Fusion)
 	adds r0, r6, #0
-	bl sub_08032F7C
+	bl gEngineEffectSpecialSummonBoostATK_08032F7C
 	cmp r0, #0
 	bne _080AD256
 _080AD254:
@@ -318280,8 +318280,8 @@ _080AD44C:
 _080AD44E:
 	bx lr
 
-	thumb_func_start sub_080AD450
-sub_080AD450: @ 0x080AD450
+	thumb_func_start gEngineEffectSpecialSummonTribute_080AD450
+gEngineEffectSpecialSummonTribute_080AD450: @ 0x080AD450
 	push {lr}
 	cmp r3, #0
 	bne _080AD45C
@@ -318293,8 +318293,8 @@ _080AD460:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080AD464
-sub_080AD464: @ 0x080AD464
+	thumb_func_start gEngineEffectSpecialSummonTribute_080AD464
+gEngineEffectSpecialSummonTribute_080AD464: @ 0x080AD464
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -318311,7 +318311,7 @@ _080AD478:
 	adds r1, r5, #0
 	adds r2, r4, #0
 	mov r3, r8
-	bl sub_080AD450
+	bl gEngineEffectSpecialSummonTribute_080AD450
 	cmp r0, #0
 	beq _080AD492
 	lsls r1, r5, #4
@@ -318334,23 +318334,23 @@ _080AD492:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080AD4AC
-sub_080AD4AC: @ 0x080AD4AC
+	thumb_func_start gEngineEffectSpecialSummonTribute_080AD4AC
+gEngineEffectSpecialSummonTribute_080AD4AC: @ 0x080AD4AC
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
-	bl sub_080AD464
+	bl gEngineEffectSpecialSummonTribute_080AD464
 	adds r2, r0, #0
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_080AD4C8
+	bl gEngineEffectDestroyTribute_080AD4C8
 	pop {r4, r5}
 	pop {r1}
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080AD4C8
-sub_080AD4C8: @ 0x080AD4C8
+	thumb_func_start gEngineEffectDestroyTribute_080AD4C8
+gEngineEffectDestroyTribute_080AD4C8: @ 0x080AD4C8
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r2, #0
@@ -318358,7 +318358,7 @@ sub_080AD4C8: @ 0x080AD4C8
 	subs r0, r0, r4
 	adds r1, r5, #0
 	movs r2, #0
-	bl sub_080B5348
+	bl gEngineEffectSpecialSummonBoostATK_080B5348
 	adds r1, r0, #0
 	cmp r1, #0
 	blt _080AD4E8
@@ -318410,7 +318410,7 @@ gEngineEffectTributeSpecialSummon_080AD510: @ 0x080AD510
 	movs r1, #1
 _080AD52A:
 	adds r0, r7, #0
-	bl sub_080AD464
+	bl gEngineEffectSpecialSummonTribute_080AD464
 	adds r5, r0, #0
 	cmp r4, #0
 	ble _080AD556
@@ -318439,7 +318439,7 @@ _080AD556:
 _080AD55E:
 	adds r0, r7, #0
 	adds r2, r5, #0
-	bl sub_080AD4C8
+	bl gEngineEffectDestroyTribute_080AD4C8
 	adds r4, r0, #0
 	mov r8, r4
 	movs r0, #1
@@ -318453,7 +318453,7 @@ _080AD55E:
 _080AD57A:
 	adds r0, r7, #0
 	adds r2, r5, #0
-	bl sub_080AD608
+	bl gEngineEffectDestroyTribute_080AD608
 	adds r4, r0, #0
 	cmp r4, r8
 	beq _080AD5D8
@@ -318510,23 +318510,23 @@ _080AD5DC:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080AD5EC
-sub_080AD5EC: @ 0x080AD5EC
+	thumb_func_start gEngineEffectSpecialSummonTribute_080AD5EC
+gEngineEffectSpecialSummonTribute_080AD5EC: @ 0x080AD5EC
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
-	bl sub_080AD464
+	bl gEngineEffectSpecialSummonTribute_080AD464
 	adds r2, r0, #0
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_080AD608
+	bl gEngineEffectDestroyTribute_080AD608
 	pop {r4, r5}
 	pop {r1}
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080AD608
-sub_080AD608: @ 0x080AD608
+	thumb_func_start gEngineEffectDestroyTribute_080AD608
+gEngineEffectDestroyTribute_080AD608: @ 0x080AD608
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r2, #0
@@ -318534,7 +318534,7 @@ sub_080AD608: @ 0x080AD608
 	subs r0, r0, r4
 	adds r1, r5, #0
 	movs r2, #0
-	bl sub_080B5348
+	bl gEngineEffectSpecialSummonBoostATK_080B5348
 	adds r1, r0, #0
 	cmp r1, #0
 	blt _080AD628
@@ -318680,8 +318680,8 @@ _080AD716:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080AD720
-sub_080AD720: @ 0x080AD720
+	thumb_func_start gEngineEffectSpecialSummonTribute_080AD720
+gEngineEffectSpecialSummonTribute_080AD720: @ 0x080AD720
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -318776,11 +318776,11 @@ _080AD7C8: .4byte 0x0000144D @ Fire Princess
 _080AD7CC:
 	adds r0, r5, #0
 	adds r1, r6, #0
-	bl sub_08037A2C
+	bl gEngineEffectBoostATKBoostDEF_08037A2C
 	adds r4, r0, #0
 	adds r0, r5, #0
 	adds r1, r6, #0
-	bl sub_08031A84
+	bl gEngineEffectBoostATKBoostDEF_08031A84
 	movs r1, #0
 	adds r4, r4, r0
 	cmp r4, #0
@@ -319446,10 +319446,10 @@ _080ADC40:
 	ldr r0, [r4, #4]
 	ldr r1, [r4, #0x20]
 	mov r2, sp
-	bl sub_080AC004
+	bl gEngineEffectSpecialSummonBoostATK_080AC004
 	ldr r0, [r4]
 	ldr r1, [r4, #0x1c]
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	ldr r3, _080ADC68 @ =0xFFFFFE70
 	adds r0, r0, r3
 	ldr r1, [sp, #0x18]
@@ -319509,7 +319509,7 @@ _080ADCC2:
 	movs r0, #1
 	mov r4, r8
 	subs r0, r0, r4
-	bl sub_08033B08
+	bl gEngineEffectSpecialSummonChangePosition_08033B08
 	movs r1, #0
 	cmp r0, #0
 	bgt _080ADCD4
@@ -319554,7 +319554,7 @@ _080ADD12:
 	lsrs r0, r0, #0x1f
 	lsls r1, r1, #0x1a
 	lsrs r1, r1, #0x1b
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	adds r7, r0, #0
 	movs r6, #0
 	movs r1, #1
@@ -319582,7 +319582,7 @@ _080ADD3E:
 	adds r1, r6, #0
 	adds r2, r4, #0
 	str r3, [sp, #0x48]
-	bl sub_080AC004
+	bl gEngineEffectSpecialSummonBoostATK_080AC004
 	ldrh r0, [r5, #6]
 	ldr r3, [sp, #0x48]
 	cmp r0, #0
@@ -319963,12 +319963,12 @@ _080AE004:
 	ldr r4, _080AE028 @ =0x00001784 (Kozaky)
 	movs r0, #0
 	adds r1, r4, #0
-	bl sub_08032CCC
+	bl gEngineEffectSpecialSummonBoostATK_08032CCC
 	cmp r0, #0
 	bne _080AE022
 	movs r0, #1
 	adds r1, r4, #0
-	bl sub_08032CCC
+	bl gEngineEffectSpecialSummonBoostATK_08032CCC
 	cmp r0, #0
 	bne _080AE022
 	movs r5, #1
@@ -320083,14 +320083,14 @@ _080AE06C:
 	ldr r4, _080AE10C @ =0x00000FBB (Exodia the Forbidden One)
 	adds r0, r6, #0
 	adds r1, r4, #0
-	bl sub_080AF8CC
+	bl gEngineEffectBoostATKBoostDEF_080AF8CC
 	cmp r0, #0
 	bne _080AE07C
 	b _080AE274
 _080AE07C:
 	ldr r1, _080AE110 @ =0x00001645 (Exodia Necross)
 	adds r0, r6, #0
-	bl sub_080AF8CC
+	bl gEngineEffectBoostATKBoostDEF_080AF8CC
 	cmp r0, #0
 	beq _080AE0E4
 	ldr r0, _080AE114 @ =0x00001315 (Last Will)
@@ -320953,7 +320953,7 @@ _080AE71C: .4byte gUnk_0201E500
 _080AE720:
 	ldr r1, _080AE748 @ =0x00001409 (Limiter Removal)
 	adds r0, r6, #0
-	bl sub_080AF914
+	bl gEngineEffectBoostATKSpecialSummon_080AF914
 	cmp r0, #0
 	beq _080AE754
 	ldr r1, _080AE74C @ =0x000018FC (Cyber Twin Dragon)
@@ -321062,12 +321062,12 @@ _080AE810:
 	ldr r4, _080AE838 @ =0x000012BE (Toon World)
 	adds r0, r6, #0
 	adds r1, r4, #0
-	bl sub_080AF8CC
+	bl gEngineEffectBoostATKBoostDEF_080AF8CC
 	cmp r0, #0
 	beq _080AE83C
 	adds r0, r6, #0
 	adds r1, r4, #0
-	bl sub_080AF914
+	bl gEngineEffectBoostATKSpecialSummon_080AF914
 	cmp r0, #0
 	beq _080AE82C
 	b _080AEA5A
@@ -321114,7 +321114,7 @@ _080AE870:
 _080AE87E:
 	ldr r1, _080AE8BC @ =0x00001645 (Exodia Necross)
 	adds r0, r6, #0
-	bl sub_080AF8CC
+	bl gEngineEffectBoostATKBoostDEF_080AF8CC
 	cmp r0, #0
 	beq _080AE898
 	ldr r0, _080AE8C0 @ =0x00000FBB (Exodia the Forbidden One)
@@ -321173,7 +321173,7 @@ _080AE904:
 	ldr r4, _080AE918 @ =0x0000179C (King of the Swamp)
 	adds r0, r6, #0
 	adds r1, r4, #0
-	bl sub_080AF914
+	bl gEngineEffectBoostATKSpecialSummon_080AF914
 	cmp r0, #0
 	beq _080AE914
 	b _080AEA5A
@@ -321200,7 +321200,7 @@ _080AE932:
 	subs r0, r3, r6
 	adds r1, r5, #0
 	movs r2, #1
-	bl sub_0803495C
+	bl gEngineEffectSpecialSummonPreventAttack_0803495C
 	cmp r0, #0
 	beq _080AE944
 	adds r4, #1
@@ -321214,7 +321214,7 @@ _080AE944:
 _080AE950:
 	ldr r1, _080AE9FC @ =0x00000FF8 (Red-Eyes B. Dragon)
 	adds r0, r6, #0
-	bl sub_08037A2C
+	bl gEngineEffectBoostATKBoostDEF_08037A2C
 	cmp r0, #0
 	beq _080AE96A
 	ldr r0, _080AEA00 @ =0x000017DD (Red-Eyes B. Chick)
@@ -321240,13 +321240,13 @@ _080AE978:
 _080AE986:
 	ldr r1, _080AEA0C @ =0x000019BC (Proto-Cyber Dragon)
 	adds r0, r6, #0
-	bl sub_080AF914
+	bl gEngineEffectBoostATKSpecialSummon_080AF914
 	cmp r0, #0
 	beq _080AE9AE
 	ldr r4, _080AEA10 @ =0x00001870 (The Light - Hex-Sealed Fusion)
 	adds r0, r6, #0
 	adds r1, r4, #0
-	bl sub_080AF914
+	bl gEngineEffectBoostATKSpecialSummon_080AF914
 	cmp r0, #0
 	bne _080AE9AE
 	adds r0, r4, #0
@@ -321376,7 +321376,7 @@ _080AEA96:
 	lsrs r4, r0, #0x13
 	adds r0, r6, #0
 	adds r1, r4, #0
-	bl sub_080AF914
+	bl gEngineEffectBoostATKSpecialSummon_080AF914
 	cmp r0, #0
 	bne _080AEAD2
 	adds r0, r4, #0
@@ -321434,7 +321434,7 @@ _080AEB18:
 	subs r0, r4, r6
 	adds r1, r5, #0
 	mov r2, sp
-	bl sub_080ABF64
+	bl gEngineEffectSpecialSummonBoostATK_080ABF64
 	ldr r0, [sp, #0x14]
 	cmp r8, r0
 	bge _080AEB2A
@@ -321627,8 +321627,8 @@ _080AEC7A:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080AEC8C
-sub_080AEC8C: @ 0x080AEC8C
+	thumb_func_start gEngineEffectSpecialSummonGraveyard_080AEC8C
+gEngineEffectSpecialSummonGraveyard_080AEC8C: @ 0x080AEC8C
 	push {r4, r5, r6, r7, lr}
 	adds r5, r0, #0
 	adds r6, r1, #0
@@ -321670,8 +321670,8 @@ _080AECDC:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080AECE4
-sub_080AECE4: @ 0x080AECE4
+	thumb_func_start gEngineEffectSpecialSummonGraveyard_080AECE4
+gEngineEffectSpecialSummonGraveyard_080AECE4: @ 0x080AECE4
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -321725,8 +321725,8 @@ _080AED30:
 	.align 2, 0
 _080AED48: .4byte gUnk_0201C4E0
 
-	thumb_func_start sub_080AED4C
-sub_080AED4C: @ 0x080AED4C
+	thumb_func_start gEngineEffectSpecialSummonGraveyard_080AED4C
+gEngineEffectSpecialSummonGraveyard_080AED4C: @ 0x080AED4C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -321749,7 +321749,7 @@ _080AED66:
 	bne _080AED84
 	movs r0, #1
 	subs r0, r0, r7
-	bl sub_08033B08
+	bl gEngineEffectSpecialSummonChangePosition_08033B08
 	cmp r0, r6
 	ble _080AED82
 	adds r0, r6, #0
@@ -321797,8 +321797,8 @@ _080AEDB8:
 	.align 2, 0
 _080AEDD0: .4byte gUnk_0201C4E0
 
-	thumb_func_start sub_080AEDD4
-sub_080AEDD4: @ 0x080AEDD4
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_080AEDD4
+gEngineEffectSpecialSummonBoostATK_080AEDD4: @ 0x080AEDD4
 	push {r4, lr}
 	sub sp, #0x10
 	adds r4, r0, #0
@@ -321807,12 +321807,12 @@ sub_080AEDD4: @ 0x080AEDD4
 	add r2, sp, #4
 	mov r1, sp
 	movs r3, #0
-	bl sub_080AEE24
+	bl gEngineEffectSpecialSummonBoostATK_080AEE24
 	add r1, sp, #8
 	add r2, sp, #0xc
 	adds r0, r4, #0
 	movs r3, #0
-	bl sub_080AEE24
+	bl gEngineEffectSpecialSummonBoostATK_080AEE24
 	ldr r0, [sp, #4]
 	ldr r2, [sp]
 	cmp r0, r2
@@ -321843,8 +321843,8 @@ _080AEE1C:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080AEE24
-sub_080AEE24: @ 0x080AEE24
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_080AEE24
+gEngineEffectSpecialSummonBoostATK_080AEE24: @ 0x080AEE24
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -321886,7 +321886,7 @@ _080AEE6C:
 	mov r0, r8
 	adds r1, r4, #0
 	mov r2, sp
-	bl sub_080AC004
+	bl gEngineEffectSpecialSummonBoostATK_080AC004
 	ldr r0, [sp, #0x14]
 	ldr r1, [r6]
 	cmp r0, r1
@@ -321918,8 +321918,8 @@ _080AEE8E:
 _080AEEA8: .4byte 0x00000868
 _080AEEAC: .4byte gUnk_0201C510
 
-	thumb_func_start sub_080AEEB0
-sub_080AEEB0: @ 0x080AEEB0
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_080AEEB0
+gEngineEffectSpecialSummonBoostATK_080AEEB0: @ 0x080AEEB0
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -321947,7 +321947,7 @@ _080AEECC:
 	adds r1, r6, #0
 	mov r2, sp
 	str r3, [sp, #0x24]
-	bl sub_080AC004
+	bl gEngineEffectSpecialSummonBoostATK_080AC004
 	ldrh r0, [r4, #6]
 	ldr r3, [sp, #0x24]
 	cmp r0, #0
@@ -321978,8 +321978,8 @@ _080AEF06:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080AEF1C
-sub_080AEF1C: @ 0x080AEF1C
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_080AEF1C
+gEngineEffectSpecialSummonBoostATK_080AEF1C: @ 0x080AEF1C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -322020,7 +322020,7 @@ _080AEF46:
 	adds r0, r5, #0
 	adds r1, r6, #0
 	mov r2, sp
-	bl sub_080ABF14
+	bl gEngineEffectSpecialSummonBoostATK_080ABF14
 	b _080AEF82
 	.align 2, 0
 _080AEF70: .4byte 0x00000868
@@ -322029,7 +322029,7 @@ _080AEF78:
 	adds r0, r5, #0
 	adds r1, r6, #0
 	mov r2, sp
-	bl sub_080ABF64
+	bl gEngineEffectSpecialSummonBoostATK_080ABF64
 _080AEF82:
 	mov r0, sl
 	cmp r0, #0
@@ -322070,8 +322070,8 @@ _080AEFA8:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080AEFC4
-sub_080AEFC4: @ 0x080AEFC4
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_080AEFC4
+gEngineEffectSpecialSummonBoostATK_080AEFC4: @ 0x080AEFC4
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -322113,7 +322113,7 @@ _080AEFF0:
 	adds r0, r6, #0
 	adds r1, r5, #0
 	mov r2, sp
-	bl sub_080ABF14
+	bl gEngineEffectSpecialSummonBoostATK_080ABF14
 	b _080AF02E
 	.align 2, 0
 _080AF01C: .4byte 0x00000868
@@ -322122,7 +322122,7 @@ _080AF024:
 	adds r0, r6, #0
 	adds r1, r5, #0
 	mov r2, sp
-	bl sub_080ABF64
+	bl gEngineEffectSpecialSummonBoostATK_080ABF64
 _080AF02E:
 	ldr r0, [sp, #0x2c]
 	cmp r0, #0
@@ -322163,8 +322163,8 @@ _080AF056:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080AF070
-sub_080AF070: @ 0x080AF070
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_080AF070
+gEngineEffectSpecialSummonBoostATK_080AF070: @ 0x080AF070
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -322207,7 +322207,7 @@ _080AF09E:
 	adds r0, r6, #0
 	adds r1, r5, #0
 	mov r2, sp
-	bl sub_080ABF14
+	bl gEngineEffectSpecialSummonBoostATK_080ABF14
 	b _080AF0DE
 	.align 2, 0
 _080AF0C8: .4byte 0x0001869F
@@ -322217,7 +322217,7 @@ _080AF0D4:
 	adds r0, r6, #0
 	adds r1, r5, #0
 	mov r2, sp
-	bl sub_080ABF64
+	bl gEngineEffectSpecialSummonBoostATK_080ABF64
 _080AF0DE:
 	ldr r0, [sp, #0x2c]
 	cmp r0, #0
@@ -322324,7 +322324,7 @@ _080AF16C:
 _080AF17C:
 	adds r0, r6, #0
 	adds r1, r5, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	adds r4, r0, #0
 	adds r0, r6, #0
 	adds r1, r5, #0
@@ -322399,7 +322399,7 @@ _080AF210:
 _080AF218:
 	adds r0, r6, #0
 	adds r1, r5, #0
-	bl sub_08036450
+	bl gEngineEffectSpecialSummonDestroy_08036450
 	cmp r0, #0
 	bne _080AF228
 _080AF224:
@@ -322409,7 +322409,7 @@ _080AF228:
 	adds r0, r7, #0
 	adds r1, r6, #0
 	adds r2, r5, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	beq _080AF23A
 	movs r4, #1
@@ -322578,8 +322578,8 @@ _080AF368: .4byte 0x0000150C @ Fusion Sword Murasame Blade
 _080AF36C: .4byte 0x00000868
 _080AF370: .4byte gUnk_0201C510
 
-	thumb_func_start sub_080AF374
-sub_080AF374: @ 0x080AF374
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_080AF374
+gEngineEffectSpecialSummonBoostATK_080AF374: @ 0x080AF374
 	push {r4, r5, r6, r7, lr}
 	sub sp, #0x24
 	adds r7, r0, #0
@@ -322592,13 +322592,13 @@ _080AF380:
 	adds r0, r5, #0
 	adds r1, r4, #0
 	mov r2, sp
-	bl sub_080ABF14
+	bl gEngineEffectSpecialSummonBoostATK_080ABF14
 	b _080AF39A
 _080AF390:
 	adds r0, r5, #0
 	adds r1, r4, #0
 	mov r2, sp
-	bl sub_080ABF64
+	bl gEngineEffectSpecialSummonBoostATK_080ABF64
 _080AF39A:
 	ldr r0, [sp, #0x14]
 	adds r6, r6, r0
@@ -323040,8 +323040,8 @@ _080AF69C:
 	bx lr
 	.align 2, 0
 
-	thumb_func_start sub_080AF6A0
-sub_080AF6A0: @ 0x080AF6A0
+	thumb_func_start gEngineEffectDestroyDamage_080AF6A0
+gEngineEffectDestroyDamage_080AF6A0: @ 0x080AF6A0
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -323111,8 +323111,8 @@ _080AF704:
 _080AF724: .4byte gUnk_0201C4E0
 _080AF728: .4byte 0x00000868
 
-	thumb_func_start sub_080AF72C
-sub_080AF72C: @ 0x080AF72C
+	thumb_func_start gEngineEffectSpecialSummonDestroy_080AF72C
+gEngineEffectSpecialSummonDestroy_080AF72C: @ 0x080AF72C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -323333,8 +323333,8 @@ _080AF8C0:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080AF8CC
-sub_080AF8CC: @ 0x080AF8CC
+	thumb_func_start gEngineEffectBoostATKBoostDEF_080AF8CC
+gEngineEffectBoostATKBoostDEF_080AF8CC: @ 0x080AF8CC
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	adds r6, r1, #0
@@ -323342,12 +323342,12 @@ sub_080AF8CC: @ 0x080AF8CC
 	lsrs r4, r0, #0x10
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_08031A84
+	bl gEngineEffectBoostATKBoostDEF_08031A84
 	cmp r0, #0
 	bne _080AF90A
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_08037A2C
+	bl gEngineEffectBoostATKBoostDEF_08037A2C
 	cmp r0, #0
 	bne _080AF90A
 	adds r0, r5, #0
@@ -323357,7 +323357,7 @@ sub_080AF8CC: @ 0x080AF8CC
 	bne _080AF90A
 	adds r0, r5, #0
 	adds r1, r6, #0
-	bl sub_08032F7C
+	bl gEngineEffectSpecialSummonBoostATK_08032F7C
 	cmp r0, #0
 	bne _080AF90A
 	movs r0, #0
@@ -323370,19 +323370,19 @@ _080AF90C:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080AF914
-sub_080AF914: @ 0x080AF914
+	thumb_func_start gEngineEffectBoostATKSpecialSummon_080AF914
+gEngineEffectBoostATKSpecialSummon_080AF914: @ 0x080AF914
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
 	lsls r1, r5, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08037A2C
+	bl gEngineEffectBoostATKBoostDEF_08037A2C
 	cmp r0, #0
 	bne _080AF936
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_08032F7C
+	bl gEngineEffectSpecialSummonBoostATK_08032F7C
 	cmp r0, #0
 	bne _080AF936
 	movs r0, #0
@@ -323467,8 +323467,8 @@ _080AF9AE:
 _080AF9B8: .4byte 0x00000868
 _080AF9BC: .4byte gUnk_0201C600
 
-	thumb_func_start sub_080AF9C0
-sub_080AF9C0: @ 0x080AF9C0
+	thumb_func_start gEngineEffectSpecialSummonDestroy_080AF9C0
+gEngineEffectSpecialSummonDestroy_080AF9C0: @ 0x080AF9C0
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r1, _080AF9FC @ =sub_080AF980
@@ -323507,8 +323507,8 @@ _080AFA0A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080AFA10
-sub_080AFA10: @ 0x080AFA10
+	thumb_func_start gEngineEffectSpecialSummonDestroy_080AFA10
+gEngineEffectSpecialSummonDestroy_080AFA10: @ 0x080AFA10
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r1, _080AFA4C @ =sub_080AF984
@@ -323789,8 +323789,8 @@ _080AFC1E:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080AFC24
-sub_080AFC24: @ 0x080AFC24
+	thumb_func_start gEngineEffectPreventAttack_080AFC24
+gEngineEffectPreventAttack_080AFC24: @ 0x080AFC24
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -324290,7 +324290,7 @@ _080AFFE8:
 	adds r0, r7, #0
 	mov r1, sb
 	movs r2, #1
-	bl sub_080AFC24
+	bl gEngineEffectPreventAttack_080AFC24
 	adds r4, r0, #0
 	ldr r0, [r5]
 	cmp r4, r0
@@ -324302,7 +324302,7 @@ _080AFFE8:
 	subs r0, r5, r7
 	mov r1, r8
 	movs r2, #1
-	bl sub_080AFC24
+	bl gEngineEffectPreventAttack_080AFC24
 	cmp r4, r0
 	ble _080B0012
 	str r5, [r6, #4]
@@ -324357,7 +324357,7 @@ _080B0080:
 	adds r0, r7, #0
 	mov r1, sb
 	movs r2, #1
-	bl sub_080AFC24
+	bl gEngineEffectPreventAttack_080AFC24
 	ldr r1, _080B00A0 @ =0x000003E7
 	cmp r0, r1
 	ble _080B00CC
@@ -324572,7 +324572,7 @@ _080B0204:
 	mov r0, r8
 	adds r1, r6, #0
 	str r3, [sp, #8]
-	bl sub_08035BA4
+	bl gEngineEffectSpecialSummonPreventAttack_08035BA4
 	ldr r3, [sp, #8]
 	cmp r0, #0
 	beq _080B0240
@@ -324894,7 +324894,7 @@ _080B046E:
 	mov r0, sb
 _080B047A:
 	movs r2, #1
-	bl sub_080AFC24
+	bl gEngineEffectPreventAttack_080AFC24
 	cmp r4, r0
 	bgt _080B0486
 	b _080B0258
@@ -324929,7 +324929,7 @@ gEngineEffectDestroyReduceATK_080B04A8: @ 0x080B04A8
 	mov sb, r1
 	str r2, [sp, #0x134]
 	adds r5, r3, #0
-	bl sub_08035BA4
+	bl gEngineEffectSpecialSummonPreventAttack_08035BA4
 	cmp r0, #0
 	bne _080B04E2
 	adds r0, r6, #0
@@ -325241,7 +325241,7 @@ _080B06F2:
 	mov r0, r8
 	adds r1, r5, #0
 	movs r2, #1
-	bl sub_0803495C
+	bl gEngineEffectSpecialSummonPreventAttack_0803495C
 	cmp r0, #0
 	beq _080B07B6
 	ldr r1, [sp, #0x38]
@@ -325887,8 +325887,8 @@ sub_080B0B90: @ 0x080B0B90
 _080B0BB8: .4byte gUnk_0201C510
 _080B0BBC: .4byte 0x00000868
 
-	thumb_func_start sub_080B0BC0
-sub_080B0BC0: @ 0x080B0BC0
+	thumb_func_start gEngineEffectSpecialSummonDestroy_080B0BC0
+gEngineEffectSpecialSummonDestroy_080B0BC0: @ 0x080B0BC0
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -325995,7 +325995,7 @@ _080B0C80:
 	lsrs r5, r2, #8
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_0803A96C
+	bl gEngineEffectSpecialSummonBoostATK_0803A96C
 	add sb, r0
 	movs r0, #1
 	ands r4, r0
@@ -326015,7 +326015,7 @@ _080B0C80:
 	bne _080B0C80
 _080B0CB2:
 	mov r0, sl
-	bl sub_08033634
+	bl gEngineEffectSpecialSummon_08033634
 	adds r7, r0, #0
 	cmp r7, #0
 	blt _080B0D3A
@@ -326092,8 +326092,8 @@ _080B0D3A:
 _080B0D4C: .4byte 0x00001688 @ Great Maju Garzett
 _080B0D50: .4byte 0x00000868
 
-	thumb_func_start sub_080B0D54
-sub_080B0D54: @ 0x080B0D54
+	thumb_func_start gEngineEffectSpecialSummonDestroy_080B0D54
+gEngineEffectSpecialSummonDestroy_080B0D54: @ 0x080B0D54
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -326176,7 +326176,7 @@ _080B0DD6:
 	adds r0, r6, #0
 	adds r1, r5, #0
 	str r3, [sp, #0x10]
-	bl sub_080AC004
+	bl gEngineEffectSpecialSummonBoostATK_080AC004
 	ldr r3, [sp, #0x10]
 _080B0DF8:
 	adds r7, #0x24
@@ -326351,7 +326351,7 @@ _080B0F30:
 	adds r0, r6, #0
 	adds r1, r5, #0
 	str r3, [sp, #0x10]
-	bl sub_080AC004
+	bl gEngineEffectSpecialSummonBoostATK_080AC004
 	ldr r3, [sp, #0x10]
 _080B0F56:
 	adds r3, #0x24
@@ -326386,8 +326386,8 @@ _080B0F8C: .4byte 0xFFFFE000
 _080B0F90: .4byte 0x00000868
 _080B0F94: .4byte gUnk_0201AFF8
 
-	thumb_func_start sub_080B0F98
-sub_080B0F98: @ 0x080B0F98
+	thumb_func_start gEngineEffectSpecialSummonDestroy_080B0F98
+gEngineEffectSpecialSummonDestroy_080B0F98: @ 0x080B0F98
 	push {r4, r5, r6, lr}
 	sub sp, #0xc8
 	adds r4, r0, #0
@@ -326402,9 +326402,9 @@ sub_080B0F98: @ 0x080B0F98
 	adds r1, r4, #0
 	bl sub_080B0B64
 	adds r0, r4, #0
-	bl sub_080B0BC0
+	bl gEngineEffectSpecialSummonDestroy_080B0BC0
 	adds r0, r4, #0
-	bl sub_080B0D54
+	bl gEngineEffectSpecialSummonDestroy_080B0D54
 	movs r2, #0xca
 	lsls r2, r2, #1
 	adds r1, r5, r2
@@ -326426,8 +326426,8 @@ _080B0FD4:
 	.align 2, 0
 _080B0FE4: .4byte gUnk_0201AFE0
 
-	thumb_func_start sub_080B0FE8
-sub_080B0FE8: @ 0x080B0FE8
+	thumb_func_start gEngineEffectSpecialSummonDestroy_080B0FE8
+gEngineEffectSpecialSummonDestroy_080B0FE8: @ 0x080B0FE8
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -326470,7 +326470,7 @@ _080B101E:
 	adds r0, r7, #0
 	adds r1, r4, #0
 	str r3, [sp, #4]
-	bl sub_080AC004
+	bl gEngineEffectSpecialSummonBoostATK_080AC004
 	ldr r3, [sp, #4]
 _080B103E:
 	adds r6, #0x24
@@ -326498,8 +326498,8 @@ _080B106C: .4byte 0x00000868
 _080B1070: .4byte gUnk_0201C510
 _080B1074: .4byte gUnk_0201AFF8
 
-	thumb_func_start sub_080B1078
-sub_080B1078: @ 0x080B1078
+	thumb_func_start gEngineEffectSpecialSummonDestroy_080B1078
+gEngineEffectSpecialSummonDestroy_080B1078: @ 0x080B1078
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -326543,7 +326543,7 @@ _080B10B0:
 	adds r0, r7, #0
 	adds r1, r4, #0
 	str r3, [sp, #0xc]
-	bl sub_080AC004
+	bl gEngineEffectSpecialSummonBoostATK_080AC004
 	ldr r3, [sp, #0xc]
 _080B10D0:
 	adds r6, #0x24
@@ -326576,8 +326576,8 @@ _080B1108: .4byte gUnk_0201C510
 _080B110C: .4byte gUnk_0201AFF8
 _080B1110: .4byte gUnk_0201B18C
 
-	thumb_func_start sub_080B1114
-sub_080B1114: @ 0x080B1114
+	thumb_func_start gEngineEffectSpecialSummonDestroy_080B1114
+gEngineEffectSpecialSummonDestroy_080B1114: @ 0x080B1114
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -326590,7 +326590,7 @@ sub_080B1114: @ 0x080B1114
 	rsbs r0, r0, #0
 	str r0, [sp, #0x100]
 	adds r0, r6, #0
-	bl sub_080B0F98
+	bl gEngineEffectSpecialSummonDestroy_080B0F98
 	str r0, [sp, #0x104]
 	ldr r0, _080B11EC @ =gUnk_0201AFE0
 	movs r1, #0xc4
@@ -326636,7 +326636,7 @@ _080B1160:
 	lsrs r0, r0, #0x1f
 	adds r1, r1, r0
 	adds r0, r6, #0
-	bl sub_080A4694
+	bl gEngineEffectSpecialSummonTribute_080A4694
 	movs r1, #0x10
 	ands r1, r0
 	ldr r5, [sp, #0xfc]
@@ -326741,7 +326741,7 @@ _080B1242:
 	adds r1, r6, #0
 	bl sub_080B0B64
 	adds r0, r6, #0
-	bl sub_080B0BC0
+	bl gEngineEffectSpecialSummonDestroy_080B0BC0
 	add r2, sp, #4
 	str r2, [sp]
 	adds r0, r6, #0
@@ -326758,7 +326758,7 @@ _080B1242:
 	bl gEngineEffectBoostATKSpecialSummon_08037EC0
 _080B127E:
 	adds r0, r6, #0
-	bl sub_080B0D54
+	bl gEngineEffectSpecialSummonDestroy_080B0D54
 	mov r8, r0
 	adds r0, r6, #0
 	bl sub_08033188
@@ -326863,8 +326863,8 @@ _080B1350: .4byte gUnk_0201C520
 _080B1354: .4byte 0x00000383
 _080B1358: .4byte gUnk_0201C4EC
 
-	thumb_func_start sub_080B135C
-sub_080B135C: @ 0x080B135C
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_080B135C
+gEngineEffectSpecialSummonBoostATK_080B135C: @ 0x080B135C
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -326904,7 +326904,7 @@ sub_080B135C: @ 0x080B135C
 	strh r3, [r0, #6]
 	mov r0, r8
 	adds r1, r4, #0
-	bl sub_0803A980
+	bl gEngineEffectSpecialSummonBoostATK_0803A980
 	b _080B13E8
 	.align 2, 0
 _080B13B8: .4byte 0x00000868
@@ -326938,8 +326938,8 @@ _080B13E8:
 	bx r0
 	.align 2, 0
 
-	thumb_func_start sub_080B1400
-sub_080B1400: @ 0x080B1400
+	thumb_func_start gEngineEffectSpecialSummonDiscard_080B1400
+gEngineEffectSpecialSummonDiscard_080B1400: @ 0x080B1400
 	push {r4, r5, r6, r7, lr}
 	sub sp, #0x28
 	adds r4, r0, #0
@@ -326960,7 +326960,7 @@ sub_080B1400: @ 0x080B1400
 	adds r1, r5, #0
 	adds r2, r6, #0
 	ldr r3, [sp, #0x3c]
-	bl sub_080B135C
+	bl gEngineEffectSpecialSummonBoostATK_080B135C
 	ldr r1, [sp, #0x18]
 	ldr r2, [sp, #0x1c]
 	adds r0, r4, #0
@@ -327097,7 +327097,7 @@ _080B1520: .4byte gUnk_0201C4E0
 _080B1524: .4byte 0x00000868
 _080B1528:
 	adds r0, r5, #0
-	bl sub_080AEDD4
+	bl gEngineEffectSpecialSummonBoostATK_080AEDD4
 	lsrs r0, r0, #0x1f
 	b _080B1534
 _080B1532:
@@ -327108,8 +327108,8 @@ _080B1534:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B153C
-sub_080B153C: @ 0x080B153C
+	thumb_func_start gEngineEffectSpecialSummonTribute_080B153C
+gEngineEffectSpecialSummonTribute_080B153C: @ 0x080B153C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -327125,7 +327125,7 @@ sub_080B153C: @ 0x080B153C
 	str r1, [sp, #0x4c]
 	adds r0, r7, #0
 	movs r1, #1
-	bl sub_080AD4AC
+	bl gEngineEffectSpecialSummonTribute_080AD4AC
 	mvns r0, r0
 	rsbs r1, r0, #0
 	orrs r1, r0
@@ -327136,12 +327136,12 @@ sub_080B153C: @ 0x080B153C
 	add r1, sp, #0x30
 	add r2, sp, #0x34
 	movs r3, #0
-	bl sub_080AEE24
+	bl gEngineEffectSpecialSummonBoostATK_080AEE24
 	add r1, sp, #0x38
 	add r2, sp, #0x3c
 	adds r0, r7, #0
 	movs r3, #0
-	bl sub_080AEE24
+	bl gEngineEffectSpecialSummonBoostATK_080AEE24
 	ldr r3, [sp, #0x3c]
 	str r3, [sp, #0x48]
 	ldr r0, [sp, #0x38]
@@ -327204,7 +327204,7 @@ _080B15DE:
 	lsrs r0, r0, #0x1f
 	adds r1, r1, r0
 	adds r0, r7, #0
-	bl sub_080A4694
+	bl gEngineEffectSpecialSummonTribute_080A4694
 	mov sb, r0
 	cmp r0, #0
 	bne _080B1604
@@ -327285,7 +327285,7 @@ _080B1682:
 	mov r1, r8
 	mov r2, sl
 	add r3, sp, #4
-	bl sub_080B135C
+	bl gEngineEffectSpecialSummonBoostATK_080B135C
 	movs r6, #1
 	rsbs r6, r6, #0
 	cmp r5, r6
@@ -327466,11 +327466,11 @@ _080B17DA:
 	cmp r0, #0
 	bge _080B18CA
 	adds r0, r7, #0
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	beq _080B18C6
 	adds r0, r7, #0
-	bl sub_080B4CCC
+	bl gEngineEffectSpecialSummonBoostATK_080B4CCC
 	movs r1, #2
 	mov sb, r1
 	cmp r0, #0
@@ -327545,7 +327545,7 @@ _080B1826:
 	lsrs r0, r0, #0x1f
 	adds r1, r1, r0
 	adds r0, r7, #0
-	bl sub_080A4694
+	bl gEngineEffectSpecialSummonTribute_080A4694
 	cmp r0, #0
 	beq _080B18B0
 	movs r1, #0x40
@@ -327928,7 +327928,7 @@ gCardAISpecialSummonDiscard_080B1B24: @ 0x080B1B24
 	cmp r0, #2
 	bhi _080B1BDC
 	lsrs r0, r2, #0x1f
-	bl sub_080AF9C0
+	bl gEngineEffectSpecialSummonDestroy_080AF9C0
 	cmp r0, #0
 	bne _080B1B5C
 	b _080B1BDC
@@ -327946,7 +327946,7 @@ _080B1B5C:
 	add r2, sp, #4
 	mov r1, sp
 	movs r3, #1
-	bl sub_080AEE24
+	bl gEngineEffectSpecialSummonBoostATK_080AEE24
 	movs r5, #0
 	b _080B1BD0
 _080B1B72:
@@ -327975,7 +327975,7 @@ _080B1B72:
 	cmp r0, #4
 	bgt _080B1B58
 	adds r0, r4, #0
-	bl sub_0804BA58
+	bl gEngineEffectSpecialSummon_0804BA58
 	cmp r0, #0
 	bne _080B1B58
 	adds r0, r4, #0
@@ -328070,7 +328070,7 @@ gCardAISpecialSummonDestroy_080B1C3C: @ 0x080B1C3C
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0
-	bl sub_080AD4AC
+	bl gEngineEffectSpecialSummonTribute_080AD4AC
 	cmp r0, #0
 	blt _080B1C76
 	ldrb r4, [r4, #2]
@@ -328242,7 +328242,7 @@ gCardAIDestroyPreventAttack_080B1D74: @ 0x080B1D74
 	bne _080B1DCC
 	movs r4, #0
 	lsrs r0, r2, #0x1f
-	bl sub_080AEDD4
+	bl gEngineEffectSpecialSummonBoostATK_080AEDD4
 	cmp r0, #0
 	bgt _080B1DBA
 	ldrb r5, [r5, #2]
@@ -328442,7 +328442,7 @@ gCardAIDestroyDamage_080B1EF0: @ 0x080B1EF0
 	mov r1, sp
 	adds r2, r4, #0
 	movs r3, #1
-	bl sub_080AEE24
+	bl gEngineEffectSpecialSummonBoostATK_080AEE24
 	ldr r3, [sp]
 	mov ip, r4
 	cmp r3, #0
@@ -328492,7 +328492,7 @@ _080B1F60:
 	mov r1, sp
 	mov r2, ip
 	movs r3, #1
-	bl sub_080AEE24
+	bl gEngineEffectSpecialSummonBoostATK_080AEE24
 	ldr r1, [sp]
 	cmp r1, #0
 	blt _080B1FAC
@@ -328885,7 +328885,7 @@ _080B220C:
 	adds r0, r1, #0
 	adds r1, r5, #0
 	str r3, [sp]
-	bl sub_0803407C
+	bl gEngineEffectSpecialSummonBoostATK_0803407C
 	ldr r3, [sp]
 	cmp r0, #0
 	ble _080B2254
@@ -328973,7 +328973,7 @@ _080B228C:
 	lsrs r0, r0, #0x1f
 	lsls r1, r1, #0x12
 	lsrs r1, r1, #0x1c
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	movs r1, #0xfa
 	lsls r1, r1, #3
 	cmp r0, r1
@@ -328996,7 +328996,7 @@ _080B228C:
 	ldr r1, [r1]
 	lsls r1, r1, #0x13
 	lsrs r1, r1, #0x13
-	bl sub_08031A84
+	bl gEngineEffectBoostATKBoostDEF_08031A84
 	cmp r0, #0
 	beq _080B233C
 	movs r0, #1
@@ -329090,7 +329090,7 @@ gCardAISpecialSummonDestroyAll_080B23B4: @ 0x080B23B4
 	ldrb r4, [r4, #2]
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080AEDD4
+	bl gEngineEffectSpecialSummonBoostATK_080AEDD4
 	lsrs r0, r0, #0x1f
 	b _080B23D0
 _080B23CE:
@@ -329114,14 +329114,14 @@ _080B23E2:
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	adds r1, r4, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	cmp r6, r0
 	bgt _080B2400
 	ldrb r1, [r5, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	adds r1, r4, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	b _080B2402
 _080B2400:
 	adds r0, r6, #0
@@ -329131,14 +329131,14 @@ _080B2402:
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	adds r1, r4, #0
-	bl sub_0803A980
+	bl gEngineEffectSpecialSummonBoostATK_0803A980
 	cmp r6, r0
 	bgt _080B2422
 	ldrb r1, [r5, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	adds r1, r4, #0
-	bl sub_0803A980
+	bl gEngineEffectSpecialSummonBoostATK_0803A980
 	b _080B2424
 _080B2422:
 	adds r0, r6, #0
@@ -329168,7 +329168,7 @@ _080B2432:
 	subs r0, r7, r0
 	adds r1, r4, #0
 	str r3, [sp]
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	ldr r3, [sp]
 	cmp r0, r6
 	ble _080B246C
@@ -329578,8 +329578,8 @@ _080B274A:
 _080B2750: .4byte gUnk_0201C4E0
 _080B2754: .4byte 0x00001CE8
 
-	thumb_func_start sub_080B2758
-sub_080B2758: @ 0x080B2758
+	thumb_func_start gEngineEffectBoostATKEquip_080B2758
+gEngineEffectBoostATKEquip_080B2758: @ 0x080B2758
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -329729,7 +329729,7 @@ _080B283A:
 	lsrs r0, r3, #0x1f
 	ldr r4, _080B289C @ =0x000012F9 (Soul Release)
 	adds r1, r4, #0
-	bl sub_08037A2C
+	bl gEngineEffectBoostATKBoostDEF_08037A2C
 	cmp r0, #0
 	bne _080B2890
 	mov r2, r8
@@ -329737,7 +329737,7 @@ _080B283A:
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
 	adds r1, r4, #0
-	bl sub_08032F7C
+	bl gEngineEffectSpecialSummonBoostATK_08032F7C
 	cmp r0, #0
 	beq _080B28A0
 _080B2890:
@@ -329868,7 +329868,7 @@ _080B2974:
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	adds r1, r4, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	movs r1, #0xfa
 	lsls r1, r1, #2
 	cmp r0, r1
@@ -329907,7 +329907,7 @@ gCardAIDestroyAllTribute_080B29B4: @ 0x080B29B4
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0
-	bl sub_080AD4C8
+	bl gEngineEffectDestroyTribute_080AD4C8
 	adds r2, r0, #0
 	cmp r2, #0
 	bge _080B29D4
@@ -329925,7 +329925,7 @@ _080B29D4:
 	lsrs r0, r0, #0x18
 	lsls r1, r2, #0x10
 	lsrs r1, r1, #0x18
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	strh r0, [r4, #8]
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
@@ -329954,7 +329954,7 @@ gCardAIDiscardDestroy_080B2A10: @ 0x080B2A10
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080AF9C0
+	bl gEngineEffectSpecialSummonDestroy_080AF9C0
 	cmp r0, #0
 	beq _080B2A46
 	ldrb r1, [r4, #2]
@@ -329964,13 +329964,13 @@ gCardAIDiscardDestroy_080B2A10: @ 0x080B2A10
 	subs r1, r1, r0
 	adds r0, r4, #0
 	movs r2, #1
-	bl sub_080AF6A0
+	bl gEngineEffectDestroyDamage_080AF6A0
 	cmp r0, #0
 	bne _080B2A4A
 	ldrb r4, [r4, #2]
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080AEDD4
+	bl gEngineEffectSpecialSummonBoostATK_080AEDD4
 	cmp r0, #0
 	blt _080B2A4A
 _080B2A46:
@@ -329992,7 +329992,7 @@ gCardAIBanishDiscard_080B2A54: @ 0x080B2A54
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080AF9C0
+	bl gEngineEffectSpecialSummonDestroy_080AF9C0
 	cmp r0, #0
 	beq _080B2A8A
 	ldrb r1, [r4, #2]
@@ -330002,13 +330002,13 @@ gCardAIBanishDiscard_080B2A54: @ 0x080B2A54
 	subs r1, r1, r0
 	adds r0, r4, #0
 	movs r2, #0
-	bl sub_080AF6A0
+	bl gEngineEffectDestroyDamage_080AF6A0
 	cmp r0, #0
 	bne _080B2A8E
 	ldrb r4, [r4, #2]
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080AEDD4
+	bl gEngineEffectSpecialSummonBoostATK_080AEDD4
 	cmp r0, #0
 	blt _080B2A8E
 _080B2A8A:
@@ -330040,7 +330040,7 @@ gCardAIStandbyPhaseBattlePhase_080B2A98: @ 0x080B2A98
 	ldrb r4, [r4, #2]
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080AEDD4
+	bl gEngineEffectSpecialSummonBoostATK_080AEDD4
 	lsrs r0, r0, #0x1f
 	b _080B2AC2
 _080B2AC0:
@@ -330087,7 +330087,7 @@ gCardAISpecialSummonDiscard_080B2AFC: @ 0x080B2AFC
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080AF9C0
+	bl gEngineEffectSpecialSummonDestroy_080AF9C0
 	cmp r0, #0
 	beq _080B2B24
 	ldrb r0, [r4, #2]
@@ -330097,7 +330097,7 @@ gCardAISpecialSummonDiscard_080B2AFC: @ 0x080B2AFC
 	subs r1, r5, r1
 	adds r0, r4, #0
 	movs r2, #0
-	bl sub_080AF6A0
+	bl gEngineEffectDestroyDamage_080AF6A0
 	cmp r0, #0
 	beq _080B2B28
 _080B2B24:
@@ -330160,7 +330160,7 @@ gCardAIUnknown_080B2B80: @ 0x080B2B80
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080AEDD4
+	bl gEngineEffectSpecialSummonBoostATK_080AEDD4
 	cmp r0, #0
 	bge _080B2B96
 	movs r0, #0
@@ -330242,7 +330242,7 @@ gCardAIDiscardDestroyAll_080B2C10: @ 0x080B2C10
 	ldrb r1, [r5, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080AF9C0
+	bl gEngineEffectSpecialSummonDestroy_080AF9C0
 	cmp r0, #0
 	beq _080B2C44
 	ldrb r1, [r5, #2]
@@ -330510,7 +330510,7 @@ _080B2DE0:
 	beq _080B2E02
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	cmp r6, #0
 	blt _080B2DFE
 	cmp r0, r6
@@ -330737,7 +330737,7 @@ _080B2F16:
 _080B2F38:
 	adds r0, r4, #0
 	ldr r1, [sp, #8]
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	adds r6, r0, #0
 	ldr r1, [sp, #0xc]
 	cmp r1, #0
@@ -330758,7 +330758,7 @@ _080B2F38:
 	beq _080B2F7C
 	adds r0, r7, #0
 	mov r1, r8
-	bl sub_0803A980
+	bl gEngineEffectSpecialSummonBoostATK_0803A980
 	b _080B2F88
 	.align 2, 0
 _080B2F70: .4byte gUnk_0201BB90
@@ -330767,7 +330767,7 @@ _080B2F78: .4byte gUnk_0201C510
 _080B2F7C:
 	adds r0, r7, #0
 	mov r1, r8
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	b _080B2F88
 _080B2F86:
 	movs r0, #0
@@ -330976,7 +330976,7 @@ _080B30E8:
 	adds r0, #0x33
 	cmp r3, r0
 	bne _080B30F2
-	bl sub_080B38BC
+	bl gEngineEffectSpecialSummonBoostATK_080B38BC
 _080B30F2:
 	bl _080B3978
 	.align 2, 0
@@ -331128,13 +331128,13 @@ _080B31F2:
 	lsrs r1, r1, #0x1f
 	movs r0, #1
 	subs r0, r0, r1
-	bl sub_08033B08
+	bl gEngineEffectSpecialSummonChangePosition_08033B08
 	adds r4, r0, #0
 	mov r1, sl
 	ldrb r1, [r1, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_08033B08
+	bl gEngineEffectSpecialSummonChangePosition_08033B08
 	movs r1, #0
 	cmp r4, r0
 	bge _080B3218
@@ -331175,7 +331175,7 @@ _080B322C:
 	b _080B33C4
 _080B3258:
 	adds r0, r4, #0
-	bl sub_0804BA58
+	bl gEngineEffectSpecialSummon_0804BA58
 	cmp r0, #0
 	beq _080B3264
 	b _080B33C4
@@ -331241,7 +331241,7 @@ _080B32B4:
 	bne _080B32DA
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	cmp r0, r6
 	bgt _080B33C4
 _080B32DA:
@@ -331347,7 +331347,7 @@ _080B336C:
 	beq _080B339E
 	adds r0, r2, #0
 	adds r1, r4, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	cmp r0, sb
 	blt _080B33C4
 _080B339E:
@@ -331397,7 +331397,7 @@ _080B33F0: .4byte 0x00000868
 _080B33F4: .4byte 0x000005DB
 _080B33F8:
 	adds r0, r5, #0
-	bl sub_080B4CCC
+	bl gEngineEffectSpecialSummonBoostATK_080B4CCC
 _080B33FE:
 	cmp r0, #0
 	bne _080B33C4
@@ -331545,7 +331545,7 @@ _080B3508:
 	subs r0, r0, r5
 	ldr r1, [sp, #8]
 	movs r2, #1
-	bl sub_080AC028
+	bl gEngineEffectSpecialSummonBoostATK_080AC028
 	cmp r6, r0
 	bge _080B351A
 	b _080B3978
@@ -331669,7 +331669,7 @@ _080B35F0:
 	subs r0, r0, r5
 	ldr r1, [sp, #8]
 	movs r2, #1
-	bl sub_080AC028
+	bl gEngineEffectSpecialSummonBoostATK_080AC028
 	cmp r6, r0
 	bge _080B3602
 	b _080B3978
@@ -331715,7 +331715,7 @@ _080B3632:
 	rsbs r1, r1, #0
 	adds r0, r4, #0
 	movs r2, #0
-	bl sub_080AC028
+	bl gEngineEffectSpecialSummonBoostATK_080AC028
 	cmp r0, r5
 	bgt _080B372E
 	b _080B372C
@@ -331785,7 +331785,7 @@ _080B36CC:
 	ldrh r1, [r0]
 	adds r0, r5, #0
 	movs r2, #0
-	bl sub_080AEC8C
+	bl gEngineEffectSpecialSummonGraveyard_080AEC8C
 	bl sub_080942DC
 	ldr r0, [r0]
 	lsls r0, r0, #0x13
@@ -331888,7 +331888,7 @@ _080B3796:
 _080B379E:
 	ldr r1, _080B3810 @ =0x000012F3 (Ultimate Offering)
 	adds r0, r5, #0
-	bl sub_08032F7C
+	bl gEngineEffectSpecialSummonBoostATK_08032F7C
 	cmp r0, #0
 	bne _080B37AC
 	b _080B3978
@@ -332035,8 +332035,8 @@ _080B3882:
 _080B38B4: .4byte gUnk_0201C4E0
 _080B38B8: .4byte 0x00000868
 
-	thumb_func_start sub_080B38BC
-sub_080B38BC: @ 0x080B38BC
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_080B38BC
+gEngineEffectSpecialSummonBoostATK_080B38BC: @ 0x080B38BC
 	movs r0, #1
 	subs r4, r0, r5
 	adds r0, r4, #0
@@ -332052,10 +332052,10 @@ sub_080B38BC: @ 0x080B38BC
 	adds r0, r5, #0
 	adds r1, r4, #0
 	movs r3, #1
-	bl sub_080AEF1C
+	bl gEngineEffectSpecialSummonBoostATK_080AEF1C
 	adds r4, r0, #0
 	adds r0, r5, #0
-	bl sub_080AEEB0
+	bl gEngineEffectSpecialSummonBoostATK_080AEEB0
 	movs r1, #0
 	cmp r4, r0
 	bge _080B3970
@@ -332466,7 +332466,7 @@ _080B3BB8: .4byte 0xFFFFFCE0
 _080B3BBC:
 	adds r0, r6, #0
 	movs r1, #0xb
-	bl sub_08032EF0
+	bl gEngineEffectSpecialSummonChangePosition_08032EF0
 	movs r1, #0xc8
 _080B3BC6:
 	adds r2, r0, #0
@@ -332622,11 +332622,11 @@ _080B3CB6:
 	beq _080B3D80
 	ldr r0, [sp, #0xc]
 	mov r1, sl
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	adds r4, r0, #0
 	ldr r0, [sp, #4]
 	ldr r1, [sp, #8]
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	lsls r4, r4, #1
 	subs r4, r4, r0
 	adds r1, r7, #0
@@ -332661,7 +332661,7 @@ _080B3D2C:
 	beq _080B3D48
 	adds r0, r6, #0
 	adds r1, r4, #0
-	bl sub_0803A994
+	bl gEngineEffectSpecialSummonBoostATK_0803A994
 	ldr r1, [sp, #0x14]
 	adds r1, r1, r0
 	str r1, [sp, #0x14]
@@ -332685,7 +332685,7 @@ _080B3D5E:
 	beq _080B3D7A
 	adds r0, r6, #0
 	adds r1, r4, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	cmp r8, r0
 	bge _080B3D7A
 	mov r8, r0
@@ -332758,7 +332758,7 @@ _080B3DE8:
 _080B3DF0:
 	adds r0, r6, #0
 	ldr r1, [sp, #8]
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	add r0, r8
 	ldr r2, _080B3E10 @ =gUnk_0201C4E0
 	movs r1, #1
@@ -332806,13 +332806,13 @@ _080B3E2E:
 	ldrh r7, [r1, #6]
 	subs r0, r0, r6
 	ldr r1, [sp, #8]
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	adds r5, r0, #0
 	cmp r7, #0
 	beq _080B3E6C
 	adds r0, r6, #0
 	mov r1, sl
-	bl sub_0803A980
+	bl gEngineEffectSpecialSummonBoostATK_0803A980
 	b _080B3E74
 	.align 2, 0
 _080B3E64: .4byte 0x00000868
@@ -332820,7 +332820,7 @@ _080B3E68: .4byte gUnk_0201C510
 _080B3E6C:
 	adds r0, r6, #0
 	mov r1, sl
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 _080B3E74:
 	adds r2, r0, #0
 	cmp r7, #0
@@ -332905,14 +332905,14 @@ _080B3EEC:
 	mov sb, r0
 	adds r0, r6, #0
 	ldr r1, [sp, #8]
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	adds r7, r0, #0
 	mov r2, sb
 	cmp r2, #0
 	beq _080B3F2C
 	adds r0, r4, #0
 	mov r1, sl
-	bl sub_0803A980
+	bl gEngineEffectSpecialSummonBoostATK_0803A980
 	b _080B3F34
 	.align 2, 0
 _080B3F24: .4byte 0x00000868
@@ -332920,7 +332920,7 @@ _080B3F28: .4byte gUnk_0201C510
 _080B3F2C:
 	adds r0, r4, #0
 	mov r1, sl
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 _080B3F34:
 	adds r5, r0, #0
 	mov r3, sb
@@ -333864,7 +333864,7 @@ _080B45E0:
 	ldrb r3, [r4, #2]
 	lsls r0, r3, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_08033BF4
+	bl gEngineEffectSpecialSummon_08033BF4
 	cmp r0, #0
 	blt _080B4606
 	ldrb r0, [r4, #2]
@@ -333898,7 +333898,7 @@ gCardAISpecialSummonDestroy_080B4610: @ 0x080B4610
 	movs r6, #1
 	subs r1, r6, r1
 	adds r0, r4, #0
-	bl sub_0805C17C
+	bl gEngineEffectSpecialSummon_0805C17C
 	cmp r0, #3
 	bne _080B466E
 	ldrb r1, [r4, #2]
@@ -334074,7 +334074,7 @@ gCardAIDestroySpellTrap_080B4728: @ 0x080B4728
 	movs r1, #0
 	movs r2, #1
 	movs r3, #1
-	bl sub_08033B18
+	bl gEngineEffectSpecialSummonChangePosition_08033B18
 	cmp r0, #0
 	beq _080B476C
 	ldr r0, _080B47E0 @ =0x0000131B (Heavy Storm)
@@ -334396,8 +334396,8 @@ _080B4994:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B499C
-sub_080B499C: @ 0x080B499C
+	thumb_func_start gEngineEffectSpecialSummonNegate_080B499C
+gEngineEffectSpecialSummonNegate_080B499C: @ 0x080B499C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -334507,7 +334507,7 @@ _080B4A0A:
 	beq _080B4A88
 	mov r0, sp
 	mov r1, sb
-	bl sub_0805A3E0
+	bl gEngineEffectSpecialSummonDiscard_0805A3E0
 	b _080B4A90
 	.align 2, 0
 _080B4A78: .4byte gUnk_0201B290
@@ -334543,7 +334543,7 @@ _080B4AAE:
 	ldr r3, [sp, #0x18]
 	ldr r1, [r3]
 	adds r0, r7, #0
-	bl sub_08037A8C
+	bl gEngineEffectBoostATKBoostDEF_08037A8C
 	adds r4, r0, #0
 	cmp r4, #0
 	blt _080B4B94
@@ -334652,8 +334652,8 @@ _080B4B96:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B4BA8
-sub_080B4BA8: @ 0x080B4BA8
+	thumb_func_start gEngineEffectSpecialSummonNegate_080B4BA8
+gEngineEffectSpecialSummonNegate_080B4BA8: @ 0x080B4BA8
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	ldr r0, _080B4BD8 @ =gUnk_0201AFE0
@@ -334664,7 +334664,7 @@ _080B4BB4:
 	adds r0, r4, #0
 	adds r1, r5, #0
 	movs r2, #0
-	bl sub_080B499C
+	bl gEngineEffectSpecialSummonNegate_080B499C
 	cmp r0, #0
 	bne _080B4BE0
 	adds r5, #8
@@ -334672,7 +334672,7 @@ _080B4BB4:
 	cmp r6, #0xdd
 	bls _080B4BB4
 	adds r0, r4, #0
-	bl sub_080BB3DC
+	bl gEngineEffectSpecialSummonNegate_080BB3DC
 	cmp r0, #0
 	bne _080B4BE0
 	movs r0, #0
@@ -334701,7 +334701,7 @@ _080B4BF6:
 	adds r0, r7, #0
 	adds r1, r5, #0
 	adds r2, r6, #0
-	bl sub_080B499C
+	bl gEngineEffectSpecialSummonNegate_080B499C
 	cmp r0, #0
 	bne _080B4C40
 	adds r5, #8
@@ -334740,7 +334740,7 @@ _080B4C48:
 	adds r0, r7, #0
 	adds r1, r5, #0
 	adds r2, r6, #0
-	bl sub_080B499C
+	bl gEngineEffectSpecialSummonNegate_080B499C
 	cmp r0, #0
 	bne _080B4C40
 	adds r5, #8
@@ -334756,8 +334756,8 @@ _080B4C60:
 	.align 2, 0
 _080B4C68: .4byte gCardEffects4
 
-	thumb_func_start sub_080B4C6C
-sub_080B4C6C: @ 0x080B4C6C
+	thumb_func_start gEngineEffectSendToGYGraveyard_080B4C6C
+gEngineEffectSendToGYGraveyard_080B4C6C: @ 0x080B4C6C
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -334787,7 +334787,7 @@ _080B4C88:
 	adds r1, r5, #0
 	adds r2, r4, #0
 	movs r3, #0
-	bl sub_0805A280
+	bl gEngineEffectSendToGYGraveyard_0805A280
 	cmp r0, #0
 	beq _080B4CB8
 	movs r0, #1
@@ -334808,17 +334808,17 @@ _080B4CC2:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B4CCC
-sub_080B4CCC: @ 0x080B4CCC
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_080B4CCC
+gEngineEffectSpecialSummonBoostATK_080B4CCC: @ 0x080B4CCC
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	adds r1, r4, #0
-	bl sub_080AF374
+	bl gEngineEffectSpecialSummonBoostATK_080AF374
 	adds r6, r0, #0
 	movs r5, #1
 	subs r1, r5, r4
 	adds r0, r4, #0
-	bl sub_080AF374
+	bl gEngineEffectSpecialSummonBoostATK_080AF374
 	subs r0, r0, r6
 	ldr r2, _080B4CF8 @ =gUnk_0201C4E0
 	ands r4, r5
@@ -334840,8 +334840,8 @@ _080B4D02:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B4D08
-sub_080B4D08: @ 0x080B4D08
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_080B4D08
+gEngineEffectSpecialSummonBoostATK_080B4D08: @ 0x080B4D08
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -334912,7 +334912,7 @@ _080B4D7C:
 	adds r1, r7, #0
 	adds r2, r3, #0
 	str r3, [sp, #0x58]
-	bl sub_080AC004
+	bl gEngineEffectSpecialSummonBoostATK_080AC004
 	ldr r3, [sp, #0x58]
 	mov r0, sb
 	cmp r0, #0
@@ -335016,8 +335016,8 @@ _080B4E2C:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B4E40
-sub_080B4E40: @ 0x080B4E40
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_080B4E40
+gEngineEffectSpecialSummonBoostATK_080B4E40: @ 0x080B4E40
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -335102,7 +335102,7 @@ _080B4ED4:
 	adds r1, r5, #0
 	adds r2, r4, #0
 	str r3, [sp, #0x58]
-	bl sub_080AC004
+	bl gEngineEffectSpecialSummonBoostATK_080AC004
 	lsls r0, r5, #2
 	adds r0, r0, r5
 	lsls r0, r0, #2
@@ -335145,8 +335145,8 @@ _080B4F18:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B4F2C
-sub_080B4F2C: @ 0x080B4F2C
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_080B4F2C
+gEngineEffectSpecialSummonBoostATK_080B4F2C: @ 0x080B4F2C
 	push {r4, r5, r6, lr}
 	mov r6, r8
 	push {r6}
@@ -335166,7 +335166,7 @@ sub_080B4F2C: @ 0x080B4F2C
 	adds r0, r4, #0
 	adds r2, r6, #0
 	mov r3, r8
-	bl sub_080B4D08
+	bl gEngineEffectSpecialSummonBoostATK_080B4D08
 	pop {r3}
 	mov r8, r3
 	pop {r4, r5, r6}
@@ -335716,8 +335716,8 @@ _080B5338:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B5348
-sub_080B5348: @ 0x080B5348
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_080B5348
+gEngineEffectSpecialSummonBoostATK_080B5348: @ 0x080B5348
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -335853,7 +335853,7 @@ _080B543C:
 	adds r1, r6, #0
 	movs r2, #1
 	movs r3, #0
-	bl sub_080B4D08
+	bl gEngineEffectSpecialSummonBoostATK_080B4D08
 	adds r5, r0, #0
 	cmp r5, #0
 	blt _080B5478
@@ -335861,7 +335861,7 @@ _080B543C:
 	mov r0, r8
 	adds r1, r5, #0
 	adds r2, r4, #0
-	bl sub_080AC004
+	bl gEngineEffectSpecialSummonBoostATK_080AC004
 	ldr r2, _080B5494 @ =gUnk_0201C4E0
 	movs r1, #1
 	mov r3, r8
@@ -335879,7 +335879,7 @@ _080B5478:
 	ldr r1, [sp, #0x50]
 	movs r2, #1
 	movs r3, #1
-	bl sub_080B4D08
+	bl gEngineEffectSpecialSummonBoostATK_080B4D08
 	adds r5, r0, #0
 	cmp r5, #0
 	bge _080B54AC
@@ -335909,8 +335909,8 @@ _080B54AE:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B54C0
-sub_080B54C0: @ 0x080B54C0
+	thumb_func_start gEngineEffectSpecialSummonDestroy_080B54C0
+gEngineEffectSpecialSummonDestroy_080B54C0: @ 0x080B54C0
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -336014,7 +336014,7 @@ _080B5572:
 	ldr r0, [sp, #0x2c]
 	mov r1, r8
 	adds r2, r3, #0
-	bl sub_080B4D08
+	bl gEngineEffectSpecialSummonBoostATK_080B4D08
 	cmp r0, #0
 	bge _080B5594
 	ldr r0, [sp, #0x2c]
@@ -336226,7 +336226,7 @@ _080B56EC:
 	cmp r0, #6
 	ble _080B5732
 	adds r0, r4, #0
-	bl sub_0804BA58
+	bl gEngineEffectSpecialSummon_0804BA58
 	cmp r0, #0
 	bne _080B5732
 	adds r0, r4, #0
@@ -336404,7 +336404,7 @@ _080B5860:
 	mov r0, sl
 	adds r1, r2, #0
 	adds r2, r3, #0
-	bl sub_080B4D08
+	bl gEngineEffectSpecialSummonBoostATK_080B4D08
 	adds r6, r0, #0
 	ldr r0, [sp, #0x54]
 	cmp r0, #0
@@ -336415,7 +336415,7 @@ _080B5860:
 	mov r0, sl
 	adds r1, r6, #0
 	adds r2, r4, #0
-	bl sub_080AC004
+	bl gEngineEffectSpecialSummonBoostATK_080AC004
 	ldr r1, [r4, #0x18]
 	ldr r0, [r4, #0x14]
 	cmp r1, r0
@@ -336529,7 +336529,7 @@ _080B592A:
 	cmp r0, #4
 	ble _080B598C
 	adds r0, r5, #0
-	bl sub_0804BA58
+	bl gEngineEffectSpecialSummon_0804BA58
 	cmp r0, #0
 	bne _080B598C
 	mov r0, sl
@@ -336637,19 +336637,19 @@ _080B5A20:
 _080B5A32:
 	ldr r1, _080B5A68 @ =0x000012EA (Monster Reborn)
 	mov r0, sb
-	bl sub_08037A8C
+	bl gEngineEffectBoostATKBoostDEF_08037A8C
 	movs r4, #1
 	rsbs r4, r4, #0
 	cmp r0, r4
 	bgt _080B5A5A
 	ldr r1, _080B5A6C @ =0x00001366 (Premature Burial)
 	mov r0, sb
-	bl sub_08037A8C
+	bl gEngineEffectBoostATKBoostDEF_08037A8C
 	cmp r0, r4
 	bgt _080B5A5A
 	ldr r1, _080B5A70 @ =0x0000137D (Call of the Haunted)
 	mov r0, sb
-	bl sub_080B4C6C
+	bl gEngineEffectSendToGYGraveyard_080B4C6C
 	cmp r0, #0
 	beq _080B5A74
 _080B5A5A:
@@ -336716,8 +336716,8 @@ _080B5AC4:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B5AD4
-sub_080B5AD4: @ 0x080B5AD4
+	thumb_func_start gEngineEffectDiscardDestroySpellTrap_080B5AD4
+gEngineEffectDiscardDestroySpellTrap_080B5AD4: @ 0x080B5AD4
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -336834,8 +336834,8 @@ _080B5BA6:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080B5BAC
-sub_080B5BAC: @ 0x080B5BAC
+	thumb_func_start gEngineEffectFlip_080B5BAC
+gEngineEffectFlip_080B5BAC: @ 0x080B5BAC
 	push {r4, r5, lr}
 	movs r5, #0
 	movs r2, #1
@@ -336867,8 +336867,8 @@ _080B5BDA:
 _080B5BE4: .4byte 0x00000868
 _080B5BE8: .4byte gUnk_0201C510
 
-	thumb_func_start sub_080B5BEC
-sub_080B5BEC: @ 0x080B5BEC
+	thumb_func_start gEngineEffectFlip_080B5BEC
+gEngineEffectFlip_080B5BEC: @ 0x080B5BEC
 	push {r4, r5, lr}
 	movs r5, #0
 	movs r2, #1
@@ -336900,8 +336900,8 @@ _080B5C1A:
 _080B5C24: .4byte 0x00000868
 _080B5C28: .4byte gUnk_0201C510
 
-	thumb_func_start sub_080B5C2C
-sub_080B5C2C: @ 0x080B5C2C
+	thumb_func_start gEngineEffectSpecialSummon_080B5C2C
+gEngineEffectSpecialSummon_080B5C2C: @ 0x080B5C2C
 	push {r4, r5, lr}
 	movs r2, #1
 	ands r2, r0
@@ -336922,7 +336922,7 @@ sub_080B5C2C: @ 0x080B5C2C
 	cmp r0, #4
 	bgt _080B5C5E
 	adds r0, r4, #0
-	bl sub_0804BA58
+	bl gEngineEffectSpecialSummon_0804BA58
 	cmp r0, #0
 	beq _080B5C60
 _080B5C5E:
@@ -336936,8 +336936,8 @@ _080B5C60:
 _080B5C68: .4byte 0x00000868
 _080B5C6C: .4byte gUnk_0201C510
 
-	thumb_func_start sub_080B5C70
-sub_080B5C70: @ 0x080B5C70
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_080B5C70
+gEngineEffectSpecialSummonBoostATK_080B5C70: @ 0x080B5C70
 	push {r4, r5, r6, lr}
 	sub sp, #0x24
 	adds r5, r0, #0
@@ -336945,12 +336945,12 @@ sub_080B5C70: @ 0x080B5C70
 	ldr r1, _080B5CC8 @ =gUnk_0201BB90
 	ldr r0, [r1]
 	ldr r1, [r1, #0x1c]
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	adds r6, r0, #0
 	adds r0, r5, #0
 	adds r1, r4, #0
 	mov r2, sp
-	bl sub_080AC004
+	bl gEngineEffectSpecialSummonBoostATK_080AC004
 	movs r2, #1
 	ands r2, r5
 	lsls r0, r4, #2
@@ -337033,8 +337033,8 @@ _080B5D20:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080B5D28
-sub_080B5D28: @ 0x080B5D28
+	thumb_func_start gEngineEffectSpecialSummonSendToGY_080B5D28
+gEngineEffectSpecialSummonSendToGY_080B5D28: @ 0x080B5D28
 	push {r4, r5, r6, lr}
 	sub sp, #8
 	adds r6, r0, #0
@@ -337066,12 +337066,12 @@ sub_080B5D28: @ 0x080B5D28
 	cmp r4, r1
 	bge _080B5D8C
 	adds r0, r6, #0
-	bl sub_08037A8C
+	bl gEngineEffectBoostATKBoostDEF_08037A8C
 	cmp r0, #0
 	bge _080B5D7E
 	ldr r1, [r5]
 	adds r0, r6, #0
-	bl sub_080316B8
+	bl gEngineEffectBoostATKBoostDEF_080316B8
 	cmp r0, #0
 	blt _080B5D8C
 _080B5D7E:
@@ -337330,7 +337330,7 @@ _080B5ED8:
 	subs r0, #0x2b
 	cmp r4, r0
 	bne _080B5EE6
-	bl sub_080B675C
+	bl gEngineEffectSpecialSummonBoostATK_080B675C
 _080B5EE6:
 	bl _080B6BE0
 	.align 2, 0
@@ -337421,7 +337421,7 @@ _080B5F78:
 	subs r0, #4
 	cmp r4, r0
 	bne _080B5F86
-	bl sub_080B68FC
+	bl gEngineEffectSpecialSummonBoostATK_080B68FC
 _080B5F86:
 	bl _080B6BE0
 	.align 2, 0
@@ -337435,7 +337435,7 @@ _080B5F98:
 	ldr r0, _080B5FC8 @ =0x00001475 (Makiu)
 	cmp r4, r0
 	bne _080B5FA2
-	bl sub_080B68FC
+	bl gEngineEffectSpecialSummonBoostATK_080B68FC
 _080B5FA2:
 	cmp r4, r0
 	bgt _080B5FF4
@@ -337476,7 +337476,7 @@ _080B5FE0:
 	ldr r0, _080B5FF0 @ =0x0000146B (Dark Spirit of the Silent)
 	cmp r4, r0
 	bne _080B5FEA
-	bl sub_080B693C
+	bl gEngineEffectSpecialSummonBoostATK_080B693C
 _080B5FEA:
 	bl _080B6BE0
 	.align 2, 0
@@ -337551,7 +337551,7 @@ _080B6062:
 	subs r0, #0xb1
 	cmp r4, r0
 	bne _080B6070
-	bl sub_080B6AC2
+	bl gEngineEffectSpecialSummonBoostATK_080B6AC2
 _080B6070:
 	cmp r4, r0
 	bgt _080B60B8
@@ -337565,7 +337565,7 @@ _080B607C:
 	subs r0, #0x18
 	cmp r4, r0
 	bne _080B608A
-	bl sub_080B6AC2
+	bl gEngineEffectSpecialSummonBoostATK_080B6AC2
 _080B608A:
 	adds r0, #0xe
 	b _080B62F6
@@ -337613,7 +337613,7 @@ _080B60D8:
 	ldr r0, _080B60E8 @ =0x0000158E (A Man with Wdjat)
 	cmp r4, r0
 	bne _080B60E2
-	bl sub_080B6B94
+	bl gEngineEffectDiscardDestroySpellTrap_080B6B94
 _080B60E2:
 	bl _080B6BE0
 	.align 2, 0
@@ -337756,7 +337756,7 @@ _080B61D4:
 	subs r0, #0x4a
 	cmp r4, r0
 	bne _080B61E2
-	bl sub_080B6A34
+	bl gEngineEffectSpecialSummonBoostATK_080B6A34
 _080B61E2:
 	adds r0, #0x15
 _080B61E4:
@@ -337888,7 +337888,7 @@ _080B62BC:
 	subs r0, #0x3d
 	cmp r4, r0
 	bne _080B62CA
-	bl sub_080B6B94
+	bl gEngineEffectDiscardDestroySpellTrap_080B6B94
 _080B62CA:
 	cmp r4, r0
 	bgt _080B62D8
@@ -338167,7 +338167,7 @@ _080B64D2:
 	subs r0, r5, r0
 	mov r1, sb
 	movs r2, #1
-	bl sub_080B5348
+	bl gEngineEffectSpecialSummonBoostATK_080B5348
 	adds r4, r0, #0
 	cmp r4, #0
 	blt _080B6504
@@ -338186,7 +338186,7 @@ _080B6504:
 	lsls r0, r7, #0x1f
 	lsrs r0, r0, #0x1f
 	mov r1, sb
-	bl sub_080B54C0
+	bl gEngineEffectSpecialSummonDestroy_080B54C0
 	adds r4, r0, #0
 	cmp r4, #0
 	bge _080B6518
@@ -338201,7 +338201,7 @@ _080B651A:
 	subs r0, r5, r0
 	mov r1, sb
 	movs r2, #0
-	bl sub_080B5348
+	bl gEngineEffectSpecialSummonBoostATK_080B5348
 	adds r4, r0, #0
 	cmp r4, #0
 	blt _080B6504
@@ -338214,7 +338214,7 @@ _080B653C:
 	lsrs r0, r3, #0x1f
 	movs r5, #1
 	subs r0, r5, r0
-	ldr r2, _080B655C @ =sub_080B5C2C
+	ldr r2, _080B655C @ =gEngineEffectSpecialSummon_080B5C2C
 	mov r1, sb
 	bl sub_080B4F68
 	adds r4, r0, #0
@@ -338228,10 +338228,10 @@ _080B6552:
 	subs r1, r5, r1
 	b _080B6BD4
 	.align 2, 0
-_080B655C: .4byte sub_080B5C2C
+_080B655C: .4byte gEngineEffectSpecialSummon_080B5C2C
 _080B6560:
 	lsrs r0, r3, #0x1f
-	ldr r2, _080B6578 @ =sub_080B5BAC
+	ldr r2, _080B6578 @ =gEngineEffectFlip_080B5BAC
 	mov r1, sb
 	bl sub_080B4F68
 	adds r4, r0, #0
@@ -338243,7 +338243,7 @@ _080B6572:
 	lsls r1, r7, #0x1f
 	b _080B6BD2
 	.align 2, 0
-_080B6578: .4byte sub_080B5BAC
+_080B6578: .4byte gEngineEffectFlip_080B5BAC
 _080B657C:
 	ldr r0, _080B65A8 @ =gUnk_0201C4E0
 	ldr r1, _080B65AC @ =0x00001CE8
@@ -338280,7 +338280,7 @@ _080B65B0:
 	adds r0, r6, #0
 	movs r2, #1
 	movs r3, #1
-	bl sub_080B4F2C
+	bl gEngineEffectSpecialSummonBoostATK_080B4F2C
 	adds r4, r0, #0
 	cmp r4, #0
 	bge _080B65CE
@@ -338302,7 +338302,7 @@ _080B65D4:
 	adds r1, r4, #0
 	movs r2, #1
 	movs r3, #1
-	bl sub_080B4F2C
+	bl gEngineEffectSpecialSummonBoostATK_080B4F2C
 	adds r2, r0, #0
 	cmp r2, #0
 	bge _080B660E
@@ -338312,7 +338312,7 @@ _080B65D4:
 	adds r1, r4, #0
 	adds r2, r5, #0
 	adds r3, r5, #0
-	bl sub_080B4F2C
+	bl gEngineEffectSpecialSummonBoostATK_080B4F2C
 	adds r2, r0, #0
 	cmp r2, #0
 	bge _080B660E
@@ -338332,7 +338332,7 @@ _080B6614:
 	adds r1, r5, #0
 	movs r2, #1
 	movs r3, #1
-	bl sub_080B4F2C
+	bl gEngineEffectSpecialSummonBoostATK_080B4F2C
 	adds r4, r0, #0
 	cmp r4, #0
 	bge _080B664C
@@ -338343,7 +338343,7 @@ _080B6614:
 	adds r1, r5, #0
 	adds r2, r7, #0
 	adds r3, r7, #0
-	bl sub_080B4F2C
+	bl gEngineEffectSpecialSummonBoostATK_080B4F2C
 	adds r4, r0, #0
 	cmp r4, #0
 	bge _080B664C
@@ -338360,7 +338360,7 @@ _080B6652:
 	adds r0, r6, #0
 	movs r2, #1
 	movs r3, #0
-	bl sub_080B4F2C
+	bl gEngineEffectSpecialSummonBoostATK_080B4F2C
 	adds r4, r0, #0
 	cmp r4, #0
 	bge _080B666C
@@ -338374,7 +338374,7 @@ _080B6672:
 	movs r2, #1
 	rsbs r2, r2, #0
 	mov r1, sb
-	bl sub_080B4E40
+	bl gEngineEffectSpecialSummonBoostATK_080B4E40
 	adds r4, r0, #0
 	cmp r4, #0
 	bge _080B6686
@@ -338437,7 +338437,7 @@ _080B6696:
 	ldr r0, [r0]
 	lsls r0, r0, #0x13
 	lsrs r0, r0, #0x13
-	bl sub_0804BA58
+	bl gEngineEffectSpecialSummon_0804BA58
 	cmp r0, #0
 	bne _080B6710
 	ldrb r3, [r6, #2]
@@ -338463,7 +338463,7 @@ _080B6710:
 	mov r1, sl
 	movs r2, #1
 	movs r3, #0
-	bl sub_080B4D08
+	bl gEngineEffectSpecialSummonBoostATK_080B4D08
 	adds r4, r0, #0
 	cmp r4, #0
 	bge _080B674A
@@ -338473,7 +338473,7 @@ _080B6710:
 	mov r1, sb
 	movs r2, #1
 	movs r3, #0
-	bl sub_080B4D08
+	bl gEngineEffectSpecialSummonBoostATK_080B4D08
 	adds r4, r0, #0
 	cmp r4, #0
 	bge _080B674A
@@ -338487,8 +338487,8 @@ _080B6750: .4byte gUnk_0201C4E0
 _080B6754: .4byte 0x00000868
 _080B6758: .4byte gUnk_0201C520
 
-	thumb_func_start sub_080B675C
-sub_080B675C: @ 0x080B675C
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_080B675C
+gEngineEffectSpecialSummonBoostATK_080B675C: @ 0x080B675C
 	movs r3, #1
 	rsbs r3, r3, #0
 	adds r7, r3, #0
@@ -338511,7 +338511,7 @@ _080B6766:
 	subs r0, r5, r0
 	adds r1, r4, #0
 	str r3, [sp, #0x28]
-	bl sub_0803A96C
+	bl gEngineEffectSpecialSummonBoostATK_0803A96C
 	ldr r3, [sp, #0x28]
 	cmp r0, r7
 	ble _080B6794
@@ -338596,14 +338596,14 @@ _080B67F2:
 	bne _080B684C
 	adds r0, r1, #0
 	adds r1, r4, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	cmp r7, r0
 	bgt _080B6844
 	ldrb r7, [r6, #2]
 	lsls r0, r7, #0x1f
 	lsrs r0, r0, #0x1f
 	adds r1, r4, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	b _080B6846
 	.align 2, 0
 _080B683C: .4byte gUnk_0201C510
@@ -338629,7 +338629,7 @@ _080B684C:
 	rsbs r2, r2, #0
 	str r7, [sp]
 	movs r3, #1
-	bl sub_080AEF1C
+	bl gEngineEffectSpecialSummonBoostATK_080AEF1C
 	adds r7, r0, #0
 _080B686E:
 	movs r0, #0x1d
@@ -338658,7 +338658,7 @@ _080B687E:
 	adds r1, r4, #0
 	add r2, sp, #4
 	str r3, [sp, #0x28]
-	bl sub_080AC004
+	bl gEngineEffectSpecialSummonBoostATK_080AC004
 	ldrb r1, [r6, #2]
 	lsls r2, r1, #0x1f
 	lsrs r0, r2, #0x1f
@@ -338707,8 +338707,8 @@ sub_080B68F4: @ 0x080B68F4
 	lsrs r1, r1, #0x1f
 	b _080B6BF2
 
-	thumb_func_start sub_080B68FC
-sub_080B68FC: @ 0x080B68FC
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_080B68FC
+gEngineEffectSpecialSummonBoostATK_080B68FC: @ 0x080B68FC
 	mov r7, r8
 	lsls r0, r7, #0x1f
 	lsrs r0, r0, #0x1f
@@ -338721,7 +338721,7 @@ sub_080B68FC: @ 0x080B68FC
 	adds r1, r4, #0
 	movs r2, #1
 	movs r3, #0
-	bl sub_080B4F2C
+	bl gEngineEffectSpecialSummonBoostATK_080B4F2C
 	adds r2, r0, #0
 	cmp r2, #0
 	bge _080B6936
@@ -338731,7 +338731,7 @@ sub_080B68FC: @ 0x080B68FC
 	adds r1, r4, #0
 	movs r2, #1
 	movs r3, #0
-	bl sub_080B4F2C
+	bl gEngineEffectSpecialSummonBoostATK_080B4F2C
 	adds r2, r0, #0
 	cmp r2, #0
 	bge _080B6936
@@ -338741,8 +338741,8 @@ _080B6936:
 	adds r1, r4, #0
 	b _080B6BD8
 
-	thumb_func_start sub_080B693C
-sub_080B693C: @ 0x080B693C
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_080B693C
+gEngineEffectSpecialSummonBoostATK_080B693C: @ 0x080B693C
 	lsrs r1, r3, #0x1f
 	movs r5, #1
 	subs r1, r5, r1
@@ -338751,7 +338751,7 @@ sub_080B693C: @ 0x080B693C
 	str r2, [sp]
 	adds r0, r6, #0
 	movs r3, #1
-	bl sub_080B4F2C
+	bl gEngineEffectSpecialSummonBoostATK_080B4F2C
 	adds r4, r0, #0
 	cmp r4, #0
 	bge _080B6958
@@ -338819,7 +338819,7 @@ _080B69B6:
 	b _080B6BE0
 _080B69C4:
 	lsrs r0, r3, #0x1f
-	ldr r2, _080B69DC @ =sub_080B5BEC
+	ldr r2, _080B69DC @ =gEngineEffectFlip_080B5BEC
 	mov r1, sb
 	bl sub_080B4F68
 	adds r4, r0, #0
@@ -338831,7 +338831,7 @@ _080B69D6:
 	lsls r1, r3, #0x1f
 	b _080B6BD2
 	.align 2, 0
-_080B69DC: .4byte sub_080B5BEC
+_080B69DC: .4byte gEngineEffectFlip_080B5BEC
 _080B69E0:
 	movs r4, #0
 	movs r7, #1
@@ -338875,8 +338875,8 @@ _080B6A20:
 _080B6A2C: .4byte 0x00000868
 _080B6A30: .4byte gUnk_0201C510
 
-	thumb_func_start sub_080B6A34
-sub_080B6A34: @ 0x080B6A34
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_080B6A34
+gEngineEffectSpecialSummonBoostATK_080B6A34: @ 0x080B6A34
 	movs r4, #0
 	movs r5, #0xcc
 	lsls r5, r5, #1
@@ -338898,7 +338898,7 @@ _080B6A3C:
 	bls _080B6A66
 	lsrs r0, r2, #0x1f
 	adds r1, r4, #0
-	bl sub_0803A980
+	bl gEngineEffectSpecialSummonBoostATK_0803A980
 	cmp r0, #0
 	beq _080B6A66
 	b _080B6BCE
@@ -338952,8 +338952,8 @@ _080B6ABA:
 	lsrs r1, r1, #0x1f
 	b _080B6BF2
 
-	non_word_aligned_thumb_func_start sub_080B6AC2
-sub_080B6AC2: @ 0x080B6AC2
+	non_word_aligned_thumb_func_start gEngineEffectSpecialSummonBoostATK_080B6AC2
+gEngineEffectSpecialSummonBoostATK_080B6AC2: @ 0x080B6AC2
 	cmp r5, #0
 	beq _080B6B0C
 	ldr r0, [r5, #4]
@@ -339029,7 +339029,7 @@ _080B6B50:
 	ldrb r1, [r6, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	ldr r2, _080B6B6C @ =sub_080B5BEC
+	ldr r2, _080B6B6C @ =gEngineEffectFlip_080B5BEC
 	mov r1, sb
 	bl sub_080B4F68
 	adds r4, r0, #0
@@ -339039,7 +339039,7 @@ _080B6B50:
 	lsls r1, r3, #0x1f
 	b _080B6BD2
 	.align 2, 0
-_080B6B6C: .4byte sub_080B5BEC
+_080B6B6C: .4byte gEngineEffectFlip_080B5BEC
 _080B6B70:
 	ldrb r7, [r6, #2]
 	lsls r0, r7, #0x1f
@@ -339049,7 +339049,7 @@ _080B6B70:
 	mov r1, sb
 	movs r2, #1
 	movs r3, #0
-	bl sub_080B4D08
+	bl gEngineEffectSpecialSummonBoostATK_080B4D08
 	adds r4, r0, #0
 	cmp r4, #0
 	blt _080B6BE0
@@ -339059,8 +339059,8 @@ _080B6B70:
 	subs r1, r5, r1
 	b _080B6BD4
 
-	thumb_func_start sub_080B6B94
-sub_080B6B94: @ 0x080B6B94
+	thumb_func_start gEngineEffectDiscardDestroySpellTrap_080B6B94
+gEngineEffectDiscardDestroySpellTrap_080B6B94: @ 0x080B6B94
 	ldrb r1, [r6, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
@@ -339116,7 +339116,7 @@ _080B6BE0:
 	subs r1, r1, r2
 _080B6BF2:
 	adds r0, r6, #0
-	bl sub_080B5AD4
+	bl gEngineEffectDiscardDestroySpellTrap_080B5AD4
 _080B6BF8:
 	add sp, #0x2c
 	pop {r3, r4, r5}
@@ -339632,7 +339632,7 @@ _080B6F60:
 	adds r0, r4, #0
 	mov r1, sb
 	movs r2, #0
-	bl sub_080B5348
+	bl gEngineEffectSpecialSummonBoostATK_080B5348
 	adds r5, r0, #0
 	cmp r5, #0
 	blt _080B6F80
@@ -339657,7 +339657,7 @@ _080B6F92:
 	adds r0, r4, #0
 	mov r1, sb
 	movs r2, #1
-	bl sub_080B5348
+	bl gEngineEffectSpecialSummonBoostATK_080B5348
 	adds r5, r0, #0
 	cmp r5, #0
 	blt _080B6FAA
@@ -339666,7 +339666,7 @@ _080B6F92:
 _080B6FAA:
 	adds r0, r6, #0
 	mov r1, sb
-	bl sub_080B54C0
+	bl gEngineEffectSpecialSummonDestroy_080B54C0
 	b _080B6F8A
 _080B6FB4:
 	movs r0, #1
@@ -339674,7 +339674,7 @@ _080B6FB4:
 	adds r0, r4, #0
 	mov r1, sb
 	movs r2, #0
-	bl sub_080B5348
+	bl gEngineEffectSpecialSummonBoostATK_080B5348
 	adds r5, r0, #0
 	cmp r5, #0
 	blt _080B6FCC
@@ -339683,14 +339683,14 @@ _080B6FB4:
 _080B6FCC:
 	adds r0, r6, #0
 	mov r1, sb
-	bl sub_080B54C0
+	bl gEngineEffectSpecialSummonDestroy_080B54C0
 	b _080B6F8A
 _080B6FD6:
 	adds r0, r6, #0
 	mov r1, sb
 	movs r2, #1
 	movs r3, #0
-	bl sub_080B4D08
+	bl gEngineEffectSpecialSummonBoostATK_080B4D08
 	b _080B6F8A
 _080B6FE4:
 	movs r0, #1
@@ -339700,7 +339700,7 @@ _080B6FE4:
 	adds r0, r4, #0
 	mov r1, sb
 	adds r2, r3, #0
-	bl sub_080B4D08
+	bl gEngineEffectSpecialSummonBoostATK_080B4D08
 	adds r5, r0, #0
 	cmp r5, #0
 	blt _080B7000
@@ -339711,16 +339711,16 @@ _080B7000:
 	mov r1, sb
 	movs r2, #1
 	movs r3, #1
-	bl sub_080B4D08
+	bl gEngineEffectSpecialSummonBoostATK_080B4D08
 	b _080B6F8A
 _080B700E:
-	ldr r2, _080B701C @ =sub_080B5D28
+	ldr r2, _080B701C @ =gEngineEffectSpecialSummonSendToGY_080B5D28
 	adds r0, r6, #0
 	mov r1, sb
 	bl sub_080B4F68
 	b _080B6F8A
 	.align 2, 0
-_080B701C: .4byte sub_080B5D28
+_080B701C: .4byte gEngineEffectSpecialSummonSendToGY_080B5D28
 _080B7020:
 	movs r0, #1
 	subs r4, r0, r6
@@ -339955,7 +339955,7 @@ _080B71B4:
 	adds r0, r4, #0
 	mov r1, r8
 	movs r2, #0
-	bl sub_080B5348
+	bl gEngineEffectSpecialSummonBoostATK_080B5348
 	adds r1, r0, #0
 	cmp r1, #0
 	blt _080B71CC
@@ -340006,7 +340006,7 @@ _080B7214:
 	adds r2, r4, #0
 	b _080B73DA
 _080B721C:
-	ldr r2, _080B7234 @ =sub_080B5C70
+	ldr r2, _080B7234 @ =gEngineEffectSpecialSummonBoostATK_080B5C70
 	adds r0, r7, #0
 	mov r1, r8
 	bl sub_080B4F68
@@ -340019,14 +340019,14 @@ _080B722E:
 	movs r2, #0
 	b _080B73DA
 	.align 2, 0
-_080B7234: .4byte sub_080B5C70
+_080B7234: .4byte gEngineEffectSpecialSummonBoostATK_080B5C70
 _080B7238:
 	movs r0, #1
 	subs r4, r0, r7
 	adds r0, r4, #0
 	mov r1, r8
 	movs r2, #1
-	bl sub_080B5348
+	bl gEngineEffectSpecialSummonBoostATK_080B5348
 	adds r1, r0, #0
 	cmp r1, #0
 	blt _080B7252
@@ -340036,7 +340036,7 @@ _080B7238:
 _080B7252:
 	adds r0, r7, #0
 	mov r1, r8
-	bl sub_080B54C0
+	bl gEngineEffectSpecialSummonDestroy_080B54C0
 	adds r1, r0, #0
 	cmp r1, #0
 	blt _080B734C
@@ -340059,7 +340059,7 @@ _080B727C: .4byte gEngineEffectDamage_080B5B50
 _080B7280:
 	adds r0, r7, #0
 	mov r1, r8
-	bl sub_080B54C0
+	bl gEngineEffectSpecialSummonDestroy_080B54C0
 	adds r1, r0, #0
 	cmp r1, #0
 	blt _080B734C
@@ -340072,7 +340072,7 @@ _080B7294:
 	adds r0, r4, #0
 	mov r1, r8
 	movs r2, #0
-	bl sub_080B5348
+	bl gEngineEffectSpecialSummonBoostATK_080B5348
 	adds r1, r0, #0
 	cmp r1, #0
 	blt _080B72AE
@@ -340082,7 +340082,7 @@ _080B7294:
 _080B72AE:
 	adds r0, r7, #0
 	mov r1, r8
-	bl sub_080B54C0
+	bl gEngineEffectSpecialSummonDestroy_080B54C0
 	adds r1, r0, #0
 	cmp r1, #0
 	blt _080B734C
@@ -340342,7 +340342,7 @@ _080B7490:
 	adds r1, r1, r0
 	adds r0, r6, #0
 	str r2, [sp]
-	bl sub_080A4694
+	bl gEngineEffectSpecialSummonTribute_080A4694
 	adds r5, r0, #0
 	ldr r2, [sp]
 	cmp r5, #0
@@ -340351,7 +340351,7 @@ _080B7490:
 	adds r1, r4, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_080AC540
+	bl gEngineEffectSpecialSummonDiscard_080AC540
 	adds r1, r0, #0
 	cmp r1, #0
 	beq _080B74DC
@@ -340418,7 +340418,7 @@ _080B751E:
 	lsrs r0, r0, #0x1f
 	adds r1, r1, r0
 	adds r0, r6, #0
-	bl sub_080A4694
+	bl gEngineEffectSpecialSummonTribute_080A4694
 	movs r1, #0x40
 	ands r1, r0
 	cmp r1, #0
@@ -340479,7 +340479,7 @@ _080B759C:
 	lsrs r0, r0, #0x1f
 	adds r1, r1, r0
 	adds r0, r6, #0
-	bl sub_080A4694
+	bl gEngineEffectSpecialSummonTribute_080A4694
 	adds r4, r0, #0
 	cmp r4, #0
 	bne _080B7634
@@ -340529,7 +340529,7 @@ _080B75FE:
 	lsrs r0, r0, #0x1f
 	adds r1, r1, r0
 	adds r0, r6, #0
-	bl sub_080A4694
+	bl gEngineEffectSpecialSummonTribute_080A4694
 	adds r4, r0, #0
 	cmp r4, #0
 	beq _080B7680
@@ -340538,7 +340538,7 @@ _080B7634:
 	adds r1, r5, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_080AC540
+	bl gEngineEffectSpecialSummonDiscard_080AC540
 	adds r1, r0, #0
 	cmp r1, #0
 	beq _080B7654
@@ -340894,7 +340894,7 @@ gCardAISpecialSummonDamage_080B76E4: @ 0x080B76E4
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r4]
-	bl sub_08032F7C
+	bl gEngineEffectSpecialSummonBoostATK_08032F7C
 	adds r2, r0, #0
 	ldrb r4, [r4, #2]
 	lsls r0, r4, #0x1a
@@ -340972,7 +340972,7 @@ gCardAISpecialSummonDiscard_080B7744: @ 0x080B7744
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080AF9C0
+	bl gEngineEffectSpecialSummonDestroy_080AF9C0
 	cmp r0, #0
 	beq _080B7758
 	movs r0, #1
@@ -341061,13 +341061,13 @@ _080B77B0:
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	adds r1, r6, #0
-	bl sub_08037A2C
+	bl gEngineEffectBoostATKBoostDEF_08037A2C
 	adds r4, r0, #0
 	ldrb r5, [r5, #2]
 	lsls r0, r5, #0x1f
 	lsrs r0, r0, #0x1f
 	adds r1, r6, #0
-	bl sub_08031A84
+	bl gEngineEffectBoostATKBoostDEF_08031A84
 	movs r1, #0
 	cmn r4, r0
 	bne _080B77D2
@@ -341087,7 +341087,7 @@ gCardAIUnknown_080B77DC: @ 0x080B77DC
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080AEDD4
+	bl gEngineEffectSpecialSummonBoostATK_080AEDD4
 	movs r1, #0
 	cmp r0, #0
 	ble _080B77F0
@@ -341143,7 +341143,7 @@ gCardAIDestroySpellTrap_080B7838: @ 0x080B7838
 	lsrs r1, r1, #0x1f
 	movs r0, #1
 	subs r0, r0, r1
-	bl sub_08033B08
+	bl gEngineEffectSpecialSummonChangePosition_08033B08
 	movs r1, #0
 	cmp r0, #1
 	ble _080B7850
@@ -341164,7 +341164,7 @@ gCardAIDestroySpellTrap_080B7858: @ 0x080B7858
 	lsrs r1, r1, #0x1f
 	movs r0, #1
 	subs r0, r0, r1
-	bl sub_080AF72C
+	bl gEngineEffectSpecialSummonDestroy_080AF72C
 	movs r1, #0
 	cmp r0, #0
 	ble _080B7870
@@ -341205,7 +341205,7 @@ gCardAIReturnToHand_080B7878: @ 0x080B7878
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	subs r0, r5, r0
-	bl sub_08033B08
+	bl gEngineEffectSpecialSummonChangePosition_08033B08
 	cmp r0, #0
 	bgt _080B790A
 _080B78BC:
@@ -341274,7 +341274,7 @@ gCardAIDestroySpellTrapDestroyAll_080B7934: @ 0x080B7934
 	lsrs r0, r0, #0x1f
 	movs r4, #1
 	subs r0, r4, r0
-	bl sub_08033B08
+	bl gEngineEffectSpecialSummonChangePosition_08033B08
 	adds r6, r0, #0
 	cmp r6, #0
 	beq _080B79F0
@@ -341282,12 +341282,12 @@ gCardAIDestroySpellTrapDestroyAll_080B7934: @ 0x080B7934
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	subs r0, r4, r0
-	bl sub_080AF72C
+	bl gEngineEffectSpecialSummonDestroy_080AF72C
 	adds r4, r0, #0
 	ldrb r1, [r5, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080AF72C
+	bl gEngineEffectSpecialSummonDestroy_080AF72C
 	cmp r4, r0
 	bgt _080B79D6
 	cmp r6, #1
@@ -341295,7 +341295,7 @@ gCardAIDestroySpellTrapDestroyAll_080B7934: @ 0x080B7934
 	ldrb r1, [r5, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_08033B08
+	bl gEngineEffectSpecialSummonChangePosition_08033B08
 	cmp r6, r0
 	bgt _080B79D6
 _080B797A:
@@ -341320,7 +341320,7 @@ _080B799C:
 	movs r1, #1
 	rsbs r1, r1, #0
 	movs r2, #0
-	bl sub_080AC028
+	bl gEngineEffectSpecialSummonBoostATK_080AC028
 	adds r4, r0, #0
 	ldr r2, _080B79E4 @ =gUnk_0201C4E0
 	ldrb r5, [r5, #2]
@@ -341339,7 +341339,7 @@ _080B799C:
 	ble _080B79F0
 _080B79CC:
 	lsrs r0, r3, #0x1f
-	bl sub_080AEDD4
+	bl gEngineEffectSpecialSummonBoostATK_080AEDD4
 	cmp r0, #0
 	ble _080B79F0
 _080B79D6:
@@ -341384,7 +341384,7 @@ _080B7A06:
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	adds r1, r4, #0
-	bl sub_0803A980
+	bl gEngineEffectSpecialSummonBoostATK_0803A980
 	cmp r0, #0
 	beq _080B7A38
 	movs r0, #1
@@ -341492,7 +341492,7 @@ _080B7A90:
 	ldr r0, [r0]
 	lsls r0, r0, #0x13
 	lsrs r0, r0, #0x13
-	bl sub_0804BA58
+	bl gEngineEffectSpecialSummon_0804BA58
 	cmp r0, #0
 	beq _080B7A82
 _080B7AF0:
@@ -341642,7 +341642,7 @@ _080B7BE0:
 	mov r8, r1
 	add r0, r8
 	add r0, sb
-	bl sub_080313B8
+	bl gEngineEffectSpecialSummon_080313B8
 	cmp r0, #0
 	beq _080B7CAA
 	ldrb r0, [r6, #2]
@@ -341702,7 +341702,7 @@ _080B7BE0:
 	ldrb r1, [r6, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	adds r0, #1
 	cmp r0, r4
 	blt _080B7CAA
@@ -341716,7 +341716,7 @@ _080B7BE0:
 	bne _080B7CAA
 	mov r0, sl
 	ldr r1, _080B7CD4 @ =gUnk_0201E500
-	bl sub_0807FCC0
+	bl gEngineEffectSpecialSummonFusionSummon_0807FCC0
 	cmp r0, #0
 	bne _080B7BD6
 _080B7CAA:
@@ -341771,14 +341771,14 @@ gCardAIBanishGraveyard_080B7CD8: @ 0x080B7CD8
 	lsrs r0, r1, #0x1f
 	ldr r6, _080B7D58 @ =0x000014F0 (Reversal of Graves)
 	adds r1, r6, #0
-	bl sub_08037A2C
+	bl gEngineEffectBoostATKBoostDEF_08037A2C
 	cmp r0, #0
 	bne _080B7D22
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	adds r1, r6, #0
-	bl sub_08032F7C
+	bl gEngineEffectSpecialSummonBoostATK_08032F7C
 	cmp r0, #0
 	beq _080B7D5C
 _080B7D22:
@@ -341834,7 +341834,7 @@ gCardAIChangePosition_080B7D6C: @ 0x080B7D6C
 	add r1, sp, #0x24
 	add r2, sp, #0x28
 	movs r3, #1
-	bl sub_080AEE24
+	bl gEngineEffectSpecialSummonBoostATK_080AEE24
 	movs r6, #0
 	movs r4, #1
 	ldr r2, _080B7DFC @ =0x00000868
@@ -342023,7 +342023,7 @@ gCardAIUnknown_080B7EB8: @ 0x080B7EB8
 	rsbs r2, r2, #0
 	str r3, [sp]
 	movs r3, #1
-	bl sub_080AEF1C
+	bl gEngineEffectSpecialSummonBoostATK_080AEF1C
 	mov r8, r0
 	movs r6, #0
 	movs r4, #1
@@ -342057,7 +342057,7 @@ _080B7EFA:
 	adds r1, r6, #0
 	str r2, [sp, #4]
 	str r3, [sp, #8]
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	ldr r2, [sp, #4]
 	ldr r3, [sp, #8]
 	cmp r0, r8
@@ -342120,7 +342120,7 @@ gCardAIUnknown_080B7F94: @ 0x080B7F94
 	lsrs r1, r1, #0x1f
 	movs r0, #1
 	subs r0, r0, r1
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	movs r1, #0
 	cmp r0, #1
 	ble _080B7FAC
@@ -342271,7 +342271,7 @@ gCardAIDamageTribute_080B8090: @ 0x080B8090
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0
-	bl sub_080AD4AC
+	bl gEngineEffectSpecialSummonTribute_080AD4AC
 	mvns r0, r0
 	lsrs r0, r0, #0x1f
 	b _080B80B6
@@ -342295,26 +342295,26 @@ gCardAIDestroyStandbyPhase_080B80BC: @ 0x080B80BC
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _080B8110 @ =0x00001102 (Swords of Revealing Light)
-	bl sub_08032F7C
+	bl gEngineEffectSpecialSummonBoostATK_08032F7C
 	adds r4, r0, #0
 	ldrb r1, [r7, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _080B8114 @ =0x0000134A (Messenger of Peace)
-	bl sub_08032F7C
+	bl gEngineEffectSpecialSummonBoostATK_08032F7C
 	adds r6, r0, #0
 	ldrb r1, [r7, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0xa0
 	lsls r1, r1, #5
-	bl sub_08032F7C
+	bl gEngineEffectSpecialSummonBoostATK_08032F7C
 	adds r5, r0, #0
 	ldrb r1, [r7, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _080B8118 @ =0x0000187C (Swords of Concealing Light)
-	bl sub_08032F7C
+	bl gEngineEffectSpecialSummonBoostATK_08032F7C
 	adds r4, r4, r6
 	adds r4, r4, r5
 	adds r4, r4, r0
@@ -342341,7 +342341,7 @@ _080B8124:
 	ldrb r7, [r7, #2]
 	lsls r0, r7, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080AEDD4
+	bl gEngineEffectSpecialSummonBoostATK_080AEDD4
 	lsrs r0, r0, #0x1f
 _080B8130:
 	pop {r4, r5, r6, r7}
@@ -342364,7 +342364,7 @@ gCardAIPreventAttack_080B8138: @ 0x080B8138
 	movs r0, #1
 	subs r0, r0, r1
 	movs r1, #0xa
-	bl sub_08032EF0
+	bl gEngineEffectSpecialSummonChangePosition_08032EF0
 	cmp r0, #0
 	ble _080B815C
 	movs r5, #1
@@ -342481,7 +342481,7 @@ gCardAISendToGYDamage_080B8208: @ 0x080B8208
 	lsrs r0, r0, #0x1f
 	lsls r1, r1, #0x1a
 	lsrs r1, r1, #0x1b
-	bl sub_080313DC
+	bl gEngineEffectDestroyStandbyPhase_080313DC
 	adds r4, r0, #0
 	ldr r2, _080B8260 @ =gUnk_0201C4E0
 	ldrb r0, [r5, #2]
@@ -342572,14 +342572,14 @@ gCardAISpecialSummonTribute_080B82B4: @ 0x080B82B4
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _080B82DC @ =0x000010BC (Petit Moth)
-	bl sub_08032F7C
+	bl gEngineEffectSpecialSummonBoostATK_08032F7C
 	cmp r0, #0
 	bne _080B82E0
 	ldrb r4, [r4, #2]
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0
-	bl sub_080AD4AC
+	bl gEngineEffectSpecialSummonTribute_080AD4AC
 	mvns r0, r0
 	lsrs r0, r0, #0x1f
 	b _080B82E2
@@ -342673,7 +342673,7 @@ _080B835E:
 	ldrb r5, [r5, #2]
 	lsls r0, r5, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080AEDD4
+	bl gEngineEffectSpecialSummonBoostATK_080AEDD4
 	cmp r0, #0
 	bge _080B8390
 _080B8384:
@@ -342707,7 +342707,7 @@ gCardAISearchSpecialSummon_080B8398: @ 0x080B8398
 	movs r1, #1
 	movs r2, #0
 	movs r3, #0
-	bl sub_08033B18
+	bl gEngineEffectSpecialSummonChangePosition_08033B18
 	cmp r0, #0
 	bne _080B83CE
 	ldrb r4, [r4, #2]
@@ -342749,7 +342749,7 @@ gCardAISpecialSummon_080B83E4: @ 0x080B83E4
 	ldrb r1, [r5, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_08033BF4
+	bl gEngineEffectSpecialSummon_08033BF4
 	cmp r0, #0
 	bne _080B8410
 	b _080B846C
@@ -342824,7 +342824,7 @@ gCardAISpecialSummonSendToGY_080B8484: @ 0x080B8484
 	lsls r0, r0, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0
-	bl sub_080AD4AC
+	bl gEngineEffectSpecialSummonTribute_080AD4AC
 	mvns r0, r0
 	lsrs r0, r0, #0x1f
 	pop {r1}
@@ -342847,7 +342847,7 @@ gCardAIDestroyStandbyPhase_080B849C: @ 0x080B849C
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080AEDD4
+	bl gEngineEffectSpecialSummonBoostATK_080AEDD4
 	cmp r0, #0
 	ble _080B84D0
 	adds r0, r4, #0
@@ -342977,7 +342977,7 @@ gCardAISpecialSummonDestroySpellTrap_080B8568: @ 0x080B8568
 	lsrs r0, r0, #0x1f
 	movs r5, #1
 	subs r0, r5, r0
-	bl sub_08033B08
+	bl gEngineEffectSpecialSummonChangePosition_08033B08
 	cmp r0, #0
 	bne _080B8582
 	movs r0, #0
@@ -343038,7 +343038,7 @@ gCardAIDiscardDestroyAll_080B85D4: @ 0x080B85D4
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080AF9C0
+	bl gEngineEffectSpecialSummonDestroy_080AF9C0
 	cmp r0, #0
 	bne _080B85EA
 	movs r0, #0
@@ -343071,13 +343071,13 @@ gCardAIDestroyAll_080B860C: @ 0x080B860C
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080B4CCC
+	bl gEngineEffectSpecialSummonBoostATK_080B4CCC
 	cmp r0, #0
 	bne _080B8630
 	ldrb r4, [r4, #2]
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080AEDD4
+	bl gEngineEffectSpecialSummonBoostATK_080AEDD4
 	cmp r0, #0
 	blt _080B8630
 	movs r0, #0
@@ -343118,13 +343118,13 @@ gCardAIDestroyAllDiscard_080B8658: @ 0x080B8658
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080B4CCC
+	bl gEngineEffectSpecialSummonBoostATK_080B4CCC
 	cmp r0, #0
 	bne _080B8690
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080AEDD4
+	bl gEngineEffectSpecialSummonBoostATK_080AEDD4
 	cmp r0, #0
 	blt _080B8690
 	ldrb r1, [r4, #2]
@@ -343159,7 +343159,7 @@ gCardAIDestroyChangePosition_080B8698: @ 0x080B8698
 	ldrb r1, [r7, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080AEDD4
+	bl gEngineEffectSpecialSummonBoostATK_080AEDD4
 	cmp r0, #0
 	ble _080B86BA
 	movs r0, #0
@@ -343178,7 +343178,7 @@ _080B86C0:
 	beq _080B86DE
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	cmp r0, r8
 	ble _080B86DE
 	mov r8, r0
@@ -343217,7 +343217,7 @@ gCardAIDiscardDestroyAll_080B870C: @ 0x080B870C
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080AEDD4
+	bl gEngineEffectSpecialSummonBoostATK_080AEDD4
 	lsrs r0, r0, #0x1f
 	pop {r1}
 	bx r1
@@ -343301,13 +343301,13 @@ _080B878E:
 	cmp r0, #0
 	beq _080B8828
 	adds r0, r4, #0
-	bl sub_0804BA58
+	bl gEngineEffectSpecialSummon_0804BA58
 	cmp r0, #0
 	bne _080B8828
 	ldrb r1, [r6, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	beq _080B8828
 	ldrb r2, [r6, #2]
@@ -343344,7 +343344,7 @@ _080B878E:
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #1
-	bl sub_080AD4AC
+	bl gEngineEffectSpecialSummonTribute_080AD4AC
 	cmp r0, #0
 	blt _080B8828
 _080B8816:
@@ -343535,13 +343535,13 @@ _080B894E:
 	cmp r0, #0
 	beq _080B89F0
 	adds r0, r4, #0
-	bl sub_0804BA58
+	bl gEngineEffectSpecialSummon_0804BA58
 	cmp r0, #0
 	bne _080B89F0
 	ldrb r2, [r6, #2]
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	cmp r0, #0
 	beq _080B89F0
 	ldrb r0, [r6, #2]
@@ -343578,7 +343578,7 @@ _080B894E:
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #1
-	bl sub_080AD4AC
+	bl gEngineEffectSpecialSummonTribute_080AD4AC
 	cmp r0, #0
 	blt _080B89F0
 _080B89DC:
@@ -343655,7 +343655,7 @@ gCardAIDestroy_080B8A54: @ 0x080B8A54
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080AEDD4
+	bl gEngineEffectSpecialSummonBoostATK_080AEDD4
 	cmp r0, #0
 	ble _080B8A6A
 	movs r0, #0
@@ -343684,7 +343684,7 @@ gCardAITakeControlGainLP_080B8A84: @ 0x080B8A84
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080B4CCC
+	bl gEngineEffectSpecialSummonBoostATK_080B4CCC
 	cmp r0, #0
 	beq _080B8A9A
 _080B8A96:
@@ -343710,7 +343710,7 @@ _080B8AA0:
 	subs r1, r6, r1
 	adds r0, r4, #0
 	adds r2, r5, #0
-	bl sub_0803670C
+	bl gEngineEffectSpecialSummonDestroy_0803670C
 	cmp r0, #0
 	bne _080B8B12
 	ldrb r1, [r4, #2]
@@ -343719,7 +343719,7 @@ _080B8AA0:
 	subs r0, r6, r0
 	ldrh r2, [r4]
 	adds r1, r5, #0
-	bl sub_08036450
+	bl gEngineEffectSpecialSummonDestroy_08036450
 	cmp r0, #0
 	beq _080B8B12
 	ldrb r0, [r4, #2]
@@ -343744,7 +343744,7 @@ _080B8AA0:
 	lsrs r0, r2, #0x1f
 	subs r0, r6, r0
 	adds r1, r5, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	ldr r1, _080B8B34 @ =0x00000707
 	cmp r0, r1
 	bgt _080B8A96
@@ -343801,7 +343801,7 @@ gCardAISpecialSummonChangePosition_080B8B64: @ 0x080B8B64
 	lsrs r0, r0, #0x1f
 	movs r1, #0xb5
 	lsls r1, r1, #5
-	bl sub_08032F7C
+	bl gEngineEffectSpecialSummonBoostATK_08032F7C
 	cmp r0, #0
 	bne _080B8BA6
 	ldrb r1, [r4, #2]
@@ -343814,13 +343814,13 @@ gCardAISpecialSummonChangePosition_080B8B64: @ 0x080B8B64
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _080B8BAC @ =0x000018CA (Gift of the Martyr)
-	bl sub_08037A2C
+	bl gEngineEffectBoostATKBoostDEF_08037A2C
 	cmp r0, #0
 	bne _080B8BA6
 	ldrb r4, [r4, #2]
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080AEDD4
+	bl gEngineEffectSpecialSummonBoostATK_080AEDD4
 	cmp r0, #0
 	ble _080B8BB0
 _080B8BA6:
@@ -343846,7 +343846,7 @@ gCardAISpecialSummonGraveyard_080B8BB8: @ 0x080B8BB8
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r5]
 	movs r2, #0
-	bl sub_080AEC8C
+	bl gEngineEffectSpecialSummonGraveyard_080AEC8C
 	cmp r0, #0
 	blt _080B8C48
 	bl sub_080942DC
@@ -343862,7 +343862,7 @@ gCardAISpecialSummonGraveyard_080B8BB8: @ 0x080B8BB8
 	add r2, sp, #4
 	mov r1, sp
 	movs r3, #0
-	bl sub_080AEE24
+	bl gEngineEffectSpecialSummonBoostATK_080AEE24
 	adds r0, r4, #0
 	bl sub_080EEED4
 	ldr r1, _080B8C44 @ =0x000006A4
@@ -343924,7 +343924,7 @@ gCardAISpecialSummonPreventAttack_080B8C54: @ 0x080B8C54
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r1]
 	movs r2, #0
-	bl sub_080AEC8C
+	bl gEngineEffectSpecialSummonGraveyard_080AEC8C
 	cmp r0, #0
 	blt _080B8C84
 	bl sub_080942DC
@@ -343963,7 +343963,7 @@ gCardAISpecialSummonGraveyard_080B8C8C: @ 0x080B8C8C
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r6]
 	movs r2, #0
-	bl sub_080AEC8C
+	bl gEngineEffectSpecialSummonGraveyard_080AEC8C
 	cmp r0, #0
 	blt _080B8D60
 	ldrh r0, [r6]
@@ -344026,7 +344026,7 @@ _080B8D10:
 	add r2, sp, #4
 	mov r1, sp
 	movs r3, #0
-	bl sub_080AEE24
+	bl gEngineEffectSpecialSummonBoostATK_080AEE24
 	ldr r0, _080B8D5C @ =0x000006A4
 	cmp r4, r0
 	ble _080B8D3A
@@ -344079,7 +344079,7 @@ gCardAISpecialSummonChangePosition_080B8D6C: @ 0x080B8D6C
 	subs r0, r0, r1
 	ldrh r1, [r6]
 	movs r2, #0
-	bl sub_080AEC8C
+	bl gEngineEffectSpecialSummonGraveyard_080AEC8C
 	cmp r0, #0
 	blt _080B8DB6
 	bl sub_080942DC
@@ -344107,7 +344107,7 @@ _080B8DB6:
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r6]
 	movs r2, #0
-	bl sub_080AEC8C
+	bl gEngineEffectSpecialSummonGraveyard_080AEC8C
 	cmp r0, #0
 	blt _080B8E20
 	bl sub_080942DC
@@ -344122,7 +344122,7 @@ _080B8DB6:
 	add r2, sp, #4
 	mov r1, sp
 	movs r3, #0
-	bl sub_080AEE24
+	bl gEngineEffectSpecialSummonBoostATK_080AEE24
 	ldr r4, [sp, #4]
 	ldr r0, [sp]
 	cmp r4, r0
@@ -344169,7 +344169,7 @@ gCardAISpecialSummonPreventAttack_080B8E2C: @ 0x080B8E2C
 	lsls r0, r0, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0
-	bl sub_080AD5EC
+	bl gEngineEffectSpecialSummonTribute_080AD5EC
 	adds r1, r0, #0
 	movs r0, #1
 	rsbs r0, r0, #0
@@ -344181,7 +344181,7 @@ _080B8E48:
 	lsls r1, r1, #0x18
 	lsrs r1, r1, #0x18
 	adds r0, r1, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	movs r2, #0
 	ldr r1, _080B8E64 @ =0x0000095F
 	cmp r0, r1
@@ -344397,14 +344397,14 @@ _080B8FB0:
 	bne _080B900C
 	lsrs r0, r2, #0x1f
 	adds r1, r4, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	cmp r8, r0
 	bgt _080B9004
 	ldrb r2, [r7, #2]
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
 	adds r1, r4, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	b _080B9006
 	.align 2, 0
 _080B8FFC: .4byte gUnk_0201C510
@@ -344589,14 +344589,14 @@ _080B9118:
 	bne _080B9174
 	lsrs r0, r2, #0x1f
 	adds r1, r4, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	cmp r8, r0
 	bgt _080B916C
 	ldrb r2, [r7, #2]
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
 	adds r1, r4, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	b _080B916E
 	.align 2, 0
 _080B9164: .4byte gUnk_0201C510
@@ -344730,14 +344730,14 @@ _080B9228:
 	bne _080B9282
 	lsrs r0, r2, #0x1f
 	adds r1, r4, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	cmp r7, r0
 	bgt _080B927C
 	ldrb r1, [r5, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	adds r1, r4, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	b _080B927E
 	.align 2, 0
 _080B9274: .4byte 0x00000868
@@ -344836,7 +344836,7 @@ gCardAIBoostATKReduceATK_080B9310: @ 0x080B9310
 	bhi _080B937E
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080AEDD4
+	bl gEngineEffectSpecialSummonBoostATK_080AEDD4
 	cmp r0, #0
 	bgt _080B937E
 	ldrb r0, [r7, #2]
@@ -344860,7 +344860,7 @@ gCardAIBoostATKReduceATK_080B9310: @ 0x080B9310
 	ldrb r1, [r7, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080AEDD4
+	bl gEngineEffectSpecialSummonBoostATK_080AEDD4
 	ldrb r2, [r7, #2]
 	lsls r1, r2, #0x1f
 	lsrs r1, r1, #0x1f
@@ -344907,14 +344907,14 @@ gCardAIEndPhase_080B9398: @ 0x080B9398
 	add r2, sp, #4
 	mov r1, sp
 	movs r3, #1
-	bl sub_080AEE24
+	bl gEngineEffectSpecialSummonBoostATK_080AEE24
 	ldrb r4, [r4, #2]
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
 	add r1, sp, #8
 	add r2, sp, #0xc
 	movs r3, #1
-	bl sub_080AEE24
+	bl gEngineEffectSpecialSummonBoostATK_080AEE24
 	ldr r1, [sp, #4]
 	ldr r2, [sp]
 	cmp r1, r2
@@ -345148,7 +345148,7 @@ _080B956C:
 	lsls r0, r6, #0x1f
 	lsrs r0, r0, #0x1f
 	adds r1, r4, #0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	ldr r1, _080B9598 @ =0x000005DB
 	cmp r0, r1
 	ble _080B9586
@@ -345367,7 +345367,7 @@ _080B96FC:
 	ldrb r4, [r4, #2]
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	ldr r1, _080B9730 @ =0x00000707
 	cmp r0, r1
 	ble _080B9726
@@ -345450,7 +345450,7 @@ gCardAIEquipBoostATK_080B9734: @ 0x080B9734
 	ldrb r4, [r4, #2]
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	ldr r1, _080B976C @ =0x00000513
 	cmp r0, r1
 	ble _080B9764
@@ -345592,7 +345592,7 @@ gCardAIDestroyEquip_080B981C: @ 0x080B981C
 	ldrb r2, [r4, #2]
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	ldr r1, _080B9864 @ =0x00000513
 	cmp r0, r1
 	bgt _080B985A
@@ -345623,7 +345623,7 @@ gCardAIEquipPreventAttack_080B9868: @ 0x080B9868
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080AEDD4
+	bl gEngineEffectSpecialSummonBoostATK_080AEDD4
 	cmp r0, #0
 	blt _080B987E
 	movs r0, #0
@@ -345647,7 +345647,7 @@ _080B987E:
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
 	subs r0, r5, r0
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	ldr r1, _080B98B8 @ =0x00000513
 	cmp r0, r1
 	ble _080B98B0
@@ -345705,7 +345705,7 @@ gCardAIDrawDiscard_080B98F0: @ 0x080B98F0
 	ldrb r1, [r7, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080AEDD4
+	bl gEngineEffectSpecialSummonBoostATK_080AEDD4
 	cmp r0, #0
 	bge _080B9926
 	ldr r0, _080B992C @ =gUnk_0201C4E0
@@ -345947,7 +345947,7 @@ gCardAISpecialSummonBanish_080B9ABC: @ 0x080B9ABC
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080335B8
+	bl gEngineEffectSpecialSummon_080335B8
 	adds r7, r0, #0
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
@@ -346016,7 +346016,7 @@ gCardAIChangePosition_080B9B3C: @ 0x080B9B3C
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080AEDD4
+	bl gEngineEffectSpecialSummonBoostATK_080AEDD4
 	cmp r0, #0
 	bgt _080B9B74
 	adds r0, r4, #0
@@ -346040,7 +346040,7 @@ gCardAISpecialSummonDestroyAll_080B9B7C: @ 0x080B9B7C
 	ldrb r1, [r5, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080AEDD4
+	bl gEngineEffectSpecialSummonBoostATK_080AEDD4
 	cmp r0, #0
 	blt _080B9B92
 	movs r0, #0
@@ -346107,7 +346107,7 @@ gCardAISpecialSummonPreventAttack_080B9BF0: @ 0x080B9BF0
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r1]
 	movs r2, #0
-	bl sub_080AEC8C
+	bl gEngineEffectSpecialSummonGraveyard_080AEC8C
 	cmp r0, #0
 	blt _080B9C20
 	bl sub_080942DC
@@ -346163,7 +346163,7 @@ gCardAIDestroyBattlePhase_080B9C50: @ 0x080B9C50
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _080B9C68 @ =0x00000FBC (Summoned Skull)
-	bl sub_08032C94
+	bl gEngineEffectSpecialSummonBoostATK_08032C94
 	cmp r0, #0
 	bne _080B9C70
 	b _080B9CC4
@@ -346205,7 +346205,7 @@ _080B9C7A:
 	adds r1, r6, #0
 	str r2, [sp]
 	str r3, [sp, #4]
-	bl sub_0803A980
+	bl gEngineEffectSpecialSummonBoostATK_0803A980
 	ldr r1, _080B9CD8 @ =0x000009C4
 	ldr r2, [sp]
 	ldr r3, [sp, #4]
@@ -346263,7 +346263,7 @@ gCardAIDamagePreventAttack_080B9D08: @ 0x080B9D08
 	lsrs r1, r1, #0x1f
 	movs r0, #1
 	subs r0, r0, r1
-	bl sub_08033B08
+	bl gEngineEffectSpecialSummonChangePosition_08033B08
 	movs r1, #0
 	cmp r0, #0
 	ble _080B9D20
@@ -346352,7 +346352,7 @@ gCardAISearch_080B9D8C: @ 0x080B9D8C
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _080B9DBC @ =0x000012BE (Toon World)
-	bl sub_080AF8CC
+	bl gEngineEffectBoostATKBoostDEF_080AF8CC
 	cmp r0, #0
 	bne _080B9DB8
 	mov r2, r8
@@ -346360,7 +346360,7 @@ gCardAISearch_080B9D8C: @ 0x080B9D8C
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _080B9DC0 @ =0x00000FBB (Exodia the Forbidden One)
-	bl sub_080AF8CC
+	bl gEngineEffectBoostATKBoostDEF_080AF8CC
 	cmp r0, #0
 	beq _080B9DC4
 _080B9DB8:
@@ -346436,14 +346436,14 @@ gCardAIDiscardReturnToHand_080B9E34: @ 0x080B9E34
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _080B9E5C @ =0x00001181 (Sinister Serpent)
-	bl sub_08037A2C
+	bl gEngineEffectBoostATKBoostDEF_08037A2C
 	cmp r0, #0
 	bne _080B9E58
 	ldrb r4, [r4, #2]
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _080B9E60 @ =0x0000179A (Night Assailant)
-	bl sub_08037A2C
+	bl gEngineEffectBoostATKBoostDEF_08037A2C
 	cmp r0, #0
 	beq _080B9E64
 _080B9E58:
@@ -346481,7 +346481,7 @@ _080B9E74:
 	beq _080B9EA4
 	lsrs r0, r2, #0x1f
 	adds r1, r4, #0
-	bl sub_080B5D28
+	bl gEngineEffectSpecialSummonSendToGY_080B5D28
 	cmp r0, #0
 	beq _080B9EA4
 	movs r0, #1
@@ -346525,7 +346525,7 @@ gCardAIChangePosition_080B9ED0: @ 0x080B9ED0
 	lsls r0, r0, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _080B9EEC @ =0x000012D7 (Tragedy)
-	bl sub_08032F7C
+	bl gEngineEffectSpecialSummonBoostATK_08032F7C
 	movs r1, #0
 	cmp r0, #0
 	ble _080B9EE6
@@ -346545,7 +346545,7 @@ gCardAISpecialSummonPreventAttack_080B9EF0: @ 0x080B9EF0
 	lsls r0, r0, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _080B9F04 @ =0x000015A3 (Metamorphosis)
-	bl sub_080AF914
+	bl gEngineEffectBoostATKSpecialSummon_080AF914
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -346605,7 +346605,7 @@ gCardAISearchDiscard_080B9F5C: @ 0x080B9F5C
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080AF9C0
+	bl gEngineEffectSpecialSummonDestroy_080AF9C0
 	cmp r0, #0
 	beq _080B9FAE
 	ldrb r1, [r4, #2]
@@ -346620,7 +346620,7 @@ gCardAISearchDiscard_080B9F5C: @ 0x080B9F5C
 	lsrs r0, r0, #0x1f
 	ldr r5, _080B9FB4 @ =0x000018F6 (Cyber Dragon)
 	adds r1, r5, #0
-	bl sub_080AF914
+	bl gEngineEffectBoostATKSpecialSummon_080AF914
 	cmp r0, #0
 	bne _080B9FA0
 	ldrb r1, [r4, #2]
@@ -346682,7 +346682,7 @@ _080B9FEA:
 	movs r3, #0
 	str r3, [sp]
 	movs r3, #1
-	bl sub_080AEF1C
+	bl gEngineEffectSpecialSummonBoostATK_080AEF1C
 	movs r2, #0
 	ldr r1, _080BA014 @ =0x000003E7
 	cmp r0, r1
@@ -346793,7 +346793,7 @@ _080BA0A2:
 	adds r1, r4, #0
 	str r2, [sp]
 	str r3, [sp, #4]
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	lsrs r1, r0, #0x1f
 	adds r0, r0, r1
 	asrs r0, r0, #1
@@ -346819,7 +346819,7 @@ _080BA0D4:
 	ble _080BA114
 	lsrs r0, r2, #0x1f
 	movs r1, #0
-	bl sub_080AD4AC
+	bl gEngineEffectSpecialSummonTribute_080AD4AC
 	adds r4, r0, #0
 	cmp r4, #0
 	blt _080BA124
@@ -346827,7 +346827,7 @@ _080BA0D4:
 	lsrs r0, r0, #0x18
 	lsls r1, r4, #0x10
 	lsrs r1, r1, #0x18
-	bl sub_0803A958
+	bl gEngineEffectSpecialSummonBoostATK_0803A958
 	ldr r1, _080BA120 @ =0x000003E7
 	cmp r0, r1
 	ble _080BA124
@@ -346886,7 +346886,7 @@ gCardAIDamageTribute_080BA134: @ 0x080BA134
 	lsls r0, r5, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0
-	bl sub_080AD4AC
+	bl gEngineEffectSpecialSummonTribute_080AD4AC
 	cmp r0, #0
 	blt _080BA18C
 _080BA180:
@@ -346944,7 +346944,7 @@ gCardAIDestroyAllDamage_080BA1D4: @ 0x080BA1D4
 	ldrb r0, [r0, #2]
 	lsls r0, r0, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080AEDD4
+	bl gEngineEffectSpecialSummonBoostATK_080AEDD4
 	movs r1, #0
 	cmp r0, #0
 	bgt _080BA1E8
@@ -347026,7 +347026,7 @@ gCardAIDestroyTribute_080BA24C: @ 0x080BA24C
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r5]
 	movs r2, #0
-	bl sub_080AEC8C
+	bl gEngineEffectSpecialSummonGraveyard_080AEC8C
 	cmp r0, #0
 	blt _080BA294
 	bl sub_080942DC
@@ -347203,7 +347203,7 @@ gCardAISpecialSummonDamage_080BA388: @ 0x080BA388
 	subs r1, r5, r1
 	adds r0, r4, #0
 	movs r2, #0
-	bl sub_080AF6A0
+	bl gEngineEffectDestroyDamage_080AF6A0
 	cmp r0, #0
 	bne _080BA3C4
 	movs r0, #1
@@ -347338,7 +347338,7 @@ gCardAIDestroyAllRitualSummon_080BA488: @ 0x080BA488
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _080BA504 @ =0x000018E8 (Ocean Dragon Lord - Neo-Daedalus)
-	bl sub_08037A2C
+	bl gEngineEffectBoostATKBoostDEF_08037A2C
 	cmp r0, #0
 	bne _080BA510
 	ldr r2, _080BA508 @ =gUnk_0201C4E0
@@ -347375,7 +347375,7 @@ _080BA4DE:
 	ldrb r5, [r5, #2]
 	lsls r0, r5, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080AEDD4
+	bl gEngineEffectSpecialSummonBoostATK_080AEDD4
 	cmp r0, #0
 	bgt _080BA510
 _080BA500:
@@ -347403,7 +347403,7 @@ gCardAIDestroyCounter_080BA518: @ 0x080BA518
 	lsrs r0, r0, #0x1f
 	lsls r1, r1, #0x1a
 	lsrs r1, r1, #0x1b
-	bl sub_0803149C
+	bl gEngineEffectDestroyCounter_0803149C
 	strh r0, [r4, #0xc]
 	adds r0, r4, #0
 	adds r1, r5, #0
@@ -347464,7 +347464,7 @@ _080BA588:
 	ldrb r5, [r5, #2]
 	lsls r0, r5, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080AEDD4
+	bl gEngineEffectSpecialSummonBoostATK_080AEDD4
 	cmp r0, #0
 	bgt _080BA5BC
 _080BA5AA:
@@ -347616,7 +347616,7 @@ _080BA688:
 	movs r1, #1
 	movs r2, #0
 	movs r3, #1
-	bl sub_08033B18
+	bl gEngineEffectSpecialSummonChangePosition_08033B18
 	movs r1, #0
 	cmp r0, #0
 	ble _080BA6A4
@@ -347688,7 +347688,7 @@ gCardAISearchDiscard_080BA708: @ 0x080BA708
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
 	ldrh r1, [r1]
-	bl sub_08031A84
+	bl gEngineEffectBoostATKBoostDEF_08031A84
 	pop {r1}
 	bx r1
 
@@ -347702,14 +347702,14 @@ gCardAISearchDiscard_080BA71C: @ 0x080BA71C
 	lsrs r0, r0, #0x1f
 	ldr r4, _080BA748 @ =0x000012E5 (Polymerization)
 	adds r1, r4, #0
-	bl sub_080316B8
+	bl gEngineEffectBoostATKBoostDEF_080316B8
 	cmp r0, #0
 	blt _080BA742
 	ldrb r1, [r5, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	adds r1, r4, #0
-	bl sub_080AF914
+	bl gEngineEffectBoostATKSpecialSummon_080AF914
 	cmp r0, #0
 	beq _080BA74C
 _080BA742:
@@ -347821,7 +347821,7 @@ gCardAISpecialSummonBanish_080BA7E0: @ 0x080BA7E0
 	subs r1, r5, r1
 	adds r0, r4, #0
 	movs r2, #0
-	bl sub_080AF6A0
+	bl gEngineEffectDestroyDamage_080AF6A0
 	cmp r0, #0
 	bne _080BA844
 	ldrb r1, [r4, #2]
@@ -347834,7 +347834,7 @@ gCardAISpecialSummonBanish_080BA7E0: @ 0x080BA7E0
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
 	movs r1, #0
-	bl sub_080B0FE8
+	bl gEngineEffectSpecialSummonDestroy_080B0FE8
 	cmp r0, #0
 	beq _080BA844
 _080BA836:
@@ -347864,7 +347864,7 @@ gCardAIDestroyDamage_080BA84C: @ 0x080BA84C
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080AEDD4
+	bl gEngineEffectSpecialSummonBoostATK_080AEDD4
 	cmp r0, #0
 	bgt _080BA870
 _080BA86C:
@@ -347970,7 +347970,7 @@ gCardAIDiscard_080BA914: @ 0x080BA914
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
-	bl sub_080AEDD4
+	bl gEngineEffectSpecialSummonBoostATK_080AEDD4
 	cmp r0, #0
 	blt _080BA940
 	ldrb r1, [r4, #2]
@@ -347980,7 +347980,7 @@ gCardAIDiscard_080BA914: @ 0x080BA914
 	subs r1, r1, r0
 	adds r0, r4, #0
 	movs r2, #0
-	bl sub_080AF6A0
+	bl gEngineEffectDestroyDamage_080AF6A0
 	cmp r0, #0
 	bne _080BA940
 	movs r0, #0
@@ -348014,7 +348014,7 @@ _080BA966:
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _080BA984 @ =0x0000198E (Inferno Reckless Summon)
-	bl sub_080AF914
+	bl gEngineEffectBoostATKSpecialSummon_080AF914
 	movs r1, #0
 	cmp r0, #0
 	ble _080BA97A
@@ -348038,7 +348038,7 @@ gCardAISpecialSummonSendToGY_080BA988: @ 0x080BA988
 	movs r1, #1
 	subs r1, r1, r2
 	movs r2, #1
-	bl sub_080AF6A0
+	bl gEngineEffectDestroyDamage_080AF6A0
 	cmp r0, #0
 	bne _080BA9A2
 	movs r0, #0
@@ -348058,7 +348058,7 @@ gCardAISpecialSummonSendToGY_080BA9A8: @ 0x080BA9A8
 	lsls r0, r1, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _080BA9E8 @ =0x0000198C (Armed Dragon LV10)
-	bl sub_08037A2C
+	bl gEngineEffectBoostATKBoostDEF_08037A2C
 	cmp r0, #0
 	bne _080BA9E4
 	ldrb r0, [r4, #2]
@@ -348068,7 +348068,7 @@ gCardAISpecialSummonSendToGY_080BA9A8: @ 0x080BA9A8
 	subs r1, r5, r1
 	adds r0, r4, #0
 	movs r2, #1
-	bl sub_080AF6A0
+	bl gEngineEffectDestroyDamage_080AF6A0
 	cmp r0, #0
 	bne _080BA9EC
 	ldrb r0, [r4, #2]
@@ -348103,7 +348103,7 @@ gCardAISpecialSummonSendToGY_080BA9F4: @ 0x080BA9F4
 	subs r1, r5, r1
 	adds r0, r4, #0
 	movs r2, #1
-	bl sub_080AF6A0
+	bl gEngineEffectDestroyDamage_080AF6A0
 	cmp r0, #0
 	bne _080BAA24
 	ldrb r0, [r4, #2]
@@ -348270,7 +348270,7 @@ gCardAISpecialSummonFusionSummon_080BAB1C: @ 0x080BAB1C
 	movs r1, #0
 	movs r2, #1
 	movs r3, #0
-	bl sub_08033B18
+	bl gEngineEffectSpecialSummonChangePosition_08033B18
 	movs r1, #0
 	cmp r0, #0
 	ble _080BAB36
@@ -348324,7 +348324,7 @@ _080BAB88:
 	lsls r0, r4, #0x1f
 	lsrs r0, r0, #0x1f
 	ldr r1, _080BABA4 @ =0x0000195A (Phantasm Token)
-	bl sub_08032F7C
+	bl gEngineEffectSpecialSummonBoostATK_08032F7C
 	movs r1, #0
 	cmp r0, #0
 	ble _080BAB9C
@@ -348436,7 +348436,7 @@ _080BAC36:
 	cmp r0, #0
 	beq _080BAC9C
 	adds r0, r4, #0
-	bl sub_0804BA58
+	bl gEngineEffectSpecialSummon_0804BA58
 	cmp r0, #0
 	bne _080BAC9C
 	ldrb r1, [r6, #2]
@@ -348771,8 +348771,8 @@ _080BAECA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080BAED0
-sub_080BAED0: @ 0x080BAED0
+	thumb_func_start gEngineEffectSpecialSummon_080BAED0
+gEngineEffectSpecialSummon_080BAED0: @ 0x080BAED0
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -348868,7 +348868,7 @@ _080BAEFA:
 	beq _080BAFA4
 	mov r0, sp
 	movs r1, #0
-	bl sub_0805A3E0
+	bl gEngineEffectSpecialSummonDiscard_0805A3E0
 	b _080BAFAC
 	.align 2, 0
 _080BAF94: .4byte 0x00000868
@@ -348902,7 +348902,7 @@ _080BAFCA:
 	ldr r2, [sp, #0x18]
 	ldr r1, [r2]
 	adds r0, r6, #0
-	bl sub_08037A8C
+	bl gEngineEffectBoostATKBoostDEF_08037A8C
 	adds r5, r0, #0
 	cmp r5, #0
 	bge _080BAFE6
@@ -349153,12 +349153,12 @@ _080BB1B2:
 	movs r1, #0
 	movs r2, #1
 	movs r3, #0
-	bl sub_08033B18
+	bl gEngineEffectSpecialSummonChangePosition_08033B18
 	cmp r0, #0
 	bgt _080BB248
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_080AF374
+	bl gEngineEffectSpecialSummonBoostATK_080AF374
 	ldr r1, _080BB1FC @ =0x00000BB7
 	cmp r0, r1
 	ble _080BB244
@@ -349190,7 +349190,7 @@ _080BB20E:
 	adds r1, r1, r0
 	adds r0, r5, #0
 	movs r2, #1
-	bl sub_080AD720
+	bl gEngineEffectSpecialSummonTribute_080AD720
 	rsbs r1, r0, #0
 	orrs r1, r0
 	lsrs r6, r1, #0x1f
@@ -349198,7 +349198,7 @@ _080BB20E:
 _080BB234:
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_08032F7C
+	bl gEngineEffectSpecialSummonBoostATK_08032F7C
 	movs r6, #0
 	cmp r0, #0
 	bne _080BB244
@@ -349275,8 +349275,8 @@ _080BB2C2:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080BB2D4
-sub_080BB2D4: @ 0x080BB2D4
+	thumb_func_start gEngineEffectSpecialSummonDestroy_080BB2D4
+gEngineEffectSpecialSummonDestroy_080BB2D4: @ 0x080BB2D4
 	push {r4, r5, r6, lr}
 	ldr r0, _080BB2F0 @ =gUnk_0201C4E0
 	ldr r1, _080BB2F4 @ =0x00001CE8
@@ -349301,7 +349301,7 @@ _080BB2FC:
 _080BB300:
 	adds r0, r6, #0
 	adds r1, r4, #0
-	bl sub_080BAED0
+	bl gEngineEffectSpecialSummon_080BAED0
 	cmp r0, #0
 	bne _080BB33A
 	adds r4, #8
@@ -349347,8 +349347,8 @@ _080BB352:
 	.align 2, 0
 _080BB358: .4byte gUnk_0201AFE0
 
-	thumb_func_start sub_080BB35C
-sub_080BB35C: @ 0x080BB35C
+	thumb_func_start gEngineEffectSpecialSummon_080BB35C
+gEngineEffectSpecialSummon_080BB35C: @ 0x080BB35C
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	movs r4, #0
@@ -349357,7 +349357,7 @@ _080BB362:
 	ldr r0, _080BB378 @ =gCardEffects7
 	adds r1, r1, r0
 	adds r0, r5, #0
-	bl sub_080BAED0
+	bl gEngineEffectSpecialSummon_080BAED0
 	cmp r0, #0
 	beq _080BB37C
 	movs r0, #1
@@ -349375,8 +349375,8 @@ _080BB384:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080BB38C
-sub_080BB38C: @ 0x080BB38C
+	thumb_func_start gEngineEffectSpecialSummon_080BB38C
+gEngineEffectSpecialSummon_080BB38C: @ 0x080BB38C
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	adds r7, r1, #0
@@ -349385,7 +349385,7 @@ sub_080BB38C: @ 0x080BB38C
 _080BB396:
 	adds r0, r6, #0
 	adds r1, r5, #0
-	bl sub_080BAED0
+	bl gEngineEffectSpecialSummon_080BAED0
 	cmp r0, #0
 	bne _080BB3B4
 	adds r5, #8
@@ -349406,7 +349406,7 @@ _080BB3B8:
 _080BB3BC:
 	adds r0, r6, #0
 	adds r1, r5, #0
-	bl sub_080BAED0
+	bl gEngineEffectSpecialSummon_080BAED0
 	cmp r0, #0
 	bne _080BB3B4
 	adds r5, #8
@@ -349422,8 +349422,8 @@ _080BB3D2:
 	.align 2, 0
 _080BB3D8: .4byte gCardEffects9
 
-	thumb_func_start sub_080BB3DC
-sub_080BB3DC: @ 0x080BB3DC
+	thumb_func_start gEngineEffectSpecialSummonNegate_080BB3DC
+gEngineEffectSpecialSummonNegate_080BB3DC: @ 0x080BB3DC
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	movs r5, #0
@@ -349436,7 +349436,7 @@ _080BB3E4:
 	adds r0, r6, #0
 	adds r1, r4, #0
 	movs r2, #0
-	bl sub_080B499C
+	bl gEngineEffectSpecialSummonNegate_080B499C
 	cmp r0, #0
 	beq _080BB404
 	movs r0, #1
@@ -349489,7 +349489,7 @@ gEngineEffectDestroyFlip_080BB414: @ 0x080BB414
 _080BB426:
 	adds r0, r6, #0
 	adds r1, r4, #0
-	bl sub_080BAED0
+	bl gEngineEffectSpecialSummon_080BAED0
 	cmp r0, #0
 	beq _080BB434
 	b _080BB59A
@@ -349508,11 +349508,11 @@ _080BB434:
 	cmp r0, #0
 	ble _080BB4A0
 	movs r0, #0
-	bl sub_08094320
+	bl gEngineEffectSpecialSummonDamage_08094320
 	adds r4, r0, #0
 	adds r0, r6, #0
 	adds r1, r4, #0
-	bl sub_080316B8
+	bl gEngineEffectBoostATKBoostDEF_080316B8
 	cmp r0, #0
 	blt _080BB498
 	movs r1, #1
@@ -349553,11 +349553,11 @@ _080BB4A0:
 	cmp r0, #0
 	ble _080BB500
 	movs r0, #0
-	bl sub_08094320
+	bl gEngineEffectSpecialSummonDamage_08094320
 	adds r4, r0, #0
 	adds r0, r6, #0
 	adds r1, r4, #0
-	bl sub_08037030
+	bl gEngineEffectBoostATKBoostDEF_08037030
 	cmp r0, #0
 	blt _080BB4F8
 	movs r1, #1
@@ -349599,7 +349599,7 @@ _080BB500:
 _080BB514: .4byte 0x0000FFFE
 _080BB518:
 	adds r0, r7, #0
-	bl sub_08094320
+	bl gEngineEffectSpecialSummonDamage_08094320
 	adds r5, r0, #0
 	movs r1, #1
 	ldr r0, _080BB534 @ =0x000015F9 (XZ-Tank Cannon)
@@ -349631,7 +349631,7 @@ _080BB54C:
 	movs r2, #1
 _080BB552:
 	movs r3, #1
-	bl sub_08033B18
+	bl gEngineEffectSpecialSummonChangePosition_08033B18
 	movs r1, #0
 	cmp r0, #0
 	ble _080BB570
@@ -349994,7 +349994,7 @@ _080BB794:
 _080BB800: .4byte 0xFFFF803F
 _080BB804:
 	adds r0, r6, #0
-	bl sub_080AEDD4
+	bl gEngineEffectSpecialSummonBoostATK_080AEDD4
 	lsrs r1, r0, #0x1f
 	b _080BB828
 _080BB80E:
@@ -350006,7 +350006,7 @@ _080BB80E:
 _080BB818:
 	mov r3, sl
 	subs r0, r3, r6
-	bl sub_08033B08
+	bl gEngineEffectSpecialSummonChangePosition_08033B08
 	movs r1, #0
 	cmp r0, #1
 	ble _080BB828
@@ -350244,7 +350244,7 @@ _080BB9EE:
 _080BB9F2:
 	adds r0, r6, #0
 	adds r1, r4, #0
-	bl sub_080BAED0
+	bl gEngineEffectSpecialSummon_080BAED0
 	cmp r0, #0
 	beq _080BBA00
 	b _080BBBCC
@@ -350259,7 +350259,7 @@ _080BBA00:
 	str r0, [r1, #8]
 _080BBA10:
 	adds r0, r6, #0
-	bl sub_08033C44
+	bl gEngineEffectSpecialSummon_08033C44
 	cmp r0, #1
 	bgt _080BBA1C
 	b _080BBBE4
@@ -350355,7 +350355,7 @@ _080BBA9C:
 	cmp r0, #0
 	beq _080BBB66
 	adds r0, r4, #0
-	bl sub_080309FC
+	bl gEngineEffectBoostATKBoostDEF_080309FC
 	cmp r0, #0
 	bne _080BBB66
 	movs r5, #1
@@ -350445,7 +350445,7 @@ _080BBB7C:
 	cmp r1, #0
 	blt _080BBBAA
 	adds r0, r6, #0
-	bl sub_08033B08
+	bl gEngineEffectSpecialSummonChangePosition_08033B08
 	cmp r0, #0
 	bne _080BBBAA
 	ldr r2, _080BBBD8 @ =gUnk_0201C4E0
@@ -350746,7 +350746,7 @@ _080BBDC0:
 	movs r1, #0
 	movs r2, #1
 	movs r3, #1
-	bl sub_08033B18
+	bl gEngineEffectSpecialSummonChangePosition_08033B18
 	cmp r0, #1
 	ble _080BBDDA
 _080BBDD2:
@@ -350763,8 +350763,8 @@ _080BBDDC:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080BBDE8
-sub_080BBDE8: @ 0x080BBDE8
+	thumb_func_start gEngineEffectSpecialSummonTribute_080BBDE8
+gEngineEffectSpecialSummonTribute_080BBDE8: @ 0x080BBDE8
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -350906,7 +350906,7 @@ _080BBEBA:
 _080BBEFE:
 	movs r1, #0
 	movs r2, #1
-	bl sub_080A5F38
+	bl gEngineEffectChangePosition_080A5F38
 	ldr r0, _080BBF34 @ =gUnk_0201AFE0
 	movs r2, #0xc0
 	lsls r2, r2, #1
@@ -350989,7 +350989,7 @@ _080BBF72:
 	lsrs r0, r0, #0x1f
 	adds r1, r1, r0
 	adds r0, r5, #0
-	bl sub_080A4694
+	bl gEngineEffectSpecialSummonTribute_080A4694
 	movs r1, #0x10
 	ands r1, r0
 	cmp r1, #0
@@ -351076,7 +351076,7 @@ _080BC034:
 _080BC03E:
 	movs r1, #1
 	subs r0, r1, r5
-	bl sub_08033B08
+	bl gEngineEffectSpecialSummonChangePosition_08033B08
 _080BC046:
 	cmp r0, #0
 	beq _080BC0E0
@@ -351090,28 +351090,28 @@ _080BC046:
 _080BC05A:
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_08032F7C
+	bl gEngineEffectSpecialSummonBoostATK_08032F7C
 	cmp r0, #0
 	bne _080BC0E0
 	b _080BC0E6
 _080BC068:
 	adds r0, r5, #0
-	bl sub_08032F7C
+	bl gEngineEffectSpecialSummonBoostATK_08032F7C
 	cmp r0, #0
 	bne _080BC0E6
 	adds r0, r5, #0
 	ldr r1, _080BC094 @ =0x000018F6 (Cyber Dragon)
-	bl sub_080AF914
+	bl gEngineEffectBoostATKSpecialSummon_080AF914
 	cmp r0, #0
 	beq _080BC0E0
 	adds r0, r5, #0
 	ldr r1, _080BC098 @ =0x000012E5 (Polymerization)
-	bl sub_080AF914
+	bl gEngineEffectBoostATKSpecialSummon_080AF914
 	cmp r0, #0
 	bne _080BC0E6
 	adds r0, r5, #0
 	ldr r1, _080BC09C @ =0x000018FE (Power Bond)
-	bl sub_080AF914
+	bl gEngineEffectBoostATKSpecialSummon_080AF914
 	b _080BC0B4
 	.align 2, 0
 _080BC094: .4byte 0x000018F6 @ Cyber Dragon
@@ -351120,12 +351120,12 @@ _080BC09C: .4byte 0x000018FE @ Power Bond
 _080BC0A0:
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_08032F7C
+	bl gEngineEffectSpecialSummonBoostATK_08032F7C
 	cmp r0, #0
 	bne _080BC0E6
 	adds r0, r5, #0
 	ldr r1, _080BC0BC @ =0x000018F6 (Cyber Dragon)
-	bl sub_08032F7C
+	bl gEngineEffectSpecialSummonBoostATK_08032F7C
 _080BC0B4:
 	cmp r0, #0
 	beq _080BC0E0
@@ -351176,7 +351176,7 @@ _080BC0E6:
 	movs r0, #1
 	movs r1, #0
 	movs r2, #1
-	bl sub_080A5F38
+	bl gEngineEffectChangePosition_080A5F38
 	movs r0, #1
 	b _080BC150
 	.align 2, 0
@@ -351317,7 +351317,7 @@ _080BC238:
 	beq _080BC28C
 	adds r0, r4, #0
 	movs r1, #1
-	bl sub_080AD4AC
+	bl gEngineEffectSpecialSummonTribute_080AD4AC
 	cmp r0, #0
 	blt _080BC254
 	adds r0, r4, #0
@@ -351325,13 +351325,13 @@ _080BC238:
 	b _080BC262
 _080BC254:
 	adds r0, r4, #0
-	bl sub_080B0F98
+	bl gEngineEffectSpecialSummonDestroy_080B0F98
 	cmp r0, #0
 	beq _080BC268
 	adds r0, r4, #0
 	movs r1, #0
 _080BC262:
-	bl sub_080B1114
+	bl gEngineEffectSpecialSummonDestroy_080B1114
 	adds r5, r0, #0
 _080BC268:
 	movs r0, #1
@@ -351340,7 +351340,7 @@ _080BC268:
 	bne _080BC27A
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_080B1114
+	bl gEngineEffectSpecialSummonDestroy_080B1114
 	adds r5, r0, #0
 _080BC27A:
 	cmp r5, #0
@@ -351348,7 +351348,7 @@ _080BC27A:
 	adds r0, r4, #0
 	adds r1, r5, #0
 	movs r2, #0
-	bl sub_080BBDE8
+	bl gEngineEffectSpecialSummonTribute_080BBDE8
 	cmp r0, #0
 	beq _080BC372
 _080BC28C:
@@ -351360,11 +351360,11 @@ _080BC28C:
 _080BC294: .4byte gUnk_0201AFE0
 _080BC298:
 	adds r0, r4, #0
-	bl sub_080AEDD4
+	bl gEngineEffectSpecialSummonBoostATK_080AEDD4
 	cmp r0, #0
 	blt _080BC2AC
 	adds r0, r4, #0
-	bl sub_080B0F98
+	bl gEngineEffectSpecialSummonDestroy_080B0F98
 	cmp r0, #0
 	bne _080BC37C
 _080BC2AC:
@@ -351389,7 +351389,7 @@ _080BC2BC:
 _080BC2D0: .4byte gUnk_0201AFE0
 _080BC2D4:
 	adds r0, r4, #0
-	bl sub_080BB35C
+	bl gEngineEffectSpecialSummon_080BB35C
 	cmp r0, #0
 	beq _080BC2EC
 _080BC2DE:
@@ -351446,7 +351446,7 @@ _080BC344: .4byte gUnk_0201AFE0
 _080BC348:
 	adds r0, r4, #0
 	mov r1, sp
-	bl sub_080B153C
+	bl gEngineEffectSpecialSummonTribute_080B153C
 	adds r1, r0, #0
 	cmp r1, #0
 	blt _080BC37C
@@ -351455,7 +351455,7 @@ _080BC348:
 	bne _080BC37C
 	adds r0, r4, #0
 	movs r2, #0
-	bl sub_080BBDE8
+	bl gEngineEffectSpecialSummonTribute_080BBDE8
 	cmp r0, #0
 	beq _080BC372
 	cmp r0, #0
@@ -351478,8 +351478,8 @@ _080BC37E:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080BC388
-sub_080BC388: @ 0x080BC388
+	thumb_func_start gEngineEffectSpecialSummon_080BC388
+gEngineEffectSpecialSummon_080BC388: @ 0x080BC388
 	push {r4, r5, lr}
 	sub sp, #4
 	ldr r5, _080BC3FC @ =gUnk_0201C4E0
@@ -351519,13 +351519,13 @@ sub_080BC388: @ 0x080BC388
 _080BC3D6:
 	adds r0, r4, #0
 	mov r1, sp
-	bl sub_080B153C
+	bl gEngineEffectSpecialSummonTribute_080B153C
 	adds r1, r0, #0
 	cmp r1, #0
 	blt _080BC3F0
 	ldr r2, [sp]
 	adds r0, r4, #0
-	bl sub_080BBDE8
+	bl gEngineEffectSpecialSummonTribute_080BBDE8
 	cmp r0, #0
 	beq _080BC3F8
 _080BC3F0:
@@ -351699,8 +351699,8 @@ _080BC542:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080BC54C
-sub_080BC54C: @ 0x080BC54C
+	thumb_func_start gEngineEffectSpecialSummonDestroy_080BC54C
+gEngineEffectSpecialSummonDestroy_080BC54C: @ 0x080BC54C
 	push {r4, r5, lr}
 	ldr r1, _080BC568 @ =gUnk_0201C4E0
 	ldr r2, _080BC56C @ =0x00001CE8
@@ -351750,7 +351750,7 @@ _080BC5A4:
 	str r0, [r1, #8]
 _080BC5AC:
 	adds r0, r5, #0
-	bl sub_080B0F98
+	bl gEngineEffectSpecialSummonDestroy_080B0F98
 	movs r4, #0
 _080BC5B4:
 	adds r0, r5, #0
@@ -351771,8 +351771,8 @@ _080BC5CA:
 	.align 2, 0
 _080BC5D0: .4byte gUnk_0201AFE0
 
-	thumb_func_start sub_080BC5D4
-sub_080BC5D4: @ 0x080BC5D4
+	thumb_func_start gEngineEffectSpecialSummonDestroy_080BC5D4
+gEngineEffectSpecialSummonDestroy_080BC5D4: @ 0x080BC5D4
 	push {r4, r5, lr}
 	ldr r0, _080BC5F0 @ =gUnk_0201C4E0
 	ldr r1, _080BC5F4 @ =0x00001CE8
@@ -351834,8 +351834,8 @@ _080BC63C:
 	.align 2, 0
 _080BC644: .4byte gUnk_0201AFE0
 
-	thumb_func_start sub_080BC648
-sub_080BC648: @ 0x080BC648
+	thumb_func_start gEngineEffectSpecialSummonDestroy_080BC648
+gEngineEffectSpecialSummonDestroy_080BC648: @ 0x080BC648
 	push {r4, r5, r6, lr}
 	ldr r6, _080BC668 @ =gUnk_0201C4E0
 	ldr r1, _080BC66C @ =0x00001CE8
@@ -351867,13 +351867,13 @@ _080BC674:
 	beq _080BC694
 	adds r0, r4, #0
 	movs r1, #0
-	bl sub_080B0FE8
+	bl gEngineEffectSpecialSummonDestroy_080B0FE8
 	cmp r0, #0
 	beq _080BC70A
 _080BC694:
 	adds r0, r4, #0
 	movs r1, #1
-	bl sub_080BB38C
+	bl gEngineEffectSpecialSummon_080BB38C
 	adds r2, r0, #0
 	cmp r2, #0
 	bne _080BC714
@@ -352125,8 +352125,8 @@ _080BC854:
 	.align 2, 0
 _080BC87C: .4byte 0x05000200
 
-	thumb_func_start sub_080BC880
-sub_080BC880: @ 0x080BC880
+	thumb_func_start gEngineEffectSpecialSummonDamage_080BC880
+gEngineEffectSpecialSummonDamage_080BC880: @ 0x080BC880
 	push {lr}
 	ldr r1, _080BC894 @ =gUnk_0201FEC0
 	ldrb r0, [r1, #0x10]
@@ -352160,8 +352160,8 @@ _080BC8C6:
 	bl sub_0801BD08
 	b _080BC8DA
 _080BC8CC:
-	bl sub_080CC904
-	bl sub_080CBF0C
+	bl gEngineEffectSpecialSummonDamage_080CC904
+	bl gEngineEffectSpecialSummon_080CBF0C
 	b _080BC8DE
 _080BC8D6:
 	bl sub_080CCA38
@@ -352200,8 +352200,8 @@ _080BC90C:
 _080BC910: .4byte gUnk_02023130
 _080BC914: .4byte 0x00000215
 
-	thumb_func_start sub_080BC918
-sub_080BC918: @ 0x080BC918
+	thumb_func_start gEngineEffectSpecialSummonDamage_080BC918
+gEngineEffectSpecialSummonDamage_080BC918: @ 0x080BC918
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -352477,8 +352477,8 @@ _080BCB7A:
 	bl sub_0801CB00
 	b _080BCB8E
 _080BCB80:
-	bl sub_080CC904
-	bl sub_080CBF0C
+	bl gEngineEffectSpecialSummonDamage_080CC904
+	bl gEngineEffectSpecialSummon_080CBF0C
 	b _080BCB92
 _080BCB8A:
 	bl sub_080CCA38
@@ -352522,8 +352522,8 @@ _080BCBC0:
 _080BCBCC: .4byte gUnk_02023130
 _080BCBD0: .4byte 0x00000215
 
-	thumb_func_start sub_080BCBD4
-sub_080BCBD4: @ 0x080BCBD4
+	thumb_func_start gEngineEffectSpecialSummonDamage_080BCBD4
+gEngineEffectSpecialSummonDamage_080BCBD4: @ 0x080BCBD4
 	push {lr}
 	ldr r1, _080BCBE8 @ =gUnk_0201FEC0
 	ldrb r0, [r1, #0x10]
@@ -352557,8 +352557,8 @@ _080BCC1A:
 	bl sub_08013BD4
 	b _080BCC2E
 _080BCC20:
-	bl sub_080CC904
-	bl sub_080CBF0C
+	bl gEngineEffectSpecialSummonDamage_080CC904
+	bl gEngineEffectSpecialSummon_080CBF0C
 	b _080BCC32
 _080BCC2A:
 	bl sub_080CCA38
@@ -356265,8 +356265,8 @@ _080BEA88: .4byte 0x06014000
 _080BEA8C: .4byte gUnk_0201FEDC
 _080BEA90: .4byte gUnk_02000005
 
-	thumb_func_start sub_080BEA94
-sub_080BEA94: @ 0x080BEA94
+	thumb_func_start gEngineEffectSpecialSummonDamage_080BEA94
+gEngineEffectSpecialSummonDamage_080BEA94: @ 0x080BEA94
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -356474,7 +356474,7 @@ _080BEC38:
 	lsrs r0, r0, #0x10
 	movs r1, #0xd
 	movs r2, #0
-	bl sub_080C3880
+	bl gEngineEffectSpecialSummon_080C3880
 _080BEC46:
 	movs r0, #3
 	bl sub_080F9AB4
@@ -356599,7 +356599,7 @@ _080BED24:
 	ldrh r2, [r0]
 	mov r0, sl
 	movs r1, #0xd
-	bl sub_080C39FC
+	bl gEngineEffectSpecialSummonDamage_080C39FC
 	ldr r1, _080BED84 @ =gUnk_02023130
 	ldr r2, _080BED88 @ =0x00000215
 	adds r1, r1, r2
@@ -356625,7 +356625,7 @@ _080BED24:
 	bl sub_080CC8C8
 	add r1, sp, #0xc
 	movs r2, #1
-	bl sub_080CB1CC
+	bl gEngineEffectSpecialSummonChangePosition_080CB1CC
 	b _080BEDA0
 	.align 2, 0
 _080BED7C: .4byte gUnk_0201C4E0
@@ -356677,8 +356677,8 @@ _080BEDD8: .4byte gUnk_0201FEC0
 _080BEDDC: .4byte gUnk_02023130
 _080BEDE0: .4byte 0x00000215
 
-	thumb_func_start sub_080BEDE4
-sub_080BEDE4: @ 0x080BEDE4
+	thumb_func_start gEngineEffectSpecialSummon_080BEDE4
+gEngineEffectSpecialSummon_080BEDE4: @ 0x080BEDE4
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -356787,7 +356787,7 @@ _080BEEB8:
 	adds r0, r3, r0
 	ldrh r1, [r0]
 	adds r0, r7, #0
-	bl sub_080C4220
+	bl gEngineEffectSpecialSummon_080C4220
 	bl sub_080C678C
 	b _080BEFAA
 	.align 2, 0
@@ -356892,8 +356892,8 @@ _080BEFAC:
 _080BEFB8: .4byte gUnk_02023130
 _080BEFBC: .4byte gUnk_0201FEDC
 
-	thumb_func_start sub_080BEFC0
-sub_080BEFC0: @ 0x080BEFC0
+	thumb_func_start gEngineEffectSpecialSummonChangePosition_080BEFC0
+gEngineEffectSpecialSummonChangePosition_080BEFC0: @ 0x080BEFC0
 	push {r4, r5, r6, r7, lr}
 	sub sp, #4
 	ldr r0, _080BEFE4 @ =gUnk_0201FEC0
@@ -357055,7 +357055,7 @@ _080BF0EE:
 	bl sub_080CC8C8
 	mov r1, sp
 	movs r2, #1
-	bl sub_080CB1CC
+	bl gEngineEffectSpecialSummonChangePosition_080CB1CC
 _080BF118:
 	ldr r1, _080BF12C @ =gUnk_0201FEC0
 	ldrb r0, [r1, #0x10]
@@ -357154,7 +357154,7 @@ _080BF1C0:
 	strb r0, [r7, #0x10]
 	b _080BF120
 _080BF1EE:
-	bl sub_080CBF0C
+	bl gEngineEffectSpecialSummon_080CBF0C
 	ldrb r0, [r7, #0x10]
 	adds r0, #1
 	strb r0, [r7, #0x10]
@@ -357183,8 +357183,8 @@ _080BF216:
 _080BF220: .4byte gUnk_02023130
 _080BF224: .4byte 0x00000215
 
-	thumb_func_start sub_080BF228
-sub_080BF228: @ 0x080BF228
+	thumb_func_start gEngineEffectSpecialSummon_080BF228
+gEngineEffectSpecialSummon_080BF228: @ 0x080BF228
 	push {r4, r5, r6, r7, lr}
 	ldr r2, _080BF250 @ =gUnk_0201FEC0
 	ldr r6, [r2, #4]
@@ -357235,7 +357235,7 @@ _080BF284:
 	adds r0, r6, #0
 	movs r1, #0xb
 	adds r2, r4, #0
-	bl sub_080CB998
+	bl gEngineEffectSpecialSummon_080CB998
 	ldrb r0, [r5, #0x10]
 	adds r0, #1
 	strb r0, [r5, #0x10]
@@ -360507,8 +360507,8 @@ _080C0C60:
 _080C0C68: .4byte gUnk_02023130
 _080C0C6C: .4byte 0x00000215
 
-	thumb_func_start sub_080C0C70
-sub_080C0C70: @ 0x080C0C70
+	thumb_func_start gEngineEffectSpecialSummonChangePosition_080C0C70
+gEngineEffectSpecialSummonChangePosition_080C0C70: @ 0x080C0C70
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -360629,7 +360629,7 @@ _080C0CE0:
 	mov r0, sl
 	ldr r1, _080C0D9C @ =gUnk_0201FEC4
 	movs r2, #1
-	bl sub_080CB1CC
+	bl gEngineEffectSpecialSummonChangePosition_080CB1CC
 	b _080C0EF0
 	.align 2, 0
 _080C0D7C: .4byte 0x06014100
@@ -360799,7 +360799,7 @@ _080C0EDC:
 	ands r0, r1
 	strh r0, [r2]
 	bl sub_080F55D4
-	bl sub_080CBF0C
+	bl gEngineEffectSpecialSummon_080CBF0C
 _080C0EF0:
 	ldr r1, _080C0F00 @ =gUnk_0201FEC0
 _080C0EF2:
@@ -360839,8 +360839,8 @@ _080C0F20:
 _080C0F30: .4byte gUnk_02023130
 _080C0F34: .4byte 0x00000215
 
-	thumb_func_start sub_080C0F38
-sub_080C0F38: @ 0x080C0F38
+	thumb_func_start gEngineEffectSpecialSummon_080C0F38
+gEngineEffectSpecialSummon_080C0F38: @ 0x080C0F38
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -361181,7 +361181,7 @@ _080C11F4:
 	ands r0, r1
 	strh r0, [r2]
 	bl sub_080F55D4
-	bl sub_080CBF0C
+	bl gEngineEffectSpecialSummon_080CBF0C
 	ldr r1, _080C1218 @ =gUnk_0201FEC0
 	ldrb r0, [r1, #0x10]
 	adds r0, #1
@@ -361474,8 +361474,8 @@ _080C1438:
 	pop {r0}
 	bx r0
 
-	thumb_func_start sub_080C1448
-sub_080C1448: @ 0x080C1448
+	thumb_func_start gEngineEffectSpecialSummonChangePosition_080C1448
+gEngineEffectSpecialSummonChangePosition_080C1448: @ 0x080C1448
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -361669,7 +361669,7 @@ _080C15E2:
 	bl sub_080CC8C8
 	add r1, sp, #4
 	movs r2, #0
-	bl sub_080CB1CC
+	bl gEngineEffectSpecialSummonChangePosition_080CB1CC
 	b _080C178C
 _080C160A:
 	ldr r1, _080C1630 @ =0x04000054
@@ -361864,7 +361864,7 @@ _080C1778:
 	ands r0, r1
 	strh r0, [r2]
 	bl sub_080F55D4
-	bl sub_080CBF0C
+	bl gEngineEffectSpecialSummon_080CBF0C
 _080C178C:
 	ldr r1, _080C179C @ =gUnk_0201FEC0
 _080C178E:
@@ -361905,8 +361905,8 @@ _080C17BC:
 _080C17CC: .4byte gUnk_02023130
 _080C17D0: .4byte 0x00000215
 
-	thumb_func_start sub_080C17D4
-sub_080C17D4: @ 0x080C17D4
+	thumb_func_start gEngineEffectSpecialSummonChangePosition_080C17D4
+gEngineEffectSpecialSummonChangePosition_080C17D4: @ 0x080C17D4
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -362062,7 +362062,7 @@ _080C191C:
 	bl sub_080CC8C8
 	add r1, sp, #4
 	movs r2, #0
-	bl sub_080CB1CC
+	bl gEngineEffectSpecialSummonChangePosition_080CB1CC
 	b _080C1A88
 _080C1944:
 	ldr r1, _080C196C @ =0x04000054
@@ -362222,7 +362222,7 @@ _080C1A74:
 	ands r0, r1
 	strh r0, [r2]
 	bl sub_080F55D4
-	bl sub_080CBF0C
+	bl gEngineEffectSpecialSummon_080CBF0C
 _080C1A88:
 	ldr r1, _080C1A98 @ =gUnk_0201FEC0
 _080C1A8A:
@@ -362263,8 +362263,8 @@ _080C1AB8:
 _080C1AC8: .4byte gUnk_02023130
 _080C1ACC: .4byte 0x00000215
 
-	thumb_func_start sub_080C1AD0
-sub_080C1AD0: @ 0x080C1AD0
+	thumb_func_start gEngineEffectSpecialSummonDamage_080C1AD0
+gEngineEffectSpecialSummonDamage_080C1AD0: @ 0x080C1AD0
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -362344,7 +362344,7 @@ _080C1B52:
 	lsrs r0, r0, #0x10
 	movs r1, #0xd
 	movs r2, #0
-	bl sub_080C3880
+	bl gEngineEffectSpecialSummon_080C3880
 	b _080C1C1C
 	.align 2, 0
 _080C1B78: .4byte 0x050002A0
@@ -362416,7 +362416,7 @@ _080C1C04:
 	adds r1, r1, r2
 	ldrh r2, [r1]
 	movs r1, #0xd
-	bl sub_080C39FC
+	bl gEngineEffectSpecialSummonDamage_080C39FC
 _080C1C1C:
 	ldrb r0, [r5, #0x10]
 	adds r0, #1
@@ -363587,8 +363587,8 @@ _080C25A0:
 _080C25A4: .4byte gUnk_02023130
 _080C25A8: .4byte 0x00000215
 
-	thumb_func_start sub_080C25AC
-sub_080C25AC: @ 0x080C25AC
+	thumb_func_start gEngineEffectSpecialSummon_080C25AC
+gEngineEffectSpecialSummon_080C25AC: @ 0x080C25AC
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -363725,7 +363725,7 @@ _080C2694:
 	mov r1, sl
 	lsrs r0, r1, #0x10
 	movs r1, #0xb
-	bl sub_080C3880
+	bl gEngineEffectSpecialSummon_080C3880
 	adds r4, #1
 	cmp r4, r5
 	blt _080C2694
@@ -363864,14 +363864,14 @@ _080C27D2:
 	add r4, sb
 	ldrh r1, [r4]
 	adds r0, r6, #0
-	bl sub_080C4220
+	bl gEngineEffectSpecialSummon_080C4220
 	bl sub_080C678C
 	b _080C27FC
 	.align 2, 0
 _080C27F0: .4byte gUnk_0202317C
 _080C27F4: .4byte gUnk_02023180
 _080C27F8:
-	bl sub_080CBF0C
+	bl gEngineEffectSpecialSummon_080CBF0C
 _080C27FC:
 	ldr r1, _080C2808 @ =gUnk_0201FEC0
 _080C27FE:
@@ -364244,8 +364244,8 @@ _080C2AAE:
 	.align 2, 0
 _080C2AC8: .4byte 0x0000248C
 
-	thumb_func_start sub_080C2ACC
-sub_080C2ACC: @ 0x080C2ACC
+	thumb_func_start gEngineEffectSpecialSummon_080C2ACC
+gEngineEffectSpecialSummon_080C2ACC: @ 0x080C2ACC
 	push {r4, r5, r6, lr}
 	ldr r0, _080C2AFC @ =gUnk_0201FE60
 	ldr r1, [r0, #0xc]
@@ -364331,7 +364331,7 @@ _080C2B3A:
 	orrs r0, r1
 	ldr r1, [r6, #8]
 	movs r2, #0
-	bl sub_080C6A20
+	bl gEngineEffectSpecialSummon_080C6A20
 _080C2B70:
 	movs r0, #1
 	b _080C2D16
@@ -364517,7 +364517,7 @@ _080C2CCC:
 	lsls r0, r3, #0x15
 	lsrs r0, r0, #0x18
 	movs r2, #0
-	bl sub_080C6A20
+	bl gEngineEffectSpecialSummon_080C6A20
 _080C2CDE:
 	ldrh r2, [r6]
 	lsls r1, r2, #0x15
@@ -365000,8 +365000,8 @@ sub_080C305C: @ 0x080C305C
 	bx r0
 	.align 2, 0
 
-	thumb_func_start sub_080C3080
-sub_080C3080: @ 0x080C3080
+	thumb_func_start gEngineEffectSpecialSummonPreventAttack_080C3080
+gEngineEffectSpecialSummonPreventAttack_080C3080: @ 0x080C3080
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -365363,7 +365363,7 @@ _080C3374: .4byte 0x0000DFFF
 _080C3378: .4byte gUnk_0201FE60
 _080C337C: .4byte 0xFFFFF807
 _080C3380:
-	bl sub_080C8BF0
+	bl gEngineEffectSpecialSummonPreventAttack_080C8BF0
 	movs r1, #2
 	rsbs r1, r1, #0
 	ldrb r0, [r4]
@@ -366017,8 +366017,8 @@ _080C3874:
 	.align 2, 0
 _080C387C: .4byte gUnk_09854DF0
 
-	thumb_func_start sub_080C3880
-sub_080C3880: @ 0x080C3880
+	thumb_func_start gEngineEffectSpecialSummon_080C3880
+gEngineEffectSpecialSummon_080C3880: @ 0x080C3880
 	push {r4, r5, r6, r7, lr}
 	lsls r0, r0, #0x10
 	lsrs r6, r0, #0x10
@@ -366056,8 +366056,8 @@ _080C38C4:
 	bx r0
 	.align 2, 0
 
-	thumb_func_start sub_080C38CC
-sub_080C38CC: @ 0x080C38CC
+	thumb_func_start gEngineEffectSpecialSummon_080C38CC
+gEngineEffectSpecialSummon_080C38CC: @ 0x080C38CC
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -366091,7 +366091,7 @@ sub_080C38CC: @ 0x080C38CC
 	mov r0, r8
 	adds r1, r7, #0
 	adds r2, r6, #0
-	bl sub_080C3880
+	bl gEngineEffectSpecialSummon_080C3880
 	b _080C39E8
 _080C3916:
 	mov r0, sl
@@ -366210,8 +366210,8 @@ _080C39E8:
 	.align 2, 0
 _080C39F8: .4byte gUnk_0984FBCC
 
-	thumb_func_start sub_080C39FC
-sub_080C39FC: @ 0x080C39FC
+	thumb_func_start gEngineEffectSpecialSummonDamage_080C39FC
+gEngineEffectSpecialSummonDamage_080C39FC: @ 0x080C39FC
 	push {r4, r5, r6, r7, lr}
 	lsls r0, r0, #0x10
 	lsrs r6, r0, #0x10
@@ -366375,7 +366375,7 @@ _080C3B40:
 	adds r0, r6, #0
 	adds r1, r5, #0
 	movs r2, #0
-	bl sub_080C3880
+	bl gEngineEffectSpecialSummon_080C3880
 _080C3B4A:
 	pop {r4, r5, r6, r7}
 	pop {r0}
@@ -366628,8 +366628,8 @@ sub_080C3D00: @ 0x080C3D00
 	.align 2, 0
 _080C3D1C: .4byte gUnk_02023110
 
-	thumb_func_start sub_080C3D20
-sub_080C3D20: @ 0x080C3D20
+	thumb_func_start gEngineEffectSpecialSummon_080C3D20
+gEngineEffectSpecialSummon_080C3D20: @ 0x080C3D20
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -366826,7 +366826,7 @@ _080C3EA4:
 	lsrs r1, r1, #0x1b
 	lsls r2, r2, #0x12
 	lsrs r2, r2, #0x18
-	bl sub_080C3880
+	bl gEngineEffectSpecialSummon_080C3880
 	ldr r0, [r7]
 	lsls r0, r0, #0x11
 	lsrs r0, r0, #0x1f
@@ -367077,7 +367077,7 @@ _080C4068:
 	str r4, [sp]
 	mov r4, sb
 	str r4, [sp, #4]
-	bl sub_080C38CC
+	bl gEngineEffectSpecialSummon_080C38CC
 	b _080C40BC
 	.align 2, 0
 _080C40A4: .4byte gUnk_0201E2A0
@@ -367090,7 +367090,7 @@ _080C40A8:
 	mov r0, sb
 	adds r1, r7, #0
 	movs r2, #0
-	bl sub_080CB1CC
+	bl gEngineEffectSpecialSummonChangePosition_080CB1CC
 _080C40BC:
 	ldr r1, _080C40C8 @ =gUnk_02023110
 	ldrh r0, [r1]
@@ -367151,8 +367151,8 @@ _080C4120: .4byte gUnk_02023110
 _080C4124: .4byte gUnk_02023130
 _080C4128: .4byte 0x00000215
 
-	thumb_func_start sub_080C412C
-sub_080C412C: @ 0x080C412C
+	thumb_func_start gEngineEffectSpecialSummonDamage_080C412C
+gEngineEffectSpecialSummonDamage_080C412C: @ 0x080C412C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -367200,7 +367200,7 @@ sub_080C412C: @ 0x080C412C
 	str r4, [sp]
 	str r0, [sp, #4]
 	adds r0, r5, #0
-	bl sub_080C38CC
+	bl gEngineEffectSpecialSummon_080C38CC
 	b _080C41FC
 	.align 2, 0
 _080C4198: .4byte gUnk_0201FF60
@@ -367247,10 +367247,10 @@ _080C419C:
 	str r0, [sp, #4]
 	adds r0, r3, #0
 	adds r3, r5, #0
-	bl sub_080C38CC
+	bl gEngineEffectSpecialSummon_080C38CC
 _080C41FC:
-	bl sub_080C8D30
-	bl sub_080C8BF0
+	bl gEngineEffectSpecialSummonNegate_080C8D30
+	bl gEngineEffectSpecialSummonPreventAttack_080C8BF0
 _080C4204:
 	add sp, #8
 	pop {r3, r4}
@@ -367264,8 +367264,8 @@ _080C4214: .4byte gUnk_0201C4E0
 _080C4218: .4byte 0x00001D08
 _080C421C: .4byte gUnk_0201FF60
 
-	thumb_func_start sub_080C4220
-sub_080C4220: @ 0x080C4220
+	thumb_func_start gEngineEffectSpecialSummon_080C4220
+gEngineEffectSpecialSummon_080C4220: @ 0x080C4220
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -367358,7 +367358,7 @@ _080C429C:
 	ldr r1, [sp, #0xc]
 	lsrs r0, r1, #0x10
 	movs r1, #0xb
-	bl sub_080C38CC
+	bl gEngineEffectSpecialSummon_080C38CC
 	adds r5, #2
 	adds r4, #1
 	cmp r4, r8
@@ -367372,7 +367372,7 @@ _080C42E8:
 	lsrs r2, r2, #0x10
 	lsrs r0, r5, #0x10
 	movs r1, #0xb
-	bl sub_080C3880
+	bl gEngineEffectSpecialSummon_080C3880
 	adds r4, #1
 	cmp r4, #6
 	ble _080C42E8
@@ -367390,7 +367390,7 @@ _080C42FA:
 	ldr r6, _080C434C @ =0x000007FF
 	ands r4, r6
 	adds r0, r7, #0
-	bl sub_080C89A8
+	bl gEngineEffectSpecialSummonSendToGY_080C89A8
 	lsls r0, r0, #0x10
 	ands r4, r6
 	movs r1, #0xfe
@@ -367415,8 +367415,8 @@ _080C4344: .4byte gUnk_02023130
 _080C4348: .4byte gUnk_020230C0
 _080C434C: .4byte 0x000007FF
 
-	thumb_func_start sub_080C4350
-sub_080C4350: @ 0x080C4350
+	thumb_func_start gEngineEffectSpecialSummon_080C4350
+gEngineEffectSpecialSummon_080C4350: @ 0x080C4350
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -367758,7 +367758,7 @@ _080C45FA:
 	adds r2, #0x4c
 	adds r1, r1, r2
 	ldrh r1, [r1]
-	bl sub_080C4220
+	bl gEngineEffectSpecialSummon_080C4220
 	b _080C4C48
 	.align 2, 0
 _080C4628: .4byte 0xFFFFC03F
@@ -367882,7 +367882,7 @@ _080C472C:
 	lsrs r1, r1, #0x1b
 	lsls r2, r2, #0x12
 	lsrs r2, r2, #0x18
-	bl sub_080C3880
+	bl gEngineEffectSpecialSummon_080C3880
 	b _080C4854
 _080C473E:
 	lsls r1, r2, #0x1f
@@ -367895,7 +367895,7 @@ _080C473E:
 	adds r1, r1, r3
 	ldrh r2, [r1]
 	movs r1, #0xc
-	bl sub_080C39FC
+	bl gEngineEffectSpecialSummonDamage_080C39FC
 	b _080C4854
 	.align 2, 0
 _080C4758: .4byte gUnk_0201C4E0
@@ -367919,7 +367919,7 @@ _080C4760:
 	adds r1, r1, r3
 	ldrh r2, [r1]
 	movs r1, #0xd
-	bl sub_080C39FC
+	bl gEngineEffectSpecialSummonDamage_080C39FC
 	b _080C4854
 	.align 2, 0
 _080C478C: .4byte gUnk_02023130
@@ -367937,7 +367937,7 @@ _080C479C:
 	adds r1, r1, r3
 	ldrh r2, [r1]
 	movs r1, #0xe
-	bl sub_080C39FC
+	bl gEngineEffectSpecialSummonDamage_080C39FC
 	b _080C4854
 	.align 2, 0
 _080C47B8: .4byte gUnk_0201C4E0
@@ -367953,7 +367953,7 @@ _080C47C0:
 	adds r1, r1, r3
 	ldrh r2, [r1]
 	movs r1, #0xf
-	bl sub_080C39FC
+	bl gEngineEffectSpecialSummonDamage_080C39FC
 	b _080C4854
 	.align 2, 0
 _080C47DC: .4byte gUnk_0201C4E0
@@ -368012,7 +368012,7 @@ _080C4838:
 	adds r2, #0x4c
 	adds r1, r1, r2
 	ldrh r1, [r1]
-	bl sub_080C4220
+	bl gEngineEffectSpecialSummon_080C4220
 	bl sub_080C678C
 _080C4854:
 	ldr r1, _080C487C @ =gUnk_02023110
@@ -368369,7 +368369,7 @@ _080C4B1C:
 	str r4, [sp]
 	mov r4, sl
 	str r4, [sp, #4]
-	bl sub_080C38CC
+	bl gEngineEffectSpecialSummon_080C38CC
 	ldr r7, _080C4B40 @ =gUnk_0202311C
 	ldr r2, [r7]
 	b _080C4C28
@@ -368386,7 +368386,7 @@ _080C4B44:
 	adds r1, r1, r3
 	ldrh r2, [r1]
 	movs r1, #0xc
-	bl sub_080C39FC
+	bl gEngineEffectSpecialSummonDamage_080C39FC
 	ldr r0, _080C4B6C @ =gUnk_0202311C
 	ldr r2, [r0]
 	b _080C4C28
@@ -368405,7 +368405,7 @@ _080C4B70:
 	adds r1, r1, r3
 	ldrh r2, [r1]
 	movs r1, #0xd
-	bl sub_080C39FC
+	bl gEngineEffectSpecialSummonDamage_080C39FC
 	b _080C4C24
 	.align 2, 0
 _080C4B8C: .4byte gUnk_0201C4E0
@@ -368421,7 +368421,7 @@ _080C4B94:
 	adds r1, r1, r3
 	ldrh r2, [r1]
 	movs r1, #0xe
-	bl sub_080C39FC
+	bl gEngineEffectSpecialSummonDamage_080C39FC
 	ldr r3, _080C4BBC @ =gUnk_0202311C
 	ldr r2, [r3]
 	b _080C4C28
@@ -368440,7 +368440,7 @@ _080C4BC0:
 	adds r1, r1, r3
 	ldrh r2, [r1]
 	movs r1, #0xf
-	bl sub_080C39FC
+	bl gEngineEffectSpecialSummonDamage_080C39FC
 	ldr r4, _080C4BE8 @ =gUnk_0202311C
 	ldr r2, [r4]
 	b _080C4C28
@@ -368476,7 +368476,7 @@ _080C4C0C:
 	adds r2, #0x4c
 	adds r1, r1, r2
 	ldrh r1, [r1]
-	bl sub_080C4220
+	bl gEngineEffectSpecialSummon_080C4220
 _080C4C24:
 	ldr r1, _080C4C3C @ =gUnk_0202311C
 	ldr r2, [r1]
@@ -368487,13 +368487,13 @@ _080C4C28:
 	lsrs r1, r1, #0x1b
 	lsls r2, r2, #0x12
 	lsrs r2, r2, #0x18
-	bl sub_080C6A20
+	bl gEngineEffectSpecialSummon_080C6A20
 	b _080C4C48
 	.align 2, 0
 _080C4C3C: .4byte gUnk_0202311C
 _080C4C40: .4byte gUnk_02023130
 _080C4C44:
-	bl sub_080CBF0C
+	bl gEngineEffectSpecialSummon_080CBF0C
 _080C4C48:
 	ldr r1, _080C4C54 @ =gUnk_02023110
 	ldrh r0, [r1]
@@ -368519,8 +368519,8 @@ _080C4C58:
 	ands r0, r1
 	strb r0, [r2]
 _080C4C76:
-	bl sub_080C8BF0
-	bl sub_080C8904
+	bl gEngineEffectSpecialSummonPreventAttack_080C8BF0
+	bl gEngineEffectSpecialSummon_080C8904
 	ldr r0, _080C4C9C @ =gUnk_02023110
 	movs r1, #5
 	rsbs r1, r1, #0
@@ -368595,8 +368595,8 @@ _080C4D00:
 _080C4D02:
 	bx lr
 
-	thumb_func_start sub_080C4D04
-sub_080C4D04: @ 0x080C4D04
+	thumb_func_start gEngineEffectSpecialSummonDamage_080C4D04
+gEngineEffectSpecialSummonDamage_080C4D04: @ 0x080C4D04
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -368691,7 +368691,7 @@ _080C4D9E:
 	lsrs r0, r3, #0x10
 	movs r2, #0
 	mov r3, sb
-	bl sub_080C38CC
+	bl gEngineEffectSpecialSummon_080C38CC
 	adds r6, #1
 	cmp r6, #4
 	ble _080C4D28
@@ -368726,7 +368726,7 @@ _080C4DCA:
 	lsrs r0, r2, #0x10
 	movs r2, #0
 	adds r3, r5, #0
-	bl sub_080C38CC
+	bl gEngineEffectSpecialSummon_080C38CC
 	adds r6, #1
 	cmp r6, #0xa
 	ble _080C4DCA
@@ -368743,33 +368743,33 @@ _080C4DCA:
 	ldrh r2, [r0]
 	adds r0, r5, #0
 	movs r1, #0xc
-	bl sub_080C39FC
+	bl gEngineEffectSpecialSummonDamage_080C39FC
 	mov r0, sl
 	adds r0, #0x10
 	adds r0, r4, r0
 	ldrh r2, [r0]
 	adds r0, r5, #0
 	movs r1, #0xd
-	bl sub_080C39FC
+	bl gEngineEffectSpecialSummonDamage_080C39FC
 	mov r0, sl
 	adds r0, #0x14
 	adds r0, r4, r0
 	ldrh r2, [r0]
 	adds r0, r5, #0
 	movs r1, #0xe
-	bl sub_080C39FC
+	bl gEngineEffectSpecialSummonDamage_080C39FC
 	ldr r0, _080C4E98 @ =gUnk_0201C4FC
 	adds r4, r4, r0
 	ldrh r2, [r4]
 	adds r0, r5, #0
 	movs r1, #0xf
-	bl sub_080C39FC
+	bl gEngineEffectSpecialSummonDamage_080C39FC
 	ldr r1, [sp, #0xc]
 	ldr r2, _080C4E9C @ =gUnk_0202317C
 	adds r0, r1, r2
 	ldrh r1, [r0]
 	adds r0, r7, #0
-	bl sub_080C4220
+	bl gEngineEffectSpecialSummon_080C4220
 	ldr r7, [sp, #8]
 	cmp r7, #1
 	bgt _080C4E78
@@ -368821,8 +368821,8 @@ _080C4ED0: .4byte gUnk_02023110
 _080C4ED4: .4byte gUnk_02023130
 _080C4ED8: .4byte 0x00000215
 
-	thumb_func_start sub_080C4EDC
-sub_080C4EDC: @ 0x080C4EDC
+	thumb_func_start gEngineEffectSpecialSummon_080C4EDC
+gEngineEffectSpecialSummon_080C4EDC: @ 0x080C4EDC
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -368952,7 +368952,7 @@ _080C4F80:
 	adds r0, r4, #0
 	movs r2, #0
 	bl sub_080C33BC
-	bl sub_080C8BF0
+	bl gEngineEffectSpecialSummonPreventAttack_080C8BF0
 	b _080C5400
 	.align 2, 0
 _080C4FF4: .4byte gUnk_02023130
@@ -369027,7 +369027,7 @@ _080C5060:
 	lsrs r1, r1, #0x1b
 	lsls r2, r2, #0x12
 	lsrs r2, r2, #0x18
-	bl sub_080C3880
+	bl gEngineEffectSpecialSummon_080C3880
 	ldr r1, [r5, #0x10]
 	subs r0, r1, #4
 	lsls r0, r0, #0x10
@@ -369073,7 +369073,7 @@ _080C50C0:
 	lsrs r1, r1, #0x1b
 	lsls r2, r2, #0x12
 	lsrs r2, r2, #0x18
-	bl sub_080C3880
+	bl gEngineEffectSpecialSummon_080C3880
 	movs r0, #4
 	bl sub_080F9AB4
 	ldrh r0, [r5]
@@ -369376,7 +369376,7 @@ _080C5306:
 	lsrs r4, r4, #0x1f
 	str r4, [sp]
 	str r7, [sp, #4]
-	bl sub_080C38CC
+	bl gEngineEffectSpecialSummon_080C38CC
 	ldr r2, _080C53F8 @ =gUnk_02023118
 	ldr r0, [r2]
 	lsls r1, r0, #0x1f
@@ -369460,7 +369460,7 @@ _080C53B2:
 	lsrs r4, r4, #0x1f
 	str r4, [sp]
 	str r7, [sp, #4]
-	bl sub_080C38CC
+	bl gEngineEffectSpecialSummon_080C38CC
 	mov r1, sb
 	b _080C5402
 	.align 2, 0
@@ -369468,7 +369468,7 @@ _080C53F0: .4byte gUnk_02023110
 _080C53F4: .4byte gUnk_0201E2A0
 _080C53F8: .4byte gUnk_02023118
 _080C53FC:
-	bl sub_080CBF0C
+	bl gEngineEffectSpecialSummon_080CBF0C
 _080C5400:
 	ldr r1, _080C540C @ =gUnk_02023110
 _080C5402:
@@ -369506,8 +369506,8 @@ _080C542C:
 _080C543C: .4byte gUnk_02023130
 _080C5440: .4byte 0x00000215
 
-	thumb_func_start sub_080C5444
-sub_080C5444: @ 0x080C5444
+	thumb_func_start gEngineEffectSpecialSummonSendToGY_080C5444
+gEngineEffectSpecialSummonSendToGY_080C5444: @ 0x080C5444
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -369594,7 +369594,7 @@ _080C54FC:
 	adds r0, r7, #0
 	movs r1, #0xb
 _080C550C:
-	bl sub_08096B3C
+	bl gEngineEffectSpecialSummonSendToGY_08096B3C
 	adds r3, r0, #0
 _080C5512:
 	movs r0, #4
@@ -369699,8 +369699,8 @@ _080C55D0: .4byte 0x000070FB
 _080C55D4: .4byte 0x000070FC
 _080C55D8: .4byte 0x000070FD
 
-	thumb_func_start sub_080C55DC
-sub_080C55DC: @ 0x080C55DC
+	thumb_func_start gEngineEffectSpecialSummonSendToGY_080C55DC
+gEngineEffectSpecialSummonSendToGY_080C55DC: @ 0x080C55DC
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -369801,7 +369801,7 @@ _080C56BC:
 	adds r0, r7, #0
 	adds r1, r4, #0
 	movs r2, #0
-	bl sub_08096B3C
+	bl gEngineEffectSpecialSummonSendToGY_08096B3C
 	adds r6, r0, #0
 	movs r0, #0x80
 	lsls r0, r0, #4
@@ -369821,7 +369821,7 @@ _080C56EC:
 	adds r0, r7, #0
 	adds r1, r5, #0
 	movs r2, #0
-	bl sub_08096B3C
+	bl gEngineEffectSpecialSummonSendToGY_08096B3C
 	adds r6, r0, #0
 	movs r0, #0x80
 	lsls r0, r0, #4
@@ -369866,7 +369866,7 @@ _080C573A:
 	add r2, r8
 	adds r0, r7, #0
 	movs r1, #0xb
-	bl sub_08096B3C
+	bl gEngineEffectSpecialSummonSendToGY_08096B3C
 	adds r6, r0, #0
 	movs r0, #0x80
 	lsls r0, r0, #4
@@ -371631,8 +371631,8 @@ _080C64B2:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080C64B8
-sub_080C64B8: @ 0x080C64B8
+	thumb_func_start gEngineEffectSpecialSummonDamage_080C64B8
+gEngineEffectSpecialSummonDamage_080C64B8: @ 0x080C64B8
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -371726,11 +371726,11 @@ _080C6570:
 	beq _080C658E
 	b _080C6588
 _080C657A:
-	bl sub_080CC904
+	bl gEngineEffectSpecialSummonDamage_080CC904
 	mov r0, sb
 	adds r1, r7, #0
 	adds r2, r6, #0
-	bl sub_080CB998
+	bl gEngineEffectSpecialSummon_080CB998
 _080C6588:
 	ldrb r0, [r5]
 	adds r0, #1
@@ -372322,8 +372322,8 @@ _080C6A14: .4byte gUnk_02020160
 _080C6A18: .4byte 0x00002F51
 _080C6A1C: .4byte gUnk_0201E2A0
 
-	thumb_func_start sub_080C6A20
-sub_080C6A20: @ 0x080C6A20
+	thumb_func_start gEngineEffectSpecialSummon_080C6A20
+gEngineEffectSpecialSummon_080C6A20: @ 0x080C6A20
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -372399,7 +372399,7 @@ _080C6AC0:
 	adds r0, r1, r0
 	ldrh r1, [r0]
 	mov r0, r8
-	bl sub_080C4220
+	bl gEngineEffectSpecialSummon_080C4220
 _080C6ACE:
 	movs r1, #1
 	mov r0, r8
@@ -372419,7 +372419,7 @@ _080C6ACE:
 	mov r0, r8
 	adds r1, r6, #0
 	adds r2, r7, #0
-	bl sub_080CB998
+	bl gEngineEffectSpecialSummon_080CB998
 	pop {r3}
 	mov r8, r3
 	pop {r4, r5, r6, r7}
@@ -372932,8 +372932,8 @@ _080C6E82:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080C6E9C
-sub_080C6E9C: @ 0x080C6E9C
+	thumb_func_start gEngineEffectSpecialSummon_080C6E9C
+gEngineEffectSpecialSummon_080C6E9C: @ 0x080C6E9C
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -373098,7 +373098,7 @@ _080C6FB0:
 	movs r4, #0
 	adds r0, r7, #0
 	movs r1, #0
-	bl sub_080C4220
+	bl gEngineEffectSpecialSummon_080C4220
 	b _080C7056
 	.align 2, 0
 _080C6FE4: .4byte gUnk_0201C4E0
@@ -373149,7 +373149,7 @@ _080C703C:
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
 	adds r0, r7, #0
-	bl sub_080C4220
+	bl gEngineEffectSpecialSummon_080C4220
 	b _080C7056
 _080C7048:
 	cmp r4, #0
@@ -373183,8 +373183,8 @@ _080C7064:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080C707C
-sub_080C707C: @ 0x080C707C
+	thumb_func_start gEngineEffectSpecialSummonDamage_080C707C
+gEngineEffectSpecialSummonDamage_080C707C: @ 0x080C707C
 	push {r4, r5, r6, r7, lr}
 	adds r5, r0, #0
 	lsls r5, r5, #0x10
@@ -373309,8 +373309,8 @@ _080C7166:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080C716C
-sub_080C716C: @ 0x080C716C
+	thumb_func_start gEngineEffectSpecialSummon_080C716C
+gEngineEffectSpecialSummon_080C716C: @ 0x080C716C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -373375,7 +373375,7 @@ _080C71E4:
 	cmp r4, #0
 	beq _080C724E
 	adds r0, r6, #0
-	bl sub_080C707C
+	bl gEngineEffectSpecialSummonDamage_080C707C
 	cmp r0, #0
 	beq _080C7230
 	adds r0, r6, #0
@@ -373606,7 +373606,7 @@ _080C73C8:
 	ldr r0, [r4, #4]
 	adds r1, r7, #0
 	movs r2, #1
-	bl sub_0803495C
+	bl gEngineEffectSpecialSummonPreventAttack_0803495C
 	cmp r0, #0
 	beq _080C7400
 	adds r4, r7, #0
@@ -373621,7 +373621,7 @@ _080C73E4:
 	ldr r0, [r7, #4]
 	adds r1, r4, #0
 	movs r2, #1
-	bl sub_0803495C
+	bl gEngineEffectSpecialSummonPreventAttack_0803495C
 	cmp r0, #0
 	bne _080C7440
 	adds r5, #1
@@ -373636,7 +373636,7 @@ _080C7402:
 	ldr r0, [r4, #4]
 	adds r1, r5, #0
 	movs r2, #1
-	bl sub_0803495C
+	bl gEngineEffectSpecialSummonPreventAttack_0803495C
 	cmp r0, #0
 	bne _080C744A
 	adds r5, #1
@@ -373711,7 +373711,7 @@ _080C7486:
 	beq _080C749A
 	adds r0, r6, #0
 	movs r1, #0
-	bl sub_080C6E9C
+	bl gEngineEffectSpecialSummon_080C6E9C
 	adds r6, r0, #0
 _080C749A:
 	movs r0, #0x10
@@ -373721,7 +373721,7 @@ _080C749A:
 	beq _080C74AE
 	adds r0, r6, #0
 	movs r1, #1
-	bl sub_080C6E9C
+	bl gEngineEffectSpecialSummon_080C6E9C
 	adds r6, r0, #0
 _080C74AE:
 	ldr r2, _080C7510 @ =gUnk_02023130
@@ -373769,7 +373769,7 @@ _080C74F4:
 	adds r2, r0, r5
 	adds r0, r7, #0
 	movs r1, #0xb
-	bl sub_080CB998
+	bl gEngineEffectSpecialSummon_080CB998
 	b _080C751E
 	.align 2, 0
 _080C7510: .4byte gUnk_02023130
@@ -373777,7 +373777,7 @@ _080C7514:
 	adds r0, r7, #0
 	adds r1, r4, #0
 	adds r2, r5, #0
-	bl sub_080CB998
+	bl gEngineEffectSpecialSummon_080CB998
 _080C751E:
 	add sp, #0xc
 	pop {r3, r4, r5}
@@ -374521,8 +374521,8 @@ _080C7AEC:
 	bx r0
 	.align 2, 0
 
-	thumb_func_start sub_080C7AF8
-sub_080C7AF8: @ 0x080C7AF8
+	thumb_func_start gEngineEffectSpecialSummonChangePosition_080C7AF8
+gEngineEffectSpecialSummonChangePosition_080C7AF8: @ 0x080C7AF8
 	push {lr}
 	ldr r0, _080C7B1C @ =0x0600A7C0
 	ldr r1, _080C7B20 @ =gUnk_09889FD8
@@ -374577,7 +374577,7 @@ _080C7B80:
 	bl sub_080CDA6C
 	b _080C7BA2
 _080C7B86:
-	bl sub_080CFFD4
+	bl gEngineEffectSpecialSummonChangePosition_080CFFD4
 	b _080C7BA2
 _080C7B8C:
 	bl sub_080D04DC
@@ -375006,8 +375006,8 @@ _080C7E8E:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080C7EA0
-sub_080C7EA0: @ 0x080C7EA0
+	thumb_func_start gEngineEffectSpecialSummonDestroy_080C7EA0
+gEngineEffectSpecialSummonDestroy_080C7EA0: @ 0x080C7EA0
 	push {r4, r5, r6, r7, lr}
 	ldr r0, _080C7EC0 @ =gUnk_0201F440
 	ldr r2, _080C7EC4 @ =0x00000A1A
@@ -375038,7 +375038,7 @@ _080C7ECC: @ jump table
 	.4byte _080C82A8 @ case 5
 	.4byte _080C827C @ case 6
 _080C7EE8:
-	bl sub_080CBF0C
+	bl gEngineEffectSpecialSummon_080CBF0C
 	ldr r1, _080C7F38 @ =gUnk_02023130
 	ldr r3, _080C7F3C @ =0x00000215
 	adds r1, r1, r3
@@ -375118,14 +375118,14 @@ _080C7F4C:
 	lsls r0, r0, #2
 	cmp r0, #0
 	beq _080C7F90
-	bl sub_080C9F50
+	bl gEngineEffectSpecialSummon_080C9F50
 _080C7F90:
 	bl sub_080C3B50
 	movs r1, #0x84
 	lsls r1, r1, #2
 	adds r0, r4, r1
 	ldrh r0, [r0]
-	bl sub_080C716C
+	bl gEngineEffectSpecialSummon_080C716C
 	movs r2, #0x87
 	lsls r2, r2, #2
 	adds r0, r4, r2
@@ -375424,7 +375424,7 @@ _080C8230:
 	bl sub_080CDA6C
 	b _080C8252
 _080C8236:
-	bl sub_080CFFD4
+	bl gEngineEffectSpecialSummonChangePosition_080CFFD4
 	b _080C8252
 _080C823C:
 	bl sub_080D04DC
@@ -375506,8 +375506,8 @@ _080C82D8: .4byte 0x0000DFFF
 _080C82DC: .4byte 0x00000A1A
 _080C82E0: .4byte 0xFFFFFE01
 
-	thumb_func_start sub_080C82E4
-sub_080C82E4: @ 0x080C82E4
+	thumb_func_start gEngineEffectSpecialSummonDestroy_080C82E4
+gEngineEffectSpecialSummonDestroy_080C82E4: @ 0x080C82E4
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -375632,7 +375632,7 @@ _080C83F2:
 	bl sub_080CF52C
 	b _080C8412
 _080C83F8:
-	bl sub_080C7EA0
+	bl gEngineEffectSpecialSummonDestroy_080C7EA0
 	cmp r0, #0
 	bne _080C8410
 	ldrb r2, [r5]
@@ -376272,8 +376272,8 @@ _080C88F2:
 	.align 2, 0
 _080C8900: .4byte gUnk_0201E2A0
 
-	thumb_func_start sub_080C8904
-sub_080C8904: @ 0x080C8904
+	thumb_func_start gEngineEffectSpecialSummon_080C8904
+gEngineEffectSpecialSummon_080C8904: @ 0x080C8904
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -376321,7 +376321,7 @@ _080C894A:
 	lsrs r1, r1, #0x10
 	lsrs r0, r6, #0x10
 	movs r2, #0
-	bl sub_080C3880
+	bl gEngineEffectSpecialSummon_080C3880
 _080C8962:
 	adds r4, #1
 	cmp r4, #4
@@ -376339,7 +376339,7 @@ _080C896C:
 	lsrs r1, r1, #0x10
 	lsrs r0, r6, #0x10
 	movs r2, #0
-	bl sub_080C3880
+	bl gEngineEffectSpecialSummon_080C3880
 _080C8986:
 	adds r4, #1
 	cmp r4, #0xa
@@ -376358,8 +376358,8 @@ _080C8986:
 _080C89A0: .4byte gUnk_02023130
 _080C89A4: .4byte 0x0000021E
 
-	thumb_func_start sub_080C89A8
-sub_080C89A8: @ 0x080C89A8
+	thumb_func_start gEngineEffectSpecialSummonSendToGY_080C89A8
+gEngineEffectSpecialSummonSendToGY_080C89A8: @ 0x080C89A8
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	movs r5, #0
@@ -376372,7 +376372,7 @@ _080C89B6:
 	adds r2, r0, r4
 	adds r0, r6, #0
 	movs r1, #0xb
-	bl sub_08096B3C
+	bl gEngineEffectSpecialSummonSendToGY_08096B3C
 	movs r1, #0x80
 	lsls r1, r1, #4
 	ands r1, r0
@@ -376394,8 +376394,8 @@ _080C89D6:
 	.align 2, 0
 _080C89E4: .4byte gUnk_0202317C
 
-	thumb_func_start sub_080C89E8
-sub_080C89E8: @ 0x080C89E8
+	thumb_func_start gEngineEffectSpecialSummonSendToGY_080C89E8
+gEngineEffectSpecialSummonSendToGY_080C89E8: @ 0x080C89E8
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -376435,7 +376435,7 @@ _080C8A28:
 	adds r0, r1, #0
 	adds r1, r4, #0
 	movs r2, #0
-	bl sub_08096B3C
+	bl gEngineEffectSpecialSummonSendToGY_08096B3C
 	movs r1, #0x80
 	lsls r1, r1, #4
 	ands r1, r0
@@ -376460,7 +376460,7 @@ _080C8A46:
 	movs r2, #1
 _080C8A5C:
 	adds r0, r2, #0
-	bl sub_080C89A8
+	bl gEngineEffectSpecialSummonSendToGY_080C89A8
 	lsls r0, r0, #0x10
 	lsrs r3, r0, #0x10
 	ldr r1, _080C8A9C @ =gUnk_020230C0
@@ -376659,8 +376659,8 @@ _080C8BDC:
 	.align 2, 0
 _080C8BEC: .4byte 0x00008080
 
-	thumb_func_start sub_080C8BF0
-sub_080C8BF0: @ 0x080C8BF0
+	thumb_func_start gEngineEffectSpecialSummonPreventAttack_080C8BF0
+gEngineEffectSpecialSummonPreventAttack_080C8BF0: @ 0x080C8BF0
 	push {r4, r5, r6, lr}
 	ldr r2, _080C8C44 @ =gUnk_020230C0
 	movs r0, #0
@@ -376679,7 +376679,7 @@ _080C8C0C:
 	ldr r0, [r6]
 	adds r1, r4, #0
 	movs r2, #1
-	bl sub_0803495C
+	bl gEngineEffectSpecialSummonPreventAttack_0803495C
 	cmp r0, #0
 	beq _080C8C24
 	movs r0, #1
@@ -376816,8 +376816,8 @@ _080C8D20:
 _080C8D28: .4byte gUnk_020230F8
 _080C8D2C: .4byte gUnk_0201FE60
 
-	thumb_func_start sub_080C8D30
-sub_080C8D30: @ 0x080C8D30
+	thumb_func_start gEngineEffectSpecialSummonNegate_080C8D30
+gEngineEffectSpecialSummonNegate_080C8D30: @ 0x080C8D30
 	push {r4, lr}
 	ldr r0, _080C8D60 @ =gUnk_02023130
 	movs r1, #0x84
@@ -376836,7 +376836,7 @@ sub_080C8D30: @ 0x080C8D30
 	ands r2, r3
 	adds r1, r1, r2
 	ldr r2, _080C8D64 @ =gUnk_020230C4
-	bl sub_0803A7F0
+	bl gEngineEffectSpecialSummonNegate_0803A7F0
 	pop {r4}
 	pop {r0}
 	bx r0
@@ -377079,8 +377079,8 @@ _080C8F3C: .4byte 0x00004040
 _080C8F40: .4byte gUnk_02023130
 _080C8F44: .4byte 0x00000215
 
-	thumb_func_start sub_080C8F48
-sub_080C8F48: @ 0x080C8F48
+	thumb_func_start gEngineEffectBoostATKBoostDEF_080C8F48
+gEngineEffectBoostATKBoostDEF_080C8F48: @ 0x080C8F48
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldr r5, _080C8FB4 @ =gUnk_020230C0
@@ -378414,8 +378414,8 @@ _080C9918:
 	.align 2, 0
 _080C9928: .4byte gUnk_02006ED0
 
-	thumb_func_start sub_080C992C
-sub_080C992C: @ 0x080C992C
+	thumb_func_start gEngineEffectDamageTribute_080C992C
+gEngineEffectDamageTribute_080C992C: @ 0x080C992C
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	ldr r7, _080C99F0 @ =gUnk_02023348
@@ -378618,8 +378618,8 @@ _080C9AAE:
 _080C9AC0: .4byte 0x00004040
 _080C9AC4: .4byte gUnk_02023348
 
-	thumb_func_start sub_080C9AC8
-sub_080C9AC8: @ 0x080C9AC8
+	thumb_func_start gEngineEffectDamageTribute_080C9AC8
+gEngineEffectDamageTribute_080C9AC8: @ 0x080C9AC8
 	push {r4, r5, r6, r7, lr}
 	lsls r0, r0, #0x10
 	lsrs r7, r0, #0x10
@@ -378920,7 +378920,7 @@ _080C9CE0:
 	adds r0, #2
 	strh r1, [r0]
 	adds r0, r3, #0
-	bl sub_080C992C
+	bl gEngineEffectDamageTribute_080C992C
 	ldr r0, _080C9D50 @ =gUnk_02023130
 	ldrb r1, [r0, #1]
 	adds r1, #1
@@ -378998,7 +378998,7 @@ _080C9DBC:
 _080C9DC0: .4byte 0x04000054
 _080C9DC4:
 	movs r0, #0
-	bl sub_080C9AC8
+	bl gEngineEffectDamageTribute_080C9AC8
 	cmp r0, #0
 	beq _080C9D32
 	ldr r1, _080C9DD8 @ =gUnk_02023130
@@ -379201,8 +379201,8 @@ _080C9F40:
 	pop {r0}
 	bx r0
 
-	thumb_func_start sub_080C9F50
-sub_080C9F50: @ 0x080C9F50
+	thumb_func_start gEngineEffectSpecialSummon_080C9F50
+gEngineEffectSpecialSummon_080C9F50: @ 0x080C9F50
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -379244,7 +379244,7 @@ _080C9F6A:
 	mov sb, r1
 	ldr r0, _080C9FC8 @ =gUnk_0201E2A0
 	ldr r0, [r0, #4]
-	bl sub_0803BC58
+	bl gEngineEffectSpecialSummon_0803BC58
 	cmp r0, #0
 	beq _080CA054
 	cmp r7, #0xb4
@@ -379802,8 +379802,8 @@ _080CA400:
 _080CA424: .4byte gUnk_03000040
 _080CA428: .4byte 0x0000023F
 
-	thumb_func_start sub_080CA42C
-sub_080CA42C: @ 0x080CA42C
+	thumb_func_start gEngineEffectSpecialSummon_080CA42C
+gEngineEffectSpecialSummon_080CA42C: @ 0x080CA42C
 	push {r4, lr}
 	ldr r1, _080CA4C8 @ =gUnk_02023130
 	ldr r0, _080CA4CC @ =0x0000021E
@@ -379873,7 +379873,7 @@ _080CA476:
 	lsls r0, r0, #2
 	cmp r0, #0
 	beq _080CA4C0
-	bl sub_080C9F50
+	bl gEngineEffectSpecialSummon_080C9F50
 _080CA4C0:
 	pop {r4}
 	pop {r0}
@@ -381454,8 +381454,8 @@ _080CB1B2:
 	.align 2, 0
 _080CB1C8: .4byte 0x0600A8E0
 
-	thumb_func_start sub_080CB1CC
-sub_080CB1CC: @ 0x080CB1CC
+	thumb_func_start gEngineEffectSpecialSummonChangePosition_080CB1CC
+gEngineEffectSpecialSummonChangePosition_080CB1CC: @ 0x080CB1CC
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -382395,8 +382395,8 @@ _080CB98C: .4byte gUnk_0984DE8C
 _080CB990: .4byte 0x050001E0
 _080CB994: .4byte gUnk_0984E30C
 
-	thumb_func_start sub_080CB998
-sub_080CB998: @ 0x080CB998
+	thumb_func_start gEngineEffectSpecialSummon_080CB998
+gEngineEffectSpecialSummon_080CB998: @ 0x080CB998
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -382841,7 +382841,7 @@ _080CBD2E:
 	ldr r0, [sp, #4]
 	mov r1, sp
 	movs r2, #0
-	bl sub_080CB1CC
+	bl gEngineEffectSpecialSummonChangePosition_080CB1CC
 	ldr r0, _080CBD74 @ =0x0600A8E0
 	movs r1, #0x80
 	lsls r1, r1, #4
@@ -383030,8 +383030,8 @@ _080CBEC8:
 	ldr r0, [sp, #4]
 	mov r1, sp
 	movs r2, #0
-	bl sub_080CB1CC
-	bl sub_080C8D30
+	bl gEngineEffectSpecialSummonChangePosition_080CB1CC
+	bl gEngineEffectSpecialSummonNegate_080C8D30
 _080CBEFC:
 	add sp, #0x10
 	pop {r3, r4, r5}
@@ -383042,8 +383042,8 @@ _080CBEFC:
 	pop {r0}
 	bx r0
 
-	thumb_func_start sub_080CBF0C
-sub_080CBF0C: @ 0x080CBF0C
+	thumb_func_start gEngineEffectSpecialSummon_080CBF0C
+gEngineEffectSpecialSummon_080CBF0C: @ 0x080CBF0C
 	push {r4, r5, r6, r7, lr}
 	ldr r7, _080CBF54 @ =gUnk_02023130
 	movs r1, #0x84
@@ -383075,15 +383075,15 @@ sub_080CBF0C: @ 0x080CBF0C
 _080CBF44:
 	adds r0, r6, #0
 	adds r1, r5, #0
-	bl sub_080CB998
+	bl gEngineEffectSpecialSummon_080CB998
 	pop {r4, r5, r6, r7}
 	pop {r0}
 	bx r0
 	.align 2, 0
 _080CBF54: .4byte gUnk_02023130
 
-	thumb_func_start sub_080CBF58
-sub_080CBF58: @ 0x080CBF58
+	thumb_func_start gEngineEffectSpecialSummonBoostATK_080CBF58
+gEngineEffectSpecialSummonBoostATK_080CBF58: @ 0x080CBF58
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -383413,10 +383413,10 @@ _080CC1F0:
 _080CC200: .4byte 0x0000024F
 _080CC204: .4byte gUnk_02022FAC
 
-	thumb_func_start sub_080CC208
-sub_080CC208: @ 0x080CC208
+	thumb_func_start gEngineEffectSpecialSummonDamage_080CC208
+gEngineEffectSpecialSummonDamage_080CC208: @ 0x080CC208
 	push {lr}
-	bl sub_080D08A4
+	bl gEngineEffectSpecialSummonDamage_080D08A4
 	ldr r0, _080CC220 @ =gUnk_02020160
 	ldr r1, _080CC224 @ =0x00002F4D
 	adds r0, r0, r1
@@ -383430,8 +383430,8 @@ sub_080CC208: @ 0x080CC208
 _080CC220: .4byte gUnk_02020160
 _080CC224: .4byte 0x00002F4D
 
-	thumb_func_start sub_080CC228
-sub_080CC228: @ 0x080CC228
+	thumb_func_start gEngineEffectSpecialSummonDamage_080CC228
+gEngineEffectSpecialSummonDamage_080CC228: @ 0x080CC228
 	push {r4, r5, r6, r7, lr}
 	sub sp, #4
 	ldr r1, _080CC25C @ =gUnk_02020160
@@ -383551,10 +383551,10 @@ _080CC308:
 	lsrs r0, r0, #0x18
 	adds r1, r2, #0
 	adds r0, r0, r1
-	bl sub_080D0784
+	bl gEngineEffectSpecialSummonDamage_080D0784
 	adds r1, r0, #0
 	adds r0, r4, #0
-	bl sub_080D0818
+	bl gEngineEffectSpecialSummonChangePosition_080D0818
 	movs r0, #1
 _080CC332:
 	add sp, #4
@@ -383564,10 +383564,10 @@ _080CC332:
 	.align 2, 0
 _080CC33C: .4byte 0x00002F54
 
-	thumb_func_start sub_080CC340
-sub_080CC340: @ 0x080CC340
+	thumb_func_start gEngineEffectSpecialSummon_080CC340
+gEngineEffectSpecialSummon_080CC340: @ 0x080CC340
 	push {lr}
-	bl sub_080D2EF4
+	bl gEngineEffectSpecialSummon_080D2EF4
 	cmp r0, #0
 	beq _080CC34E
 	movs r0, #0
@@ -383578,8 +383578,8 @@ _080CC350:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080CC354
-sub_080CC354: @ 0x080CC354
+	thumb_func_start gEngineEffectSpecialSummon_080CC354
+gEngineEffectSpecialSummon_080CC354: @ 0x080CC354
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -383784,7 +383784,7 @@ _080CC4EC:
 	mov r0, sb
 	adds r1, r7, #0
 	adds r2, r6, #0
-	bl sub_080CB998
+	bl gEngineEffectSpecialSummon_080CB998
 	ldr r0, _080CC50C @ =0x050002E0
 	ldr r1, _080CC510 @ =gUnk_0985329C
 	movs r2, #0x20
@@ -384307,8 +384307,8 @@ _080CC8F4:
 _080CC8FC: .4byte gUnk_0201FF60
 _080CC900: .4byte gUnk_0201C4E0
 
-	thumb_func_start sub_080CC904
-sub_080CC904: @ 0x080CC904
+	thumb_func_start gEngineEffectSpecialSummonDamage_080CC904
+gEngineEffectSpecialSummonDamage_080CC904: @ 0x080CC904
 	push {r4, r5, lr}
 	movs r0, #0xc0
 	lsls r0, r0, #0x13
@@ -384394,7 +384394,7 @@ _080CC9BE:
 	strh r0, [r4, #8]
 	bl sub_080C36A8
 	bl sub_080CA8EC
-	bl sub_080C4D04
+	bl gEngineEffectSpecialSummonDamage_080C4D04
 	ldrh r0, [r5]
 	movs r2, #0xf8
 	lsls r2, r2, #5
@@ -384465,8 +384465,8 @@ sub_080CCA5C: @ 0x080CCA5C
 _080CCA78: .4byte gUnk_02023130
 _080CCA7C: .4byte 0x00000215
 
-	thumb_func_start sub_080CCA80
-sub_080CCA80: @ 0x080CCA80
+	thumb_func_start gEngineEffectSpecialSummon_080CCA80
+gEngineEffectSpecialSummon_080CCA80: @ 0x080CCA80
 	push {r4, r5, r6, r7, lr}
 	movs r5, #0
 	ldr r0, _080CCA94 @ =gUnk_0201C4E0
@@ -384561,7 +384561,7 @@ _080CCB2A:
 	cmp r5, #0
 	beq _080CCB80
 _080CCB3E:
-	bl sub_080C55DC
+	bl gEngineEffectSpecialSummonSendToGY_080C55DC
 	ldr r4, _080CCB5C @ =gUnk_0201FF30
 	ldr r0, [r4, #4]
 	cmp r0, #0
@@ -384614,8 +384614,8 @@ _080CCBA8:
 	lsls r0, r0, #2
 	adds r6, r4, r0
 	ldrh r0, [r6]
-	bl sub_080C716C
-	bl sub_080C5444
+	bl gEngineEffectSpecialSummon_080C716C
+	bl gEngineEffectSpecialSummonSendToGY_080C5444
 	bl sub_080C8AA8
 	movs r1, #0x87
 	lsls r1, r1, #2
@@ -384642,7 +384642,7 @@ _080CCBE4:
 	cmp r0, #0
 	beq _080CCC28
 	ldrh r0, [r6]
-	bl sub_080C707C
+	bl gEngineEffectSpecialSummonDamage_080C707C
 	cmp r0, #0
 	beq _080CCC28
 	ldr r0, _080CCC1C @ =gUnk_0201FF30
@@ -384795,7 +384795,7 @@ _080CCCFC:
 	orrs r1, r2
 	strb r1, [r0]
 _080CCD26:
-	bl sub_080C64B8
+	bl gEngineEffectSpecialSummonDamage_080C64B8
 	cmp r0, #0
 	beq _080CCDEC
 	ldr r2, _080CCD5C @ =gUnk_02023130
@@ -384852,7 +384852,7 @@ _080CCD7E:
 	lsls r3, r3, #2
 	adds r0, r0, r3
 	ldrh r0, [r0]
-	bl sub_0802CC68
+	bl gEngineEffectSpecialSummonDestroy_0802CC68
 	b _080CCDDC
 	.align 2, 0
 _080CCDA4: .4byte 0x00000215
@@ -384861,9 +384861,9 @@ _080CCDAC:
 	bl sub_0802CFD4
 	b _080CCDD8
 _080CCDB2:
-	bl sub_080CC904
-	bl sub_080CBF0C
-	bl sub_080C8D30
+	bl gEngineEffectSpecialSummonDamage_080CC904
+	bl gEngineEffectSpecialSummon_080CBF0C
+	bl gEngineEffectSpecialSummonNegate_080C8D30
 	ldr r1, _080CCDD0 @ =0x00000215
 	adds r0, r4, r1
 	movs r1, #5
@@ -384896,8 +384896,8 @@ _080CCDEE:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080CCDF4
-sub_080CCDF4: @ 0x080CCDF4
+	thumb_func_start gEngineEffectSpecialSummon_080CCDF4
+gEngineEffectSpecialSummon_080CCDF4: @ 0x080CCDF4
 	push {lr}
 	ldr r0, _080CCE98 @ =gUnk_02023130
 	ldr r1, _080CCE9C @ =0x00000215
@@ -384948,7 +384948,7 @@ _080CCE3C:
 	bl sub_080C9218
 _080CCE56:
 	bl sub_080C8D68
-	bl sub_080CA42C
+	bl gEngineEffectSpecialSummon_080CA42C
 	ldr r1, _080CCEA0 @ =gUnk_0201F440
 	movs r2, #1
 	adds r0, r2, #0
@@ -391007,8 +391007,8 @@ _080CFFC8: .4byte 0xFFFF8000
 _080CFFCC: .4byte 0x00000A0D
 _080CFFD0: .4byte 0x00000A01
 
-	thumb_func_start sub_080CFFD4
-sub_080CFFD4: @ 0x080CFFD4
+	thumb_func_start gEngineEffectSpecialSummonChangePosition_080CFFD4
+gEngineEffectSpecialSummonChangePosition_080CFFD4: @ 0x080CFFD4
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -391124,7 +391124,7 @@ sub_080CFFD4: @ 0x080CFFD4
 	adds r0, r6, #0
 	add r1, sp, #4
 	movs r2, #1
-	bl sub_080CB1CC
+	bl gEngineEffectSpecialSummonChangePosition_080CB1CC
 	ldr r2, _080D0144 @ =0x00000A17
 	adds r0, r5, r2
 	ldrb r0, [r0]
@@ -391951,8 +391951,8 @@ _080D077A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080D0784
-sub_080D0784: @ 0x080D0784
+	thumb_func_start gEngineEffectSpecialSummonDamage_080D0784
+gEngineEffectSpecialSummonDamage_080D0784: @ 0x080D0784
 	push {lr}
 	adds r2, r0, #0
 	ldr r1, _080D07B8 @ =gUnk_02020160
@@ -392034,8 +392034,8 @@ _080D0810:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080D0818
-sub_080D0818: @ 0x080D0818
+	thumb_func_start gEngineEffectSpecialSummonChangePosition_080D0818
+gEngineEffectSpecialSummonChangePosition_080D0818: @ 0x080D0818
 	push {r4, r5, r6, r7, lr}
 	sub sp, #0x2c
 	ldr r5, _080D0884 @ =gUnk_02020160
@@ -392098,7 +392098,7 @@ _080D0890:
 	ldr r0, [sp, #4]
 	add r1, sp, #0x28
 	movs r2, #1
-	bl sub_080CB1CC
+	bl gEngineEffectSpecialSummonChangePosition_080CB1CC
 _080D089A:
 	add sp, #0x2c
 	pop {r4, r5, r6, r7}
@@ -392106,8 +392106,8 @@ _080D089A:
 	bx r0
 	.align 2, 0
 
-	thumb_func_start sub_080D08A4
-sub_080D08A4: @ 0x080D08A4
+	thumb_func_start gEngineEffectSpecialSummonDamage_080D08A4
+gEngineEffectSpecialSummonDamage_080D08A4: @ 0x080D08A4
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -392485,7 +392485,7 @@ _080D0BFA:
 	bl __modsi3
 	adds r6, r0, #0
 	adds r0, r4, #0
-	bl sub_080D0784
+	bl gEngineEffectSpecialSummonDamage_080D0784
 	cmp r0, #0
 	beq _080D0C18
 	movs r1, #0
@@ -393391,8 +393391,8 @@ _080D1360: .4byte 0x00002F53
 _080D1364: .4byte 0x00002F54
 _080D1368: .4byte 0x00002F52
 
-	thumb_func_start sub_080D136C
-sub_080D136C: @ 0x080D136C
+	thumb_func_start gEngineEffectSpecialSummonDestroy_080D136C
+gEngineEffectSpecialSummonDestroy_080D136C: @ 0x080D136C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -393644,7 +393644,7 @@ _080D154C:
 	movs r1, #0
 	strh r1, [r0]
 	adds r0, r4, #0
-	bl sub_080D0784
+	bl gEngineEffectSpecialSummonDamage_080D0784
 	cmp r0, #0
 	beq _080D158C
 	movs r3, #0
@@ -393837,7 +393837,7 @@ _080D1700:
 	b _080D1964
 _080D170E:
 	ldr r0, [sp, #0x28]
-	bl sub_08094398
+	bl gEngineEffectSpecialSummonDestroy_08094398
 	adds r5, r0, #0
 	lsrs r4, r5, #0xc
 	movs r0, #1
@@ -394150,7 +394150,7 @@ _080D192E:
 	bl sub_080F616C
 _080D1964:
 	ldr r0, [sp, #0x28]
-	bl sub_080D0784
+	bl gEngineEffectSpecialSummonDamage_080D0784
 	cmp r0, #0
 	beq _080D1970
 	b _080D1AF6
@@ -394362,8 +394362,8 @@ _080D1B18:
 	.align 2, 0
 _080D1B28: .4byte 0x0080007C
 
-	thumb_func_start sub_080D1B2C
-sub_080D1B2C: @ 0x080D1B2C
+	thumb_func_start gEngineEffectSpecialSummonDestroy_080D1B2C
+gEngineEffectSpecialSummonDestroy_080D1B2C: @ 0x080D1B2C
 	push {r4, lr}
 	ldr r4, _080D1B74 @ =gUnk_02020160
 	ldr r0, _080D1B78 @ =0x00002F51
@@ -394374,7 +394374,7 @@ sub_080D1B2C: @ 0x080D1B2C
 	cmp r0, #0
 	bne _080D1BA6
 	bl sub_080D1088
-	bl sub_080D136C
+	bl gEngineEffectSpecialSummonDestroy_080D136C
 	ldr r1, _080D1B7C @ =0x00002F53
 	adds r0, r4, r1
 	ldrb r0, [r0]
@@ -394427,8 +394427,8 @@ _080D1BA6:
 _080D1BAC: .4byte 0x00002F57
 _080D1BB0: .4byte 0x00002F58
 
-	thumb_func_start sub_080D1BB4
-sub_080D1BB4: @ 0x080D1BB4
+	thumb_func_start gEngineEffectSpecialSummonDamage_080D1BB4
+gEngineEffectSpecialSummonDamage_080D1BB4: @ 0x080D1BB4
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -394555,7 +394555,7 @@ _080D1CA4:
 	movs r0, #1
 	str r0, [sp, #4]
 	adds r0, r4, #0
-	bl sub_080D0784
+	bl gEngineEffectSpecialSummonDamage_080D0784
 	cmp r0, #0
 	beq _080D1CCC
 	movs r1, #0
@@ -394596,10 +394596,10 @@ _080D1D0C:
 	adds r0, r5, r3
 	ldrh r4, [r0]
 	adds r0, r4, #0
-	bl sub_080D0784
+	bl gEngineEffectSpecialSummonDamage_080D0784
 	adds r1, r0, #0
 	adds r0, r4, #0
-	bl sub_080D0818
+	bl gEngineEffectSpecialSummonChangePosition_080D0818
 	ldr r1, _080D1D70 @ =0x00002F53
 	adds r0, r5, r1
 	ldrb r0, [r0]
@@ -394705,7 +394705,7 @@ _080D1DEC:
 	add r0, r8
 	ldr r5, [r0]
 	adds r0, r4, #0
-	bl sub_080D0784
+	bl gEngineEffectSpecialSummonDamage_080D0784
 	cmp r0, #0
 	bne _080D1E46
 	movs r0, #0xb
@@ -394792,7 +394792,7 @@ _080D1EA0:
 	add r0, r8
 	ldr r5, [r0]
 	adds r0, r4, #0
-	bl sub_080D0784
+	bl gEngineEffectSpecialSummonDamage_080D0784
 	cmp r0, #0
 	bne _080D1EFA
 	movs r0, #0xb
@@ -394878,7 +394878,7 @@ _080D1F50:
 	add r0, r8
 	ldr r5, [r0]
 	adds r0, r4, #0
-	bl sub_080D0784
+	bl gEngineEffectSpecialSummonDamage_080D0784
 	cmp r0, #0
 	bne _080D1FAA
 	movs r0, #0xb
@@ -394964,7 +394964,7 @@ _080D2000:
 	add r0, r8
 	ldr r5, [r0]
 	adds r0, r4, #0
-	bl sub_080D0784
+	bl gEngineEffectSpecialSummonDamage_080D0784
 	cmp r0, #0
 	bne _080D205A
 	movs r0, #0xb
@@ -395050,7 +395050,7 @@ _080D20B0:
 	add r0, r8
 	ldr r5, [r0]
 	adds r0, r4, #0
-	bl sub_080D0784
+	bl gEngineEffectSpecialSummonDamage_080D0784
 	cmp r0, #0
 	bne _080D210A
 	movs r0, #0xb
@@ -395134,7 +395134,7 @@ _080D215E:
 	add r0, r8
 	ldr r5, [r0]
 	adds r0, r4, #0
-	bl sub_080D0784
+	bl gEngineEffectSpecialSummonDamage_080D0784
 	cmp r0, #0
 	bne _080D21B8
 	movs r0, #0xb
@@ -395240,7 +395240,7 @@ _080D2232:
 	movs r0, #0
 	strh r0, [r7]
 	adds r0, r4, #0
-	bl sub_080D0784
+	bl gEngineEffectSpecialSummonDamage_080D0784
 	cmp r0, #0
 	beq _080D2260
 	movs r2, #0
@@ -395359,7 +395359,7 @@ _080D232E:
 	bne _080D2352
 	movs r1, #1
 _080D2352:
-	bl sub_080D0818
+	bl gEngineEffectSpecialSummonChangePosition_080D0818
 	b _080D2376
 	.align 2, 0
 _080D2358: .4byte 0x0600F3CA
@@ -395385,8 +395385,8 @@ _080D2376:
 _080D2388: .4byte gUnk_02023130
 _080D238C: .4byte 0x0000FFFF
 
-	thumb_func_start sub_080D2390
-sub_080D2390: @ 0x080D2390
+	thumb_func_start gEngineEffectSpecialSummonDamage_080D2390
+gEngineEffectSpecialSummonDamage_080D2390: @ 0x080D2390
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -395657,7 +395657,7 @@ _080D25A8:
 	movs r0, #2
 	b _080D25C0
 _080D25AC:
-	bl sub_080D1BB4
+	bl gEngineEffectSpecialSummonDamage_080D1BB4
 	ldr r4, _080D25D8 @ =0x00002F51
 	adds r0, r7, r4
 	movs r1, #3
@@ -395782,8 +395782,8 @@ _080D2688:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080D2690
-sub_080D2690: @ 0x080D2690
+	thumb_func_start gEngineEffectSpecialSummon_080D2690
+gEngineEffectSpecialSummon_080D2690: @ 0x080D2690
 	push {r4, r5, r6, r7, lr}
 	sub sp, #4
 	ldr r1, _080D26B0 @ =gUnk_02020160
@@ -395843,7 +395843,7 @@ _080D26E4:
 	adds r4, r7, #0
 	orrs r3, r4
 	strh r3, [r5]
-	bl sub_080CB998
+	bl gEngineEffectSpecialSummon_080CB998
 	ldr r0, _080D2754 @ =0x00000215
 	adds r6, r6, r0
 	movs r0, #5
@@ -395911,14 +395911,14 @@ _080D2764:
 	lsls r0, r0, #2
 	cmp r0, #0
 	beq _080D27A8
-	bl sub_080C9F50
+	bl gEngineEffectSpecialSummon_080C9F50
 _080D27A8:
 	bl sub_080C3B50
 	movs r1, #0x84
 	lsls r1, r1, #2
 	adds r0, r4, r1
 	ldrh r0, [r0]
-	bl sub_080C716C
+	bl gEngineEffectSpecialSummon_080C716C
 	movs r2, #0x87
 	lsls r2, r2, #2
 	adds r0, r4, r2
@@ -395987,7 +395987,7 @@ _080D283C: .4byte 0x04000040
 _080D2840: .4byte 0x000028F0
 _080D2844: .4byte 0x00002F4E
 _080D2848:
-	bl sub_080D08A4
+	bl gEngineEffectSpecialSummonDamage_080D08A4
 	ldr r3, _080D2884 @ =gUnk_02020160
 	ldr r1, _080D2888 @ =0x00002F53
 	adds r0, r3, r1
@@ -396146,7 +396146,7 @@ _080D2988:
 _080D299A:
 	adds r0, r4, #0
 	adds r1, r6, #0
-	bl sub_080D0818
+	bl gEngineEffectSpecialSummonChangePosition_080D0818
 	movs r2, #0x80
 	lsls r2, r2, #0x13
 	ldrh r1, [r2]
@@ -396309,7 +396309,7 @@ _080D2ABC:
 	movs r4, #0
 	strh r4, [r0]
 	adds r0, r2, #0
-	bl sub_080C992C
+	bl gEngineEffectDamageTribute_080C992C
 	ldr r0, _080D2B20 @ =gUnk_02020160
 	ldr r2, _080D2B24 @ =0x00002F50
 	adds r1, r0, r2
@@ -396374,7 +396374,7 @@ _080D2B84: .4byte gUnk_02023130
 _080D2B88: .4byte 0x00000222
 _080D2B8C:
 	movs r0, #0
-	bl sub_080C9AC8
+	bl gEngineEffectDamageTribute_080C9AC8
 	cmp r0, #0
 	beq _080D2C0A
 	ldr r0, _080D2BB4 @ =gUnk_02020160
@@ -396477,8 +396477,8 @@ _080D2C58:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080D2C60
-sub_080D2C60: @ 0x080D2C60
+	thumb_func_start gEngineEffectSpecialSummonDamage_080D2C60
+gEngineEffectSpecialSummonDamage_080D2C60: @ 0x080D2C60
 	push {r4, r5, lr}
 	sub sp, #4
 	ldr r0, _080D2C7C @ =gUnk_02020160
@@ -396650,13 +396650,13 @@ _080D2DBC:
 	adds r0, r4, r3
 	adds r1, r1, r0
 	ldrh r4, [r1]
-	bl sub_080CC904
-	bl sub_080D08A4
+	bl gEngineEffectSpecialSummonDamage_080CC904
+	bl gEngineEffectSpecialSummonDamage_080D08A4
 	adds r0, r4, #0
-	bl sub_080D0784
+	bl gEngineEffectSpecialSummonDamage_080D0784
 	adds r1, r0, #0
 	adds r0, r4, #0
-	bl sub_080D0818
+	bl gEngineEffectSpecialSummonChangePosition_080D0818
 	ldr r3, _080D2E0C @ =gUnk_02020160
 	ldr r1, _080D2E10 @ =0x00002F53
 	adds r0, r3, r1
@@ -396788,8 +396788,8 @@ _080D2EE8:
 	.align 2, 0
 _080D2EF0: .4byte 0x00002F4E
 
-	thumb_func_start sub_080D2EF4
-sub_080D2EF4: @ 0x080D2EF4
+	thumb_func_start gEngineEffectSpecialSummon_080D2EF4
+gEngineEffectSpecialSummon_080D2EF4: @ 0x080D2EF4
 	push {r4, r5, r6, r7, lr}
 	ldr r1, _080D2F28 @ =gUnk_02020160
 	ldr r2, _080D2F2C @ =0x00002F53
@@ -396898,7 +396898,7 @@ _080D2FCC:
 	beq _080D300C
 	b _080D3028
 _080D2FD2:
-	bl sub_080D2690
+	bl gEngineEffectSpecialSummon_080D2690
 	cmp r0, #0
 	beq _080D2FDE
 	bl _080D3826
@@ -396911,7 +396911,7 @@ _080D2FDE:
 	.align 2, 0
 _080D2FEC: .4byte 0xFFFFE01F
 _080D2FF0:
-	bl sub_080D2C60
+	bl gEngineEffectSpecialSummonDamage_080D2C60
 	cmp r0, #0
 	beq _080D2FFC
 	bl _080D3826
@@ -396961,7 +396961,7 @@ _080D3050: .4byte 0x00002F54
 _080D3054: .4byte gUnk_02023130
 _080D3058: .4byte 0x00000222
 _080D305C:
-	bl sub_080D1B2C
+	bl gEngineEffectSpecialSummonDestroy_080D1B2C
 	ldr r5, _080D3084 @ =gUnk_02020160
 	ldr r4, _080D3088 @ =0x00002F54
 	adds r3, r5, r4
@@ -396970,7 +396970,7 @@ _080D305C:
 	lsrs r0, r0, #0x18
 	cmp r0, #1
 	bne _080D3074
-	bl sub_080D3820
+	bl gEngineEffectSpecialSummonDamage_080D3820
 _080D3074:
 	cmp r0, #1
 	bgt _080D308C
@@ -397220,7 +397220,7 @@ _080D3248:
 _080D3262:
 	adds r1, r1, r0
 	ldrh r0, [r1]
-	bl sub_080D0784
+	bl gEngineEffectSpecialSummonDamage_080D0784
 	cmp r0, #0
 	bne _080D3290
 	ldr r0, _080D3284 @ =gUnk_02020160
@@ -397297,7 +397297,7 @@ _080D3304:
 	adds r1, r1, r0
 	ldrh r4, [r1]
 	adds r0, r4, #0
-	bl sub_080D0784
+	bl gEngineEffectSpecialSummonDamage_080D0784
 	cmp r0, #0
 	beq _080D3316
 	b _080D380C
@@ -397440,10 +397440,10 @@ _080D3434:
 	adds r0, r0, r1
 	ldrh r4, [r0]
 	adds r0, r4, #0
-	bl sub_080D0784
+	bl gEngineEffectSpecialSummonDamage_080D0784
 	adds r1, r0, #0
 	adds r0, r4, #0
-	bl sub_080D0818
+	bl gEngineEffectSpecialSummonChangePosition_080D0818
 	b _080D30B0
 _080D3448:
 	movs r0, #0xff
@@ -397511,10 +397511,10 @@ _080D34B4:
 	orrs r1, r2
 	strb r1, [r0]
 	adds r0, r4, #0
-	bl sub_080D0784
+	bl gEngineEffectSpecialSummonDamage_080D0784
 	adds r1, r0, #0
 	adds r0, r4, #0
-	bl sub_080D0818
+	bl gEngineEffectSpecialSummonChangePosition_080D0818
 	b _080D30B0
 	.align 2, 0
 _080D34D4: .4byte 0x00002F51
@@ -397643,10 +397643,10 @@ _080D35D0:
 	adds r0, r0, r1
 	ldrh r4, [r0]
 	adds r0, r4, #0
-	bl sub_080D0784
+	bl gEngineEffectSpecialSummonDamage_080D0784
 	adds r1, r0, #0
 	adds r0, r4, #0
-	bl sub_080D0818
+	bl gEngineEffectSpecialSummonChangePosition_080D0818
 	b _080D30B0
 _080D35E4:
 	ldr r4, _080D3618 @ =0x00002F54
@@ -397763,10 +397763,10 @@ _080D36BC:
 	orrs r1, r2
 	strb r1, [r0]
 	adds r0, r4, #0
-	bl sub_080D0784
+	bl gEngineEffectSpecialSummonDamage_080D0784
 	adds r1, r0, #0
 	adds r0, r4, #0
-	bl sub_080D0818
+	bl gEngineEffectSpecialSummonChangePosition_080D0818
 	b _080D30B0
 	.align 2, 0
 _080D36DC: .4byte 0x00002F56
@@ -397929,12 +397929,12 @@ _080D3814:
 	ble _080D380C
 	b _080D3826
 _080D381A:
-	bl sub_080D4478
+	bl gEngineEffectSpecialSummonDamage_080D4478
 	b _080D3828
 
-	thumb_func_start sub_080D3820
-sub_080D3820: @ 0x080D3820
-	bl sub_080D2390
+	thumb_func_start gEngineEffectSpecialSummonDamage_080D3820
+gEngineEffectSpecialSummonDamage_080D3820: @ 0x080D3820
+	bl gEngineEffectSpecialSummonDamage_080D2390
 	b _080D3828
 _080D3826:
 	movs r0, #1
@@ -398330,8 +398330,8 @@ _080D3B60: .4byte gRacePalettes
 _080D3B64: .4byte 0x06013C20
 _080D3B68: .4byte gRaceIcons
 
-	thumb_func_start sub_080D3B6C
-sub_080D3B6C: @ 0x080D3B6C
+	thumb_func_start gEngineEffectSpecialSummonDamage_080D3B6C
+gEngineEffectSpecialSummonDamage_080D3B6C: @ 0x080D3B6C
 	push {r4, r5, r6, lr}
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
@@ -398348,7 +398348,7 @@ sub_080D3B6C: @ 0x080D3B6C
 	lsls r1, r1, #3
 	adds r1, r1, r2
 	ldr r6, [r1]
-	bl sub_080D0784
+	bl gEngineEffectSpecialSummonDamage_080D0784
 	cmp r0, #0
 	beq _080D3B9C
 	movs r0, #1
@@ -398357,7 +398357,7 @@ sub_080D3B6C: @ 0x080D3B6C
 _080D3B98: .4byte gUnk_02020160
 _080D3B9C:
 	adds r0, r4, #0
-	bl sub_080D0784
+	bl gEngineEffectSpecialSummonDamage_080D0784
 	cmp r0, #0
 	bne _080D3BE4
 	ldr r3, _080D3BD8 @ =gCardNamesAlphabeticalOffsets
@@ -398397,8 +398397,8 @@ _080D3BE8:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080D3BF0
-sub_080D3BF0: @ 0x080D3BF0
+	thumb_func_start gEngineEffectSpecialSummonDamage_080D3BF0
+gEngineEffectSpecialSummonDamage_080D3BF0: @ 0x080D3BF0
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -398423,7 +398423,7 @@ _080D3C18:
 	lsls r3, r7, #2
 	mov sl, r3
 	ldr r0, [r6]
-	bl sub_080D0784
+	bl gEngineEffectSpecialSummonDamage_080D0784
 	cmp r0, #0
 	beq _080D3C30
 	movs r0, #4
@@ -398483,8 +398483,8 @@ _080D3C6A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080D3C8C
-sub_080D3C8C: @ 0x080D3C8C
+	thumb_func_start gEngineEffectSpecialSummonDamage_080D3C8C
+gEngineEffectSpecialSummonDamage_080D3C8C: @ 0x080D3C8C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -398509,7 +398509,7 @@ _080D3CB4:
 	lsls r3, r7, #2
 	mov sl, r3
 	ldr r0, [r6]
-	bl sub_080D0784
+	bl gEngineEffectSpecialSummonDamage_080D0784
 	cmp r0, #0
 	beq _080D3CCC
 	movs r0, #4
@@ -398569,8 +398569,8 @@ _080D3D06:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080D3D28
-sub_080D3D28: @ 0x080D3D28
+	thumb_func_start gEngineEffectSpecialSummonDamage_080D3D28
+gEngineEffectSpecialSummonDamage_080D3D28: @ 0x080D3D28
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -398595,7 +398595,7 @@ _080D3D50:
 	lsls r3, r7, #2
 	mov sl, r3
 	ldr r0, [r6]
-	bl sub_080D0784
+	bl gEngineEffectSpecialSummonDamage_080D0784
 	cmp r0, #0
 	beq _080D3D68
 	movs r0, #4
@@ -398655,8 +398655,8 @@ _080D3DA2:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080D3DC4
-sub_080D3DC4: @ 0x080D3DC4
+	thumb_func_start gEngineEffectSpecialSummonDamage_080D3DC4
+gEngineEffectSpecialSummonDamage_080D3DC4: @ 0x080D3DC4
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -398683,7 +398683,7 @@ _080D3DEE:
 	mov r1, sp
 	adds r4, r0, r1
 	ldr r0, [r4]
-	bl sub_080D0784
+	bl gEngineEffectSpecialSummonDamage_080D0784
 	cmp r0, #0
 	beq _080D3E10
 	movs r0, #9
@@ -398727,8 +398727,8 @@ _080D3E2E:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080D3E50
-sub_080D3E50: @ 0x080D3E50
+	thumb_func_start gEngineEffectSpecialSummonDamage_080D3E50
+gEngineEffectSpecialSummonDamage_080D3E50: @ 0x080D3E50
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -398759,7 +398759,7 @@ _080D3E80:
 	str r1, [sp, #0x44]
 	ldr r0, [r6]
 	str r3, [sp, #0x3c]
-	bl sub_080D0784
+	bl gEngineEffectSpecialSummonDamage_080D0784
 	ldr r3, [sp, #0x3c]
 	cmp r0, #0
 	beq _080D3EA0
@@ -398858,8 +398858,8 @@ _080D3F26:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080D3F4C
-sub_080D3F4C: @ 0x080D3F4C
+	thumb_func_start gEngineEffectSpecialSummonDamage_080D3F4C
+gEngineEffectSpecialSummonDamage_080D3F4C: @ 0x080D3F4C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -398887,7 +398887,7 @@ sub_080D3F4C: @ 0x080D3F4C
 _080D3F7C:
 	ldr r0, [r5]
 	str r3, [sp, #0x34]
-	bl sub_080D0784
+	bl gEngineEffectSpecialSummonDamage_080D0784
 	ldr r3, [sp, #0x34]
 	cmp r0, #0
 	beq _080D3F98
@@ -399276,8 +399276,8 @@ _080D4250:
 	pop {r0}
 	bx r0
 
-	thumb_func_start sub_080D4268
-sub_080D4268: @ 0x080D4268
+	thumb_func_start gEngineEffectSpecialSummonDamage_080D4268
+gEngineEffectSpecialSummonDamage_080D4268: @ 0x080D4268
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -399407,7 +399407,7 @@ _080D434E:
 	orrs r0, r2
 	cmp r0, #0
 	beq _080D4384
-	bl sub_080D1BB4
+	bl gEngineEffectSpecialSummonDamage_080D1BB4
 	b _080D444A
 	.align 2, 0
 _080D4370: .4byte 0x00002F57
@@ -399459,7 +399459,7 @@ _080D43B2:
 	mov r1, r8
 	strh r0, [r1]
 	adds r0, r4, #0
-	bl sub_080D0784
+	bl gEngineEffectSpecialSummonDamage_080D0784
 	cmp r0, #0
 	beq _080D43E2
 	movs r7, #0
@@ -399508,10 +399508,10 @@ _080D441A:
 	adds r2, r2, r6
 	ldrh r4, [r2]
 	adds r0, r4, #0
-	bl sub_080D0784
+	bl gEngineEffectSpecialSummonDamage_080D0784
 	adds r1, r0, #0
 	adds r0, r4, #0
-	bl sub_080D0818
+	bl gEngineEffectSpecialSummonChangePosition_080D0818
 _080D444A:
 	pop {r3, r4, r5}
 	mov r8, r3
@@ -399530,8 +399530,8 @@ _080D446C: .4byte 0xFFE01FFF
 _080D4470: .4byte 0x00002F56
 _080D4474: .4byte 0xFFFFE01F
 
-	thumb_func_start sub_080D4478
-sub_080D4478: @ 0x080D4478
+	thumb_func_start gEngineEffectSpecialSummonDamage_080D4478
+gEngineEffectSpecialSummonDamage_080D4478: @ 0x080D4478
 	push {r4, r5, r6, r7, lr}
 	ldr r6, _080D4494 @ =gUnk_02020160
 	ldr r0, _080D4498 @ =0x00002F4D
@@ -399707,7 +399707,7 @@ _080D45D4:
 	movs r0, #2
 	b _080D45EC
 _080D45D8:
-	bl sub_080D4268
+	bl gEngineEffectSpecialSummonDamage_080D4268
 	ldr r1, _080D45F8 @ =0x00002F51
 	adds r0, r6, r1
 	movs r1, #3
@@ -400402,8 +400402,8 @@ _080D4B1C:
 	bx r0
 	.align 2, 0
 
-	thumb_func_start sub_080D4B28
-sub_080D4B28: @ 0x080D4B28
+	thumb_func_start gEngineEffectSpecialSummonDestroyAll_080D4B28
+gEngineEffectSpecialSummonDestroyAll_080D4B28: @ 0x080D4B28
 	push {r4, lr}
 	ldr r4, _080D4B48 @ =gUnk_03005850
 	movs r1, #0x80
@@ -400413,17 +400413,17 @@ sub_080D4B28: @ 0x080D4B28
 	bne _080D4B4C
 	movs r0, #2
 	movs r1, #1
-	bl sub_080D511C
+	bl gEngineEffectSpecialSummonDestroyAll_080D511C
 	movs r0, #1
 	movs r1, #0
-	bl sub_080D511C
+	bl gEngineEffectSpecialSummonDestroyAll_080D511C
 	b _080D4B78
 	.align 2, 0
 _080D4B48: .4byte gUnk_03005850
 _080D4B4C:
 	movs r0, #1
 	movs r1, #5
-	bl sub_080D511C
+	bl gEngineEffectSpecialSummonDestroyAll_080D511C
 	ldr r0, _080D4B6C @ =0x00000724
 	adds r1, r4, r0
 	movs r0, #8
@@ -400433,29 +400433,29 @@ _080D4B4C:
 	bne _080D4B70
 	movs r0, #2
 	movs r1, #1
-	bl sub_080D511C
+	bl gEngineEffectSpecialSummonDestroyAll_080D511C
 	b _080D4B78
 	.align 2, 0
 _080D4B6C: .4byte 0x00000724
 _080D4B70:
 	movs r0, #2
 	movs r1, #4
-	bl sub_080D511C
+	bl gEngineEffectSpecialSummonDestroyAll_080D511C
 _080D4B78:
 	pop {r4}
 	pop {r0}
 	bx r0
 	.align 2, 0
 
-	thumb_func_start sub_080D4B80
-sub_080D4B80: @ 0x080D4B80
+	thumb_func_start gEngineEffectSpecialSummonDestroyAll_080D4B80
+gEngineEffectSpecialSummonDestroyAll_080D4B80: @ 0x080D4B80
 	push {lr}
 	movs r0, #2
 	movs r1, #3
-	bl sub_080D511C
+	bl gEngineEffectSpecialSummonDestroyAll_080D511C
 	movs r0, #1
 	movs r1, #2
-	bl sub_080D511C
+	bl gEngineEffectSpecialSummonDestroyAll_080D511C
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -400797,8 +400797,8 @@ _080D4E36:
 _080D4E40: .4byte gUnk_03005850
 _080D4E44: .4byte 0x0600E000
 
-	thumb_func_start sub_080D4E48
-sub_080D4E48: @ 0x080D4E48
+	thumb_func_start gEngineEffectReduceATK_080D4E48
+gEngineEffectReduceATK_080D4E48: @ 0x080D4E48
 	push {r4, r5, r6, r7, lr}
 	adds r7, r0, #0
 	movs r5, #0xc0
@@ -400830,8 +400830,8 @@ _080D4E58:
 	.align 2, 0
 _080D4E88: .4byte 0x0600E09E
 
-	thumb_func_start sub_080D4E8C
-sub_080D4E8C: @ 0x080D4E8C
+	thumb_func_start gEngineEffectDestroyDamage_080D4E8C
+gEngineEffectDestroyDamage_080D4E8C: @ 0x080D4E8C
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	movs r4, #0xc0
@@ -401180,8 +401180,8 @@ _080D50F8:
 _080D5114: .4byte gUnk_03005850
 _080D5118: .4byte 0x0000070C
 
-	thumb_func_start sub_080D511C
-sub_080D511C: @ 0x080D511C
+	thumb_func_start gEngineEffectSpecialSummonDestroyAll_080D511C
+gEngineEffectSpecialSummonDestroyAll_080D511C: @ 0x080D511C
 	push {lr}
 	ldr r2, _080D5134 @ =0x0000028D
 	cmp r0, #2
@@ -401990,7 +401990,7 @@ _080D56F4:
 	lsls r0, r0, #0x19
 	lsrs r0, r0, #0x19
 	movs r1, #0
-	bl sub_080D4E48
+	bl gEngineEffectReduceATK_080D4E48
 	movs r0, #2
 	rsbs r0, r0, #0
 	ldrb r2, [r4]
@@ -402000,7 +402000,7 @@ _080D56F4:
 	lsls r0, r0, #0x19
 	lsrs r0, r0, #0x19
 	movs r1, #0
-	bl sub_080D4E8C
+	bl gEngineEffectDestroyDamage_080D4E8C
 	movs r0, #0xe8
 	lsls r0, r0, #1
 	movs r1, #0xa
@@ -402027,10 +402027,10 @@ _080D56F4:
 	bl sub_080DC5EC
 	movs r0, #2
 	movs r1, #1
-	bl sub_080D511C
+	bl gEngineEffectSpecialSummonDestroyAll_080D511C
 	movs r0, #1
 	movs r1, #0
-	bl sub_080D511C
+	bl gEngineEffectSpecialSummonDestroyAll_080D511C
 	ldr r0, _080D5844 @ =0x050001E0
 	ldr r1, _080D5848 @ =gUnk_09CCD290
 	movs r2, #0x20
@@ -402723,8 +402723,8 @@ _080D5D38:
 _080D5D5C: .4byte gUnk_03005850
 _080D5D60: .4byte 0x00000724
 
-	thumb_func_start sub_080D5D64
-sub_080D5D64: @ 0x080D5D64
+	thumb_func_start gEngineEffectDestroyReduceATK_080D5D64
+gEngineEffectDestroyReduceATK_080D5D64: @ 0x080D5D64
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -402781,7 +402781,7 @@ sub_080D5D64: @ 0x080D5D64
 	lsrs r0, r0, #0x19
 	lsls r1, r1, #0x1e
 	lsrs r1, r1, #0x1f
-	bl sub_080D4E48
+	bl gEngineEffectReduceATK_080D4E48
 	ldrb r2, [r4]
 	lsls r0, r2, #0x1f
 	lsrs r0, r0, #0x1f
@@ -402796,14 +402796,14 @@ sub_080D5D64: @ 0x080D5D64
 	lsrs r0, r0, #0x19
 	lsls r1, r1, #0x1f
 	lsrs r1, r1, #0x1f
-	bl sub_080D4E8C
+	bl gEngineEffectDestroyDamage_080D4E8C
 	movs r0, #0x10
 	ldrb r6, [r6]
 	ands r0, r6
 	cmp r0, #0
 	bne _080D5E20
 	adds r0, r7, #0
-	bl sub_080D4B28
+	bl gEngineEffectSpecialSummonDestroyAll_080D4B28
 	b _080D5E24
 	.align 2, 0
 _080D5E0C: .4byte gUnk_03005850
@@ -402812,7 +402812,7 @@ _080D5E14: .4byte 0x00000704
 _080D5E18: .4byte 0x00000724
 _080D5E1C: .4byte 0x00000725
 _080D5E20:
-	bl sub_080D4B80
+	bl gEngineEffectSpecialSummonDestroyAll_080D4B80
 _080D5E24:
 	movs r0, #0x80
 	ldrb r1, [r7]
@@ -402948,8 +402948,8 @@ _080D5F2C: .4byte 0x00000704
 _080D5F30: .4byte 0x04000050
 _080D5F34: .4byte 0x0000023F
 
-	thumb_func_start sub_080D5F38
-sub_080D5F38: @ 0x080D5F38
+	thumb_func_start gEngineEffectReduceATK_080D5F38
+gEngineEffectReduceATK_080D5F38: @ 0x080D5F38
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -403191,7 +403191,7 @@ _080D60F2:
 	lsrs r0, r0, #0x19
 	lsls r1, r1, #0x1e
 	lsrs r1, r1, #0x1f
-	bl sub_080D4E48
+	bl gEngineEffectReduceATK_080D4E48
 _080D611E:
 	ldr r3, _080D6174 @ =gUnk_0300585C
 	ldr r5, _080D617C @ =0x000006FC
@@ -403297,7 +403297,7 @@ _080D61EA:
 	bne _080D61EA
 _080D61F2:
 	ldr r0, [sp, #0x34]
-	bl sub_080D4B28
+	bl gEngineEffectSpecialSummonDestroyAll_080D4B28
 	ldr r1, _080D6240 @ =gUnk_03005850
 	movs r0, #2
 	strh r0, [r1, #0x10]
@@ -403474,8 +403474,8 @@ _080D6368: .4byte 0x04000050
 _080D636C: .4byte 0x00003FBF
 _080D6370: .4byte 0x04000054
 
-	thumb_func_start sub_080D6374
-sub_080D6374: @ 0x080D6374
+	thumb_func_start gEngineEffectDestroyReduceATK_080D6374
+gEngineEffectDestroyReduceATK_080D6374: @ 0x080D6374
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -403608,7 +403608,7 @@ _080D646E:
 	ldrb r2, [r1]
 	orrs r0, r2
 	strb r0, [r1]
-	bl sub_080D5D64
+	bl gEngineEffectDestroyReduceATK_080D5D64
 	movs r2, #0xde
 	lsls r2, r2, #3
 	add r2, sb
@@ -403619,7 +403619,7 @@ _080D646E:
 	ldr r0, [r2]
 	adds r4, r0, r1
 	adds r0, r4, #0
-	bl sub_080D4B28
+	bl gEngineEffectSpecialSummonDestroyAll_080D4B28
 _080D6498:
 	movs r0, #1
 	bl sub_080DD5E4
@@ -403809,8 +403809,8 @@ _080D661C: .4byte 0x04000050
 _080D6620: .4byte 0x00001010 @ Spirit of the Winds (None)
 _080D6624: .4byte gUnk_03005850
 
-	thumb_func_start sub_080D6628
-sub_080D6628: @ 0x080D6628
+	thumb_func_start gEngineEffectSpecialSummonDestroyAll_080D6628
+gEngineEffectSpecialSummonDestroyAll_080D6628: @ 0x080D6628
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -403894,7 +403894,7 @@ sub_080D6628: @ 0x080D6628
 	ldr r5, _080D6764 @ =0x00007090
 	adds r0, r5, #0
 	strh r0, [r6]
-	bl sub_080D4B80
+	bl gEngineEffectSpecialSummonDestroyAll_080D4B80
 	movs r0, #2
 	bl sub_080D4978
 	ldr r0, _080D6768 @ =0x00000724
@@ -404435,8 +404435,8 @@ _080D6B44: .4byte 0x00000724
 _080D6B48: .4byte 0x000006FC
 _080D6B4C: .4byte 0x000006FA
 
-	thumb_func_start sub_080D6B50
-sub_080D6B50: @ 0x080D6B50
+	thumb_func_start gEngineEffectSpecialSummonDestroyAll_080D6B50
+gEngineEffectSpecialSummonDestroyAll_080D6B50: @ 0x080D6B50
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -404502,7 +404502,7 @@ sub_080D6B50: @ 0x080D6B50
 	cmp r0, #1
 	bne _080D6C42
 	adds r0, r6, #0
-	bl sub_080D4B28
+	bl gEngineEffectSpecialSummonDestroyAll_080D4B28
 	movs r0, #0
 	bl sub_080D4978
 	movs r1, #0
@@ -404647,8 +404647,8 @@ _080D6D24: .4byte 0x0000BFFF
 _080D6D28: .4byte gUnk_02035FB0
 _080D6D2C: .4byte gUnk_0200AF20
 
-	thumb_func_start sub_080D6D30
-sub_080D6D30: @ 0x080D6D30
+	thumb_func_start gEngineEffectDestroyReduceATK_080D6D30
+gEngineEffectDestroyReduceATK_080D6D30: @ 0x080D6D30
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -404795,14 +404795,14 @@ _080D6DE4:
 	ldrb r2, [r4]
 	lsls r1, r2, #0x1e
 	lsrs r1, r1, #0x1f
-	bl sub_080D4E48
+	bl gEngineEffectReduceATK_080D4E48
 	ldr r0, [r6]
 	lsls r0, r0, #0x19
 	lsrs r0, r0, #0x19
 	ldrb r4, [r4]
 	lsls r1, r4, #0x1f
 	lsrs r1, r1, #0x1f
-	bl sub_080D4E8C
+	bl gEngineEffectDestroyDamage_080D4E8C
 	bl sub_080D50E4
 	mov r0, sl
 	ldrh r0, [r0]
@@ -404849,7 +404849,7 @@ _080D6DE4:
 	bl sub_080D4978
 	movs r0, #0xb
 	bl sub_080DC5EC
-	bl sub_080D4B80
+	bl gEngineEffectSpecialSummonDestroyAll_080D4B80
 	bl sub_080DD464
 	ldr r1, _080D6F24 @ =gUnk_03005850
 	movs r0, #0x12
@@ -405138,8 +405138,8 @@ sub_080D713C: @ 0x080D713C
 	pop {r0}
 	bx r0
 
-	thumb_func_start sub_080D715C
-sub_080D715C: @ 0x080D715C
+	thumb_func_start gEngineEffectRitualSummonGainLP_080D715C
+gEngineEffectRitualSummonGainLP_080D715C: @ 0x080D715C
 	push {r4, lr}
 	movs r4, #0xc0
 	lsls r4, r4, #0x13
@@ -405682,7 +405682,7 @@ gEngineEffectDrawSendToGY_080D7578: @ 0x080D7578
 	ands r0, r1
 	strb r0, [r4]
 	movs r0, #0
-	bl sub_080D715C
+	bl gEngineEffectRitualSummonGainLP_080D715C
 	movs r0, #0
 	movs r1, #0
 	bl sub_080D71BC
@@ -406566,8 +406566,8 @@ _080D7CB8:
 	.align 2, 0
 _080D7CD4: .4byte gUnk_03005850
 
-	thumb_func_start sub_080D7CD8
-sub_080D7CD8: @ 0x080D7CD8
+	thumb_func_start gEngineEffectRitualSummonDiscard_080D7CD8
+gEngineEffectRitualSummonDiscard_080D7CD8: @ 0x080D7CD8
 	push {r4, r5, r6, r7, lr}
 	ldr r0, _080D7D10 @ =gUnk_03005850
 	adds r5, r0, #0
@@ -406651,7 +406651,7 @@ _080D7D5C:
 	strb r0, [r4]
 	lsls r0, r0, #0x1d
 	lsrs r0, r0, #0x1f
-	bl sub_080D715C
+	bl gEngineEffectRitualSummonGainLP_080D715C
 	ldrb r4, [r4]
 	lsls r1, r4, #0x1d
 	lsrs r1, r1, #0x1f
@@ -406675,8 +406675,8 @@ _080D7DAA:
 _080D7DB4: .4byte 0x00000719
 _080D7DB8: .4byte gUnk_03005850
 
-	thumb_func_start sub_080D7DBC
-sub_080D7DBC: @ 0x080D7DBC
+	thumb_func_start gEngineEffectRitualSummonDiscard_080D7DBC
+gEngineEffectRitualSummonDiscard_080D7DBC: @ 0x080D7DBC
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -406803,7 +406803,7 @@ _080D7E96:
 	strb r0, [r4]
 	lsls r0, r0, #0x1d
 	lsrs r0, r0, #0x1f
-	bl sub_080D715C
+	bl gEngineEffectRitualSummonGainLP_080D715C
 	ldrb r4, [r4]
 	lsls r1, r4, #0x1d
 	lsrs r1, r1, #0x1f
@@ -406830,8 +406830,8 @@ _080D7EDC:
 _080D7EEC: .4byte 0x00000719
 _080D7EF0: .4byte gUnk_03005850
 
-	thumb_func_start sub_080D7EF4
-sub_080D7EF4: @ 0x080D7EF4
+	thumb_func_start gEngineEffectEquipStandbyPhase_080D7EF4
+gEngineEffectEquipStandbyPhase_080D7EF4: @ 0x080D7EF4
 	push {r4, lr}
 	ldr r0, _080D7F18 @ =gUnk_03005850
 	adds r4, r0, #0
@@ -408841,8 +408841,8 @@ _080D8E88:
 	.align 2, 0
 _080D8E94: .4byte gUnk_03005850
 
-	thumb_func_start sub_080D8E98
-sub_080D8E98: @ 0x080D8E98
+	thumb_func_start gEngineEffectDestroyReduceATK_080D8E98
+gEngineEffectDestroyReduceATK_080D8E98: @ 0x080D8E98
 	push {r4, r5, r6, lr}
 	adds r1, r0, #0
 	ldr r2, _080D8EF8 @ =gUnk_03005850
@@ -409127,8 +409127,8 @@ _080D90EC: .4byte 0x00000F48
 _080D90F0: .4byte 0x06001180
 _080D90F4: .4byte 0x0600E09E
 
-	thumb_func_start sub_080D90F8
-sub_080D90F8: @ 0x080D90F8
+	thumb_func_start gEngineEffectRitualSummonGainLP_080D90F8
+gEngineEffectRitualSummonGainLP_080D90F8: @ 0x080D90F8
 	push {lr}
 	ldr r1, _080D9108 @ =0x0000FFFF
 	cmp r0, r1
@@ -409936,7 +409936,7 @@ gEngineEffectDestroyEndPhase_080D971C: @ 0x080D971C
 _080D974C: .4byte gUnk_03005850
 _080D9750:
 	adds r0, r4, #0
-	bl sub_080D8E98
+	bl gEngineEffectDestroyReduceATK_080D8E98
 	adds r4, #1
 _080D9758:
 	bl sub_080D8DDC
@@ -410288,9 +410288,9 @@ gEngineEffectDrawSendToGY_080D9A00: @ 0x080D9A00
 	ldrh r0, [r5, #0x18]
 	bl sub_080D909C
 	adds r0, r4, #0
-	bl sub_080D90F8
+	bl gEngineEffectRitualSummonGainLP_080D90F8
 	ldrh r0, [r5, #0x18]
-	bl sub_080D90F8
+	bl gEngineEffectRitualSummonGainLP_080D90F8
 	ldr r1, _080D9AD0 @ =0x0400000E
 	ldrh r2, [r1]
 	ldr r3, _080D9AD4 @ =0x0000FFFC
@@ -411191,8 +411191,8 @@ _080DA184:
 	.align 2, 0
 _080DA194: .4byte gUnk_03005850
 
-	thumb_func_start sub_080DA198
-sub_080DA198: @ 0x080DA198
+	thumb_func_start gEngineEffectDestroyReduceATK_080DA198
+gEngineEffectDestroyReduceATK_080DA198: @ 0x080DA198
 	push {r4, r5, r6, lr}
 	ldr r0, _080DA1D4 @ =gUnk_03005850
 	adds r5, r0, #0
@@ -411202,7 +411202,7 @@ sub_080DA198: @ 0x080DA198
 	adds r4, r0, #0
 	movs r1, #6
 	ldrsh r0, [r5, r1]
-	bl sub_080D8E98
+	bl gEngineEffectDestroyReduceATK_080D8E98
 	ldrh r0, [r5, #6]
 	adds r0, #1
 	strh r0, [r5, #6]
@@ -412142,8 +412142,8 @@ _080DA918: .4byte 0x00003F3F
 _080DA91C: .4byte 0x00001010 @ Spirit of the Winds (None)
 _080DA920: .4byte gUnk_03005850
 
-	thumb_func_start sub_080DA924
-sub_080DA924: @ 0x080DA924
+	thumb_func_start gEngineEffectEquipStandbyPhase_080DA924
+gEngineEffectEquipStandbyPhase_080DA924: @ 0x080DA924
 	push {r4, lr}
 	ldr r0, _080DA944 @ =gUnk_03005850
 	adds r4, r0, #0
@@ -422734,8 +422734,8 @@ _080DFB84:
 _080DFC10: .4byte gUnk_03005850
 _080DFC14: .4byte gUnk_0200AF20
 
-	thumb_func_start sub_080DFC18
-sub_080DFC18: @ 0x080DFC18
+	thumb_func_start gEngineEffectGainLPDamage_080DFC18
+gEngineEffectGainLPDamage_080DFC18: @ 0x080DFC18
 	push {lr}
 	ldr r1, _080DFC64 @ =0x04000008
 	ldr r0, _080DFC68 @ =0x00001F02
@@ -424710,7 +424710,7 @@ _080E0BA0:
 	strh r1, [r0]
 	b _080E0BFA
 _080E0BB2:
-	bl sub_080DFC18
+	bl gEngineEffectGainLPDamage_080DFC18
 	movs r0, #0
 	strh r0, [r4, #2]
 	b _080E0BFA
@@ -425660,8 +425660,8 @@ _080E1384: .4byte 0x00006C3C
 _080E1388: .4byte gUnk_09E5E620
 _080E138C: .4byte 0x0000E0FC
 
-	thumb_func_start sub_080E1390
-sub_080E1390: @ 0x080E1390
+	thumb_func_start gEngineEffectSpecialSummonDestroy_080E1390
+gEngineEffectSpecialSummonDestroy_080E1390: @ 0x080E1390
 	push {r4, r5, r6, r7, lr}
 	sub sp, #8
 	ldr r0, _080E13B4 @ =gUnk_03000040
@@ -425791,7 +425791,7 @@ _080E14A0: .4byte sub_080E1310
 _080E14A4: .4byte gUnk_03000040
 _080E14A8: .4byte 0xFFC03FFF
 _080E14AC:
-	bl sub_080E73B4
+	bl gEngineEffectSpecialSummonDestroy_080E73B4
 	cmp r0, #1
 	beq _080E14BC
 	cmp r0, #2
@@ -426483,8 +426483,8 @@ _080E1A44: .4byte 0x00006C3C
 _080E1A48: .4byte gUnk_09E5E80C
 _080E1A4C: .4byte 0x0000E0FC
 
-	thumb_func_start sub_080E1A50
-sub_080E1A50: @ 0x080E1A50
+	thumb_func_start gEngineEffectSpecialSummonDestroy_080E1A50
+gEngineEffectSpecialSummonDestroy_080E1A50: @ 0x080E1A50
 	push {r4, r5, r6, r7, lr}
 	sub sp, #8
 	ldr r0, _080E1A74 @ =gUnk_03000040
@@ -426614,7 +426614,7 @@ _080E1B60: .4byte sub_080E19E0
 _080E1B64: .4byte gUnk_03000040
 _080E1B68: .4byte 0xFFC03FFF
 _080E1B6C:
-	bl sub_080E73B4
+	bl gEngineEffectSpecialSummonDestroy_080E73B4
 	cmp r0, #1
 	beq _080E1B7C
 	cmp r0, #2
@@ -428662,8 +428662,8 @@ _080E2C2A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080E2C34
-sub_080E2C34: @ 0x080E2C34
+	thumb_func_start gEngineEffectSearchSendToGY_080E2C34
+gEngineEffectSearchSendToGY_080E2C34: @ 0x080E2C34
 	push {r4, r5, r6, lr}
 	sub sp, #0x80
 	ldr r1, _080E2C58 @ =gUnk_03000040
@@ -430147,8 +430147,8 @@ _080E3866:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080E386C
-sub_080E386C: @ 0x080E386C
+	thumb_func_start gEngineEffectSpecialSummonDestroy_080E386C
+gEngineEffectSpecialSummonDestroy_080E386C: @ 0x080E386C
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	ldr r0, _080E38B0 @ =gUnk_02000000
@@ -430223,8 +430223,8 @@ _080E38F8: .4byte 0x0000E0FC
 _080E38FC: .4byte gUnk_02000000
 _080E3900: .4byte 0x00006C3C
 
-	thumb_func_start sub_080E3904
-sub_080E3904: @ 0x080E3904
+	thumb_func_start gEngineEffectSpecialSummonDestroy_080E3904
+gEngineEffectSpecialSummonDestroy_080E3904: @ 0x080E3904
 	push {r4, r5, r6, r7, lr}
 	sub sp, #8
 	ldr r0, _080E3928 @ =gUnk_03000040
@@ -430305,7 +430305,7 @@ _080E39AA:
 	ldr r2, _080E3A10 @ =gUnk_09E5E9CC
 	movs r0, #0x4c
 	str r0, [sp]
-	ldr r0, _080E3A14 @ =sub_080E386C
+	ldr r0, _080E3A14 @ =gEngineEffectSpecialSummonDestroy_080E386C
 	str r0, [sp, #4]
 	adds r0, r4, #0
 	bl sub_080E7294
@@ -430350,11 +430350,11 @@ _080E39E0:
 _080E3A08: .4byte gUnk_09DCADDC
 _080E3A0C: .4byte gUnk_09D6B1B4
 _080E3A10: .4byte gUnk_09E5E9CC
-_080E3A14: .4byte sub_080E386C
+_080E3A14: .4byte gEngineEffectSpecialSummonDestroy_080E386C
 _080E3A18: .4byte gUnk_03000040
 _080E3A1C: .4byte 0xFFC03FFF
 _080E3A20:
-	bl sub_080E73B4
+	bl gEngineEffectSpecialSummonDestroy_080E73B4
 	cmp r0, #1
 	beq _080E3A30
 	cmp r0, #2
@@ -431210,7 +431210,7 @@ _080E4036:
 	adds r0, #1
 	cmp r1, r0
 	bne _080E4040
-	bl sub_080E4930
+	bl gEngineEffectFlip_080E4930
 _080E4040:
 	adds r0, #1
 	cmp r1, r0
@@ -432279,8 +432279,8 @@ _080E4924: .4byte 0x000005DB
 _080E4928: .4byte 0x00001152 @ Magician of Faith
 _080E492C: .4byte 0x00001212 @ Snakeyashi
 
-	thumb_func_start sub_080E4930
-sub_080E4930: @ 0x080E4930
+	thumb_func_start gEngineEffectFlip_080E4930
+gEngineEffectFlip_080E4930: @ 0x080E4930
 	movs r5, #0
 	ldr r0, _080E4974 @ =gUnk_02000000
 	ldr r2, _080E4978 @ =0x00001150 (Stone Dragon (None))
@@ -437570,8 +437570,8 @@ _080E73B0:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080E73B4
-sub_080E73B4: @ 0x080E73B4
+	thumb_func_start gEngineEffectSpecialSummonDestroy_080E73B4
+gEngineEffectSpecialSummonDestroy_080E73B4: @ 0x080E73B4
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -438391,7 +438391,7 @@ sub_080E7A18: @ 0x080E7A18
 	movs r1, #0x8d
 	lsls r1, r1, #2
 	adds r0, r0, r1
-	ldr r1, _080E7A88 @ =sub_08028D40
+	ldr r1, _080E7A88 @ =gEngineEffectSpecialSummonDestroy_08028D40
 	str r1, [r0]
 	ldr r4, _080E7A8C @ =0x00000202
 	adds r1, r2, r4
@@ -438432,7 +438432,7 @@ _080E7A76:
 	.align 2, 0
 _080E7A80: .4byte gUnk_03000040
 _080E7A84: .4byte gUnk_02029590
-_080E7A88: .4byte sub_08028D40
+_080E7A88: .4byte gEngineEffectSpecialSummonDestroy_08028D40
 _080E7A8C: .4byte 0x00000202
 _080E7A90: .4byte 0xFFFFC03F
 _080E7A94: .4byte 0x00000203
