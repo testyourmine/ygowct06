@@ -117730,61 +117730,7 @@ gUnk_09815186:: @ 09815186
 	.incbin "baserom.gba", 0x1815186, 0x1832
 
 gCardStats:: @ 098169B8
-	.incbin "baserom.gba", 0x18169B8, 0x14E3
-
-gUnk_09817E9B:: @ 09817E9B
-	.incbin "baserom.gba", 0x1817E9B, 0x36D
-
-gUnk_09818208:: @ 09818208
-	.incbin "baserom.gba", 0x1818208, 0x1150
-
-gUnk_09819358:: @ 09819358
-	.incbin "baserom.gba", 0x1819358, 0x301
-
-gUnk_09819659:: @ 09819659
-	.incbin "baserom.gba", 0x1819659, 0x19D8
-
-gUnk_0981B031:: @ 0981B031
-	.incbin "baserom.gba", 0x181B031, 0x133C
-
-gUnk_0981C36D:: @ 0981C36D
-	.incbin "baserom.gba", 0x181C36D, 0xC3
-
-gUnk_0981C430:: @ 0981C430
-	.incbin "baserom.gba", 0x181C430, 0x225B
-
-gUnk_0981E68B:: @ 0981E68B
-	.incbin "baserom.gba", 0x181E68B, 0xA77
-
-gUnk_0981F102:: @ 0981F102
-	.incbin "baserom.gba", 0x181F102, 0xF0F
-
-gUnk_09820011:: @ 09820011
-	.incbin "baserom.gba", 0x1820011, 0x92
-
-gUnk_098200A3:: @ 098200A3
-	.incbin "baserom.gba", 0x18200A3, 0x25D
-
-gUnk_09820300:: @ 09820300
-	.incbin "baserom.gba", 0x1820300, 0x189
-
-gUnk_09820489:: @ 09820489
-	.incbin "baserom.gba", 0x1820489, 0x4
-
-gUnk_0982048D:: @ 0982048D
-	.incbin "baserom.gba", 0x182048D, 0x388
-
-gUnk_09820815:: @ 09820815
-	.incbin "baserom.gba", 0x1820815, 0x1B
-
-gUnk_09820830:: @ 09820830
-	.incbin "baserom.gba", 0x1820830, 0x239
-
-gUnk_09820A69:: @ 09820A69
-	.incbin "baserom.gba", 0x1820A69, 0x8B7
-
-gUnk_09821320:: @ 09821320
-	.incbin "baserom.gba", 0x1821320, 0xAE4
+	.incbin "baserom.gba", 0x18169B8, 0xB44C
 
 gCardStats2:: @ 09821E04
 	.incbin "baserom.gba", 0x1821E04, 0x4A4
