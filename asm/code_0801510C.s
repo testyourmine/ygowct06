@@ -331375,8 +331375,8 @@ _080B2EE6:
 	@ Waboku
 	@ Wall of Revealing Light
 	@ Widespread Ruin
-	thumb_func_start gCardAIChangePositionDestroy_080B2EEC
-gCardAIChangePositionDestroy_080B2EEC: @ 0x080B2EEC
+	thumb_func_start gCardAIUsableInResponseToCombat_080B2EEC
+gCardAIUsableInResponseToCombat_080B2EEC: @ 0x080B2EEC
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
