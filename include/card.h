@@ -764,7 +764,7 @@ extern const struct CardInfo gCardTable[CARD_TABLE_SIZE];
 #define KONAMI_MAGICAL_LABYRINTH                                                 4658
 #define KONAMI_WARRIOR_ELIMINATION_NONE                                          4659
 #define KONAMI_SALAMANDRA                                                        4660
-#define KONAMI_NONE                                                              4661
+#define KONAMI_NONE_1                                                            4661
 #define KONAMI_ETERNAL_REST                                                      4662
 #define KONAMI_MEGAMORPH                                                         4663
 #define KONAMI_METALMORPH                                                        4664
