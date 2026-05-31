@@ -6645,7 +6645,7 @@ sub_080EEFC0: @ 0x080EEFC0
 	lsls r1, r1, #0x10
 	lsrs r6, r1, #0x10
 	adds r0, r6, #0
-	bl sub_0804AC58
+	bl gEngineEffectSpecialSummonSendToGY_0804AC58
 	eors r0, r6
 	rsbs r1, r0, #0
 	orrs r1, r0
@@ -6669,7 +6669,7 @@ _080EEFEE:
 	beq _080EF010
 	ldrh r0, [r4]
 	adds r1, r6, #0
-	bl sub_0804ACC8
+	bl gEngineEffectSpecialSummonSendToGY_0804ACC8
 	cmp r0, #0
 	beq _080EF016
 _080EF008:
@@ -6908,7 +6908,7 @@ sub_080EF1CC: @ 0x080EF1CC
 	lsls r1, r1, #0x10
 	lsrs r6, r1, #0x10
 	adds r0, r6, #0
-	bl sub_0804AC58
+	bl gEngineEffectSpecialSummonSendToGY_0804AC58
 	eors r0, r6
 	rsbs r1, r0, #0
 	orrs r1, r0
@@ -6935,7 +6935,7 @@ _080EF202:
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x12
 	adds r1, r6, #0
-	bl sub_0804ACC8
+	bl gEngineEffectSpecialSummonSendToGY_0804ACC8
 	cmp r0, #0
 	beq _080EF234
 	ldr r0, [r4]
@@ -17606,7 +17606,7 @@ _080F4624: .4byte 0x0000E0FC
 _080F4628: .4byte gUnk_09E5E9CC
 _080F462C:
 	ldrh r0, [r4]
-	bl sub_080E328C
+	bl gEngineEffectSpecialSummonDestroy_080E328C
 	cmp r0, #0
 	beq _080F4688
 	ldr r0, _080F4658 @ =gUnk_02000000

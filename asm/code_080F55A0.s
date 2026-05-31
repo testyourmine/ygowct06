@@ -26843,7 +26843,7 @@ _081025AC:
 	adds r0, r0, r3
 	ldrh r1, [r0]
 	mov r0, sl
-	bl sub_0804AB4C
+	bl gEngineEffectBoostATKBoostDEF_0804AB4C
 	adds r5, #1
 	cmp r0, #0
 	beq _081025FC
@@ -29743,7 +29743,7 @@ _08103B66:
 	ldrh r1, [r0]
 	mov r0, sb
 	str r2, [sp]
-	bl sub_0804AB4C
+	bl gEngineEffectBoostATKBoostDEF_0804AB4C
 	ldr r2, [sp]
 	cmp r0, #0
 	beq _08103B92
@@ -29781,7 +29781,7 @@ _08103BAC:
 	ldrh r1, [r0]
 	mov r0, sb
 	str r2, [sp]
-	bl sub_0804AB4C
+	bl gEngineEffectBoostATKBoostDEF_0804AB4C
 	ldr r2, [sp]
 	cmp r0, #0
 	beq _08103BD8
@@ -29819,7 +29819,7 @@ _08103BF2:
 	ldrh r1, [r0]
 	mov r0, sb
 	str r2, [sp]
-	bl sub_0804AB4C
+	bl gEngineEffectBoostATKBoostDEF_0804AB4C
 	ldr r2, [sp]
 	cmp r0, #0
 	beq _08103C1E
